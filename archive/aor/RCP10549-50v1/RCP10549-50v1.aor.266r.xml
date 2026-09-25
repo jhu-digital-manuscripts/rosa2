@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.266r.tif" pagination="511" reader="John Dee" signature="[iii.viii.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="ad salutem modo extinguendam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        extinguere salute[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To destroy prosperity.
+            </translation>
+        </marginalia>
+
+        <marginalia anchor_text="gloriam per tales viros infringenda[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        infringere gloria[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To diminish the glory.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="insidiae clariores hac luce" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        insidi[a]e clariores hac luce
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Plots clearer than light.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Horatii" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        M. horatius.
+                    </marginalia_text>
+                    <person name="Publius Horatius"/>
+                </position>
+            </language>
+            <translation>
+                Marcus Horatius.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="neque auxilium modo defensioni meae, verum etiam silentiu[m" type="straight"/>
+        <underline language="LA" method="pen" text="Qua[m]obrem adeste animis Iudices: &amp; timorem, siquem habetis, deponite. nam si vnqua[m]" type="straight"/>
+        <underline language="LA" method="pen" text="fortes &amp; bonos cius, quae vultu &amp; verbis saepe significassent, re &amp; sententiis declararent" type="straight"/>
+        <underline language="LA" method="pen" text="caeteras tempestates &amp; procellas in illis du[m]taxat" type="straight"/>
+        <underline language="LA" method="pen" text="non ad salutem modo extinguendam, sed etiam gloriam per tales viros infringenda[m]" type="straight"/>
+        <underline language="LA" method="pen" text="vide[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="vt omni errore sublato, rem planè quae venit in iudicium videre possitis" type="straight"/>
+        <underline language="LA" method="pen" text="si sceleratos ciues interfici nefas esset" type="straight"/>
+        <underline language="LA" method="pen" text="fictis fabulis doctissimi homines memoriae prodiderunt, eum qui patris vlciscendi causa matrem necauisset,              variatis hominum sententiis, non solum humana, sed etiam deae sapientissimae sententia liberatum" type="straight"/>
+        <underline language="LA" method="pen" text="putet, cum videat aliqua[n]do gladium nobis ad occidendum hominem ab ipsis porrigi legibus?" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="slash" place="right_margin"/>
+        <mark method="pen" name="slash" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">11</numeral>
+        <numeral place="right_margin">18</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+        <!-- FSF: there is also a little o in the right margin -->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.045r.tif" pagination="409" reader="Harvey"/>	<!-- ABO 49right -->
+	<annotation>
+		<!-- Marginalia -->		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						(( Extemporising.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						vt s[upr]a / 357.
+					</marginalia_text>
+					<internal_ref>
+						<target ref="FolgersHa2:Ha2.017r" text="357"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				Extemporising. As above, p. 357.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Neoterismus s[upr]a, i[nfr]a.
+					</marginalia_text>
+					<internal_ref>
+						<target ref="FolgersHa2:Ha2.049v" text="s[upr]a"/>
+						<target ref="FolgersHa2:Ha2.081r" text="i[nfr]a"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				Neoterism, [see] above and below.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						He, &amp; Tasso woold rime it with
+						the best in Florence.
+					</marginalia_text>
+					<person name="Torquato Tasso"/> 
+					<person name="Cesare Lilio"/>
+						<!-- Unclear on which Tasso. It could also be Tasso's father Bernardo who was a famed poet too. Neither of them spent much time in Florence. -->
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Minus dimidio, plus toto. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				( Less with the half, more with the whole. )
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( He catechise him in his dutie.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						s[upr]a /
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				[See] above.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						good in the posteriorums.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						) industria agillimus: experimentis validissimus:
+						omni vigore exertissimus: vt iudicio solidus, =
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						= et decisione profundus; ità praxi absolutus, et expeditione incomparabilis. 
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The most energetic in activity, the most powerful in experiences,
+				the most ambitious with all liveliness, as firm in judgment, and profound 
+				in decision as he is perfect in his praxis and incomparable in his expedition.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Hab, or nab.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Bonis auibus: aut malis piscibus.
+					</marginalia_text>
+					<X-ref book_title="Colloquia familiaria" language="LA" person="Erasmus" text="Fiat bonis avisbus. Imo malis piscibut fiet"/>
+				</position>
+			</language>
+			<translation>
+				"Hab, or nab. Under a good sign, or with bad fish." 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Multa dicuntur: pauca fiunt. Magnus strepitus: parvus effectus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Many things are said, few are done. Lots of noise, little activity.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="motteggiando alla Napoletana" type="straight"/>
+		<underline language="IT" method="pen" text="un suo compagno" type="straight"/>
+		<underline language="IT" method="pen" text="supplisci cancelliere" type="straight"/>
+		<underline language="IT" method="pen" text="Fabritio Castiglione" type="straight"/>
+		<underline language="IT" method="pen" text="non meno studioso delle buone lettere" type="straight"/>
+		<underline language="IT" method="pen" text="prode nell'armi" type="straight"/>
+		<underline language="IT" method="pen" text="uoleua montare" type="straight"/>
+		<underline language="IT" method="pen" text="cauallo non istette fermo" type="straight"/>
+		<underline language="IT" method="pen" text="Donna di poco" type="straight"/>
+		<underline language="IT" method="pen" text="prodiga, come" type="straight"/>
+		<underline language="IT" method="pen" text="della posteriora" type="straight"/>
+		<underline language="IT" method="pen" text="o pouero" type="straight"/>
+		<underline language="IT" method="pen" text="cauallo non aspetta si bene in groppa" type="straight"/>
+		<underline language="IT" method="pen" text="come V. S." type="straight"/>
+		<underline language="IT" method="pen" text="a impiccare un Giudeo" type="straight"/>
+		<underline language="IT" method="pen" text="certi luoghi asprissimi" type="straight"/>
+		<underline language="IT" method="pen" text="co[n]fortandolo" type="straight"/>
+		<underline language="IT" method="pen" text="o beato a te" type="straight"/>
+		<underline language="IT" method="pen" text="nel seno d'Abra[m]" type="straight"/>
+		<underline language="IT" method="pen" text="allegrezze, in tanti" type="straight"/>
+		<underline language="IT" method="pen" text="canti" type="straight"/>
+		<underline language="IT" method="pen" text="la più superba cena" type="straight"/>
+		<underline language="IT" method="pen" text="da ambe due i lati" type="straight"/>
+		<underline language="IT" method="pen" text="due altissime" type="straight"/>
+		<underline language="IT" method="pen" text="ire due persone" type="straight"/>
+		<underline language="IT" method="pen" text="quel meschino" type="straight"/>
+		<underline language="IT" method="pen" text="tanta seccaggine, uenne" type="straight"/>
+		<underline language="IT" method="pen" text="sospignendolo con la maggior" type="straight"/>
+		<underline language="IT" method="pen" text="fece ruinar' giu" type="straight"/>
+		<underline language="IT" method="pen" text="uà inna[n]zi" type="straight"/>
+		<underline language="IT" method="pen" text="risciacqua i bicchieri" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="perche questo cauallo non aspetta si bene in groppa" type="straight"/>
+		<underline language="IT" method="chalk" text="sarai nel seno d'Abra[m]" type="straight"/>
+		<underline language="IT" method="chalk" text="suoni, &amp; canti" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="head"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- sup -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ar -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- della po -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- aspris -->
+		<mark method="pen" name="straight_quotation_mark" place="right_margin"/> <!-- Abra[m] -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- trat -->
+		
+	    	<!-- Left margin -->
+	    	<mark language="LA" method="pen" name="bracket" place="left_margin" text="&amp; con maniera Signorile motteggiando alla Napoletana, riuoltosi a un suo compagno si risolse con dire: supplisci cancelliere."/>
+		<mark language="IT" method="pen" name="quotation_mark" place="left_margin" text="steriora"/> 
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- le rispose ... me V.S. -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- hauesse ... sciacqua -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark method="pen" name="dot" place="intext"/> <!-- tana, riuoltosi -->
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- tana, rivoltosi.-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="a un suo compagno"/>
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- cancelliere -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="lettere"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- nell'ar -->
+	    <mark method="pen" name="dot" place="intext"/> <!-- mi, essendo  -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark method="pen" name="dot" place="intext"/> <!-- finestra, incomincio -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="o pouero"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- in groppa -->
+		<mark method="pen" name="dot" place="intext"/> <!-- uita, & -->
+		<mark method="pen" name="dot" place="intext"/> <!-- giu, dicendogli -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="uà inna[n]zi"/>
+		<mark method="pen" name="straight_quotation_mark" place="intext"/> <!-- sciacqua --> 
+		
+		<!-- Errata -->
+		<errata amendedtext="vedendolo" copytext="vendendolo" language="IT"/>
+    </annotation>
+</transcription>

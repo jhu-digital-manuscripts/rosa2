@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.041r.tif" pagination="401" reader="Harvey"/>	<!-- ABO 45right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						eleganter.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Elegantly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Idem Semper omnium alacerrimus: agillimus:
+					</marginalia_text>
+					<person name="Eutrapelus"/> <!-- "Idem" likely refers back to Eutrapelus. -->
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						in dictis, factisq[ue] eminentissimus. 
+						Vir in omni Seria industria incomparabilis.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The same man is always the quickest of all, the most agile, and the most eminent in words and deeds.
+				A man imcomparable in every serious enterprise.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						In maxima qua[e]q[ue] operando, aut negociando, nihil
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						tam potens, aut velox.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				And in working or negotiating the greatest things, nothing is as powerful or as swift.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Ætherea[e] dia[e]ta[e], entelechia[e], multiplicationis semper
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						memor: omniu[m]q[ue] pra[e]stantissima[e]
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Euschemosynes. Singula facilè consumatissima.
+						Eutrapelus in flore. Nunq[uam] deficiens ullo modo.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+					<emphasis method="pen" text="Eutrapelus in flore." type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Always mindful of a lofty way of living, of actualization, of multiplying, and of refinement, which most surpasses everything else.
+				Singular matters which are easily the most consummate. Eutrapelus in bloom. Never faltering in any way.
+			</translation>
+		</marginalia>
+		
+	
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Sola curat selecta: et ad suum ipsius Scopum pra[e]valida.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				He cares only for select matters, and those most effective in reaching his goal.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="mio sole m'arde" type="straight"/>
+		<underline language="IT" method="pen" text="come e' suole" type="straight"/>
+		<underline language="IT" method="pen" text="e 'l cappello" type="straight"/>
+		<underline language="IT" method="pen" text="fà ombra" type="straight"/>
+		<underline language="IT" method="pen" text="portar' le pianelle alte due buoni palmi" type="straight"/>
+		<underline language="IT" method="pen" text="il marito, quantunque" type="straight"/>
+		<underline language="IT" method="pen" text="insieme cinque anni, se n'era mai potuto auuedere" type="straight"/>
+		<underline language="IT" method="pen" text="una cameriera, laquale" type="straight"/>
+		<underline language="IT" method="pen" text="che si metteua a letto" type="straight"/>
+		<underline language="IT" method="pen" text="con tanta destrezza, che" type="straight"/>
+		<underline language="IT" method="pen" text="gentildonna a scherzar' col marito" type="straight"/>
+		<underline language="IT" method="pen" text="bene scherzato" type="straight"/>
+		<underline language="IT" method="pen" text="entrambi addormentati" type="straight"/>
+		<underline language="IT" method="pen" text="ricordando la cameriera" type="straight"/>
+		<underline language="IT" method="pen" text="caddero le pianelle di piedi" type="straight"/>
+		<underline language="IT" method="pen" text="figliuolo in" type="straight"/>
+		<underline language="IT" method="pen" text="mira" type="straight"/>
+		<underline language="IT" method="pen" text="mira" type="straight"/>
+		<underline language="IT" method="pen" text="Signora matre" type="straight"/>
+		<underline language="IT" method="pen" text="lasciata la metà delle gambe in terra" type="straight"/>
+		<underline language="IT" method="pen" text="certi studenti" type="straight"/>
+		<underline language="IT" method="pen" text="staua orinando" type="straight"/>
+		<underline language="IT" method="pen" text="posero a motteggiarlo" type="straight"/>
+		<underline language="IT" method="pen" text="bisogno di coltello" type="straight"/>
+		<underline language="IT" method="pen" text="come taglia egli bene" type="straight"/>
+		<underline language="IT" method="pen" text="Sguainò" type="straight"/>
+		<underline language="IT" method="pen" text="leggiadramente una correggia" type="straight"/>
+		<underline language="IT" method="pen" text="pelate dunque" type="straight"/>
+		<underline language="IT" method="pen" text="alla forca" type="straight"/>
+		<underline language="IT" method="pen" text="gettar giu d'una altissima torre" type="straight"/>
+				
+				
+		<underline language="IT" method="chalk" text="il mio sole m'arde" type="straight"/>
+		<underline language="IT" method="chalk" text="portar' le pianelle" type="straight"/>
+		<underline language="IT" method="chalk" text="mira, Signor padre, che la Signora" type="straight"/>
+		<underline language="IT" method="chalk" text="la metà dlle gambe in terra" type="straight"/>
+			
+			
+		<!-- Symbols -->
+		<symbol name="Sun" place="head"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- co -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- mette -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- sta -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ri -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- be -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- pri -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- misfat -->
+				
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="bracket" place="left_margin"/> <!-- io ... me --> 
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- cendo ... ha -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark method="pen" name="comma" place="intext"/> <!-- male percioche --> 
+		<mark method="pen" name="plus_sign" place="head"/> <!-- m'arde -->
+	    	<mark method="pen" name="dot" place="intext"/> <!-- suole, e 'l -->
+		<mark language="IT" method="pen" name="straight_quotation_mark" place="intext" text="pianelle"/> 
+		<mark method="pen" name="comma" place="intext"/> <!-- leuaua glielie -->
+		<mark method="pen" name="dot" place="intext"/> <!-- marito, & -->
+		<mark method="pen" name="comma" place="intext"/> <!-- scherzato essendo-->
+		<mark method="pen" name="dot" place="intext"/> <!-- addormentati, & -->
+		<mark method="pen" name="comma" place="intext"/> <!-- suo alla -->
+		<mark method="pen" name="dot" place="intext"/> <!-- cendo, mira -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!--Signora matre --> 
+		<mark method="pen" name="dot" place="intext"/> <!-- orinando, & -->
+		<mark method="pen" name="dot" place="intext"/> <!-- forca, supplico' -->
+		
+		<!-- Numerals -->
+		<numeral place="head">7.</numeral>
+		
+		<!-- Errata -->
+		<errata amendedtext="laquale " copytext="laquale:" language="IT"/>
+
+    </annotation>
+</transcription>

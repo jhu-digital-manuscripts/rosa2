@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.194r.tif" pagination="387" reader="John Dee" signature="B 2"/> 
+    <annotation>
+        
+        <marginalia anchor_text="similtudo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Similtudo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Simile.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Comparatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Comparatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Comparison.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Translatio, cùm dico de homine, leo est. Huius uis omnis quadruplex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Translationis vis quadruplex</marginalia_text>
+                </position>
+            </language>
+            <translation>Four forms of the strength of metaphors.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Duplicatur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Duplicatur</marginalia_text>
+                </position>
+            </language>
+            <translation>Doubled.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="humiles translationes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>humiles tra[n]slationes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Some metaphors are low.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="In totum autem metaphora breuior est, quàm similitudo, eo'q[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="latus ille" type="straight"/>
+        <underline language="LA" method="pen" text="ut à rationali ad" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ide[m] de irrationalibus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; à toto, &amp; à partibus" type="straight"/>
+        <underline language="LA" method="pen" text="Vt modicus autem atq[ue] opportunus eius usus illustrat orationem: ita frequens &amp; obscurat, &amp; taedio complet:              continuus uero in allegoriam &amp; aenigmata exit. Sunt" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">.1.</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">4</numeral>
+        
+    </annotation>
+</transcription>

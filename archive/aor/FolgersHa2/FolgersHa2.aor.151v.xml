@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.151v.tif" pagination="126" reader="Harvey" signature="[H7v]"/>	<!-- ABO 156left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Omnium peritissimus: singulorum paratissimus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The most expert of all men; the most prepared of singular men.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Mnemosynon Eudromi.)
+					</marginalia_text>
+					<person name="Eudromus"/>
+				</position>
+			</language>
+			<translation>
+				The reminder of Eudromus.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Igneus vigor, et propria tui vnius dexteritas.
+						Sed ita
+						tamen, vt facilè omniu[m] diligentissim[im]a.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						diligentia, quoda[m] modo negligens videatur.
+						Id enim et magis
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Aulicu[m] est; et tua[e] vnius facilitati accomodatiss[im]u[m].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A fiery vigor and a proper skilfulness are yours alone;
+				however, in a way that the most diligent of all things are [done] easily.
+				Diligence, let it seem like negligence in some way.
+				For it also more courtly, and it is most suitable to your disposition alone.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Viuitur Ingenio.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				One lives by one's genius.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( famoso Auuocato.	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A famous lawyer.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						In negociando tam promptissimus,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						quàm subtilissimus.
+						Eudromi singulare elogium.
+					</marginalia_text>
+					<person name="Eudromus"/>
+				</position>
+			</language>
+			<translation>
+				In doing business: as most prompt as he is most subtle.
+				The singular maxim of Eudromus.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						pragmatico argutiss[im]o.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A most clever pragmatic man.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Diuina in dictis, factisq[ue] faciltas.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A divine ability in words and deeds.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Ipsa[e] artes ad ungem maximéq[ue] ipsa[e] artificiosa[e]
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						πραγματεῖαι.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The arts themselves, learned by heart, especially the artful practical matters themselves.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Decori arte omnes excellit Eutrapelus. 
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						θεοειδὴς.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Spiritus, instar
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						perfectionu[m] omnium.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Eutrapelus excels all men in decorous art. Godlike.				
+				His spirit, an example for all other perfections.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="mescolatosi con l'altra" type="straight"/>
+		<underline language="IT" method="pen" text="piu tosto morire" type="straight"/>
+		<underline language="IT" method="pen" text="al distruttore della sua patria" type="straight"/>
+		<underline language="IT" method="pen" text="gran Capitano" type="straight"/>
+		<underline language="IT" method="pen" text="vincere i nemici" type="straight"/>
+		<underline language="IT" method="pen" text="Antigono" type="straight"/>
+		<underline language="IT" method="pen" text="non fuggire" type="straight"/>
+		<underline language="IT" method="pen" text="ma tendere" type="straight"/>
+		<underline language="IT" method="pen" text="dou'era il profitto" type="straight"/>
+		<underline language="IT" method="pen" text="che modo" type="straight"/>
+		<underline language="IT" method="pen" text="con la forza" type="straight"/>
+		<underline language="IT" method="pen" text="con l'ingegno" type="straight"/>
+		<underline language="IT" method="pen" text="del Leone" type="straight"/>
+		<underline language="IT" method="pen" text="della Volpe" type="straight"/>
+		<underline language="IT" method="pen" text="à Lyssandro Capitano" type="straight"/>
+		<underline language="IT" method="pen" text="rimouere i cattiui istrumenti" type="straight"/>
+		<underline language="IT" method="pen" text="dalla giustitia" type="straight"/>
+		<underline language="IT" method="pen" text="Alfonso d'Aragona" type="straight"/>
+		<underline language="IT" method="pen" text="vn medico Francese" type="straight"/>
+		<underline language="IT" method="pen" text="soffista, molto acuto" type="straight"/>
+		<underline language="IT" method="pen" text="ingegno auarissimo" type="straight"/>
+		<underline language="IT" method="pen" text="dato auuocare" type="straight"/>
+		<underline language="IT" method="pen" text="suoi punti soffistici tutta" type="straight"/>
+		<underline language="IT" method="pen" text="intricaua" type="straight"/>
+		<underline language="IT" method="pen" text="l'auuocato Franzese intrapendesse" type="straight"/>
+		<underline language="IT" method="pen" text="tenessero per false, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="Le leggi &amp; per" type="straight"/>
+		<underline language="IT" method="pen" text="ignoranza" type="straight"/>
+		<underline language="IT" method="pen" text="per tristitia" type="straight"/>
+		<underline language="IT" method="pen" text="esser" type="straight"/>
+		<underline language="IT" method="pen" text="corrotte da' giudici" type="straight"/>
+		<underline language="IT" method="pen" text="ALESSANDRO Alessandrini" type="straight"/>
+		<underline language="IT" method="pen" text="dottore eccellentissimo" type="straight"/>
+		
+		<symbol name="JC" place="head"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		<symbol name="SS" place="left_margin"/>
+		<symbol name="JC" place="left_margin"/>
+		
+		<symbol name="Sun" place="intext"/>
+		<symbol name="JC" place="intext"/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="left_margin" text="al distruttore della sua patria"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- mori -->
+		<mark method="pen" name="dot" place="right_margin"/> <!-- se -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- do -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Lyssan -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- co -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- in -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- tut -->
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- fuga, se -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="non fuggire"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="tendere"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="dou'era il profitto"/>
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- sua. Il -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="forza"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="l'ingegno"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="l'ingegno"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="della Volpe"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- detto a -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- red chalk, starts at 'Lacedemoni' and extends down through eleven further lines of text. -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- red chalk, starts at 'vltimo' and extends down through twelve further lines of text. -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="dalla giustitia"/>
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- Francese, soffista -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="molto acuto"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="dato auuocare"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="suoi punti soffistici"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="intricaua"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- intricaua, fece -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="l'auuocato"/>
+		<mark method="pen" name="plus_sign" place="intext"/>
+		<mark method="pen" name="quotation_mark" place="intext"/>
+
+    </annotation>
+</transcription>

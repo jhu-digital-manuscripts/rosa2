@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.415r.tif" pagination="813" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        Popilius, Legatus serius, et efficax: tanq[uam] auctoritatem habens, etiam in Reges.
+                    </marginalia_text>
+                <person name="Gaius Popillius Laenas"/>
+                </position>
+            </language>
+            <translation>
+                Popilius, an earnest and effective ambassador, on the grounds of having authority also for kings.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        One of doctor Dales great Examples: when he was Lord Ambassadour in Fraunce, &amp; in Netherland.
+                    </marginalia_text>
+                <person name="Valentine Dale"/>
+                <location name="France"/>
+                <location name="Netherlands"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Doctor Dale, Lord Ambassadour in Fraunce, &amp; the Lowe Countries, was as resolute after his fashion, as Popilius himself: and stood
+                        upon as peremptorie termes with the French Kinge, the duke of Parma, &amp; other mightie Princes, as the stowtest Romane euer did in the 
+                        like cases. When the Earle of Darbie, &amp; other Ambassadours respectiuely quailed, he was allwaies in harte, absolute, &amp; inuincible. 
+                        The Prince of Parma was neuer so berded to his face, bie anie Ambassadour.
+                    </marginalia_text>
+                    <person name="Valentine Dale"/>
+                    <person name="Gaius Popillius Laenas"/> 
+                    <person name="Henry III of France"/>
+                    <person name="Alexander Farnese"/>
+                    <person name="Henry Stanley"/>
+                    <location name="France"/>
+                    <location name="Netherlands"/> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="caetera asperitate animi" type="straight"/>
+        <underline language="LA" method="pen" text="uirga qua[m] " type="straight"/>
+        <underline language="LA" method="pen" text="circumscripsit regem: ac Prius" type="straight"/>
+        <underline language="LA" method="pen" text="hoc circulo excedas" type="straight"/>
+        <underline language="LA" method="pen" text="redde" type="straight"/>
+        <underline language="LA" method="pen" text="Obstupefactus ta[m] uiolento imperio, parumper" type="straight"/>
+        <underline language="LA" method="pen" text="quod censet senatus" type="straight"/>
+        <underline language="LA" method="pen" text="Popilius dextra[m] regi tanquam" type="straight"/>
+        <underline language="LA" method="pen" text="Et Masgabae regis Masanissae filio Puteolis nauem egresso" type="straight"/>
+        <underline language="LA" method="pen" text="cum publico sumptu perduceret" type="straight"/>
+        <underline language="LA" method="pen" text="Aduenienti" type="straight"/>
+        <underline language="LA" method="pen" text="extemplò senatus datus est." type="straight"/>
+        <underline language="LA" method="pen" text="quae rebus grata erant, gratiora uerbis faceret." type="straight"/>
+        <underline language="LA" method="pen" text="quadriennio pater suus in Macedoniam" type="straight"/>
+        <underline language="LA" method="pen" text="duas res ei rubori fuisse:" type="straight"/>
+        <underline language="LA" method="pen" text="rogasset cum per legatos" type="straight"/>
+        <underline language="LA" method="pen" text="non impetrasset" type="straight"/>
+        <underline language="LA" method="pen" text="percuniam ei pro frumento" type="straight"/>
+        <underline language="LA" method="pen" text="regnum à populo Romano partum auctumq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="usu regni contentum" type="straight"/>
+        <underline language="LA" method="pen" text="dominium &amp; ius eorum" type="straight"/>
+        <underline language="LA" method="pen" text="Sumere itaque" type="straight"/>
+        <underline language="LA" method="pen" text="non se rogare" type="straight"/>
+        <underline language="LA" method="pen" text="neque emere" type="straight"/>
+        <underline language="LA" method="pen" text="Masanissae satis esse" type="straight"/>
+        <underline language="LA" method="pen" text="populo" type="straight"/>
+        <underline language="LA" method="pen" text="Romano superestet" type="straight"/>
+        <underline language="LA" method="pen" text="patri" type="straight"/>
+        <underline language="LA" method="pen" text="Romam uenire" type="straight"/>
+        
+        <symbol language="LA" name="JC" place="right_margin" text="regnum à populo Romano partum auctumq[ue]"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="quae rebus grata erant, gratiora uerbis faceret."/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Macedo -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- fru -->
+        
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- senatus. Tum-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="usu regni contentum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="dominium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.227v.tif" pagination="[227v]" reader="John Dee" signature="[Ffiii[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Pocorosa" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pocorosa
+                    </marginalia_text>
+                    <person name="Pocorosa"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Marmoro" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Marmoro
+                    </marginalia_text>
+                    <location name="Marmoro"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        
+        <underline language="IT" method="pen" text="giungemmo a Belporto" type="straight"/>
+        <underline language="IT" method="pen" text="de Retrete" type="straight"/>
+        <underline language="IT" method="pen" text="le Barbe" type="straight"/>
+        <underline language="IT" method="pen" text="Pocorosa" type="straight"/>
+        <underline language="IT" method="pen" text="Marmoro" type="straight"/>
+        
+    </annotation>
+</transcription>

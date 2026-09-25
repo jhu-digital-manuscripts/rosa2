@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.287r.tif" pagination="553" reader="John Dee" signature="[mmm.v.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="mediocritate ingenii" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>mediocritas ingenij</marginalia_text>
+                </position>
+            </language>
+            <translation>Mediocrity of talent.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quid enim plenius, quid vberius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>plenius vberius</marginalia_text>
+                </position>
+            </language>
+            <translation>Richer. More rewarding.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aetatis flore" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>a[e]tatis flos.</marginalia_text>
+                </position>
+            </language>
+            <translation>The flower of youth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="retexo oratione[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>beneficiu[m] latronum</marginalia_text>
+                </position>
+            </language>
+            <translation>The kindness of bandits.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="mediocritate ingenii" type="straight"/>
+        <underline language="LA" method="pen" text="P.C. beneficiu[m] latronu[m], nisi vt co[m]memorare possint, his se vita[m] dedisse quibus no[n] ademerint" type="straight"/>
+        <underline language="LA" method="pen" text="quòd te abstinueris à" type="straight"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">11</numeral>
+        <numeral place="right_margin">7</numeral>
+        <numeral place="right_margin">7</numeral>
+        <numeral place="right_margin">7</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">7</numeral>
+        <numeral place="right_margin">7</numeral>
+        <numeral place="right_margin">7</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.105v.tif" reader="Harvey" signature="[Nii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>s[upr]a, i[nfr]a/</marginalia_text>
+                    <internal_ref text="s[upr]a">
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0032" text="[Av[r]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0081" text="[Dv[v]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0093" text="[Eiii[v]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0104" text="[F[ir]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0109" text="[Fiii[v]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0112" text="[Fv[r]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0148" text="[Hvii[r]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0150" text="[Hviii[r]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0154" text="[Iii[r]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0217" text="[Ni[v]]"/>
+                    </internal_ref>
+                    <internal_ref text="i[nfr]a">
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0221" text="[Niii[v]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0226" text="[Nvi[r]]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] above, below.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>s[upr]a/</marginalia_text>
+                </position>
+            </language>
+            <translation>[See] above.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="kepte theyr grounde; he strengthened his men" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Ordo, et cohortatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Order and encouragement.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="horsmen to driue al the beastes" type="straight"/>
+        <underline language="EN" method="pen" text="the wagons after the" type="straight"/>
+        <underline language="EN" method="pen" text="duste" type="straight"/>
+        <underline language="EN" method="pen" text="reysed vppe by the beastes, mustred as" type="straight"/>
+        <underline language="EN" method="pen" text="bashed his ennemies" type="straight"/>
+        <underline language="EN" method="pen" text="some hope of helthe" type="straight"/>
+        <underline language="EN" method="pen" text="they kepte theyr grounde" type="straight"/>
+        <underline language="EN" method="pen" text="they fled or reculed backe" type="straight"/>
+        <underline language="EN" method="pen" text="strengthened his men," type="straight"/>
+        <underline language="EN" method="pen" text="nayue in apparell lyke his ennemyes" type="straight"/>
+        <underline language="EN" method="pen" text="whom he suspected" type="straight"/>
+        <underline language="EN" method="pen" text="was receiued" type="straight"/>
+        <underline language="EN" method="pen" text="with highe reuerence" type="straight"/>
+        <underline language="EN" method="pen" text="falshode" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="reysed vppe by the beastes, mustred as"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="theyr grounde"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="apparell"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="his ennemyes"/>
+        <mark method="pen" name="dot" place="intext"/> <!--ennemyes, and-->
+        
+    </annotation>
+</transcription>

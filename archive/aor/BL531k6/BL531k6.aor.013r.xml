@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL531k6.013r.tif" pagination="[013r]" reader="John Dee" signature="D"/> 
+    <annotation>
+        
+        <marginalia anchor_text="quasi per omnes dies vnius anni sit eadem conuersio, nec mutetur in tropicis &amp; intermedijs locis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aliquo modo" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aliq[u]⁰ modo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>In another way.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aequalem annum sidereum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Æqualis Annus sydereus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>An equal heavenly year.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="per omnes dies vnius anni sit eadem" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Per omnes Dies anni non est eadem reuolutionis quantitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>During all days of the year it is not the same amount of rotations.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="est, tot varietates annuae inaequalitatis ad certam analogiam referre" type="straight"/>
+        <underline language="LA" method="pen" text="mutatione apogei &amp; eccentrotetis" type="straight"/>
+        <underline language="LA" method="pen" text="vt aliquo" type="double"/>
+        <underline language="LA" method="pen" text="collationem magnitudinis anni nostro tempore inuentam, ad eam, quae vel Ptolemaei, vel aliorum illustrium artificum" type="straight"/>
+        <underline language="LA" method="pen" text="ab aequinoctijs" type="straight"/>
+        <underline language="LA" method="pen" text="differentiam annuae praeceßionis aequinoctioru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="motum Solis horariu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Nam apparens motus Sol. horarius circa aequinoctia nihil" type="straight"/>
+        <underline language="LA" method="pen" text="parum ab aequali differt" type="straight"/>
+        <underline language="LA" method="pen" text="annus tropicus apparens aequalem annum sidereum" type="straight"/>
+        <underline language="LA" method="pen" text="praecedit" type="double"/>
+        <underline language="LA" method="pen" text="quasi per omnes dies vnius anni sit eadem conuersio, nec mutetur in tropicis &amp; intermedijs locis" type="straight"/>
+        <underline language="LA" method="pen" text="temporis variari, sed etiam in diuersis Anomaliae Solaris partibus vna eademq[ue] aetate sibijpsi dißimilem existere" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="quasi per omnes dies vnius anni sit eadem conuersio, nec mutetur in tropicis &amp; intermedijs locis"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="scribble" place="tail" text="anni magnitudo"/>
+        <mark method="pen" name="tripunctus" place="tail"/>
+        
+    </annotation>
+</transcription>

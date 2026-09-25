@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.299v.tif" pagination="578" reader="John Dee" signature="[ooo.i.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="nudiustertiusdecimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>nudiustertiusdecimus</marginalia_text>
+                </position>
+            </language>
+            <translation>Twelve days ago.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="nudiustertiusdecimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cotyla</marginalia_text>
+                    <person name="Cotyla"/>
+                </position>
+            </language>
+            <translation>Cotyla.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="cognatio vlla proprior esse, quàm partiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cognatio patri[a]e</marginalia_text>
+                </position>
+            </language>
+            <translation>Affinity to the fatherland.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="siccare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>siccare</marginalia_text>
+                </position>
+            </language>
+            <translation>To dry.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="iudiciu[m] nudiustertiusdecimus" type="straight"/>
+        <underline language="LA" method="pen" text="primùm neruos belli pecunia[m] infinitam, qua nu[n]c" type="straight"/>
+        <underline language="LA" method="pen" text="Meus cognatus. an potest cognatio vlla propior esse, quàm patriae, in qua etia[m]" type="straight"/>
+        
+        <mark language="LA" method="pen" name="tripunctus_with_tail" place="left_margin" text="Cotyla"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">4</numeral>
+        
+        <drawing anchor_text="Cognatio patri[a]e" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+       
+    </annotation>
+</transcription>

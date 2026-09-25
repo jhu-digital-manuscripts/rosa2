@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.059v.tif" pagination="[59[v]]" reader="John Dee" signature="[Hiij[v]]"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="Amache" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Theyr beds, called Amache</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Pernague" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pernague</marginalia_text>  <!-- DO: Can't find a translation for this --> <!-- MB. I think this is a Guernsey French term to refer to a kind of women's clothing/leggings. See https://books.google.co.uk/books?id=nJo-AAAAYAAJ&pg=PA381&dq=Pernague&hl=en&sa=X&redir_esc=y#v=onepage&q=Pernague&f=false
+                    -->
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <marginalia anchor_text="Baueche, la quale ancor non si sa di certo per quale intendessero" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Baueche. not yet truely known</marginalia_text>
+                    <location name="Hispaniola"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Mari" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mari fl[umen]</marginalia_text>  
+                </position>
+            </language>
+            <translation>Mari river.</translation>  <!-- DO: I can't identify this river so not sure of translation -->
+        </marginalia>
+        
+        <marginalia anchor_text="prese XII persone" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note. 12 Indians taken</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Bochio, che hora è l'Isola Spagnuola" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Bochio Baueche} now called Spagniola. the Iland.</marginalia_text>
+                    <location name="Hispaniola"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="serue in vestirsene" type="straight"/>
+        <underline language="IT" method="pen" text="te in far rete pe' loro letti" type="straight"/>
+        <underline language="IT" method="pen" text="il Leste" type="straight"/>
+        <underline language="IT" method="pen" text="Bochio" type="straight"/>
+        <underline language="IT" method="pen" text="l'Isola Spagnuola" type="straight"/>
+        <underline language="IT" method="pen" text="Baueche" type="straight"/>
+        <underline language="IT" method="pen" text="non si sa" type="double"/>
+        <underline language="IT" method="pen" text="quale intendessero" type="double"/>
+        <underline language="IT" method="pen" text="Isola, hauendo" type="straight"/>
+        <underline language="IT" method="pen" text="di condurre d'ogni parte alcuno" type="straight"/>
+        <underline language="IT" method="pen" text="rendesse conto" type="double"/>
+        <underline language="IT" method="pen" text="fur prese XII persone" type="straight"/>
+        <underline language="IT" method="pen" text="si quietamente, &amp; senza" type="double"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- lor dette -->
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- dette Amache -->
+        
+        
+    </annotation>
+    
+</transcription>

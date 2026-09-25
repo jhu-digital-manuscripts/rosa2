@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.256r.tif" pagination="491" reader="John Dee" signature="[hhh.vi.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="assiduus vsus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Assiduus Vsus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Continued practice.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="parumper" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        parumper
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                For a short while.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Colonia Latina in primis firma &amp; illustri" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Colonia firma illustris
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A colony, powerful and distinguished.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="impreatorius ardor oculoru[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        imperatorius ardor oculor[um]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The commanding flash from his eyes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pericula ac tela subierunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        subire p[er]icula tela.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To brave dangers and weapons.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quòd assiduus vsus vni rei deditus, &amp; ingenium &amp; artem saepe vincit: quis" type="straight"/>
+        <underline language="LA" method="pen" text="Existat ergo ille vir parumper cogitatione vestra, quoniam re non potest: vt conspiciatis eum mentibus, quem oculis non potestis" type="straight"/>
+        <underline language="LA" method="pen" text="rudem exemplorum" type="straight"/>
+        <underline language="LA" method="pen" text="ille imperatorius ardor oculoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="immortalis" type="straight"/>
+        <underline language="LA" method="pen" text="qua pericula ac tela subierunt. Atque" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+        <drawing anchor_text="Asiduus Vsus" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+        
+    </annotation>
+</transcription>

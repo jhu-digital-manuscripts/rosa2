@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.021v.tif" pagination="[21v]" reader="John Dee" signature="[Cv[v]]"/>    
+    <annotation>
+        
+        <marginalia anchor_text="l'Isola delle Sette città" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>L'isola delle 7 Città</marginalia_text>
+                    <location name="Antillia"/>
+                </position>
+            </language>
+            <translation>The isle of Seven Cities.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Antila" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Antila.</marginalia_text>
+                    <location name="Antillia"/>  <!-- DO: Have tagged as Antillia but not sure if should be a different location -->
+                </position>
+            </language>
+        </marginalia>
+
+<marginalia anchor_text="l'anno 714" hand="Italian" method="pen">
+    <language ident="LA">
+        <position book_orientation="0" place="left_margin">
+            <marginalia_text>A[nn]o 714</marginalia_text>
+        </position>
+    </language>
+    <translation>The year 714.</translation>
+</marginalia>
+        
+       <marginalia anchor_text="Antilia" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="left_margin">
+                   <marginalia_text>Antilia</marginalia_text>
+                   <location name="Antillia"/>
+               </position>
+           </language>
+           <translation>Antillia.</translation>
+       </marginalia>
+        
+        <underline language="IT" method="pen" text="la quale" type="double"/>
+        <underline language="IT" method="pen" text="nome di Antila" type="straight"/>
+        <underline language="IT" method="pen" text="più di dugento leghe in circa verso" type="straight"/>
+        <underline language="IT" method="pen" text="alle Canarie" type="double"/>
+        <underline language="IT" method="pen" text="sia l'Isola delle Sette" type="double"/>
+        <underline language="IT" method="pen" text="714" type="double"/>
+        <underline language="IT" method="pen" text="che s'imbarcarono" type="straight"/>
+        <underline language="IT" method="pen" text="sette vesoui" type="double"/>
+        <underline language="IT" method="pen" text="gente, &amp; nauigli andarono a questa" type="straight"/>
+        <underline language="IT" method="pen" text="vna città" type="double"/>
+        <underline language="IT" method="pen" text="andati ad essa molti Portoghesi, li quali mai non seppero tornare" type="straight"/>
+        <underline language="IT" method="pen" text="dal porto di" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.187v.tif" pagination="374" reader="John Dee" signature="[A 3[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Ciceronis in Clodium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Milone.</marginalia_text>
+                    <book title="Pro Milone"/>
+                </position>
+            </language>
+            <translation>Pro Milone.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="βραχυλογία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>βραχυλογία</marginalia_text>
+                </position>
+            </language>
+            <translation>Brevity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sallustij" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Salustius.</marginalia_text>
+                    <person name="Sallust"/>
+                </position>
+            </language>
+            <translation>Sallust.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἔμφασις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἔμφασις</marginalia_text>
+                </position>
+            </language>
+            <translation>Significance.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Homerum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Homerus.</marginalia_text>
+                    <person name="Homer"/>
+                </position>
+            </language>
+            <translation>Homer.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vergilium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vergilius</marginalia_text>
+                    <person name="Virgil"/>
+                </position>
+            </language>
+            <translation>Virgil.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Ligario" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro ligario.</marginalia_text>
+                    <book title="Pro Ligario"/>
+                </position>
+            </language>
+            <translation>Pro Ligario.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀποσιώπησις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἀποσιώπησις</marginalia_text>
+                </position>
+            </language>
+            <translation>Aposiopesis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀφέλεια" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἀφέλεια</marginalia_text>
+                </position>
+            </language>
+            <translation>Simplicity.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="subiacet uirtus non solum aperte ponendi rem ante oculos, sed circuncise atq[ue] uelociter" type="straight"/>
+        <underline language="LA" method="pen" text="quàm quem" type="straight"/>
+        <underline language="LA" method="pen" text="Adeò similis est arti plerunq[ue] natura" type="straight"/>
+        <underline language="LA" method="pen" text="eloquentiae est, ea de quibus dicat, clare atque euidenter ostendere, sed sunt multi &amp; varij excolendae orationis modi. Nam " type="straight"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

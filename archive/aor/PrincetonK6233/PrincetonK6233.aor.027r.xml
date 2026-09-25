@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonK6233.027r.tif" pagination="21" reader="Harvey" signature="b3r"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Princeps. Lex Regia.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The sovereign. Royal law.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Forma itaq[ue] iuris est" type="straight"/>
+        <underline language="LA" method="pen" text="Princeps tame[n] legib[us]              solutus est" type="straight"/>
+        <underline language="LA" method="pen" text="Augusto primum" type="straight"/>
+        <underline language="LA" method="pen" text="est lex Regia" type="straight"/>
+        <underline language="LA" method="pen" text="formam iuris" type="straight"/>
+        <underline language="LA" method="pen" text="Ratio" type="straight"/>
+        <underline language="LA" method="pen" text="animam suam uiget" type="straight"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Au-gusto --> 
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- sit. Ad -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Augusto primum"/>
+        <mark method="pen" name="dash" place="intext"/> <!-- con-stituta -->
+        
+    </annotation>
+</transcription>

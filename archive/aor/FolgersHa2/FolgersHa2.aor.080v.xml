@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.080v.tif" reader="Harvey" signature="[*9v]"/>	<!-- ABO 85left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Questi punti, questi punti sempremai.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				These points, these points forever.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Malo dare diues, quàm mendicare pauper.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Malo ridere pauper, quàm plorare diues.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				I prefer to give riches as a rich man than beg for alms as a poor man.
+				I prefer to laugh as a poor man than weep as a rich man.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Homo simplex est, qui non statim audet
+						( seria, efficaciaq[ue] loqui
+						( in quouis publico, aut regio Concilio.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				A man is simple when he does not immediately dare to engage
+				in earnest endeavours and to utter effective discourses in whatever 
+				public or royal council.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Exquisita molesta, nisi expedita.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Exquisite things are troublesome, unless they are unencumbered.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Gallu[m] timent Leo, et Basiliscus.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The lion and the basilisk fear the rooster.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Semper ad rem aptissimè: ad punctum strictissimè.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Always most adapted to the thing at hand, always most directly to the point.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Quisq[ue] artifex in suo Hempispha[e]rio. In tota Spha[e]ra Polytechnus.
+						Vrso in suo Epicyclo.
+					</marginalia_text>
+					<person name="Urso of Salerno"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Whoever is in their own hemisphere is a master artist. Whoever is in the whole sphere is a polytechnus.
+				Urso in his epicycle.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Placent etiam epigrammata Martialias,
+						et Politiani; Mori, et Heuodi; propter argutias.
+					</marginalia_text>
+					<person name="Martial"/>
+					<person name="Angelo Poliziano"/>
+					<person name="Thomas More"/>
+					<person name="John Heywood"/>
+				</position>
+			</language>
+			<translation>
+				Due to their cleverness, I also like the epigrams of Martial and Poliziano, Moore and Heywood. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Ante omnia, apophthegmata Plutarchi, et Laertij ad vnguem: cum Gandini
+						Stratagematis: et technis Oeconomicis Aristotelis, etiam ad vnquem.
+					</marginalia_text>
+					<person name="Plutarch"/>
+					<person name="Diogenes Laertius"/>
+					<person name="Marcantonio Gandino"/>
+					<person name="Aristotle"/>
+					<book title="Stratagemata"/>
+					<book title="Economics"/>
+				</position>
+			</language>
+			<translation>
+				Before everything, learn the aphorisms of Plutarch and Laertius by heart, together with the strategems
+				of Gandinus and the Economic crafts of Aristotle, also by heart.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Peritissimi vita[e] ciuilis pragmatici, duas semper exercent internas Virtutes,
+						prudentiam, et fortitudinem: duas profitentur externas, temperantia, et iustitia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Pragmatic men most skilled in civil life always practice two internal virtues, prudence and strength. 
+				Two external virtues are always shown openly, temperance and justice.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="cose prohibite" type="straight"/>
+		<underline language="IT" method="pen" text="desiderio" type="straight"/>
+		<underline language="IT" method="pen" text="le pronte" type="straight"/>
+		<underline language="IT" method="pen" text="argute risposte" type="straight"/>
+		<underline language="IT" method="pen" text="medici" type="straight"/>
+		<underline language="IT" method="pen" text="delle donne" type="straight"/>
+		<underline language="IT" method="pen" text="la vanità" type="straight"/>
+		<underline language="IT" method="chalk" text="onde niuna vtilità" type="straight"/>
+		<underline language="IT" method="pen" text="Amore essere mostro" type="straight"/>
+		<underline language="IT" method="pen" text="chimera" type="straight"/>
+		<underline language="IT" method="pen" text="inganni d'alcune donne" type="straight"/>
+		<underline language="IT" method="pen" text="Arguta, &amp; piaceuole" type="straight"/>
+		<underline language="IT" method="pen" text="parlar troppo esser molto" type="straight"/>
+		<underline language="IT" method="pen" text="molesto à gli ascoltanti" type="straight"/>
+		<underline language="IT" method="pen" text="Tenacità de' Turchi" type="straight"/>
+		<underline language="IT" method="pen" text="Crudeltà certo arguta, ma" type="straight"/>
+		<underline language="IT" method="pen" text="L'ingratitudine portarne" type="straight"/>
+		<underline language="IT" method="pen" text="contrarie, non" type="straight"/>
+		<underline language="IT" method="pen" text="insieme conuenire" type="straight"/>
+		<underline language="IT" method="pen" text="costanti" type="straight"/>
+		<underline language="IT" method="pen" text="dispregiar nobilmente" type="straight"/>
+		<underline language="IT" method="pen" text="la morte" type="straight"/>
+		<underline language="IT" method="pen" text="prosperità" type="straight"/>
+		<underline language="IT" method="pen" text="auuersità" type="straight"/>
+		<underline language="IT" method="pen" text="mutar communemente" type="straight"/>
+		<underline language="IT" method="pen" text="natura de gli huomini" type="straight"/>
+		<underline language="IT" method="pen" text="Al bugiardo" type="straight"/>
+		<underline language="IT" method="pen" text="credersi il vero" type="straight"/>
+		<underline language="IT" method="pen" text="presentissime argutie" type="straight"/>
+		<underline language="IT" method="pen" text="consuetudini de' Principi" type="straight"/>
+		<underline language="IT" method="pen" text="il migliore" type="straight"/>
+		<underline language="IT" method="pen" text="tutti gli animali" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="SS" place="intext"/>
+		
+		<mark method="pen" name="plus_sign" place="left_margin"/> <!--vani-->
+		<mark language="IT" method="pen" name="plus_sign" place="left_margin" text="la morte"/>
+		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- Con--> 
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--amplitu-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--con-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--diuer-->
+		
+		<mark method="pen" name="comma" place="intext"/> <!-- ingegno co[n] le pronte -->
+		<mark method="pen" name="quotation_mark" place="intext"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="parlar troppo esser molto"/>
+		
+    </annotation>
+</transcription>

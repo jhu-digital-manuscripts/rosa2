@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.294v.tif" pagination="572" reader="Harvey" signature="[bbb4 v]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        Contrà fa[e]minas.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Against women.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> 
+                        i[nfr]a, 600.
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000622" text="600"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                [See] below, 600.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="legatu[m] Cyneam Pyrrhus" type="straight"/>
+        <underline language="LA" method="pen" text="non uirorum modò" type="straight"/>
+        <underline language="LA" method="pen" text="mulierum animos donis tentauit" type="straight"/>
+        <underline language="LA" method="pen" text="tamen nulla accepit" type="straight"/>
+        <underline language="LA" method="pen" text="lege[m] Liciniam" type="straight"/>
+        <underline language="LA" method="pen" text="legem Cincia[m] de" type="straight"/>
+        <underline language="LA" method="pen" text="nunc cum illis donis Cyneas urbe[m] circumiret" type="straight"/>
+        <underline language="LA" method="pen" text="stantes in publico" type="straight"/>
+        <underline language="LA" method="pen" text="inuenisset quae acciperent" type="straight"/>
+        <underline language="LA" method="pen" text="Pessimus quidem pudor est uel parsimoni[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="uel paupertatis" type="straight"/>
+        <underline language="LA" method="pen" text="lex uobis demit, cum id quod habere non licet, non habetis" type="straight"/>
+        <underline language="LA" method="pen" text="Ego nullo modo abrogan" type="straight"/>
+        <underline language="LA" method="pen" text="Valerius pro rogatione" type="straight"/>
+        <underline language="LA" method="pen" text="uir grauissimus COS. M" type="straight"/>
+        <underline language="LA" method="pen" text="non autoritate" type="straight"/>
+        <underline language="LA" method="pen" text="oratione etiam longa &amp; accurata insectatus" type="straight"/>
+        <underline language="LA" method="pen" text="uerba in castigandis" type="straight"/>
+        <underline language="LA" method="pen" text="rogatione nostra dissuadenda" type="straight"/>
+        <underline language="LA" method="pen" text="rem defendam" type="straight"/>
+        <underline language="LA" method="pen" text="non nos" type="straight"/>
+        <underline language="LA" method="pen" text="temporibus duris" type="straight"/>
+        <underline language="LA" method="pen" text="Verba magna" type="straight"/>
+        <underline language="LA" method="pen" text="Catone[m] oratore[m] no[n] solum" type="straight"/>
+        <underline language="LA" method="pen" text="etia[m] truce[m] esse" type="straight"/>
+        <underline language="LA" method="pen" text="ingenio sit" type="straight"/>
+        
+        <symbol name="LL" place="head"/>
+        
+        <mark method="pen" name="horizontal_bar" place="left_margin"/> 
+        
+        <mark language="LA" method="pen" name="triple_dash" place="right_margin" text="legatu[m] Cyneam Pyrrhus"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- pu -->
+        
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="legatu[m] Cyneam Pyrrhus"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--erat, tamen-->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- uelim. Post-->
+        
+        <mark language="LA" method="pen" name="quotation_mark" place="tail" text="etia[m] truce[m] esse"/>
+        
+    </annotation>
+    
+</transcription>

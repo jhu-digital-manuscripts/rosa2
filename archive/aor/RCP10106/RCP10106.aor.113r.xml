@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.113r.tif" pagination="225" reader="John Dee" signature="p"/>
+    <annotation>
+        
+        <marginalia anchor_text="sicus tempus, cuius tractatum subiu[n]gam. Eius autem (ut alio loco iam dixi) duplex signifactio est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tempus dupl[icite]r.</marginalia_text>
+                </position>
+            </language>
+            <translation>Time has two parts.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tempus subtilius quidam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>subtilis te[m]poris Diuisio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Subtle division of time.</translation>
+        </marginalia>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

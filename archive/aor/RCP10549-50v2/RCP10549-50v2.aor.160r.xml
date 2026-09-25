@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.160r.tif" pagination="59" reader="John Dee"/>  
+    <annotation>
+        
+        <marginalia anchor_text="narratione ea, quae causae co[n]tinet expositionem; Oportet igitur eam tres habere res, vt breuis, vt aperta, vt probabilis sit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tres res Narratione[m] que causs[a]e expositione[m] co[n]tinet, habere oportet</marginalia_text>
+                </position>
+            </language>
+            <translation>The three qualitites which a statement of the case containing an exposition of the case ought to have.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Breuis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Breuis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Brief.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="multos imitatio decipit breuitatis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Imitatio breuitatis</marginalia_text>
+                </position>
+            </language>
+            <translation>An imitation of brevity.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Aperta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aperta.</marginalia_text>
+                </position>
+            </language>
+            <translation>Clear.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Probabilis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Probabilis</marginalia_text>
+                </position>
+            </language>
+            <translation>Plausible.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="dispergere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>.dispergere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To distribute.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="partitio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>PARTÏTÏO</marginalia_text>     
+                </position>
+            </language>
+            <translation>The partition.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="membratim" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>membratim</marginalia_text>
+                </position>
+            </language>
+            <translation>Piecemeal.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="diligenter, &amp; enodate narrando" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>diligenter enodate } narrare</marginalia_text>
+                </position>
+            </language>
+            <translation>To narrate diligently and clearly.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="membratim oportebit" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="membratim" book_orientation="0" method="pen" place="tail" type="florilegium"/>
+        <drawing anchor_text="diligenter enodate narrare" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+        
+    </annotation>
+</transcription>

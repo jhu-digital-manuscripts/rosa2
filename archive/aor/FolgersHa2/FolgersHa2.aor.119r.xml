@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.119r.tif" pagination="61" reader="Harvey" signature="[D7r]"/>	<!-- ABO 123right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Epicteti character, et typus; forma qua[e]dam dicendi,
+						agendiq[ue] pra[e]scripta,
+					</marginalia_text>
+					<person name="Epictetus"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						et quasi Lex.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The character and type of Epictetus is a certain form of speaking and acting,
+				ordered as if a law.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Barnabas à populo Lystrensi vocabatur Jupiter: Paulus,
+						Mercurius: quia summus ipse
+						apostolorum Orator. Quin etiam Jouis sacerdos illis
+					</marginalia_text>
+					<person name="St. Barnabas"/>
+					<person name="Jupiter"/>
+					<person name="St. Paul"/>
+					<person name="Mercury"/>
+					<location name="Lystra"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						sacrificare uolebat; tanq[uam]
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Dijs humana forma descendentibus. 
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Vt eccè Actoru[m]
+					</marginalia_text>
+					<book title="Book of Acts"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						C. I4.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Quid magis mirabile apud Eunapiu[m], aut Philostratu[m]?
+						In diuinis opus est diuino apparatu:
+						| in humanis, humano: saltem tanto, quantus
+					</marginalia_text>
+					<person name="Eunapius"/>
+					<person name="Philostratus"/>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( necessarius, ad facultatis executionem.
+						Ca[e]tera, honorifica.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				St. Barnabus was called by Jupiter by the Lystranian people; 
+				Paul was called by Mercury because he was the greatest orator of the apostles.
+				Moreover, the priest wanted to sacrifice those Jovian men, as if the Gods had come down in human form.
+				And behold! Chapter 14 of the Book of Acts.
+						
+				What is more wondrous in Eunapius or Philostratus?
+				A divine appearance is necessary in divine matteres;
+				a human apperance in human matters;
+				at least as much as necessary for execution of one's ability.
+				Other things are honorable. 
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Nec vllo libro egebant Apostoli, nec aliqua humana instructione:
+						solo instructi feruido, potentiq[ue] spiritu.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The Apostles did not lack any books, nor any human instruction;
+				they were guided by the fiery and powerful spirit alone.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="venir d'vno in vn'altro stato" type="straight"/>
+		<underline language="IT" method="pen" text="andare di vno in vn'altro paese" type="straight"/>
+		<underline language="IT" method="pen" text="altra aria conuien ritrouare" type="straight"/>
+		<underline language="IT" method="pen" text="bugido non credersi il" type="straight"/>
+		<underline language="IT" method="pen" text="i bugiardi," type="straight"/>
+		<underline language="IT" method="pen" text="essi dicono il vero, egli non è lor creduto" type="straight"/>
+		<underline language="IT" method="pen" text="presentissime argutie talhora" type="straight"/>
+		<underline language="IT" method="pen" text="potesse parlare di pace" type="straight"/>
+		<underline language="IT" method="pen" text="Manetti, huomo facetissimo" type="straight"/>
+		<underline language="IT" method="pen" text="vi dia pace, onde" type="straight"/>
+		<underline language="IT" method="pen" text="parlate voi di pace" type="straight"/>
+		<underline language="IT" method="pen" text="ne và la testa à chi ne parla" type="straight"/>
+		<underline language="IT" method="pen" text="Diuerse le consuetudini" type="straight"/>
+		<underline language="IT" method="pen" text="delle nature" type="straight"/>
+		<underline language="IT" method="pen" text="Nicola Terzo" type="straight"/>
+		<underline language="IT" method="pen" text="Roma Auuocati, Procuratori" type="straight"/>
+		<underline language="IT" method="pen" text="sangue de' poueri" type="straight"/>
+		<underline language="IT" method="pen" text="Martino Quarto" type="straight"/>
+		
+		<symbol name="Asterisk" place="left_margin"/>
+		
+		<symbol name="Mercury" place="right_margin"/>
+		
+		<symbol name="JC" place="tail"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- aui -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Mi -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- Iddio -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- u -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- dinan -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Pro -->
+		
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- creduto -->
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="presentissime argutie talhore"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="pace"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="vi dia pace, onde"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- pace, onde -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="parlate voi di pace"/>
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--secondo-->
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- Huomini. Ma -->
+		
+    </annotation>
+</transcription>

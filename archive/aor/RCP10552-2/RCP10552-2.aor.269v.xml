@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.269v.tif" pagination="52" reader="John Dee" signature="[G.iij.[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="caepit Tartarorum dominium" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Tartaroru[m] Imperium co[e]pit.</marginalia_text> 
+                </position>
+            </language>
+            <translation>The rule of the Tartars began.</translation>
+        </marginalia>
+                
+        <marginalia anchor_text="Manclerk" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Petrus Manclerk.</marginalia_text>
+                    <person name="Peter I, Duke of Brittany"/>    
+                </position>
+            </language>
+            <translation>Peter Mauclerc.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Indiae Dauid" type="straight"/>
+        <underline language="LA" method="pen" text="filium Iohannis" type="straight"/>
+        <underline language="LA" method="pen" text="Luxonium" type="straight"/>
+        <underline language="LA" method="pen" text="nupsit Guidoni de Toarto" type="straight"/>
+        <underline language="LA" method="pen" text="Britanniae comitatu[m]" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+                
+    </annotation>
+</transcription>

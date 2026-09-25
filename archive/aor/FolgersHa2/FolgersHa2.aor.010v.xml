@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.010v.tif" pagination="340" reader="Harvey"/>		<!-- ABO Scan 15left -->
+    	<annotation>
+        
+		<!-- Marginalia -->
+    		
+	        
+    		<marginalia hand="Italian">
+	           	<language ident="LA">
+	                		<position book_orientation="0" place="head">
+	                    			<marginalia_text>
+	                      				Vita Axiophili.
+	                    			</marginalia_text>
+	                			<person name="Axiophilus"/>
+	                		</position>
+	           	 </language>
+    			<translation>
+    				The life of Axiophilus.
+    			</translation>
+	        	</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="head">
+    					<marginalia_text>
+    						coeli harmonia.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				The harmony of heaven.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						politico, e profondo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Political, and profound.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Facta loquantur:
+    					</marginalia_text>
+    					<emphasis method="pen" text="Facta loquantur" type="straight"/>
+    				</position>
+    			</language>
+    			<language ident="EN">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						quoth Sir Edward Dier.
+    					</marginalia_text>
+    					<person name="Edward Dyer"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Deeds speak: quoth Sir Edward Dyer. 
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						) Curat curanda
+    						) Axiophilus.
+    					</marginalia_text>
+    					<person name="Axiophilus"/>
+    					<emphasis method="pen" text="Curat curanda" type="straight"/>
+    					<emphasis method="pen" text="Axiophilus" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Axiophilus attends to things that need attention.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						Apologus.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Apology.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						.) Apollonius, plus quàm omnes
+    						philosophi, aut magi Orbis terrarum.
+    					</marginalia_text>
+    					<person name="Apollonius"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Apollonius, more than all men in the world either philosophers or wisemen.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="90" place="left_margin">
+    					<marginalia_text>
+    						{ nulla parerga pati; solis incumbere punctis;
+    						Multiplicare artis pragmata; vita mea est. }
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				{ To suffer no ornamentation; to pay attention to the points alone;
+    				to multiply the deeds of skill; this is my life. }
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="90" place="left_margin">
+    					<marginalia_text>
+    						Res è rebus:
+    						opera ex operibus:
+    						homines ex meritis.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				The matter from matters:
+    				the works from works:
+    				men from their merits.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="90" place="right_margin">
+    					<marginalia_text>
+    						Viri perfectio, non à libris, aut ab hominibus; sed à Seipso, et à Deo. 
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				The perfection of man, not from books, or from other men; but from the man himself, and from God.
+    			</translation>
+    		</marginalia>
+	        
+	       
+    		<!-- Underlines -->
+	        
+	        <underline language="IT" method="pen" text="sono il piu magnifico" type="straight"/>
+    		<underline language="IT" method="pen" text="Cancelliere cosi ricco" type="straight"/>
+    		<underline language="IT" method="pen" text="altri in maggiore speranza" type="straight"/>
+    		<underline language="IT" method="pen" text="colui non n'hauea bisogno" type="straight"/>
+    		<underline language="IT" method="pen" text="hebbe uccellati" type="straight"/>
+    		<underline language="IT" method="pen" text="Cancelliere si portasse" type="straight"/>
+    		<underline language="IT" method="pen" text="somma di denari" type="straight"/>
+    		<underline language="IT" method="pen" text="amici miei, voi" type="straight"/>
+    		<underline language="IT" method="pen" text="aspetterete una altra occasione" type="straight"/>
+    		<underline language="IT" method="pen" text="prouerbio" type="straight"/>
+    		<underline language="IT" method="pen" text="Assai dimanda" type="straight"/>
+    		<underline language="IT" method="pen" text="ben serue, &amp; tace" type="straight"/>
+    		<underline language="IT" method="pen" text="il Gallo" type="straight"/>
+    		<underline language="IT" method="pen" text="caualli belli" type="straight"/>
+    		<underline language="IT" method="pen" text="salui fratelli" type="straight"/>
+    		<underline language="IT" method="pen" text="grandi mangiauano" type="straight"/>
+    		<underline language="IT" method="pen" text="contenti, che io mangi con esso uoi" type="straight"/>
+    		<underline language="IT" method="pen" text="ueggo cadere" type="straight"/>
+    		<underline language="IT" method="pen" text="senza alcun danno della" type="straight"/>
+    		<underline language="IT" method="pen" text="per fare dispiacere" type="straight"/>
+    		<underline language="IT" method="pen" text="niuno di noi calpesti l'altro" type="straight"/>
+    		<underline language="IT" method="pen" text="il primo a osseruare religiosissimamente questa conuentione d'amicitia" type="straight"/>
+    		<underline language="IT" method="pen" text="cauallo brauo" type="straight"/>
+    		<underline language="IT" method="pen" text="punto, o Gallo, di questa" type="straight"/>
+    		<underline language="IT" method="pen" text="non calpestrare l'amico" type="straight"/>
+    		<underline language="IT" method="pen" text="prendiamo alcun pensiero" type="straight"/>
+    		<underline language="IT" method="pen" text="calpestami quanto ti pare" type="straight"/>
+    		<underline language="IT" method="pen" text="ne curo bene io, soggiunse" type="straight"/>
+	    
+	        
+	        	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	        
+    		<symbol name="Sun" place="head"/>
+    		<symbol name="SS" place="head"/>
+    		<symbol name="SS" place="left_margin"/>
+    		<symbol name="SS" place="intext"/>
+	        
+	        
+    		<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- creb -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- chi ben ser --> 
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- ser -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- alcu -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- lo -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- pa -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- dispia -->
+	    	
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="bracket" place="left_margin"/> <!-- [Dice... ue, -->
+	    
+	    	<!-- Intext -->
+	    	<mark method="pen" name="plus_sign" place="intext"/> <!-- Cancelliere cosi -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- speranza, cre -->
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- uccellati -->
+    		<mark method="pen" name="apostrophe" place="intext"/> <!-- tutta -->
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- amici -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- Assai: dotted i -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- ben ser -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- biada, disse -->
+    		<mark method="pen" name="vertical_bar" place="intext"/> <!-- medesimo. A queste -->
+    		<mark method="pen" name="vertical_bar" place="intext"/> <!-- pare. Ma io -->
+    		
+
+    </annotation>
+</transcription>

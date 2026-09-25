@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.100r.tif" pagination="100" reader="John Dee" signature="Niiij"/> 
+    
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note aptnes to lern</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Memorie</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Pietro Guttieres, &amp; Scobedo [...] poscia insieme con altri noue" hand="Italian" id="BL615d7:615_d_7_f100r:m0001" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note here .11.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" id="BL615d7:615_d_7_f100r:m0002" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>22.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Diego di Arana con dieci persone" hand="Italian" id="BL615d7:615_d_7_f100r:m0003" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note here .11.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vide fol[io] 123.</marginalia_text>
+                    <internal_ref>
+                        <target ref="BL615d7:615_d_7_f123r:m0001" text="fol[io] 123"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See fol[io] 123.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Ammiraglio vn fratello del" type="straight"/>
+        <underline language="IT" method="pen" text="sapeuano esprimere alcune parole in" type="straight"/>
+        <underline language="IT" method="pen" text="per nome tutti i" type="straight"/>
+        <underline language="IT" method="pen" text="Christiani" type="double"/>
+        <underline language="IT" method="pen" text="luogo rimasi" type="double"/>
+        <underline language="IT" method="pen" text="i Christiani subito incominciarono a venire in discordia tra loro, &amp; a pigliar ciascuno le donne" type="straight"/>
+        <underline language="IT" method="pen" text="l'oro" type="double"/>
+        <underline language="IT" method="pen" text="che egli poteua: &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="vccisero vn Giacopo" type="straight"/>
+        <underline language="IT" method="pen" text="poscia insieme con altri noue" type="straight"/>
+        <underline language="IT" method="pen" text="andati con le loro donne ad vn Cacique, chiamato Caunabo" type="straight"/>
+        <underline language="IT" method="pen" text="delle minere" type="straight"/>
+        <underline language="IT" method="pen" text="questi gli amazzò, &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="gente al Natale" type="straight"/>
+        <underline language="IT" method="pen" text="oue non era altri, che Diego di Arana con dieci persone" type="straight"/>
+        <underline language="IT" method="pen" text="s'erano sparsi per diuersi luoghi" type="straight"/>
+        <underline language="IT" method="pen" text="il Caunabo" type="straight"/>
+        <underline language="IT" method="pen" text="quali i Christiani habitauano con le loro donne" type="straight"/>
+        <underline language="IT" method="pen" text="si annegarono otto" type="straight"/>
+        <underline language="IT" method="pen" text="tre perirono" type="straight"/>
+        <underline language="IT" method="pen" text="che non mostrauano" type="straight"/>
+        <underline language="IT" method="pen" text="per difendere i Christiani, col Caunabo, fu ferito, &amp; se ne fuggì" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        
+        <mark language="IT" method="pen" name="bracket" place="right_margin" text="i Christiani subito incominciarono a venire in discordia tra loro, &amp; a pigliar ciascuno le donne, &amp; l'oro, che egli poteua"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- noue erano -->
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- fuggi. La -->
+        
+        <physical_link>
+            <marginal_annotation idref="BL615d7:615_d_7_f100r:m0001"/>
+            <marginal_annotation idref="BL615d7:615_d_7_f100r:m0002"/>
+            <marginal_annotation idref="BL615d7:615_d_7_f100r:m0003"/>
+            
+            <relation from="BL615d7:615_d_7_f100r:m0001" to="BL615d7:615_d_7_f100r:m0002" type="directed"/>
+            <relation from="BL615d7:615_d_7_f100r:m0003" to="BL615d7:615_d_7_f100r:m0002" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

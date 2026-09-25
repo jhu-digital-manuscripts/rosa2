@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.274v.tif" pagination="[267v]" reader="John Dee" signature="[XX iij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>hor. 19 m[inutae] 9 [secundae]. 26. Polus 45.</marginalia_text>
+                </position>
+            </language>
+            <translation>19 hours, 9 minutes, 26 seconds. The pole 45 [degrees].</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>ha[e]c figura a vera differt p[er] [(...) hora[m] (fere) (...) ia[m] - deleted] horas novem et plus.
+                    Asce[n]des 7. ♊ ferè.</marginalia_text> 
+                    <symbol_in_text name="Gemini"/>
+                </position>
+            </language>
+            <translation>This figure differs from the true through nine hours and more. Rising almost 7 Gemini.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cum Saturnus &amp; Mars se" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        
+        <table place="intext" type="astrological_chart">
+            <tr>
+                <th/>
+                <th label="House"/>
+                <th label="Position"/>
+            </tr>
+            <tr>
+                <td>Moon</td> <!--JG: Not sure what Dee wrote after this symbol--> <!-- FSF: no clue! -->
+                <td>2</td>
+                <td>25</td>
+            </tr>
+        </table>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.062v.tif" pagination="[55v]" reader="John Dee" signature="[Oiij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Effectus evide[n]tiores</marginalia_text>
+                </position>
+            </language>
+            <translation>More evident effects.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Directiones quae Aldridariae concordant, effectus suos producent, aliae aute[m] non" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Alfridaria[e] vis</marginalia_text>
+                </position>
+            </language>
+            <translation>The strenght of the Alfridary.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="agitur de uita," type="straight"/>
+        <underline language="LA" method="pen" text="causam morbi uel mortis" type="straight"/>
+        <underline language="LA" method="pen" text="corporis planetae, ut in australi latitudine, tunc causa mortis erit" type="straight"/>
+        <underline language="LA" method="pen" text="loco in ecliptica, &amp; mors á centro planetae, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="semper significat" type="straight"/>
+        <underline language="LA" method="pen" text="cum fuerit occisor" type="straight"/>
+        <underline language="LA" method="pen" text="omnes radij quadrati" type="straight"/>
+        <underline language="LA" method="pen" text="singulis par. 13.mi. 10." type="straight"/>
+        <underline language="LA" method="pen" text="unicuiq[ue] parti annos" type="straight"/>
+        <underline language="LA" method="pen" text="dirigendo pro tempore habendo. Considera etiam, quòd effectus quilibet eo euidentior est, seu in uita seu in alijs, &amp; eo celerius perficitur, quo stella eclipticae proximior fuerit" type="straight"/>
+        <underline language="LA" method="pen" text="Directiones quae Aldridariae concordant, effectus suos producent, aliae aute[m] non" type="straight"/>
+        <underline language="LA" method="pen" text="sed forsan aliquid proportionale" type="straight"/>
+        <underline language="LA" method="pen" text="igitur omnes facere conuenit directiones, quae citra mortis tempus uenturum effectu[m] indica[n]t. primam igitur pro uita perficere necesse est" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark language="LA" method="pen" name="vertical_bar" place="left_margin" text="dirigendo pro tempore habendo. Considera etiam, quòd effectus quilibet eo euidentior est, seu in uita seu in alijs, &amp; eo celerius perficitur, quo stella eclipticae proximior fuerit"/>
+        <mark language="LA" method="pen" name="vertical_bar" place="left_margin" text="Directiones quae Aldridariae concordant, effectus suos producent, aliae aute[m] non"/>
+        
+        <drawing anchor_text="Directiones quae Aldridariae concordant, effectus suos producent, aliae aute[m] non" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

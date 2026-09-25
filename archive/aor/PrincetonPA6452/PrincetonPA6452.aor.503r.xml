@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.503r.tif" reader="Harvey" signature="N[r]"/>    
+    <annotation>
+        
+        <underline language="LA" method="pen" text="PLEBEII" type="straight"/>
+        <underline language="LA" method="pen" text="PRAETORES PRIMAE" type="straight"/>
+        <underline language="LA" method="pen" text="Philo primus è ple." type="straight"/>
+        <underline language="LA" method="pen" text="Papyrius Cursor iunior" type="straight"/>
+        <underline language="LA" method="pen" text="PRAETORES TERTIAE" type="straight"/>
+        <underline language="LA" method="pen" text="C. Terentius Varro" type="straight"/>
+        <underline language="LA" method="pen" text="M. Claudius Marcellus" type="straight"/>
+        <underline language="LA" method="pen" text="P. Cornellius Sulla" type="straight"/>
+        <underline language="LA" method="pen" text="P. Licinius Crassus Diues" type="straight"/>
+        
+        <symbol name="JC" place="right_margin"/>
+        <symbol language="LA" name="SS" place="right_margin" text="Philo primus è ple."/>
+        
+        <symbol language="LA" name="SS" place="intext" text="PLEBEII"/>
+        <symbol language="LA" name="SS" place="intext" text="P. Licinius Crassus Diues"/>
+        
+        <mark language="LA" method="pen" name="equal_sign" place="right_margin" text="Papyrius Cursor iunior"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="intext" text="P. Manilius C. Manlius L. Iulius"/>
+        <mark language="LA" method="pen" name="bracket" place="intext" text="C. Sextilius M. Albinus L. Antistius"/>
+        
+    </annotation>
+</transcription>

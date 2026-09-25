@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.105v.tif" pagination="202" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Cearlus" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cearlus Rex 
+                    </marginalia_text>
+                    <person name="Cearl of Mercia"/>
+                </position>
+            </language>
+            <translation>
+                Cearl of Mercia
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Anglorum, quousq[ue] per" type="straight"/>
+        <underline language="LA" method="pen" text="anno VVibba rex Merciorum obijt" type="straight"/>
+        <underline language="LA" method="pen" text="successit Cearlus, non" type="straight"/>
+        <underline language="LA" method="pen" text="sed consanguineus" type="straight"/>
+        <underline language="LA" method="pen" text="decem" type="straight"/>
+        
+    </annotation>
+</transcription>

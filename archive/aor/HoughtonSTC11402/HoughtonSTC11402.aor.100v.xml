@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.100v.tif" reader="Harvey" signature="[Mv[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>An act, sumwhat like that heroical aduenture of those thre worthyes, that brake thorowgh the army of the
+                    Philistins, to fett Dauid water, being very dry.</marginalia_text>
+                    <person name="King David"/>
+                    <person name="Philistines"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Desperate bowldnes. What other remedy, in extremity?</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Audaces Fortuna juuat: quasi Miraculo diuino.</marginalia_text>
+                    <person name="Fortuna"/>
+                    <X-ref book_title="Aeneid" language="LA" person="Virgil" text="Audaces Fortuna iuuat"/>
+                </position>
+            </language>
+            <translation>"Fortune favours the bold": as if a divine miracle.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lett there appere A famous difference betwene [the] lernid &amp; vnlernid imployed man:
+                    aswell in exceding Industry, &amp; Zeale; as in pra[e]sent resolution, &amp; incomparable Cunning.</marginalia_text>
+                    <emphasis method="pen" text="[the] lernid" type="straight"/>
+                    <emphasis method="pen" text="&amp; vnlernid" type="straight"/>
+                    <emphasis method="pen" text="imployed" type="straight"/>
+                    <emphasis method="pen" text="Industry" type="straight"/>
+                    <emphasis method="pen" text="resolution" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Ad fortia qua[e]q[ue] Acta, ferri oportet fortiss[im]a Imaginatione: sic Dauid, Goliam aggressus, statim
+                    belluam prostrauit. Hîc, antè omnia, vel maximè opus pra[e]senti, et confidentiss[im]a Resolutione.</marginalia_text>
+                    <person name="King David"/>
+                    <person name="Goliath"/>
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+            </language>
+            <translation>Towards whatever courageous acts, it ought to be produced with the strongest imagination. Thus David, having attacked
+            Goliath, at once knocked down the brute. In the present circumstances, before everything, or especially perceive the work beforehand, and with the most confident
+            resolution.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="brake through the warde of their ennemies" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>A lusty braue escape.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="with .xii. men accompanied" type="straight"/>
+        <underline language="EN" method="pen" text="they brake" type="straight"/>
+        <underline language="EN" method="pen" text="their ennemies, and came safe and" type="straight"/>
+        <underline language="EN" method="pen" text="with thre thousande men" type="straight"/>
+        <underline language="EN" method="pen" text="tolde vnto the fyrste order onely" type="straight"/>
+        <underline language="EN" method="pen" text="whan he was nothynge loked" type="straight"/>
+        <underline language="EN" method="pen" text="brake out through the watche of his" type="straight"/>
+        <underline language="EN" method="pen" text="P. Decius" type="straight"/>
+        <underline language="EN" method="pen" text="lyttell power of men" type="straight"/>
+        <underline language="EN" method="pen" text="take the hylle that" type="straight"/>
+        <underline language="EN" method="pen" text="their guyde" type="straight"/>
+        <underline language="EN" method="pen" text="lette out" type="straight"/>
+        <underline language="EN" method="pen" text="the consull" type="straight"/>
+        <underline language="EN" method="pen" text="besette Decius" type="straight"/>
+        <underline language="EN" method="pen" text="whiche wrastled out of those" type="straight"/>
+        <underline language="EN" method="pen" text="also by nyghte" type="straight"/>
+        <underline language="EN" method="pen" text="same polycie he vsed vnder" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="head"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="with .xii. men accompanied"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="their ennemies, and came safe and"/>  
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="tolde vnto the fyrste order onely"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="take the hylle that"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--place, his-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="tolde vnto the fyrste order onely"/>
+        <mark method="pen" name="dot" place="intext"/> <!--onely, in-->
+        <mark method="pen" name="plus_sign" place="intext"/>    
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="whan he was nothynge loked"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="their guyde"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="lette out"/>
+        
+    </annotation>
+</transcription>

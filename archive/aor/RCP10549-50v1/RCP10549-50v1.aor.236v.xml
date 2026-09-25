@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.236v.tif" pagination="452" reader="John Dee" signature="[fff.ii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="collachrymauit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        collachrymare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To cry together.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="poetae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Poet[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Poets.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="AEsopum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Æsopus.
+                    </marginalia_text>
+                    <person name="Aesop"/>
+                </position>
+            </language>
+            <translation>
+                Aesop.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Accium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Accius.
+                    </marginalia_text>
+                    <person name="Lucius Accius"/>
+                </position>
+            </language>
+            <translation>
+                Lucius Accius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fori ca[n]cellis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        fori Cancelli.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Screens in the forum. <!-- http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0063:entry=cancelli-cn -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="concionu[m] moderatores, legum domini" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        concionu[m] moderatores legum domini.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The moderators of meetings, the masters of laws.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="semiuiuis mercenariorum vocibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        voces semiuiu[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Half-dead voices.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="via latebrosa." hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        via latebrosa
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'A skulking path' [Loeb 209, 207].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Attilium Regulum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ma. Attilius Regulus.
+                    </marginalia_text>
+                    <person name="Marcus Atilius Regulus"/>
+                </position>
+            </language>
+            <translation>
+                Marcus Atilius Regulus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        à maiore
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Generally.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Exulare sinitis, siuistis pelli, pulsum patimini" type="straight"/>
+        <underline language="LA" method="pen" text="Et quoniam huc me prouexit oratio" type="straight"/>
+        <underline language="LA" method="pen" text="vox eius illa praeclara lachrymis impediretur" type="straight"/>
+        <underline language="LA" method="pen" text="tantus est ex omnibus spectaculis vsque à Capitolio, tantus ex fori ca[n]cellis plausus excitatus" type="straight"/>
+        <underline language="LA" method="pen" text="concionu[m] moderatores" type="straight"/>
+        <underline language="LA" method="pen" text="gladiatorum repentinis sibilis extimescebant" type="straight"/>
+        <underline language="LA" method="pen" text="ne quis me studio gloriae putet idcirco exisse vt ira redirem? quem" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">19</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">3</numeral>
+        
+        
+    </annotation>
+</transcription>

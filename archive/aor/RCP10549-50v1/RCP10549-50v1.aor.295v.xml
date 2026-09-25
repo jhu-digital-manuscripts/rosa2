@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.295v.tif" pagination="570" reader="John Dee" signature="[nnn.v.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="C. Caesar adolescens, penè potius puer" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>C. Caesar adolescens, pene poti[us] puer</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Gaius Julius Caesar, 'a young man, or rather hardly more than a boy' [Loeb 189, 181].</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="bellum, tam crudele, tam nefarium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>bellu[m] crudele nefariu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>A cruel and wicked war.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="crudelis &amp; pestifer reditus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>reditus crudelis pestifer.</marginalia_text>
+                </position>
+            </language>
+            <translation>A cruel and baneful return.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="veteranoru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Veterani</marginalia_text>
+                </position>
+            </language>
+            <translation>Veterans.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Correctio</marginalia_text>
+                </position>
+            </language>
+            <translation>A correction.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Albae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Alba</marginalia_text>
+                    <location name="Alba"/>
+                </position>
+            </language>
+            <translation>Alba.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="veteranorúmque" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Veterani</marginalia_text>
+                </position>
+            </language>
+            <translation>Veterans.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Tarquinio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tarquinius.</marginalia_text>
+                    <person name="Lucius Tarquinius Superbus"/>
+                </position>
+            </language>
+            <translation>Lucius Tarquinius Superbus.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Regibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Reges</marginalia_text>
+                </position>
+            </language>
+            <translation>Kings.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="superbu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Superbia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Arrogance.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="Caesar adoloscens, penè" type="straight"/>
+        <underline language="LA" method="pen" text="nec postulantibus, nec cogitantibus, nec opinantibus" type="straight"/>
+        <underline language="LA" method="pen" text="firmissimum exercitum inuicto genere veteranoru[m] militu[m] comparauit" type="straight"/>
+        <underline language="LA" method="pen" text="quanqua[m] non sumus vsi eo verbo" type="straight"/>
+        <underline language="LA" method="pen" text="eorúmque" type="straight"/>
+        <underline language="LA" method="pen" text="Regibus parere iam" type="straight"/>
+        <underline language="LA" method="pen" text="quod nos vitiu[m] in priuatis saepe tulimus, id maiores nostri ne in Rege quidem ferre potuerunt. L. Brutus Regem superbu[m] non tulit: D. Brutus sceleratum atque impium regnare patietur Antonium? quid" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+      
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">15</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+        <drawing anchor_text="Veterani" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Correctio" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Alba" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Veterani" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Reges" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Superbia" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

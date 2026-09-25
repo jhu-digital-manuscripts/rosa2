@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.frontmatter.flyleaf.003r.tif" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">  <!-- DO: Where these reference a specific page you can add an internal reference, e.g. the first one matches file 369. -->
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Cometa saxonicè vel Anglicè vocatur, Vexede sterre pag[ina]: 345 p[ar]t[e] 1a 
+                        Bathonia saxonicà Akemanecestre. pag[ina] 374. p[ar]t[e] 1a    
+                        Guilielmus Conquestor de vnaquaq[ue] hyda terra[e] extorsit sex solidos. pag[ina]: 8: p[ar]te 2a.      
+                        Grabamma plebis. 32:H:3. pag[ina] 229. et 233.
+                        Constitutiones regis quia sine co[mmun]i consensu Baronagii &amp;c annullata[e]. 37:H:3. pag[ina]: 253.
+                        Ep[isco]pi: Bath: Elien: &amp; Roff: obligarunt se in Curia Romana in 5500 marcis pro rege, ad vitanda[m] exco[m]municationis sententiam in p[er]sona[m] regis p[ro]ferenda[m] et generale regni interdictu[m], ob debitu[m] regis non p[er]solutu[m]. 43:H:3: pag[ina] 287.  <!-- DO: I think the long tails at the end of words like 'vitanda' this signify a contraction (so, '-am'). As such, I would say it's 'persona[m]', 'p[ro]ferenda[m]', 'interdictu[m]', 'debitu[m]' and 'p[ro]solutum' -->
+                        Ric[ard]us de Gray Constabularius Doueria[e] et Custos [deleted] quinque portuu[m] priuatur officio [sir] Hug Bigot Justiciariu[m], quia nuntiu[m] Papa[e] sine co[mmun]i consensu p[ro]miserat Angliam intrare. 43:H:3: pag[ina]: 287.  <!-- DO: Not sure about 'portius'... I'd also say it's 'Iusticiariu[m]' and 'nuntiu[m]'. Final word in this line might be 'p[ro]miserat'? -->
+                        Reges Scotia[e] veniendo ad reges Anglia[e] ex quo Humbram veniendo transiuerint, donec redeundo illud flumen trangressi fuerint, [deleted] recißiebant quotidie 100 solidos a regibus Anglia[e]. pag[ina]: 302:p[ar]te 2da  <!-- DO: 'recipiebant', I think -->
+                        Rex medietatem omnium bonoru[m] tam temporaliu[m] quam spiritualium postulat a tota ecclesia (clero et populo coadunatis) per tota[m] Angliam locata; et pro vno anno concessa fuit. 22:E:1 pag[ina]: 393.
+                        Papa emunxit Fratres minores 400,000 florenis aureis, pag[ina]: 414 A[nn]o D[o]m[in]i 1299.              
+                        [deleted] Quidam qui Christum in terris hic in carne di[lli]gentem vidit, vivit adhuc. A[nn]o D[o]m[in]i 1228: pag[ina]: 125.  <!-- DO: Looks like 'Quidam' -->
+                        Papa per imperatorem canonica et imperiali censura depositus: A[nn]o D[o]m[in]i: 1033. pag[ina] 408.
+                        Da[e]mones humanas formas in bestias immutare non possunt, sed oculos ho[m]i[n]um suis machinationibus ita fallere, vt aliud sit corpus, et aliud videatur. pag[ina] 417. p[ar]te 1a
+                    </marginalia_text>
+                    <person name="William the Conqueror"/>
+                    <person name="Henry III, King of England"/>
+                    <person name="Richard de Grey"/>
+                    <person name="Hugh Bagot"/>
+                    <person name="Edward I, King of England"/>
+                    <location name="Bath"/>
+                    <location name="England"/>
+                    <location name="Humber River"/>
+                    <internal_ref>
+                        <target ref="RCP10653:369" text="345"/>
+                        <target ref="RCP10653:398" text="374"/>
+                        <target ref="RCP10653:472" text="8"/>
+                        <target ref="RCP10653:695" text="229"/>
+                        <target ref="RCP10653:699" text="233"/>
+                        <target ref="RCP10653:719" text="253"/>
+                        <target ref="RCP10653:753" text="287"/>
+                        <target ref="RCP10653:768" text="302"/>
+                        <target ref="RCP10653:858" text="393"/>
+                        <target ref="RCP10653:880" text="414"/>
+                        <target ref="RCP10653:589" text="125"/>
+                        <target ref="RCP10653:432" text="408"/>
+                        <target ref="RCP10653:441" text="417"/>
+                    </internal_ref>
+                </position>
+            </language>
+                <translation>
+                    A comet called in Saxon, or English a 'vexed star' page 345 part 1.
+                    Bath called Akemanecestre in Saxon. page 374 part 1.
+                    William the Conqueror exacted six shillings per hide of land. page 8 part 2
+                    Grabamma of the people. in 32 Henry III. pages 229 and 233.
+                    Constituions of the king, wherefore anulled without the consent of the whole baronage etc. in 37 Henry III. page 253.
+                    The bishops of Bath, Ely, and Rochester pledged 5500 marks on behalf of the king in the Roman Curia, towards the vacating of the sentence of excommunication pronounced on the person of the king, and the the general interdict of the realm, on account of the king's debt not paid. 43 Henry III. Page 287
+                    Richard de Gray, Constable of Dover and Custodian of the Cinque Ports deprived sir Hugh Bagot, Justiciar, of his office because he allowed the papal nuncio to enter England without the common consent. 43 Henry III page 287.
+                    The kings of Scotland in coming to the kings of England, in which coming they cross the Humber, as long as they cross that river in returning, they shall recieve 100 shillings each time from the kings of England. Page 302 in the second part.
+                    The king demands half of all goods, temporal and spiritual, from all churches (with associated clergy and parishoners) in England, and this was granted for one year. 22 Edward I. page 393
+                    The Pope swindled the Franciscans out of 400,000 gold florins, page 414 AD 1299.
+                    A man who saw Christ incarnate and on earth lived till now. AD 1228, page 125.
+                    The Pope deposed by Imperial law and Imperial censure. AD 1033. Page 408
+                    Demons in human form are not able to transform into beasts, but by their subterfuge fool the eyes of men, so that their bodies are one form, but seen as another. Page 417 in the first part. 
+                </translation>
+        </marginalia>
+        
+        <drawing anchor_text="Grabamma" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Ric[ard]us" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Rex" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Papa" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.231v.tif" pagination="[224v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Revolutio p[re]cede[n]tis Natiuitatis: in qua natus homine[m] occidet.</marginalia_text>
+                </position>
+            </language>
+            <translation>The revolution of the preceding nativity, in which the child kills a man.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vide aphorismu[m] etia[m] 183.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:471" text="183"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Also see aphorism 183.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Ascendens verè erat 3 ♊</marginalia_text>
+                    <symbol_in_text name="Gemini"/>
+                </position>
+            </language>
+            <translation>The Ascendant actually was 3 Gemini.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ideò eo anno occidit consobrinum, uulneratus'q[ue] est ab alijs consobrinis" type="straight"/>
+        <underline language="LA" method="pen" text="carceribus, liberatus'q[ue] est, propter Iouis sextilem, &amp; Venerem receptam à Luna" type="straight"/>
+        <underline language="LA" method="pen" text="cum nodo, aut mala fixa," type="straight"/>
+        
+    </annotation>
+</transcription>

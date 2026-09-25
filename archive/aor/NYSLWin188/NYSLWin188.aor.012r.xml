@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.012r.tif" pagination="12" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Gott einen Namen gibt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>No[men] impositio Diuina.</marginalia_text> <!-- FSF: I read No[m]i[nu]m -->
+                </position>
+            </language>
+            <translation>The divine imposition of a name.</translation> <!-- FSF: according to the change, of 'names' -->
+        </marginalia>
+        
+        <marginalia anchor_text="Petrum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Petrus</marginalia_text>
+                    <person name="St. Peter"/>
+                </position>
+            </language>
+            <translation>Peter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Standtfest" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Firmamentum [id est]</marginalia_text>
+                </position>
+            </language>
+            <language ident="DE">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Standfest.</marginalia_text>
+                </position>
+            </language>
+            <translation>Support, that is support.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ey" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota. Ovi quatuor paritet.</marginalia_text> <!-- FSF: I think it is partet -->
+                </position>
+            </language>
+            <translation>Note. The four[th] [element] of the egg is visible.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Feste" type="double"/>
+        <underline language="DE" method="pen" text="Gott einen Namen gibt so gibt er auch demselbigen Namen was jm zugehöret" type="straight"/>
+        <underline language="DE" method="pen" text="Standtfest" type="triple"/>
+        <underline language="DE" method="pen" text="vnd die krafft die der Namen hat ist groß" type="straight"/>
+        <underline language="DE" method="pen" text="der dotter" type="straight"/>
+        <underline language="DE" method="pen" text="das klar" type="straight"/>
+        <underline language="DE" method="pen" text="das heutle" type="straight"/>
+        <underline language="DE" method="pen" text="im Ey" type="straight"/>
+        <underline language="DE" method="pen" text="der Schalen" type="straight"/>
+        <underline language="DE" method="pen" text="Stehe" type="straight"/>
+        <underline language="DE" method="pen" text="Feste" type="straight"/>
+        
+    </annotation>
+</transcription>

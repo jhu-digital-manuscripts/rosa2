@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.114v.tif" pagination="212" reader="John Dee" signature="[s 4[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Petosiris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Petosiris
+                    </marginalia_text>
+                    <person name="Petosiris"/>
+                </position>
+            </language>
+            <translation>
+                Petosiris.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quid ex nonagesima parte [discere] possimus.  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>What we may learn from the ninetieth part.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="totu[m] hoc nobis decreti pronunciatione promissum" type="straight"/>
+        <underline language="LA" method="pen" text="inuido uoluit" type="straight"/>
+        <underline language="LA" method="pen" text="perquiri, ex ea nanq[uam]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; à ☾ &amp; à profectu" type="straight"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/>
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

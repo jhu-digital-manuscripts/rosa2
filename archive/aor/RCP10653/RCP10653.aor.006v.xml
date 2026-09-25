@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.006v.tif" pagination="4" reader="John Dee" signature="[A ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Brito" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Brito iste quis est, vel in
+                    </marginalia_text>
+                    <person name="Brito"/>
+                </position>
+            </language>
+            <translation>
+                Is this Brito himself, or in [Brito]. <!-- FSF: not sure / NBW: Possibly "is this Brito himself, or in [brito], i.e. is Dee wondering if this is an ablative?--> 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hij sunt" hand="Italian" id="RCP10653@028:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        v[i]r esse figme[n]tum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Man is a figment.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="de genere" type="double"/>
+        <underline language="LA" method="pen" text="Alanus" type="straight"/>
+        <underline language="LA" method="pen" text="Brito" type="straight"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP10653@028:m0001"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.093v.tif" pagination="186" reader="John Dee" signature="[m 5[v]]"/> 
+    <annotation>
+
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ciceronis laus.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Praise for Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="μεγαλοπρέπεια" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>μεγαλοπρέπεια</marginalia_text>
+                </position>
+            </language>
+            <translation>Magnificence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Theodectes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Theodectes</marginalia_text>
+                    <person name="Theodectes"/>
+                </position>
+            </language>
+            <translation>Theodectes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἐνάργεια" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἐνάργεια</marginalia_text>
+                </position>
+            </language>
+            <translation>Clearness.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oratione morata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Oratio morata</marginalia_text>
+                </position>
+            </language>
+            <translation>Delayed speech.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="euidentem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Evidentia</marginalia_text>
+                </position>
+            </language>
+            <translation>Evidence.</translation>
+        </marginalia>
+                
+        <marginalia anchor_text="perspicuitati" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Perspicuitas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Clarity.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Frigida uidentur ista plerisq[ue], sed hoc ipsum manifestu[m] est, quo modo iudicem fefellereint, quod uix              à lectore deprehe[n]ditur. Haec" type="straight"/>
+        <underline language="LA" method="pen" text="in quibus co[n]fitendum, excusandum, submittendum sit, quod exponimus: quibus omnibus aliena est illa              magnificentiae uirtus" type="straight"/>
+        <underline language="LA" method="pen" text="quàm miserabiliter, inuidiose, grauiter, dulciter, uranè: quae" type="straight"/>
+        <underline language="LA" method="pen" text="Sed in oratione morata debent esse omnia cum dignitate, quae poterunt, Euide[n]tia" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

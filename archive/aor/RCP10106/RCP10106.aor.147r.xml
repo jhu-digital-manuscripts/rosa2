@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.147r.tif" pagination="293" reader="John Dee" signature="t 3"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Iunius Bassus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iunius bassus</marginalia_text>
+                    <person name="Junius Bassus"/>
+                </position>
+            </language>
+            <translation>Junius Bassus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="similitudo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>similitudo</marginalia_text>
+                </position>
+            </language>
+            <translation>Similitude.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Augusti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Augustus.</marginalia_text>
+                    <person name="Augustus"/>
+                </position>
+            </language>
+            <translation>Augustus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex simili tra[n]slatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex simili tra[n]slatio</marginalia_text>
+                </position>
+            </language>
+            <translation>The shift from like to like.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="triumpho Caesaris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ca[e]saris Triu[m]phus</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Caesar’s triumph.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>L[ucius] Galba.</marginalia_text>
+                    <person name="Galba"/>
+                </position>
+            </language>
+            <translation>Lucius Galba.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sed ea ad hominibus modò petitur, uerumetia[m] ab animalibus, ut nobis pueris" type="straight"/>
+        <underline language="LA" method="pen" text="homine[m] nigrum, &amp; macru[m], &amp; pandum" type="straight"/>
+        <underline language="LA" method="pen" text="similitudo interim" type="straight"/>
+        <underline language="LA" method="pen" text="uerisimilia" type="straight"/>
+        <underline language="LA" method="pen" text="quod" type="straight"/>
+        <underline language="LA" method="pen" text="Iungitur" type="straight"/>
+        <underline language="LA" method="pen" text="mixtura est, ea'q[ue] optima, quae ex pluribus co[n]stat" type="straight"/>
+        <underline language="LA" method="pen" text="dißimiliu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="perplueret" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

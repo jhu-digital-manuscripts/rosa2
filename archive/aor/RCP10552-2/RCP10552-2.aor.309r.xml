@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.309r.tif" pagination="131" reader="John Dee" signature="R.j."/>
+    <annotation>
+        
+        <marginalia anchor_text="totum regnum Franciae" hand="Italian" id="RCP10552-2:627:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Totum Regnu[m] francia[e].</marginalia_text>
+                    <location name="France"/>
+                </position>
+            </language>
+            <translation>The whole kingdom of France.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Leonelli ducis Clarentiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Leonellus dux [deleted] clarentia[e]</marginalia_text>
+                    <person name="Lionel of Antwerp, 1st Duke of Clarence"/>
+                </position>
+            </language>
+            <translation>Lionel, Duke of Clarence.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Ioh. Hawkwood" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Io[hann]es Hawkwood.</marginalia_text>
+                    <person name="John Hawkwood"/>
+                </position>
+            </language>
+            <translation>John Hawkwood.</translation>
+        </marginalia>
+        
+        <underline id="RCP10552-2:627:u0001" language="LA" method="pen" text="sicut olim, totum regnum Franciae vendicauit" type="straight"/>
+        <underline language="LA" method="pen" text="tempus papa fouebat" type="straight"/>
+        <underline language="LA" method="pen" text="Domina Blanchia ducissa Lancastriae viam vniuersae carnis ingressa est" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; in ecclesia S. Pauli Londonijs sepelitur" type="straight"/>
+        <underline language="LA" method="pen" text="Ducissa Lancaestriae animans" type="straight"/>
+       
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        
+        <physical_link>
+            
+            <marginal_annotation idref="RCP10552-2:627:m0001"/>
+            
+            <marginal_annotation idref="RCP10552-2:627:u0001"/>
+            
+            <relation from="RCP10552-2:627:m0001" to="RCP10552-2:627:u0001" type="directed"/>
+            
+        </physical_link>
+       
+        
+    </annotation>
+</transcription>

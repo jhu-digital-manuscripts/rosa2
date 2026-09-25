@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.249r.tif" pagination="15" reader="John Dee" signature="B.iiij."/> 
+    <annotation>
+          
+        <marginalia hand="Italian" method="pen">
+            <language ident="FR">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Le Duc Richard de Normandie, regarda, que par souffrir ne obeijr il nauroit point de paix, si ordonna ses gens par telle maniere, que ceulx du pais D'Auge, 
+                        et de [Hommois?] deffendroient la terre contre Rotrou, le Conte du Perche, et de Belesme qui faisoient guerre par deuers Sees et le pais de la etainsi y adiousta les Aurenchinoys contre ceulx de Flandres, 
+                        et D Amiennoys [?st] les Cauchoys, ceulx des Contez D'Eu, et d'Aumalle. Et il rotint auec Luy les brettons, et ceulx de Constentin.</marginalia_text>  <!-- DO: Unsure of some words here -->
+                    <person name="Richard I of Normandy"/>
+                    <person name="Rotrou I, Count of Perche"/>
+                    <location name="Pays d'Auge"/>
+                    <!--JG: Location needs to be added-->
+                    <location name="Belleme"/>
+                    <location name="Sees"/>
+                    <location name="Avranches"/>
+                    <location name="Flanders"/>
+                    <location name="Amiens"/>
+                    <location name="Pays de Caux"/>
+                    <location name="Eu"/>
+                    <location name="Aumale"/>
+                    <location name="Brittany"/>
+                    <location name="Coutances"/>
+                </position>
+            </language>
+            <translation>The Duke Richard of Normandy, having seen that through enduring [resistance to obedience] he [nauroit?] a period of peace, if having ordered the people in such a way, 
+                that those of Pays d'Auge, and those of [Hommois], would defend the land against Rotrou, the Count of Perche, and of Belleme, who waged a war against Sees and 
+                the country there and thus having added the people of Avranches against those of Flanders, and those of Amiens, [?] the people of Pays de Caux, those of the communes of Eu and Aumale. 
+                And he [?] with him the Bretons, and the people of Coutances.</translation>  <!-- DO: Translation needs revising; also I can't actually identify 'Hommois' as a place so might be something else  -->
+        </marginalia>
+        
+        <marginalia anchor_text="Vermentrudis villam" hand="Italian" method="pen">
+            <language ident="FR">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Ermentreville</marginalia_text>
+                    <location name="Saint-Sever"/> 
+                </position>
+            </language>
+            <translation>Saint-Sever.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Vermentrudis villam" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vermentrudis Villa.</marginalia_text>
+                    <location name="Saint-Sever"/>
+                </position>
+            </language>
+            <translation>Saint-Sever.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="sexcentis quadraginta" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>640 interfecti.</marginalia_text>
+                </position>
+            </language>
+            <translation>640 killed.</translation>
+        </marginalia>
+
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>al[te]r Eureux [est] Ebroica[m].</marginalia_text>
+                    <location name="Evreux"/>
+                    <emphasis method="pen" text="Ebroica[m]" type="straight"/>
+                    <emphasis method="pen" text="Ebroica[m]" type="dotted"/>
+                </position>
+            </language>
+            <translation>The other Evreux [is] Ebroica.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Carnotu" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Ebroicam</marginalia_text>
+                    <location name="Evreux"/>
+                </position>
+            </language>
+            <translation>Evreux.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="Carnotena" hand="Italian" method="pen">
+            <language ident="FR"> 
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Chartres</marginalia_text>
+                    <location name="Chartres"/>
+                </position>
+            </language>
+            <translation>Chartres.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="filius eius moritur, &amp; tota Carnotena vrbs incendio consumitur" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Theob[aldi] fil[ius] moritur Carnotu[m] co[m]buritur</marginalia_text>
+                    <person name="Theobald I, Count of Blois"/>
+                    <location name="Chartres"/>
+                </position>
+            </language>
+            <translation>Theobald's son dies; he is cremated at Chartres.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="Haraldo Danorum regi" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Haraldus Dan[orum] R[ex]</marginalia_text>
+                    <person name="Harald Bluetooth"/>
+                </position>
+            </language>
+            <translation>Harald, King of the Danes.</translation>
+        </marginalia>
+  
+        <marginalia anchor_text="paganica" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pagani Dani</marginalia_text>
+                </position>
+            </language>
+            <translation>The Pagan Danes.</translation>
+        </marginalia>
+             
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+           
+        <marginalia anchor_text="Guinoldi fossam" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Guinoldi fossa [est] Geuffosse</marginalia_text>
+                    <location name="Jeufosse"/>
+                </position>
+            </language>
+            <translation>Guinoldi fossa [is] Jeufosse.</translation>
+        </marginalia>
+         
+        <marginalia hand="Italian" method="pen">
+            <language ident="FR">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Soldiers Marchandise</marginalia_text>
+                </position>
+            </language>
+            <translation>Danish soldiers.</translation>  
+        </marginalia>
+       
+        <marginalia anchor_text="sinodalis episcoporum conuentus" hand="Italian" method="pen"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Synodus Episcop[orum]</marginalia_text>
+                </position>
+            </language>
+            <translation>A synod of bishops.</translation>
+        </marginalia>
+ 
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[ Guinoldi fossa. Pax. Lotharij Regis F[ranciae] et Rich[ardi] Duci N[orthmanniae]</marginalia_text>
+                    <person name="Lothair of France"/>
+                    <person name="Richard I of Normandy"/>
+                    <location name="Jeufosse"/>
+                </position>
+            </language>
+            <translation>[Jeufosse. Peace. Of Lothair, King of France, and Richard, Duke of Normandy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="paganoru[m] plurimos ad Christi fide[m] conuertit" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pagani Christu[m] agnos[cere]</marginalia_text>  <!-- DO: Can't make out the last word - looks like 'agnus' -->
+                    <!-- FSF: the last word must be some sort of abbreviation, given that it ends in a long s; maybe agnos. from agnoscere as in the pagans recognised Christ? -->
+                </position>
+            </language>
+            <translation>The Pagans recognised Christ.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hispanias, vbi plurima bella perpetrantes decem &amp; octo diruerunt vrbes" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hispanica[e] vrbes 18 diruta[e] a Danis</marginalia_text>
+                </position>
+            </language>
+            <translation>18 Spanish cities overthrown by the Danes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Emma" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Agnes</marginalia_text>
+                    <person name="Emma of Paris"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Gorffrido Britannorum iuncta Comiti, Alanum &amp; Endonem" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gorfridus Comes B[ritannorum] - Alanus Endo</marginalia_text>
+                    <person name="Geoffrey I, Duke of Brittany"/>
+                    <person name="Alan III"/>
+                    <person name="Odo, Count of Penthievre"/>
+                </position>
+            </language>
+            <translation>Geoffrey, Count of Brittany - Alan, Odo.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; magalia" type="dotted"/>
+        <underline language="LA" method="pen" text="Vermentrudis" type="straight"/>
+        <underline language="LA" method="pen" text="alueo Sequanae" type="straight"/>
+        <underline language="LA" method="pen" text="sexcentis" type="straight"/>
+        <underline language="LA" method="pen" text="Theobaldus dedecorosè" type="straight"/>
+        <underline language="LA" method="pen" text="Carnotu" type="grid"/>
+        <underline language="LA" method="pen" text="filius eius moritur" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; tota Carnotena" type="straight"/>
+        <underline language="LA" method="pen" text="campum belli" type="straight"/>
+        <underline language="LA" method="pen" text="vulneratos leniter Rhotomagum" type="straight"/>
+        <underline language="LA" method="pen" text="medicis ibi curari, sanatos quoq[ue] Theobaldo remitti" type="straight"/>
+        <underline language="LA" method="pen" text="comites vnanimiter" type="straight"/>
+        <underline language="LA" method="pen" text="negotium paganica iuue[n]tus" type="straight"/>
+        <underline language="LA" method="pen" text="Guinoldi fossam" type="straight"/>
+        <underline language="LA" method="pen" text="patriam exitiali flamma comburunt" type="straight"/>
+        <underline language="LA" method="pen" text="commune per Theobaldi comitatu[m] nullo cane latrante" type="straight"/>
+        <underline language="LA" method="pen" text="regalia iura" type="straight"/>
+        <underline language="LA" method="pen" text="verò Francis subtrahunt, Normannis possidenda" type="straight"/>
+        <underline language="LA" method="pen" text="tellus Normannica" type="double"/>
+        <underline language="LA" method="pen" text="apud Landunum" type="straight"/>
+        <underline language="LA" method="pen" text="cum regis" type="straight"/>
+        <underline language="LA" method="pen" text="Theobaldi vrbis Ebroicae" type="straight"/>
+        <underline language="LA" method="pen" text="Regem Lotharium, de omnibus beneuolo animo illi satisfacturum" type="straight"/>
+        <underline language="LA" method="pen" text="cum festinatione duci mittit" type="straight"/>
+        <underline language="LA" method="pen" text="valde pŒnitere" type="straight"/>
+        <underline language="LA" method="pen" text="Ebroicamq[ue] vrbem illi redere" type="straight"/>
+        <underline language="LA" method="pen" text="apud Guinoldi fossam" type="straight"/>
+        <underline language="LA" method="pen" text="tentoria mirae magnitudinis construi" type="straight"/>
+        <underline language="LA" method="pen" text="satisfecit duci pactis fŒderibus" type="straight"/>
+        <underline language="LA" method="pen" text="iuratis sacramentis" type="straight"/>
+        <underline language="LA" method="pen" text="paganoru[m] plurimos ad Christi fide[m] conuertit" type="straight"/>
+        <underline language="LA" method="pen" text="monitis" type="straight"/>
+        <underline language="LA" method="pen" text="ad Hispanias" type="double"/>
+        <underline language="LA" method="pen" text="decem &amp; octo diruerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Eo tempore Emma ducis vxor, filia magni Hugonis moritur absq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="speciosissimam virginem" type="straight"/>
+        <underline language="LA" method="pen" text="Gunnor" type="straight"/>
+        <underline language="LA" method="pen" text="nobilissima Danorum prosapia" type="straight"/>
+        <underline language="LA" method="pen" text="copulauit Christiano" type="straight"/>
+        <underline language="LA" method="pen" text="Richardum" type="straight"/>
+        <underline language="LA" method="pen" text="Robertum" type="straight"/>
+        <underline language="LA" method="pen" text="Malgerium" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; duos" type="straight"/>
+        <underline language="LA" method="pen" text="necnon &amp; tres" type="straight"/>
+        <underline language="LA" method="pen" text="Egelredo regi" type="straight"/>
+        <underline language="LA" method="pen" text="Hawisa" type="straight"/>
+        <underline language="LA" method="pen" text="Theobaldus cu[m] dedecore fugit" type="straight"/>
+        <underline language="LA" method="pen" text="Haraldus Duci fert opem" type="straight"/>
+                
+       <symbol name="Asterisk" place="head"/>
+       <symbol name="Asterisk" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/>  <!-- castris tentoria -->
+
+        <numeral language="LA" place="tail" text="Emma">1</numeral>
+        <numeral language="LA" place="tail" text="Gunnor">2</numeral>
+         
+        <errata amendedtext="[deleted]" copytext="Carnotu" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>  
+
+        <graph book_orientation="0" method="pen" place="tail" type="genealogical_tree">
+            <node id="n1" person="Hugh the Great">Hugo Magnus</node>
+            <node id="n2" person="William I Longsword">Will[ia]mus Lo[n]g[a]sp[ata]</node>
+            <node id="n3" person="Emma of Paris">Emma</node>
+            <node id="n4" person="Richard I of Normandy">Richardus Prim[us] Dux Nort[hmanniae]</node>
+            <node id="n5" person="Gunnora de Crepon">Gunnor</node>
+            <node id="n6" person="Richard II, Duke of Normandy">Richardus</node>
+            <node id="n7" person="Robert II, Archbishop of Rouen">Robertus</node>
+            <node id="n8" person="Mauger, Count of Corbeil">Malgerius</node>
+            <node id="n9" person="Hawise of Normandy">Hawisa</node>
+            <node id="n10" person="Maud of Normandy">Matildis</node>
+            <node id="n11" person="Emma of Normandy">Emma</node>
+            <node id="n12" person="Aethelred II">Æthelredus rex Ang[liae]</node> 
+            <node id="n13">N.N.</node>
+            <node id="n14">N.N.</node>
+            <link from="n1" relationship="has_child" to="n3"/>
+            <link from="n2" relationship="has_child" to="n4"/>
+            <link from="n3" relationship="has_spouse" to="n4"/>
+            <link from="n4" relationship="has_spouse" to="n3"/>
+            <link from="n4" relationship="has_spouse" to="n5"/>
+            <link from="n5" relationship="has_spouse" to="n4"/>
+            <link from="n4" relationship="has_child" to="n6"/>
+            <link from="n4" relationship="has_child" to="n7"/>
+            <link from="n4" relationship="has_child" to="n8"/>
+            <link from="n4" relationship="has_child" to="n9"/>
+            <link from="n4" relationship="has_child" to="n10"/>
+            <link from="n4" relationship="has_child" to="n11"/>
+            <link from="n5" relationship="has_child" to="n6"/>
+            <link from="n5" relationship="has_child" to="n7"/>
+            <link from="n5" relationship="has_child" to="n8"/>
+            <link from="n5" relationship="has_child" to="n9"/>
+            <link from="n5" relationship="has_child" to="n10"/>
+            <link from="n5" relationship="has_child" to="n11"/>
+            <link from="n11" relationship="has_spouse" to="n12"/>
+            <link from="n12" relationship="has_spouse" to="n11"/>
+            <link from="n4" relationship="has_child" to="n13"/>
+            <link from="n5" relationship="has_child" to="n13"/>
+            <link from="n4" relationship="has_child" to="n14"/>
+            <link from="n5" relationship="has_child" to="n14"/>
+             
+        </graph>
+        
+        
+    </annotation>
+</transcription>

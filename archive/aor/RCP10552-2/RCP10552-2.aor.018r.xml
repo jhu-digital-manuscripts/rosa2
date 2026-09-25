@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.018r.tif" pagination="25" reader="John Dee" signature="C."/>
+    <annotation>
+        
+        <marginalia anchor_text="Iohannem de Brytannia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Brytannia</marginalia_text>
+                    <location name="Brittany"/>
+                </position>
+            </language>
+            <translation>Brittany.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Iohannes verò de S. Iohanne," type="double"/>
+        <underline language="LA" method="pen" text="Iohannem de Brytannia" type="double"/>
+        
+    </annotation>
+</transcription>

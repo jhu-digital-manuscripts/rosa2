@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.043r.tif" pagination="69" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="in quibus no[n] gaudet signis, inuentus fuerit, id est in domo ♂, uel ♄" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        In quibus signis no[n] gaudet saturnus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In these signs Saturn does not rejoice.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="facit maculis uariari" type="straight"/>
+        <underline language="LA" method="pen" text="in decimo ab horosc. signo stella" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; fures" type="straight"/>
+        <underline language="LA" method="pen" text="in iis, in quibus no[n] gaudet" type="straight"/>
+        <underline language="LA" method="pen" text="domo ♂, uel ♄ uel in" type="straight"/>
+        <underline language="LA" method="pen" text="loco ☿ pseudenedros" type="straight"/>
+        <underline language="LA" method="pen" text="faciet tardos" type="straight"/>
+        
+    </annotation>
+</transcription>

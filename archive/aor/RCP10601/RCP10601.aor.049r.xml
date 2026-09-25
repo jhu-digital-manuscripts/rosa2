@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.049r.tif" pagination="97" reader="John Dee" signature="g"/>
+    <annotation>
+        
+        <marginalia anchor_text="Chamus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cham</marginalia_text>
+                    <person name="Ham"/>
+                </position>
+            </language>
+            <translation>Ham.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Europa cum insulis maris nostri, &amp; Asia minore, obtigit" type="straight"/>
+        <underline language="LA" method="pen" text="Pheleg" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.165r.tif" pagination="319" reader="John Dee" signature="Ee.iiij."/>
+    <annotation>
+        
+        <marginalia anchor_text="Anno domini millesimo trece[n]tesimo, octuagesimo tertio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A[nn]o.1383.</marginalia_text> 
+                </position>
+            </language>
+            <translation>In the year 1383.</translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="reducens" type="straight"/>
+        <underline language="LA" method="pen" text="secum vxorem" type="double"/>
+        <underline language="LA" method="pen" text="suam" type="straight"/>
+        <underline language="LA" method="pen" text="quondam" type="double"/>
+        <underline language="LA" method="pen" text="Petri Regis Castellae filia[m] iuniorem," type="straight"/>
+        <underline language="LA" method="pen" text="&amp; filiu[m]" type="double"/>
+        <underline language="LA" method="pen" text="ex ea" type="straight"/>
+        <underline language="LA" method="pen" text="susceptum per annos" type="double"/>
+        <underline language="LA" method="pen" text="aliquot" type="straight"/>
+        <underline language="LA" method="pen" text="antequam Angliam exiuisset" type="double"/>
+        <underline language="LA" method="pen" text="Quem quidem tempore morae quam fecit in Portugalia desponsauit, filia regis Portugaliae cum solemnitate congruente" type="straight"/>
+        <underline language="LA" method="pen" text="noluit eum post" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/> 
+        
+        <graph book_orientation="0" method="pen" place="right_margin" type="genealogical_tree">
+            <node id="n1" person="Peter of Castile">Petrus Rex hisp[ania]</node>
+            <node id="n2" person="Henry II of Castile">Henricus Rex Hisp[ania]</node> <!-- MB. Not sure of the word following Hisp[ania], something like vs?pp. --> 
+            <!-- FSF: I had a chat with Jaap about this tree; so we've added the unidentified person, added some links accordingly; we also agreed that this abbreviation means vsurp. for usupator -->
+            <node id="n3" person="Isabella of Castile, Duchess of York">Isabella</node>
+            <node id="n4" person="Edmund of Langley, 1st Duke of York">Edm[undus]: Comes Ca[m]brigia[e]</node>
+            <node id="n5" person="Edward of Norwich, 2nd Duke of York">Edw[ardus]</node>
+            <node id="n6">[blank]</node>
+            <link from="n3" relationship="has_child" to="n1"/>
+            <link from="n4" relationship="has_spouse" to="n3"/>
+            <link from="n5" relationship="has_child" to="n3"/>
+            <link from="n5" relationship="has_child" to="n4"/>
+            <link from="n6" relationship="transgenerational" to="n2"/>
+            <link from="n5" relationship="has_spouse" to="n6"/>
+        </graph>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.034v.tif" pagination="[28v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Ptolemaeo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ptoloma[ë]us.</marginalia_text> 
+                    <person name="Ptolemy"/>
+                </position>
+            </language>
+            <translation>Ptolemy.</translation>
+        </marginalia>
+        
+        <marginalia date="29 April 1554" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Aliam ego Judicare[m] haru[m] imaginu[m] natura[m] [si] ratione[m] fixaru[m] ex quibus describu[n]tur haberem[us] J.d. 1554.29.Ap[ri]lis.</marginalia_text>  
+                    <person name="John Dee"/>
+                </position>
+            </language>
+            <translation>I judged that there was another nature of these appearances, if we had the reason of the fixed [things] from which they are described. John Dee, April 29, 1554. </translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ita haec de signis" type="straight"/>
+        
+    </annotation>
+</transcription>

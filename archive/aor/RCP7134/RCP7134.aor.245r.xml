@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.245r.tif" pagination="238" reader="John Dee" signature="OO ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="mors" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Genus mortis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The descent of death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Causam itinerum domini significatorum ostendent" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dispositores significatoru[m] causas itineru[m] significant, de hac re vide supr[a] fo. 90.v.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:200" text="90.v"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>The dispositors signify the causes of the significators' journey. About this matter, see above, folio 90 verso.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Imo potius 6.7.8.12 vt q[uam] sa[e]pissime faciunt.</marginalia_text>
+                </position>
+            </language>
+            <translation>Indeed, as they rather make 6, 7, 8, and 12 than most often.</translation> <!--JG: V unsure, don't get this--> <!-- FSF: neither do I -->
+        </marginalia>
+        
+        <marginalia anchor_text="Loci propria natura est" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Loci cuiuslib[et] qua[e] est propria natura.</marginalia_text>
+                </position>
+            </language>
+            <translation>What is the particular nature of which place?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mors" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>♀ morbi.</marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>Venus. Sicknesses. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mercurius; Luna" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☿ ☾.</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>Mercury. The Moon.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mors uiolenta" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mors viole[n]ta.</marginalia_text>
+                </position>
+            </language>
+            <translation>A violent death.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vide aph 98</marginalia_text>
+                </position>
+            </language>
+            <translation>See aphorims 98.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Exe[m]pli gr[ati]a.</marginalia_text>
+                </position>
+            </language>
+            <translation>On account of the example.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cum planeta aliquis, per patrem in cuspide septimae domus, in domo sua fuerit, erit mors proculdubio ex natura planetae illius, atq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="latrones" type="straight"/>
+        <underline language="LA" method="pen" text="insidias" type="straight"/>
+        <underline language="LA" method="pen" text="canum aut equoru[m] uel ferarum detrime[n]ta" type="straight"/>
+        <underline language="LA" method="pen" text="Causum itinerum domini significatorum ostendent" type="straight"/>
+        <underline language="LA" method="pen" text="Locum occidentem ex natura propria conuenit obseruare, &amp; planetae aspicientis, &amp; euntis ad eum motu aequinoctij uel proprio" type="straight"/>
+        <underline language="LA" method="pen" text="ex stellis ibi" type="straight"/>
+        <underline language="LA" method="pen" text="uel in" type="straight"/>
+        <underline language="LA" method="pen" text="uel ex seipsa" type="straight"/>
+        <underline language="LA" method="pen" text="uel domina[n]tis" type="straight"/>
+        <underline language="LA" method="pen" text="uerecundos" type="straight"/>
+        <underline language="LA" method="pen" text="morbum per accidens" type="straight"/>
+        <underline language="LA" method="pen" text="loco mortis dominatur" type="straight"/>
+        <underline language="LA" method="pen" text="uel si altera aspiciat" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Locum occidentem ex natura propria conuenit obseruare, &amp; planetae aspicientis, &amp; euntis ad eum motu aequinoctij uel proprio"/>
+        
+        <numeral language="LA" place="intext" text="ex stellis ibi">1</numeral>
+        <numeral language="LA" place="intext" text="uel in">2</numeral>
+        <numeral language="LA" place="intext" text="uel ex seipsa">3</numeral>
+        <numeral language="LA" place="intext" text="uel domina[n]tis">4</numeral>
+        
+    </annotation>
+</transcription>

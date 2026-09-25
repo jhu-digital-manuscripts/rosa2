@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.324v.tif" pagination="628" reader="John Dee" signature="[rrr.iii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="postrauit, fudit, occidit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>prosteruere fundere occidere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To knock over, to scatter, to kill.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>πάθος</marginalia_text>
+                </position>
+            </language>
+            <translation>Pathos.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mors" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>MORS</marginalia_text>
+                </position>
+            </language>
+            <translation>Death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in fuga, foeda mors: in victoria, gloriosa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In fuga fo[e]da mors in victoria gloriosa</marginalia_text>
+                </position>
+            </language>
+            <translation>When fleeing, death is wretched; when victorious, death is glorious.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="extremu[m] spiitu[m] in victoria effundistis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>extremu[m] sp[i]ri[tu]m effundere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To discharge the last breath.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vita" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>VITA</marginalia_text>
+                </position>
+            </language>
+            <translation>Life.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="reticentia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>retice[n]tia.</marginalia_text>
+                </position>
+            </language>
+            <translation>To keep silent.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="prostrauit, fudit, occidit" type="straight"/>
+        <underline language="LA" method="pen" text="honorificentissimis verbis ipse consequi potero" type="straight"/>
+        <underline language="LA" method="pen" text="quanquam ea, quae nos promisimus, studiose cumulata reddemus" type="straight"/>
+        <underline language="LA" method="pen" text="Sed facile est bene agere cu[m] his, à quibus etiam tace[n]tibus flagitari videamur" type="straight"/>
+        <underline language="LA" method="pen" text="O fortunata mors, quae naturae debita pro patria est potissimu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="in fuga, foeda mors: in victoria, gloriosa" type="straight"/>
+        <underline language="LA" method="pen" text="pignerari" type="straight"/> 
+        <underline language="LA" method="pen" text="Breuis aute[m] vobis vita data est, at memoria bene redditae vitae sempiterna. quae" type="straight"/>
+        <underline language="LA" method="pen" text="nec reticentia posteroru[m] insepulta esse poterit" type="straight"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">5</numeral>
+        
+    </annotation>
+</transcription>

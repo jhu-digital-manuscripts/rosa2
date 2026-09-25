@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.244r.tif" pagination="237" reader="John Dee" signature="OO"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Luminariu[m] opus res manifestare, et ad actu[m] p[er]duce[t]</marginalia_text>
+                </position>
+            </language>
+            <translation>To clarify the matters of the works of lights even will lead to the act.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>more italico ab occasu ☉ co[m]putando</marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>In the Italian way, by computing the setting of the Sun.</translation>
+        </marginalia>
+        
+        <symbol name="Trine" place="intext"/>
+        <symbol name="Trine" place="intext"/>
+        <symbol name="Trine" place="intext"/>
+        <symbol name="Sextile" place="intext"/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        
+        <!--JG: How to capture these lines (for physical links need concrete reader interventions which can be linked together (but do not exist in this case!-->
+        
+        
+        
+    </annotation>
+</transcription>

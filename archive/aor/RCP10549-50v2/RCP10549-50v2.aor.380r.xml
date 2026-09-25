@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.380r.tif" pagination="211" reader="John Dee" signature="Oo.ii."/>   
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        sup[ra] nu[merum] 89
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0767" text="nu[merum] 89"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                See above at number 89.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Prouide[n]tia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Providence.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Luna à lucendo nominata sit: eadem est enim Lucina ... Ionem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Luna Lucina. ] Iuno
+                    </marginalia_text>
+                    <person name="Luna"/>
+                    <person name="Lucina"/>
+                    <person name="Juno"/>
+                </position>
+            </language>
+            <translation>
+                Luna, Lucina, Juno.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Diana" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Diana
+                    </marginalia_text>
+                    <person name="Diana"/>
+                </position>
+            </language>
+            <translation>
+                Diana.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad partus, quòd ii maturescunt aut septem no[n]nunquam, aut, vt perunque, nouem lunae cursibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Partus maturescunt 9 ☾ cursibus. } aut
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The offspring grows in the course of 9 moons. or.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="qua nocte natus Alexander esset, eadem Dianae Ephesiae templum deflagrauisse" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Qua nocte natus Alexander fuit eadem diane Ephesie templum deflagrabat
+                    </marginalia_text>
+                    <person name="Alexander the Great"/>
+                    <location name="Temple of Artemis at Ephesus"/>
+                </position>
+            </language>
+            <translation>
+                Alexander was born in the night that the Temple of Diana in Ephesus burnt down.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Venus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Venus
+                    </marginalia_text>
+                    <person name="Venus"/>
+                </position>
+            </language>
+            <translation>
+                Venus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[m]mentitios &amp; fictos deos?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Comme[n]titij fueru[n]t p[rae]dicti Dij
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Were the gods invented and predicted?
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="omniáque traducta ad similitudinem imbecillitatis humanae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        O[mn]ia de dijs traducta sunt ad similitudine[m] imbecillitatis human[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                All about the gods is distorted to the likeness of human weakness.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fabulae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        De dijs ficta[e] fabula[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Invented fables about the gods.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="deus pertinens per naturam cuiusque rei" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Deus pertinens per naturam cuiusq[ue] rei
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'The nature of the divinities pervading the substance of the several elements' [LCL 268:192-93].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cultus autem deorum est optimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cultus deoru[m] est optimus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The worship of the gods is greatest.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="superstitionem à religione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Superstitio. Religio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Superstition, religion.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Religiosi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The religious.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Superstitio vitium est
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Superstition is a vice.
+            </translation>
+        </marginalia>
+         
+        <marginalia anchor_text="Vestra enim solum legitis, vestra amatis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vestra solum legitis vestra amatis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                You only read your writings, armed with your arms.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prouidentia deorum mundum administrari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Prouide[n]tia Deoru[m] mundum administrari
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The world is governed by the providence of the gods.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prouidentia deorum, mundum &amp; omnes mundi partes, &amp; initio constitutas esse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Prouidentia dei mundus est constitutus initio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                From its beginning the world was established by the providence of god. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="disputationem tres in partes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tres Disputationis partes
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Three parts of the disputation.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        nostror[um] hominu[m] vrbanitate limatus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Polished by the sophistication of our people
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        quo [ co[n]cesso co[n]firmato co[n]cluso constituto
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                By permission, confirmation, conclusion, constitution.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        id pra[e]cise dicitur x plene perfecte
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It was said precisely - plainly and perfectly.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        fabulas poetis suppeditaveru[n]t 
+                        ho[m]i[nu]m vita[m] sup[er]stitione o[mn]i referseru[n]t 
+                        qua[e] res geminit falsos opiniones erroresq[ue] turbule[n]tos et superstitiones penè amites <!-- FSF: not sure about the last word -->
+                        h[a]ec et dicuntur et credu[n]tur stultissimè et plena sunt fidelitatis, summ[a]eq[ue] veritatis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To make the fables available to the poets.
+                They condense the life of people into all superstition.
+                This thing doubles wrong ideas and violent and superstitious mistakes 
+                These things are both said and thought foolishly, and they are full of faithfulness and greatest truth. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        this may be st...de you ..e <!-- FSF: not sure -->
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="eadem Diana omniuaga dicitur, non à venando" type="straight"/>
+        <underline language="LA" method="pen" text="mensa spatia" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]mentitios &amp; fictos deos? Quae res genuit falsas opiniones errorésque turbulentos, &amp; superstitiones penè aniles" type="straight"/>
+        <underline language="LA" method="pen" text="Haec &amp; dicuntur &amp; creduntur stultissime, &amp; plena sunt futilitatis summáeque leuitatis. Sed tamen" type="straight"/>
+        <underline language="LA" method="pen" text="Cultus autem deorum est optimus, idémque castissimus atque sanctissimus, plenissimúsq[ue] pietatis,              vt eos semper pura, integra, incorrupta &amp; mente &amp; voce veneremus" type="straight"/>
+        <underline language="LA" method="pen" text="Nam qui totos dies precabantur, &amp; immolabant" type="straight"/>
+        <underline language="LA" method="pen" text="patuit postea latius. Qui autem omnia quae ad cultum deorum pertinerent diligenter retractarent, &amp; tanquam relegerent,              sunt dicti religiosi ex relegendo, vt eligentes ex eligendo, tanquam à deligendo diligentes, ex intelligendo intelligentes" type="straight"/>
+        <underline language="LA" method="pen" text="sanè locus est, &amp; à vestris" type="straight"/>
+        <underline language="LA" method="pen" text="Cotta vexatus, ac nimirum vobiscum omne certamen est" type="straight"/>
+        <underline language="LA" method="pen" text="vobis Vellei minus notum est, quemadmodum quidque dicatur. Vestra enim solum legitis, vestra amatis, ceterps causa incognita condemnatis,              velut à teipso hesterno die" type="straight"/>
+        <underline language="LA" method="pen" text="id praecise" type="straight"/>
+        <underline language="LA" method="pen" text="arbitrator" type="straight"/>
+        <underline language="LA" method="pen" text="Ita salem istum quo caret vestra natio, in irridendis nobis nolitote consumere" type="straight"/>
+        <underline language="LA" method="pen" text="hoc in te vno conuenit" type="straight"/>
+        <underline language="LA" method="pen" text="hominum vrbanitate limato, sed cum in reliquos vestros" type="straight"/>
+        <underline language="LA" method="pen" text="peperit, hominem sine arte, sine literis, insultantem in omnes, sine acumine vllo, sine authoritate, sine lepôre" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; initio constitutas esse, &amp; omni tempore administrari, eámque disputationem tres in partes" type="straight"/>
+        <underline language="LA" method="pen" text="quo concesso" type="straight"/>
+        
+        <symbol language="LA" name="Moon" place="left_margin" text="Diana"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Asterisk" place="left_margin"/>
+        <symbol name="Asterisk" place="left_margin"/>
+        <symbol name="Asterisk" place="left_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/> 
+        <mark method="pen" name="slash" place="right_margin"/>
+        <mark method="pen" name="slash" place="right_margin"/>
+        <mark language="LA" method="pen" name="tripunctus" place="right_margin" text="Diana"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark language="LA" method="pen" name="tripunctus" place="right_margin" text="Religio"/>
+        <mark method="pen" name="bracket" place="intext"/> <!-- laudis Ac -->
+        <mark method="pen" name="comma" place="intext"/> <!-- conuenit moribus -->
+
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+        <errata amendedtext="[deleted]" copytext="vno" language="LA"/>
+ 
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

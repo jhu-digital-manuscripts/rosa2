@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.113r.tif" pagination="205" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Ceres &amp; Libera" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ad cerere[m] libera[m]
+                    </marginalia_text>
+                    <person name="Ceres"/>
+                    <person name="Libera"/>
+                </position>
+            </language>
+            <translation>
+                To Ceres and Libera.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="insector inquam ac flagito" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        insector insto flagito ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I ply, I approach, I dun.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gallia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gallia
+                    </marginalia_text>
+                    <location name="Gaul"/>
+                </position>
+            </language>
+            <translation>
+                Gaul.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vnae tabulae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vn[a]e tabul[a]e <!--JG: Compare with Loeb edition (252, p. 315)-->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Single pieces of evidence.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nostra memoria" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        nostra memoria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Our memory.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="subacti, modo bello domiti, modo triumphis ac monimentis notati, modo ab Senatu agris, vrbibúsque multati sunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        subacti domiti notati multati
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Those conquered, subdued, recorded and punished.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="legu[m], moru[m], mansuetudinis, humanitatis exe[m]pla hominibus" type="straight"/>
+        <underline language="LA" method="pen" text="aut ipsam videre se Cererem, aut effigiem Cereris non humana" type="straight"/>
+        <underline language="LA" method="pen" text="esse, sed caelo delapsam arbitrarentur" type="straight"/>
+        <underline language="LA" method="pen" text="omnes imploro atque obtestor, quorum templis &amp; religionibus iste nefario quodam furore &amp; audacia instinctus, bellum sacrilegum semper,              impiúmque habuit indictum" type="straight"/>
+        <underline language="LA" method="pen" text="causa, omnia mea consilia ad salutem sociorum, dignitatem Populi Rom. fidem meam spectauerunt: si nullam ad rem, nisi ad officium, &amp; veritatem omnes meae curae,              vigiliae, cogitationésque laborarunt: quae mea mens in suscipienda causa fuit, fides in agenda, eadem vestra in iudicanda sit. denique vti C. Verrem, si eius omnia sunt inaudita &amp; singularia" type="straight"/>
+        <underline language="LA" method="pen" text="facinora sceleris, audaciae, perfidiae, libidinis, auaritiae, crudelitatis, dignus exitus eiusmodi" type="straight"/>
+        <underline language="LA" method="pen" text="vita atque factis vestro iudicio consequatur" type="straight"/>
+        <underline language="LA" method="pen" text="testeis, plus ego in hac causa laboris &amp; operae consumo in poscendis testibus, quàm caeteri defesnsores" type="straight"/>
+        <underline language="LA" method="pen" text="Audacter hoc dico Iudices, non temere confirmo. referta" type="straight"/>
+        <underline language="LA" method="pen" text="videte quo descendam Iudices, quàm longe videar à consuetudine mea &amp; cautione ac diligentia discedere" type="straight"/>
+        <underline language="LA" method="pen" text="partim nostra memoria" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/> <!--JG: Arranged in the shape of a cross-->
+        
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">15</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.103r.tif" pagination="96" reader="John Dee"/>
+    <annotation>
+                
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cur gradus vnus anu[m] significauit,</marginalia_text> 
+                </position>
+            </language>
+            <translation>When a degree signified one year.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="igitur Sol multiplicet partem quam in die pertransit, in id quod p[er]transit in anno" type="straight"/>
+        
+        <errata amendedtext="12" copytext="20" language="LA"/>
+        <errata amendedtext="20" copytext="12" language="LA"/>
+        
+        <drawing anchor_text="igitur Sol multiplicet partem quam in die pertransit, in id quod p[er]transit in anno" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <table place="intext" type="standard_table">
+            <tr>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>31</td>
+            </tr>
+        </table>
+        
+    </annotation>
+</transcription>

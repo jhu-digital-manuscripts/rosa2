@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.105r.tif" pagination="199" reader="John Dee" signature="R.iiij."/>
+    <annotation>
+        
+        <marginalia anchor_text="ciues Londini, VVilhelmus VValvvorth, &amp; Iohannes Philpot" hand="Italian">
+            <language ident="LA">
+            <position book_orientation="0" place="head">
+                <marginalia_text>Ciues { Will[hel]mus Walworth Jo[hann]es Philipot </marginalia_text>
+                <person name="William Walworth"/>
+                <person name="John Philpot"/>
+            </position>
+            </language>
+            <translation>Citizens, William Walworth and John Philpot.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="plures ex dominis" type="straight"/>
+        <underline language="LA" method="pen" text="omnes legisperitos Angliae pecunia corrupuisset" type="straight"/>
+        <underline language="LA" method="pen" text="clero duae decim[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="si eadem bona ministros idoneos sortiantur" type="straight"/>
+        <underline language="LA" method="pen" text="VVilhelmus VValvvorth" type="straight"/>
+        <underline language="LA" method="pen" text="Iohannes Philpot" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="right_margin" text="omnes legisperitos Angliae pecunia corrupuisset"/>
+        
+    </annotation>
+</transcription>

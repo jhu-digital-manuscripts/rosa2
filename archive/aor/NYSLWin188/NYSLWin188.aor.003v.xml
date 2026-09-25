@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.003v.tif" pagination="[3[v]]" reader="John Dee" signature="[Aiij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Also ist auch der Himmel ein Corpus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Coeli corpus q[u]ale</marginalia_text>
+                </position>
+            </language>
+            <translation>What body of the heaven.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="farbe[n] des Himmels" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Colores Elementoru[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>The colours of the elements.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Miner" hand="Italian" id="NYSLWin188:00000020:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Mineraru[m] colores.</marginalia_text>
+                </position>
+            </language>
+            <translation>The colours of the minerals.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Erden" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Terra.</marginalia_text>
+                </position>
+            </language>
+            <translation>Earth.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="mit den andern gar keine vermischung hat" type="straight"/>
+        <underline language="DE" method="pen" text="den Rauch" type="double"/>
+        <underline language="DE" method="pen" text="was von jm wachst ist auch also seind" type="straight"/>
+        <underline language="DE" method="pen" text="Also die Sonne die ist ein Corpus wie gemelt ist der Mon vnd alle Sternen" type="straight"/>
+        <underline language="DE" method="pen" text="ohne Complexion" type="straight"/>
+        <underline id="NYSLWin188:00000020:u0001" language="DE" method="pen" text="vnd ist das" type="double"/>
+        <underline id="NYSLWin188:00000020:u0002" language="DE" method="pen" text="auß dem das fewr" type="double"/>
+        <underline language="DE" method="pen" text="wachst vnd entspringet" type="straight"/>
+        <underline language="DE" method="pen" text="Sternen die auß dem Himmel jr natur vnd wesen nemen" type="straight"/>
+        <underline id="NYSLWin188:00000020:u0003" language="DE" method="pen" text="ein Element des fewers" type="straight"/>
+        <underline language="DE" method="pen" text="das fewer thun sol das thut der Himmel der es gibt vnd" type="straight"/>
+        <underline id="NYSLWin188:00000020:u0004" language="DE" method="pen" text="auß jm wachst" type="double"/>
+        <underline language="DE" method="pen" text="schwartz" type="straight"/>
+        <underline id="NYSLWin188:00000020:u0005" language="DE" method="pen" text="ist ein Miner" type="straight"/>
+        
+        <symbol language="DE" name="Sun" place="left_margin" text="Sonne"/>
+        <symbol language="DE" name="Moon" place="left_margin" text="Mon"/>
+        <symbol language="DE" name="Asterisk" place="left_margin" text="Sternen"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/> <!-- FSF: or a tripunctus with a tail -->
+        
+        <physical_link>
+            <marginal_annotation idref="NYSLWin188:00000020:m0001"/>
+            <marginal_annotation idref="NYSLWin188:00000020:u0001"/>
+            <marginal_annotation idref="NYSLWin188:00000020:u0002"/>
+            <marginal_annotation idref="NYSLWin188:00000020:u0003"/>
+            <marginal_annotation idref="NYSLWin188:00000020:u0004"/>
+            <marginal_annotation idref="NYSLWin188:00000020:u0005"/>
+            
+            <relation from="NYSLWin188:00000020:m0001" to="NYSLWin188:00000020:u0005" type="directed"/>
+            <relation from="NYSLWin188:00000020:u0001" to="NYSLWin188:00000020:u0003" type="undirected"/>
+            <relation from="NYSLWin188:00000020:u0002" to="NYSLWin188:00000020:u0004" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

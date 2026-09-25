@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.322v.tif" pagination="152" reader="John Dee" signature="[V.ij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="dux Glouerni[a]e" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dux Glouernia[e]</marginalia_text>
+                    <person name="Thomas of Woodstock, 1st Duke of Gloucester"/>
+                </position>
+            </language>
+            <translation>The Duke of Gloucester.</translation>
+        </marginalia>
+ 
+        <underline language="LA" method="pen" text="decuisset" type="double"/>
+        <underline language="LA" method="pen" text="vos pr[a]ecipuè absentes fuisse" type="straight"/>
+        <underline language="LA" method="pen" text="negotio subtraxisse" type="straight"/>
+        <underline language="LA" method="pen" text="rex diris imaginibus" type="straight"/>
+        <underline language="LA" method="pen" text="reum fatebatur criminis laesae" type="straight"/>
+        <underline language="LA" method="pen" text="insulam Euboniae" type="straight"/>
+        <underline language="LA" method="pen" text="dux Glouerni[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="iussit Comiti Mareschallo vt eum latenter occideret" type="straight"/>
+        <underline language="LA" method="pen" text="suffocari fecit" type="straight"/>
+        <underline language="LA" method="pen" text="regis filius, &amp; regis patruus" type="straight"/>
+        <underline language="LA" method="pen" text="vt potestas parliamenti remaneret penes certas personas 7. vel 8. quibus liceret" type="straight"/>
+        <underline language="LA" method="pen" text="parliamento, certas petitiones in eodem parliamento" type="straight"/>
+        <underline language="LA" method="pen" text="derogationem status parliamenti" type="double"/>
+        <underline language="LA" method="pen" text="principatus Cestri[a]e" type="straight"/>
+
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

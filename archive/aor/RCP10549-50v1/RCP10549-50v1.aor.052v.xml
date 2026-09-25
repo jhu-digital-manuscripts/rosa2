@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.052v.tif" pagination="84" reader="John Dee" signature="[ff.ii.[v]]"/>
+    <annotation> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        laus Siculor[um]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Praise for the Sicilians.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mamertinam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mamertina
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mamertines.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Heium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        C. Heius
+                    </marginalia_text>
+                    <person name="Gaius Heius"/>
+                </position>
+            </language>
+            <translation>
+                Gaius Heius.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nunquam ante hoc tempus ad aram legum praesidiúmque vestrum publico consilio confugerent" type="straight"/>
+        <underline language="LA" method="pen" text="si humano modo, si vsitato more, si denique vno aliquo in genere peccasset. sed cum" type="straight"/>        
+        <underline language="LA" method="pen" text="non possent luxuriem, crudelitatem, auaritiam, superbiam: cum omnia sua commoda, iura, beneficia S. P. Q. Ro. vnius scelere" type="straight"/>
+        <underline language="LA" method="pen" text="hac causa multo pluries partes mihi defensionis, quàm accusationis suscepisse videor" type="straight"/>        
+        <underline language="LA" method="pen" text="saluti enim eorum potius consulam, quàm voluntati" type="straight"/>
+        <underline language="LA" method="pen" text="dicetur certo loco" type="straight"/>
+        <underline language="LA" method="pen" text="istum, eas ipsas causas" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">10</numeral>
+        
+        
+    </annotation>
+</transcription>

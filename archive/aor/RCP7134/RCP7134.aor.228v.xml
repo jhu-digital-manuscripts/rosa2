@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.228v.tif" pagination="[221v]" reader="John Dee" signature="[KK[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Quonia[m] ☾ exaltatio, ♉, in vndecima</marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Taurus"/>
+                </position>
+            </language>
+            <translation>Because the exaltation of the Moon, Taurus, in the eleventh [house].</translation>  
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cancer, ille sibi anxie amicos quaeret" type="straight"/>
+        <underline language="LA" method="pen" text="nam Saturnus &amp; Iupiter, luminaribus praeualent" type="straight"/>
+        
+    </annotation>
+</transcription>

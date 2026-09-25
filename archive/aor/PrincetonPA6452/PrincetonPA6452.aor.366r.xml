@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.366r.tif" pagination="715" reader="Harvey" signature="ooo4[r]"/>
+    <annotation>        
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        filiorum regiorum a[e]mulatio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The rivalry of the royal sons.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="regis duo filij iuuenes cingebant" type="straight"/>
+        <underline language="LA" method="pen" text="Perseus iam" type="straight"/>
+        <underline language="LA" method="pen" text="Demetrius" type="straight"/>
+        <underline language="LA" method="pen" text="medio iuuentae robore" type="straight"/>
+        <underline language="LA" method="pen" text="hic flore" type="straight"/>
+        <underline language="LA" method="pen" text="patris matura soboles" type="straight"/>
+        <underline language="LA" method="pen" text="si me[n]s sana fuisset." type="straight"/>
+        <underline language="LA" method="pen" text="regij iuuenes duces" type="straight"/>
+        <underline language="LA" method="pen" text="non imago fuit pugn[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="tanquam de regno dimicaretur" type="straight"/>
+        <underline language="LA" method="pen" text="ita concurrerunt" type="straight"/>
+        <underline language="LA" method="pen" text="multaq[ue] uulnera sudibus facta" type="straight"/>
+        <underline language="LA" method="pen" text="nec praeter ferrum quicqua[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ea que sub Demetrio erat, longè" type="straight"/>
+        <underline language="LA" method="pen" text="l[a]etari prude[n]tes amici" type="straight"/>
+        <underline language="LA" method="pen" text="eamq[ue] rem ipsam" type="straight"/>
+        <underline language="LA" method="pen" text="pr[a]ebitura[m] causam" type="straight"/>
+        <underline language="LA" method="pen" text="crimina[n]di iuuenis" type="straight"/>
+        <underline language="LA" method="pen" text="festo die inuitatio benigna, &amp; hilaritas" type="straight"/>
+        <underline language="LA" method="pen" text="iuuenilis utrosq[ue] in uinu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]memoratio ibi certaminis ludicri" type="straight"/>
+        <underline language="LA" method="pen" text="iocosa dicta" type="straight"/>
+        <underline language="LA" method="pen" text="has excipie[n]das uoces" type="straight"/>
+        <underline language="LA" method="pen" text="speculator ex co[n]uiuis Persei" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- matu -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- dimi -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- uo -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- uo -->
+        
+        <mark method="pen" name="dot" place="intext"/> <!--minor, medio-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="crimina[n]di iuuenis"/>
+
+    </annotation>
+</transcription>

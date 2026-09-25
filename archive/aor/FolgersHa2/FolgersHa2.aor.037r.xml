@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.037r.tif" pagination="393" reader="Harvey"/>	<!-- ABO 041right -->
+    	<annotation>
+    		
+            		<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Cum agitur maximè, tum viuitur maximè.
+                      			</marginalia_text>
+            			</position>
+        			</language>
+        			<translation>
+        				When one acts the most, then one lives the most.
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						ridicolo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>Ridiculous.</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						I haue wiped mie taile
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						with su[m] peese of thie works to nash.
+    					</marginalia_text>
+    					<person name="Thomas Nash"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						An plus perfici
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						possit
+    					</marginalia_text>
+    				</position>
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						vno anno, quàm Ca[e]sar peregit tota vita.
+    					</marginalia_text>
+    					<person name="Julius Caesar"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						Eudromi problema.
+    					</marginalia_text>
+    					<person name="Eudromus"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Whether more can be accomplished in one year, than Caesar completed in his whole life. 
+    				The problem of Eudromus.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						Etiam Plutarchi vitis deest Vita.
+    					</marginalia_text>
+    					<person name="Plutarch"/>
+    					<book title="Parallel Lives"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Even in the lives of Plutarch, life is wanting.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						Nemo artificu[m], satis artifex: aut viroru[m], satis vir.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				No one is sufficiently an artist among artists: or else, no one is sufficently a man among men.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						s[upr]a
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				[See] above.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						s[upr]a /
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				[See] above.
+    			</translation>
+    		</marginalia>
+        
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="90" place="left_margin">
+    					<marginalia_text>
+    						Etiam Rabela[e]sius fingit frigidè: et plus verè perpetrari potuit, =
+    					</marginalia_text>
+    					<person name="Francois Rabelais"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    				<position book_orientation="90" place="right_margin">
+    					<marginalia_text>
+    						= quàm ipse mentitur.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Even Rabelais composed lifelessly, and indeed he was able to accomplish more than he himself intended. 
+    			</translation>
+    		</marginalia>
+    		
+    		
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position book_orientation="270" place="right_margin">
+    					<marginalia_text>
+    						Of all Writers, Homer, &amp; Liuie excell for liuelie purtrature of persons, places,
+    						things, &amp; acts.
+    					</marginalia_text>
+    					<person name="Homer"/>
+    					<person name="Livy"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+	    	<!-- Underlines -->
+	        
+    		<underline language="IT" method="pen" text="gioco di lui" type="straight"/>
+    		<underline language="IT" method="pen" text="molto insopportabile" type="straight"/>
+    		<underline language="IT" method="pen" text="non sputaua" type="straight"/>
+    		<underline language="IT" method="pen" text="non Cicerone, &amp; Vergilio," type="straight"/>
+    		<underline language="IT" method="pen" text="letteruto" type="straight"/>
+    		<underline language="IT" method="pen" text="noia a ciascuno" type="straight"/>
+    		<underline language="IT" method="pen" text="Bartolomeo di Poggio" type="straight"/>
+    		<underline language="IT" method="pen" text="farlo arrossire" type="straight"/>
+    		<underline language="IT" method="pen" text="fuor d'ogni proposito" type="straight"/>
+    		<underline language="IT" method="pen" text="trinciare Virgilio, e altri" type="straight"/>
+    		<underline language="IT" method="pen" text="hauete uoi alle mani cotesto Virglio" type="straight"/>
+    		<underline language="IT" method="pen" text="pedante" type="straight"/>
+    		<underline language="IT" method="pen" text="non ui siete uoi accorto, come" type="straight"/>
+    		<underline language="IT" method="pen" text="deh" type="straight"/>
+    		<underline language="IT" method="pen" text="datemene un foglio per forbirmi il culiseo" type="straight"/>
+    		<underline language="IT" method="pen" text="Dal medesimo" type="straight"/>
+    		<underline language="IT" method="pen" text="nuouamente" type="straight"/>
+    		<underline language="IT" method="pen" text="rassettare la uigna, e ad altri esercitij materiali:" type="straight"/>
+    		<underline language="IT" method="pen" text="la prima uista" type="straight"/>
+    		<underline language="IT" method="pen" text="cioè uillano" type="straight"/>
+    		<underline language="IT" method="pen" text="poco prattico" type="straight"/>
+    		<underline language="IT" method="pen" text="che domine uolete" type="straight"/>
+    		<underline language="IT" method="pen" text="di cotesto animale" type="straight"/>
+    		<underline language="IT" method="pen" text="gouernaua i porci" type="straight"/>
+    		<underline language="IT" method="pen" text="non haurà cambiato, ne migliorato gra[n] fatto esercitio" type="straight"/>
+    		<underline language="IT" method="pen" text="scritto uno" type="straight"/>
+    		<underline language="IT" method="pen" text="suo parere sopra una scioccheria, che" type="straight"/>
+    		<underline language="IT" method="pen" text="uoleua dir nulla" type="straight"/>
+    		<underline language="IT" method="pen" text="openion mia" type="straight"/>
+    		
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="Sun" place="right_margin"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark method="pen" name="plus_sign" place="right_margin"/> <!-- Vergilio, per -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- Mes -->
+    		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- Virgilio? -->
+    		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- il culi -->
+    		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- uillano -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- co[n]ta -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- pianamen -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- co[n] -->
+	    	
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- fare il  -->
+    		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- noia a --> 
+    		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- deh di -->
+    		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- la prima uista -->
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- do, che e' -->
+		    
+	    	<!-- Intext -->
+	    	<mark method="pen" name="plus_sign" place="intext"/> <!-- molto insop -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- portabile, non -->
+    		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- Chalk mark in first paragraph -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- auttori, gli -->
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- deh di -->
+    		<mark method="pen" name="equal_sign" place="intext"/> <!-- materiali -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- prattico, disse -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- cotesto animale -->
+    		<mark method="pen" name="comma" place="intext"/> <!-- compagnia disse -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- nulla, & -->
+    		
+
+    </annotation>
+</transcription>

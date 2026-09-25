@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.006r.tif" reader="John Dee" signature="B ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Metaphisicam" hand="English_secretary" id="RCP9978:019:m0001">
+          <language ident="LA">
+              <position book_orientation="0" place="right_margin">
+                  <marginalia_text>Mathematica[m] vellet dicere. forte</marginalia_text>
+              </position>
+          </language>
+          <translation>He wanted to say mathematics, perhaps.</translation>    
+      </marginalia>  
+
+        <marginalia anchor_text="virtus verborum" hand="English_secretary" id="RCP9978:019:m0002">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>virtus verbor[um].</marginalia_text>
+                </position>
+            </language>
+            <translation>The virtue of words.</translation>    
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Phisicam" type="straight"/>
+        <underline language="LA" method="pen" text="Metaphisicam" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Astrologiam" type="straight"/>
+        <underline language="LA" method="pen" text="vnde magni primordia coeli" type="straight"/>
+        <underline language="LA" method="pen" text="quae sunt auri, quae semina ferri" type="straight"/>
+        <underline id="RCP9978:019:u0001" language="LA" method="pen" text="docet plana" type="straight"/>
+        <underline language="LA" method="pen" text="Metaphysicam" type="straight"/>
+        <underline language="LA" method="pen" text="quid mens: quid Daemon" type="straight"/>
+        <underline id="RCP9978:019:u0002" language="LA" method="pen" text="virtus verborum" type="double"/>
+        
+        <errata amendedtext="[deleted]" copytext="Metaphisicam" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="Metaphisicam" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="Metaphisicam" language="LA"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP9978:019:m0001"/>
+            <marginal_annotation idref="RCP9978:019:u0001"/>
+            <relation from="RCP9978:019:m0001" to="RCP9978:019:u0001" type="directed"/>         
+        </physical_link>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP9978:019:m0002"/>
+            <marginal_annotation idref="RCP9978:019:u0002"/>
+            <relation from="RCP9978:019:m0002" to="RCP9978:019:u0002" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.311v.tif" pagination="[304v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>qu[a]e nona dom[us] est, et domus ☉</marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>Which is the ninth house, and the house of the Sun.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Luna sit in Scorpione" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>in □ ♄.</marginalia_text>
+                    <symbol_in_text name="Square"/>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>[The moon is] in square to Saturn.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in trino ascendentis" type="straight"/>
+        <underline language="LA" method="pen" text="Luna sit in Scorpione" type="straight"/>
+        
+    </annotation>
+</transcription>

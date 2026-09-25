@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.263r.tif" pagination="39" reader="John Dee" signature="F.j."/>
+    <annotation>
+        
+        <marginalia anchor_text="Rodericus autem regulus de Conmat" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rodericus Reg[ulus] de Conm[at]</marginalia_text>
+                    <person name="Rory O'Connor"/>
+                </position>
+            </language>
+            <translation>Rory, King of Connacht.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hugo de S. Moore" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hugo de S[ancto] Moore</marginalia_text> 
+                    <person name="Hugh de Mortimer"/>
+                </position>
+            </language>
+            <translation>Hugh de Mortimer.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Radulphus de Faie" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Radulp[hus] de Faie</marginalia_text>
+                    <person name="Raoul de Faye"/>
+                </position>
+            </language>
+            <translation>Raoul de Faye.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Rex pater regis" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Lismorum" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; fidelitatem ei iurauerunt" type="straight"/>
+        <underline language="LA" method="pen" text="de Limelie" type="straight"/>
+        <underline language="LA" method="pen" text="de Chorc" type="straight"/>
+        <underline language="LA" method="pen" text="monoculus" type="straight"/>
+        <underline language="LA" method="pen" text="de Conmat" type="straight"/>
+        <underline language="LA" method="pen" text="supersedit occurrere" type="straight"/>
+        <underline language="LA" method="pen" text="Hugo de S. Moore" type="straight"/>
+        <underline language="LA" method="pen" text="Radulphus de" type="straight"/>
+        <underline language="LA" method="pen" text="auunculus reginae" type="straight"/>
+        <underline language="LA" method="pen" text="quibuslibet regem esse" type="double"/>
+        <underline language="LA" method="pen" text="dominationem regno debitam" type="straight"/>
+        <underline language="LA" method="pen" text="vt in virtute regis pax fieret in diebus suis" type="straight"/>
+        <underline language="LA" method="pen" text="ei &amp; in eum ius suum transtulerunt &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="circa matrimonium a maioribus" type="straight"/>
+        <underline language="LA" method="pen" text="Lismor" type="straight"/>
+        <underline language="LA" method="pen" text="peruenisset, vocifera[n]s ait: Rex" type="straight"/>
+        <underline language="LA" method="pen" text="in Hybernia" type="straight"/>
+        <underline language="LA" method="pen" text="Anglia" type="straight"/>
+        <underline language="LA" method="pen" text="Normannia" type="straight"/>
+        <underline language="LA" method="pen" text="iurauit" type="straight"/>
+        <underline language="LA" method="pen" text="Rex Hybernia[m] visitat" type="straight"/>
+        <underline language="LA" method="pen" text="Hybernenses" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>   <!-- regis filij -->
+        <mark method="pen" name="comma" place="intext"/>   <!-- regis animu[m] -->
+        <mark method="pen" name="comma" place="intext"/>   <!-- debitam non -->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

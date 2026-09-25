@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.064r.tif" reader="Harvey" signature="H[ir]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>To dawnt, &amp; affrighte [their] Enemyes.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Medusa[e] Caput.</marginalia_text>
+                    <person name="Medusa"/>
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+            </language>
+            <translation>The head of Medusa.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="stycke vp the heedes of them that were slayne" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>{ this to su[m] might haue addid currage, and fury, and desier of Reuenge.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Haply at su[m] on pinch, A painted hed liuely dun, might dispatch [their] feate before it cowld be descried.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vt i[nfr]a, l.3.c.8.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0163" text="l.3.c.8."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] below, book 3, chapter 8.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Images, like Persians.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Fragile munimentu[m],</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>quandoq[ue]</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Vita[e]</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>subsidium pra[e]stat. Olaus.</marginalia_text>
+                    <book title="Historia de gentibus Septentrionalibus"/> <!--JG: Is directly copied from Olaus, see image _268. Olaus seems to have adapted this from Cassiodorus' Historio Gothorum, see: http://monumenta.ch/latein/text.php?tabelle=Cassiodorus&rumpfid=Cassiodorus,%20Historia%20Gothorum,%20%20%2040&nf=1-->
+                </position>
+            </language>
+            <translation>
+                "The defense is weak whenever reinforcements show themselves." Olaus Magnus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Necessitas consiliu[m] qu[a]erit, et inuenit. Idem.</marginalia_text>
+                    <book title="Historia de gentibus Septentrionalibus"/> <!--JG: Is directly copied from Olaus, see image _269-->
+                </position>
+            </language>
+            <translation>"Necessity seeks and finds counsel." The same [Olaus Magnus].</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Hostis fractus quandoq[ue] tubis territat inimicos: vt Leo venabulis pressus. E Gothicis cautelis Olai Magni.</marginalia_text>
+                    <book title="Historia de gentibus Septentrionalibus"/> <!--JG: Is directly copied from Olaus, with some small adaptations see image _268-->
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Letters sent to [their] frend (of purpose, to be intercepted) shewing an obstinate, &amp; desperate resolution.</marginalia_text>
+                </position>
+            </language>
+            <translation>"Whenever the enemy, weakened, intimidates the foes with a trumpet: as a lion is overwhelmed by a hunting-spear."
+            From Olaus Magnus' the caution of the Goths.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="stycke vp the heedes of them that were slayne" type="straight"/>
+        <underline language="EN" method="pen" text="deathe one of their chiefe magistrates" type="straight"/>
+        <underline language="EN" method="pen" text="his heed with a slynge" type="straight"/>
+        <underline language="EN" method="pen" text="a thynge monstruous" type="straight"/>
+        <underline language="EN" method="pen" text="Howe in harde chaunces to ease aduersyties. Cap.X." type="straight"/>
+        <underline language="EN" method="pen" text="Didius fought" type="straight"/>
+        <underline language="EN" method="pen" text="mennes carcases to" type="straight"/>
+        
+        <symbol language="EN" name="SS" place="head" text="To dawnt, &amp; affrighte [their] Enemyes. Medusa[e] Caput."/>
+        
+        <mark method="chalk" name="vertical_bar" place="head"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="Howe in harde chaunces to ease aduersyties. Cap.X."/> 
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

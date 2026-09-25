@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.031r.tif" pagination="31" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The cause of Colu[m]bus his vnkindenes taking w[i]th Portugall.</marginalia_text> 
+                    <person name="Columbus"/>
+                    <location name="Portugal"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Bartolomeo Colon" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bartholmew Colon sent to King Henry the 7th</marginalia_text>
+                    <person name="Bartholomew Columbus"/>
+                    <person name="Henry VII"/>
+                </position>
+            </language>
+        </marginalia>
+        
+      <marginalia hand="Italian" method="pen">
+          <language ident="EN">
+              <position book_orientation="0" place="right_margin">
+                  <marginalia_text>Mishap.</marginalia_text>
+              </position>
+          </language>
+      </marginalia>
+        
+        <marginalia anchor_text="prolungò per gran tempo la sua ambasciata, fin che" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Behold.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Re Enrico settimo" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>King Henry the Seve[n]th. A[nn]o 1488</marginalia_text>
+                    <person name="Henry VII"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="quei mari terra alcuna" type="straight"/>
+        <underline language="IT" method="pen" text="tanto odio a quella Città, &amp; natione, che deliberò" type="straight"/>
+        <underline language="IT" method="pen" text="Diego Colon" type="double"/>
+        <underline language="IT" method="pen" text="mandò in Inghilterra" type="straight"/>
+        <underline language="IT" method="pen" text="chiamato Bartolomeo" type="straight"/>
+        <underline language="IT" method="pen" text="far carte da nauigare" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; sfere" type="straight"/>
+        <underline language="IT" method="pen" text="dall' Ammiraglio, suo fratello, era instrutto" type="straight"/>
+        <underline language="IT" method="pen" text="Colon per Inghilterra" type="straight"/>
+        <underline language="IT" method="pen" text="che desse in man" type="straight"/>
+        <underline language="IT" method="pen" text="prolungò per gran tempo la sua ambasciata, fin che" type="straight"/>
+        <underline language="IT" method="pen" text="con le carte, ch' ei fabricaua" type="straight"/>
+        <underline language="IT" method="pen" text="prattiche co'l Re Enrico settimo, padre" type="straight"/>
+        
+        <mark language="IT" method="pen" name="comma" place="intext"/> <!--padre nel-->
+        
+        <mark method="pen" name="straight_quotation_mark" place="right_margin"/>
+        
+    </annotation>
+</transcription>

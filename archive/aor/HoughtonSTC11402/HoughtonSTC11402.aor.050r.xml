@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.050r.tif" reader="Harvey" signature="Fiii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Gothoru[m] Cautela: Sibi ipsi, non hosti nocet, qui insidias struit in loco ignoto.</marginalia_text>
+                </position>
+            </language>
+            <translation>The caution of the Goths: He who constructs traps in an unknown place, harms himself, not the enemy.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>(Locus ante explorandus.)</marginalia_text>
+                </position>
+            </language>
+            <translation>A place before being investigated.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="270" place="right_margin">
+                    <marginalia_text>Dimidiata non valent: Oracula peremptoria: et facinora egregia. Ipsa exstirpanda Radix. Mosis politia eradicat
+                    hostem. Achitophel loquitur oracula: Jehu facit miracula. Saul, alijs parcens, seipsum perdit: nec Deu[m] agens</marginalia_text>
+                    <person name="Moses"/>
+                    <person name="Ahitophel"/>
+                    <person name="Jehu"/>
+                    <person name="Saul"/>
+                </position>
+                <position book_orientation="270" place="tail">
+                    <marginalia_text>nec Diabolu[m]. Deus diluuio perdit mundu[m].</marginalia_text>
+                    <emphasis method="pen" text="diluuio" type="straight"/>
+                </position>
+            </language>
+            <translation>Divided things do not prevail: destroyed prophecies and extraordinary crimes. The root itself must be extirpated. 
+                The policy of Moses uproots the enemy. Achitophel told prophecies, Jehu worked miracles. Saul, sparing others, destroyed himself: neither putting forth God nor the devil.
+                God destroys the world with a flood.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>An Irish Pollicy.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="fenne" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Weeds.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[the] same in effect.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="a marishe ground" type="straight"/>
+        <underline language="EN" method="pen" text="with reite or wides of the" type="straight"/>
+        <underline language="EN" method="pen" text="fyrst bronte of the battayle" type="straight"/>
+        <underline language="EN" method="pen" text="faynynge to" type="straight"/>
+        <underline language="EN" method="pen" text="flee" type="straight"/>
+        <underline language="EN" method="pen" text="into the fenne" type="straight"/>
+        <underline language="EN" method="pen" text="Viriatus" type="straight"/>
+        <underline language="EN" method="pen" text="robber and rouer" type="straight"/> 
+        <underline language="EN" method="pen" text="capitayne of the Celtiberiens" type="straight"/>
+        <underline language="EN" method="pen" text="fayninge as though for" type="straight"/>
+        <underline language="EN" method="pen" text="a verye foule and" type="straight"/>
+        <underline language="EN" method="pen" text="depe gogmier" type="straight"/>
+        <underline language="EN" method="pen" text="ignorant of" type="straight"/>
+        <underline language="EN" method="pen" text="and drowned in mudde" type="straight"/>
+        <underline language="EN" method="pen" text="horsemen to chase theym" type="straight"/>
+        <underline language="EN" method="pen" text="euen vnto their campe" type="straight"/>
+        <underline language="EN" method="pen" text="than to fayne theym" type="straight"/>
+        <underline language="EN" method="pen" text="selfe to flye" type="straight"/>
+        <underline language="EN" method="pen" text="and to retrace agayn" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="a marishe ground"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="horsemen to chase theym"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="than to fayne theym"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/> <!--below marginal note, tricky to classify-->
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="robber and rouer"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="gogmier"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="and to retrace agayn"/>
+        
+    </annotation>
+</transcription>

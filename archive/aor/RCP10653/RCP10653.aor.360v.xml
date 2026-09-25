@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.360v.tif" pagination="270" reader="John Dee" signature="[Zzz iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Missus est in Angliam quidam elephas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Elephas in Anglia.      
+                    </marginalia_text>
+                    <location name="England"/>
+                </position>
+            </language>
+            <translation>
+                An elephant in England.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Missus est in Angliam quidam elephas" type="straight"/>
+        
+    </annotation>
+</transcription>

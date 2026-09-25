@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.148r.tif" reader="Harvey" signature="Mm.ii.[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        s[upr]a.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                [See] above.
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="of the Courtyer." type="straight"/>
+        <underline language="EN" method="pen" text="muche more perfect, then" type="straight"/>
+        <underline language="EN" method="chalk" text="filled the eares and minde of the" type="straight"/>
+        <underline language="EN" method="chalk" text="left no voide rowme for anye thinge" type="straight"/>
+        <underline language="EN" method="pen" text="tarie till" type="straight"/>
+        <underline language="EN" method="pen" text="haue the more time" type="straight"/>
+        <underline language="EN" method="pen" text="passinge measure in [the] meane season" type="straight"/>
+        <underline language="EN" method="pen" text="Dutchesse" type="straight"/>
+        <underline language="EN" method="chalk" text="courteisly dismissing" type="straight"/>
+        <underline language="EN" method="pen" text="bedchamber, and" type="straight"/>
+        
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+
+        <mark method="pen" name="dot" place="intext"/> <!-- time, and -->
+        <mark method="pen" name="dot" place="intext"/> <!-- bedchamber, and -->
+        
+    </annotation>
+</transcription>

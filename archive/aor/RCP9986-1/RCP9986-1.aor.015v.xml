@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.015v.tif" pagination="[16v]" reader="John Dee"/>  
+    <annotation>
+        
+        <marginalia anchor_text="pellex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pellex.</marginalia_text>
+                </position>
+            </language>
+            <translation>A mistress.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Medea.</marginalia_text>
+                    <person name="Medea"/>
+                </position>
+            </language>
+            <translation>Medea.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nec facie, meritísq[ue] placet, sed carmine mouit,             Diráq[ue] cantata pabula falce metit.             Illa reluctantem cursu deducere lunam             Nititur, &amp; tenebris abdere solis equos.             Illa refrenat aquas, obliquáq[ue] flumina sistit.             Illa loco syluas, viuáq[ue] saxa mouet.             Per tumulos errat sparsis discincta capillis,             Certáq[ue] de tepidis colligit ossa rogis.             Deuouet absentes, simulacráq[ue] cerea fingit,             Et miserum tenues in iecur vrget acus,             Et quae nescierim melius, male quaeritur herbis             Moribus, &amp; forma conciliandus amor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>veneficium</marginalia_text>
+                </position>
+            </language>
+            <translation>Witchcraft.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="amor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Amor</marginalia_text>
+                </position>
+            </language>
+            <translation>Love.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="volat ventus concaua vela tenet" type="straight"/>
+        <underline language="LA" method="pen" text="Cor dolet, atq[ue] ira mixtus abundat amor" type="straight"/>
+        <underline language="LA" method="pen" text="nocuit mihi barbara pellex" type="straight"/>
+        <underline language="LA" method="pen" text="Non expectato vulnus ab hoste tuli" type="straight"/>
+        <underline language="LA" method="pen" text="refrenat" type="straight"/>
+        <underline language="LA" method="pen" text="simulacráq[ue] cerea fingit" type="straight"/>
+        <underline language="LA" method="pen" text="Et quae nescierum melinus, male quaeritur herbis Moribus, &amp; forma conciliandus amor" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Nec facie, meritísq[ue] placet, sed carmine mouit,             Diráq[ue] cantata pabula falce metit.             Illa reluctantem cursu deducere lunam             Nititur, &amp; tenebris abdere solis equos.             Illa refrenat aquas, obliquáq[ue] flumina sistit.             Illa loco syluas, viuáq[ue] saxa mouet.             Per tumulos errat sparsis discincta capillis,             Certáq[ue] de tepidis colligit ossa rogis.             Deuouet absentes, simulacráq[ue] cerea fingit,             Et miserum tenues in iecur vrget acus,             Et quae nescierim melius, male quaeritur herbis             Moribus, &amp; forma conciliandus amor"/>
+         
+    </annotation>
+</transcription>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.190r.tif" pagination="203" reader="Harvey" signature="[N6r]"/>	<!-- ABO 194right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Valet Animus, cui a[e]quipollet Corpus, et fortuna.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The mind, to which the body and fortune exert equal influence, prevails.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Desipit, 
+						/ qui non exactè sapit
+						in animo, corpore, fortuna rectificanda.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>He, who does not understand exactly how to control mind, body, and fortune, is foolish.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						So do, so suffer.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						i[nfr]a, 211. 225.
+					</marginalia_text>
+					<internal_ref text="i[nfr]a">
+						<target ref="FolgersHa2:Ha2.194r" text="211"/>
+						<target ref="FolgersHa2:Ha2.201r" text="225"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				[See] below, pg. 211, 225.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) Sublimanda bona omnia: aut
+						circumvenient Mala.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>All good things must be raised: or bad things encircle them.</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.190r_0001" marginalia_continues_from="Ha2.189v_0001" marginalia_from_transcription="Ha2.189v.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						<!-- Continued from facing page, tail, Ha2.189v --> [p. 202: Qui in summis nauigat, in nummis anchorat. =]
+						= Magnoru[m] negociatoru[m] axioma chrematisticum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>[p. 202: He who navigates in the highest spheres, anchors in money.] The money-making axiom of the greatest business.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Corpus ante omnia debet respondere Animo: et quoàd fieri potest, etiam status
+						Oeconomicus. Qualis est animus, tale esse debet illius instrumentum.
+						Militaris animi Corpus debet esse solidum, robustum, velox; laboris
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						patientiss[im]u[m] ad omnia dexterrimum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+			Before all, the body ought to respond to the mind; and as far as one can, even one's economic condition.
+			The instrument of the body must be such as the mind.
+			The body of the military mind ought to be solid, robust, and quick; and most skillfully capable for all types of work.
+			</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.190r_0002" marginalia_continues_to="Ha2.189v_0002" marginalia_to_transcription="Ha2.189v.xml">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Pragmatici Animi decet Corpus esse sanum, viuidum, agile:  assidua[e]
+							<!-- Continues onto facing page, right margin, Ha2.189v -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>It is fitting that the body of a pragmatic mind is healthy, lively, and agile:</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="figliuoli poscia" type="straight"/>
+		<underline language="IT" method="pen" text="il corpo à lei di dentro" type="straight"/>
+		<underline language="IT" method="pen" text="morendo la madre in quella" type="straight"/>
+		<underline language="IT" method="pen" text="ingratitudine" type="straight"/>
+		<underline language="IT" method="pen" text="habbiate patienza nostra" type="straight"/>
+		<underline language="IT" method="pen" text="imparato da voi" type="straight"/>
+		<underline language="IT" method="pen" text="vendette di nostro" type="straight"/>
+		<underline language="IT" method="pen" text="dunque patienza" type="straight"/>
+		<underline language="IT" method="pen" text="tempo, la medesima" type="straight"/>
+		<underline language="IT" method="pen" text="d'vn mal dicente" type="straight"/>
+		<underline language="IT" method="pen" text="mal dicente" type="straight"/>
+		<underline language="IT" method="pen" text="mostrarne alcuna alteratione" type="straight"/>
+		<underline language="IT" method="pen" text="benignamente" type="straight"/>
+		<underline language="IT" method="pen" text="Signor della tua lingua" type="straight"/>
+		<underline language="IT" method="pen" text="Signore de' miei orecchi" type="straight"/>
+		<underline language="IT" method="pen" text="tu ti straccherai prima che tu m'offenda" type="straight"/>
+		<underline language="IT" method="pen" text="atti di bontà &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="vincersi quello" type="straight"/>
+		<underline language="IT" method="pen" text="con l'armi" type="straight"/>
+		<underline language="IT" method="pen" text="CAMILLO, quello" type="straight"/>
+		<underline language="IT" method="pen" text="vn'altro Romulo, hauendo" type="straight"/>
+		<underline language="IT" method="pen" text="pedante Greco, facendo" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="di giustitia, tal volta vincersi quello che non si espngnerebbe" type="straight"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/> 
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--ver-->
+		<mark method="pen" name="quotation_mark" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--be-->
+		<mark language="IT" method="pen" name="quotation_mark" place="right_margin" text="Signor della tua lingua"/>
+		
+		<mark method="pen" name="plus_sign" place="intext"/>
+
+    </annotation>
+</transcription>

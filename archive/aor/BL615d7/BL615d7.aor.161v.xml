@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.161v.tif" pagination="[161v]" reader="John Dee" signature="[X[v]]"/>    
+    <annotation>
+        
+        <marginalia anchor_text="i più bianchi" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>I piu bianchi</marginalia_text>
+                </position>
+            </language>
+            <translation>[They were generally] more white.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Paria" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Paria</marginalia_text>
+                    <location name="Paria"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="della Isola della Trinità, cioè che nella Trinità cresceua l'acqua tre braccia, &amp; quiui, ch'er più all' Occidente " hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The heith of the flud in Trinite Iland and westward</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="erano i più bianchi" type="straight"/>
+        <underline language="IT" method="pen" text="quanti nelle Indie haueuano veduti" type="straight"/>
+        <underline language="IT" method="pen" text="co' capelli" type="straight"/>
+        <underline language="IT" method="pen" text="mezo orecchio alla usanza di Castiglia" type="straight"/>
+        <underline language="IT" method="pen" text="costoro seppero" type="double"/>
+        <underline language="IT" method="pen" text="quella terra si chiamaua Paria" type="double"/>
+        <underline language="IT" method="pen" text="&amp; che" type="straight"/>
+        <underline language="IT" method="pen" text="haueuano piacere" type="double"/>
+        <underline language="IT" method="pen" text="essere amici a' Christiani: con che si partirono" type="straight"/>
+        <underline language="IT" method="pen" text="tornarono a' nauigli" type="straight"/>
+        <underline language="IT" method="pen" text="se no[n] due, e meza" type="straight"/>
+        <underline language="IT" method="pen" text="basso mar" type="double"/>
+        <underline language="IT" method="pen" text="braccia" type="straight"/>
+        <underline language="IT" method="pen" text="XLV" type="straight"/>
+        <underline language="IT" method="pen" text="più che una" type="double"/>
+        <underline language="IT" method="pen" text="di giusante" type="double"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

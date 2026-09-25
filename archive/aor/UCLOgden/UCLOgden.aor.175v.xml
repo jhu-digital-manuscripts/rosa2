@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.175v.tif" pagination="90" reader="John Dee" signature="[H 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Luna separatur à planetis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Applicatio, separatio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Application, separation.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quando est combustus in domo sua, uel domo exaltationis, est ut uir quem incarcerauit dominus suus in domo sua, aut rex suus" type="straight"/>
+        <underline language="LA" method="pen" text="A primo autem gradu ad 15 est accedens" type="dotted"/>
+        <underline language="LA" method="pen" text="sed à 15 ad 25 est completus" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        
+        <errata amendedtext="[deleted]" copytext="ad" language="LA"/>
+        
+    </annotation>
+</transcription>

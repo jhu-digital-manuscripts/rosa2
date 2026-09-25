@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.246v.tif" pagination="492" reader="Harvey" signature="[TTij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Compendiosum corpus Gothici Juris.
+                        vide lib[er]. 8. cap[itum]. 4.
+                    </marginalia_text>
+                    <emphasis method="pen" text="Compendiosum corpus Gothici Juris." type="straight"/>
+                </position>
+            </language>
+            <translation>
+                A compendious body of Gothic law. See book 8, chapter 4.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iudicium seuerissimum." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        in quibus causis.
+                    </marginalia_text>
+                    <emphasis method="pen" text="in quibus causis." type="straight"/>
+                </position>
+            </language>
+            <translation>
+                in which cases.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ciuiles leges." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Romanoru[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Of the Romans.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Juramentum, maximum litium expediendaru[m] remediu[m]. [π] de jurejur.l.1.
+                        Et omnis Controuersia[e] finis. Decretal.c. Etsi Christus. eod.
+                    </marginalia_text>
+                    <book title="Digest"/>
+                    <book title="De Iureiurando"/>
+                    <book title="Decretalium Gregorii"/>
+                    <emphasis method="pen" text="Juramentum" type="straight"/>
+                    <emphasis method="pen" text="omnis Controuersia[e] finis" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                The oath is the greatest help in expediting lawsuits. In the Digest, section "De iureiurando," fragment 1.
+                And it is the end of every dispute. In the Decretalium. in the same chapter as "And so Christ."
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="De ciuilibus Iudicibus, &amp; bonis Aduocatis." type="straight"/>
+        <underline language="LA" method="pen" text="prudentissima" type="straight"/>
+        <underline language="LA" method="pen" text="seuerissima" type="straight"/>
+        <underline language="LA" method="pen" text="blandissima iudicia" type="straight"/>
+        <underline language="LA" method="pen" text="prudentissima" type="straight"/>
+        <underline language="LA" method="pen" text="in hoc agone" type="straight"/>
+        <underline language="LA" method="pen" text="posthabita formidine" type="straight"/>
+        <underline language="LA" method="pen" text="vel obliuione" type="straight"/>
+        <underline language="LA" method="pen" text="reputantur" type="straight"/>
+        <underline language="LA" method="pen" text="magis," type="straight"/>
+        <underline language="LA" method="pen" text="veritatis oppressores" type="straight"/>
+        <underline language="LA" method="pen" text="domino causae" type="straight"/>
+        <underline language="LA" method="pen" text="patrocinio timoris licere" type="straight"/>
+        <underline language="LA" method="pen" text="fiant iudicia" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; compendiosiora" type="straight"/>
+        <underline language="LA" method="pen" text="Abbas" type="straight"/>
+        <underline language="LA" method="pen" text="recurritur ad arbitramentum" type="straight"/>
+        <underline language="LA" method="pen" text="iudex occurrat" type="straight"/>
+        <underline language="LA" method="pen" text="multa consistunt in intellectu agentis" type="straight"/>
+        <underline language="LA" method="pen" text="de sua" type="straight"/>
+        <underline language="LA" method="pen" text="conscientia" type="straight"/>
+        <underline language="LA" method="pen" text="quae per testes probari non possunt" type="straight"/>
+        <underline language="LA" method="pen" text="sed per iuramentum" type="straight"/>
+        <underline language="LA" method="pen" text="scilicet in causa dotis" type="straight"/>
+        <underline language="LA" method="pen" text="haereditatis" type="straight"/>
+        <underline language="LA" method="pen" text="homicidiorum" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; suspecta calculatione tributi" type="straight"/>
+        <underline language="LA" method="pen" text="Cautela seruanda" type="straight"/>
+        <underline language="LA" method="pen" text="seuerissima iudicia" type="straight"/>
+        <underline language="LA" method="pen" text="crimine" type="straight"/>
+        <underline language="LA" method="pen" text="laes[a]e maiestatis" type="straight"/>
+        <underline language="LA" method="pen" text="proditione" type="straight"/>
+        <underline language="LA" method="pen" text="Principum" type="straight"/>
+        <underline language="LA" method="pen" text="publicis incendiariis" type="straight"/>
+        <underline language="LA" method="pen" text="falsificatione" type="straight"/>
+        <underline language="LA" method="pen" text="limitibus agrorum &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="possessionum" type="straight"/>
+        <underline language="LA" method="pen" text="ac virginum" type="straight"/>
+        <underline language="LA" method="pen" text="oppressione" type="straight"/>
+        <underline language="LA" method="pen" text="similibus causis" type="straight"/>
+        <underline language="LA" method="pen" text="municipalia" type="straight"/>
+        <underline language="LA" method="pen" text="satis compendioso volumine per" type="straight"/>
+        <underline language="LA" method="pen" text="libros XV." type="straight"/>
+        <underline language="LA" method="pen" text="singulos eorum titulos" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; capita, ac paragraphos aequissima ratione" type="straight"/>
+        <underline language="LA" method="pen" text="quid deniq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="principibus" type="straight"/>
+        <underline language="LA" method="pen" text="demum nuptiis" type="straight"/>
+        <underline language="LA" method="pen" text="haereditatibus" type="straight"/>
+        <underline language="LA" method="pen" text="agris" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; possessionibus" type="straight"/>
+        <underline language="LA" method="pen" text="iudicibus, et reis" type="straight"/>
+        <underline language="LA" method="pen" text="tamen aequitate" type="straight"/>
+        <underline language="LA" method="pen" text="immò necessariu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="interpretatione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="difficilior[um]" type="straight"/>
+        <underline language="LA" method="pen" text="Iudicium severissimum." type="straight"/>
+        <underline language="LA" method="pen" text="Municipalia Gothor[um] &amp; Sueonum." type="straight"/>
+        <underline language="LA" method="pen" text="Ciuiles leges." type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="blandissima iudicia"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="reputantur"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="veritatis oppressores"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Abbas"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="recurritur ad arbitramentum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="conscientia"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="sed per iuramentum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="seuerissima iudicia"/>
+        <mark method="pen" name="apostrophe" place="intext"/>
+        <mark method="pen" name="apostrophe" place="intext"/>
+        <mark method="pen" name="apostrophe" place="intext"/>
+        <mark method="pen" name="apostrophe" place="intext"/>
+        <mark method="pen" name="apostrophe" place="intext"/>
+        <mark method="pen" name="apostrophe" place="intext"/>
+        <mark method="pen" name="apostrophe" place="intext"/>
+        
+        <mark language="LA" method="pen" name="hash" place="left_margin" text="in quibus causis."/>
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="Municipalia Gothor[um] &amp; Sueonum."/>
+        
+        <numeral language="LA" place="intext" text="crimine">1.</numeral>
+        <numeral language="LA" place="intext" text="proditione">2.</numeral>
+        <numeral language="LA" place="intext" text="publicis incendiariis">3.</numeral>
+        <numeral language="LA" place="intext" text="falsificatione">4.</numeral>
+        <numeral language="LA" place="intext" text="limitibus agrorum, &amp;">5.</numeral>
+        <numeral language="LA" place="intext" text="ac virginum">6.</numeral>
+        
+    </annotation>
+</transcription>

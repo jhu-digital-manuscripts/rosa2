@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th12.058r.tif" reader="Harvey" signature="P.iij.[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="The dittay." hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        The enditement.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+
+        <underline language="EN" method="pen" text="open proclamation" type="straight"/>
+        <underline language="EN" method="pen" text="warnit Mathew" type="straight"/>
+        <underline language="EN" method="pen" text="haur intres, to pursue James" type="straight"/>
+        <underline language="EN" method="pen" text="Johnne Andersoun" type="straight"/>
+        <underline language="EN" method="pen" text="my execution and indorsation," type="straight"/>
+        <underline language="EN" method="pen" text="Iames Erle Bothwell" type="straight"/>
+        <underline language="EN" method="pen" text="Ye are inditit" type="straight"/>
+        <underline language="EN" method="pen" text="the cruell" type="straight"/>
+        <underline language="EN" method="pen" text="odious" type="straight"/>
+        <underline language="EN" method="pen" text="treasonabill" type="straight"/>
+        <underline language="EN" method="pen" text="and abhominabill slauchter and murder" type="straight"/>
+        <underline language="EN" method="pen" text="treasonably raysing fire" type="straight"/>
+        <underline language="EN" method="pen" text="with ane great quantitie of powder" type="straight"/>
+        <underline language="EN" method="pen" text="sayd hole" type="straight"/>
+        <underline language="EN" method="pen" text="was raysit and blowen" type="straight"/>
+        <underline language="EN" method="pen" text="treasonably" type="straight"/>
+        <underline language="EN" method="pen" text="maist cruely slayne" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="open proclamation"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="haur intres, to pursue James"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Ye are inditit"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- fielde -->
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+    </annotation>
+</transcription>

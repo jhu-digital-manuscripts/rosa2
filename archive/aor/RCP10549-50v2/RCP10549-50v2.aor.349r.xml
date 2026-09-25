@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.349r.tif" pagination="149" reader="John Dee" signature="Klz.iii."/>   
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Homer[us]. Iliad. x.
+                    </marginalia_text>
+                    <person name="Homer"/>
+                    <book title="Iliad"/>
+                </position>
+            </language>
+            <translation>
+                Homer in book ten of the Iliad.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="perleuiter pungat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        p[er]leuiter pungit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It pricks only superficially.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Euripideum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Euripides
+                    </marginalia_text>
+                    <person name="Euripides"/>
+                </position>
+            </language>
+            <translation>
+                Euripides
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mórsque est finita omnibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mors est finita omnibus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                 Death sets an end to everything.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Reddenda est terrae terra" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Reddenda est terra[e], Terra.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'Earth must go back to earth' [LCL 141:296-97].
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        στερρά γὰρ ἀνάγκη
+                    </marginalia_text>
+                    <X-ref book_title="Hecuba" language="EL" person="Euripides" text="στερρά γὰρ ἀνάγκη"/>
+                </position>
+            </language>
+            <translation>
+                'Since necessity is inflexible'.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cum deo pugnare" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        θεομαχεῖν
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To fight the gods.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exemplorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Exemplorum vsus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The use of examples.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Chrusippus a[e]gritudine[m]
+                    </marginalia_text>
+                    <person name="Chrysippus"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        λύπην
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        appellat.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Chrysippus drives the sickness of sorrow out.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        opinio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Judgement.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="detestabilia genera lugendi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Detestabilia genera luge[n]di
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Detestable kind of grieving.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Agame[m]non homericus et Accianus
+                    </marginalia_text>
+                    <person name="Agamemnon"/>
+                    <person name="Homer"/>
+                    <person name="Lucius Accius"/>
+                </position>
+            </language>
+            <translation>
+                Agamemnon of Homer and Lucius Accius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Bionis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Bionis Dictum
+                    </marginalia_text>
+                    <person name="Bion of Borysthenes"/>
+                </position>
+            </language>
+            <translation>
+                A saying of Bion of Borysthenes
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="AEschines in Domesthenem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Æschines in Demosthene[m]
+                    </marginalia_text>
+                    <person name="Aeschines"/>
+                    <person name="Demosthenes"/>
+                </position>
+            </language>
+            <translation>
+                Aeschines in Demostenes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="licere quiduis rhetori" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Lic[et] quiduis Rhetori
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Rhetorician may say whatever.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mors amicoru[m] lugenda
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The death of friends is to be lamented.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Iliad .2.
+                    </marginalia_text>
+                    <book title="Iliad"/>
+                </position>
+            </language>
+            <translation>
+                Book 2 of Iliad.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Niobe" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Niobe.
+                    </marginalia_text>
+                    <person name="Niobe"/>
+                </position>
+            </language>
+            <translation>
+                Niobe.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hecubam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Hecuba.
+                    </marginalia_text>
+                    <person name="Hecuba"/>
+                </position>
+            </language>
+            <translation>
+                Hecuba.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="apud Ennium nutrix" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nutrix apud Enniu[m]
+                    </marginalia_text>
+                    <person name="Ennius"/>
+                </position>
+            </language>
+            <translation>
+                The nurse according to Ennius.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        luctus Domesticus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Grief for a household member.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nihil profici moerendo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mo[e]rendo nihil p[ro]ficitur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                By mourning nothing is accomplished.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ἑαυτὸν τιμωρούμενος 
+                    </marginalia_text>
+                    <book title="Heauton Timorumenos"/>
+                </position>
+            </language>
+            <translation>
+                'The self tormentor'.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Reddenda est terrae terra" type="straight"/>
+        <underline language="LA" method="pen" text="cum deo pugnare" type="straight"/>
+        <underline language="LA" method="pen" text="moderate &amp; tranquille tulisse" type="straight"/>
+        <underline language="LA" method="pen" text="modis fulciendi" type="straight"/>
+        <underline language="LA" method="pen" text="Est enim nulla alia, nisi opinio &amp; iudicium magni praesentis atque vrgentis mali. Itaque &amp; dolor corporis, cuius est morsus acerrimus,              perferetur, spe proposita boni: &amp; acta aetas honeste ac splendide tantam adfert consolationem, vt eos qui ita vixerint, aut non tangat aegritudo, aut perleuiter pungat animi" type="straight"/>
+        <underline language="LA" method="pen" text="opinione sunt illa varia, &amp; detestabilia genera lugendi, paedores, muliebres lacerationes genarum, pectoris, feminum, capitis percussiones" type="straight"/>
+        <underline language="LA" method="pen" text="quàm" type="straight"/>
+        <underline language="LA" method="pen" text="quàm copiose" type="straight"/>
+        <underline language="LA" method="pen" text="quas sententias colligit" type="straight"/>
+        <underline language="LA" method="pen" text="vt licere quiduis rhetori intelligas" type="straight"/>
+        <underline language="LA" method="pen" text="Omnis bonos interitu suoru[m] quàm grauissime moerere oportere" type="straight"/>
+        <underline language="LA" method="pen" text="propter aeternum" type="straight"/>
+        <underline language="LA" method="pen" text="propter animi acerbitate[m] quandam &amp; rabiem, fingi in" type="straight"/>
+        <underline language="LA" method="pen" text="Cupido coepit" type="straight"/>
+        <underline language="LA" method="pen" text="humanius, aut si hilarius locuit sunt, reuocant se rursus ad moestitiam, peccatíque se insimulant, quòd dolere intermiserint.              Pueros vero matres &amp; magistri castigare etiam solent, nec verbis solum, sed etia[m] verberibus, siquid in domestico luctu hilarius ab his factum est, aut dictum, plorare cogunt" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Lic[et] quiduis Rhetori" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

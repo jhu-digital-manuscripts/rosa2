@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.260v.tif" pagination="[253v]" reader="John Dee" signature="[SS[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>De natura stellaru[m] =</marginalia_text>
+                </position>
+            </language>
+            <translation>On the nature of the stars.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>De tempore iuxta domorum ratione[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>On the time pertaining to the reason of the houses.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oculum Tauri" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Oculus ♉.</marginalia_text>
+                    <symbol_in_text name="Taurus"/>
+                </position>
+            </language>
+            <translation>The eye of Taurus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="his" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>predictis</marginalia_text>
+                </position>
+            </language>
+            <translation>[In these] aforesaid [things].</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="gratiam, formam, &amp; scientiam, hoc autem erit in directionibus, aut reuolutionibus tantum" type="straight"/>
+        <underline language="LA" method="pen" text="his" type="straight"/>
+        
+        <symbol language="LA" name="Mercury" place="left_margin" text="Mercurii"/>
+        <symbol language="LA" name="Venus" place="left_margin" text="Veneris"/>
+        <symbol language="LA" name="Jupiter" place="left_margin" text="Iouis"/>
+        <symbol language="LA" name="Mercury" place="left_margin" text="Mercurii"/>
+        <symbol language="LA" name="Mars" place="left_margin" text="Martis"/>
+        <symbol language="LA" name="Jupiter" place="left_margin" text="Iouis"/>
+        <symbol language="LA" name="Venus" place="left_margin" text="Veneris"/>
+        <symbol language="LA" name="Mars" place="left_margin" text="Martis"/>
+        <symbol language="LA" name="Venus" place="left_margin" text="Veneris"/>
+        
+        <errata amendedtext=";" copytext="," language="LA"/>
+       
+    </annotation>
+</transcription>

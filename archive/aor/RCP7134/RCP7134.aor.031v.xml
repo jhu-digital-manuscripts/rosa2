@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.031v.tif" pagination="[25v]" reader="John Dee" signature="[G[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Pleiades cum Luna" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pleïades ☾</marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>The Pleiades [with] the moon.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tauro, leone, uel aquario" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♉ ♌ ♒</marginalia_text>
+                    <symbol_in_text name="Taurus"/>
+                    <symbol_in_text name="Leo"/>
+                    <symbol_in_text name="Aquarius"/>
+                </position>
+            </language>
+            <translation>[From] Taurus, Leo, or Aquarius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lunam; ex regijs" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☾ cu[m] regijs</marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>The moon with regal things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Solem uel Lunam in lactae uia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☉:☾ in lact[ea] via.</marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>The sun and the moon in the Milky Way.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="caput Algol" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Caput Algol</marginalia_text>
+                </position>
+            </language>
+            <translation>The head of Algol</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Figurae in coele fortes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Figura[e] fortes</marginalia_text>
+                </position>
+            </language>
+            <translation>Powerful figures.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Figurae in coele fortes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Fixaru[m] Natura[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>The nature of fixed [stars].</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ille plurium" type="straight"/>
+        <underline language="LA" method="pen" text="tauro" type="straight"/>
+        <underline language="LA" method="pen" text="fortis" type="straight"/>
+        <underline language="LA" method="pen" text="sapiens" type="straight"/>
+        <underline language="LA" method="pen" text="bene" type="straight"/>
+        <underline language="LA" method="pen" text="ex regijs" type="straight"/>
+        <underline language="LA" method="pen" text="nubilosa" type="straight"/>
+        <underline language="LA" method="pen" text="uitium" type="straight"/>
+        <underline language="LA" method="pen" text="inseparabile" type="straight"/>
+        <underline language="LA" method="pen" text="capitis periculum" type="straight"/>
+        <underline language="LA" method="pen" text="fortes" type="straight"/>
+        <underline language="LA" method="pen" text="in temporum mutationibus Aurigam" type="straight"/>
+        
+        <symbol language="LA" name="Saturn" place="left_margin" text="Saturni"/>
+        <symbol language="LA" name="Jupiter" place="left_margin" text="Iouis"/>
+        <symbol language="LA" name="Mars" place="left_margin" text="Martis"/>
+        <symbol language="LA" name="Sun" place="left_margin" text="Solis"/>
+        <symbol language="LA" name="Venus" place="left_margin" text="Veneris"/>
+        <symbol language="LA" name="Mercury" place="left_margin" text="Mercurij"/>
+        <symbol language="LA" name="Moon" place="left_margin" text="Lunae"/>
+        <symbol language="LA" name="Saturn" place="left_margin" text="Saturni"/>
+        <symbol language="LA" name="Jupiter" place="left_margin" text="Iouis"/>
+        
+    </annotation>
+</transcription>

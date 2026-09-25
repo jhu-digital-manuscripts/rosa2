@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.058r.tif" pagination="101" reader="John Dee" signature="i.iij."/>
+    <annotation>
+        
+        <marginalia anchor_text="Vrbs verò Nachor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vrbs Nachor</marginalia_text>
+                    <location name="Nachor"/>
+                </position>
+            </language>
+            <translation>The city of Nachor.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de solo patrio reliquendo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Solu[m] Patrium reliquendu[m].</marginalia_text>  
+                </position>
+            </language>
+            <translation>The only fatherland to be abandoned.</translation>  
+        </marginalia>
+                
+        <marginalia anchor_text="quadringenti triginta" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>430</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="verò Nachor" type="straight"/>
+        <underline language="LA" method="pen" text="promissionum, &amp; de solo patrio" type="straight"/>
+        <underline language="LA" method="pen" text="tempus discessus" type="straight"/>
+        <underline language="LA" method="pen" text="aetatis Abrahami septuagesimumquintum" type="straight"/>
+        <underline language="LA" method="pen" text="Abrahami septuagesimumquintum conferimus" type="straight"/>
+        <underline language="LA" method="pen" text="Legem" type="straight"/>
+        <underline language="LA" method="pen" text="quadringenti triginta" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+               
+    </annotation>
+</transcription>

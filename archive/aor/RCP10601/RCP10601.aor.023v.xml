@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.023v.tif" pagination="46" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Syrmiana" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Symiana</marginalia_text>
+                    <location name="Serbia"/>
+                </position>
+            </language>
+            <translation>Serbian.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="intellectum agentem &amp; poßibile[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[I]ntellectus agens et possibilis</marginalia_text>
+                </position>
+            </language>
+            <translation>A driving and potential intellect.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Syrmiana" type="straight"/>
+        <underline language="LA" method="pen" text="VOCABVLORUM" type="straight"/>
+        <underline language="LA" method="pen" text="characterum" type="straight"/>
+        <underline language="LA" method="pen" text="scripturae'q[ue] uirtute" type="straight"/>
+        <underline language="LA" method="pen" text="esse" type="straight"/>
+        <underline language="LA" method="pen" text="sapientiam creatam" type="straight"/>
+        <underline language="LA" method="pen" text="spiritu[m] Dei" type="double"/>
+        <underline language="LA" method="pen" text="regitur" type="straight"/>
+        <underline language="LA" method="pen" text="intellectum agentem" type="straight"/>
+        <underline language="LA" method="pen" text="uniuersi intellectus humani" type="straight"/>
+        <underline language="LA" method="pen" text="partes" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/>  <!-- cuius uniuersi -->
+        
+    </annotation>
+</transcription>

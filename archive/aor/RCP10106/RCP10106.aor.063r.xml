@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.063r.tif" pagination="125" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="περίστασις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>περίστασις</marginalia_text>
+                </position>
+            </language>
+            <translation>Circumstance.</translation>
+        </marginalia>
+                
+        <marginalia anchor_text="Hermagorae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hermagoras</marginalia_text>
+                    <person name="Hermagoras of Temnos"/>
+                </position>
+            </language>
+            <translation>Hermagoras.</translation>
+        </marginalia>
+         
+        <marginalia anchor_text="Ciceronis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Apollodôrus, ut interpretatione Valgij discipuli eius utar, ita: Causa est negocium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Apollollodôrus Valgius. Causa Negotium.</marginalia_text>
+                    <person name="Apollodorus of Pergamon"/>
+                    <person name="Valgius Rufus"/>
+                </position>
+            </language>
+            <translation>Apollodorus, Valgius. Cause, affair.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Isocrates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Isocrates.</marginalia_text>
+                    <person name="Isocrates"/>
+                </position>
+            </language>
+            <translation>Isocrates.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

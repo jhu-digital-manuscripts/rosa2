@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.009r.tif" pagination="9" reader="John Dee" signature="C"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Pley" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fol. 7.</marginalia_text>
+                    <internal_ref>
+                        <target ref="NYSLWin188:00000027" text="7"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Folio 7.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="drey ersten drey stück ne[m]lich Ignis, Sal vnd Balsamus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tria prima Ignis Sal. Balsam[us] Sulph. Sal. Mercur[ius]. Liquor.</marginalia_text>
+                </position>
+            </language>
+            <translation>The first three [are] fire, salt, balsam. Sulfer, salt, mercury, liquid.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Also der Him[m]el auch ist Fewr Sal, vnd Balsam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Coeli ignis sal Balsamus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The heavens: fire, salt, balsam.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>fol.5.b.  I[ohn] D[ee]. Miror, cum ante, Ignem pro Eleme[n]to admittere no[n] vellet tamqu[am] generationi ineptum,
+                    nunc verò pro faecundissimo semine ponat, vnum h[abet] ex tribus primis, vnde cu[m] Eleme[n]ta [ipa.], tum Creatura[e] reliqua[e] o[mn]es
+                    orr.centur <!--KS: 'orientur'?-->: sed sulphuris nome[n] minus offendisse in hoc loco sed vide [pagina[m]] [seque[n]tem].</marginalia_text> <!--JG: very uncertain-->
+                    <person name="John Dee"/>
+                    <internal_ref>
+                        <target ref="NYSLWin188:00000024" text="5.b"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>I am amazed, when before, that he did not wish to admit fire for the element, as if inept for generation, now indeed he puts [it] for the most eloquent, he has one from the
+                three prime,  hence both that element and all remaining creatures [...]: but the name of sulfur offended less in this place. But see the following page.
+            </translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Pley" type="straight"/>
+        <underline language="DE" method="pen" text="durch die Kunst der Natur dahin" type="straight"/>
+        <underline language="DE" method="pen" text="Wort" type="double"/>
+        <underline language="DE" method="pen" text="drey ersten" type="straight"/>
+        <underline language="LA" method="pen" text="Ignis" type="straight"/>
+        <underline language="LA" method="pen" text="Sal" type="straight"/>
+        <underline language="LA" method="pen" text="Balsamus" type="straight"/>
+        <underline language="DE" method="pen" text="Fewr Sal, vnd Balsamus" type="straight"/>
+        <underline language="LA" method="pen" text="Ignis Sal, Balsamus" type="straight"/>
+        <underline language="LA" method="pen" text="Ig. Sal. Bals." type="straight"/>
+        <underline language="DE" method="pen" text="der Him[m]el auch ist Fewr Sal, vnd Balsam: Was" type="straight"/>
+        
+        <mark language="DE" method="pen" name="bracket" place="right_margin" text="der Him[m]el auch ist Fewr Sal, vnd Balsam: Was"/>
+        
+    </annotation>
+</transcription>

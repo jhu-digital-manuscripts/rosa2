@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.466v.tif" reader="John Dee" signature="[**[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Petrus de Malolacu pag. 91. a[nno] 1211 
+                    </marginalia_text>
+                    <person name="Peter de Maulay"/>
+                    <internal_ref>
+                        <target ref="RCP10653:554:m0001" text="91"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Peter de Maulay, page 91. In the year 1211.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        
+    </annotation>
+</transcription>

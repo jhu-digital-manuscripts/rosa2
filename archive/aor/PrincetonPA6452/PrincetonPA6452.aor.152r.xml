@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.152r.tif" pagination="287" reader="Harvey"/> 
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                       braue Young Scipio.
+                    </marginalia_text>
+                    <person name="Scipio Africanus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="donec Numidae qui" type="straight"/>
+        <underline language="LA" method="pen" text="tergo se ostendêre" type="straight"/>
+        <underline language="LA" method="pen" text="pauor perculit Romanos" type="straight"/>
+        <underline language="LA" method="pen" text="pauorem C O S. uulnus" type="straight"/> 
+        <underline language="LA" method="pen" text="intercursu tum primùm pubescentis filij propulsatum" type="straight"/>
+        <underline language="LA" method="pen" text="Hic erat iuuenis" type="straight"/>
+        <underline language="LA" method="pen" text="penes" type="straight"/>
+        <underline language="LA" method="pen" text="belli laus" type="straight"/>
+        <underline language="LA" method="pen" text="Africanus ob egregia[m] uictoria[m] de Annibale" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="iuuenis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Africanus ob egregia[m] uictoria[m] de Annibale"/>
+        
+        
+    </annotation>
+</transcription>

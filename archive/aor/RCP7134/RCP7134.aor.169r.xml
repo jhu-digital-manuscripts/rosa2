@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.169r.tif" pagination="162" reader="John Dee" signature="ss ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Tum uero quia Luna in octauo loco erat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☾ in octava.</marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>The moon in the eigth [house].</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vide seg. 1 aph. 64.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:442" text="seg. 1 aph. 64"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See segment 1, aphorism 64.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">             <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>L. Bellantius</marginalia_text>
+                    <person name="Lucius Bellantius"/>
+                </position>
+            </language>
+            <translation>Lucius Bellantius.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Tum uero quia Luna in octauo loco erat, turbidum ingenium: &amp; quia radiatio quadrata est, iudicium tollit" type="straight"/>
+        <underline language="LA" method="pen" text="Sol in eius trino, &amp; ipse in domo sua" type="straight"/>
+        <underline language="LA" method="pen" text="triplicitate aquea, nomen decernunt gloriosum. Deiectum" type="straight"/>
+        <underline language="LA" method="pen" text="annis XXXIII. cum" type="straight"/>
+        <underline language="LA" method="pen" text="Astrologus" type="straight"/>
+        
+    </annotation>
+</transcription>

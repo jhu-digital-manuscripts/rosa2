@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscrit</note>
+          <note type="commonName">Lyon 764</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="155" unit="folios">155</measure>
+            <dimensions>
+              <height unit="mm">273</height>
+              <width unit="mm">200</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">0</note>
+          <note type="material">parchemin</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1360" notBefore="1340">14e siècle</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Lyon</settlement>
+            <repository>Bibliothèque municipale de Lyon</repository>
+            <idno>764</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="123r">1r-123r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">123</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">46</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="124r" to="154v">124r-154v</locus>
+              <title>Testament</title>
+              <note type="textid">testament</note>
+              <note type="folios">31</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">34</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="154v" to="155v">154v-155v</locus>
+              <title>Codicille</title>
+              <note type="textid">codicille</note>
+              <note type="folios">2</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">34</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

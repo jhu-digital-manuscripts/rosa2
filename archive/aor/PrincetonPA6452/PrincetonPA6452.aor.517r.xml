@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.517r.tif" reader="Harvey" signature="P 3[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="DAVID primus Hebraeorum rex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        Dauid. Nulli heroicorum Regum secundus: sed Achille tantò iunior.
+                    </marginalia_text>
+                <person name="King David"/>
+                <person name="Achilles"/>    
+                </position>
+            </language>
+            <translation>
+               David, second to none of the heroic kings: but so much younger than Achilles.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ephesus condita" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                       Ephesi templu[m], succensum s[upr]a
+                    </marginalia_text>
+                    <location name="Ephesus"/>
+                </position>
+            </language>
+            <translation>
+                The temple at Ephesus, set alight, above.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Amazonum" type="straight"/>
+        <underline language="LA" method="pen" text="incursus in" type="straight"/>
+        <underline language="LA" method="pen" text="tribu Iuda" type="straight"/>
+        <underline language="LA" method="pen" text="Ephesus condita" type="straight"/>
+        <underline language="LA" method="pen" text="Carthago condita" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="intext" text="incursus in"/>
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--posui,-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Carthago condita"/>
+        
+    </annotation>
+</transcription>

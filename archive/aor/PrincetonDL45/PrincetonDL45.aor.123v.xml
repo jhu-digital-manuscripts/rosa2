@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.123v.tif" pagination="246" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Bonus Rex.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A good king.
+            </translation>
+        </marginalia>
+
+        <marginalia anchor_text="Ius compendio sum in municipalibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Vide lib. 14. cap. 22.
+                        ite[m] eiusd[em] lib. cap. 19.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                See book. 14. chapter. 22.
+              Also chapter. 19. of the same book.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Co[n]ditiones optimae" type="straight"/>
+        <underline language="LA" method="pen" text="ligno paruulo sub dextro" type="straight"/>
+        <underline language="LA" method="pen" text="Reges apud Gothos" type="straight"/>
+        <underline language="LA" method="pen" text="Magnum" type="straight"/>
+        <underline language="LA" method="pen" text="Ladalaas dictum" type="straight"/>
+        <underline language="LA" method="pen" text="tantam omnibus incolis er duo mille milliaria Italica indixit securitatem" type="straight"/>
+        <underline language="LA" method="pen" text="nullus tantum horrea, ac bona sua consideret ferreae seraturae, sicuti apposito huic exiguo ligno" type="straight"/>
+        <underline language="LA" method="pen" text="libri" type="straight"/>
+        <underline language="LA" method="pen" text="etenim omnis" type="straight"/>
+        <underline language="LA" method="pen" text="Ius compendio sum in municipalibus" type="straight"/>
+        <underline language="LA" method="pen" text="omnibus quoru[m]cunq[ue] voluminum" type="straight"/>
+        <underline language="LA" method="pen" text="vni tit. De noxali." type="straight"/>
+        <underline language="LA" method="pen" text="in his municipalibus" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+    </annotation>
+</transcription>

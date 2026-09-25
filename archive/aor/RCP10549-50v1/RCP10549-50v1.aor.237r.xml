@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.237r.tif" pagination="453" reader="John Dee" signature="fff.iii."/>
+    <annotation>
+        
+        <marginalia anchor_text="orbis terraru[m] oras atque regiones, tribus triumphis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Orbis terrar[um] tripartit[a]e Or[a]e.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Three-fold division of the lands of the world [Loeb 209, 211].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="impensa voluntate" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        impensa voluntas.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Great will.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dexteram porrexerint" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        porrigere dextra[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To hold out the right hand.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="festos dies agere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        agere dies festos
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To hold feast days.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Caesarem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        C C[a]esar
+                    </marginalia_text>
+                    <person name="Gaius Julius Caesar"/>
+                </position>
+            </language>
+            <translation>
+                Gaius Julius Caesar.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nullo meo merito" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        nullo meo merito
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Without me deserving it.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tam impensa" type="straight"/>
+        <underline language="LA" method="pen" text="Metelli casum vel gloriosum vel grauem" type="straight"/>
+        <underline language="LA" method="pen" text="dolorem, ciuitate[m] tam gratam, tam miseram atque oppressam fuisse" type="straight"/>
+        <underline language="LA" method="pen" text="Sed postea mihi nullo meo merito" type="straight"/>
+        
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+        
+    </annotation>
+</transcription>

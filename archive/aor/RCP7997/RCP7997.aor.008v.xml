@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.008v.tif" reader="John Dee" signature="[Bij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="quare dixeru[n]t impares semper esse i[m]mutabilis sub[stantia]e" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Impares numeri q[ua]re i[m]mutabilis substa[n]tia[e] putaba[n]tur.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Odd numbers were therefire considered unchangeable substances.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="alteru[m] vero nihil factum est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        [id est] nihil est inde alteratu[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                That is, nothing was changed thereupon.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="gnomo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gnomo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A gnomon.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        2⁰ Euclidis
+                    </marginalia_text>
+                    <person name="Euclid"/>
+                </position>
+            </language>
+            <translation>
+                Euclid's second defintion [of geometry].               
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="antiqui omnes impares numeros quos gnomones dicebant" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Impares numeri ab antiquis gnomones diceba[n]tur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Odd numbers were called gnomons by the old [masters].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pithagoricos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pithagoras
+                    </marginalia_text>
+                    <person name="Pythagoras"/>
+                </position>
+            </language>
+            <translation>
+                Pythagoras.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Omnes aute[m] pares numeros s[e]c[un]d[u]m pithagoricos esse causas alterat[i]o[n]is" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pares numeri vt su[n]t alteratio[n]is causa[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Equal numbers are like causes of change.  <!-- DO: Not sure about translation. 'are like causes of change'? --> <!-- FSF: not 100% sure either -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="omnis silogismus ad impossibile falsum silogisat ex dato opposito co[n]clusionis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Syllogismus ad impossibile
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A syllogism to the impossible.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dyameter" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Diameter
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Diameter.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="linea transuersalis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Diagonalis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Diagonal.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Costa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Costa
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Sides.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sed ip[s]a relatio [et] respect[us] est causa vtriusq[ue] [et] sic naturaliter" type="straight"/>
+        <underline language="LA" method="pen" text="alteru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quia de figura in figura[m] siue de forma in formam qualitatis ta[m] in angulis q[uam] lateribus non est mutatu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="alterationis causa[m] dixerunt antiqui omnes impares numeros quos gnomones dicebant" type="straight"/>
+        <underline language="LA" method="pen" text="quare dixeru[n]t impares semper esse i[m]mutabilis sub[stantia]e. et" type="straight"/>
+        <underline language="LA" method="pen" text="re naturam eiusdem immutabilis substantie" type="straight"/>
+        <underline language="LA" method="pen" text="esse causas alterat[i]o[n]is" type="straight"/>
+        <underline language="LA" method="pen" text="qui prim[us] nu[m]erus alter factus ab vnitate" type="straight"/>     
+        <underline language="LA" method="pen" text="vnitatis naturam immutabilis sub[stantia]e" type="straight"/>
+        <underline language="LA" method="pen" text="p[ar]ticipes [et] omnes quadratos et gnomones qui" type="straight"/>
+        <underline language="LA" method="pen" text="ostendere aliquid sequi impossibile. p[ro]pter priorem datam ypothesim in opposito prime conclusionis. vt si" type="straight"/>
+        <underline language="LA" method="pen" text="sunt imparia sunt equalia perfectis id est parib[us]" type="straight"/>
+        <underline language="LA" method="pen" text="linea tra[n]suersalis p[ro]tracta in q[ua]drato equilatere" type="straight"/>
+        <underline language="LA" method="pen" text="eq[ua]les ex q[ua]rta" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- dicit non -->
+        <mark method="pen" name="comma" place="intext"/> <!-- augetur alterari -->  
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="equal_sign" place="right_margin"/> <!-- abunda[n]tia -->
+        <mark method="pen" name="comma" place="intext"/> <!-- quicq[ue] quare -->
+        <mark method="pen" name="comma" place="intext"/> <!-- impossibile ostendere -->
+        <mark method="pen" name="comma" place="intext"/> <!-- coste primo -->
+        
+        <numeral place="left_margin">9</numeral>
+        <numeral place="left_margin">7</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">8</numeral>
+        <numeral place="left_margin">6</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">2</numeral>
+        
+        <errata amendedtext="," copytext="." language="LA"/> <!-- necesse Om[n]e -->
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+
+        <!-- DO: Also Dee has added lines to the diagrams but not sure how to capture this -->
+        
+    </annotation>
+</transcription>

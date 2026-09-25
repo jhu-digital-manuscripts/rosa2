@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.060r.tif" pagination="109" reader="John Dee" signature="K.j."/>
+    <annotation>
+        
+        <marginalia anchor_text="illa affinitas nec aliqua alia cum Francigenis vnquam contracta Angli[a]e profecisset." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota.</marginalia_text>         
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="illa affinitas nec aliqua alia cum Francigenis vnquam contracta Angli[a]e profecisset." type="straight"/>
+        <underline language="LA" method="pen" text="fuit turpis pax inter Anglos &amp; Scotos" type="straight"/>
+        <underline language="LA" method="pen" text="Dauid filius Roberti" type="straight"/>
+        <underline language="LA" method="pen" text="sed infrà" type="triple"/>
+        <underline language="LA" method="pen" text="aetatem existens" type="double"/>
+        <underline language="LA" method="pen" text="fecit chartas Scotis, quarum tenor ab Anglicis penitus ignoratur: &amp; hoc totum factum est per ordinationem              reingae &amp; Rogeri de Mortuomari &amp; Iacobi Duglas Scoti." type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

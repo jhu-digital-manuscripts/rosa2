@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.106r.tif" reader="Harvey" signature="Niii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>A plausible pr[a]etence of Hannibal.</marginalia_text>
+                    <person name="Hannibal"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Fair pra[e]texts, much worth.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Trasimenus" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Thrasimenus Battayle.</marginalia_text>
+                    <location name="Trasimene"/>
+                    <emphasis method="pen" text="Thrasimenus" type="straight"/>
+                    <emphasis method="pen" text="Battayle" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="to set Italy at libertie" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hannibals preytence, to sett Italy at liberty.</marginalia_text>
+                    <person name="Hannibal"/>
+                    <location name="Italy"/>
+                    <emphasis method="pen" text="Hannibals" type="straight"/>
+                    <emphasis method="pen" text="preytence" type="straight"/>
+                    <emphasis method="pen" text="Italy at liberty" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+            
+        <marginalia anchor_text="rumour; Hanniball hadde slayne Marcellus" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A false Rumor, that Hannibal had slayne Marcellus.</marginalia_text>
+                    <person name="Hannibal"/>
+                    <person name="Marcus Claudius Marcellus"/>
+                    <emphasis method="pen" text="Hannibal" type="straight"/>
+                    <emphasis method="pen" text="had slayne" type="straight"/>
+                    <emphasis method="pen" text="Marcellus" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>On of Mendozas fresh practises:</marginalia_text>
+                    <person name="Bernardino de Mendoza"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>( sed sine effectu.</marginalia_text>
+                </position>
+            </language>
+            <translation>On of Mendozas fresh practises: but without effect.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Owr Admiral slain, &amp; Drake fledd:</marginalia_text>
+                    <person name="Charles Howard, 1st Earl of Nottingham"/>
+                    <person name="Francis Drake"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>cuius Contrarium, Verum est.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>A compound Stratagem</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>/ vt pauca, s[upr]a, i[nfr]a.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0219" text="s[upr]a"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0225" text="i[nfr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Owr Admiral slain, &amp; Drake fledd: the contrary of which is true. A compound Stratagem, a bit above and below.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>s[upr]a. Punica astutia.</marginalia_text>
+                </position>
+            </language>
+            <translation>[See] above. A cunning Carthagian.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="the fyelde" type="straight"/>
+        <underline language="EN" method="pen" text="at the lake Trasimenus" type="straight"/>
+        <underline language="EN" method="pen" text="was gret slaughter" type="straight"/>
+        <underline language="EN" method="pen" text="of the Romayns" type="straight"/>
+        <underline language="EN" method="pen" text="and .vi.M. taken" type="straight"/>
+        <underline language="EN" method="pen" text="confederates" type="straight"/>
+        <underline language="EN" method="pen" text="fellowes of the Romaynes, gentyllye" type="straight"/>
+        <underline language="EN" method="pen" text="departe home to" type="straight"/>
+        <underline language="EN" method="pen" text="the cause of his" type="straight"/>
+        <underline language="EN" method="pen" text="set Italy at libertie" type="straight"/>
+        <underline language="EN" method="pen" text="selues into his gouernance" type="straight"/>
+        <underline language="EN" method="pen" text="Mago spredde" type="straight"/>
+        <underline language="EN" method="pen" text="that night vnto the Romaynes" type="straight"/>
+        <underline language="EN" method="pen" text="Hanniball hadde slayne Marcellus" type="straight"/>
+        <underline language="EN" method="pen" text="delyuer the Locriens" type="straight"/>
+        <underline language="EN" method="pen" text="horsemen priuily" type="straight"/>
+        <underline language="EN" method="pen" text="to muster and shewe them selues" type="straight"/>
+        <underline language="EN" method="pen" text="Crispine" type="straight"/>
+        <underline language="EN" method="pen" text="Anniball to be at hande" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="set Italy at libertie"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="Hanniball hadde slayne Marcellus"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="to muster and shewe them selues"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="that night vnto the Romaynes"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="confederates"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the cause of his"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--his warre-->
+        <!--JG: dot between nauye and Mago?--> <!--KS: I would say no-->
+        
+    </annotation>
+</transcription>

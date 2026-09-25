@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.026r.tif" pagination="51" reader="John Dee" signature="d 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="tripartitae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iudei trip[li]ces.</marginalia_text>
+                </position>
+            </language>
+            <translation>Three kinds of Jewish people.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="totis 1200. annis" type="straight"/>
+        <underline language="LA" method="pen" text="tripartitae" type="straight"/>
+        <underline language="LA" method="pen" text="seruitutem Salmanasaris abducti" type="straight"/>
+        <underline language="LA" method="pen" text="communibus &amp; uulgò" type="straight"/>
+        <underline language="LA" method="pen" text="Iudaei Thalmudici" type="straight"/>
+        <underline language="LA" method="pen" text="usu in toto orbe literam aeternam" type="straight"/>
+        <underline language="LA" method="pen" text="ea perfectione incognita[m]" type="straight"/>
+        
+        <numeral place="right_margin">.1.</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3.</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.021v.tif" pagination="42" reader="John Dee" signature="[c 5[v]]"/>
+    <annotation>
+        
+      <!-- DO: Not sure how to capture the letters at the top of the page --> <!-- FSF: maybe just as scribbles? -->  <!-- DO: I think these relate to the letters in the text though... -->
+        
+        <marginalia anchor_text="sex positiones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[S]ex positiones</marginalia_text>
+                </position>
+            </language>
+            <translation>Six positions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iod" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>IOD</marginalia_text>
+                </position>
+            </language>
+            <translation>Yod.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="secundu[m] sex positiones" type="straight"/>
+        <underline language="LA" method="pen" text="hodie" type="double"/>
+        <underline language="LA" method="pen" text="uniuerso maximae" type="straight"/>
+        <underline language="LA" method="pen" text="Nemrodo" type="straight"/>
+        <underline language="LA" method="pen" text="sicut aeterna lex est in nobis duce ratione" type="straight"/>
+        <underline language="LA" method="pen" text="ratiocinationis uias repetenda" type="straight"/>
+        <underline language="LA" method="pen" text="aeterna prima &amp; mathematica" type="straight"/>
+        <underline language="LA" method="pen" text="Iod" type="double"/>
+        <underline language="LA" method="pen" text="&amp; literis uarijs" type="straight"/>
+        <underline language="LA" method="pen" text="Chaldaicam orientalem" type="straight"/>
+        <underline language="LA" method="pen" text="est Arabicam" type="straight"/>
+        <underline language="LA" method="pen" text="in loco matris suae distenditur" type="straight"/>
+        <underline language="LA" method="pen" text="ad Adami linguam reduce[n]da" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

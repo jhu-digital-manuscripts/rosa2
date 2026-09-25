@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.298r.tif" pagination="575" reader="John Dee" signature="[nnn.viii.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Consules" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Consules</marginalia_text>
+                </position>
+            </language>
+            <translation>Consuls.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sum erectior" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>sum erectior</marginalia_text>
+                </position>
+            </language>
+            <translation>I am more upright.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="iucundiorem autem faciet" type="straight"/>
+        <underline language="LA" method="pen" text="fundamenta sunt iacta" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+        <drawing anchor_text="Consules" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="iucundiorem autem faciet" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.003r.tif" pagination="5" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gothorum apologia. 
+                    </marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pra[e]sertim regis Theoderici.</marginalia_text>
+                    <person name="Theoderic the Great"/>
+                </position>
+            </language>
+            <translation>
+                The Goths' apology. Especially of King Theoderic.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="hunc intricatissimum laborem, seu potius vertiginosum labyrinthum impulerit" type="straight"/>
+        <underline language="LA" method="pen" text="ab orbis initio anxiè cognoscere cupierant, atq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="verbum, quòd ab Aquilone pandetur malum," type="straight"/>
+        <underline language="LA" method="pen" text="mira semper" type="straight"/>
+        <underline language="LA" method="pen" text="abdita" type="straight"/>
+        <underline language="LA" method="pen" text="ab Aquilone aurum venit, videlicet" type="straight"/>
+        <underline language="LA" method="pen" text="inopinata vitae celsitudo" type="straight"/>
+        <underline language="LA" method="pen" text="Hocq[ue] aurum intelligi" type="straight"/>
+        <underline language="LA" method="pen" text="atque Principes" type="straight"/>
+        <underline language="LA" method="pen" text="obscuratum est aurum" type="straight"/>
+        <underline language="LA" method="pen" text="ad aurum, quod ab" type="straight"/>
+        <underline language="LA" method="pen" text="ingens bonum ab Aquilone dimanabit" type="straight"/>
+        <underline language="LA" method="pen" text="Gothi ab Aquilone" type="straight"/>
+        <underline language="LA" method="pen" text="vrbi Romanae" type="straight"/>
+        <underline language="LA" method="pen" text="Augustinus de Ciui" type="straight"/>
+        <underline language="LA" method="pen" text="complures mitigant" type="straight"/>
+        <underline language="LA" method="pen" text="omnes barbaras nationes" type="straight"/>
+        <underline language="LA" method="pen" text="nulla vnquam gens clementior reperta" type="straight"/>
+        <underline language="LA" method="pen" text="quàm haec Gothorum: immò" type="straight"/>
+        <underline language="LA" method="pen" text="restauratis legibus, &amp; libertate," type="straight"/>
+        <underline language="LA" method="pen" text="populi Romani maiestate" type="straight"/>
+        <underline language="LA" method="pen" text="Rege praesertim Theoderico regnante, gubernari" type="straight"/>
+        <underline language="LA" method="pen" text="vetus ciuitatis forma" type="straight"/>
+        <underline language="LA" method="pen" text="prius Reipub. oppressor Caesar cum libertate euertit" type="straight"/>
+        <underline language="LA" method="pen" text="dicto Theoderico Gothorum Rege restituta" type="straight"/>
+        <underline language="LA" method="pen" text="qui &amp; Italos, &amp; Romanos" type="straight"/>
+        <underline language="LA" method="pen" text="communis omnium parens, circiter" type="straight"/>
+        <underline language="LA" method="pen" text="annos quadraginta, quibus regnabat" type="straight"/>
+        <underline language="LA" method="pen" text="conseruanda Italia," type="straight"/>
+        <underline language="LA" method="pen" text="ab omni externa iniuria" type="straight"/>
+        <underline language="LA" method="pen" text="vt omnes optimos" type="straight"/>
+        <underline language="LA" method="pen" text="iustitia, clementia, bonitate aequitate superauerit" type="straight"/>
+        <underline language="LA" method="pen" text="Fuit enim" type="straight"/>
+        <underline language="LA" method="pen" text="nemine inferior" type="straight"/>
+        <underline language="LA" method="pen" text="dignitate Imperiali probatiores fuissent" type="straight"/>
+        <underline language="LA" method="pen" text="Gothos" type="straight"/>
+        <underline language="LA" method="pen" text="Italos ari quadam" type="straight"/>
+        <underline language="LA" method="pen" text="honorem Vrbis" type="straight"/>
+        <underline language="LA" method="pen" text="auro, vel argento monetam cudi alia" type="straight"/>
+        <underline language="LA" method="pen" text="quàm veteri" type="straight"/>
+        <underline language="LA" method="pen" text="ciues Romani vel" type="straight"/>
+        <underline language="LA" method="pen" text="parandae calcis officinas in pluribus Italiae insulis fieri" type="straight"/>
+        <underline language="LA" method="pen" text="calcemq[ue] postmodum ciuibus" type="straight"/>
+        <underline language="LA" method="pen" text="liberaliter &amp; sine pretio est largitus: multaq[ue]" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="right_margin" text="hunc intricatissimum laborem, seu potius vertiginosum labyrinthum impulerit"/>
+        <symbol language="LA" name="SS" place="right_margin" text="vt omnes optimos"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- suspira -->
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="parandae calcis officinas in plurius Italiae insulis fieri"/>
+
+    </annotation>
+</transcription>

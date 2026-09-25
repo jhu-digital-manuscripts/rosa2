@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.007r.tif" reader="Harvey" signature="Ci[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>i[nfr]a.</marginalia_text>
+                    <internal_ref>
+                        <target ref="Newberry27495:case_712_c27495_025" text="i[nfr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] below.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="errour" type="straight"/>
+        <underline language="EN" method="pen" text="well" type="straight"/>
+        <underline language="EN" method="pen" text="knowinge" type="straight"/>
+        <underline language="EN" method="pen" text="do amisse" type="straight"/>
+        <underline language="EN" method="pen" text="the matter" type="straight"/>
+        <underline language="EN" method="pen" text="of the Courtier" type="straight"/>
+        <underline language="EN" method="pen" text="force or rule" type="straight"/>
+        <underline language="EN" method="pen" text="more in vse, then" type="straight"/>
+        <underline language="EN" method="pen" text="wayes a vice to vse woordes" type="straight"/>
+        <underline language="EN" method="pen" text="not in commune speach" type="straight"/>
+        <underline language="EN" method="pen" text="maner of the Tuscane" type="straight"/>
+        <underline language="EN" method="pen" text="practising emonge" type="straight"/>
+        <underline language="EN" method="pen" text="transport from one to an other" type="straight"/>
+        <underline language="EN" method="pen" text="merchaundise" type="straight"/>
+        <underline language="EN" method="pen" text="new woordes" type="straight"/>
+        <underline language="EN" method="pen" text="in Boccaccio" type="straight"/>
+        <underline language="EN" method="pen" text="woordes French" type="straight"/>
+        <underline language="EN" method="pen" text="Spanish, and" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="not in commune speach"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="more in vse, then"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="transport from one to an other"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--matter, for-->
+        <mark method="pen" name="dot" place="intext"/> <!--aduise, bicause-->
+        <mark method="pen" name="dot" place="intext"/> <!--dayes, bicause-->
+        <mark method="pen" name="dot" place="intext"/> <!--woordes, which-->
+        <mark method="pen" name="dot" place="intext"/> <!--Boccaccio, in-->
+        
+    </annotation>
+</transcription>

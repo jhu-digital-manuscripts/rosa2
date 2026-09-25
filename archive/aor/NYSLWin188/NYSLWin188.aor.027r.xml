@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.027r.tif" pagination="27" reader="John Dee" signature="Giij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Essentia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Essentia</marginalia_text>
+                </position>
+            </language>
+            <translation>Essence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nicht alles dient one mittel dem Menschen sondern durch mittel" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>O[mn]ia ho[min]ibus inseruient p[er] Mediu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Everything serves the interests of men through a medium.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Radios in die Menschen aber vnmercklich vnd vnentpfindtlich" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Radij Insensibiles stellarum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Imperceptible rays of the stars.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Radij Influentiales.</marginalia_text>
+                </position>
+            </language>
+            <translation>Influential rays.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="die bleibt" type="straight"/>
+        <underline language="DE" method="pen" text="von jnen geben" type="triple"/>
+        <underline language="DE" method="pen" text="Das ist Essentia das seindt die wunderwerck so verborgen in der Natur liege[n]t" type="straight"/>
+        <underline language="DE" method="pen" text="Essentia" type="straight"/>
+        <underline language="DE" method="pen" text="auch" type="double"/>
+        <underline language="DE" method="pen" text="Vltimis materijs" type="double"/>
+        <underline language="DE" method="pen" text="one mittel" type="double"/>
+        <underline language="DE" method="pen" text="Regen dient" type="double"/>
+        <underline language="DE" method="pen" text="das mittel" type="straight"/>
+        <underline language="DE" method="pen" text="laub vnd" type="straight"/>
+        <underline language="DE" method="pen" text="früchte" type="straight"/>
+        <underline language="DE" method="pen" text="greifflich" type="straight"/>
+        <underline language="DE" method="pen" text="sichtig" type="double"/>
+        <underline language="DE" method="pen" text="gleich gehent sie in Menschen wie die Sonne" type="straight"/>
+        <underline language="DE" method="pen" text="jrem schein" type="double"/>
+        <underline language="DE" method="pen" text="andern Sternen solcher arth auch vnd beweisens wie die" type="straight"/>
+        <underline language="DE" method="pen" text="durch jre Radios" type="triple"/>
+        <underline language="DE" method="pen" text="Aber krefftig" type="double"/>
+        <underline language="DE" method="pen" text="dasselbige Impressiones" type="straight"/>
+        <underline language="DE" method="pen" text="Mensch muß leiden vnd gedulden vnd mit" type="straight"/>
+        <underline language="DE" method="pen" text="gewalt" type="triple"/>
+        
+        <symbol language="DE" name="Sun" place="left_margin" text="Sonne"/>
+        
+        <mark method="pen" name="tripunctus" place="tail"/>
+        
+        <errata amendedtext="Materialisch" copytext="Meterialisch" language="DE"/>
+        
+    </annotation>
+</transcription>

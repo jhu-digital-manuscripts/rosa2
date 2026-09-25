@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.030v.tif" pagination="60" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Dis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dis</marginalia_text>
+                    <person name="Dis"/>
+                </position>
+            </language>
+            <translation>Dis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Petro" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Petrus</marginalia_text>
+                    <person name="St. Peter"/>
+                </position>
+            </language>
+            <translation>Peter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Druidas &amp; Bardos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Druides Bardi.</marginalia_text>
+                </position>
+            </language>
+            <translation>Druids, Bards.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uoluit super" type="straight"/>
+        
+    </annotation>
+</transcription>

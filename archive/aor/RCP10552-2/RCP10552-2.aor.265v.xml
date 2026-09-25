@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.265v.tif" pagination="44" reader="John Dee" signature="[F.iij.[v]]"/> 
+    <annotation>
+       
+        <marginalia anchor_text="Sciticu[m]" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Scythicus</marginalia_text>
+                </position>
+            </language>
+            <translation>Scythian.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="genealogiam" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Genealogia</marginalia_text>
+                </position>
+            </language>
+            <translation>Genealogy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sicia" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Scithia</marginalia_text>
+                    <location name="Scythia"/>
+                </position>
+            </language>
+            <translation>Scythia.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ita versus meridiem trans illius fines protenditur" type="straight"/>        
+        <underline language="LA" method="pen" text="Haec aute[m] proprié patria Scotoru[m]" type="straight"/>
+        <underline id="RCP10552-2:540:u0001" language="LA" method="pen" text="expulerunt a se quendam nobilem Sciticu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="peruenit ad Hispaniam" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; habitauit per annos multos" type="straight"/>
+        <underline language="LA" method="pen" text="mille" type="straight"/>
+        <underline language="LA" method="pen" text="transitu filiorum Israel" type="straight"/>
+        <underline language="LA" method="pen" text="Britonibus &amp; Pictis" type="straight"/>
+        <underline language="LA" method="pen" text="Nauarri" type="straight"/>
+        <underline language="LA" method="pen" text="eadem vtuntur" type="straight"/>
+        <underline language="LA" method="pen" text="Ab isto Malcolino reuoluunt genealogiam vsq[ue] ad Noe" type="straight"/>
+        <underline language="LA" method="pen" text="Sicia" type="straight"/>
+        <underline id="RCP10552-2:540:u0002" language="LA" method="pen" text="Sciticus, Scoticus" type="straight"/>
+        <underline language="LA" method="pen" text="Hiberniae descriptio" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        
+        <errata amendedtext="[deleted]" copytext="filius Simonis" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP10552-2:540:u0001"/>
+            <marginal_annotation idref="RCP10552-2:540:u0002"/>
+            <relation from="RCP10552-2:540:u0001" to="RCP10552-2:540:u0002" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.328v.tif" pagination="636" reader="John Dee" signature="[rrr.vi.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="liberale officium, serere beneficium, vt metere possis fructum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Est eni[m] liberale officiu[m] serere beneficiu[m] vt metere possis fructu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>For the office is free to cultivate benefit, so that you may sow its fruit.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="liberale officium, serere beneficium, vt metere possis fructum: fidei conducit, in loco debitum retribuere.              illic enim animi voluntas propensa comprobatur: hic memoria collaudatur. Itaque" type="straight"/>
+        <underline language="LA" method="pen" text="beneficia singulis ciuibus, priuatímque da[n]tur, ea solent iis esse fructuosa à quibus sunt profecta: iure &amp; merito" type="straight"/>
+        
+        <numeral place="left_margin">3</numeral>
+        
+        <drawing anchor_text="Est eni[m] liberale officiu[m], serere beneficium, vt metere possis fructu[m]" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        <drawing anchor_text="Est enim liberale officium, serere beneficium, vt metere possis fructum" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

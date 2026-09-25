@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.104r.tif" reader="Harvey" signature="N[ir]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Omnia priùs verbis. quàm Armis experiri, sapientem decet. Cineas, Pyrrhi pra[e]cursor.</marginalia_text>
+                    <person name="Cineas"/>
+                    <person name="Pyrrhus of Epirus"/>
+                </position>
+            </language>
+            <translation>It becomes a wise man to try everything by words before resorting to arms. Cineas, Pyrrhus' precursor.</translation> <!--JG: Slight adaptation of Terence's saying (verbis is added)-->
+        </marginalia>
+        
+        <marginalia anchor_text="chalengyng hym to fyght" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Monomachia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Duel.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="I wyll take the victor to taske" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Congrediar</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>cu[m] victore.</marginalia_text>
+                </position>
+            </language>
+            <translation>I will join in battle with the conqueror.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Naumachia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Mock sea battle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="battayle by see" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nauale pra[e]liu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Naval battle.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Animus acer, et pra[e]sens; et acutus idem, atq[ue] versutus, Inuictos viros efficit, Arte coniuncta.
+                    Cc. 2. de Oratore. Quasi animum Ca[e]saris, de industria vellet depingere; Romanorum facilè acerrimi, versutissimi, et Inuictissimi.
+                   Compendiaria methodus Excellentia[e].</marginalia_text>
+                    <person name="Cicero"/>
+                    <person name="Julius Caesar"/> <!--JG: Not entirely sure-->
+                    <book title="De Oratore"/>
+                </position>
+            </language>
+            <translation>"[It is] a bold and ready mind, acute and quick at expedients, that renders men invincible, and certainly not less effectively if art be united with it." [Watson, 1896] 
+                Cicero, book 2 of 'the Orator'. As if he wished to depict the mind of Caesar regarding diligence; easily the most sharp, cunning, and invincible of the Romans.
+            A short method of excellence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="a wretched person," hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>A person of contemptible stature,</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Caius Marius" type="straight"/>
+        <underline language="EN" method="pen" text="chalengyng hym to fyght" type="straight"/>
+        <underline language="EN" method="pen" text="fayne" type="straight"/>
+        <underline language="EN" method="pen" text="dye" type="straight"/>
+        <underline language="EN" method="pen" text="go hang hym selfe" type="straight"/>
+        <underline language="EN" method="pen" text="hym a player at" type="straight"/>
+        <underline language="EN" method="pen" text="sword, a wretched person, and very aged" type="straight"/>
+        <underline language="EN" method="pen" text="ouercome this" type="straight"/>
+        <underline language="EN" method="pen" text="take the victor to taske" type="straight"/>
+        <underline language="EN" method="pen" text="conueye" type="straight"/>
+        <underline language="EN" method="pen" text="wodde, lyenge" type="straight"/>
+        <underline language="EN" method="pen" text="so fyre his tentes" type="straight"/>
+        <underline language="EN" method="pen" text="that he lacked wodde" type="straight"/>
+        <underline language="EN" method="pen" text="forth on euerye" type="straight"/>
+        <underline language="EN" method="pen" text="to steale it" type="straight"/>
+        <underline language="EN" method="pen" text="selfe toke great" type="straight"/>
+        <underline language="EN" method="pen" text="to remoue the wodde away" type="straight"/>
+        <underline language="EN" method="pen" text="battayle by see" type="straight"/>
+        <underline language="EN" method="pen" text="tankerdes" type="straight"/>
+        <underline language="EN" method="pen" text="of pytche and tarre, that" type="straight"/>
+        <underline language="EN" method="pen" text="both the weight" type="straight"/> 
+        <underline language="EN" method="pen" text="sheddynge therof, myght" type="straight"/>
+        <underline language="EN" method="pen" text="the fyre" type="straight"/>
+        <underline language="EN" method="pen" text="Anniball" type="straight"/>
+        <underline language="EN" method="pen" text="vessels full of adders" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="to steal it"/>
+        <mark language="EN" method="pen" name="apostrophe" place="left_margin" text="Anniball"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="fayne"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="ouercome this"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="that he lacked wodde"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="dye"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="go hang hym selfe"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="hym a player at"/>
+        <mark method="pen" name="dot" place="intext"/> <!--aged, he-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="so fyre his tentes"/>
+        <mark method="pen" name="dot" place="intext"/> <!--tentes, fayned-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="tankerdes"/>
+        <mark method="pen" name="dot" place="intext"/> <!--tarre, that-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="weight"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="sheddynge therof"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the fyre"/>
+        <mark method="pen" name="apostrophe" place="intext"/> <!--Anniball fyrst-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="vessels full of adders"/>
+        
+        <mark method="pen" name="plus_sign" place="tail"/>
+        
+    </annotation>
+</transcription>

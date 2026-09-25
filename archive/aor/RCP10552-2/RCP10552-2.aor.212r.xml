@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.212r.tif" pagination="415" reader="John Dee" signature="Nn.iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Iohannes Cheyne" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Jo[hann]es Cheynei</marginalia_text>
+                    <person name="John Cheyne"/>
+                </position>
+            </language>
+            <translation>John Cheyne.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="prolocutor Miles, dictus Iohannes Cheyne" type="straight"/>
+        <underline language="LA" method="pen" text="militiam sortemquè Christi deserens, in sortem Martis apostatando" type="straight"/>
+        <underline language="LA" method="pen" text="Diaconus fuerat ordinatus" type="straight"/>
+        <underline language="LA" method="pen" text="vt resiliret dispensatione licenciatus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

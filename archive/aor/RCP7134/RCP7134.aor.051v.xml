@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.051v.tif" pagination="[45v]" reader="John Dee" signature="[M[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Regula de loco planeta[e] in exce[n]trico suo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rule regarding the place of a planet in their orbit.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quando asce[n]dunt aut desce[n]du[n]t in epicyclo suo.</marginalia_text>
+                </position>
+            </language>
+            <translation>When they ascend or descend in their epicycle.</translation>
+        </marginalia>
+        
+        <symbol name="Venus" place="left_margin"/>
+        <symbol language="LA" name="Mercury" place="left_margin" text="Mercurius"/>
+        <symbol language="LA" name="Moon" place="left_margin" text="Luna"/>
+        
+        <errata amendedtext="," copytext="." language="LA"/>
+        
+    </annotation>
+</transcription>

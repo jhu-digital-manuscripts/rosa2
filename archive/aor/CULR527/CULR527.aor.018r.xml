@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.018r.tif" pagination="18" reader="John Dee" signature="Cij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="metaphysicus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Metaphysicus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Metaphysician.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="inquantu[m] aliquid accidit unicuique eoru[m]: sed quu[m] speculatur co[m]munium unumquodque, speculatur circa ens inquantu[m] est ens" type="double"/>
+        <underline language="LA" method="pen" text="substa[n]tia" type="straight"/>
+        <underline language="LA" method="pen" text="de causa rei dicere" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]siderare" type="straight"/>
+        <underline language="LA" method="pen" text="Na[m] quum causae no[n] cognoscantur, ueritas in demo[n]stratione" type="straight"/>
+        <underline language="LA" method="pen" text="Mathematicus aliquid cui natura no[n] consentiat demo[n]strare poterit: qua[n]doquide[m]" type="straight"/>
+
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/> 
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+
+    </annotation>
+</transcription>

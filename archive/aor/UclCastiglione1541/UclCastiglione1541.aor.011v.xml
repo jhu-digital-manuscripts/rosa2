@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+<page filename="UclCastiglione1541.011v.tif" reader="Harvey" signature="[Aiiii[v]]"/>
+<annotation>
+    <marginalia hand="Italian">
+        <language ident="IT">
+            <position book_orientation="0" place="left_margin">
+                <marginalia_text>
+                    Qual fosse il giudicio del l'Auttore nella scelta delle parole.
+                </marginalia_text>
+            </position>
+        </language>
+        <translation>
+            What the author's judgement was in the choice of words. 
+        </translation>
+    </marginalia>
+    <marginalia hand="Italian">
+        <language ident="IT">
+            <position book_orientation="0" place="left_margin">
+                <marginalia_text>
+                    Si dee conseruar la consuetudine.
+                </marginalia_text>
+            </position>
+        </language>
+        <translation>
+            Whether one should adhere to tradition.      
+        </translation>
+    </marginalia>
+    <marginalia hand="Italian">
+        <language ident="IT">
+            <position book_orientation="0" place="left_margin">
+                <marginalia_text>
+                    Autori imitati dall'autore tanto degni, quanto il Boccaccio.
+                </marginalia_text>
+                <person name="Giovanni Boccaccio"/>
+            </position>
+        </language>
+        <translation>
+            Authors imitated by the author as worthy as Boccaccio.  
+        </translation>
+    </marginalia>
+</annotation>
+</transcription>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.013r.tif" pagination="15" reader="John Dee" signature="B.ij."/>
+    <annotation>
+        
+        <marginalia anchor_text="post margaretam" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1290</marginalia_text> <!-- MB. Margaret was Scottish queen until 1290 therefore date likely refers to'post margaretem'.  -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Alexander Rex Scotorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Alexander Tertuis, Rex Scotoru[m], moritur</marginalia_text>
+                    <person name="Alexander III of Scotland"/>
+                </position>
+            </language>
+            <translation>Alexander III, King of Scotland, died.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Interim Resus filius Mereduci" type="straight"/>
+        <underline language="LA" method="pen" text="VValliam co[n]tra Resum" type="straight"/>
+        <underline language="LA" method="pen" text="quod era Resi," type="straight"/>
+        <underline language="LA" method="pen" text="de monte Canisij" type="straight"/>
+        <underline language="LA" method="pen" text="Tempore quadragesimali" type="straight"/>
+        <underline language="LA" method="pen" text="cum Alexander Rex" type="straight"/>
+        <underline language="LA" method="pen" text="vxoren suam" type="straight"/>
+        <underline language="LA" method="pen" text="Comitis Flandriae" type="double"/>
+        <underline language="LA" method="pen" text="post Margaretam" type="straight"/>
+        <underline language="LA" method="pen" text="Rex Scotorum miserabilieer" type="straight"/>
+        <underline language="LA" method="pen" text="filiam Regis" type="straight"/>
+        <underline language="LA" method="pen" text="lapsus &amp; collisus" type="straight"/>
+        <underline language="LA" method="pen" text="vxore nullam" type="straight"/>
+        <underline language="LA" method="pen" text="geminam" type="straight"/>
+        
+    </annotation>
+</transcription>

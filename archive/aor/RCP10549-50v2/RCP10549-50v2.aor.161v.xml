@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.161v.tif" pagination="62" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="instent in praesenrtia; cum tempore hoc differt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>instare in pr[a]esentia cu[m] hoc differre</marginalia_text>
+                </position>
+            </language>
+            <translation>To stand in the present; to differ with this.</translation>
+        </marginalia>
+   
+        
+        <marginalia anchor_text="Quare cum tempore hoc differt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quid interest occasionem &amp; te[m]p[us]</marginalia_text>
+                </position>
+            </language>
+            <translation>What differs between occasion and time.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Hoc distribuitur in tria genera" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[3 - deleted] Occasio triplex</marginalia_text>     
+                </position>
+            </language>
+            <translation>Threefold occasion.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Adiunctum aute[m] negotio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>3 Adiunctu[m] negocio</marginalia_text>
+                </position>
+            </language>
+            <translation>3. Attached to an action.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="co[n]secutio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>4 Consecutio</marginalia_text>
+                </position>
+            </language>
+            <translation>4. Consequence.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="argumentatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Argumentatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Argumentation.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="distinctius erit dicendu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>distinctius dicere</marginalia_text>
+                </position>
+            </language>
+            <translation>To say something more distinct.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="quae instent in praesentia" type="straight"/>
+        <underline language="LA" method="pen" text="cum tempore hoc differt" type="straight"/>
+        <underline language="LA" method="pen" text="distinctius erit dicendu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]memorauimus, sumetur, aut probabilis, aut necessaria debebit esse" type="straight"/>
+        
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">6</numeral>
+        <numeral place="left_margin">7</numeral>
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">6</numeral>
+        
+        <drawing anchor_text="instare in pr[a]esentia" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        <drawing anchor_text="cu[m] hoc differe" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="co[m]memorauimus, sumetur, aut probabilis, aut necessaria debebit esse" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/> 
+        
+    </annotation>
+</transcription>

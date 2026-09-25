@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.178v.tif" pagination="348" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Legecestriam" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Legecestria.
+                    </marginalia_text>
+                    <location name="Leicester"/>
+                </position>
+            </language>
+            <translation>
+                
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        J.D. 
+                        Legecestria. forsam primu[m] Cestr[a]e Territoriu[m], erat illud - Wirhalia[e] brachium. vel forsan hic intelligit in illa[m] siluosa lege cestrensis ditonis parte[m] qua[e] d[ice]r[e] Wirhalia. etc. 
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                    <location name="Leicester"/>
+                </position>
+            </language>
+            <translation>
+               [John Dee]. Leicester. Perhaps the first territory of Chester was this one - The Wirral peninsula. Or perhaps this observes an area under the law of Chester's authority, which was called Wirral, etc.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail"> 
+                    <marginalia_text>
+                        The river of Lee that runs by Ware which by statute (in Quene Elizabeth her tyme made) shuld so browght to London.
+                    </marginalia_text>
+                    <person name="Elizabeth I of England"/>
+                    <location name="Lea"/>
+                    <location name="Ware"/>   
+                    <location name="London"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Legecestriam" type="straight"/>
+        <underline language="LA" method="pen" text="Anglicè" type="straight"/>
+        <underline language="LA" method="pen" text="Wirhale" type="double"/>
+        <underline language="LA" method="pen" text="exercitus Legecestriam" type="straight"/>
+        <underline language="LA" method="pen" text="in ostio Ligëi" type="double"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- rapinis, extractis -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- nauibus, institerunt -->
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.368r.tif" pagination="187" reader="John Dee" signature="[Mm.vi.]"/>   
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Dilemma
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Dilemma
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in tenebris tanqua[m] in gurgustio habitauerat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        { dormire cessare labore[m] fugere in tenebris ta[m]q[uam] gurgustio habitare otio languere nihil cessatio[n]e melius existimat tenari ceßatio[n]e corpore homo ineus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To rest, to be inactive, to escape work, to dwell in darkness, never in a hut, to be tired of leisure, <!-- FSF: not sure if I transcribed the rest correctly -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="operis designationem atque aparatum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        op[er]is designatio apparatus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Arrangement and preparation of work.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        rer[um] molitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The grinding of things.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Epicurus
+                    </marginalia_text>
+                    <person name="Epicurus"/>
+                    <emphasis method="pen" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                Epicurus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in gurgustis habitare" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        in gurgustio habitare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To live in a hut.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ab vtroque autem sciscitor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ab vtro'q[ue] aute[m] sciscitor require quero
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                But I would put the question to both of you, I ask for, I question.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quae est enim coagmentatio no[n] dissolubilis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Omnis Coagme[n]tatio est dissolubilis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Every union can be dissolved.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Platonicus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Platonicus deus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Platonic God.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Secula qua[e] su[n]t
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Centuries that are.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aeternitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Æternitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Eternity.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Contra stoicoru[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        πρόνοιαν
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Providence.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="omnes nautrae numini diuino, coelum, ignes, terrae, maria parerent" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        o[mn]es natura[e] numini diuino parent, co[e]lu[m], ignes [et]c.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                All elements are obedient to the divine will. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="coelu &amp; terras exornatas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ca[e]lu[m]q[ue] terraq[ue] varietate mira exornata
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Both the sky and the earth are adorned with a wunderful variety.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        H[a]ec ho[m]i[nu]m causa à deo sunt constituta
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                This cause of men was established by god.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Miserius enim stultitia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        stultitia miseria e[st]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Stupidity is a misery.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Contra pone[n]tes mu[n]dum a[n]i[m]a et sensibus pra[e]ditum, immortalem, rotundu[m]q[ue] qui fecerunt
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Those who create, against those placing the immortal and round world, which is gifted with a soul and sensed,  
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rotundum esse velint, quòd ea forma neget vllam esse pulchriorem Plato" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Rotunda forma nulla[m] pulchriore[m] putauit Plato
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Plato saw no beauty in the round shape.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Terra dei pars si sit, eius me[m]bra partim ardentia, partim refrigerata erunt.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                If the world is a part of god, his limps were partly burning and partly freezing.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Thales enim Milesius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Thales Milesius.
+                    </marginalia_text>
+                    <person name="Thales of Miletus"/>
+                </position>
+            </language>
+            <translation>
+                Thales of Miletus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Anaxima[n]dri autem opinio est natiuos esse deos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Anaximander deos natiuos ponens
+                    </marginalia_text>
+                    <person name="Anaximander"/>
+                </position>
+            </language>
+            <translation>
+                Anaximander placed the gods among the born people.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Anaximenes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Anaximenes
+                    </marginalia_text>
+                    <person name="Anaximenes"/>
+                </position>
+            </language>
+            <translation>
+                Anaximenes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Anaxagoras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Anaxagoras
+                    </marginalia_text>
+                    <person name="Anaxagoras"/>
+                </position>
+            </language>
+            <translation>
+                Anaxagoras.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nullus p[otes]t esse sensus in infinito
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                No sense can be unlimited.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Alcmaeo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Alcma[e]o
+                    </marginalia_text>
+                    <person name="Alcmaeon pf Croton"/>
+                </position>
+            </language>
+            <translation>
+                Alcmaeon.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        innumerabilia secula ab infinito te[m]pore imme[n]so spatio ab [a]eterno p[rae]tenti te[m]poris spatio à principio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Innumerable centuries, from limitless time, immense space, from eternal space of time, from the beginning. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        q[uod] ne in cogitatione[m] quide[m] cadit fugere intellige[n]ti[a]e n[ost]ra[e] vim et r[ati]o[n]em <!-- FSF: not sure about the last abbreviation -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        co[m]modore[m] co[n]pensatione[m] leuire
+                    </marginalia_text>
+                    <emphasis method="pen" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                To mitigate compensation.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        ea relecitate co[n]torqueri mundi co[n]mersio <!-- FSF: not sure about the second word -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quae est enim coagmentatio no[n]" type="straight"/>
+        <underline language="LA" method="pen" text="totius operis designationem atque" type="straight"/>
+        <underline language="LA" method="pen" text="innumerabilia secula dormierint" type="straight"/>
+        <underline language="LA" method="pen" text="mundi conuersione" type="straight"/>
+        <underline language="LA" method="pen" text="quam nulla circunscriptio temporu[m] metiebatur: spatio" type="straight"/>
+        <underline language="LA" method="pen" text="immenso spatio" type="straight"/>
+        <underline language="LA" method="pen" text="At iste" type="straight"/>
+        <underline language="LA" method="pen" text="quum omnes naturae numini diuino, coelum, ignes, terrae, maria" type="straight"/>
+        <underline language="LA" method="pen" text="tempore infinito" type="straight"/>
+        <underline language="LA" method="pen" text="tanqua[m] in gurgustio habitauerat" type="straight"/>
+        <underline language="LA" method="pen" text="facta rerum molitio" type="straight"/>
+        <underline language="LA" method="pen" text="ea sapientes co[m]modorum compensatione leniant: stulti" type="straight"/>
+        <underline language="LA" method="pen" text="mundum ipsum animantem sapientémque esse dixerunt, nullo modo viderunt animi" type="straight"/>
+        <underline language="LA" method="pen" text="quo dicam equide[m] paulò" type="straight"/>
+        <underline language="LA" method="pen" text="vel cylindri" type="straight"/>
+        <underline language="LA" method="pen" text="quadrati" type="straight"/>
+        <underline language="LA" method="pen" text="coni" type="straight"/>
+        <underline language="LA" method="pen" text="pyramidis" type="straight"/>
+        <underline language="LA" method="pen" text="vt ea celeritate contorqueatur" type="straight"/>
+        <underline language="LA" method="pen" text="parte significetur" type="straight"/>
+        <underline language="LA" method="pen" text="inhabitabiles atque incultas" type="straight"/>
+        <underline language="LA" method="pen" text="appulsu solis exarserit, pars obriguerit niue pruináque, longinquo solis abscessu" type="straight"/>
+        <underline language="LA" method="pen" text="ab vltimo repetam superiorum" type="straight"/>
+        <underline language="LA" method="pen" text="est natiuos esse" type="straight"/>
+        <underline language="LA" method="pen" text="aut non omne quod ortum sit, mortalitas co[n]sequatur" type="straight"/>
+        <underline language="LA" method="pen" text="infinitae" type="straight"/>
+        
+        <symbol name="Asterisk" place="left_margin"/>
+        <symbol name="Asterisk" place="left_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing anchor_text="Omnis Coagme[n]tatio est dissolubilis" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Secula qua[e] su[n]t" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Æternitas" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="stultitia miseria e[st]" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+        <drawing anchor_text="coni" book_orientation="0" method="pen" place="intext" type="cone"/>
+        <drawing anchor_text="pyramidis" book_orientation="0" method="pen" place="intext" type="pyramid"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.056v.tif" pagination="112" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="caelatura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ca[e]latura</marginalia_text>
+                </position>
+            </language>
+            <translation>The art of decorative metalwork.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sculptura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sculptura</marginalia_text>
+                </position>
+            </language>
+            <translation>Sculpture.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dialectices materia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dialectices materia</marginalia_text>
+                </position>
+            </language>
+            <translation>The issue of dialectics.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

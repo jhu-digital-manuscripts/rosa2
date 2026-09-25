@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="UclCastiglione1541.014r.tif" pagination="II[r]" reader="Harvey" signature="[Aiiir]"/>
+<annotation>
+    <marginalia hand="Italian">
+        <language ident="IT">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>
+                    Discrittion d'Urbino.
+                </marginalia_text>
+                <location name="Urbino"/>
+            </position>
+        </language>
+        <translation>
+            A description of Urbino.
+        </translation>
+    </marginalia>
+    <marginalia hand="Italian">
+        <language ident="IT">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>
+                    lode di Federic[o] Duca d'Urbin[o]
+                </marginalia_text>
+                <person name="Federico da Montefeltro"/>
+                <location name="Urbino"/>
+            </position>
+        </language>
+        <translation>
+            Praise of Federico, Duke of Urbino.
+        </translation>
+    </marginalia>
+</annotation>
+</transcription>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.014v.tif" pagination="[14[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mathematicus insitan[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The inserted mathematics.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mathematicas demonstrationes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mathematica[e] demo[n]stratio[n]es
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mathematical demonstrations.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="si mathematica sunt alia à sensibilibus" type="straight"/>
+        <underline language="LA" method="pen" text="tamen sunt in eis, &amp; corpus sit" type="straight"/>
+        <underline language="LA" method="pen" text="in eodem cum corpore sensibili" type="straight"/>
+        <underline language="LA" method="pen" text="ergo duo solida, id est duo corpora" type="straight"/>
+        <underline language="LA" method="pen" text="in locis alia corpora" type="straight"/> 
+        <underline language="LA" method="pen" text="quidam artifex, qui artificijs &amp; artificialibus rebus dirigit &amp; facit" type="straight"/>
+        <underline language="LA" method="pen" text="naturales intelligantur" type="straight"/>
+        <underline language="LA" method="pen" text="mathematica esse accidentia" type="straight"/>
+        <underline language="LA" method="pen" text="mathematicas demonstrationes esse omnium rerum ueram cognitionem: quum hoc maximé ueritati reluctetur" type="straight"/>
+
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+    </annotation>
+</transcription>

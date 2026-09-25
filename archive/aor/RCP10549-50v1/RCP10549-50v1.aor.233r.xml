@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.233r.tif" pagination="445" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        edere a[n]i[m]am
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To breathe out the last breath.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="forum corporibus ciuium Romanorum co[n]stratum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        foru[m] co[n]stratu[m] corporib[us]
+                    </marginalia_text>
+                    <location name="Roman Forum"/>
+                </position>
+            </language>
+            <translation>
+                The forum strewn with bodies.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="moribundúmque" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        moribund[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Dying.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pra[e]mio proposito, praeter hoc, quod iam co[n]tritum &amp; contemptum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        pra[e]miu[m] co[n]tritu[m] co[n]te[m]ptu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A reward, stale and contemptible.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vitam, &amp; libertatem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vita &amp; libertas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Life and freedom.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cum verbis co[n]sequi" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        v[er]bis co[n]sequi.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To pursue with words.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dicam enim quod sentio, &amp; quod mecum sentiunt omnes" type="straight"/>
+        <underline language="LA" method="pen" text="praesidio &amp; copiis defendi vitam, &amp; libertatem necesse esse. hoc sentire, prude[n]tiae est:              facere, fortitudinis: &amp; sentire verò, &amp; facere, perfectae, cu,ulatáeque virtutis. Adiit" type="straight"/>
+        <underline language="LA" method="pen" text="verbis co[n]sequi" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="right_margin"/> <!-- with tail -->
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">15</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">11</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+        <drawing anchor_text="vita &amp; libertas" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+        
+    </annotation>
+</transcription>

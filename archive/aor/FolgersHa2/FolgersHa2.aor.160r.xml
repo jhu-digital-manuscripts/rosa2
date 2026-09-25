@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.160r.tif" pagination="143" reader="Harvey" signature="[I8r]"/>	<!-- ABO 164right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Acerrimi iudicij quasi Corpus, Ca[e]sar: Vmbra[e],
+						Sallustrius, et Virgilius.
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+					<person name="Sallust"/>
+					<person name="Virgil"/>
+				</position>
+			</language>
+			<translation>Caesar is practically a body of most penetrating judgment; Sallust and Virgil are shadows.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nihil in tribus prudentissimis /
+						vanum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Nothing vain in the three most prudent things.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nullum in illis verbum verbosum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>No verbose word in those things.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Percurrendi (
+						dignissimi: semper redeundu[m] ad iudicium /
+						Ca[e]saris, Salustij, Virgilij: quorum
+						vena aurum purissimum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The most dignified men must be perused. One must always return to the judgment of Caesar, Sallust, and Virgil, who have a purest gold in their vein.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Maximum mundi Paradoxu[m], Cardani Encomiu[m]
+						Neronis: egregius discursus pragmaticus.
+					</marginalia_text>
+					<person name="Girolamo Cardano"/>
+					<book title="Encomium Neronis"/>
+				</position>
+			</language>
+			<translation>The greatest paradox of the world, Girolamo Cardano's 'Encomium Neronis': an extraordinary pragmatic discourse.</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.160r_0001" marginalia_continues_to="Ha2.159v_0001" marginalia_to_transcription="Ha2.159v.xml">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Excellunt iudicio Ca[e]sar, Sallustius, Virgilius: qui soli possunt prudentissimu[m] viru[m]
+						efficere: pra[e]sertim cum Ciceronis Officijs: de administranda prouincia: de petitione
+						Consulatus. Pragmaticum etiam astutissimu[m] Tacitus, Gandinus, Durandus.
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+					<person name="Sallust"/>
+					<person name="Virgil"/>
+					<person name="Cicero"/>
+					<person name="Tacitus"/>
+					<person name="Marcantonio Gandino"/>
+					<person name="Guillaume Durand"/>
+					<book title="De Officiis"/>
+					<book title="De petitione consulatus"/>
+					<book title="De administranda provincia"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Pra[e]sertim cu[m] Mithridatis
+						epistola, et concione
+						contra Romanos: =
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						= Aristotelis politicis, Oeconomicisq[ue] technis: Xenophontis Tyranno: Dionis apistia:
+						Plutarchi politicis: Jouis Elogio Ca[e]saris Borgia[e]: Catharina[e] Medicea[e] practicis: [p. 142: Equitis Poncetti discursu aulico de Principijs imperij Turcici: Ritratti di Guicciardini: Phalardis tyranni Epistolis: Mahometis 2. epistolis.]
+							<!-- Continues onto facing page, right margin, Ha2.161v -->
+					</marginalia_text>
+					<person name="Aristotle"/>
+					<person name="Xenophon"/>
+					<person name="Dio Chrysostom"/>
+					<person name="Plutarch"/>
+					<person name="Paolo Giovio"/>
+					<person name="Cesare Borgia"/>
+					<person name="Catherine de' Medici"/>
+					<book title="Economics"/>
+					<book title="Politics"/>
+					<book title="Hiero"/>
+					<book title="Apistia"/>
+					<book title="Opuscula"/>
+					<book title="Illustrium Virorum Vitae"/>
+				</position>
+			</language>
+			<translation>Caesar, Sallust, and Virgil excel in judgement, they alone who can create the most prudent man: especially with Cicero's 'On duties', 'On administering an office', 'On running for the consulship'. Also Tactitus, Gandinus, and Durandus
+				[can create] a most astute pragmatist. Especially with Mithridatis' letter and with his speech against the Romans: and with Aristotle's economic and political artifices: with Xenophon's 'Hiero', Dio Chrysostom's 'Diffidence', Plutarch's political 'Opuscula',
+				with the Giovio's' eulogy of Cesare Borgia, with the practices of Catherine de' Medici: [p. 142: With the golden discourse of Maurice Poncet, a knight, 'on the rulers of the Turkish empire', Francesco Guicciardini's 'Ritratti', 'In Phalaridis tyranni agrigentini Epistolas', with the 'letters of Mehmed 2'.]
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="parte rimase" type="straight"/>
+		<underline language="IT" method="pen" text="masculina" type="straight"/>
+		<underline language="IT" method="pen" text="feminina" type="straight"/>
+		<underline language="IT" method="pen" text="l'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="la donna" type="straight"/>
+		<underline language="IT" method="pen" text="nel suo intero" type="straight"/>
+		<underline language="IT" method="pen" text="ogn'hora ricongiugnersi" type="straight"/>
+		<underline language="IT" method="pen" text="rappiccarsi insieme, come cosa" type="straight"/>
+		<underline language="IT" method="pen" text="L'animo" type="straight"/>
+		<underline language="IT" method="pen" text="la guida, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="lo imperatore" type="straight"/>
+		<underline language="IT" method="pen" text="della vita de gli huomini" type="straight"/>
+		<underline language="IT" method="pen" text="egregij fatti dell'ingegno" type="straight"/>
+		<underline language="IT" method="pen" text="Viuitur ingenio" type="straight"/>
+		<underline language="IT" method="pen" text="stolta" type="straight"/>
+		<underline language="IT" method="pen" text="alle donne" type="straight"/>
+		<underline language="IT" method="pen" text="segreti importanti" type="straight"/>
+		<underline language="IT" method="pen" text="la moglie fusse" type="straight"/>
+		<underline language="IT" method="pen" text="vn vuouo" type="straight"/>
+		<underline language="IT" method="pen" text="notte vn miracolo" type="straight"/>
+		<underline language="IT" method="pen" text="come è il costume di voi altre" type="straight"/>
+		<underline language="IT" method="pen" text="non sapete" type="straight"/>
+		<underline language="IT" method="pen" text="conoscete bene, se voi pensate" type="straight"/>
+		
+		<symbol name="SS" place="intext"/> <!-- dell'huomo -->
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- l'huo -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- inte -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- im -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- doman -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- pen -->
+		
+		<mark language="LA" method="pen" name="plus_sign" place="intext" text="Viuitur ingenio"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="segreti importanti"/>
+		
+    </annotation>
+</transcription>

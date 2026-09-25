@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.241v.tif" pagination="462" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="misera &amp; prostrata Respublica" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Resp. misera prostrata
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A state, miserable and overthrown.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="non solum facto tuo, sed etiam exemplo Remp. vulnerasti: neque tantu[m] ipse improbus es" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Improbi Magistratus no[n] facto solu[m], sed etiam ex exemplo remp. vulnerauit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The magistrate of the wicked damaged the state not only by his act, but also by his example.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diísque hominibus inuitis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        dijsq[ue] ho[m]i[n]ib[us] invictis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                By invincible gods and people.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="honore indignissimum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        honorè indigniss[imus]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Most unworthy of honour.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quo etiam maiore es malo mactandus, quòd non solum facto tuo, sed etiam exemplo Remp. vulnerasti: neque tantu[m] ipse improbus es,              sed etia[m] alios docere voluisti" type="straight"/>
+        <underline language="LA" method="pen" text="Ac si haec omnia conte[m]nis ac despicis, quòd ita tibi persuaseris, vt palàm dictitas, te diísque hominibus inuitis,              amore in te incredibili quodam C. Caesaris, omnia quae velis co[n]secuturum" type="straight"/>
+        <underline language="LA" method="pen" text="qui omnia in pecunia posuisset, honore animo aequo carere debere" type="straight"/>
+        <underline language="LA" method="pen" text="vt repulsam tuam triumphum suum duxerint" type="straight"/>
+        <underline language="LA" method="pen" text="respicit, quin ingemiscat: nemo mentionem facit, quin execretur: si vitant, fugiunt, audire de te nolunt, cum viderunt, tanquam auspicium malum detestantur: si cognati" type="straight"/>
+        <underline language="LA" method="pen" text="tribules execrantur, vicini metuunt, affines erubescunt, strumae denique ab ore improbo demigrarunt, &amp; aliis iam se locis collocarunt: si es odium publicum populi,              Senatus, vniuersorum hominum" type="straight"/>
+        <underline language="LA" method="pen" text="Sed vt aliquando audiamus quàm copiose ad rogata respondeas, concludam iam interrogatione[m] meam, téque in extremo pauca de ipsa" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+    </annotation>
+</transcription>

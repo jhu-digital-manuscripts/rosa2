@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.150v.tif" pagination="300" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Vrbanitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vrbanitas.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Urbanity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="breuitatis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Brevitatis</marginalia_text> 
+                </position>
+            </language>
+            <translation>Brevity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vrbanus homo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vrbanis homo</marginalia_text> 
+                </position>
+            </language>
+            <translation>An urbane man.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diuisio, ut dictorum urbanoru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dictoru[m] vrbanorum diuisio</marginalia_text> 
+                </position>
+            </language>
+            <translation>Division of urbane sayings.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="est urbanitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vrbainitas q[ui]d</marginalia_text>
+                </position>
+            </language>
+            <translation>What urbanity?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Atticismos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Atticismos.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Atticism.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Seria partitur in tria genera" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Serioru[m] Diuisi.</marginalia_text> 
+                </position>
+            </language>
+            <translation>The divisions of serious [sayings].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Ligario" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Ligario.</marginalia_text>
+                    <book title="Pro Ligario"/>
+                </position>
+            </language>
+            <translation>Pro Ligario.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quod Attico scripsit de Pompeio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ad atticum</marginalia_text>
+                    <book title="Epistulae ad Atticum"/>
+                </position>
+            </language>
+            <translation>Ad Atticum.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cui si breuitatis exceptionem detraxeris, omneis orationis uitutes co[m]plexa sit" type="straight"/>
+        <underline language="LA" method="pen" text="ille redolens Athenarum" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

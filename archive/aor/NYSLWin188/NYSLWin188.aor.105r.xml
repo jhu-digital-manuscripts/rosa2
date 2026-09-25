@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.105r.tif" pagination="105" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Arcanu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Arcanum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Secret.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="virtutes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Virtutes
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Virtues.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Propositu[m] Author[is]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Proposal of the author.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Arcanu[m] ist kein" type="straight"/>
+        <underline language="DE" method="pen" text="vires potentiales" type="straight"/>
+        <underline language="DE" method="pen" text="seine co[m]mentarios" type="straight"/>
+        <underline language="DE" method="pen" text="weiter ein jegliche kra[n]ckheit der" type="straight"/>
+        <underline language="DE" method="pen" text="Archimischen" type="straight"/>
+        <underline language="DE" method="pen" text="Mundanische[n]" type="straight"/>
+        <underline language="DE" method="pen" text="artzney auß der Erden nemen" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

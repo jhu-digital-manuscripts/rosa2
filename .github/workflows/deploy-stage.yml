@@ -1,0 +1,125 @@
+name: Deploy Stage
+
+# Builds the AoR and DLMM sites together with the IIIF Presentation files
+# generated from archive/, and publishes them to this repository's GitHub Pages
+# site for testing:
+#
+#   <pages url>/          chooser page linking to both sites
+#   <pages url>/aor/      The Archaeology of Reading
+#   <pages url>/dlmm/     Digital Library of Medieval Manuscripts
+#   <pages url>/iiif/     IIIF Presentation files shared by both sites
+#
+# Repository Settings -> Pages -> Source must be set to "GitHub Actions".
+# The Opensearch endpoint must allow the Pages origin in its CORS configuration
+# (cors_allowed_origins in jhu-rosa2-tf/stage.tfvars).
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to build. Leave empty to use the branch selected in "Use workflow from".'
+        required: false
+        type: string
+      opensearch_url:
+        description: 'Opensearch _search URL (the stage API Gateway endpoint)'
+        required: true
+        type: string
+      image_base_url:
+        description: 'IIIF Image API base URL'
+        required: true
+        default: 'https://image.library.jhu.edu/iiif'
+        type: string
+      image_api_version:
+        description: 'IIIF Image API version'
+        required: true
+        default: '2'
+        type: choice
+        options:
+          - '2'
+          - '3'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one Pages deployment at a time; let a running one finish.
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build sites
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.branch || github.ref }}
+
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Set up Java 25
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '25'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: rosa-viewer/package-lock.json
+
+      - name: Build rosa-tool
+        run: mvn package -DskipTests --no-transfer-progress
+        working-directory: rosa-tool
+
+      - name: Generate IIIF Presentation files
+        run: |
+          java -jar rosa-tool/target/rosa-tool.jar generate-iiif-pres \
+            --archive archive \
+            --output site/iiif \
+            --base-url "${{ steps.pages.outputs.base_url }}/iiif/" \
+            --image-base-url "${{ inputs.image_base_url }}" \
+            --image-api-version "${{ inputs.image_api_version }}" \
+            --opensearch-url "${{ inputs.opensearch_url }}"
+
+      - name: Install rosa-viewer dependencies
+        run: npm ci
+        working-directory: rosa-viewer
+
+      - name: Build rosa-viewer sites
+        run: npm run build:sites
+        working-directory: rosa-viewer
+        env:
+          VITE_ROSA_IIIF_BASE_URL: ${{ steps.pages.outputs.base_url }}/iiif
+          VITE_ROSA_IMAGE_BASE_URL: ${{ inputs.image_base_url }}
+
+      - name: Assemble Pages site
+        run: |
+          cp -R rosa-viewer/dist/sites/. site/
+          touch site/.nojekyll
+          echo "Site contents:"
+          ls -la site
+          du -sh site/iiif
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

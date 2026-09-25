@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.246r.tif" pagination="43" reader="John Dee" signature="Ddd iiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Hugo de Mortuo mari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Hugo. de M M
+                    </marginalia_text>
+                    <person name="Hugh de Mortimer"/>
+                </position>
+            </language>
+            <translation>
+                Hugh de Mortimer.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Hugo de Mortuo mari, vir arroga[n]tissimus, castella sua contra regem muniuit, Glouernia[m], VVigorniam, &amp; Briges" type="straight"/>
+        
+    </annotation>
+</transcription>

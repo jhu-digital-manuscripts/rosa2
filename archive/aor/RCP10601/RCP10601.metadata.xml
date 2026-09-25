@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>136</totalPages>
+  <dates>
+    <startDate>1553</startDate>
+    <endDate>1553</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>la</language>
+      <title>De originibus, seu, De uaria et potissimum orbi Latino ad hanc diem incognita, aut inco[n]syderata historia, quu[m] totius Orientis, tum maximè Tartarorum, Persarum, Turcarum, &amp; omnium Abrahami &amp; Noachi alumnorum origines, &amp; mysteria Brachmanum retegente : quod ad gentium, literarumq́[ue] quib. utuntur, rationes attinet</title>
+      <textId>postel</textId>
+      <pages end="68v" start="1r">136</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>De originibus, seu, De uaria et potissimum orbi Latino ad hanc diem incognita, aut inco[n]syderata historia, quu[m] totius Orientis, tum maximè Tartarorum, Persarum, Turcarum, &amp; omnium Abrahami &amp; Noachi alumnorum origines, &amp; mysteria Brachmanum retegente : quod ad gentium, literarumq́[ue] quib. utuntur, rationes attinet</title>
+      <commonName>Guillaume Postel, De originibus (Basel, 1553)</commonName>
+      <dateLabel>1553</dateLabel>
+      <origin>Basel</origin>
+      <currentLocation>London, England</currentLocation>
+      <repository>Royal College of Physicians Library</repository>
+      <shelfmark>10601 D1/20-d-12</shelfmark>
+      <author>
+        <name>Postel, Guillaume</name>
+        <id>http://www.isni.org/isni/0000000121364266</id>
+      </author>
+      <reader>
+        <name>John Dee</name>
+        <id>http://www.isni.org/isni/0000000122785193</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Dee-corpus/Postel</website>
+      <note>Record: http://rcp.soutron.net/Portal/Default/RecordView/Index/35324</note>
+    </bibliography>
+  </bibliographies>
+</book>

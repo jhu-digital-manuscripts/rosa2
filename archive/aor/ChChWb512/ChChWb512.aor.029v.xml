@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.029v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Gurguintus Brabtrucus" hand="typescript">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Gurganus Varfdrugh i est Barbatus.
+                    </marginalia_text>
+                    <person name="Gurgiunt Brabtruc"/>
+                </position>
+            </language>
+            <translation>Gurguintus Varfdrugh is Brabtrucus.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="270" place="left_margin">
+                    <marginalia_text>
+                        Anno 20 olymp. 125. Pausanias.
+                    </marginalia_text>
+                    <person name="Pausanias"/>
+                </position>
+            </language>
+            <translation>The 20th Olympic year. 125. Pausanias.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="hic in Daciam cu[m] exercitu profectus regem sibi tributum" type="straight"/>
+        <underline language="LA" method="pen" text="denegantem interemit" type="straight"/>
+        <underline language="LA" method="pen" text="Sisillius" type="straight"/>
+        <underline language="LA" method="pen" text="qui diebus patris tributu[m] reddebat huic reddere diffugeret &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="subiectionem abnegaret: q[uo]d ipse grauiter ferens duxit nauigiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="in Dacia[m] afflictoq[ue] durissimis praeliis populo interfecit" type="straight"/>
+        <underline language="LA" method="pen" text="regem, patriamq[ue] pristino uigo supposuit" type="straight"/>
+        <underline language="LA" method="pen" text="insulas Orcades" type="straight"/>
+        
+        <graph book_orientation="90" graph_continues_to="WB5-12_0067_022r" graph_to_transcription="WB5-12_0067_022r.xml" method="pen" place="left_margin" type="genealogical_tree">
+            <node id="n1" person="Belinus">Belinus</node>
+            <node id="n2" person="Brennus">Brennus</node>
+            
+            <node id="n3" person="Gurguintus">Gurguintus</node>
+            <node id="n4" person="Guithelinus">Guithelinus</node>
+            <node id="n5" person="Sisillus I">Sisillius</node>
+            <node id="n6" person="Kimarus">Kimarus</node>
+            <node id="n7" person="Elanius">Elani[us]</node>
+            
+            <node id="n8">Morind[us]</node>
+            <node id="n9" person="Gorbomannus">Gorbonian[us]</node>
+            <node id="n10" person="Archgallo">Archigallo 1.2</node>
+            <node id="n11" person="Elidurus">Elidurus 1.2.3</node>
+            
+            <node id="n29">F[ilius]</node> <!--NBW: Here it means "Filius." It follows the text on fol. 24r-->
+            <node id="n12" person="Vigenius">Vigenij</node>
+            <node id="n13" person="Peredurus">Peredur[us]</node>
+            
+            <node id="n14" person="Morgan">Morganus</node>
+            <node id="n15" person="Emerianus">Emerianus</node>
+            
+            <node id="n16" person="Idwall">Idwallo</node>
+            <node id="n17" person="Runno">Filius</node> <!--Runno, son of Peredurus-->
+            
+            <node id="n18" person="Geruntius">Geruntus</node>
+            <node id="n19" person="Cathell">Catellus</node> <!--These relationships are not made explicit by Dee. //NBW: These follow the text on fol 24r. The organizing principle here is succession, rather than genealogy-->
+            <node id="n20" person="Coill">Coilus</node>
+            
+            <node id="n21" person="Porrex">Porrex</node>
+            <node id="n22" person="Cheryn">Cherinus</node>
+            <node id="n23" person="Fulgenius">Fulgenius</node>
+            <node id="n24" person="Eldadus">Eldadus</node>
+            <node id="n25" person="Androgeus">Androgeus</node>
+            <node id="n26" person="Urianus">Filius</node> <!--Urianus, son of Androgeus-->
+            <node id="n27" person="Eliud">Eliud</node>
+            <node id="n28" person="Cledaucus">Dedacus</node>
+            
+            <link from="n1" relationship="has_sibling" to="n2"/>
+            <link from="n2" relationship="has_sibling" to="n3"/>
+            <link from="n3" relationship="has_sibling" to="n4"/>
+            <link from="n4" relationship="has_sibling" to="n5"/>
+            <link from="n5" relationship="has_sibling" to="n6 n7"/>
+            
+            <link from="n7" relationship="has_sibling" to="n8"/>
+            <link from="n8" relationship="has_sibling" to="n9 n10 n11"/>
+            <link from="n9" relationship="has_sibling" to="n29"/>
+            <link from="n10" relationship="has_sibling" to="n14 n15"/>
+            <link from="n11" relationship="has_sibling" to="n18"/>
+            <link from="n16" relationship="has_sibling" to="n12"/>
+            <link from="n13" relationship="has_sibling" to="n17"/>
+            
+            <link from="n24" relationship="has_sibling" to="n23 n24 n25"/>
+            <link from="n25" relationship="has_sibling" to="n26"/>
+            
+            <graph_text>
+                <note hand="English_secretary" internal_link="n2" language="LA">A[nn]o Mundi 3689: ante Chri[st]i Anno 276.</note>
+                <translation>he year of the world 3689: the year 276 before Christ.</translation>
+            </graph_text>
+        </graph>
+        
+    </annotation>
+</transcription>

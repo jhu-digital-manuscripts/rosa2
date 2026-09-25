@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.300r.tif" pagination="51" reader="John Dee" signature="Dd.ii."/>   
+    <annotation>
+        
+        <marginalia anchor_text="odrilitiu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>odrilitiu[m]</marginalia_text>   <!--JG: Corinthium according to Loeb: https://www.loebclassics.com/view/marcus_tullius_cicero-de_finibus_bonorum_et_malorum/1914/pb_LCL040.109.xml-->
+                </position>
+            </language>
+            <translation>Corinthian bronzes [Loeb 40, 109].</translation>   
+        </marginalia>
+        
+        <marginalia anchor_text="narthecio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Nartheciu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The medicine box.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hirsiphon" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>hirsiphon.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Cas [Loeb 40, 107].</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="exceptionem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>exceptio.</marginalia_text>
+                </position>
+            </language>
+            <translation>An exception.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="edant de patella" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>edere de patella</marginalia_text>
+                </position>
+            </language>
+            <translation>To eat from the altar plate.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="asotos, primùm ita non religiosos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Asotoru[m] religio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The religion of the dissolute.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hymnide" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hymnis poëta.</marginalia_text>
+                    <book title="Hymnis"/>
+                </position>
+            </language>
+            <translation>The poet of the Hymnis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="si grauis, breuis: si longus, leuis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Si grauis breuis, si lo[n]g[us] leuis</marginalia_text>
+                </position>
+            </language>
+            <translation>Brief if strong, light if long.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="luxuriam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Luxuria</marginalia_text>
+                </position>
+            </language>
+            <translation>Luxuriousness.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Asotoru[m] Conditio est &amp; vita[e] status.</marginalia_text>
+                </position>
+            </language>
+            <translation>It is the position of the dissolute and a state of life.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lucilius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lucilius</marginalia_text>
+                    <person name="Gaius Lucilius"/>
+                </position>
+            </language>
+            <translation>Gaius Lucilius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Laelius, eo dictus est sapiens" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>La[e]lius sapiens dictus.</marginalia_text>
+                    <person name="Gaius Laelius Sapiens"/>
+                </position>
+            </language>
+            <translation>Laelius, called the Wise.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="O Publi, ô gurges, Galloni" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gallonius. p[ro] pub. Qui[n]tio</marginalia_text>
+                    <person name="Publius Gallonius"/>
+                    <book title="Pro Quinctio"/>
+                </position>
+            </language>
+            <translation>Publius Gallonius. 'Pro [Publius] Quinctio'.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Veniebat enim ad coenam, vt satiaret animo quieto desyderia naturae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cur ad coenam ëu[n]dum</marginalia_text>
+                </position>
+            </language>
+            <translation>Why to go to dinner.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tria genera cupiditatum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tria Cupiditatu[m] genera.</marginalia_text>
+                </position>
+            </language>
+            <translation>Three kinds of desire.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hoc est non diuidere, sed fra[n]gere rem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hoc no[n] est diuidere sed frangere rem.</marginalia_text>
+                </position>
+            </language>
+            <translation>This is not dividing a thing but smashing it.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="bene, id recte, frugaliter, honeste: ille porrò male, praue, nequiter, turpiter" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        bene
+                        recte
+                        frugaliter
+                        honeste X
+                        malè
+                        praue
+                        nequiter
+                        turpiter
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Well.
+                Rightly.
+                Frugally.
+                Honestly. 
+                Badly.
+                Wrongly.
+                Vilely.
+                Basely.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ineleganter" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>inelega[n]ter.</marginalia_text>
+                </position>
+            </language>
+            <translation>Inelegantly.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="attinet luxuriosis vllam exceptionem dari, aut" type="straight"/>
+        <underline language="LA" method="pen" text="asotos, primùm" type="straight"/>
+        <underline language="LA" method="pen" text="edant de patella" type="straight"/>
+        <underline language="LA" method="pen" text="narthecio" type="straight"/>
+        <underline language="LA" method="pen" text="qui in mensam vomant" type="straight"/>
+        <underline language="LA" method="pen" text="se rursus ingurgitent, qui solem, vt aiunt, neque occidentem vnquam viderint" type="straight"/>
+        <underline language="LA" method="pen" text="nec orientem, qui consumptis patrimoniis egeant" type="straight"/>
+        <underline language="LA" method="pen" text="Nemo nostru[m] istius generis asotos iucunde putat viuere, mundos, elegantes, optimis cocis, pistoribus, piscatu, aucupio, venatione,              his omnibus exquisitis vita[n]tis cruditate[m], quibus vinu[m] diffusum è pleno sit hirsiphon, vt ait Lucilius, cui nihil dum sit, ius &amp; sarculos abstulerit, adhibe[n]tis ludos, &amp; quae sequuntur illa,              quibus detractis clamat Epicurus se nescire quid sit bonu[m]. adsint etia[m] formosi pueri" type="straight"/>
+        <underline language="LA" method="pen" text="qui ministrent, resplendeat iis vestis, argentu[m], odrilitiu[m] locus ipse, aedificiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="vt cui cor sapiat, ei non sapiat palatus, sed" type="straight"/>
+        <underline language="LA" method="pen" text="gumas" type="straight"/>
+        <underline language="LA" method="pen" text="Coenasti in vita nunquam bene, quum omnia in isto Consumis, squilla, atque acipensere cum decumano" type="straight"/>
+        <underline language="LA" method="pen" text="ita grauiter &amp; seuere" type="straight"/>
+        <underline language="LA" method="pen" text="horto condito" type="straight"/>
+        <underline language="LA" method="pen" text="Veniebat enim ad coenam, vt satiaret animo quieto desyderia" type="straight"/>
+        <underline language="LA" method="pen" text="quod bene, id recte, frugaliter, honeste: ille porrò male, praue, nequiter, turpiter coenabat" type="straight"/>
+        <underline language="LA" method="pen" text="igitur nec Lapathi suauitate[m] acipenseri Gallonii Laelius anteponebat" type="straight"/>
+        <underline language="LA" method="pen" text="ineleganter" type="straight"/>
+        <underline language="LA" method="pen" text="hoc est non diuidere, sed" type="straight"/>
+        <underline language="LA" method="pen" text="Vitiosum est enim in diuide[n]do" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Asterisk" place="left_margin"/>  <!-- DO: Not sure if these are printed (like printed asterisk on file 0637) -->
+        <symbol name="Asterisk" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="tripunctus" place="head" text="edere de patella"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        <mark language="LA" method="pen" name="tripunctus" place="intext" text="ineleganter"/>
+        <mark language="LA" method="pen" name="tripunctus" place="tail" text="intelega[n]ter"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="se rursus ingurgitent, qui solem, vt aiunt, neque occidentem vnquam viderint, nec orientem, qui consumptis patrimoniis egeant.              Nemo nostru[m] istius generis asotos iucunde putat viuere, mundos, elegantes, optimis cocis, pistoribus, piscatu, aucupio, venatione, his omnibus exquisitis vita[n]tis cruditate[m],              quibus vinu[m] diffusum è pleno sit hirsiphon, vt ait Lucilius, cui nihil dum sit, ius &amp; sarculos abstulerit, adhibe[n]tis ludos, &amp; quae sequuntur illa,              quibus detractis clamat Epicurus se nescire quid sit bonu[m]. Adsint etia[m] formosi pueri, qui ministrent, resplendeat iis vestis, argentu[m], odrilitiu[m] locus ipse, aedificiu[m]"/>
+        <mark method="pen" name="X_sign" place="tail"/>
+        <mark language="LA" method="pen" name="lightening_bolt" place="head" text="odrilitiu[m]"/>
+        <mark method="pen" name="lightening_bolt" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+
+    </annotation>
+</transcription>

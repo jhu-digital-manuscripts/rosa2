@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.185v.tif" pagination="370" reader="Harvey" signature="[IIi[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="De diuersis modis praeliandi Finnorum." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Stratagemata.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Strategies.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                      uide proximu[m] cap[itum].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                See the next chapter.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="diuersis modis praeliandi Finnorum" type="straight"/>
+        <underline language="LA" method="pen" text="restibus instar retium ferinorum ductilibus" type="straight"/>
+        <underline language="LA" method="pen" text="sublimi iactatione vtuntur" type="straight"/>
+        <underline language="LA" method="pen" text="iniiciunt eos restes" type="straight"/>
+        <underline language="LA" method="pen" text="laqueos in caput" type="straight"/>
+        <underline language="LA" method="pen" text="equum" type="straight"/>
+        <underline language="LA" method="pen" text="aut hominem" type="straight"/>
+        <underline language="LA" method="pen" text="equitum brachia, vel equorum" type="straight"/>
+        <underline language="LA" method="pen" text="trahendoq[ue] in casum" type="straight"/>
+        <underline language="LA" method="pen" text="eisdem Finnis adiutorio" type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="Vsus restium in praelio."/>
+        <mark language="LA" method="pen" name="horizontal_bar" place="left_margin" text="Strategemata."/>
+        <mark language="LA" method="pen" name="horizontal_bar" place="left_margin" text="Populus ferox."/>
+        <mark language="LA" method="pen" name="horizontal_bar" place="left_margin" text="Arma bellica."/>
+        <mark language="LA" method="pen" name="horizontal_bar" place="left_margin" text="Instrumenta p[er]missa."/>
+        <mark language="LA" method="pen" name="horizontal_bar" place="left_margin" text="Fundae hastate."/>
+        <mark language="LA" method="pen" name="horizontal_bar" place="left_margin" text="Iactus certus."/>
+        <mark language="LA" method="pen" name="horizontal_bar" place="left_margin" text="Vsus restium in praelio."/>
+        <mark language="LA" method="pen" name="horizontal_bar" place="left_margin" text="uide proximu[m] cap[itulorum]."/>
+        <mark language="LA" method="pen" name="horizontal_bar" place="left_margin" text="Globi proiectiles"/>
+        <mark language="LA" method="pen" name="horizontal_bar" place="left_margin" text="Canes insidiosi"/>
+        <mark language="LA" method="pen" name="horizontal_bar" place="left_margin" text="Equi persici timent camelos"/>
+        <mark language="LA" method="pen" name="horizontal_bar" place="left_margin" text="Eq[ui] eleuati pr[a]ecipita[n]t sessores."/>
+        
+    </annotation>
+</transcription>

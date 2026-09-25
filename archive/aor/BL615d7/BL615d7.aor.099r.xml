@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.099r.tif" pagination="9" reader="John Dee" signature="Niij"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="Guacanagari" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Guacanagari</marginalia_text>
+                    <person name="Guacanagarix"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>yll rule</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="XXVIII di Nouembre" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>28 Noue[m]b[er]</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>99</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="sarebbono entrati" type="straight"/>
+        <underline language="IT" method="pen" text="due" type="straight"/>
+        <underline language="IT" method="pen" text="maschere in testa" type="double"/>
+        <underline language="IT" method="pen" text="del Cacique" type="double"/>
+        <underline language="IT" method="pen" text="de' Christiani" type="straight"/>
+        <underline language="IT" method="pen" text="di loro alcuni erano morti di malatia, &amp; altri si erano partiti dalla compagnia" type="straight"/>
+        <underline language="IT" method="pen" text="altri se n'erano andati in altri paesi, &amp; che tutti haueuano quattro" type="straight"/>
+        <underline language="IT" method="pen" text="o cinque donne" type="grid"/>
+        <underline language="IT" method="pen" text="doueßero eßer" type="straight"/>
+        <underline language="IT" method="pen" text="co' doni" type="straight"/>
+        <underline language="IT" method="pen" text="la trouò abbruciata" type="straight"/>
+        
+        <mark language="IT" method="pen" name="straight_quotation_mark" place="right_margin" text="due maschere in testa"/>
+        
+    </annotation>
+</transcription>

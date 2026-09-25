@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.317r.tif" pagination="613" reader="John Dee" signature="qqq.iii"/>
+    <annotation>
+        
+        <marginalia anchor_text="vitam inopem &amp; vagam prosequamur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>proseq[ui] vita[m] vaga[m] inope[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>To pursue a weak and wandering life.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eiurabant" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>eiurare.</marginalia_text>
+                </position>
+            </language>
+            <translation>To abjure.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fidelitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fidelitas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Fidelity.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nihil esse homini Romano foedius seruitute" type="straight"/>
+        <underline language="LA" method="pen" text="spiritus meus no[n] debet" type="straight"/>
+        <underline language="LA" method="pen" text="libe[n]ter extremum vitae spiritum" type="straight"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">15</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+    </annotation>
+</transcription>

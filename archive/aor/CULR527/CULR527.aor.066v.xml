@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.066v.tif" pagination="[66[v]]" reader="John Dee"/> 
+    <annotation>
+ 
+        <marginalia anchor_text="enim acus quum illum non debeat operari ut ostendit, nunquam per illum procedit: imò diuersa loca mutando, diuersas apparentias mutat" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Per illu[m] op[er]ari no[n] debet, vt ia[m] ostendit, h[abet] in horizonte obliquo: <!--JG: Habet or scilicet?-->
+                        sed quid se[m]p[e]r referat secu[m] rectum horizo[n]te[m], perficiet cursum suu[m] ac si esset sub a[e]quale re: <!--JG: Not entirely sure abt sub, seem to be 4 letters--> <!-- DO: Looks like it ends in 't', 'sunt' or 'sint'? -->
+                        et quonia[m] no[n] est. faciet <!--JG: Not sure abt faciet either--> circulu[m] a[e]quatori simile[m], h[abet] parallelu[m]. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="intelligat proper quid faciat, statim" type="straight"/>
+        <underline language="LA" method="pen" text="emendat nauigationem" type="straight"/>
+        <underline language="LA" method="pen" text="Leste" type="double"/>
+        <underline language="LA" method="pen" text="enim acus quum per illum non debeat operari ut ostendit, nunquam per illum procedit: imò diuersa loca mutando, diuersas apparentias mutat" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Leste enim acus quum per illum non debeat operari ut ostendit, nunquam per illum procedit: imò diuersa loca mutando, diuersas apparentias mutat"/>
+
+
+    </annotation>
+</transcription>

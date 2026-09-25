@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.122v.tif" pagination="68" reader="Harvey" signature="[E2v]"/>	<!-- ABO 127left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Rhetorica, non est ars Multa dicendi, sed benè. Nec plurima
+						scripserunt excellentissimi viri, sed rarissima.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Rhetoric is not the art of saying many things, but of speaking well.
+				Nor did most excellent men write many different works, but most singular ones.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						egregia Antitechna; et pra[e]gnans stratagema.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				An excellent counter-maneuver and a pregnant stratagem. <!-- CG: Antitechna? Unclear.--> <!--JG: Settled for counter-attack, counter-movement-->
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Machiauelli.
+					</marginalia_text>
+					<person name="Machiavelli"/>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ἀπιστία
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						politica.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Machiavelli: political distrust.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Autotechni monopraxia: monotechni autopraxia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Engagement with the one activity of self-instruction. The freedom of action of one skill.<!-- CG: Neologisms. Unclear. --> 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Pulcherrimus est, qui est dignissimus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who is most dignified is most beautiful.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Nec longitudo; nec latitudo; nec profunditas aliena; sed tua.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Neither the longitude, latitude, nor profundity of someone else, but of you yourself.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Tua statura, tibi vnica. Aliena, parerga. Autocosmia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Your size is unique to you alone. Another's size is supplementary. A universe unto itself. <!-- CG: These neologisms are mind-boggling. --> 
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="auanti arditamente" type="straight"/>
+		<underline language="IT" method="pen" text="habbia cercato" type="straight"/>
+		<underline language="IT" method="pen" text="finalmente trouata" type="straight"/>
+		<underline language="IT" method="pen" text="il remedio quanto" type="straight"/>
+		<underline language="IT" method="pen" text="scorticare" type="straight"/>
+		<underline language="IT" method="pen" text="viuo viuo questo lupo" type="straight"/>
+		<underline language="IT" method="pen" text="nella sua pelle" type="straight"/>
+		<underline language="IT" method="pen" text="cosi calda calda" type="straight"/>
+		<underline language="IT" method="pen" text="la calunnia" type="straight"/>	
+		<underline language="IT" method="pen" text="sopra del lupo" type="straight"/>
+		<underline language="IT" method="pen" text="offende i Principi" type="straight"/>
+		<underline language="IT" method="pen" text="douer fidarsi" type="straight"/>
+		<underline language="IT" method="pen" text="promesse loro" type="straight"/>
+		<underline language="IT" method="pen" text="co[n]spirato certi" type="straight"/>
+		<underline language="IT" method="pen" text="che non volessero" type="straight"/>
+		<underline language="IT" method="pen" text="mogli &amp; li loro proprij figliuoli" type="straight"/>
+		<underline language="IT" method="pen" text="lusinghe tendeuano" type="straight"/>
+		<underline language="IT" method="pen" text="questo fia" type="straight"/>
+		<underline language="IT" method="pen" text="andarono via" type="straight"/>
+		<underline language="IT" method="pen" text="dapocaggine de gli" type="straight"/>
+		<underline language="IT" method="pen" text="alcun Re sopra" type="straight"/>
+		<underline language="IT" method="pen" text="altri, di virtù &amp; di eccellenza, no[n] auanzasse" type="straight"/>
+		<underline language="IT" method="pen" text="gli huomini" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="quelle lusinghe tendeuano" type="straight"/>
+		<underline language="IT" method="chalk" text="Abbiettione, &amp; dapocaggine de gli huomini" type="straight"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		
+		<mark language="IT" method="pen" name="quotation_mark" place="left_margin" text="Abbiettione, &amp; dapocaggine de gli huomini"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--ardi-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--tor-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--con-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--pa-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ma-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--lo-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--auan-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="cosi calda calda"/>
+		<mark method="pen" name="dot" place="intext"/> <!--figliuoli, &-->
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark language="IT" method="pen" name="dot" place="intext" text="via"/>
+		 
+		<errata amendedtext=";" copytext=":" language="IT"/>
+		
+    </annotation>
+</transcription>

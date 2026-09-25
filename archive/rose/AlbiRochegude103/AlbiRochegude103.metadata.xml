@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>16</illustrations>
+    <totalPages>139</totalPages>
+    <dimensions units="mm">
+        <width>200</width>
+        <height>300</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="139r" start="1r">139</pages>
+            <illustrations>16</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Albi Rochegude 103</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>France</origin>
+            <currentLocation>Albi, France</currentLocation>
+            <repository>Bibliothèque municipale d'Albi</repository>
+            <shelfmark>Rochegude 103</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Albi Rochegude 103</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Albi</currentLocation>
+            <repository>Bibliothèque municipale d'Albi</repository>
+            <shelfmark>Rochegude 103</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

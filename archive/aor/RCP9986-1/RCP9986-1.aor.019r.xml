@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.019r.tif" pagination="20" reader="John Dee" signature="C.iiij."/>  
+    <annotation>
+        
+        <marginalia anchor_text="deos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dij</marginalia_text>
+                </position>
+            </language>
+            <translation>Gods.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="idoneus author" type="straight"/>
+        <underline language="LA" method="pen" text="Si fuit errandum, causas habet error honestas" type="straight"/> 
+        <underline language="LA" method="pen" text="Adde fidem, nulla parte pigendus erit" type="straight"/>
+        <underline language="LA" method="pen" text="Vrbem constitui" type="straight"/>
+        <underline language="LA" method="pen" text="Bella tument, bellis peregrina, &amp; foemina tentor" type="straight"/>
+        <underline language="LA" method="pen" text="Víxq[ue] rudes portas vrbis, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="Pone deos, &amp; quae tangendo sacra profanas, Non bene caelestes impia dextra colit" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.127v.tif" pagination="238" reader="John Dee" signature="[u 5[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota fixaru[m] hic haberi r[ati]onem.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note here the reason for fixed [stars].
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="In coniunctione spinae &amp; colli ♑, qui nati" type="straight"/>
+        <underline language="LA" method="pen" text="polychronii" type="straight"/>
+        <underline language="LA" method="pen" text="sed qui biothanati moriantur" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.009v.tif" pagination="[9[v]]" reader="John Dee" signature="[C[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>☉ Solis ignis Sal Bal</marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>Sun: fire, salt, balsam.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Der schnee Regen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Nix Pluuia</marginalia_text>
+                </position>
+            </language>
+            <translation>Snow. Rain.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="die Kunst werden sei gescheide[n] vo[n] einander" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Separatio trium primaru[m] spagirica.</marginalia_text>
+                </position>
+            </language>
+            <translation>The alchemical separation of the three primary [species].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Philosophia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Philosophia</marginalia_text>
+                </position>
+            </language>
+            <translation>Philosophy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Impressiones Coelestes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Impressio[n]es Co[e]lestes</marginalia_text>
+                </position>
+            </language>
+            <translation>Heavenly impressions.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Sonne" type="straight"/>
+        <underline language="DE" method="pen" text="Der schnee" type="straight"/>
+        <underline language="DE" method="pen" text="Regen" type="straight"/>
+        <underline language="DE" method="pen" text="mehr auß den früchten" type="straight"/>
+        <underline language="DE" method="pen" text="die Kunst werden sei gescheide[n] vo[n] einander" type="straight"/>
+        <underline language="DE" method="pen" text="das Fewer" type="straight"/>
+        <underline language="DE" method="pen" text="der Philosophia wol" type="straight"/>
+        <underline language="DE" method="pen" text="eim andern namen auch" type="straight"/>
+        <underline language="DE" method="pen" text="der Philosophia" type="straight"/>
+        <underline language="DE" method="pen" text="Fewr Sulphur" type="straight"/>
+        <underline language="DE" method="pen" text="als Liquor" type="straight"/>
+        <underline language="DE" method="pen" text="des Elementen" type="double"/>
+        <underline language="DE" method="pen" text="der tugendt vnd krefften" type="double"/>
+        
+        <mark method="pen" name="slash" place="intext"/> <!--fewr Sulphur-->
+        <mark method="pen" name="slash" place="intext"/>
+        <mark method="pen" name="slash" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        
+        <numeral place="intext" text="Sulphur">1.</numeral>
+        <numeral place="intext" text="Sal">2</numeral>
+        <numeral place="intext" text="Balsam">.3.</numeral>
+        
+        <errata amendedtext="Sulphur" copytext="Bals." language="LA"/>
+        
+        <table place="left_margin" type="standard_table">
+            <tr>
+                <th>Synonima</th>
+            </tr>
+            <tr>
+                <td anchor_text="Sulphur">Ignis</td>
+                <td anchor_text="Sal">Sal</td>
+                <td anchor_text="Balsam">Balsamus</td>
+            </tr>
+            <tr>
+                <td anchor_text="[]">Sulphur</td>
+                <td anchor_text="Sal">Sal</td>
+                <td anchor_text="Liquor">Liquor</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td anchor_text="Mercurius">Mercurius</td>
+            </tr>
+            <translation>Synonyms. Fire. Salt. Balsam. Sulfur. Salt. Liquid. Mercury.</translation>
+        </table>
+        
+    </annotation>
+</transcription>

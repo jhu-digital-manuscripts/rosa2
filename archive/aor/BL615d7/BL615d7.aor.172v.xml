@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.172v.tif" pagination="[172v]" reader="John Dee" signature="[Yiiij[v]"/>    
+    <annotation>
+        
+        <marginalia anchor_text="Giouani Antonio Colombo" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Antonio Colombo</marginalia_text>
+                    <person name="Giovanni Antonio Columbus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Trayters</marginalia_text>
+                    <!-- M.B. Marginalia includes an arrow pointing upwards -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Giouani Antonio Colombo" type="straight"/>
+        <underline language="IT" method="pen" text="ch'erano XL" type="straight"/>
+        <underline language="IT" method="pen" text="Arana" type="straight"/>
+        <underline language="IT" method="pen" text="lauoratori" type="straight"/>
+        <underline language="IT" method="pen" text="vagabondi" type="straight"/>
+        <underline language="IT" method="pen" text="si passarono a' solleuati" type="straight"/>
+        <underline language="IT" method="pen" text="vn tradimento" type="double"/>
+        <underline language="IT" method="pen" text="la quale era" type="straight"/>
+        <underline language="IT" method="pen" text="per polare, &amp; seminar la terra, &amp; per attendere a' suoi mistieri con salario già hauuto" type="straight"/>
+        <underline language="IT" method="pen" text="quelle, allequali" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

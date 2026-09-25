@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.167v.tif" pagination="74" reader="John Dee" signature="[G[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Astra inclinant ho[min]es non necessitant
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                That stars sink, men do not determine. 
+            </translation>
+        </marginalia>
+        
+        <mark colour="red" method="chalk" name="bracket" place="left_margin"/>
+        <mark method="chalk" name="dash" place="left_margin"/>
+        
+        <drawing book_orientation="0" colour="red" method="chalk" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

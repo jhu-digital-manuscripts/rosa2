@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.178v.tif" pagination="356" reader="John Dee" signature="[z 2[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="iacêre sensus in oratione, in qua uerba lauda[n]tur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Iacet sensus in or[ati]o[n]e vbi verba lauda[n]tur.</marginalia_text>
+                </position>
+            </language>
+            <translation/> <!-- M.B. Not sure how best to translate this? -->
+        </marginalia>
+        
+        <marginalia anchor_text="latina, significantia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Verba latina significantia &amp;c..</marginalia_text>
+                </position>
+            </language>
+            <translation>The significance of latin words, etc.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uerba ipsa rerum gratia sint reperta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Verba reru[m] gr[ati]a sunt rep[er]ta</marginalia_text>
+                </position>
+            </language>
+            <translation>Words were invented for the sake of things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="admirabilem, &amp; iucundam orationem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>or[ati]o admirabilis</marginalia_text>
+                </position>
+            </language>
+            <translation>Admirable speech.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Φράσις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Φράσις.</marginalia_text>
+                </position>
+            </language>
+            <translation>Elocution</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Attica anus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Attica anus</marginalia_text>
+                </position>
+            </language>
+            <translation>An old Attic woman.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quod sit magis antiquum, remotum, inopinatum" type="straight"/>
+        <underline language="LA" method="pen" text="uerbi hospitem" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <graph book_orientation="0" method="pen" place="tail" type="ramus_tree">
+            <node anchor_text="elocutionem, eam spectamus in uerbis" id="n1">Elocuctione[m] spectamus in v[er]bis</node>
+            <node anchor_text="singulis vt sint" id="n2">singulis vt sint</node>
+            <node anchor_text="In coniunctus, ut emendata" id="n3">co[n]iunctis vt sint</node>
+            <node anchor_text="{ latina perspicua ornata rei acco[m]modata" id="n4">latina perspicua ornata rei acco[m]modata</node>
+            <node anchor_text="ut collocata, ut figurata" id="n5">emendata, collocata, figurata</node>
+            
+            <link from="n1" to="n2"/>
+            <link from="n1" to="n3"/>
+            
+            <link from="n2" to="n4"/>
+            <link from="n3" to="n5"/>
+            
+            <graph_text>
+                <translation>We should observe the elocution in 1) every single word so that they are: Latin, clear, elegant, and suitable to the matter; 2) in connecting words so that they are: correct, ordered, formed.</translation>
+            </graph_text>
+        </graph>
+        
+    </annotation>
+</transcription>

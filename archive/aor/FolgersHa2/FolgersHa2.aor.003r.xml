@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.003r.tif" pagination="325" reader="Harvey"/>	<!-- ABO 007right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>Qui Venerem nescit, nescit mollitiem, teneritatem,
+						lassitudinem, aestus languorem,  
+					</marginalia_text>
+					<person name="Venus"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						frigoris asperitatem, inediam, 
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						sitim, multas lascivorum a[e]gritudines, plurima
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						aêris, vigiliarum, aliorumq[ue] accidentium incommoda, quae
+					</marginalia_text> 
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						luxuriosis videntur peracerba, et propè intolerabilia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who does not know Venus, does not know softness, tenderness, weariness, 
+				the fatigue of agitation, the harshness of cold, starvation, thirst, the many afflictions
+				of wanton men, the most troublesome things of money, sleeplessness, and other 
+				circumstances, which seem very harsh and nearly intolerable to immoderate men. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ridicolo.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Moll[io] dura omnia: |duro durum nihil. Iucundo
+						nihil acerbius: acerbo nihil iucundius.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				I soften all hard things: I harden nothing hard. I make agreeable nothing harsher:
+				I make disagreeable nothing more pleasant.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						He is the tallest man, that hath the tallest minde, &amp; the highest Witt.                         
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>discretamente.</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Discreetly.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">	
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						distinctio ciuilis plurimi in mundo vsus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A polite distinction of many uses in this world.
+			</translation>
+		</marginalia>
+		
+		<marginalia anchor_text="Pronto." hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						dextrè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skillfully.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						prose quisq[ue], quarto modo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whoever in prose, in the fourth mode. <!-- CG: I really haven't a clue to what this might be. --> <!--JG: Beats me; I might just send an email to the group after having collected several Latin phrases about which we are unsure-->
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						| He is a noble man, that hath a noble minde, &amp; an honorable Witt.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Quotidie assuescere, summum robusti, agilisq[ue] viri bonum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				To accustom one's self daily, the highest good of the robust and agile man.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						s[upr]a )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				[See] above.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="a piangere" type="straight"/>
+		<underline language="IT" method="pen" text="a ridere" type="straight"/>
+		<underline language="IT" method="pen" text="buona Christianella" type="straight"/>
+		<underline language="IT" method="pen" text="appiccare l'uncino" type="straight"/>
+		<underline language="IT" method="pen" text="Non per l'amor di Dio" type="straight"/>
+		<underline language="IT" method="pen" text="tu n'hai bisogno." type="straight"/>
+		<underline language="IT" method="pen" text="Bartolomeo Paganelli" type="straight"/>
+		<underline language="IT" method="pen" text="limosina per amor di Dio." type="straight"/>
+		<underline language="IT" method="pen" text="del pouero che chiede" type="straight"/>
+		<underline language="IT" method="pen" text="che fa la limosina" type="straight"/>
+		<underline language="IT" method="pen" text="stare con" type="straight"/>
+		<underline language="IT" method="pen" text="fa fuoco in finestra" type="straight"/>
+		<underline language="IT" method="pen" text="ne' camini" type="straight"/>
+		<underline language="IT" method="pen" text="usino stufe" type="straight"/>
+		<underline language="IT" method="pen" text="molte altre simplicità" type="straight"/>
+		<underline language="IT" method="pen" text="che ella si butterà" type="straight"/>
+		<underline language="IT" method="pen" text="uolesse fare" type="straight"/>
+		<underline language="IT" method="pen" text="oh che" type="straight"/>
+		<underline language="IT" method="pen" text="seconda che la butterà" type="straight"/>
+		<underline language="IT" method="pen" text="non sapeua ciò che hauesse" type="straight"/>
+		<underline language="IT" method="pen" text="un Giudeo" type="straight"/>
+		<underline language="IT" method="pen" text="haurebbe tocchi" type="straight"/>
+		<underline language="IT" method="pen" text="Sabato non è" type="straight"/>
+		<underline language="IT" method="pen" text="denari non ci sono" type="straight"/>
+		<underline language="IT" method="pen" text="Pronto." type="straight"/>
+		<underline language="IT" method="pen" text="pazzo" type="straight"/>
+		<underline language="IT" method="pen" text="cane e'" type="straight"/>
+		<underline language="IT" method="pen" text="un bracco, toccò" type="straight"/>
+		<underline language="IT" method="pen" text="sò che mazzata" type="straight"/>
+		<underline language="IT" method="pen" text="oh tale dà a quel cane" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="head"/>
+		<symbol name="SS" place="intext"/>
+		
+		<!-- Marks -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="buona"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="simplicità"/>
+		<mark method="pen" name="quotation_mark" place="intext"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Pronto."/>
+		<mark method="pen" name="dot" place="intext"/> <!--Dio ma-->
+		<mark method="pen" name="dot" place="intext"/> <!--Chiede &-->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--after finestra-->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--after buttera-->
+		<mark method="pen" name="dot" place="intext"/> <!--Giudeo-->
+		<mark method="pen" name="dot" place="intext"/> <!--tocchi-->
+		<mark method="pen" name="dot" place="intext"/> <!--buttera, come-->
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="plus_sign" place="right_margin"/>
+		<mark method="pen" name="straight_quotation_mark" place="right_margin"/> <!--far-->
+		<mark method="pen" name="apostrophe" place="intext"/> <!--buttera, come-->
+		<mark method="pen" name="comma" place="intext"/> <!--ducati gli-->
+		
+	</annotation>
+</transcription>

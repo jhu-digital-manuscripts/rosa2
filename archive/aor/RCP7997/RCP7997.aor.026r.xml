@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.026r.tif" reader="John Dee" signature="Eij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="c[on]uertibilitatis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Convertibilitas      
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Convertibility.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Vniversalis affirmatiua simpliciter co[n]versa r[ati]o[n]e materia[e] supra
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A universal affirmative is converted simply by reason of matter.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="potissima e[ni]m demo[n]stratio[n]e" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Potissima demonstratio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The most powerful demonstration.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vnu[m] mediu[m] ad vna[m] co[n]clusione[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Vnu[m] mediu[m] ad vnam co[n]clusione[m]  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                One medium to one conclusion.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="no[n] augent[ur] p[er] diuersa media ad demonstrandu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Potissima demo[n]stratio no[n] p[otes]t augeri p[er] plura media.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The most powerful demonstration cannot be exalted by several methods.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Convertibilitas.        
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Convertibility.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ergo apud mathematicos est illa demo[n]stratio potissima: q[uo]nia[m] ha[e]c, in illa ta[n]tum eveniu[n]t.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                According to the mathematicians this demonstration is the most powerful because these [things] appear only in this.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Omnis linea opposita dyametro [et] costa orthogonij est potencialit[er]" hand="Italian" id="RCP7997:060:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        O[mn]is linea op[posita] diam[etro] et cost[a] orth[ogonij] est pot[encialiter]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Every line opposite the diameter and side of a orthogonal [shape] are potential. <!-- FSF: I am really not sure about this -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="om[n]is dyameter cubi est linea opposita dyametro [et] costa orthogonij" hand="Italian" id="RCP7997:060:m0002">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        O[mn]is diam[eter] cubi est lin[ea] op[posita] dia[metro] et cost[a] orth[ogonij]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Every diameter of a cube is a line opposite to the diameter and the side of an orthogonal [shape].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ergo om[n]is dyameter cubi tripla est potencialit[er] ad costam q[ua]drati" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        O[mn]is ergo diameter cub[i] tripla est pot[entialiter] ad cost[am] [quadrati]      <!-- DO: Going by the printed text and the general pattern, I would guess what's cut off is the drawing of the square for 'quadrati', but can't tell for sure... --> <!-- FSF: I do agree -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Therefore every diameter of a cube stands in triple exponentiation to the side of a [square].
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Conversio minoris in secunda [figura]  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A conversion of the smaller in the second figure.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Om[n]is dyameter cubi potencialit[er] tripla est ad costa[m] q[ua]drati" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        O[mn]is di[ameter] cu[bi] pot[entialiter] tripla est ad costa[m] q[ua]drati
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Every diameter of a cube stands in triple exponentiation to the side of a square. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="omnis linea opposita dyametro [et] costa orthogonij est potencialiter tripla ad costa[m] q[ua]drati" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        O[mn]is linea op[posita] di[ametro] et cos[ta] or[thogonii] est pot[entialiter] tri[pla] ad co[stam] [quadrati]    <!-- DO: Again, presumably the square has been cut off -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Every line opposite to the diameter and the side of an orthogonal [shape] potentially stands in triple exponentiation to the side of a square.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ergo o[mn]is linea opposita dyametro et costa orthogonij est dyameter cubi" hand="Italian" id="RCP7997:060:m0003">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        O[mn]is ergo li[nea] op[posita] di[ametro] et co[sta] ort[hogenii] est dia[meter] cubi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Therefore every line opposite to the diameter and the side of an orthogonal [shape] is the diameter of the cube.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in s[e]c[un]da figura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Conversio maioris in nulla fig[ura]     <!-- DO: I'm assuming it's 'fig[ura]'  (printed text: 'in s[e]c[un]da figura' etc. -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The conversion of the greater in no figure.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Om[n]is linea opposita dyametro et costa orthogonij est dyamet[er] cubi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        O[mn]is linea op[posita] di[ametro] et co[sta] or[thogenii] est diameter cubi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Every line opposite to the diameter and the side of an orthogonal [shape] is the diameter of the cube.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="o[mn]is dyameter cubi est potencialiter tripla ad costa[m] q[ua]drati" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        O[mn]is di[ameter] cubi est pot[entialiter] tripla ad costa[m] □ 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Every diameter of the cube potentially stands in triple exponentiation to the side of a square.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ergo o[mn]e triplu[m] pote[n]cialit[er] ad costa[m] quadrati est linea opposita dyametro [et] costa orthogonij" hand="Italian" id="RCP7997:060:m0004">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        O[mn]e ergo triplu[m] pot[entialiter] ad costa[m] □, est li[nea] op[posita] di[ametro] et co[sta] or[thogonii]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Therefore everything that [stands] in triple exponentiation to the side of a square, is the line opposite to the diameter and the side of an orthogonal [shape].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="det[er]mi[n]ata p[ri]ncipia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Determinata principia in demo[n]stratiuis scientijs
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Determined principles in demonstrative sciences. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diuersa media" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Diuersa media
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Different media.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vni[us] rei est solu[m]m[od]o vna causa ade[ua]ta [et] p[ro]pria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vnius rei vna ta[n]tu[m] causa adequata et p[ro]pria.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The adequate and real reason for only one thing.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        nam
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                For.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="mathematicos" type="straight"/>
+        <underline language="LA" method="pen" text="Primo arguu[n]t c[on]uertibilit[er] ex" type="straight"/>
+        <underline language="LA" method="pen" text="Om[n]is linea opposita dyametro et costa orthogonij" type="straight"/>
+        <underline language="LA" method="pen" text="maioris q[ua]re cu[m] in doctrinalib[us] siue demonstratiuis no[n] possumus decipi arguendo ex affirmatiuis p[ro]pter co[n]uertibilitate[m] terminoru[m] in s[e]c[un]da figura. min[us] etia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="in potissima e[ni]m demo[n]stratio[n]e o[mn]es termini sunt conuertibiles quare" type="straight"/>
+        <underline language="LA" method="pen" text="terminoru[m] q[ue] co[n]uertibilitas accipit diffinitio[n]es [et] ea q[uae] sunt p[er] se" type="straight"/>
+        <underline language="LA" method="pen" text="non accidit ei deceptio q[ue] arguit in materia c[on]uertibili [et] i[n] tali argume[n]tatio[n]e" type="straight"/>
+        <underline language="LA" method="pen" text="arguu[n]t ex causa eq[ua]ta non e[ni]m habent nisi vnu[m] mediu[m] ad vna[m] co[n]clusione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="equata de necessitate co[n]uertit[ur] cu[m] suo causato [et]" type="straight"/>
+        <underline language="LA" method="pen" text="sunt de[ter]mi[n]ata p[ri]ncipia ex" type="straight"/>
+        <underline language="LA" method="pen" text="s[e]c[un]d[u]m fallacia[m] c[on]seque[n]tis" type="straight"/>
+        <underline language="LA" method="pen" text="rationes demonstratiue no[n] augent[ur] p[er] diuersa media ad demonstrandu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="hec e[ni]m no[n] fit in potissima demo[n]stratio[n]e p[ro]pter quid" type="straight"/>
+        <underline language="LA" method="pen" text="ergo vni[us] rei est solu[m]m[od]o vna causa adeq[ua]ta" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/> 
+        <mark method="pen" name="circumflex" place="right_margin"/> 
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">[2 deleted]</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+       <physical_link>
+           <marginal_annotation idref="RCP7997:060:m0001"/>
+           <marginal_annotation idref="RCP7997:060:m0003"/>
+           <relation from="RCP7997:060:m0001" to="RCP7997:060:m0003" type="undirected"/>
+       </physical_link>
+       
+        <physical_link>
+            <marginal_annotation idref="RCP7997:060:m0002"/>
+            <marginal_annotation idref="RCP7997:060:m0004"/>
+            <relation from="RCP7997:060:m0002" to="RCP7997:060:m0004" type="undirected"/>
+        </physical_link>
+       
+       
+        <physical_link>
+            <marginal_annotation idref="RCP7997:060:m0002"/>
+            <marginal_annotation idref="RCP7997:060:m0003"/>
+            <relation from="RCP7997:060:m0002" to="RCP7997:060:m0003" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

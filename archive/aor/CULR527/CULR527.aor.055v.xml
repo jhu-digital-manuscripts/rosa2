@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.055v.tif" pagination="[55[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        nisi qua[n]tu[m] magnetis declinatio eos deviare fecerit 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Unless the declination of the magnet makes them deviate. <!-- FSF: I don't know how to fit in the quantum -->
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="omnes rumi leste oeste inuicem a[e]quidistantes procedunt, ut necessarium" type="straight"/>
+        <underline language="LA" method="pen" text="in leste nauigantes, ad illum nunquam redeant" type="straight"/>
+        <underline language="LA" method="pen" text="eade[m] altitudine" type="grid"/>
+
+    </annotation>
+</transcription>

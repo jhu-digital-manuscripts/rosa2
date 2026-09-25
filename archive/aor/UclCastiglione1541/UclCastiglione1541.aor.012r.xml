@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="UclCastiglione1541.012r.tif" reader="Harvey" signature="[Aiv[r]]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Theofrasto parlaua troppo Atheniense.
+                    </marginalia_text>
+                    <person name="Theophrastus"/>
+                </position>
+            </language>
+            <translation>
+                Theophrastus spoke too much Athenian. 
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Non si poter[e] trouare un Cortegiano della perfett[ione] che qui è 
+                        descritto.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+            It is not possible to find a courtier as perfect as what is described here.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Idea del perfetto Cortegiano.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The idea of the perfect courtier.
+            </translation>
+        </marginalia>
+    </annotation>
+</transcription>

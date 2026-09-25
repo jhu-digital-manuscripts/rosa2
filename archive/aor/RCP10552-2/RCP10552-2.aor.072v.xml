@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.072v.tif" pagination="134" reader="John Dee" signature="[M.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="134" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>134</marginalia_text> <!-- MB. 'Degree' sign following '134'. -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Gaudanum, &amp; vocatus est Iohannes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Io[hann]es de Gandauo natus a[nn]o 1339.</marginalia_text>
+                    <person name="John of Gaunt"/>
+                </position>
+            </language>
+            <translation>John of Gaunt was born in the year of 1339.</translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="Hoc" type="straight"/>
+        <underline language="LA" method="pen" text="Angliae quartus filius" type="straight"/>
+        <underline language="LA" method="pen" text="est Iohannes" type="straight"/>
+        
+        <errata amendedtext="gaudanum" copytext="Gaudanum" language="LA"/>
+        
+    </annotation>
+</transcription>

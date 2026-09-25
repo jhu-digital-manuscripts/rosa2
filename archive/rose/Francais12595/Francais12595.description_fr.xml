@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Fr. 12595, Bibliothèque nationale, Paris. Français, XVe siècle.</p>
+        </note>
+        <note rend="INFORMATIONS BASIQUES">
+          <p>Parchemin, 323 x 235 mm, 202 feuillets (numérotés jusqu’à 203, mais il manque un feuillet après f. 30)</p>
+        </note>
+        <note rend="MATERIEL">
+          <p><material>Parchemin</material> en bon état. Le coin du feuillet 171 a été réparé, traces de détérioration causée par de l’eau qui a entraîné un gondolement du parchemin à partir du feuillet 171.</p>
+        </note>
+        <note rend="CAHIERS">
+          <list>
+            <head>Collation:</head>
+            <item n="I">
+              <locus from="1" to="8">1-8</locus>
+            </item>
+            <item n="II">
+              <locus from="9" to="16">9-16</locus>
+            </item>
+            <item n="III">
+              <locus from="17" to="24">17-24</locus>
+            </item>
+            <item n="IV">
+              <locus from="25" to="32">25-32</locus>
+            </item>
+            <item n="V">
+              <locus from="33" to="40">33-40</locus>
+            </item>
+            <item n="VI">
+              <locus from="41" to="48">41-48</locus>
+            </item>
+            <item n="VII">
+              <locus from="49" to="56">49-56</locus>
+            </item>
+            <item n="VIII">
+              <locus from="57" to="64">57-64</locus>
+            </item>
+            <item n="IX">
+              <locus from="65" to="72">65-72</locus>
+            </item>
+            <item n="X">
+              <locus from="73" to="80">73-80</locus>
+            </item>
+            <item n="XI">
+              <locus from="81" to="84">81-84 </locus>
+            </item>
+            <item n="XII">
+              <locus from="85" to="92">85-92</locus>
+            </item>
+            <item n="XIII">
+              <locus from="93" to="100">93-100</locus>
+            </item>
+            <item n="XIV">
+              <locus from="101" to="108">101-108</locus>
+            </item>
+            <item n="XV">
+              <locus from="109" to="116">109-116</locus>
+            </item>
+            <item n="XVI">
+              <locus from="117" to="124">117-124</locus>
+            </item>
+            <item n="XVII">
+              <locus from="125" to="132">125-132</locus>
+            </item>
+            <item n="XVIII">
+              <locus from="133" to="140">133-140</locus>
+            </item>
+            <item n="XIX">
+              <locus from="141" to="148">141-148</locus>
+            </item>
+            <item n="XX">
+              <locus from="149" to="156">149-156</locus>
+            </item>
+            <item n="XXI">
+              <locus from="157" to="164">157-164</locus>
+            </item>
+            <item n="XXII">
+              <locus from="165" to="172">165-172</locus>
+            </item>
+            <item n="XXIII">
+              <locus from="173" to="180">173-180</locus>
+            </item>
+            <item n="XXIV">
+              <locus from="181" to="188">181-188</locus>
+            </item>
+            <item n="XXV">
+              <locus from="189" to="196">189-196</locus>
+            </item>
+            <item n="XXVI">
+              <locus from="197" to="202">197-202 </locus>
+            </item>
+            <item>
+              <locus>203</locus>
+            </item>
+          </list>
+          <p>Cahier IV est un cahier de 7 feuillets, dû au feuillet manquant après f. 30</p>
+          <p>Cahier XI est un cahier de 4 feuillets</p>
+          <p>Cahier XXVI: Il est difficile de s’imaginer la composition initiale de ce cahier; c’était peut-être un quarternion dont les feuillets finaux ont été enlevés.)</p>
+          <p>Feuillet 203 est un singleton ajouté; (était précédemment une contre-garde) a été numéroté plus tard encore à l’encre bleue.</p>
+          <p>ii+202+ii. Pas de marques de cahier ni de signatures. Réclames au centre de chaque marge inférieure. Foliotation en haut au centre, en rouge, en chiffres romains, qui semble dater de la même époque que le manuscrit ; la foliotation est exacte mais il manque le feuillet 30. Les feuillets  201-202 ont été numérotés plus tard à l’encre noire et en chiffres arabes ; le feuillet 203 (était précédemment une contre-garde) a été numéroté plus tard encore à l’encre bleue.</p>
+        </note>
+        <note rend="MISE-EN-PAGE">
+          <p>Réglé à la mine en deux colonnes. Des piqûres pour les lignes rectrices majeures subsistent sur chaque bord inférieur et supérieur ; celles pour les lignes horizontales ont dans l’ensemble été supprimées, mais certaines subsistent – voir feuillets <locus from="46" to="47">46-47</locus>, par exemple. Réglé avec six lignes rectrices majeures verticales et deux horizontales ; les lignes verticales délimitent chaque côté des deux corps de texte, avec une ligne supplémentaire dans chaque colonne qui sépare la première lettre du reste de la ligne. Des lignes horizontales délimitent les bords supérieurs et inférieurs du corps de texte. Le corps de texte fait 220 x 159 mm, chaque colonne a une largeur de 70 mm. Il y a 37 lignes par colonne.</p>
+        </note>
+        <note rend="ECRITURE">
+          <p>Un seul scribe,  utilisant une écriture en cursiva formata (les compartiments uniques des lettres a,  f et s se prolongent au-dessous de la ligne, mais il n’y a pas de boucles sur les tiges ascendantes). Pas de lettres capitulaires. On trouve des tiges ascendantes ornementées le long de la marge supérieure, ainsi qu’à l’intérieur du corps de texte lorsqu’il y a un espace dans la/les ligne(s) du dessus – voir 9v par exemple, où l’on trouve les deux types d’écriture. Il y a très peu de corrections – on voit par exemple une ligne insérée dans la marge des feuillets 11v, 115r; des rayures dans le feuillet 109v, et des a, b dans la marge du feuillet 126r pour bien montrer l’ordre correct des lignes. La couleur de l’encre varie d’un marron à un marron très foncé, presque noir.</p>
+        </note>
+        <note rend="DECORATION">
+          <p>Des rubriques accompagnent les miniatures ; elles identifient aussi des changements de locuteurs et marquent des divisions textuelles.  La foliotation est effectuée par les mêmes rubricateurs.  Quelques annotations d'attente pour les rubricateurs subsistent, par exemple au f. 21r, 44v, 76v-77r; des lettres d’attente pour des initiales subsistent également, par exemple au f. 11v, 14v-15r. Une initiale de huit lignes, bleue sur fond rouge, filigranée de blanc à la fois sur la lettre et le fond. Le fond est entouré d’un cadre d’or ; La lettre est constituée d’un fond en feuille d’or et d’un dessin élaboré de vigne – une vigne rouge pâle et blanche avec des feuilles tripartites bleues et rouges, le tout enjolivé de blanc. De nombreuses initiales de deux lignes de hauteur se retrouvent dans l’intégralité du manuscrit, étant en alternance de couleur or et filigranées de bleu, et de couleur bleue et filigranées de rouge. On trouve aussi de nombreux paraphes d’une ligne qui utilisent les mêmes combinaisons de couleurs, rouge/bleu et or/bleu. Cadre en forme de U au f. 1r. Chacun des trois côtés du cadre représente un motif différent. A gauche, une ligne droite rouge et blanche sur laquelle s’enroule une vigne bleue avec des feuilles rouges qui s’en détachent clairement; les interstices entre la vigne et la ligne droite étant comblés par de la feuille d’or. En bas, des dessins rouges, bleus, et verts en forme de boucliers s’étendent entre deux gueules de dragons. Un espace vide au centre de chaque dessin de boucliers est partiellement comblé par de la feuille d’or. A droite, des motifs de feuilles vertes, rouges et bleues avec des bourgeons dorés. Un autre motif, représentant des feuilles vertes, rouges et bleues sur des vignes entrelacées, dont les espaces vides sont comblés avec de l’or, sépare les deux colonnes. Des vignes bleues et rouges s’étendent dans les quatre marges et sont ornées de feuilles rouges, bleues et or. Bien que le haut du cadre n’ait pas de bordure à proprement dit, il est presque totalement recouvert de vignes qui s’étendent de gauche à droite. On peut voir aussi dans les marges, des vignes vertes avec de petites fleurs, qui sont maintenant quelque peu passées, et un certain nombre d’oiseaux et de papillons. 82 miniatures; Parmi celles-ci, une grande (la moitié d’une page) et 79 petites (12 lignes, une colonne) miniatures dans la <hi rend="italics">Rose</hi>, et une grande au début du <hi rend="italics">Testament</hi> et au début du <hi rend="italics">Codicille</hi>.</p>
+          <p>Décoration du <hi rend="italics">Testament</hi> : Une première initiale de huit lignes est composée d’une lettre rose avec des motifs rouges et filigranée de blanc. Lettre entourée d’un cadre d’or et, sur tous les côtés sauf le gauche, une barre bleue filigranée de blanc. Fond de feuille d’or sur lequel figurent une vigne bleue et blanche et des feuilles rouges décorées de blanc. D’autres initiales font une ligne de hauteur. Elles sont en alternance bleues et filigranées de rouge, et or et filigranées de bleu. La bordure est un encadrement en forme de U. On peut voir de fines lignes bleues/blanches et rouges/blanches à l’intérieur de ce cadre. A l’extérieur, on voit des barres bleues filigranées de blanc qui alternent avec des barres à la feuille d’or dentées/crénelées et des barres rouges filigranées de blanc.  En haut, à droite, et en bas, des vignes rouges/blanches et bleues/blanches s’étendent, avec des feuilles or, bleues et rouges ; ces deux dernières étant aussi surlignées de blanc. Dans la marge de gauche, de simples vignes à l’encre noire avec des feuilles couleur or. Il y a un dragon dans la marge de droite. La décoration du <hi rend="italics">Codicille</hi> est pratiquement identique à celle du <hi rend="italics">Testament</hi>, avec néanmoins un dragon supplémentaire dans la marge inférieure</p>
+        </note>
+        <note rend="RELIURE">
+          <p>France, début du XIXe siècle, 339 mm de hauteur, 268 mm du centre du dos à la gouttière. Basane de couleur fauve sur des rectangles de carton. Six nervures au dos; Les deux tranchefilles sont faites de fil rose et blanc. Les tranches sont dorées et gaufrées, bien qu’elles soient toutes deux à peine visibles maintenant. Le devant et la fin sont ornés d’un cadre de trois filets d’or poussés qui s’entrecroisent aux coins. Au centre du devant et de la fin se trouve le cachet en or du blason de Napoléon. Les compartiments 1, 3, 4, 5, 6 du dos contiennent un dessin poussé représentant un N au centre avec une branche de laurier (?) de chaque côté et une couronne sur le dessus. Ces compartiments sont encadrés d’une ligne verticale poussée de chaque côté, et de deux lignes horizontales au bord supérieur et deux au bord inférieur. Chaque coin est orné de 4 ou 5 diagonales poussées, chacune espacées de 3-4 mm pour remplir l’espace autour du dessin central. Dans le deuxième compartiment, le titre <hi rend="italics">ROMAN / DE / LA ROSE</hi> est appliqué en lettres d’or sur une étiquette en cuir rouge. On voit aussi dans ce compartiment, une ligne d’or sur les côtés et deux sur les bords supérieurs et inférieurs (le texte ne rentre pas complètement dans le cadre ; le <hi rend="italics">L</hi> de <hi rend="italics">LA</hi> dépasse du bord). Le compartiment inférieur est plus grand que les autres, et sa décoration est maintenant masquée par le papier blanc de l’étiquette portant la cote de la BNF <hi rend="italics">« FR / 12595 »</hi>. Une même étiquette de la BNF se trouve sur la contre-garde de devant.  Contre-gardes/garde volante marbrées au devant et à la fin (aux couleurs claires de pastel) ; Deux gardes volantes de papier au devant et deux à la fin. Les gardes volantes portent le filigrane <hi rend="italics">M. PERRIER</hi>. Il est écrit sur la garde volante 1r la mention suivante: <hi rend="italics">reliure restorée en 1972</hi>.</p>
+        </note>
+        <note rend="HISTOIRE">
+          <p>La reliure contient le blason de Napoléon. Au verso de la garde volante 1, « 188 » est écrit au crayon. Au recto de la garde volante 2, il est écrit à l’encre bleue : <hi rend="italics">français 12595</hi> et <hi rend="italics">reliure restorée en 1972</hi>. Sur le f. 201, maintenant effacé : <hi rend="italics">Ce livre est au duc de Berry. Jehan</hi> (ceci est actuellement très difficile à voir, la transcription de Langlois a donc été consultée). Sur le f. 157r, une inscription, probablement un ex-libris, maintenant effacée et illisible.</p>
+          <p>Dans la note de bas de page, Langlois (p. 48) donne des indications sur la provenance du manuscrit : </p>
+          <p><hi rend="italics">Des quatre mss. du Roman de la Rose qui figurent dans les inventaires des livres du duc de Berry, il y en a trois que leur contenu et l’incipit du 2e feuillet empêchent d’identifier avec celui-ci. La mention du 4e, dans l’inventaire de 1402, est très vague: « Un livre du Romant de la Rose »</hi> (<hi rend="italics">L. Delisle,</hi> Cabinet des Manuscrits, <hi rend="italics">III. p.192;</hi> Recherches sur la librairie de Charles V, <hi rend="italics">2e  partie, p. 267</hi>); <hi rend="italics">et il ne réapparaît pas dans les inventaires ultérieurs, parce qu’il avait été donné à Guillaume de Lode. Il est donc impossible de dire si ce ms. est le même que celui de la B. N. fr. 12595; mais peut-être dans le</hi> ex-libris <hi rend="italics">que je n’ai pas pu lire retrouverait-on le nom Guillaune de Lode</hi>.</p>
+        </note>
+        <note rend="TEXTE">
+          <list>
+            <item><locus from="1r" to="157r">1r-157r</locus>, <hi rend="italics">Roman de la Rose</hi></item>
+            <item><locus from="158r" to="187r">158r-187r</locus>, <hi rend="italics">Le Testament</hi></item>
+            <item>
+              <locus from="188" to="0">188 blanc</locus>
+            </item>
+            <item><locus from="189r" to="200r">189r-200rb</locus>, <hi rend="italics">Le Codicille</hi></item>
+            <item><locus from="200r" to="200v">200rb-200v</locus>, <hi rend="italics">“Ci apres sensuit vn beau petit dittie . . .”</hi></item>
+          </list>
+          <p>(Il faut noter que Langlois suit une foliotation incorrecte et énumère les textes dans le désordre)</p>
+        </note>
+        <note>
+                    Description de Timothy L. Stinson.
+                    Traduction par Sylvie Merlier-Rowen.
+                </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscrit</note>
+          <note type="commonName">Français 12595</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="202" unit="folios">202 feuillets</measure>
+            <dimensions>
+              <height unit="mm">323</height>
+              <width unit="mm">235</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">82</note>
+          <note type="material">parchemin</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1500" notBefore="1400">15e siècle</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de France</repository>
+            <idno>fr. 12595</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="157r">1r-157r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">157</note>
+              <note type="illustrations">80</note>
+              <note type="linesPerColumn">37</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="158r" to="187r">158r-187r</locus>
+              <title>Testament</title>
+              <note type="textid">testament</note>
+              <note type="folios">30</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">37</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="189r" to="200r">189r-200r</locus>
+              <title>Codicille</title>
+              <note type="textid">codicille</note>
+              <note type="folios">12</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">37</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

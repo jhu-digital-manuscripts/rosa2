@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.176r.tif" pagination="169" reader="John Dee" signature="uu"/>
+    <annotation>
+        
+        <marginalia anchor_text="Saturnus co[n]bustus in aqueo signo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>♄ co[n]bustus in aqueo signo. //.</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>Saturn having been burned up in a watery sign.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="defert radios Solis ad Ioue[m]" hand="English_secretary" id="RCP7134:357:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Translatio luminis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The translation of light.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quia cauda est cu[m] Luna in octaua" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☾ cu[m] ☋ in octava</marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="South_Node"/>
+                </position>
+            </language>
+            <translation>The Moon with the south node in the eigth [house].</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Saturnus co[n]bustus in aqueo signo, humore calido elidit omnes dentes" type="straight"/>
+        <underline language="LA" method="pen" text="homine[m] fama, nam trigonu[m] aqueum posside[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="defert radios Solis ad Ioue[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quia cauda est cu[m] Luna in octaua" type="straight"/>
+        <underline language="LA" method="pen" text="longa suscipiet, &amp; extra patriam morabitur" type="straight"/>
+        
+    </annotation>
+</transcription>

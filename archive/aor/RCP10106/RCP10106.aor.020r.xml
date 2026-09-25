@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.020r.tif" pagination="39" reader="John Dee" signature="c 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="Ὀρθοέπεια" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ὀρθοέπεια
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Orthoepy.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tullius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tullius.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Tullius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sed abolita, atque abrogata retinere, insolentiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Abolita et abrogata no[n] su[n]t retinenda mordicus</marginalia_text> 
+                </position>
+            </language>
+            <translation>Banished and abolished things are not to be upheld firmly.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Antonius Gnipho" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Antonious Gnipho.</marginalia_text>
+                    <person name="Marcus Antonius Gnipho"/>
+                </position>
+            </language>
+            <translation>Antonius Gnipho.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quid enim tam necessarium, quàm certa locutio" type="straight"/>
+        <underline language="LA" method="pen" text="sed abolita, atque abrogata retinere, insolentiae" type="straight"/>
+        <underline language="LA" method="pen" text="est licentiosum" type="straight"/>
+        
+    </annotation>
+</transcription>

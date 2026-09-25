@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.069r.tif" pagination="62" reader="John Dee" signature="Q ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="luxabuntur ossa" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ossiu[m] luxatio</marginalia_text>
+                </position>
+            </language>
+            <translation>A dislocation of the bones.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fixa" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fixa[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Fixed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="decrta ab initio geniturae sortiuntur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Decreta genitura[e] fuerint qualia, ex eve[n]tib[us] indicare lic[et].</marginalia_text> 
+                </position>
+            </language>
+            <translation>What kind of decrees of the geniture may have been, one may indicate from the events.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fixa" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fixa[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Fixed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Alfridariae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Alfridaria</marginalia_text>
+                </position>
+            </language>
+            <translation>The alfridaries.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Alfridariae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☾ motus.</marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>The movement of the moon.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; dispositionis" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; significationis" type="straight"/>
+        <underline language="LA" method="pen" text="Si Luna cum Saturno uel Marte &amp; nodo in sexta fuerit" type="straight"/>
+        <underline language="LA" method="pen" text="cum radijs Planetae, idem praestat quod fecisset, si ab initio fixa à Planeta fuisset illustrata, sed per annu[m] solum" type="straight"/>
+        <underline language="LA" method="pen" text="diu" type="double"/>
+        <underline language="LA" method="pen" text="ac bona decreta ab initio geniturae sortiuntur" type="straight"/>
+        <underline language="LA" method="pen" text="quibus genitur[a]e foelices quide[m] sunt, sed à significatoribus promissores plurimum absunt, ut" type="straight"/>
+        <underline language="LA" method="pen" text="honoribus &amp; diuitijs" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!--si vero-->
+        
+    </annotation>
+</transcription>

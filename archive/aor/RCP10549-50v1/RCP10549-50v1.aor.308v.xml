@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.308v.tif" pagination="596" reader="John Dee" signature="[ppp.ii[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="remittit; relaxat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>remittere Relaxare</marginalia_text>
+                </position>
+            </language>
+            <translation>To relax. To loosen.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="auribus accipere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>aurib[us] accipere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To hear (lit: to receive by ears).</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="codicillos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>codicilli</marginalia_text>
+                </position>
+            </language>
+            <translation>Writing tablets.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="persona[m] in Rep. tueri principis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Persona principis</marginalia_text>
+                </position>
+            </language>
+            <translation>The person of the prince.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="fuga mortis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fuga mortis</marginalia_text>
+                </position>
+            </language>
+            <translation>Flight from death.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="summa laus consularium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Summa laus consulariu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>The highest praise for consuls.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Q. Scaeuolam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Q. Scevola.</marginalia_text>
+                    <person name="Quintus Mucius Scaevola Augur"/>
+                </position>
+            </language>
+            <translation>Quintus Mucius Scaevola Augur.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="perdita valitudine" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>perdita valitudine</marginalia_text>
+                </position>
+            </language>
+            <translation>Degenerated health.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Conclusio</marginalia_text>
+                </position>
+            </language>
+            <translation>Conclusion.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="vt repulsam tulit" type="straight"/>
+        <underline language="LA" method="pen" text="quae no[n] animis solu[m] debet, sed oculis seruire ciuium" type="straight"/>
+        <underline language="LA" method="pen" text="nuper summa laus Consulariu[m], vigilare, cogitare, adesse animo, semper aliquid pro Rep. aut facere aut dicere" type="straight"/>
+        <underline language="LA" method="pen" text="summa senectute &amp; perdita valitudine" type="straight"/>
+        <underline language="LA" method="pen" text="mea[m] corrigebant" type="straight"/>
+        
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">8</numeral>
+        
+        <drawing anchor_text="Persona principis" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="fuga mortis" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

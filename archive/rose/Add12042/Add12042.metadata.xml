@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>41</illustrations>
+    <totalPages>166</totalPages>
+    <dimensions units="mm">
+        <width>260</width>
+        <height>330</height>
+    </dimensions>
+    <dates>
+        <startDate>1450</startDate>
+        <endDate>1450</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="166v" start="1r">166</pages>
+            <illustrations>41</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Additional 12042</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>Parchment</material>
+            <origin>France</origin>
+            <currentLocation>London</currentLocation>
+            <repository>British Library</repository>
+            <shelfmark>Add MS 12042</shelfmark>
+	    <website>http://searcharchives.bl.uk/IAMS_VU2:IAMS040-002041749</website>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Additional 12042</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>London</currentLocation>
+            <repository>British Library</repository>
+            <shelfmark>Add MS 12042</shelfmark>
+	    <website>http://searcharchives.bl.uk/IAMS_VU2:IAMS040-002041749</website>
+        </bibliography>
+    </bibliographies>
+</book>

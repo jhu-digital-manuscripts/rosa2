@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.381v.tif" pagination="312" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Richardus de Clare, Comes illustris Glocestriae &amp; Herefordiae, circa hoc tempus obijt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Obitus Richardi de Clare Comitis glocest et Hertf.
+                    </marginalia_text>
+                    <person name="Richard de Clare, 6th Earl of Gloucester"/>                   
+                </position>
+            </language>
+            <translation>
+                Death of Richard de Clare, 6th Earl of Gloucester, [5th] Earl of Hertford.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Rogerij de Mortuo mari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Rogerus de M. M
+                    </marginalia_text>
+                    <person name="Roger Mortimer, 1st Baron Mortimer"/>
+                </position>
+            </language>
+            <translation>
+                Roger Mortimer, 1st Baron Mortimer.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="marchionibus peditibus" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        fotemen of the Marches.    
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Baldevvinus de insula, Comes Deuoniae" type="straight"/>
+        <underline language="LA" method="pen" text="Et Richardus de Clare, Comes illustris Glocestriae &amp; Herefordiae" type="straight"/>
+        <underline language="LA" method="pen" text="tempus obijt in Cantia &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="sepultus est apud Thekesburie" type="double"/>
+        <underline language="LA" method="pen" text="vitute ac morum praerogatiua, sic de eo illic haeroicè intitulatur" type="straight"/>
+        <underline language="LA" method="pen" text="Hic pudor Hippoliti" type="straight"/>
+        <underline language="LA" method="pen" text="Paridis gena" type="straight"/>
+        <underline language="LA" method="pen" text="sensus Vlißis Aeneae pietas" type="straight"/>
+        <underline language="LA" method="pen" text="Hectoris ira iacet" type="straight"/>
+        <underline language="LA" method="pen" text="suo principe Leolino, de suis sedibus irrumpentes, terras" type="straight"/>
+        <underline language="LA" method="pen" text="Mortuo mari hostiliter inuadunt" type="straight"/>
+        <underline language="LA" method="pen" text="Rogerius igitur" type="straight"/>
+        <underline language="LA" method="pen" text="mari, fama dignus" type="double"/>
+        <underline language="LA" method="pen" text=".ccc" type="straight"/>
+        <underline language="LA" method="pen" text="marchionibus peditibus" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>  
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <errata amendedtext="medio" copytext="midio" language="LA"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.114v.tif" pagination="228" reader="John Dee" signature="[p 2[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="eiusdem rei plura propria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Propria eiusdem rei plura.</marginalia_text>
+                </position>
+            </language>
+            <translation>The same thing may have several properties.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tyrannicidae proprium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tyrannicida[e] p[ro]prium</marginalia_text>
+                </position>
+            </language>
+            <translation>The property of a tyrannicide.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="differe[n]s uocant" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Differens quid.</marginalia_text>
+                </position>
+            </language>
+            <translation>Which differentia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="duae formae matrimoniorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dua[e] forma[e] matrimoniorum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Two forms of marriages.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Diuisione autem adiuuari finitionem docet, eam'q[ue] differre à partitione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Diuisio &amp; partitio</marginalia_text>
+                </position>
+            </language>
+            <translation>Division and partition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Diuisio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>Division.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Itaque quodcunq[ue] proprium deerit, soluet finitionem, non utiq[ue] quodcunq[ue], erit, confirmabit" type="straight"/>
+        <underline language="LA" method="pen" text="Quod autem proprium non erit, differens" type="straight"/>
+        <underline language="LA" method="pen" text="Animal, genus: mortale, species: terrenum, uel bipes, differens" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ijs quae ad aliquid sunt, subijcit" type="straight"/>
+        <underline language="LA" method="pen" text="in manum non conuenerit" type="straight"/>
+        <underline language="LA" method="pen" text="Partes incertas esse" type="straight"/>
+        <underline language="LA" method="pen" text="quibus constet respub." type="straight"/>
+        <underline language="LA" method="pen" text="utitur, quia scribens ad Trebatium, ex iure ea ducere maluit: ego apertiora posui. Propria" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

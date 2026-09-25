@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.029r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="sabrinum mare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        { Mare Abrinum Seabren. Sebren, Sevren. Severn
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The sea of the Severn. Sebren, Sevren. Severn.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Beluesgata" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Belinesgate.
+                    </marginalia_text>
+                    <location name="Billingsgate"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="ne quod alii tractauerunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Quod alij tractav[er]u[n]t hoc illi non erat opus repeter[e].
+                    </marginalia_text> 
+                </position>
+            </language>
+            <translation> It is not our job to repeat how others have handled these things </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; ne quod alii tractauerunt peragrans" type="straight"/>
+        <underline language="LA" method="pen" text="sabrinum mare" type="straight"/>
+        <underline language="LA" method="pen" text="Beluesgata" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

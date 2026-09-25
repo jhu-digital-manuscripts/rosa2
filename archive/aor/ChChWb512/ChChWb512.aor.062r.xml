@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.062r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="vocabitur" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Shalbe called agayne
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cadualladrus vocabit" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Bruti diademate" type="straight"/>
+        <underline language="LA" method="pen" text="Replebitur Cambria" type="straight"/>
+        <underline language="LA" method="pen" text="Nomine Bruti" type="straight"/>
+        <underline language="LA" method="pen" text="vocabitur" type="straight"/>
+        <underline language="LA" method="pen" text="insula: nuncupatio extraneoru[m] peribit" type="straight"/>
+        <underline language="LA" method="pen" text="donec sepulti reges in vrbe Lo[n]doniaru[m] p[rae]palabu[n]tur. Redibit" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <mark method="pen" name="triple_dash" place="intext"/> <!--under 'vocabitur'-->
+        
+        
+    </annotation>
+</transcription>

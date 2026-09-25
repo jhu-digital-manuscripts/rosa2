@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.159r.tif" pagination="141" reader="Harvey" signature="[I7r]"/>	<!-- ABO 163right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Volo Musam cantantem, Saltantem, currentem, "
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						" equitatantem, nauigantem, circumuolitante[m];
+						
+						Luctantem,
+						gladiantem; pra[e]liantem, fulminantem; tonantem;
+						omnia egregia facinora perpetrantem.
+						Da mihi hanc Musam: aut sperno.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>I want a singing, dancing, running, riding, sailing, flying-around; wrestling, fighting, battling, lightning-hurling, and thundering Muse who accomplishes all extraordinary deeds.
+			Give me this Muse: or I scorn.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Sententia[e] de rupe adamantis. dicta Solis <!--JG: Should be rupe instead of rube, no?-->
+						in Ariete: facta Solis in Leone.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Opinions on the rock of steel. A saying of the sun in the Ram: a deed of the sun in the Lion.</translation>
+		</marginalia>	
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Sed tamen erubescat iuris professor arguere, sine vtriusq[ue] iuris artificioso corpore ad
+						unguem: cum Belloni Antinomijs: Decij, Dyniq[ue] regulis: Speculatoris, Damasiq[ue]
+						regulis magistralibus: Bartholi distinctionibus: Vigelij iure Controuerso:
+					</marginalia_text>
+					<person name="Jean Bellon"/>
+					<person name="Filippo Decio"/>
+					<person name="Dinus de Rossonibus de Mugello"/>
+					<person name="Guillaume Durand"/>
+					<person name="Guilelmus Damasus"/>
+					<person name="Bartolus de Saxoferrato"/>
+					<person name="Nicolas Virgil"/> 
+					<book title="Antinomiarum iuris dissolutiones"/>
+					<book title="Lectura super titulo de regulis iuris"/>
+					<book title="De regulis juris"/>
+					<book title="Speculum iucidiale"/>
+					<book title="Brocarda"/>
+					<book title="Distinctiones"/>
+					<book title="Methodus juris controversi"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Maranta[e] speculo aureo,
+						etiam ad ungue[m].
+						Et meus singularis pragmaticus, Durandus: cum =
+					</marginalia_text>
+					<person name="Roberto Maranta"/>
+					<book title="Speculum aureum"/>
+				</position>
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						= Bertachino semper ad Manum: et pra[e]gnantissimis iam Practicis
+						in esse. Mera Legum, Canonum, glossarum puncta, et spicula. intima iuris quinta essentia.					
+					</marginalia_text>
+					<person name="Giovanni Bertachini"/>
+				</position>
+			</language>
+			<translation>But nevertheless the professor of law is ashamed to argue without having the artificial body of both laws by heart: with Jean Bellon's 'Antinomiarum iuris dissolutiones', with the rules of Filippo Decio and Dinus de Rossonibus de Mugello,
+				with the expert rules of Guillaume Durand and Guilelmus Damasus, Bartolus de Saxoferrato's distinctions, Nicolas Virgil's controversial law, Roberto Maranta's 'Speculum aureum', also by heart. And my singular pragmatist, Guillaume
+				Durand: always with Giovanni Bertachini at hand. And already with the most pregnant practices in being. The pure points and stings of laws, canons, and glossaries. An inmost quintessence of law.</translation> 
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="la vista" type="straight"/>
+		<underline language="IT" method="pen" text="l'udire" type="straight"/>
+		<underline language="IT" method="pen" text="in seruire" type="straight"/>
+		<underline language="IT" method="pen" text="'huom vede" type="straight"/>
+		<underline language="IT" method="pen" text="Amor gli fa inuisibile" type="straight"/>
+		<underline language="IT" method="pen" text="Et l'inuisibil" type="straight"/>
+		<underline language="IT" method="pen" text="Amore" type="straight"/>
+		<underline language="IT" method="pen" text="Osseruanze filosofiche" type="straight"/>
+		<underline language="IT" method="pen" text="gouernatori" type="straight"/>
+		<underline language="IT" method="pen" text="filosofi" type="straight"/>
+		<underline language="IT" method="pen" text="Medici" type="straight"/>
+		<underline language="IT" method="pen" text="animale piu sauio" type="straight"/>
+		<underline language="IT" method="pen" text="della Fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="pronosticatori delle" type="straight"/>
+		<underline language="IT" method="pen" text="indouini delle cose" type="straight"/>
+		<underline language="IT" method="pen" text="sia piu stolto animale" type="straight"/>
+		<underline language="IT" method="pen" text="I saui" type="straight"/>
+		<underline language="IT" method="pen" text="grati à Dio de" type="straight"/>
+		<underline language="IT" method="pen" text="COSIMO de' Medici" type="straight"/>
+		<underline language="IT" method="pen" text="nome di sauio" type="straight"/>
+		<underline language="IT" method="pen" text="in edifitij di tempi" type="straight"/>
+		<underline language="IT" method="pen" text="monasteri" type="straight"/>
+		<underline language="IT" method="pen" text="spedali" type="straight"/>
+		<underline language="IT" method="pen" text="la sua patria" type="straight"/>
+		<underline language="IT" method="pen" text="quattro cento mila ducati" type="straight"/>
+		<underline language="IT" method="pen" text="minute limosine che" type="straight"/>
+		<underline language="IT" method="pen" text="fanciulle" type="straight"/>
+		<underline language="IT" method="pen" text="far monache" type="straight"/>
+		<underline language="IT" method="pen" text="quen prudentissimo gentil" type="straight"/>
+		<underline language="IT" method="pen" text="no[n] hauena" type="straight"/>
+		<underline language="IT" method="pen" text="tanto spendere et darper" type="straight"/>
+		<underline language="IT" method="pen" text="egli il trouasse" type="straight"/>
+		<underline language="IT" method="pen" text="debitore" type="straight"/>
+		
+		<symbol name="SS" place="right_margin"/> <!-- In the middle of the marginal note, alongside 'per la sua' in printed text. -->
+		
+		<symbol name="SS" place="intext"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Chi diletta la vista, chi l'udire, Chi sfoga ogni desir solo     in seruire."/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		 
+		<mark method="pen" name="dash" place="right_margin"/> <!-- indoui -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Euro -->
+		
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- veder'Amore -->
+		<mark language="IT" method="pen" name="X_sign" place="intext" text="sua piu stolto animale"/>
+		
+	</annotation>
+</transcription>

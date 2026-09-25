@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.117r.tif" pagination="217" reader="John Dee" signature="t"/>
+    <annotation>
+        
+        <marginalia anchor_text="Hyades" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Hyades
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Hyades.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Capra" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Capra
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Capra.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ortus itaq[ue] si est in horoscopo (sicut frequenter diximus) occasus erit in diametro horoscopo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ortus et Occasus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Rising and setting.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nauis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        nauis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Argo Navis.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Orion in occasu" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Orion in occasu
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Setting of Orion.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Auriga in occasu" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Auriga in occ:
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Setting of Auriga.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hoedus Aurigae in occasu" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ho[e]dus in occ: 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Setting of Auriga.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hyades in occasu" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Hyadus in occ:
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Setting of Hyadus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Capra in occasu" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Capra in occ:
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Setting of Capra.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Hyades" type="straight"/>
+        <underline language="LA" method="pen" text="Capra" type="straight"/>
+        <underline language="LA" method="pen" text="contrariae sunt lumini tenebr[a]e, sic uitae mors" type="straight"/>
+        <underline language="LA" method="pen" text="Vita igitur erit in ortu, mors autem in occasu reperietur. Ortus" type="straight"/>
+        <underline language="LA" method="pen" text="Si Nauis igitur" type="straight"/>
+        <underline language="LA" method="pen" text="Si orion" type="straight"/>
+        <underline language="LA" method="pen" text="Si Auriga" type="straight"/>
+        <underline language="LA" method="pen" text="Si Hoedus Aurigae in occasu" type="straight"/>
+        <underline language="LA" method="pen" text="Pleiades" type="straight"/>
+        <underline language="LA" method="pen" text="Pleiades" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

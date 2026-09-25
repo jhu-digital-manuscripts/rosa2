@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.028r.tif" pagination="39" reader="John Dee" signature="d 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="honesta professio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Honesta professio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An honest profession.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sagaci debemus inquisitione tractare, ne aliqua[n]do tam" type="straight"/>
+        <underline language="LA" method="pen" text="honesta professio" type="double"/>
+        <underline language="LA" method="pen" text="explicatae specialiter" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="Honesta professio" type="dotted"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/> 
+        
+    </annotation>
+</transcription>

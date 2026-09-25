@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.101r.tif" pagination="187" reader="John Dee" signature="q.iiij."/>
+    <annotation>
+        
+        <marginalia anchor_text="de natali Domini nostri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>De die Natali D[omi]ni.</marginalia_text>
+                    <person name="Jesus Christ"/>
+                </position>
+            </language>
+            <translation>From the birth date of the Lord.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dies obseruatis" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; menses" type="straight"/>
+        <underline language="LA" method="pen" text="tempora" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; annos" type="straight"/>
+        <underline language="LA" method="pen" text="non tot festos dies aut ferias passi essent institui" type="straight"/>
+        <underline language="LA" method="pen" text="festis Paschalibus" type="straight"/>
+        <underline language="LA" method="pen" text="ad otium" type="straight"/>
+        <underline language="LA" method="pen" text="ad nequitiam" type="straight"/>
+        <underline language="LA" method="pen" text="theatralium chorearum" type="straight"/>
+        <underline language="LA" method="pen" text="personarum sumendarum" type="straight"/>
+        <underline language="LA" method="pen" text="feriarum aliquarum" type="straight"/>
+        <underline language="LA" method="pen" text="qui non intelligimus qua die, aut quo tempore natus sit Dominus: qua de re toties, &amp; tam multis nos admonent sacra Dei" type="straight"/>
+        <underline language="LA" method="pen" text="complementi, siue plenitudinis" type="straight"/>
+        
+    </annotation>
+</transcription>

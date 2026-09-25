@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonK6233.003r.tif" reader="Harvey" signature="α3r"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Hopperi,
+                    </marginalia_text>
+                    <person name="Joachim Hoppers"/>
+                </position>
+            </language>
+            <translation>
+                Hoppers's
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="paratitla doctissimorum" type="straight"/>
+        <underline language="LA" method="pen" text="Cuiacij" type="straight"/>
+        <underline language="LA" method="pen" text="Vesembecij" type="straight"/>
+        <underline language="LA" method="pen" text="uberius" type="straight"/>
+        <underline language="LA" method="pen" text="quàm Cuiacius" type="straight"/>
+        <underline language="LA" method="pen" text="breuius" type="straight"/>
+        <underline language="LA" method="pen" text="Vesembecius" type="straight"/>
+        <underline language="LA" method="pen" text="meam methodum rationemq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]stitui" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Sed cum uberius quàm             Cuiacius, breuius alicubi quàm Vesembecius fecit, haec nostra proposita &amp; ad meam methodum              rationemq[ue]"/>
+        <mark method="pen" name="dash" place="intext"/> <!-- Cu-iacij -->
+        <mark method="pen" name="dot" place="intext"/> <!-- Vesembecij, quae -->
+        <mark method="pen" name="dot" place="intext"/> <!-- Cuiacius, breuius -->
+        <mark method="pen" name="dot" place="intext"/> <!-- fecit, haec -->
+        <mark method="pen" name="semicolon" place="intext"/> <!-- proposita & -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="meam methodum rationemq[ue]"/>
+        
+    </annotation>
+</transcription>

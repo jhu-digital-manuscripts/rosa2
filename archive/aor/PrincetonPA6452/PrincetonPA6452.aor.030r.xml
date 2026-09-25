@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.030r.tif" pagination="43" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Priuatarum rationum respectus semper officit consilijs publicis.
+                        Oeconomica argumenta vincunt politica. Maximus semper consiliorum Elenchus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Regard for personal considerations always hinders public counsels.
+                Domestic-economical arguments triumph over political. Always the strongest argument against counsels.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="negare ultra decipi" type="straight"/>
+        <underline language="LA" method="pen" text="ni praestaretur fides publica" type="straight"/>
+        <underline language="LA" method="pen" text="libertatem unicuiq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="patria ciuibusq[ue], non pro dominis pugnent" type="straight"/>
+        <underline language="LA" method="pen" text="intra parietes curiae ferociter" type="straight"/>
+        <underline language="LA" method="pen" text="prius" type="straight"/>
+        <underline language="LA" method="pen" text="quàm ultima experirentur, senatum iteru[m] consulere" type="straight"/>
+        <underline language="LA" method="pen" text="acerrimi cuiusq[ue] arbitrio" type="straight"/>
+        <underline language="LA" method="pen" text="placet, rem agemus" type="straight"/>
+        <underline language="LA" method="pen" text="nihilo plus sanitatis in curia, quàm in foro esse" type="straight"/>
+        <underline language="LA" method="pen" text="dictatore[m], à quo prouocatio no[n] est, creemus" type="straight"/>
+        <underline language="LA" method="pen" text="hic, quo nunc omnia ardent, conticescet furor" type="straight"/>
+        <underline language="LA" method="pen" text="mihi lictore[m], qui sciet ius" type="straight"/>
+        <underline language="LA" method="pen" text="de tergo uitaq[ue] sua penes unum illum esse, cuius maiestatem uiolauit" type="straight"/>
+        <underline language="LA" method="pen" text="medium maximè" type="straight"/>
+        <underline language="LA" method="pen" text="moderatum utroq[ue] consilium Virginij habebatur" type="straight"/>
+        <underline language="LA" method="pen" text="factione, respectu[m]q[ue] rerum priuatarum" type="straight"/>
+        <underline language="LA" method="pen" text="quae semper officere, officientq[ue] publicis consilijs" type="straight"/>
+        <underline language="LA" method="pen" text="imperium suo uehemens mansueto" type="straight"/>
+        
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--co[n]su-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--sa-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="fides"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="mansueto"/>
+        
+    </annotation>
+</transcription>

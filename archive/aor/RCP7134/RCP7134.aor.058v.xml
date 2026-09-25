@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.058v.tif" pagination="[51v]" reader="John Dee" signature="[N iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Stellae maximae &amp; lucidae, honores &amp; dignitates praestant, mediocres &amp; minus lucidae, diuitias, paruae ingeniu[m], si lucidae sint. ut enim magnu[m] lumen nos impedit â studijs" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="180" place="left_margin">
+                    <marginalia_text>Regula general[is].</marginalia_text>
+                </position>
+            </language>
+            <translation>General rule.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Stellae maximae &amp; lucidae, honores &amp; dignitates praestant, mediocres &amp; minus lucidae, diuitias, paruae ingeniu[m], si lucidae sint. ut enim magnu[m] lumen nos impedit â studijs" type="straight"/>
+        <underline language="LA" method="pen" text="ingenium" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; quae in rictu Capricorni, ingenium praeclarum, sunt e[ni]m minimae" type="straight"/>
+        <underline language="LA" method="pen" text="Saturni ac Veneris" type="straight"/>
+                
+        <symbol language="LA" name="Saturn" place="left_margin" text="Saturni"/>
+        <symbol language="LA" name="Venus" place="left_margin" text="Veneris"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Stellae maximae &amp; lucidae, honores &amp; dignitates praestant, mediocres &amp; minus lucidae, diuitias, paruae ingeniu[m], si lucidae sint. ut enim magnu[m] lumen nos impedit â studijs"/>
+        <mark language="LA" method="pen" name="bracket" place="intext" text="&amp; est pars decimaseptimae librae"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        
+        <numeral language="LA" place="intext" text="decimaseptima">18</numeral>
+        
+        
+    </annotation>
+</transcription>

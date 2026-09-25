@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.164v.tif" pagination="320" reader="John Dee" signature="[Dd iiij[v]]"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="Hinguar" type="straight"/>
+        <underline language="LA" method="pen" text="Hubba" type="straight"/>
+        <underline language="LA" method="pen" text="Lothbrocum" type="straight"/>
+        <underline language="LA" method="pen" text="Humbertus" type="straight"/>
+        <underline language="LA" method="pen" text="Ceolnothus" type="straight"/>
+        <underline language="LA" method="pen" text="eos Gytro quidam" type="straight"/>
+        
+        <graph book_orientation="0" method="pen" place="left_margin" type="genealogical_tree">
+            <node anchor_text="Lothbrocum" id="n1" person="Ragnar Lodbrok">Lothbrocus</node>
+            <node anchor_text="Hinguar" id="n2" person="Ivar the Boneless">Hinguar</node>
+            <node anchor_text="Hubba" id="n3" person="Ubba">Hubba</node>
+            <link from="n1" relationship="has_child" to="n2 n3"/>
+        </graph>
+        
+    </annotation>
+</transcription>

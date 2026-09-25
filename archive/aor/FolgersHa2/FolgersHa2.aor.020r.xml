@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.020r.tif" pagination="359" reader="Harvey"/>	<!-- ABO 024right -->
+    	<annotation>
+
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            				<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Vulgatum haud refert morarier. Commune: sed singulare. 
+                      			              </marginalia_text>
+            				</position>
+        			</language>
+        			<translation>
+        				It hardly matters that one attaches no value to a commonplace thing. Common: but singular. 
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Stratagema Oeconomicu[m] in extremis. Techna Dauidis, Vlyssis,
+    						Solonis, Bruti,
+    					</marginalia_text>
+    					<person name="King David"/>
+    					<person name="Odysseus"/>
+    					<person name="Solon"/>
+    					<person name="Marcus Junius Brutus the Younger"/>	
+    				</position>
+    			</language>
+    			<translation>
+    				A methodical stratagem at the last moment. The skill of David, Ulysses, Solon, Brutus, <!-- Marginalia does not appear to continue elsewhere. -->
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						La Cortizana, commune lingua d'Italia.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Courtly speech, the common language of Italy.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						{ Discursus non curo: curo
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<language ident="EL">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						πραγματείας.	<!-- Greek: pragmateias -->
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						Volo esse Orator: sed energeticus.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				{ I care not for discourse: I care for deeds. I want to be an Orator: but energetical.	
+    			</translation>
+    		</marginalia>
+    		
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="90" place="left_margin">
+    					<marginalia_text>
+    						Nemo tantum discurrat tam pressè: aut sciat tam strictè: aut agat
+    						tam dextrè.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				No one ever speaks at length so deliberately, or understands so quickly, or acts so skillyfully.
+    			</translation>
+    		</marginalia>
+    		
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="270" place="right_margin">
+    					<marginalia_text>
+    						{ Elegantissimus mundi Discursor: sed strictissimus:
+    						Efficacissimus omnium Actor: sed rapidissimus.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				{ The most elegant Speaker of the world, but most brief;
+    				The most efficient actor of all, but most quick.
+    			</translation>
+    		</marginalia>
+        
+    		<underline language="IT" method="pen" text="da noiosa inquietudine, ch'i fanciulli mi dauano" type="straight"/>
+    		<underline language="IT" method="pen" text="costretto tornare alla presente" type="straight"/>
+    		<underline language="IT" method="pen" text="co[m]mune miseria di uita" type="straight"/>
+    		<underline language="IT" method="pen" text="Giudicioso" type="straight"/>
+    		<underline language="IT" method="pen" text="un prelato" type="straight"/>
+    		<underline language="IT" method="pen" text="desinare molti suoi amici" type="straight"/>
+    		<underline language="IT" method="pen" text="della perfettione" type="straight"/>
+    		<underline language="IT" method="pen" text="imperfettione delle lingue d'Italia, et da" type="straight"/>
+    		<underline language="IT" method="pen" text="i Bergamaschi" type="straight"/>
+    		<underline language="IT" method="pen" text="parola OCCHI" type="straight"/>
+    		<underline language="IT" method="pen" text="ogi" type="straight"/>
+    		<underline language="IT" method="pen" text="oci" type="straight"/>
+    		<underline language="IT" method="pen" text="oghi" type="straight"/>
+    		<underline language="IT" method="pen" text="gentil prelato" type="straight"/>
+    		<underline language="IT" method="pen" text="di si basso ragionamento" type="straight"/>
+    		<underline language="IT" method="pen" text="io ui leuerò" type="straight"/>
+    		<underline language="IT" method="pen" text="questa contesa" type="straight"/>
+    		<underline language="IT" method="pen" text="chiamato a se un suo credentiere Bergamasco" type="straight"/>
+    		<underline language="IT" method="pen" text="dar sentenza" type="straight"/>
+    		<underline language="IT" method="pen" text="terminare questa quistione" type="straight"/>
+    		<underline language="IT" method="pen" text="parola occhi" type="straight"/>
+    		<underline language="IT" method="pen" text="Bergamascamente" type="straight"/>
+    		<underline language="IT" method="pen" text="come se scriua" type="straight"/>
+    		<underline language="IT" method="pen" text="mi sò be cert" type="straight"/>
+    		<underline language="IT" method="pen" text="te uegna el cancher" type="straight"/>
+    		<underline language="IT" method="pen" text="te iocchi" type="straight"/>
+    		<underline language="IT" method="pen" text="inetta risposta" type="straight"/>
+    		<underline language="IT" method="pen" text="piaceuol riso" type="straight"/>
+    		<underline language="IT" method="pen" text="di por fine a si debil contesa" type="straight"/>
+    		<underline language="IT" method="pen" text="Claudio Tolomei parlando" type="straight"/>
+    		<underline language="IT" method="pen" text="fusse" type="straight"/>
+    		<underline language="IT" method="pen" text="priuo di due gran uitij" type="straight"/>
+    		<underline language="IT" method="pen" text="sarebbe stato il più uitioso" type="straight"/>
+    		<underline language="IT" method="pen" text="l'auaritia" type="straight"/>
+    		<underline language="IT" method="pen" text="crudeltà" type="straight"/>
+    		<underline language="IT" method="pen" text="auaritia di quel" type="straight"/>
+    		<underline language="IT" method="pen" text="comperar' infiniti stupri" type="straight"/>
+
+	    	<symbol name="JC" place="intext"/>
+
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- fanciul -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- ha -->
+    		<mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- io no[n] ha -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- perfettione, e -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- ragiona -->
+    		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- io ui leue -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- credentie -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- piace -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- no -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/>
+    		<mark method="pen" name="plus_sign" place="right_margin"/>
+    		
+	    	<mark method="pen" name="plus_sign" place="left_margin"/> <!-- uea disegnato  -->
+    		<mark method="pen" name="bracket" place="left_margin"/>
+    		<mark method="pen" name="bracket" place="left_margin"/>
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- auaritia -->
+		    
+	    	<mark method="pen" name="straight_quotation_mark" place="intext"/> <!-- miseria di uita -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Giudicioso."/>
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- lingue d'Italia -->
+    		<mark method="pen" name="dot" place="intext"/> <!--Italia, et-->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Bergamaschi"/>
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- basso ragiona -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- s'interpose, dicendo -->
+    		<mark method="pen" name="straight_quotation_mark" place="intext"/> <!-- credentiere Bergamasco -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- quistione, dicendo -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Bergamascamente"/>
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- debil contesa. -->
+    		<mark method="pen" name="straight_quotation_mark" place="intext"/> <!-- priuo di -->
+    		<mark method="pen" name="dot" place="intext"/>
+        <!--di-->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="auaritia"/>
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="crudeltà"/>
+    		<mark method="pen" name="vertical_bar" place="intext"/> <!-- crudelta'. Voleua -->
+    		<mark method="pen" name="comma" place="intext"/> <!-- tale non -->
+    </annotation>
+</transcription>

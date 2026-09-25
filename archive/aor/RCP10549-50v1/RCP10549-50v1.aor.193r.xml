@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.193r.tif" pagination="365" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="literis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Liter[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Letters.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex his studiis delectatio sola peteretur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Delectatio sola no[n] ex litteris petitur. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Entertainment is not the sole aim of reading.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="studia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Studia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Studies.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="neque attingere, neque sensu nostro gustare" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        attingere gustare sensu n[ost]ro. ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To attain and to taste with our sense.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Roscii" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Rostius
+                    </marginalia_text>
+                    <person name="Quintus Roscius Gallus"/>
+                </position>
+            </language>
+            <translation>
+                Quintus Roscius Gallus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        À maiori
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Generally.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Archiam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Archias
+                    </marginalia_text>
+                    <person name="Aulus Licinius Archias"/>
+                </position>
+            </language>
+            <translation>
+                Aulus Licinius Archias.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dicere extempore" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        dicere extempore
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To speak of our time.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Copia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Abundance.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="accurate, cogitatéque scripsisset" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        scribere accuratè cogitate.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To write accurately and deliberately.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="studia, &amp; doctrina, &amp; praeceptis, &amp; arte constare" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        studia co[n]sta[n]t {arte p[rae]ceptis doctrina
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The arts consist of technique, formula and science.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="poetam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        POETÆ.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Poets.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ennius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ENNIVS
+                    </marginalia_text>
+                    <person name="Ennius"/>
+                </position>
+            </language>
+            <translation>
+                Ennius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="barbaria" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        barbaria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Barbarity.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        À maiori
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Generally.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Homeru[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Homerus
+                    </marginalia_text>
+                    <person name="Homer"/>
+                </position>
+            </language>
+            <translation>
+                Homer.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="delubrum " hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        delubrum homeri
+                    </marginalia_text>
+                    <person name="Homer"/>
+                </position>
+            </language>
+            <translation>
+                Sanctuary of Homer.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        À maiori.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Generally.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tam auersus à Musis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        tam auersus à musis
+                    </marginalia_text>
+                    <person name="Muses"/>
+                </position>
+            </language>
+            <translation>
+                So averse to the Muses.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Themistoclem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Themistocles.
+                    </marginalia_text>
+                    <person name="Themistocles"/>
+                </position>
+            </language>
+            <translation>
+                Themistocles.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="L. Plotiu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        L. Plotius.
+                    </marginalia_text>
+                    <person name="Lucius Voltacilius Plotius"/>
+                </position>
+            </language>
+            <translation>
+                Lucius Voltacilius Plotius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="libri" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        L Plotij Libri.
+                    </marginalia_text>
+                    <person name="Lucius Voltacilius Plotius"/>
+                </position>
+            </language>
+            <translation>
+                The books of L. Plotius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lucullo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Lucullus
+                    </marginalia_text>
+                    <person name="Lucius Licinius Lucullus"/>
+                </position>
+            </language>
+            <translation>
+                Lucius Licinius Lucullus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="trophaea, nostra monimenta, nostri triumphi" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Trophea monime[n]ta triumphi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Trophies, monuments, triumphs.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="marmoratis laudibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        marmoratis laudibus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A praise set in marble.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="L. Furium modestissimos homines &amp; contine[n]tissimos" type="straight"/>
+        <underline language="LA" method="pen" text="doctissimu[m] Catonem illum senem" type="straight"/>
+        <underline language="LA" method="pen" text="nihil ad percipiendam cole[n]dámque virtutem literis adiuuare[n]tur, nu[m]quam se ad earu[m] studium" type="straight"/>
+        <underline language="LA" method="pen" text="delectatio sola peteretur" type="straight"/>
+        <underline language="LA" method="pen" text="hanc animi remissione[m] humanissima[m] ac liberalissima[m] iudicaretis. nam caeterae neque temporu[m] sunt, neque aetatum omnium, neque locoru[m].              Haec studia adolescentiam alunt, senectutem oblectant, secu[n]das res ornant, aduersis perfugium ac solatium praebent, delectant domi, no[n] impediunt foris, pernoctant nobiscum, peregrinantur, rusticantur" type="straight"/>
+        <underline language="LA" method="pen" text="Quòd si ipsi haec neque attingere, neque sensu nostro gustare possemus: tamen ea mirari deberemus, etia[m] cum in aliis videremus.              Quis nostru[m] tam animo agresti ac duro fuit, vt Roscii morte nuper non commoueretur? qui cum esset senex mortuus, tamen propter excellentem artem ac venustatem, videbatur omnino mori no[n] debuisse.              Ergo ille corporis motu tantum amorem sibi conciliarat à nobis omnibus, nos animoru[m] incredibiles motus, celeritatémque ingenioru[m] negligemus?" type="straight"/>
+        <underline language="LA" method="pen" text="quoties ego hunc vidi, cum literam scripsisset nullam, magnum numerum optimoru[m] versuum de his ipsis rebus quae tum agerentur dicere extempore?" type="straight"/>
+        <underline language="LA" method="pen" text="quoties reuocatum eandem rem dicere co[m]mutatis verbis, atque sententiis? quae vero accurate, cogitatéque scripsisset, ea sic vidi probari,              vt ad veterum scriptoru[m] laudem" type="straight"/>
+        <underline language="LA" method="pen" text="caeteraru[m] reru[m] studia, &amp; doctrina, &amp; praeceptis, &amp; arte constare: poetam natura ipsa valere, &amp; mentis viribus excitari,              &amp; quasi diuino quodam spiritu afflari. Quare suo iure noster ille Ennius sanctos appellat poetas, quòd quasi deorum aliquo dono atque munere co[m]mendati nobis esse videantur" type="straight"/>
+        <underline language="LA" method="pen" text="apud vos humanissimos homines" type="straight"/>
+        <underline language="LA" method="pen" text="nulla vnquam barbaria" type="straight"/>
+        <underline language="LA" method="pen" text="Saxa &amp; solitudines voce respondent, bestiae saepe immanes, cantu flectuntur atque co[n]sistunt: nos instituti rebus optimis no[n] poetarum voce moueamur?" type="straight"/>
+        <underline language="LA" method="pen" text="itáque etiam delubrum eius in oppido dedicauerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Ergo illi alienum, quia poeta fuit, post morte[m] etia[m] expetunt: nos hunc viuum qui &amp; voluntate &amp; legibus noster est, repudiabimus:              praesertim cu[m] omne olim studiu[m], atque omne ingenium contulerit Archias ad Pop. Ro. gloriam, laudémque celebra[n]dam?" type="straight"/>
+        <underline language="LA" method="pen" text="quisqua[m] est tam auersus à Musis, qui no[n] mandari versibus aeternum suoru[m] laborum facile" type="straight"/>
+        <underline language="LA" method="pen" text="Eius, à quo sua virtus optime praedicaretur" type="straight"/>
+        <underline language="LA" method="pen" text="Mithridaticu[m] vero bellum magnum atque difficile, &amp; in multa varietate terra, maríque versatum, totu[m] ab hoc expressum est. qui" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+        <drawing anchor_text="Littera[e]" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        <drawing anchor_text="Studia" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="church"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>1</illustrations>
+    <totalPages>104</totalPages>
+    <dimensions units="">
+        <width>-1</width>
+        <height>-1</height>
+    </dimensions>
+    <dates>
+        <startDate>1500</startDate>
+        <endDate>1600</endDate>
+    </dates>
+    <texts>
+        <text id="">
+            <language>fr</language>
+            <title>Extraits</title>
+            <textId/>
+            <pages end="42v" start="1r">42</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="roseextrait">
+            <language>fr</language>
+            <title>Extrait du Roman de la Rose</title>
+            <textId/>
+            <pages end="42v" start="42v">1</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>16</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="">
+            <language>fr</language>
+            <title>Extraits</title>
+            <textId/>
+            <pages end="104v" start="42v">99</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Français 3939</commonName>
+            <dateLabel>16th century</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 3939</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Français 3939</commonName>
+            <dateLabel>16e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>papier</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 3939</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

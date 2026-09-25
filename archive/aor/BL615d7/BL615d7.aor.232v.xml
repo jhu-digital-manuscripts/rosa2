@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.232v.tif" pagination="[232v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>A mutinie</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="per l infermità della gotta" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Christofer Colon his gowt</marginalia_text>
+                    <person name="Columbus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Commendator Lares" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lares</marginalia_text>
+                    <person name="Nicolas de Ovando"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="per obedientia del suo essiglio" type="straight"/>
+        <underline language="IT" method="pen" text="per l infermità della" type="straight"/>
+        <underline language="IT" method="pen" text="che in tutte le" type="straight"/>
+        <underline language="IT" method="pen" text="Commendator Lares" type="straight"/>
+        <underline language="IT" method="pen" text="Tesorier Morales" type="straight"/>
+        
+    </annotation>
+</transcription>

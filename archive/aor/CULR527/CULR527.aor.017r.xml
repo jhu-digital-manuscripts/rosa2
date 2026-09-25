@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.017r.tif" pagination="17" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="certitudine principiorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Certitudo principorum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Certainty of the principles.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quoniam particularis, quam mathematicus considerat, amplius demonstrare non potest,              quàm formam &amp; eius diffinitionem: &amp; diffinitio formalis, Paulo Veneto testante, est illa qua[e] non habet medium sua[e] demonstrationis." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mathematicum particularem solu[m] demonstratione[m] co[n]siderare q[uod] falsu[m] est.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Because it's wrong that a mathematician considers only one particular demonstration.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="simul scitur quia, &amp; propter quid" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Simul q[ui]a et p[ro]pter quid
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                At the same time because and on account of which.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quia certitudo" type="double"/>
+        <underline language="LA" method="pen" text="cognitionis, è certitudine principiorum dependet" type="straight"/>
+        <underline language="LA" method="pen" text="mathematicus considerat, amplius demonstrare non potest quàm formam &amp; eius diffinitionem: &amp; diffinitio formalis, Paulo" type="straight"/>
+        <underline language="LA" method="pen" text="essentiale" type="straight"/>
+        <underline language="LA" method="pen" text="scitur quia" type="straight"/>
+        <underline language="LA" method="pen" text="propter" type="straight"/>
+        <underline language="LA" method="pen" text="hoc &amp; aliud scitur" type="straight"/>
+        <underline language="LA" method="pen" text="quam hoc" type="straight"/>
+
+    </annotation>
+</transcription>

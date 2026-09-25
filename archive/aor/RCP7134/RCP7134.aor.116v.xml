@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.116v.tif" pagination="[109v]" reader="John Dee" signature="[ee[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Alij ponu[n]t 1500 feb. 23. hor 15 m[inutae] 30 alij 40. [Gandavi] 
+                    Asc. vel 9 vel 10 ♑. ☾: 6: m[inutae]: 51: ♑
+                    Alij ponu[n]t 21 ♑ asc. et ☾ in 8 ♉. m[inutae] 7 ♑</marginalia_text> <!--JG: Unsure about Gandavi and horae (is Taurus symbol??)--> <!-- FSF: I think it is a taurus symbol; not sure about Gandavi -->
+                    <symbol_in_text name="Capricorn"/>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Taurus"/>
+                </position>
+            </language>
+            <translation>Others put 23 February, 1500, 15 hours [and] 30 minutes, others 30/40. The ascendant 9 or 10 [degrees] Capricorn. The Moon 6 [degrees] 51 minutes Capricorn. Others put 21 Capricorn [as] the ascendant and the moon 8 hours, 7 minutes Capricorn.</translation>
+        </marginalia>
+        
+        <errata amendedtext="23" copytext="24" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="22.16" language="LA"/>
+        
+    </annotation>
+</transcription>

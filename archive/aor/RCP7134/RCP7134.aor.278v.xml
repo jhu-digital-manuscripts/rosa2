@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.278v.tif" pagination="[271v]" reader="John Dee" signature="[YY iij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>De Arte exercitationeq[ue]</marginalia_text> 
+                </position>
+            </language>
+            <translation>On the art and training.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Difficultas Iudicij in arte notanda</marginalia_text>
+                </position>
+            </language>
+            <translation>The difficulty of a judgment in the art which must be observed.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Saturni Martis &amp; Mercurij constitutio" type="straight"/>
+        <underline language="LA" method="pen" text="Signa etiam artes ex se decernunt per genera" type="straight"/>
+        <underline language="LA" method="pen" text="regionis" type="straight"/>
+        <underline language="LA" method="pen" text="loci" type="straight"/>
+        <underline language="LA" method="pen" text="familiae" type="straight"/>
+        <underline language="LA" method="pen" text="patris" type="straight"/>
+        <underline language="LA" method="pen" text="religionis" type="straight"/>
+        <underline language="LA" method="pen" text="opum'q[ue]" type="straight"/> 
+        
+    </annotation>
+</transcription>

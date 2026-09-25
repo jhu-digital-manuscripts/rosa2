@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.340r.tif" pagination="11" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="dicitant fracto animo" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="head">
+                    <marginalia_text>a[n]i[m]o { fracto demisso abiecto</marginalia_text>                
+                </position>
+            </language>
+            <translation>With a broken spirit. With a downcast spirit. With an abject spirit</translation>   
+        </marginalia>
+  
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iudicat Domum sua[m] impe[n]diis Reip[ublicis] extructa[m].</marginalia_text>               
+                </position>
+            </language>
+            <translation>He appraises his house built with public expense.</translation> <!-- NBW: Doesn't quite track  with the passage, which talks about him ordering a monument built...-->  
+        </marginalia>
+        
+        <marginalia anchor_text="medici: sed etiam, vt aliptae" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Medici. Aliptae</marginalia_text>                
+                </position>
+            </language>
+            <translation>Doctors. Trainers.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Apelles" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Apelles.</marginalia_text>                
+                    <person name="Apelles"/>
+                </position>
+            </language>
+            <translation>Apelles.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Q. Metello" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Q. Metellus.</marginalia_text>                
+                    <person name="Quintus Caecilius Metellus Numidicus"/>
+                </position>
+            </language>
+            <translation>Quintus Caecilus Metellus Numidicus.</translation>  
+        </marginalia>
+  
+        <marginalia anchor_text="Scaurum" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>M Scaurus.</marginalia_text>                
+                    <person name="Marcus Aemilius Scaurus"/>
+                </position>
+            </language>
+            <translation>Marcus Aemilius Scaurus.</translation>  
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ciceronis Reditus.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>The return of Cicero.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="maleuolentissimum" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>maleuolentiss[imus] sup[ra].</marginalia_text> <!-- NBW: unclear to what this refers to -->                
+                </position>
+            </language>
+            <translation>The most wicked, see above.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="meae vitae cursus" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vitae cursus</marginalia_text>                
+                </position>
+            </language>
+            <translation>A way of life.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="non in postremis" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>in postremiis.</marginalia_text>                
+                </position>
+            </language>
+            <translation>Of lesser value.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="non solum fronte, atque vultu" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vultu, fronte, simulatio facile sustinetur.</marginalia_text>
+                </position>
+            </language>
+            <translation>Deceit is easily portayed in the face, the expression.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="&amp; sententia &amp; voluntas mutata esse debet" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mutatio consilii</marginalia_text>                
+                </position>
+            </language>
+            <translation>A change of counsel.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Plato" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Plato.</marginalia_text>                
+                    <person name="Plato"/>
+                </position>
+            </language>
+            <translation>Plato.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="senectute" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Senectus.</marginalia_text>                
+                </position>
+            </language>
+            <translation>Old age.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Vatinio" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vatinius.</marginalia_text>                
+                    <person name="Publius Vatinius"/>
+                </position>
+            </language>
+            <translation>Publius Vatinius.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Catonis" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cato.</marginalia_text>                
+                    <person name="Cato the Younger"/>
+                </position>
+            </language>
+            <translation>Cato the Younger.</translation>  
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="non enim illae manubiae meae, sed" type="straight"/>
+        <underline language="LA" method="pen" text="quemadmodum medici: sed etiam, vt aliptae, virium, &amp; coloris rationem habere voluissent" type="straight"/>
+        <underline language="LA" method="pen" text="in capite meo solu[m] elaborarunt, reliquum" type="straight"/>
+        <underline language="LA" method="pen" text="falsam opinionem acceperunt" type="straight"/>
+        <underline language="LA" method="pen" text="dictitant fracto animo, &amp; demisso fuisse" type="straight"/>
+        <underline language="LA" method="pen" text="abiectiore animo" type="straight"/>
+        <underline language="LA" method="pen" text="promulgantibus omnibus" type="straight"/>
+        <underline language="LA" method="pen" text="maleuolentissimum iure" type="straight"/>
+        <underline language="LA" method="pen" text="tantum enitor, vt neque amicis, neque etiam alienoribus, opera, consilio, labore desim." type="straight"/>
+        <underline language="LA" method="pen" text="offendit eos fortasse qui splendorem &amp; speciem huius vitae intuentur, solicitudinem autem &amp; labore[m] perspicere non possunt. illud verò non obscure queruntur" type="straight"/>
+        <underline language="LA" method="pen" text="tum hoc non in postremis" type="straight"/>
+        <underline language="LA" method="pen" text="non solum fronte, aqtue vultu, quibus simulatio" type="straight"/>
+        <underline language="LA" method="pen" text="Itaque tota iam sapientium ciuium, qualem me &amp; esse &amp; numerari volo, &amp; sententia &amp; voluntas mutata esse debet. Id enim iubet" type="straight"/>
+        <underline language="LA" method="pen" text="quantum probare tuis ciuibus possis: vim neque parenti, nec patriae afferre oportere" type="straight"/>
+        <underline language="LA" method="pen" text="Atheniensem propè iam desipientem senectute, cúmque eum nec persuadendo, nec cogendo regi posse vidisset, cum persuaderi posse diffideret, cogi fas esse non arbitraretur" type="straight"/>
+        <underline language="LA" method="pen" text="implicatus tenebar." type="straight"/>
+        <underline language="LA" method="pen" text="Huc accessit" type="straight"/>
+        <underline language="LA" method="pen" text="cum à vobis meae salutis authoribus discesserim, neminem esse, cuius officiis me tam esse deuinctum non solum confitear, sed etia[m] gaudeam" type="straight"/>
+        <underline language="LA" method="pen" text="grauissimis in senatu sententiis oppugnassem," type="straight"/>
+        <underline language="LA" method="pen" text="me néve in hoc reo, néve in aliis requiras" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>      
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <drawing anchor_text="Medici. Aliptae" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>  
+        <drawing anchor_text="Apelles" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Mutatio consilii" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Senectus" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.057v.tif" pagination="[50v]" reader="John Dee" signature="[N ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Harum igitur Alfridariarum, si genitura diurna sit; Si autem nocturna" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vide tabulas co[mmun]es Alfridariaru[m] pro diurnis et nocturnis genituris.</marginalia_text> 
+                </position>
+            </language>
+            <translation>See the common tables of alfridaries for the daily and nocturnal genitures.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Qua r[ati]o[n]e plurimi senes velle sua[m] senecta[m] transiga[n]t</marginalia_text>  
+                </position>
+            </language>
+            <translation>For what reason many old men finish to want their old age.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary"> <!-- FSF: possibly anchor domini, generalis & proprius -->
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Generale[m] intelligit septennij dominu[m] propriu[m] vocat [asseptum] sociu[m].</marginalia_text> 
+                </position>
+            </language>
+            <translation>He understands the general master of the seven years. He calls...</translation> <!--JG: Unsure--> <!-- FSF: He calls him an encircled ally; I have no idea -->
+        </marginalia>
+        
+        <marginalia anchor_text="Directio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Directio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Direction.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="ingenij" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ingenium.</marginalia_text>
+                </position>
+            </language>
+            <translation>Innate quality.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="honoris" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Honor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Honour.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="laborum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Labor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Labour.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>procreatio liberor[um]</marginalia_text>
+                </position>
+            </language>
+            <translation>The begetting of children.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Diuiti[a]e.</marginalia_text>
+                </position>
+            </language>
+            <translation>Riches.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>morsus</marginalia_text> 
+                </position>
+            </language>
+            <translation>Sting.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>eius anni</marginalia_text>
+                </position>
+            </language>
+            <translation>Of this year.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Alfridariarum, si genitura diurna sit, primus annus Soli, secundus Veneri, tertius Mercurio, sic'q[ue] descendendo" type="straight"/>
+        <underline language="LA" method="pen" text="sit: Si autem nocturna, primus Lunae, secundus Mercurio" type="straight"/>
+        <underline language="LA" method="pen" text="sic ascendendo, donec Saturnus ultimus sit, dedicatur" type="straight"/>
+        <underline language="LA" method="pen" text="rem ultimi climactrici, semper sunt infortunarum" type="straight"/>
+        <underline language="LA" method="pen" text="utroq[ue] subscribente iam aetate frigida &amp; sicca, maxime periculosi sint. Si tamen Saturnus in nocturna, aut Mars in diurna dominentur principalibus uitae locis, nunq[uam] melius se habebunt, quam his temporibus" type="straight"/>
+        <underline language="LA" method="pen" text="comes" type="straight"/>
+        <underline language="LA" method="pen" text="Cum uero ambo domini, generalis &amp; proprius" type="straight"/>
+        <underline language="LA" method="pen" text="dispositi fuerint, natus bene uiuet, etiam si directio mala occurrat, &amp; quae mortem significet, poterit enim anno integro produci uita" type="straight"/>
+        <underline language="LA" method="pen" text="minimu[m] aute[m] in diuitijs" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="utroque subscribente iam aetate frigida &amp; sicca, maxime periculosi sint. Si tamen Saturnus in nocturna, aut Mars in diurna dominentur principalibus uitae locis, nunq[uam] melius se habebunt, quam his temporibus"/>
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Cum uero ambo domini, generalis &amp; proprius, bene dispositi fuerint, natus bene uiuet, etiam si directio mala occurrat, &amp; quae mortem significet, poterit enim anno integro produci uita"/>
+        <mark method="pen" name="section_sign" place="intext"/>
+        
+        
+    </annotation>
+</transcription>

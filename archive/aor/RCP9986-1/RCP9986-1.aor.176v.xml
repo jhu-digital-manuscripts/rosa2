@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.176v.tif" pagination="[177v]" reader="John Dee" signature="[Z.j.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="Scripta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Scripta</marginalia_text>
+                </position>
+            </language>
+            <translation>Writings.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Scripta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>loca</marginalia_text>
+                </position>
+            </language>
+            <translation>Places.</translation>
+        </marginalia>
+       
+        <underline language="LA" method="pen" text="Exiguum est" type="straight"/>
+        <underline language="LA" method="pen" text="Exiguum" type="straight"/>
+        <underline language="LA" method="pen" text="quid imagine muta Carperis" type="straight"/>
+        <underline language="LA" method="pen" text="Admonitu reuocatur amor" type="straight"/>
+        <underline language="LA" method="pen" text="Flamma redardescet" type="straight"/>
+        
+        <symbol name="Taurus" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+           
+    </annotation>
+</transcription>

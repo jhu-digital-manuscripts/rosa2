@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.023r.tif" pagination="35" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="VVilhelmus de Mortuomari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>D[omi]n[u]s Wil[he]lmus de mortuo mari miles.</marginalia_text>
+                    <person name="William de Mortimer"/>
+                </position>
+            </language>
+            <translation>Lord William de Mortimer, a soldier.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="VVilhelmus de Mortuomari" type="straight"/>
+        <underline language="LA" method="pen" text="alijs militibus" type="straight"/>
+        
+    </annotation>
+</transcription>

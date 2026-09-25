@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.103r.tif" pagination="29" reader="Harvey" signature="[B7r]"/>	<!-- ABO 107right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Articuli continua agitatione exercendi: sensusq[ue] similiter.
+						Eudoxi medici perpetua admonitio.
+					</marginalia_text>
+					<person name="Eudoxus"/>
+					<emphasis method="pen" text="continua agitatione exercendi" type="straight"/>
+					<emphasis method="pen" text="sensusq[ue] similiter" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The joints must be exercised with continuous movement: and the senses likewise.
+				The continual reminder of Eudoxus' doctor.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Articulorum, Sensuumq[ue] perennis agitatio.
+					</marginalia_text>
+					<emphasis method="pen" text="perennis agitatio" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The continual movement of joints and senses.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Singularis exercendi aphorismus: apud Laertiu[m],
+						in vita Eudoxi.
+					</marginalia_text>
+					<person name="Diogenes Laertius"/>
+					<person name="Eudoxus"/>
+					<emphasis method="pen" text="Singularis exercendi aphorismus" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The singular aphorism of exercising, according to Laertius in his life of Eudoxus.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Eudromi entelechia ante omnes.
+					</marginalia_text>
+					<person name="Eudromus"/>
+					<emphasis method="pen" text="Eudromi entelechia" type="straight"/>
+					<emphasis method="pen" text="Omnes" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The actualization of Eudromus before all things.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Animus est omnia. Mens super omnia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The rational soul is everything. The mind is above everything.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nihil omnia, nisi animus animosus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				All things are nothing, unless the soul is animated.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Omnis cura, hodierna: hesterna, nimis sera:
+						crastina, nimis cita. Sufficit cuiq[ue] diei sua cura.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Take care with everything daily; yesterday is too late,
+				tomorrow, rouse yourself excessively. Each day's own attention is sufficient for anyone.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Axiophili expeditum viaticu[m]. Seria vis hodierna: industria crastina sera.
+						Viua, potensq[ue] animi possessio, copia vita[e]. diuinum Arcanum.
+						Solum vita[e] ephodion, Viuus, potensq[ue] animus.
+					</marginalia_text>
+					<person name="Axiophilus"/>
+				</position>
+			</language>
+			<translation>
+				The ready viaticum of Axiophilus. Serious power is daily, tomorrow's industry is too slow.
+				A lively and firm possession of the mind is an abundance of life.  A divine secret.
+				The sole ephodion of life is a lively and firm mind.
+			</translation>
+		</marginalia>
+		
+		<marginalia anchor_text="possessio" hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						= pra[e]sentia,	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Presence.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Apostoli, nihil habentes viatici, nullo carebant viatico.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The Apostles, having no viaticum, lacked no viaticum. 
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="beuendo &amp; sguazzando, finì la sua vita" type="straight"/>
+		<underline language="IT" method="pen" text="L'Amore" type="straight"/>
+		<underline language="IT" method="pen" text="infiniti errori con" type="straight"/>
+		<underline language="IT" method="pen" text="LVIGI Alamanni" type="straight"/>
+		<underline language="IT" method="pen" text="fieramente innamorato far infinitie errori con" type="straight"/>
+		<underline language="IT" method="pen" text="farsi ridiculo à ogn'uno" type="straight"/>
+		<underline language="IT" method="pen" text="Amor" type="straight"/>
+		<underline language="IT" method="pen" text="nimico al buon consiglio" type="straight"/>
+		<underline language="IT" method="pen" text="stà sempre in guai" type="straight"/>
+		<underline language="IT" method="pen" text="donna adora il variabil ciglio" type="straight"/>
+		<underline language="IT" method="pen" text="l'huom sormontan gli" type="straight"/>
+		<underline language="IT" method="pen" text="scema il fauor, crescon gli affanni" type="straight"/>
+		<underline language="IT" method="pen" text="Principi à caualcare" type="straight"/>
+		<underline language="IT" method="pen" text="figliuoli" type="straight"/>
+		<underline language="IT" method="pen" text="de' Principi" type="straight"/>
+		<underline language="IT" method="pen" text="altro, che il caualcare" type="straight"/>
+		<underline language="IT" method="pen" text="adulandoli gli" type="straight"/>
+		<underline language="IT" method="pen" text="il cauallo che non" type="straight"/>
+		<underline language="IT" method="pen" text="saputamente non caualcassero" type="straight"/>
+		
+		<symbol name="Sun" place="intext"/>
+		
+		<mark language="LA" method="pen" name="plus_sign" place="left_margin" text="Articulorum, Sensuumq[ue] perennis agitatio."/>
+		<mark language="LA" method="pen" name="plus_sign" place="left_margin" text="Singularis exercendi aphorismus: apud Laertiu[m], in vita Eudoxi."/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--gen-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--grauissi-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--com-->
+		
+		<mark method="pen" name="circumflex" place="intext"/>
+		<mark method="pen" name="circumflex" place="intext"/>
+		<mark method="pen" name="circumflex" place="intext"/>
+		<mark method="pen" name="circumflex" place="intext"/>
+		<mark method="pen" name="dot" place="intext"/> <!--cose, ma-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="saputamente non caualcassero"/>
+
+    </annotation>
+</transcription>

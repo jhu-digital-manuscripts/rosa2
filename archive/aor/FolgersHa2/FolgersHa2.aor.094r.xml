@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.094r.tif" pagination="11" reader="Harvey" signature="[A6r]"/>	<!-- ABO 98right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Ex abundantia Cordis, os loquitur. È bibliotheca tui ipsius
+					</marginalia_text>
+					<X-ref book_title="Gospel of Matthew" language="LA" person="Matthew" text="ex abundantia enim cordis os loquitur"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						pectoris, peritissima[e] Sententia[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				"The mouth speaks due to the abundance of the heart." The most expert opinions
+				from the library of your very own breast.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						dilemma retortum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The dilemma of the retort.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Deficiente spiritu, aut etiam paulisper languescente;
+						statim omnia animi,
+						corporisq[ue] bona flaccescunt.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				By lacking in spirit, or even languishing for a little while,
+				all good things of the mind and body wither immediately.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) Quotidiè pra[e]stantior.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				More excellent every day.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Dimidium foelicitatis, Alacritas: et Virginitas,
+						immortalitatis dimidium. ex arcanis Eudromi.
+					</marginalia_text>
+					<person name="Eudromus"/>
+				</position>
+			</language>
+			<translation>
+				Half of happiness is cheerfulness, and half of immortality is virginity.
+				From the secrets of Eudromus.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						risoluto.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Resolute.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( Ex teipso auctore singula:
+						quotiès opus. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Single matters from you yourself as author: a daily task.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Citò perficitur, quod nauiter efficitur. Viru[m] probat virtus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whatever is diligently begun is immediately finished. Virtue proves the man.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Gnomologi multi: paucissimi Mimologi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				There are many who study wisdom [gnomologists], and few who study mimes [mimologists]. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Ex viva[e] mentis visceribus, fluentissima[e] sententia[e], et profundiss[im]a[e].
+						De viuo fonte quatuor Virtutu[m], Ethica[e]: quatuor Elementoru[m], Physica[e].
+					</marginalia_text>
+					<emphasis method="pen" text="viua[e] mentis visceribus" type="straight"/>
+					<emphasis method="pen" text="fluentissima[e] sententia[e]" type="straight"/>
+					<emphasis method="pen" text="profundiss[im]a[e]" type="straight"/>
+					<emphasis method="pen" text="quatuor Virtutu[m]" type="straight"/>
+					<emphasis method="pen" text="quatuor Elementoru[m], Physica[e]" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The most profound and flowing ideas from the innermost part of a living mind.
+				Ethics, regards the living source of the four Virtues; Physics, [regards the living source of] the four elements.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="persuado a' giudici" type="straight"/>
+		<underline language="IT" method="pen" text="pagherò cosa alcuna" type="straight"/>
+		<underline language="IT" method="pen" text="harrò vinta la" type="straight"/>
+		<underline language="IT" method="pen" text="gli persuado, &amp; io non ti" type="straight"/>
+		<underline language="IT" method="pen" text="non harrò imparato à persuadere" type="straight"/>
+		<underline language="IT" method="pen" text="ritorse il suo argumento" type="straight"/>
+		<underline language="IT" method="pen" text="se tu persuadi i" type="straight"/>	
+		<underline language="IT" method="pen" text="perderai meco la lite" type="straight"/>
+		<underline language="IT" method="pen" text="molte leggi" type="straight"/>
+		<underline language="IT" method="pen" text="vitij, perche" type="straight"/>
+		<underline language="IT" method="pen" text="con chi" type="straight"/>
+		<underline language="IT" method="pen" text="à mangiare, &amp; bere" type="straight"/>
+		<underline language="IT" method="pen" text="che quel" type="straight"/>
+		<underline language="IT" method="pen" text="viuer solo" type="straight"/>
+		<underline language="IT" method="pen" text="Vna volta siamo nati" type="straight"/>
+		<underline language="IT" method="pen" text="tu padrone del giorno di domani non" type="straight"/>
+		<underline language="IT" method="pen" text="voglia viuere hoggi allegramente" type="straight"/>
+		
+		<symbol name="LL" place="intext"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--persuade-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--so-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--be-->
+
+    </annotation>
+</transcription>

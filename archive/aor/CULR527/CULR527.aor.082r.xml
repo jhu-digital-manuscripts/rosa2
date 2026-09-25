@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.082r.tif" pagination="82" reader="John Dee" signature="Lij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ad unum solum punctum iret" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        horizo[n]tis 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                At the horizon.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="proficisceretur a minima vel maxima altitudine" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        sub vno Meridiano
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Under one Meridian.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="AEquatorem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        A[e]quator
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The equator.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="falsitatem acuum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Falsitas Acuum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The falsehood of the needles.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ducerent nos ad sese inuice[m] seca[n]dum: &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="punctum" type="double"/>
+        <underline language="LA" method="pen" text="iret, &amp; semper" type="straight"/>
+        <underline language="LA" method="pen" text="maxima" type="straight"/>
+        <underline language="LA" method="pen" text="sectiones no[n] sunt extra AEquatore[m]: imò circuli sunt minores, qui nihil secare possunt in ce[n]tro horizontis in partes aequales. Et si loca inuenta" type="straight"/>
+        <underline language="LA" method="pen" text="propter falsitatem" type="straight"/>
+        <underline language="LA" method="pen" text="propulsionem aquarum" type="straight"/>
+        <underline language="LA" method="pen" text="Et quum in longitudine melius aestimetur" type="straight"/>
+        <underline language="LA" method="pen" text="quam uerè" type="double"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/>  <!-- aphiae sectiones -->
+        
+        <errata amendedtext="d.c.e." copytext="d.e.c." language="LA"/>
+  
+    </annotation>
+</transcription>

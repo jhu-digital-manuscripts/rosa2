@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.178r.tif" pagination="95" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        &amp; hoc est ip[s]ius Ptolom[a]ei
+                    </marginalia_text>
+                    <person name="Ptolemy"/>
+                </position>
+            </language>
+            <translation>
+                And this is from that Ptolemy.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Habuit hoc Betheij aph. 79 
+                    </marginalia_text>
+                    <person name="Al-Battani"/>
+                </position>
+            </language>
+            <translation>
+                Al-Battani knows this, aphorism 79.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Hoc cardanus in suis aphor. repetit aliter. fo 258.b.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Cardanus repeats this in his aphorisms differently. Folio 258 b.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        De tempore eventuum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                On the time of the events
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Concordia planetarum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Concurrence of the planets.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fuerit in primo gradu Cancri" type="straight"/>
+        <underline language="LA" method="pen" text="Qui emerit aliquid Luna à capite Cancri, usq[ue] in finem Sagittarii, emet care, uendet'q[ue] uiliter,              econuerso aute[m], cum fuerit à principio Capricorni usq[ue] in fine[m] Geminorum" type="straight"/>
+        <underline language="LA" method="pen" text="circuncisio" type="straight"/>
+        <underline language="LA" method="pen" text="Cuicunq[ue] fuerit Mercurius in duodecima, erit sapiens, magnus'q[ue] philosophus" type="straight"/>
+        <underline language="LA" method="pen" text="indicat nato uitae paucitatem" type="straight"/>
+        <underline language="LA" method="pen" text="haec significatio est super res magnas" type="straight"/>
+        <underline language="LA" method="pen" text="hoc autem sapientes experti sunt" type="straight"/>
+        <underline language="LA" method="pen" text="Cuiuscunq[ue] planetarum natura superior fuerit, no[n] cessabit eius actus, usquequo' sit ibidem eius contrarium" type="straight"/>
+        <underline language="LA" method="pen" text="In itineribus signa fixa uituperantur, mobilia uero commendantur" type="dotted"/>
+        <underline language="LA" method="pen" text="&amp; in signo co[n]trario suae naturae, infert significatori malum, quod nullus curare poterit, nisi solus deus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; est asce[n]sio duaru[m] partiu[m] in parte una" type="straight"/>
+        
+        <symbol language="LA" name="Mercury" place="right_margin" text="Mercurius"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.049r.tif" reader="Harvey" signature="Fii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Joannes Damascenus, qui uixit te[m]pore Theodosij, et Vale[n]tiniani Imp. habuit apud se 
+                    discipulu[m] Persicu[m], que[m] diligeter erudiebat. Is finxit epistola[m] nomine Jo. Damasceni, cuius manu[m] imitari poterat, hoc argume[n]to:
+                    Ego Jo. Damascenus significo Regi persico, ut, si uelit, ueniat: iam posse cu[m] capere Imp. Vale[n]tinianu[m], proper alias atq[ue] alias occasiones. 
+                    Ha[e]c epistola</marginalia_text> <!--JG: Seems to me that Harveu copied this from somewhere..but what is his source?-->
+                    <person name="John of Damascus"/>
+                    <person name="Theodosius II"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>spargebat[u]r in Aula Regis perfici; qua[m] sibi oblatu[m], mox Imperatori misit. Imp. ad se uocans 
+                    Damascenu[m] mo[n]strauit illi Literas, rogauitq[ue] quare scripsisset,</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Ille dilige[n]ter inspiciens, dixit;</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Domine Imp.</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>agnosco mea[m] manu[m], nec possu[m]</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>eam negare: sed sanctè iuro, me nihil unq[uam] tale cogitasse, nedu[m] scripsisse.
+                    Cui Imp: no[n] potes negare: manus est tua: Ità homo victus, dextra manu est mutilatus. Talem
+                    Talem pra[e]ceptori gratiam vafer discipulus reposuit.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Unico Aretino, to discredit Jo. della</marginalia_text>
+                    <person name="Bernardo Accolti"/>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Casa, A reuerend</marginalia_text>
+                    <person name="Giovanni della Casa"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>bysshop of good</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>reputation; published</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>in his name An Eloquent
+                        , &amp; witty Apology of Buggery: as on speciall work of his famous eloquence, &amp; Lerning. <!--JG: Chris, do you have an idea about this treatise?-->
+                        <!-- CG: I really have no idea what this treatise is. I found something here, but not much else: https://books.google.com/books?id=w-KVNIezMT8C&lpg=PP1&pg=PA158#v=onepage&q&f=false --> 
+                        <!--JG: I think it's this book: 'Galateo: The Rules of Polite Behavior'-->
+                        A spytefull &amp; perillous Deuise: euen as diuellish in a manner, as [the] Diuel himself.</marginalia_text>
+                    <book title="Galateo: The Rules of Polite Behavior"/>
+                </position>
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>If he had karried [the] lyke grudg against [the] pope, he woold not haue steekid, to haue published his villanous booke, De Tribus
+                    Impostoribus Mundi, in his name: such spritish deseignes, &amp; practises had peter Aretine, to fulfill his owne 
+                    phantasticall moode, and to purchase A deepe conceyte of his inco[m]perable &amp; mystical singularity. Vlisses, practise
+                    against Palamedis, sumwhat in [the] lyk kynde, &amp; nolesse cunninge.</marginalia_text>
+                    <person name="Pietro Aretino"/> 
+                    <person name="Odysseus"/>
+                    <person name="Palamedes"/>
+                    <book title="Treatise of the Three Impostors"/>
+                </position>
+            </language>
+            <translation>John of Damascus, who lived in the time of the emperors Theodosius and Valentian, had among himself a Persian disciple, whom 
+            he educated diligently. That disciple forged a letter with the name of John of Damascus, whose hand he could imitate, with this indication: I,
+            John of Damascus, show to the Persian king that, if he wishes, he should come. Since it is already possible to capture emperor Valentian, 
+            on one occasion after the other. This letter was scattered in the palace of the Persian king, which, having 
+            been presented to himself, soon he sent to the emperor. The emperor summoned John of Damascus to him, pointed out the letter to him, and asked
+            why he had written it. John of Damascus, inspecting it diligently, said: "Lord emperor, I recognise my hand, nor can I deny this letter. But 
+            by the holy law, I never thought neither wrote such a thing." To which the emperor [replied]: "You cannot deny [this]: it is your hand." Thus
+            the man was defeated and his right hand was cut off. The crafty disciple repaid such thanks to his teacher.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="the hole power" type="straight"/>
+        <underline language="EN" method="pen" text="dissemblynge as" type="straight"/>
+        <underline language="EN" method="pen" text="though he fled" type="straight"/>
+        <underline language="EN" method="pen" text="higher grounde, on whom" type="straight"/>
+        <underline language="EN" method="pen" text="sharply set" type="straight"/>
+        <underline language="EN" method="pen" text="had bene afrayde" type="straight"/>
+        <underline language="EN" method="pen" text="harneised, to prouoke and" type="straight"/> 
+        <underline language="EN" method="pen" text="by chasyng in &amp; out, sette" type="straight"/>
+        <underline language="EN" method="pen" text="he sodeynly" type="straight"/>
+        <underline language="EN" method="pen" text="Metellus consul" type="straight"/>
+        <underline language="EN" method="pen" text="more circumspect" type="straight"/>
+        <underline language="EN" method="pen" text="his great armye" type="straight"/>
+        <underline language="EN" method="pen" text="Cxxx. elephantes" type="straight"/>
+        <underline language="EN" method="pen" text="mystrust hym" type="straight"/>
+        <underline language="EN" method="pen" text="discouraged, kepte" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="had bene afrayde"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="discouraged, kepte"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="feared"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="them"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="had"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="bene"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="sodeynly"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="done"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="discouraged"/>
+        
+    </annotation>
+</transcription>

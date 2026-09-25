@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.305r.tif" pagination="161" reader="John Dee" signature="Ooo iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Comite Richardo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Richardus Com.
+                    </marginalia_text>
+                    <person name="Richard, 1st Earl of Cornwall"/>
+                </position>
+            </language>
+            <translation>
+                Richard, 1st Earl of Cornwall.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="rege verò haec o[mn]ia malo nimis co[n]silio permittente" type="straight"/>
+        <underline language="LA" method="pen" text="anno .v. Kalend. Iunij, obijt Gilbertus Marescallus, Comes de Penbrok" type="straight"/>
+        <underline language="LA" method="pen" text="VValterus, frater Gilberti Comitis, vix à rege impetrauit, vt haereditatem sibi debitam obtineret" type="straight"/>
+        <underline language="LA" method="pen" text="excluso Comite" type="straight"/>
+        <underline language="LA" method="pen" text="Griffinus, filius Leolini primogenit[us], qui ad co[n]ciliu[m] fratris sui Dauidis pacificè venerat, &amp; dolosè capt[us], in carcere fratris tenebatur, regi" type="straight"/>
+        
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="star"/>
+        
+    </annotation>
+</transcription>

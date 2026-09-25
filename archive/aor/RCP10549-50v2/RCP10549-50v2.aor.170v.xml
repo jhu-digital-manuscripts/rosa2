@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.170v.tif" pagination="80" reader="John Dee"/>  
+    <annotation>
+        
+        
+        <marginalia anchor_text="Ex facto" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>FACTV[M] .3</marginalia_text>
+                </position>
+            </language>
+            <translation>THE ACT. 3.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>AC[CUSATOR].</marginalia_text>      <!-- DO: Not sure what this is; possibly he was starting to writer 'Accusator' again? -->
+                </position>
+            </language>
+            <translation>[The accuser].</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Ex negotio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ex negocio.</marginalia_text>
+                </position>
+            </language>
+            <translation>From the affair.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="euentus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Eve[n]tus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The outcome.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="confestim, aut ex interuallo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>co[n]festim x ex intervallo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Immediately; after an interval.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Ante rem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ante re[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Before the matter.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="In re" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In rè.</marginalia_text>
+                </position>
+            </language>
+            <translation>During the matter.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Post rem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Post re[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>After the matter.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="obtrectatione" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] malitiosae" type="straight"/>
+        <underline language="LA" method="pen" text="negotii gestio" type="straight"/>
+        <underline language="LA" method="pen" text="diuerterit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.146r.tif" pagination="115" reader="Harvey" signature="H2[r]"/>	<!-- ABO 150right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Aduocatus Maranta[e], et Durandi: Agrippa[e], et Hotomani:
+						Aula[e] Alphonsina[e], et Rota[e] Romana[e].
+					</marginalia_text>
+					<person name="Roberto Maranta"/>
+					<person name="Guillaume Durand"/>
+					<person name="Heinrich Cornelius Agrippa"/>
+					<person name="Francois Hotman"/>					
+				</position>
+			</language>
+			<translation>
+				The lawyer of Maranta and Durand; of Agrippa and Hotman;
+				of the Alfonsian court and of the Apostolic court. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						In omni causa victor, vt 
+						) Carneades: foriq[ue] rex,
+					</marginalia_text>
+					<person name="Carneades"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						M. Tullius, in flore dominantis Roma[e].
+					</marginalia_text>
+					<person name="Cicero"/>
+				</position>
+			</language>
+			<translation>
+				Cicero, a victor in every case, like Carneades, and a king in the forum
+				during the flourishing of Rome's domination.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vtinam Belleurus adesset. Adest:
+						et vincitur. Vt a fulminante Achille tonans Hector:
+					</marginalia_text>
+					<person name="Jean de Bellièvre"/>
+					<person name="Achilles"/>
+					<person name="Hector"/>
+					<X-ref book_title="Quaestionum illustrium" language="LA" person="Francois Hotman" text="Belleurus adesst"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						aut ab acerrimo Ænea
+						turbulentus Turnus.
+					</marginalia_text>
+					<person name="Aeneas"/>
+					<person name="Turnus"/>
+				</position>
+			</language>
+			<translation>
+				"If only Bellerus were present!" 
+				He is present, and he is beaten,
+				just like Hector was beaten by a fulminating Achilles,
+				or boisterous Turnus by violent Aeneas.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Adamantinus aduocatus: Supra ipsum Proa[e]resiu[m],
+					</marginalia_text>
+					<person name="Prohaeresius"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						omnium Supremu[m].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				An adamantine lawyer, above Prohaeresius himself, the most supreme of all.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Facilè omnium et prudentissimus, et eloquentia fluentiss[im]us
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						et ipso effectu actuosissim[us].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Easily both the most prudent of all, the most fluent in eloquence,
+				and the most active in the exectution itself.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Singulis punctis acutissimus: et ad vivum penetratiss[imus].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The most acute in singular points, and the most penetrating to the quick.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( Ha[e]c maximè necessaria fluunt ad vnguem.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				These necessary matters especially flow forth perfectly.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						He gallantly praiseth manie other bookes: but in effect onlie regardeth
+						his original arts: &amp; final professions: with Gandins Stratagems.
+					</marginalia_text>
+					<person name="Marcantonio Gandino"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="dottor tanto eccellente, il" type="straight"/>
+		<underline language="IT" method="pen" text="di sei" type="straight"/>
+		<underline language="IT" method="pen" text="volete più di venticinque" type="straight"/>
+		<underline language="IT" method="pen" text="di sì poco" type="straight"/>
+		<underline language="IT" method="pen" text="egli ne fa ogni dì" type="straight"/>
+		<underline language="IT" method="pen" text="io non ne" type="straight"/>
+		<underline language="IT" method="pen" text="tre ò quattro l'anno" type="straight"/>
+		<underline language="IT" method="pen" text="Legista ignorante" type="straight"/>
+		<underline language="IT" method="pen" text="la necessità" type="straight"/>
+		<underline language="IT" method="pen" text="sufficienza del predetto dottor Fiorentino" type="straight"/>
+		<underline language="IT" method="pen" text="fatto come la necessità" type="straight"/>
+		<underline language="IT" method="pen" text="senza leggi, diss'egli" type="straight"/>
+		<underline language="IT" method="pen" text="facetamente à quel" type="straight"/>
+		<underline language="IT" method="pen" text="la necessità non hà legge" type="straight"/>
+		<underline language="IT" method="pen" text="di ciascuno pender dall'opere sue" type="straight"/>
+		<underline language="IT" method="pen" text="da l'altrui parole" type="straight"/>
+		<underline language="IT" method="pen" text="EDIPO" type="straight"/>
+		<underline language="IT" method="pen" text="Re Tesco suo" type="straight"/>
+		<underline language="IT" method="pen" text="cieco era" type="straight"/>
+		<underline language="IT" method="pen" text="voleua con Teseo scusare" type="straight"/>
+		<underline language="IT" method="pen" text="perdonasse" type="straight"/>
+		<underline language="IT" method="pen" text="sauio Re" type="straight"/>
+		
+		<symbol name="JC" place="intext"/>
+		<symbol name="JC" place="intext"/>
+		<symbol name="SS" place="intext"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="vertical_bar" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- qua -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Fio -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- co -->
+		<mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- l'altrui parole -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- vi -->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="tre ò quattro l'anno"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="dall'opere"/>
+		
+    </annotation>
+</transcription>

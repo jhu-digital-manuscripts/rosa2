@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.087v.tif" pagination="[80v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Reditus planetaru[m] ad terminos bonoru[m] vel maloru[m] in revolutionib[us], vel locus eorundem motu directorio</marginalia_text>
+                </position>
+            </language>
+            <translation>The return of the planets toward the termini of good or bad [things] in revolutions, or their place in the moved direction.</translation> <!--JG: Unsure abt best way to translate 'motu directorio'-->
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In hunc locum optimè adferri ea possunt que infra scribuntur fo. 244 in segme[n]to 6. aph. 26 et aph. 110</marginalia_text> 
+                    <internal_ref>
+                        <target ref="RCP7134:507" text="244"/>
+                        <target ref="RCP7134:558" text="26"/>
+                        <target ref="RCP7134:571" text="110"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Those [things], which are written below, folio 244, and in segment six, aphorism 26 and 110, can be brought into this place.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uitam" type="straight"/>
+        <underline language="LA" method="pen" text="à domo" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; exilia" type="straight"/>
+        <underline language="LA" method="pen" text="ab exaltatione" type="straight"/>
+        <underline language="LA" method="pen" text="prouidos" type="straight"/>
+        <underline language="LA" method="pen" text="timidos" type="straight"/>
+        <underline language="LA" method="pen" text="adeo erunt pertinaces, ut pro fatuis aut stolidis habeantur" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/> <!--JG: modification of table-->
+        <mark method="pen" name="horizontal_bar" place="intext"/> <!--JG: modification of table-->
+        
+    </annotation>
+</transcription>

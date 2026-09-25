@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>89</illustrations>
+    <totalPages>161</totalPages>
+    <dimensions units="mm">
+        <width>143</width>
+        <height>207</height>
+    </dimensions>
+    <dates>
+        <startDate>1275</startDate>
+        <endDate>1300</endDate>
+    </dates>
+    <texts>
+        <text id="">
+            <language>fr</language>
+            <title>A short treatise on friendship (Richard de Fournival)</title>
+            <textId/>
+            <pages end="3r" start="1r">3</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>46</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="">
+            <language>fr</language>
+            <title>Considerations of love and friendship (Richard de Fournival)</title>
+            <textId/>
+            <pages end="3v" start="3r">1</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>46</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="amours">
+            <language>fr</language>
+            <title>Les Comment d'Amours (Richard de Fournival)</title>
+            <textId/>
+            <pages end="11r" start="4r">8</pages>
+            <illustrations>29</illustrations>
+            <linesPerColumn>46</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="puissance">
+            <language>fr</language>
+            <title>La Puissance d'Amours (Richard de Fournival)</title>
+            <textId/>
+            <pages end="20r" start="11r">10</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>46</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="bestiaire">
+            <language>fr</language>
+            <title>Le Bestiaire d'Amours (Richard de Fournival)</title>
+            <textId/>
+            <pages end="31r" start="20v">12</pages>
+            <illustrations>58</illustrations>
+            <linesPerColumn>46</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="réponse">
+            <language>fr</language>
+            <title>La Réponse au Bestiaire d'Amours</title>
+            <textId/>
+            <pages end="38r" start="31r">8</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>46</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="157r" start="38v">120</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>46</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="">
+            <language>fr</language>
+            <title>A tirade against women</title>
+            <textId/>
+            <pages end="157v" start="157r">1</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>46</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="prison">
+            <language>fr</language>
+            <title>La Prison d'Amours (Baudouin de Condé)</title>
+            <textId/>
+            <pages end="158r" start="157v">2</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>46</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="conte">
+            <language>fr</language>
+            <title>Le Conte de la Rose (Baudouin de Condé)</title>
+            <textId/>
+            <pages end="160r" start="158r">4</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>46</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="turris">
+            <language>fr</language>
+            <title>La Turris Sapientiae (Johannes de Sancto Maxentio)</title>
+            <textId/>
+            <pages end="160v" start="160v">1</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>-1</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>-1</columnsPerPage>
+        </text>
+        <text id="">
+            <language>fr</language>
+            <title>Poème</title>
+            <textId/>
+            <pages end="161v" start="161r">1</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>46</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Dijon 526</commonName>
+            <dateLabel>13th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>France</origin>
+            <currentLocation>Dijon, France</currentLocation>
+            <repository>Bibliothèque municipale de Dijon</repository>
+            <shelfmark>526</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Dijon 526</commonName>
+            <dateLabel>13e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Dijon</currentLocation>
+            <repository>Bibliothèque municipale de Dijon</repository>
+            <shelfmark>526</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

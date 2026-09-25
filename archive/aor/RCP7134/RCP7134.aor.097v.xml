@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.097v.tif" pagination="[90v]" reader="John Dee" signature="[Z ij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary" id="RCP7134:200:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Regula[e] pulcherr[ima]e. vide seg.3. aph.93 et seg.6. aph. 60</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:495" text="aph.93"/>
+                        <target ref="RCP7134:564:m0001" text="aph. 60"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>The most beautiful rules. See segment 3, aphorism 93, and segment 6, aphorism 60.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="remouetur" type="straight"/>
+        <underline language="LA" method="pen" text="Et quia Iupiter dominus octauae, &amp; Venus sunt in contrario aspectu domini domus inimicorum, morietur aliquis ex inimicis occultis" type="straight"/>
+        <underline language="LA" method="pen" text="Mars Solem" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; locus eius locum rei, quae fiet: &amp; robur dispositoris magnitudinem effectus" type="straight"/>
+        <underline language="LA" method="pen" text="licet sint super eadem re" type="straight"/>
+        <underline language="LA" method="pen" text="Significatores autem secundum substantiam in eadem causa semper fouent eam, cum sunt colligati" type="straight"/>
+        <underline language="LA" method="pen" text="quia res in actua non durat" type="straight"/>
+        
+        <symbol name="Saturn" place="intext"/>
+        
+        <mark method="pen" name="section_sign" place="intext"/>
+        
+        <errata amendedtext="iter" copytext="iterum" language="LA"/>
+        <errata amendedtext=";" copytext="," language="LA"/> <!--permutatur, propter-->
+        
+    </annotation>
+</transcription>

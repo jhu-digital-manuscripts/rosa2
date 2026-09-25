@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.015r.tif" reader="John Dee" signature="Ciij"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Per se inesse
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Connecting to itself.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="loco corpus quonia[m] illud in est p[er] se" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Loco corpus inest p[er] se
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The body itself is in a place.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Locus quid
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                What place.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="De secundo m[od]o p[er] se" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Secundus modus de p[er] se inesse  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The second mode to be connected to one's self.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[er]fect[us] est nu[m]erus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        perfect[us] Num[erus] 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A perfect number.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="triangulus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Triangulus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A triangle.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Scaleno[n], Isosceles quod accipiuntur se passionibus et no[n] p[ro] speb[us] in hac r[ati]o[n]e dice[n]di p[er] se.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+              A scalene triangle [and] and isoscele triangle, which are grasped themselves by passions and not for the hope in this reason of saying through themselves. <!-- Very unsure -->
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="et om[n]i loco corpus q[ua]re" type="straight"/>
+        <underline language="LA" method="pen" text="insunt o[mn]i et semp[er] in p[ri]mo modo dicendi per se" type="straight"/>
+        <underline language="LA" method="pen" text="est q[ua]n[do] totu[m] p[re]dicatu[m] est q[uod] quid est v[e]l totu[m] vel pars quidditatis subiecti id est" type="straight"/>
+        <underline language="LA" method="pen" text="sic linea p[er] se inest triangulo" type="straight"/>
+        <underline language="LA" method="pen" text="om[n]i hic" type="straight"/>
+        <underline language="LA" method="pen" text="est dici p[er] se" type="straight"/>
+        <underline language="LA" method="pen" text="et loco corpus quonia[m] illud inest p[er] se q[uo]d ingredit[ur] eius diffinitione[m] quidditatiua[m] vt linea ingredit[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="locus vltima superficies corporis continentis" type="straight"/>
+        <underline language="LA" method="pen" text="accidens p[ro]priu[m] p[er]dicat[ur] de subiecto" type="straight"/>
+        <underline language="LA" method="pen" text="no[n]. Cui[us] textus intellectus breuit[er] patet q[uo]cunq[ue] accidentia sic sunt" type="straight"/>
+        <underline language="LA" method="pen" text="subiectis q[uod] t[ame]n ip[s]a subieccta sunt de ratio[n]e ip[s]or[um] accide[n]tiu[m] et p[er]tine[n]t ad             diffinitione[m] q[ua] dicit quid est ip[s]oru[m] accidenciu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="accidencia insunt p[er] se subiectis" type="straight"/>
+        <underline language="LA" method="pen" text="que[m]libet limite[m] nu[m]eroru[m] vn[us] solus" type="straight"/>
+        <underline language="LA" method="pen" text="ingredit[ur] diffinitione[m] eoru[m] triangulus" type="straight"/>
+        <underline language="LA" method="pen" text="sumu[n]tur p[ro] passionib[us] q[uae] p[ro]ut sunt" type="straight"/>
+        <underline language="LA" method="pen" text="secu[n]dus modus dicendi triangul[us]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- eq[ui]laterus nisi -->
+        <mark method="pen" name="comma" place="intext"/> <!-- ip[s]o[rum] q[ua] -->
+        <mark method="pen" name="comma" place="intext"/> <!-- insunt vt -->
+
+    </annotation>
+</transcription>

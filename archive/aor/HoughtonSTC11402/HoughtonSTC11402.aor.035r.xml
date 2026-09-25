@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.035r.tif" reader="Harvey" signature="Diiii[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="lyghtnynge" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>lyghteninge.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="prodigiouse fortoken" type="straight"/>
+        <underline language="EN" method="pen" text="to encounter" type="straight"/>
+        <underline language="EN" method="pen" text="Jupyter the great God hym" type="straight"/>
+        <underline language="EN" method="pen" text="what he ought to doo" type="straight"/>
+        <underline language="EN" method="pen" text="selfe before the battayle" type="straight"/>
+        <underline language="EN" method="chalk" text="before" type="straight"/>
+        <underline language="EN" method="chalk" text="done in the self" type="straight"/>
+        <underline language="EN" method="pen" text="the self" type="straight"/>
+        <underline language="EN" method="pen" text="battayle" type="straight"/>
+        <underline language="EN" method="chalk" text="what after the fielde is done" type="straight"/>
+        <underline language="EN" method="pen" text="after the fielde is done" type="straight"/>
+        <underline language="EN" method="pen" text="Publius Scipio" type="straight"/>
+        <underline language="EN" method="pen" text="Hasdruball" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark method="pen" name="page_break" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--boke, nowe-->
+        <mark method="pen" name="dot" place="intext"/> <!--battayle, and-->
+        
+    </annotation>
+</transcription>

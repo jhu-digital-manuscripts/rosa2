@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.087r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nota iustitiam
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Note on justice.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Belinus ; Bre[n]ni" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Belinus et Brennus
+                    </marginalia_text>
+                    <person name="Belinus"/>
+                    <person name="Brennus"/>
+                </position>
+            </language>
+            <translation>Belinus and Brennus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="qui dissido Priscorum Britonu[m] inuitate" type="straight"/>
+        <underline language="LA" method="pen" text="vero hoc modo eam adepti fuerunt vectigal ex ea iniuste ceperunt. Nihil" type="straight"/>
+        <underline language="LA" method="pen" text="q[uo]d vi" type="double"/>
+        <underline language="LA" method="pen" text="&amp; violentia" type="straight"/>
+        <underline language="LA" method="pen" text="acquiritur" type="straight"/>
+        <underline language="LA" method="pen" text="iuste ab ipso possidetur" type="straight"/>
+        <underline language="LA" method="pen" text="violentia[m] intulit" type="straight"/>
+        <underline language="LA" method="pen" text="ratione petamus ab illo tributum" type="straight"/>
+        <underline language="LA" method="pen" text="Romae: &amp; qui fortior superuenerit ferat q[uo]d habere exoptavit" type="straight"/>
+        <underline language="LA" method="pen" text="debet: quia antecessores mei" type="straight"/>
+        <underline language="LA" method="pen" text="eam antiquitus obtinuerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Britonum serenissimus rex" type="straight"/>
+        <underline language="LA" method="pen" text="fratris sui, Bre[n]ni" type="straight"/>
+        <underline language="LA" method="pen" text="ducis Allobrogum" type="straight"/>
+        <underline language="LA" method="pen" text="autem siue de collateralibus insulis oceani" type="straight"/>
+        <underline language="LA" method="pen" text="nonest respondendum" type="straight"/>
+        <underline language="LA" method="pen" text="cum illas diffugere[n]t defendere quando" type="straight"/>
+        <underline language="LA" method="pen" text="easdem potestati eorum sub trahebamus" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--fuerunt vectigal-->
+        <mark method="pen" name="comma" place="intext"/> <!--ea iniuste-->
+        <mark method="pen" name="comma" place="intext"/> <!--reges Brita[n]niam-->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+    </annotation>
+</transcription>

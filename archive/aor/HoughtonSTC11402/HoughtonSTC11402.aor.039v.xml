@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.039v.tif" reader="Harvey" signature="[Dviii[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Anniball at Cannas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>+ Cannensis pugna.</marginalia_text>
+                    <location name="Cannae"/>
+                </position>
+            </language>
+            <translation>The battle of Cannae.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sand and duste" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sand, and dust [the] cause of Hannibals victory at Canne.</marginalia_text>
+                    <person name="Hannibal"/>
+                    <location name="Cannae"/>
+                    <emphasis method="pen" text="Sand, and dust" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Anniball at Cannas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Comes Purl. l.I. obseruat. 79.</marginalia_text>
+                    <person name="Jacopo di Porcia"/>
+                    <book title="The preceptes of warre"/>
+                </position>
+            </language>
+            <translation>Jacopo di Porcia, book 1, observation 79.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Anniball shulde" type="straight"/>
+        <underline language="EN" method="pen" text="Marcellus" type="straight"/>
+        <underline language="EN" method="pen" text="he fensed" type="straight"/>
+        <underline language="EN" method="pen" text="with holowe broken waves" type="straight"/>
+        <underline language="EN" method="pen" text="the place, for a fortifycation" type="straight"/>
+        <underline language="EN" method="pen" text="Whan" type="straight"/>
+        <underline language="EN" method="pen" text="Anniball" type="straight"/>
+        <underline language="EN" method="pen" text="at Cannas" type="straight"/>
+        <underline language="EN" method="pen" text="mornynge excedynge ayre and wynde" type="straight"/>
+        <underline language="EN" method="pen" text="reysed and blewe vp sand and duste" type="straight"/>
+        <underline language="EN" method="pen" text="shuld be on their backes" type="straight"/>
+        <underline language="EN" method="pen" text="and in the faces and eies of the Romaynes" type="straight"/>
+        <underline language="EN" method="pen" text="famous and notable" type="straight"/>
+        <underline language="EN" method="pen" text="Marius" type="straight"/>
+        <underline language="EN" method="pen" text="on a day" type="straight"/>
+        <underline language="EN" method="pen" text="he fyrste" type="straight"/>
+        <underline language="EN" method="pen" text="strengthened his" type="straight"/>
+        <underline language="EN" method="pen" text="souldiours with meate" type="straight"/>
+        <underline language="EN" method="pen" text="to reste before" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="with holowe broken waves"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="mornynge excedynge ayre and wynde"/>
+        <mark language="EN" method="pen" name="vertical_bar" place="right_margin" text="famous and notable"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="at Cannas"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="vertical_bar" place="intext" text="famous and notable"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+        <numeral language="EN" place="intext" text="he fyrste strengthened his souldiours with meate">1.</numeral>
+        <numeral language="EN" place="intext" text="to reste before">2.</numeral>
+        
+    </annotation>
+</transcription>

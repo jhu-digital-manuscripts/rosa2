@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.068v.tif" pagination="[61v]" reader="John Dee" signature="[Q[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Contra aphorismu[m] Ptoloma[e]i</marginalia_text>
+                    <person name="Ptolemy"/>
+                </position>
+            </language>
+            <translation>Against Ptolemy's aphorism.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Planetae cum ad locum coniunctionis luminarium peruenerint" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☌ pra[e]cede[n]s.</marginalia_text>
+                    <symbol_in_text name="Conjunction"/>
+                </position>
+            </language>
+            <translation>The conjunction precedes.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ad locu[m] Lunae" type="straight"/>
+        <underline language="LA" method="pen" text="à casu" type="double"/>
+        <underline language="LA" method="pen" text="Sol si in caudam incidat, detrimentum in uita, &amp; honore significat" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] ualidaru[m] causarum no[n] obscuri sint effectus" type="straight"/>
+        <underline language="LA" method="pen" text="ut ea in re polleant" type="straight"/>
+        <underline language="LA" method="pen" text="Planetae" type="double"/>
+        <underline language="LA" method="pen" text="cum ad locum coniunctionis luminarium peruenerint, quae genituram praecessit, debilius operantur, quàm si ad locum Lunae uenissent" type="straight"/>
+        
+        <symbol language="LA" name="Saturn" place="left_margin" text="Saturnus"/>
+        
+    </annotation>
+</transcription>

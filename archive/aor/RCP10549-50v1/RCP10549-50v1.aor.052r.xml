@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.052r.tif" pagination="83" reader="John Dee" signature="ff.ii."/>
+    <annotation> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Exordiu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Beginning.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Siciliae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Siciliae laus
+                    </marginalia_text>
+                    <location name="Sicily"/>
+                </position>
+            </language>
+            <translation>
+                Praise for Sicily.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="opes Carthaginis tantae concidissent" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        opes co[n]cidere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To crush the power.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Carthagine deleta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        chartagine[m] deleri
+                    </marginalia_text>
+                    <location name="Carthage"/>
+                </position>
+            </language>
+            <translation>
+                To erase Carthage.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="m. Cato sapiens" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Marcus Cato Sapiens
+                    </marginalia_text>
+                    <person name="Cato the Elder"/>
+                </position>
+            </language>
+            <translation>
+                Marcus Cato, the Wise.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exercitus nostros vestiuit, aluit, armauit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vestire alere armare ] exercitu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To clothe, feed and equip the army.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="amplexus animo sum aliquanto amplius" type="straight"/>
+        <underline language="LA" method="pen" text="victoria Populi Romani maxime laetari arbitrabatur, apud eos monimenta victoriae" type="straight"/>
+        <underline language="LA" method="pen" text="quae cum manu munitissima esset, tum loci natura, terra, ac mari claudebatur, cum vi, consilióque caepisset" type="straight"/>
+        <underline language="LA" method="pen" text="ille honorem Siciliae habe[n]dum putauit, vt ne hostium quidem vrbem ex sociorum insula tollendam arbitraretur" type="straight"/>
+        <underline language="LA" method="pen" text="cellam penariam Reip. nostrae, nutricem plebis Romanae Sicilia[m] nominauit" type="straight"/>
+        <underline language="LA" method="pen" text="sed pro aerario illo maioru[m] vetere ac reserto fuisse. nam sine" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">.1.</numeral>
+        <numeral place="right_margin">13.</numeral>
+        
+    </annotation>
+</transcription>

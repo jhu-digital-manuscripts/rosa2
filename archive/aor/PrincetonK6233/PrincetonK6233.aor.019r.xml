@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd"> 
+    
+<page filename="PrincetonK6233.019r.tif" pagination="5" reader="Harvey" signature="a3r"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Jus Gentium.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'Ius gentium'.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Legatoru[m] securitas.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The safety of ambassadors.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Deum" type="straight"/>
+        <underline language="LA" method="pen" text="parentes" type="straight"/>
+        <underline language="LA" method="pen" text="patria[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ut uim atq[ue] iniuriam" type="straight"/>
+        <underline language="LA" method="pen" text="quod quisque ob tutelam" type="straight"/>
+        <underline language="LA" method="pen" text="corporis sui fecurit, iure fecisse existimetur" type="straight"/>
+        <underline language="LA" method="pen" text="est hominem homini insidiari" type="straight"/>
+        <underline language="LA" method="pen" text="Bella: unde" type="straight"/>
+        <underline language="LA" method="pen" text="Discretio gentium" type="straight"/>
+        <underline language="LA" method="pen" text="Regnorum constitutio" type="straight"/>
+        <underline language="LA" method="pen" text="Dominiorum distinctio" type="straight"/>
+        <underline language="LA" method="pen" text="Termini agris positi" type="straight"/>
+        <underline language="LA" method="pen" text="AEdificiorum collocatio" type="straight"/>
+        <underline language="LA" method="pen" text="Commercia ut" type="straight"/>
+        <underline language="LA" method="pen" text="emptiones, ue[n]titiones" type="straight"/>
+        <underline language="LA" method="pen" text="locationes, co[n]ductiones" type="straight"/>
+        <underline language="LA" method="pen" text="exceptis" type="straight"/>
+        <underline language="LA" method="pen" text="ciuili" type="straight"/>
+        <underline language="LA" method="pen" text="ius ciuile" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Obedientia erga parentes &amp; patria[m]."/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="patria[m]"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- eue-nit -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="quod quisque ob              tutelam corporis sui fecerit, iure fecisse existimetur"/>  
+        <mark language="LA" method="pen" name="equal_sign" place="right_margin" text="quod              quisque ob tutelam corporis sui fecerit, iure fecisse existimetur"/>    
+        <mark method="pen" name="dash" place="right_margin"/> <!-- con-stituit -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="est hominem              homini insidiari"/>
+        <mark method="pen" name="dash" place="intext"/> <!-- li-beri -->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Regnorum              constitutio"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Dominiorum              distinctio"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Termini agris              positi"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="AEdificiorum              collocatio"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- ue[n]ditiones, locationes -->
+        <mark method="pen" name="dot" place="intext"/> <!-- co[n]ductiones, obligationes -->
+        <mark method="pen" name="dash" place="intext"/> <!-- obli-gationes -->
+        <mark method="pen" name="dash" place="intext"/> <!-- introdu-ctae -->
+        
+    </annotation>
+</transcription>

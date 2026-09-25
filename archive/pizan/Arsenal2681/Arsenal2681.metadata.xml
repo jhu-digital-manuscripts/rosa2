@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>1</illustrations>
+    <totalPages>204</totalPages>
+    <dimensions units="mm">
+        <width>301</width>
+        <height>208</height>
+    </dimensions>
+    <dates>
+        <startDate>1401</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="Le Livre du corps de policie">
+            <language>fr</language>
+            <title>Le Livre du corps de policie</title>
+            <textId/>
+            <pages end="94v" start="1r">94</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>30</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Christine de Pizan</title>
+            <commonName>Arsenal 2681</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>white parchment</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Arsenal 2681</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Christine de Pizan</title>
+            <commonName>Arsenal 2681</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscript</type>
+            <material>white parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Arsenal 2681</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

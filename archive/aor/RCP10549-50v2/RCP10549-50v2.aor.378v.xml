@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.378v.tif" pagination="208" reader="John Dee" signature="[Nn.viii.[v]]"/>   
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        [Esse Deos - deleted]
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Balbus
+                    </marginalia_text>
+                    <person name="Quintus Lucilius Balbus"/>
+                </position>
+            </language>
+            <translation>
+                Quintus Lucilius Balbus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Stoicus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Stoic.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        fixa
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Fixed.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="[duo] sint genera syderum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Duo Syderu[m] genera
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Two kind of stars.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mundi volubilitas, quae nisi in globosa forma esse non posset, &amp; stellarum rotundi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mundi volubilitas et rotundi ambitus 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The turning of the world and of round circuit.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="noctem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nox
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                NIght.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Circuitus enim solis orbium V defectibus LX &amp; CCC" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ☉ cursus co[n]ficitur dieb[us] 365 Hor[ae] 5 m[inutae] 49
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The orbit of the sun is 365 days, 5 hours and 49 minutes long.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Regio mutat ☾ formam varia est eu[m] parallaxis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The area changes the shape of the moon <!-- FSF: not sure about the second part -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Admirabilis 5 erratum vis et natura
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Admirable is the strength and nature of the five wandering bodies.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="magnum annum" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Magnus annus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A great year.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="φαίνων " hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        φαίνων 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                "The shining star". <!-- Nickname of Saturn-->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="φαέθων " hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        φαέθων
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Jupiter.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="πυρόεις " hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        πυρόεις
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+               The fiery one. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="στίλβων" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        στίλβων
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The glittering one.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="neque vnquam à sole duorum signoru[m] interuallo longius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nec ☿ nec ♀ à ☉ duor[um] sig[norum] intervallo longius distat
+                    </marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>
+                Neither Mercury nor Venus stand apart from the sun more than the space of two signs.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="conuenientiam temporum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Convenientia temporum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Agreemet of times.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="stellae quae inerrantes vocantur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Inerra[n]tes stella[e] quas spatijs immutabilibus ab ortu solu[m] ad occasu[m] co[m]meare existimabant veteres
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Fix stars which the old judged to travel from their origin to their decline through unchangeable spaces only.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Habe[n]t igitur suam sphaeram stellae inerrantes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Stella[e] inerra[n]tes habent suam propriam spha[e]ram
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Fixed stars have their own characteristic sphere.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        accessus: X digressus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Arrival - departure.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        ammens cursus ammens co[n]versis <!-- FSF: not sure about first and third word -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="anteuertens ... antecede[n]s" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        antevertens antecedens antegraditur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Anticipating, preceding, it goes before.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        retarda[n]do regressus recedu[n]t
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                By delaying, return, they recede.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="signoru[m] orbe[m] annis XII co[n]ficit ... eundem lustrat orbem ... signiferu[m] lustrat orbe[m] ... cursum anno conficit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        signiferu[m] lustrat orbe[m] 
+                        signoru[m] orbe[m] co[n]ficit 
+                        eunde[m] lustrat orbem
+                        cursu[m] suu[m] co[n]ficit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                He completes the zodiac circle.
+                He completes the zodiac circle.
+                He completes the circle.
+                He completes his circle.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        nihil a[n]imatat sempiternus seculor[um] a[e]tatibus <!-- FSF: not sure about the second word -->
+                        in o[mn]i a[e]ternitate co[n]servat progresss a[e]r 
+                        motus co[n]stantes et co[e]li 
+                        per..mes cursus atq[ue] p[er]pelui cu[m] admirabili incredibiliq[ue] constantia
+                        atque res r[a]estustes o[mn]es ha[e] quaru[m] est ordo sempiternus ab ho[m]i[n]e co[n]fici no[n] poßunt.
+                        ha[e]c a[e]qualitas motus, co[n]sta[n]tiaq[ue] ordu[m] in alia figura no[n] p[otes]t co[n]servari
+                        ordo autem syderu[m] et in o[mn]i a[e]ternitate co[n]sta[n]tia
+                        cu[m] vidisse[n]t motus eius firmitas et a[e]q[uabiles, o[mn]iaq[ue] ralis ordinibus moderata, in ... co[n]sta[n]tia
+                        ta[m] certirali co[e]li motus tam rati astror[um] ordinis ta[m] inter se a[n]i[m]a co[n]nexa et capta videbit [et]c
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                
+            </translation>
+        </marginalia>
+
+        <marginalia anchor_text="defectibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        diebus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                On days.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        vir
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Man.
+            </translation>
+        </marginalia>
+
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        autumnus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Autumn.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="recedunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        revertuntur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                They are turned back.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EL">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        φώσφορος <!-- for φωσφόρος -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The light-bringer.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        or. occidu[n]t <!-- FSF: the or. seems to be an abbreviation, though I am not sure what for -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                They fall.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="spatiis immutabilibus" type="straight"/>
+        <underline language="LA" method="pen" text="vnquam cursus sui vestigium inflectat" type="straight"/>
+        <underline language="LA" method="pen" text="duas, iisde[m] spatiis  cursibúsque conficiat, ex vtraque re" type="straight"/>
+        <underline language="LA" method="pen" text="partibus opacet" type="straight"/>
+        <underline language="LA" method="pen" text="soli officiens" type="straight"/>
+        <underline language="LA" method="pen" text="Nocturnorum autem spatiorum eadem est aequabilitas quae" type="straight"/>
+        <underline language="LA" method="pen" text="senescenti adiunctum" type="straight"/>
+        <underline language="LA" method="pen" text="solis annuos cursus spatiis me[n]truis" type="straight"/>
+        <underline language="LA" method="pen" text="In lunae quoque cursu est &amp; brumae quaeda[m] &amp; solstitii similitudo,              multáque ab ea manant &amp; fluunt, quibus &amp; animantes alantur augescántque &amp; pubesca[n]t, maturitatémque assequantur, quae oriuntur è terra" type="straight"/>
+        <underline language="LA" method="pen" text="recedunt" type="straight"/>
+        <underline language="LA" method="pen" text="ad eandem inter se comparationem" type="straight"/>
+        <underline language="LA" method="pen" text="mirabiliter efficiens" type="straight"/>
+        <underline language="LA" method="pen" text="immutat sempiternis seculorum" type="straight"/>
+        <underline language="LA" method="pen" text="quin eadem iisdem te[m]poribus efficiat" type="straight"/>
+        <underline language="LA" method="pen" text="propius à terra Iouis" type="straight"/>
+        <underline language="LA" method="pen" text="signi interuallo discedit, tum" type="straight"/>
+        <underline language="LA" method="pen" text="anteuertens tum subsequens" type="straight"/>
+        <underline language="LA" method="pen" text="lustrans signiferi orbis &amp; longitudine[m], quod idem faciunt stellae" type="straight"/>
+        <underline language="LA" method="pen" text="aequabili calore" type="straight"/>
+        <underline language="LA" method="pen" text="suffusus aether non satis aptus ad stellas continendas" type="straight"/>
+        
+        <symbol name="Asterisk" place="left_margin"/>
+        <symbol name="Sun" place="left_margin"/>
+        <symbol name="Moon" place="left_margin"/>
+        <symbol name="Conjunction" place="left_margin"/>
+        <symbol name="Asterisk" place="left_margin"/>
+        <symbol name="Square" place="left_margin"/>
+        <symbol name="Opposite_planets" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol language="LA" name="Jupiter" place="left_margin" text="Iouis"/>
+        <symbol language="LA" name="Mars" place="left_margin" text="Martis"/>
+        <symbol language="LA" name="Mercury" place="left_margin" text="Mercurii"/>
+        <symbol language="LA" name="Venus" place="left_margin" text="Veneris"/>
+        <symbol name="Asterisk" place="right_margin"/>
+        <symbol name="Asterisk" place="right_margin"/>
+        <symbol name="Opposite_planets" place="intext"/>
+        <symbol name="North_Node" place="intext"/>
+        <symbol name="South_Node" place="intext"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="tail"/>
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">5</numeral>
+      
+        <errata amendedtext="[deleted]" copytext="Nocturnoum autem spatiorum eadem est aequabilitas quae diurnorum" language="LA"/>
+        <errata amendedtext="diebus" copytext="defectibus" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

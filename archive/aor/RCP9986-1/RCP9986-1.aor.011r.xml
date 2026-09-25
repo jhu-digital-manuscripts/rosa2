@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.011r.tif" pagination="12" reader="John Dee" signature="B.iiij."/>  
+    <annotation>
+        
+        <marginalia anchor_text="amor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Amor</marginalia_text>
+                </position>
+            </language>
+            <translation>Love.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pudor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>pudor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Shame.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dedignor supplex, humilísq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="certi si quid haberet amor" type="straight"/>
+        <underline language="LA" method="pen" text="quid deceat non videt vllus amans" type="straight"/>
+        <underline language="LA" method="pen" text="Depuduit, profugúsq[ue] pudor sua signa reliquit. Da veniam fassae, duráq[ue] corda doma" type="straight"/>
+        <underline language="LA" method="pen" text="radijs frontem vallatus acutis" type="straight"/>
+        <underline language="LA" method="pen" text="Nobilitas sub amore iacet" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

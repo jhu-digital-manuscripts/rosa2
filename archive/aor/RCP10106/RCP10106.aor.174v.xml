@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.174v.tif" pagination="348" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="sibi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>sibi</marginalia_text>
+                </position>
+            </language>
+            <translation>Himself.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Productio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Productio</marginalia_text>
+                </position>
+            </language>
+            <translation>Lengthening.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="amphigologia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Amphibologia[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Ambiguity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quaestio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>qu[a]estio</marginalia_text>
+                </position>
+            </language>
+            <translation>Question.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="finitione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>finitio</marginalia_text>
+                </position>
+            </language>
+            <translation>Definition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Igitur finitio in natura ipsa nominis quaestione[m] habet generalem, &amp; quae esse etia[m] citra complexum causae poßit." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Diuersitas</marginalia_text>
+                </position>
+            </language>
+            <translation>Difference.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Nam id sibi &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="intellectus nominis" type="straight"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        
+    </annotation>
+</transcription>

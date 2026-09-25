@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.030v.tif" reader="John Dee" signature="[Evj[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="demo[n]strationem [...] v[niversa]lis queda[m] p[ar]ticularis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Demonstratio vniversalis particularis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Universal and particular demonstration.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vniuersalit[er]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Demonstratio vniversalis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Universal demonstration.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="extra illa extrema" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mediu[m] extra illa extrema.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A medium outside those extremes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="affirmatiua queda[m] negatiua[m] queda[m] ostensiua queda[m] duce[n]s ad imposibile" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Affirmatiua negatiua oste[n]siua Ducens ad imposs[ibile]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Affirmative, negative, ostensive, leading to the [impossible].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de isto c[om]mu[n]i analogo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        de co[mmun]i analogo supra
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                About the common analogism [see] above.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="semp[er] sumat[ur] aliq[uo]d q[uo]d p[ro]xime p[rae]dicet[ur] de mi[n]ori extremitate [et] de qua p[ro]xime             [et] v[niversa]liter p[rae]dicet[ur] maior extremitas [et] sic semp[er] p[ro]cede[n]do in c[on]densatione medior[um]" type="straight"/>
+        <underline language="LA" method="pen" text="q[uae] dicit[ur] p[ro]positio i[m]mediata int[er] cui[us] extrema nihil mediat" type="straight"/>
+        <underline language="LA" method="pen" text="posset aliquod" type="straight"/>
+        <underline language="LA" method="pen" text="v[niuersa]lis passio de v[niversa]li subiecto vt passio q[uae] vniuersalit[er] inest subiecto q[uod] vniuersalit[er] subijcit[ur] Si" type="straight"/>
+        <underline language="LA" method="pen" text="Sed p[ar]ticularis in qua demonstrat[ur] passio de suo subiecto no[n] sibi adequato vt arguendo" type="straight"/>
+        <underline language="LA" method="pen" text="p[ro]portionari de aliquo c[om]mu[n]i analogo" type="straight"/>
+        <underline language="LA" method="pen" text="c[om]mu[n]i analogo" type="double"/>  
+        
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="semp[er] sumat[ur] aliq[uo]d q[uo]d p[ro]xime p[rae]dicet[ur] de mi[n]ori extremitate [et] de qua p[ro]xime             [et] v[niversa]liter p[rae]dicet[ur] maior extremitas [et] sic semp[er] p[ro]cede[n]do in c[on]densatione medior[um] quousq[ue] deuentu[m] fuerit ad vna[m] p[ro]positione[m] indiuisibile[m]             q[uae] dicit[ur] p[ro]positio i[m]mediata int[er] cui[us] extrema nihil mediat"/>
+        
+    </annotation>
+</transcription>

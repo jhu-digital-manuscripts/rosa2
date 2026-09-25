@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.045r.tif" pagination="71" reader="John Dee" signature="ee.iiii."/>
+    <annotation> 
+        
+        <marginalia anchor_text="prodeundi tibi in publicum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        prodire in publicu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To go out on the streets.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="impulsu tuo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        impulsu tuo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                At your instigation.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        laus lampsacenor[um].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Praise for the people of Lampsacus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Repetitio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Repetition.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Aurelio Scauro" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Marcus Aurelius Scaurus
+                    </marginalia_text>
+                    <person name="Marcus Aurelius Scaurus"/>
+                </position>
+            </language>
+            <translation>
+                Marcus Aurelius Scaurus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pericles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pericles
+                    </marginalia_text>
+                    <person name="Pericles"/>
+                </position>
+            </language>
+            <translation>
+                Pericles.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eius aute[m] rei duces, &amp; authores, &amp; principes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ei[us] rei dux author princeps
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The leader, author and senator of this matter.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="consuetudine, &amp; disciplina lenissimis: porrò autem Populi" type="straight"/>
+        <underline language="LA" method="pen" text="Nolite per deos immoertales cogere" type="straight"/>
+        <underline language="LA" method="pen" text="tamen incommoda sua vestris co[m]mittere legibus, &amp; iudiciis, quàm dolori suo permittere" type="straight"/>
+        <underline language="LA" method="pen" text="teste homine nequam, verum ad hanc rem tamen idoneo, te ipso inquam teste docebo" type="straight"/>
+        <underline language="LA" method="pen" text="cur imminuisti ius legationis?" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">19</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+        <drawing anchor_text="teste homine nequam, verum ad hanc rem tamen idoneo, te ipso inquam teste docebo" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.001r.tif" pagination="1" reader="John Dee" signature="A"/> 
+    <annotation>
+        <marginalia anchor_text="le altre cose, che io ho scritte" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note other bokes of this Author</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="perche io nauigai con lui alcun tempo, parea" type="straight"/>
+        <underline language="IT" method="pen" text="le altre cose, che io ho scritte" type="straight"/>
+        <underline language="IT" method="pen" text="ridur ciò di memoria" type="double"/>
+    </annotation>
+</transcription>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.188r.tif" pagination="199" reader="Harvey" signature="N4[r]"/>	<!-- ABO 192right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Historici, et Jurisconsulti maximè pragmatici.
+						Justinus, et Neander: cu[m[ Plutarchi vitis; et
+					</marginalia_text>
+					<person name="Justin"/>
+					<person name="Michael Neander"/>
+					<person name="Plutarch"/>
+					<book title="Parallel Lives"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Gandini Stratagematis: quasi instar
+						totius Gra[e]cia[e].
+					</marginalia_text>
+					<person name="Marcantonio Gandino"/>
+					<book title="Stratagemata"/>
+					<location name="Greece"/>
+				</position>
+			</language>
+			<translation>Historians and lawyers are pragmatists in particular. Justin and Michael Neander: with Plutarch's 'Lives' and Gandino's 'Stratagemata': as if equal to the whole of Greece.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Valor foeminarum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The valor of women.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						/ Theise boyes dare say to
+						your face: Alas, it cannot be in you,
+						that is in them. They ar younger,
+						bigger, stronger, quicker, or able to endure
+						Labour, ritcher, in higher office.
+						What predominant, or Equipollent for all these?
+						Noman, so continent, hardie, swift, daily daily exercised,
+						how erlie refined, as he should be.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Nihil in Rom.
+						Historia magis pragmaticum, quàm Mithridatis regis.
+						Epistola, et Oratio illa apud Salustiu[m]:
+						ha[e]c apud Justinum, Libro 38.
+					</marginalia_text>
+					<person name="Sallust"/>
+					<person name="Justin"/>
+					<book title="Historiarum Philippicarum libri XLIV"/>
+				</position>
+			</language>
+			<translation>Nothing in Roman history was more pragmatic than king Mithridates. The epistles and that speech in Sallust: these in Justin, book 38.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Mihi egregiè conducunt Juliani
+						Ca[e]sares: Guicciardini principes quasi depicti:
+						Quinctus de petitione Consulatus:
+						Marcus de prouincia administranda:
+					</marginalia_text>
+					<person name="Cicero"/>
+					<person name="Francesco Guicciardini"/>
+					<person name="Sallust"/>
+					<person name="Plutarch"/>
+					<person name="Xenophon"/>
+					<book title="De petitione consulatus"/>
+					<book title="Epistolae Ciceronis"/>
+					<book title="Duae epistolae de republica ordinanda"/>
+					<book title="Opuscula"/>
+					<book title="Hiero"/>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Sallustius de Rep. ordinanda.
+						Plutarchi Politica: Xenophontis Hieron.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>For me, the Julian emperors are extraordinary expedient: portrayed as if Guiccardini's princes: Cicero to Quintus, 'On running for the consulship': 
+			to Marcus, 'On administering the province': <!--JG: Don't get why Marcus is mentioned, since this was a letter to his brother as well?! Will check Harvey's copy in the BL-->
+			Sallust, 'On regulating the Republic'. Plutarch's 'Politics': Xenophon's 'On Hiero'.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Multi egregij, admirabiles, quicquid volunt: sed mihi opus est ad unguem Eutropius, et Suetonius:
+						Ca[e]sar, et Tacitus. Aut da Magistros. Justinianum, Bartholu[m], Durandu[m]; et
+					</marginalia_text>
+					<person name="Flavius Eutropius"/>
+					<person name="Suetonius"/>
+					<person name="Julius Caesar"/>
+					<person name="Tacitus"/>
+					<person name="Justinian"/>
+					<person name="Bartolus de Saxoferrato"/>
+					<person name="Guillaume Durand"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Politicu[m] tande[m] Pragmaticu[m] Bodinu[m] meu[m].
+					</marginalia_text>
+					<person name="Jean Bodin"/>
+				</position>
+			</language>
+			<translation>Many extraordinary and admirable people wish for something: but for me it is useful to learn by heart Eutropius and Suetonius; Caesar and Tacitus. Or give me magistrates. Justinian, Bartholus, and
+			Durand; and finally my political pragmatist Bodin.
+			</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.188r_0001" marginalia_continues_to="Ha2.187v_0001" marginalia_to_transcription="Ha2.187v.xml">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Necessaria etiam ad unguem Althusij ars Juris propter memoriam: Hopperi ciuilis ratio propter
+						illuminatu[m] discursum: Vigelij repertorium, et ius controuersum propter expeditam, certamq[ue] Praxin: [p. 198: et Jureconsultoru[m] Logica, alia[e]q[ue] Freigij Analyses propter pra[e]sentem Legu[m], Canonu[m]q[ue] Analysin.
+						Semperq[ue] recordandum, ipsum Jurisconsulti A.B.C. esse regulas vtriusq[ue] Juris, cum
+						Decio, et Dyno: qua[e] sunt in omni pragmatico discursu, disputatione, praxi frequentissima[e]: Cum regulis etiam Brocardicis Chauferi, id est, verbatim regulis
+						magistralibus Speculatoris, in aureo Breuiario.]
+							<!-- Continues onto facing page, right margin, Ha2.187v -->
+					</marginalia_text>
+					<person name="Johannes Althusius"/>
+					<person name="Joachim Hoppers"/>
+				</position>
+			</language>
+			<translation>It is also necessary to memorise by heart Althusius' art of law by means of memory: Hopper's civil reason by means of illuminated discourse:
+				Virgil's repertoire and the legal compilation by means of expediency and certain praxis: [p. 198: and the logic of lawyers and other analyses of Freigius by means of existing analysis of laws and canon [laws].
+				[p. 198: And it must always be remembered that the actual A.B.C. of the lawyer is the rules of both laws, with Filippo Decio and Magellanus Dinus: which
+				appear most frequently in every pragmatic discourse, disputation and practice. Also with Kaufer's 'Regulae brocardicae juris',
+				that is, with the expert rules of the spectator word for word, in the 'Golden Breviary'.]</translation>
+		</marginalia>
+		
+		
+		<underline language="IT" method="pen" text="Fragilità della donna" type="straight"/>
+		<underline language="IT" method="pen" text="co'l foco" type="straight"/>
+		<underline language="IT" method="pen" text="con l'oro" type="straight"/>
+		<underline language="IT" method="pen" text="la donna" type="straight"/>
+		<underline language="IT" method="pen" text="donne fossero d'argento" type="straight"/>
+		<underline language="IT" method="pen" text="varrebbono danaio" type="straight"/>
+		<underline language="IT" method="pen" text="starebbono al martello" type="straight"/>
+		<underline language="IT" method="pen" text="Di Filosofi" type="straight"/>
+		<underline language="IT" method="pen" text="l'odiar" type="straight"/>
+		<underline language="IT" method="pen" text="le donne" type="straight"/>
+		<underline language="IT" method="pen" text="da prender moglie" type="straight"/>
+		<underline language="IT" method="pen" text="giouane, non ancora" type="straight"/>
+		<underline language="IT" method="pen" text="vecchio non mai" type="straight"/>
+		<underline language="IT" method="pen" text="gli alberi" type="straight"/>
+		<underline language="IT" method="pen" text="simili frutti" type="straight"/>
+		<underline language="IT" method="pen" text="Le mogli" type="straight"/>
+		<underline language="IT" method="pen" text="importuna" type="straight"/>
+		<underline language="IT" method="pen" text="vna moglie" type="straight"/>
+		<underline language="IT" method="pen" text="donna cosi piccola" type="straight"/>
+		<underline language="IT" method="pen" text="male, il minore" type="straight"/>
+		<underline language="IT" method="pen" text="sieno le mogli" type="straight"/>
+		<underline language="IT" method="pen" text="alcuni filosofi" type="straight"/>
+		<underline language="IT" method="pen" text="maritata la figliuola al suo nimico" type="straight"/>
+		
+		<symbol name="SS" place="head"/>
+		
+		<symbol name="SS" place="tail"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="poi ch'io mi haueua pure à maritare, io hò eletto del male, il minore"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--mede-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--produ-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--moglie-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--cagio-->
+		
+		<mark method="pen" name="dot" place="intext"/> <!--oro, con-->
+		<mark method="pen" name="dot" place="intext"/> <!--donna, &-->
+		<mark method="pen" name="apostrophe" place="intext"/> <!--huomo. Il-->
+		
+    </annotation>
+</transcription>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.024r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Suardi regis Fra[n]coru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Suardus Rex fra[n]cor[um]
+                    </marginalia_text>
+                    <person name="Suardus"/>
+                </position>
+            </language>
+            <translation>Suardus, king of the Franks.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Post Cunedagiu[m] successeru[n]t sex pri[n]cipes, &amp; vltimo" type="straight"/>
+        <underline language="LA" method="pen" text="Ka[m]bri[a]e &amp; Albani[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="vn[us] iuuenis" type="straight"/>
+        <underline language="LA" method="pen" text="nome[n] wide[n] cu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="regnu[m] quinq[ue] regib[us] submissu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Du[n]uallo mulmutius" type="double"/>
+    </annotation>
+</transcription>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.296v.tif" pagination="572" reader="John Dee" signature="[nnn.vi.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="homo nullo numero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>homo nullo numero</marginalia_text>
+                </position>
+            </language>
+            <translation>A person of no consequence.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="memoriam refricat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>refricare memoria[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>To gall memory.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Diem edicti obire" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>obire diem.</marginalia_text>
+                </position>
+            </language>
+            <translation>To appear on the day.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="sententiolas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>sententiola</marginalia_text>
+                </position>
+            </language>
+            <translation>Aphorism.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="numero. nihil illo conte[m]ptius: qui propter haesitantia[m] linguae, stuporémque cordis, cognome[n]" type="straight"/>
+        <underline language="LA" method="pen" text="certatim" type="straight"/>
+        <underline language="LA" method="pen" text="etiam malo digni multi, sicut ipse" type="straight"/>
+        <underline language="LA" method="pen" text="hominem stultu[m] magis etiam" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.284r.tif" pagination="19" reader="John Dee" signature="Bb.ii."/>  
+    <annotation>
+        
+        <marginalia anchor_text="Quaerimus grauitatis, consta[n]tiae, firmitatis, sapientiae iudiciu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        iudiciu[m] grauitatis
+                                   consta[n]tia[e]
+                                   firmitatis
+                                   sapientia[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A judgement of gravitas; of constancy; of firmness; of wisdom.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vinolenti; ebriosoru[m]; vino aut somno oppressos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                       vinolenti
+                       ebriosi
+                       vino opp[re]ss[us].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Slowed by wine.
+                Drunkards.
+                Oppressed by wine.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        insani
+                        furiosi
+                        mente captus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Mad. Furious. Insane.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad se reuocauit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ad se revocare.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>To recall to oneself.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ennium. quum in hortis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ennius in hortis
+                    </marginalia_text>
+                    <person name="Ennius"/>
+                </position>
+            </language>
+            <translation>Ennius in the gardens.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="somnioru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Somnia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Dreams.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="somiare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        somniare.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>To dream.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Epicharmo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Epicharmus
+                    </marginalia_text>
+                    <person name="Epicharmus of Kos"/>
+                </position>
+            </language>
+            <translation>Epicharmus of Kos.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="approbatione faciunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        facere approbatione
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>To do with approbation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="insanis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Insani
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The insane.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="relaxentur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        relaxari.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>To be relaxed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Alcmeonis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Alcmeonis versus { sup[ra] 89
+                    </marginalia_text>
+                    <person name="Alcmaeon"/> 
+                    <internal_ref>
+                        <target ref="" text="89"/>      <!-- DO: I can't find a page 89 that this seems to relate to --> <!--JG: Me neither-->
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>A verse of Alcmeaon. See above, 89.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aut in sensibus ipsius est aliqua forte grauitas, aut tarditas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        in sensibus grauitas
+                                    tarditas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Heaviness [and] slowness in the senses.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]tra vos est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        co[n]tra vos est
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>It is against you.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inco[n]stanter" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        inco[n]stanter.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Changeably.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="absurde" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        absurde.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Absurdly.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ἄδηλα
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The inevident.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="no[n] mediocris insaniae est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        no[n] mediocris insania[e] est
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>It is not a moderate sign of insanity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exploratu[m] esse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        exploratu[m] esse.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>To be tested.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="similitudines" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Similitudines qu[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Which similarities.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="reru[m] natura no[n] patitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        reru[m] natura no[n] patitur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The nature of things does not allow.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                       ova 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Eggs.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ne tu quidem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ne tu quidem.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Especially not you.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Democritum dicere innumerabiles esse mundos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Democritus innumerabiles mundos posuit.
+                    </marginalia_text>
+                    <person name="Democritus"/>
+                </position>
+            </language>
+            <translation>Democritus posited innumerable worlds.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="indiuiduis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Indiuidua
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Atoms.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Q. Luctatii" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Q LVCTATIVS     <!-- DO: The 'a' looks like an alpha -->
+                    </marginalia_text>
+                    <person name="Quintus Lutatius Catulus"/>
+                </position>
+            </language>
+            <translation>Quintus Lutatius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="politioribus physicis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        physici politiores
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>More accomplished natural philosophers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Non cognosceba[n]tur foris, at domi: non ab alienis, at à suis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        cognosci. foris &amp; domi
+                                  ab alienis et suis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be recognised outside andat home; by foreigners and by fellow countrymen.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vsu venire" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vsu venire.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>To come into use.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="conte[n]ditis; pugnas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        pugnare
+                        co[n]tendere.
+                        Disputare 18
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0576" text="18"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                To fight.
+                To contend.
+                To dispute, [page] 18.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="singularu[m] rerum singulas proprietates" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Singularu[m] reru[m] singul[a]e sunt p[ro]prietates.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Singular are the properties of singular things.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aliquid, &amp; cogitatione depingit" type="straight"/>
+        <underline language="LA" method="pen" text="eadem est in somniis species eorum quae vigilantes videmus" type="straight"/>
+        <underline language="LA" method="pen" text="Illud enim dicimus, no[n] eandem esse vim, neque integritatem dormientium &amp; vigilantium, nec mente nec sensu" type="straight"/>
+        <underline language="LA" method="pen" text="eadem approbatione" type="straight"/>
+        <underline language="LA" method="pen" text="dubitant, haesitant, reuocant" type="straight"/>
+        <underline language="LA" method="pen" text="imbecillius assentiuntur" type="straight"/>
+        <underline language="LA" method="pen" text="quúmque edormiueru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="id" type="straight"/>
+        <underline language="LA" method="pen" text="relaxentur, sentiant" type="straight"/>
+        <underline language="LA" method="pen" text="cor consentit cum" type="straight"/>
+        <underline language="LA" method="pen" text="sapiens" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]tra vos est" type="straight"/>
+        <underline language="LA" method="pen" text="potest leuitas orationis eoru[m] qui omnia cupiunt" type="straight"/>
+        <underline language="LA" method="pen" text="Quaerimus grauitatis, consta[n]tiae, firmitatis, sapientiae iudiciu[m]: vtimur exemplis somniantiu[m], furiosoru[m], ebriosoru[m]. Illud" type="straight"/>
+        <underline language="LA" method="pen" text="possit exploratu[m] esse de sua sanitate" type="straight"/>
+        <underline language="LA" method="pen" text="Similitudines vero aut geminoru[m], aut signoru[m] anulis impressoru[m] pueriliter consecta[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="Quis enim nostru[m] similitudines negat esse, quum eae plurimis" type="straight"/>
+        <underline language="LA" method="pen" text="vt no[n] suo quidque genere sit tale quale est: nec sit in duobus, aut pluribus nulla re differe[n]s, vlla co[m]munitas" type="straight"/>
+        <underline language="LA" method="pen" text="Democritum dicere innumerabiles esse mundos, &amp; quidem" type="straight"/>
+        <underline language="LA" method="pen" text="vndique perfecte &amp; absolute ita pares" type="straight"/>
+        <underline language="LA" method="pen" text="illis indiuiduis vnde" type="straight"/>
+        <underline language="LA" method="pen" text="quidem me ad Democritum vocas, cui no[n] assentior, potiúsque refellam" type="straight"/>
+        <underline language="LA" method="pen" text="politioribus physicis, singularu[m] rerum singulas proprietates" type="straight"/>
+        <underline language="LA" method="pen" text="Fac enim" type="straight"/>
+        <underline language="LA" method="pen" text="Hîc pugnes licet, no[n] repugnabo. Quinetia[m]" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        
+        <mark method="pen" name="pin" place="right_margin"/>
+        <mark language="LA" method="pen" name="pin" place="tail" text="Singularu[m] reru[m] singul[a]e sunt p[ro]prietates"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+           
+        <drawing book_orientation="0" method="pen" place="right_margin" type="animal"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="egg"/>
+           
+    </annotation>
+</transcription>

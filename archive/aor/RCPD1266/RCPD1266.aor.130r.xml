@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.130r.tif" pagination="245" reader="John Dee" signature="x.iij."/>
+    <annotation>
+        
+        <marginalia anchor_text="Tohu rex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tohu Rex</marginalia_text>
+                    <person name="Tohu"/>
+                </position>
+            </language>
+            <translation>King Tohu.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vnde intelligimus reliquorum nomine multas &amp; varias gentes contineri, qui sua posteritate Orientem totum propè compleuerint" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Oriente[m] inhabita[n]tes</marginalia_text>
+                </position>
+            </language>
+            <translation>The inhabitants of the East.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Persae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Persa[e]</marginalia_text>
+                    <location name="Persia"/>
+                </position>
+            </language>
+            <translation>Persians.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Tohu rex" type="straight"/>
+        <underline language="LA" method="pen" text="Ea autem Emath videtur pertinuisse ad Syriam Damasci, sicuti" type="straight"/>
+        <underline language="LA" method="pen" text="est, turbati sunt eorum" type="straight"/>
+        <underline language="LA" method="pen" text="quòd postremus" type="straight"/>
+        <underline language="LA" method="pen" text="quòd deinceps" type="double"/>
+        <underline language="LA" method="pen" text="duorum tantùm" type="straight"/>
+        <underline language="LA" method="pen" text="reliquorum nomine" type="straight"/>
+        <underline language="LA" method="pen" text="sua posteritate Orientem totum propè compleuerint" type="straight"/>
+        <underline language="LA" method="pen" text="Persae" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.026r.tif" reader="John Dee" signature="G ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="ne magnitudine promissionum negligat medicinam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Magnitudo promissoru[m] negligilia rei promiss[a]e fere inducit</marginalia_text>
+                </position>
+            </language>
+            <translation>The magnitude of promises generally leads to negligence of the promised thing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="spes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Spes</marginalia_text>
+                </position>
+            </language>
+            <translation>Hope.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="intentione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[In]te[n]tio</marginalia_text>
+                </position>
+            </language>
+            <translation>Intention.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="intentionem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>opinionem</marginalia_text>      
+                </position>
+            </language>
+            <translation>Opinion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="intendit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>cogitabat</marginalia_text>
+                </position>
+            </language>
+            <translation>He thought.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hyacinthorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hyacinth[us]</marginalia_text>
+                </position>
+            </language>
+            <translation>Hyacinth.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="spes sanitatis" type="straight"/>
+        <underline language="LA" method="pen" text="oportet fallere" type="straight"/>
+        <underline language="LA" method="pen" text="laetificante intentione" type="straight"/>
+        <underline language="LA" method="pen" text="promissionum negligat" type="straight"/>
+        <underline language="LA" method="pen" text="intentionem" type="straight"/>
+        <underline language="LA" method="pen" text="quod prius ipse intendit" type="straight"/>
+        <underline language="LA" method="pen" text="ligatum taliter" type="straight"/>
+        <underline language="LA" method="pen" text="coruinum accipiat mixtum cum Sesameleon, quo" type="straight"/>
+        <underline language="LA" method="pen" text="confisus est libri uerbis" type="straight"/>
+        <underline language="LA" method="pen" text="occulta proprietate" type="straight"/>
+        <underline language="LA" method="pen" text="defenditur à casu Epilepsiae" type="straight"/>
+        <underline language="LA" method="pen" text="intret Regionem pestiferam" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- ipse intendit -->
+        
+    </annotation>
+</transcription>

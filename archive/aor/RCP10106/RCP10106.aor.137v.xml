@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.137v.tif" pagination="274" reader="John Dee" signature="[s[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="debet crescere oratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In p[er]oratione crescere debet or[ati]o</marginalia_text>
+                </position>
+            </language>
+            <translation>During the peroration the speech should rise.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quarum reru[m] ingens plerunq[ue] uis est, uelut in rem praesentem, animos hominum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>No[n] solu[m] verba sed et facta a[n]i[m]os concita[n]t ho[m]inu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Not only words also but actions spur the mind of the people.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="praetexta C. Caesaris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pra[e]texta C[aius] Ca[e]saris</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Gaius Caesar's toga.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="obsecratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>obsecratio</marginalia_text>
+                </position>
+            </language>
+            <translation>Prayer.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="deorum etiam inuocatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Deoru[m] invocatio</marginalia_text>
+                </position>
+            </language>
+            <translation>An invocation to the gods.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lucium Muraenam Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Murena</marginalia_text>
+                    <book title="Pro Murena"/>
+                </position>
+            </language>
+            <translation>Pro Murena.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quia quicquid non adijcit, prioribus etiam detrahere uidetur, &amp; facilè deficit affectus, qui descendit" type="straight"/>
+        <underline language="LA" method="pen" text="unde &amp; producere ipsos qui periclitentur" type="straight"/>
+        <underline language="LA" method="pen" text="Sed no[n] ideo probauerin, quod factum &amp; lego, &amp; ipse aliquando uidi depictam tabulam *supra Iouem in imaginem rei, cuius              atrocitate iudex erat com mouendus. Quae enim est actoris infantia, quia mutam illam effigiem magis quàm orationem pro se putet locuturam" type="straight"/>
+        <underline language="LA" method="pen" text="Quare &amp; obsecratio illa iudicu[m] per charißima pignora, utiq[ue] si &amp; reo sint liberi, coniunx, parentes, utilis erit." type="straight"/>
+        <underline language="LA" method="pen" text="Quaedam enim tam fortiter tue[n]da, quàm facta sunt." type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

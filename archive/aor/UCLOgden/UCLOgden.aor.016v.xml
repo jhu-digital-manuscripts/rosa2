@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.016v.tif" pagination="16" reader="John Dee" signature="[b 2[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="unum masculinum est, aliud foemininum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota, semper altera[m] domor[um] masculina[m] esse alteram foemininam
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note that there is always one of the houses masculine and another feminine.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>domicilia ♄</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>The dwelling of Saturn.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>dom[us] ♃</marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>The house of Jupiter.</translation>
+        </marginalia>
+        
+        
+        <underline colour="red" language="EL" method="pen" text="φαίνωμ" type="straight"/>
+        <underline colour="red" language="EL" method="pen" text="φαέθοντα" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="♂" type="straight"/>
+        <underline colour="red" language="EL" method="pen" text="ωνρόεις" type="straight"/>
+        <underline colour="red" language="EL" method="pen" text="φωσφόρος" type="straight"/>
+        <underline colour="red" language="EL" method="pen" text="σίλβοντα" type="straight"/>
+        <underline language="LA" method="pen" text="Sed ex ipsis duobus signis, quae singuli possident, unum masculinum est, aliud foemininum" type="straight"/>
+        
+        <symbol name="Moon" place="intext"/>
+        <symbol name="Sun" place="intext"/>
+        <symbol name="Mercury" place="intext"/>
+        <symbol name="Venus" place="intext"/>
+        <symbol name="Mars" place="intext"/>
+        <symbol name="Moon" place="intext"/>
+        <symbol name="Mars" place="intext"/>
+        <symbol name="Venus" place="intext"/>
+        <symbol name="Mercury" place="intext"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.100v.tif" pagination="[93v]" reader="John Dee" signature="[aa[v]]"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="plus cum Ioue" type="straight"/>
+        
+        <symbol language="LA" name="Sun" place="left_margin" text="Sol"/> 
+        <symbol language="LA" name="Jupiter" place="left_margin" text="Ioue"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--Sol cum-->
+        <mark method="pen" name="comma" place="intext"/> <!--omnibus malum-->
+        
+    </annotation>
+</transcription>

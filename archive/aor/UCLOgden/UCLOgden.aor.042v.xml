@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.042v.tif" pagination="68" reader="John Dee" signature="[f 4[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="annos octo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Anni octo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Eight years.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ex qualitate signoru[m]; qua[n]ta pendeat?
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                From the quality of signs; how much do they weigh?
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sed haec eorum felicitas breui temporis spatio finietur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Brevis ha[e]c foelicitas.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                This short felicity.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="minuit annos octo, ac etiam" type="straight"/>
+        <underline language="LA" method="pen" text="ut deoru[m] possint praesentiam intueri" type="straight"/>
+        <underline language="LA" method="pen" text="uel in suis signis, uel in caeteris localibus fuerit inuentus" type="straight"/>
+        <underline language="LA" method="pen" text="definiri, aut designari possunt mala, quae ex ista ☿ &amp; ♂ coniunctione proueniunt" type="straight"/>
+        <underline language="LA" method="pen" text="sed haec eorum felicitas breui temporis spatio finietur, citóq[ue] fluxa disperibit" type="straight"/>
+        <underline language="LA" method="pen" text="☿ ♂ pestisera coniu[n]ctio" type="straight"/>
+        
+        <errata amendedtext="[deleted]" copytext="archiacros" language="LA"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.010v.tif" reader="John Dee" signature="[Ciij[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Istam primam materia[m] triu[m], Ego, Q, Ess[enti]am eorundem haud male iudicari censeo</marginalia_text> <!--JG: Could Essam be 'Essentiam', since 'am' appears in superscript?-->
+                </position>
+            </language>
+            <translation>I, Q, recommend that this prime matter of the three, their essence, is by no means to be judged badly.</translation> <!-- JG: Not sure, no clue about 'Q'-->
+        </marginalia>
+        
+        <marginalia anchor_text="die sieben mineralia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>♄♃♂☉♀☿</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>7 Mineralia</marginalia_text>
+                </position>
+            </language>
+            <translation>Saturn, Jupiter, Mars, Sun, Venus, Mercury, Moon. 7 Minerals.</translation>
+        </marginalia>
+               
+        <marginalia anchor_text="die tugend krafft vnnd eygenschafft" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Thermarum virtus vnde</marginalia_text>
+                </position>
+            </language>
+            <translation>Hence the properties of the baths.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Confortatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Invigoration.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="So die sieben mineralia ligen in primis tribus" type="straight"/>
+        <underline language="DE" method="pen" text="verböseret" type="straight"/>
+        <underline language="DE" method="pen" text="so mischt sich die krafft" type="straight"/>
+        <underline language="DE" method="pen" text="in ein vereinigung" type="straight"/>
+        <underline language="DE" method="pen" text="auß disem" type="straight"/>
+        <underline language="DE" method="pen" text="primarum trium" type="straight"/>
+        <underline language="DE" method="pen" text="inn eim wasser" type="straight"/>
+        <underline language="DE" method="pen" text="dem selbigen" type="straight"/>
+        <underline language="DE" method="pen" text="durch es laufft" type="straight"/>
+        <underline language="DE" method="pen" text="das in jnen ist die prima materia trium" type="straight"/>
+        <underline language="DE" method="pen" text="der contractur" type="straight"/>
+        <underline language="LA" method="pen" text="hyposarcha" type="straight"/>
+        <underline language="LA" method="pen" text="materice" type="straight"/>
+        <underline language="DE" method="pen" text="so auß der sterckung kommen" type="straight"/>
+        <underline language="DE" method="pen" text="schedlich aber den kranckheyten so die glider" type="straight"/>
+        <underline language="LA" method="pen" text="alopiciam" type="straight"/>
+        <underline language="LA" method="pen" text="morpheam" type="straight"/>
+        <underline language="LA" method="pen" text="pruritum" type="straight"/>
+        <underline language="LA" method="pen" text="vlcera communia" type="straight"/>
+        <underline language="LA" method="pen" text="in sale metallorum" type="straight"/>
+        <underline language="DE" method="pen" text="febriu[m]" type="straight"/>
+
+        <symbol name="Sun" place="right_margin"/>
+        <symbol name="Moon" place="right_margin" text="silbers"/>
+        <symbol name="Mercury" place="right_margin" text="mercurio"/>
+        <symbol name="Mars" place="right_margin" text="eyßen"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin" text="verböseret"/>
+        <mark method="pen" name="circumflex" place="right_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin" text="Weiter die so auß mercurio entspringe[n] in massen wie angezeygt ist alopiciam haaraußfallen vnnd morpheam fläcken pruritum beißigkeyt vnd die vlcera communia gemeine geschwer heylen nach dem vnnd sy in sale metallorum vberflüssig stond."/> <!--JG: You can capture the printed text from 'Weiter...stond' in the anchor attribute-->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

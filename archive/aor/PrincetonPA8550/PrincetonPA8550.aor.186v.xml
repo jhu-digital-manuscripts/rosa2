@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.186v.tif" pagination="372" reader="Harvey" signature="[aijv]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Nihil facilius est, quàm has ut uocant, species in arte numerandi discere." hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nihil facilius Arithmetica.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation> Nothing is easier than mathematics </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="longis rationibus" type="straight"/>
+        <underline language="LA" method="pen" text="Discunt in partes centum diducere" type="straight"/>
+        <underline language="LA" method="pen" text="quincunce" type="straight"/>
+        <underline language="LA" method="pen" text="Vncia" type="straight"/>
+        <underline language="LA" method="chalk" text="uiro politico" type="straight"/>
+        <underline language="LA" method="chalk" text="in cosmographia" type="straight"/>
+        <underline language="LA" method="chalk" text="in locorum" type="straight"/>
+        <underline language="LA" method="chalk" text="interuallis intelligendis" type="straight"/>
+        <underline language="LA" method="pen" text="doctrinam de rebus coelestibus" type="straight"/>
+        <underline language="LA" method="chalk" text="mediocri Arithmetico" type="straight"/>
+        <underline language="LA" method="chalk" text="ne omnia in doctrina rerum coelestium" type="straight"/>
+        <underline language="LA" method="pen" text="nihil" type="straight"/>
+        <underline language="LA" method="pen" text="facilius est" type="straight"/>
+        <underline language="LA" method="pen" text="quàm has ut uocant, species" type="straight"/>
+        <underline language="LA" method="pen" text="numerandi discere" type="straight"/>
+        <underline language="LA" method="chalk" text="His mediocriter" type="straight"/>
+        <underline language="LA" method="chalk" text="Astronomia" type="straight"/>
+        <underline language="LA" method="pen" text="alatas esse" type="straight"/>
+        <underline language="LA" method="pen" text="alteris" type="straight"/>
+        <underline language="LA" method="pen" text="alas" type="straight"/>
+        <underline language="LA" method="pen" text="alatas ait uolitare" type="straight"/>
+        <underline language="LA" method="pen" text="Etuculo" type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="Discunt in partes centum diducere"/>
+        <mark language="LA" method="chalk" name="plus_sign" place="left_margin" text="uiro politico"/>
+        <mark language="LA" method="chalk" name="plus_sign" place="left_margin" text="omnia in doctrina rerum coelestium"/>
+        <mark method="chalk" name="bracket" place="left_margin"/>
+        <mark language="LA" method="chalk" name="bracket" place="left_margin" text="Plato in Phedro fingit duplices aenimas,            quarum alteras ait alatas esse, alteris, inquit, decidisse asal. Oirrò alatas ait uolitare in coelum, fruentes"/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- ait -->
+        <mark language="LA" method="chalk" name="horizontal_bar" place="intext" text="congressu"/>
+        
+    </annotation>
+</transcription>

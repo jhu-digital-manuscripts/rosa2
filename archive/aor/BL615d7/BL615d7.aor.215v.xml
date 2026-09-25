@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.215v.tif" pagination="[215v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="subitamente venne quel fiume di Betlem tanto grosso" hand="Italian" method="pen">
+            <language ident="EN"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The sudden swelling and violent streming of</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Betlem fl.[ume]</marginalia_text>
+                    <location name="Belen"/>
+                </position>
+            </language>
+            <translation>The sudden swelling and violent streaming of Belen river.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Betlem fl.[ume]</marginalia_text>
+                    <location name="Belen"/>
+                </position>
+            </language>
+            <translation>Belen river.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="subitamente venne quel fiume di Betlem tanto grosso" type="straight"/>
+        <underline language="IT" method="pen" text="grandi, &amp; continue pioggie" type="straight"/>
+        
+        <errata amendedtext="per" copytext="oer" language="IT"/>
+        
+    </annotation>
+</transcription>

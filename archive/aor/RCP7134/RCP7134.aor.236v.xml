@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.236v.tif" pagination="[229v]" reader="John Dee" signature="[MM[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="In ascendente omnes corporis partes sunt, qui uero damnat planeta, est inspiciendus, &amp; in qua domo sit, &amp; quam uim habeat ad signum ascendens" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ascendens.</marginalia_text>
+                </position>
+            </language>
+            <translation>Ascending.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vt hoc exponas co[n]sideres aphorismu[m] 13.14.16.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:477" text="13"/>
+                        <target ref="RCP7134:477" text="14"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>So that you expose this, examine the aphorisms .</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="In ascendente omnes corporis partes sunt, qui uero damnat planeta, est inspiciendus, &amp; in qua domo sit, &amp; quam uim habeat ad signum ascendens" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.119v.tif" pagination="222" reader="John Dee" signature="[t 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="inter initiu[m], finem'q[ue] mu[n]di" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        initiu[m] finisq[ue] mundi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The beginning and end of the world.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Aquila" type="straight"/>
+        <underline language="LA" method="pen" text="Cassiopea. Quicu[n]q[ue] sub hoc sydere nati fuerint, erunt" type="straight"/>
+        <underline language="LA" method="pen" text="aurifices, bracteatores, inauratores" type="straight"/>
+        <underline language="LA" method="pen" text="plasticatores" type="straight"/>
+        <underline language="LA" method="pen" text="margaritarii" type="straight"/>
+        <underline language="LA" method="pen" text="has omnes artes" type="straight"/>
+        <underline language="LA" method="pen" text="conuersatione pertractent" type="straight"/>
+        <underline language="LA" method="pen" text="iis maxima uitae" type="straight"/>
+        <underline language="LA" method="pen" text="subsidia consequantur" type="straight"/>
+        <underline language="LA" method="pen" text="Andromeda" type="straight"/>
+        <underline language="LA" method="pen" text="Heniochus. Quicu[n]q[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="oritur Ingeniculus" type="straight"/>
+        <underline language="EL" method="pen" text="ἐμ γόνασιμ" type="straight"/>
+        <underline language="LA" method="pen" text="dicitur" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]surgit belluae, quae" type="straight"/>
+        <underline language="LA" method="pen" text="Graecis ὀρφὸς dicitur" type="straight"/> 
+        <underline language="LA" method="pen" text="inter initiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="finem'q[ue] mu[n]di" type="straight"/>
+        <underline language="LA" method="pen" text="Aquila" type="straight"/>
+        <underline language="LA" method="pen" text="Cassiopea" type="straight"/>
+        <underline language="LA" method="pen" text="Andromeda" type="straight"/>
+        <underline language="LA" method="pen" text="Heniochus" type="straight"/>
+        <underline language="LA" method="pen" text="Ingeniculus" type="straight"/>
+        <underline language="EL" method="pen" text="ὀρφὸς" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

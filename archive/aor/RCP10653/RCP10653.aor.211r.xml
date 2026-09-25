@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.211r.tif" pagination="413" reader="John Dee" signature="Mm iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Henrico Imperatori" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        tertio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The third.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Gunildam, sororem" type="straight"/>
+        <underline language="LA" method="pen" text="Cnutone rege &amp; Emma" type="double"/>
+        <underline language="LA" method="pen" text="Gunilda" type="straight"/>
+        <underline language="LA" method="pen" text="apud imperatorem" type="straight"/>
+        <underline language="LA" method="pen" text="Gunilda per duellum, contra accusatorem, gyganteae immensitatis hominem, famam suae puritatis redimeret" type="straight"/>
+        <underline language="LA" method="pen" text="horrenda[m] corporis eius deformitatem" type="straight"/>
+        <underline language="LA" method="pen" text="qui nanus erat" type="straight"/>
+        <underline language="LA" method="pen" text="Mimecan" type="straight"/>
+        <underline language="LA" method="pen" text="imperatori repudium fecit" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+    </annotation>
+</transcription>

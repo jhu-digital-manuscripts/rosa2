@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.208v.tif" pagination="416" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Gaudent enim res uarietate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Gaudet res varietate</marginalia_text>
+                </position>
+            </language>
+            <translation>Taking pleasure in a variety of things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="per relationem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Per relationem</marginalia_text>
+                </position>
+            </language>
+            <translation>By reference back.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="poenitentia dicti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Po[e]nite[n]tia dicti</marginalia_text>
+                </position>
+            </language>
+            <translation>Repentance for what is said.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Verrem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In Verrem.</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uenusti transitus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>venusti tra[n]situs</marginalia_text>
+                </position>
+            </language>
+            <translation>Elegant transition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cum aliqua uelut ignoramus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cum aliquia velut ignoramus</marginalia_text>
+                </position>
+            </language>
+            <translation>With feigned ignorance.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Demosthenes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Demosthones</marginalia_text>
+                    <person name="Demosthenes"/>
+                </position>
+            </language>
+            <translation>Demosthenes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iteratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iteratio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Repetition.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nisi quòd freque[n]tius asseuerat, quàm eludit" type="straight"/>
+        <underline language="LA" method="pen" text="poenitentia dicti" type="straight"/>
+        <underline language="LA" method="pen" text="ab aurifice" type="straight"/>
+        <underline language="LA" method="pen" text="non enim est ista ipsa per se iteratio schema:" type="straight"/>
+        
+    </annotation>
+</transcription>

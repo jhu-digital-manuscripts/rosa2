@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.163v.tif" pagination="310" reader="Harvey"/> 
+    <annotation>
+        <marginalia anchor_text="aedem Concordiae, quam per seditionem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        De diuersis generibus belli, qua[e] post conditam a[e]dem Concordia[e] sunt secuta. August. l. 3. c. 26. de Ciuit[ate Dei] 
+                        vbi de seditiosis concionatorib[us] Gracchis, L. Saturnino, Caio Ca[e]sare, C. Servilio pra[e]tore, Marco Druso. Et ibi L. Vives 
+                        paulò exactiùs.
+                    </marginalia_text>
+                    <person name="Gaius Gracchus"/>
+                    <person name="Tiberius Gracchus"/>
+                    <person name="Lucius Appuleius Saturninus"/>
+                    <person name="Gaius Caesar"/>
+                    <person name="Gaius Servilius Glaucia"/> <!--JG: Not entirely sure whether Harvey meant this person-->
+                    <person name="Marcus Livius Drusus"/>
+                    <person name="Juan Luis Vives"/>
+                    <book title="De Civitate Dei"/>
+                    <book title="Commentarii"/>
+                    <location name="Temple of Concord"/>
+                </position>
+            </language>
+            <translation>Of the wars of various kinds which followed the construction of the temple of Concord: 
+                Augustine’s City of God, bk. 3, ch. 26, where [he writes] about the seditious orators, the Gracchis, Lucius Saturninus, 
+                Gaius Caesar, Gaius Servilius the praetor, and Marcus Drusus. At that place, a little more precisely, also Juan Luis Vives.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aedem Concordiae, quam per seditionem" type="straight"/>
+        <underline language="LA" method="pen" text="aedem in arce faciendam loauerunt" type="straight"/>
+        
+    </annotation>
+</transcription>

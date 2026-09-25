@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.023r.tif" pagination="24" reader="John Dee"/>  
+    <annotation>
+        
+        <marginalia anchor_text="Atlas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Atlas</marginalia_text>
+                    <person name="Atlas"/>
+                </position>
+            </language>
+            <translation>Atlas.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Amor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Amor</marginalia_text>
+                </position>
+            </language>
+            <translation>Love.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Spéq[ue] timor dubia spésq[ue] timore cadit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Spes. Timor</marginalia_text>
+                </position>
+            </language>
+            <translation>Hope. Fear.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Si cumulas stupri" type="straight"/>
+        <underline language="LA" method="pen" text="Té ne ferunt geminos pressisse tenaciter angues" type="straight"/>
+        <underline language="LA" method="pen" text="Coepisti maelius, quàm desinis" type="straight"/>
+        <underline language="LA" method="pen" text="Quem non mille ferae, quem non stheneleius hostis" type="straight"/>
+        <underline language="LA" method="pen" text="Non potuit Iuno vincere, vincit Amor" type="straight"/>
+        <underline language="LA" method="pen" text="Quàm male inaequales veniunt ad aratra iuuenci Tam premitur magno coniuge nupta minor" type="straight"/>
+        <underline language="LA" method="pen" text="Siqua voles apte nubere, nube pari" type="straight"/>
+        <underline language="LA" method="pen" text="Spéq[ue] timor dubia, spésq[ue] timore cadit" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="right_margin"/> <!-- FSF: I think this is a new mark or symbol -->
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Quàm male inaequales veniunt ad aratra iuuenci Tam premitur magno coniuge nupta minor"/>
+        <mark method="pen" name="scribble" place="right_margin"/>   <!-- DO: Not sure if this is something more specific -->
+        
+    </annotation>
+</transcription>

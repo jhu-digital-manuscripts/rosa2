@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.155r.tif" pagination="49" reader="John Dee" signature="d.i."/>  
+    <annotation>
+        
+        <marginalia anchor_text="annuo sermone; sententiose loqueris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>annuus sermo sententiose loqui</marginalia_text>
+                </position>
+            </language>
+            <translation>A year-long speech; to speak pithily.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Sermocinatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sermocinatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Dialogue.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Conformatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Conformatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Personification.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Significatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Significatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Signalling.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="ea vix annuo sermone enarrare possim" type="straight"/>
+        <underline language="LA" method="pen" text="Parce, inquit, &amp; per ea quae tibi dulcissima sunt in vita, miserere nostri, noli extinguere extinctos" type="straight"/>
+        <underline language="LA" method="pen" text="sententiose loqueris" type="straight"/>
+        <underline language="LA" method="pen" text="gladium in latere defixit" type="straight"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+        <drawing anchor_text="anuus sermo" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        <drawing anchor_text="sentiose loqui" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+        
+    </annotation>
+</transcription>

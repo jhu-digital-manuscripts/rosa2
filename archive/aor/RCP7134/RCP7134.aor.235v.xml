@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.235v.tif" pagination="[228v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="uulnerabitur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vulnera.</marginalia_text>
+                </position>
+            </language>
+            <translation>Wounds.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="claudicabit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Claudus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Limping.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Signa viole[n]ta mortis radicalia. ♂ in cuspide  ♏
+                    □ ferens ♃ ♄ etia[m] domin[us] 8 elevatus ☾ co[m]busta in octaua etia[m] d[omi]na asce[n]dentis. 
+                    Deniq[ue] infortu[na[e]] domina[n]tur fortius dominantibus in mu[n]do et fig[u]ra debilibus. [Etc].</marginalia_text> 
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Scorpio"/>
+                    <symbol_in_text name="Square"/>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>The violent [and] radical signs of death. Mars in the cusp of Scorpio; a square producing Jupiter; Saturn even lord of the eighth [house], elevated; the Moon, combusted
+            in the eighth [house] and also lord of the ascendent. Finally, the unfortunate are dominating more strongly than the weak dominators in the world and figure.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dominum ascendentis aspexerit" type="straight"/>
+        <underline language="LA" method="pen" text="Hic anno 21. expleto, ocasus est die decimaoctaua Iulij, hora decimaoctaua" type="straight"/>
+        <underline language="LA" method="pen" text="uulnus in gula &amp; crure, moritur subito." type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--Hic anno-->
+        
+        <table place="tail" type="astrological_chart"> 
+            <text hand="English_secretary" language="LA">[deleted]</text>
+        </table>
+        
+        <table place="tail" type="astrological_chart">
+            <tr>
+                <th/>
+                <th label="House"/>
+                <th label="Position"/>
+            </tr>
+            <tr>
+                <td>Aquarius</td>
+                <td>1</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Aries</td>
+                <td>2</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Gemini</td>
+                <td>4</td>
+                <td>12</td>
+            </tr>
+            
+        </table> <!--JG: To be continued, chart doesn't make sense to me, need expert advice-->
+        
+        
+    </annotation>
+</transcription>

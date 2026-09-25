@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.321r.tif" pagination="93" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="in eo nonnunquam variari inter eos &amp; dubitari videtur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>in eo nunq[uam] int[er] eos et dubitari v[idetu]r</marginalia_text>  
+                    <!-- DO: I don't know if it's meant to be 'nonnunquam' as it is in the text (and thus the opposite meaning)? --> <!--JG: Could very well be, but let's stick to nunquam-->
+                </position>
+            </language>
+            <translation>In this matter there never seems to be any variation and doubt.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="an possit aut labefactari, aut eripi rebus aduersis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>An vita beata possit eripi aut labefactari rebus adu[er]sis</marginalia_text>
+                </position>
+            </language>
+            <translation>Whether a happy life can be snatched away or destroyed by adverse things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Theophrasti de beata vita liber" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Theophr. de beata vita.</marginalia_text>
+                    <person name="Theophrastus"/>
+                </position>
+            </language>
+            <translation>Theophrastus on a happy life.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristotelem, &amp; eius filium Nicomachu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nichomachus arist. filius.</marginalia_text>
+                    <person name="Nicomachus"/>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Nicomachus, the son of Aristotle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Strato" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Strato</marginalia_text>
+                    <person name="Strato of Lampsacus"/>
+                </position>
+            </language>
+            <translation>Strato of Lampsacus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lysias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lysias.</marginalia_text>
+                    <person name="Lysias"/>           
+                    <!-- DO: I think the real person in question is actually Lyco of Troas, but have tagged Lysias as this is what is in the text and note. See: https://www.loebclassics.com/view/marcus_tullius_cicero-de_finibus_bonorum_et_malorum/1914/pb_LCL040.405.xml?result=1&rskey=k67wJi and https://en.wikipedia.org/wiki/Lyco_of_Troas -->
+                </position>
+            </language>
+            <translation>Lysias.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aristo</marginalia_text>
+                    <person name="Aristo of Ceos"/>
+                </position>
+            </language>
+            <translation>Aristo of Ceos.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hieronymum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hieronymus.</marginalia_text>
+                    <person name="Hieronymus of Rhodes"/>
+                </position>
+            </language>
+            <translation>Hieronymus of Rhodes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Critolaus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Critolaus.</marginalia_text>
+                    <person name="Critolaus"/>
+                </position>
+            </language>
+            <translation>Critolaus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Diodorus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Diodorus.</marginalia_text>
+                    <person name="Diodorus of Tyre"/>
+                </position>
+            </language>
+            <translation>Diodorus of Tyre.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Antiochus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Antiochus.</marginalia_text>
+                    <person name="Antiochus of Ascalon"/>
+                </position>
+            </language>
+            <translation>Antiochus of Ascalon.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Summum aute[m] bonum si ignoretur, viuendi rationem ignorari necesse est: ex quo tantus error consequitur, vt quem in portum se recipiant scire non possint" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Summi boni ignoratio qua[n]tum incomodet.</marginalia_text>
+                </position>
+            </language>
+            <translation>How far ignorance of the greatest good inconveniences.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Negabat igitur vllam esse artem, quae ipsa à se proficisceretur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nulla est ars quae ip[s]a à se proficiscitur.</marginalia_text>
+                </position>
+            </language>
+            <translation>There is no art which 'can supply its own starting point' [Loeb 40, 409].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ὁρμὴ</marginalia_text>           
+                </position>
+            </language>
+            <translation>Impulse.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prima secundum natura[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Prima secundu[m] natura[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>The primary objects according to nature.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inuitame[n]ta naturae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>inuitame[n]ta natur[a]e</marginalia_text>
+                </position>
+            </language>
+            <translation>The inclinations of nature.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="an possit aut labefactari, aut eripi rebus" type="straight"/>
+        <underline language="LA" method="pen" text="nonnunquam variari" type="straight"/>
+        <underline language="LA" method="pen" text="Haec mihi videtur delicatior, vt ita dicam" type="straight"/>
+        <underline language="LA" method="pen" text="Nicomachu[m], cuius accurate scripti de moribus libri, dicuntur illi quide[m] esse Aristotelis, sed non video cur non potuerit patri similis esse filius" type="straight"/>
+        <underline language="LA" method="pen" text="est magnus" type="straight"/>
+        <underline language="LA" method="pen" text="Lysias &amp; oratione locuples, rebus" type="straight"/>
+        <underline language="LA" method="pen" text="Co[n]cinnus deinde &amp; elegans huius Aristo" type="straight"/>
+        <underline language="LA" method="pen" text="Scripta sanè &amp; multa &amp; polita, sed nescio quo pacto, authoritatem oratio non habet. Praetereo multos,              in his doctum homine[m] &amp; suauem Hieronymum" type="straight"/>
+        <underline language="LA" method="pen" text="quidem est grauitate proximus, &amp; redundat" type="straight"/>
+        <underline language="LA" method="pen" text="patriis institutis manet" type="straight"/>
+        <underline language="LA" method="pen" text="quoque suus est" type="straight"/>
+        <underline language="LA" method="pen" text="Nam caeteris in rebus siue praetermissum, siue ignoratum est quippiam,              non plus incommodi est quàm quanti quaeque earum rerum est, in quibus neglectum est aliquid. Summum aute[m] bonum si ignoretur, viuendi rationem ignorari necesse est:              ex quo tantus error consequitur, vt quem in portum se recipiant scire non possint" type="straight"/>
+        <underline language="LA" method="pen" text="Negabat igitur vllam esse artem, quae ipsa à se proficisceretur" type="straight"/>
+        <underline language="LA" method="pen" text="per se inuitaret &amp; alliceret appetitum" type="straight"/>
+        <underline language="LA" method="pen" text="vltimum, fons reperiendus est in" type="straight"/>
+        <underline language="LA" method="pen" text="prima inuitame[n]ta naturae" type="straight"/>
+        <underline language="LA" method="pen" text="primum declinatu[m] dolore[m]" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="tripunctus" place="head" text="in eo nunq[uam] int[er] eos et dubitari v[idetu]r"/>
+        <mark language="LA" method="pen" name="tripunctus" place="tail" text="inuitame[n]ta natur[a]e"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+    </annotation>
+</transcription>

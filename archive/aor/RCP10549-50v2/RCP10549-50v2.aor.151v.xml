@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.151v.tif" pagination="42" reader="John Dee"/>   
+    <annotation>
+        
+        
+        <marginalia anchor_text="Instabilis in istum plurimu[m] fortuna valuit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>instabilis fortuna</marginalia_text>
+                </position>
+            </language>
+            <translation>Unstable fortune.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Circuitio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Circuitio</marginalia_text>
+                </position>
+            </language>
+            <translation>Periphrasis.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Transgressio; peruersione aut transiectione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Transgressio 2.</marginalia_text>
+                </position>
+            </language>
+            <translation>Hyperbaton, 2.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Superlatio; separatim, aut cum co[m]paratione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Superlatio 2</marginalia_text>
+                </position>
+            </language>
+            <translation>Hyperbole, 2.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Intellectio est, cum res tota parua de parte cognoscitur, aut de toto pars" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Intellectio. 2</marginalia_text>
+                </position>
+            </language>
+            <translation>Synecdoche, 2.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Abusio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Abvsio</marginalia_text>
+                </position>
+            </language>
+            <translation>Catachresis.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Translatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Translatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Metaphor.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Permutatio; Ea diuiditur in treis parteis, similitudinem, argumentu[m], contrarium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Permutatio. 3</marginalia_text>
+                </position>
+            </language>
+            <translation>Allegory, 3.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="magis in praecipiendo" type="straight"/>
+        <underline language="LA" method="pen" text="quàm in quaerendo difficilis" type="straight"/>
+        <underline language="LA" method="pen" text="quibus antè dictum est: in quibus oportet verba sicut à poetisin quendam extruere numeru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="vt perfecte &amp; perfecte &amp; perpolitissime possint esse absolutae" type="straight"/>
+        
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">6</numeral>
+        <numeral place="left_margin">7</numeral>
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2.</numeral>
+        <numeral place="left_margin">3.</numeral>
+        <numeral place="left_margin">4.</numeral>
+        <numeral place="left_margin">5.</numeral>
+        <numeral place="left_margin">6.</numeral>
+        
+        <drawing anchor_text="instabilis fortuna" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        
+        <drawing anchor_text="instabilis in istum plurimu[m] fortuna" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

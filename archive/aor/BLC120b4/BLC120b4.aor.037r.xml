@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.037r.tif" pagination="37" reader="John Dee" signature="I"/> 
+    <annotation>
+        
+        <marginalia anchor_text="arenam albam" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Arena alba
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                White sand.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Terra residua" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Terra residua
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Residual soil. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aer" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        aeris
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Of air.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        nullum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                None.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="calidi" type="straight"/>
+        <underline language="LA" method="pen" text="Frigido" type="straight"/>
+        <underline language="LA" method="pen" text="arenam albam" type="straight"/>
+        <underline language="LA" method="pen" text="humidi" type="straight"/>
+        <underline language="LA" method="pen" text="Aer" type="straight"/>
+        <underline language="LA" method="pen" text="cum Sicco" type="straight"/>
+        <underline language="LA" method="pen" text="Argentum uiuum ut dictum est, mundatum ab Argento uiuo" type="straight"/>
+        <underline language="LA" method="pen" text="coagulatu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="(.i. mundatum)" type="double"/>
+        <underline language="LA" method="pen" text="Terra residua" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+        <errata amendedtext="receptarum" copytext="receptorum" language="LA"/>
+        <errata amendedtext="retinent" copytext="retinentem" language="LA"/>
+        <errata amendedtext="albificant" copytext="albificantem" language="LA"/>
+        
+    </annotation>
+</transcription>

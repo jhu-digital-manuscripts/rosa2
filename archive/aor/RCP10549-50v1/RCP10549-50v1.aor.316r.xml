@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.316r.tif" pagination="611" reader="John Dee" signature="qqq.ii.[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="cuiusuis est hominis errare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cuiusuis est ho[min]is errare.</marginalia_text>
+                </position>
+            </language>
+            <translation>Any man can make a mistake.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Discussa est illa caligo; diluxit, patet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>discussa est caligo diluxit patet</marginalia_text>
+                </position>
+            </language>
+            <translation>That fog has dissipated. It was clear. It is well known.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="optimus est portus poenitenti, mutatio consilii" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Optimus est portus poenite[n]ti, mutatio consilij</marginalia_text>
+                </position>
+            </language>
+            <translation>The safest haven for the penitent is a chance in conduct (Stone, 2013).</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Capua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Capua</marginalia_text>
+                    <location name="Capua"/>
+                </position>
+            </language>
+            <translation>Capua.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="recaeptui canente" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Receptui canere</marginalia_text>
+                </position>
+            </language>
+            <translation>To sing for the retreat.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cuiusuis est hominis errare: nullius, nisi insipientis, perseuerare in errore. posteriores enim cogitationes (vt aiunt) sapie[n]tiores solent esse" type="straight"/>
+        <underline language="LA" method="pen" text="optimus est portus poenitenti, mutatio consilii" type="straight"/>
+        <underline language="LA" method="pen" text="his Roma altera est" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="11"/>
+        
+        <numeral place="right_margin">11</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

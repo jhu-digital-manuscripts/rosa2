@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.103v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Gormo[n]du[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Gormondus.
+                    </marginalia_text>
+                    <person name="Gormondus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Gormo[n]du[m]" type="straight"/>
+        <underline language="LA" method="pen" text="traditione[m] esse insula[m] vnius coronae duobus coronatis submitti debere. Iratus" type="straight"/>
+        <underline language="LA" method="pen" text="vocabulo Pellitus" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

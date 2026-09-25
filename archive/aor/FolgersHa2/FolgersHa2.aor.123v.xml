@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.123v.tif" pagination="70" reader="Harvey" signature="[E3v]"/>	<!-- ABO 128left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Oeconomia biblica: et Eudromia aphoristica.
+					</marginalia_text>
+					<person name="Eudromus"/>
+					<emphasis method="pen" text="Oeconomia" type="straight"/>
+					<emphasis method="pen" text="aphoristica" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Biblical economy, and Eudromian aphorisms.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Expeditissimus Eudromi Cursus in familiari
+					</marginalia_text>
+					<person name="Eudromus"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						bibliotheca[e] Oeconomia,
+					</marginalia_text>
+					<emphasis method="pen" text="bibliotheca[e] Oeconomia" type="straight"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ad pra[e]sentem semper vsum: et summa proficiendi
+						facultas,
+						in analyse maximorum capitum aphoristica: cum
+					</marginalia_text>
+					<emphasis method="pen" text="in analyse" type="straight"/>
+					<emphasis method="pen" text="aphoristica" type="straight"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						flagranti Praxi; quanta esse potest pra[e]gnantiss[im]a.
+					</marginalia_text>
+					<emphasis method="pen" text="flagranti Praxi" type="straight"/>
+					<emphasis method="pen" text="esse potest" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The most expedient course of Eudromus in the familiar arrangement of the library is
+				always ready for present use. And he has the highest ability in carrying out aphorisms 
+				in an analysis of the greatest topics with a passionate praxis,
+				which is as pregnant as possible. <!-- CG: This is a strange sentence, unsure how "praxi" can be "flagranti." And what to do with the last clause? --> <!--Don't get this either, will ask specialist-->
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						{ Quotidiè Legendum, audiendum, docendum, exercendum.
+					</marginalia_text>
+					<emphasis method="pen" text="Quotidiè Legendum, audiendum, docendum, exercendum." type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Daily you must read, listen, teach, and exercise.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Conducit omnium Librorum Oeconomia promptissima: sed
+						maximè prodest potentissimoru[m] Capitu[m] aphoristica
+						synopsis; nuda, et stricta ad rem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A most ready arrangement of all books is advantageous,
+				but especially useful is an aphoristic summary of the most important topics,
+				bare and straight to the point.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Argenti viui globus semper viuidissimus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A globe always most vivid with living silver.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Spirituista.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Spirituist.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Homo duplex, Platoni in Rep[ublica]: semivir.
+						Verum est in propria Praxi: non in Comuni
+						artium apparatu.
+					</marginalia_text>
+					<person name="Plato"/>
+					<book title="The Republic"/>
+				</position>
+			</language>
+			<translation>
+				In Plato's Republic, man is double, a half-man.
+				The truth is found in one's own practice, not in the common material of the arts.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="buone nuoue fratelli" type="straight"/>
+		<underline language="IT" method="pen" text="habbiano veduti" type="straight"/>
+		<underline language="IT" method="pen" text="faranno eglino" type="straight"/>
+		<underline language="IT" method="pen" text="haranno conosciuti" type="straight"/>
+		<underline language="IT" method="pen" text="di rado de' frutti del matrimonio" type="straight"/>
+		<underline language="IT" method="pen" text="Licurgo" type="straight"/>
+		<underline language="IT" method="pen" text="che lo sposo con la sposa non dormisse" type="straight"/>
+		<underline language="IT" method="pen" text="che l'vno &amp; l'altro" type="straight"/>
+		<underline language="IT" method="pen" text="maggior parte del dì, &amp; della notte" type="straight"/>
+		<underline language="IT" method="pen" text="poco &amp; di" type="straight"/>
+		<underline language="IT" method="pen" text="nascosto si trouassero" type="straight"/>
+		<underline language="IT" method="pen" text="piu gagliardi" type="straight"/>
+		<underline language="IT" method="pen" text="non vsando il coito" type="straight"/>
+		<underline language="IT" method="pen" text="l'amor" type="straight"/>
+		<underline language="IT" method="pen" text="sempre fresco &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="figliuoli" type="straight"/>
+		<underline language="IT" method="pen" text="piu robusti" type="straight"/>
+		<underline language="IT" method="pen" text="Co[n]cordia" type="straight"/>
+		<underline language="IT" method="pen" text="Fede" type="straight"/>
+		<underline language="IT" method="pen" text="Prole" type="straight"/>
+		<underline language="IT" method="pen" text="prudenza" type="straight"/>
+		<underline language="IT" method="pen" text="l'esperienza nel Capitano" type="straight"/>
+		<underline language="IT" method="pen" text="apparenza corporea" type="straight"/>
+		<underline language="IT" method="pen" text="robusto &amp; gagliardo" type="straight"/>
+		<underline language="IT" method="pen" text="inesperto &amp; temerario" type="straight"/>	
+		<underline language="IT" method="pen" text="portare la soprauesta &amp; gli arnesi del Capitano" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		<symbol language="IT" name="LL" place="left_margin" text="leggi"/>
+		<symbol name="Sun" place="left_margin"/>
+		
+		<symbol language="IT" name="SS" place="intext" text="di rado de' frutti del matrimonio"/>
+		
+		<mark method="pen" name="bracket" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--capi-->
+		
+		<mark method="pen" name="colon" place="intext"/> <!--veduti che-->
+		<mark language="IT" method="pen" name="straight_quotation_mark" place="intext" text="haranno conosciuti"/>
+		<mark method="pen" name="dot" place="intext"/> <!--di, &-->
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="piu gagliardi"/>
+		
+    </annotation>
+</transcription>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.004v.tif" reader="John Dee" signature="[Aiiij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="om[n]e copula[n]s p[er] modu[m] co[n]tinuatio[n]is. indiuisibile est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Omne copulans p[er] modu[m] co[n]tinuationis, indiuisibile e[st].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Everything connecting through a method of continuation, is inseparable.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="linee se tangu[n]t in punctis indiuisibilibus et sup[er]ficies lineis et corp[or]a sup[er]ficiebus et t[em]p[or]a instantaneis, et loca reple[n]dis corporib[us]" hand="Italian"> <!-- FSF: not sure about tempora -->
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota, loca se tangere mutuo p[er] reple[n]da corpora
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note that the places go back to meet themselves in order to complete the structures.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="qui[n]q[ue] regularia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quinq[ue] regularia corpora
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Five regular bodies.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tempus esse q[ua]ntitate[m] co[n]tinua[m] q[uo]d quide[m] methaphisici est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Temp[us] est Metaphysici 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Time for methaphysics.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="c[om]munis t[er]minus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Terminus co[m]munis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The common term.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tange[n]cia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tange[n]tia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Tangents.          
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vt infra declarabit[ur]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        infra.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Below.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="locu[m] mathematicu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Locus mathematicus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A mathematical locus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Locus vero phisic[us]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Locus physicus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A physical locus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="puncto repletionis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Punctu[m] repletionis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A point of completion.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="replere locu[m] mathematice" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Replere locu[m] mathematice
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To complete a place mathematically.         <!-- DO: Again, do you think all these instances of 'locum' refer to a (mathematical) locus? --> <!-- FSF: I am not sure about this! -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Locus dupl[e]x
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A twofold place.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="positio p[ro]prie p[ar]tium mathematice" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Positio partiu[m] mathematicè
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A mathematical positioning of parts.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quide[m] methaphisici est" type="straight"/>
+        <underline language="LA" method="pen" text="et est aliquid vtriusq[ue] et neutrius per se, et" type="straight"/>
+        <underline language="LA" method="pen" text="om[n]e" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]tinuatio[n]is. indiuisibile est" type="straight"/>
+        <underline language="LA" method="pen" text="Sunt aut[em] tange[n]cia eor[um] quor[um] vltima sunt simul et p[ri]ma [et] neutri[us] per se. vt dixim[us]" type="straight"/>
+        <underline language="LA" method="pen" text="reple[n]dis corporib[us]" type="straight"/>
+        <underline language="LA" method="pen" text="p[er]manentia[m] et positione[m] no[n] habeat in p[ar]tibus que[m]admodu[m] numer[us] poci[us] [et] ordine[m]. postea" type="straight"/>
+        <underline language="LA" method="pen" text="tanq[uam] eunde[m] replentes s[e]c[un]d[u]m" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]mune[m] t[er]minu[m] corp[or]is" type="straight"/>
+        <underline language="LA" method="pen" text="Sic loci particule que sunt particule corp[or]is locati co[n]tinuant[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="mediante puncto" type="straight"/>
+        <underline language="LA" method="pen" text="loci" type="straight"/>
+        <underline language="LA" method="pen" text="distantie" type="straight"/>
+        <underline language="LA" method="pen" text="intersecant tres linee dyametrales ad vigintiquatuor rectos angulos et s[e]c[un]d[u]m totidem sup[er]ficies" type="straight"/>
+        <underline language="LA" method="pen" text="spaciu[m] circu[m]stans q[uo]dlibet punctu[m] in sublimi localiter" type="straight"/>
+        <underline language="LA" method="pen" text="cubos solu[m] replere locum quare locu[m] trib[us] dimensio[n]ibus" type="straight"/>
+        <underline language="LA" method="pen" text="et no[n]" type="double"/>
+        <underline language="LA" method="pen" text="in de celo" type="double"/>
+        <underline language="LA" method="pen" text="q[uod] positio p[ro]prie p[ar]tium mathematice co[n]siderat[ur]" type="straight"/>
+
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- se et -->
+        <mark method="pen" name="comma" place="intext"/> <!-- est p[raese]ns -->     
+        <mark method="pen" name="comma" place="intext"/> <!-- simul et -->
+        <mark method="pen" name="comma" place="intext"/> <!-- instantaneis et -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- mathematicu[m] et -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- phisicu[m] p[ro]ut -->
+        <mark method="pen" name="comma" place="intext"/> <!-- diuiso s[e]c[un]d[ae] -->
+        <mark method="pen" name="equal_sign" place="right_margin"/> <!-- p[ar]ticule -->
+        <mark method="pen" name="comma" place="intext"/> <!-- alterius vtriusq[ue] -->
+        <mark method="pen" name="comma" place="intext"/> <!-- punctu[m] qui -->
+        
+        <errata amendedtext="corp[or]is" copytext="corp[or]is" language="LA"/> <!-- it seems that since Dee's underlining covered up the abbreviation of corp[or]is, Dee added it afterwards, not to obscure the word -->
+        <errata amendedtext="," copytext="." language="LA"/> <!-- locati loci -->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="one_point_perspective_drawing"/>
+        
+    </annotation>
+</transcription>

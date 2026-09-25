@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.010v.tif" pagination="[10[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="motu" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Motus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Motion.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Arithmetica &amp; Geometria" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Arith.
+                        Geometria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Arithmetics.
+                Geometry.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        benè
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Well.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Astronomia" type="straight"/>
+        <underline language="LA" method="pen" text="quu[m] accidentia" type="straight"/>
+        <underline language="LA" method="pen" text="nisi in subiecto demonstrare" type="straight"/>
+        <underline language="LA" method="pen" text="omnino aut purè sit Mathematica, sed" type="straight"/>
+        <underline language="LA" method="pen" text="subiectu[m] intelligitur per accidentiu[m] declaratione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="inquantu[m] sunt separatae à materia" type="straight"/>
+        <underline language="LA" method="pen" text="ligendu[m] talia subiecta fingimus" type="straight"/>
+        <underline language="LA" method="pen" text="Arithmetica &amp; Geometria" type="straight"/>
+        <underline language="LA" method="pen" text="per hoc, quòd angulus exterior trianguli, est aequalis duobus interioribus sibi" type="straight"/>
+
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.147r.tif" pagination="285" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="sancti Germani" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        S. Germannus
+                    </marginalia_text>
+                    <person name="Saint Germanus of Auxerre"/>
+                </position>
+            </language>
+            <translation>
+                Saint Germanus of Auxerre.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Britonibus expulsis" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Britones expulsi.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The Britons expelled.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sancti Germani" type="straight"/>
+        <underline language="LA" method="pen" text="beato Lupo" type="straight"/>
+        <underline language="LA" method="pen" text="circiter .cccxliiii." type="straight"/>
+        <underline language="LA" method="pen" text="Saxonu[m], Iutorum, &amp; Angloru[m], Britonibus expulsis, Britannia[m] subiugarant" type="straight"/>
+        <underline language="LA" method="pen" text="regionis ecclesias funditus est subuersa" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+        <errata amendedtext="eius" copytext="eus" language="LA"/>
+        <errata amendedtext="illius" copytext="illlius" language="LA"/>    
+        <errata amendedtext="ieiunio" copytext="ieienio" language="LA"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.132r.tif" pagination="249" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Aristotele libro de rebus gestis Alexandri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Aristoteles in libro de rebus gesti Alexandri.</marginalia_text>
+                    <person name="Aristotle"/>
+                    <book title="Libro de Alexandre"/>
+                </position>
+            </language>
+            <translation>Aristotle in the book about the matters of the birth of Alexander.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Eustathius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Eustathius.</marginalia_text>
+                    <person name="Eustathius of Thessalonica"/>
+                </position>
+            </language>
+            <translation>Eustathius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ophir" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ophir</marginalia_text>
+                    <location name="Ophir"/>
+                </position>
+            </language>
+            <translation>Ophir.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="insula" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Insula.</marginalia_text>
+                </position>
+            </language>
+            <translation>An island.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dauid congestam à se; Tria millia talenta auri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Thesaurus Dauid.</marginalia_text>
+                    <person name="King David"/>
+                </position>
+            </language>
+            <translation>A hoard, David.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Sit autem Ophir, Zaffala nécne, aut Taprobana, aut alia Oceani Æthiopici, vel Indici insula, pro certo affirmare non possumus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>errat: nam Zaffala est in orientate littore Ethiopia[e]. [no[n] deleted] infra Insula[m] Madagascar.</marginalia_text> <!-- FSF: I think the first word is errat; this would also mean that the non would be crossed out, I assume -->
+                    <location name="Zoffala"/>
+                    <location name="Ethiopia"/>
+                    <location name="Madagascar"/>
+                </position>
+            </language>
+            <translation>It is incorrect: for Zoffala is on the Eastern shore of Ethiopia, below the island of Madagascar.</translation>   <!-- DO: Translation to be checked -->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contra Iosephum</marginalia_text>
+                    <person name="Titus Flavius Josephus"/>
+                </position>
+            </language>
+            <translation>Against Josephus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Magi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Magi .3.</marginalia_text>
+                    <person name="Biblical Magi"/>
+                </position>
+            </language>
+            <translation>The three Magi.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="agnoscat prophana" type="straight"/>
+        <underline language="LA" method="pen" text="à Cophene" type="straight"/>
+        <underline language="LA" method="pen" text="Assyriam" type="straight"/>
+        <underline language="LA" method="pen" text="rebus gestis Alexandri" type="double"/>
+        <underline language="LA" method="pen" text="ab Ophir insula" type="straight"/>
+        <!-- FSF: I think you missed Ailath -->
+        <underline language="LA" method="pen" text="in classe illa seruos" type="straight"/>
+        <underline language="LA" method="pen" text="Iobi capite 22. vers. 24" type="straight"/>
+        <underline language="LA" method="pen" text="Psalmo 45" type="straight"/>
+        <underline language="LA" method="pen" text="Ophir, non pro nomine proprio, sed appellatiuo" type="straight"/>
+        <underline language="LA" method="pen" text="proprium esse" type="straight"/>
+        <underline language="LA" method="pen" text="nomen intellexit" type="double"/>
+        <underline language="LA" method="pen" text="reliquit Ophir" type="straight"/>
+        <underline language="LA" method="pen" text="talenta auri, de" type="straight"/>
+        <underline language="LA" method="pen" text="auro Ophir" type="double"/>
+        <underline language="LA" method="pen" text="septem millia talentorum argenti" type="straight"/>
+        <underline language="LA" method="pen" text="deaurandos parietes" type="straight"/>
+        <underline language="LA" method="pen" text="esse insulam" type="straight"/>
+        <underline language="LA" method="pen" text="Oceano noui" type="straight"/>
+        <underline language="LA" method="pen" text="vocant Zaffala" type="straight"/>
+        <underline language="LA" method="pen" text="Sit autem Ophir, Zaffala nécne, aut Taprobana, aut alia Oceani Æthiopici" type="straight"/>
+        <underline language="LA" method="pen" text="Indici" type="straight"/>
+        <underline language="LA" method="pen" text="insula" type="double"/>
+        <underline language="LA" method="pen" text="nihil ad nos" type="straight"/>
+        <underline language="LA" method="pen" text="nuda" type="straight"/>
+        <underline language="LA" method="pen" text="contra Scripturae" type="straight"/>
+        <underline language="LA" method="pen" text="ad plagam Orientalem" type="straight"/>
+        <underline language="LA" method="pen" text="sit nugatorium, ex" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/> 
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <errata amendedtext="vers. 9" copytext="vers. 10" language="LA"/>
+        
+    </annotation>
+</transcription>

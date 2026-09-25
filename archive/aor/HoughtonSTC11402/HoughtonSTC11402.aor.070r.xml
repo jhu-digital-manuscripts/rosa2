@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.070r.tif" reader="Harvey" signature="[Hvii[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Castels, Townes, &amp; Cities, easely surprized. On way for pirats, &amp; other Aduenturers of valu, to aspire
+                    to pety</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>principalityes. near [the] seacost [etc].</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Consuetudo suspiciosa. Vt s[upr]a.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0040" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>A suspicious custom. As above.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Anniball; arrayed lyke Romaynes; spake also latyne" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Annibals men, apparrelid lyke Romanes. And spoke Latin.</marginalia_text>
+                    <person name="Hannibal"/>
+                    <emphasis method="pen" text="apparrelid" type="straight"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ut suprà Iugur. L.2.c.4.</marginalia_text>
+                    <person name="Jugurtha"/>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0103" text="L.2.c.4."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>As above: book 2, chapter 4.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Hannibal, and Jugurth[a] could speeke Lattin, to searue these purposes.</marginalia_text>
+                    <person name="Hannibal"/>
+                    <person name="Jugurtha"/>
+                    <emphasis method="pen" text="Hannibal" type="straight"/>
+                    <emphasis method="pen" text="Jugurth[a]" type="straight"/>
+                    <emphasis method="pen" text="speeke Lattin" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="recule agayne" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>recoile, or reare</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="range about the walles" type="straight"/>
+        <underline language="EN" method="pen" text="to recule agayne" type="straight"/>
+        <underline language="EN" method="pen" text="this feate onelye for a pastyme" type="straight"/>
+        <underline language="EN" method="pen" text="but sodeynly" type="straight"/>
+        <underline language="EN" method="pen" text="and scaled" type="straight"/>
+        <underline language="EN" method="pen" text="the walles" type="straight"/>
+        <underline language="EN" method="pen" text="so for oppressyng" type="straight"/>
+        <underline language="EN" method="pen" text="tymes exercisynge his men of warre" type="straight"/>
+        <underline language="EN" method="pen" text="also his mariners" type="straight"/>
+        <underline language="EN" method="pen" text="Penians to be careles" type="straight"/>
+        <underline language="EN" method="pen" text="he sodenly layde his nauy" type="straight"/>
+        <underline language="EN" method="pen" text="to the wall" type="straight"/>
+        <underline language="EN" method="pen" text="toke many cities" type="straight"/>
+        <underline language="EN" method="pen" text="before hym, arrayed lyke Romaynes" type="straight"/>
+        <underline language="EN" method="pen" text="reason of the longe" type="straight"/>
+        <underline language="EN" method="pen" text="spake also latyne" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark language="EN" method="chalk" name="quotation_mark" place="head" text="Castels, Townes, &amp; Cities, easely surprized. On way for pirats, &amp; other Aduenturers of valu, to aspire             to pety principalityes. near [the] seacost [etc]."/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="this feate onelye for a pastyme"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="toke may cities"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="sodeynly"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="so sore oppressyng"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="sodeynly"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="before hym"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="lyke Romaynes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="latyne"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="spake also latyne"/>
+        
+    </annotation>
+</transcription>

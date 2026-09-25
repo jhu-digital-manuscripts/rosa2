@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.071v.tif" pagination="flyleaf" reader="Harvey"/>	<!-- ABO 76left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Nunq[uam] ta[e]deat Domenici, aut Gandini: aut
+						ullius Monopragmatici.
+					</marginalia_text>
+					<person name="Lodovico Domenichi"/>
+					<person name="Marcantonio Gandino"/>
+				</position>
+			</language>
+			<translation>
+				May we never become tired of Domenichi, Gandino, or any other single-skilled man.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Consilium Medicum Eobani Hessi,
+						Poeta[e] Physici, et Homerici.
+						Vtere Conuiuis non tristibus: vtere amicis,
+						Quos Chelys, et risus, et ioca salsa iuuant.
+						
+						Dominus Thomas Morus, summus Anglia[e]
+						Cancellarius; sed ut homo ingeniosissimus, ita
+						valdè vrbanus, et perfacetus; solebat illud
+						per vulgatum subinde repetere:
+						Dum sumus in Mundo, viuiamus corde jocundo.
+						Idem pro eo, quod dici solet: Sic transit
+						gloria Mundi: solebat dicere:
+						Sic transit moria glundi: quasi
+						alludens ad Moria[e] Encomiu[m]; aut vulgare
+						illud, Stultorum plena sunt Omnia.
+						Nam festiuus vir, Luciani ingenio
+						delectabatur; et sa[e]pè agebat Democritu[m].
+						Nec tantus
+					</marginalia_text>
+					<person name="Helius Eobanus Hessus"/>
+					<person name="Homer"/>
+					<person name="Thomas More"/>
+					<person name="Lucian"/>
+					<person name="Democritus"/>
+					<book title="In Praise of Folly"/>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						ἐιρων
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Socrates, quantus
+						ille ingeniosus vir; semper hilaris in
+						omni societate Ciuili. Etiam mortem
+						oppetiturus, iocabatur affatim; et ridebat
+						omnes, et omnia, pra[e]ter suam causam.
+						Amabat Bacchu[m]: sed eundem Janum, Osirim,
+						Apollinem. Euohe.
+					</marginalia_text>
+					<person name="Socrates"/>
+					<person name="Bacchus"/>
+					<person name="Janus"/>
+					<person name="Osiris"/>
+					<person name="Apollo"/>
+					<emphasis method="pen" text="mortem oppetiturus, iocabatur affatim" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The medical advice of Eobanus Hessus, Homeric poet and natural philosopher:
+				enjoy gatherings (that aren't gloomy), enjoy friends who are delighted by the lyre,
+				laughter, and witty jokes. 
+				
+				Master Thomas Moore, High Chancellor of England, though he was a most ingenius man, 
+				was also very urbane and incredibly witty. He used to repeat constanty that common expression:
+				"While we are in the world, let us live with a happy heart."
+				Likewise, for that which is normally said, "Sic transit gloria mundi," he would say, <!--JG: I'd translate these Latin phrases as well, but perhaps put the Latin in between square brackets, so people get the pun-->
+				"Sic transit moria glundi," as if alluding to 'The praise of folly'.
+				Or that common phrase, "All things are full of fools."
+				Indeed he was a lively man, delighted by the genius of Lucian, and often he acted like Democritus.
+				And the ingenuity of this was was found not so much in Socratic irony, as in remaining always cheerful 
+				in every civil society. Even when he was about to meet death, he joked continuously, and he laughed
+				at everything and everyone before his trial.
+				He loved Bacchus, but also Janus, Osiris, Apolllo. Euohe!	<!-- CG: The noise that priests of Bacchus make. -->
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						( Venus Homeri,
+					</marginalia_text>
+					<person name="Homer"/>
+					<person name="Venus"/>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						φιλομειδὴς,
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						amica ridendi. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Homer's laughter-loving Venus is fond of laughing.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="full_page">
+					<marginalia_text>
+						Vnicus mundi magnes, est Animus. Nec ullus adamas tam penetrax: nec ipse
+						philosophorum Lapis tam multiplicabundus.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The sole lodestone of the world is the Soul. No steel is as penetrating, nor philosophers'
+				stone as full of reproductive power. <!-- CG: Another weird neologism. -->
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="full_page">
+					<marginalia_text>
+						At nihil tale feci, aut dixi: meam dedecus. At plus faciam: mea 
+						Apologia. At iam feci: mea dignitas. Eudromus.
+					</marginalia_text>
+					<person name="Eudromus"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				But I never did or said anything so great: this is my disgrace. But I shall do more: 
+				this is my apology. But now it is done: this is my dignity. Eudromus.
+			</translation>
+		</marginalia>
+		
+		<mark language="LA" method="pen" name="quotation_mark" place="intext" text="mortem oppetiturus, iocabatur affatim"/> 
+		
+    </annotation>
+</transcription>

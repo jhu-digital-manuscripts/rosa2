@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.302r.tif" pagination="155" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        bis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Twice.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Thomas Comes Flandriae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Thomas Comes Fl.
+                    </marginalia_text>
+                    <person name="Thomas, Count of Flanders"/>
+                </position>
+            </language>
+            <translation>
+                Thomas, Count of Flanders.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="obijt Iohannes Comes Lincoln." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        .O. Joannes Comes Lincoln.
+                    </marginalia_text>
+                    <person name="John de Lacy, 2nd Earl of Lincoln"/>
+                </position>
+            </language>
+            <translation>
+                John de Lacy, 2nd Earl of Lincoln died.
+            </translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="Angliam Thomas" type="straight"/>
+        <underline language="LA" method="pen" text="Obijt itaque" type="straight"/>
+        <underline language="LA" method="pen" text="Comes Glouerniae" type="double"/>
+        <underline language="LA" method="pen" text="Richardus, valedicens amicis" type="straight"/>
+        <underline language="LA" method="pen" text="accingit, &amp; cum eo multi nobiles" type="straight"/>
+        <underline language="LA" method="pen" text="terram suam per papales quaestionarios depauperari" type="straight"/>
+        <underline language="LA" method="pen" text="ipsum solenniter exco[m]municari permittit" type="straight"/>
+        <underline language="LA" method="pen" text="Comitem Richardu[m], &amp; exhibet omnia necessaria mangificè transeunti" type="straight"/>
+        <underline language="LA" method="pen" text="ad Massiliam, cum suo comitatu, saluo" type="straight"/>
+        <underline language="LA" method="pen" text="obijt Iohannes" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="cogitauit" copytext="cogitaui" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="Obijt itaque VVil. Comes VVarrenniae, Lo[n]don. decimo Kal. Iunij. Comes Glouerniae" language="LA"/> 
+        <errata amendedtext="Cornubia[e]" copytext="Glouerniae" language="LA"/> 
+        
+    </annotation>
+</transcription>

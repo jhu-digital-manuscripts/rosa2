@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.160r.tif" pagination="319" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="praeceßisse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pra[e]sentia</marginalia_text>
+                </position>
+            </language>
+            <translation>Present.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quomodo ulra Oceanum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>An quid vltra oceanum</marginalia_text>
+                </position>
+            </language>
+            <translation>Whether it is beyond the ocean.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Animi coniectura non dubie in omnia te[m]pora cadit." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Animi coinectura in o[mn]ia tempora cadit</marginalia_text>
+                </position>
+            </language>
+            <translation>Conjecture relating to the will occurs in all times.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quaeritur per coniecturam &amp; quantitas, &amp; qualitas circa modum, speciem, numerum." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quaerit[ur] p[er] co[n]iectura[m] et quantitas &amp; q[ua]litas circa modum speciem ac numeru[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>We use conjecture when inquiring into quality in relation to size, shape, or number.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="bellum Troianum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bellu[m] Troianum</marginalia_text>
+                    <location name="Troy"/>
+                </position>
+            </language>
+            <translation>The Trojan War.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="factum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>factum</marginalia_text>
+                </position>
+            </language>
+            <translation>Act.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="transferendi criminis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Criminis Translatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Transfer the verdict.</translation>
+        </marginalia>
+       
+        <underline language="LA" method="pen" text="In ijs autem quae accusatione, ac defensione constant" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="right_margin">1.</numeral>
+        <numeral place="right_margin">2.</numeral>
+        <numeral place="right_margin">3.</numeral>
+        <numeral place="right_margin">1</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

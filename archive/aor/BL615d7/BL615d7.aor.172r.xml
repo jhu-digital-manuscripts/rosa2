@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.172r.tif" pagination="172" reader="John Dee" signature="Yiiij"/>    
+    <annotation>
+        
+        <marginalia anchor_text="Alfonso Sancies di Caruagiale" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Alfonso Sancies</marginalia_text>
+                    <person name="Alfonso Sanchez"/>
+                </position>
+            </language>
+            <translation>Alfonso Sanchez.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note laborers hired fro[m] spayne to work in the mines</marginalia_text>
+                    <location name="Spain"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="veniuano fuor di strada" type="straight"/>
+        <underline language="IT" method="pen" text="in quelle parti per commission" type="straight"/>
+        <underline language="IT" method="pen" text="accortosi della ribellione" type="straight"/>
+        <underline language="IT" method="pen" text="Orlando haueua secretamente hauuta la parola da molti di quelli, che di nuouo eran venuti di" type="straight"/>
+        <underline language="IT" method="pen" text="di farsi maggiore" type="straight"/>
+        <underline language="IT" method="pen" text="conduceuano assoldata, per lauorar nelle minere, ò per altri mistieri," type="straight"/>
+        <underline language="IT" method="pen" text="à S. Domenico" type="straight"/>
+        
+    </annotation>
+</transcription>

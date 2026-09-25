@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.088r.tif" reader="Harvey" signature="L[ir]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Veteratoriè.</marginalia_text>
+                </position>
+            </language>
+            <translation>Cunningly.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="were them selfes" type="straight"/>
+        <underline language="EN" method="pen" text="Anniball" type="straight"/>
+        <underline language="EN" method="pen" text="that forsoke" type="straight"/>
+        <underline language="EN" method="pen" text="were fledde" type="straight"/>
+        <underline language="EN" method="pen" text="ennemies spies were" type="straight"/>
+        <underline language="EN" method="pen" text="those runnagates" type="straight"/>
+        <underline language="EN" method="pen" text="gone forth by his" type="straight"/>
+        <underline language="EN" method="pen" text="harken and spye what" type="straight"/>
+        <underline language="EN" method="pen" text="dyd and intended" type="straight"/>
+        <underline language="EN" method="pen" text="shoulde not be" type="straight"/>
+        <underline language="EN" method="pen" text="callyd counnynge and witty warriours" type="straight"/>
+        <underline language="EN" method="pen" text="those runawayes" type="straight"/>
+        <underline language="EN" method="pen" text="and cuttynge of their handes" type="straight"/>  
+        <underline language="EN" method="pen" text="he fained a lye" type="straight"/>
+        <underline language="EN" method="pen" text="shippes of his ennemies" type="straight"/>
+        <underline language="EN" method="pen" text="harde by the citie, whiche" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="he fained a lye"/> 
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="were them selfes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="callyd counnynge and witty warriours"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--Romayns-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="handes"/>
+        
+    </annotation>
+</transcription>

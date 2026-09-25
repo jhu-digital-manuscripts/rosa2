@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.129v.tif" pagination="258" reader="John Dee" signature="[r[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Fiduciam igitur orator prae se ferat, semper'q[ue]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fiduciam semp[er] p[e]r se ferre debet Orator.</marginalia_text> 
+                </position>
+            </language>
+            <translation>An orator always ought to have faith through himself.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nam si agimus, nostra confirmanda sunt primùm, tum quae nostris opponuntur, refutanda. " hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Accus[atio]</marginalia_text>
+                </position>
+            </language>
+            <translation>Accusation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ordo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ordo</marginalia_text>
+                </position>
+            </language>
+            <translation>Order.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Si respondemus, prius incipiendu[m] est à refutatione." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Defe[n]s[io]</marginalia_text>
+                </position>
+            </language>
+            <translation>Defence.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Fiduciam igitur orator prae se" type="straight"/>
+        <underline language="LA" method="pen" text="Quod (sicut omnia) in Cicerone praecipuum" type="straight"/>
+        <underline language="LA" method="pen" text="locu[m] obtineat, dubitare" type="straight"/>
+        <underline language="LA" method="pen" text="refutatio, qualis est illa Scauri" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

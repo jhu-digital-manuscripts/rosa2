@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.009r.tif" pagination="10" reader="John Dee" signature="B.ij."/>  
+    <annotation>
+        
+        <marginalia anchor_text="amor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Amor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Love.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Europam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Europa</marginalia_text>
+                    <person name="Europa"/>
+                </position>
+            </language>
+            <translation>Europa.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Peius adulterio turpis adulter obest" type="straight"/>
+        <underline language="LA" method="pen" text="arcu praesignis adunco" type="straight"/>
+        <underline language="LA" method="pen" text="Torquentem frenis" type="straight"/>
+        <underline language="LA" method="pen" text="Fauníq[ue] bicornes" type="straight"/>
+        <underline language="LA" method="pen" text="me tacitam conscius vrit amor" type="straight"/>
+        
+        <symbol name="Taurus" place="right_margin"/>
+        
+    </annotation>
+</transcription>

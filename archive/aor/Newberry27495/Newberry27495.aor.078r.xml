@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.078r.tif" reader="Harvey" signature="R.iiii.[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Artis est, celare Artem: et magnum Arcanum,
+                    </marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        negligens diligentia.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>It is true art to conceal art, and the great secret lies in a negligent diligence.</translation> 
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="pormysed to wryte of thys matter" type="straight"/>
+        <underline language="EN" method="pen" text="verye well thought vppon" type="straight"/>
+        <underline language="EN" method="pen" text="Iestes" type="straight"/>
+        <underline language="EN" method="pen" text="Fridericke" type="straight"/>
+        <underline language="EN" method="pen" text="hath yet beehinde concerning the Courtier" type="straight"/>
+        <underline language="EN" method="pen" text="lyke a trauailer on" type="straight"/>
+        <underline language="EN" method="pen" text="waye nowe weerie of the peinefulnesse of my longe iourney at noone tide, I" type="straight"/>
+        <underline language="EN" method="pen" text="sowne of hys woordes" type="straight"/>
+        <underline language="EN" method="pen" text="vnder some faire tree that casteth a goodlye" type="straight"/>
+        <underline language="EN" method="pen" text="sweete roaringe of a plentifull and liuelye springe" type="straight"/>
+        <underline language="EN" method="pen" text="laughynge" type="straight"/>
+        <underline language="EN" method="pen" text="you the toppe, ye" type="straight"/>
+        <underline language="EN" method="pen" text="shadowe may be" type="straight"/>
+        <underline language="EN" method="pen" text="the leaues of my" type="straight"/>
+        <underline language="EN" method="pen" text="the roaringe of the liuelye" type="straight"/>
+        <underline language="EN" method="pen" text="tourned into a sprynge" type="straight"/>
+        <underline language="EN" method="pen" text="by oure frier Marian" type="straight"/>
+        <underline language="EN" method="pen" text="neuer wanted water" type="straight"/>
+        <underline language="EN" method="pen" text="thus pleasante matter" type="straight"/>
+        <underline language="EN" method="pen" text="wyth practsynge of Iestes" type="straight"/>
+        <underline language="EN" method="pen" text="vse them" type="straight"/>
+        <underline language="EN" method="pen" text="whence they are" type="straight"/>
+        <underline language="EN" method="pen" text="pleasant matters should seene vnpleasant and tedyous" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="quotation_mark" place="left_margin" text="tourned into a springe"/>
+        
+        <mark language="EN" method="pen" name="quotation_mark" place="right_margin" text="vnder some faire tree that casteth a goodlye"/>
+        <mark language="EN" method="pen" name="quotation_mark" place="right_margin" text="you the toppe, ye"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="pleasant matters should seene vnpleasant and tedyous"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- Iestes, Syr -->
+        <mark method="pen" name="dot" place="intext"/> <!-- tide, I -->
+        <mark method="pen" name="dot" place="intext"/> <!-- doe, for -->
+        <mark method="pen" name="dot" place="intext"/> <!-- Iestes, and -->
+        <mark method="pen" name="dot" place="intext"/> <!-- deryued, and -->
+
+        <errata amendedtext="somewhat" copytext="somewht" language="EN"/>
+        
+    </annotation>
+</transcription>

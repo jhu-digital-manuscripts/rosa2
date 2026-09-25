@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.101r.tif" reader="Harvey" signature="[Mvi[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Tali Zelo gerenda singula; in pace, politicè; in bello, stratagematicè.
+                    Fortis Imaginatio, et valida Actio, operant[u]r miracula.</marginalia_text>
+                </position>
+            </language>
+            <translation>Every thing must be carried out with so great a zeal: in peace, politically; in war, strategically. Strong imagination and
+            powerful action are working miracles.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Decius, A braue Aduenturer at apynche, to releue his</marginalia_text>
+                    <person name="Publius Decius Mus I"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>General.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="iii. hu[n]dred souldiors" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>300. ut s[upr]a. l.I.c.2.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0034" text="l.I.c.2."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>300, as above, book 1, chapter 2.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>{ Abrahams, Gideons; { Leonides, Pisistratus; { Catos, Decius;</marginalia_text>
+                    <person name="Abraham"/>
+                    <person name="Gideon"/>
+                    <person name="Leonidas I"/>
+                    <person name="Pisistratus"/>
+                    <person name="Cato the Elder"/>
+                    <person name="Publius Decius Mus I"/>
+                    <!--JG: No clue about 'Elgas'-->
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>{ ower Elgas,</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>300: most worthily famous for euer.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>on of Herodotus amplifications.</marginalia_text>
+                    <person name="Herodotus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>lepidè.</marginalia_text>
+                </position>
+            </language>
+            <translation>Charmingly.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>resolutissima, et</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>pra[e]sumptuosissima Audatia, viri certè egregij; et digni Imperio.</marginalia_text>
+                </position>
+            </language>
+            <translation>A most resolute and presumptuous boldness of a man certainly eminent and worthy for command.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Quò maius periculu[m], eò magis exaggerandus Animus: quo nihil esse potest, seu Victuro, seu morituro honoratius.
+                    Omnis metus, vilis: alacritas, nobilis virtutis signum.</marginalia_text>
+                </position>
+            </language>
+            <translation>The larger the danger, the greater the mind is to be exalted: where it can be nothing either than life or more honorable death.
+                All worthless fear: alacrity, the sign of noble virtue.
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="ennemies lyenge in the vpper" type="straight"/>
+        <underline language="EN" method="pen" text=".iii.hu[n]dred souldiors, whom he" type="straight"/>
+        <underline language="EN" method="pen" text="encoraged manfully" type="straight"/>
+        <underline language="EN" method="pen" text="&amp; ranne downe into the myddes" type="straight"/>
+        <underline language="EN" method="pen" text="the valey, his" type="straight"/>
+        <underline language="EN" method="pen" text="ennemie commyng downe" type="straight"/>
+        <underline language="EN" method="pen" text="consull good occasion to" type="straight"/>
+        <underline language="EN" method="pen" text="spreade out his armie" type="straight"/>
+        <underline language="EN" method="pen" text="certayn noble man" type="straight"/>
+        <underline language="EN" method="pen" text="vtterly forbydde" type="straight"/>
+        <underline language="EN" method="pen" text="woll he forbydde vs also" type="straight"/>
+        <underline language="EN" method="pen" text="dye for our countrey" type="straight"/>
+        <underline language="EN" method="pen" text="Perseans" type="straight"/>
+        <underline language="EN" method="pen" text="wolde sende oute arrowes as thycke as cloudes" type="straight"/>
+        <underline language="EN" method="pen" text="vpon the Lacedemonians" type="straight"/>
+        <underline language="EN" method="pen" text="fyght the better in the shadowe" type="straight"/>
+        <underline language="EN" method="pen" text="Celius a hygh iuge" type="straight"/>
+        <underline language="EN" method="pen" text="sentence" type="straight"/>
+        <underline language="EN" method="pen" text="a Hick wall" type="straight"/>
+        <underline language="EN" method="pen" text="alyghted" type="straight"/>
+        <underline language="EN" method="pen" text="his heed" type="straight"/>
+        <underline language="EN" method="pen" text="Wissardes" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="encoraged manfully"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="wolde sende oute arrowes as thycke as cloudes"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="woll he forbydde vs also"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--bet-->
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text=".iii.hu[n]dred souldiors"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="encoraged manfully"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="dye for our countrey"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="wolde sende out arrowes as thycke as cloudes"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--Lacedemonians, Leonidas-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="fyght the better in the shadowe"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--sentence, a-->
+        <mark method="pen" name="dot" place="intext"/> <!--heed, whervpon-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Wissardes"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+        <mark method="pen" name="vertical_bar" place="tail"/>
+        
+    </annotation>
+</transcription>

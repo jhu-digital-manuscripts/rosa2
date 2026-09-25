@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.007r.tif" reader="Harvey" signature="[a7r]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>pra[e]figi etiam solet Justino.  
+                    </marginalia_text>
+                    <person name="Justin"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vt vtriq[ue] historia[e], tam extera[e], quàm Romana[e] accommodata Pra[e]fatio. Rerum Romanarum 
+                        mej primi historici, Aurelius Victor. Eutropius. Liuius. Exterarum rerum, Justinus, Æmilius Probus, maximam 
+                        partem Polya[e]nus. Vtrisq[ue] valdè conducunt Florus, Frontinus, Velleius, Valerius Maximus, Plutarchus.
+                        Quibus etiam propter res neotericas adiungo Egnatium, Gandinum, Jouium, Guicciardinum. Omninoq[ue] Zuingerum. 
+                        Nullos pra[e]termitto signiferos, nec Gra[e]cos, nec Latinos, nec vernaculos: sed insisto singulis, mea quadam ad
+                        communem, propriúmq[ue] vsum singulari methodo. Nec istam Romanaru[m], exterarúmq[ue] rerum 
+                        discriminationem, vllus adhuc, quod sciam, Polyhistor, satis accuratè est meditatus. Interest politici, 
+                        hanc distinctionem subtiliùs decidere: et tot Reru[m]publicaru[m] historicos solertiori iudicio examinare.
+                    </marginalia_text>
+                    <person name="Aurelius Victor"/>
+                    <person name="Flavius Eutropius"/>
+                    <person name="Justin"/>
+                    <person name="Livy"/>
+                    <person name="Aemilius Probus"/>
+                    <person name="Polyaenus"/>
+                    <person name="Florus"/>
+                    <person name="Frontinus"/>
+                    <person name="Marcus Velleius Paterculus"/>
+                    <person name="Valerius Maximus"/>
+                    <person name="Plutarch"/>
+                    <person name="Giovanni Battista Cipelli"/>
+                    <person name="Albertus Gandinus"/>
+                    <person name="Paolo Giovio"/>
+                    <person name="Francesco Guicciardini"/>
+                    <person name="Theodor Zwinger"/>
+                </position>
+            </language>
+            <translation>
+                This preface is also commonly attached to Justin, as it is suitable for each kind of history, both foreign and 
+                Roman. My leading historians for Roman matters are Aurelius Victor, Eutropius, and Livy. For foreign 
+                matters: Justin, Aemilius Probus and, for the largest part, Polyaenus. Florus, Frontinus, Velleius, Valerius 
+                Maximus and Plutarch are very useful for both. And to these I add Egnatius, Gandinus, Giovio, Guicciardini for 
+                modern issues, and especially Zwinger. I do not leave out any important ones, whether Greek, Latin, or vernacular,
+                but I devote myself to particular ones, with my own specific method for general and private use. And to my 
+                knowledge no polymath so far has reflected in sufficient detail upon this distinction between Roman and foreign 
+                matters. It is important for a politician to mark this difference accurately and to analyze the historians 
+                of all these Republics with a particularly skillful judgment.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="periculis aliorum" type="straight"/>
+        <underline language="LA" method="pen" text="sine suo periculo, cautum sapientemq[ue] fieri" type="straight"/>
+        <underline language="LA" method="pen" text="maximis consilijs" type="straight"/>
+        <underline language="LA" method="pen" text="etiam euentibus interesse" type="straight"/>
+    </annotation>
+</transcription>

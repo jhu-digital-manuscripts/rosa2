@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="RCP7831-1.017v.tif" pagination="24" reader="Dee" signature="[Ciiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Orpheus; Hermes" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Orpheus: Hermes.</marginalia_text>
+                    <person name="Orpheus"/>
+                    <person name="Hermes"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>τὰ φώτα</marginalia_text>
+                </position>
+            </language>
+            <translation>The lights.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uiuificos &amp; prolificos mundi oculos nu[n]cupans: &amp; uerè" type="straight"/>
+        <underline language="LA" method="pen" text="Luna materiam aptat &amp; pr[a]estruit, Sol formam inducit" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.212r.tif" pagination="title page" reader="John Dee"/>   
+    <annotation>
+       
+        
+        <marginalia date="1546" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>1546.</marginalia_text>  <!-- DO: Not sure what the markings before this are -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia date="1546" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>[Bedfield. deleted] 1546.</marginalia_text>  <!-- DO: Not sure what the word/marking before this is, looks like letters (ddffffdd) --> <!-- FSF: not sure if Bedfield should be captured as a location --> <!--JG: I think it first said Joannes Dee, which was replaced by another name (... Bedfield), which was then crossed out-->
+                    <location name="Bedfield"/>   <!-- DO: I'm not sure if this is the right place though; it might be referring to Bedford? -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia date="1546" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>1546.</marginalia_text>  <!-- DO: Not sure what the markings before this are -->
+                </position>
+            </language>
+        </marginalia>
+        
+    </annotation>
+</transcription>

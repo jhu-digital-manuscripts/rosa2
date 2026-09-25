@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.035v.tif" pagination="70" reader="John Dee" signature="[e 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="perspicuitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Perspicuitas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Clarity.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Simile</marginalia_text>
+                </position>
+            </language>
+            <translation>Similar.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inutile" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Invtile.</marginalia_text>
+                </position>
+            </language>
+            <translation>Useless.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dilata parumper illa, quae sola uulgò uocatur, art rhetorica. Ac muhi opportunus maxime uidetur ingressus ab eo, cuis aliquid              simule apud grammaticos puer didcerti." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rhetorica[e] Ingreßus qualis.</marginalia_text>
+                </position>
+            </language>
+            <translation>What kind of beginning to rhetoric?</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>H[a]ec, Cicero.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>This, Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="apud rhetorem initium sit historia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Historia Rhe[torem] initium.</marginalia_text>
+                </position>
+            </language>
+            <translation>History begins with the rhetorician.</translation> <!-- FSF: I am not sure about this translation because the text says something else; there it reads according to the rhetorician, history is the beginning -->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cum potiorem in scholis eruditionem esse, quàm domi dicerem, libentius se prima" type="straight"/>
+        <underline language="LA" method="pen" text="quòd apud eum discipuli" type="straight"/>
+        <underline language="LA" method="pen" text="melius instituti, aut dicent, quod inutile non sit imitari" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.012r.tif" pagination="23" reader="John Dee" signature="b 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mem finale &amp; Samec" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mem fin[ale] Samec</marginalia_text>
+                </position>
+            </language>
+            <translation>The final Mem, Samekh.</translation>
+        </marginalia>     
+        
+        <underline language="LA" method="pen" text="mundi fiant" type="double"/>
+        <underline language="LA" method="pen" text="non essent" type="straight"/>
+        <underline language="LA" method="pen" text="per uiam ueritatis" type="double"/>
+        <underline language="LA" method="pen" text="quòd Mem finale &amp; Samec stabant miraculosè" type="straight"/>
+        <underline language="LA" method="pen" text="ex puncto, linea" type="straight"/>
+        <underline language="LA" method="pen" text="regulari superficie" type="straight"/>
+        
+    </annotation>
+</transcription>

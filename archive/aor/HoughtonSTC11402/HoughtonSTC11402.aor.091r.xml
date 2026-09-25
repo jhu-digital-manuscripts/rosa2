@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.091r.tif" reader="Harvey" signature="Liiii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>No greater maime in anyman, then disuse, &amp; discontinuance.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="a targate galyardly decked" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>/ A tergat galyardly deckid.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Marius mules" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Marius Mules.</marginalia_text>
+                    <person name="Gaius Marius"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>owld M[iste]r Wythipolls saying to his sonnes:</marginalia_text>
+                    <!--JG: Unsure which Withipoll Harvey means. His notebook includes the names of Daniel and Bartholomew-->
+                    <!--KS: Daniel and Bartholomew Wythipoll were Harvey's contemporaries, so 'owld Mr Wythipoll' could be their father, the politician Edmund?-->
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Scribit[u]r in a[e]dibus, qui non ualet Equis, ualet pedibus.</marginalia_text>
+                </position>
+            </language>
+            <translation>It is written in the house: who is not strong by horse, is strong by foot.</translation> 
+            <!--JG: Chris, please check. Seems as there is a pun, but hard to render it-->
+            <!-- CG: I think 'aedibus' might mean something more like 'temples,' but it's unclear. I'm also wondering  if
+            there's another way of translating 'valet' to be more like 'has value' or 'is effective' since the text is talking about
+            using footsoldiers to carry stuff, rather than horses. -->
+            <!--JG: Hmm, could be. Perhaps something like: he who does not prevail on horse, prevails on foot-->
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="a targate galyardly decked and trymmed" type="straight"/>
+        <underline language="EN" method="pen" text="curiousely garnysshed" type="straight"/>
+        <underline language="EN" method="pen" text="wherein he" type="straight"/>
+        <underline language="EN" method="pen" text="his sworde" type="straight"/>
+        <underline language="EN" method="pen" text="Philyp" type="straight"/> 
+        <underline language="EN" method="pen" text="haue any carte, or other" type="straight"/>
+        <underline language="EN" method="pen" text="thynge vsed" type="straight"/>
+        <underline language="EN" method="pen" text="horseman to haue" type="straight"/>
+        <underline language="EN" method="pen" text="x. foote" type="straight"/>
+        <underline language="EN" method="pen" text="men one slaue" type="straight"/>
+        <underline language="EN" method="pen" text="quirnes and cordes" type="straight"/>
+        <underline language="EN" method="pen" text="to beare on theyr" type="straight"/>
+        <underline language="EN" method="pen" text="neckes meale for" type="straight"/>
+        <underline language="EN" method="pen" text="carieng their traficke and baggage" type="straight"/>
+        <underline language="EN" method="pen" text="fardels laide vpon staues, vnderset" type="straight"/>
+        <underline language="EN" method="pen" text="Marius mules" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="galyardly"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="curiousely garnysshed"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="owld M[iste]r Wythipolls saying to his sonnes:"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="his sworde"/>
+        <mark language="EN" method="pen" name="apostrophe" place="intext" text="Marius mules"/>
+        <mark method="pen" name="apostrophe" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Marius mules"/>
+        
+    </annotation>
+</transcription>

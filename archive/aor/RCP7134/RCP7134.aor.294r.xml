@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.294r.tif" pagination="287" reader="John Dee" signature="ccc iij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Co[n]trariu[m] sensu[m] tuetur in [??] in Ptoloma[e]um.</marginalia_text> <!--JG: Don't know this abbreviation/contraction--> 
+                    <!-- FSF: it looks like ro or co; ro would be r[ati]o, which doesn't work with the in before, so it must be co, but I don't know what it could be -->
+                    <person name="Ptolemy"/>
+                </position>
+            </language>
+            <translation>A contrary sense is held in [...] against Ptolemy.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Vt no[n] su[n]t.</marginalia_text> 
+                </position>
+            </language>
+            <translation>As they are not.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Co[n]tra dicit infra aph. 118</marginalia_text> 
+                    <internal_ref>
+                        <target ref="RCP7134:604" text="118"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>It says against aphorism 118 below.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="non exactae computationis esse necessarium" type="straight"/>
+        <underline language="LA" method="pen" text="Saturnus pluuias auget" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="tail"/>
+        
+    </annotation>
+</transcription>

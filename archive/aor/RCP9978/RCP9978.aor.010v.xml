@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.010v.tif" reader="John Dee" signature="[C ij[v]"/>
+    <annotation>
+        
+        <marginalia anchor_text="numeris constare" hand="Italian" id="RCP9978:028:m0001"> 
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Certis numeris co[n]sta[n]t o[mn]ia</marginalia_text>
+                </position>
+            </language>
+            <translation>All things are constant in certain numbers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="binarius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Binarius</marginalia_text>
+                </position>
+            </language>
+            <translation>Binary.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ternarius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ternari[us]</marginalia_text>
+                </position>
+            </language>
+            <translation>Ternary.</translation>
+        </marginalia>
+        
+        <underline id="RCP9978:028:u0001" language="LA" method="pen" text="numeris constare" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; eorum quae supra naturam" type="straight"/>
+        <underline language="LA" method="pen" text="enim monas indiuisibilis" type="straight"/>
+        <underline language="LA" method="pen" text="est, Dias, numerus confusionis" type="straight"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP9978:028:m0001"/> 
+            <marginal_annotation idref="RCP9978:028:u0001"/>
+            <relation from="RCP9978:028:m0001" to="RCP9978:028:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

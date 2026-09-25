@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.282v.tif" pagination="78" reader="John Dee" signature="[K.ij.[v]]"/>
+    <annotation>
+        
+       <marginalia anchor_text="Maylgonem; Marganus" hand="Italian" method="pen">
+           <language ident="LA">
+               <position book_orientation="0" place="head">
+                   <marginalia_text>Mailgo Morganus.</marginalia_text>
+                   <person name="Maelgwn Gwynedd"/>    
+                   <person name="Marganus"/>
+               </position>
+           </language>
+           <translation>Maelgwn, Marganus.</translation>
+       </marginalia> 
+         
+        <marginalia anchor_text="comitem Glouerni[a]e Gilbertum qui progenitores suos exh[a]eredauerat, de terra sua qu[a]e Glamorgan dicitur expulit &amp; fugauit" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Glamorgan Terra Gilberti de Clare Com[es] glo[u]e[eniae] sup[ra] pag[ina] 71.</marginalia_text>
+                    <person name="Gilbert de Clare, 7th Earl of Gloucester"/>
+                    <location name="Glamorgan"/>
+                </position>
+            </language>
+            <translation>Glamorgan, the land of Gilbert de Clare, Earl of Gloucester. Above page 71.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="diuersos sibi principes" type="straight"/>
+        <underline language="LA" method="pen" text="quendam Madocum" type="straight"/>
+        <underline language="LA" method="pen" text="Maylgonem" type="straight"/>
+        <underline language="LA" method="pen" text="Marganus" type="straight"/>
+        <underline language="LA" method="pen" text="comitem Glouerni[a]e Gilbertum qui progenitores suos exh[a]eredauerat" type="straight"/>
+        <underline language="LA" method="pen" text="de terra sua" type="double"/>
+        <underline language="LA" method="pen" text="Glamorgan dicitur expulit" type="straight"/>
+        <underline language="LA" method="pen" text="reddiderunt Anglis cognita fraude" type="straight"/>
+        <underline language="LA" method="pen" text="flumine de Conwey" type="straight"/>
+        <underline language="LA" method="pen" text="aquam melle" type="straight"/>
+        <underline language="LA" method="pen" text="Walle[n]ses" type="straight"/>
+        <underline language="LA" method="pen" text="Wallensium insurrectio" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

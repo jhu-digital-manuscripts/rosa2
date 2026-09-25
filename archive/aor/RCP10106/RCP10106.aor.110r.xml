@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.110r.tif" pagination="219" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="prognostica" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Prognostica</marginalia_text>
+                </position>
+            </language>
+            <translation>The prognostics.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nam enthymema (quod nos co[m]mentum sanè, aut comme[n]tatione[m] interpretamur, quia aliter, no[n] possumus Graeco melius usuri) unum intellectum habet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>tripl[a]ru[m] dicitur</marginalia_text>
+                </position>
+            </language>
+            <translation>Three forms of saying.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cornificius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cornificius</marginalia_text>
+                    <person name="Quintus Cornificius"/>
+                </position>
+            </language>
+            <translation>Cornificius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Valgius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Valgius</marginalia_text>
+                    <person name="Valgius Rufus"/>
+                </position>
+            </language>
+            <translation>Valgius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Celsus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Celsus</marginalia_text>
+                    <person name="Aulus Cornelius Celsus"/>
+                </position>
+            </language>
+            <translation>Celsus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Nam maiora minorum esse nemo miratur" type="straight"/>
+        <underline language="LA" method="pen" text="quo certam quanda[m] argumenti conclusione[m] uel ex conseqeuentibus, uel" type="straight"/>
+        <underline language="LA" method="pen" text="quod sanè non utiq[ue] ad oratore desideratur" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

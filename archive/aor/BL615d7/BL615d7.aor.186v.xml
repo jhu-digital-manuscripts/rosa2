@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.186v.tif" pagination="[186v]" reader="John Dee" signature="[Aaij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="furono di morti, &amp; feriti" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A murder.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Orlando" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A co[n]spiracy against Orlando</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="l' Orlando, &amp; i suoi saltarono d' improuiso sopra quelli dell' Ogieda con le spade nude, &amp;              amazzandone alcuni, &amp;" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A slaughter</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="furono di morti, &amp; feriti." type="straight"/>
+        <underline language="IT" method="pen" text="di farlo" type="straight"/>
+        <underline language="IT" method="pen" text="disordini, ò castigarlo" type="straight"/>
+        <underline language="IT" method="pen" text="l'Orlando, &amp; i suoi saltarono d'improuiso sopra quelli dell'Ogieda con le spade nude, &amp; amazzandone alcuni, &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="nirono della" type="straight"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        
+    </annotation>
+</transcription>

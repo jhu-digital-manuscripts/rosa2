@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.105r.tif" pagination="193" reader="John Dee" signature="r"/>
+    <annotation>
+        
+        <marginalia anchor_text="abruptae sententiae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Abrupta[e] sente[n]tia[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Harsh opinions.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Orpheus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Orpheus.
+                    </marginalia_text>
+                    <person name="Orpheus"/>
+                </position>
+            </language>
+            <translation>
+                Orpheus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Secreta no[n] co[mmin]ica[n]da profanis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Profane secrets, not to be disclosed.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Plato" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Plato.
+                    </marginalia_text>
+                    <person name="Plato"/>
+                </position>
+            </language>
+            <translation>
+                Plato.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Porphyrius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Porphyrius.
+                    </marginalia_text>
+                    <person name="Porphyry of Tyre"/>
+                </position>
+            </language>
+            <translation>
+                Porphyry of Tyre.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iure iurando" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Jureiurando obstructi auditores.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Listeners bound by swearing an oath.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="abruptae" type="straight"/>
+        <underline language="LA" method="pen" text="sententiae" type="straight"/>
+        <underline language="LA" method="pen" text="maleuolam temporalem" type="straight"/>
+        <underline language="LA" method="pen" text="nisi iurisiura[n]di necessitatem" type="straight"/>
+        <underline language="LA" method="pen" text="profanis auribus inuentae, ac compositae religionis secreta proderent[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="intimaret, patiuntur enim haec omnia iacturam, cum perditis &amp; desperatis animis ingeruntur" type="straight"/>
+        <underline language="LA" method="pen" text="noster" type="straight"/>
+        <underline language="LA" method="pen" text="silentio" type="straight"/>
+        
+    </annotation>
+</transcription>

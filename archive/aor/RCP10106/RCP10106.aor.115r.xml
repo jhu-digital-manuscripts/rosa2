@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.115r.tif" pagination="229" reader="John Dee" signature="p 3"/>
+    <annotation>
+        
+        <marginalia anchor_text="simil uia ualet, &amp; ad refellendum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>Division</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sit ciuis, aut natus sit, oportet aut factus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ciuis natus factus</marginalia_text>
+                </position>
+            </language>
+            <translation>A citizen born or made.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="totum falsum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Totu[m] falsum</marginalia_text>
+                </position>
+            </language>
+            <translation>All false.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Reliquum fit uerum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Reliquu[m] veru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Remaining true.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Maximu[m] vitiu[m] in diuidendo aliq[u]o preterire.</marginalia_text>
+                </position>
+            </language>
+            <translation>To surpass the greatest fault in dividing anything.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="pro Cecinna" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Cecinna.</marginalia_text>
+                    <book title="Pro Caecina"/>
+                </position>
+            </language>
+            <translation>Pro Caecina.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cluentio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Cluentio</marginalia_text>
+                    <book title="Pro Cluentio"/>
+                </position>
+            </language>
+            <translation>Pro Cluentio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Oppio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Oppio</marginalia_text>
+                    <book title="Pro Oppio"/>
+                </position>
+            </language>
+            <translation>Pro Oppio.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="pro Vareno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Vareno</marginalia_text>
+                    <book title="Pro Vareno"/>
+                </position>
+            </language>
+            <translation>Pro Vareno.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="totum falsum" type="straight"/>
+        <underline language="LA" method="pen" text="quia in proponendo unum quodlibet omiserimus, cum risu quoque tota res soluitur" type="straight"/>
+        
+        <numeral place="right_margin">1.</numeral>
+        <numeral place="right_margin">2.</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">5</numeral>
+        <numeral place="right_margin">6</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.035r.tif" pagination="55" reader="John Dee" signature="e 3"/>
+    <annotation>
+        
+        <marginalia anchor_text="aurifices [...] argentarios" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aurifices: arge[n]tarij
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Goldsmiths. Money changers.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="&amp; carissimam, &amp; morigeram uxorem ammittant necesse est, &amp; amati filii, uel fili[a]e miseram uideant morte[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vxoris charissima[e] et prolis amata[e] mors.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The death of the most beloved wife and his loved offspring.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ego hab in ♃ [et] ☿ in ♋ in hoc loco, at deerat illa[e] aspectus ☾ae.
+                    </marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Cancer"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>
+                I have Jupiter and Mercury in Cancer in this place, yet there was no aspect of that moon. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="interdu[m] facti &amp; damna" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vt hi[n]c nocet interdu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                As from here it sometimes is harmful.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vide supra in quinto
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                See above in the fifth [book].
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; facit aurifices" type="straight"/>
+        <underline language="LA" method="pen" text="euersione desubitat" type="straight"/>
+        <underline language="LA" method="pen" text="occasu partiliter" type="straight"/>
+        <underline language="LA" method="pen" text="nam &amp; carissimam, &amp; morigeram uxorem" type="straight"/>
+        <underline language="LA" method="pen" text="miseram uideant" type="straight"/>
+        <underline language="LA" method="pen" text="ut ad bene beatéq[ue] uiuendum" type="straight"/>
+        <underline language="LA" method="pen" text="frequenter" type="straight"/>
+        <underline language="LA" method="pen" text="procedat, praesertim si sic posito ♃, cardinem aliquem geniturae maleuola stella possederit" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ei crescens ☾" type="straight"/>
+        <underline language="LA" method="pen" text="semper in prima aetate moriuntur" type="straight"/>
+        <underline language="LA" method="pen" text="futura quaecunq[ue] dicere" type="straight"/>
+        <underline language="LA" method="pen" text="Quida[m] aut[em] &amp; sacerdotia consequuntur" type="straight"/>
+        <underline language="LA" method="pen" text="sed interdu[m] facit &amp; damna" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; q[ui] de diis aliq[ui]d frequenter mentiant[ur], &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="sed in uita luxuriosos reddit. Quosda[m]" type="straight"/>
+        <underline language="LA" method="pen" text="nisi occasus, id est septimus" type="straight"/>
+        <underline language="LA" method="pen" text="ab Austro recedens" type="straight"/>
+        <underline language="LA" method="pen" text="si partiliter horosc. maleuo" type="straight"/>
+        
+        <mark method="pen" name="X_sign" place="intext"/>
+        
+    </annotation>
+</transcription>

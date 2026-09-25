@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.150r.tif" pagination="283" reader="Harvey" signature="aa4[r]"/> 
+    <annotation>
+        <marginalia anchor_text="Annibal" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Annibal.                         
+                  </marginalia_text>
+                    <person name="Hannibal"/>
+                </position>
+            </language>
+            <translation>Hannibal.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Scipionem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Scipio.                         
+                    </marginalia_text>
+                    <person name="Scipio Africanus"/>
+                </position>
+            </language>
+            <translation>Scipio Africanus.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="conuenera[n]tq[ue] duces" type="straight"/>
+        <underline language="LA" method="pen" text="sicut uterq[ue] inter" type="straight"/>
+        <underline language="LA" method="pen" text="imbutus uterq[ue] quada[m] admiratione alterius" type="straight"/>
+        <underline language="LA" method="pen" text="Annibalis &amp; apud" type="straight"/>
+        <underline language="LA" method="pen" text="celeberrimu[m] nomen" type="straight"/>
+        <underline language="LA" method="pen" text="Scipionem Annibal" type="straight"/>
+        <underline language="LA" method="pen" text="aduersus se dux potissimum" type="straight"/>
+        <underline language="LA" method="pen" text="pr[a]estantem uirum credebat" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--con-->
+        
+    </annotation>
+</transcription>

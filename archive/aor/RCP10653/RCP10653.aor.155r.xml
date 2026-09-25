@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.155r.tif" pagination="301" reader="John Dee" signature="Cc"/>
+    <annotation>
+        
+        <marginalia anchor_text="Aethelulfus" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        eius vxor fuit Juditha filia Caroli calui Imper. Cuspinianus
+                    </marginalia_text>
+                    <person name="Judith of Flanders"/>
+                    <person name="Charles the Bald"/>
+                    <person name="Johannes Cuspinianus"/>
+                </position>
+            </language>
+            <translation>
+                His wife was Judith of Flanders, daughter of Charles the Bald. Cuspinianus.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="VVallenses cum Danis" type="straight"/>
+        <underline language="LA" method="pen" text="succede[n]s Aethelulfus" type="straight"/>
+        <underline language="LA" method="pen" text="Eadulfum" type="straight"/>
+        <underline language="LA" method="pen" text=".xx." type="straight"/>
+        <underline language="LA" method="pen" text="de regina sua" type="straight"/>
+        <underline language="LA" method="pen" text="Eadbaldus" type="straight"/>
+        <underline language="LA" method="pen" text="Aethelbertus" type="straight"/>
+        <underline language="LA" method="pen" text="non de matrimonio generatu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="omnia regna" type="straight"/>
+        <underline language="LA" method="pen" text="occidentalium Saxonum" type="straight"/>
+        <underline language="LA" method="pen" text="VVlfvvardus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <graph book_orientation="0" method="pen" place="tail" type="genealogical_tree"> 
+            <node id="n1" person="Æthelwulf">Æthelulfus</node>
+            <node id="n2" person="Judith of Flanders">Iuditha filia Carioli</node>
+            <node id="n3" person="Aethelstan">Æthelstanus</node>
+            <node id="n4" person="Aethelbald, King of Wessex">Eadbaldus</node>
+            <node id="n5" person="Aethelberht, King of Wessex">Æthelbertus</node>
+            <node id="n6" person="Aethelred, King of Wessex">Æthelredus</node>
+            <node id="n7" person="Alfred the Great">Ælfredus</node>
+            <link from="n2" relationship="has_spouse" to="n1"/>
+            <link from="n1" relationship="has_spouse" to="n2"/>
+            <link from="n1 n2" relationship="has_child" to="n3 n4 n5 n6 n7"/>
+        </graph>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.035v.tif" pagination="[35v]" reader="John Dee" signature="[Eiij[v]]"/> 
+    
+    <annotation>
+        
+        
+        <marginalia anchor_text="dimandaua" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Xpofer Colon his demande</marginalia_text>
+                    <person name="Columbus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Ammiraglio in tutto il mare Oceano" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ammiragli in tutto il mare Oceano</marginalia_text>
+                </position>
+            </language>
+            <translation>The admirals all over the ocean.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="esser Vicere, &amp; Governatore" hand="Italian" method="pen">
+        <language ident="IT">
+            <position book_orientation="0" place="left_margin">
+                <marginalia_text>Vicere Governatore</marginalia_text>
+            </position>
+        </language>
+            <translation>Viceroy, Governor.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="in non voler accettar, se non grandi titoli, &amp; stato" type="straight"/>
+        <underline language="IT" method="pen" text="o capitolar meglio" type="straight"/>
+        <underline language="IT" method="pen" text="di essere Ammiraglio in tutto il mare Oceano" type="straight"/>
+        <underline language="IT" method="pen" text="Ammiragli di Castiglia ne' loro" type="straight"/>
+        <underline language="IT" method="pen" text="distretti" type="double"/>
+        <underline language="IT" method="pen" text="esser Vicere, &amp; Governatore" type="straight"/>
+        <underline language="IT" method="pen" text="Ammiragli di Castiglia" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; di Lione" type="straight"/>
+        <underline language="IT" method="pen" text="assolutamente" type="triple"/>
+        
+        <errata amendedtext="ultimamente" copytext="ultimatamente" language="IT"/>
+
+    </annotation>
+</transcription>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.120v.tif" pagination="[113v]" reader="John Dee" signature="[ff[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Anno ante Christi natiuitatem 105, die 5 Augusti" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ante Chr[istu]m natu[m] 103 3⁰ Januarij</marginalia_text>
+                </position>
+            </language>
+            <translation>103 years before the birth of Christ, on the third of January.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="105" type="straight"/>
+        
+    </annotation>
+</transcription>

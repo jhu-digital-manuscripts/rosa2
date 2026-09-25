@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.098v.tif" pagination="196" reader="John Dee" signature="[n 2[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ἐπιδιήγησις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἐπιδιήγησις</marginalia_text>
+                </position>
+            </language>
+            <translation>Repeated narration.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="qui uti ἐπιδιήγησις uolet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quid illi facie[n]du[m] qui</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἐπιδιηγήσει</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vti voluerit.</marginalia_text>
+                </position>
+            </language>
+            <translation>What must be done to him who narrates again as he wished.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="interim cum suis accidentibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Accidentia reru[m] sunt adhibe[n]da</marginalia_text>
+                </position>
+            </language>
+            <translation>The chance of things are to be held at a distance.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="inter quas litigatur" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.156v.tif" pagination="[156v]" reader="John Dee" signature="[Viiij[v]]"/>    
+    <annotation>
+        
+        <marginalia anchor_text="sedition" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sedition</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="terra all' Occidente" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Land Land</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Isola della Trinità" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Isola della Trinita</marginalia_text>
+                    <location name="Trinity Island"/>
+                </position>
+            </language>
+            <translation>Trinity Island.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="vettouaglie gli distruggeuano" type="straight"/>
+        <underline language="IT" method="pen" text="o sedition" type="straight"/>
+        <underline language="IT" method="pen" text="Alfonso Perez Nizzardo" type="straight"/>
+        <underline language="IT" method="pen" text="tre Moggietti" type="straight"/>
+        <underline language="IT" method="pen" text="il Nordeste" type="straight"/>
+        <underline language="IT" method="pen" text="Isola della Trinità" type="double"/>
+        
+    </annotation>
+</transcription>

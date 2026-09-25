@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.057r.tif" pagination="50" reader="John Dee" signature="N ij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Si planeta fertur in vacuu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>If a planet is brought into a vacuum.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Applicatio tantu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Only the application.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="utrinq[ue] autem uacua" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vacuus vtrinq[ue].</marginalia_text>
+                </position>
+            </language>
+            <translation>A vacuum on both sides.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro r[ati]o[n]e significationis eoru[m] tu[m] secundu[m] substa[n]t[i]a[m] tu[m] secundu[m] accid[ns].</marginalia_text> 
+                </position>
+            </language>
+            <translation>For the calculation of of their signification both according to substance and accident.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Ha[e]c o[mn]ia sparsim scribu[n]tur in a[e]ditio[n]e 1543.</marginalia_text>
+                </position>
+            </language>
+            <translation>All these things are written here and there in the 1543 edition.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="â planeta in uacuum feratur" type="straight"/>
+        <underline language="LA" method="pen" text="quòd si â nullo" type="straight"/>
+        <underline language="LA" method="pen" text="utrinq[ue] autem uacua" type="straight"/>
+        <underline language="LA" method="pen" text="in reliq[ui]s erraticis intelligi uolo" type="straight"/> 
+        <underline language="LA" method="pen" text="Et qui in genitura foelicem habet Planetam, foelices agit, dum sub illius custodio anni labuntur, melius uero, si per reuolutiones recte se habuerit, ut in decimanona" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Et qui in genitura foelicem habet Planetam, foelicius agit, dum sub illius custodia anni labuntur, melius uero, si per reuolutiones recte se habuerit, ut in decimanona"/>
+        
+        <numeral language="LA" place="left_margin" text="â planeta in uacuum feratur">2</numeral>
+        <numeral language="LA" place="left_margin" text="quòd si â nullo">3.</numeral>
+        <numeral language="LA" place="left_margin" text="utrinq[ue] autem uacua">4.</numeral>
+        
+    </annotation>
+</transcription>

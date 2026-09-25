@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.049v.tif" pagination="88" reader="John Dee" signature="[H.ij.[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A[nno] 1318.</marginalia_text>
+                </position>
+            </language>
+            <translation>In the year 1318.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Edvvardus" type="straight"/>
+        <underline language="LA" method="pen" text="frater regis Scotorum" type="straight"/>
+        <underline language="LA" method="pen" text="decollatus in Dondalk" type="straight"/>
+        <underline language="LA" method="pen" text="Scotia. 29. in" type="straight"/>
+        <underline language="LA" method="pen" text="comitis Gloucestriae nuper perempti apud Striuelyn" type="straight"/>
+        <underline language="LA" method="pen" text="multorúmque Angliae nobilium viroru[m] occisio ibidem facta" type="straight"/>
+        <underline language="LA" method="pen" text="Rex Scotoru[m] excommunicatur regnumquè interdicitur" type="straight"/>
+        <underline language="LA" method="pen" text="communicantibus" type="straight"/>
+        <underline language="LA" method="pen" text="regno Angliae &amp; Scotiae omnibúsq[ue] terris adiacentibus" type="straight"/>
+        <underline language="LA" method="pen" text="fidelitatem regi Anglorum" type="double"/>
+        <underline language="LA" method="pen" text="ab antiquo debitam, regnumquè Scotiae generali supponitur interdicto" type="straight"/>
+        <underline language="LA" method="pen" text="secundi duodecimus" type="straight"/>
+        <underline language="LA" method="pen" text="quasi viginti millium" type="straight"/>
+            
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

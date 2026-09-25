@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.346r.tif" pagination="23" reader="John Dee" signature="B.iiii.[r]"/>
+    <annotation> 
+        
+        <marginalia anchor_text="Cilix" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cilix</marginalia_text>
+                    <person name="Cilix"/> 
+                </position>
+            </language>
+            <translation>Cilix.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="L. Valerium" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>L Valerius.</marginalia_text>
+                    <person name="Lucius Valerius"/>
+                </position>
+            </language>
+            <translation>Lucius Valerius.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="Brundisium]" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Brundisium</marginalia_text>
+                    <location name="Brundisium"/>
+                </position>
+            </language>
+            <translation>Brundisium.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="Q. Fabianus" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Q. Fabianus.</marginalia_text>
+                    <person name="Quintus Fabius Vergilianus"/>
+                </position>
+            </language>
+            <translation>Quintus Fabius Vergilianus.</translation> <!-- NBW: Loeb expands this name with an editorial note. -->      
+        </marginalia> 
+        
+        <marginalia anchor_text="Sulpitius" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sulpitius</marginalia_text>
+                    <person name="Servius Sulpicius Rufus"/> 
+                </position>
+            </language>
+            <translation>Servius Sulpicius Rufus.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="C. Pomptinum" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>C. pomptinus.</marginalia_text>
+                    <person name="Gaius Pomptinus"/>
+                </position>
+            </language>
+            <translation>Gaius Pomptinus.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="L. Clodio" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>L Clodius</marginalia_text>
+                    <person name="Lucius Clodius"/>
+                </position>
+            </language>
+            <translation>Lucius Clodius.</translation>      
+        </marginalia> 
+
+        <underline language="LA" method="pen" text="sermone subsecutus est humanitatem" type="straight"/>
+        <underline language="LA" method="pen" text="omnino tibi agit gratias" type="straight"/>
+        <underline language="LA" method="pen" text="A. te" type="straight"/>
+        <underline language="LA" method="pen" text="etia[m] quaeso &amp; peto" type="straight"/>
+        <underline language="LA" method="pen" text="quamexpeditissimam" type="straight"/>
+        <underline language="LA" method="pen" text="mihi quasi decursus mei temporis" type="straight"/>
+        <underline language="LA" method="pen" text="fuit: eáque me ex tuis ma[n]datis monuit" type="straight"/>
+        <underline language="LA" method="pen" text="fuit ut mature" type="straight"/>
+        <underline language="LA" method="pen" text="pare[n]dum vt fuerit" type="straight"/>
+        <underline language="LA" method="pen" text="sit: vt quae successori coniunctissimo &amp; amicissimo commodare potest is, qui prouinciam tradit, vt ea pro nostra consociatissima voluntate, cura, ac diligentia tua complectare: vt" type="straight"/>        
+        <underline language="LA" method="pen" text="te milites esse" type="straight"/>
+        <underline language="LA" method="pen" text="integrum militum numerum" type="straight"/>
+        <underline language="LA" method="pen" text="istas exiguas" type="double"/>
+        <underline language="LA" method="pen" text="copias" type="straight"/>
+        <underline language="LA" method="pen" text="Equidem pro eo, qua[n]ti te facio, quicquid feceris approbabo. Sed" type="straight"/>
+        <underline language="LA" method="pen" text="quae primum nauigandi nobis facultas data erit, vtemur" type="straight"/>
+
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <!-- NBW: Jupiter w/flourish? -->
+
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="iuris" copytext="iureco[n]sultum" language="LA"/>
+
+    </annotation>
+</transcription>

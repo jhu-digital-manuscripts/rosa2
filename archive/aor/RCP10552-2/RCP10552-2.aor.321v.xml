@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.321v.tif" pagination="150" reader="John Dee" signature="[V.j.[v]]"/>
+    <annotation>
+ 
+        <marginalia anchor_text="ducissis Lancastriae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ducissa La[n]castria[e].</marginalia_text>
+                    <person name="Katherine Swynford"/>
+                </position>
+            </language>
+            <translation>The Duchess of Lancaster.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ducissis Lancastriae" type="double"/>
+        <underline language="LA" method="pen" text="Gul. de Cortiniaco" type="straight"/>
+        <underline language="LA" method="pen" text="D. Iohan. dux Lancastriae legitimari fecit prolem quam susceperat de Katherina de Swinford" type="straight"/>
+
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+
+    </annotation>
+</transcription>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.207v.tif" pagination="[207v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Aquila" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The Egle</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Aburema" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aburema</marginalia_text>
+                    <location name="Aburema"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Guaiga" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Guaiga fl.[ume]</marginalia_text>
+                    <location name="Guaiga"/>
+                </position>
+            </language>
+            <translation>The Guaiga river.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="pesò XIIII" type="straight"/>
+        <underline language="IT" method="pen" text="Aquila" type="straight"/>
+        <underline language="IT" method="pen" text="pesò XXII" type="double"/>
+        <underline language="IT" method="pen" text="tinti di diuersi colori bia[n]co, negro, &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="questo canal" type="double"/>
+        <underline language="IT" method="pen" text="Aburema" type="straight"/>
+        <underline language="IT" method="pen" text="vscimmo al mar" type="straight"/>
+        <underline language="IT" method="pen" text="a Guaiga" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.178r.tif" pagination="179" reader="Harvey" signature="M2r"/>	<!-- ABO 182right -->
+	<annotation>
+		
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						pronostico perpetuo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A perpetual forecast.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Ridicula, sed iucunda qua[e]dam Vaticinia:
+						In Astrologia Ringelbergij.
+					</marginalia_text>
+					<person name="Joachim Fortius Ringelberg"/>
+					<book title="Astrologia"/>
+				</position>
+			</language>
+			<translation>Certain predictions are ridiculous, but delightful. In Joachim Fortius Ringelberg's 'Astrology'.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Mens da[e]dala, ex vna pragmatica historia, Libro, discursu; instar omnium
+						historiarum, librorum, discursuum. Qui se habet, non eget alijs.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A skillful mind taken from one pragmatic history, book, or discourse; an example for all other histories, books, and discourses.
+			He who has himself, is not in want of others.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Juliani vita, à Martinio concinnata, synopsis virtutum, et historiarum
+						omnium. Vt etiam Juliani ipsius Ca[e]sares. gemma gemmaru[m].
+					</marginalia_text>
+					<person name="Julian"/>
+					<person name="Petrus Martinius"/>
+				</position>
+			</language>
+			<translation>The life of Julian, produced by Martinius, the synopsis of virtues and all histories. Just as even Julian's emperors themselves. The gem of gems.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="il verno fia" type="straight"/>
+		<underline language="IT" method="pen" text="gran vento" type="straight"/>
+		<underline language="IT" method="pen" text="pioverà assai" type="straight"/>
+		<underline language="IT" method="pen" text="piu di notte" type="straight"/>
+		<underline language="IT" method="pen" text="vccellatori, &amp; gli vccelli" type="straight"/>
+		<underline language="IT" method="pen" text="gran guerra" type="straight"/>
+		<underline language="IT" method="pen" text="pescatori, &amp; i pesci" type="straight"/>
+		<underline language="IT" method="pen" text="fiumi correrà alla" type="straight"/>
+		<underline language="IT" method="pen" text="sboccheranno in mare" type="straight"/>
+		<underline language="IT" method="pen" text="Moriran[n]no molti buoi, montoni" type="straight"/>
+		<underline language="IT" method="pen" text="tra le berticcie, lupi, asini, caualli" type="straight"/>
+		<underline language="IT" method="pen" text="morte non farà tanta" type="straight"/>
+		<underline language="IT" method="pen" text="la vecchiaia, per" type="straight"/>
+		<underline language="IT" method="pen" text="molti bisognisi" type="straight"/>
+		<underline language="IT" method="pen" text="morira[n]no innanzi alla vecchiaia" type="straight"/>
+		<underline language="IT" method="pen" text="la mutatione delle cose del mondo" type="straight"/>
+		<underline language="IT" method="pen" text="nauigatione" type="straight"/>
+		<underline language="IT" method="pen" text="sarà tempesta" type="straight"/>
+		<underline language="IT" method="pen" text="I Re" type="straight"/>
+		<underline language="IT" method="pen" text="piu che la parte loro" type="straight"/>
+		<underline language="IT" method="pen" text="non si contentera[n]no" type="straight"/>
+		<underline language="IT" method="pen" text="I popoli tal'hora" type="straight"/>
+		<underline language="IT" method="pen" text="haranno buona fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="hor cattiua" type="straight"/>
+		<underline language="IT" method="pen" text="I ricchi staranno" type="straight"/>
+		<underline language="IT" method="pen" text="sani ordinariamente" type="straight"/>
+		<underline language="IT" method="pen" text="mangiare" type="straight"/>
+		<underline language="IT" method="pen" text="bere sarà" type="straight"/>
+		<underline language="IT" method="pen" text="stimato l'oro, che" type="straight"/>
+		<underline language="IT" method="pen" text="il piombo si" type="straight"/>
+		<underline language="IT" method="pen" text="mese di" type="straight"/>
+		<underline language="IT" method="pen" text="i castroni, che" type="straight"/>
+		<underline language="IT" method="pen" text="reuolutione di Saturno" type="straight"/>
+		<underline language="IT" method="pen" text="peste" type="straight"/>
+		<underline language="IT" method="pen" text="altre malattie" type="straight"/>
+		<underline language="IT" method="pen" text="di Marte," type="straight"/>
+		<underline language="IT" method="pen" text="di Venere" type="straight"/>
+		<underline language="IT" method="pen" text="mangiar capponi" type="straight"/>
+		<underline language="IT" method="pen" text="starne" type="straight"/>
+		<underline language="IT" method="pen" text="quaglie" type="straight"/>
+		<underline language="IT" method="pen" text="bere ottimi vini" type="straight"/>
+		<underline language="IT" method="pen" text="piena Luna di Mar[zo]" type="straight"/>
+		
+		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- sara -->
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ven -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- cer -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- mala -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- peri -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- mala -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- compre -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- al -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- aspet -->
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- poueri, & -->
+		
+		<drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+
+    </annotation>
+</transcription>

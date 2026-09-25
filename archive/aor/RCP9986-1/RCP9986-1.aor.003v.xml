@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.003v.tif" pagination="[4v]" reader="John Dee" signature="[A.iiij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="amor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Amor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Love.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fides" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fides.</marginalia_text>
+                </position>
+            </language>
+            <translation>Faith.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="deuenerata" type="straight"/>
+        <underline language="LA" method="pen" text="Deniq[ue] fidus" type="straight"/>
+        <underline language="LA" method="pen" text="Finxit" type="straight"/>
+        <underline language="LA" method="pen" text="Dic mihi quid feci, nisi non sapienter amaui?" type="straight"/>
+        <underline language="LA" method="pen" text="Iura, fides, vbi nunc? commissáq[ue] dextera dextrae? Quíq[ue] erat in falso plurimus ore deus" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Si de tot laesis sua numina quisq[ue] deorum Vindicet, in poenas non satis vnus eris"/> 
+        
+       
+    </annotation>
+</transcription>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.319r.tif" pagination="189" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="clericum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Clericus factus Miles.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A cleric was made a soldier.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; cito post ad aliorum principum notitiam fama referente peruolassent, indignati vehementer" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Romanam auaritiam detestants, ipsum regem Angli[a]e non attendere huiusmodi ma[n]data papalia tàm iniuriosa persuadeba[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="Gatesdena clericum" type="straight"/>
+        
+    </annotation>
+</transcription>

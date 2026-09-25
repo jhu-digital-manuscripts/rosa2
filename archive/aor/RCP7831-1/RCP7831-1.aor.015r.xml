@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="RCP7831-1.015r.tif" pagination="19" reader="Dee" signature="Cij[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Aeris" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aër</marginalia_text>
+                </position>
+            </language>
+            <translation>Air.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="spiritus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Spiritus Animali</marginalia_text>
+                </position>
+            </language>
+            <translation>The spirit of an animal.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="spiritus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Locus Vbi quis n[ascitur] vel moratur mu[ltum] facit ad ingenij v[...].</marginalia_text>
+                </position>
+            </language>
+            <translation>The place where someone comes from or stays causes many [things] for the [...] of the character. </translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="illi tales" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>sensus</marginalia_text>
+                </position>
+            </language>
+            <translation>Sense.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; hinc rursum in sinistru[m] cordis ue[n]triculu[m], spirituu[m] corpus uegeta[n]tium" type="straight"/>
+        <underline language="LA" method="pen" text="Adhaec in cerebru[m], per nares, &amp; i corpus" type="straight"/>
+        <underline language="LA" method="pen" text="per arteriaru[m] anastomoses, &amp; poros" type="straight"/>
+        <underline language="LA" method="pen" text="excipere" type="straight"/>
+        <underline language="LA" method="pen" text="alio hebetiores nobis sp[irit]us" type="straight"/>
+        <underline language="LA" method="pen" text="illi tales" type="straight"/>
+        <underline language="LA" method="pen" text="Democritus" type="straight"/>
+        <underline language="LA" method="pen" text="referre, sub quali celo &amp;" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

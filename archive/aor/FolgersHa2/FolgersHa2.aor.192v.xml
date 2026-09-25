@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.192v.tif" pagination="208" reader="Harvey" signature="[N8v]"/>	<!-- ABO 197left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						È viuo fonte Natura[e], artis, exercitationis efficacissima[e]. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>From the living source of nature, art, and the most effective practice.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nulla egregia virtus, nisi coacta.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>There is no distinguished virtue, unless it is compelled.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Quisq[ue] sui compos, fert benè quodq[ue] malu[m]. Axiophilus.
+					</marginalia_text>
+					<person name="Axiophilus"/>
+				</position>
+			</language>
+			<translation>Whoever is the master of himself suffers well any virtue. Axiophilus. </translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Simplices sunt Academici, qui
+						potiùs ambiunt
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						esse uerbosi philologi, polyhistores, Critici, quàm
+						actuosi technologi, philosophi, professores.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Academics are simple people, who would rather go about being verbose philologists, polyhistors, and critics, rather than 
+				energetic technologi, philosophers, and professors.</translation> 
+				<!--JG: Still not sure how to translate 'technologus/i--> <!-- CG: Another weird neologism, I think. I imagine it has something to do with 'those who study craft (techne)'. -->
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Promptissimè singula et dicere, et facere, et perficere, ingeniosum est et quiddam
+						diuinum. Quò etiam dexteriùs, suaq[ue] sponte fluentiùs, eò ca[e]lestius, et
+						quasi è Natura[e] sinu. Balbutire autem in loquendo, aut in agendo deficere 
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						aliquo modo:
+						vel infantis est, uel hominis planè rudis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Saying, doing, and accomplishing singular things most promptly is an ingenious thing and even divine.
+			And the more skillfully and fluently of its own accord, the more celestial it is, as if coming from the bosom of nature. 
+			But to babble in speaking, or to fail in acting in any way, is either the work of a child or of a wholly uncivilized man.</translation>
+		</marginalia>
+		
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.192v_0001" marginalia_continues_from="Ha2.193r_0001" marginalia_from_transcription="Ha2.193r.xml">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						<!-- Continued from facing page, left margin, Ha2.193r --> [p. 209: Nihil valent litera[e], quatenùs scholastica[e], sed quatenùs mundana[e]: nec discuntur
+						artes. Vt sciantur, sed vt prosint. Earumq[ue] prima, et summa Qua[e]stio, =]
+						= Quia possunt? quantum valent. Cui priuata[e], aut publica[e] facultati conducunt?
+						Iam enim Artes aut in Commoditatum numero reponuntur; aut in nullo sunt
+					</marginalia_text>
+					<emphasis method="pen" text="Quia possunt" type="straight"/>
+					<emphasis method="pen" text="quantum valent" type="straight"/>
+					<emphasis method="pen" text="priuata[e], aut" type="straight"/>
+					<emphasis method="pen" text="publica[e] facultati conducunt" type="straight"/>
+					<emphasis method="pen" text="Commoditatum" type="straight"/>
+					<emphasis method="pen" text="nullo" type="straight"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						pra[e]dicamento.
+					</marginalia_text>
+					<emphasis method="pen" text="pra[e]dicamento" type="straight"/>
+				</position>
+			</language>
+			<translation>[p. 209: No literature will prevail as long as it is scholastic, but only as long as it worldly: nor will the arts be learned. 
+				In order that they could be known, but also so that they could be useful. The first of these and highest question,] 
+				because the can? How much they are worth. For whom private and public faculties are of advantage? For already the arts are either restored in a number of utilities, or they are in none.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="la necessità ci costrigne" type="straight"/>
+		<underline language="IT" method="pen" text="viuere non ci costrigne" type="straight"/>
+		<underline language="IT" method="pen" text="Amore hauer" type="straight"/>
+		<underline language="IT" method="pen" text="Imperio" type="straight"/>
+		<underline language="IT" method="pen" text="in Ercole fece marauiglio" type="straight"/>
+		<underline language="IT" method="pen" text="quel domatore di tanti feroci" type="straight"/>
+		<underline language="IT" method="pen" text="feminella" type="straight"/>
+		<underline language="IT" method="pen" text="che Onfale, Regina" type="straight"/>
+		<underline language="IT" method="pen" text="trasformarsi in donna" type="straight"/>
+		<underline language="IT" method="pen" text="tutti i vili esercitij feminili" type="straight"/>
+		<underline language="IT" method="pen" text="mille fiere non poterono" type="straight"/>
+		<underline language="IT" method="pen" text="vinto poi dal dolce Amore" type="straight"/>
+		<underline language="IT" method="pen" text="Molte donne trouarsi" type="straight"/>
+		<underline language="IT" method="pen" text="vaghe di prole" type="straight"/>
+		<underline language="IT" method="pen" text="per isterile, il" type="straight"/>
+		<underline language="IT" method="pen" text="di far figliuoli" type="straight"/>
+		<underline language="IT" method="pen" text="qualcun'altro." type="straight"/>
+		<underline language="IT" method="pen" text="insino da' guatteri di" type="straight"/>
+		<underline language="IT" method="pen" text="stata in tutto contraria" type="straight"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--na-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--infi-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--pro[n]tamen-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ripren-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--al-->
+		<mark language="IT" method="pen" name="quotation_mark" place="right_margin" text="stata in tutto contraria"/>
+		
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="vinto poi dal dolce Amore"/>
+		
+    </annotation>
+</transcription>

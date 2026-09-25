@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.040r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Aruiragus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Hunc Arviragu[m], Caratacum vocat Tacitus, uti conijcio.
+                    </marginalia_text>
+                    <person name="Caratacus"/>
+                    <person name="Tacitus"/>
+                </position>
+            </language>
+            <translation>This Arviragus, whom Tacitus calls Caratacus, I put to use.</translation>
+            <!-- NBW: Suggest instead "Tacitus calls this Arviragus Caractus, by my guess."-->
+        </marginalia>
+        
+        <marginalia anchor_text="de Scythia cum magna classe" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Nota classem ex Scythia propter n[ume]ros[?], Cataya[m], mari, qua[e]re[n]tes
+                    </marginalia_text> <!--Transcription incomplete. // NBW - Seems close -->
+                    <location name="Scythia"/>
+                </position>
+            </language>
+            <translation>Note the fleet out of Scythia near us  by means of numbers, looking for Catayam</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in Totonesiu[m] littus" type="straight"/>
+        <underline language="LA" method="pen" text="duces &amp; co[m]militones suos in" type="straight"/>
+        <underline language="LA" method="pen" text="Hiberniam" type="double"/>
+        <underline language="LA" method="pen" text="diuulgata diligebant eu[m] Romani &amp; timeba[n]t, ita" type="straight"/>
+        <underline language="LA" method="pen" text="Marius" type="straight"/>
+        <underline language="LA" method="pen" text="de Scythia cum magna" type="straight"/>
+        
+    </annotation>
+</transcription>

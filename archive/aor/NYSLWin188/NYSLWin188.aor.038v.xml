@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.038v.tif" pagination="[38[v]]" reader="John Dee" signature="[Kij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ist kaldt vnd feuchte in der höhe" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Aer est frigidus et humidus in summo gradu.</marginalia_text>
+                </position>
+            </language>
+            <translation>The air is cold and humid in its highest degree.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="warme Regen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pluuia[e] Calida[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Warm rains.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Zephyrische Windt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Zephirus pluuiosus</marginalia_text>
+                </position>
+            </language>
+            <translation>Rainy west wind.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="er würdt vom dürren vertrieben vnd verzert" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pluuia co[n]sumitur</marginalia_text>
+                </position>
+            </language>
+            <translation>The rain is reduced.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="ist kaldt vnd feuchte in der höhe" type="straight"/>
+        <underline language="DE" method="pen" text="warm" type="straight"/>
+        <underline language="DE" method="pen" text="der Reflex" type="straight"/>
+        <underline language="DE" method="pen" text="so hoch" type="straight"/>
+        <underline language="DE" method="pen" text="gleich" type="straight"/>
+        <underline language="DE" method="pen" text="Wiewol je höher der Lufft je kälter" type="straight"/>
+        <underline language="DE" method="pen" text="als so schwer" type="straight"/>
+        <underline language="DE" method="pen" text="nahent in die wärme" type="straight"/>
+        <underline language="DE" method="pen" text="warme Regen" type="straight"/>
+        <underline language="DE" method="pen" text="der schwere schuldt ist" type="straight"/>
+        <underline language="DE" method="pen" text="selbst feuchte" type="straight"/>
+        <underline language="DE" method="pen" text="Regen" type="straight"/>
+        <underline language="DE" method="pen" text="Regenwinde" type="straight"/>
+        <underline language="DE" method="pen" text="dürrer Windt" type="straight"/>
+        
+    </annotation>
+</transcription>

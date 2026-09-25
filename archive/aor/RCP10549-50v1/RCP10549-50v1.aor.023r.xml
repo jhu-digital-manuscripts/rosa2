@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.023r.tif" pagination="29" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="occultior, atque rectior" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        occultior tectior
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                More secret and concealed.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dedita opera" hand="Italian" id="RCP10549-50v1:0053:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        dedita opera. de industria p[agina] 56
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v1:0080:m0001" text="56"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                Devoted works about industry, page 56.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="perliberaliter" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        perliberaliter
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                With extreme courtesy.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        enu[n]ciare denunciare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To reveal, to denounce.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="insidiose" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        insidiose 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Deceitfully.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        parte[m] depasisci
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To deprive others.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        malitiosius, neglige[n]tius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Fraudulently, carelessly.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mandati constitutum est iudicium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mandati Judiciu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Of the judges' mandate.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vicaria fides amicorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vicaria fides amicor[um]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A promise of friends
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="amicitiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Amiciti[a]e Ortus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Birth of friendship.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="amicitiam &amp; fides" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Amicita fides
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Friendship and trust.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        No[n] possum[us] o[mn]ia per nos agere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Not all of us can act for themselves.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Haec possum omnia vere dicere, sed in hac causa coniectura nihil opus est" type="straight"/>
+        <underline language="LA" method="pen" text="illum acuere" type="straight"/>
+        <underline language="LA" method="pen" text="In priuatis rebus siqui rem mandatam no[n] modo malitiosius gessisset, sui quaestus, aut commodi causa, verum etiam negligentius,              eum maiores summum admisisse dedecus existimabant" type="straight"/>
+        <underline language="LA" method="pen" text="vicaria fides amicorum supponitur" type="straight"/>
+        <underline language="LA" method="pen" text="in ipso est" type="straight"/>
+        <underline language="LA" method="pen" text="ac meis commodis officio simulato officis" type="straight"/>
+        <underline language="LA" method="pen" text="recede" type="straight"/>
+        <underline language="LA" method="pen" text="per alium transigam" type="straight"/>
+        <underline language="LA" method="pen" text="nam neque mandat quisquam ferè, nisi amico: neque credit, nisi ei quem fidelem putat. Perditissimi" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">15</numeral>
+        <numeral place="right_margin">10.11.</numeral>
+        <numeral place="right_margin">21.</numeral>
+        <numeral place="right_margin">16</numeral>
+        <numeral place="right_margin">16</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="nam neque mandat quisquam ferè, nisi amico: neque credit, nisi ei quem fidelem putat. Perditissimi" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        <drawing anchor_text="No[n] possum[us] o[mn]ia per nos agere" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

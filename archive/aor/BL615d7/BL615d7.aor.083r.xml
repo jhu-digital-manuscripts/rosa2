@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.083r.tif" pagination="83" reader="John Dee" signature="Liij"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="che lor fosse fuggita dalle mani quella impresa, per la incredulità, &amp; poco conto, che il loro Re ne hauea fatto" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+            <marginalia anchor_text="IX di marzo" hand="Italian" method="pen">
+                <language ident="LA">
+                    <position book_orientation="0" place="right_margin">
+                        <marginalia_text>Martij 9.</marginalia_text>
+                    </position>
+                </language>
+        <translation>9 March.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="vittoria" type="double"/>
+        <underline language="IT" method="pen" text="che lor fosse fuggita dalle mani quella impresa, per la incredulità, &amp; poco conto, che il loro Re ne hauea fatto" type="straight"/>
+        <underline language="IT" method="pen" text="contento di venirlo a visitare" type="straight"/>
+        <underline language="IT" method="pen" text="ch'ei non veniua dalle" type="straight"/>
+        <underline language="IT" method="pen" text="sue conquiste" type="double"/>
+        <underline language="IT" method="pen" text="si contentoò di andare a Val di Paradiso, doue il Re era, IX leghe" type="straight"/>
+        <underline language="IT" method="pen" text="mettesse la beretta in" type="double"/>
+        
+        <mark language="IT" method="pen" name="bracket" place="right_margin" text="che lor fosse fuggita dalle mani quella impresa, per la incredulità, &amp; poco conto, che il loro Re ne hauea fatto"/>
+        
+    </annotation>
+</transcription>

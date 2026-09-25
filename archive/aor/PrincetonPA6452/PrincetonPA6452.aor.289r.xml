@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.289r.tif" pagination="561" reader="Harvey"/>
+    <annotation>
+
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        Manlius Vulso, vnus illustrium viroru[m] apud Aurelium Victore[m] de quo Volsone plura i[nfr]a.
+                    </marginalia_text>
+                <person name="Gnaeus Manlius Vulso"/>
+                <book title="De Caesaribus"/>
+                </position>
+            </language>
+            <translation>
+                Manlius Vulso, one of the famous men in Aurelius Victor. More about Vulso below.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ludi Romani" type="straight"/>
+        <underline language="LA" method="pen" text="ab aedilibus curulib[us]" type="straight"/>
+        <underline language="LA" method="pen" text="Scipione" type="straight"/>
+        <underline language="LA" method="pen" text="Manlio Volsone" type="straight"/>
+        <underline language="LA" method="pen" text="magnifice[n]tius" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+    
+</transcription>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.011v.tif" reader="John Dee" signature="[C iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Tetraoos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tetraees</marginalia_text>  
+                </position>
+            </language>
+            <translation>Tetraos.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text/>  <!-- Hebrew letter -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Pannagra[m]maton" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pentagra[m]mato</marginalia_text>  <!-- DO: Not sure about what comes after this --> <!-- FSF: possibly Hebrew? -->  <!-- DO: I think there's a word beginning 'for' at end of second line -->
+                </position>
+            </language>
+            <translation>A pentagram.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cabala" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cab[ala]</marginalia_text>
+                </position>
+            </language>
+            <translation>Kabbalah.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Natura 3 lex. 4. Gratia 5</marginalia_text>   <!-- DO: And Hebrew to be added-->
+                    <emphasis method="pen" text="3 4. 5" type="straight"/>
+                </position>
+            </language>
+            <translation>Nature, 3; Law, 4; Grace, 5.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="multa legerit" type="straight"/>
+        <underline language="LA" method="pen" text="audiuerit" type="straight"/>
+        <underline language="LA" method="pen" text="retinuerit" type="straight"/>
+        <underline language="LA" method="pen" text="fecerit" type="straight"/>
+        <underline language="LA" method="pen" text="numer[um] co[n]nubij" type="straight"/>
+        <underline language="LA" method="pen" text="hoc Abraham[us] centenarius" type="straight"/>
+        <underline language="LA" method="pen" text="Pannagra[m]maton" type="straight"/>
+        <underline language="LA" method="pen" text="Vade te lauare septies i[n] Iordane, &amp; recipiet sanitate[m] caro tua" type="straight"/>
+        
+        
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+            
+    </annotation>
+</transcription>

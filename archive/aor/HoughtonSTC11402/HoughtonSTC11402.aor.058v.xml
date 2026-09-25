@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.058v.tif" reader="Harvey" signature="[Giii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Desperate woodnes / A woonderfull spurr.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>s[upr]a.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0083" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] above.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cn. Manlius" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Manlius ouersight 
+                    he payd [for] it.</marginalia_text> <!--JG: Unsure abt 'for'-->
+                    <person name="Gnaeus Manlius Vulso"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="with hunger" type="straight"/>
+        <underline language="EN" method="pen" text="determyned to breake oute" type="straight"/>
+        <underline language="EN" method="pen" text="manfully togyther" type="straight"/>
+        <underline language="EN" method="pen" text="vyolente" type="straight"/>
+        <underline language="EN" method="pen" text="they had tourned" type="straight"/>
+        <underline language="EN" method="pen" text="inclosed" type="straight"/>
+        <underline language="EN" method="pen" text="through the situatio[n] of" type="straight"/>
+        <underline language="EN" method="pen" text="more fiercely, as" type="straight"/>
+        <underline language="EN" method="pen" text="men in dispayre" type="straight"/>
+        <underline language="EN" method="pen" text="opened his araye, makynge" type="straight"/>
+        <underline language="EN" method="pen" text="a way to escape" type="straight"/>
+        <underline language="EN" method="pen" text="Manlius" type="straight"/>
+        <underline language="EN" method="pen" text="wayes in, strongely" type="straight"/>
+        <underline language="EN" method="pen" text="so troubled his ennemies, inclosed" type="straight"/>
+        <underline language="EN" method="pen" text="greatte outrage" type="straight"/>
+        <underline language="EN" method="pen" text="slewe bothe hym, and also many of his" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="manfully togyther"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="greatte outrage"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="vyolente"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="men in dispayre"/>
+        <mark method="pen" name="dot" place="intext"/> <!--dispayre, he-->
+        <mark method="pen" name="dot" place="intext"/> <!--kepte, he-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="greatte outrage"/>
+        
+    </annotation>
+</transcription>

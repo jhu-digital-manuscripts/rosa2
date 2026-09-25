@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.197v.tif" pagination="394" reader="John Dee" signature="[B 5[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="nouitas &amp; commutatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Novitas &amp; co[m]mutatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Novelty and change.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exemplis allegoria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Allegoria in exe[m]pl[is]</marginalia_text>
+                </position>
+            </language>
+            <translation>Allegory of examples.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="αἴνιγμα" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>αἴνιγμα</marginalia_text>
+                </position>
+            </language>
+            <translation>Riddle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Caecilius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cecilius</marginalia_text>
+                    <person name="Marcus Caelius Rufus"/>
+                </position>
+            </language>
+            <translation>Caelius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="εἰρωνεία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>εἰρωνεία</marginalia_text>
+                </position>
+            </language>
+            <translation>Irony.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Verres" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In verre[m].</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Clodium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In clod[iu]m.</marginalia_text>
+                    <book title="In Clodium et Curionem"/>
+                </position>
+            </language>
+            <translation>In Clodium.</translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="quae aut pronunciatione intelligitur, aut persona, aut rei" type="straight"/>
+        <underline language="LA" method="pen" text="ut intersit, quid de quo dicatur. Quia" type="straight"/>
+        <underline language="LA" method="pen" text="Praeter haec usus est allegoriae, ut tristia dicamus melioribus uerbis, aut bonae rei gratia quaedam" type="straight"/>
+        <underline language="EL" method="pen" text="σαρκασμὸν, ἀστεισμὸν, ἀντίφρασιν, παροιμίαν" type="straight"/> 
+        
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        
+        <numeral place="right_margin">.3.</numeral>
+        
+    </annotation>
+</transcription>

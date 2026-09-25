@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.275v.tif" pagination="530" reader="John Dee" signature="[lll.i.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="accessionem decumae, vt nostri facere coactores solent, ce[n]tesima, an decessionem de summa fecerit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>facere accessio[n]em decume facere decessione[m] de summa</marginalia_text>
+                </position>
+            </language>
+            <translation>To make an addition of tenth. To make a deduction from the total.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="reconciliatio gratiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>reco[n]ciliatio gr[atia]e</marginalia_text>
+                </position>
+            </language>
+            <translation>A reconciliation for goodwill.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praestigiae, illinc inquam omnes fallaciae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>praestigie fallaci[a]e</marginalia_text>
+                </position>
+            </language>
+            <translation>Tricks. Deceits.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="insulsitate[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>insulsitas</marginalia_text>
+                </position>
+            </language>
+            <translation>Dullness.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="peierauerit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>peiuratio</marginalia_text>
+                </position>
+            </language>
+            <translation>False testimony.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praedes dedisset" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>pra[e]des dare</marginalia_text>
+                </position>
+            </language>
+            <translation>To offer sureties.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="decumae, vt nostri facere coactores solent, ce[n]tesima, an decessionem de summa fecerit" type="straight"/>
+        <underline language="LA" method="pen" text="Gabinii, remittere tantu[m] de suo: nec Regis, imponere tantu[m] pati suis" type="straight"/>
+        <underline language="LA" method="pen" text="me verò poenitet mortales inimicitias, sempiternas amicitias habere" type="straight"/>
+        <underline language="LA" method="pen" text="enim Po[m]peius me sua causa quicqua[m] facere" type="straight"/>
+        <underline language="LA" method="pen" text="quia nunc aiunt, quod tum negabant. quid" type="straight"/>
+        <underline language="LA" method="pen" text="vbi semel quis peierauerit, ei credi postea, etia[m] si per pluris deos iuret, non oportet" type="straight"/>
+        
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing anchor_text="Gabinii, remittere tantu[m] de suo: nec Regis, imponere tantu[m] pati suis" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="me verò poenitet mortales inimicitias, sempiternas amicitias habere" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="vbi semel quis peierauerit, ei credi postea, etia[m] si per pluris deos iuret, non oportet" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

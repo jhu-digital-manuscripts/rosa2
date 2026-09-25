@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.042r.tif" reader="John Dee" signature="[Gvj]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="bonu[m] vir[um] dic[er]e esse tetragonu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Bonus vir tetragonus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A good man is a square.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="si[n]g[u]la fecit. nu[m]ero. po[n]dero [et] me[n]sura" type="straight"/>
+        <underline language="LA" method="pen" text="Na[m] i[n] pean co[m]p[ar]ant[ur] tria ad duo puta tres lillabe ad vna[m] lo[n]ga[m] q[uae] valet duo t[em]p[or]a brevia. q[uo]d est si sumat[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="bonu[m] vir[um] dice[m] esse tetragonu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ambo e[ni]m p[er]fecta" type="straight"/>
+        
+    </annotation>
+</transcription>

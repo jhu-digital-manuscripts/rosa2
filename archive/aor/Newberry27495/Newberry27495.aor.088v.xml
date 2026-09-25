@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.088v.tif" reader="Harvey" signature="[V.ii.[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Scitum est, respondere ad Idem; et ex eadem pharetra.
+                        s[upr]a, i[nfr]a.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It is known to respond towards the same; and from the same quiver. [See] above, below.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="metaphors" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        i[nfr]a,
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="Newberry27495:case_712_c27495_199" text="i[nfr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        metaphors.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+               [See] below, metaphors.
+            </translation>
+        </marginalia>    
+        
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Machiauel l. 7 delle Historie Fiorentine.</marginalia_text>
+                    <person name="Machiavelli"/>
+                    <book title="Florentine Histories"/>
+                </position>
+            </language>
+            <translation>Machiavelli, book 7 of the 'Florentine Histories'.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Protei ingeniu[m], s[upr]a, i[nfr]a i[nfr]a
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="Newberry27495:case_712_c27495_169" text="s[upr]a"/>
+                        <target prefix=", " ref="Newberry27495:case_712_c27495_205" suffix=" i[nfr]a" text="i[nfr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                A trick of the best, [see] above, below, below.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Suis quemq[ue] telis configere, Ingenij est.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It's part of intelligence to fix whatever to its webs.
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="well striken" type="straight"/>
+        <underline language="EN" method="pen" text="is in you" type="straight"/>
+        <underline language="EN" method="pen" text="age" type="straight"/>
+        <underline language="EN" method="pen" text="elles but to liken you vnto the aungelles, whiche were the firste and are the auntientest creatures              that euer God made." type="straight"/>
+        <underline language="EN" method="pen" text="meerie sayinges" type="straight"/>
+        <underline language="EN" method="pen" text="nippe a" type="straight"/>
+        <underline language="EN" method="pen" text="metaphors" type="straight"/>
+        <underline language="EN" method="pen" text="be answered" type="straight"/>
+        <underline language="EN" method="pen" text="the self same" type="straight"/>
+        <underline language="EN" method="pen" text="metaphor spoken" type="straight"/>
+        <underline language="EN" method="pen" text="The henn sitteth abroode" type="straight"/>
+        <underline language="EN" method="pen" text="without any more" type="straight"/>
+        <underline language="EN" method="pen" text="Hennes can full yll abroodé out of the nest" type="straight"/>
+        <underline language="EN" method="pen" text="had extolled certein" type="straight"/>
+        <underline language="EN" method="pen" text="famous in marcial prowesse" type="straight"/>
+        <underline language="EN" method="pen" text="most honorable mention of him" type="straight"/>
+        <underline language="EN" method="chalk" text="haue done by your friendes as some merchaunt" type="straight"/>
+        <underline language="EN" method="pen" text="conterfeit Ducat" type="straight"/>
+        <underline language="EN" method="pen" text="dispatch him" type="straight"/>
+        <underline language="EN" method="pen" text="him into a" type="straight"/>
+        <underline language="EN" method="pen" text="of good ones and" type="straight"/>
+        <underline language="EN" method="pen" text="honour me" type="straight"/>
+        <underline language="EN" method="pen" text="with so excellent and vertuous personages" type="straight"/>
+        <underline language="EN" method="pen" text="passe for a good one" type="straight"/>
+        <underline language="EN" method="pen" text="counterfeit Ducates" type="straight"/>
+        <underline language="EN" method="pen" text="much better" type="straight"/>
+        <underline language="EN" method="pen" text="the good" type="straight"/>
+        <underline language="EN" method="pen" text="counterfeiters of menne" type="straight"/>
+        <underline language="EN" method="pen" text="iuste cause to suspect" type="straight"/>
+        <underline language="EN" method="pen" text="were false" type="straight"/>
+        <underline language="EN" method="pen" text="more faire and brighter" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="equal_sign" place="left_margin" text="Hennes can full yll abroodé out of the nest"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="equal_sign" place="right_margin" text="elles but to liken you vnto the aungelles, whiche were the firste and are the auntientest creatures             that euer God made."/>
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="aungelles"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- made, also -->
+        <mark method="pen" name="dot" place="intext"/> <!-- 'nippe', dot over the 'i' -->
+        <mark method="pen" name="dot" place="intext"/> <!-- one, so -->
+        <mark language="EN" method="pen" name="equal_sign" place="intext" text="metaphors"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/> <!-- red chalk mark, runs from 'sayinges' through five lines of text to 'whiche'-->
+        <mark method="pen" name="dot" place="intext"/> <!-- applyed, and -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the self same"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="The henn sitteth abroode"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- nest. With -->
+        <mark method="pen" name="dot" place="intext"/> <!-- him, after -->
+        <mark method="chalk" name="vertical_bar" place="intext"/> <!-- series of green chalk strokes at the bottom of the page -->
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        
+        <mark language="EN" method="pen" name="quotation_mark" place="tail" text="more faire and brighter"/>
+        
+    </annotation>
+</transcription>

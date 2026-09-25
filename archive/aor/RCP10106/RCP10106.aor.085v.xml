@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.085v.tif" pagination="170" reader="John Dee" signature="[l 5[v]]"/> 
+        <annotation>
+                        
+            <marginalia anchor_text="Homerus atq[ue] Vergilius" hand="Italian">
+                <language ident="LA">
+                    <position book_orientation="0" place="left_margin">
+                        <marginalia_text>Homerus Virgilius }</marginalia_text>
+                        <person name="Homer"/>
+                        <person name="Virgil"/>
+                    </position>
+                </language>
+                <translation>Homer, Virgil.</translation>
+            </marginalia>
+            
+            <marginalia anchor_text="pro A. Cluentio" hand="Italian">
+                <language ident="LA">
+                    <position book_orientation="0" place="left_margin">
+                        <marginalia_text>P[r]o A Clue[n]tio.</marginalia_text>
+                        <book title="Pro Cluentio"/>
+                    </position>
+                </language>
+                <translation>Pro Clunetio.</translation>
+            </marginalia>
+            
+            <marginalia anchor_text="Pro ligario" hand="Italian">
+                <language ident="LA">
+                    <position book_orientation="0" place="left_margin">
+                        <marginalia_text>Pro Ligario</marginalia_text>
+                        <book title="Pro Ligario"/>
+                    </position>
+                </language>
+                <translation>Pro Ligario.</translation>
+            </marginalia>
+            
+            <marginalia anchor_text="Pro Caelio" hand="Italian">
+                <language ident="LA">
+                    <position book_orientation="0" place="left_margin">
+                        <marginalia_text>Pro Ca[e]lio</marginalia_text>
+                        <book title="Pro Caelio"/>
+                    </position>
+                </language>
+                <translation>Pro Caleio.</translation>
+            </marginalia>
+            
+            <underline language="LA" method="pen" text="Id tame[n] totum respondenti facilius est, quàm prope[n]ti, quia hîc admonendus" type="straight"/>
+            <underline language="LA" method="pen" text="imminuenda quaedam &amp; leuanda, &amp; quasi contemnenda esse consentio ad remittendam intentionem iudicis, quam                  aduersario praestat, ut fecit pro Ligario" type="straight"/>
+            <underline language="EL" method="pen" text="ἔνδoξoν, ἄδoξoν, ἀμϕίδoξoν, παράδoξoν, δυσπαρακoλoύθητoν" type="straight"/>
+            
+            <mark method="pen" name="est_mark" place="left_margin"/>
+            
+        </annotation>
+</transcription>

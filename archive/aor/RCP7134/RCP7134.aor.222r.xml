@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.222r.tif" pagination="215" reader="John Dee" signature="HH iij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>De morboru[m] principiis &amp; causitis</marginalia_text>
+                </position>
+            </language>
+            <translation>On the beginnings and causes of diseases.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Morbi initiu[m] a ☾ loco, cur diiudicatur</marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>Why the start of a disease is judged from the place of the Moon.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quod si in horum oppositis, uel quadratis, idem, sed leuius continget" type="straight"/>
+        <underline language="LA" method="pen" text="nisi cum directio ad hoc peruenerit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>
+        
+    </annotation>
+</transcription>

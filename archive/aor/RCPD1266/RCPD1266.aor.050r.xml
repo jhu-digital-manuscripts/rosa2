@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.050r.tif" pagination="85" reader="John Dee" signature="h.j."/>
+    <annotation>
+        
+       <marginalia anchor_text="regionis quae Chus dicitur" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>Regio Chus.</marginalia_text>
+                   <location name="Cush"/>
+               </position>
+           </language>
+           <translation>The Cush region.</translation>
+       </marginalia>
+        
+        <marginalia anchor_text="Septuaginta interpretes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Septuaginta Interp[retes] lapsus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Seventy sliding interpreters.</translation>      
+        </marginalia>
+        
+        <marginalia anchor_text="singulae regiones de eorum nomine ferè dicuntur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Regionu[m] no[m]i[n]a</marginalia_text>
+                </position>
+            </language>
+            <translation>The names of the regions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Madianitae dicuntur interdum Chusiim" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Madianita[e]. Chusijm</marginalia_text>
+                </position>
+            </language>
+            <translation>Midianites. Of Cush.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Siloë, riuus Ierosolymitanus, nihil ad praesentem facit historiam" type="straight"/>
+        <underline language="LA" method="pen" text="magno errore &amp; supinitate no[n] ferenda" type="straight"/>
+        <underline language="LA" method="pen" text="primùm audierunt, statim arripuerunt, tanquam verum" type="straight"/>
+        <underline language="LA" method="pen" text="quam esse Chus crediderunt" type="straight"/>
+        <underline language="LA" method="pen" text="reddiderunt Septuaginta interpretes Æthiopiam" type="straight"/>
+        <underline language="LA" method="pen" text="ipse Chus filius Cham" type="straight"/>
+        <underline language="LA" method="pen" text="Saba &amp; Heuila" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Sabatha" type="straight"/>
+        <underline language="LA" method="pen" text="Regma" type="straight"/>
+        <underline language="LA" method="pen" text="locis, quòd vicinas sedes &amp; regiones occuparint" type="straight"/>
+        <underline language="LA" method="pen" text="singulae regiones de eorum nomine ferè dicuntur, qui terras primi insederint" type="straight"/>
+        <underline language="LA" method="pen" text="illuc coloni" type="straight"/>
+        <underline language="LA" method="pen" text="Arabiarum partem" type="straight"/>
+        <underline language="LA" method="pen" text="interdum Chusiim" type="straight"/>
+        <underline language="LA" method="pen" text="principis Madian" type="straight"/>
+        <underline language="LA" method="pen" text="Æthiopissam" type="double"/>
+        <underline language="LA" method="pen" text="Arabas aute[m] &amp; Chusaeos, non longè" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <errata amendedtext="6" copytext="3" language="LA"/>   
+        
+    </annotation>
+</transcription>

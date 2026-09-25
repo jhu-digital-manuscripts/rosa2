@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.008v.tif" pagination="16" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Grammaticus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gra[m]maticus</marginalia_text>
+                </position>
+            </language>
+            <translation>Grammarian.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Deinde, cum proferenda sunt studia, caligat in sole: &amp; omnia noua offendit, ut qui solus didicerit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Solu[m] studere alique[m] haud utile.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Only study something not useful.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cùm se à congressu" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Congressus.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Meeting.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nec officium in docendo spectet, sed affectum" type="straight"/>
+        <underline language="LA" method="pen" text="qui se nemini comparat" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

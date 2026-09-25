@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.042v.tif" pagination="84" reader="John Dee" signature="[f 2[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="duo uitanda" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Duo, vitanda.</marginalia_text>
+                </position>
+            </language>
+            <translation>Two, avoid.</translation> <!-- FSF: two things to be avoided -->
+        </marginalia>
+        
+        <marginalia anchor_text="Non enim satis est dicere presse tantum, aut subtiliter, aut asperè, non magis quàm phonasco, acutis tantum, aut medijs, aut grauibus              sonis, aut horum etiam particulis excellere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Comparatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Comparison.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Et sicut hominis ortus ex utroque gigentium confertur, &amp; frustra sparseris semina, nisi illa praemollitus fouerit sulcus: it eloque[n]tia coalescere              nequit, nisi sociata tradentis, accipientis'q[ue] concordia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Comparatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Comparison.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="presse tantum, aut subtiliter, au asperè" type="straight"/>
+        
+    </annotation>
+</transcription>

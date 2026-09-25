@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.038v.tif" pagination="76" reader="John Dee"/>
+    <annotation>
+       
+        <marginalia anchor_text="Nam uitium, aut in uerbis, aut in rebus est." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vitiu[m] in Rebus. Verbis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Fault within: the things [or] the words.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="leges" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Leges.</marginalia_text>
+                </position>
+            </language>
+            <translation>Laws.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eas quoque leges esse, quae non in pereptuum rogentur, sed de honoribus, aut imperijs, qualis Manilia fuit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Lege Manilia</marginalia_text>
+                    <person name="Gaius Manilius"/>
+                </position>
+            </language>
+            <translation>Laws for Manilius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="à dialecticis argumentandi ratione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Argume[n]tandi r[ati]o a Dialecticis petitur</marginalia_text>
+                </position>
+            </language>
+            <translation>The method of arguing with dialectics is sought.</translation>
+        </marginalia>
+         
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

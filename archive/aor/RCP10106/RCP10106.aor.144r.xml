@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.144r.tif" pagination="287" reader="John Dee"/> 
+    <annotation>
+        
+        <!-- M.B. With Greek marginalia to be translated -->
+        
+        <marginalia anchor_text="Salsum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Salsum</marginalia_text>
+                </position>
+            </language>
+            <translation>Salty.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sanè tamen ut ille in cibis paulò liberalius aspersus, si tamen no[n] sit immodicus, affert aliquid propriae uoluptatis: ita hi quoq[ue] in              dice[n]di habent quiddam, quod nobis faciat audiendi sitim." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Similitudo</marginalia_text>
+                </position>
+            </language>
+            <translation>Simile.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Horatius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Horatius.</marginalia_text>
+                    <person name="Horace"/>
+                </position>
+            </language>
+            <translation>Horace.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vergilio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vergilius.</marginalia_text>
+                    <person name="Virgil"/>
+                </position>
+            </language>
+            <translation>Virgil.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Demosthenem urbanum fuisse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Demothenes vrbanus fuit</marginalia_text>
+                    <person name="Demosthenes"/>
+                </position>
+            </language>
+            <translation>Demosthenes was urbane.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="περὶ γελίου" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>περὶ γελίου</marginalia_text> 
+                </position>
+            </language>
+            <translation>About laughing matters.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diuisio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>Division.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ciceronis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ite[m] ridicula aut facimus, aut dicimus." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Alia Diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>Another division.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="est ridiculum. Ideo'q[ue] haec tota disputatio à Graecis πορὶ γελί[ου] inscribitur. Eius" type="straight"/> <!-- M.B. I've the captured the 'Ȣ' ligature as [ou]. -->
+        <underline language="LA" method="pen" text="Aut enim ex alijs risum petimus, aut ax nobis, aut ex rebus medijs" type="straight"/>
+        <underline language="LA" method="pen" text="Nostra ridicule indicamus, &amp; ut uerbo Ciceronis utar, dicimus aliqua subabsurda. Nanq[ue]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+    </annotation>
+</transcription>

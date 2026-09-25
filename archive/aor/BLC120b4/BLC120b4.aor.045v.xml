@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.045v.tif" pagination="45[v]" reader="John Dee" signature="[L[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Triturationem" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        repetitione[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Repetition.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="generatione[m]" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        vnum opus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                One work.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        in rubeo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In red.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Alterationem" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Resolutione[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Resolution.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        extrahendo ex vase
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                By extracting from the vessel.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ex lapideo A'ludel in lapideo Caraha'" type="double"/>
+        <underline language="LA" method="pen" text="coniunctionem" type="triple"/> 
+        <underline language="LA" method="pen" text="Corruptione[m]: Generatione[m]: Augme[n]tationem" type="straight"/> 
+        <underline language="LA" method="pen" text="Fixationem" type="straight"/> 
+        <underline language="LA" method="pen" text="Alterationem: cum" type="straight"/>
+        <underline language="LA" method="pen" text="lapideo" type="grid"/>
+
+        <mark method="pen" name="bracket" place="intext"/>  <!-- adustiui: qui -->
+        <mark method="pen" name="bracket" place="intext"/>  <!-- nigredine[m]: ab -->
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+        <!-- DO: He also appears to have circled the dot above 'uiuum', possibly an erratum? -->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.050v.tif" pagination="420" reader="Harvey"/>	<!-- ABO 55left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.050v_0001" marginalia_continues_to="Ha2.051r_0001" marginalia_to_transcription="Ha2.051r.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Ille vir, ille mihi, cui vocula nulla tepescit, = [p. 421: = vlteriùs volitat nescia stare ratis. Axiophilus.]
+							<!-- Continues onto facing page, head, Ha2.051r -->
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				That man of mine, whom no feeble voice can warm, [. 421: = flies above those matters incapable of standing firm. Axiophilus.]
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Doctor Bond Etymologicus. <!-- CG: Can't figure this out. Specialist help required. -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Doctor Bond, the etymologist.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						I
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						haue heard more Witt from sum apt Mercurial boyes,
+						then from manie learned &amp; graue men.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						So much worth is a quick spirit, &amp; dexteritie.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						dextrè. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skillfully.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) distinctissima oratio, maximèq[ue] emphatica.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A most distinct oration, and especially emphatic.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Intrà Ironia; extrà euschemosyne:
+						circà Entelechia.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Irony within, gracefulness without, and actualization all around.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Aparrel alwais clenlie, &amp; hansome, &amp; sumtime
+						fine: but neuer uaine, or glorious.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Singula tam efficacissimè, quàm Specioicissimè.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Singular things are both most effective and most beautiful.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="dottorato per amor di Dio un" type="straight"/>
+		<underline language="IT" method="pen" text="Achille da Eboli" type="straight"/>
+		<underline language="IT" method="pen" text="che dire di" type="straight"/>
+		<underline language="IT" method="pen" text="altri scolari" type="straight"/>
+		<underline language="IT" method="pen" text="Girolamo Mentouato" type="straight"/>
+		<underline language="IT" method="pen" text="altra riuscita di questa" type="straight"/>
+		<underline language="IT" method="pen" text="bene l'ethimologia, del suo nome" type="straight"/>
+		<underline language="IT" method="pen" text="Achille" type="straight"/>
+		<underline language="IT" method="pen" text="H. &amp; ille" type="straight"/>
+		<underline language="IT" method="pen" text="indouinò il Padre" type="straight"/>
+		<underline language="IT" method="pen" text="Alamanni" type="straight"/>
+		<underline language="IT" method="pen" text="uolere quarelarsi a' capitani" type="straight"/>
+		<underline language="IT" method="pen" text="una pentola di" type="straight"/>
+		<underline language="IT" method="pen" text="querelerete indarno di questo" type="straight"/>
+		<underline language="IT" method="pen" text="essendoui fatto in iure" type="straight"/>
+		<underline language="IT" method="pen" text="un galant'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="Cap. Gio. Battista Martini, il" type="straight"/>
+		<underline language="IT" method="pen" text="riputato" type="straight"/>
+		<underline language="IT" method="pen" text="la cortesia" type="straight"/>
+		<underline language="IT" method="pen" text="gentilezza de mondo" type="straight"/>
+		<underline language="IT" method="pen" text="somma di denari" type="straight"/>
+		<underline language="IT" method="pen" text="lo seruì molto" type="straight"/>
+		<underline language="IT" method="pen" text="il galant'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="uolete" type="straight"/>
+		<underline language="IT" method="pen" text="altro" type="straight"/>
+		<underline language="IT" method="pen" text="Signore Cipitan" type="straight"/>
+		<underline language="IT" method="pen" text="sorride[n]do il buo[n]" type="straight"/>
+		<underline language="IT" method="pen" text="doueua pur' bastare in" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="dottorato per amor di Dio" type="straight"/>
+		<underline language="IT" method="chalk" text="Bologna, diede molto che" type="straight"/>
+		<underline language="IT" method="chalk" text="Martini, il quale è riputato, si come è in" type="straight"/>
+		<underline language="IT" method="chalk" text="&amp; gentilezza de mondo, a richiederlo" type="straight"/>
+				
+		<!-- Symbols -->
+		<symbol name="Sun" place="head"/>
+		<symbol language="IT" name="JC" place="intext" text="fatto in iure"/>
+		<symbol name="Sun" place="intext"/> <!--under marginal note, 'maximeq[ue]-->
+		<symbol name="SS" place="left_margin"/>
+		
+		<!-- Marks -->		
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Achil -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- tem -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- riusci -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ethimolo -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- sappia -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- bro -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Mar -->
+		<mark method="pen" name="bracket" place="right_margin"/> <!-- Mar ... ne -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- to -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- dis -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- gentil' -->
+		
+	    	<!-- Left margin -->
+	    <mark method="pen" name="quotation_mark" place="left_margin"/> <!-- Essendosi -->
+		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- gia, del -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- te ... ille -->
+		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- do: gli -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark language="IT" method="pen" name="quotation_mark" place="head" text="dottorato per amor di Dio un"/> <!-- amor di Dio -->
+		<mark method="pen" name="dot" place="intext"/> <!-- scolari, & -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="l'ethimologia"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="indouinò"/>
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- diede -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="fatto in iure"/> 
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="la cortesia"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="gentilezza"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- faded chalk mark -->
+	    <mark method="pen" name="dot" place="intext"/> <!-- mondo, a -->
+
+    </annotation>
+</transcription>

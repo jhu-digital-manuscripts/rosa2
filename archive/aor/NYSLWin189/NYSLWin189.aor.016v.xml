@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.016v.tif" reader="John Dee" signature="[E[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Nota bene Methodum huius capituli</marginalia_text>
+                </position>
+            </language>
+            <translation>Note well the method of this chapter.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tria prima</marginalia_text>
+                </position>
+            </language>
+            <translation>The first three.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sulphur Antimonij Lepram curat</marginalia_text> 
+                </position>
+            </language>
+            <translation>Sulfur of antimony cures leprosy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hydroposim wassersucht auß dem sal gemmae vnd alumine rocho" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>hydroposim curat sal gemma[e] Alumen rochu[m] }</marginalia_text>
+                </position>
+            </language>
+            <translation> Gem salt and alum (rochum) cures dropsy.</translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="mercurio" type="straight"/>
+        <underline language="LA" method="pen" text="sulphure" type="straight"/>
+        <underline language="LA" method="pen" text="sale" type="straight"/>
+        <underline language="DE" method="pen" text="den selbigen kranckheyten sollen zůgeleit werden" type="straight"/>
+        <underline language="DE" method="pen" text="scharpff" type="straight"/>
+        <underline language="LA" method="pen" text="visco" type="straight"/>
+        <underline language="DE" method="pen" text="feurischer" type="straight"/>
+        <underline language="DE" method="pen" text="eiterechte geschwär" type="straight"/>
+        <underline language="DE" method="pen" text="andrer aestiomena" type="straight"/>
+        <underline language="DE" method="pen" text="Dann einer extinguier ignem persicum" type="straight"/>
+        <underline language="DE" method="pen" text="außsatz reiniget" type="double"/>
+        <underline language="LA" method="pen" text="sulphur antimonij" type="straight"/>
+        <underline language="DE" method="pen" text="was hydroposim" type="straight"/>
+        <underline language="DE" method="pen" text="gemmae vnd" type="double"/>
+        
+        <symbol name="Mercury" place="right_margin" text="mercurium"/>
+        <symbol name="Salt" place="right_margin" text="salem"/>
+        <symbol name="Sulfur" place="right_margin" text="sulphur"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        
+        <errata amendedtext="plumoso" copytext="pulmoso" language="LA"/>
+
+    </annotation>
+</transcription>

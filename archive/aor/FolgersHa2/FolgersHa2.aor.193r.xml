@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.193r.tif" pagination="209" reader="Harvey" signature="Or"/>	<!-- ABO 197right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Singula ad rem nudis terminis: omnia ad scopu[m] rectâ lineâ.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Singular things towards clear limits: everything directly towards the goal.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Lipsius philologus: non technologus: uerboru[m],
+						) quàm operum peritior. Deco
+						grammaticaster.
+					</marginalia_text>
+					<person name="Lipsius"/>
+				</position>
+			</language>
+			<translation>Lipsius was a philologist, not a technologus: he was more skilled with words than with works. [...] a low grammarian.</translation> 
+					<!--JG: What does deco/deeo mean??--> <!-- CG: I'm not sure about this either. Although now I'm definitely convinced that 'technologus' and 'philologus' are opposed like 'cosmocriticus' and 'logocriticus'. -->
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						destramente.	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Skillfully.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						) Malo esse practicus, quàm
+						theoricus: artifex, quàm scholasticus. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>I prefer to be practical, rather than theoretical: a craftsman, rather than a scholastic.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Practicus mundus amat practica: et sola curat Necessaria, aut utiliss[im]a.
+						Ca[e]tera ipso facto contemnit omnia. Nec pluris a[e]stimatur, qui plura
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						scit; sed qui plus
+						proficit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A practical world loves practical things: and only cares for the necessary or most useful things.
+			Consequently, it contemns all other things. Nor is he who knows more esteemed more highly; but he who accomplishes more.</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.193r_0001" marginalia_continues_to="Ha2.192v_0001" marginalia_to_transcription="Ha2.192v.xml">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Nihil valent litera[e], quatenùs scholastica[e], sed quatenùs mundana[e]: nec discuntur
+						artes. Vt sciantur, sed vt prosint. Earumq[ue] prima, et summa Qua[e]stio, = [p. 208: = Quia possunt? quantum valent. Cui priuata[e], aut publica[e] facultati conducunt?
+						Iam enim Artes aut in Commoditatum numero reponuntur; aut in nullo sunt]
+						<!-- Continues onto facing page, right margin, Ha2.192v -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>No literature will prevail as long as it is scholastic, but only as long as it worldly: nor will the arts be learned. 
+				In order that they could be known, but also so that they could be useful. The first of these and highest question, 
+				[p. 208: because the can? How much they are worth. For whom private and public faculties are of advantage? For already the arts are either restored in a number of utilities, or they are in none.]			
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="I doni, placare" type="straight"/>
+		<underline language="IT" method="pen" text="era segretamente" type="straight"/>
+		<underline language="IT" method="pen" text="accordarsi co' nimici" type="straight"/>
+		<underline language="IT" method="pen" text="lui alcun sospetto" type="straight"/>
+		<underline language="IT" method="pen" text="dolse seco ch' gli nol richiedesse" type="straight"/>
+		<underline language="IT" method="pen" text="cosa alcuna" type="straight"/>
+		<underline language="IT" method="pen" text="tener sempre per tuo debitore" type="straight"/>
+		<underline language="IT" method="pen" text="bello &amp; ferocissimo cauallo" type="straight"/>
+		<underline language="IT" method="pen" text="danari, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="fedelissimo" type="straight"/>
+		<underline language="IT" method="pen" text="Munera" type="straight"/>
+		<underline language="IT" method="pen" text="distribuire i beni, gli" type="straight"/>
+		<underline language="IT" method="pen" text="la dignita, &amp; conditione" type="straight"/>
+		<underline language="IT" method="pen" text="Leone" type="straight"/>
+		<underline language="IT" method="pen" text="Asino" type="straight"/>
+		<underline language="IT" method="pen" text="Volpe" type="straight"/>
+		<underline language="IT" method="pen" text="Asino ne" type="straight"/>
+		<underline language="IT" method="pen" text="parti vguali" type="straight"/>
+		<underline language="IT" method="pen" text="ciascuno daua la sua" type="straight"/>
+		<underline language="IT" method="pen" text="Leone, non" type="straight"/>
+		<underline language="IT" method="pen" text="far differenza da sè" type="straight"/>	
+		<underline language="IT" method="pen" text="Volpe che" type="straight"/>
+		<underline language="IT" method="pen" text="vn pezzuolo" type="straight"/>
+		<underline language="IT" method="pen" text="tutto il resto al Leone" type="straight"/>
+		<underline language="IT" method="pen" text="ridendo" type="straight"/>
+		<underline language="IT" method="pen" text="mia natura" type="straight"/>
+		<underline language="IT" method="pen" text="morte di questo" type="straight"/>
+		
+		<symbol name="JC" place="tail"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/> 
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--accor-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--for-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--fat-->
+
+    </annotation>
+</transcription>

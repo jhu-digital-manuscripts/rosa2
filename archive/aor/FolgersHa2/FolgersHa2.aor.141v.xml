@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.141v.tif" pagination="106" reader="Harvey" signature="[G5v]"/>	<!-- ABO 146left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Eutrapelus, in maximis negotiis, actor maior: apud
+						summas mundi personas,
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						legatus superior:
+						in molestissimis casib[us] priuatis, publicis, aut etiam
+						in tristissimis calamitatibus,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						vel pra[e]sens remediu[m], vel
+						magnifica patientia: ( festiuissimè ferendo, 
+						pulcherrimam pra[e] se ) victoria[m]: et omnium
+						semper cordatissimus. Nunq[uam] visus trepidare, aut 
+						despondere generosu[m] animu[m]; aut languere defessus; 
+						aut frigere ignauus;
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						aut in salebris ha[e]rere; aut
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						vllo modo Superari; aut aliqua deniq[ue] parte turbari.
+						Sed quauis negotioru[m], casuum, periculorum mole,
+						semper ingentior.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Vnico risoluto del mondo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				In the greatest affairs, Eutrapelus is a greater actor, among the highest people of the world,
+				a superior officer. In the most both tiresome private or public cases, or even in the saddest 
+				calamities, he has a prompt remedy, or magnificent patience.  In a most lively manner,
+				he carries a most beautiful victory before him and is always most sensible.
+				His noble soul never seems to be afraid or despondent; nor does he languish in exhausation,
+				or lack vigor in laziness, or hesitate in an uneven manner of speaking. He is never surpassed
+				in any way; nor, finally, is he ever disturbed in any part.
+				But he is always greater than any mass of affairs, cases, or dangers. The uniquely resolute [man] of the world.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						In viro Singulari, decet Singula esse Singularia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				In a singular man, singular things must be single.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="mai goduto niente" type="straight"/>
+		<underline language="IT" method="pen" text="cinque piedi di terreno &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="lenzuol vecchio" type="straight"/>
+		<underline language="IT" method="pen" text="Saladino (" type="straight"/>
+		<underline language="IT" method="pen" text="no'l" type="straight"/>
+		<underline language="IT" method="pen" text="comparatione dello auaro" type="straight"/>
+		<underline language="IT" method="pen" text="vanagloria di questo" type="straight"/>
+		<underline language="IT" method="pen" text="epitaffio" type="straight"/>
+		<underline language="IT" method="pen" text="Saladino Re, &amp; possessore" type="straight"/>
+		<underline language="IT" method="pen" text="tre bracchia di terra" type="straight"/>
+		<underline language="LA" method="pen" text="caetera fumus erit" type="straight"/>
+		<underline language="IT" method="pen" text="Dante" type="straight"/>
+		<underline language="IT" method="pen" text="mondan romor" type="straight"/>
+		<underline language="IT" method="pen" text="ch'vn fiato" type="straight"/>
+		<underline language="IT" method="pen" text="vento" type="straight"/>
+		<underline language="IT" method="pen" text="vie[n] quinci" type="straight"/>
+		<underline language="IT" method="pen" text="vie[n] quindi" type="straight"/>
+		<underline language="IT" method="pen" text="muta nome" type="straight"/>
+		<underline language="IT" method="pen" text="muta lato" type="straight"/>
+		<underline language="IT" method="pen" text="consiglio de' saui" type="straight"/>
+		<underline language="IT" method="pen" text="de' cattiui" type="straight"/>
+		<underline language="IT" method="pen" text="se ambedue" type="straight"/>
+		<underline language="IT" method="pen" text="affermaua la morte del compagno" type="straight"/>
+		
+		<symbol name="Sun" place="right_margin"/>
+		
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- proposi -->
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- presen -->
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- vecchio. Il -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- terra. Et -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- lato. -->
+		
+    </annotation>
+</transcription>

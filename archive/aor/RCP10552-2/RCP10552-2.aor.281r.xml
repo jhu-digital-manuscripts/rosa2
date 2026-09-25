@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.281r.tif" pagination="75" reader="John Dee" signature="K.j."/>
+    
+    
+    <annotation>
+        
+        <marginalia anchor_text="40. personas, vi[delicet] 20. de Anglia, &amp; 20. de Scotia" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>104 24 80</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="Baptistae Alienora mater regis Ambresbyri[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="Resis filius Mereduci" type="straight"/>
+        
+        
+        <errata amendedtext="[deleted]" copytext="40" language="LA"/>
+        
+        <errata amendedtext="[deleted]" copytext="20" language="LA"/>
+        
+        <errata amendedtext="[deleted]" copytext="20" language="LA"/>
+        
+    </annotation>
+    
+</transcription>

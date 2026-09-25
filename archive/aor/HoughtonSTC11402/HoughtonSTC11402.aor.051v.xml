@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.051v.tif" reader="Harvey" signature="[Fiiii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>[the] same.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Comes Purl. l.I. obs[eruat]. 97.</marginalia_text>
+                    <person name="Jacopo di Porcia"/>
+                    <book title="The preceptes of warre"/>
+                </position>
+            </language>
+            <translation>Jacopo di Porcia, book 1, observation 97.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="that they eate halfe rawe" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>At Cruda Coctis pr[a]efert Cardanus, ni Consuetudo obstaret. Cu[m]
+                        subtiliores Carniu[m] spiritus, Igne euaporentur.</marginalia_text>
+                    <person name="Girolamo Cardano"/>
+                </position>
+            </language>
+            <translation>Whereas Girolamo Cardano prefers raw over prepared [meat], lest he thwarts customary practice. Since the finer energies of meat are evaporarated with fire. 
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="infected" type="straight"/>
+        <underline language="EN" method="pen" text="gulled in the wyne thus" type="straight"/>
+        <underline language="EN" method="pen" text="lyke dead men" type="straight"/>
+        <underline language="EN" method="pen" text="was but lyttelle wodde" type="straight"/>
+        <underline language="EN" method="pen" text="cattayle in his campe" type="straight"/>
+        <underline language="EN" method="pen" text="moche of the flesshe" type="straight"/>
+        <underline language="EN" method="pen" text="be holsome, bycause" type="straight"/>
+        <underline language="EN" method="pen" text="wanted wodde" type="straight"/>
+        <underline language="EN" method="pen" text="whan they feared" type="straight"/>
+        <underline language="EN" method="pen" text="very vnlusty" type="straight"/>
+        <underline language="EN" method="pen" text="the fleshe, that they" type="straight"/>
+        <underline language="EN" method="pen" text="eate" type="straight"/>
+        <underline language="EN" method="pen" text="rawe" type="straight"/>
+        <underline language="EN" method="pen" text="for lack of vitayles" type="straight"/>
+        <underline language="EN" method="pen" text="forsooke and lefte his campe" type="straight"/>
+        <underline language="EN" method="pen" text="of all maner meates" type="straight"/>
+        
+        <symbol name="Bisected_circle" place="tail"/>
+        
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="lyke dead men"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--men, Maharbal-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="lacke of vitayles"/>
+        
+        
+    </annotation>
+</transcription>

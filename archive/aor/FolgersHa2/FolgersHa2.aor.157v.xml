@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.157v.tif" pagination="138" reader="Harvey" signature="[I5v]"/>	<!-- ABO 162left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						À uiro in virum quotidiè, vt Eudromus: quotidiè à sopho
+						in sophum. Semper vir, semper.
+					</marginalia_text>
+					<person name="Eudromus"/>
+				</position>
+			</language>
+			<translation>Daily from a man into man, as Eudromus: daily from a wise man into a wise man. Always a man, always.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Plus, plusq[ue] viri à die in diem: plus, plusq[ue] sophi ab hora
+						in horam.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>More and more man, from day by day: more and more a wise man, from hour to hour.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Qui non proficit à momento in momentum, deficit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>He who does not accomplish moment by moment fails.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Qui non crescit virtute, et praxi, decrescit.
+						Semper plus vigoris, et industria[e], semper, semper.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>He who does not grow in virtue and practice, dwindles. Always more vigor and industry, always, always.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Proprius quidam habitus virilis fortitudinis, profunda[e] prudentia[e], et diuina[e]
+						Constantia[e]: ab hoc Principio viuendi ad finem vsq[uam] vita[e].
+						Vita non est vita sed miseria; sine foelicitate vel externa,
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						vel saltem interna.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A certain particular habit of manly fortitude, profound prudence, and divine perseverance: from this beginning of living towards the end of life anywhere.
+				A life is not life but a misery without hapiness, either external or at least internal.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						Nihil viro tam Necessarium, quàm quotidiana
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						la[e]titia, exercitatio, sudor. Nullus sine sudore dies.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Nothing is as necessary for a man as daily joy, exercise, and hard labour. No days without sweat.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Solus sapiens vtitur omnibus peritè: etiam abusu: et rectè procedit contra Curvu[m].  
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Only a wise man uses everything skillfully, also in abuse. And he proceeds straight against that which is crooked.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="appiccata la querela" type="straight"/>
+		<underline language="IT" method="pen" text="letto se n'andaua" type="straight"/>
+		<underline language="IT" method="pen" text="à mutoli insino alla" type="straight"/>
+		<underline language="IT" method="pen" text="occasione di non si" type="straight"/>
+		<underline language="IT" method="pen" text="la cameriera à dormire col marito" type="straight"/>
+		<underline language="IT" method="pen" text="se n'andaua in vn'altra" type="straight"/>
+		<underline language="IT" method="pen" text="de' frutti" type="straight"/>
+		<underline language="IT" method="pen" text="gelosia" type="straight"/>
+		<underline language="IT" method="pen" text="dolce" type="straight"/>
+		<underline language="IT" method="pen" text="d'un amoroso core" type="straight"/>
+		<underline language="IT" method="pen" text="quel sospetto rio" type="straight"/>
+		<underline language="IT" method="pen" text="quella frenesia" type="straight"/>
+		<underline language="IT" method="pen" text="detta gelosia" type="straight"/>
+		<underline language="IT" method="pen" text="costanza d'un" type="straight"/>
+		<underline language="IT" method="pen" text="fanciullo" type="straight"/>
+		<underline language="IT" method="pen" text="leggierezza" type="straight"/>
+		<underline language="IT" method="pen" text="donna" type="straight"/>
+		<underline language="IT" method="pen" text="Papirio giouanetto" type="straight"/>
+		<underline language="IT" method="pen" text="Senato" type="straight"/>
+		<underline language="IT" method="pen" text="la madre ritorno" type="straight"/>
+		<underline language="IT" method="pen" text="feceta inuentione" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- borbot -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- fa -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ma -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ri -->
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- marito, & -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="detta gelosia"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- fanciullo, & -->
+		
+	</annotation>
+</transcription>

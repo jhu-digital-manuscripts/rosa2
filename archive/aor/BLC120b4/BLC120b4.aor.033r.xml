@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.033r.tif" pagination="33" reader="John Dee" signature="H"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Partes tres Argenti pro Argento: uel Auri pro Auro" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>3. Arg 1 a[e]s } arg. 3. Aur 1 arg } Auru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Three parts of silver and 1 part of bronze } silver. Three parts of gold and 1 part of silver } gold.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="partibus tribus Æris: &amp; pars una Stanni" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>.3. a[e]s .1. stannu[m] } spec.</marginalia_text>
+                </position>
+            </language>
+            <translation>Three parts of bronze and one alloy of lead } a mirror.</translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

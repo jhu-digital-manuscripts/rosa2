@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>22</illustrations>
+    <totalPages>138</totalPages>
+    <dimensions units="mm">
+        <width>180</width>
+        <height>265</height>
+    </dimensions>
+    <dates>
+        <startDate>1308</startDate>
+        <endDate>1308</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="138r" start="1r">138</pages>
+            <illustrations>22</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Bodmer 79</commonName>
+            <dateLabel>14th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>France</origin>
+            <currentLocation>Cologny, Switzerland</currentLocation>
+            <repository>Fondation Martin Bodmer</repository>
+            <shelfmark>Bodmer 79</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Bodmer 79</commonName>
+            <dateLabel>14e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Cologny, Suisse</currentLocation>
+            <repository>Fondation Martin Bodmer</repository>
+            <shelfmark>Bodmer 79</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

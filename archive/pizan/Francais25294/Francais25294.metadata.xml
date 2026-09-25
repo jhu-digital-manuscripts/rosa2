@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>1</illustrations>
+    <totalPages>203</totalPages>
+    <dimensions units="mm">
+        <width>200</width>
+        <height>135</height>
+    </dimensions>
+    <dates>
+        <startDate>1401</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="La Cité des Dames ou « Livre des III vertus à l'ensengnement des Dames">
+            <language>fr</language>
+            <title>La Cité des Dames ou « Livre des III vertus à l'ensengnement des Dames</title>
+            <textId/>
+            <pages end="194r" start="1r">194</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>22</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Christine de Pizan</title>
+            <commonName>Français 25294</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 25294</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Christine de Pizan</title>
+            <commonName>Français 25294</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 25294</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

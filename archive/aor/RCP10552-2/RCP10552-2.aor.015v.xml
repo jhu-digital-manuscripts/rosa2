@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.015v.tif" pagination="20" reader="John Dee" signature="[B.iiij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="discutione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ß</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quam aculeatè in istos religiosos illius a[e]tatis.</marginalia_text>
+                </position>
+            </language>
+            <translation> How pointed towards those devout [friars] in that time.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Regem Angliae ad recuperandam terram Sanctam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rex Anglia[e] pr[a]efertur o[mn]ibus alijs in negocio Terra S[an]c[t]a[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>The king of England preferred everything else in the negotiation about the Holy Land</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="chartas suas tradider[u]nt Regi Edvvardo, regnum Scotiae cum castellis, iuribus" type="straight"/>
+        <underline language="LA" method="pen" text="praetulit Iohannem de Bayllol, qui recognouit" type="straight"/>
+        <underline language="LA" method="pen" text="Scotiae capitalem dominum, fecìtq[ue] ei homagium" type="straight"/>
+        <underline language="LA" method="pen" text="fidelitatem iurauit" type="straight"/>
+        <underline language="LA" method="pen" text="gestis anni sequentis plenius declaratur" type="straight"/> 
+        <underline language="LA" method="pen" text="more canum cadaueribus assistentium" type="straight"/>
+        <underline language="LA" method="pen" text="Resus VVallicus condemnatur." type="straight"/>
+        <underline language="LA" method="pen" text="filius Mereduci captus illucque" type="straight"/>
+        <underline language="LA" method="pen" text="omnibus in regnum Scotiae ius" type="straight"/>
+        <underline language="LA" method="pen" text="vendicantibus" type="double"/>
+        <underline language="LA" method="pen" text="quo iure regnum" type="double"/> 
+        <underline language="LA" method="pen" text="vendicabant, plenius declararent" type="straight"/>
+        <underline language="LA" method="pen" text="magna expectatione" type="double"/> 
+        <underline language="LA" method="pen" text="vnusquisque scire cupit, quis in rengo gentium dominabitur." type="straight"/>
+        <underline language="LA" method="pen" text="primi vicesimus" type="double"/>
+        <underline language="LA" method="pen" text="ducem &amp; capitaneum omnium constituit Christianorum" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- haerede. Quo -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- expectat. Post -->
+        <mark method="pen" name="comma" place="intext"/> <!-- iuribus praetulit -->
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <errata amendedtext="discussione" copytext="discutione" language="LA"/>
+       
+                
+    </annotation>
+</transcription>

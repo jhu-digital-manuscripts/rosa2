@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor_20141111.xsd">
+
+<page filename="PrincetonU101.003v.tif" reader="Harvey" signature="[aiii[v]]"/>
+    <annotation>
+    	
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					A Discourse of especial vse, &amp; maruelous great effect, being thorowly understandid,
+    				</marginalia_text>
+    			</position>
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					&amp; accordingly practised.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+
+	<underline language="EN" method="pen" text="and excellent Nicholas" type="straight"/>
+    	<underline language="EN" method="pen" text="Frenchemen, Dutchemen" type="straight"/>
+    	<underline language="EN" method="pen" text="Spaniardes, and other forreyne" type="straight"/>
+    	<underline language="EN" method="pen" text="priuate reading" type="straight"/>
+    	<underline language="EN" method="pen" text="felt my selfe in that knowledge maruailouslye" type="straight"/>
+    	<underline language="EN" method="pen" text="increased" type="straight"/>
+    	<underline language="EN" method="pen" text="in knowledge of warres" type="straight"/>
+    	<underline language="EN" method="pen" text="in prooues also and exercise of the" type="straight"/>
+    	<underline language="EN" method="pen" text="forrayn aucthor, vnder the passport &amp; safeco[n]duict" type="straight"/>
+    	
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="felt my selfe in that knowledge maruailouslye"/>
+    	
+    	<mark method="pen" name="bracket" place="intext"/> <!--he being-->
+    	<mark method="pen" name="bracket" place="intext"/> <!--Florence, not--> 
+    	<mark method="pen" name="dot" place="intext"/> <!--theirs. The-->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="maruailouslye"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="knowledge"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="exercise"/>
+    	<mark method="pen" name="bracket" place="intext"/> <!--Soueraigne, together-->
+    	<mark method="pen" name="bracket" place="intext"/> <!--therevnto, I-->
+    	
+    	
+    </annotation>
+</transcription>

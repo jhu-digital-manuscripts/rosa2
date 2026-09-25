@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.044v.tif" pagination="70" reader="John Dee" signature="[ee.iii.[v]]"/>
+    <annotation> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Repetitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Repetition.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="spiritus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        spiritus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Breath.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="securi feriantur, quo quamminime multi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        securi feriri qua[m] minime multi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To cut off heads for the fewest possible people [Loeb 221, 203].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quid lachrymarum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quid Lachrimaru[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                What of weeping.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fletum totius Asiae fuisse, quem luctum, &amp; gemitum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        fletus luctum gemitus ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Sorrow, grief, lamentation.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dolabella" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Co[n}tra dolabella[m]
+                    </marginalia_text>
+                    <person name="Gnaeus Cornelius Dolabella"/>
+                </position>
+            </language>
+            <translation>
+                Against Dolabella.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quamminime multi" type="straight"/>
+        <underline language="LA" method="pen" text="Verrésne tibi tanti fuit, vt eius libidinem, hominum innocentum sanguine" type="straight"/>
+        <underline language="LA" method="pen" text="video enim, &amp; ex his quae legi, &amp; audiui, intelligo" type="straight"/>
+        <underline language="LA" method="pen" text="igni, ferro, manu, copiis oppugnatus, sed aliqua ex parte violatus sit" type="straight"/>
+
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">15</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">15</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        
+    </annotation>
+</transcription>

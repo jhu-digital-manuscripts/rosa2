@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.068r.tif" pagination="119" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Miru[m] in modum ha[e]c vita[e] mea[e] quadra[n]t co[n]ditioni mihi erat ♐ 2 vel 3 gradus in Horos.
+                        Hoc vel maximè me perpessu[m] esse o[mn]es noru[n]t familiares amici 
+                    </marginalia_text>
+                    <symbol_in_text name="Sagittarius"/>
+                </position>
+            </language>
+            <translation>
+                Wonderful in the manner [in which] these things of my life fit in my condition; it was Sagittarius, two or three degrees in the horoscope.
+                This or greatly so, all my friends found out that I endured to the full.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="peregrinis enim frequenter regionibus detinebitur" type="straight"/>
+        <underline language="LA" method="pen" text="plurimas quoq[ue] artes, ac disciplinas consequetur, eritq[ue] cordatus, ingeniosus, ac omniu[m] reru[m] scius" type="straight"/>
+        <underline language="LA" method="pen" text="multíq[ue] per eum uitae, ac uiuendi subsidia habebu[n]t, sed cuicunq[ue] aliquid tale contulerit, ipse ei semper ingratus existet" type="straight"/>
+        <underline language="LA" method="pen" text="tunc" type="straight"/>
+        <underline language="LA" method="pen" text="cum" type="straight"/>
+        <underline language="LA" method="pen" text="senectutis limen" type="straight"/>
+        <underline language="LA" method="pen" text="facillimis rationibus" type="straight"/>
+        <underline language="LA" method="pen" text="qui damna, recta mentis auctoritate" type="straight"/>
+        <underline language="LA" method="pen" text="secretas literas perleget" type="double"/>
+        <underline language="LA" method="pen" text="coelestium, &amp; sacrarum" type="straight"/>
+        <underline language="LA" method="pen" text="iusti" type="straight"/>
+        <underline language="LA" method="pen" text="cordati" type="straight"/>
+        <underline language="LA" method="pen" text="docentes omnia" type="straight"/>
+        <underline language="LA" method="pen" text="sed quibus felicitas, tardis processibus" type="straight"/>
+        <underline language="LA" method="pen" text="in aquosis locis" type="straight"/>
+        <underline language="LA" method="pen" text="cuius fidei cuncta" type="straight"/>
+        <underline language="LA" method="pen" text="etiam nobilis" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; notus" type="straight"/>
+        <underline language="LA" method="pen" text="uxorem eius affectus" type="straight"/>
+        <underline language="LA" method="pen" text="stupro tamen" type="straight"/>
+        <underline language="LA" method="pen" text="uel adulterio cognitam coniugem sortietur" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- dolores facillimis -->
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

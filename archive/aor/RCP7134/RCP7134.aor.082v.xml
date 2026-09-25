@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.082v.tif" pagination="[75v]" reader="John Dee" signature="[T iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Oportet autem in geniture, non abesse seminaria effectus, ut pro eruditione ingenium, memoria, patientia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In Genitura Spargentur seminario effectuu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The nursery of effects is scattered in a geniture.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sunt consistentes" type="straight"/>
+        <underline language="LA" method="pen" text="temperatura" type="straight"/>
+        <underline language="LA" method="pen" text="mores" type="straight"/>
+        <underline language="LA" method="pen" text="forma corporis" type="straight"/>
+        <underline language="LA" method="pen" text="uires" type="straight"/>
+        <underline language="LA" method="pen" text="ingenium" type="straight"/>
+        <underline language="LA" method="pen" text="eruditio" type="straight"/>
+        <underline language="LA" method="pen" text="fama" type="straight"/>
+        <underline language="LA" method="pen" text="diuitae" type="straight"/>
+        <underline language="LA" method="pen" text="honores" type="straight"/>
+        <underline language="LA" method="pen" text="magistratus" type="straight"/>
+        <underline language="LA" method="pen" text="cicatrices" type="straight"/>
+        <underline language="LA" method="pen" text="defoedationes" type="straight"/>
+        <underline language="LA" method="pen" text="corporis" type="straight"/>
+        <underline language="LA" method="pen" text="usus venereorum" type="straight"/>
+        <underline language="LA" method="pen" text="â genitura" type="straight"/>
+        <underline language="LA" method="pen" text="â reuolutionibus" type="straight"/>
+        <underline language="LA" method="pen" text="etiam patet causa, cur tot inuenerint nugas, partes, facies, nouenarias, quia no[n] poterant tot rebus quae homini eueniu[n]t, situ solu[m] septem planetarum satisfacere" type="straight"/>
+        <underline language="LA" method="pen" text="Oportet autem in genitura, non abesse seminaria effectus, ut pro eruditione ingenium, memoria, patientia" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> 
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        
+        <numeral language="LA" place="intext" text="genitura">1</numeral>
+        <numeral language="LA" place="intext" text="directionibus">2</numeral>
+        <numeral language="LA" place="intext" text="reuolutionibus">3</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.191v.tif" pagination="382" reader="John Dee"/> 
+    <annotation>
+        
+        <!-- M.B. Greek marginalia to be captured later. -->
+        
+        <marginalia anchor_text="Homerus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Homerus</marginalia_text>
+                    <person name="Homer"/>
+                </position>
+            </language>
+            <translation>Homer.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sed aliquando ad ornatum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Enthymema no[n]nu[m]qua[m] ad ornatu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Enthymema is sometimes used as ornament.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tantae molis erat Romanam condere gentem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>virgilius</marginalia_text>
+                </position>
+            </language>
+            <translation>Virgil.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="talionis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Talionis actio</marginalia_text>
+                </position>
+            </language>
+            <translation>The act of cutting.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="clasula" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Clasula.</marginalia_text>
+                </position>
+            </language>
+            <translation>Closure.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ligarij" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>pro ligario.</marginalia_text>
+                    <book title="Pro Ligario"/>
+                </position>
+            </language>
+            <translation>Pro Ligario.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sensiculi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sensiculi.</marginalia_text>
+                </position>
+            </language>
+            <translation>Sentences.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vibius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vibius</marginalia_text>
+                    <person name="Lucius Junius Quintus Vibius Crispus"/>
+                </position>
+            </language>
+            <translation>Vibius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Africanus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Africanus</marginalia_text>
+                    <person name="Julius Africanus"/>
+                </position>
+            </language>
+            <translation>Africanus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Afer" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Afer.</marginalia_text>
+                    <person name="Domitius Afer"/>
+                </position>
+            </language>
+            <translation>Afer.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="Non semper autem ad probatione[m] adhibetur, sed aliquando" type="straight"/>
+        <underline language="LA" method="pen" text="hoc nomine donaru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="talionis" type="straight"/>
+        <underline language="LA" method="pen" text="ut omnis locus, omnis sensus in fine sermonis feriat aure[m]" type="straight"/>
+        
+    </annotation>
+</transcription>

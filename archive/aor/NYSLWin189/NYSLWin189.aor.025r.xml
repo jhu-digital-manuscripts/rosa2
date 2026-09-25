@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.025r.tif" reader="John Dee" signature="Gij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="kalchstein" hand="Italian" id="NYSLWin189:00000061:m0001" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>unde calor</marginalia_text>
+                </position>
+            </language>
+            <translation>Hence the heat.</translation>
+        </marginalia>
+  
+        <underline id="NYSLWin189:00000061:u0001" language="DE" method="pen" text="kalchstein" type="straight"/>
+        
+        <physical_link>
+            
+            <marginal_annotation idref="NYSLWin189:00000061:m0001"/>
+            <marginal_annotation idref="NYSLWin189:00000061:u0001"/>
+            
+            <relation from="NYSLWin189:00000061:m0001" to="NYSLWin189:00000061:u0001" type="undirected"/>
+        </physical_link>
+
+    </annotation>
+</transcription>

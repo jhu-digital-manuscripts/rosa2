@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.412v.tif" pagination="808" reader="Harvey" signature="[yyy2v]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        Aliqui reges, adulatores: aliqui adulatores, quasi reges.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Some kings are flatterers; some flatterers as if kings. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Perseus ab Aemylio Paulo in Samothracia" type="straight"/>
+        <underline language="LA" method="pen" text="Anthiochus Syriae rex Ptolemaeum" type="straight"/>
+        <underline language="LA" method="pen" text="Cleopatram, Aegypti" type="straight"/>
+        <underline language="LA" method="pen" text="consideraturum" type="straight"/>
+        <underline language="LA" method="pen" text="legatorum Popilius" type="straight"/>
+        <underline language="LA" method="pen" text="uirga regem circunscripsit" type="straight"/>
+        <underline language="LA" method="pen" text="iussitq[ue] antequam circulo excederet, responsum daret" type="straight"/>
+        <underline language="LA" method="pen" text="qua asperitate" type="straight"/>
+        <underline language="LA" method="pen" text="Legationes gratulantium populorum, ac regum" type="straight"/>
+        <underline language="LA" method="pen" text="patriae suae legati" type="straight"/>
+        <underline language="LA" method="pen" text="nec tanquam hostes," type="straight"/>
+        <underline language="LA" method="pen" text="nec tanquam socij dimissi" type="straight"/>
+        <underline language="LA" method="pen" text="Macedonia in prouinciae formam" type="straight"/>
+        <underline language="LA" method="pen" text="Aemylius Paulus" type="straight"/>
+        <underline language="LA" method="pen" text="repugnantibus militibus eius propter minorem" type="straight"/>
+        <underline language="LA" method="pen" text="Perseum cum tribus filijs" type="straight"/>
+        <underline language="LA" method="pen" text="cuius triumphi laetitia" type="straight"/>
+        <underline language="LA" method="pen" text="duorum filiorum funeribus" type="straight"/>
+        <underline language="LA" method="pen" text="triumphum praecessit" type="straight"/>
+        <underline language="LA" method="pen" text="alterius secuta" type="straight"/>
+        <underline language="LA" method="pen" text="Lustrum" type="straight"/>
+        <underline language="LA" method="pen" text="à censoribus" type="straight"/>
+        <underline language="LA" method="pen" text="Prusias Bithyniae rex" type="straight"/>
+        <underline language="LA" method="pen" text="Nicomedem filium suum" type="straight"/>
+        <underline language="LA" method="pen" text="rex plenus adulationis" type="straight"/>
+        <underline language="LA" method="pen" text="libertum se populi" type="straight"/>
+        
+        <symbol name="Mercury" place="left_margin"/>
+        <symbol language="LA" name="JC" place="left_margin" text="patriae suae legati"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="Perseus ab Aemylio Paulo in Samothracia"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="Prusias Bithyniae"/>
+        <mark method="pen" name="double_vertical_bar" place="left_margin"/> <!-- LS, unknown mark!! -->
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Rho -->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Anthiochus Syriae rex Ptolemaeum"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- absisteret, editisq[ue]-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="legatorum Popilius"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--omitteret. Legationes-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="nec tanquam socij dimissi"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Macedonia in prouinciae formam"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- Aemylius Paulus -->
+        <mark method="pen" name="dot" place="intext"/> <!-- duxit, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- praecessit -->
+        <mark method="pen" name="dot" place="intext"/> <!-- praecessit, alterius-->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--est. Lustrum-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="rex plenus adulationis"/>
+        
+    </annotation>
+</transcription>

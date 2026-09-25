@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.122r.tif" pagination="122" reader="John Dee" signature="Qij"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="Antonio di Torres" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Antonio di Torres com agayn from spayn.</marginalia_text>
+                    <person name="Antonio de Torres"/>
+                    <location name="Spain"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="MCCCCXCV" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1495</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="la maggior parte de' Christiani commetteuano mille eccessi" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hispanoru[m] facinora</marginalia_text>
+                </position>
+            </language>
+            <translation>The crimes of the Spaniards.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Acanagari" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Guacanagari</marginalia_text>
+                    <person name="Guacanagarix"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Ma fu costui" type="straight"/>
+        <underline language="IT" method="pen" text="tornato poi lo Ammiraglio" type="straight"/>
+        <underline language="IT" method="pen" text="castigato seueramente" type="straight"/>
+        <underline language="IT" method="pen" text="de' suoi uassalli" type="straight"/>
+        <underline language="IT" method="pen" text="Antonio di Torres" type="straight"/>
+        <underline language="IT" method="pen" text="MCCCCXCV" type="straight"/>
+        <underline language="IT" method="pen" text="fatto" type="straight"/>
+        <underline language="IT" method="pen" text="danno a' Christiani" type="double"/>
+        <underline language="IT" method="pen" text="a questi, &amp; a quelli" type="straight"/>
+        <underline language="IT" method="pen" text="che la maggior parte de' Christiani commetteuano mille eccessi : per laqual cosa erano mortalmente odiati da gl'Indiani," type="double"/>
+        <underline language="IT" method="pen" text="i quali ricusauano di uenire alla loro obedientia" type="straight"/>
+        <underline language="IT" method="pen" text="Caunabo" type="straight"/>
+        <underline language="IT" method="pen" text="Acanagari" type="grid"/>
+        <underline language="IT" method="pen" text="Beechio" type="straight"/>
+        <underline language="IT" method="pen" text="Guarionex" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/>  <!-- amazzati -->
+        
+        <mark language="IT" method="pen" name="bracket" place="left_margin" text="che la maggior parte de' Christiani commetteuano mille eccessi : per laqual cosa erano mortalmente odiati da gl'Indiani, i quali ricusauano di uenire alla loro obedientia"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+
+        
+    </annotation>
+    
+</transcription>

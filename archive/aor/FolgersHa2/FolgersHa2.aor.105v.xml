@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.105v.tif" pagination="34" reader="Harvey" signature="[Cv]"/>	<!-- ABO 110left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Semper vir: nunq[uam] semivir.
+					</marginalia_text>
+					<emphasis method="pen" text="Semper vir" type="straight"/>
+					<emphasis method="pen" text="nunq[uam] semivir" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Always a man, never half a man.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Outis tooke nothing in dudgen, but all in gree.
+					</marginalia_text>
+					<person name="Odysseus"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						In
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						actionibus, mera Entelechia:
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						in
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						passionibus, Ironia.
+					</marginalia_text>
+				</position>
+			</language>		
+			<translation>
+				Pure actualization in actions; Irony in passions.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Eutrapelus more resolute, &amp;
+						pleasant in all occurents, or oppositions, then Outis himself.
+						Euer liuelie: but euer discreet to the point, &amp; sharp to
+						the purpose.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+					<person name="Odysseus"/>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nihil in mundo dignum Eutrapeli aliquo dolore, aut
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						ira.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing in the world is worthy of Eutrapelus' grief or anger.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vulgare est, queri ob vulgaria:
+						eximius spernit, qua[e] populus facit tanti.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It is common to complain because of common things:
+				the more distinguished man spurns those worthless things done by the people. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Non est infra fortunam Virtus, aut Vir: sed supra:
+						Et qui infra est, aut succumbit ullo modo, vir non est.
+					</marginalia_text>
+					<emphasis method="pen" text="Non est" type="straight"/>
+					<emphasis method="pen" text="infra fortunam" type="straight"/>
+					<emphasis method="pen" text="Virtus" type="straight"/>
+					<emphasis method="pen" text="Vir" type="straight"/>
+					<emphasis method="pen" text="sed supra" type="straight"/>
+					<emphasis method="pen" text="infra est" type="straight"/>
+					<emphasis method="pen" text="vir non est" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Virtue and Man are not below fortune, but above it;
+				and whoever is below fortune, or succumbs to it in any way, is not a man.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Axiophili gubernatio suijpsius. Ipse sui Dominus totus, quàm rara potestas?
+						Ipse sui servus, quàm numerosa seges?
+					</marginalia_text>
+					<person name="Axiophilus"/>
+				</position>
+			</language>
+			<translation>
+				The management of Axiophilus himself. He, a master completely of himself: what rarer power is there?
+				He, a servant of himself: what more bountiful profit is there?
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Memineru[n]t omnia Coeli. 
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="FR">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Epistemon, et Panurge viuement, et dextrement.
+					</marginalia_text>
+					<X-ref book_title="Pantagruel" person="Rabelais"/>
+				</position>
+			</language>
+			<translation>
+				They kept in mind all the things of heaven. Epistemon and Panurge, lively and skillfully.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="huomini plebei farne" type="straight"/>
+		<underline language="IT" method="pen" text="per farmi honore" type="straight"/>
+		<underline language="IT" method="pen" text="metterei te in chiasso" type="straight"/>
+		<underline language="IT" method="pen" text="che i tuoi panni al presto" type="straight"/>
+		<underline language="IT" method="pen" text="L'Alloro hauer" type="straight"/>
+		<underline language="IT" method="pen" text="nobili virtù" type="straight"/>
+		<underline language="IT" method="pen" text="L'ALLORO è consacrato" type="straight"/>
+		<underline language="IT" method="pen" text="à Dafne donzella" type="straight"/>
+		<underline language="IT" method="pen" text="Alloro" type="straight"/>
+		<underline language="IT" method="pen" text="dello indiuinare" type="straight"/>
+		<underline language="IT" method="pen" text="sognar cose vere" type="straight"/>
+		<underline language="IT" method="pen" text="l' Alloro che" type="straight"/>
+		<underline language="IT" method="pen" text="verdeggia, come fa la virtù" type="straight"/>
+		<underline language="IT" method="pen" text="sicuro dal folgore" type="straight"/>
+		<underline language="IT" method="pen" text="lauro" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--ma-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--in-->
+		
+		<mark method="pen" name="dot" place="intext"/> <!--chiasso, non--> 
+
+    </annotation>
+</transcription>

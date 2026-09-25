@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.168v.tif" pagination="160" reader="Harvey" signature="[K8v]"/>	<!-- ABO 173left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Scopus { Ordinarius, { 	Politicus. Pragmaticus.
+									Polemicus.
+							  Extraordinarius { Mathematicus. thaumaturgicus.
+							  		    Apodemicus.	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Goal. { Ordinary.  {     Politician. Pragmatist. 
+								Polemicist. 
+						Extraordinary. { Mathematician. Thaumaturgist. 
+									Teacher. </translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Singula strictè,
+						energeticè, absolutè. Vt nihil efficacius,
+						aut potentius.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Singular things, strictly, energetically, absolutely. As nothing is more effective and more powerful.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Homo bulla.)
+					</marginalia_text>
+					<X-ref book_title="Rerum Rusticarum Libri Tres" language="LA" person="Marcus Terentius Varro" text="Homo bulla"/>
+					<X-ref book_title="Adagia" language="LA" person="Erasmus" text="Homo bulla"/>
+				</position>
+			</language>
+			<translation>'Man is a bubble'.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Vir palma.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Man is a palm.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Qua[e] calent, valent: et qua[e] coguntur,
+						pra[e]pollent. Vis inferenda cuiq[ue] parti.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The things which are hot, prevail: and the things which are forced, are very strong. Strength must be obtained for every part.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Instrumentum Eudromi catholicum; expeditissima facultas
+						Artium, Philosophia[e], Professionum: quatenus operantur in
+						Mundi negocijs subtilissimè.
+					</marginalia_text>
+					<person name="Eudromus"/>
+				</position>
+			</language>
+			<translation>Eudromus' universal instrument; the most expedient faculty of arts, philosophy, and professions: to the extent that they work most subtly in the affairs of the world.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Quotidiana a[e]mulatio excellentissimoru[m] artificium, et pra[e]stantissimorum operum in Esse.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The daily emulation of the most excellent professions and of the most outstanding works in being.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Voracità mostruosissima" type="straight"/>
+		<underline language="IT" method="pen" text="Glodio Albino" type="straight"/>
+		<underline language="IT" method="pen" text="cinquecento fichi" type="straight"/>
+		<underline language="IT" method="pen" text="Thragene Atleta" type="straight"/>
+		<underline language="IT" method="pen" text="Niseo Tiranno" type="straight"/>
+		<underline language="IT" method="pen" text="Adebunto" type="straight"/>
+		<underline language="IT" method="pen" text="Camble" type="straight"/>
+		<underline language="IT" method="pen" text="mangiò vna notte la moglie" type="straight"/>
+		<underline language="IT" method="pen" text="Ne l'uso" type="straight"/>
+		<underline language="IT" method="pen" text="non ne la custodia" type="straight"/>
+		<underline language="IT" method="pen" text="hora andaua à vedergli" type="straight"/>
+		<underline language="IT" method="pen" text="gli disotterrò, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="suo amico" type="straight"/>
+		<underline language="IT" method="pen" text="tu non vsaui quei" type="straight"/>
+		<underline language="IT" method="pen" text="delle pietre" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Testo -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- det -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Ade -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Diauo -->
+		
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- ostriche. Thragene -->
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- Toro. Nisea -->
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- bere. Adebunto -->
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- scoppio. Camble -->
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- moglie. -->
+		
+    </annotation>
+</transcription>

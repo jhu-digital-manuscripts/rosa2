@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.124r.tif" pagination="71" reader="Harvey" signature="E4[r]"/>	<!-- ABO 128right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Omnium paratissimus ad docendum omnes.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Most prepared of all to teach all things.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Tempissimo. 
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Singula cum Singulari delecatione.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Cum summa voluptata[e] Omnia. Vt nemo omniu[m] celerior, La[e]tior, =
+						= | confidentior, id est, fo[e]licior.
+						Ludus, iocusq[ue] vniuersa studia, opera, 
+						\ negocia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Most timely. Singular matters with a singular delight. With all the heights of pleasure. 
+				And no one is quicker, more joyful, more confident; that is to say, happier.
+				A game and a joke, universal studies, works, and activities.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Tantum homo scit, quantu[m] meminit.
+						Tantum quisq[ue] didicit, quantum docuit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A man knows as much as he remember.
+				Everyone has learned as much as he has taught.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Polytechnus,
+						maximus mundi Methodicus, et Practicus; Zeteticus,
+					</marginalia_text>
+					<emphasis method="pen" text="maximus mundi Methodicus, et Practicus" type="straight"/>
+					<emphasis method="pen" text="Zeteticus" type="straight"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						et Empiricus. Idq[ue] semper suâ refert
+					</marginalia_text>
+					<emphasis method="pen" text="et Empiricus" type="straight"/>
+					<emphasis method="pen" text="semper suâ refert" type="straight"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( ante Omnia, et super Omnes.
+					</marginalia_text>
+					<emphasis method="pen" text="ante Omnia" type="straight"/>
+					<emphasis method="pen" text="super Omnes" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The man with multiple skills is the greatest practical and methodical man in the world,
+				both inquisitive and empirical. And he always returns to his own matters before any other
+				and above all other men.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Mera flamma, sine fumo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A pure smokeless fire.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Vnica triplicis Entelechia[e] Synopsis.
+						Trigonus igneus animatus.
+					</marginalia_text>
+					<emphasis method="pen" text="triplicis Entelechia[e] Synopsis" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				A unique summary of triple actualization.
+				A fiery, animate triangle.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Quicquid legendum, meditandu[m], agendu[m]: Viuidus exultet nocte, diéq[ue] vigor.
+						Nemo Lectorum, aut actorum tam expeditus, dexter, efficax. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Something must be read, pondered, and done. Let the lively vigor jump about by night and day.
+				No reader or actor is as quick, skillful, or effective.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="ha innanzi à" type="straight"/>
+		<underline language="IT" method="pen" text="ha dietro" type="straight"/>
+		<underline language="IT" method="pen" text="Epaminunda Tebano" type="straight"/>
+		<underline language="IT" method="pen" text="che gran bestia senza capo" type="straight"/>
+		<underline language="IT" method="pen" text="piu formidabile" type="straight"/>
+		<underline language="IT" method="pen" text="Cerui, retto da vn Lione" type="straight"/>
+		<underline language="IT" method="pen" text="esercito di Lione" type="straight"/>
+		<underline language="IT" method="pen" text="retto da vn Ceruo" type="straight"/>
+		<underline language="IT" method="pen" text="virtù de Capitani" type="straight"/>
+		<underline language="IT" method="pen" text="Numantini huomini" type="straight"/>
+		<underline language="IT" method="pen" text="Scipione Emiliano" type="straight"/>
+		<underline language="IT" method="pen" text="loro viltà" type="straight"/>
+		<underline language="IT" method="pen" text="quelle medesime pecore Romane" type="straight"/>
+		<underline language="IT" method="pen" text="tante volte superate" type="straight"/>
+		<underline language="IT" method="pen" text="le medesime pecore" type="straight"/>
+		<underline language="IT" method="pen" text="hanno mutato pastore" type="straight"/>
+		<underline language="IT" method="pen" text="l'oro in ogni" type="straight"/>
+		<underline language="IT" method="pen" text="l'auaritia" type="straight"/>
+		<underline language="IT" method="pen" text="il secol d'oro" type="straight"/>
+		<underline language="IT" method="pen" text="con l'orsi consegue" type="straight"/>
+		<underline language="IT" method="pen" text="l'oro ben" type="straight"/>
+		<underline language="IT" method="pen" text="l'or sarai" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="che bran bestia senza capo" type="straight"/>
+		<underline language="IT" method="chalk" text="l'oro in ogni" type="straight"/>
+		
+		<symbol name="SS" place="head"/>
+		
+		<symbol name="SS" place="intext"/>
+		
+		<symbol name="Sun" place="tail"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--Cha-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--sta-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--Roma-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--vera-->
+		
+		<mark method="pen" name="apostrophe" place="intext"/> <!--dietro. Et-->
+		<mark method="pen" name="apostrophe" place="intext"/> <!--capo. Et-->
+		<mark method="pen" name="dot" place="intext"/> <!--Erasmo, altri-->
+		<mark method="pen" name="plus_sign" place="intext"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+
+    </annotation>
+</transcription>

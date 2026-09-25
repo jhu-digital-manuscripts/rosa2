@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.120v.tif" pagination="64" reader="Harvey" signature="[D8v]"/>	<!-- ABO 125left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nunq[uam] nimis, qua[e] nunq[uam] satis. Vt in primis qua[e] plurimùm
+						ualent ad ingenium, et pra[e]gnantem vsum. Ante omnia Mimi
+					</marginalia_text>
+					<emphasis method="pen" text="Nunq[uam] nimis" type="straight"/>
+					<emphasis method="pen" text="nunq[uam] satis" type="straight"/>
+					<emphasis method="pen" text="ad ingenium" type="straight"/>
+					<emphasis method="pen" text="pra[e]gnantem vsum" type="straight"/>
+					<emphasis method="pen" text="Mimi" type="straight"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Publij: gnoma[e]
+					</marginalia_text>
+					<person name="Publius Papinius Statius"/>
+					<emphasis method="pen" text="gnoma[e]" type="straight"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Epicteti, Isocratis, Menandri, Theognidis; eu[m] speculo Mancinelli;
+					</marginalia_text>
+					<person name="Epictetus"/>
+					<person name="Isocrates"/>
+					<person name="Menander"/>
+					<person name="Theognis of Megara"/>
+					<person name="Antonio Mancinelli"/>
+					<book title="Speculum de moribus et officiis"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						q[ua]e est aurea synopsis gnomaru[m] apophthegmata
+					</marginalia_text>
+					<emphasis method="pen" text="apophthegmata" type="straight"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Plutarchi, et Laertij: qui sunt aliorum fontes:
+					</marginalia_text>
+					<person name="Plutarch"/>
+					<person name="Diogenes Laertius"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						pra[e]ter Hebra[e]orum
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						nonnulla;
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						et A[e]sopi
+					</marginalia_text>
+					<person name="Aesop"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						vitam.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Epigrammata Mori, Martialis, Heiuodi, Politiani; Gra[e]coru[m].
+						Emblemata Alciati, Jouij, Ruscelli.
+						Fundamentales regula[e] artiu[m], philosophia[e], medicina[e],
+					</marginalia_text>
+					<person name="Thomas More"/>
+					<person name="Martial"/>
+					<person name="John Heywood"/>
+					<person name="Angelo Poliziano"/>
+					<person name="Andrea Alciati"/>
+					<person name="Paolo Giovio"/>
+					<person name="Girolamo Ruscelli"/>
+					<emphasis method="pen" text="Epigrammata" type="straight"/>
+					<emphasis method="pen" text="Emblemata" type="straight"/>
+					<emphasis method="pen" text="regula[e]" type="straight"/>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						theologia[e], iuris, bellorum. Secreta
+						Weccheri: stratagemata Gandini: et hodierni Mundi arcana.
+					</marginalia_text>
+					<person name="Johannes Jacob Wecker"/>
+					<person name="Marcantonio Gandino"/>
+					<emphasis method="pen" text="Secreta" type="straight"/>
+					<emphasis method="pen" text="stratagemata" type="straight"/>
+					<emphasis method="pen" text="hodierni Mundi arcana" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				That which is never enough is never too much. Regarding those first matters which are most
+				valuable for one's genius and for pregnant use:
+				before all things, the mimes of Publius and the maxims of Epictetus, Isocrates, Menander, 
+				and Theognis, together with the Mirror of Mancinelli, which is a golden summary of maxims.
+				Next, the aphorisms of Plutarch and Diogenes Laertius, which are sources for all others,
+				except some of the Jewish aphorisms, and the life of Aesop.
+				Next, the epigrams of Thomas More, Martial, Heywood, Poliziano, and  the Greeks.
+				Next, the emblems of Alciati, Giovio, Ruscelli.
+				Next, the fundamental rules of the arts, philosophy, medicine, theology, law, and war.
+				Lastly, the secrets of Wecker, the stratagems of Gandino, and the mysteries of the modern world.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( In exiguo cespite latet Lepus. )
+					</marginalia_text>
+					<X-ref book_title="Three proper, and wittie, familiar letters" language="LA" person="Edmund Spenser" text="In exiguo cespite latet lepus"/>
+				</position>
+			</language>
+			<translation>
+				In the short grass hides a hare.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Cantabit vacuus coram latrone viator.
+					</marginalia_text>
+					<X-ref book_title="Satires" language="LA" person="Juvenal" text="Cantabit vacuus coram latrone viator"/>
+				</position>
+			</language>
+			<translation>
+				'The empty-handed traveller will sing in the face of the robber'.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Sirenismus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A siren-ism.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Little M[istress] Byrd said, Shee thought I was almost as old as shee. Almost? quoth I;
+						na I think, I am older then you. For you haue bin married but 43 yeares: &amp; I am
+					</marginalia_text>
+					<!-- CG: Unsure who this Byrd is. --> <!--JG:  Could be a woman related to either Richard Bird (fellow of Trinity) or Christopher Bird of Walden?-->
+				</position>
+				<position book_orientation="270" place="head">
+					<marginalia_text>
+						44.
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						yeares old.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="scemarsi la età ridicolosamente" type="straight"/>
+		<underline language="IT" method="pen" text="haueua trenta anni" type="straight"/>
+		<underline language="IT" method="pen" text="sono piu di dodici anni, che io glie" type="straight"/>
+		<underline language="IT" method="pen" text="noi studiauamo" type="straight"/>
+		<underline language="IT" method="pen" text="tu non eri nato" type="straight"/>
+		<underline language="IT" method="pen" text="La pouertà" type="straight"/>
+		<underline language="IT" method="pen" text="l'huomo sicuro anche" type="straight"/>
+		<underline language="IT" method="pen" text="HILARIONE Atteniese" type="straight"/>
+		<underline language="IT" method="pen" text="gli assassiui" type="straight"/>
+		<underline language="IT" method="pen" text="anzi ridendo" type="straight"/>
+		<underline language="IT" method="pen" text="io sono ignudo" type="straight"/>
+		<underline language="IT" method="pen" text="mariti douer" type="straight"/>
+		<underline language="IT" method="pen" text="prestar fede alla mogilie" type="straight"/>
+		<underline language="IT" method="pen" text="il suo vnico figliulo" type="straight"/>
+		<underline language="IT" method="pen" text="fusse suo" type="straight"/>
+		<underline language="IT" method="pen" text="Petrarca suo" type="straight"/>
+		<underline language="IT" method="pen" text="credede alla tua moglie" type="straight"/>
+		<underline language="IT" method="pen" text="chi ella meglio che" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="Sun" place="intext"/>
+		
+		<mark method="pen" name="dot" place="intext"/> <!--rispose, per-->
+		<mark method="pen" name="plus_sign" place="intext"/>
+		 
+		<errata amendedtext="[deleted]" copytext="." language="IT"/> <!--altro il-->
+
+    </annotation>
+</transcription>

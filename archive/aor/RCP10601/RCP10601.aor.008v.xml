@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.008v.tif" pagination="16" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="angeli" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Angeli.</marginalia_text>
+                </position>
+            </language>
+            <translation>Angels.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex solo uoto" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ex solo voto</marginalia_text>
+                </position>
+            </language>
+            <translation>Out of devotion alone.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="angelos hominis imperio aut uoluntate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Angelorum opera ad homi[nis] volu[n]tate[m]</marginalia_text>  
+                </position>
+            </language>
+            <translation>The work of the angels for the will of man.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in Christo" type="straight"/>
+        <underline language="LA" method="pen" text="in Iesu pollere" type="straight"/>
+        <underline language="LA" method="pen" text="esset nudior" type="straight"/>
+        <underline language="LA" method="pen" text="obediens natura saxorum" type="straight"/>
+        <underline language="LA" method="pen" text="uestigia contactuum Christi" type="straight"/>
+        <underline language="LA" method="pen" text="impreßis in saxo" type="straight"/>
+        <underline language="LA" method="pen" text="ipsi angeli non poterant" type="straight"/>
+        <underline language="LA" method="pen" text="literas characteres'q[ue] perfectißimos &amp; Deo doctore" type="straight"/>
+        <underline language="LA" method="pen" text="me[n]ti insculptos adesse" type="straight"/>
+        <underline language="LA" method="pen" text="ex solo uoto" type="double"/>
+        <underline language="LA" method="pen" text="daemones &amp; angelos" type="straight"/>
+        <underline language="LA" method="pen" text="hominis imperio" type="double"/>
+        <underline language="LA" method="pen" text="uoluntate" type="straight"/>
+        <underline language="LA" method="pen" text="impulsos exarasse uaria" type="double"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

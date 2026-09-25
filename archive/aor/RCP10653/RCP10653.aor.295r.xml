@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.295r.tif" pagination="141" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Rogerus de VVindeleshore" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Rogerus de Windeleshore.
+                    </marginalia_text>
+                    <person name="Roger of Wendover"/>
+                </position>
+            </language>
+            <translation>
+                Roger of Wendover.
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="rege Henrico Isabellam" type="straight"/>
+        <underline language="LA" method="pen" text="sibi dari in vxorem. Consilio" type="straight"/>
+        <underline language="LA" method="pen" text="hoc cum suis habito, eam cum nuncijs" type="straight"/>
+        <underline language="LA" method="pen" text="vitis spectabilibus" type="straight"/>
+        <underline language="LA" method="pen" text="eidem Imperatori destinauit" type="straight"/>
+        <underline language="LA" method="pen" text="obijt Robertus, filius VValteri" type="straight"/>
+        <underline language="LA" method="pen" text="Thomas de Bloneuilla, episcopus" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="crown"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="crown"/>
+        
+        <graph book_orientation="0" method="pen" place="right_margin" type="genealogical_tree">
+            <node id="n1" person="John, King of England">Io[hann]es</node>   
+            <node anchor_text="Imperator Fredericus" id="n2" person="Frederick II, Holy Roman Emperor">Fredericus</node>
+            <node anchor_text="Isabellam" id="n3" person="Isabella of England">Isabel</node>
+            <link from="n1" relationship="has_child" to="n3"/>
+            <link from="n3" relationship="has_spouse" to="n2"/>
+            <link from="n2" relationship="has_spouse" to="n3"/>
+        </graph>
+
+    </annotation>
+</transcription>

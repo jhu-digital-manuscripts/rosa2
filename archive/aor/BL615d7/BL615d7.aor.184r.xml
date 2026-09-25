@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.184r.tif" pagination="184" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="sopra ciò due anni" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note two yeres co[n]sention;</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Giudice perpetuo per l'Orlando" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Orlando is now become</marginalia_text> 
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>perpetuus judex</marginalia_text> 
+                </position>
+            </language>
+            <translation>Orlando has now become a perpetual judge</translation> <!-- MB. Not certain about the best translation of 'perpetuus judex'.  --> <!--JG: Chris, 'giudice perpetuo' seems to be a title of an office/position. Do you know of a good translation?-->
+        </marginalia>
+        
+        <marginalia anchor_text="Giudice del Bonao" hand="Italian">
+        <language ident="EN">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>An other Judge of Bonao</marginalia_text>
+                <location name="Bonao"/>
+            </position>
+        </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="[occor]se erano corse per cagion di falsi testimonij, &amp; per colpa di alcuni maligni" type="straight"/>
+        <underline language="IT" method="pen" text="quarta" type="straight"/>
+        <underline language="IT" method="pen" text="Giudice" type="straight"/>
+        <underline language="IT" method="pen" text="fuor di ragione" type="double"/>
+        <underline language="IT" method="pen" text="fosse loro lecito di fargliele osseruar per forza" type="straight"/>
+        <underline language="IT" method="pen" text="sopra ciò due anni" type="straight"/>
+        <underline language="IT" method="pen" text="ardir di raunar quadriglie, &amp; congiurare insieme, per andare in altri luoghi dell'Isola, come" type="straight"/>
+        <underline language="IT" method="pen" text="Giudice perpetuo" type="double"/>
+        <underline language="IT" method="pen" text="Orlando ad vsar la sua auttorità" type="straight"/>
+        <underline language="IT" method="pen" text="solo ciò" type="straight"/>
+        <underline language="IT" method="pen" text="Giudice del" type="straight"/>
+        <underline language="IT" method="pen" text="Pietro Requelme" type="straight"/>
+        <underline language="IT" method="pen" text="i rei di casi" type="straight"/>
+       
+        
+        <mark method="pen" name="bracket" place="intext"/> <!--  Ma l'Ammiraglio -->
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        <mark language="IT" method="pen" name="comma" place="intext" text="Bonao Pietro"/>
+       
+        <numeral place="right_margin" text="quarta"/>
+       
+        <errata amendedtext="cosi" copytext="cesi" language="IT"/>
+        
+        <drawing anchor_text="se erano corse per cagion di falsi testimonij, &amp; per colpa di alcuni maligni" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="fosse loro lecito di fargliele osseruar per for" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

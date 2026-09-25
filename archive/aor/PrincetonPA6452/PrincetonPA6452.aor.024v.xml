@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.024v.tif" pagination="32" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Monarchia[e] Apologia. Illustre argumentum thematis Academici in Comitijs, aut in celeberrimis, scholarum problematibus. 
+                        Qualia etiam nonnulla infrà, tam politica, et pragmatica, quàm polemica.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>An Apology of Monarchy. The respectable subject of an academic case in assemblies or in the highly renowned debating questions [problemata] of the schools.
+                Of this kind see also more examples below, both political and pragmatic, as well as military.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Monarchiae laus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>A eulogy of Monarchy.
+            </translation>
+        </marginalia>
+        
+        <marginalia date="ius tame[n] gentium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Jus Gentium, de Legatis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Law of nations, about embassadors.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>= Politicu[m] stratagema.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>= A political ploy.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sum as bold to cutt Kings short, as other to clipp royals, or soueraines. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        s[upr]a, i[nfr]a.
+                    </marginalia_text>
+                    <internal_ref text="s[upr]a">
+                        <target ref="PrincetonPA6452:00000043" text="[21]"/>
+                        <target ref="PrincetonPA6452:00000046" text="[24]"/>
+                    </internal_ref>
+                    <internal_ref text="i[nfr]a">
+                        <target ref="PrincetonPA6452:00000058" text="[36]"/>
+                        <target ref="PrincetonPA6452:00000631" text="[609]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                above, below.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>resolute &amp; peremptorie Brutus confirmeth his Innouation of the State, by a most terrible &amp; famous execution of his owne sonnes. 
+                        An important &amp; necessarie Example in that Case. 
+                    </marginalia_text>
+                    <person name="Lucius Junius Brutus"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Publica Priuatis anteponenda: nec parcendum filijs, qui voluerunt patrem prodere, atq[ue] patriam. Principijs obsta: 
+                        et extremis malis extrema remedia necessaria.</marginalia_text>
+                </position>
+            </language>
+            <translation>The public interest must come before the private, and sons who wanted to betray their father and fatherland should not be spared. 
+                Resist the beginnings and for extreme evils extreme remedies are necessary.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="libertatem aliorum" type="straight"/>
+        <underline language="LA" method="pen" text="in suam uertisse seruitutem" type="straight"/>
+        <underline language="LA" method="pen" text="Regem homine[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ubi ius, ubi" type="straight"/>
+        <underline language="LA" method="pen" text="beneficio" type="straight"/>
+        <underline language="LA" method="pen" text="inter amicum" type="straight"/>
+        <underline language="LA" method="pen" text="inimicum" type="straight"/>
+        <underline language="LA" method="pen" text="leges rem surda[m]" type="straight"/>
+        <underline language="LA" method="pen" text="laxamenti" type="straight"/>
+        <underline language="LA" method="pen" text="erroribus sola innocentia uiuere" type="straight"/>
+        <underline language="LA" method="pen" text="superueniunt, sine" type="straight"/>
+        <underline language="LA" method="pen" text="bona tantu[m] repententes" type="straight"/>
+        <underline language="LA" method="pen" text="ne no[n] reddita" type="straight"/>
+        <underline language="LA" method="pen" text="belli causa" type="straight"/>
+        <underline language="LA" method="pen" text="belli materia &amp; adiumentu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Interim legati cum" type="straight"/>
+        <underline language="LA" method="pen" text="apertè bona" type="straight"/>
+        <underline language="LA" method="pen" text="clam recuperandi regni consilia struere" type="straight"/>
+        <underline language="LA" method="pen" text="ambientes nobilium adolesce[n]tium animos pertentant" type="straight"/>
+        <underline language="LA" method="pen" text="de accipiendis clam nocte in urbem" type="straight"/>
+        <underline language="LA" method="pen" text="Vitellijs Aquilijsq[ue] fratribus" type="straight"/>
+        <underline language="LA" method="pen" text="Vitellioru[m] soror" type="straight"/>
+        <underline language="LA" method="pen" text="nupta Bruto" type="straight"/>
+        <underline language="LA" method="pen" text="censebat reddenda bona" type="straight"/>
+        <underline language="LA" method="pen" text="omne id tempus cum coniuratis" type="straight"/>
+        <underline language="LA" method="pen" text="ut literae" type="straight"/>
+        <underline language="LA" method="pen" text="non uana ab legatis" type="straight"/>
+        <underline language="LA" method="pen" text="Datae literae ut pignus" type="straight"/>
+        <underline language="LA" method="pen" text="manifestum facinus" type="straight"/>
+        <underline language="LA" method="pen" text="coniuratiq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="remotis arbitris" type="straight"/>
+        <underline language="LA" method="pen" text="sermone[m] eoru[m] ex seruis unus excepit" type="straight"/>
+        <underline language="LA" method="pen" text="iam antea" type="straight"/>
+        <underline language="LA" method="pen" text="eam occasione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ut literae legatis" type="straight"/>
+        <underline language="LA" method="pen" text="depraehensae rem coarguere possent" type="straight"/>
+        <underline language="LA" method="pen" text="deprehe[n]dendos legatos co[n]iuratosq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="sine tumultu" type="straight"/>
+        <underline language="LA" method="pen" text="literarum in primis habita cura" type="straight"/>
+        <underline language="LA" method="pen" text="ne intercidere[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="proditoribus" type="straight"/>
+        <underline language="LA" method="pen" text="de legatis paululum" type="straight"/>
+        <underline language="LA" method="pen" text="ut hostiu[m] loco essent" type="straight"/>
+        <underline language="LA" method="pen" text="ius tame[n] gentium" type="straight"/>
+        <underline language="LA" method="pen" text="bonis regijs" type="straight"/>
+        <underline language="LA" method="pen" text="res integra refert[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="uetuere reddi" type="straight"/>
+        <underline language="LA" method="pen" text="in publicum redigi" type="straight"/>
+        <underline language="LA" method="pen" text="diripie[n]da plebi sunt" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]tacta regia praeda spem" type="straight"/>
+        <underline language="LA" method="pen" text="pacis amitteret" type="straight"/>
+        <underline language="LA" method="pen" text="ager Tarquiniorum" type="straight"/>
+        <underline language="LA" method="pen" text="consecratus Marti" type="straight"/>
+        <underline language="LA" method="pen" text="Martius deinde campus" type="straight"/>
+        <underline language="LA" method="pen" text="insulam inde" type="straight"/>
+        <underline language="LA" method="pen" text="additas moles, manuq[ue] adiutum" type="straight"/>
+        <underline language="LA" method="pen" text="tam eminens area" type="straight"/>
+        <underline language="LA" method="pen" text="firmaq[ue] templis quoq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="damnati proditores" type="straight"/>
+        <underline language="LA" method="pen" text="poenae capiendae" type="straight"/>
+        <underline language="LA" method="pen" text="patri de liberis consulatus" type="straight"/>
+        <underline language="LA" method="pen" text="spectator erat" type="straight"/>
+        <underline language="LA" method="pen" text="exactorem supplicij dedit" type="straight"/>
+        <underline language="LA" method="pen" text="nobilissimi" type="straight"/>
+        <underline language="LA" method="pen" text="uelut ab ignotis capitibus" type="straight"/>
+        <underline language="LA" method="pen" text="consulis liberi" type="straight"/>
+        <underline language="LA" method="pen" text="miserebatq[ue] non poenae magis" type="straight"/>
+        <underline language="LA" method="pen" text="quàm sceleris" type="straight"/>
+        <underline language="LA" method="pen" text="patriam liberatam" type="straight"/>
+        <underline language="LA" method="pen" text="patrem liberatorem" type="straight"/>
+        <underline language="LA" method="pen" text="Superbo quondam regi, tum" type="straight"/>
+        <underline language="LA" method="pen" text="exuli proderent" type="straight"/>
+        <underline language="LA" method="pen" text="Confules" type="straight"/>
+        <underline language="LA" method="pen" text="missiq[ue] lictores ad sumendum" type="straight"/>
+        <underline language="LA" method="pen" text="nudatos uirgis" type="straight"/>
+        <underline language="LA" method="pen" text="pater, uultusq[ue] &amp; os eius" type="straight"/>
+        
+        <symbol name="JC" place="left_margin"/>
+        <symbol name="JC" place="left_margin"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--inimi-->
+        <mark method="pen" name="comma" place="right_margin"/> <!--animis-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--red-->
+        <mark method="pen" name="equal_sign" place="right_margin"/> 
+        <mark method="pen" name="dash" place="right_margin"/> <!--con-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--Da-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--con-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--quan-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--prodi-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--dese-->
+        <mark method="pen" name="comma" place="right_margin"/> <!--regum-->
+        <mark method="pen" name="plus_sign" place="right_margin"/> 
+        <mark method="pen" name="dot" place="right_margin"/> <!--esset-->
+        
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Regem"/>
+        <mark method="pen" name="dot" place="intext"/> <!--beneficio, &-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="leges"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--uiuere Ita-->
+        <mark method="pen" name="dot" place="intext"/> <!--causa, reddita-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="apertè"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="clàm"/>
+        <mark method="pen" name="comma" place="intext"/> <!--ambientes nobilium-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="animos"/>
+        <mark method="pen" name="comma" place="intext"/> <!--consilij auunculi-->
+        <mark method="pen" name="dot" place="intext"/> <!--bona eamq[ue]-->
+        <mark method="pen" name="diacritic" place="intext"/> <!--quod-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="coniuratiq[ue]"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="arbitris"/>
+        <mark method="pen" name="dot" place="intext"/> <!--egissent, sermone[m]-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="seruis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="unus"/>
+        <mark method="pen" name="quotation_mark" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="literae"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="depraehensae"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="legatos"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="co[n]iuratosq[ue]"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="literarum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="intercidere[n]t"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="proditoribus"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="legatis"/>
+        <mark method="pen" name="dot" place="intext"/> <!--est &-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="hostiu[m]"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Martius"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- esset. Direptis-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="proditores"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.081v.tif" pagination="lxxvii[v]" reader="Harvey" signature="Ui[v]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					Ca[e]sars
+    					</marginalia_text>
+    				<person name="Julius Caesar"/>
+    				</position>
+    			</language>
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					quid pro quo:
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<language ident="EN">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					[the] worse place, [the] better munition.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					supplemendu[m] Arte, quod
+    				</marginalia_text>
+    			</position>
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					deest naturâ. A[e]quipollentium jdem effectus.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Caesar's something for something:
+    			the worst place, the better munition.
+    			What nature is lacking must be supplied by skill. The same effect of equivalents.
+    		</translation>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="campe sure" type="straight"/>
+    	<underline language="EN" method="pen" text="it be strong" type="straight"/>
+    	<underline language="EN" method="pen" text="and in good order" type="straight"/>
+    	<underline language="EN" method="pen" text="the industrie" type="straight"/>
+    	<underline language="EN" method="pen" text="maketh it in order" type="straight"/>
+    	<underline language="EN" method="pen" text="situation, or" type="straight"/>
+    	<underline language="EN" method="pen" text="it strong" type="straight"/>
+    	<underline language="EN" method="pen" text="strong situations" type="straight"/>
+    	<underline language="EN" method="pen" text="either caue" type="straight"/>
+    	<underline language="EN" method="pen" text="bancke of a riuer" type="straight"/>
+    	<underline language="EN" method="pen" text="multitude of trees" type="straight"/>
+    	<underline language="EN" method="pen" text="other naturall fortification" type="straight"/>
+    	<underline language="EN" method="pen" text="through the situacion" type="straight"/>
+    	<underline language="EN" method="pen" text="as through arte" type="straight"/>
+    	<underline language="EN" method="pen" text="place, where" type="straight"/>
+    	<underline language="EN" method="pen" text="been able to haue raunged all their bandes" type="straight"/>
+    	<underline language="EN" method="pen" text="according to their discipline" type="straight"/>
+    	<underline language="EN" method="pen" text="alwayes one forme" type="straight"/>
+    	<underline language="EN" method="pen" text="that the situation shoulde" type="straight"/>
+    	<underline language="EN" method="pen" text="ruled by" type="straight"/>
+    	<underline language="EN" method="pen" text="they by the situation" type="straight"/>
+    	<underline language="EN" method="pen" text="situation lacked strength" type="straight"/>
+    	<underline language="EN" method="pen" text="supplied the same with arte, and" type="straight"/>
+    	<underline language="EN" method="pen" text="imitate the Romanes" type="straight"/>
+    	<underline language="EN" method="pen" text="not obseruing" type="straight"/>
+    	<underline language="EN" method="pen" text="their order, but taking the same parte, whiche" type="straight"/>
+    	<underline language="EN" method="pen" text="mee, to be meete for this present" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="Greekes incamped" type="straight"/>
+    	<underline language="EN" method="pen" text="Romanes incamped" type="straight"/>
+
+    	<!-- Marks -->
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the industrie"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="maketh it in order"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="situation"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the arte"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="strong"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="strong situations"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="other naturall fortification"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="through the situacion"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="through arte"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="raunged"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="to their discipline"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="situation lacked"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the same with arte"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="imitate the Romanes"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="tail" text="mee, to be meete for this present"/>
+    </annotation>
+</transcription>

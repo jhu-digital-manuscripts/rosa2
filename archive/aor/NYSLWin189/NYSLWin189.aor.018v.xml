@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.018v.tif" reader="John Dee" signature="[Eiijv]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Ex effictibus Thermarum, earundem Materias iudicare debemus</marginalia_text>
+                </position>
+            </language>
+            <translation>From the effects of the baths, the materials of which we ought to assess.</translation> 
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="die materien" type="double"/>
+        <underline language="DE" method="pen" text="anzeygung ihrer wirckung" type="straight"/>
+        
+    </annotation>
+</transcription>

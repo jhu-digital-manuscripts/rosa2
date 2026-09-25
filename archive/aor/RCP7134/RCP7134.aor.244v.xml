@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.244v.tif" pagination="[237v]" reader="John Dee" signature="[OO[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>corrige hui[us] revolutionis figura[m] na[m] ☉ exacte erit in cuspide [septimae]</marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>Correct the figure of this revolution for the Sun was exactly in the cusp of the seventh [house].</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ipse lapsus ex equo, submersus est, ac suffocatus" type="straight"/>
+        
+        <errata amendedtext="1424" copytext="1423" language="LA"/>
+        
+        <table place="tail" type="astrological_chart">
+            <tr>
+                <th/>
+                <th label="House"/>
+                <th label="Position"/>
+            </tr>
+            <tr>
+                <td>Capricorn</td>
+                <td>1</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>Aquarius</td>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Pisces</td>
+                <td>3</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Aries</td>
+                <td>4</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Taurus</td>
+                <td>5</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Gemeni</td>
+                <td>6</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Mercury</td>
+                <td>6</td>
+                <td>5</td> <!--JG: Not entirely sure-->
+            </tr>
+            <tr>
+                <td>Sun</td>
+                <td>6</td> <!--JG: Seems that Sun doens't have value (degrees) to it--> <!-- FSF: I can't see them either -->
+            </tr>
+            <tr>
+                <td>Cancer</td>
+                <td>7</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>Venus</td>
+                <td>7</td>
+                <td>12</td> <!--JG: Unsure-->
+            </tr>
+            <tr>
+                <td>Moon</td>
+                <td>7</td>
+                <td/> <!--JG: Unsure which number goes with the moon.-->
+            </tr>
+            <tr>
+                <td>Leo</td>
+                <td>8</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Mars</td>
+                <td>8</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Jupiter</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Virgo</td>
+                <td>9</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Saturn</td>
+                <td>9</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Libra</td>
+                <td>10</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Scorpio</td>
+                <td>11</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Sagittarius</td>
+                <td>12</td>
+                <td>4</td>
+            </tr>
+            <text hand="English_secretary" language="LA">
+                verior figura
+            </text>
+            <translation>A more truthful figure.</translation> <!--JG: Not sure what to do with the Cancer sign in the middle of the chart-->
+        </table>
+        
+        
+    </annotation>
+</transcription>

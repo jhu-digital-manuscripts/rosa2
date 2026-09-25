@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.243r.tif" pagination="243" reader="John Dee" signature="Hhiij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Maima" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Maima</marginalia_text>
+                    <location name="Maima"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Siuiglia" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Siuilia</marginalia_text>
+                    <location name="Seville"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="L persone" hand="Italian" method="pen">
+           <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>50 men</marginalia_text>                   
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Maima" type="straight"/>
+        <underline language="IT" method="pen" text="Siuiglia" type="straight"/>
+        <underline language="IT" method="pen" text="Prefetto suo" type="straight"/>
+        <underline language="IT" method="pen" text="L persone" type="straight"/>
+        <underline language="IT" method="pen" text="quei due, che prima erano andati" type="straight"/>
+        <underline language="IT" method="pen" text="a protestar loro la pace." type="straight"/>
+        <underline language="IT" method="pen" text="minori di numero, &amp; non" type="straight"/>
+        
+    </annotation>
+</transcription>

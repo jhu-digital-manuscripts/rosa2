@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.025r.tif" pagination="19" reader="John Dee" signature="Eiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="cauda ursae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cauda Vrsa[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>The tail of the Great Bear.</translation>
+        </marginalia>
+        
+        <underline id="RCP7134:055:u0001" language="LA" method="pen" text="Significat enim cauda ursae fortitudine[m] cui non est similis, &amp; nunc est etiam sita super Germaniam" type="straight"/>
+        <underline id="RCP7134:055:u0002" language="LA" method="pen" text="quoniam stella non per se hoc significat, nisi cum fuerit bene aut male disposita, in tempore aedificationis loci, aut initij transitus" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP7134:055:u0001"/>
+            <marginal_annotation idref="RCP7134:055:u0002"/>
+            <relation from="RCP7134:055:u0001" to="RCP7134:055:u0002" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

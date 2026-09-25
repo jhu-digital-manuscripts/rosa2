@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.314v.tif" pagination="[307v]" reader="John Dee" signature="[hhh iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="constellationes" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Co[n]stellatio[n]es.</marginalia_text>
+                </position>
+            </language>
+            <translation>Constellations.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nasci hac uel illa hora, fortuitum" type="straight"/>
+        
+        <drawing anchor_text="nasci hac uel illa hora, fortuitum" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.076v.tif" pagination="152" reader="John Dee" signature="[k 4[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Nam consultant aut plures, aut singuli, sed in utriq[ue] differentia: quia &amp; in pluribus multum interest, senatus sit, an populus: Romani, an Fidenates; Graeci, an Barbari." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In persona qu[a]e spectanda</marginalia_text>
+                </position>
+            </language>
+            <translation>In a person that is to be considered.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="timor, quàm spes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Timor &amp; spes</marginalia_text>
+                </position>
+            </language>
+            <translation>Fear and hope.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Cicero, qui ita scribit ad Brutum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero ad Brutu[m]</marginalia_text>
+                    <person name="Cicero"/>
+                    <book title="Epistulae ad Brutum"/>
+                </position>
+            </language>
+            <translation>Cicero to Brutus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="destinatus est mihi hic locus duodecimo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>.12⁰ li[br]o.</marginalia_text>
+                </position>
+            </language>
+            <translation>Book in duodecimo.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="declamatores" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Declamatores.</marginalia_text>
+                </position>
+            </language>
+            <translation>Declaimers</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nescio an etia[m] naturaliter apud plurimos" type="straight"/>
+        <underline language="LA" method="pen" text="ualeat malorum timor, quàm spes bonorum: sicut facilior" type="straight"/>
+        <underline language="LA" method="pen" text="Sed no[n] est semper rectis in suadendo locus. Sed" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.367r.tif" pagination="185" reader="John Dee" signature="[Mm.v.]"/>   
+    <annotation>
+         
+        <marginalia anchor_text="Hortata" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        he meaneth the academy[th] opinion
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        multo minus [ho[.]eli[...]] <!--JG: Unsure-->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        sic plato in sophis
+                    </marginalia_text>
+                    <person name="Plato"/>
+                    <book title="Sophist"/>
+                </position>
+            </language>
+            <translation>
+                Thus Plato in Sophist.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        hortata
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Encouraged.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cotem qua[m]dam rebus offunderet" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        nocte[m] rebus offundere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To spread the night over things.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Philosophia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Philosophy.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="orationes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Orationes Ciceronis
+                    </marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>
+                The speeches of Cicero.
+            </translation>
+        </marginalia>
+
+        <marginalia anchor_text="familiaritates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        familiaritates
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Intimacies.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="principes illi Diodotus, Philo, Antiochus, Posidonius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cic[eronis] Magistri
+                    </marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>
+                The teachers of Cicero.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="omnia praecepta philosophiae referu[n]tur ad vita[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Omnia pra[e]cepta philosophia[e] referuntur ad vitam
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                All precepts of philosophy concern life.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cur Cic[ero] philosophia[m] latinis literis ia[m] illustrabat, tam sero
+                    </marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>
+                Why Cicero illuminates philosophy with Latin letters already, so late. <!-- FSF: not sure about iam and tam sero -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Graecis institutionibus eruditi, ea qui didicerant, cum ciuibus suis communicare non potera[n]t" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gra[e]cis institutionibus eruditi, artes ciuibus co[mmun]icare no[n] poterant
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Those taught by Greek instructions cannot communicate the arts to the citizens.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Philosophia leuatio a[nim]i a[e]groti est
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Relief of the sick mind is philosophy. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Qua[e] optima via est, ad philosop. cognitione[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The best way is that to recognition of philosophy. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="seriésque rerum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Reru[m] series
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A series of things.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="authoritatis in disputando quàm rationis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Authoritas. Ratio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Authority, reasoning.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        αὐτὸς ἔφη
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                He himself said so. <!-- the traditional ratification of Pythagorean dicta -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Iam respondet tertio loco illi rei qua[m] supra sibi tertia[m] proposint
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                <!-- FSF: not sure about this -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="no[n] enim hominum interitu sente[n]tiae quoque occidunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        No[n] ho[m]i[nu]m interitu se[n]tentia[e] quoq[ue] occidunt.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'When men die, their doctrines do not perish with them' [LCL 268:12-13].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="singulas disciplinas percipere magnum est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Singulas disciplinas percipere magnum est
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It is powerful to understand the single systems. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        tame[n] qui veri volu[n]t esse academici o[mn]es tenere debe[n]t
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Nonetheless, those who want to be academics must comprehend everything.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="indociles quidam tardíque sunt, admonendi videntur saepius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Indociles sa[e]pius, admonendi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Ignorant is more often, admonishing. <!-- FSF: nor sure how to translate this -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Magna similitudo inter vera &amp; falsa
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Grat likeness among the true and false.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="procas Academia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Academia Procax
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Undisciplined academy.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        nihil est q[uod] expedire ta[m] facile possimus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                There is nothing that we can disengage so easily.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vsque ad nostram viguit aetatem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        illa r[ati]o &amp; vsq[ue] ad n[ost]ram viguit a[e]tate[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                This method acquired strength even until our age.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        gra[e]cis institutionibus eruditi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Taught by Greek instructions.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quae lucem eriperet, &amp; quasi noctem qua[m]dam rebus offunderet" type="straight"/>
+        <underline language="LA" method="pen" text="aetatis in eo studio operam curámque consumpsimus" type="straight"/>
+        <underline language="LA" method="pen" text="declarant refertae philosophorum sententiis, &amp; doctissimoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Diodotus, Philo, Antiochus, Posidonius, à quibus instituti sumus. Et si omnia praecepta philosophiae referu[n]tur ad vita[m], arbitramur nos &amp; publicis" type="straight"/>
+        <underline language="LA" method="pen" text="causa nos impulerit" type="straight"/>
+        <underline language="LA" method="pen" text="sero literis ma[n]daremus" type="straight"/>
+        <underline language="LA" method="pen" text="quod expedire tam facile" type="straight"/>
+        <underline language="LA" method="pen" text="ipsius reip. causa philosophiam" type="straight"/>
+        <underline language="LA" method="pen" text="discendi, sed etiam scribe[n]di studia co[m]mouerim" type="straight"/>
+        <underline language="LA" method="pen" text="Graecis institutionibus eruditi, ea" type="straight"/>
+        <underline language="LA" method="pen" text="Hortata" type="straight"/>
+        <underline language="LA" method="pen" text="magna &amp; graui co[m]mota" type="straight"/>
+        <underline language="LA" method="pen" text="leuationem" type="straight"/>
+        <underline language="LA" method="pen" text="philosophiam pertractandam dedissem" type="straight"/>
+        <underline language="LA" method="pen" text="Est enim admirabilis quaedam continuatio, seriésque rerum, vt alia ex alia annexa, &amp; omnes inter se aptae colligatáeque videantur" type="straight"/>
+        <underline language="LA" method="pen" text="Non enim tam authoritatis in disputando quàm rationis momenta quaeranda sunt. Quinetiam obest plerunque iis qui discere volunt,              authoritas eorum qui se docere profite[n]tur. Desinunt enim suum iudicium adhibere: id habent ratum quod ab eo quem probant iudicatum vident. Nec" type="straight"/>
+        <underline language="LA" method="pen" text="Pythagoras. Tantum opinio praeiuducata poterat, vt etia[m] sine ratione valeret authoritas" type="straight"/>
+        <underline language="LA" method="pen" text="hominum interitu sente[n]tiae quoque occidunt: sed lucem authoris fortasse desyderant, vt haec" type="straight"/>
+        <underline language="LA" method="pen" text="ratio contra omnia disserendi, nullámque" type="straight"/>
+        <underline language="LA" method="pen" text="vsque ad nostram viguit" type="straight"/>
+        <underline language="LA" method="pen" text="orbam" type="straight"/>
+        <underline language="LA" method="pen" text="vitio, sed tarditate hominum arbitror contigisse" type="straight"/>
+        <underline language="LA" method="pen" text="reperiendi causa, &amp; contra omnes philosophes, &amp; pro omnibus dicere" type="straight"/>
+        <underline language="LA" method="pen" text="quia nimis indociles quidam tardíque" type="straight"/>
+        <underline language="LA" method="pen" text="ii qui omnibus veris falsa quaedam adiuncta esse dicamus, tanta similitudine vt in iis nulla insit certe iudicandi &amp; assentiendi nota.              Ex quo existit  &amp; illud, multa esse probabilia quae quanquam non percipere[n]tur, tamen quia visum quendam haberent insignem &amp; illustrem, his sapientis vita regeretur" type="straight"/>
+        <underline language="LA" method="pen" text="me" type="straight"/>
+        <underline language="LA" method="pen" text="earum vera iudicent" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">21</numeral>
+        
+        <errata amendedtext="qui" copytext="quae" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="scroll">
+            <text hand="Italian" language="LA">Cic[eronis] Dogma</text>
+        </drawing>
+        
+    </annotation>
+</transcription>

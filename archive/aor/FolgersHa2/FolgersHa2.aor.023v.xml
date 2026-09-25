@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.023v.tif" pagination="366" reader="Harvey"/>	<!-- ABO 028left -->
+    	<annotation>
+
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Sublimanda[e] natura[e], Artis, Exercitationis Vnic[us] 
+                    					Magister Ca[e]sar.
+                      			</marginalia_text>
+            				<person name="Julius Caesar"/>
+            				<emphasis method="chalk" type="straight"/>
+            			</position>
+        			</language>
+        			<translation>
+        				The sole teacher of elevating nature, art, and training is Caesar.
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="left_margin">
+    					<marginalia_text>
+    						Nisi quòd Eudromus, Singularis artifex, 
+    						vult superare ipsu[m] Ca[e]sarem.
+    					</marginalia_text>
+    					<person name="Eudromus"/>
+    					<person name="Julius Caesar"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Except that Eudromus, a singular artist, wishes to surpass Caesar himself.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Qui Ca[e]sarem nouit, et Hoc agit, habet magisterium
+    					</marginalia_text>
+    					<person name="Julius Caesar"/>
+    				</position>
+    			</language>
+    			<translation>
+    				He who studies Caesar, and does this, shall have control.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="left_margin">
+    					<marginalia_text>
+    						Non est in Varia Historia momentum;
+    					</marginalia_text>
+    				</position>
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						sed in vna, eademq[ue] Industria, semper
+    						singulari, pla[e]runq[ue] admirabili.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				It is not in a moment in various histories, but in one and the same Industry, always singular and most admirable, 
+    			</translation>
+    		</marginalia>
+    		
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="270" place="right_margin">
+    					<marginalia_text>
+    						Quicquid Hic, aut Ille de Alio, atq[ue] Alio dicit, solus mihi Ca[e]sar
+    						pra[e]ceptor singularis: aut siquis actor illo dignior.
+    					</marginalia_text>
+    					<person name="Julius Caesar"/>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Whatever this or that person says according to some and another, for me only Caesar is the singular teacher: or any actor more worthy than him.
+    			</translation>
+    		</marginalia>
+        
+    		<underline language="IT" method="pen" text="staffe per la mia chinea" type="straight"/>
+    		<underline language="IT" method="pen" text="poiche uoi fate saluar le staffe" type="straight"/>
+    		<underline language="IT" method="pen" text="saluar la cauezza per Sere Acconcio" type="straight"/>
+    		<underline language="IT" method="pen" text="tanti meriti se ne mostra" type="straight"/>
+    		<underline language="IT" method="pen" text="Grandissime risa si" type="straight"/>
+    		<underline language="IT" method="pen" text="mordace" type="straight"/>
+    		<underline language="IT" method="pen" text="nondimeno arguto motto" type="straight"/>
+    		<underline language="IT" method="pen" text="pronto, et non pensato" type="straight"/>
+    		<underline language="IT" method="pen" text="loro odiato per li suoi tristi costumi" type="straight"/>
+    		<underline language="IT" method="pen" text="essere improuiso" type="straight"/>
+    		<underline language="IT" method="pen" text="Duca Alessandro" type="straight"/>
+    		<underline language="IT" method="pen" text="brauo cane" type="straight"/>
+    		<underline language="IT" method="pen" text="terribile" type="straight"/>
+    		<underline language="IT" method="pen" text="Amor mio" type="straight"/>
+    		<underline language="IT" method="pen" text="traditore" type="straight"/>
+    		<underline language="IT" method="pen" text="mordeua" type="straight"/>
+    		<underline language="IT" method="pen" text="pisciaua addosso" type="straight"/>
+    		<underline language="IT" method="pen" text="per le sue uirtù era odiato da tutti" type="straight"/>
+    		<underline language="IT" method="pen" text="grato al principe, sopportato da ogniuno" type="straight"/>
+    		<underline language="IT" method="pen" text="Duca mal contento" type="straight"/>
+    		<underline language="IT" method="pen" text="Francesco Berni" type="straight"/>
+    		<underline language="IT" method="pen" text="il mio Amore è morto" type="straight"/>
+    		<underline language="IT" method="pen" text="uno epitassio" type="straight"/>
+    		<underline language="IT" method="pen" text="se il Berna" type="straight"/>
+    			
+	    	<symbol name="Sun" place="right_margin"/>
+    		<symbol name="SS" place="left_margin"/>
+
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- staf -->
+    		<mark method="pen" name="quotation_mark" place="right_margin"/>
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- Ac -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- leuaro -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- dispetto -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- Ber -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- sotter -->
+
+    		<mark method="pen" name="straight_quotation_mark" place="left_margin"/>
+    		<mark method="pen" name="horizontal_bar" place="left_margin"/> 
+    		<mark method="pen" name="quotation_mark" place="left_margin"/> 
+    		<mark method="pen" name="bracket" place="left_margin"/>
+
+	    	<mark method="chalk" name="vertical_bar" place="intext"/> 
+    		<mark method="pen" name="plus_sign" place="intext"/>
+    		<mark method="pen" name="plus_sign" place="intext"/>
+    		<mark method="pen" name="plus_sign" place="intext"/> 
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Acutissimo"/>
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="essere improuiso"/>
+    		<mark method="pen" name="equal_sign" place="intext"/>
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- brauo cane -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Amor mio"/>
+    		<mark method="pen" name="plus_sign" place="intext"/> 
+    		<mark method="chalk" name="vertical_bar" place="intext"/> 
+    		<mark method="pen" name="equal_sign" place="intext"/>
+    		<mark method="pen" name="comma" place="intext"/> <!-- disse M. -->
+    		<mark method="pen" name="plus_sign" place="intext"/>
+    		<mark method="pen" name="straight_quotation_mark" place="intext"/>
+    		<mark method="pen" name="dot" place="intext"/> <!-- Berna, poi -->
+    		
+    </annotation>
+</transcription>

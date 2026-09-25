@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.045v.tif" pagination="[45[v]]" reader="John Dee" signature="[M[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Dan[n] biß sie zusam[m]en uniert werden" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>What a hurly barley is to vnyte and knitt well to gyther &#128781; ▢ ☿</marginalia_text>
+                    <symbol_in_text name="Sulfur"/>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Mercury"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>NOTA</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vnitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>MONAS</marginalia_text>
+                </position>
+            </language>
+            <translation>Unity.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Mysteria hic latent</marginalia_text>
+                </position>
+            </language>
+            <translation>Mysteries lurk here.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="sie Contrarij" type="straight"/>
+        <underline language="DE" method="pen" text="Sulphur, vnd N. vnd Mercur. nit" type="straight"/>
+        <underline language="DE" method="pen" text="in eins" type="double"/>
+        <underline language="DE" method="pen" text="vergleichen" type="straight"/>
+        <underline language="DE" method="pen" text="einen grossen impetum" type="double"/>
+        <underline language="DE" method="pen" text="vnd größ" type="double"/>
+        <underline language="DE" method="pen" text="brödlen vnd" type="double"/>
+        <underline language="DE" method="pen" text="zusam[m]en" type="double"/>
+        <underline language="DE" method="pen" text="werden in" type="double"/>
+        <underline language="DE" method="pen" text="jrem Aludel" type="triple"/> 
+        <underline language="DE" method="pen" text="in jr perfection geordnet" type="double"/>
+        <underline language="DE" method="pen" text="verzeucht sich einzeit" type="straight"/>
+        <underline language="DE" method="pen" text="sie gebe[n] vom Erden ein kälte von jnen" type="straight"/>
+        <underline language="DE" method="pen" text="ein kalter" type="double"/>
+        <underline language="DE" method="pen" text="der feist ist" type="straight"/>
+        <underline language="DE" method="pen" text="Merc. der mildt" type="straight"/>
+        <underline language="LA" method="pen" text="Vnitas" type="double"/>
+        <underline language="LA" method="pen" text="Contrarij" type="double"/>
+        <underline language="DE" method="pen" text="in einander kom[m]en" type="straight"/>
+        <underline language="DE" method="pen" text="sausen" type="straight"/>
+        <underline language="DE" method="pen" text="brodlen" type="straight"/>
+        <underline language="DE" method="pen" text="donnern" type="straight"/>
+        <underline language="DE" method="pen" text="perfection gehend so scheident sich doch zwo art von" type="straight"/>
+        <underline language="DE" method="pen" text="coagulieren" type="straight"/>
+        <underline language="LA" method="pen" text="Gemmae" type="double"/>
+        <underline language="LA" method="pen" text="resolutum" type="double"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <!--KS: There's also a diagonal line starting on this page and continuing on 00000105-->
+        
+        <drawing anchor_text="perfection gehend so scheident sich doch zwo art von" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

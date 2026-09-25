@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.079v.tif" reader="Harvey" signature="[Iviii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Astuti Principes alibi minant[u]r, alibi arma inferunt. Olaus Magnus: vt s[upr]a, sa[e]pissime.</marginalia_text> <!--verwijzing naar Olaus Magnus, Historia, p. 262; http://runeberg.org/olmagnus/0348.html-->
+                    <book title="Historia de gentibus Septentrionalibus"/>
+                    <internal_ref text="s[upr]a">
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0074" text="[Dii[r]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0136" text="[H[ir]]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Clever princes threaten somewhere and attack elsewhere. Olaus Magnus, as above, most frequently.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="the tyme" type="straight"/>
+        <underline language="EN" method="pen" text="in the nyghte" type="straight"/>
+        <underline language="EN" method="pen" text="ennemies wolde issue" type="straight"/>
+        <underline language="EN" method="pen" text="though he fledde" type="straight"/>
+        <underline language="EN" method="pen" text="drawe them pursuynge hym farre" type="straight"/>
+        <underline language="EN" method="pen" text="frome their citie" type="straight"/>
+        <underline language="EN" method="pen" text="shulde assawlte and wynne the cyties lefte" type="straight"/>
+        <underline language="EN" method="pen" text="in the night" type="straight"/>
+        <underline language="EN" method="pen" text="sowne vp the trumpettes" type="straight"/>
+        <underline language="EN" method="pen" text="great noyse and clamour" type="straight"/>
+        <underline language="EN" method="pen" text="that laye towarde the" type="straight"/>
+        <underline language="EN" method="pen" text="left the gates" type="straight"/>
+        <underline language="EN" method="pen" text="Pericles entred" type="straight"/>
+        <underline language="EN" method="pen" text="vnwares by nyghte" type="straight"/>
+        <underline language="EN" method="pen" text="blowe his cornettes, on the" type="straight"/>
+        <underline language="EN" method="pen" text="syde of" type="straight"/>
+        
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="great noyse and clamour"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="that laye towarde the"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="head"/> <!--partly faded-->
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the tyme"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the nyghte"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="frome theyr citie"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="cyties lefte"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="gates"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="vnwares"/>
+        
+        <mark method="pen" name="plus_sign" place="tail"/>
+        
+    </annotation>
+</transcription>

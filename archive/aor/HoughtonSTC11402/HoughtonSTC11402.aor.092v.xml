@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.092v.tif" reader="Harvey" signature="[Lv[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Pirrhus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>(( Pyrrhi Inuentum, Castrorum Architectura.</marginalia_text>
+                    <person name="Pyrrhus of Epirus"/>
+                </position>
+            </language>
+            <translation>The invention of Pyrrhus, the art of building castles.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pitchynge of tentes" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>The Romanes learnid of Pyrrhus to pitch [their] tents.</marginalia_text>
+                    <person name="Pyrrhus of Epirus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="wolde imagyn and commytte some iniurie ageynst" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>2. to preuent mutinyes, &amp; other lewdnes.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Priuate mutinys, &amp; publigue disorders, [the] very poison, &amp; plague of an Army.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Pirrhus" type="straight"/>
+        <underline language="EN" method="pen" text="the firste, that" type="straight"/>
+        <underline language="EN" method="pen" text="armye within one trenche or bulwarke" type="straight"/>
+        <underline language="EN" method="pen" text="got his campe" type="straight"/>
+        <underline language="EN" method="pen" text="howe he ordered" type="straight"/>
+        <underline language="EN" method="pen" text="lyttell and lyttel" type="straight"/>
+        <underline language="EN" method="pen" text="pitchynge of tentes" type="straight"/>
+        <underline language="EN" method="pen" text="and lodgynge their armye" type="straight"/>
+        <underline language="EN" method="pen" text="nowe vsed" type="straight"/>
+        <underline language="EN" method="pen" text="to buyldyng of shippes" type="straight"/>
+        <underline language="EN" method="pen" text="the vse of them was to" type="straight"/>
+        <underline language="EN" method="pen" text="nat nedefull" type="straight"/>
+        <underline language="EN" method="pen" text="be corrupted" type="straight"/>
+        <underline language="EN" method="pen" text="with slouthe" type="straight"/> 
+        <underline language="EN" method="pen" text="wolde imagyn and commytte some iniurie ageynst" type="straight"/>
+        <underline language="EN" method="pen" text="were confederates" type="straight"/>
+        <underline language="EN" method="pen" text="capitayne" type="straight"/>
+        <underline language="EN" method="pen" text="rather to be dredde" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="hash" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="armye within one trenche or bulwarke"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="howe he ordered"/>
+        <mark method="pen" name="hash" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="firste"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="armye within one trenche or bulwarke"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="pitchynge of tentes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="nowe vsed"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="to buyldyng of shippes"/>
+        <mark method="pen" name="dot" place="intext"/> <!--idelnes, orels-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="capitayne"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="dredde"/>
+        
+        <numeral language="EN" place="right_margin" text="leste they shulde be corrupted">1.</numeral>
+        <numeral language="EN" place="right_margin" text="wolde imagyn and commytte some iniurie ageynst">2.</numeral>
+        
+        
+    </annotation>
+</transcription>

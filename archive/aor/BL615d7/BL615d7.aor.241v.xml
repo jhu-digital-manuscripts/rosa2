@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.241v.tif" pagination="[241v]" reader="John Dee" signature="[Hh[v]]"/> 
+    
+    <annotation>
+        <marginalia anchor_text="MDIIII" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>1504.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="nauiglio delle" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; de' denari, che l'Ammiraglio hauea quiui" type="straight"/>
+        <underline language="IT" method="pen" text="a Giamaica" type="straight"/>
+        <underline language="IT" method="pen" text="MDIIII" type="straight"/>
+        <underline language="IT" method="pen" text="facesse relatione" type="straight"/>
+        <underline language="IT" method="pen" text="parte della mezena di porco" type="straight"/>
+        <underline language="IT" method="pen" text="so gli hauea presentata" type="straight"/>
+        <underline language="IT" method="pen" text="il Porras" type="straight"/>
+        
+        <errata amendedtext="acioche" copytext="sccioche" language="IT"/>
+        
+    </annotation>
+</transcription>

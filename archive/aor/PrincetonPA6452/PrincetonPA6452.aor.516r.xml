@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.516r.tif" reader="Harvey" signature="P2[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                       Integrè iudicent utrinq[ue] iam oculati. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Let those who have eyes now honestly judge from both sides.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Samson" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        Samson.
+                    </marginalia_text>
+                    <person name="Samson"/>
+                </position>
+            </language>
+            <translation>
+                Samson.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Eiusdem Chronologia[e] Index alphabeticus s[upr]a.
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00001007" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+               The alphabetical index of chronology by the same author, [see] above.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="CHRONOLOGIA" type="dotted"/>
+        <underline language="LA" method="pen" text="CHRONOLOGIA" type="straight"/>
+        <underline language="LA" method="pen" text="in omnem Romanam historiam" type="straight"/>
+        <underline language="LA" method="pen" text="Halicarnassei" type="straight"/>
+        <underline language="LA" method="pen" text="T. Liuij" type="straight"/>
+        <underline language="LA" method="pen" text="Iustinianum Caesarem" type="straight"/>
+        <underline language="LA" method="pen" text="quindecim reges Latinorum" type="straight"/>
+        <underline language="LA" method="pen" text="septemq[ue] Romanorum" type="straight"/>
+        <underline language="LA" method="pen" text="Deinde Coss" type="straight"/>
+        <underline language="LA" method="pen" text="Decemuiros" type="straight"/>
+        <underline language="LA" method="pen" text="Tribunos militum" type="straight"/>
+        <underline language="LA" method="pen" text="C[a]esares" type="straight"/>
+        <underline language="LA" method="pen" text="regibus Hebraeorum" type="straight"/>
+        <underline language="LA" method="pen" text="Iudae ac Israel" type="straight"/>
+        <underline language="LA" method="pen" text="Medorum" type="straight"/>
+        <underline language="LA" method="pen" text="Perfarum" type="straight"/>
+        <underline language="LA" method="pen" text="Macedonum" type="straight"/>
+        <underline language="LA" method="pen" text="PRIMVS hic post captam Troiam" type="straight"/>
+        <underline language="LA" method="pen" text="per Hellespontum in Thraciam profecti Troiani duce Aenea" type="straight"/>
+        <underline language="LA" method="pen" text="in Sicilia per" type="straight"/>
+        <underline language="LA" method="pen" text="icto cum rege Latino foedere" type="straight"/>
+        <underline language="LA" method="pen" text="Lauinium condere" type="straight"/>
+        <underline language="LA" method="pen" text="Aeneas solis Troianis imperat" type="straight"/>
+        <underline language="LA" method="pen" text="matrimonium Lauinia Latini regis" type="straight"/>
+        <underline language="LA" method="pen" text="Latinus rex pugna, qua" type="straight"/>
+        <underline language="LA" method="pen" text="ducum Turnum, ipse cum" type="straight"/>
+        <underline language="LA" method="pen" text="occiditur" type="straight"/>
+        <underline language="LA" method="pen" text="regnum iure belli affinitatisq[ue] ad Aeneam uenit" type="straight"/>
+        <underline language="LA" method="pen" text="Latinis imperauit" type="straight"/>
+        <underline language="LA" method="pen" text="AENEAS" type="straight"/>
+        <underline language="LA" method="pen" text="Latinorum rex" type="straight"/>
+        <underline language="LA" method="pen" text="quartus erat post Latini" type="straight"/>
+        <underline language="LA" method="pen" text="Mezentium eorum regem stetit" type="straight"/>
+        <underline language="LA" method="pen" text="eius filius Ascanius imperare" type="straight"/>
+        <underline language="LA" method="pen" text="Aenae ex Creusa filius" type="straight"/>
+        <underline language="LA" method="pen" text="Iudices Hebraeorum" type="dotted"/>
+        <underline language="LA" method="pen" text="Ascanius secundus" type="straight"/>
+        <underline language="LA" method="pen" text="Samson" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="head" text="CHRONOLOGIA"/>
+        <symbol language="LA" name="SS" place="left_margin" text="regibus Hebraeorum"/>
+        <symbol language="LA" name="JC" place="right_margin" text="regnum iure belli affinitatisq[ue] ad Aeneam uenit"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="in omnem Romanam historiam"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--histo-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="quindecim reges Latinorum"/>
+        <mark method="pen" name="dot" place="intext"/> <!--aduentum,--> 
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="septemq[ue] Romanorum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Coss"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Decemuiros"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Tribunos militum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="C[a]esares"/>
+        <mark method="pen" name="dot" place="intext"/> <!--Cesares,-->
+        <mark method="pen" name="apostrophe" place="intext"/> <!--Cesares,-->
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark language="LA" method="pen" name="dot" place="intext" text="incederunt,"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--Cir-->
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="cum rege Latino foedere"/> 
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="regnum iure belli affinitatisq[ue] ad Aeneam uenit"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="AENEAS"/>
+        <mark method="pen" name="plus_sign" place="intext"/> <!--tribus.-->
+        <mark method="pen" name="plus_sign" place="intext"/> <!--ultimum.--> 
+        <mark method="pen" name="dot" place="intext"/> <!--visus-->
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="chalk" name="horizontal_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

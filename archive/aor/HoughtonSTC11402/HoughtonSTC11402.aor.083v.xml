@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.083v.tif" reader="Harvey" signature="[Kiiii[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="neglygence of the watches" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Diligent watch,</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>&amp; ward.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>i[nfr]a, l.4.c.I.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0188" text="l.4.c.I."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] below, book 4, chapter 1.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>A necessary Example, to terrify [the] watchmen euer after.</marginalia_text>
+                    <emphasis method="pen" text="terrify" type="straight"/>
+                    <emphasis method="pen" text="the watchmen euer after" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="touchynge the safegarde of the besyeged, what" type="straight"/>
+        <underline language="EN" method="pen" text="citie of Athens" type="straight"/>
+        <underline language="EN" method="pen" text="Alcibiades" type="straight"/>
+        <underline language="EN" method="pen" text="the lyght" type="straight"/>
+        <underline language="EN" method="pen" text="vp their lyghtes" type="straight"/>
+        <underline language="EN" method="pen" text="the token of the" type="straight"/>
+        <underline language="EN" method="pen" text="kepte their" type="straight"/>
+        <underline language="EN" method="pen" text="Iphicrates" type="straight"/>
+        <underline language="EN" method="pen" text="Corinthie" type="straight"/>
+        <underline language="EN" method="pen" text="to viewe, howe the watche" type="straight"/>
+        <underline language="EN" method="pen" text="watche menne on slepe" type="straight"/>
+        <underline language="EN" method="pen" text="whiche he strake" type="straight"/>
+        <underline language="EN" method="pen" text="through with his speare" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/> <!--JG: or unknown mark?-->
+        <mark method="pen" name="bracket" place="left_margin"/> <!--JG: or unknown mark?-->
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="the token of the"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="watche menne on slepe"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="X_sign" place="right_margin" text="vp their lyghtes"/>
+        <mark language="EN" method="pen" name="X_sign" place="right_margin" text="whiche he strake"/>
+        
+        <mark language="EN" method="pen" name="apostrophe" place="intext" text="touchynge the safegarde of the besyeged"/>
+        <mark method="pen" name="apostrophe" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="to viewe, howe the watche"/>
+        
+    </annotation>
+</transcription>

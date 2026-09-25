@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.279r.tif" pagination="71" reader="John Dee" signature="I.iij"/>
+    
+    
+    <annotation>
+        
+       <marginalia anchor_text="Glarmorgantiam" hand="Italian" method="pen">
+           <language ident="LA">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>Glamorga[n]tia.</marginalia_text>
+                   <location name="Glamorgan"/>
+               </position>
+           </language>
+           <translation>Glamorgan.</translation>
+       </marginalia> 
+        
+        
+        <underline language="LA" method="pen" text="Dauid quondam frater" type="straight"/>
+        <underline language="LA" method="pen" text="Resus autem Vazham Wallensium nobilissimus comiti Herefordiae se" type="straight"/>
+        <underline language="LA" method="pen" text="intrauit Glamorgantiam, qu[a]e ditioni comitis Glouerniae subiecta fuit, deinde" type="straight"/>
+        
+    </annotation>
+    
+</transcription>

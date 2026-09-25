@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.202r.tif" pagination="395" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="in regem &amp; dominum elegerunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cnuto, Rex a suis Danis elegitur
+                    </marginalia_text>
+                    <person name="Cnut the Great"/>
+                </position>
+            </language>
+            <translation>
+                Cnut the Great was elected King by his Danes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="obsides omnes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Obsidu[m] miserrima conditio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A siege is a very miserable condition.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in regem &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="nullum plus amare quàm dominum suum" type="straight"/>
+        <underline language="LA" method="pen" text="si mitius" type="double"/>
+        <underline language="LA" method="pen" text="quam prius fecerat, eos tractare vellet" type="straight"/>
+        <underline language="LA" method="pen" text="truncatis manibus" type="straight"/>
+        <underline language="LA" method="pen" text="auribus praecisis" type="straight"/>
+        <underline language="LA" method="pen" text="naribusque amputatis abire permisit" type="straight"/>
+        <underline language="LA" method="pen" text="inqui Ducis Eadrici" type="double"/>
+        <underline language="LA" method="pen" text="nobiles interfici" type="double"/>
+        <underline language="LA" method="pen" text="Sigeferth[us], &amp; Morchar[us]" type="straight"/>
+        <underline language="LA" method="pen" text="filij Cargrini" type="straight"/>
+        <underline language="LA" method="pen" text="Aldgitham" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <graph book_orientation="0" method="pen" place="tail" type="genealogical_tree">
+            <node anchor_text="Cargrini" id="n1" person="Earngrim">Cargrinus</node>  
+            <node anchor_text="Sigeferth[us]" id="n2" person="Sigeferth">comites. North. Sigefertus</node>
+            <node anchor_text="Morchar[us]" id="n3" person="Morcar">Morcharus</node>
+            <node anchor_text="Aldgitham" id="n4" person="Ealdgyth">Aldigitha</node>
+            <link from="n1" relationship="has_child" to="n2"/>
+            <link from="n1" relationship="has_child" to="n3"/>
+            <link from="n4" relationship="has_spouse" to="n2"/>
+            <link from="n2" relationship="has_spouse" to="n4"/>
+        </graph>
+        
+    </annotation>
+</transcription>

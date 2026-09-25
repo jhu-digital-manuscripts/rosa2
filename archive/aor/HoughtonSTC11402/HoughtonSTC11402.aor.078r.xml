@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.078r.tif" reader="Harvey" signature="[Ivii[r]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="images of armed men, arrayed lyke Perseans" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Images, arrayed lyke Persians.</marginalia_text>
+                    <emphasis method="pen" text="Images" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Optima maxima pars Strategematu[m], in talibus</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ironijs, paradoxis, hyperbolis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The absolute optimal role of strategems [are] in such great ironies, paradoxes, and hyperboles.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="with a rough rocky hylle" type="straight"/>
+        <underline language="EN" method="pen" text="mastes" type="straight"/>
+        <underline language="EN" method="pen" text="the toppe of the walles" type="straight"/>
+        <underline language="EN" method="pen" text="set images of armed" type="straight"/>
+        <underline language="EN" method="pen" text="arrayed lyke Perseans" type="straight"/>
+        <underline language="EN" method="pen" text="in the nyght made" type="straight"/>
+        <underline language="EN" method="pen" text="towne on the" type="straight"/>
+        <underline language="EN" method="pen" text="the sonne" type="straight"/>
+        <underline language="EN" method="pen" text="those images" type="straight"/>
+        <underline language="EN" method="pen" text="shone lyke men" type="straight"/>
+        <underline language="EN" method="pen" text="thought surely" type="straight"/>
+        <underline language="EN" method="pen" text="feynt courage" type="straight"/>
+        <underline language="EN" method="pen" text="breake out on that" type="straight"/>
+        <underline language="EN" method="pen" text="nat loked" type="straight"/>
+        <underline language="EN" method="pen" text="before the" type="straight"/>
+        <underline language="EN" method="pen" text="goinge out of the tyde" type="straight"/>
+        <underline language="EN" method="pen" text="god his guyde" type="straight"/>
+        <underline language="EN" method="pen" text="in the fallyng" type="straight"/>
+        <underline language="EN" method="pen" text="the water" type="straight"/>
+        <underline language="EN" method="pen" text="in on" type="straight"/>
+        <underline language="EN" method="pen" text="no man loked" type="straight"/>
+        <underline language="EN" method="pen" text="Fabius Maximus" type="straight"/>
+        <underline language="EN" method="pen" text="Cunctator" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+       <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> <!--partly in intext-->
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="in the fallyng"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="mastes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="set images of armed"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="shone lyke men"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="god his guyde"/>
+        
+        
+    </annotation>
+</transcription>

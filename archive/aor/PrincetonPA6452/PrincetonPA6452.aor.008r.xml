@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">   
+    
+    <page filename="PrincetonPA6452.008r.tif" reader="Harvey" signature="[a8r]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Liuij Stylus: pra[e]sertim in Concionibus.
+                        Nulla[e] Latina[e], Gra[e]ca[e]úe orationes, vel accurata lectione, vel exquisito delectu digniores, 
+                        quàm Liuianae conciones; à Perionio in artificiosum quendam ordinem redacta[e]. Undè, 
+                        cum orationibus vacat aut Legendis, aut imitandis, aut etiam a[e]mulandis, nullas iam malim, quàm has,
+                        aut illas Liuianas; tam sententia acres, quàm elocutione limatas. Nihil pla[e]runq[ue] vel neruosiùs 
+                        pressum, vel viuidiùs expressum. Vt sa[e]pè ipse Atticismus hîc superari videatur. Tam 
+                        prudenter politus hic stylus: modò fusus splendidè; modò strictus argutè; modò 
+                        scitè temperatus: sa[e]pè adamantinus; semper gemmans, aut florens. Ni Ca[e]sarem, Sallustium, 
+                        Virgilium intimè nosset, mirarer tam nitidam pariter, solidamq[ue] componendi formulam: non magis 
+                        illuminatam, quàm seriam; nec minùs subtilem, quàm ornatam. Valdè etiam placent 
+                        qua[e]dam rotunda, et arguta dicta: quasi Laconica apophthegmata. Nec unq[uam] fermè deficit varietas: 
+                        nec vigor ferè uspiam flaccescit. Mea adhuc ha[e]c Censura: nec in aliam sum, uel facilè ducendus, 
+                        uel solicitè trahendus sententiam.
+                    </marginalia_text>
+                    <person name="Livy"/>
+                    <person name="Joachim Perion"/>
+                    <person name="Julius Caesar"/>
+                    <person name="Sallust"/>
+                    <person name="Virgil"/>
+                    <book title="T. Livii Patavini Conciones"/>
+                </position>
+            </language>
+            <translation>
+                Livy's style, particularly in the speeches.
+                There are no Latin or Greek orations that deserve more precise reading, or more special enjoyment than Livy’s 
+                speeches, raised to some literary rank by Joachim Perion. Therefore, when I have leisure for reading, imitating or 
+                emulating speeches, I prefer no others to those of Livy, which are as sharp in judgement as they are polished 
+                in expression. Nothing is more vigorously compressed or livelier expressed, so that often even Atticism 
+                seems to be surpassed. His style is so sensibly polished, here marvelously copious, there ingeniously tight,
+                elsewhere skilfully balanced; often adamantine, always brilliant or bright. If he had not been intimately 
+                acquainted with Caesar, Sallust, and Virgil, I would marvel at such an equally refined and firm form of writing,
+                not just clear but also serious, and no less precise than rich. Very pleasing also are several well-turned and 
+                witty statements, almost Laconic maxims. Variety is almost never lacking and its vigor hardly ever falters. This
+                is my judgment so far and I am not easily brought or restlessly drawn to another opinion.
+                <!-- JE: I've tweaked this translation for the sake of idiom. -->
+            </translation>
+        </marginalia>
+        <marginalia anchor_text="Aeneas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Æneas.</marginalia_text>
+                    <person name="Aeneas"/>
+                </position>
+            </language>
+            <translation>Aeneas.</translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>I[nfr]a</marginalia_text>
+                    <internal_ref text="I[nfr]a">
+                        <target ref="PrincetonPA6452:00000023" text="[a1r]"/>
+                        <target ref="PrincetonPA6452:00000027" text="[5]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                [See] below.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>I[nfr]a</marginalia_text>
+                    <internal_ref text="I[nfr]a">
+                        <target ref="PrincetonPA6452:00000023" text="[a1r]"/>
+                        <target ref="PrincetonPA6452:00000026" text="[4]"/>
+                        <target ref="PrincetonPA6452:00000027" text="[5]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                [See] below.
+            </translation>
+        </marginalia>
+        <marginalia anchor_text="Romulus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Romulus.</marginalia_text>
+                    <person name="Romulus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="lanum" type="straight"/>
+        <underline language="LA" method="pen" text="in partem imperij est" type="straight"/>
+        <underline language="LA" method="pen" text="lano defuncto" type="straight"/>
+        <underline language="LA" method="pen" text="eum solum" type="straight"/>
+        <underline language="LA" method="pen" text="Arcades ex urbe Palantio" type="straight"/>
+        <underline language="LA" method="pen" text="duce Euandro" type="straight"/>
+        <underline language="LA" method="pen" text="à Faunoq[ue] Aboriginum" type="straight"/>
+        <underline language="LA" method="pen" text="Palantiumq[ue] à metropoli" type="straight"/>
+        <underline language="LA" method="pen" text="classem Graecam" type="straight"/>
+        <underline language="LA" method="pen" text="ducente Hercule, eandem tenuisse" type="straight"/>
+        <underline language="LA" method="pen" text="Hos, Peloponnenses, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="euersa eorum" type="straight"/>
+        <underline language="LA" method="pen" text="patria ab ipso Hercule" type="straight"/>
+        <underline language="LA" method="pen" text="uictum, leges, sacra cum Aboriginibus confere[n]tes" type="straight"/>
+        <underline language="LA" method="pen" text="Arcades, &amp; prius Pelasgi" type="straight"/>
+        <underline language="LA" method="pen" text="Latino ex filia" type="straight"/>
+        <underline language="LA" method="pen" text="Aeneas" type="straight"/>
+        <underline language="LA" method="pen" text="statim praelio fuisset exceptus" type="straight"/>
+        <underline language="LA" method="pen" text="colloquium à Latino fuit uocatus" type="straight"/>
+        <underline language="LA" method="pen" text="tantam sui admirationem praebuit" type="straight"/>
+        <underline language="LA" method="pen" text="societatem imperij" type="straight"/>
+        <underline language="LA" method="pen" text="Aborigines, Troianosq[ue], communi" type="straight"/>
+        <underline language="LA" method="pen" text="Latinos nominauit" type="straight"/>
+        <underline language="LA" method="pen" text="Turnum" type="straight"/>
+        <underline language="LA" method="pen" text="Aeneas soceri regnum suscipiens" type="straight"/>
+        <underline language="LA" method="pen" text="bello aduersus Mezentium Hetruscorum regem, è uita" type="straight"/>
+        <underline language="LA" method="pen" text="Ascanius, eius" type="straight"/>
+        <underline language="LA" method="pen" text="Albam" type="straight"/>
+        <underline language="LA" method="pen" text="Syluius eius" type="straight"/>
+        <underline language="LA" method="pen" text="Romulus" type="straight"/>
+        <underline language="LA" method="pen" text="Rheam eius filiam" type="straight"/>
+        <underline language="LA" method="pen" text="genere Numitoris" type="straight"/>
+        <underline language="LA" method="pen" text="Vestae sacerdotem" type="straight"/>
+        <underline language="LA" method="pen" text="duos pueros incerto stupro conceptos" type="straight"/>
+        <underline language="LA" method="pen" text="fortuna origini Romanae prospiciens, eos lupae alendos" type="straight"/>
+        <underline language="LA" method="pen" text="alteri Remo" type="straight"/>
+        <underline language="LA" method="pen" text="alteri Romo, siue Romulo, fuere" type="straight"/>
+        <underline language="LA" method="pen" text="de uirtute" type="straight"/>
+        <underline language="LA" method="pen" text="quotidiana certamina" type="dotted"/>
+        <underline language="LA" method="pen" text="uires &amp; pernicitatem auxere" type="straight"/>
+        <underline language="LA" method="pen" text="latrones à rapina pecorum" type="straight"/>
+        <underline language="LA" method="pen" text="facta inter ipsos coniuratione, Amulium interficiunt" type="straight"/>
+        <underline language="LA" method="pen" text="Numitoriq[ue] auo regnum restituunt" type="straight"/>
+        <underline language="LA" method="pen" text="Romam, ubi expositi fuerant, condiderunt" type="straight"/>
+        <underline language="LA" method="pen" text="de tempore" type="straight"/>
+        <underline language="LA" method="pen" text="de conditore" type="straight"/>
+        <underline language="LA" method="pen" text="scriptores uarietas" type="straight"/>
+        <underline language="LA" method="pen" text="Romulum Martis" type="straight"/>
+        <underline language="LA" method="pen" text="urbis autorem fuisse" type="straight"/>
+        <underline language="LA" method="pen" text="urbis parens Romulus" type="straight"/>
+        <underline language="LA" method="pen" text="optimus augur" type="straight"/>
+        <underline language="LA" method="pen" text="Romulum" type="straight"/>
+        <underline language="LA" method="pen" text="captatis augurijs" type="straight"/>
+        <underline language="LA" method="pen" text="prior sex uultures" type="straight"/>
+        <underline language="LA" method="pen" text="Romulus mox duodecim" type="straight"/>
+        <underline language="LA" method="pen" text="tempore" type="straight"/>
+        <underline language="LA" method="pen" text="numero certaret" type="straight"/>
+        <underline language="LA" method="pen" text="Romulus à se Romam denominauit" type="straight"/>
+    
+        <symbol name="SS" place="right_margin"/> <!-- Igi- -->
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--exeun-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--rece-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--conce-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--obtu-->
+        
+        <mark method="pen" name="equal_sign" place="left_margin"/> <!--patria-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Arcades ex urbe Palantio"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="ducente Hercule, eandem tenuisse"/> <!--ducente Hercule-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Peloponnenses"/> 
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Aeneas"/>
+        <mark method="pen" name="plus_sign" place="intext"/> <!--quotidiana-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="urbis parens Romulus"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="optimus augur"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Romulus mox ducdecim"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="numero certaret"/> 
+    
+ 
+    </annotation>
+ 
+</transcription>

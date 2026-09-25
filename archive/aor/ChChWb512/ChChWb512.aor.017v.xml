@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.017v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Totonesiu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Totonesia a dictione 
+                    </marginalia_text>
+                    <location name="Totnes"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Ταυτη νησος
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        % hec est insula dicta et p[er] oracula[m] deno[n]strata.
+                    </marginalia_text> 
+                </position>
+            </language>
+            <translation>Totonesia, from the saying Ταυτη νησος , that is the island was called this and foretold by the oracle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Totonesiu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        J[ohn] d[ee]. Tautenesus omnibus in clama[n]tib[us], occasione[m] dedere, vt loco, Tautenesus nomen permanerut [deleted] in hodieru[m] vsq[ue] diem.
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                    <location name="Totnes"/>
+                </position>
+            </language>
+            <translation>John Dee. Totness. Everyone crying out, they gave (the name) Tautenesus for the occasion, so that they preserve the name Tautenensis in that place even to this day.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Albion ; giga[n]tibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        habitata gyga[n]tes olim.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Then inhabited by giants.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Bryto[n]es" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Brytones.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The Britons.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cornu Britan[n]i[a]e vel per corruptione[m] p[rae]dicti nominis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Verè corruptio no[men]is erat.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Indeed there was a corruption of the name.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Lingua[m] necess[e] est ist[um] partim fuisse phrygia[m] siue asiatica[m], partim greca[m], partim Latina siue het[ru]sa[m?]! 
+                        ex vt o[m]ni Locis et populis co[n]flati fuere, pra[e]ter illos quos ex a[e]quitania se[cum?] cum Corinno assu[m]psu[m] quor[um] Li[n]gua etia[m] aliqua[m] novitate
+                        et peregrinitate[m?] co[n]trexerat /
+                    </marginalia_text> <!--Incomplete transcription.-->
+                    <person name="Corineus"/>
+                    <location name="Asia"/>
+                    <location name="Aquitaine"/>
+                </position>
+            </language>
+            <translation>"Their language needed to be [that word isn't istium] part Phrygian or asiatic, part Greek, part Latin or Etruscan! because of all of the places and peoples mixed together. Also those from Aquitania who came along with Corineus [?] Their language brought together still other new and wandering (peoples)"</translation>
+            <!-- NBW: Translation needs work, transcription still incomplete--> <!-- JG: Could it be istorum instead of istium? Can't figure out word after 'siue' either. -->
+        </marginalia>
+        
+        <marginalia anchor_text="insulae Albion" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Aluion
+                    </marginalia_text>
+                    <location name="Albion"/>
+                </position>
+            </language>
+            <translation>Albion.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="p[er]missam insulam" type="double"/>
+        <underline language="LA" method="pen" text="in Totonesiu[m]" type="double"/>
+        <underline language="LA" method="pen" text="insulae Albion" type="straight"/>
+        <underline language="LA" method="pen" text="paucis" type="double"/>
+        <underline language="LA" method="pen" text="amoeno tamen" type="straight"/>
+        <underline language="LA" method="pen" text="repertos giga[n]tes i[n] cauernas" type="straight"/>
+        <underline language="LA" method="pen" text="donante duce" type="double"/>
+        <underline language="LA" method="pen" text="no[m]i[n]e suo" type="straight"/>
+        <underline language="LA" method="pen" text="insula[m] Bryta[n]niam" type="straight"/>
+        <underline language="LA" method="pen" text="ne no[min]is memoria[m] habere sempiternam" type="straight"/>
+        <underline language="LA" method="pen" text="postmodum" type="straight"/>
+        <underline language="LA" method="pen" text="curuu[m] Corineia[m]" type="double"/>
+        <underline language="LA" method="pen" text="Corineiensem" type="straight"/>
+        <underline language="LA" method="pen" text="insecutus: qui" type="straight"/>
+        <underline language="LA" method="pen" text="cornu Brita[n]ni[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="corruptione[m]" type="double"/>
+        <underline language="LA" method="pen" text="quoru[m] copia plus ibidem" type="straight"/>
+        <underline language="LA" method="pen" text="Goemagot" type="straight"/>
+        <underline language="LA" method="pen" text="duodeci[m] cubitoru[m]" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--petens in-->
+        
+    </annotation>
+</transcription>

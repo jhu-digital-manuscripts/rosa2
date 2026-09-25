@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.001r.tif" pagination="Title page" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Joannes Dee 1559 18 Junij ex dono magistri Joannis Baptista[e] Danielis
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                    <person name="Joannes Baptista Daniel"/>
+                </position>
+            </language>
+            <translation>John Dee, 18 June 1559, from the gift of master Joannes Baptista Daniel.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary" method="pencil" other_reader="unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        /2
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        de I. 16:
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation/> <!--KS: Not sure what this is referring to.-->
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="90" place="left_margin">
+                    <marginalia_text>
+                        [...] conecta, dictionu[m] [...ia] initia, [...] movent: M et M et R et R:
+                    </marginalia_text> <!--Part of transcription illegible.-->
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        candida si rubeo: &amp;c
+                    </marginalia_text> <!--KS: How to link marginal note to 'Maria' and 'Morienvs'?-->
+                </position>
+            </language>
+            <translation>Bright when red: et cetera.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary" method="pencil" other_reader="unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>K. [1033.h./2 - deleted]</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Dua[e] rubea[e] terra[e]
+                    </marginalia_text> <!--KS: Likewise. To be linked to 'Rosinvs' and 'Rhodianvs'-->
+                </position>
+            </language>
+            <translation>Two red earths.</translation>
+        </marginalia>
+
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Resolutio. Amalge. Elixir
+                    </marginalia_text> <!--KS: Need to be linked to 'Tvbalchain', 'Panthevs', 'Hermes'.-->
+                </position>
+            </language>
+            <translation>Solution. Amalgam. Elixir.</translation>
+        </marginalia>
+                
+        <numeral place="intext">9</numeral>
+        
+               
+        <!--KS: Triangular scheme to be figured out.-->
+        
+    </annotation>
+</transcription>

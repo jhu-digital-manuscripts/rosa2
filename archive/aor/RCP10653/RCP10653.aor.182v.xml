@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.182v.tif" pagination="356" reader="John Dee" signature="[Gg iiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="videtur ad historiae claritatem, vt eius genealogiam breui epilogio perstringamus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Historia illustratur, viroru[m] nobiliu[m] descriptis genealogijs    
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                History is illuminated by tracing the genealogies of noble men. <!-- NBW: This last part is likely an ablative absolute, so a more literal translation would be "the genealogies of noble men having been recorded, history is illutrated" -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Amazones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Amazones.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Amazons.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex Scanza insula, cum suo rege Berig nomine" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Berig Rex Scanza.
+                    </marginalia_text>
+                    <person name="Berig"/>
+                    <location name="Scandza"/>
+                </position>
+            </language>
+            <translation>
+                Berig, King in Scandza.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Troianos ex sua stirpe processisse" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Troianos ex hijs fluxisse  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The Trojans descended from these.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quem" type="straight"/>
+        <underline language="LA" method="pen" text="Robertus de fonte" type="straight"/>
+        <underline language="LA" method="pen" text="incarnatione" type="straight"/>
+        <underline language="LA" method="pen" text="Dux Robertus repudiatam Popam sibi repetens copulauit" type="straight"/>
+        <underline language="LA" method="pen" text="hoc manifico Duce Roberto inclyti" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; reges traxerunt" type="straight"/>
+        <underline language="LA" method="pen" text="videtur ad historiae claritatem, vt eius genealogiam breui epilogio perstringamus" type="straight"/>
+        <underline language="LA" method="pen" text="Scanza insula" type="straight"/>
+        <underline language="LA" method="pen" text="Berig" type="straight"/>
+        <underline language="LA" method="pen" text="Isti Martem" type="straight"/>
+        <underline language="LA" method="pen" text="Troianos" type="straight"/>
+        <underline language="LA" method="pen" text="nomine suo prouinci[a]e" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.022r.tif" reader="John Dee" signature="F ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="veritatis vmbras" hand="English_secretary" id="RCP9978:051:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>vmbra veritatis.</marginalia_text>
+                </position>
+            </language>
+            <translation>A ghost of truth.</translation>
+        </marginalia>
+        
+        <underline id="RCP9978:051:u0001" language="LA" method="pen" text="quasdam veritatis vmbras" type="straight"/>
+        <underline language="LA" method="pen" text="Se'q[ue] euocasse vmbras, ad percontandum Homerum, qua patria, quibus'q[ue] parentibus genitus esset: non tamen ausus" type="straight"/>
+        <underline language="LA" method="pen" text="iratis praecipue" type="straight"/>
+        <underline language="LA" method="pen" text="pupillas binas in oculis" type="straight"/>
+        <underline language="LA" method="pen" text="eosdem p[rae]terea no[n] posse mergi, ne veste q[ui]dem degrauatos" type="straight"/> 
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP9978:051:m0001"/>
+            <marginal_annotation idref="RCP9978:051:u0001"/>
+            <relation from="RCP9978:051:m0001" to="RCP9978:051:u0001" type="directed"/> 
+        </physical_link> 
+        
+    </annotation>
+</transcription>

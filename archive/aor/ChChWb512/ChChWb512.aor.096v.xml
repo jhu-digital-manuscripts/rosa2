@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.096v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="terdena regna" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        30 Regna
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>30 kingdoms.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="exercitatae terdena regna potestati meae subdiderunt" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="tail" type="coat_of_arms"/>
+        
+        
+    </annotation>
+</transcription>

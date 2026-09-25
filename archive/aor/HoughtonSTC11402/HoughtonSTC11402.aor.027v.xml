@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.027v.tif" reader="Harvey" signature="[Civ[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>An Execution of Pompeius, against order of Law: alledgable in defence of [the] great Massacre in
+                    France, 1572. &amp; sum irregular procedings.</marginalia_text>
+                    <person name="Pompey"/>
+                    <location name="France"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vide</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Coriloes twoe Dogges. in [the] next.</marginalia_text> <!--JG: Coriloes is a person?-->
+                </position>
+            </language>
+            <translation>See Coriloes twoe Dogges. in [the] next.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Syncretismus.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>exceding much commendid in Thucydides, Polybius, &amp; other.</marginalia_text>
+                    <person name="Thucydides"/>
+                    <person name="Polybius"/>
+                </position>
+            </language>
+            <translation>Syncretism. exceding much commendid in Thucydides, Polybius, &amp; other.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="peryllous sedition" type="straight"/>
+        <underline language="EN" method="pen" text="Lucius Sylla" type="straight"/>
+        <underline language="EN" method="pen" text="broughte hastily to" type="straight"/>
+        <underline language="EN" method="pen" text="their ennemyes were at" type="straight"/>
+        <underline language="EN" method="pen" text="shoulde rayse vp a" type="straight"/>
+        <underline language="EN" method="pen" text="them to harneys" type="straight"/>
+        <underline language="EN" method="pen" text="and blow" type="straight"/>
+        <underline language="EN" method="pen" text="togyther consenting" type="straight"/>
+        <underline language="EN" method="pen" text="agaynst their enmies" type="straight"/>
+        <underline language="EN" method="pen" text="slayne the Senatoures of Millan" type="straight"/>
+        <underline language="EN" method="pen" text="feare of trouble and" type="straight"/>
+        <underline language="EN" method="pen" text="fautlesse, as the gyltie" type="straight"/>
+        <underline language="EN" method="pen" text="whose conscience pleded them not gyltie, gaue" type="straight"/>
+        
+        <symbol name="JC" place="left_margin"/>
+        
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="togyther consenting"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--sedition, Lucius-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--sedition, they-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="feare of trouble and"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--examination, he-->
+        
+        
+    </annotation>
+</transcription>

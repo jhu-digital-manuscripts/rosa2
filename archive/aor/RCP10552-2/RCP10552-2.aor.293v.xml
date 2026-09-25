@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.293v.tif" pagination="100" reader="John Dee" signature="[N.j.[v]]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="Guido de bello campo comes Warwici fato ferali succubuit, impocionatus vt fertur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Guido de bello campo obijt Veneno, vt fertur</marginalia_text>
+                    <person name="Guy de Beauchamp, 10th Earl of Warwick"/>
+                </position>
+            </language>
+            <translation>Guy de Beauchamp died by poisoning, as it was reported.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aut exul fugit cu[m] dicto Petro Tynemutha[m]" type="straight"/>
+        <underline language="LA" method="pen" text="custodia[m] Petri" type="straight"/>
+        <underline language="LA" method="pen" text="comes Warwici, Guido de bello campo" type="straight"/>
+        <underline language="LA" method="pen" text="impocionatus" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>   <!-- impocionatus vt -->
+        
+    </annotation>
+</transcription>

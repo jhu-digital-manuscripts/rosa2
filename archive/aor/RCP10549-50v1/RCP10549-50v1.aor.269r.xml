@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.269r.tif" pagination="517" reader="John Dee" signature="IzIzIz.iii."/>
+    <annotation>
+        
+        <marginalia anchor_text="[nihil enim est tam molle tam tenerum, tam aut fragile, aut flexibile" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        nihil tam { molle teneru[m] fragile flexibile ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Nothing so soft, tender, fragile and flexible.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="argumentor? quid plura disputo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        argume[n]tor disputo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I argue, I discuss.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        à maiore
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Generally.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="anteuertit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        anteuertere. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To anticipate.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="insanissima concio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        insaniss[ima] co[n]cio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The most insane assembly.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cognomine" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        cognomine Schola.
+                    </marginalia_text>
+                    <person name="Gaius Causinius Schola"/>
+                </position>
+            </language>
+            <translation>
+                By the third name Schola.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="animam efflantem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        anima[m] efflare.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To breathe out the soul.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="properato opus esset" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        properato opus esset
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Hurry is needed.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quod caput audaciae est Iudices, quis ignorat, maxima[m] illecebram esse peccandi, impunitatis spem? In" type="straight"/>
+        <underline language="LA" method="pen" text="cum ille non dubitaret aperire quid cogitare, vos potestis dubitare quid fecerit" type="straight"/>
+        <underline language="LA" method="pen" text="profectus esse" type="straight"/>
+        <underline language="LA" method="pen" text="Nu[n]c persequar" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">13</numeral>
+        
+    </annotation>
+</transcription>

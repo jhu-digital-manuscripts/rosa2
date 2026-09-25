@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.397r.tif" pagination="777" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia anchor_text="auarè &amp; crudeliter prouincias administrassent" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        Romani, magis magisq[ue] auari, et crudeles.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The Romans, ever more greedy, and cruel.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nonnulli, eo quod auarè &amp; crudeliter prouincias administrassent" type="straight"/>
+        <underline language="LA" method="pen" text="damnati sunt." type="straight"/>
+        <underline language="LA" method="pen" text="urbes expugnauit, &amp; crudeliter" type="straight"/>
+        <underline language="LA" method="pen" text="classium Romanarum" type="straight"/>
+        <underline language="LA" method="pen" text="multa impotenter in socios" type="straight"/>
+        <underline language="LA" method="pen" text="à Perseo rege" type="straight"/>
+        <underline language="LA" method="pen" text="Illyrico, cuius rex erat Gentius" type="straight"/>
+        <underline language="LA" method="pen" text="Motus, qui in Hispania" type="straight"/>
+        <underline language="LA" method="pen" text="ipso interempto consedit" type="straight"/>
+        
+        <mark language="LA" method="pen" name="straight_quotation_mark" place="intext" text="nonnulli, eo quod auarè &amp; crudeliter prouincias administrassent"/>
+        <mark language="LA" method="pen" name="straight_quotation_mark" place="intext" text="multa impotenter in socios"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Illyrico, cuius rex erat Gentius"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.442v.tif" pagination="434" reader="John Dee" signature="[Oooo[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="ad conseruatione[m] iuriu[m] coronae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Conservatio iurium Corona[e] 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Protection of the laws of the crown.  
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="alijs exteris conductitijs" type="straight"/>
+        <underline language="LA" method="pen" text="denegatisq[ue] nobis homagio &amp; fidelitate" type="straight"/>
+        <underline language="LA" method="pen" text="quibuscunque regni sui incolis" type="straight"/>
+        <underline language="LA" method="pen" text="verba diffidationis" type="double"/>
+        <underline language="LA" method="pen" text="numeru[m] circiter ducentoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="p[ro]ditionaliter" type="straight"/>
+        <underline language="LA" method="pen" text="ratione iurame[n]ti, quo ad conseruatione[m] iuriu[m] coronae" type="straight"/>
+        <underline language="LA" method="pen" text="gentemq[ue] sua[m]" type="straight"/>
+        <underline language="LA" method="pen" text="nobis subdita[m]" type="grid"/>
+        <underline language="LA" method="pen" text="Subiecto itaque regno Scotiae" type="straight"/>
+        <underline language="LA" method="pen" text="iure proprietatis ditioni" type="straight"/>
+        <underline language="LA" method="pen" text="quonda[m]" type="double"/> 
+        <underline language="LA" method="pen" text="rex" type="straight"/>
+        <underline language="LA" method="pen" text="reddidit in man[us] nostras" type="straight"/>
+        <underline language="LA" method="pen" text="et scelera memorata cora[m] nobis et p[ro]cerib[us] n[ume]ris pubicè recognosce[n]s" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

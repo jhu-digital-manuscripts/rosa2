@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.272r.tif" pagination="265" reader="John Dee" signature="XX"/>
+    <annotation>
+        
+        <marginalia anchor_text="nutritionem; uitam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>De vita &amp; Nutritione.</marginalia_text>
+                </position>
+            </language>
+            <translation>On life and nutrition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Luna separetur ab infortuna" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Separatio ☾ ab infortuna</marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>The separation of the moon by infortune.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Qui exponuntur, sunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Expositi</marginalia_text>
+                </position>
+            </language>
+            <translation>Explanations.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Planetarum aliqu[a]e vires.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Other strenghts of the planets.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nutritio, mors</marginalia_text> 
+                </position>
+            </language>
+            <translation>Mutrition, death.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Luna sit in Tauro, Cancro" type="straight"/>
+        <underline language="LA" method="pen" text="pauci à matre exponuntur" type="straight"/>
+        <underline language="LA" method="pen" text="Cum igitur haec absq[ue] radijs uel accessibus uideris, iudica eum planetum dominari, &amp; locum in quo tunc est, esse ex illius praecipuis dignitatibus, uel quod fixae suae naturae copulatur" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Saturnus uitam, &amp; Mars nutritionem magis affligit, &amp; Venus nutritionem, ac Luna magis fouet, diuturnam uitam magis Sol &amp; Iupiter"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

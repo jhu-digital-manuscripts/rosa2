@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl><note type="format">manuscript</note><note type="commonName">Arras 845</note><title>Roman de la Rose</title><extent><measure quantity="282" unit="folios">282</measure><dimensions><height unit="mm">340</height><width unit="mm">240</width></dimensions></extent><note type="illustrations">260</note>
+               
+               
+               -
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>France</pubPlace>
+               
+               <date notAfter="1400" notBefore="1300">14th century</date>
+            
+            </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Arras, France</settlement>
+            <repository>Bibliothèque municipale d'Arras</repository>
+            <idno>845</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="250v">1r-250v</locus>
+              <title>14 various texts</title>
+              <note type="textid"/>
+              <note type="folios">250</note>
+              <note type="illustrations">253</note>
+              <note type="linesPerColumn">42</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="250v" to="274v">250v-274v</locus>
+              <title>Roman de la Rose, extracts</title>
+              <note type="textid">rose</note>
+              <note type="folios">25</note>
+              <note type="illustrations">5</note>
+              <note type="linesPerColumn">42</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="275r" to="282v">275r-282v</locus>
+              <title>Le Doctrinal aux simple gens</title>
+              <note type="textid">doctrinal</note>
+              <note type="folios">8</note>
+              <note type="illustrations">2</note>
+              <note type="linesPerColumn">42</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

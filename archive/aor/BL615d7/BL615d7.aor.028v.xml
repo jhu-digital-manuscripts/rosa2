@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.028v.tif" pagination="[28v]" reader="John Dee" signature="[Diiij[v]]"/>    
+    <annotation>
+        
+        <marginalia anchor_text="Esperidi giaceuano quaranta giorni di nauigatione verso" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hesperides</marginalia_text>
+                    <location name="Hesperides"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Esperidi giaceuano quaranta giorni di nauigatione verso" type="straight"/>
+        <underline language="IT" method="pen" text="Gorgoni" type="double"/>
+        <underline language="IT" method="pen" text="da Espero Re, che fu di Spagna" type="straight"/>
+        <underline language="IT" method="pen" text="vna auttorità" type="double"/>
+        <underline language="IT" method="pen" text="incerta" type="triple"/>
+        <underline language="IT" method="pen" text="s'ha per congietture a trattare, l'affermar cosa alcuna per certa &amp; derminata" type="straight"/>
+        <underline language="IT" method="pen" text="nome alla Spagna" type="straight"/>
+        <underline language="IT" method="pen" text="gli manca Beroso" type="double"/>
+        
+        <mark method="pen" name="vertical_bar" place="tail" text="gli manca Beroso"/>
+            
+    </annotation>
+</transcription>

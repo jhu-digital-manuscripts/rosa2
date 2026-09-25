@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.092r.tif" reader="Harvey" signature="Lv[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ide[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Likewise.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sole woman" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Pudicita[e] cura.</marginalia_text>
+                </position>
+            </language>
+            <translation>The concern of chastity.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="straytelye lodged" type="straight"/>
+        <underline language="EN" method="pen" text="where be many" type="straight"/>
+        <underline language="EN" method="pen" text="masters in the" type="straight"/>
+        <underline language="EN" method="pen" text="larger Inne" type="straight"/>
+        <underline language="EN" method="pen" text="vnder the age of fifty" type="straight"/>
+        <underline language="EN" method="pen" text="yeres" type="straight"/>
+        <underline language="EN" method="pen" text="sole woman" type="straight"/>
+        <underline language="EN" method="pen" text="let by no lawe" type="straight"/>
+        <underline language="EN" method="pen" text="him wynne wages in warre" type="straight"/>
+        <underline language="EN" method="pen" text="always in his company" type="straight"/>
+        <underline language="EN" method="pen" text="souldiour in the legion" type="straight"/>
+        <underline language="EN" method="pen" text="his sonne to come" type="straight"/>
+        <underline language="EN" method="pen" text="the foreste" type="straight"/>
+        <underline language="EN" method="pen" text="gaue place to" type="straight"/>
+        <underline language="EN" method="pen" text="with shame" type="straight"/>
+        <underline language="EN" method="pen" text="slewe hym selfe" type="straight"/>
+        <underline language="EN" method="pen" text="theyr tentes and pauilions throughe" type="straight"/>
+        <underline language="EN" method="pen" text="lyke rounde cotages" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="vnder the age of fifty"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--re-->
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="him wynne wages in warre"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="souldiour in the legion"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="with shame"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="lyke rounde cotages"/>
+        
+    </annotation>
+</transcription>

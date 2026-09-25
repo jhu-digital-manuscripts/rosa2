@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>260</illustrations>
+    <totalPages>282</totalPages>
+    <dimensions units="mm">
+        <width>240</width>
+        <height>340</height>
+    </dimensions>
+    <dates>
+        <startDate>1300</startDate>
+        <endDate>1400</endDate>
+    </dates>
+    <texts>
+        <text id="">
+            <language>fr</language>
+            <title>14 various texts</title>
+            <textId/>
+            <pages end="250v" start="1r">250</pages>
+            <illustrations>253</illustrations>
+            <linesPerColumn>42</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose, extracts</title>
+            <textId/>
+            <pages end="274v" start="250v">25</pages>
+            <illustrations>5</illustrations>
+            <linesPerColumn>42</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="doctrinal">
+            <language>fr</language>
+            <title>Le Doctrinal aux simple gens</title>
+            <textId/>
+            <pages end="282v" start="275r">8</pages>
+            <illustrations>2</illustrations>
+            <linesPerColumn>42</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Arras 845</commonName>
+            <dateLabel>14th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>France</origin>
+            <currentLocation>Arras, France</currentLocation>
+            <repository>Bibliothèque municipale d'Arras</repository>
+            <shelfmark>845</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Arras 845</commonName>
+            <dateLabel>14e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Arras</currentLocation>
+            <repository>Bibliothèque municipale d'Arras</repository>
+            <shelfmark>845</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

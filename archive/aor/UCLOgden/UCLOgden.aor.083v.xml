@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.083v.tif" pagination="150" reader="John Dee" signature="[n 3[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Varia eiusde[m] stell[a]e decreta pro vario eius situ
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Various ordinances of the same stars for its various positions.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        .1. Locus in mundo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                1. Place in the world.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Orandu[m] vt stella[e] bene locentur.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be prayed for so that the stars will be well placed.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="bonitatis suae perdit salutare praesidium, aut si malignu[m] fuerit, fortius ad noncendum exasperat malitiae potestatem" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Malus locus boni planeta[e] bonitate[m] debilitat et mali malitia[m] exasperat.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A bad place weakens the benevolence of a good planet et roughens the wickedness of a bad [planet].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aliud in diurnis, aliud in nocturnis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        .2. Dies an nox
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                2. Day or night.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        .3. Aspectus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                3. Aspect.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ex ista ergo locoru[m] uarietate, aut erigit[ur] stellaru[m] potestas, aut decidit" type="straight"/>
+        <underline language="LA" method="pen" text="Sed tu quibuscu[n]q[ue] precibus implora, ne quando sextum, aut duodecimu[m] ab" type="straight"/>
+        <underline language="LA" method="pen" text="horosc. locu[m]" type="double"/>
+        <underline language="LA" method="pen" text="secundu[m] etiam et octauum in decretis hominu[m], aut beneuolarum, aut maleuolarum cursus obtineat. Haec" type="straight"/>
+        <underline language="LA" method="pen" text="stellarum sydus insederit, aut bonitatis suae perdit salutare praesidium, aut si malignu[m] fuerit, fortius ad nocendum exasperat malitiae potestatem.              Fimantur etiam in his locis maleuloae stellae, cum ☾ positae" type="straight"/>
+        <underline language="LA" method="pen" text="sine aliquo remidio, infortunioru[m] exitia decernunt" type="straight"/>
+        <underline language="LA" method="pen" text="augusta maiestatis radiatione" type="straight"/>
+        <underline language="LA" method="pen" text="Quinta pars ♌" type="straight"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="left_margin"/> <!-- dotted -->
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="left_margin"/> <!-- dotted -->
+        
+        <errata amendedtext="explicationibus" copytext="axplicationibus" language="LA"/>
+        
+    </annotation>
+</transcription>

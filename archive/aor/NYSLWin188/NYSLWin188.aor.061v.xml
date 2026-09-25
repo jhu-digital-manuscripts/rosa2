@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.061v.tif" pagination="[61[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="steine von Himmel ; Metal ; Praesagium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Presagiu[m] ex Metallis et Lapidibus cade[n]tibus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>A sense of foreboding from metal and fallen rocks.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="härter sandt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        fulminus lapis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Crushed stone.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="ist sondern ein seltzames" type="straight"/>
+        <underline language="DE" method="pen" text="Stral der kalt" type="double"/>
+        <underline language="DE" method="pen" text="ist nichts als" type="straight"/>
+        <underline language="DE" method="pen" text="härter sandt" type="double"/>
+        <underline language="DE" method="pen" text="So nun die natur" type="straight"/>
+        <underline language="DE" method="pen" text="kalten Stral" type="double"/>
+        <underline language="DE" method="pen" text="ein stein gebürt" type="straight"/>
+        <underline language="DE" method="pen" text="wol möglich" type="double"/>
+        <underline language="DE" method="pen" text="steine falle[n] ohne Strals in die Erden" type="straight"/>
+        <underline language="DE" method="pen" text="Pra[e]sagia seindt" type="straight"/>
+        <underline language="DE" method="pen" text="Denn Sam haben sie wol von kalter influxion generationis" type="straight"/>
+        <underline language="DE" method="pen" text="dieselbige Materien nit zum resoluiere[n] kom[m]en lassen" type="straight"/>
+        <underline language="DE" method="pen" text="als dann so die zeit kompt der stunde fallen lassen in die Erden" type="straight"/>
+        <underline language="DE" method="pen" text="sie seindt fix bleiben auff Erden liegen" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+        <errata amendedtext="Pennates" copytext="Pannates" language="LA"/>
+        <errata amendedtext="Materiam" copytext="Matriam" language="LA"/>
+        
+    </annotation>
+</transcription>

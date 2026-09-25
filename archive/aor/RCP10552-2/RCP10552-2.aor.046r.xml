@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.046r.tif" pagination="81" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Gilbertus comes Glouerniae tam infausto conflictu tam lamentabiliter corruisset, &amp; nullum superstitem masculini sexus reliquisset haeredem, expectatum est per duos              annos si Comitissa coniux" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gilberti coniunx</marginalia_text>
+                    <person name="Gilbert de Clare, 8th Earl of Gloucester"/>
+                </position>
+            </language>
+            <translation>Gilbert's wife.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diuisus est comitatus nobilissimus in tres baronias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Comitatus diuisus in 3 Baronias.</marginalia_text>
+                </position>
+            </language>
+            <translation>The county is divided into three baronies.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Interea dominus Radulphus" type="straight"/>
+        <underline language="LA" method="pen" text="Mounthemer" type="straight"/>
+        <underline language="LA" method="pen" text="qui desponsauerat dominam Iohannam de Acres comitissam Glouerniae &amp; regis praesentis sororem, captus fuerat apud" type="straight"/>
+        <underline language="LA" method="pen" text="Radulphus de Mounthemer liberatur." type="straight"/>
+        <underline language="LA" method="pen" text="eiusdem ablata[m] per Scotos" type="straight"/>
+        <underline language="LA" method="pen" text="pro tanto" type="straight"/>
+        <underline language="LA" method="pen" text="infortunio" type="double"/>
+        <underline language="LA" method="pen" text="gemebundus" type="straight"/>
+        <underline language="LA" method="pen" text="Cum autem Gilbertus comes Glouerniae tam infausto conflictu tam lamentabiliter corruisset, &amp; nullum superstitem" type="straight"/>
+        <underline language="LA" method="pen" text="masculini" type="double"/>
+        <underline language="LA" method="pen" text="sexus reliquisset haeredem" type="straight"/>
+        <underline language="LA" method="pen" text="per duos annos" type="straight"/>
+        <underline language="LA" method="pen" text="diuisa est haereditas inter tres" type="straight"/>
+        <underline language="LA" method="pen" text="sorores comitis" type="double"/>
+        <underline language="LA" method="pen" text="supradicti, quarum" type="straight"/>
+        <underline language="LA" method="pen" text="Hugo de Spencer" type="straight"/>
+        <underline language="LA" method="pen" text="Hugo de Audeley" type="straight"/>
+        <underline language="LA" method="pen" text="dominus Rogerus de Tamari" type="straight"/>
+        <underline language="LA" method="pen" text="Iohannes de" type="straight"/>
+        <underline language="LA" method="pen" text="filius &amp; haeres comitis" type="straight"/>
+        <underline language="LA" method="pen" text="est comitatus nobilissimus" type="straight"/>
+        <underline language="LA" method="pen" text="qui quondam dicebatur &amp; erat altera regni columna." type="straight"/>
+        <underline language="LA" method="pen" text="comitis Glouerniae" type="straight"/>
+        <underline language="LA" method="pen" text="baronis de Clifford" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- secu[m] vsu -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- ipsius reportauit -->
+        <mark method="pen" name="comma" place="intext"/> <!-- annos si -->
+        <mark method="pen" name="comma" place="intext"/> <!-- sua fortassis -->
+        
+        <errata amendedtext="magnatib" copytext="magnatibus" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+         
+    </annotation>
+</transcription>

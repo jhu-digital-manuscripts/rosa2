@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.039r.tif" reader="Harvey" signature="[Dviii[r]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="on a hyll" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Annibal euer looked-after hilles for battel, woodes for ambushments [etc]. [the] aduantage of [the]
+                    place, A very special great</marginalia_text>
+                    <person name="Hannibal"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>furtherance.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>A strategem,</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>practicable against Gunnes, by crowding, &amp; thronging togithers, 
+                    &amp; all on [the] suddain aproching upo[n]the[m]</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="on a hyll" type="straight"/>
+        <underline language="EN" method="pen" text="dartes throwen" type="straight"/>
+        <underline language="EN" method="pen" text="Lucullus shulde" type="straight"/>
+        <underline language="EN" method="pen" text="playne toppe of the nexte hylle" type="straight"/>
+        <underline language="EN" method="pen" text="within halfe a" type="straight"/>
+        <underline language="EN" method="pen" text="a sodeyne race he marched" type="straight"/>
+        <underline language="EN" method="pen" text="nere them, that theyr" type="straight"/>
+        <underline language="EN" method="pen" text="no harme nere hande" type="straight"/>
+        <underline language="EN" method="pen" text="with a lustye bolde courage" type="straight"/>
+        <underline language="EN" method="pen" text="he mystrusted nothynge" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="with a lustye bolde courage"/>
+        
+        <mark language="EN" method="pen" name="apostrophe" place="intext" text="on a hyll"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="hash" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.166v.tif" pagination="156" reader="Harvey" signature="[K6v]"/>	<!-- ABO 171left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Semper pueri, qui imparati, cum res vocat.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>They who are unprepared when the matter calls will always be boys.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Euerie mans skill in his owne Horizon.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Bias semper paratus: quia Omnia Sua secum.
+					</marginalia_text>
+					<person name="Bias of Priene"/>
+				</position>
+			</language>
+			<translation>Bias of Priene was always prepared: because all his things were with him.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Apollonius semper paratus: quia pansophus, et in se
+						totus. Ars, et Virtus, nunq[uam] imparata[e].
+					</marginalia_text>
+					<person name="Apollonius of Tyana"/>
+				</position>
+			</language>
+			<translation>Apollonius of Tyana was always prepared because he was pansophist, and every part was in him. Art and virtue are never unprepared.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						Quicq[ui]d est in deo, est deus.
+						Quicqud in viro, vir.
+						Apostoli nullo secum Libro
+					</marginalia_text>
+					<person name="Apostles"/>
+				</position>
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						egebant, aut instrumento. Spiritus supplebat omnia. diuini viri.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Whatever is in God, is God. Whatever is in man, is man. The apostles did not need any books or instruments with them. The Spirit supplied all. Divine men.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Romani semper parati: quià viri animo, et corpore; et seria virtute pra[e]diti.
+						Apostoli semper parati: quia fide, et spe pleni; à solo Deo pendebant, et Seipsis.
+						Stoici semper parati: quia toti in se, et ex se; nullis egebant externis.
+					</marginalia_text>
+					<person name="Apostles"/>
+				</position>
+			</language>
+			<translation>The Romans were always prepared because they were men in mind and body; and they were gifted with serious virtue.
+			The apostles were always prepared because they were full of faith and hope; they depended only on God and themselves.
+			The Stoics were always prepared because they were whole in themselves and from themselves; they did not lack any external things.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="mè stessa" type="straight"/>
+		<underline language="IT" method="pen" text="sorda" type="straight"/>
+		<underline language="IT" method="pen" text="cieca" type="straight"/>
+		<underline language="IT" method="pen" text="condott'al fin la" type="straight"/>
+		<underline language="IT" method="pen" text="gente Greca" type="straight"/>
+		<underline language="IT" method="pen" text="Troiana" type="straight"/>
+		<underline language="IT" method="pen" text="l'ultimo i Romani" type="straight"/>
+		<underline language="IT" method="pen" text="mia spada" type="straight"/>
+		<underline language="IT" method="pen" text="Barbareschi" type="straight"/>
+		<underline language="IT" method="pen" text="interrotti mille pensier" type="straight"/>
+		<underline language="IT" method="pen" text="vostro dolce, qualche amoro" type="straight"/>
+		<underline language="IT" method="pen" text="genti doue" type="straight"/>
+		<underline language="IT" method="pen" text="beneficare insino" type="straight"/>
+		<underline language="IT" method="pen" text="doueuino beneficare" type="straight"/>
+		<underline language="IT" method="pen" text="l'anima di quel" type="straight"/>
+		<underline language="IT" method="pen" text="quella naue disegnata non" type="straight"/>
+		<underline language="IT" method="pen" text="ch'ella era senza" type="straight"/>
+		<underline language="IT" method="pen" text="per" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<mark language="IT" method="pen" name="quotation_mark" place="right_margin" text="vostro dolce, qualche amoro"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- su -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- am -->
+		
+    </annotation>
+</transcription>

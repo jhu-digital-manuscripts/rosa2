@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.109v.tif" pagination="[109v]" reader="John Dee" signature="[Ov[v]]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="con paura era fuggito" hand="Italian" id="BL615d7:615_d_7_f109v:m0001" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Note this fear</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Porto di Guacanagari" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Porto di Guacanagari</marginalia_text>
+                    <person name="Guacanagarix"/>
+                </position>
+            </language>
+            <translation>The port of Guacanagarix.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Guacanagari" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Guacanagari</marginalia_text>
+                    <person name="Guacanagarix"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Isola della Tortuga" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Isola della Tortuga.</marginalia_text>
+                    <location name="Tortuga"/>
+                </position>
+            </language>
+            <translation>The island of Tortuga.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="correnti" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The current</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="fiume Guadalchibir" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Fl[umen] Guadalchibir</marginalia_text>
+                </position>
+            </language>
+            <translation>The Guadalquivir river.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="le correnti" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The current.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Porto di S. Nicolò" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Portus .S[ancti]. Nicolai</marginalia_text>
+                </position>
+            </language>
+            <translation>St Nicholas Port.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Isola di Cuba : la qual cominciò a costeggiare dalla parte di Mezodi" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>by the sowth syde of Cuba.</marginalia_text>
+                    <location name="Cuba"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="vento, il qual superaße le correnti" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Wynde stronger then the Current.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="tornare a scoprire per la costa di Cuba" type="straight"/>
+        <underline language="IT" method="pen" text="hauendo egli certezza, che fosse" type="straight"/>
+        <underline language="IT" method="pen" text="ferma" type="straight"/>
+        <underline language="IT" method="pen" text="seco tre nauigli" type="straight"/>
+        <underline language="IT" method="pen" text="Monte Christo" type="straight"/>
+        <underline language="IT" method="pen" text="al Porto di" type="straight"/>
+        <underline id="BL615d7:615_d_7_f109v:u0001" language="IT" method="pen" text="veduti i nauigli, con paura era" type="double"/>
+        <underline language="IT" method="pen" text="simulando" type="straight"/>
+        <underline language="IT" method="pen" text="sarebbe tornato" type="straight"/>
+        <underline language="IT" method="pen" text="all'Isola della Tortuga" type="straight"/>
+        <underline language="IT" method="pen" text="VI leghe" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; più all'Occidente" type="straight"/>
+        <underline language="IT" method="pen" text="con maretta" type="double"/>
+        <underline language="IT" method="pen" text="ritornaua dalle correnti" type="straight"/>
+        <underline language="IT" method="pen" text="dalle correnti dell'Occidente" type="straight"/>
+        <underline language="IT" method="pen" text="Guadalchibir" type="straight"/>
+        <underline language="IT" method="pen" text="aspettar vento, il qual superaße le correnti" type="straight"/>
+        <underline language="IT" method="pen" text="hauea trouate" type="straight"/>
+        <underline language="IT" method="pen" text="quelle parti assai" type="straight"/>
+        <underline language="IT" method="pen" text="verso Oriente" type="straight"/>
+        <underline language="IT" method="pen" text="Porto di S." type="straight"/>
+        <underline language="IT" method="pen" text="cominciò a costeggiare dalla parte" type="straight"/>
+        
+        
+        
+         <!-- MB. Also note the intext marking in 'XXV di Aprile' -->  <!-- DO: Not sure what this is... -->
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- Christo al -->
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/>  <!-- pensando -->
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <mark method="pen" name="tripunctus" place="tail"/>
+        
+        
+        <physical_link>
+            
+            <marginal_annotation idref="615.d.7:615_d_7_f109v:m0001"/>
+            
+            <marginal_annotation idref="615.d.7:615_d_7_f109v:u0001"/>
+            
+            <relation from="BL615d7:615_d_7_f109v:m0001" to="BL615d7:615_d_7_f109v:u0001" type="directed"/>
+            
+        </physical_link>
+        
+    </annotation>
+</transcription>

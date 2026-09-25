@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.161r.tif" pagination="301" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Iuppiter [...] Statorem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pr[a]ecatio ad Ioue[m] Statore[m]
+                    </marginalia_text>
+                    <person name="Jupiter"/>
+                </position>
+            </language>
+            <translation>
+                A prayer to Jupiter.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        nota
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Abiit, excessit, euasit, erupit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        { abijt excessit euasit erupit }
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                He went, left, got away, broke out.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="retorquet oculos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        retorquere oculos
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To cast one's eyes back on.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in popinam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        popina
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Tavern.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aeternis suppliciis viuos, mortuósque mactabis" type="straight"/>
+        <underline language="LA" method="pen" text="scelus anhelantem, pestem patriae nefarie molientem, vobis atque" type="straight"/>
+        <underline language="LA" method="pen" text="Abiit, excessit, euasit, erupit: nulla iam pernicies à monstro illo atque prodigio moenibus ipsis intra moenia comparabitur" type="straight"/>
+        <underline language="LA" method="pen" text="Non enim iam inter latera nostra sica illa versabitur, non in campo, non in foro, non in curia, non denique intra domesticos parietes pertimescemus" type="straight"/>
+        <underline language="LA" method="pen" text="cruentum mucronem, vt voluit, extulit, quòd" type="straight"/>
+        <underline language="LA" method="pen" text="extorsimus, quòd incolumes ciues" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; retorquet oculos profecto saepe" type="straight"/>
+        <underline language="LA" method="pen" text="tantam pestem euomuerit, forásque proiecerit" type="straight"/>
+        <underline language="LA" method="pen" text="capitalem hostem non comprehenderim" type="straight"/>
+        <underline language="LA" method="pen" text="rem huc deduxi, vt tum palàm pugnare possetis, cum hostem aperte videretis. quem" type="straight"/>
+        <underline language="LA" method="pen" text="contractum in popinam" type="straight"/>
+        <underline language="LA" method="pen" text="collectum ex senibus desperatis, agresti luxuria, ex rusticis mendiculis, ex decocotoribus, ex iis qui vadimonia deserere, quàm illum exercitum maluerunt.              quibus ego non modo si aciem exercitus nostri verumetiam" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="right_margin">21</numeral>    
+        <numeral place="right_margin">18</numeral>    
+        <numeral place="right_margin">21</numeral>    
+        <numeral place="right_margin">18</numeral>    
+        <numeral place="right_margin">18</numeral>    
+        <numeral place="right_margin">21</numeral>    
+        <numeral place="right_margin">18</numeral>    
+        <numeral place="right_margin">12</numeral>    
+        
+    </annotation>
+</transcription>

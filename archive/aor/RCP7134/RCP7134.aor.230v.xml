@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.230v.tif" pagination="[223v]" reader="John Dee" signature="[KK iij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mors extra patria[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Death outside of the fatherland.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Saturnus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♄ cu[m] ☊ ☋</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="North_Node"/>
+                    <symbol_in_text name="South_Node"/>
+                </position>
+            </language>
+            <translation>Saturn with the North and South nodes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oculo Tauri" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Oculus ♉</marginalia_text>
+                    <symbol_in_text name="Taurus"/>
+                </position>
+            </language>
+            <translation>The eye of Taurus.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Ita habet Joannes Gex.</marginalia_text> <!--JG: Unsure who this is. The USTC mentions an author called Gex, but not sure whether this is the same person--> 
+                    <!-- FSF: I have found a Johannes Gex mentioned here https://books.google.co.uk/books?id=pyp2aG60b6sC&pg=PA201&lpg=PA201&dq=johannes+gex&source=bl&ots=PC-PWMxgJ0&sig=hibU-gVYhygtEn4yDdcv28H3olY&hl=en&sa=X&ved=0ahUKEwiwsemLoZXWAhUmJsAKHaAhA4UQ6AEIQTAG#v=onepage&q=johannes%20gex&f=false 
+                    chronologically both would make sense! -->
+                    <person name="Johannes Gex"/>
+                </position>
+            </language>
+            <translation>As Johannes Gex has [it].</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; in magna distantia ab ecliptica" type="straight"/>
+        <underline language="LA" method="pen" text="cum cauda" type="straight"/>
+        <underline language="LA" method="pen" text="natus erit occisor" type="straight"/>
+        <underline language="LA" method="pen" text="Cum Saturnus" type="straight"/>
+        <underline language="LA" method="pen" text="Mercurius maxime hebetatur in humidis signis" type="straight"/>
+        <underline language="LA" method="pen" text="in Scorpione maleficum facit" type="straight"/>
+        <underline language="LA" method="pen" text="secundi loci infortuna peregrina" type="straight"/>
+        
+        <symbol language="LA" name="Mars" place="left_margin" text="Mars"/> 
+        
+    </annotation>
+</transcription>

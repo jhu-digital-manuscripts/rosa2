@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.024r.tif" reader="John Dee" signature="G"/> 
+    <annotation>
+        
+        <marginalia anchor_text="weissen flüß" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Menstruu[m] albu[m]</marginalia_text> 
+                </position>
+            </language>
+            <translation>White menstruation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="febres" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Febres</marginalia_text>
+                </position>
+            </language>
+            <translation>Fevers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="resolvierten visco der erden" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Viscus Terrae resolutus</marginalia_text>
+                </position>
+            </language>
+            <translation>The dispersed entrails of the earth.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="weissen" type="straight"/>
+        <underline language="DE" method="pen" text="febres" type="straight"/>
+        <underline language="DE" method="pen" text="geschwär" type="straight"/>
+        <underline language="DE" method="pen" text="fürdert die rote růr" type="straight"/>
+        <underline language="DE" method="pen" text="haemoroides" type="straight"/>
+        <underline language="DE" method="pen" text="gemeinen faulen wasseren" type="straight"/>
+        <underline language="DE" method="pen" text="etlichs theils auch solcher art sind" type="straight"/>
+        <underline language="DE" method="pen" text="resoluierten visco der erden" type="straight"/>
+        <underline language="DE" method="pen" text="wie ein yetlich erden auß gewalt vnnd art deß Elements aquae" type="straight"/>
+        <underline language="DE" method="pen" text="seyn schwitzende art her" type="double"/>
+        <underline language="LA" method="pen" text="genera vnnd species der erden souilerley" type="straight"/>
+        <underline language="LA" method="pen" text="wasser vnd liquores darauß sich stillieren" type="double"/>
+        <underline language="DE" method="pen" text="fürderen den somen er sy wol oder vbel geseyt" type="triple"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/> <!-- FSF: with tail -->
+        
+        <drawing anchor_text="fürderen den somen er sy wol oder vbel geseyt" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.248r.tif" pagination="13" reader="John Dee" signature="B.iij."/> 
+    <annotation>
+        
+        <marginalia anchor_text="Bernardo Siluanetensi" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bernardus Siluanetensis Comes</marginalia_text>
+                    <person name="Bernard of Senlis"/>
+                </position>
+            </language>
+            <translation>Bernard, Count of Senlis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="filiu[m] regis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Carlomanium</marginalia_text>
+                    <person name="Charles, Duke of Lower Lorraine"/>
+                </position>
+            </language>
+            <translation>Charles.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vt Rex Francis redderetur, eo tenore vt Normanni reciproce filiu[m] regis acciperent obsidem cum duobus episcopis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>obsides pro Rege Normannis dati.</marginalia_text>
+                </position>
+            </language>
+            <translation>Hostages given to the Normans in exchange for the King.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quotidianu[m] victu[m]" hand="Italian" id="RCP10552-2:505:m0001" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Richardus Dux Normania[e] [?] a[e]tate matura erat</marginalia_text>  <!-- DO: not sure about 'Normaoria[e]' or the word which follows - it looks like 'cra[n]diu[m]'? -->  <!-- MB. Not sure about this one either. --> <!-- NBW: First word is 'Normaniae', not sure about the second. Dee is either accepting the reading that Richard is a boy-->
+                    <person name="Richard I of Normandy"/>
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <marginalia anchor_text="Epte" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Epta</marginalia_text>
+                </position>
+            </language>
+            <translation>Epte.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="regis filiu[m], qui medio te[m]pore mortuus est" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Regis Ludouici filius: moriebatur obses</marginalia_text>
+                    <person name="Louis IV of France"/>
+                    <person name="Charles, Duke of Lower Lorraine"/>
+                </position>
+            </language>
+            <translation> The son of King Louis, a hostage, dies.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Radulphus Torta" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Radulphus Torta.</marginalia_text>
+                    <person name="Rodolf Torta"/>
+                </position>
+            </language>
+            <translation>Rodolf Torta.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praesule[m]" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pra[e]sul Parisiensis</marginalia_text>
+                </position>
+            </language>
+            <translation>The priest of Paris.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="filiu[m] suum" hand="Italian" method="pen"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>filius Radulfi Torta[e]</marginalia_text>
+                    <person name="Rodolf Torta"/> 
+                    <person name="Walter Torta"/>
+                </position>
+            </language>
+            <translation>The son of Rodolf Torta.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="reconciliato sibi filio suo Swano" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Haraldi et filij sui Sweni pax.</marginalia_text>
+                    <person name="Harald Bluetooth"/>
+                    <person name="Sweyn Forkbeard"/>
+                </position>
+            </language>
+            <translation>The peace of Harald and his son Sweyn.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Emmam" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Emma.</marginalia_text>
+                    <person name="Emma of Paris"/>
+                </position>
+            </language>
+            <translation>Emma.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="transrenanum regem Othone[m]; Lodowici regis Franci[a]e &amp; Arnulfi Flandrensis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[ Otho Rex Trans[rhenanus] Ludovicus R[ex] Fr[anciae] Arnulf[us] com[es] Fl[andrensis] Conspiratores.</marginalia_text>
+                    <person name="Otto I the Great"/>
+                    <person name="Louis IV of France"/>
+                    <person name="Arnulf I, Count of Flanders"/>
+                </position>
+            </language>
+            <translation>[ Otto, King of the trans-Rhine region; Louis, King of France; Arnulf, Count of Flanders: Conspirators.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nepotem" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nepos regis Oth[onis]</marginalia_text>
+                    <person name="Lothair of France"/>
+                    <person name="Otto I the Great"/>
+                </position>
+            </language>
+            <translation>The nephew of King Otto.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nepote regis Othonis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nepos Othonis interfectus</marginalia_text>
+                    <person name="Lothair of France"/>
+                    <person name="Otto I the Great"/>
+                </position>
+            </language>
+            <translation>Otto's nephew killed.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>One Traitre wold betray an other.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A[nn]⁰ 955: Gag.</marginalia_text>  <!-- DO: Not sure what the 'Gag.' stands for -->
+                </position>
+            </language>
+            <translation>In the year 955.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Per tuos, inquit" type="straight"/>
+        <underline language="LA" method="pen" text="o filia stude" type="straight"/>
+        <underline language="LA" method="pen" text="iuuare, quonia[m] de proprijs oportet me tractare" type="straight"/>
+        <underline language="LA" method="pen" text="Bernardo Siluanetensi" type="straight"/>
+        <underline language="LA" method="pen" text="apud S. Clerum" type="straight"/>
+        <underline language="LA" method="pen" text="filiu[m] regis" type="straight"/>
+        <underline language="LA" method="pen" text="Beluacensi &amp; Suessionensi" type="straight"/>
+        <underline language="LA" method="pen" text="fluuium Epte" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; obsides reddu[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="pr[a]eter regis filiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="puer Rich" type="straight"/>
+        <underline language="LA" method="pen" text="Radulphus Torta" type="straight"/>
+        <underline id="RCP10552-2:505:u0001" language="LA" method="pen" text="quotidianu[m] victu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="qua[m] 12. nu[m]mos" type="straight"/>
+        <underline language="LA" method="pen" text="Quamobre[m] dux iuuenis" type="straight"/>
+        <underline language="LA" method="pen" text="ciuitatis praesule[m]" type="straight"/>
+        <underline language="LA" method="pen" text="nomine Emmam illi despondit" type="straight"/>
+        <underline language="LA" method="pen" text="totius fraudis incentorem" type="straight"/>
+        <underline language="LA" method="pen" text="magnaru[m] virium duces" type="straight"/>
+        <underline language="LA" method="pen" text="Lothariense regnum illi contraderet" type="straight"/>
+        <underline language="LA" method="pen" text="Lodowici regis" type="straight"/>
+        <underline language="LA" method="pen" text="Arnulfi Flandrensis" type="straight"/>
+        <underline language="LA" method="pen" text="super Hugone[m] magnum" type="straight"/>
+        <underline language="LA" method="pen" text="consumptisq[ue] omnibus quae illius erant extra oppida" type="straight"/>
+        <underline language="LA" method="pen" text="milite nepotem" type="straight"/>
+        <underline language="LA" method="pen" text="po[n]tem nepote regis Othonis" type="straight"/>
+        <underline language="LA" method="pen" text="lento gradu" type="double"/>
+        <underline language="LA" method="pen" text="eam inexpugnabilem" type="straight"/>
+        <underline language="LA" method="pen" text="distrahendo Arnulfo" type="straight"/>
+        <underline language="LA" method="pen" text="eo traditionis" type="double"/>
+        <underline language="LA" method="pen" text="Othonis Germanoru[m] imperatoris" type="straight"/>
+        <underline language="LA" method="pen" text="Lodowici regis" type="straight"/>
+        <underline language="LA" method="pen" text="finis" type="triple"/>
+        <underline language="LA" method="pen" text="Richardus Hugonis filiam ducit" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- suum ciuitatis -->
+        <mark method="pen" name="comma" place="intext"/> <!-- Normannis intra -->
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+       
+        <graph book_orientation="0" method="pen" place="tail" type="genealogical_tree">
+            <node id="n1" person="Rollo">Rollo</node>
+            <node id="n2" person="William I Longsword">Will[ia]mus</node>
+            <node id="n3" person="Richard I of Normandy">Richardus .I Dux N[orthmannicae]</node>
+            <node id="n4" person="Hugh the Great">Hugo magnus</node>
+            <node id="n5" person="Emma of Paris">Emma</node>
+            <link from="n1" relationship="has_child" to="n2"/>
+            <link from="n2" relationship="has_child" to="n3"/>
+            <link from="n5" relationship="has_child" to="n4"/>
+            <link from="n5" relationship="has_spouse" to="n3"/>
+            <link from="n3" relationship="has_spouse" to="n5"/>       
+        </graph>
+        
+       <physical_link>
+           <marginal_annotation idref="RCP10552-2:505:m0001"/>
+           <marginal_annotation idref="RCP10552-2:505:u0001"/>
+           <relation from="RCP10552-2:505:m0001" to="RCP10552-2:505:u0001" type="undirected"/>
+       </physical_link>
+        
+    </annotation>
+</transcription>

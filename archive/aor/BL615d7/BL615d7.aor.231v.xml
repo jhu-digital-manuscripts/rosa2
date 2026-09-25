@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.231v.tif" pagination="[2321v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Aòamaquique" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aoamaquiq[ue]</marginalia_text>
+                    <location name="Aoamaquique"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Maima" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Maima</marginalia_text>
+                    <location name="Maima"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="di XXX leghe" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>30 leagues</marginalia_text>
+                </position>
+            </language>
+        </marginalia> 
+            
+        <underline language="IT" method="pen" text="Indiani soli" type="straight"/>
+        <underline language="IT" method="pen" text="destri tanto" type="straight"/>
+        <underline language="IT" method="pen" text="Golfo, nuotando" type="straight"/>
+        <underline language="IT" method="pen" text="no à pigliarla" type="straight"/>
+        <underline language="IT" method="pen" text="ui entrano" type="straight"/>
+        <underline language="IT" method="pen" text="punta Orientale dell'" type="straight"/>
+        <underline language="IT" method="pen" text="Aòamaquique" type="straight"/>
+        <underline language="IT" method="pen" text="così" type="straight"/>
+        <underline language="IT" method="pen" text="de Maima" type="straight"/>
+        <underline language="IT" method="pen" text="haueuamo fatti forti" type="straight"/>
+        <underline language="IT" method="pen" text="di XX leghe" type="double"/>
+        <underline language="IT" method="pen" text="che vna Isoletta, ò scoglio" type="straight"/>
+        <underline language="IT" method="pen" text="gran calma" type="double"/>
+        
+    </annotation>
+</transcription>

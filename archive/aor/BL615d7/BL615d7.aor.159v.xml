@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.159v.tif" pagination="[159v]" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="un' altra corrente in opposito della sopradetta" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Note these contrary currents in one bay.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="vn' alto scoglio, che chiamò il Gallo" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Il Gallo,</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>a high rok</marginalia_text>
+                </position>
+            </language>
+            <translation>A high rock which is called the Rooster.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="dal Golfo, che hora chiamano di Paria" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Golfo di Paria</marginalia_text>
+                    <location name="Gulf of Paria"/>
+                </position>
+            </language>
+            <translation>The Gulf of Paria.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="vn'altro scoglio" type="straight"/>
+        <underline language="IT" method="pen" text="il Gallo" type="straight"/>
+        <underline language="IT" method="pen" text="l'acqua verso" type="straight"/>
+        <underline language="IT" method="pen" text="Tramontana con" type="straight"/>
+        <underline language="IT" method="pen" text="per lo spauento" type="straight"/>
+        <underline language="IT" method="pen" text="di Paria" type="straight"/>
+        <underline language="IT" method="pen" text="vn'altra" type="straight"/>
+        <underline language="IT" method="pen" text="in opposito della sopradetta" type="double"/>
+        <underline language="IT" method="pen" text="giostranti" type="straight"/>
+        <underline language="IT" method="pen" text="grandissimo romore" type="straight"/>
+        <underline language="IT" method="pen" text="monte, o fil di montagna" type="straight"/>
+        <underline language="IT" method="pen" text="Il qual monte venne alla volta de' nauigli" type="straight"/>
+        <underline language="IT" method="pen" text="che li leuò in alto" type="straight"/>
+        <underline language="IT" method="pen" text="la Bocca del Dragone" type="straight"/>
+        <underline language="IT" method="pen" text="tra la punta della Tramontana Occidentale della" type="straight"/>
+        
+        
+    </annotation>
+    </transcription>

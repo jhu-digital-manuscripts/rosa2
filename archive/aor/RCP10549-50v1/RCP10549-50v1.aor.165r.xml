@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.165r.tif" pagination="309" reader="John Dee" signature="vv.iii."/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Prodigia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Portent.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de coelo percussas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        de co[e]lo percuti
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be struck by lightening.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Romulus
+                    </marginalia_text>
+                    <person name="Romulus"/>
+                </position>
+            </language>
+            <translation>
+                Romulus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aruspices" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aruspices
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Diviners.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in aedem Concordiae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        a[e]des Concordi[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Temple of Concord.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Repetitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Repetition.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="consilio, &amp; gesta, &amp; prouisa esse videantur" type="straight"/>
+        <underline language="LA" method="pen" text="visas nocturno tempore ab occide[n]te faces, ardorémque coeli, vt fulminum iactus, vt terraemotus,              caeteráque quae tam multa nobis Consulibus facta sunt, vt haec quae nunc fiunt, canere dii immortales viderentur: hoc certe" type="straight"/>
+        <underline language="LA" method="pen" text="turres de coelo esse percussas" type="straight"/>
+        <underline language="LA" method="pen" text="Tactus est etiam ille, qui hanc vrbem condidit, Romulus" type="straight"/>
+        <underline language="LA" method="pen" text="in Capitolio paruum atque lactentem vberibus lupinis inhiantem fuisse meministis. quo quidem tempore" type="straight"/>
+        <underline language="LA" method="pen" text="imperii occasum appropinquare" type="straight"/>
+        <underline language="LA" method="pen" text="Iouis facere maius, &amp; in excelsum collocare, &amp; contrà atque antè fuerat" type="straight"/>
+        <underline language="LA" method="pen" text="tam auersus, à vero, tam praeceps, tam mente captus, qui neget" type="straight"/>
+        <underline language="LA" method="pen" text="quae videmus, praecipuéque hanc vrbem deorum immortalium nutu atque potestate administrari?" type="straight"/>
+        <underline language="LA" method="pen" text="Concordiae" type="straight"/>
+        <underline language="LA" method="pen" text="funestos ac nefarios ignes inferre conati" type="straight"/>
+        <underline language="LA" method="pen" text="quibus ego si me restitisse dicam, nimium" type="straight"/>
+        <underline language="LA" method="pen" text="qui nos non pugnando, sed tacendo superare potuerunt? Quamobrem" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">10</numeral>
+        
+    </annotation>
+</transcription>

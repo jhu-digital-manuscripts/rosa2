@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.072r.tif" pagination="lxviii[r]" reader="Harvey"/>
+    <annotation>
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="be in their" type="straight"/>
+    	<underline language="EN" method="pen" text="The artillery I would" type="straight"/>
+    	<underline language="EN" method="pen" text="without, on the left" type="straight"/>
+    	<underline language="EN" method="pen" text="other on the right" type="straight"/>
+    	<underline language="EN" method="pen" text="light horsemen" type="straight"/>
+    	<underline language="EN" method="pen" text="to discouer the countrie" type="straight"/>
+    	<underline language="EN" method="pen" text="men of armes, I" type="straight"/>
+    	<underline language="EN" method="pen" text="concerning horse" type="straight"/>
+    	<underline language="EN" method="pen" text="this for a general rule" type="straight"/>
+    	<underline language="EN" method="pen" text="alwaies they ought" type="straight"/>
+    	<underline language="EN" method="pen" text="either behinde" type="straight"/>
+    	<underline language="EN" method="pen" text="or on the flancks of the same" type="straight"/>
+    	<underline language="EN" method="pen" text="them afore, ouer" type="straight"/>
+    	<underline language="EN" method="pen" text="either that" type="straight"/>
+    	<underline language="EN" method="pen" text="let no man" type="straight"/>
+    	<underline language="EN" method="pen" text="litle this remembraunce" type="straight"/>
+    	<underline language="EN" method="pen" text="hauing taken no hede therof, haue been" type="straight"/>
+    	<underline language="EN" method="pen" text="carriages and the vnarmed men are" type="straight"/>
+    	<underline language="EN" method="pen" text="the roome that remayneth within the army" type="straight"/>
+    	<underline language="EN" method="pen" text="maye giue the waye easyly, to whome so" type="straight"/>
+    	<underline language="EN" method="pen" text="one corner to the other" type="straight"/>
+    	<underline language="EN" method="pen" text="the one head, to the" type="straight"/>
+    	<underline language="EN" method="pen" text="quadrante is made of twoo" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="artillerie" type="straight"/>
+    	<underline language="EN" method="pen" text="The lighte horsemen" type="straight"/>
+    	<underline language="EN" method="pen" text="discouer the countrie" type="straight"/>
+    	<underline language="EN" method="pen" text="armes to come behinde" type="straight"/>
+    	<underline language="EN" method="pen" text="A general rule concerning horse" type="straight"/>
+    	<underline language="EN" method="pen" text="carriages &amp; the vnarmed" type="straight"/>
+    	
+    	<!-- Symbols -->
+    	<symbol name="Bisected_circle" place="right_margin"/>
+
+    	<!-- Marks -->
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	
+    	<mark method="pen" name="hash" place="right_margin"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="A general rule concerning horse"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="right_margin" text="A general rule concerning horse"/>
+    	<mark method="pen" name="plus_sign" place="right_margin"/>
+    	
+    	<mark method="pen" name="dot" place="intext"/> <!-- places, the -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="without"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="light horsemen"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="to discouer the countrie"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="concerning horse"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="this for a general rule"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="alwaies they ought"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- them, or -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the roome that remayneth within the army"/>
+    	<mark method="pen" name="bracket" place="intext"/>
+    	<mark method="pen" name="bracket" place="intext"/>
+    	
+    	<!-- Errata -->
+    	<errata amendedtext="whoe" copytext="whome" language="EN"/>
+    	
+    </annotation>
+</transcription>

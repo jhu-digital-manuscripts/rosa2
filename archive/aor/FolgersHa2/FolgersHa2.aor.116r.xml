@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.116r.tif" pagination="55" reader="Harvey" signature="D4[r]"/>	<!-- ABO 120right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						The dowtiest actions ar to be managed valiantly, &amp;
+						pleasantly.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						The most laborious works to be dispatched constantly,
+						and delightfully. 
+						Allthings woold be doone diligently, &amp; delectably.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						[Quarto] di Guazzo.
+					</marginalia_text>
+					<person name="Stefano Guazzo"/>
+					<book title="The civil conversation"/>
+				</position>
+			</language>
+			<translation>
+				Guazzo's fourth book.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Virtu doth allwais dispose the Will, to accomplish
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						her actions reddily,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						&amp; delectably. A nimble &amp; iollie actour.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						A speedie, and gallant man.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						vna distinctionu[m] inter principes, et
+						priuatos.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				One of the differences between princes and private citizens.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( A serious, &amp; cheerfull workman. )
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Prodest, legere sa[e]pè: repetere sa[e]piùs: agere sa[e]pissimiè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It is useful to read often, repeat more often, and to do most often.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Gods factour: the Kinges agent: his owne actour.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						The most industrious, &amp; / uigorous of all other.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="che io vi sommergo" type="straight"/>
+		<underline language="IT" method="pen" text="voi non sommergessi me" type="straight"/>
+		<underline language="IT" method="pen" text="Proprie" type="straight"/>
+		<underline language="IT" method="pen" text="qualità delle donne" type="straight"/>
+		<underline language="IT" method="pen" text="la vanità" type="straight"/>
+		<underline language="IT" method="pen" text="nobil donna Sanese" type="straight"/>
+		<underline language="IT" method="pen" text="lodata" type="straight"/>
+		<underline language="IT" method="pen" text="che il meritaua" type="straight"/>
+		<underline language="IT" method="pen" text="per il studio di contradire" type="straight"/>
+		<underline language="IT" method="pen" text="repulsa riceuuta" type="straight"/>
+		<underline language="IT" method="pen" text="vanità" type="straight"/>
+		<underline language="IT" method="pen" text="leggerezza" type="straight"/>
+		<underline language="IT" method="pen" text="prontamente" type="straight"/>
+		<underline language="IT" method="pen" text="la vanità, &amp; la leggerezza alle Donne" type="straight"/>
+		<underline language="IT" method="pen" text="rimarrà egli" type="straight"/>
+		<underline language="IT" method="pen" text="magnificentia regia" type="straight"/>
+		<underline language="IT" method="pen" text="l'amplitudine del donatore" type="straight"/>
+		<underline language="IT" method="pen" text="cinquanta talenti" type="straight"/>
+		<underline language="IT" method="pen" text="ne basta dieci" type="straight"/>
+		<underline language="IT" method="pen" text="bastarebbe hauerne dieci" type="straight"/>
+		<underline language="IT" method="pen" text="me non basta darne si pochi." type="straight"/>
+		
+		<symbol name="Sun" place="right_margin"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Io credo ben (soggiunse Alessandro) che à te     bastarebbe hauerne dieci, ma à me non basta darne si pochi."/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- gentilhuo -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- vani- -->
+		<mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- Ma -->
+		
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="voi non sommergessi me"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Proprie"/>
+		
+		<mark method="pen" name="plus_sign" place="tail"/>
+		
+    </annotation>
+</transcription>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>106</totalPages>
+    <dimensions units="mm">
+        <width>228</width>
+        <height>299</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id=" Corps de Policie by Christine de Pizan">
+            <language>fr</language>
+            <title> Corps de Policie by Christine de Pizan</title>
+            <textId/>
+            <pages end="106v" start="1r">106</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>30</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Le livre du corps de policie by Christine de Pizan</title>
+            <commonName>Français 1197</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>Paris, France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 1197</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Le livre du corps de policie par Christine de Pisan</title>
+            <commonName>Français 1176</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris, France</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 1197</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

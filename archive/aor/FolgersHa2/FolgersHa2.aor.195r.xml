@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.195r.tif" pagination="213" reader="Harvey" signature="O3r"/>	<!-- ABO 199right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						The world as right, as a Rams horne.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( Nulla alia
+						in Mundo cura: solum, totumq[ue], Onus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>No other care in the world: only, and wholly, one burden.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Olim Ca[e]sar: nuper Columbus: hodie Oriens. Hodie. 
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+					<person name="Columbus"/>
+					<location name="Orient"/>
+				</position>
+			</language>
+			<translation>Once Caesar, recently Columbus: today the Orient. Today.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Pra[e]clarrissima Mundi securitas, nihil omnium rerum curare, pra[e]ter vnum in manu
+						Solem. Et frustra alia, sciebam, qua[e] sciebam vniuersa; donec Hoc vnum
+						sapiebam super omnia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The most famous safety in the world, to care for none of all matters, except only for the one at hand.
+			And I knew those other vain matters, which I knew were universal; as long as I understood this one thing above all.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Quod iam agitur, aut nunc tractandum est; Id Vnum est instar Omnium.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>What already is done, or must be handled now; this one thing is an example for all the rest..</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="questa machina" type="straight"/>
+		<underline language="IT" method="pen" text="globo vniuersale" type="straight"/>
+		<underline language="IT" method="pen" text="piu degno di forma, d'animo, d'ingegno" type="straight"/>
+		<underline language="IT" method="pen" text="fortuna l'vn' huomo che l'altro" type="straight"/>
+		<underline language="IT" method="pen" text="Leone" type="straight"/>
+		<underline language="IT" method="pen" text="Aquila che'l" type="straight"/>
+		<underline language="IT" method="pen" text="armonia" type="straight"/>
+		<underline language="IT" method="pen" text="perfettione di questo globo" type="straight"/>
+		<underline language="IT" method="pen" text="nella varietà di questi" type="straight"/>
+		<underline language="IT" method="pen" text="diuersità di quei superiori" type="straight"/>
+		<underline language="IT" method="pen" text="cieli" type="straight"/>
+		<underline language="IT" method="pen" text="pianeti" type="straight"/>
+		<underline language="IT" method="pen" text="gli elementi sieno tutti infra loro di" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; di pari eccellenza" type="straight"/>
+		<underline language="IT" method="pen" text="non può" type="straight"/>
+		<underline language="IT" method="pen" text="huomini" type="straight"/>
+		<underline language="IT" method="pen" text="altri animali, sieno tutti" type="straight"/>
+		<underline language="IT" method="pen" text="di pari forma" type="straight"/>
+		<underline language="IT" method="pen" text="pari dignità" type="straight"/>
+		<underline language="IT" method="pen" text="ciascuno per le cagioni sopradette" type="straight"/>
+		<underline language="IT" method="pen" text="nel suo grado à proportione" type="straight"/>
+		<underline language="IT" method="pen" text="non si puo" type="straight"/>
+		<underline language="IT" method="pen" text="dolesse con la" type="straight"/>
+		<underline language="IT" method="pen" text="Apollo al soprano della sua cetera" type="straight"/>
+		<underline language="IT" method="pen" text="soprano della sua cetera" type="straight"/>
+		<underline language="IT" method="pen" text="quella corda piu sottile" type="straight"/>
+		<underline language="IT" method="pen" text="essa corda con Apollo" type="straight"/>
+		<underline language="IT" method="pen" text="piu sottile" type="straight"/>
+		<underline language="IT" method="pen" text="nel sonare la trauagliasse" type="straight"/>
+		<underline language="IT" method="pen" text="la sua querela non" type="straight"/>
+		<underline language="IT" method="pen" text="mia armonia perfetta" type="straight"/>
+		<underline language="IT" method="pen" text="per rispetto d'vna corda sola" type="straight"/>
+		<underline language="IT" method="pen" text="guasti" type="straight"/>
+		<underline language="IT" method="pen" text="l'armonia di tutte l'altre" type="straight"/>
+		<underline language="IT" method="pen" text="saggio Lorenzo" type="straight"/>
+		<underline language="IT" method="pen" text="sententia" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--lauuenan-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--medesi-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ce-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--sot-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ra-->
+		
+		<mark method="pen" name="dot" place="intext"/> <!--terrestre, il-->
+		<mark method="pen" name="equal_sign" place="intext"/>
+		<mark method="pen" name="apostrophe" place="intext"/> <!--altre. Et-->
+		
+		
+    </annotation>
+</transcription>

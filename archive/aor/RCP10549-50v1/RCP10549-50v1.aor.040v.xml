@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.040v.tif" pagination="64" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="oppidum [...] oppressum direptúmque" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        oppidu[m] opp[re]ssu[m] direptu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A town, taken and plundered.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="denuo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        denuo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Anew.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aduentus istius gratissimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        adue[n]tus istius est g[ra]tiss[imus]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A most welcome arrival of him.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="qui mortuum Cn. Carbone[m] oderint" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        mortuu[m] oderi[n]t
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                They may detest of the dead.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="occultum, intestinum, ac domesticum malum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        malu[m] occultu[m] intestinu[m] domesticu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The evil, hidden, civil, domestic.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mos maiorum ferebat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        mos maioru[m] ferebat
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To act according to the customs of the ancestors.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inimicissimu[m], atque improbissimum testimonium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        testimoniu[m] inimiciss[imum] imp[ro]biss[imum]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Most hostile and shameless testimony.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]flagrauit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        co[n]flagrare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To burn.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Petitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Petition.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cui aduentus istius gratissimus" type="straight"/>
+        <underline language="LA" method="pen" text="habuit honorem vt proditori, non vt amico fidem" type="straight"/>
+        <underline language="LA" method="pen" text="nullae sunt occultiores insidiae, quàm hae quae latent in simulatione officii, aut in aliquo necessitudinis nomine.              Nam eum qui palàm est aduersarius, facile cauendo vitare possis" type="straight"/>
+        <underline language="LA" method="pen" text="Ille miser cum esset, tum proditione" type="straight"/>
+        <underline language="LA" method="pen" text="flagrauit" type="straight"/>
+        <underline language="LA" method="pen" text="Nolite quaeso" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">16</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">10</numeral>        
+        
+        <drawing anchor_text="nullae sunt occultiores insidiae, quàm hae quae latent in simulatione officii, aut in aliquo necessitudinis nomine.              Nam eum qui palàm est aduersarius, facile cauendo vitare possis" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.168r.tif" pagination="335" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Consitutio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Constitutio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Convention.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="κατ’ ἀντίθεσιν" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>κατ’ ἀντίθεσιν</marginalia_text>
+                </position>
+            </language>
+            <translation>By antithesis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀντέγκλημα" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἀντέγκλημα</marginalia_text>
+                </position>
+            </language>
+            <translation>Counter-claim.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mancinus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mancinus</marginalia_text>
+                    <person name="Gaius Hostilius Mancinus"/>
+                </position>
+            </language>
+            <translation>Mancinus</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nam in comparatione maloru[m] boni locum obtinet leuius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>In Comparatione maloru[m] boni Locum obtinet leuius</marginalia_text> 
+                </position>
+            </language>
+            <translation>In comparision with bad things the lesser evil counts as good.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="improbabile" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="In Comparatione maloru[m] boni Locum obtinet leuius" book_orientation="0" method="pen" place="tail" type="florilegium"/>
+        
+    </annotation>
+</transcription>

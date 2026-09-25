@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>MS Codex 906, Philadelphia, PA, University of Pennsylvania (olim MS French 1).
+                     French, last quarter of the fifteenth century. Contains
+                     <hi rend="italics">Roman de la Rose</hi> (folios <locus from="1" to="340">1-340</locus>).</p>
+        </note>
+        <note rend="BASIC INFORMATION">
+          <p>Paper, 300 x 210 mm
+                  340 folios. (Modern foliation begins on fol. <locus>2</locus>, i.e.
+                  fol. <locus>2</locus> labeled “1” in modern hand – since foliation skips fol. <locus>318</locus>,
+                  count comes out the same by end.) </p>
+        </note>
+        <note rend="MATERIAL">
+          <p><material>Paper</material>, in good condition aside from worm/insect holes through first couple of
+                  quires. The first nineteen quires contain numerous examples of a watermark
+                  matching Briquet 1799. Quire XX, copied by a different scribe, contains Briquet
+                  1548 and 1701. Quire XXI contains a watermark very similar to Briquet 1546, with
+                  the exception that the three “arrows” are simply straight lines with no points on
+                  the end, as well as another watermark not found in Briquet.</p>
+          <p>Briquet numbers from C. M. Briquet, <hi rend="italics">Les Filigranes:
+                     Dictionnaire Historique des Marques du Papier dès leur Apparition vers 1282
+                     jusqu'en 1600.</hi> 4 vols. New York: Hacker Art Books, 1966:</p>
+          <p>1799: “31X44. Toulouse, 1474. A. MUN., CC. 1106 : <hi rend="italics">Pièces à l’appui des cptes</hi>.”</p>
+          <p>1548: “31X44. Châteaudun, 1463. A. EURE-ET-LOIR, E. 2739: <hi rend="italics">Tabellionage</hi>. Var. ident. : Blois, 1466; Poitiers, 1466-74;
+                  Bretagne, 1472.”</p>
+          <p>1701: “31,5X44. Châteaudun, 1454. A. EURE-ET-LOIR, E. 2734. : <hi rend="italics">Tabellionage</hi>. Var. ident. : Orleans, 1457;
+                  Châteaudun, 1457-65; Champagne (Sarthe), 1458; Angers, 1464</p>
+          <p>1546: “31X44. Châteaudun, 1457. IBID. E. 2735 : <hi rend="italics">id.</hi> Var. simil. : Blois, 1496.</p>
+          <p>On the basis of this evidence, we are able to establish a <hi rend="italics">terminus a quo</hi> for the manuscript of 1474. It is interesting to note,
+                  however, that quires XX and XXI are on paper dating as much as twenty years prior
+                  to this time, and that each is the work of a different scribe. </p>
+        </note>
+        <note rend="QUIRES">
+          <p>Bound in gatherings of 16 with the exception of quire XIX. No quire numbers.
+                  Signatures at bottom right; note that signature <hi rend="italics">a</hi> begins
+                  on fol. 2 (the first folio with text), and thus runs ai-avii (i.e. not ai-aviii,
+                  which one would expect in a quire of 16 leaves). Alphabet does not include <hi rend="italics">j</hi> in labeling quires. Quire XX, where there is a change of
+                  hand, simply numbers first eight leaves i-viij, as does XXI (where there is
+                  another change of hand). Quire XXI is also numbered, although there is no apparent
+                  need for this since it is a bifolium. Catchwords at bottom center, often cropped.</p>
+          <list>
+            <item n="I">
+              <locus from="1" to="16">1-16</locus>
+            </item>
+            <item n="II">
+              <locus from="17" to="32">17-32</locus>
+            </item>
+            <item n="III">
+              <locus from="33" to="48">33-48</locus>
+            </item>
+            <item n="IV">
+              <locus from="49" to="64">49-64</locus>
+            </item>
+            <item n="V">
+              <locus from="65" to="80">65-80</locus>
+            </item>
+            <item n="VI">
+              <locus from="81" to="96">81-96</locus>
+            </item>
+            <item n="VII">
+              <locus from="97" to="112">97-112</locus>
+            </item>
+            <item n="VIII">
+              <locus from="113" to="128">113-128</locus>
+            </item>
+            <item n="IX">
+              <locus from="129" to="144">129-144</locus>
+            </item>
+            <item n="X">
+              <locus from="145" to="160">145-160</locus>
+            </item>
+            <item n="XI">
+              <locus from="161" to="176">161-176</locus>
+            </item>
+            <item n="XII">
+              <locus from="177" to="192">177-192</locus>
+            </item>
+            <item n="XIII">
+              <locus from="193" to="208">193-208</locus>
+            </item>
+            <item n="XIV">
+              <locus from="209" to="224">209-224</locus>
+            </item>
+            <item n="XV">
+              <locus from="225" to="240">225-240</locus>
+            </item>
+            <item n="XVI">
+              <locus from="241" to="256">241-256</locus>
+            </item>
+            <item n="XVII">
+              <locus from="257" to="272">257-272</locus>
+            </item>
+            <item n="XVIII">
+              <locus from="273" to="288">273-288</locus>
+            </item>
+            <item n="XIX"><locus from="289" to="306">289-306</locus>(gathering of 18 rather than 16 leaves)</item>
+            <item n="XX">
+              <locus from="307" to="322">307-322</locus>
+            </item>
+            <item n="XXI">
+              <locus from="323" to="338">323-338</locus>
+            </item>
+            <item n="XXII">
+              <locus from="339" to="340">339-340</locus>
+            </item>
+          </list>
+          <p>i + 340 + i. Bound in gatherings of 16 with the exception of quire XIX. No quire numbers. Signatures at bottom right; note that signature a begins on fol. <locus>2</locus> (the first folio with text), and thus runs ai-avii (i.e. not ai-aviii, which one would expect in a quire of 16 leaves).  Alphabet does not include j in labeling quires.  Quire XX, where there is a change of hand, simply numbers first eight leaves i-viij, as does XXI (where there is another change of hand). Quire XXII is also numbered, although there is no apparent need for this since it is a bifolium.  Catchwords at bottom center, often cropped. Modern foliation begins on fol. <locus>2</locus>, i.e. fol. <locus>2</locus>labeled “1” in modern hand – since foliation skips fol. <locus>318</locus>, count comes out to 340, which is accurate, by the end. In this description, pages are numbered sequentially beginning with fol. <locus>1r</locus>, as indicated in the collation.</p>
+        </note>
+        <note rend="LAYOUT">
+          <p>Ruled in drypoint, with only four lines to define text block; no ruling for
+                  individual lines of verse. No prickings. Single text block with one column of text
+                  per leaf; text block varies in size, usually 190mm x 100-110mm. Usually 33-35
+                  lines in first twenty quires; 31-34 in quire XX; 31-33 in quire XXI; 33-37 lines
+                  in XXII.</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>The main scribal hand, using brown ink and a cursiva script, is responsible for
+                  the first nineteen quires. A second hand copied quire XX; XXI in a hand similar to
+                  main scribe, but likely a third scribe. Lines following rubricated initials use a
+                  larger, slightly more formal script. Corrections are sparse, although there are a
+                  few (see, e.g., lining through at bottom of fol. <locus>306</locus>). No running
+                  heads.</p>
+        </note>
+        <note rend="DECORATION">
+          <p>A number of rubricated headings throughout, usually with guide line written in
+                  brown ink in the margin; these marginal guides often partially cropped. Numerous
+                  two-line rubricated capitals throughout. The initial of each line (other than
+                  two-line rubricated initials) touched in yellow.</p>
+          <p>No line fillers. There are no miniatures or illuminations, but spaces
+                  approximately nine lines in height were left for them; these are frequent in the
+                  beginning of the manuscript, but become progressively less so and eventually
+                  disappear.</p>
+        </note>
+        <note rend="BINDING">
+          <p>Blind-stamped contemporary calf, rebacked (Zacour – Hirsch). No clasps or metallic
+                  pieces. One paper flyleaf each at beginning and end, thus i + 340 + i. Title on
+                  spine: “LE ROMAN DE LA ROSE” “DE JEAN MEUN DIT CLOPINEL” “MANUSCRIPT DU XV ?
+                  [S]IECLE.” Parchment binding fragment shows between folios <locus>338</locus> and
+                     <locus>339</locus>.</p>
+        </note>
+        <note rend="HISTORY">
+          <p>According to the University of Pennsylvania catalog entry, “Sold in the Ashburnham
+                  collection at auction at Sotheby’s, 10 June 1901, lot 607,” and “Purchased from
+                  Librairie J. Thiebaud, 1950.” Written on inside front cover: “Archives du
+                  Bibliophile XV Bulletin No.” and a signature that Zacour-Hirsch transcribe
+                  “Marcel(?).” On folio 2r: “Delaplanches.” A scrap of paper containing verses
+                  64-73, apparently by main scribe’s hand is pasted on fol. 1.</p>
+          <p>Previous descriptions:</p>
+          <p>Zacour, Norman P. and Rudolf Hirsch. <hi rend="italics">Catalogue of Manuscripts
+                     in the Libraries of the University of Pennsylvania to 1800.</hi> Philadelphia:
+                  U of Pennsylvania P, 1965. p. 54.</p>
+          <p>
+            <hi rend="italics">Archives du bibliophile; ou, Bulletin de l'amateur de livres et
+                     du libraire. Bulletin XV.</hi>
+          </p>
+          <p>See also call number “Ms. Codex 906” in the Penn Libraries Catalog, available
+                  online.</p>
+        </note>
+        <note>
+          <p>Description by Timothy L. Stinson</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">Penn Codex 906</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="340" unit="folios">340 folios</measure>
+            <dimensions>
+              <height unit="mm">300</height>
+              <width unit="mm">210</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">0</note>
+          <note type="material">paper</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1500" notBefore="1475">15th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Philadelphia, PA</settlement>
+            <repository>University of Pennsylvania Library</repository>
+            <idno>Codex 906</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="2r" to="340v">2r-340v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">339</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">37</note>
+              <note type="leavesPerGathering">16</note>
+              <note type="columnsPerFolio">1</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

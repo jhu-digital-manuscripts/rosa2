@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.142r.tif" pagination="135" reader="John Dee" signature="ll iij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>pol. 45.</marginalia_text>
+                </position>
+            </language>
+            <translation>Pole 45.</translation>
+        </marginalia>
+        
+        <errata amendedtext="[deleted]" copytext="ut uix quicquam addi possit" language="LA"/>
+        
+    </annotation>
+</transcription>

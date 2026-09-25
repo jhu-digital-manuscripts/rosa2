@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.103v.tif" pagination="[xcix[v]]" reader="Harvey"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					Nota multùm.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Note well.
+    		</translation>
+    	</marginalia>
+    	<marginalia anchor_text="some remedy" hand="Italian"> 
+    		<language ident="EN">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					A pore remedy, where they may easly be fiered.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					3. flamma, fame, ferro. 
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			By fire, hunger, or iron.
+    		</translation>
+    	</marginalia>
+    	
+    	
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					Efficacissimum Strategema, Hostem aggredi imparatissimu[m], Teipso usquequaq[ue] paratissimo. 
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<language ident="EN">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					Scarborowgh warning. 
+    				</marginalia_text>
+    				<location name="Scarborough"/>
+    			</position>
+    		</language>
+    		<language ident="LA">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					Astuti Principes alibi minantur, alibi arma inferu[n]t. Olaus.
+    				</marginalia_text>
+    				<person name="Olaus Magnus"/>
+    				<book title="De statu regentium et officiorum ac exercitio militari"/>   			
+    			</position>
+    		</language>
+    		<translation>
+    			The most efficient strategem, to approach an utterly unprepared enemy, yourself in every respect most prepared. 
+    			Scarborowgh warning. 
+    			Shrewd princes threaten one place, and attack somewhere else. Olaus.
+    		</translation>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="caused him selfe to be prouided" type="straight"/>
+    	<underline language="EN" method="pen" text="theyr victualles" type="straight"/>
+    	<underline language="EN" method="pen" text="them their graine, he kepte" type="straight"/>
+    	<underline language="EN" method="pen" text="famished them" type="straight"/>
+    	<underline language="EN" method="pen" text="the Castelles aboute" type="straight"/>
+    	<underline language="EN" method="pen" text="a greate multitude" type="straight"/>
+    	<underline language="EN" method="pen" text="famished them" type="straight"/>
+    	<underline language="EN" method="pen" text="the assaultes" type="straight"/>
+    	<underline language="EN" method="pen" text="ware of the first bronte" type="straight"/> 
+    	<underline language="EN" method="pen" text="which the" type="straight"/>
+    	<underline language="EN" method="pen" text="got often times many townes" type="straight"/>
+    	<underline language="EN" method="pen" text="assaulting them sodainely" type="straight"/>
+    	<underline language="EN" method="pen" text="and on euery side" type="straight"/>
+    	<underline language="LA" method="pen" text="Aggredi vrbem corona" type="straight"/>
+    	<underline language="EN" method="pen" text="newe Carthage in Hispaine" type="straight"/>
+    	<underline language="EN" method="pen" text="the whiche brunte" type="straight"/>
+    	<underline language="EN" method="pen" text="with difficultie after will" type="straight"/>
+    	<underline language="EN" method="pen" text="were entred into the Citie, by ouercomming" type="straight"/>
+    	<underline language="EN" method="pen" text="some remedy, so they" type="straight"/>
+    	<underline language="EN" method="pen" text="armies throughe entring" type="straight"/>
+    	<underline language="EN" method="pen" text="haue bene repulced or slaine" type="straight"/>
+    	<underline language="EN" method="pen" text="selues in high places, and from the houses, and from the towers to fight with them" type="straight"/>
+    	<underline language="EN" method="pen" text="entered" type="straight"/>
+    	<underline language="EN" method="pen" text="deuised to ouercome in twoo" type="straight"/>
+    	<underline language="EN" method="pen" text="the Gates of the Citie, and to" type="straight"/>
+    	<underline language="EN" method="pen" text="might safely flie" type="straight"/>
+    	<underline language="EN" method="pen" text="foorth a proclamacion, that" type="straight"/>
+    	<underline language="EN" method="pen" text="none shall be hurt by the armed" type="straight"/>
+    	<underline language="EN" method="pen" text="their weapons on the ground, pardon" type="straight"/>
+    	<underline language="EN" method="pen" text="vpon them vnawares" type="straight"/>
+    	<underline language="EN" method="pen" text="armye farre of, after suche" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="the firste brunte" type="straight"/>
+    	<underline language="EN" method="pen" text="tovvnes me[n]" type="straight"/>
+    	<underline language="EN" method="pen" text="are entered" type="straight"/>
+    	<underline language="EN" method="pen" text="tovvnes me[n] yeelde" type="straight"/>
+    	<underline language="EN" method="pen" text="are easyly vvonne" type="straight"/>
+
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="theyr victualles"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="the firste brunte"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark method="pen" name="double_vertical_bar" place="left_margin"/>
+    	<mark method="pen" name="double_vertical_bar" place="left_margin"/>
+    	<mark method="pen" name="double_vertical_bar" place="left_margin"/>
+    	<mark method="pen" name="double_vertical_bar" place="left_margin"/>
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="armies throughe entring"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="tovvnes me[n]"/>
+    	<mark method="pen" name="hash" place="left_margin"/>
+    	<mark method="pen" name="bracket" place="left_margin"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="might safely flie"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="none shall be hurt but the armed"/>
+    	
+    	<mark method="pen" name="bracket" place="right_margin"/>
+    	<mark method="pen" name="plus_sign" place="right_margin"/>
+    	<mark method="pen" name="bracket" place="right_margin"/>
+    	
+    	<mark method="pen" name="dot" place="intext"/> <!-- victualles, and -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="famished"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="famished them"/>
+    	<mark method="pen" name="comma" place="intext"/> <!-- Leucadia -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Castelles"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="famished"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the assaultes"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="ware"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="first bronte"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="which"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="got often times"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="them sodainely"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="euery side"/>
+    	<mark language="LA" method="pen" name="plus_sign" place="intext" text="Aggredi vrbem corona"/>
+    	<mark method="pen" name="dot" place="intext"/> <!--corona. As-->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Carthage"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="whiche brunte"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="were entred into the Citie"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- walle, yet -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="some remedy"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="throughe entring"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="bene repulced"/>
+    	<mark language="EN" method="pen" name="hash" place="intext" text="remedy"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="selues in high places"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- places, and -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="houses"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the towers"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Gates of the Citie"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="safely flie"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="proclamacion"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="vnawares"/>
+    	<mark method="pen" name="comma" place="intext"/> <!-- doone beeing -->
+    	
+    	<!-- Numerals -->
+    	<numeral language="EN" place="intext" text="one">
+    		I.
+    	</numeral>
+    	<numeral language="EN" place="intext" text="the other">
+    		2.
+    	</numeral>
+
+    	
+    	<!-- Errata -->
+    	<errata amendedtext="them: the" copytext="them:the" language="EN"/>
+    	
+    </annotation>
+</transcription>

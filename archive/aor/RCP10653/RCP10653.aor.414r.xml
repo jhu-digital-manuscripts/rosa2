@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.414r.tif" pagination="381" reader="John Dee" signature="Iiij iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="cum Alexander, rex Scotoru[m], vxorem suam, filiam Comitis Flandriae, quam post Margereta[m], filia[m] regis Angliae duxerat in vxore[m],              nocte quada[m] perquàm obscura visitare voluisset, cespitante equo lapsus, &amp; collisus grauiter, expirauit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Alexander .3. Rex Scot. moritur.
+                    </marginalia_text>
+                    <person name="Alexander III of Scotland"/>
+                </position>
+            </language>
+            <translation>
+                Alexander III of Scotland dies. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cum Alexander, rex Scotoru[m], vxorem suam Margareta[m]" type="straight"/> 
+        <underline language="LA" method="pen" text="quam post Margereta[m]" type="straight"/>
+        <underline language="LA" method="pen" text="regis Angliae duxerat" type="straight"/>
+        <underline language="LA" method="pen" text="vxore[m], nocte quada[m] perquàm obscura visitare voluisset, cespitante" type="straight"/>
+        <underline language="LA" method="pen" text="Margareta, regi Norvvegiae" type="straight"/>
+        
+    </annotation>
+</transcription>

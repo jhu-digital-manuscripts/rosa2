@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.107r.tif" pagination="213" reader="John Dee" signature="o 3"/>
+    <annotation>
+        
+        <marginalia anchor_text="Patronorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Patroni</marginalia_text>
+                </position>
+            </language>
+            <translation>Advocates.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Et si deficietur numero pars diuersam paucitate[m]: si adundabit, co[n]spirationem: si humiles producet, uilitate[m]: si potentes, gratia[m]              oportebit incessere." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro  Contra</marginalia_text>
+                </position>
+            </language>
+            <translation>For and against.</translation>
+        </marginalia>
+                
+        <marginalia anchor_text="temporibus, quibus testis non nisi post finitas actiones rogabatur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>tempus testes rogandi</marginalia_text>
+                </position>
+            </language>
+            <translation>The time when witnesses are to be asked.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="testem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>TESTIS</marginalia_text>
+                </position>
+            </language>
+            <translation>Witness.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="experietur animum eius" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

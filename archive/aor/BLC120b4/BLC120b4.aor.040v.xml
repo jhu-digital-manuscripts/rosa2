@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.040v.tif" pagination="40[v]" reader="John Dee" signature="[Iiv[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Anthybar: Marthek: Stagno: uel Risoó" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Marthek Anthybar Risoó Stagno <!--JG: All synonyms for the prime matter of the alchemical art. See Paul Ferguson (ed.), Voarchadumia, 15-->
+                    </marginalia_text>
+                </position>
+                <position book_orientation="270" place="left_margin">
+                    <marginalia_text>Mars [est] Férrum n[ost]r[u]m</marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Marthek, Anthybar, Risoo, and Stagno. Mars is our iron.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        vix vide pag[ina] 63
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="BLC120b4:c_120_b_4_(2)_f063r" text="pag[ina] 63"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                Only just, see page 63.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>☉ n[oste]r ☾ n[ost]ra</marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>Our sun and moon.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uiuo septies mu[n]datu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="á penultima" type="straight"/>
+       
+        <symbol name="Moon" place="right_margin"/>        
+        
+        <numeral language="LA" place="intext" text="uiuo septies mu[n]datu[m]">1</numeral>
+        <numeral language="LA" place="intext" text="Coagulumq[ue]">2</numeral>
+        <numeral language="LA" place="intext" text="Ignis">3</numeral>
+        <numeral language="LA" place="intext" text="Aeris">4</numeral>
+ 
+        <errata amendedtext="[deleted]" copytext="cum Arena alba" language="LA"/>      
+
+        <drawing book_orientation="0" method="pen" place="intext" type="manicule"/>  
+        
+        <calculation book_orientation="0" id="BLC120b4:c_120_b_4_(2)_f040v:c0001" internal_ref="BLC120b4:c_120_b_4_(2)_f040v:t0001" method="pen" place="intext" type="arithmetic">
+            15 + 9 = 24
+            17 + 1 =18
+            8 + 12 = 30
+        </calculation>
+        
+        <graph book_orientation="0" method="pen" place="head" type="ramus_tree">
+            <node id="n1">Principia</node>
+            <node id="n2">naturalia</node>
+            <node id="n3">artificialia</node>
+            <node id="n4">4 ☾</node>
+            <node id="n5">3 ☉</node>
+            <node id="n6">1 ☿</node>
+            <node id="n7">2 [Hieroglyphic Monad]</node>
+            <node id="n8">in no[min]ib[us]</node> <!--JG: Not sure-->
+            <graph_text>
+                <translation>Principles: natural (4 moon and three sun) and artificial (1 Mercury and 2 Hieroglyphic Monads) in names.</translation>
+            </graph_text>
+        </graph>
+            
+            <graph book_orientation="0" method="pen" place="head" type="ramus_tree">
+                <node id="n9">Risoo</node>
+                <node id="n10">Stagno</node>
+                <node id="n11">Marthek</node>
+                <node id="n12">Anthybar</node>
+                <node id="n13">significata [folio - deleted]</node>
+                <node id="n14">△ 18</node>
+                <node id="n15">△ 40</node>
+                <node id="n16">pag.</node> <!--JG: Not sure-->
+                <graph_text>
+                    <translation>Risoo, Stagno, Marthek and Anthybar, signified 18 and 40 pag.</translation> <!--JG: Unsure here-->
+                </graph_text>
+        </graph>
+        
+        <table id="BLC120b4:c_120_b_4_(2)_f040v:t0001" place="intext" type="standard_table">
+            <tr>
+                <td>☉</td>
+                <td>☾</td>
+                <td>[Hieroglyphic Monad]</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>19</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>1</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>18</td>
+                <td>30</td>
+            </tr>
+        </table> 
+        
+    </annotation>
+</transcription>

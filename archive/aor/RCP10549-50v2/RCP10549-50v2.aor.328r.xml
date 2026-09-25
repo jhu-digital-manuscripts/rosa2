@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.328r.tif" pagination="107" reader="John Dee" signature="[Gg.vi.]"/>   
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        visitare ho[m]i[n]em
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To visit someone.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dolorem dicunt malum esse: de asperitate" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        asperitas doloris
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The sharpness of pain.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="acciret" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        accire
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To fetch.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="manu[m] quidem versuros" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        manu[m] vertere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To raise a hand.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in perpetuum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        in p[er]petuu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Perpetually.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ab Oronte Praetore Darei" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pra[e]tor Darei
+                    </marginalia_text>
+                    <person name="Oroetus"/>
+                    <person name="Darius I"/>
+                </position>
+            </language>
+            <translation>
+                The satrap of Darius I.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Heracleotes ille Dionysius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Heracleotus Dionysius.
+                    </marginalia_text>
+                    <person name="Dionysius of Heraclea"/>
+                </position>
+            </language>
+            <translation>
+                Dionysius of Heraclea.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Archesilas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Archesilas
+                    </marginalia_text>
+                    <person name="Arcesilaus"/>
+                </position>
+            </language>
+            <translation>
+                Arcesilaus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Carneade" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Carneades
+                    </marginalia_text>
+                    <person name="Carneades"/>
+                </position>
+            </language>
+            <translation>
+                Carneades.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="alius alio beatior" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Alius alio beatior.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Someone is happier than another.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quintus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quintus.
+                    </marginalia_text>
+                    <person name="Quintus Tullius Cicero"/>
+                </position>
+            </language>
+            <translation>
+                Quintus Tullius Cicero.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pomponius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pomponius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Pomponius.
+            </translation>
+        </marginalia>
+        
+        <marginalia date="28.9.1547" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        1547. Septe[m]bris. 28. hora 1. Laus Deo. honor &amp; gloria.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                On 28 September 1547 at 1 o'clock. Praise, honour and glory be God.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="piscis inuentus est" type="straight"/>
+        <underline language="LA" method="pen" text="sed ea mala virtutis magnitudine obrueba[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="nisi ea voluptate[m] acciret" type="straight"/>
+        <underline language="LA" method="pen" text="quidem versuros" type="straight"/>
+        <underline language="LA" method="pen" text="virtute[m] in perpetuum" type="straight"/>
+        <underline language="LA" method="pen" text="de asperitate autem" type="straight"/>
+        <underline language="LA" method="pen" text="etsi fuit in disserendo pertinacior" type="straight"/>
+        <underline language="LA" method="pen" text="quum arderet podagrae doloribus, visitasséque" type="straight"/>
+        <underline language="LA" method="pen" text="virtutis caelestem quandam &amp; diuina[m] tanámque" type="straight"/>
+        <underline language="LA" method="pen" text="sed tamen fieri posse" type="straight"/>
+        <underline language="LA" method="pen" text="supellectilem pluris aestomabam quàm possessiones reliquorum" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; recta quidem" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="circumflex" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.009r.tif" pagination="17" reader="John Dee" signature="b"/>
+    <annotation>
+        
+        <marginalia anchor_text="Accendunt omnia haec animos, &amp; licet ipsa uitium sit ambitio, freque[n]ter tamen causa uirtutum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ambitio uitium.</marginalia_text> 
+                </position>
+            </language>
+            <translation>The ambition of vices.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pueros in classes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Classes Pueror</marginalia_text> 
+                </position>
+            </language>
+            <translation>Classes of boys.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad intellectum audientis desce[n]dere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>simile</marginalia_text> 
+                </position>
+            </language>
+            <translation>Similar.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="praecedere profectu" type="straight"/>
+        <underline language="LA" method="pen" text="ad intellectum audientis desce[n]dere." type="straight"/>
+        <underline language="LA" method="pen" text="animos non subibunt." type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="right_margin">70</numeral> 
+        <numeral place="right_margin">69</numeral> 
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

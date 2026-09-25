@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.173v.tif" pagination="86" reader="John Dee" signature="[H[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="mortem indicare aegrotanti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mortis signu[m] a[e]grotanti
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A sign of death to the sick one.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☌ ♃ ☉ ♄ ☉ ♂ ☉</marginalia_text>
+                    <symbol_in_text name="Conjunction"/>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>The conjunction of Jupiter and the Sun; of Saturn and the Sun; of Mars and the Sun.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Tribus modis praesciuntur accide[n]tia hominu[m], nel ex natiuitate propria, uel primogeniti filii, uel ex interrogatione cum affectu &amp; sollicitudine cognita" type="straight"/>
+        <underline language="LA" method="pen" text="Notabis semper configurationem stellaru[m], no[n] per signa, sed per radios" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Venus" place="left_margin"/>
+        
+        <mark colour="red" method="chalk" name="bracket" place="left_margin"/>
+        <mark colour="red" method="chalk" name="vertical_bar" place="left_margin"/>
+        <mark colour="red" method="chalk" name="bracket" place="left_margin"/>
+        <mark colour="red" method="chalk" name="bracket" place="left_margin"/>
+        <mark colour="red" method="chalk" name="vertical_bar" place="left_margin"/>
+        <mark colour="red" method="chalk" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.185r.tif" pagination="178" reader="John Dee" signature="yy ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Luna in opposito Solis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☍ ☉ ☾</marginalia_text>
+                    <symbol_in_text name="Opposite_planets"/>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>The Moon in opposition to the Sun.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Luna in opposito Solis, memoria[m] &amp; scientia[m], &amp; multos dat hostes, claru[m] etiam facit" type="straight"/>
+        <underline language="LA" method="pen" text="quia nocturna est genitura" type="straight"/>
+        
+    </annotation>
+</transcription>

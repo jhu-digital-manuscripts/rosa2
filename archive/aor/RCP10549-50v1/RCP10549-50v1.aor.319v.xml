@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.319v.tif" pagination="618" reader="John Dee" signature="[qqq.v.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="seruire" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>servitus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Servitude.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="bonos ciues primum natura efficit, adiuuat deinde fortuna" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Natura Fortuna.</marginalia_text>
+                </position>
+            </language>
+            <translation>Nature. Fortune.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="bonos ciues primum natura efficit, adiuuat deinde fortuna" type="straight"/>
+        <underline language="LA" method="pen" text="tanquam fraenos furoris iniecit" type="straight"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

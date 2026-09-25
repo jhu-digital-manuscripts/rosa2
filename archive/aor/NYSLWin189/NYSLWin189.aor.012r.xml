@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.012r.tif" reader="John Dee" signature="D"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="beumen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Arboru[m] et vegetabilum virtutes in aquis</marginalia_text>
+                </position>
+            </language>
+            <translation>The properties of trees and vegetation when in water.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="paralysim ciaticam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Paralysis Ishiatica</marginalia_text>
+                </position>
+            </language>
+            <translation>Ischiadic paralysis</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="der beumen" type="straight"/>
+        <underline language="DE" method="pen" text="boleten" type="straight"/>
+        <underline language="DE" method="pen" text="vereinigung" type="double"/>
+        <underline language="DE" method="pen" text="ist in der resolution der" type="straight"/>
+        <underline language="DE" method="pen" text="in die generaten" type="straight"/>
+        <underline language="DE" method="pen" text="die andren in ein resolution" type="straight"/>
+        <underline language="DE" method="pen" text="hindan gescheiden resoluto liquore" type="straight"/>
+        <underline language="DE" method="pen" text="brunnen" type="straight"/>
+        <underline language="DE" method="pen" text="selbigen gewechs" type="double"/>
+        <underline language="DE" method="pen" text="vn[nd] nicht von" type="straight"/>
+        <underline language="DE" method="pen" text="den cataracten" type="straight"/>
+        <underline language="DE" method="pen" text="natur vngulae caballinae" type="straight"/>
+        <underline language="DE" method="pen" text="Mandragora vnd Iusquiamo" type="triple"/>
+        <underline language="LA" method="pen" text="paralysim" type="straight"/>
+        <underline language="LA" method="pen" text="ciaticam" type="straight"/> 
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing anchor_text="mit dem selbigen gewechs vn[nd] nicht von den cataracten" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

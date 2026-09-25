@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.233r.tif" pagination="226" reader="John Dee" signature="LL ij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Planeta asce[n]deni ☉ ☾ ☿ ☌ prevalens hic est. de q[u]o dicit Cibus</marginalia_text> 
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Conjunction"/>
+                    <symbol_in_text name="Mercury"/>
+                </position>
+            </language>
+            <translation>With the planet ascending, a conjunction of the Sun, Moon, and Mercury is prevaling here. About which he says. Food.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Potus</marginalia_text>
+                </position>
+            </language>
+            <translation>A drink.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="serui; domini" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>D[omi]n[u]s. servus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Master. Slave.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rex subditus</marginalia_text>
+                </position>
+            </language>
+            <translation>A submissive king.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Magni" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Magni ho[m]i[n]es.</marginalia_text>
+                </position>
+            </language>
+            <translation>Great men.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Obesi" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Obesi</marginalia_text>
+                </position>
+            </language>
+            <translation>Fat.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Martem habet in ascendente" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>♂ in asce[n]de[n]te</marginalia_text>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>Mars in the ascendant.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Oculus Tauri" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>♉ oculus.</marginalia_text>
+                    <symbol_in_text name="Taurus"/>
+                </position>
+            </language>
+            <translation>The eye of Taurus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in signis latis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>et in humidis signis</marginalia_text>
+                </position>
+            </language>
+            <translation>And in humid signs.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Mars affatim, multu[m], uinosum" type="straight"/>
+        <underline language="LA" method="pen" text="dolosam urbanitatem" type="straight"/>
+        <underline language="LA" method="pen" text="agrestem integritatem" type="straight"/>
+        <underline language="LA" method="pen" text="subiditi sui parebit arbitrio" type="straight"/>
+        <underline language="LA" method="pen" text="regni ac regis" type="straight"/>
+        <underline language="LA" method="pen" text="in initijs signorum" type="straight"/>
+        <underline language="LA" method="pen" text="in signis latis" type="straight"/>
+        <underline language="LA" method="pen" text="Oculus Tauri in apice ascendentis, siccarios facit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

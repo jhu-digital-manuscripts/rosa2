@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.183r.tif" pagination="189" reader="Harvey" signature="[M7r]"/>	<!-- ABO 187right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Euge.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Well done!</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EL">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Εὕρηκα.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>I've found it.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Ô oculi, et aures. Ô pedes,
+						) et manus.
+						Ô ala[e] angelica[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Oh eyes and ears. Oh feet and hands. Oh angelic wings.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Vnica mundi Orthopa[e]dia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The unique orthopaedics of the world.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Ludus, iocusq[ue], omne studium practicum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A game and a joke, all practical persuit.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Entelechia. Nescia stare loco.
+					</marginalia_text>
+					<X-ref book_title="Pharsalia" language="LA" person="Lucan" text="Nescia stare loco"/>
+				</position>
+			</language>
+			<translation>Actualization. "Not knowing how to stand in one place".</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Deus est totus auris: totus oculus:
+						totus pes: totus manus: sic diuini animi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>God is all ear, eye, foot, hand: thus of a divine mind.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Heri: hodiè: cras.
+					</marginalia_text>
+				</position>
+			</language>
+		<translation>Yesterday, today, tomorrow.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Hui, tam diu Cantabrigia[e], aut Valdini? At decebat Londini, Antuerpia[e], Parisijs; Romae, Florentia[e], Mediolani,
+						Venetijs; Basilia[e], Norimberga[e], Augusta[e]; Salamantica[e], Toleti, Hispali; Constantinopoli;
+						vbiq[ue] nobilissimaru[m] Ciuitatum, atq[ue] nationu[m].
+					</marginalia_text>
+					<location name="Cambridge"/>
+					<location name="Antwerp"/>
+					<location name="Paris"/>
+					<location name="Rome"/>
+					<location name="Florence"/>
+					<location name="Milan"/>
+					<location name="Venice"/>
+					<location name="Basel"/>
+					<location name="Nürnberg"/>
+					<location name="Straubing"/>
+					<location name="Salamanca"/>
+					<location name="Toledo"/>
+					<location name="Seville"/>
+					<location name="Constantinople"/>
+				</position>
+			</language>
+			<translation>Whee, so long Cambridge, or [?]? But it seems proper to London, Antwerp, Paris, Rome, Florence, Milan, Venice; <!--JG: No clue what 'Valdini' can be--> <!-- CG: No idea! -->
+				Basel, Nürnberg, Straubing; Salamanca, Toledo, Seville; Constantinople; everywhere of the most nobles cities and nations.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Apollonius Tyaneus, Linguis; Artibus; Philosophia; professionibus; maximeq[ue] Arcanis;
+						omnium erat hominum facilè expeditissimus. Eadem Eudromi Pa[e]dia
+					</marginalia_text>
+					<person name="Apollonius of Tyana"/>
+					<person name="Eudromus"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						adamantina: et disciplina mundi efficacissima.
+						Pra[e]sertim cum hodiernis Practicis potentissimis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Apollonius of Tyana, he was easily the most skilled of all men in languages, arts, philolsophy, professions, and especially in mysteries. A similar 
+			uncorruptible education of Eudromus: and the most effective discipline of the world. Especially with today's most powerful practices.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Nullius tanta voluptas, quanta philosophi. Hierocles: et eo alacrior, Eudromus.
+					</marginalia_text>
+					<person name="Hierocles"/>
+					<person name="Eudromus"/>
+				</position>
+			</language>
+			<translation>No one's desire is as great as the philosopher's. Hierocles: and keener, Eudromus.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="animo de" type="straight"/>
+		<underline language="IT" method="pen" text="effere inquieto" type="straight"/>
+		<underline language="IT" method="pen" text="torna là onde" type="straight"/>
+		<underline language="IT" method="pen" text="che l'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="stesso è l'animo" type="straight"/>
+		<underline language="IT" method="pen" text="l'organo dell'animo" type="straight"/>
+		<underline language="IT" method="pen" text="in sua potestà, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="l'animo" type="straight"/>
+		<underline language="IT" method="pen" text="cosi inquieto, &amp; insatiabile" type="straight"/>
+		<underline language="IT" method="pen" text="Lorenzo" type="straight"/>
+		<underline language="IT" method="pen" text="non men dottamente" type="straight"/>
+		<underline language="IT" method="pen" text="gratiamente" type="straight"/>
+		<underline language="IT" method="pen" text="disio nostro se piu ha, piu chiede" type="straight"/>
+		<underline language="IT" method="pen" text="mal può posar" type="straight"/>
+		<underline language="IT" method="pen" text="ben non siede" type="straight"/>
+		<underline language="IT" method="pen" text="l'insatiabil sete" type="straight"/>
+		<underline language="IT" method="pen" text="alma creata" type="straight"/>
+		<underline language="IT" method="pen" text="le perfette cose" type="straight"/>
+		<underline language="IT" method="pen" text="à imperfettion pari s'attenga" type="straight"/>
+		<underline language="IT" method="pen" text="che cerchi, &amp; mai non pose" type="straight"/>
+		<underline language="IT" method="pen" text="ella troui quel, cl'al fin desia" type="straight"/>
+		<underline language="IT" method="pen" text="Ch'è'l ciel, oue" type="straight"/>
+		
+		<symbol name="SS" place="left_margin"/> <!-- in the middle of a marginal note. Closest printed text is "l'animo; &" -->
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- tan -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- pri -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- quie -->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="disio nostro se piu ha, piu chiede"/>
+		
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- felicita. Et -->
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- partito. Et -->
+		
+    </annotation>
+</transcription>

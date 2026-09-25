@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.170r.tif" pagination="171" reader="John Dee" signature="Y.iij."/>   
+    <annotation>
+        
+       <marginalia anchor_text="cultu, gemmis, auróq[ue]" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>ornatus.</marginalia_text>
+               </position>
+           </language>
+           <translation>Decorated.</translation>
+       </marginalia>
+        
+        <marginalia anchor_text="forma" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>forma</marginalia_text>
+                </position>
+            </language>
+            <translation>Beauty.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="amor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Amor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Love.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="liuor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Liuor</marginalia_text>
+                </position>
+            </language>
+            <translation>Envy.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Auferimur cultu, gemmis, auróq[ue] teguntur Omnia. pars minima est ipsa puella sui" type="straight"/>
+        <underline language="LA" method="pen" text="Fallit enim multos forma sine arte decens" type="straight"/>
+        <underline language="LA" method="pen" text="est omni parte fugandus amor" type="straight"/>
+        <underline language="LA" method="pen" text="Summa petit liuor, perflant altissima venti. Summa petunt dextra sulmina missa Iouis" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Summa petit liuor, perflant altissima venti. Summa petunt dextra sulmina missa Iouis"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.121r.tif" pagination="241" reader="Harvey" signature="Qir"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="habita à Doctore" type="straight"/>
+        <underline language="LA" method="pen" text="non iudicandas secundum" type="straight"/>
+        <underline language="LA" method="pen" text="arbitrium Iudicis" type="straight"/>
+        <underline language="LA" method="pen" text="secundum" type="straight"/>
+        <underline language="LA" method="pen" text="scriptum ius" type="straight"/>
+        
+        <symbol name="JC" place="head"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- ius Anno -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- statua-tis -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- cu-ram -->
+        
+        <numeral place="head">3.</numeral> 
+        
+    </annotation>
+</transcription>

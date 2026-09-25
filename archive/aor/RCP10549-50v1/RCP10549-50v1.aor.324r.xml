@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.324r.tif" pagination="627" reader="John Dee" signature="rrr.ii."/>
+    <annotation>
+        
+        <marginalia anchor_text="vt enim cursu cursus, sic in viris fortibus virtus virtute superatur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Similitudo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Similarity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="auent audire" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>aue[n]t audire</marginalia_text>
+                </position>
+            </language>
+            <translation>They desire  to hear.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="discessione[m] facere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>discessionem facere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To make a withdrawal.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="effrenatius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>effra[e]natius.</marginalia_text>
+                </position>
+            </language>
+            <translation>Fiercely.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vt enim cursu cursus, sic in viris fortibus virtus virtute superatur" type="straight"/>
+        <underline language="LA" method="pen" text="ego enim malis sente[n]tiis vinci non possum" type="straight"/>
+        <underline language="LA" method="pen" text="meásque aures dies &amp; noctes omniu[m] praecaeptis monitísque" type="straight"/>
+        <underline language="LA" method="pen" text="discessione[m] facere" type="straight"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+    </annotation>
+</transcription>

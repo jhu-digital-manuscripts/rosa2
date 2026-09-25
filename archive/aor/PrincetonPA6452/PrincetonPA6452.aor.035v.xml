@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.035v.tif" pagination="54" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ordo aciei in extremis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Line of battle in the greatest danger.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Braue men, but men: and not acheuours of impossibilities.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ia[m]q[ue] Fabij adeò co[n]tempserant" type="straight"/>
+        <underline language="LA" method="pen" text="sua inuicta arma neq[ue] loco, neq[ue] te[m]pore ullo crederent sustineri posse" type="straight"/>
+        <underline language="LA" method="pen" text="cum improuidi effuso cursu insidias circa ipsum iter locatas superassent" type="straight"/>
+        <underline language="LA" method="pen" text="subitò ex insidijs consurgit[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="aduersi &amp; undiq[ue] hostes erant" type="straight"/>
+        <underline language="LA" method="pen" text="spacio &amp; ipsi orbe[m] colligere" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; paucitate[m] eoru[m] insignem" type="straight"/>
+        <underline language="LA" method="pen" text="multitudine[m] Hetruscoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="in unu[m] locum se omnes inclina[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="rupere cuneo via[m]. duxit" type="straight"/>
+        <underline language="LA" method="pen" text="uincebatq[ue] auxilio loci paucitas" type="straight"/>
+        <underline language="LA" method="pen" text="circummissus Veie[n]s, in uertice[m] collis euasisset" type="straight"/>
+        <underline language="LA" method="pen" text="superior rursus" type="straight"/>
+        <underline language="LA" method="pen" text="Fabij caesi ad unu[m] omnes" type="straight"/>
+        <underline language="LA" method="pen" text="unum propè pubere[m] aetate relictu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="stirpem genti Fabiae dubijsq[ue rebus populi Ro." type="straight"/>
+        <underline language="LA" method="pen" text="uel maximu[m] futuru[m] auxilium" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--Hetru-->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="orbe[m]"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="cuneo"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonPE1137.023v.tif" pagination="[22v]" reader="Harvey" signature="f.ii.v"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Confusio linguarum, a Gothis, Vandalis, Scythis introducta.
+                    </marginalia_text>
+                    <emphasis method="pen" text="Scythis introducta" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                The mixture of languages, introduced by the Goths, Vandals and Scythians.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Italorum C. 
+                                ch.
+                                    uide 26.
+                    </marginalia_text>
+                    <emphasis method="pen" text="ch." type="straight"/>
+                    <emphasis method="pen" text="uide 26." type="straight"/>
+                </position>
+            </language>
+            <translation>
+                The 'C' of the Italians - 'ch'. See p. 26 
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Gallorum C. 
+                                s.
+                    </marginalia_text>
+                    <emphasis method="pen" text="s." type="straight"/>
+                </position>
+            </language>
+            <translation>
+                The 'C' of the French - 's'.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Gothos" type="straight"/>
+        <underline language="LA" method="pen" text="Wandalos" type="straight"/>
+        <underline language="LA" method="pen" text="Scythas" type="straight"/>
+        <underline language="LA" method="pen" text="Turcas" type="straight"/>
+        <underline language="LA" method="pen" text="in vna qua[m] in altera lingua" type="straight"/>
+        <underline language="LA" method="pen" text="loquendo" type="straight"/>
+        <underline language="LA" method="pen" text="etiam in scribendo &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]fudisse omnia" type="straight"/>
+        <underline language="LA" method="pen" text="pro vna Latna lingua" type="straight"/>
+        <underline language="LA" method="pen" text="sunt Italica" type="straight"/>
+        <underline language="LA" method="pen" text="Gallica" type="straight"/>
+        <underline language="LA" method="pen" text="Hispanica" type="straight"/>
+        <underline language="LA" method="pen" text="Sicula" type="straight"/>
+        <underline language="LA" method="pen" text="linguae" type="straight"/>
+        <underline language="LA" method="pen" text="suis sororibus" type="straight"/>   
+        <underline language="LA" method="pen" text="Itali" type="straight"/>
+        <underline language="LA" method="pen" text="maximè Hetrusci" type="straight"/>
+        <underline language="LA" method="pen" text="suam sonant" type="straight"/>
+        <underline language="LA" method="pen" text="nos" type="straight"/>
+        <underline language="LA" method="pen" text="e" type="straight"/>
+        <underline language="LA" method="pen" text="i" type="straight"/>
+        <underline language="LA" method="pen" text="post amissas" type="straight"/>
+        <underline language="LA" method="pen" text="per irruptionem Barbararum gentium" type="straight"/> 
+        <underline language="LA" method="pen" text="humaniores literas" type="straight"/>
+        <underline language="LA" method="pen" text="summus vsi" type="straight"/>
+        
+        <mark method="pen" name="hash" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        
+    </annotation>
+</transcription>

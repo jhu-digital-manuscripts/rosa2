@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.414r.tif" pagination="811" reader="Harvey" signature="yyy4[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Sic transit gloria mundi. Nec vlla Fortuna firma, sine Virtute.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Thus passes the glory of the world. And no fortune is ever stable withour valour.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Gentius" type="straight"/>
+        <underline language="LA" method="pen" text="Perseus caput belli erat" type="straight"/>
+        <underline language="LA" method="pen" text="effulgebant Philippus ac Magnus Alexander" type="straight"/>
+        <underline language="LA" method="pen" text="summum imperium in orbe terraru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Macedonu[m] fecerant" type="straight"/>
+        <underline language="LA" method="pen" text="amictus illo Perseus" type="straight"/>
+        <underline language="LA" method="pen" text="Co[n]surrexit Cos." type="straight"/>
+        <underline language="LA" method="pen" text="introeunti regi dextra[m] porrexit" type="straight"/>
+        <underline language="LA" method="pen" text="summittente[m]q[ue] se ad pedes sustulit" type="straight"/>
+        <underline language="LA" method="pen" text="nec attingere genua passus, introductu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Prima percontatio fuit" type="straight"/>
+        <underline language="LA" method="pen" text="rursum. Cos." type="straight"/>
+        <underline language="LA" method="pen" text="cum &amp; bello patris tui quod" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; uim bello, &amp; fidem in pace expertus" type="straight"/>
+        <underline language="LA" method="pen" text="Nec interrogatus, nec accusatus cum responderet" type="straight"/>
+        <underline language="LA" method="pen" text="siue errore humano, seu casu, seu necessitate inciderunt" type="straight"/>
+        <underline language="LA" method="pen" text="regum, populorum, casibus cognita P.R. clementia" type="straight"/>
+        <underline language="LA" method="pen" text="Graeco sermone" type="straight"/>
+        <underline language="LA" method="pen" text="Exemplum insigne cernitis" type="straight"/>
+        <underline language="LA" method="pen" text="mutationis rerum humanarum" type="straight"/>
+        <underline language="LA" method="pen" text="ideo in secundis rebus nihil in quenquam superbè" type="straight"/>
+        <underline language="LA" method="pen" text="nec praesenti credere fortun[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="quid uesper ferat, incertum sit." type="straight"/>
+        <underline language="LA" method="pen" text="uir erit" type="straight"/>
+        <underline language="LA" method="pen" text="animu[m] nec prospera flatu suo esseret" type="straight"/>
+        <underline language="LA" method="pen" text="nec aduersa infringet." type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="quotation_mark" place="left_margin" text="nec attingere genua passus, introductu[m]"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- su -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="uir erit"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- esseret, -->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--infringet. Consilio-->
+        
+    </annotation>
+</transcription>

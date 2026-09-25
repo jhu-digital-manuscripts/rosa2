@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonK6233.014v.tif" reader="Harvey" signature="[β6v]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                            Oratores. maximi.        
+                        {   Aduocati.   } optimi.
+                            Judices.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                    Orators. greatest.          
+                {   Advocates.  } best.
+                    Judges.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Discipulorum iuris hic finis" type="straight"/>
+        <underline language="LA" method="pen" text="et oratores maximi" type="straight"/>
+        <underline language="LA" method="pen" text="iustitiae satellites" type="straight"/>
+        <underline language="LA" method="pen" text="optimi tam" type="straight"/>
+        <underline language="LA" method="pen" text="quàm gubernatores" type="straight"/>
+        <underline language="LA" method="pen" text="Per satyram" type="straight"/>
+        <underline language="LA" method="pen" text="variaru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="à satyra" type="straight"/>
+        <underline language="LA" method="pen" text="est cibi genus" type="straight"/>
+        <underline language="LA" method="pen" text="ex varijs rebus conditum" type="straight"/>
+        <underline language="LA" method="pen" text="Diomedis" type="straight"/>
+        <underline language="LA" method="pen" text="Glauci permutatio" type="straight"/>
+        <underline language="LA" method="pen" text="de inaequali permutatione" type="straight"/>
+        <underline language="LA" method="pen" text="χρύσεα " type="straight"/>   
+        <underline language="LA" method="pen" text="χαλκείων " type="straight"/>   
+        <underline language="LA" method="pen" text="ἑκατόμβοι" type="straight"/>  
+        <underline language="LA" method="pen" text="ἐννεαβοίων" type="straight"/>
+        <underline language="LA" method="pen" text="ad Senatum" type="straight"/>
+        <underline language="LA" method="pen" text="ad" type="straight"/>
+        <underline language="LA" method="pen" text="Pandectae" type="straight"/>
+        <underline language="LA" method="pen" text="in 7 partes" type="straight"/>
+        <underline language="LA" method="pen" text="continet τὰ" type="straight"/> 
+        <underline language="LA" method="pen" text="est de iudicijs" type="straight"/>
+        <underline language="LA" method="pen" text="de rebus" type="straight"/>
+        <underline language="LA" method="pen" text="Quarta totius" type="straight"/>
+        <underline language="LA" method="pen" text="compositionis vmbilicus, de" type="straight"/>
+        <underline language="LA" method="pen" text="quae" type="straight"/>
+        <underline language="LA" method="pen" text="omnia vndiq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="vtilissi[ma]" type="straight"/>
+        
+        <symbol language="LA" name="JC" place="head" text="Oratores. Aduocati. Judices."/>
+        <symbol name="Mercury" place="head"/> 
+        <symbol name="Sun" place="head"/>
+        
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="straight_quotation_mark" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="straight_quotation_mark" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="straight_quotation_mark" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="straight_quotation_mark" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="chalk" name="horizontal_bar" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Discipulorum iuris hic finis"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- maximi & -->
+        <mark method="pen" name="comma" place="intext"/> <!-- athletae quam -->
+        <mark method="pen" name="comma" place="intext"/> <!-- loco aeuoq[ue] -->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="à satyra"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="ex varijs rebus conditum"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- prin-cipio --> 
+        <mark method="pen" name="comma" place="intext"/> <!-- Diomedis & -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="de inaequali permutatione"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- Senatum & -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="compositionis vmbilicus, de"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- hypothecis, quae -->
+        <mark method="pen" name="comma" place="intext"/> <!-- quae omnia -->
+        
+        <numeral language="LA" place="left_margin" text="Prima continet τὰ πρῶτα."> 
+            1
+        </numeral>
+        <numeral language="LA" place="left_margin" text="Secunda est de iudicijs.">
+            2
+        </numeral>
+        <numeral language="LA" place="left_margin" text="Tertia de rebus creditis.">
+            3
+        </numeral>
+        <numeral language="LA" place="left_margin" text="Quarta totius compositionis vmbilicus, de hypothecis; quae omnia vndiq[ue] tam [vtilissima quàm pulcherrima iura continet."> 
+            4
+        </numeral>
+        <numeral language="LA" place="intext" text="et oratores maximi">
+            1.
+        </numeral>
+        <numeral language="LA" place="intext" text="iustitiae satellites inueniantur">
+            2
+        </numeral>
+        <numeral language="LA" place="intext" text="iudiciorum optimi tam athletae, quàm gubernatores in omni loco aeuoq[ue] felices">
+            3
+        </numeral>
+        
+    </annotation>
+</transcription>

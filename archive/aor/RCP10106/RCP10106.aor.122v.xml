@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.122v.tif" pagination="244" reader="John Dee" signature="[q 2[v]]"/>
+    <annotation>
+                
+        <marginalia anchor_text="pro Cecinna" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Cecinna</marginalia_text>
+                    <book title="Pro Caecina"/>
+                </position>
+            </language>
+            <translation>Pro Caecina.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀναλογία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἀναλογία</marginalia_text>
+                </position>
+            </language>
+            <translation>Analogy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cui rei facilimè occurrit ex dißimilibus argumentatio: Non" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ratio occure[n]di</marginalia_text>
+                </position>
+            </language>
+            <translation>Method of resisting.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="autoritas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Autoritas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Authority.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="κρίσεις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>κρίσεις</marginalia_text>
+                </position>
+            </language>
+            <translation>Judgements.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="testimonia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Testimonia</marginalia_text>
+                </position>
+            </language>
+            <translation>Testimonies.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dicta facta'q[ue]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dicta &amp; facta</marginalia_text>
+                </position>
+            </language>
+            <translation>Sayings and facts.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Atheniensium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Athenienses.</marginalia_text>
+                </position>
+            </language>
+            <translation>The Athenians.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="facilimè occurit ex dißimilibus argumentatio: Non" type="straight"/>
+        <underline language="LA" method="pen" text="gentibus, populis, sapie[n]tibus uiris, claris ciuibus, illustribus, poëtis, referri potest" type="straight"/>
+        <underline language="LA" method="pen" text="quae fletibus natos, laetitia defunctos prosequuntur" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

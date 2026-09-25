@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.071r.tif" pagination="flyleaf" reader="Harvey"/>	<!-- ABO 75right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						{ Chrysotechni aurea decori ars.
+					</marginalia_text>
+					<person name="Chrysotechnus"/>
+				</position>
+			</language>
+			<translation>
+				Chrysotechnus' golden art of decorum.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						In vetusto Codice, de Nouis Professoribus:
+						{ Novus Medicus, interfector hominum:
+						  Novus Iudex, sententia perdita:
+						  Novus Sacerdos, tanq[uam] bestia Cornuta.
+						  At hodiè, Neographia tota in toto.
+						  Quid noui, aut rari?
+						  Prima qua[e]stio.
+					</marginalia_text>
+					<emphasis method="pen" text="de Nouis Professoribus" type="straight"/>
+					<emphasis method="pen" text="Medicus" type="straight"/>
+					<emphasis method="pen" text="Iudex" type="straight"/>
+					<emphasis method="pen" text="Sacerdos" type="straight"/>
+					<emphasis method="pen" text="Neographia tota" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				In the ancient book, regarding new professors:
+				the new doctor, a killer of men;
+				the new judge, a degenerate sentence;
+				the new priest, like a cuckolded beast.
+				But today, all of Neographia in its entirety.	<!-- CG: What is Neographia here? Printing? --> <!--JG: Possibly! Would leave neographia though-->
+				What is new or rare?
+				The first question.
+			</translation>
+		</marginalia>
+		<marginalia anchor_text="Sic crede" hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Sic Crede.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Believe thus.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Probatio ad Solem.
+						Experto Crede.
+					</marginalia_text>
+					<emphasis method="pen" text="Probatio ad Solem" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Testing the sun.
+				Trust the expert.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Omne tulit punctu[m], qui miscuit vtile Dulci.
+						Lucianus, finem Historia[e] constituit 
+					</marginalia_text>
+					<person name="Lucian"/>
+					<X-ref book_title="Ars poetica" language="LA" person="Horace" text="Omne tulit punctum, qui miscuit vtile Dulci"/>
+					<X-ref book_title="How to Write History" person="Lucian"/>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						τὸ  χρήσιμον,
+					</marginalia_text>
+					<emphasis method="pen" text="χρήσιμον" type="straight"/>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						vt juuet: quòd si etiam per se subsequatur
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						τὸ τερπνὸν,
+					</marginalia_text>
+					<emphasis method="pen" text="τερπνὸν" type="straight"/>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						id quoq[ue] tradit
+						magnoperè ad Historiam spectare. Certè,
+						dulci Narratore nihil dulcius.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				"He who mixed the useful with the sweet won every point."
+				Lucian established that the goal of History is usefulness, something that helps. 
+				But even if pleasantness were to follow naturally, such pleasantness would still be devoted 
+				mainly to relating History.	<!-- CG: This is giving me a lot of trouble. --> <!--JG: Because of the Greek I'm a bit at a loss here. Perhaps we should ask a specialist to check-->
+				Certainly, nothing is sweeter than a sweet narrator.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="full_page">
+					<marginalia_text>
+						Hoc testamentum exequere: et facilè eris maximaru[m] facultatum ha[e]res.
+					</marginalia_text>
+					<emphasis method="pen" text="testamentum exequere" type="straight"/>
+					<emphasis method="pen" text="eris maximaru[m]" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Carry out this will, and you will easily be a disciple of the greatest abilities.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="full_page">
+					<marginalia_text>
+						Decet excellentem Pragmaticu[m], esse in theoricis peritu[m]: in practicis industrium:
+						in dubijs subtilem: in reconditis profundu[m]: in arcanis curiosu[m]: in arduis 
+						validum: in laboribus constantem: in aduersis splendidu[m]: in
+						prosperis candidu[m]: in singulis
+						egregium: in omnibus magnificu[m]:
+						et quotieès res postulat, suppetitq[ue] =
+						
+						= facultas, in pla[e]risq[ue]
+						dictis, factisq[ue] admirabilem.
+						Ad auream Chrysotechni arte[m] decori.
+					</marginalia_text>
+					<person name="Chrysotechnus"/>
+				</position>
+			</language>
+			<translation>
+				It is proper for the excellent, practical man to be knowledgable in theory and industrious in practice;
+				to be subtle in dubious situations; to be profound in abstruse things; to be careful in secret matters;
+				to be strong in difficulties; to be constant in toils; to be brilliant in adversity; to be spotless in prosperity;
+				to be exceptional in singular matters; to be magnificent in everything; and, as often as he requires things
+				and his skill is sufficient, to be admirable in the majority of his words and deeds.
+				Needed for the golden art of Chrysotechnus' decorum.
+			</translation>
+		</marginalia>
+		
+    </annotation>
+</transcription>

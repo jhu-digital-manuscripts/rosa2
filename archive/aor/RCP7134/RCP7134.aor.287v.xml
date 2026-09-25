@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.287v.tif" pagination="[280v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vt eni[m] futuroru[m] ex directione adde[n]te scim[us] qualitates [...] et pr[a]ecensoru[m] p[er] subtracta[m] diversione[m].</marginalia_text> <!--JG: Can't figure out word after qualitates-->
+                </position>
+            </language>
+            <translation>Indeed as we know the qualities from the associated direction of future things [...] and of predicted things through a subtracted diversion.</translation> <!--JG: Extremely unsure-->
+        </marginalia>
+        
+        <marginalia anchor_text="dominus geniturae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>D[omi]n[u]s genitur[a]e</marginalia_text>
+                </position>
+            </language>
+            <translation>Lord of the geniture.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sic enim &amp; in Sole numerantur" type="straight"/>
+        <underline language="LA" method="pen" text="Cum Luna in hieme, in signo aqueo, iungitur planetae retrogrado, pluuia erit uel nix, maxime autem Saturno" type="straight"/>
+        <underline language="LA" method="pen" text="Parentum autem, ac praecedentium fratrum, à statu significatorum in loco anteriore, per annos totidem, quot illi geniturae tempus antecedunt" type="straight"/>
+        
+        <errata amendedtext="octogesimum" copytext="octuagesimum" language="LA"/>
+        <errata amendedtext="centesimum" copytext="centuagesimum" language="LA"/>
+        <errata amendedtext="centesimu[m]" copytext="centuagesimum" language="LA"/>
+        
+    </annotation>
+</transcription>

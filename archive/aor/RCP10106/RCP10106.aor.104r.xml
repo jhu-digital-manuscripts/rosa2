@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.104r.tif" pagination="207" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Ideoq[ue] illas ἀτέχνοι, id est, inartificiales, has ἐντέχνοι, id est, artificiales uocaueru[n]t" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Probatio[n]es</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἀτέχνοι ἐντέχνοι</marginalia_text>
+                </position>
+            </language>
+            <translation>Unskilled and skilled proofs.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="contentinum forensium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contentiones forenses</marginalia_text>
+                </position>
+            </language>
+            <translation>Forensic disputes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iam praeiudiciorum uis omnis tribus in generibus uersatur: rebus, quae aliquando ex paribus causis sunt iudicatae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Prima probationu[m]</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἀτέχνων</marginalia_text>
+                </position>
+            </language>
+            <translation>First unskilled proofs.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Opianicum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In opianicu[m]</marginalia_text>
+                    <person name="Oppianicus"/>
+                </position>
+            </language>
+            <translation>Against Oppianicus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aduersus Milonem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>aduersus Milone[m]</marginalia_text>
+                    <person name="Titus Annius Milo"/>
+                </position>
+            </language>
+            <translation>Against Milo.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Confirmatur praecipue" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quibus pra[e]indicia co[n]firmant[ur]</marginalia_text>
+                </position>
+            </language>
+            <translation>By these precedents are confirmed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Refelleuntur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quibus refellunt[ur]</marginalia_text>
+                </position>
+            </language>
+            <translation>By these refuted.</translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="rebus" type="straight"/>
+        <underline language="LA" method="pen" text="Vix autem ulla est per omnia alteri similis. Si" type="straight"/>
+        
+        <numeral place="right_margin">.1.</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+    </annotation>
+</transcription>

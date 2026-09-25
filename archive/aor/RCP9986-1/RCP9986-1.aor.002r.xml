@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.002r.tif" pagination="3" reader="John Dee" signature="A.iij."/>
+    <annotation>
+        
+        <marginalia anchor_text="Troia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Troia</marginalia_text>
+                    <location name="Troy"/>
+                </position>
+            </language>
+            <translation>Troy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="morae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mora</marginalia_text>
+                </position>
+            </language>
+            <translation>Delay.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Iam seges" type="straight"/>
+        <underline language="LA" method="pen" text="Quid timeam, ignoro, timeo tamen omnia demens" type="straight"/> 
+        <underline language="LA" method="pen" text="Et patet in curas area lata meas" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Iam seges est, vbi Troia fuit, resecandáq[ue] falce, Luxuriat phrygio sanguine pinguis humus. Semisepulta virûm curuis feriuntur aratris Ossa, ruinosas occulit herba domos. Victor abes, nec scire mihi, quae causa morandi"/>
+        <mark language="LA" method="pen" name="vertical_bar" place="right_margin" text="Quaecunq[ue] aequor habet, quaecunq[ue] pericula tellus, Tam longae causas suspicor esse morae"/>
+        
+    </annotation>
+</transcription>

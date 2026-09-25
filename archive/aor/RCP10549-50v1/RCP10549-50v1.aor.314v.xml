@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.314v.tif" pagination="608" reader="John Dee" signature="[ppp.viii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="signum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Signu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>A sign.</translation>
+        </marginalia>  
+        
+        <marginalia anchor_text="ad Italia[m] vergere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ad italia[m] v[er]gere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To turn towards Italy [LCL 507, 164].</translation>
+        </marginalia>  
+        
+        <marginalia anchor_text="subsidium haberet etiam transmarinum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Subsidiu[m] tra[n]smarinu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Overseas support.</translation>
+        </marginalia>  
+        
+        <marginalia anchor_text="temporibus potius parere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tempori pare.</marginalia_text>
+                </position>
+            </language>
+            <translation>To yield to the circumstances.</translation>
+        </marginalia>  
+        
+        <underline language="LA" method="pen" text="ne cogitando quidem explicare quisqua[m] potest" type="straight"/>
+        <underline language="LA" method="pen" text="nu[n]c quod agitur, agamus. agitur aute[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ipse per sese" type="straight"/>
+        <underline language="LA" method="pen" text="temporibus potius parere, quàm" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">22</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">15</numeral>
+        
+        <drawing anchor_text="ne cogitando quidem explicare quisqua[m] potest" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>   
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.141r.tif" pagination="21" reader="John Dee" signature="b.iii."/>   
+    <annotation>
+        
+        <marginalia anchor_text="vitatione[m]; me[n]titiones; disciplinabilem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>vitatio me[n]titio. disciplinabilis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Avoidance, deception, learned.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="DELIBERATIONES partim sunt huiusmodi, vt quaeratur vtru[m] potius faciendum sit: partim huiusmodi, vt quid potissimum faciendum sit, consyderetur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Deliberationes 2</marginalia_text>
+                </position>
+            </language>
+            <translation>Deliberations, 2.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Secu[n]da diuisio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The second division.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Vtilitas in duas partes in ciuili consultatione[m] diuiditur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vtilitatis diuisio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The division of advantage.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Tuta; Haec distribuitur in vim &amp; dolum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tut[a]e vtilitatis diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>The division of the advantage of security.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Honesta res diuiditur in rectum &amp; laudabile" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>honesta[e] vtilitatis diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>The division of the advantage of honour.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Rectu[m]; Id diuiditur in prudentia[m], iustitiam, fortitudine[m], modestiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Recti diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>The division of the right.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Prude[n]tiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Prude[n]tia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Wisdom.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Iustitia; Fortitudo; Modestia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iusticia. fortitudo. Modestia. ]</marginalia_text>
+                </position>
+            </language>
+            <translation>Justice, fortitude, moderation. ]</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Prude[n]tiae partibus vtemur in dicendo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qua[n]do vtem[ur] partibus prudentia[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>When we will use the parts of wisdom.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Iustitiae partibus vtemur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qua[n]do iusticia[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>When [the parts] of justice.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quibus causis rei natura faciet deliberatione[m], omnis ratio ad ipsam rem acco[m]modabitur. In quibus extranea causa co[n]sciet deliberatione[m], in his ea ipsa erit causa adauge[n]da" type="straight"/>
+        <underline language="LA" method="pen" text="me[n]titiones, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="disciplinabilem" type="straight"/>
+        
+        <mark language="LA" method="pen" name="tripunctus_with_tail" place="head" text="vitatio"/>
+        <mark language="LA" method="pen" name="duopunctus_with_antenna" place="head" text="me[n]titio"/>
+        <mark language="LA" method="pen" name="pin" place="head" text="disciplinabilis"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- poterimus. Iustitiae -->
+        
+        <mark language="IW" method="pen" name="tripunctus_with_tail" place="right_margin" text="Tut[a]e vtilitatis diuisio"/>
+        <mark method="pen" name="duopunctus_with_antenna" place="right_margin"/>
+        <mark method="pen" name="pin" place="right_margin"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3.</numeral>
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2.</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+    </annotation>
+</transcription>

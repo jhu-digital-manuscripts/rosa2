@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.007r.tif" pagination="5" reader="John Dee" signature="A iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Britanni" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Qui Britanni?   <!-- DO: Maybe 'Which Britons?' -->
+                    </marginalia_text>
+                    <location name="Britain"/>
+                </position>
+            </language>
+            <translation>
+                Who are the Britons?
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vide de hijs in Histori[a]e Brytannica[e] defe[n]sio[n]e Jo[hann]is Rhesi   
+                    </marginalia_text>
+                <person name="John Price"/>
+                <book title="Historiae Brytannicae defensio"/>
+                </position>
+            </language>
+            <translation>See their account in John Price's defense of the British history.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; Britanni" type="double"/>
+        <underline language="LA" method="pen" text="Alanus" type="straight"/>
+        <underline language="LA" method="pen" text="Fretheuiri" type="straight"/>
+        <underline language="LA" method="pen" text="Ogomuni" type="straight"/>
+        <underline language="LA" method="pen" text="filij Thori" type="straight"/>  
+        <underline language="LA" method="pen" text="Boyb" type="straight"/>
+        <underline language="LA" method="pen" text="Simeonis" type="straight"/>
+        <underline language="LA" method="pen" text="Mairi" type="straight"/>
+        <underline language="LA" method="pen" text="filij Atachi" type="straight"/>
+        <underline language="LA" method="pen" text="filij Aurtaachi" type="straight"/>
+        <underline language="LA" method="pen" text="Ceihepti" type="straight"/>
+        <underline language="LA" method="pen" text="Cozechi" type="straight"/>
+        <underline language="LA" method="pen" text="Abrech" type="straight"/>
+        <underline language="LA" method="pen" text="filij Ra" type="straight"/>
+        <underline language="LA" method="pen" text="filij Esra" type="straight"/>
+        <underline language="LA" method="pen" text="filij Isram" type="straight"/>
+        <underline language="LA" method="pen" text="filij Baith" type="straight"/>
+        <underline language="LA" method="pen" text="filij Iohan" type="straight"/>
+        <underline language="LA" method="pen" text="Iabath" type="straight"/>
+        <underline language="LA" method="pen" text="filij Iaphet" type="straight"/>
+        <underline language="LA" method="pen" text="filij Noë" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- Alanus, vt -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- aiunt, fili[us] -->
+        
+    </annotation>
+</transcription>

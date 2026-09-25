@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.118r.tif" pagination="221" reader="John Dee" signature="t.iij."/>
+    <annotation>
+        
+        <marginalia anchor_text="Cyrus maior Persarum rex adit imperium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Monarchia Cyri quando inco[e]pit.</marginalia_text>
+                    <person name="Cyrus the Great"/>
+                </position>
+            </language>
+            <translation>When the monarchy of Cyrus began.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="anno ab Vrbe condita 295; annum Vrbis conditae 193" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Differe[n]tia 100 Annor[um].</marginalia_text> 
+                </position>
+            </language>
+            <translation>A difference of 100 years.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="belli Peloponnesiaci tempus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Belli Peloponesiaci tempus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The time of the Peloponnesian war.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Socrates cicutam bibit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Socrates Cicuta[m] bibit</marginalia_text>
+                    <person name="Socrates"/>
+                </position>
+            </language>
+            <translation>Socrates drank hemlock.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ne id quidem quod ex Pausania sumpsimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pausania[e] no[n] vbi indubitata adhibenda fides.</marginalia_text>     
+                    <person name="Pausanias"/>
+                </position>
+            </language>
+            <translation>When undoubted trust in the Pausanians must not be employed.</translation>  
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="adit imperium" type="double"/>
+        <underline language="LA" method="pen" text="octogesimae" type="straight"/>
+        <underline language="LA" method="pen" text="condita 295" type="straight"/>
+        <underline language="LA" method="pen" text="habemus ex deductis ordine temporibus" type="straight"/>
+        <underline language="LA" method="pen" text="Olympiadem 55" type="straight"/>
+        <underline language="LA" method="pen" text="conditae 193. quum Seruius" type="straight"/>
+        <underline language="LA" method="pen" text="Idque vnum animaduersum, falsa esse maiore parte, quae sunt historiis prodita, arguet" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Croesi tempora" type="straight"/>
+        <underline language="LA" method="pen" text="alio ordine &amp; loco" type="straight"/>
+        <underline language="LA" method="pen" text="temporum certiorem deductionem in aliud reseruantes tempus" type="straight"/>
+        <underline language="LA" method="pen" text="hunc laborem aliis communicantes" type="straight"/>
+        <underline language="LA" method="pen" text="fortasse caeteris erit certior" type="straight"/>
+        <underline language="LA" method="pen" text="ea tempora huius belli, quae commemorata sunt, constare" type="straight"/>
+        <underline language="LA" method="pen" text="centesimaesecundae anno altero, certè" type="straight"/>
+        <underline language="LA" method="pen" text="Socrates cicutam" type="straight"/>
+        <underline language="LA" method="pen" text="Ex quibus temporum notationibus, possunt iam permulta emendari" type="straight"/>
+        <underline language="LA" method="pen" text="atque id quod iam dictum fuit, intelligi" type="straight"/>
+        <underline language="LA" method="pen" text="in prophana historia certi esse in temporibus, ante Philippi Macedonis patris Alexandri Magni tempora. Nam" type="straight"/>
+        <underline language="LA" method="pen" text="ne id quidem" type="double"/>
+        <underline language="LA" method="pen" text="ista serius" type="double"/>
+        <underline language="LA" method="pen" text="expectantes tempus quo" type="double"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- rex adit -->
+        <mark method="pen" name="bracket" place="intext"/>  <!-- regnasset. Bella -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- esse maiore -->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

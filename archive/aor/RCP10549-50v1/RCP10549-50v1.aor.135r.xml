@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.135r.tif" pagination="249" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="omnes rumorum &amp; concionum ventos colligere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        o[mn]es rumoru[m] &amp; co[n]cionum ventos colligere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To catch every breath of gossip and harangue.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="concio vehemens &amp; grauis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        co[n]cio vehemens grauis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Harangue, vehement and severe.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in aliis no[n]nullis suspitio consistebat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Svspitionem consistere in aliquo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To establish the suspicion in something.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="etsi alii pecunia accepta verum iudicabant" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; concionum ventos colligere consuesset, oblatam sibi facultatem putauit, vt ex inuidia" type="straight"/>
+        <underline language="LA" method="pen" text="Staleni sententia" type="straight"/>
+        <underline language="LA" method="pen" text="L. Quintius homo cum summa potestate praeditus, tum ad inflammandos" type="straight"/>
+        <underline language="LA" method="pen" text="non disceptatione" type="straight"/>
+        <underline language="LA" method="pen" text="at tum si dicerem, non audirer: non quòd alia res esset, immo eadem, sed tempus aliud. id adeo sic cognoscite" type="straight"/>
+        <underline language="LA" method="pen" text="qui id hoc tempore infirmare conetur" type="straight"/>
+        <underline language="LA" method="pen" text="Quid est praeterea quod in causa relinquatur?" type="straight"/>
+        <underline language="LA" method="pen" text="ipsam multitudine[m], &amp; atrocitate[m] criminu[m]" type="straight"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">15</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">15</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+        <drawing anchor_text="etsi alii pecunia accepta verum iudicabant" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

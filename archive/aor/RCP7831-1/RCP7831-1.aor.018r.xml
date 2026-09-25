@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="RCP7831-1.018r.tif" pagination="25" reader="Dee" signature="D[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="in Tauro" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>in ♉</marginalia_text>
+                    <symbol_in_text name="Taurus"/>
+                </position>
+            </language>
+            <translation>In Taurus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in Tauro" type="straight"/>
+        <underline language="LA" method="pen" text="magnas eius mutationes inuenias" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

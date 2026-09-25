@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscrit</note>
+          <note type="commonName">Français 12594</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="197" unit="folios">197</measure>
+            <dimensions>
+              <height unit="mm">286</height>
+              <width unit="mm">203</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">0</note>
+          <note type="material">parchemin</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1400" notBefore="1300">14e siècle</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de France</repository>
+            <idno>fr. 12594</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="131r">1r-131r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">131</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">42</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="131v" to="135r">131v-135r</locus>
+              <title>Le Miroir de l'Ame</title>
+              <note type="textid">miroir</note>
+              <note type="folios">5</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">42</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="136r" to="149r">136r-149r</locus>
+              <title>Testament</title>
+              <note type="textid">testament</note>
+              <note type="folios">14</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">42</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="4">
+              <locus from="149v" to="169r">149v-169r</locus>
+              <title>Le Miserere du Reclus de Molliens</title>
+              <note type="textid">miserere</note>
+              <note type="folios">14</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">42</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="5">
+              <locus from="169r" to="197r">169r-197r</locus>
+              <title>La Voie d'enfer et de paradis (Jean de le Mote)</title>
+              <note type="textid">voie</note>
+              <note type="folios">29</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">42</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

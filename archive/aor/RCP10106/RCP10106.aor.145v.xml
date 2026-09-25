@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.145v.tif" pagination="290" reader="John Dee" signature="[t[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Iulius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Caius Iulius.</marginalia_text>
+                </position>
+            </language>
+            <translation>Julius Caesar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Cluentio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Cluentio</marginalia_text>
+                    <book title="Pro Cluentio"/>
+                </position>
+            </language>
+            <translation>Pro Cluentio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Fabritij fuga" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fabritij fuga.</marginalia_text>
+                    <person name="Fabricius"/>
+                </position>
+            </language>
+            <translation>Fabricius' escape.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Siculi quidem, ut sunt lasciui &amp; dicaces" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Siculi lasciui su[n]t, et dicaces.</marginalia_text>
+                </position>
+            </language>
+            <translation>The Sicilians are playful and witty.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Afer Domitius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Afer Domitius</marginalia_text>
+                    <person name="Domitius Afer"/>
+                </position>
+            </language>
+            <translation>Domitius Afer.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero in secu[n]do de Orat.libro" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero De Orat[ore].</marginalia_text>
+                    <person name="Cicero"/>
+                    <book title="De Oratore"/>
+                </position>
+            </language>
+            <translation>Cicero's De Oratore.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="In narrando aute[m] Cicero co[n]fistere facetias putat, dicacitatem in iaciendo. Mire" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

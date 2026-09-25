@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.100r.tif" pagination="183" reader="Harvey" signature="q2[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                       braue Valerius Corvinus.
+                    </marginalia_text>
+                    <person name="Marcus Valerius Corvus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Vndiq[ue] non urbana tantum" type="straight"/>
+        <underline language="LA" method="pen" text="agresit iuuentute decem legiones" type="straight"/>
+        <underline language="LA" method="pen" text="hae uires populi Romani, quas uix terrarum capit orbis" type="straight"/>
+        <underline language="LA" method="pen" text="adeò in quae laboramus" type="straight"/>
+        <underline language="LA" method="pen" text="diuitias luxuriamq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="que res ad Camillum" type="straight"/>
+        <underline language="LA" method="pen" text="quos rapto uiuere necessitas cogeret" type="straight"/>
+        <underline language="LA" method="pen" text="Gallus processit magnitudine atq[ue] armis insignis" type="straight"/>
+        <underline language="LA" method="pen" text="quatiensq[ue] scutum hasta, cum silentium" type="straight"/>
+        <underline language="LA" method="pen" text="unum ex Romanis, qui secum ferro decera[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="Valerius" type="straight"/>
+        <underline language="LA" method="pen" text="indigniorem eo decore se" type="straight"/>
+        <underline language="LA" method="pen" text="T. Manlium" type="straight"/>
+        <underline language="LA" method="pen" text="in medium armatus processit" type="straight"/>
+        <underline language="LA" method="pen" text="coruus repentè in galea consedit in hostem" type="straight"/>
+        <underline language="LA" method="pen" text="augurium coelo missum" type="straight"/>
+        <underline language="LA" method="pen" text="diuus, si diua esset" type="straight"/>
+        <underline language="LA" method="pen" text="propitius adesset" type="straight"/>
+        <underline language="LA" method="pen" text="dictu mirabile, tenuit" type="straight"/>
+        <underline language="LA" method="pen" text="solùm ales captam" type="straight"/>
+        <underline language="LA" method="pen" text="certamen initum est, leuans se alis, os" type="straight"/>
+        <underline language="LA" method="pen" text="mente turbatum, Valerius obtruncat" type="straight"/>
+        <underline language="LA" method="pen" text="coruus è conspectu" type="straight"/>
+        <underline language="LA" method="pen" text="orientem" type="straight"/>
+        <underline language="LA" method="pen" text="spoliare corpus caesi" type="straight"/>
+        <underline language="LA" method="pen" text="circa iacentis Galli corpus" type="straight"/>
+        <underline language="LA" method="pen" text="pugna atrox" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--Vale-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--Manli-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--so-->
+        
+        <mark method="pen" name="comma" place="intext"/> <!--humanum numine-->
+        <mark method="pen" name="comma" place="intext"/> <!--deorum factum-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="coruus"/> 
+        
+    </annotation>
+</transcription>

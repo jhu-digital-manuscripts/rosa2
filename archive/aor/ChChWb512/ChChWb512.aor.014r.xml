@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.014r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        in libris scriptis a greco charactere, eveniebat vt cum alicubi
+                        <!-- NBW: "a" letterform looks strange and grammatically out of place. possibly a comma? -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        λαργετια,
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        vel.
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        λαργεκια,
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        scriptor deprehenderit prima[m] litera[m] pro [lambda]; capiens no[n] pro T, Largecia[m] scripserit: et dei[n]de ab alijs Lergecia
+                        <!-- NBW: sapiens likely "capiens" -->
+                    </marginalia_text>
+                    <location name="Leucas"/>
+                </position>
+            </language>
+            <!--Transcription lacking. / NBW: Most issues corrected, need to fix the Greek-->
+            <translation>In manuscripts with Greek characteres when he found elswhere λαργετια or λαργεκια. The writer depicted the first letter taking it for [lambda] not for [Tau], and wrote Largecia, and later from others Lergecia.</translation>
+        </marginalia>
+        
+        <!-- strangely, the discussion is about eliding the initial λ, when the obvious issue to explain would be the variation between τ and κ, but I can’t make sense of the paragraph either way. See Sherman, Dee, 82--> 
+        
+        <marginalia anchor_text="trecentae &amp; viginti quatuor numero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        324 naves.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>324 ships.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="duobus diebus &amp; vna nocte" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Note two days sayling and a night
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Some copyes haue here for Lergecia, Leros
+                    </marginalia_text>
+                    <location name="Leucas"/>
+                    <emphasis method="pen" text="Some copyes haue here for Lergecia, Leros" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Insulas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Islands.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lergecia[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Lergecia vel Largecia: sed veru[m] nome[n] erat Tragecia prope Corcyra no[n] Lo[n]ge ab Epiro occasio erroris erat duplex:
+                        vna ex auditu altera ex visu.. ex auditu [deleted] vel male prolate vel male concepte vocis Targeria pro Tragecia. Deinde hic aliqua[n]dam]
+                        invocet?
+                    </marginalia_text>
+                    <location name="Leucas"/>
+                    <location name="Corfu"/>
+                    <location name="Epirus"/>
+                </position>
+            </language>
+            <translation>Lergecia or Largecia: but the real name was Tragecia near Corfu, not far from Epirus. The chance for error was two-fold: one out of hearing, the other out of seeing.
+                Out of hearing either [because of] a bad mention or [because of] mispronounciation of Targeria for Tragecia. From this the other (error) arose?
+            </translation> <!--Last bit of transcription + translation missing. / NBW: Slightly more supplied - I think this note and the note at the head are connected and that the smudge in the bottom is a corresponding "plus sign" to the one at the top. The note at the top is the "visual error" corresponding to Dee's "auditory error"-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tot &amp; tantorum principum" type="straight"/>
+        <underline language="LA" method="pen" text="trecentae" type="straight"/>
+        <underline language="LA" method="pen" text="numero praesentant[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="cunctis rex liber a carcere simulq[ue] troes" type="straight"/>
+        <underline language="LA" method="pen" text="secundis ventis" type="straight"/>
+        <underline language="LA" method="pen" text="dum littora oculis patueru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; alia duobus diebus &amp; vna nocte p[ro]spero ventorum flatu continuato" type="straight"/>
+        <underline language="LA" method="pen" text="Lergecia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ab incursione pyrataru[m]" type="double"/>
+        
+        <mark method="pen " name="plus_sign" place="head"/>
+        <mark method="pen" name="plus_sign" place="tail"/>
+        
+    </annotation>
+</transcription>

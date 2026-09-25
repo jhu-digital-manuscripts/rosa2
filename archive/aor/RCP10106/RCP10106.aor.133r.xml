@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.133r.tif" pagination="265" reader="John Dee" signature="r 5"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Demosthenem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Demosthenes.</marginalia_text>
+                    <person name="Demosthenes"/>
+                </position>
+            </language>
+            <translation>Demosthenes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Graeci" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gra[e]ci.</marginalia_text>
+                </position>
+            </language>
+            <translation>The Greeks.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>verba adhibenda secundum Materia[m] subiecta[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Words are to be applied according to their subject matter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="translatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Translatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Translation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iurisconsulti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iurisconsulti</marginalia_text>
+                </position>
+            </language>
+            <translation>Lawyers.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Graeci dicere solent, que[m] mater amictum dedit, solicitè custodientibus?" type="straight"/>
+        <underline language="LA" method="pen" text="Deinde interrogati, nunquàm respondebunt, quem" type="straight"/>
+        <underline language="LA" method="pen" text="quorum summus circa uerboru[m] proprietatem labor est, littus esse audeant dicere," type="straight"/>
+        <underline language="LA" method="pen" text="&amp; nimis suspecta argumentatio dißimulatione, &amp; multum ad fidem adiuuat audientis uoluptas" type="straight"/>
+        <underline language="LA" method="pen" text="His tame[n] habendus modus, ut sint ornamento, non impedimento" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="tail" type="florilegium"/>
+        
+    </annotation>
+</transcription>

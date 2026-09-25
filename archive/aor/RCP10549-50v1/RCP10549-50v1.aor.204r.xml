@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.204r.tif" pagination="387" reader="John Dee" signature="bbb.ii."/>
+    <annotation>
+        
+        <marginalia anchor_text="labem atque eluuiem ciuitatis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        labes eluuies ] ciuitatis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Ruin and destruction of the state.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="gradus Castoris conuellisti" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        gradus co[n]uellere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To batter the steps.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vesani" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vesanus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mad.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vxor [...] filia [...] filius [...] frater" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cice. vxor filia. filius frater }
+                    </marginalia_text>
+                    <person name="Cicero"/>
+                    <person name="Terentia"/>
+                    <person name="Tullia"/>
+                    <person name="Marcus Tullius Cicero Minor"/>
+                    <person name="Quintus Tullius Cicero"/>
+                </position>
+            </language>
+            <translation>
+                Cicero's wife, daughter, son and brother.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="crudelitate expromo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        expromere crudelitatem
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To reveal cruelty.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="manibus, ferro, lapidibus discussisti" type="straight"/>
+        <underline language="LA" method="pen" text="fac me timidum" type="straight"/>
+        <underline language="LA" method="pen" text="causa tam turpi scilicet" type="straight"/>
+        <underline language="LA" method="pen" text="an eam causam probare no[n] poteram, cuius tanta bonitas est, vt ea ipsa non modo se, sed etia[m] me absentem per se probarit" type="straight"/>
+        <underline language="LA" method="pen" text="Quid enim vos vxor mea misera violarat, qua[m] vexaustis, raptauistis, omni crudelitate lacerauistis? Quid mea filia, cuius fletus assiduus,              sordésque lugubres vobis erant iucundae, caeteroru[m] omnium mentes oculósque flectebant? Quid paruus filius, que[m] quandiu abfui, nemo nisi lachrymante[m], confectúmque vidit?              quid fecerat, quòd eum toties per insidias interficere voluistis? Quid frater meus, qui cum aliquanto post meum discessum" type="straight"/>
+        <underline language="LA" method="pen" text="cum eius moeror, squallor incredibilis &amp; inauditus, omnibus mortalibus miserabilis videbatur, quoties ex vestro ferro ac manibus est elapsus" type="straight"/>
+        <underline language="LA" method="pen" text="horrificum quoddam, &amp; nefarium omni imbutu[m] odio bellum intulistis" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+    </annotation>
+</transcription>

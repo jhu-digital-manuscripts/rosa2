@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.endmatter.flyleaf.002r.tif" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Laurentius Valla, multa[e] vir doctrine, ingenijq[ue] in primis acuti, popularibus in congressibus ac literatorum circulis, ostentanda[e] disciplina[e] iudicatus est 
+                        fuisse studiosior, ne dicam parùm modestus; vt ijs in circulis multò appareret diligentior, quàm in libris ipsis, quos scriptos reliquit. 
+                        Cumq[ue] non pauca in Dialecticis adinuenisset, aduersùs horum temporum artis euis magistros; eò sese efferebat palam vt diceret, Nullam esse 
+                        Logicam pra[e]ter Laurentianam.
+                        Iouianus Pontanus.
+                    </marginalia_text>
+                    <person name="Lorenzo Valla"/>
+                    <person name="Giovanni Pontano"/>
+                    <book title="De bello neapolitano et de sermone"/> <!--De sermone, bk. 6, ch.4--> <!--JG: See: https://books.google.co.uk/books?id=pHAHjxIW7uEC&pg=PA321&lpg=PA321&dq=Laurentius+Valla+multae+vir+doctrine&source=bl&ots=kOrevRuIvg&sig=KBldspZFF4a7ZzkekclzPnPWfcg&hl=en&sa=X&ved=0CDsQ6AEwBGoVChMI8qaYu7K3xwIVgVkaCh0aJwhW#v=onepage&q=Laurentius%20Valla%20multae%20vir%20doctrine&f=false-->
+                    <book title="Dialectical Disputations"/>
+                    <emphasis method="pen" text="Laurentius Valla" type="straight"/>
+                    <emphasis method="pen" text="multa[e] vir doctrine" type="straight"/>
+                    <emphasis method="pen" text="popularibus in congressious" type="straight"/>
+                    <emphasis method="pen" text="ostentanda[e] disciplina[e] iudicatus" type="straight"/>
+                    <emphasis method="pen" text="circulis multò appareret diligentior" type="straight"/>
+                    <emphasis method="pen" text="in libris ipsis, quos scriptos" type="straight"/>
+                    <emphasis method="pen" text="Nullam esse Logicam pra[e]ter" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                "Lorenzo Valla, a man of great learning and acute ability in the foremost principles, in community assemblies and in the circles of literary people, he        
+                was judged to have been more studious of showing displine, lest I say not modest enough; so that he appeared far more diligent in those circles than in the books themselves, which he left behind written.
+                And since he had invented not a few things in his 'Dialectical disputations', contrary to the teachers of this art of those times, consequently he openly raised himself so that he said that there
+                is no logic beyond Valla's."
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Seipsum laudare, simplicis, et rudis, vt Glauci Homerici: Vituperare, esurientis, et abiecti; Vt Æsopi: vtrunq[ue] vani, et leuis; vt Thrasonis aut Geta[e]: Cato 
+                        appellat vno verbo stultum, qui sese laudat, aut culpat: Plutarchus distinquit, de excellenti homine, indignè prouocato, uel iniuriosè tractato: quem non 
+                        dedecurrit, sua[e] probata[e] Virtutis obiter meminisse: quom[odo] <!--JG: Not entirely sure--> Scipio ad Capitolium vocauit suos 
+                        Accusatores, tanq[uam], Dijs gratius debituros pro Victorijs suis: Alioqui, vel magnorum virorum fuerit, plurimum facere;
+                        minimum de se loqui: Vt Iugurtham commendat Sallustius.
+                        Nec stultus, nec ignauus: Homericum Elogium.
+                    </marginalia_text>
+                    <person name="Glaucus"/>
+                    <person name="Homer"/>
+                    <person name="Aesop"/>
+                    <person name="Thrason"/> 
+                    <person name="Cato the Elder"/> <!-- JG: Not entirely sure -->
+                    <person name="Plutarch"/>
+                    <person name="Scipio Africanus"/>
+                    <person name="Jugurtha"/>
+                    <person name="Sallust"/>
+                </position>
+            </language>
+            <translation>
+                To praise oneself as simple and wild, as of Glaucus and Homerus: to find fault with hungry and common folk, as of Aesop: both vain and fickle, as of Thrason or the Geta: 
+                With one word Cato called a person foolish, who praised or condemned himself: Plutarch distinguised regarding an excellent man, having been provoked unjustly or having been treated insultingly: whom
+                he did not turn to on the way to remember his approved virtue: in the way Scipio summoned his accusers to the Capitol as if they were indebted the gratitude by the Gods for their victories. 
+                Otherwise, he was to do many things of great men; to speak least about himself: As Sallust commened to Jugurtha. Neither the foolish nor the idle person: the Homerian inscription.
+            </translation>
+        </marginalia>
+
+        <symbol language="LA" name="SS" place="full_page" text="circulis multò appareret diligentior"/> 
+        
+        <mark method="pen" name="scribble" place="full_page"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="full_page" text="popularibus in"/>
+        <mark language="LA" method="pen" name="plus_sign" place="full_page" text="ostentanda[e] disciplina[e] iudicatus"/>
+        <mark language="LA" method="pen" name="plus_sign" place="full_page" text="circulis multò appareret diligentior"/>
+        
+    </annotation>
+</transcription>

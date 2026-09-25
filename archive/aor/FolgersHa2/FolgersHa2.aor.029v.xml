@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.029v.tif" pagination="378" reader="Harvey"/>	<!-- ABO 034left -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Eutrapeli summus Scopus, Omnes Arte, et
+                    					Virtute antecellere: acerrimos indomito spirit[u]
+                      			</marginalia_text>
+            				<person name="Eutrapelus"/>
+            				<emphasis method="chalk" type="straight"/>
+            			</position>
+        				<position book_orientation="0" place="left_margin">
+        					<marginalia_text>
+        						excedere: diligentissimos industria,
+        						optimos meritis superare: postrèmo (
+        					</marginalia_text>
+        					<emphasis method="chalk" type="straight"/>
+        				</position>
+        				<position book_orientation="0" place="intext">
+        					<marginalia_text>
+        						) dignissimis omni dignitate
+        					</marginalia_text>
+        				</position>
+        				<position book_orientation="0" place="left_margin">
+        					<marginalia_text>
+        						pra[e]lucere. Solos curat Locos Communes, qui ad hunc Proprium
+        					</marginalia_text>
+        					<emphasis method="chalk" type="straight"/>
+        				</position>
+        				<position book_orientation="0" place="intext">
+        					<marginalia_text>
+        						Scopum faciunt maximè: cautissiméq[ue] prouidet, 
+        					</marginalia_text>
+        				</position>
+        				<position book_orientation="0" place="left_margin">
+        					<marginalia_text>
+        						ne suo ipsius Fini suis Vnq[uam]  
+        					</marginalia_text>
+        				</position>
+        				<position book_orientation="0" place="intext">
+        					<marginalia_text>
+        						repugnet Medijs: aut suum egregium Cursum
+        					</marginalia_text>
+        				</position>
+        				<position book_orientation="0" place="left_margin">
+        					<marginalia_text>
+        						aliquo modo interturbet.
+        					</marginalia_text>
+        				</position>
+        				<position book_orientation="0" place="tail">
+        					<marginalia_text>
+        						Sua[e] semper compos acutissima[e] rationis:
+        						et sua[e] certus efficacissima[e] actionis.
+        					</marginalia_text>
+        				</position>
+        			</language>
+        			<translation>
+        				The highest goal of Eutrapelus: to prevail over all men in Art and Virtue;
+        				to excede the keenest men with an indomitable spirit; 
+        				to surpass the most diligent men in industry and the best men in merit;
+        				finally, to outshine the most worthy men in worthiness.        				
+        				He cares only for those common places which are especially useful
+        				for his own goal, and most securely see to it that he never oppose
+        				those common men with his own goal: or that he disturbs his distinguished <!-- Recheck translation. -->
+        				course in any way. 
+        				He is always in control of his own most acute reason, and certain of his own most
+        				effective action.
+        			</translation>
+        		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						s[upr]a, 372.
+    					</marginalia_text>
+    					<internal_ref>
+    						<target ref="FolgersHa2:Ha2.026v" text="372"/>
+    					</internal_ref>
+    				</position>
+    			</language>
+    			<translation>
+    				[See] above, 372.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						pro, et contrà.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				For and against.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						scitè. s[upr]a, 372. argutè.
+    					</marginalia_text>
+    					<internal_ref>
+    						<target ref="FolgersHa2:Ha2.026v" text="372"/>
+    					</internal_ref>
+    				</position>
+    			</language>
+    			<translation>
+    				Knowingly. [See] above, 372. Cleverly.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						amphibologia. i[nfr]a, 406.
+    					</marginalia_text>
+    					<internal_ref>
+    						<target ref="FolgersHa2:Ha2.043v" text="406"/>
+    					</internal_ref>
+    				</position>
+    			</language>
+    			<translation>
+    				Ambiguity. [See] below, 406.
+    			</translation>
+    		</marginalia>
+        
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="left_margin">
+    					<marginalia_text>
+    						s[upr]a /
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				[See] above.
+    			</translation>
+    		</marginalia>
+        
+        		<marginalia hand="Italian">
+        			<language ident="EN">
+        				<position book_orientation="270" place="right_margin">
+        					<marginalia_text>
+        						Singular for knowledg, &amp; discourse: behauiour, &amp; action.
+        						<!-- CG: Missing text added. -->
+        					</marginalia_text>
+        				</position>
+        			</language>
+        		</marginalia>
+    		
+	    	<!-- Underlines -->
+	        
+    		<underline language="IT" method="pen" text="intendo questo testamento" type="straight"/>
+    		<underline language="IT" method="pen" text="da marauigliarsene" type="straight"/>
+    		<underline language="IT" method="pen" text="intendete ancho due altri," type="straight"/>
+    		<underline language="IT" method="pen" text="u'importano un poco piu" type="straight"/>
+    		<underline language="IT" method="pen" text="del testamento uecchio" type="straight"/>
+    		<underline language="IT" method="pen" text="del nuouo" type="straight"/>
+    		<underline language="IT" method="pen" text="sospetto d'heresia" type="straight"/>
+    		<underline language="IT" method="pen" text="Pungente" type="straight"/>
+    		<underline language="IT" method="pen" text="si giocaua con" type="straight"/>
+    		<underline language="IT" method="pen" text="celerità, quanto suo" type="straight"/>
+    		<underline language="IT" method="pen" text="haueua al mondo" type="straight"/>
+    		<underline language="IT" method="pen" text="tutto patiente" type="straight"/>
+    		<underline language="IT" method="pen" text="ringratio, &amp; tanto" type="straight"/>
+    		<underline language="IT" method="pen" text="io non potrò mai renderti" type="straight"/>
+    		<underline language="IT" method="pen" text="consiglio" type="straight"/>
+    		<underline language="IT" method="pen" text="l'amico prima di lui haueua" type="straight"/>
+    		<underline language="IT" method="pen" text="fatto del resto" type="straight"/>
+    		<underline language="IT" method="pen" text="bel sonetto d'una" type="straight"/>
+    		<underline language="IT" method="pen" text="Olimpio" type="straight"/>
+    		<underline language="IT" method="pen" text="tanto bello" type="straight"/>
+    		<underline language="IT" method="pen" text="che ella non se lo sia fatto fare" type="straight"/>
+    		<underline language="IT" method="pen" text="Ambiguo" type="straight"/>
+    		<underline language="IT" method="pen" text="galante huomo" type="straight"/>
+    		<underline language="IT" method="pen" text="publicamente infame" type="straight"/>
+    		<underline language="IT" method="pen" text="ispia" type="straight"/>
+    		<underline language="IT" method="pen" text="caduto in delitto" type="straight"/>
+    		<underline language="IT" method="pen" text="prigioni segrete" type="straight"/>
+    		<underline language="IT" method="pen" text="hauergli compassione" type="straight"/>
+    		
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="Sun" place="right_margin"/>
+    		<symbol name="JC" place="intext"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- gior -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- sospet -->
+    		<mark method="pen" name="comma" place="right_margin"/> <!-- mondo -->
+    		<mark method="pen" name="bracket" place="right_margin"/> <!-- piu ... haue -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- haue -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- infa -->
+    	
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="bracket" place="left_margin"/> <!-- u'importano ... to -->
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- consiglio -->
+    		<mark method="pen" name="bracket" place="left_margin"/> <!-- giliene ... [Ambiguo -->
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- [Ambiguo.] -->
+		    
+	    	<!-- Intext -->
+	    	<mark method="pen" name="plus_sign" place="intext"/> <!-- due altri -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- del te -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- nuouo, ne' -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Pungente"/>
+    			<!-- It looks like he traces the "c" in "che" in the second paragraph, perhaps due to a printing error. -->
+    		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- Chalk mark on left side of second paragraph -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- non potro' -->
+    		<mark method="pen" name="equal_sign" place="intext"/> <!-- sonetto -->
+    		<mark method="pen" name="comma" place="intext"/> <!-- gentildonna a -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- Giraldi, & -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- ella non -->
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- Ambiguo.] -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- me per ispia -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- ispia, a -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- grete, si -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- libraio, io -->
+    		
+
+    </annotation>
+</transcription>

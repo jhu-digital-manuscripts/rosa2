@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.214r.tif" pagination="214" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Beragua" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Beragua</marginalia_text>
+                    <location name="Beragua"/>
+                </position>
+            </language>
+        </marginalia>
+
+        <marginalia anchor_text="MDIII" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1503</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Diego Mendez" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Diego Mendez</marginalia_text>
+                    <person name="Diego Mendez"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Costa de' contrasti" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Costa de' contrasti</marginalia_text>
+                </position>
+            </language>
+            <translation>The coast that contrasts.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>The letter printed</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Beragua" type="straight"/>
+        <underline language="IT" method="pen" text="scritto da Diego Mendez" type="straight"/>
+        <underline language="IT" method="pen" text="ancora scrisse questo viaggio" type="straight"/>
+        <underline language="IT" method="pen" text="poi che ella si troua stampata, il lettore" type="straight"/>
+        <underline language="IT" method="pen" text="potrà quel, che noi patrimmo, &amp; quanto" type="straight"/>
+        <underline language="IT" method="pen" text="più douria prosperare" type="straight"/>
+        <underline language="IT" method="pen" text="Beragua, &amp; Belporto" type="straight"/>
+        <underline language="IT" method="pen" text="Costa de' contrasti" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.009v.tif" pagination="18" reader="John Dee" signature="[b[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="seu Iod, qui est totius literaturae mundi basis &amp; figura prima, aut apiculum unum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iod Apiculu[m] }</marginalia_text>   
+                </position>
+            </language>
+            <translation>Yod, an iota }</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="modum naturaliter" type="straight"/>
+        <underline language="LA" method="pen" text="ueri manifestationem" type="straight"/>
+        <underline language="LA" method="pen" text="mentis impulsionem" type="straight"/>
+        <underline language="LA" method="pen" text="summa impulsio animi" type="straight"/>
+        <underline language="LA" method="pen" text="similitudo aut co[m]paratio" type="straight"/>
+        <underline language="LA" method="pen" text="tra[n]slatio in" type="straight"/>
+        <underline language="LA" method="pen" text="demonstratione" type="double"/>
+        <underline language="LA" method="pen" text="mathematica" type="straight"/>
+        <underline language="LA" method="pen" text="suasoris &amp; demonstratiuas" type="straight"/>
+        <underline language="LA" method="pen" text="minima elementa" type="straight"/>
+        <underline language="LA" method="pen" text="etiam pu[n]cta &amp; apiculi" type="straight"/>
+        <underline language="LA" method="pen" text="summum mysteriorum gratiae in Scriptura sacra" type="straight"/>
+        <underline language="LA" method="pen" text="positorum examen" type="double"/>
+        <underline language="LA" method="pen" text="unum, seu" type="double"/>
+        <underline language="LA" method="pen" text="mundi basis &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="figura prima" type="double"/>
+        <underline language="LA" method="pen" text="aut apiculum" type="double"/>
+        <underline id="RCP10601:024:u0001" language="LA" method="pen" text="unde uocalium" type="straight"/>
+        <underline id="RCP10601:024:u0002" language="LA" method="pen" text="&amp; accentuum" type="straight"/>
+        <underline id="RCP10601:024:u0003" language="LA" method="pen" text="omnia fiant" type="triple"/>
+        <underline language="LA" method="pen" text="inde" type="double"/>
+        <underline id="RCP10601:024:u0004" language="LA" method="pen" text="ipso facto" type="double"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- elementa sint -->      
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral language="LA" place="intext" text="unum">1</numeral> 
+        <numeral language="LA" place="intext" text="apiculum">2</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP10601:024:u0001"/>
+            <marginal_annotation idref="RCP10601:024:u0002"/>
+            <relation from="RCP10601:024:u0001" to="RCP10601:024:u0002" type="undirected"/>
+        </physical_link>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP10601:024:u0003"/>
+            <marginal_annotation idref="RCP10601:024:u0004"/>
+            <relation from="RCP10601:024:u0003" to="RCP10601:024:u0004" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.065v.tif" pagination="130" reader="John Dee" signature="[i[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="καθολικὰ" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>καιρὸν</marginalia_text>
+                </position>
+            </language>
+            <translation>The right time.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="πράξις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>πράξις</marginalia_text>
+                </position>
+            </language>
+            <translation>Praxis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Thrasybulo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Thrasibulus.</marginalia_text>
+                    <person name="Thrasybulus"/>
+                </position>
+            </language>
+            <translation>Thrasybulus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Coniectura dicta est à co[n]iectua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Unde dicitur Co[n]iect</marginalia_text>
+                </position>
+            </language>
+            <translation>From where it is said as 'coniect'.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="coniectores" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Coniectores.</marginalia_text>
+                </position>
+            </language>
+            <translation>Interpreters.</translation>
+        </marginalia>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.495r.tif" pagination="441" reader="John Dee" signature="EEE.v."/>   
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἀμφότεροι δὲ πόδες γαμβροῦ ἐπισημαίνοιεν
+                        Περσέως, οἵ ῥά οἱ αἰὲν ἐπωμάδιοι φορέονται.
+                    </marginalia_text>
+                    <X-ref book_title="Phaenomena" person="Aratus"/>
+                </position>
+            </language>
+            <translation>“Her two feet will guide thee to her bridegroom, Perseus, over whose shoulder they are for ever carried.”
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Deltoton" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Deltoloy.</marginalia_text>
+                </position>
+            </language>
+            <translation>Triangulum.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="coelestem dicere nodum. Andromedae laeuo ex humero siqua exere perges, At positum poteris supra cognoscere Piscem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Co[e]lestis pisciu[m] nodus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The celestial point of Pisces.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Perseus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Perseus</marginalia_text>
+                </position>
+            </language>
+            <translation>Perseus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The seven starres.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quod soliti, simili quia forma littera claret." type="straight"/>
+        <underline language="LA" method="pen" text="etiam vehementius" type="straight"/>
+        <underline language="LA" method="pen" text="Quam veteres soliti coelestem dicere nodum" type="straight"/>
+        <underline language="LA" method="pen" text="siqua exere perges" type="straight"/>
+        <underline language="LA" method="pen" text="praepandens temporis ortus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

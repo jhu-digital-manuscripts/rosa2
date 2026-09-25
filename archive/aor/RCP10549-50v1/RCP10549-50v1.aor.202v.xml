@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.202v.tif" pagination="384" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="suscepit etiam liberos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        suscipere liberos
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To rear children.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="funditus euerteres" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        funditus euertere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To turn [something] upside down.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nostra memoria" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        nostra memoria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Our memory.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="adoptauit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Adoptio[n]es
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Adoptions.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="adoptiua" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        adoptiua
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Adoptive.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="imberbem adolescentulum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Imberbis adolescens.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A beardless young man.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ema[n]cipari" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        emancipari
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be emancipated.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="funditus euerteres" type="straight"/>
+        <underline language="LA" method="pen" text="vterque nostra memoria" type="straight"/>
+        <underline language="LA" method="pen" text="pertubatis sacris, co[n]taminatis gentibus, &amp; deseruisti, &amp; quam polluisti, iure" type="straight"/>
+        <underline language="LA" method="pen" text="quàm venire imberbem adolescentulum, bene valentem ac maritum, dicere" type="straight"/>
+        <underline language="LA" method="pen" text="haec quae vnà cum populo didici, quae saepe in concionibus responsa sunt, noui" type="straight"/>
+        
+        <mark language="LA" method="pen" name="tripunctus_with_tail" place="left_margin" text="Adoptio[n]es"/>
+        
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+    </annotation>
+</transcription>

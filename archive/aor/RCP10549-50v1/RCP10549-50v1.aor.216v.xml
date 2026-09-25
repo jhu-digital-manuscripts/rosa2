@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.216v.tif" pagination="412" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="iustitium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        iustitium.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Cessation of public business.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="repulsi sunt ii" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Repulsi qui
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Those rejected.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Reipublicae status commutetur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Res. Comutatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A matter. An upheaval.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Deteriores cauete" type="straight"/>
+        <underline language="LA" method="pen" text="eodem enim tempore &amp; suscipimur in lucem, &amp; hoc caelesti spiritu augemur, &amp; certam in sedem ciuitatis ac libertatis ascribimur" type="straight"/>
+        <underline language="LA" method="pen" text="idémque earum" type="straight"/>
+        <underline language="LA" method="pen" text="quarum ope" type="straight"/>
+        <underline language="LA" method="pen" text="infinita sunt scelera, quae ab illo in patria[m] sunt edita" type="straight"/>
+        <underline language="LA" method="pen" text="quae nauis vnquam in flumine publico tam vulgata omnibus, quàm istius aetas fuit? quis vnquam nepos tam liberè est cum scortis,              quàm hic cum sororibus volutatus? quem denique tam immanem Charybdin poetae fingendo exprimere potueru[n]t, quae tantos exhaurire gurgites posset, quantas iste Byza[n]tiorúmque praedas exorbuit" type="straight"/>
+        <underline language="LA" method="pen" text="ciuem qui se pro patriae salute opponat inuidiae, frustra post hac requiretis" type="straight"/>
+        
+        <symbol name="Asterisk" place="tail"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">3</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Rei. Comutatio" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

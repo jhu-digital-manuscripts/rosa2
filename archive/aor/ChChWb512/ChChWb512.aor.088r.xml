@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.088r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="sexaginta milia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>6000</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="vigi[n]ti milia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>120000</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[60000 - deleted]</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="octoginta milia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>80000</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="octoginta &amp; tria milia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1200</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        totus imperfectus in memoris istis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation> an imperfect total in this account</translation>
+           
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Gelandia, FriseLande.
+                    </marginalia_text>
+                    <location name="Gothland"/>
+                    <location name="Friesland"/>
+                </position>
+            </language>
+            <translation>Gothland, Friesland</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Rutenorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ruteni
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The Ruteni.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="portu[m] Barbae Fluuij" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Portus Barb[a]e fluuij
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The mouth of the river Barba.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Gelandia no[n] debet censeri exigua Insula cum nec Hibernia minor sit vt asserit Nicolaus Genus qui in ea fuerit: et cum vt ministret milites quot Hibernia, vel Orcades [etc]
+                    </marginalia_text> 
+                    <location name="Gothland"/>
+                    <location name="Ireland"/>
+                    <location name="Orkney Islands"/>
+                </position>
+            </language>
+            <translation>Gothland must not be considered as small island since Hibernia is not smaller, as Nicolaus Genus argues, who was from there: and since it should send soldiers as Hibernia, or the Orcades, etc.   </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="singuli quot in obsequiu[m] eius debebant" type="straight"/>
+        <underline language="LA" method="pen" text="dux Armoricae" type="straight"/>
+        <underline language="LA" method="pen" text="quot quisq[ue] debebat" type="double"/>
+        <underline language="LA" method="pen" text="ex sex insulis" type="double"/>
+        <underline language="LA" method="pen" text="Hyberniae" type="straight"/>
+        <underline language="LA" method="pen" text="Islandiae" type="straight"/>
+        <underline language="LA" method="pen" text="Gelandiae" type="double"/>
+        <underline language="LA" method="pen" text="Orcadum" type="straight"/>
+        <underline language="LA" method="pen" text="NorWegiae" type="straight"/>
+        <underline language="LA" method="pen" text="atq[ue] Daciae" type="straight"/>
+        <underline language="LA" method="pen" text="milia essent" type="straight"/>
+        <underline language="LA" method="pen" text="Rutenorum" type="straight"/>
+        <underline language="LA" method="pen" text="Portune[n]sium" type="straight"/>
+        <underline language="LA" method="pen" text="Estrusiensium" type="straight"/>
+        <underline language="LA" method="pen" text="Cenoma[n]noru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="erant centum octoginta &amp; tria" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ducenti" type="straight"/>
+        <underline language="LA" method="pen" text="pedites" type="double"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="At" copytext="Ad" language="LA"/>
+
+    </annotation>
+</transcription>

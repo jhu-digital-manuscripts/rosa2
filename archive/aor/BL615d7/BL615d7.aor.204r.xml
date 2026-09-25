@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.204r.tif" pagination="204" reader="John Dee" signature="Cciiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Fiume della disgratia" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Fiume della disgratia</marginalia_text>
+                </position>
+            </language>
+            <translation>River of disgrace.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hucita" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hucita</marginalia_text>
+                    <location name="La Huerta"/>
+                </position>
+            </language>
+            <translation>La Huerta</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Fiume della" type="straight"/>
+        <underline language="IT" method="pen" text="erano canne" type="double"/>
+        <underline language="IT" method="pen" text="grosse, come la coscia di vn'" type="straight"/>
+        <underline language="IT" method="pen" text="Quiriui" type="straight"/>
+        <underline language="IT" method="pen" text="Cariai" type="straight"/>
+        <underline language="IT" method="pen" text="Isoletta folta" type="straight"/>
+        <underline language="IT" method="pen" text="la Hucita" type="straight"/>
+        <underline language="IT" method="pen" text="lega dalla popolatione" type="straight"/>
+        <underline language="IT" method="pen" text="Cariai" type="straight"/>
+        <underline language="IT" method="pen" text="negri, come pece" type="straight"/>
+        <underline language="IT" method="pen" text="baratto delle" type="straight"/>
+        
+    </annotation>
+</transcription>

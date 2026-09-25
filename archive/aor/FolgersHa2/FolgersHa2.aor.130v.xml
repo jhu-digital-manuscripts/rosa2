@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.130v.tif" pagination="84" reader="Harvey" signature="[F2v]"/>	<!-- ABO 135left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						{ Nemo vnq[uam] satis potuit: aut seriò voluit, quantum
+						potuit. Satis benè nullus vnq[uam] dixit,
+						aut fecit.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Vt pra[e]stantiori adhuc
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						opus Sit Natura, arte, exercitatione:
+						omninóq[ue] industria absoluta.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				No one ever did enough, or wanted seriously enough as much as he could.
+				No one ever said anything well enough or did well enough.
+				Just as it be necessary for him who most excels to use natura, art, and exercise,
+				and total industriousness completely. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						s[upr]a, 7.
+					</marginalia_text>
+					<internal_ref>
+						<target ref="FolgersHa2:Ha2.092r" text="7"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				[See] above, pg. 7.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						peritè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Expertly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nemo la[e]ditur,
+						nisi à Seipso.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				No one can be harmed, except by oneself.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Excellentissimè dictu[m]
+						à Boiardo, 
+						Si factum excellenter.
+					</marginalia_text>
+					<person name="Matteo Maria Boiardo"/>
+				</position>
+			</language>
+			<translation>
+				A most excellent saying from Boiardo, if done excellently.
+			</translation>
+		</marginalia>		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Fato Prudentia maior.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Prudence is greater than fate.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Alij acuere possunt; non possunt la[e]dere.
+						Virescit vulnere virtus. Vincit, qui patitur.
+						Omnes actiones, passionesq[ue] Nuga[e], pra[e]ter vnu[m]
+						Hoc. Proprium quarto modo, Meum Hoc.
+					</marginalia_text>
+					<X-ref book_title="Unknown" language="LA" person="Aulus Furius Antias" text="Virescit Vulnere Virtus"/>
+					<emphasis method="pen" text="Proprium quarto modo" type="straight"/>
+					<emphasis method="pen" text="Meum Hoc" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Others are able to stir up, but they cannot harm.
+				'Virtue grows with wounds'. He who suffers, wins.
+				All actions and passions are trifles, except this one.
+				This is my proper fourth way; this is my own.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						A thousand toyes, not worth a flie, or a flea.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Eutrapelus takes all in gree; nothing in dugen. Shrewd fewllowes may
+						be bold to play vpon simple men. Wee pore sowles
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						must be content to carrie coles.
+						Misopogon.
+					</marginalia_text>
+					<book title="Misopogon"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="la fortuna variamente diuisauano" type="straight"/>
+		<underline language="IT" method="pen" text="gratiatamente" type="straight"/>
+		<underline language="IT" method="pen" text="Fato" type="straight"/>
+		<underline language="IT" method="pen" text="fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="predestinatione" type="straight"/>
+		<underline language="IT" method="pen" text="Sorte" type="straight"/>
+		<underline language="IT" method="pen" text="caso" type="straight"/>
+		<underline language="IT" method="pen" text="ventura son di" type="straight"/>
+		<underline language="IT" method="pen" text="dan gran noia alle" type="straight"/>
+		<underline language="IT" method="pen" text="sù di gran nouelle" type="straight"/>
+		<underline language="IT" method="pen" text="in fine" type="straight"/>
+		<underline language="IT" method="pen" text="Iddio d'ogni" type="straight"/>
+		<underline language="IT" method="pen" text="è sauio" type="straight"/>
+		<underline language="IT" method="pen" text="domina le" type="straight"/>
+		<underline language="IT" method="pen" text="Chi non è sauio, patiente, &amp; forte" type="straight"/>
+		<underline language="IT" method="pen" text="Lamentisi di sè, non della sorte" type="straight"/>
+		<underline language="IT" method="pen" text="fa i fatti suoi" type="straight"/>
+		<underline language="IT" method="pen" text="si imbratta" type="straight"/>
+		<underline language="IT" method="pen" text="Antistene filosofo" type="straight"/>
+		<underline language="IT" method="pen" text="simili cose" type="straight"/>
+		<underline language="IT" method="pen" text="porto questa cosa per me" type="straight"/>
+		<underline language="IT" method="pen" text="non per altri" type="straight"/>
+		<underline language="IT" method="pen" text="Fiorentini" type="straight"/>
+		<underline language="IT" method="pen" text="chi ca i fatti suoi" type="straight"/>
+		<underline language="IT" method="pen" text="non s'imbratta le" type="straight"/>
+		<underline language="IT" method="pen" text="non è vergogna" type="straight"/>
+		<underline language="IT" method="pen" text="facende da se stesso" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<symbol name="SS" place="intext"/> <!-- stelle: -->
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Sorte, caso, ventura son di quelle Cose, che dan     gran noia alle persone; Et vi si dicon sù di gran nouelle. Ma in fine Iddio d'ogni cosa è padrone; Et chi     è sauio, domina le stelle: Chi non è sauio, patiente, &amp; forte, Lamentisi di sè, non della sorte."/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="horizontal_bar" place="left_margin"/> <!-- under marginal note, 'nisi a seipso.' -->
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="io porto questa cosa per me, &amp; non per altri."/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- so -->
+		<mark language="IT" method="pen" name="bracket" place="right_margin" text="Chi non è sauio, patiente, &amp; forte,     Lamentisi di sè, non della sorte."/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- pu -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- s'imbratta le -->
+		<mark language="IT" method="pen" name="X_sign" place="right_margin" text="sue facende da se stesso"/>
+		
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="fortuna"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- opinione, disse -->
+		<mark method="pen" name="comma" place="intext"/> <!-- ventura, son -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="sù di gran nouelle"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="in fine"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="è sauio"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="sauio"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="patiente"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="forte"/>
+		<mark language="IT" method="pen" name="straight_quotation_mark" place="intext" text="Lamentisi di sè, non della sorte."/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="fa i fatti suoi"/>
+		<mark method="pen" name="comma" place="intext"/> <!-- suoi, non -->
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="si imbratta"/>
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- altri. A -->
+		
+    </annotation>
+</transcription>

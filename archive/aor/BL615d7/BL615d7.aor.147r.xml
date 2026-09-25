@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.147r.tif" pagination="147" reader="John Dee" signature="Tiij"/>    
+    <annotation>
+        
+        <marginalia anchor_text="predando, e distruggendo" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quo iure?</marginalia_text> 
+                </position>
+            </language>
+            <translation>By what right?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Papagalli grandi, mele, &amp; cera" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Psitaci mel cera</marginalia_text> 
+                </position>
+            </language>
+            <translation>Parrots, honey, wax.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="le case erano fatte quadre, &amp; non rotonde" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Howses { rownd square</marginalia_text>  
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="ferro" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Note, Iern here also.</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="spauentati dalle bombarde" type="straight"/>
+        <underline language="IT" method="pen" text="a loro tirauano" type="straight"/>
+        <underline language="IT" method="pen" text="furono astretti a ritirarsi" type="straight"/>
+        <underline language="IT" method="pen" text="predando, e distruggendo" type="straight"/>
+        <underline language="IT" method="pen" text="mani nella pasta" type="straight"/>
+        <underline language="IT" method="pen" text="Papagalli" type="straight"/>
+        <underline language="IT" method="pen" text="mele" type="straight"/>
+        <underline language="IT" method="pen" text="cera" type="straight"/>
+        <underline language="IT" method="pen" text="ferro" type="straight"/>
+        <underline language="IT" method="pen" text="manarini, co' quali" type="straight"/>
+        <underline language="IT" method="pen" text="quali tessono le loro trabache" type="straight"/>
+        <underline language="IT" method="pen" text="fatte quadre" type="straight"/>
+        <underline language="IT" method="pen" text="quali fu trouato vn braccio di huomo, posto a rosto in vno schidone" type="straight"/>
+        <underline language="IT" method="pen" text="preda di X donne" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; III" type="straight"/>
+        <underline language="IT" method="pen" text="Canario" type="triple"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

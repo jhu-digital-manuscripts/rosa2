@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.023v.tif" reader="John Dee" signature="[Dv[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="phisicus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Physicus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Physicist.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vt cirulus qui est t[er]min[us] inco[m]plexus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Circulus, terminus incomplex[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Circle, a simple term.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sunt phisice q[uae]da[m] methaphisice" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Physice metaphysicè
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Physically, metaphysically.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Vt circulus qui est t[er]min[us] inco[m]plexus" type="straight"/>
+        <underline language="LA" method="pen" text="int[er]rogationes" type="straight"/>
+        <underline language="LA" method="pen" text="responsiones" type="straight"/>
+        <underline language="LA" method="pen" text="disputatio[n]es" type="straight"/>
+        <underline language="LA" method="pen" text="sunt phisice" type="straight"/>
+        <underline language="LA" method="pen" text="metaphisice" type="straight"/>
+        <underline language="LA" method="pen" text="Sed p[ro]positio [et] maxime p[ro]positio demo[n]stratiua est det[er]minate ad altera[m] p[ar]tem co[n]tradictio[n]is. q[ua]re" type="straight"/>
+        <underline language="LA" method="pen" text="mathematic[us] demo[n]strator vtit[ur] co[n]clusione demonstrata. p[ro] prima p[ar]te p[ro]positionis seque[n]tis" type="straight"/>
+        <underline language="LA" method="pen" text="quare sequit[ur] q[uod] duplex est interrogatio demonstratiua. ostensiua et ad impossibile" type="straight"/>
+        <underline language="LA" method="pen" text="id quod est co[n]clusio in vna demonstratio[n]e sit p[re]missa in alia sicut tu vidisti in euclide" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- ostensas t[ame]n -->
+        
+    </annotation>
+</transcription>

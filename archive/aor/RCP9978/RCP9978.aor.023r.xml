@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.023r.tif" reader="John Dee" signature="F iij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Radij</marginalia_text>
+                </position>
+            </language> 
+            <translation>Rays.</translation>         
+        </marginalia>
+        
+        <marginalia anchor_text="intererit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>impedit</marginalia_text>     
+                </position>
+            </language>
+            <translation>Hinders.</translation>        
+        </marginalia>
+        
+        <marginalia anchor_text="corporu[m] effluuia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[co]rporu[m] Effluuia</marginalia_text>     
+                </position>
+            </language>
+            <translation>Outlets of bodies.</translation>        
+        </marginalia>
+        
+        <marginalia anchor_text="uisus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Visus</marginalia_text>     
+                </position>
+            </language>
+            <translation>Appearance.</translation>        
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="[aquil]larum pennis mist[a]e reliquarum" type="straight"/>
+        <underline language="LA" method="pen" text="ad corporu[m] effluuia" type="straight"/>
+        <underline language="LA" method="pen" text="quando uox" type="straight"/>
+        <underline language="LA" method="pen" text="odor" type="straight"/>
+        <underline language="LA" method="pen" text="emana[n]s spiratio" type="straight"/>
+        <underline language="LA" method="pen" text="calore potiantur" type="straight"/>
+        <underline language="LA" method="pen" text="auram expirari" type="straight"/>
+        <underline language="LA" method="pen" text="effluuia" type="straight"/>
+        <underline language="LA" method="pen" text="spiritu ipsum eiaculante" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; visu hominem consentire, &amp; affici molestia credunt, non item agere &amp; nocere" type="straight"/>
+        <underline language="LA" method="pen" text="siue lumen siue profluxio quaedam" type="straight"/>
+        <underline language="LA" method="pen" text="uisu" type="straight"/>
+        <underline language="LA" method="pen" text="ardor distributioq[ue] a visu proficiscitur" type="straight"/>
+        <underline language="LA" method="pen" text="mirantur medicam Naphtam" type="straight"/>
+        
+        <errata amendedtext="[deleted]" copytext="intererit" language="LA"/>
+        <errata amendedtext="usu" copytext="uisu" language="LA"/>                
+          
+    </annotation>
+</transcription>

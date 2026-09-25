@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.064v.tif" pagination="128" reader="John Dee"/>
+    <annotation>
+      
+        <marginalia anchor_text="Cornelius Celsus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cornelius Celsus</marginalia_text>
+                    <person name="Aulus Cornelius Celsus"/>
+                </position>
+            </language>
+            <translation>Cornelius Celsus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex depulsione nasci statum: nihilominus enim res eò reuertetur, ut modò is qui agit, modò is cum quo agitur, statum faciat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ex vtrisq[ue] quandoq[ue] nascitur status</marginalia_text>
+                </position>
+            </language>
+            <translation>The state emerges from either and at any time.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="adulterum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Adulter.</marginalia_text>
+                </position>
+            </language>
+            <translation>Adulterous.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="propius quod contrà dicitur, nullam esse litem, si is cum quo agitur, nihil respondeat, ideoq[ue] fieri statum à respondente" type="straight"/>
+        <underline language="LA" method="pen" text="reo inficialem esse" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

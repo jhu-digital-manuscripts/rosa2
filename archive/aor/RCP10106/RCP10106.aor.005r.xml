@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.005r.tif" pagination="9" reader="John Dee" signature="a 5"/>
+    <annotation>
+        
+        <marginalia anchor_text="studio perpetuo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>studiu[m] p[er]petuu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Continuous studies.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hesiodum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hesiodus.</marginalia_text>
+                    <person name="Hesiod"/>
+                </position>
+            </language>
+            <translation>Hesiod.</translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="Nam &amp; studio perpetuo, &amp; praestantißimis praeceptoribus, &amp; pluribus disciplinis opus est" type="straight"/>
+        <underline language="LA" method="pen" text="A' Graecis auspicia sumenda" type="straight"/>
+        <underline language="LA" method="pen" text="unde &amp; nostrae fluxerunt" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+      
+    </annotation>
+</transcription>

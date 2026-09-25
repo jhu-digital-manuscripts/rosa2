@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.030r.tif" pagination="30" reader="John Dee" signature="[Dvi]"/>  
+    <annotation>
+        
+        <marginalia anchor_text="Agesingua" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Agesingua</marginalia_text>
+                    <location name="Cape of Good Hope"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="al Capo di buona speranza" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Agesingua cap[e] bona[e] spei</marginalia_text>
+                    <location name="Cape of Good Hope"/>
+                </position>
+            </language>
+            <translation>Agesingua, the Cape of Good Hope.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="conuenirsi, se non a Principe" type="straight"/>
+        <underline language="IT" method="pen" text="per l'habitatione" type="straight"/>
+        <underline language="IT" method="pen" text="che quiui haueua" type="double"/>
+        <underline language="IT" method="pen" text="al Capo di buona speranza" type="straight"/>
+        <underline language="IT" method="pen" text="Agesingua" type="straight"/>
+        <underline language="IT" method="pen" text="proprio nome" type="straight"/>
+        <underline language="IT" method="pen" text="capo, &amp; il fine" type="double"/>
+        <underline language="IT" method="pen" text="per esser capo, che gli daua speranza di miglior terra, &amp; nauigatione" type="straight"/>
+        
+        <numeral language="IT" place="right_margin" text="per l'habitatione, che quiui haueua">.1.</numeral>
+        
+    </annotation>
+</transcription>

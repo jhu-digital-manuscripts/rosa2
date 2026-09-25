@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.299r.tif" pagination="111" reader="John Dee" signature="O.iij."/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rogeri de mortuo mari calmitosus finis</marginalia_text>
+                    <person name="Roger de Mortimer"/>
+                </position>
+            </language>
+            <translation>The calamitous end of Roger de Mortimer.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="successorio, ad Edwardu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="per vim &amp; potentiam se intrudentem" type="straight"/>
+        <underline id="RCP10552-2:607:u0001" language="LA" method="pen" text="contra iustitiam" type="triple"/>
+        <underline language="LA" method="pen" text="occupatum" type="straight"/>
+        <underline language="LA" method="pen" text="fuit turpis pax" type="straight"/>
+        <underline language="LA" method="pen" text="Scotis chartas, quarum tenor ab Anglicis ignoratur" type="straight"/>
+        <underline language="LA" method="pen" text="omnia facta sunt" type="straight"/>
+        <underline language="LA" method="pen" text="reginae, &amp; Rogerum de mortuo" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Iacobum Douglas" type="straight"/>
+        <underline language="LA" method="pen" text="regi Franciae, pro toto ducatu Acquitaniae &amp; comitatu de Pontyf" type="straight"/>
+        <underline language="LA" method="pen" text="admisit homagium" type="straight"/>
+        <underline language="LA" method="pen" text="satisfactum pro damnis &amp; expensis" type="straight"/>
+        <underline language="LA" method="pen" text="dominus Rogerus de mortuo mari Comes Marchi[a]e" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- matre licet -->
+        <mark method="pen" name="bracket" place="intext"/>  <!-- existens, fecit -->
+        
+        <errata amendedtext="Woodstocke" copytext="Hoodstocke" language="LA"/>
+        <errata amendedtext="Woodstock" copytext="Hoodstock" language="LA"/>        
+        
+        <drawing book_orientation="0" id="RCP10552-2:607:d0001" method="pen" place="right_margin" type="coat_of_arms"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+            
+        <physical_link>
+            <marginal_annotation idref="RCP10552-2:607:d0001"/>
+            <marginal_annotation idref="RCP10552-2:607:u0001"/>
+            <relation from="RCP10552-2:607:d0001" to="RCP10552-2:607:u0001" type="directed"/>
+        </physical_link>
+            
+    </annotation>
+</transcription>

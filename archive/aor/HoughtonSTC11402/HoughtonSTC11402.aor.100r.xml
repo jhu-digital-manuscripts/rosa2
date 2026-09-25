@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.100r.tif" reader="Harvey" signature="Mv[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Fortis viri indigna, et sanè ignaua mors: nobilis Anima, cariori precio erat Vendenda, non gratìs
+                    abijcienda. Inuictus Animus, heroica[m]</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vindictam spirans, multô potiùs, in confertissimos hostes furiosè inuolasset, et
+                    salte[m] honorata[m] morte[m] viuidè, pra[e]ualideq[ue] extorsisset. Absit, vt hîc, Exitus acta probet: cu[m]
+                    effo[e]minata ista mors, mascula[e]</marginalia_text>
+                    <X-ref book_title="Heroides" language="LA" person="Ovid" text="Exitus acta probet"/>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>strenua[e]q[ue] excellentis</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ducis Vita[e], condonanda Videat[u]r.</marginalia_text>
+                </position>
+            </language>
+            <translation>An unworthy and truly ignoble death of a courageous man: a noble mindset was to be sold for a steep price and not to be thrown away freely. The invincible mindset, breathing heroical vengeance, much rather would rush furiously
+             against enemy troops and at least take away by force a honorable death lively and very strongly. God forbid that here "the end justifies the means": since that womanish death may seem to give up the masculine and vigorous excellent life of the general.</translation> 
+            <!--JG: Unsure about part starting from 'absit'. Why use of gen.? Chris, please check-->
+            <!-- CG: My attempt: "God forbid, as here, that his death represent his deeds, since it seems that the effeminate death of the masculine and vigorous life of an excellent leader must be forgiven." -->
+        </marginalia>
+        
+        <marginalia anchor_text="drawe their swordes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ferro aperit[u]r via.</marginalia_text>
+                </position>
+            </language>
+            <translation>The road is revealed by the sword.</translation> <!--JG: Seems like Harvey quoted this, perhaps from Virgil? Can't find anything though-->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>In extremo actu deficere, turpe. Aut viuendu[m], aut moriendum magnificè.</marginalia_text>
+                </position>
+            </language>
+            <translation>It is shameful to disappoint in the final deed. One must either live or die magnificently.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="styll on the same" type="straight"/>
+        <underline language="EN" method="pen" text="sore wounded, vntyll that he was" type="straight"/>
+        <underline language="EN" method="pen" text="oppressed, &amp; thrust through" type="straight"/>
+        <underline language="EN" method="pen" text="Varro his" type="straight"/>
+        <underline language="EN" method="pen" text="with greater consta[n]cie" type="straight"/>
+        <underline language="EN" method="pen" text="remayned alyue after the same" type="straight"/>
+        <underline language="EN" method="pen" text="gaue tha[n]kes [the]" type="straight"/>
+        <underline language="EN" method="pen" text="dispaired not of" type="straight"/>
+        <underline language="EN" method="pen" text="preserued hym selfe, not for" type="straight"/>
+        <underline language="EN" method="pen" text="for loue of" type="straight"/>
+        <underline language="EN" method="pen" text="lette both his beard and his heare growe" type="straight"/>
+        <underline language="EN" method="pen" text="and neuer after eate his meate" type="straight"/>
+        <underline language="EN" method="pen" text="syttynge at the table" type="straight"/>
+        <underline language="EN" method="pen" text="hym any honour and" type="straight"/>
+        <underline language="EN" method="pen" text="dignitie" type="straight"/>
+        <underline language="EN" method="pen" text="the co[m]mon welthe" type="straight"/>
+        <underline language="EN" method="pen" text="prosperous rulers" type="straight"/>
+        <underline language="EN" method="pen" text="counsayled their felowes, to" type="straight"/>
+        <underline language="EN" method="pen" text="drawe their swordes, and" type="straight"/>
+        <underline language="EN" method="pen" text="them euen through the" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="right_margin" text="Ferro aperit[u]r via."/>
+        
+        <mark language="LA" method="pen" name="hash" place="head" text="Fortis viri indigna, et sanè ignaua mors: nobilis Anima, cariori precio erat Vendenda, non gratìs              abijcienda. Inuictus Animus, heroica[m] vindictam spirans, multô potiùs, in confertissimos hostes furiosè inuolasset, et              salte[m] honorata[m] morte[m] viuidè, pra[e]ualideq[ue] extorsisset. Absit, vt hîc Exitus acta probet: cu[m]              effo[e]minata ista mors, mascula[e] strenua[e]q[ue] excellentis Ducis Vita[e], condonanda Videat[u]r."/>
+        
+        <mark language="EN" method="pen" name="hash" place="left_margin" text="styll on the same"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="lette both his beard and his heare growe"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="syttynge at the table"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="prosperous rulers"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="preserued hym selfe, not for"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="lette both his beard and his heare growe"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="consta[n]cie"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="dispaired not of"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="preserued"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="syttynge"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="prosperous rulers"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.166v.tif" pagination="[159v]" reader="John Dee" signature="[rr iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mercurium in piscibus" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☿ in ♓.</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Pices"/>
+                </position>
+            </language>
+            <translation>Mercury in Pisces.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="piscibus damnari, unde" type="straight"/>
+        
+    </annotation>
+</transcription>

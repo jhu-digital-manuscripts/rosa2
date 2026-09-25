@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.015v.tif" reader="John Dee" signature="[Diiij[v]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="darunder fünfftzig genäsend die anderen verderben" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>No[n] semper est eidem fidendum medicina[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Not at all times is a certain medicine to be trusted.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="zeyt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tempus</marginalia_text>
+                </position>
+            </language>
+            <translation>Time.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mercurius corporis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☿ corporis</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                </position>
+            </language>
+            <translation>Of Mercury's body.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="frantzosen" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Morbus gallicus</marginalia_text>
+                </position>
+            </language>
+            <translation>The illness of the French.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="serpentina" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Serpentina</marginalia_text>
+                </position>
+            </language>
+            <translation>Serpent.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="materia Berlata" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Materia perlata</marginalia_text>
+                </position>
+            </language>
+            <translation/> <!-- FSF: to be added; text not helpful -->
+        </marginalia>
+        
+        <marginalia anchor_text="Theoric" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Theorica</marginalia_text>
+                </position>
+            </language>
+            <translation>Theory.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="frü" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ex fructibus seu effectibus rerum intelligere naturas</marginalia_text>
+                </position>
+            </language>
+            <translation>To understand the [baths'] nature from the fruits or effects of the things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="wassern" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aqua[e] virtutes</marginalia_text>
+                </position>
+            </language>
+            <translation>The properties of water.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="wann in den wassern sind alle die uirtutes tugenden so keuter vnnd stein gebend" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Minerales a[e]qua[n]t o[mn]es virtutes tu[m] Lapidu[m] herbaru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The minrals euqal all properties of stone and of herbs.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="die zeit der heilung" type="straight"/>
+        <underline language="LA" method="pen" text="mercurius corporis" type="straight"/>
+        <underline language="DE" method="pen" text="heilt die frantzosen" type="straight"/>
+        <underline language="DE" method="pen" text="zeit vnnd art der kranckheyt" type="double"/>
+        <underline language="DE" method="pen" text="so verderbt er gleich souil als er gůtt macht." type="straight"/>
+        <underline language="DE" method="pen" text="nicht all" type="straight"/>
+        <underline language="DE" method="pen" text="allen" type="straight"/>
+        <underline language="DE" method="pen" text="Theoric auß welcher die concordantz vnd das compositum entspringt" type="straight"/>
+        <underline language="DE" method="pen" text="kranckkeyten die beum der beder das ist die art der" type="straight"/>
+        <underline language="LA" method="pen" text="praxim" type="straight"/>
+        <underline language="DE" method="pen" text="erfarenheyt" type="straight"/>
+        <underline language="DE" method="pen" text="wann in den wassern sind alle die virtutes tugenden so kreuter vnnd stein gebend" type="straight"/>
+        
+        <drawing anchor_text="zeyt vnnd art der kranckheyt" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        <drawing anchor_text="Theoric auß welcher die concordantz vnd das compositum entspringt" book_orientation="0" method="pen" place="right_margin" type="manicule"/>        
+        
+    </annotation>
+</transcription>

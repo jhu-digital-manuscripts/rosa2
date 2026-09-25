@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.264r.tif" pagination="257" reader="John Dee" signature="TT"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>♄ ♂ ♃ regnu[m]</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>The reign of Saturn, Mars, and Jupiter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="natiuitates" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>forsan intelligit aeris passiones esse difficilliores ad pra[e]videndu[m] qua[m] natiuitatis accidentia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Perhaps he understand that the passions of the air are more difficult to foresee than the contingencies of the nativity.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cum Sol &amp; Iupiter nonae praefuerint, ac in locis" type="straight"/>
+        <underline language="LA" method="pen" text="de tempore" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.091v.tif" pagination="[91v]" reader="John Dee" signature="[Miij[v]]"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="XVII nauigli" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>17 ships.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="alla fama dell'oro" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The fame of gold.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="MD persone tra grandi, &amp; picciole" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>1500 men and young men</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="per la popolatione" type="double"/>
+        <underline language="IT" method="pen" text="punto XVII" type="straight"/>
+        <underline language="IT" method="pen" text="per popolar quelle" type="double"/>
+        <underline language="IT" method="pen" text="tutte le arti" type="straight"/>
+        <underline language="IT" method="pen" text="che alla fama dell'oro" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; non si desse licentia à tanta" type="straight"/>
+        <underline language="IT" method="pen" text="grandi, &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="Caualli, &amp; Giumente" type="double"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- 'che, alla' -->
+        
+        
+        
+        
+    </annotation>
+    
+</transcription>

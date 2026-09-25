@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.128r.tif" pagination="79" reader="Harvey" signature="[E8r]"/>	<!-- ABO 132right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nothing more excellent in Proaeresius himself, then a
+					</marginalia_text>
+					<person name="Prohaeresius"/>
+					<emphasis method="pen" text="Proaeresius" type="straight"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						cumlie grace; fine discretion;
+						&amp; a nimble
+						 dexteritie to eueri
+						 purpose: with a sweet descanting at anie
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						/ fitt occasion; &amp;
+						allwais flowing vtterance at will; as pithie in
+						sentences, as elegant intermes, &amp; swift in deliuerie.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Euer as wittie, and pleasant as the matter
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						/ will beare.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Quisq[ue] in sua Arte.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Each in his art.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Bacchus, sed Osiris: Liber, sed Apollo: )
+						( Euhius, sed fulmineus. Euohe./
+					</marginalia_text>
+					<person name="Bacchus"/>
+					<person name="Osiris"/>
+					<person name="Liber"/>
+					<person name="Apollo"/>
+				</position>
+			</language>
+			<translation>
+				Bacchus, but Osiris; Liber, but Apollo.
+				Bacchic, but destructive. Euohe!
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						The appropriate grace, &amp; utterance of Eutrapelus.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( Aschams discourse: &amp; Heywoods witt refined ).
+					</marginalia_text>
+					<person name="Roger Ascham"/> 
+					<person name="John Heywood"/>
+					<book title="Report and Discourse"/>
+					<book title="The Proverbs, Epigrams, and Miscellanies of John Heywood"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.128r_0001" marginalia_continues_from="Ha2.127v_0001" marginalia_from_transcription="Ha2.127v.xml">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						<!-- Continued from facing page, right margin, Ha2.127v --> [[E7v]: Plurimu[m] possunt planeta[e]: sed plus Elementa: quia magis]
+						propinqua, et cogentia. Volo esse Astronomus: sed malo esse Chymicus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				[[E7v]: Many planets are capable, but the elements can do more, since they are] nearer together and more compressed. I want to be an astronomer, but I prefer to be a chemist.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="vdir Formione eccellente" type="straight"/>
+		<underline language="IT" method="pen" text="dell'vffitio del" type="straight"/>
+		<underline language="IT" method="pen" text="Capitano &amp; dell'arte militare" type="straight"/>
+		<underline language="IT" method="pen" text="oltra modo" type="straight"/>
+		<underline language="IT" method="pen" text="Annibale da" type="straight"/>
+		<underline language="IT" method="pen" text="rispose ridendo" type="straight"/>
+		<underline language="IT" method="pen" text="vecchi delirare" type="straight"/>
+		<underline language="IT" method="pen" text="chi delirasse più di Formione" type="straight"/>
+		<underline language="IT" method="pen" text="non viddi mai niuno" type="straight"/>
+		<underline language="IT" method="pen" text="il suo vfficio" type="straight"/>
+		<underline language="IT" method="pen" text="di quello si esca" type="straight"/>
+		<underline language="IT" method="pen" text="VENERE" type="straight"/>
+		<underline language="IT" method="pen" text="con l'armi vendicare" type="straight"/>
+		<underline language="IT" method="pen" text="mia l'vffitio tuo non" type="straight"/>
+		<underline language="IT" method="pen" text="quelle delle Donne" type="straight"/>
+		<underline language="IT" method="pen" text="Perciò bada all'amore" type="straight"/>
+		<underline language="IT" method="pen" text="cose militari" type="straight"/>
+		<underline language="IT" method="pen" text="Marte" type="straight"/>
+		<underline language="IT" method="pen" text="Minerua n'hanno la" type="straight"/>
+		<underline language="IT" method="pen" text="giudicio humano" type="straight"/>
+		<underline language="IT" method="pen" text="modo fallace" type="straight"/>
+		<underline language="IT" method="pen" text="monti douessero partorire" type="straight"/>
+		<underline language="IT" method="pen" text="qualche mostro horrendo" type="straight"/>
+		<underline language="IT" method="pen" text="vn ridicul topo" type="straight"/>
+		<underline language="IT" method="pen" text="vno millantatore che" type="straight"/>
+		<underline language="IT" method="pen" text="darà costui degno di" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="a' piaceri: che quanto all cose militari" type="straight"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--Formio-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--cor-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--com-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Capitano"/>
+		<mark method="pen" name="apostrophe" place="intext"/> <!--te, alli-->
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+
+    </annotation>
+</transcription>

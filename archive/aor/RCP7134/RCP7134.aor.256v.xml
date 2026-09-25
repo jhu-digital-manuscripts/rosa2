@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.256v.tif" pagination="[249v]" reader="John Dee" signature="[RR[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>pro r[ati]o[n]e aspectus.</marginalia_text>
+                </position>
+            </language>
+            <translation>For the reason of the appearance.</translation>
+        </marginalia>
+        
+        <errata amendedtext="[deleted]" copytext="mala est" language="LA"/>
+        
+    </annotation>
+</transcription>

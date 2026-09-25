@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.endmatter.flyleaf.001r.tif" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Palumbus Necron pag[ina] 425
+                        A[nno] D[omini] 1058 regnate Edwardo Confessore
+                    </marginalia_text>
+                    <person name="Palumbus"/>
+                    <person name="Edward the Confessor"/>
+                    <internal_ref>
+                        <target ref="RCP10653:449:m0001" text="425"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Palumbus, a necromancer, [see] page 425. In the year 1058 during the reign of Edward the Confessor</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Who this is, I can not yet gess
+                        The Lord Rhese I think <!--JG: Not sure to whom this refers-->
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Leolinus: Rex Demetri[a]e a[nno] 946
+                        Rhesus princeps Demeti[a]e 1164
+                        vide Sigeberti Chronico[n] a[nno] 1165
+                    </marginalia_text>
+                    <person name="Sigebert of Gembloux"/>
+                    <book title="Chronicon"/>
+                </position>
+            </language>
+            <translation>
+                Leolinus, the king of Demetrias, in the year 946. <!--JG: No clue who this is-->
+                Rhesus, princes of Demetrias, [in the year] 1146. <!--JG: No clue who this is-->
+                See the Chronicon of Sigebert [of Gembloux], for the year 1165. <!--JG: Unsure, Sigebert died in 1112...-->
+            </translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

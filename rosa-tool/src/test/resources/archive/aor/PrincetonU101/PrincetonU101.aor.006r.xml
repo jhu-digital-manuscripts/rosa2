@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+<page filename="PrincetonU101.006r.tif" pagination="ii[r]" reader="Harvey" signature="Aii[r]"/>
+    <annotation>
+    	
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					Arma, virumq[ue] canit prudentissimus poetarum:
+    					ex ipsius Ca[e]saris Disciplina.
+    				</marginalia_text>
+    				<person name="Julius Caesar"/>
+    				<X-ref book_title="Aeneid" language="LA" person="Virgil" text="Arma virumque cano"/>
+    			</position>
+    		</language>
+    		<language ident="EN">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					Machiauel, a fine master of a braue Art: after
+    					[the] terrible Inuention of Gunnes: vnknowne to Vegetius.
+    				</marginalia_text>
+    				<person name="Machiavelli"/>
+    				<person name="Vegetius"/>
+    			</position>
+    		</language>
+    		<language ident="LA">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					Sapiens, quicquid discit, perdiscit; quicquid agit,
+    					peragit: cum effectu, et valore.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<language ident="EN">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					That Courage is well grownded, that is grownded vpon
+    					Cunning, &amp; Practis; Strength, &amp; Nimblenes.
+    					The Roman foundation of Magnanimitie.
+    					The lesse Strength; the more Cunning, Practis,
+    					&amp; agilitie, necessarie: with extraordinarie Courage.
+    				</marginalia_text>
+    			</position>
+    		</language> 
+    		<translation>
+    			The most prudent of poets "sings of arms and a man":
+    			An education from Caesar himself.
+    			Machiauel, a fine master of a braue Art: after
+    			the terrile Invention of Gunnes: vnknowne to Vegetius.
+    			The wise man, whatever he learns, he learns thoroughly; whatever he does,
+    			he does thoroughly: with accomplishment and valor.
+    			That Courage is well grownded, that is grownded vpon
+    			Cunning, &amp; Practis; Strength, &amp; Nimblenes.
+    			The Roman foundation of Magnanimitie.
+    			The lesse Strength; the more Cunning, Practis,
+    			&amp; agilitie, necessarie: with extraordinarie Courage.
+    		</translation>
+    	</marginalia>
+    	
+	<underline language="EN" method="pen" text="made no profession" type="straight"/>
+    	<underline language="EN" method="pen" text="with woordes a" type="straight"/>
+    	<underline language="EN" method="pen" text="with their déedes" type="straight"/>
+    	<underline language="EN" method="pen" text="the errours that I" type="straight"/>
+    	<underline language="EN" method="pen" text="be without harme to any man corrected" type="straight"/>
+    	<underline language="EN" method="pen" text="them be made in doing" type="straight"/>
+    	<underline language="EN" method="pen" text="knowen without" type="straight"/>
+    	<underline language="EN" method="pen" text="as well to shew my selfe gratefull" type="straight"/>
+    	<underline language="EN" method="pen" text="you for riches" type="straight"/>
+    	<underline language="EN" method="pen" text="and nobilitie" type="straight"/>
+    	<underline language="EN" method="pen" text="wisedome" type="straight"/>
+    	<underline language="EN" method="pen" text="liberalitie" type="straight"/>
+    
+    	<symbol name="Mars" place="tail"/> <!-- Finis. -->
+
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="the errours that I"/>
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="and nobilitie"/>
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="errours"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="corrected"/>
+    	<mark method="pen" name="bracket" place="intext"/> <!-- gratefull, although -->
+    	<mark method="pen" name="bracket" place="intext"/> <!-- of you, as -->
+    	<mark method="pen" name="dot" place="intext"/> <!--few, and-->	
+    	
+    </annotation>
+</transcription>

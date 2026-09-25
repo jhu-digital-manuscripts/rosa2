@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.028v.tif" pagination="[28[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ist warm vn[d] trucken" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Calidus siccus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Warm [and] dry.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Euro vnd seinen mitgeselle[n]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Euri collaterales.</marginalia_text>
+                </position>
+            </language>
+            <translation>Collateral east winds.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="kaldt vnd feucht" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>frigidus humidus</marginalia_text>
+                </position>
+            </language>
+            <translation>Cold [and] humid.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="die Natur des Windes materien" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Venti Materia in tribus primis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The matter of the wind in three primes.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="gehet der Windt durch den lufft vber das Meer vnd" type="straight"/>
+        <underline language="DE" method="pen" text="langer vbung vnd weither reise sich selbst verzert" type="straight"/>
+        <underline language="DE" method="pen" text="kein Materia" type="double"/>
+        <underline language="DE" method="pen" text="ist warm vn[d] trucken" type="straight"/>
+        <underline language="DE" method="pen" text="den dreien Ersten ist" type="double"/>
+        <underline language="DE" method="pen" text="zu sein vnd nicht wider sein natur" type="straight"/>
+        <underline language="DE" method="pen" text="mitgeselle[n] kein andere natur vn[d] operation erfunden alle warm vnd trucken" type="straight"/>
+        <underline language="DE" method="pen" text="kaldt vnd feucht" type="straight"/>
+        <underline language="DE" method="pen" text="der Nidergang ist der Complexion wie der auffgang aber" type="straight"/>
+        <underline language="DE" method="pen" text="Natur des Windes materien im Nidergang" type="straight"/>
+        <underline language="DE" method="pen" text="geschaffen kalt vnd feuchte" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="tail"/>
+        
+    </annotation>
+</transcription>

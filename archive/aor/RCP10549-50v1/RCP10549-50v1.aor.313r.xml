@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.313r.tif" pagination="605" reader="John Dee" signature="[ppp.vii.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="iugum impiorum nefarium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iugu[m] impior[um] nefariu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>A nefarious pair of villains [LCL 507, 141].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sapie[n]tis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sapie[n]tis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Of wisdom.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="laboriosos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Laboriosus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Laborious.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Regulus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Regulus.</marginalia_text>
+                    <person name="Marcus Atilius Regulus"/>
+                </position>
+            </language>
+            <translation>Marcus Atilius Regulus.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>à maiore.</marginalia_text>
+                </position>
+            </language>
+            <translation>From the higher.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="damnationem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>da[m]natio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Damnation.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="est enim sapie[n]tis, quicquid homini accidere possit, id praemeditari: ferendum modice, si aduenerit, esse. maioris est omnino co[n]silii,              prouidere ne quid tale accidat: sed animi non minoris, fortiter ferre si euenerit" type="straight"/>
+        <underline language="LA" method="pen" text="Nam quo maior vis est animi, quàm corporis, hoc sunt grauiora ea quae concipiu[n]tur animo, quàm illa quae corpore" type="straight"/>
+        <underline language="LA" method="pen" text="vt in hoc sit semper laetatus, quòd ea faceret quae sibi obiici ne ab inimico quidem possent verecundo" type="straight"/>
+        <underline language="LA" method="pen" text="voraginem? quid eum non sorbere animo, quid non haurire cogitatione, cuius sanguine[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quidem detestabile omen auertat" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">22</numeral>
+        
+        <drawing anchor_text="est enim sapie[n]tis, quicquid homini accidere possit, id praemeditari:              ferendum modice, si aduenerit, esse. maioris est omnino co[n]silii, prouidere ne quid tale accidat: sed animi non minoris, fortiter ferre si euenerit" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Nam quo maior vis est animi, quàm corporis, hoc sunt grauiora ea quae concipiu[n]tur animo, quàm illa quae corpore" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+    
+    </annotation>
+</transcription>

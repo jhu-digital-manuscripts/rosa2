@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.126r.tif" pagination="231" reader="John Dee" signature="pp.iiii."/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Scientia pompei in Bello
+                    </marginalia_text>
+                    <person name="Pompey"/>
+                </position>
+            </language>
+            <translation>
+                Pompey's knowledge in war.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex bellicosissimis nationibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Genera Belloru[m]: bellicosiss[imae] natio[n]es
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Types of war: nations most fond of war. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Virtus pompei
+                    </marginalia_text>
+                    <person name="Pompey"/>
+                </position>
+            </language>
+            <translation>
+                Virtue of Pompey.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Italia [...] Sicilia ... [ Africa [...] Gallia [...] Hispania" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Italia. Repetitio. Sicilia. Affrica. Gallia. Hispania
+                    </marginalia_text>
+                    <location name="Italy"/>
+                    <location name="Sicily"/>
+                    <location name="Africa"/>
+                    <location name="Gaul"/>
+                    <location name="Spain"/>
+                </position>
+            </language>
+            <translation>
+                Italy, Repetition, Sicily, Africa, Gaul, Spain.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iterum, &amp; saepius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        iteru[m] &amp; Sepius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Again and again.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cum seruili bello tetro periculosóque" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        bellu[m] seruile tetrum p[er]iculosu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Slave war, shameful and dangerous.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="bellum, tam turpe, tam vetus, tam late diuisum atque dispersum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        bellu[m] ta[m] turpe ta[m] vetus ta[m] late diuisu[m] dispersu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                War, so inglorious, so long-lasting, so widespread and extensive.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mare clausum [...] transmiserint" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        mare clausu[m] tra[n]smittere mare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A closed sea, to traverse the sea.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quibus vitam &amp; spiritu[m] ducitis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        quib[us] vita[m] &amp; sp[i]r[itu]m ducitis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Through these you will breathe life.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="portum Caietae celeberrimu[m], atque plenissimum nauium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        port[us] celeberrim[us] pleniss[im][us] naviu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A harbour, very famous and filled with ships.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="labem, atque ignominia[m] Reipub." hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ignomina labes ] Reipub.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Disgrace and disaster of the commonwealth.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oceani ostiu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ostiu[m] oceani
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Portal of Ocean.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ineunte adolesce[n]tia" type="straight"/>
+        <underline language="LA" method="pen" text="cum hoste conflixit" type="straight"/>
+        <underline language="LA" method="pen" text="cum inimico concertauit" type="straight"/>
+        <underline language="LA" method="pen" text="prouincias confecit" type="straight"/>
+        <underline language="LA" method="pen" text="quod denique genus belli esse potest, in quo illum non exercuerit fortuna reipublicae?" type="straight"/>
+        <underline language="LA" method="pen" text="non solum gesta ab hoc vno, sed etiam confecta" type="straight"/>
+        <underline language="LA" method="pen" text="quae huius viri scientiam fugere possit" type="straight"/>
+        <underline language="LA" method="pen" text="quae potest par oratio inueniri" type="straight"/>
+        <underline language="LA" method="pen" text="labor in negociis, fortitudo in periculis, industria in agendo, celeritas in conficiendo, consilium in prouidendo: quae tantae sunt in hoc vno,              qua[n]ta in omnibus reliquis Imperatoribus, quos at vidimus, aut audiuimus, non fuerunt." type="straight"/>
+        <underline language="LA" method="pen" text="Testis est Italia, quam ille ipse victor L. Sylla huius virtute" type="straight"/>
+        <underline language="LA" method="pen" text="cinctam periculis" type="straight"/>
+        <underline language="LA" method="pen" text="celeritate consilii explicauit" type="straight"/>
+        <underline language="LA" method="pen" text="ipsoru[m] sanguine redundauit" type="straight"/>
+        <underline language="LA" method="pen" text="ab hoc auxilium absente expetiuit: quod bellum expectatione Pompeii attentuatum atque imminutum est, aduentu sublatum ac sepultum" type="straight"/>
+        <underline language="LA" method="pen" text="testes vero iam omnes orae, atque omnes" type="straight"/>
+        <underline language="LA" method="pen" text="exterae gentes" type="double"/>
+        <underline language="LA" method="pen" text="ac nationes" type="straight"/>
+        <underline language="LA" method="pen" text="denique maria omnia, tum vniuersa, tum in singulis oris omnes sinus atque portus. quis" type="straight"/>
+        <underline language="LA" method="pen" text="qui non se, aut mortis, aut seruitutis periculo" type="straight"/>
+        <underline language="LA" method="pen" text="nauigaretur" type="straight"/>
+        <underline language="LA" method="pen" text="aut ab omnibus Imperatoribus vno anno, aut omnibus annis ab vno Imperatore confici posse?" type="straight"/>
+        <underline language="LA" method="pen" text="prouinciam tenuistis" type="straight"/>
+        <underline language="LA" method="pen" text="longinqua commemoro" type="straight"/>
+        <underline language="LA" method="pen" text="longe à domo bellare" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; propugnaculis imperii, sociorum fortunas, non sua tecta defendere" type="straight"/>
+        <underline language="LA" method="pen" text="Sociis vestris ego mare clausum per hosce annos dicam fuisse, cum exercitus" type="straight"/>
+        <underline language="LA" method="pen" text="nisi summa hyeme transmiserint" type="straight"/>
+        <underline language="LA" method="pen" text="duodecim secures" type="straight"/>
+        <underline language="LA" method="pen" text="captas esse commemorem, cum vestros portus, atque eos portus, quibus vitam &amp; spiritu[m] ducitis, in praedonu[m] potestate fuisse sciatis" type="straight"/>
+        <underline language="LA" method="pen" text="ibi bellu[m] gesserat" type="straight"/>
+        <underline language="LA" method="pen" text="atque illam labem, atque ignominia[m] Reipub." type="straight"/>
+        <underline language="LA" method="pen" text="Ro. praepositus esset" type="straight"/>
+        <underline language="LA" method="pen" text="luce[m] afferre Reipub. potuit" type="straight"/>
+        <underline language="LA" method="pen" text="nunc nulla[m] intra oceani ostiu[m], praedonu[m] naue[m] esse" type="straight"/>
+        <underline language="LA" method="pen" text="tame[n] à me in dice[n]do praetereu[n]da no[n] sunt. quis" type="straight"/>
+        <underline language="LA" method="pen" text="breui te[m]pore, tot loca adire, tantos cursus conficere potuit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="tripunctus_with_tail" place="right_margin"/>
+        
+        <numeral language="LA" place="right_margin" text="Scientia pompei in Bello">1</numeral> 
+        <numeral place="right_margin">18</numeral>
+        <numeral language="LA" place="right_margin" text="Virtus pompei">2</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">10</numeral>
+        
+    </annotation>
+</transcription>

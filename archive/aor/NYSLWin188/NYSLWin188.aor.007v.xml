@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.007v.tif" pagination="[7[v]]" reader="John Dee" signature="[Biij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="das drey Species seindt außdem Wort worden" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ex, FIAT, Tria prima.</marginalia_text>
+                </position>
+            </language>
+            <translation>From [the word], let the three chief [species] be.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="auß dreyen alle ding gemacht vnd alle ding in drey gesetzt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ternarius</marginalia_text>
+                </position>
+            </language>
+            <translation>Ternary.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="das ein jeglisch geschöpff zertheilt mag werden in die drey stück" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Resolutio in tria prima.</marginalia_text>
+                </position>
+            </language>
+            <translation>Unravelling into the three chief [species].</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="drey Species" type="straight"/>
+        <underline language="DE" method="pen" text="Wort" type="double"/>
+        <underline language="DE" method="pen" text="drey Species seindt in vier Elementen getheilt" type="straight"/>
+        <underline language="DE" method="pen" text="das dreyerley seindt" type="straight"/>
+        <underline language="DE" method="pen" text="die zal" type="straight"/>
+        <underline language="DE" method="pen" text="drey für" type="straight"/>
+        <underline language="DE" method="pen" text="auß dreyen alle" type="straight"/>
+        <underline language="DE" method="pen" text="in drey gesetzt" type="straight"/>
+        <underline language="DE" method="pen" text="dieser zal ist auß Gott" type="straight"/>
+        <underline language="DE" method="pen" text="ist drey in der Gottheit" type="double"/>
+        <underline language="DE" method="pen" text="dreyfach gewesen" type="straight"/>
+        <underline language="DE" method="pen" text="die Trinitet" type="double"/>
+        <underline language="DE" method="pen" text="vnd wirdt" type="straight"/>
+        <underline language="DE" method="pen" text="in drey Corpora" type="double"/>
+        <underline language="DE" method="pen" text="widerumb gebracht" type="straight"/>
+        <underline language="DE" method="pen" text="jeglichs geschöpff" type="straight"/>
+        <underline language="DE" method="pen" text="in die drey stück" type="straight"/>
+        
+        <drawing anchor_text="drey Species seindt in vier Elementen getheilt" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <drawing anchor_text="ist drey in der Gottheit" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+      
+    </annotation>
+</transcription>

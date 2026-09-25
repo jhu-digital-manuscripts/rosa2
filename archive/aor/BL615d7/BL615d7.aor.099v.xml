@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.099v.tif" pagination="[99v]" reader="John Dee" signature="[Niij[v]]"/> 
+    
+    
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>amazzati or morti</marginalia_text>
+                </position>
+            </language>
+            <translation>Killed or dead.</translation>
+        </marginalia>
+        
+        
+        <underline language="IT" method="pen" text="la trouò tutta abbruciata" type="straight"/>
+        <underline language="IT" method="pen" text="netto il pozzo della fortezza" type="straight"/>
+        <underline language="IT" method="pen" text="quello si doueße ritrouare oro" type="straight"/>
+        <underline language="IT" method="pen" text="lasciaua, che gittassero tutto l'oro, il qual potessero hauere, in quel pozzo" type="straight"/>
+        <underline language="IT" method="pen" text="drappi de' Christiani" type="straight"/>
+        <underline language="IT" method="pen" text="otto Christiani" type="straight"/>
+        <underline language="IT" method="pen" text="altri tre" type="straight"/>
+        <underline language="IT" method="pen" text="stati amazzati vn mese aua[n]ti" type="straight"/>
+        
+        <symbol name="Trine" place="left_margin"/>
+        <symbol name="Asterisk" place="left_margin"/>    
+        <symbol name="Asterisk" place="intext"/>
+        
+               
+        <mark method="pen" name="comma" place="intext"/>  <!-- amazzati vn -->
+        
+               
+        
+    </annotation>
+    
+</transcription>

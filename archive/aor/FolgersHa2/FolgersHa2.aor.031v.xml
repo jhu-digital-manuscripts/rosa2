@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.031v.tif" pagination="382" reader="Harvey"/>	<!-- ABO 036left -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Vir non est, qui à Seipso non dependet. Undè
+                    					in Teipso
+                      			</marginalia_text>
+            			</position>
+        				<position book_orientation="0" place="left_margin">
+        					<marginalia_text>
+        						tam est fundanda fortuna, quàm ars, aut virtus
+        						ne cuiq[uam] seruias vilis: aut cuiusq[uam] indigeas contemptibilis.
+        						Sibi ipsi sufficere, magnificum est: alterius opem implorare, abiectum est.
+        					</marginalia_text>
+        				</position>
+        				<position book_orientation="0" place="tail">
+        					<marginalia_text>
+        						Alterius non Sit, qui suus esse potest.
+        					</marginalia_text>
+        				</position>
+        			</language>
+        			<translation>
+        				He who does not depend on himself is not a man. Whence, in you yourself you must establish both fortune and
+        				art, or else virtue, in order that you not be in the service of any vile man, or want for anything contemptible. 
+        				It is noble to subsist in one's self: it is degrading to beseech the aid of another.      
+        				He who is able to be his own, let him not be of another.
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Hic superat ipsum Burla[e]um.
+    					</marginalia_text>
+    					<person name="Jacques Bourlé"/>
+    				</position>
+    			</language>
+    			<translation>
+    				This surpasses even Jacques Bourlé.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						) Bona Oeconomica facit bona[m] politica[m].
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				) Good domestic arrangement makes good politics.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="270" place="right_margin">
+    					<marginalia_text>
+    						Optima maxima Resolutionis pers, In Teipso esse absolutum. <!--JG: Chris, should this be pars instead of pers?-->
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				The very best part of a resolution is to be complete in yourself.
+    			</translation>
+    		</marginalia>
+    		        
+	    	<!-- Underlines -->
+	        
+    		<underline language="IT" method="pen" text="piaceuolemente ogni maniera di persone" type="straight"/>
+    		<underline language="IT" method="pen" text="bottega d'un calderaio" type="straight"/>
+    		<underline language="IT" method="pen" text="uiso tutto seuero &amp; graue" type="straight"/>
+    		<underline language="IT" method="pen" text="parecchi rami rotti" type="straight"/>
+    		<underline language="IT" method="pen" text="farouuene buo[n]" type="straight"/>
+    		<underline language="IT" method="pen" text="sua uigna, doue" type="straight"/>
+    		<underline language="IT" method="pen" text=", &amp; la gragnuola" type="straight"/>
+    		<underline language="IT" method="pen" text="spezzati molti frutti" type="straight"/>
+    		<underline language="IT" method="pen" text="parecchi rami di susini et d'altri alberi" type="straight"/>
+    		<underline language="IT" method="pen" text="ecco i rami" type="straight"/>
+    		<underline language="IT" method="pen" text="io" type="straight"/>
+    		<underline language="IT" method="pen" text="uoi stesso il prezzo," type="straight"/>
+    		<underline language="IT" method="pen" text="Rise colui" type="straight"/>
+    		<underline language="IT" method="pen" text="lasciollo con" type="straight"/>
+    		<underline language="IT" method="pen" text="Non ha paragone" type="straight"/>
+    		<underline language="IT" method="pen" text="Paolo nelle burle" type="straight"/>
+    		<underline language="IT" method="pen" text="persona scandalosa" type="straight"/>
+    		<underline language="IT" method="pen" text="una scelerata bestemmia" type="straight"/>
+    		<underline language="IT" method="pen" text="all'ufficiale" type="straight"/>
+    		<underline language="IT" method="pen" text="co[n]dannò di presente nella pena dello statuto" type="straight"/>
+    		<underline language="IT" method="pen" text="colera &amp; dispetto" type="straight"/>
+    		<underline language="IT" method="pen" text="si infuriato" type="straight"/>
+    		<underline language="IT" method="pen" text="uo, che tu sappia" type="straight"/>
+    		
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="SS" place="intext"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- es -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- rot -->
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- mol -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- dispet -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- suc -->
+	    	
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="plus_sign" place="left_margin"/> <!--  uero & -->
+    		<mark method="pen" name="quotation_mark" place="left_margin"/> <!--  ti, & -->
+    		<mark method="pen" name="bracket" place="left_margin"/> <!--   ti ... M. -->
+    		
+	    	<!-- Intext -->
+	    	<mark method="pen" name="dot" place="intext"/> <!-- persone, perche  -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- Paolo, il -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- uenuto, es -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="rami"/>
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- uolete. Rise -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- ha paragone -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- bestemmia, doue -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- statuto, & -->
+    		
+    		
+    </annotation>
+</transcription>

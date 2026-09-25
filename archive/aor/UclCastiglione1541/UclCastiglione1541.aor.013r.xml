@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="UclCastiglione1541.013r.tif" pagination="I[r]" reader="Harvey" signature="[Aiir]"/>
+<annotation>
+    <marginalia hand="Italian">
+        <language ident="IT">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>
+                    Questo è preso gentilmente dal proemio de l'oratore di Cicerone.
+                </marginalia_text>
+                <person name="Cicero"/>
+                <book title="De Oratore"/>
+            </position>
+        </language>
+        <translation>
+            This is delicately taken from the introduction to Cicero's 'De Oratore'.
+        </translation>
+    </marginalia>
+    <marginalia hand="Italian">
+        <language ident="IT">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>
+                    Propone la materia del Cortegiano.
+                </marginalia_text>
+            </position>
+        </language>
+        <translation>
+            He puts forward the subject of the courtier.
+        </translation>
+    </marginalia>
+</annotation>
+</transcription>

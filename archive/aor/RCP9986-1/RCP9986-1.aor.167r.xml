@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.167r.tif" pagination="168" reader="John Dee"/>   
+    <annotation>
+
+        <marginalia anchor_text="Sauciet vt duram vomer aduncus humum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Agricola.</marginalia_text>
+                </position>
+            </language>
+            <translation>A farmer.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="arbor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Arbores.</marginalia_text>
+                </position>
+            </language>
+            <translation>Trees.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="riuos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Riui.</marginalia_text>
+                </position>
+            </language>
+            <translation>Streams.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oues" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>oues.</marginalia_text>
+                </position>
+            </language>
+            <translation>Sheep.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="capellae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Capell[a]e.</marginalia_text>
+                </position>
+            </language>
+            <translation>Goats.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="canes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Canes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Dogs.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="examina" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>apes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Bees.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sauciet vt duram vomer aduncus humum" type="straight"/>
+        <underline language="LA" method="pen" text="sedula turba canes" type="straight"/>
+        <underline language="LA" method="pen" text="Poma dat autumnus. formosa est messibus aestas" type="straight"/>
+        <underline language="LA" method="pen" text="Ver praebet flores. igne leuatur hyems" type="straight"/>
+        <underline language="LA" method="pen" text="insitio, fac ramum ramus adoptet" type="straight"/>
+        <underline language="LA" method="pen" text="Stétq[ue] peregrinis arbor operta comis" type="straight"/>
+       
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.285v.tif" pagination="[278v]" reader="John Dee" signature="[aaa ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Numerus filiorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Numerus filior[um]</marginalia_text>
+                </position>
+            </language>
+            <translation>The number of sons.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Albubather" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Albubather.</marginalia_text>
+                    <person name="Albubather"/>
+                </position>
+            </language>
+            <translation>Albubather.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="filij" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>filij</marginalia_text>
+                </position>
+            </language>
+            <translation>Sons.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Locus filiorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Locus filioru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The place of sons.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Regula.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rule.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quando Luna per radios, à Marte ad Saturnum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Separatio ☾ à ♂ ad ♄.</marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>The separation of the Moon from Mars towards Saturn.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="à domino primo" type="straight"/>
+        <underline language="LA" method="pen" text="filios habebit absconditos ac latentes" type="straight"/>
+        <underline language="LA" method="pen" text="quotquot etiam nascentur, interibunt" type="straight"/>
+        <underline language="LA" method="pen" text="cum hoc dominum quinti aut decimi" type="straight"/>
+        <underline language="LA" method="pen" text="decimus" type="straight"/>
+        <underline language="LA" method="pen" text="undecimus" type="straight"/>
+        <underline language="LA" method="pen" text="Lunae, ac Veneris locus cum dominatores extiterint" type="straight"/>
+        <underline language="LA" method="pen" text="166" type="straight"/>
+        <underline language="LA" method="pen" text="Sic &amp; in alijs" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral language="LA" place="intext" text="decimus">1</numeral>
+        <numeral language="LA" place="intext" text="undecimus">2</numeral>
+        <numeral language="LA" place="intext" text="quintus">3</numeral>
+        <numeral language="LA" place="intext" text="tum">4</numeral>
+        
+    </annotation>
+</transcription>

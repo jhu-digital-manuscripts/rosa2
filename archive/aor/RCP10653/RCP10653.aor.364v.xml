@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.364v.tif" pagination="278" reader="John Dee" signature="[Aaaa[v]]"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="Mortuo aut[em] Iohanne rege, Isabella regina, mater regis. H. Tertij, nupsit Hugoni le Brun. Comiti de Marchia inter Francia[m] &amp; Pictauia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ei .v. filios" type="straight"/>
+        <underline language="LA" method="pen" text="Gulih. de" type="straight"/>
+        <underline language="LA" method="pen" text="Guido &amp; Galfridus" type="straight"/>
+        <underline language="LA" method="pen" text="Quarttus Hugo" type="straight"/>
+        <underline language="LA" method="pen" text="Aethelmar[us]" type="straight"/>
+        <underline language="LA" method="pen" text="Comes Glocest. Rich." type="straight"/>
+        <underline language="LA" method="pen" text="Gulih. de Clare frater eius" type="straight"/>
+        <underline language="LA" method="pen" text="virulento haustu" type="straight"/>
+        <underline language="LA" method="pen" text="celeri iuuamine" type="double"/>
+        <underline language="LA" method="pen" text="releuatus" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- iuuamine releuatus -->
+        
+        <graph book_orientation="0" method="pen" place="left_margin" type="genealogical_tree">
+            <node id="n1">[blank]</node>
+            <node anchor_text="Comes Glocest. Rich." id="n2" person="Richard de Clare, 6th Earl of Gloucester">Richard[us] de Clare Comes gloc</node>
+            <node anchor_text="Gulih. de Clare" id="n3" person="William de Clare">Gulielm[us] de Clare</node>
+            <link from="n1" relationship="has_child" to="n2"/>
+            <link from="n1" relationship="has_child" to="n3"/>
+        </graph>
+        
+    </annotation>
+</transcription>

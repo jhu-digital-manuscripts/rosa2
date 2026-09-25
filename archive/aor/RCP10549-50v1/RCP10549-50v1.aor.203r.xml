@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.203r.tif" pagination="385" reader="John Dee" signature="bbb.i."/>
+    <annotation>
+        
+        <marginalia anchor_text="funus, etsi miserum atque acerbum [...] funestum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        funus miserum acerbu[m] funestu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A funeral, distressing, grievous and sad.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Rullus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Rullus
+                    </marginalia_text>
+                    <person name="Servilius Rullus"/>
+                </position>
+            </language>
+            <translation>
+                Servilius Rullus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="accusatio trinum nundinum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        trinu[m] nu[n]dinu[m] accusatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An accusation made over three market-days.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="conuersionem status" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Conuersio status
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Conversion of the status.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="trinumnundinum" type="straight"/>
+        <underline language="LA" method="pen" text="miserum" type="straight"/>
+        <underline language="LA" method="pen" text="atque acerbum" type="straight"/>
+        <underline language="LA" method="pen" text="funestum" type="straight"/>
+        <underline language="LA" method="pen" text="nihil est crudelius, nihil perniciosius" type="straight"/>
+        <underline language="LA" method="pen" text="nihil quod minus haec ciuitas ferre possit" type="straight"/>
+        <underline language="LA" method="pen" text="Hoc plebiscitum" type="straight"/>
+        <underline language="LA" method="pen" text="singulis versiculis è" type="straight"/>
+        <underline language="LA" method="pen" text="expleui animos inuidorum, placaui odia improboru[m], saturaui etia[m] perfidiam &amp; scelus proditorum: denique de" type="straight"/>
+        <underline language="LA" method="pen" text="nam cum tam moderata iudicia populi sint à maioribus constituta" type="straight"/>
+        <underline language="LA" method="pen" text="trinum nundinum" type="straight"/>
+        <underline language="LA" method="pen" text="praeter conuersionem status &amp; inclinationem co[m]munium" type="straight"/>
+        <underline language="LA" method="pen" text="eas nimium multi egentes, sumptuosi, nobiles concupiscant" type="straight"/>
+        <underline language="LA" method="pen" text="imminere iam cupiditate videntur" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+    </annotation>
+</transcription>

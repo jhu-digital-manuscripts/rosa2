@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.023r.tif" pagination="31" reader="John Dee" signature="c.iiij."/>
+    <annotation>
+        
+        <marginalia anchor_text="Mensis solaris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>mensis solaris</marginalia_text>
+                </position>
+            </language>
+            <translation>A solar month.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diebus 29. horis 12. minutis 44." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lunatio</marginalia_text>
+                </position>
+            </language>
+            <translation>A lunar month.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diebus vigintiseptem &amp; horis octo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>mensis paragrationis lunaris</marginalia_text>
+                </position>
+            </language>
+            <translation>A month of the traversing moon.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="constat diebus triginta, horis decem, minutis ferè vigintinoue[m]" type="straight"/>
+        <underline language="LA" method="pen" text="diebus 29. horis 12. minutis 44." type="straight"/>
+        <underline language="LA" method="pen" text="diebus vigintiseptem &amp; horis octo" type="straight"/>
+        
+    </annotation>
+</transcription>

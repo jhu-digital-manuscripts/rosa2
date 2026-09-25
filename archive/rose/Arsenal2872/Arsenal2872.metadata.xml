@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>35</illustrations>
+    <totalPages>477</totalPages>
+    <dimensions units="mm">
+        <width>270</width>
+        <height>336</height>
+    </dimensions>
+    <dates>
+        <startDate>1300</startDate>
+        <endDate>1400</endDate>
+    </dates>
+    <texts>
+        <text id="kalendrier">
+            <language>fr</language>
+            <title>Le Kalendrier la Royne (Guillaume de Saint-Cloud)</title>
+            <textId/>
+            <pages end="21v" start="1r">21</pages>
+            <illustrations>28</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="agregacion">
+            <language>fr</language>
+            <title>Ci commence l'agregacion des secrés de nature</title>
+            <textId/>
+            <pages end="38r" start="22r">17</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="secréz">
+            <language>fr</language>
+            <title>Ci commence le livre des secréz de nature</title>
+            <textId/>
+            <pages end="56v" start="38r">19</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="ypocras">
+            <language>fr</language>
+            <title>Ci commence le livre de Ypocras</title>
+            <textId/>
+            <pages end="79v" start="57r">23</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="messahala">
+            <language>fr</language>
+            <title>Ci commence l'epistre Messahala</title>
+            <textId/>
+            <pages end="83r" start="79v">5</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="seni">
+            <language>fr</language>
+            <title>Ci commence le livre de Seni le philozophe</title>
+            <textId/>
+            <pages end="84v" start="83r">2</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="philozophesrome">
+            <language>fr</language>
+            <title>Ci commence le livre que les philozophes de Rome...</title>
+            <textId/>
+            <pages end="84v" start="84v">1</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="jugesastrologie">
+            <language>fr</language>
+            <title>Ci commence le livre des 9 anciens juges de astrologie</title>
+            <textId/>
+            <pages end="309v" start="85r">225</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="gouvernement">
+            <language>fr</language>
+            <title>C'est le livre du gouvernement ou regime des princes</title>
+            <textId/>
+            <pages end="341r" start="309v">33</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="deite">
+            <language>fr</language>
+            <title>Ci commence le livre de la deite universal...</title>
+            <textId/>
+            <pages end="394r" start="342r">53</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="mansions">
+            <language>fr</language>
+            <title>Ci commence le livre des mansions de la lune</title>
+            <textId/>
+            <pages end="397r" start="394r">4</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="socrates">
+            <language>fr</language>
+            <title>Après commence une doctrine de Socrates prise sure la nature de 12 signes</title>
+            <textId/>
+            <pages end="398r" start="397r">2</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="luneXII">
+            <language>fr</language>
+            <title>Ci commence le livre de l'influence de la lune sur les XII signes</title>
+            <textId/>
+            <pages end="400r" start="398r">3</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="daniel">
+            <language>fr</language>
+            <title>Tables de Daniel le prophète </title>
+            <textId/>
+            <pages end="400v" start="400r">1</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="nativités">
+            <language>fr</language>
+            <title>Tables des nativités pour trouver la planete et le signe de chascun</title>
+            <textId/>
+            <pages end="400v" start="400v">1</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="noblesphilozophes">
+            <language>fr</language>
+            <title>Ci commence le testament des nobles philozophes</title>
+            <textId/>
+            <pages end="416r" start="401r">16</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="aristote">
+            <language>fr</language>
+            <title>Ci commence le livre du parfait magistere Aristote...</title>
+            <textId/>
+            <pages end="425v" start="416r">9</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="mercure">
+            <language>fr</language>
+            <title>L'eaue de mercure</title>
+            <textId/>
+            <pages end="425v" start="425v">1</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="branchet">
+            <language>fr</language>
+            <title>Ci commence le livre de la Branchete</title>
+            <textId/>
+            <pages end="429v" start="426r">4</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="villeneuve">
+            <language>fr</language>
+            <title>Ci commence le rosaire de maistre Arnauld de Villeneuve...</title>
+            <textId/>
+            <pages end="451r" start="429v">23</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="roussinus">
+            <language>fr</language>
+            <title>C'est le livre de Roussinus sur la operacion de la pierre des philosophes</title>
+            <textId/>
+            <pages end="457v" start="451r">7</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="margarite">
+            <language>fr</language>
+            <title>Glorieuse margarite</title>
+            <textId/>
+            <pages end="462r" start="457v">6</pages>
+            <illustrations>3</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="dissolucions">
+            <language>fr</language>
+            <title>Ci après le livre des dissolucions solennes</title>
+            <textId/>
+            <pages end="473r" start="462v">12</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="pratiqe">
+            <language>fr</language>
+            <title>Ci commence la pratiqe de la pierre</title>
+            <textId/>
+            <pages end="475v" start="473r">3</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="477v" start="475v">3</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Arsenal 2872</commonName>
+            <dateLabel>14th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>
+                     
+                     Bibliothèque de l'Arsenal</repository>
+            <shelfmark> 2872</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Arsenal 2872</commonName>
+            <dateLabel>14e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>
+                     
+                     Bibliothèque de l'Arsenal</repository>
+            <shelfmark> 2872</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

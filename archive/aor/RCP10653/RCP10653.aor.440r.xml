@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.440r.tif" pagination="429" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vide Stowei summariu[m] chronïcoru[m] a[nno] Chr[ist]i 974 et inde emendu[m] hunc locum. 
+                    </marginalia_text>
+                    <person name="John Stow"/>
+                </position>
+            </language>
+            <translation>
+                See Stow's summary of the chronicle for the year 974 and from there how to correct this passage.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="[Succe]dentibus autem regibus Angliae in praedicta" type="straight"/>
+        <underline language="LA" method="pen" text="Eadgarus rex" type="straight"/>
+        <underline language="LA" method="pen" text="regesque plurimaru[m] insularum" type="straight"/>
+        <underline language="LA" method="pen" text="quinque" type="straight"/>
+        <underline language="LA" method="pen" text="Dunvval" type="straight"/>
+        <underline language="LA" method="pen" text="prope proram" type="straight"/>
+        <underline language="LA" method="pen" text="successores suos posse gloriari se reges Anglorum esse, cum tanta honoris pr[a]erogatiua" type="straight"/>
+        
+        <symbol name="Asterisk" place="left_margin"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- Angliae in -->
+     
+        
+    </annotation>
+</transcription>

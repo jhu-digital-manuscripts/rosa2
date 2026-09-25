@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.032v.tif" reader="Harvey" signature="[D[i[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Cyrus" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cyrus.</marginalia_text>
+                    <person name="Cyrus the Great"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="paynefull labour" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Labore ad voluptatis Arcem ascendit[u]r.</marginalia_text>
+                </position>
+            </language>
+            <translation>By hardship he is rising towards the peak of delight.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="broughte forth" type="straight"/>
+        <underline language="EN" method="pen" text="weakest and most" type="straight"/>
+        <underline language="EN" method="pen" text="naked in the syght of al his" type="straight"/>
+        <underline language="EN" method="pen" text="but wretches" type="straight"/>
+        <underline language="EN" method="pen" text="Cyrus kynge" type="straight"/>
+        <underline language="EN" method="pen" text="concitate" type="straight"/>
+        <underline language="EN" method="pen" text="them all daye at worke" type="straight"/>
+        <underline language="EN" method="pen" text="them in hewynge vp a certayne wodde" type="straight"/>
+        <underline language="EN" method="pen" text="a verye plentuous feaste" type="straight"/>
+        <underline language="EN" method="pen" text="in the feaste" type="straight"/>
+        <underline language="EN" method="pen" text="daye lyked them best" type="straight"/>
+        <underline language="EN" method="pen" text="the pastyme of" type="straight"/>
+        <underline language="EN" method="pen" text="muste he come by" type="straight"/>
+        <underline language="EN" method="pen" text="by the other" type="straight"/>
+        <underline language="EN" method="pen" text="ye fyrste ouercome" type="straight"/>
+        <underline language="EN" method="pen" text="Medes" type="straight"/>
+        <underline language="EN" method="pen" text="neuer lyue in fredome" type="straight"/>
+        <underline language="EN" method="pen" text="and at pleasure" type="straight"/>
+        <underline language="EN" method="pen" text="Sylla" type="straight"/>
+        <underline language="EN" method="pen" text="weried them with" type="straight"/>
+        <underline language="EN" method="pen" text="continuall labour" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="daye lyked them best"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

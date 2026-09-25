@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.099v.tif" pagination="184" reader="John Dee" signature="[q.ij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="ἐπιφάνεινα" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Epiphania.</marginalia_text>
+                </position>
+            </language>
+            <translation>Epiphany.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">     
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hoc falsu[m] esse convincit Paulus Middelburge[n]si</marginalia_text>
+                    <person name="Paul of Middelburg"/>
+                </position>
+            </language>
+            <translation>Paul of Middelburg convinces that this is false.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="anno ab Alexandro" hand="Italian">    
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Anno ab Alexandri morte.</marginalia_text>
+                    <person name="Alexander the Great"/>
+                </position>
+            </language>
+            <translation>In the year since the death of Alexander.</translation>    
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Domini nostri praesentiam" type="straight"/>
+        <underline language="EL" method="pen" text="ἐπιφάνεινα" type="straight"/>  
+        <underline language="LA" method="pen" text="ad stellae" type="straight"/>
+        <underline language="LA" method="pen" text="enim altero à" type="double"/>
+        <underline language="LA" method="pen" text="nato domino" type="straight"/>
+        <underline language="LA" method="pen" text="tricesimoquinto" type="straight"/>
+        <underline language="LA" method="pen" text="secundum te[m]pus" type="straight"/>
+        <underline language="LA" method="pen" text="prope bimatum" type="straight"/>
+        <underline language="LA" method="pen" text="Tricesimotertio" type="straight"/>
+        <underline language="LA" method="pen" text="Christus" type="straight"/>
+        <underline language="LA" method="pen" text="Tricesimoseptimo, Herodes" type="straight"/>
+        <underline language="LA" method="pen" text="A natiuitate" type="straight"/>
+        <underline language="LA" method="pen" text="inde nouissima" type="straight"/>
+        <underline language="LA" method="pen" text="natus est hodie" type="straight"/>
+        <underline language="LA" method="pen" text="Graeci enim partim à mundo condito" type="straight"/>
+        <underline language="LA" method="pen" text="concilij primi Niceni" type="straight"/>
+        <underline language="LA" method="pen" text="anno ab Alexandro" type="double"/>
+        <underline language="LA" method="pen" text="336. mense Iulio, 13. Calend. Iulij" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <drawing anchor_text="stellam" book_orientation="0" method="pen" place="left_margin" type="star"/>
+        
+    </annotation>
+</transcription>

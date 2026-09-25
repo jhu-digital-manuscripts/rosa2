@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.037r.tif" pagination="73" reader="John Dee" signature="e 5"/>
+    <annotation>
+        
+        <marginalia anchor_text="extemporalis garrulitas, nec expectat cogitatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Extemporalis or[ati]o mala est multis De caußis </marginalia_text>
+                </position>
+            </language>
+            <translation>Spontaneous speech is bad, in a number of cases. </translation>
+        </marginalia>
+        
+       <marginalia anchor_text="ἀνασκευή καὶ κατασκευή " hand="Italian">
+           <language ident="EL">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>ἀνασκευή καὶ κατασκευή</marginalia_text>
+               </position>
+           </language>
+           <translation>Refutation and confirmation.</translation>
+       </marginalia>
+        
+        <marginalia anchor_text="ut si quaratur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qua[e]stionum formula[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Method of investigations.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Graecis historicis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gra[e]ci historici</marginalia_text>
+                </position>
+            </language>
+            <translation>Historical Greeks.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Liuius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Liuius.</marginalia_text>
+                </position>
+            </language>
+            <translation>Livy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exemplisq[ue], quae sunt in omni genere causaru[m] pote[n]tißima" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exe[m]pla in o[mni]b[us] causis potentissima</marginalia_text> 
+                </position>
+            </language>
+            <translation>For all these reasons, examples are most powerful.</translation>
+        </marginalia>       
+        
+        <underline language="LA" method="pen" text="extemporalis garrulitas, nec expectata cogitatio, &amp; uix surge[n]di mora, circulatoriae uerè iactationis est" type="straight"/>
+        <underline language="LA" method="pen" text="discet recte dicere, quàm cito" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+           
+    </annotation>
+</transcription>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.012v.tif" pagination="[13v]" reader="John Dee"/>  
+    <annotation>
+        
+        <marginalia anchor_text="amica" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Amica.</marginalia_text>
+                </position>
+            </language>
+            <translation>A female friend.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Helene" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Helene.</marginalia_text>
+                    <person name="Helen of Troy"/>
+                </position>
+            </language>
+            <translation>Helen.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; remis eruta canet aqua" type="straight"/>
+        <underline language="LA" method="pen" text="Haerebat gremio turpis amica tuo. Tunc fleui, rupíq[ue] sinus, &amp; pectora planxi, Et secui madidas vngue rigente genas. Impleuíq[ue] sacram querulis vlulatibus" type="straight"/>
+        <underline language="LA" method="pen" text="Illuc has lachrymas" type="straight"/>
+        
+     <mark method="pen" name="X_sign" place="left_margin"/>
+        
+    </annotation>
+</transcription>

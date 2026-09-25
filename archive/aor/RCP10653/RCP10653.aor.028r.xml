@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.028r.tif" pagination="47" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="minuentur anni sicut menses, &amp; menses sicut septimanae, &amp; dies sicut orae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Abbreuiabuntur tempora.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Times will be shortened.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Graecorum &amp; Romanorum" type="straight"/>
+        <underline language="LA" method="pen" text="aquilone spurcissimae exurge[n]t gentes (quas Alexander inclusit) Gog &amp; Magog. Hij" type="straight"/>  <!-- DO: Again I think there are some acute accents, unless it's some kind of printing oddity? -->
+        <underline language="LA" method="pen" text="Helias &amp; Enoch" type="straight"/>
+        <underline language="LA" method="pen" text="Antichristus in monte Oliueti" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- haec Sibilla -->
+        <mark method="pen" name="comma" place="intext"/> <!-- Sibilla &amp; -->
+        
+        <errata amendedtext="videatur" copytext="vidiatur" language="LA"/>
+        <errata amendedtext="horae" copytext="orae" language="LA"/>    
+        
+    </annotation>
+</transcription>

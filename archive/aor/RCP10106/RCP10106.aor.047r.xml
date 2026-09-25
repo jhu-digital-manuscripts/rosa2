@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.047r.tif" pagination="93" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="καθολικὰ" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>κακοτεχνία</marginalia_text>
+                </position>
+            </language>
+            <translation>Bad practice.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cauillationis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cauillatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Captious.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quid si Rhetorice" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rhetorica quid.</marginalia_text>
+                </position>
+            </language>
+            <translation>What [is] rhetoric?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Orator</marginalia_text>
+                </position>
+            </language>
+            <translation>Orator.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Oratio</marginalia_text>
+                </position>
+            </language>
+            <translation>Speech.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="malos quoque uiros posse oratores dic putant" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mali no[n] poßu[n]t eße oratores.</marginalia_text>
+                </position>
+            </language>
+            <translation>Bad men cannot be orators.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="persuadendo, aut in dicendo apposite ad persuadendem positum orandi munus suint arbitrati: id enim fieri potest ab eo quoque, qui uir bonus non sit." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Malus p[otes]t p[er]suadere</marginalia_text>
+                    <emphasis method="pen" type="straight"/>
+                </position>
+            </language>
+            <translation>A bad man is able to persuade.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="plerique potestatem, nonnulli facultaté uocant: quae res ne quid afferat afferat amiguitatis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vis quid</marginalia_text>
+                </position>
+            </language>
+            <translation>This power.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Isocrate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Isocrates</marginalia_text>
+                    <person name="Isocrates"/>
+                </position>
+            </language>
+            <translation>Isocrates.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="infamantium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Infamo</marginalia_text>
+                </position>
+            </language>
+            <translation>Defame.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="(si tamen re uera ars, quae circunfertur, eius est) duxit." type="straight"/>
+        
+    </annotation>
+</transcription>

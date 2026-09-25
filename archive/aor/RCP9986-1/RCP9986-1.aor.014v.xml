@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.014v.tif" pagination="[15v]" reader="John Dee"/>  
+    <annotation>
+        
+        <marginalia anchor_text="fama" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fama.</marginalia_text>
+                </position>
+            </language>
+            <translation>Fame.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iasonis factu[m] egregium.</marginalia_text> 
+                    <person name="Jason"/>
+                </position>
+            </language>
+            <translation>Jason's excellent deed.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Medea.</marginalia_text>
+                    <person name="Medea"/>
+                </position>
+            </language>
+            <translation>Medea.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="amor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Amor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Love.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cur mihi fama" type="straight"/>
+        <underline language="LA" method="pen" text="Barbara narratur venisse venefica tecum" type="straight"/>
+        <underline language="LA" method="pen" text="Credula res amor est, vtinam temeraria dicar Criminibus falsis insimulasse virum" type="straight"/>
+        <underline language="LA" method="pen" text="vix bene limen erat" type="straight"/>
+        <underline language="LA" method="pen" text="aeripedes" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

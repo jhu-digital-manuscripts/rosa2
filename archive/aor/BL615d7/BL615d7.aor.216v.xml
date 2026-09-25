@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.216v.tif" pagination="[216v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="fiume Beragua" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Beragua fl[umen] </marginalia_text>
+                    <location name="Beragua"/>
+                </position>
+            </language>
+            <translation>The river of Beragua.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Occidente da Betlem" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Beragua fl[umen] </marginalia_text>
+                    <location name="Beragua"/>
+                </position>
+            </language>
+            <translation>The river of Beragua.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="di Vrira" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vrira</marginalia_text>
+                    <location name="Vrira"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="distaua una lega" type="straight"/>
+        <underline language="IT" method="pen" text="Betlem" type="straight"/>
+        <underline language="IT" method="pen" text="XLIII" type="straight"/>
+        <underline language="IT" method="pen" text="Qualchiuio" type="straight"/>
+        <underline language="IT" method="pen" text="queste minere non erano di Beragua" type="straight"/>
+        <underline language="IT" method="pen" text="di Vrira" type="straight"/>
+        <underline language="IT" method="pen" text="population di nemici" type="straight"/>
+        <underline language="IT" method="pen" text="con Beragua" type="straight"/>
+        
+    </annotation>
+</transcription>

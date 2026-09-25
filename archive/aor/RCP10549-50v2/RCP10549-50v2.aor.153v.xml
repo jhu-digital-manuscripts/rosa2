@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.153v.tif" pagination="46" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="Decius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Decius</marginalia_text>
+                    <person name="Publius Decius Mus I"/>        <!-- DO: I think this is the right one but not completely sure -->
+                </position>
+            </language>
+            <translation>Publius Decius Mus I.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Commoratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Commoratio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Dwelling.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="sanguis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sanguis</marginalia_text>
+                </position>
+            </language>
+            <translation>Blood.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Contentio; in verborum; In sententiarum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Contentio 2.</marginalia_text>
+                </position>
+            </language>
+            <translation>Antithesis, 2.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="scire possis quàm facile praeceptione rhetorica res simplex" type="straight"/>
+        <underline language="LA" method="pen" text="est, qui in nauigando se quàm nauim mauult" type="straight"/>
+        <underline language="LA" method="pen" text="Vnde amisit vitam, at non perdidit" type="straight"/>
+        <underline language="LA" method="pen" text="me[m]brum aliquod, sed, tanquam sanguis, profusus est per totum corpus" type="straight"/>
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">5</numeral>
+        
+    </annotation>
+</transcription>

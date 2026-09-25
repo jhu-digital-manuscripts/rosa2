@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.242v.tif" pagination="[235v]" reader="John Dee" signature="[NN iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="comitiales" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Comitiales.</marginalia_text>
+                </position>
+            </language>
+            <translation>Epileptics.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Insani; Daemoniaci" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Insani. Daemoniaci.</marginalia_text> 
+                </position>
+            </language>
+            <translation>The insane. The possessed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="geminorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gemelli.</marginalia_text>
+                </position>
+            </language>
+            <translation>Twins.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Luna cum à radijs Martis amicis recesserit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☾ separatio a ♂</marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>The separation of the Moon from Mars..</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Mercurium cum Luna impediant" type="straight"/>
+        <underline language="LA" method="pen" text="Cumq[ue] luminaria, &amp; Mars, ac Venus, in masculinis" type="straight"/> 
+        
+       <mark method="pen" name="vertical_bar" place="right_margin"/>
+       <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

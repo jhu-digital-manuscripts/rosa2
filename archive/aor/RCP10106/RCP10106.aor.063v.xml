@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.063v.tif" pagination="126" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>στάσις</marginalia_text>
+                </position>
+            </language>
+            <translation>Claim.</translation>
+        </marginalia>
+                
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quorundam opinio vana</marginalia_text>
+                </position>
+            </language>
+            <translation>The vain conjectures of some.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="TheodÔrus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>TheodÔrus</marginalia_text>
+                    <person name="Theodorus of Gadara"/>
+                </position>
+            </language>
+            <translation>Theodorus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Statum Graeci στάσιν uocant, quod nomen primum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>À quo verbum</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>στάσιν</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>sit inve[n]tum primu[m]. </marginalia_text>
+                </position>
+            </language>
+            <translation>From here the word stasis was discovered for the first time.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quae appellatio dicitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Unde ducitur.</marginalia_text>
+                </position>
+            </language>
+            <translation>Where it is said.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Statum quidam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Status quid</marginalia_text>
+                </position>
+            </language>
+            <translation>What condition?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quid si enim dicat quis, Sonus est duorum corporum inter se conflictio?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sonus quid</marginalia_text>
+                </position>
+            </language>
+            <translation>What sound?</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quidam constitutionem uocant, alij quaestione[m], alij quod ex quaestione" type="straight"/>
+        <underline language="LA" method="pen" text="quibus quidq[ue] nominibus adpelletur" type="straight"/>
+        <underline language="LA" method="pen" text="res ipsa manifesta sit" type="straight"/>
+        <underline language="LA" method="pen" text="prima conflictione nascitur" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="dash" place="left_margin"/>
+            
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.142v.tif" pagination="24" reader="John Dee" signature="[b.iiii.[v]]"/>  
+    <annotation>
+        
+        <marginalia anchor_text="extraneas res" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ab externis Rebus.</marginalia_text>
+                </position>
+            </language>
+            <translation>From external matters.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sup[ra] 23.101.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0293" text="23.101"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Above, folio 23, [section] 101.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Conclusionibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Conclusio</marginalia_text>
+                </position>
+            </language>
+            <translation>The conclusion.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="dispositio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dispositio. %.</marginalia_text>  
+                </position>
+            </language>
+            <translation>The organisation is.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Genera dispositionu[m] sunt duo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dispositio[n]is diuisio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The division of the organisation.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="ex institutione artis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ex institutio[n]e artis.</marginalia_text>
+                </position>
+            </language>
+            <translation>From the custom of the craft.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Haec igitur duplex dispositio est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Diuisio dispo.[sitionis]</marginalia_text> 
+                </position>
+            </language>
+            <translation>The division of the organisation.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="ad tempus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ad casu[m] temporis.</marginalia_text>
+                </position>
+            </language>
+            <translation>To the chance of present circumstances.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="animi defatigati ab aduersariis multitudine verborum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Si auditores audie[n]do defessi</marginalia_text>
+                </position>
+            </language>
+            <translation>If the listeners are exhausted from listening.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="argume[n]tationu[m] dispositiones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Argume[n]tationu[m] dispositio</marginalia_text>
+                </position>
+            </language>
+            <translation>The organisation of arguments.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quibus animus hominis maxime consyderatur, illae quatuor animi virtutes eru[n]t acco[m]moda[n]dae, vt si laudemus, aliud iuste, aliud modeste, aliud fortiter, aliud prudenter" type="straight"/>
+        <underline language="LA" method="pen" text="ipsa res artificiosam dispositione[m] artificiose co[m]mutare" type="straight"/>
+        
+        <drawing anchor_text="Conclusio" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

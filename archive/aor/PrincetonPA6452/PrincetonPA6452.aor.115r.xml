@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.115r.tif" pagination="213" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia anchor_text="dictator praedam omnem edixerat militibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Pra[e]da omnis edicta militibus: popularis ac plausibilis fauoris gratia.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The entire booty decreed to the soldiers: a popular and praiseworthy favor of good-will.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="oculis exemplum erat Q. Fabius" type="straight"/>
+        <underline language="LA" method="pen" text="ne quam uim hostium magis, quàm trucem dictatoris iram timeret" type="straight"/>
+        <underline language="LA" method="pen" text="frumentatores" type="straight"/>
+        <underline language="LA" method="pen" text="subueniri eis ab legato potuisse" type="straight"/>
+        <underline language="LA" method="pen" text="ni tristia edicta exhorruisset" type="straight"/>
+        <underline language="LA" method="pen" text="militum animos iam" type="straight"/>
+        <underline language="LA" method="pen" text="implacabilis Q." type="straight"/>
+        <underline language="LA" method="pen" text="suis precibus" type="straight"/>
+        <underline language="LA" method="pen" text="populo Romano ueniam" type="straight"/>
+        <underline language="LA" method="pen" text="uetito quicquam pro magistratu agere" type="straight"/>
+        <underline language="LA" method="pen" text="tantum momenti in uno uiro L. Papyrio fuit, ut si ducis consilia fauor" type="straight"/>
+        <underline language="LA" method="pen" text="instruxit aciem loco, ac subsidijs" type="straight"/>
+        <underline language="LA" method="pen" text="omni arte bellica firmauit" type="straight"/>
+        <underline language="LA" method="pen" text="Cessatum" type="straight"/>
+        <underline language="LA" method="pen" text="de industria" type="straight"/>
+        <underline language="LA" method="pen" text="impedita uictoria est" type="straight"/>
+        <underline language="LA" method="pen" text="Sensit peritus dux" type="straight"/>
+        <underline language="LA" method="pen" text="res uictoriae" type="straight"/>
+        <underline language="LA" method="pen" text="temperandum ingenium suum" type="straight"/>
+        <underline language="LA" method="pen" text="seueritatem miscendam comitati" type="straight"/>
+        <underline language="LA" method="pen" text="ipse circum saucios milites" type="straight"/>
+        <underline language="LA" method="pen" text="singulos ut sese haberent" type="straight"/>
+        <underline language="LA" method="pen" text="per se populare[m] ita dexter egit, ut medendis corporibus animi" type="straight"/>
+        <underline language="LA" method="pen" text="imperatori reconciliarentur" type="straight"/>
+        <underline language="LA" method="pen" text="quicquam ad salubritatem efficacius" type="straight"/>
+        <underline language="LA" method="pen" text="quod grato animo ea cura accepta est" type="straight"/>
+        <underline language="LA" method="pen" text="dubia spe sua militumq[ue], ita" type="straight"/>
+        <underline language="LA" method="pen" text="ille ultimus" type="straight"/>
+        <underline language="LA" method="pen" text="eis dies conferendi signa" type="straight"/>
+        <underline language="LA" method="pen" text="duxit praedae" type="straight"/>
+        <underline language="LA" method="pen" text="Addebat alacritatem" type="straight"/>
+        <underline language="LA" method="pen" text="dictator praedam omnem edixerat militibus" type="straight"/>
+        <underline language="LA" method="pen" text="nec ira magis publica, quàm priuatum compendium in hostem acuebat" type="straight"/>
+        <underline language="LA" method="pen" text="pacem à dictatore" type="straight"/>
+        <underline language="LA" method="pen" text="quo pacti" type="straight"/>
+        <underline language="LA" method="pen" text="singula" type="straight"/>
+        <underline language="LA" method="pen" text="annuum stipendium" type="straight"/>
+        <underline language="LA" method="pen" text="unius eius fidei uirtutique causam" type="straight"/>
+        <underline language="LA" method="pen" text="Dictator triumphans" type="straight"/>
+        <underline language="LA" method="pen" text="infecta pace" type="straight"/>
+        <underline language="LA" method="pen" text="de conditionibus" type="straight"/>
+        <underline language="LA" method="pen" text="inducias" type="straight"/>
+        <underline language="LA" method="pen" text="nec earum ipsarum sancta fides" type="straight"/>
+        <underline language="LA" method="pen" text="Romae nocturnus terror ita" type="straight"/>
+        <underline language="LA" method="pen" text="Capitolium atque" type="straight"/>
+        <underline language="LA" method="pen" text="moenia que" type="straight"/>
+        <underline language="LA" method="pen" text="plena armatorum" type="straight"/>
+        <underline language="LA" method="pen" text="clamatum que ad arma omnibus" type="straight"/>
+        <underline language="LA" method="pen" text="prima luce nec autor" type="straight"/>
+        <underline language="LA" method="pen" text="causa terroris comparuit" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        <!--JG: Unknown mark in left-margin, next to word 'autor'. Perhaps a sloppy SS symbol? -->
+        
+        <symbol language="LA" name="SS" place="right_margin" text="ne quam uim hostium magis, quàm trucem dictatoris iram timeret"/>
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="JC" place="right_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--pr[a]e-->
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="uno"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="instruxit"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="loco"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="subsidijs"/>
+        <mark method="pen" name="comma" place="intext"/> <!--subsidijs ita-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="temperandum"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="seueritatem"/>
+        <mark language="LA" method="pen" name="quotation_mark" place="intext" text="comitati"/>
+        <mark language="LA" method="pen" name="quotation_mark" place="intext" text="dexter"/>
+        
+        <mark language="LA" method="pen" name="X_sign" place="tail" text="Pra[e]da omnis edicta militibus: popularis ac plausibilis fauoris gratia."/>
+        
+    </annotation>
+</transcription>

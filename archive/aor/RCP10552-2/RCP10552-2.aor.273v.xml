@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.273v.tif" pagination="60" reader="John Dee" signature="[H.iij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Henricum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Henricus</marginalia_text>
+                    <person name="Henry of Almain"/>
+                </position>
+            </language>
+            <translation>Henry of Almain.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Gulielmus de longa spata" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gulielmi de lo[n]ga spata mors</marginalia_text>
+                    <person name="William II Longsword"/>
+                </position>
+            </language>
+            <translation>The death of William Longsword.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Henricus de Lacy comes Lincolniae" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Henricus de Lacy comes Lincol[niae]</marginalia_text>
+                    <person name="Henry de Lacy, 3rd Earl of Lincoln"/>
+                </position>
+            </language>
+            <translation>Henry de Lacy, Earl of Lincoln.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="quondam Gilberti de Clara, de qua filium genuerat Henricum nomine" type="straight"/>
+        <underline language="LA" method="pen" text="tertiam" type="straight"/>
+        <underline language="LA" method="pen" text="Robertus verò" type="straight"/>
+        <underline language="LA" method="pen" text="erat Gulielmus" type="straight"/>
+        <underline language="LA" method="pen" text="Comes Sarisburiensis" type="straight"/>
+        <underline language="LA" method="pen" text="Abbatissa de Lacok foemina magnae sanctitatis, quae mater erat Gulielmi" type="straight"/>
+        <underline language="LA" method="pen" text="longa spata nocte" type="straight"/>
+        <underline language="LA" method="pen" text="Gulielmi filiam vnicam &amp; haeredem duxit Henricus de Lacy comes" type="straight"/>
+        
+    
+        
+    </annotation>
+    
+</transcription>

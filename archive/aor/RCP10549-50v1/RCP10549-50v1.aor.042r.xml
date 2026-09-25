@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.042r.tif" pagination="67" reader="John Dee" signature="ee.ii."/>
+    <annotation> 
+        
+        <marginalia anchor_text="Imperatorio iure" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Imperatoriu[m] ius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Imperial law.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="literis definiri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        litteris diffiniri.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To state in writing.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad speciem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ad specie[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To the eye.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ad sensu[m], cogitatio[n]emq[ue]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To the heart and mind.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in foro Populi Romani" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        sermo o[mn]iu[m] de foro PR
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A speech to all in the forum of the people of Rome.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Excusatio Verris.
+                    </marginalia_text>
+                    <person name="Verres"/>
+                </position>
+            </language>
+            <translation>
+                Excuse of Verres.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rapuit, &amp; furatus est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        rapere furari.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To steal, to plunder.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        matres familias
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mother of the family.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        lampsacus
+                    </marginalia_text>
+                    <location name="Lampsacus"/>
+                </position>
+            </language>
+            <translation>
+                Lampsacus.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="literis definiri vides" type="straight"/>
+        <underline language="LA" method="pen" text="certe maior est virtutis, victoriáeque iucunditas, quàm ista voluptas quae percipitur ex libidine" type="straight"/>
+        <underline language="LA" method="pen" text="vidi collucere omnia furtis tuis, praeda" type="straight"/>
+        <underline language="LA" method="pen" text="vidit enim eos, qui in iudiciorum dominos se dici volebant, harum cupiditatum esse seruos" type="straight"/>
+        <underline language="LA" method="pen" text="Nihil esse quod quisquam dubitaret de exitio sociorum, atque amicorum: cum quidem viderent in foro Populi Romani,              quo in loco antea qui sociis iniurias fecerant, accusari, &amp; condemnari solebant, ibi esse palàm posita ea, quae ab sociis per scelus ablata, ereptáque essent" type="straight"/>
+        <underline language="LA" method="pen" text="solet haec quae rapuit, &amp; furatus est, nonnunquam" type="straight"/>
+        <underline language="LA" method="pen" text="sed ex tempore aliquo" type="straight"/>
+        <underline language="LA" method="pen" text="hoc vero nouum, &amp; ridiculum est: quod hic nobis respondit" type="straight"/>
+        <underline language="LA" method="pen" text="vicisti" type="straight"/>
+        <underline language="LA" method="pen" text="solis rebus indomitas cupiditates, atque effrenatas habebat, caeterae libidines eius ratione aliqua" type="straight"/>
+        <underline language="LA" method="pen" text="ecquo in oppido pedem posuit, vbi non plura stuproru[m], flagitiorúmque suoru[m], quàm aduentus sui vestigia reliquerit?" type="straight"/>
+        <underline language="LA" method="pen" text="praeterea maxime sedati &amp; quieti" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Nihil esse quod quisquam dubitaret de exitio sociorum, atque amicorum: cum quidem viderent in foro Populi Romani,              quo in loco antea qui sociis iniurias fecerant, accusari, &amp; condemnari solebant, ibi esse palàm posita ea, quae ab sociis per scelus ablata, ereptáque essent"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/> <!--JG: Four plus signs that form a cross-->
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="ecquo in oppido pedem posuit, vbi non plura stuproru[m], flagitiorúmque suoru[m], quàm aduentus sui vestigia reliquerit?"/>
+        
+        <numeral place="right_margin">15</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">15</numeral>
+        <numeral place="right_margin">15.21</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+        <drawing anchor_text="vidit enim eos, qui in iudiciorum dominos se dici volebant, harum cupiditatum esse seruos" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        <drawing anchor_text="Nihil esse quod quisquam dubitaret de exitio sociorum, atque amicorum: cum quidem viderent in foro Populi Romani,              quo in loco antea qui sociis iniurias fecerant, accusari, &amp; condemnari solebant, ibi esse palàm posita ea, quae ab sociis per scelus ablata, ereptáque essent" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        <drawing anchor_text="ecquo in oppido pedem posuit, vbi non plura stuproru[m], flagitiorúmque suoru[m], quàm aduentus sui vestigia reliquerit?" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+        <!-- FSF: there are four crosses -->
+        
+    </annotation>
+</transcription>

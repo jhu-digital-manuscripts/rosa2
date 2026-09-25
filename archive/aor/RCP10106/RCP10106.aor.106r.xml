@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.106r.tif" pagination="211" reader="John Dee" signature="o 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="duo genera sunt testium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Duo sunt genera testiu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>There are two kinds of witnesses.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pars acumen, &amp; uigilantiam poscit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>subtilis vigila[n]tia ac versutia</marginalia_text>
+                </position>
+            </language>
+            <translation>Accurate watchfulness and cunning</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sed &amp; plus deprehe[n]si nocent" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

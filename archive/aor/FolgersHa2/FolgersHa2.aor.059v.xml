@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.059v.tif" pagination="438" reader="Harvey"/>	<!-- ABO 64left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Elementa artium norunt multi: quintam essentiam nemo. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Many know the elements of the arts, yet no one knows the quintessence.
+			</translation>
+		</marginalia>
+		
+		<marginalia anchor_text="Antippo" hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Temporis Censura Optima.
+						Veritas, Temporis filia. Viua vox, parasitam agit.
+					</marginalia_text>
+					<emphasis method="pen" text="Temporis Censura" type="straight"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Nam
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Antippus, rara auis in terris.
+					</marginalia_text>
+					<person name="Antippus"/>
+				</position>
+			</language>
+			<translation>
+				An excellent judgment of time.
+				Truth is the daughter of time. The living voice only makes a parasite. 
+				Indeed, Antippus is a person of rarity in the world.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Sensi Aschami Germanicum discursum; cum Heiuodi Prouerbijs, et Epigrammatis;
+						infinitam discurrendi, arguendiq[ue] facultatem suppeditare quibusdam generosis,
+					</marginalia_text>
+					<person name="Roger Ascham"/>
+					<person name="John Heywood"/>
+					<book title="Report and Discourse"/>
+					<book title="The Proverbs, Epigrams, and Miscellanies of John Heywood"/>
+					<emphasis method="pen" text="Aschami Germanicum discursum" type="straight"/>
+					<emphasis method="pen" text="Prouerbijs" type="straight"/>
+					<emphasis method="pen" text="Epigrammatis" type="straight"/>
+					<emphasis method="pen" text="infinitam discurrendi" type="straight"/>
+					<emphasis method="pen" text="facultatem suppeditare" type="straight"/>
+				</position>
+				<position book_orientation="90" place="tail">
+					<marginalia_text>
+						Jus commune profitentibus.
+						Vnus eorum addebat Chaloneri Moria[e] Encomiu[m]:
+						et videbatur singularis.
+						Sed erat egregiè promptus, et
+					</marginalia_text>
+					<person name="Thomas Chaloner"/>
+				</position>
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						fluens. Et nihil putabat elegantius, aut argutius suo Aschamo, Chalonero, Heiuodo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				I heard the Germanic discourse of Ascham; with Heywood's Proverbs and Epigrams;
+				that endless faculty of discussing and declaring to furnish with something noble, with something professing common law. 
+				Someone added Chaloner's In Praise of Folly: and it was seen as singular.
+				But he was exceptionally quick and fluent.
+				And he thought nothing more elegant and more clever than his Ascham, Chaloner, and Heywood.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="tutti fuor che Antippo" type="straight"/>
+		<underline language="IT" method="pen" text="celebrarono al par di quelle d'Euripide" type="straight"/>
+		<underline language="IT" method="pen" text="Antippo" type="straight"/>
+		<underline language="IT" method="pen" text="adulatione" type="straight"/>
+		<underline language="IT" method="pen" text="caminar verso la porta per uscire" type="straight"/>
+		<underline language="IT" method="pen" text="tutti marauigliati" type="straight"/>
+		<underline language="IT" method="pen" text="Doue andate uoi Antippo" type="straight"/>
+		<underline language="IT" method="pen" text="Alle Latomie" type="straight"/>
+		<underline language="IT" method="pen" text="strascinar da' birri" type="straight"/>
+		<underline language="IT" method="pen" text="i motti breui &amp; oscuri" type="straight"/>
+		<underline language="IT" method="pen" text="co[n]ditti di quell'urbanità, che nasce dalle parole" type="straight"/>
+		<underline language="IT" method="pen" text="con argutia" type="straight"/>
+		<underline language="IT" method="pen" text="maggiore altroue riescouo" type="straight"/>
+		<underline language="IT" method="pen" text="in principio" type="straight"/>
+		<underline language="IT" method="pen" text="ne prende piacere conoscendo" type="straight"/>
+		<underline language="IT" method="pen" text="qualche cognition di più, che prima non s'haueua diuisato" type="straight"/>
+		<underline language="IT" method="pen" text="Aristotele" type="straight"/>
+		<underline language="IT" method="pen" text="Stesicoro poeta" type="straight"/>
+		<underline language="IT" method="pen" text="loro insolenze i" type="straight"/>
+		<underline language="IT" method="pen" text="persone possenti" type="straight"/>
+		<underline language="IT" method="pen" text="chi ingiuria un piu possente di" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; atterati gli alberi" type="straight"/>
+		<underline language="IT" method="pen" text="usare insolenza" type="straight"/>
+		<underline language="IT" method="pen" text="cicale non cantino in terra" type="straight"/>
+		<underline language="IT" method="pen" text="enimmatiche &amp; oscure piacquero assai" type="straight"/>
+		<underline language="IT" method="pen" text="stati tronchi gli alberi" type="straight"/>
+		<underline language="IT" method="pen" text="quali cantano" type="straight"/>
+		<underline language="IT" method="pen" text="cicale" type="straight"/>
+		<underline language="IT" method="pen" text="certa specie di facetia" type="straight"/>
+			
+		<underline language="IT" method="chalk" text="con exclamationi adulatorie" type="straight"/>
+		<underline language="IT" method="chalk" text="le cicale non cantino in terra" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="head"/>
+		<symbol name="SS" place="head"/>
+		<symbol name="SS" place="intext"/>
+		<symbol name="JC" place="intext"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- uni -->
+		<mark method="pen" name="comma" place="right_margin"/> <!-- adulatorie -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- An -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- quel -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- del -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- can -->
+		
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="plus_sign" place="left_margin"/> <!-- Fra i motti -->
+		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- tippo? --> <!--JG: Idem-->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- za ... piacquero -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="tutti fuor che Antippo"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Euripide"/>
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- per uscire -->
+		<mark method="pen" name="dot" place="intext"/> <!-- Signori, per -->
+		<mark method="pen" name="dot" place="intext"/> <!-- birri, come -->
+		<mark method="pen" name="dot" place="intext"/> <!-- oscuri, quelli -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- quelli -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="urbanità"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="con argutia"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- altroue riescouo -->
+		<mark method="pen" name="straight_quotation_mark" place="intext"/> <!-- ingiuria -->
+		<mark method="pen" name="dot" place="intext"/> <!-- alberi, disse -->
+		<mark language="IT" method="pen" name="straight_quotation_mark" place="intext" text="usare insolenza"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- le cicale -->
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="enimmatiche"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- assai, intendendosi -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- tronchi -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- cicale -->
+		
+    </annotation>
+</transcription>

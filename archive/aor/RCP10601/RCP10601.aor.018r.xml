@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.018r.tif" pagination="35" reader="John Dee" signature="c 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="insulas Athlanticas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Insula[e] Atlantica[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Atlantic islands.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Hesperidum" type="straight"/>
+        <underline language="LA" method="pen" text="sunt Athlantico" type="straight"/>
+        <underline language="LA" method="pen" text="dierum itinere" type="double"/>
+        <underline language="LA" method="pen" text="insulis Fortunatis" type="straight"/>
+        <underline language="LA" method="pen" text="in Aegypto posuerit usum eius disciplinae" type="straight"/>
+        <underline language="LA" method="pen" text="in nouo" type="double"/>
+        <underline language="LA" method="pen" text="co[n]tinentis uocabulo eas insulas Athlanticas" type="double"/>
+        <underline language="LA" method="pen" text="propter obliteratam" type="double"/>
+        <underline language="LA" method="pen" text="eam distantiam Hesperidum obiectarum" type="straight"/>
+        <underline language="LA" method="pen" text="illa Athlantica" type="double"/>
+        <underline language="LA" method="pen" text="à primo Attalo, seu Athla[n]te potius" type="straight"/>
+        <underline language="LA" method="pen" text="uniuersus orbis" type="double"/>
+        <underline language="LA" method="pen" text="à mathematico pendent principio" type="straight"/>
+        <underline language="LA" method="pen" text="constat puncto linea &amp; superficie" type="straight"/>
+        
+    </annotation>
+</transcription>

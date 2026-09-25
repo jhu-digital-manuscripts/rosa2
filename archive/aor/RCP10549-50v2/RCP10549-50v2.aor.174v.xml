@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.174v.tif" pagination="88" reader="John Dee" signature="[f.iiii.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="In hoc aute[m] no[n] accusare alterum, nec culpam in alium transferre debet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        accusare
+                        transfere culpa[m] in alteru[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To accuse.
+                To transfer blame onto another.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Loci" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                      Loci
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Topics.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Concessio; Cuius partes sunt duae, purgatio &amp; deprecatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                      Concessio 2.x
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Concession, two [parts].</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Purgatio; Ea habet partes tres" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                       Purgatio 3x
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Purging, three [parts].</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Imprude[n]tia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Imprude[n]tia.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Ignorance.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="no[n] accusare alterum" type="straight"/>
+        <underline language="LA" method="pen" text="alium transferre" type="straight"/>
+        <underline language="LA" method="pen" text="in hoc genere hoc accidit noui" type="straight"/>
+        <underline language="LA" method="pen" text="immolaret" type="straight"/>
+        <underline language="LA" method="pen" text="in alto" type="straight"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        
+        <drawing anchor_text="Concessio" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

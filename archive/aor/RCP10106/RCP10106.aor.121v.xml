@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.121v.tif" pagination="243" reader="John Dee" signature="[q[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="similitudo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Similitudo</marginalia_text>
+                </position>
+            </language>
+            <translation>Similitude.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="παραβολή" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>παραβολή</marginalia_text>
+                </position>
+            </language>
+            <translation>Simile.</translation>
+        </marginalia>
+       
+        <marginalia anchor_text="pro Muraena" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro murena.</marginalia_text>
+                    <book title="Pro Murena"/>
+                </position>
+            </language>
+            <translation>Pro Murena.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="παραβολή" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>παραβολή</marginalia_text>
+                </position>
+            </language>
+            <translation>Simile.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="εἰκων" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>εἰκων</marginalia_text>
+                </position>
+            </language>
+            <translation>Imagine.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ciceronis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Cluentio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Clue[n]tio</marginalia_text>
+                    <book title="Pro Cornelio"/>
+                </position>
+            </language>
+            <translation>Pro Cornelio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Cornelio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Cornelio</marginalia_text>
+                    <book title="Pro Cornelio"/>
+                </position>
+            </language>
+            <translation>Pro Cornelio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Archia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro archia.</marginalia_text>
+                    <book title="Pro Archia"/>
+                </position>
+            </language>
+            <translation>Pro Archia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Solent tamen fallere similitudinu[m] species" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Similitudo no[n] raro fallit.</marginalia_text>
+                </position>
+            </language>
+            <translation>It is not uncommon that similitude deceives.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="à mutis, atq[ue] etia[m] inanimis interim huiusmodi ducitur " type="straight"/>
+        <underline language="LA" method="pen" text="quod εἰκόνα" type="straight"/>
+        <underline language="LA" method="pen" text="exprimitur rerum, aut personaru[m] imago" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.083r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="in insulam quae erat extra ciuitatem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Insula extra ciuitatem
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>an island outside the city.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in insulam quae erat" type="straight"/>
+        
+    </annotation>
+</transcription>

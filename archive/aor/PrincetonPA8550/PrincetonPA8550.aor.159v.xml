@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.159v.tif" pagination="318" reader="Harvey" signature="Vviiv"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Arithmetica.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Arithmetic.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sciat numerare" type="straight"/>
+        <underline language="LA" method="pen" text="quoniam numeros calleat" type="straight"/>
+        <underline language="LA" method="pen" text="qua[e] usura[e] ueniunt" type="straight"/>
+        <underline language="LA" method="pen" text="Ma[e]nechmi" type="straight"/>
+        <underline language="LA" method="pen" text="Archimedis, Boëtij automata praeteream" type="straight"/>
+        <underline language="LA" method="pen" text="quantu[m] bombarda, nostrate inuentum" type="straight"/>
+        <underline language="LA" method="pen" text="mechanicῶn" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+    </annotation>
+</transcription>

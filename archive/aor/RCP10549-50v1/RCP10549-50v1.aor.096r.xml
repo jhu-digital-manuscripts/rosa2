@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.096r.tif" pagination="171" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="aede[m] Honoris atque Virtutis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ædes honoris virtutis
+                    </marginalia_text>
+                    <location name="Temple of Honor and Virtue"/>
+                </position>
+            </language>
+            <translation>
+                The temple of Honor and Virtue.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Agathoclis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Agathocles
+                    </marginalia_text>
+                    <person name="Agathocles of Syracuse"/>
+                </position>
+            </language>
+            <translation>
+                Agathocles of Syracuse.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="deos deorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        dij deor[um]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Gods of gods.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tetrior" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        tetrior
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                More hateful.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="scriptu[m] reliquerint" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        scriptu[m] relinq[ue]re
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To leave descriptions.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gorgonis os" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gorgonis Os.
+                    </marginalia_text>
+                    <person name="Gorgon"/>
+                </position>
+            </language>
+            <translation>
+                Gorgon's face.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="bullas omnes aureas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        bull[a]e aure[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Golden knobs.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sappho" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sappho
+                    </marginalia_text>
+                    <person name="Sappho"/>
+                </position>
+            </language>
+            <translation>
+                Sappho.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="opus tam perfectum, tam elegans, tam elaboratum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        opus [ perfectu[m] elegans elaboratu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An accomplished, elegant, [and] sophisticated work.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="AEdes Mineruae" type="straight"/>
+        <underline language="LA" method="pen" text="tamen religione impeditus" type="straight"/>
+        <underline language="LA" method="pen" text="Verres qui non honori" type="straight"/>
+        <underline language="LA" method="pen" text="deos deorum" type="straight"/>
+        <underline language="LA" method="pen" text="confirmare hoc liquidò Iudices" type="straight"/>
+        <underline language="LA" method="pen" text="Graeci" type="straight"/>
+        <underline language="LA" method="pen" text="perfecta argumenta erant in valuis: ea" type="straight"/>
+        <underline language="LA" method="pen" text="contrà dici nihil potest" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">19</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">19</numeral>
+        <numeral place="right_margin">10</numeral>
+        
+    </annotation>
+</transcription>

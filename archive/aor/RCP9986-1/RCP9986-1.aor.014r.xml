@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.014r.tif" pagination="15" reader="John Dee"/>  
+    <annotation>
+             
+        <marginalia anchor_text="munera" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Munera</marginalia_text>
+                </position>
+            </language>
+            <translation>Gifts.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="amor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Amor</marginalia_text>
+                </position>
+            </language>
+            <translation>Love.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fide conspicuus" type="straight"/>
+        <underline language="LA" method="pen" text="meae spolium" type="straight"/>
+        <underline language="LA" method="pen" text="Turpiter ingenuum munera corpus emunt" type="straight"/>
+        <underline language="LA" method="pen" text="Me miseram, quòd amor no[n] est medicabilis herbis" type="straight"/>
+        <underline language="LA" method="pen" text="Destituor prudens artis ab arte mea" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>  
+        
+        <numeral place="right_margin">12</numeral> 
+        
+    </annotation>
+</transcription>

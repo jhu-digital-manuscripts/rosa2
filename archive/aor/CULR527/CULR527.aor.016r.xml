@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.016r.tif" pagination="16" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="uniuersaliter demo[n]strauerit" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vniversalis demonstratio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Universal demonstration.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="particulariter demonstrauerit" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Particularis Demo[n]stratio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Partial demonstration.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ad Philosophiam" type="straight"/>
+        <underline language="LA" method="pen" text="demonstratione particulari tantùm" type="straight"/>
+        <underline language="LA" method="pen" text="quoniam demonstratio particularis non amplius" type="straight"/>
+        <underline language="LA" method="pen" text="uniuersaliter demo[n]strauerit, illud cum tota sua substantia, &amp; accidentibus,             &amp; principio unde processit, &amp; etiam propter quid demonstrauerit: et si particulariter demonstrauerit, quidpiam regulis mathematicis" type="straight"/>
+        <underline language="LA" method="pen" text="figuram illius quod" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+
+    </annotation>
+</transcription>

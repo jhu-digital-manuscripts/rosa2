@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.091v.tif" pagination="6" reader="Harvey" signature="[A3v]"/>	<!-- ABO 96left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nunq[uam] nimis, quod nunq[uam] satis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whatever is not enough is never too much.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Inuictus est, qui quatuor virtutibus amictus
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( est.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Unconquerable is he who is clothed in the four virtues.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Fortuna sedens Apellis: nunq[uam] enim stetit.
+					</marginalia_text>
+					<person name="Apelles"/>
+				</position>
+			</language>
+			<translation>
+				The fortune of Apelles is seated, and indeed it never stands.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Bona Ethica, et Oeconomica faciunt bonam
+						Politicam. Cum Socratis aureo ingenio.
+					</marginalia_text>
+					<person name="Socrates"/>
+				</position>
+			</language>
+			<translation>
+				Good ethics and economics make good politics. Together with the golden genius of Socrates.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Virtus currens Apellis: nunq[uam] enim sedit: stet raro.
+					</marginalia_text>
+					<person name="Apelles"/>
+				</position>
+			</language>
+			<translation>
+				The virtue of Apelles is running, and indeed it never sits. Rarely will it stand up.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Scopus Ciceronis ex professo:
+					</marginalia_text>
+					<person name="Cicero"/>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						πάντων κρα -
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						κράτιστος.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Vt Caesaris,
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						τὸ πρωτέυειν.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The declared goal of Cicero, to be the best of all men.
+				Just as the goal of Cicero is to be the first among all men.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Nemo vnq[uam] satis prudens, aut fortis fuit: aut quod tertium est, satis dulcis:
+						quem nihil perturbaret, aut offenderet, quicquid accideret turbarum. [T]am industria, 
+						effectus est prudentia[e], et fortitudinis:
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						nec vllum noui satis industrium.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				No one was every prudent or strong enough (or sweet enough which is the third option),
+				whom nothing would have bothered or offended if some turmoil had occurred. 
+				Such industria is the effect of prudence and strength; I know that no industry is sufficient enough.
+			</translation>
+		</marginalia>
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.091v_0001" marginalia_continues_to="Ha2.092r_0001" marginalia_to_transcription="Ha2.092r.xml">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						{ Gulielmi Birdi dictum de Axiophilo. Illum hominem nunq[uam] vidi iratum; nunq[uam] [A4[r]: tristem; nunq[uam] timidum; nunq[uam] irresolutum; nunq[uam] ignavum, aut languidum; nunq[uam]
+						sui, aut aliorum immemorem; nunq[uam] perturbatum vllo Casu. Non noui hominem, beneficioru[m] magis memorem; aut iniuriarum magis
+						immemore[m]. Nec scio alique[m], cuius
+						rationes, et actiones ità dependent
+						à Seipso. Ha[e]c ille sobrius generosus 
+						de Axiophilo ingenuè.]
+						<!-- Continues onto facing page, left margin, Ha2.092r -->
+					</marginalia_text>
+					<person name="William Bird"/>
+					<person name="Axiophilus"/>
+				</position>
+			</language>
+			<translation>
+				The saying of William Bird regarding Axiophilus. I never saw that man angry, never [A4[r]: sad, never timid, never irresolute, never lazy or languid, never forgetful of himself or of others, 
+				never disturbed by any happening. I have never known a man more mindful of favors, or
+				more forgetful of injuries. Nor do I know of anyone whose reasons and actions depend so much
+				on himself. The sensible noble, man naturally finds these things in Axiophilus.]
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						The archphilosopher: archphysician:  archlawier: archdiuine: archconducter at land, or sea.
+						
+						<!-- CG: Missing text added. -->
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Le riprensioni verso gli" type="straight"/>
+		<underline language="IT" method="pen" text="salutifere" type="straight"/>
+		<underline language="IT" method="pen" text="filosofo Cinico" type="straight"/>
+		<underline language="IT" method="pen" text="altri cani mordono" type="straight"/>
+		<underline language="IT" method="pen" text="i nimici" type="straight"/>
+		<underline language="IT" method="pen" text="esso de' lor vitij" type="straight"/>
+		<underline language="IT" method="pen" text="faceua il loro profitto" type="straight"/>
+		<underline language="IT" method="pen" text="L'audacia à tempo" type="straight"/>
+		<underline language="IT" method="pen" text="giouar molto" type="straight"/>
+		<underline language="IT" method="pen" text="per mio profitto" type="straight"/>
+		<underline language="IT" method="pen" text="come fai tu Signore" type="straight"/>
+		<underline language="IT" method="pen" text="con vna galea" type="straight"/>
+		<underline language="IT" method="pen" text="chiamato Corsale" type="straight"/>
+		<underline language="IT" method="pen" text="vn'armata" type="straight"/>
+		<underline language="IT" method="pen" text="chiamato Re:" type="straight"/>
+		<underline language="IT" method="pen" text="audace risposta" type="straight"/>
+		<underline language="IT" method="pen" text="la costanza dell'animo" type="straight"/>
+		<underline language="IT" method="pen" text="rendersi vane" type="straight"/>
+		<underline language="IT" method="pen" text="percosse della Fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="de gli huomini" type="straight"/>
+		<underline language="IT" method="pen" text="si nasconda" type="straight"/>
+		<underline language="IT" method="pen" text="lo trouerà la Fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="l'animo si dee ritirare nelle sua inuitta rocca della costanza, doue" type="straight"/>
+		<underline language="IT" method="pen" text="dispregiando tutte le cose humane, gli cascheranno" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol language="IT" name="SS" place="left_margin" text="l'animo si dee ritirare nelle sua inuitta rocca della costanza, doue"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--facen-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--tan-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--nascon-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="per mio profitto"/> 
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="con vna galea"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="vn'armata"/>
+		<mark method="pen" name="apostrophe" place="intext"/> <!--Re: la-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="audace risposta"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="la constanza dell'animo"/>
+		<mark method="pen" name="plus_sign" place="intext"/>
+		<mark method="pen" name="plus_sign" place="intext"/>
+		<mark method="pen" name="dot" place="intext"/> <!--costanza, doue-->
+		
+    </annotation>
+</transcription>

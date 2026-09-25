@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.198r.tif" pagination="387" reader="John Dee" signature="Kk"/>
+    <annotation>
+        
+        <marginalia anchor_text="Vlnothum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vlnothus. 
+                    </marginalia_text>
+                    <person name="Wulfnoth Cild"/>
+                </position>
+            </language>
+            <translation>
+                Wulfnoth.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Turketillus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Turketillus.
+                    </marginalia_text>
+                    <person name="Thurkill"/>
+                </position>
+            </language>
+            <translation>
+                Saint Turketil.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vlnothum regis ministrum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vlnothus: Minister regis. 
+                    </marginalia_text>
+                    <person name="Wulfnoth Cild"/>
+                </position>
+            </language>
+            <translation>
+                Wulfnoth, minister to the king.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="frater perfidi Ducis Eadrici Brithricus" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        [ Eadricus Dux Brithricus
+                    </marginalia_text>
+                    <person name="Eadric Streona"/>
+                    <person name="Brithric Meaw of Mercia"/>  
+                </position>
+            </language>
+            <translation>
+                [ Duke Eadric Streona Brithric Meaw of Mercia.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="perfidus" type="straight"/>
+        <underline language="LA" method="pen" text="Eadricus Ducem" type="double"/>
+        <underline language="LA" method="pen" text="nomine Godvvinus" type="double"/>
+        <underline language="LA" method="pen" text="peremit" type="double"/>
+        <underline language="LA" method="pen" text="duo filij eius" type="double"/>
+        <underline language="LA" method="pen" text="Infrenduit Anglia tota, velut arundinetum" type="straight"/>
+        <underline language="LA" method="pen" text="Zephiro vibrante, collisum" type="straight"/>
+        <underline language="LA" method="pen" text="pecunia pacem ad tempus, quam armis non potuit, adquisiuit" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; decem hidis" type="straight"/>
+        <underline language="LA" method="pen" text="nauem vnam" type="straight"/>
+        <underline language="LA" method="pen" text="galeam vnam, &amp; loricam" type="straight"/>
+        <underline language="LA" method="pen" text="Eodem tempore frater perfidi Ducis Eadrici Brithricus, homo lubricus" type="straight"/>
+        <underline language="LA" method="pen" text="superbus" type="straight"/>
+        <underline language="LA" method="pen" text="Vlnothum" type="double"/>
+        <underline language="LA" method="pen" text="regis" type="straight"/>
+        <underline language="LA" method="pen" text="ministrum" type="double"/>
+        <underline language="LA" method="pen" text="Aethelstanus" type="straight"/>
+        <underline language="LA" method="pen" text="Osvvi[us]" type="straight"/>
+        <underline language="LA" method="pen" text="Eadvvi[us]" type="straight"/>
+        <underline language="LA" method="pen" text="Vlferus Consules" type="double"/>
+        <underline language="LA" method="pen" text="patre" type="double"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- Eadrici Brithricus -->
+        
+        <numeral language="LA" place="head" text="1010">[1010 deleted]</numeral>
+        
+        <errata amendedtext="1005" copytext="10005" language="LA"/>  
+        <errata amendedtext="1006" copytext="10006" language="LA"/>
+        <errata amendedtext="1007" copytext="10007" language="LA"/>
+        <errata amendedtext="1007" copytext="10008" language="LA"/>
+        <errata amendedtext="1009" copytext="10009" language="LA"/>
+        
+    </annotation>
+</transcription>

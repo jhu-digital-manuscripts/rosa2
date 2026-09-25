@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.314r.tif" pagination="607" reader="John Dee" signature="[ppp.viii.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="exercitus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exercitus.</marginalia_text>
+                </position>
+            </language>
+            <translation>An army.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="refragari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>refragari.</marginalia_text>
+                </position>
+            </language>
+            <translation>To oppose.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="deriuare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>deriuare.</marginalia_text>
+                </position>
+            </language>
+            <translation>To divert.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cum dico mihi, Senatui dico" type="straight"/>
+        <underline language="LA" method="pen" text="quî potest fieri, vt sine imperio teneatur" type="straight"/>
+        <underline language="LA" method="pen" text="No[n] igitur quod ereptum non est, est id existimandum esse datum" type="straight"/>
+        <underline language="LA" method="pen" text="cum peritissine refragari" type="straight"/>
+        <underline language="LA" method="pen" text="vt relicto, deserto, prodito" type="straight"/>
+        <underline language="LA" method="pen" text="aliquam in Asiam &amp; Syriam deriuare curae" type="straight"/>
+        
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">13</numeral>
+        
+    </annotation>
+</transcription>

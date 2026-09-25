@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.frontmatter.flyleaf.003v.tif" pagination="title page verso" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>[L]eansalt: Callis</marginalia_text> <!--JG: Unsure-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Ramus solebat citò surgere, et serò ambulare: Dua[e] optima[e] Corporis, Animiq[ue] Medicina[e]</marginalia_text>
+                    <person name="Petrus Ramus"/>
+                </position>
+            </language>
+            <translation>Ramus was used to rise quickly and to walk slowly: two remedies for the health of body and mind.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Hedd withowten heed, still choppes uppon euill chaunce:
+                    And Conduct is [the] kay, that doth the charge aduaunce.
+                    ( Gabriel Argall.</marginalia_text> <!--JG: See: https://books.google.co.uk/books?id=hngIsH1gDRgC&pg=PA670&lpg=PA670&dq=Gabriel+Argall&source=bl&ots=r-KrfNG73F&sig=CQHIOB-5uHt4TkWb_RSQfzqFsrA&hl=en&sa=X&ei=T_Q4VbztGMrmaqKvgMAD&ved=0CFEQ6AEwDQ#v=onepage&q=Gabriel%20Argall&f=false-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>My Barlandi Joci, and Mensa Philosophica; two continual, &amp; inseperable companions of Frontin, &amp; Polyen.
+                    The greatist fo[e]licity in [the] world, to be merry, &amp; wise.</marginalia_text> 
+                    <person name="Adriaan van Baerland"/>
+                    <book title="Iocorum veterum ac recentium"/>
+                    <book title="Mensa philosophica"/>
+                    <book title="The stratagems"/> <!--Frontinus-->
+                    <book title="Stratagems"/> <!--Polyaenus-->
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Omne tulit P.</marginalia_text> <!--JG: Could this be the start of Horace's phrase: 'Omne tulit punctum qui miscuit utile dulci, lectorem delectando pariterque monendo'??-->
+                </position>
+            </language>
+            <translation>He wins everything P.</translation> <!--JG: Unsure-->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Epitaphium Sturni; cognomento Pisitatoris. <!--JG: Who could author be, assuming that it wasn't Harvey himself who wrote this? Maffeo Vegio wrote a 'Epitaphium Parrochini sturni, but the text is completely different-->
+                        Sturnus, ego, haud ulli volucrum Virtute secundus, <!--JG: Aeneis, bk II, 441: 'Turnus ego, haud ulli veterum virtute secundus...' -->
+                    Conditus hîc Domini munere, vera cano.
+                    Ridiculus me Mus (dictu quam turpe?) necauit,
+                    Compuleram toties quem dare terga fuga[e].
+                    Ast Somni, Noctisq[ue] dolis decepit opaca[e];
+                    Quorum etiam technis Regna superba ruunt.
+                    Discite Aues sapere, et nulla illaguiarier Arte:
+                    Prudenti Tumulus sufficit vnus Aui.
+                    Credulitatem odi: nocuit sperare columbis:
+                    Sturnus amat vigiles: cauta, Pronoia, Dea est.
+                    Quisquis ades, Sturni miseratus Fata, memento
+                    Vitam ex morte mea consolidare tuam.
+                    
+                    Gabriel Haruejus. 1580.</marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                </position>
+            </language>
+            <translation>A eulogy of the starling; with the nickname 'Pisitator'. <!--JG: From the verb 'pisitare', the cry of a starling-->
+                I, a starling, second to none of the birds in virtue, lay buried here through the service of the Lord, and I sing the truth. 
+                A ridiculous mouse killed me (embarrassing enough?), that I had often forced to flee. But he deceived [me] by tricks of sleep and dark night,
+                the cunning tricks which even collapse proud kingdoms. Learn to think, birds, and be ensared by no craftiness: one tomb suffices for a prudent bird. I hate trustfulness: it is damaging to pigeons to be hopeful. 
+                A starling loves those who are watchful: cautious providence is his goddess. Whoever you are here, feel pity for the fate of the starling, and then remember to consolidate your life through my death. 
+                Gabriel Harvey, 1580. 
+            </translation> <!--JG: Many thanks to Prof Arnoud Visser for helping me with the translation-->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Nec nobilitas, nec opulentia, nec scientia, nec Vlla qualitas, aut quantitas multùm Valet;
+                    sine priuata Virtute, et publica reputatione.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        ἅμ' ἔπος, ἅμ' ἔργον.
+                    </marginalia_text> 
+                    <X-ref book_title="Hymn to Hermes" language="EL" person="Homer" text="ἅμ' ἔπος, ἅμ' ἔργον"/>
+                        <!-- CG: So the Homeric Hymns are not really from Homer, but I put this in the excel sheet as author: Homer, book: Hymn to Hermes. -->
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Nihil parergon. 
+                    Pamphili Eudromi Entelechia.</marginalia_text>
+                    <person name="Eudromus"/>
+                </position>
+            </language>
+            <translation>Neither rank, nor wealth, nor knowledge, nor any quality or quantity is very powerful without person virtue and public reputation. 
+                "Both word and deed at once."
+                Nothing is subsidiary. The actualization of Eudromus Pamphilus <!--JG: Unsure about Pamphili!-->
+                    <!-- CG: It might be an epithet for Eudromus; something like 'lover of all things.' -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="270" place="full_page">
+                    <marginalia_text>No opportunity to be ouerslipped of fauour,
+                    or aduantage offerid.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="270" place="full_page">
+                    <marginalia_text>Occasio pòst calua.</marginalia_text>
+                    <X-ref book_title="Distichs of Cato" language="LA" person="Dionysius Cato" text="Occasio pòst calua."/>
+                </position>
+            </language>
+            <translation>"Opportunity is bald behind."</translation>
+        </marginalia>
+        
+        <symbol name="SS" place="full_page"/>
+        <symbol name="SS" place="full_page"/>
+        
+        
+        
+    </annotation>
+</transcription>

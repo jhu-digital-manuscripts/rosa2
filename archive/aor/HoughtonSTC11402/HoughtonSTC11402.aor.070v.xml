@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.070v.tif" reader="Harvey" signature="[Hvii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Ca[e]sar assieges, &amp; assaults, dispatched with wounderful dexterity, &amp; felicity.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Politicè.</marginalia_text>
+                </position>
+            </language>
+            <translation>Politically.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sayd lyke harneys and apparayle" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>semblable harneis, and apparrel.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>dignu[m] Annibile facinus, aut Dionysio.</marginalia_text> <!--JG: Unclear abt which Dionysius Harvey is speaking-->
+                    <person name="Hannibal"/>
+                </position>
+            </language>
+            <translation>The worthy deed by Hannibal or Dionysius.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="armure and apparayle" type="straight"/>
+        <underline language="EN" method="pen" text="after the fascion of" type="straight"/>
+        <underline language="EN" method="pen" text="their ennemies, at the" type="straight"/>
+        <underline language="EN" method="pen" text="other succours" type="straight"/>
+        <underline language="EN" method="pen" text="sayd lyke harneys and apparayle" type="straight"/>
+        <underline language="EN" method="pen" text="receyued as theyr felowes" type="straight"/>
+        <underline language="EN" method="pen" text="Cimon" type="straight"/>
+        <underline language="EN" method="pen" text="he vnloked for" type="straight"/>
+        <underline language="EN" method="pen" text="sette fire on the religious temple of Diana" type="straight"/>
+        <underline language="EN" method="pen" text="which stode" type="straight"/>
+        <underline language="EN" method="pen" text="runnynge oute, to" type="straight"/>
+        <underline language="EN" method="pen" text="quenche the fyre" type="straight"/>
+        <underline language="EN" method="pen" text="shulde defende" type="straight"/>
+        <underline language="EN" method="pen" text="Alcibiades" type="straight"/>
+        <underline language="EN" method="pen" text="desyred, that" type="straight"/>
+        <underline language="EN" method="pen" text="myght consulte and talke togyther" type="straight"/>
+        <underline language="EN" method="pen" text="thinges pertayning to both" type="straight"/>  
+        <underline language="EN" method="pen" text="their welthes" type="straight"/>
+        <underline language="EN" method="pen" text="the multitude vnder a coloure" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="receyued as theyr felowes"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/> 
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="the multitude vnder a coloure"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="felowes"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="vnloked for"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="sette fire on the religious temple of Diana"/>
+        
+    </annotation>
+</transcription>

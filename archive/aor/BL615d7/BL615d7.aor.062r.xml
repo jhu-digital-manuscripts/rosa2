@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.062r.tif" pagination="62" reader="John Dee"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="parole" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Christofer Columbus his words</marginalia_text>
+                    <person name="Columbus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Porto Santo" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Porto Santo</marginalia_text>
+                    <location name="Porto Santo"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="entrata, che non si conosceua, se non da vicino" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Portus absconsus.</marginalia_text>
+                </position>
+            </language>
+            <translation>A secret door.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="parole, che" type="straight"/>
+        <underline language="IT" method="pen" text="Porto Santo" type="double"/>
+        <underline language="IT" method="pen" text="vna galea" type="straight"/>
+        <underline language="IT" method="pen" text="che non si conosceua, se non da vicino" type="straight"/>
+        <underline language="IT" method="pen" text="di cinque fino ad otto braccia" type="straight"/>
+        <underline language="IT" method="pen" text="fino all'arena" type="straight"/>
+        <underline language="IT" method="pen" text="Serenissimi Principi" type="straight"/>
+        
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        
+        
+        
+    </annotation>
+    
+</transcription>

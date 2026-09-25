@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.189v.tif" pagination="370" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="meretrix illa, Algiua nuncupata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Algiua, Meretrix.
+                    </marginalia_text>
+                    <person name="Ælfgifu"/>
+                </position>
+            </language>
+            <translation>
+                The strumpet Algiua.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="deo dicante" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        (Deo dictante) quo modo hoc constat?
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                By God's speech, how is this evident? 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vestri principes" type="straight"/>
+        <underline language="LA" method="pen" text="tuae sedis dignum" type="straight"/>
+        <underline language="LA" method="pen" text="surgere nollet" type="grid"/>
+        <underline language="LA" method="pen" text="furibundum" type="grid"/>
+        <underline language="LA" method="pen" text="Algiua" type="straight"/>
+        <underline language="LA" method="pen" text="insipienter egit" type="straight"/>
+        <underline language="LA" method="pen" text="penitus derelictus. Nempè sapienstes quosque regni, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="odio vanitatis disperdens, ignaros nihilominus, &amp; iniquos studio dilectionis" type="straight"/>
+        <underline language="LA" method="pen" text="conspiratione" type="straight"/>
+        <underline language="LA" method="pen" text="deiecto" type="double"/>
+        <underline language="LA" method="pen" text="deo dicante" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <errata amendedtext="sapientes" copytext="sapienstes" language="LA"/>
+        
+    </annotation>
+</transcription>

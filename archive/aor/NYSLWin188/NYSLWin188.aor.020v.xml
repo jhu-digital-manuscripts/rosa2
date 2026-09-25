@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.020v.tif" pagination="[20[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Chaos</marginalia_text>
+                </position>
+            </language>
+            <translation>Chaos.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="das Element Aquam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aqua</marginalia_text>
+                </position>
+            </language>
+            <translation>Water.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Praedestination" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Predestinatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Predestination.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="entpfindliche das ist lebendige bewegliche verstendige geschöpff" hand="Italian">
+            <language ident="DE">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Entpfindtliche geschöpff:</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>in Elementis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Sensible creatures [created] in elements.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in allein Elementen lebendige Creature[n]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Animalia viuentia in orb[ib]us Elementis</marginalia_text>
+                </position>
+            </language>
+            <translation>Living animals in the spheres of the elements.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="vermischung ein vnflat gewesen" type="straight"/>
+        <underline language="DE" method="pen" text="stein" type="straight"/>
+        <underline language="DE" method="pen" text="Carfunckel" type="straight"/>
+        <underline language="DE" method="pen" text="Cristalle" type="straight"/>
+        <underline language="DE" method="pen" text="Goldt" type="straight"/>
+        <underline language="DE" method="pen" text="lebendige bewegliche" type="straight"/>
+        <underline language="DE" method="pen" text="verstendige" type="straight"/>
+        <underline language="DE" method="pen" text="Gott in allein Elementen lebendige Creature[n] geschaffen hat vn[d] nichts hat" type="straight"/>
+        <underline language="DE" method="pen" text="vnuernünfftigs" type="straight"/>
+        
+    </annotation>
+</transcription>

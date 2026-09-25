@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.319r.tif" pagination="89" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="angustiarum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        angusti[a]e
+                        Captiones.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Tribulations. Quibbles.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="delectu omni &amp; discrimine" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        delectus
+                        discrime[n]
+                        electio
+                        selectio
+                        optio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Choice. Distinction. Election. Selection. Preference.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nimium, quantum, nescio quid immensum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        nimiu[m] qua[n]tu[m] nescio quid i[m]me[n]su[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>An excessively huge vastness of I don't know what.</translation>  
+            <!-- DO: Not sure of translation --> <!--JG: Not sure either, see: https://www.loebclassics.com/view/marcus_tullius_cicero-de_finibus_bonorum_et_malorum/1914/pb_LCL040.377.xml?readMode=reader-->
+        </marginalia>
+        
+        <marginalia anchor_text="vitia alia aliis maiora" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vitia alia, alijs maiora
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Some vices are greater than others.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nulla ad vita[m] beatam accessio fit.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>No access to a happy life may be made.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Teneamus enim illud necesse est, quum consequens aliquod falsum sit, illus cuius id consequens sit, non posse esse veru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Si co[n]sequens falsu[m] et ante cedens.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>If the conclusion is false, what came before also falls down.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ex ea difficultate illae fallaci loquentiae, vt ait Accius, malitiae natae sunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Acij dictum.
+                    </marginalia_text>
+                    <person name="Lucius Accius"/>
+                </position>
+            </language>
+            <translation>A saying of Lucius Accius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aristo.
+                    </marginalia_text>
+                    <person name="Aristo of Chios"/>
+                </position>
+            </language>
+            <translation>Aristo of Chios.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        προηγμένα
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Preferred things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="reiectanea" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Reiectanea
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Rejected things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quid ait Aristoteles, reliquíque Platonis alumni?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aristoteles et platonis reliqui Alumni.
+                    </marginalia_text>
+                    <person name="Aristotle"/>
+                    <person name="Plato"/>
+                </position>
+            </language>
+            <translation>Aristotle and the other pupils of Plato.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cur igitur quum de re conueniat, no[n] malumus vsitate loqui?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Debemus vsitate loqui.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>We ought to speak as is customary.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Piso" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        M. Piso.
+                    </marginalia_text>
+                    <person name="Marcus Pupius Piso Frugi Calpurnianus"/>
+                </position>
+            </language>
+            <translation>Marcus Pupius Piso Frugi Calpurnianus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praepositum, ex eo credo, quòd praeponatur aliis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pra[e]positu[m] vnde d[icitu]r
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>After what a 'preferred' thing is named.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diuitias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Diuitia[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Riches.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="laetioribus nominibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        L'a[e]tiora nomina.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Happier names.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="longius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        longius
+                        vniuersalius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Longer. More general.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="verbis consistere, re dissisere; re consentire, verbis discrepare;" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        verbis co[n]sistere re dissidere
+                        re co[n]sentire, verbis discrepare.
+                        loquebatur aliter atq[ue] o[mn]es, se[n]tiebat ide[m] q[uod] c[a]eteri.
+                        si ea qu[a]e dicit ita sentiret, vt verba significa[n]t, quid int[er] eu[m] et pyrrhone[m] interesset?
+                        re co[n]venire, verbis discrepare
+                        no[n] est rer[um] co[n]trouersia, sed nominvm
+                        re inter se magis q[uam] verbis disside[n]t.
+                        maior rer[um] discrepantia q[uam] verbor[um]
+                        no[n] verbis sed vniuersa re et sente[n]tia dissidere
+                        rebus congrue[n]tes, no[min]ib[us] differeba[n]t.
+                        no[min]ib[us] alijs easde[m] res sequi.
+                        re co[n]cinnere, verbis discrepare
+                    </marginalia_text>
+                    <person name="Pyrrho"/>
+                </position>
+            </language>
+            <translation>
+                To agree in words, to disagree in substance.
+                To be united in substance, to be opposed in words.
+                [Though] he was speaking differently to everyone, he felt the same as the others.
+                If he felt as he thus said, as the words signify, what difference was there between him and Pyrrho?
+                To be matched in substance, to be opposed in words.
+                There is a dispute not in terms of substance, but of names.
+                They disagreed between them more in terms of substance than of words.
+                A greater discrepancy in facts than in words.
+                To disagree not in terms of words but in their entire substance and thought.
+                Agreeing on facts, they differed in terms of names.
+                To follow the same facts under other names.
+                To agree in substance, to be opposed in words.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Vtru[m] igitur tandem perspicuísne dubia aperiuntur, an dubiis" type="straight"/>
+        <underline language="LA" method="pen" text="perspicuis dubia debeatis illustrare, dubiis perspicua conamini tollere" type="straight"/>
+        <underline language="LA" method="pen" text="consequens aliquod falsum sit, illud cuius" type="straight"/>
+        <underline language="LA" method="pen" text="igitur causa istaru[m] angustiaru[m]? gloriosa" type="straight"/>
+        <underline language="LA" method="pen" text="administratio reip[ublicae] ordo gerendorum" type="straight"/>
+        <underline language="LA" method="pen" text="difficultate illae fallaci loquentiae, vt ait Accius, malitiae natae sunt" type="straight"/>
+        <underline language="LA" method="pen" text="pedem vbi poneret non habebat" type="straight"/>
+        <underline language="LA" method="pen" text="Ex istis angustiis ista euaserunt deteriora" type="straight"/>
+        <underline language="LA" method="pen" text="frigus, famem propulsare possimus. Viues" type="straight"/>
+        <underline language="LA" method="pen" text="magnifice atque praeclare, quod" type="straight"/>
+        <underline language="LA" method="pen" text="portenta haec esse dicit" type="straight"/>
+        <underline language="LA" method="pen" text="nimium, quantum, nescio quid immensum" type="straight"/>
+        <underline language="LA" method="pen" text="Idem adhuc audi reliqua, &amp; risum contine, si" type="straight"/>
+        <underline language="LA" method="pen" text="malo, sic tolerabilius &amp; mollius" type="straight"/>
+        <underline language="LA" method="pen" text="verbis consistere, re dissidere" type="straight"/>
+        <underline language="LA" method="pen" text="longius" type="straight"/>
+        <underline language="LA" method="pen" text="illa laetioribus nominibus" type="straight"/>
+
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/> 
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="guillemet" place="head" text="nimiu[m] qua[n]tu[m] nescio quid i[m]me[n]su[m]"/>
+        <mark method="pen" name="guillemet" place="right_margin"/>
+        <mark language="LA" method="pen" name="tripunctus" place="intext" text="longius"/>
+        
+    </annotation>
+</transcription>

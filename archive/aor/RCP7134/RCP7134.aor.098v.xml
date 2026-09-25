@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.098v.tif" pagination="[91v]" reader="John Dee" signature="[Z iij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Experie[n]di mod[us]</marginalia_text>
+                </position>
+            </language>
+            <translation>The way of proving.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Damnatio etia[m] anni, respectu genitur[a]e simile lic[e]t co[n]siderationem. // et vt hic de damno dicit, ide[m] de emolume[n]to et bono dici p[otes]t </marginalia_text> 
+                </position>
+            </language>
+            <translation>Also the damnation of a year, by the consideration of a geniture similarly may be considered. And as he says about damnation here, likewise could be said about a benefit and good [thing].</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="etiam in qualitatibus" type="straight"/>
+        <underline language="LA" method="pen" text="quod infortunam est in anno, infortunatur in eodem mense" type="straight"/>
+        <underline language="LA" method="pen" text="illud quod non" type="straight"/>
+        <underline language="LA" method="pen" text="infortunatur" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.028v.tif" pagination="56" reader="John Dee" signature="[d 4[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="patres semper duplicem legem haberent" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lex patru[m] duplex</marginalia_text>
+                </position>
+            </language>
+            <translation>The double law of fathers.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="de suo obitu potuerit proinde ut de praeterito scribere" type="straight"/>
+        <underline language="LA" method="pen" text="perinde aeterna ueritas" type="straight"/>
+        <underline language="LA" method="pen" text="legem Dei" type="straight"/>
+        <underline language="LA" method="pen" text="commisso in Deum infinitum peccato, posteritate[m] legi fidei obligauit, donec restitua[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="patres legis naturae" type="straight"/>
+        <underline language="LA" method="pen" text="interlegij" type="straight"/>
+        <underline language="LA" method="pen" text="duplicem legem" type="straight"/>
+        <underline language="LA" method="pen" text="naturalem toti mundo" type="straight"/>
+        <underline language="LA" method="pen" text="legem oris seu paternae traditionis" type="straight"/>
+        <underline id="RCP10601:062:u0001" language="LA" method="pen" text="publica" type="double"/>
+        <underline language="LA" method="pen" text="dignis &amp; mortificatis" type="double"/>
+        <underline language="LA" method="pen" text="silentio'q[ue] &amp; laboribus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp;" type="straight"/>
+        <underline language="LA" method="pen" text="facti uel" type="straight"/>
+        <underline id="RCP10601:062:u0002" language="LA" method="pen" text="nunquam" type="straight"/>
+        <underline language="LA" method="pen" text="ueluti noua uideretur" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP10601:062:u0001"/> 
+            <marginal_annotation idref="RCP10601:062:u0002"/>
+            <relation from="RCP10601:062:u0001" to="RCP10601:062:u0002" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

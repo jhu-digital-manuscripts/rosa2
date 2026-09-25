@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.101r.tif" pagination="181" reader="John Dee" signature="mm.iii."/>
+    <annotation>
+        
+        <marginalia anchor_text="quibuscum iste consueuerat, conueniebant" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        co[n]suescere co[n]venire ] cu[m] aliq[uo]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be intimate, to come together with someone. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        sup[ra], 138.136.
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v1:0166" text="138.136"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                See above, p. 138, section 136.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tertia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tertia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Third.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iste aute[m] Annibal" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Iste Annibal
+                    </marginalia_text>
+                    <person name="Hannibal"/>
+                </position>
+            </language>
+            <translation>
+                That Hannibal.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="offendebantur homines" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        offendi ho[m]i[n]es
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                People are offended.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lucum illum litoris percrepare totum mulierum vocibus, cantúque symphoniae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        lucu[m] totu[m] p[er]crepare mulieru[m] vocibus ca[n]tuq[ue] simphoni[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The entire grove resounds with women's voices and strains of band music.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aleatoris Placentini" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        aleator place[n]tinus
+                    </marginalia_text>
+                    <location name="Piacenza"/>
+                </position>
+            </language>
+            <translation>
+                The gambler at Piacenza.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Isocrates
+                    </marginalia_text>
+                    <person name="Isocrates"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        πρὸς δημόνικον <!--JG: Πρὸς Δημόνικον, title of Isocrates’ Ad Demonicum-->
+                    </marginalia_text>
+                    <book title="To Demonicus"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>prima sententia.</marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Isocrates. The first sentence of 'To Demonicus'.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="officiorum obstringi religione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        officij obeu[n]di r[eligi]o
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The reverence of the attended duty.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="extraordinariis cupiditatibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        extraordinari[a]e cupiditates
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Extraordinary desires.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="AEdilis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aedilis Officiu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The duty of an aedile.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fructus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aedilitatis fructus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The benefits of an aedileship.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vt eum etiam si natura à parentis similitudine abriperet, co[n]suetudo tamen" type="straight"/>
+        <underline language="LA" method="pen" text="litoris percrepare totum" type="straight"/>
+        <underline language="LA" method="pen" text="causarum atque iuris" type="straight"/>
+        <underline language="LA" method="pen" text="huius furta, rapinas, cupiditatem, crudelitatem, superbiam, scelus, audaciam rerum gestarum magnitudine, atque Imperatoris laudibus tegere conaris? HIc scilicet" type="straight"/>
+        <underline language="LA" method="pen" text="ne denudetur à pectore, ne cicatrices Populus Ro. aspiciat, ex mulieru[m] morsu vestigia libidinis atque nequitate. Dii" type="straight"/>
+        <underline language="LA" method="pen" text="renouabitur prima illa" type="straight"/>
+        <underline language="LA" method="pen" text="omnia vetera praetermittam. duo sola recentia sine cuiusquam infamia ponam, ex" type="straight"/>
+        <underline language="LA" method="pen" text="nutu atque arbitrio" type="straight"/>
+        <underline language="LA" method="pen" text="O dii immortales, quid interest inter mentes hominum &amp; cogitationes! ita" type="straight"/>
+        <underline language="LA" method="pen" text="officiorum obstringi religione arbitrarer" type="straight"/>
+        <underline language="LA" method="pen" text="vt omnia semper, quae iucunda vide[n]tur esse, non modo his extraordinariis cupiditatibus, sed etia[m] ipsi naturae ac necessitati denegrare[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ob earum rerum laborem &amp; sollicitudinem" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">15</numeral>
+        <numeral place="right_margin">19</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">19</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">7</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        
+    </annotation>
+</transcription>

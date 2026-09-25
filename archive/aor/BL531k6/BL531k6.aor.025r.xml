@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL531k6.025r.tif" pagination="[25r]" reader="John Dee" signature="G"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Nota eadem [a]etate magna[m] differe[n]tia[m] in Anni quantitate. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note the great difference in the quantity of years in this period.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="In minima enim eccentrotete" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Minima eccentricitas ferè nunc
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The least eccentricity [is] about now.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Inter has mediocris est in longitudinibus medijs eccentrici hor.5.scr.55ia/382a/" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mediocris anni magnitudo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The length of an average year.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nouam reuolutionum tabellam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Stadij Tabula Reuolutionu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Table of the stages of the revolutions.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Maxima anni Magnitudo in minima ☉ Eccentricitate et solis in perige.s existe[n]ter 365. hor[ae] .5. m[inutae] .57. sec[undi] .9. <!-- FSF: to be completed; perige.s possibly a misppelled version of periegesis? --> <!--JG: Isn't it 3as, as in t[erti]as? Unsure about perige.s-->
+                    </marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>
+                The greatest length of a year in the least eccentricity and <!-- FSF: to be completed --> 
+            </translation>
+            </marginalia>
+        
+        <underline language="EL" method="pen" text="instabilitatem ἐκκεντρότητος" type="straight"/>
+        <underline language="LA" method="pen" text="annus tropicus apparens" type="straight"/>
+        <underline language="LA" method="pen" text="vna eademq[ue] tempestate sibijpsi multum dissimilis" type="double"/>
+        <underline language="LA" method="pen" text="vt Reinholdus" type="double"/>
+        <underline language="LA" method="pen" text="In minima enim eccentrotete" type="straight"/>
+        <underline language="LA" method="pen" text="propinquum" type="straight"/>
+        <underline language="LA" method="pen" text="anni minima" type="straight"/>
+        <underline language="LA" method="pen" text="Sole in apogeo" type="straight"/>
+        <underline language="LA" method="pen" text="hor.5.scr.54ia/72a/ Maxima" type="straight"/>
+        <underline language="LA" method="pen" text="hor.5.scr.57ia/" type="straight"/>
+        <underline language="LA" method="pen" text="medijs" type="straight"/>
+        <underline language="LA" method="pen" text="hor.5.scr.55ia/382a" type="straight"/>
+        <underline language="LA" method="pen" text="quae si exemplo" type="double"/>
+        <underline language="LA" method="pen" text="exemplo stadij" type="double"/>
+        <underline language="LA" method="pen" text="tenente apogeon aut perigeon" type="straight"/>
+        <underline language="LA" method="pen" text="scrupulis 1ia/ 312a/" type="straight"/>
+        <underline language="LA" method="pen" text="radice" type="double"/>
+        <underline language="LA" method="pen" text="maiorem vna integra hora" type="straight"/>
+        <underline language="LA" method="pen" text="exhibent, hor. 10 scr. 50ia/" type="straight"/>
+        <underline language="LA" method="pen" text="horis fermè" type="straight"/>
+        <underline language="LA" method="pen" text="duabus" type="double"/>
+        <underline language="LA" method="pen" text="tabulae reuolutionum, quae meam peruenêre noticiam" type="straight"/>
+        <underline language="LA" method="pen" text="fas est à certitudine calculi Astronomici aberrant" type="straight"/>
+        <underline language="LA" method="pen" text="siue per modos inaequalitatis" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="comma" place="intext" text="est à"/> 
+        
+    </annotation>
+</transcription>

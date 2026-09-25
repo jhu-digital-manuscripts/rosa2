@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.005v.tif" reader="John Dee" signature="[B[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="imperandum omnibus, quae coelo teguntur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Imperiu[m] in Creaturas</marginalia_text>  
+                </position>
+            </language>
+            <translation>Rule amongst the creatures.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Microcosmus.</marginalia_text>
+                </position>
+            </language>
+            <translation>A microcosm.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mutuum reru[m] naturalium nexum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Concordantia</marginalia_text>
+                </position>
+            </language>
+            <translation>Concordance.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ad imperandum omnibus" type="straight"/>
+        <underline language="LA" method="pen" text="septem tuniculis, septem Planetarum" type="straight"/>
+        <underline language="LA" method="pen" text="mutuum reru[m] naturalium nexum" type="straight"/>
+        <underline language="LA" method="pen" text="tres alias imperiosissimas" type="straight"/>
+        <underline language="LA" method="pen" text="imperiosissimas" type="straight"/>
+        <underline language="LA" method="pen" text="agens, vniendo virtutes rerum per" type="straight"/>
+        <underline language="LA" method="pen" text="earum adinuicem" type="straight"/>
+        <underline language="LA" method="pen" text="virtutibusue copulans, insigniens, adornans, illustrans" type="straight"/>
+        
+    </annotation>
+</transcription>

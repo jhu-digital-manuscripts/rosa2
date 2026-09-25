@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.010r.tif" pagination="11" reader="John Dee" signature="B.iij."/>  
+    <annotation>
+        
+        <marginalia anchor_text="requie" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quies</marginalia_text>  
+                </position>
+            </language>
+            <translation>Repose.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Isthmon" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Isthmus.</marginalia_text>
+                </position>
+            </language>
+            <translation>An isthmus.</translation>     <!-- DO: Not sure if this is referring to a person --> <!-- FSF: I am not sure, maybe the Isthmus of Corinth? -->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quod caret alterna requie, durabile non est" type="straight"/>
+        <underline language="LA" method="pen" text="Haec reparat vires, fessáq[ue] membra leuat" type="straight"/>
+        <underline language="LA" method="pen" text="Si nunquam cesses tendere, mollis erit" type="straight"/>
+        <underline language="LA" method="pen" text="Si Venerem tollas, rustica sylua tua est" type="straight"/>
+        <underline language="LA" method="pen" text="obliquo dente timendus aper" type="straight"/>
+        <underline language="LA" method="pen" text="nisi nos manifesta negemus" type="straight"/>
+        <underline language="LA" method="pen" text="ad nos iniuria venit ab illo" type="straight"/>
+        
+    </annotation>
+</transcription>

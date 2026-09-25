@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL531k6.007r.tif" pagination="[007r]" reader="John Dee" signature="B3"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Tempus geniturae meae cadit in annum bissextilem 1528" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Genesis Pauli Crusij
+                    </marginalia_text>
+                    <person name="Paulus Crusius"/>
+                </position>
+            </language>
+            <translation>The birth of Paulus Crusius.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Secundò meminisse oportet, annum bissextilem, non inchoari" type="straight"/>
+        <underline language="LA" method="pen" text="die intercalari, hoc est, sexto Calendas" type="straight"/>
+        <underline language="LA" method="pen" text="priores 23. Februarij" type="straight"/>
+        <underline language="LA" method="pen" text="annum bissextilem 1528" type="straight"/>
+        
+    </annotation>
+</transcription>

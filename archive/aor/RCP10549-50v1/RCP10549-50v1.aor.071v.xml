@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.071v.tif" pagination="122" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="superiorum memoria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        superioru[m] memoria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Record of the past.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inire conuiuium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        inire co[n]uiuiu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To join a dinner.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="profligatissime ac perditissime" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        profligatiss[imus] perditiss[imus]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Most depraved and lost.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="animum tuum cura tuaru[m] fortunarum, cogitatióque tangeret" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        cura[m] tangere a[n]i[mu]m
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To influence the care of minds.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="accitu istius euocantur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        accitu istius euoca[n]tur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be summoned by him.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tantu[m] eius sermo inquinatissimus, &amp; blanditiae" type="straight"/>
+        <underline language="LA" method="pen" text="populo fideli" type="straight"/>
+        <underline language="LA" method="pen" text="condemnari cum istius inuidia, infamiáque malebant, quàm ad eius conditiones" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">8</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">18</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.frontmatter.flyleaf.006r.tif" reader="John Dee" signature="aiij"/> 
+    <annotation>
+    
+        <marginalia anchor_text="libraria" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bibliotheca.</marginalia_text>
+                </position>
+            </language> 
+            <translation>Library.</translation> 
+        </marginalia>
+    
+        <marginalia anchor_text="che no[n] sia scritta di man del sudetto" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+    
+        <underline language="IT" method="pen" text="scritta già dall'Illustr. D. Ernando Colombo," type="straight"/>
+        <underline language="IT" method="pen" text="del sudetto D." type="straight"/>
+        <underline language="IT" method="pen" text="molte piu lettere" type="double"/>
+        <underline language="IT" method="pen" text="maggiore di Siuiglia" type="straight"/> 
+        <underline language="IT" method="pen" text="numerosissima, ma ricchiss. libraria" type="straight"/>  
+        <underline language="IT" method="pen" text="scienza rarissimi" type="double"/>
+        <underline language="IT" method="pen" text="l'historia non sia vera" type="straight"/>  
+        <underline language="IT" method="pen" text="dal figliuolo, per relatione &amp; lettere, è stata" type="straight"/> 
+        <underline language="IT" method="pen" text="molta prudenza scritta" type="straight"/>
+        <underline language="IT" method="pen" text="no[n] sia scritta" type="straight"/>
+        <underline language="IT" method="pen" text="di man del sudetto" type="straight"/>  
+        <underline language="IT" method="pen" text="ha hauuto no[n] sia il proprio originale" type="straight"/>
+        <underline language="IT" method="pen" text="D. Luigi Colombo" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; figliuolo dell'Illustr. D. Diego, primogenito di D. Christoforo" type="straight"/>
+        
+        <mark method="pen" name="equal_sign" place="intext" text="scitta"/> <!--scitta-->
+        <mark method="pen" name="comma" place="intext"/>
+        <!--hauuto, no[n]-->
+   
+    </annotation>    
+</transcription>

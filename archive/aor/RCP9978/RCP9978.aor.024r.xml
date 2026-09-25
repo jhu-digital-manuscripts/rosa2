@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.024r.tif" reader="John Dee" signature="[F iiij]"/>
+    <annotation>
+        
+        <marginalia anchor_text="seipsi fascinarunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Seip[s]os fascina[n]tes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Fascinating themselves.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="seipsi fascinarunt" type="straight"/>
+        <underline language="LA" method="pen" text="adfirmandum, omnes animi affectionos, si permanentes diutius haeserint, improbos habitus creare: qui, quando naturae robur asciuerint, quauis occasione conciti, identidem inuitos" type="straight"/>
+        <underline language="LA" method="pen" text="in peculiares &amp; assuetas trahunt affectiones" type="straight"/>
+        <underline language="LA" method="pen" text="quae sunt eis" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="affectiones" copytext="affectionos" language="LA"/>      
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

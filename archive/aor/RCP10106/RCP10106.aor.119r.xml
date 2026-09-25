@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.119r.tif" pagination="237" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mens" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mens</marginalia_text>
+                </position>
+            </language>
+            <translation>Mind.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mutam quandam scientiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Muta scie[n]tia</marginalia_text>
+                </position>
+            </language>
+            <translation>Silent knowledge.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nec emin artibus editis factum est, ut argumenta inueniremus: sed dicta sunt omnia antè, quàm praecipere[n]tur, mox ea scriptores obseruata,              &amp; collecta ediderunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Inventio ante Artes editas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Invention came before the rise of the arts.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="uelut ostiatim pulsanda" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Locoru[m] vsus</marginalia_text>
+                </position>
+            </language>
+            <translation>The use of places.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ipsi nullum nouum, &amp; quod dictum non sit, inueniunt" type="straight"/>
+        <underline language="LA" method="pen" text="Sed habenda ijs quoq[ue] gratia est" type="straight"/>
+        <underline language="LA" method="pen" text="uelut ostiatim" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

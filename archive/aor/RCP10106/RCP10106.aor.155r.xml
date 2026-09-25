@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.155r.tif" pagination="309" reader="John Dee" signature="u 3"/> 
+    <annotation>
+        
+        <marginalia anchor_text="petitor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Petitor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Plaintiff.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="legem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lex.</marginalia_text>
+                </position>
+            </language>
+            <translation>Law.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tertium confessum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tertiu[m] confessu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The third acknowledged time.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Intentio simplex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Inte[n]tio simplex</marginalia_text>
+                </position>
+            </language>
+            <translation>Simple charge/</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Coniuncta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>coniuncta</marginalia_text>
+                </position>
+            </language>
+            <translation>Complex.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Verum ex coniuncta propositione, plures esse quaestiones ac statis possunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex co[n]iu[n]cta plures eße qua[e]stiones poßunt.</marginalia_text>
+                </position>
+            </language>
+            <translation>In complex cases there can be a number of questions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Celso" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Celsus</marginalia_text>
+                    <person name="Aulus Cornelius Celsus"/>
+                </position>
+            </language>
+            <translation>Celsus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Instat tame[n] huic parti uehementius, ut putet primo firmum aliquid esse ponendum, summo firmißimum, imbecilliora medio, quia &amp; initio              moue[n]dus sit iudex, &amp; summo impellendus." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dispositiones probationis ordo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Order of the arrangement of proofs.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Adulterum, inquit, cum adultera occidere licet: legem esse" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+    </annotation>
+</transcription>

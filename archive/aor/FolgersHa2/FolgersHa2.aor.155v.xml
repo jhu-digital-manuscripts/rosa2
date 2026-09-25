@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.155v.tif" pagination="134" reader="Harvey" signature="[I3v]"/>	<!-- ABO 160left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nihil animi, corporisq[ue] vigori, id est, ipsi Eudromo
+						salutarius, quàm perpetua La[e]titia.
+					</marginalia_text>
+					<person name="Eudromus"/>
+				</position>
+			</language>
+			<translation>There is nothing more beneficial for the vigor of mind and body (that is, for Eudromus himself,) than perpetual happiness.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vndè omnium foelicissimus esse pergit, qui est omniu[m] la[e]tiss[im]us.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Whence he, who is the most happy of all, proceeds to be the most blessed of all.</translation>
+		</marginalia>
+		<marginalia anchor_text="Pianeti" hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Planetologia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Planetology.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Mnemosyna Planetarum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The remembrances of planets.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						The brauist brauerie of this World.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Superborum domitor elegans.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The elegant conqueror of the arrogant.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						destramente.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Skillfully.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Curanda Sola, qua[e] faciunt homines hominibus
+						pra[e]stantiores; et uiros uiris digniores.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The only things one must care for, are those which make people more outstanding than people; and men more worthy than men.</translation> 
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Quorsum doctrina, qua[e] non facit peritiorem, et efficaciorem; id est, prudentiorem,
+						et fortiorem? ideoq[ue] etiam priuatim fortunatiorem; publicè honoratiorem.
+						Sola curanda, qua[e] parant bonum; id est, vtile, honorificum, iucundum.
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						Qua[e] conducunt animo, corpori, statui.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Whither a doctrine, which does not make more skilled and effective, that is, more prudent and strong? Therefore also more fortune in private and more honorable in public.
+				The only things one must care for are those which produce good things, that is, useful, honorable, and pleasant. The things which are of advantage for mind, body, and standing.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Statim ea compinge, vndè alios antecellas. Nec plurima Sunt: nec difficillima:
+						hoc est, esse virum, vel agere, vel saltem scire, ea, quibus viri possunt viris
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						pra[e]stare.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Immediatly join those things by which you surpass others. They are neither very many, nor are they most difficult: that is, in order to be a man, either to do or at least to learn
+			those things by which men can excel over men.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="questa miseria" type="straight"/>
+		<underline language="IT" method="pen" text="creature humane" type="straight"/>
+		<underline language="IT" method="pen" text="Pianeti" type="straight"/>
+		<underline language="IT" method="pen" text="diuersi filosofi" type="straight"/>
+		<underline language="IT" method="pen" text="l'influsso de'Pianeti" type="straight"/>
+		<underline language="IT" method="pen" text="Saturno" type="straight"/>
+		<underline language="IT" method="pen" text="Gioue" type="straight"/>
+		<underline language="IT" method="pen" text="Marte" type="straight"/>
+		<underline language="IT" method="pen" text="dal Sole" type="straight"/>
+		<underline language="IT" method="pen" text="Venere" type="straight"/>
+		<underline language="IT" method="pen" text="da Mercurio" type="straight"/>
+		<underline language="IT" method="pen" text="Luna" type="straight"/>
+		<underline language="IT" method="pen" text="Sole" type="straight"/>
+		<underline language="IT" method="pen" text="Luna" type="straight"/>
+		<underline language="IT" method="pen" text="Marte" type="straight"/>
+		<underline language="IT" method="pen" text="sangue" type="straight"/>
+		<underline language="IT" method="pen" text="Mercurio" type="straight"/>
+		<underline language="IT" method="pen" text="Gioue" type="straight"/>
+		<underline language="IT" method="pen" text="Venere" type="straight"/>
+		<underline language="IT" method="pen" text="da Saturno" type="straight"/>
+		<underline language="IT" method="pen" text="accommodano alla volontà nostra" type="straight"/>
+		<underline language="IT" method="pen" text="noi debbiamo accomnodare la volontà alle cose" type="straight"/>
+		<underline language="IT" method="pen" text="senza ro[m]perci la testa stoltamente" type="straight"/>
+		<underline language="IT" method="pen" text="Il ricco" type="straight"/>
+		<underline language="IT" method="pen" text="Pauone" type="straight"/>
+		<underline language="IT" method="pen" text="GIVNONE" type="straight"/>
+		<underline language="IT" method="pen" text="Dea delle ricchezze" type="straight"/>
+		<underline language="IT" method="pen" text="il Pauone" type="straight"/>
+		<underline language="IT" method="pen" text="de' ricchi" type="straight"/>
+		<underline language="IT" method="pen" text="alla natura" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<symbol name="Asterisk" place="intext"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Non comincia Fortuna mai per poco, Quando vn     mortal si piglia à scherno, &amp; giuoca."/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark language="IT" method="pen" name="plus_sign" place="left_margin" text="noi debbiamo accomnodare la volont&amp; alle     cose"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- for -->
+		<mark method="pen" name="dot" place="right_margin"/> <!-- moto -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- acciden -->
+		<mark method="pen" name="dot" place="right_margin"/> <!-- nostra -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- natu -->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="diuersi filosofi"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- sententia, che -->
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="l'intelligenza"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- intelligenza, da -->
+		<mark method="pen" name="dot" place="intext"/> <!-- forza, da -->
+		<mark method="pen" name="dot" place="intext"/> <!-- animo, dal -->
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="virtù"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- virtu, da -->
+		<mark method="pen" name="dot" place="intext"/> <!-- ingegno, & -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- generare. I -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Medici"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="spirito"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- spirito, dalla -->
+		<mark method="pen" name="dot" place="intext"/> <!-- corpo, da -->
+		<mark method="pen" name="dot" place="intext"/> <!-- sangue, da -->
+		<mark method="pen" name="dot" place="intext"/> <!-- desiderio, da -->
+		<mark method="pen" name="dot" place="intext"/> <!-- volupta, & -->
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="debbiamo accomnodare la volontà nostra"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="senza ro[m]perci la teta"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- Pauone, per -->
+		
+    </annotation>
+</transcription>

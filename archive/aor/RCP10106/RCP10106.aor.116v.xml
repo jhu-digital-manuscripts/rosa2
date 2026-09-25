@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.116v.tif" pagination="232" reader="John Dee" signature="[p 4[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="co[n]iugantum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Coniugata</marginalia_text>
+                </position>
+            </language>
+            <translation>Conjugate.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Apposita" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Apposita</marginalia_text>
+                </position>
+            </language>
+            <translation>Apposite.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Ma ex pluribys ad unum, &amp; uno ad plura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Appositorum Diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>Division of adjacent [things].</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quod compascuum est, compascere licere" type="straight"/>
+        <underline language="LA" method="pen" text="quam quid ex quoq[ue] eueniat. Appostita" type="straight"/>
+        <underline language="LA" method="pen" text="syllogismis. Illa magis finitionibus, aut qualitatibus prosunt" type="straight"/>
+        <underline language="LA" method="pen" text="Nam ex pluribus ad unum" type="straight"/>
+        <underline language="LA" method="pen" text="ex uno plura" type="straight"/>
+        
+        <numeral place="left_margin">1.</numeral>
+        <numeral place="left_margin">2.</numeral>   
+        
+    </annotation>
+</transcription>

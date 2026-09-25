@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.329r.tif" pagination="664" reader="Harvey" signature="t[1r]"/>
+    <annotation>
+        <marginalia anchor_text="quod inimicissimum Regem, à quo bellum contraius gentium motum erat, captum in acie" hand="Italian">
+          <language ident="LA">
+              <position book_orientation="0" place="right_margin">
+                  <marginalia_text>
+                      Franciscu[m] I. Galloru[m] Rege[m].
+                  </marginalia_text>
+                  <person name="Francis I of France"/>
+              </position>
+          </language>
+          <translation>
+              Francis I. King of France.
+          </translation>
+      </marginalia>
+        
+        <underline language="LA" method="chalk" text="quàm Austriacae. Et" type="straight"/>
+        <underline language="LA" method="chalk" text="Quod enim in illa historia" type="straight"/>
+        <underline language="LA" method="chalk" text="clementius legitur" type="straight"/>
+        <underline language="LA" method="chalk" text="quod inimicissimum Regem, à quo bellum contraius gentium motum erat" type="straight"/>
+        <underline language="LA" method="chalk" text="captum in acie, no[n]" type="straight"/>
+        <underline language="LA" method="chalk" text="modo diminissit incolumen" type="straight"/>
+        <underline language="LA" method="chalk" text="etiam deuinctum affinitate" type="straight"/>
+        <underline language="LA" method="chalk" text="restituit?" type="straight"/>
+        
+    </annotation>
+</transcription>

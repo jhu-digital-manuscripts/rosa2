@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.041r.tif" pagination="65" reader="John Dee" signature="f 3"/>
+    <annotation>
+        
+        <marginalia anchor_text="mulier in sexto geniturae suae loco" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        In mulieris genitura.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In the constellation of the woman.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="expositos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Expositi. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Exposed.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Lucianus id libidinis genius describit
+                    </marginalia_text>
+                    <person name="Lucian"/>
+                </position>
+            </language>
+            <translation>
+                Lucian, this genius of pleasure writes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="per gonorream" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        p[er] Gonorream
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Through Gonorrhea.
+                <!-- M.B. See https://books.google.co.uk/books?id=X8BaAAAAcAAJ&pg=RA1-PA228&dq=%22gonorream%22&hl=en&sa=X&ved=0ahUKEwjDrs7Q_8fVAhXkK8AKHa__Bcg4HhDoAQhdMAg#v=onepage&q=%22gonorream%22&f=false 
+                and https://books.google.co.uk/books?id=JhUSVzMKzx8C&pg=PA27&dq=%22gonorream%22&hl=en&sa=X&ved=0ahUKEwiCvbLx_8fVAhVoKcAKHZOpDs4Q6AEIKDAA#v=onepage&q=%22gonorream%22&f=false. -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="daemonis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Da[e]mon.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Demon.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Multu[m] profecto a solo removeri debeat, vt nocte in 9⁰ loco co[n]stituat[ur] sed vide quid sup[ra] dixim[us] 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Surely a lot must be removed alone, as is constituted at night in the ninth house, but see was we said above. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ego habeo * ♀et ♃ hoc loco
+                    </marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>
+                I have a star, Venus and Jupiter in that place.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dilacetatu[m] pecus à medicis proferetur" type="straight"/>
+        <underline language="LA" method="pen" text="cum mulieribus aliis, libidinis" type="straight"/>
+        <underline language="LA" method="pen" text="per gonorream" type="straight"/>
+        <underline language="LA" method="pen" text="mors uero illis cito" type="straight"/>
+        <underline language="LA" method="pen" text="Assidua cuiusdam" type="straight"/>
+        <underline language="LA" method="pen" text="daemonis interpellatione" type="double"/>
+        <underline language="LA" method="pen" text="pulsari, faciet" type="straight"/>
+        <underline language="LA" method="pen" text="soente esse in templis, qui uaticinari consueuerunt" type="straight"/>
+        <underline language="LA" method="pen" text="positam ♀, ♄ aliqua" type="straight"/>
+        <underline language="LA" method="pen" text="Si uero in noctunra genitura" type="straight"/>
+        <underline language="LA" method="pen" text="facient à mulieribus exagitari" type="straight"/>
+        <underline language="LA" method="pen" text="♃ stella respexerit, uel si cum ea fuerit inuenta, faciet à nulieribus adamatos, uenustos" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <errata amendedtext="[deleted]" copytext="nocturna genitura" language="LA"/>
+        
+        
+    </annotation>
+</transcription>

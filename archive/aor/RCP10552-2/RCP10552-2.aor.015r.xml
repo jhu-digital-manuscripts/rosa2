@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.015r.tif" pagination="19" reader="John Dee" signature="B.iiij."/>
+    <annotation>
+
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Our challendges</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="quosque" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quousq[ue]</marginalia_text>
+                </position>
+            </language>
+            <translation>Until what time.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="castra &amp; terram totam sibi reddi, vt per seysinam pacificam ius superioris dominij," type="straight"/>
+        <underline language="LA" method="pen" text="suas literas recognouerant" type="straight"/>
+        <underline language="LA" method="pen" text="Quia de bona voluntate nostra &amp; communi assensu sine omni coactione, annuimus" type="straight"/>
+        <underline language="LA" method="pen" text="concessimus nobili Principi domino Edvvardo" type="straight"/> 
+        <underline language="LA" method="pen" text="superior dominus terrae" type="straight"/>
+        <underline language="LA" method="pen" text="definire vendicationes" type="straight"/>
+        <underline language="LA" method="pen" text="superiori domino" type="straight"/>
+        <underline language="LA" method="pen" text="quod factum suum habedimus firmum" type="straight"/>
+        <underline language="LA" method="pen" text="declaratur coram" type="straight"/>
+        <underline language="LA" method="pen" text="complere sine iudicio" type="straight"/>
+        <underline language="LA" method="pen" text="sine executione" type="straight"/>
+        <underline language="LA" method="pen" text="facere" type="straight"/>
+        <underline language="LA" method="pen" text="sine possessione &amp; Seysina " type="double"/>
+        <underline language="LA" method="pen" text="eiusdem" type="straight"/>
+        <underline language="LA" method="pen" text="quosque" type="double"/>
+        <underline language="LA" method="pen" text="antequam habeat Seysinam" type="straight"/>
+        <underline language="LA" method="pen" text="petitoribus, &amp; custodibus" type="straight"/>
+        <underline language="LA" method="pen" text="traditam" type="straight"/>
+        <underline language="LA" method="pen" text="secundùm iudicium" type="straight"/>
+        <underline language="LA" method="pen" text="saluo Regi Angliae homagio illius qui Rex erit" type="straight"/>
+        <underline language="LA" method="pen" text="Northumb. die Mercurij" type="straight"/>
+        <underline language="LA" method="pen" text="duas" type="straight"/>
+        <underline language="LA" method="pen" text="sigillo suo priuato, ad diuersa monasteria regni sui" type="straight"/>
+        <underline language="LA" method="pen" text="ad perpetuam" type="straight"/>
+        <underline language="LA" method="pen" text="gestae memoriam in chronicis ponerentur" type="straight"/>
+        <underline language="LA" method="pen" text="Scoti per" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- pacificam ius -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- &c Has -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- restitueret fulminandum -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- fulminandum. Scoti  -->
+        
+        <drawing anchor_text="sigillo suo priuato, ad diuersa monasteria regni sui, vt ad perpetuam rei gestae memoriam in chronicis ponerentur." book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+    
+    </annotation>
+    
+</transcription>

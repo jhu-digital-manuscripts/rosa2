@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.165v.tif" pagination="330" reader="John Dee" signature="[x 5]v]]"/> 
+    <annotation>
+        
+        
+        <marginalia hand="Italian"> 
+            <language ident="EL">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>οὐ πλείους ἔσονται τοῦ αὐτού ὁρισμοί</marginalia_text> <!-- this sentence, without the initial negative οὐ, perhaps added by Dee, is straight from Aristotle, Topics, 6,4 -->
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Arist[otle] 6⁰ topic.</marginalia_text> 
+                    <person name="Aristotle"/>
+                    <book title="Topics"/>
+                </position>
+            </language>
+            <translation>'There will not be many definitions of the same thing', in Aristotle's topics, book 6.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="ἐνάργεια" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Συλλογισμός</marginalia_text>
+                </position>
+            </language>
+            <translation>Syllogism.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="finitionum diuersitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Finitionu[m] Diuesitas</marginalia_text>
+                </position>
+            </language>
+            <translation>Difference in definitions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Atque prouidendum, ut si sensu non pugnant, comprehensione diffentiant." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Clarigatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Clarigation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dialecticorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dialecticoru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Dialectics.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Licet enim ualeat in sermone tantùm, ut constrictum in uinculis suis habeat enum, qui responsurus est, &amp; uel tacere, uel etiam              inuitum id, quod sit contrà, cogat fateri, non eadem est tamen eius in causis utilitas." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sophista[e] finis</marginalia_text>
+                </position>
+            </language>
+            <translation>The purpose of sophists.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>diffinire dialecti ce Rhetoricè</marginalia_text>
+                </position>
+            </language>
+            <translation>To define the dialectic and the rhetorical.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Antonius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mar[cus] Antoni[us]</marginalia_text>
+                    <person name="Mark Antony"/>
+                </position>
+            </language>
+            <translation>Marcus Antonius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Cecinna" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Cecinna.</marginalia_text>
+                    <book title="Pro Caecina"/>
+                </position>
+            </language>
+            <translation>Pro Caecina.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="an perinde habenda sit haec atq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="Atque prouidendum, ut si sensu non pugnant, comprehensione dissentiant. Sed" type="straight"/>
+        <underline language="LA" method="pen" text="penus, quid littus" type="straight"/>
+        <underline language="LA" method="pen" text="ut constrictum" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; uel tacere" type="straight"/>
+        <underline language="LA" method="pen" text="inuitum id, quod sit contrà" type="straight"/>
+        <underline language="LA" method="pen" text="nec uno modo definitur res eadem, sed latiore, uatioq[ue] tractatu, ut facit Cicero, ut omnes oratores plerunq[ue] fecerunt." type="straight"/>
+        <underline language="LA" method="pen" text="ducta seruitus (est enim certè seruitus)" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

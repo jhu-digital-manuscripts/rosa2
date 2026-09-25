@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.073r.tif" reader="Harvey" signature="Iii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>[the] like of Charidemus,</marginalia_text>
+                    <person name="Charidemus"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>l. 3. Polya[e]ni.</marginalia_text>
+                    <book title="Stratagems"/>
+                </position>
+            </language>
+            <translation>The like of Charidemus, book 3 of Polyaenus' Stratagems.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Suspiciosa Consuetudo / ut s[upr]a.</marginalia_text> <!--See image _148-->
+                    <internal_ref text="s[upr]a">
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0104" text="[F[ir]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0112" text="[Fv[r]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0148" text="[Hvii[r]]"/>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0150" text="[Hviii[r]]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Suspicious custom, as above.</translation>
+        </marginalia>
+            
+       <marginalia anchor_text="in hunters apparayle; laden with venyson" hand="English_secretary">
+           <language ident="EN">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>Hannibals men in Hunters apparrel, laden with Venyso[n].</marginalia_text>
+                   <emphasis method="pen" text="Hunters" type="straight"/>
+                   <emphasis method="pen" text="apparrel" type="straight"/>
+               </position>
+           </language>
+       </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>( A possible Act for</marginalia_text> 
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>any great Pirate of credit.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="theyr handes bounde as his prisoners" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>lyke prysoners.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="done many times" type="straight"/>
+        <underline language="EN" method="pen" text="Anniball" type="straight"/>
+        <underline language="EN" method="pen" text="his men of armes in hunters apparayle" type="straight"/>
+        <underline language="EN" method="pen" text="myngled theym with Eoneus" type="straight"/>
+        <underline language="EN" method="pen" text="beinge laden" type="straight"/>
+        <underline language="EN" method="pen" text="with venyson" type="straight"/>
+        <underline language="EN" method="pen" text="sette on and slewe theym" type="straight"/>
+        <underline language="EN" method="pen" text="and breakynge" type="straight"/>
+        <underline language="EN" method="pen" text="downe the gate, lette in Anniball" type="straight"/>
+        <underline language="EN" method="pen" text="and slew al the Romains" type="straight"/>
+        <underline language="EN" method="pen" text="Lysimachus" type="straight"/>
+        <underline language="EN" method="pen" text="greate robber on" type="straight"/>
+        <underline language="EN" method="pen" text="Mandro" type="straight"/>
+        <underline language="EN" method="pen" text="shyppes laden with pyllage" type="straight"/>
+        <underline language="EN" method="pen" text="corrupted to betraye" type="straight"/>
+        <underline language="EN" method="pen" text="most valya[n]t warriours" type="straight"/>
+        <underline language="EN" method="pen" text="theyr handes bounde as" type="straight"/> 
+        <underline language="EN" method="pen" text="his prisoners" type="straight"/>
+        <underline language="EN" method="pen" text="quyckly" type="straight"/>
+        <underline language="EN" method="pen" text="weapons out of the" type="straight"/>
+        <underline language="EN" method="pen" text="citie vnto" type="straight"/>
+        
+        <mark method="pen" name="quotation_mark" place="head"/>
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="done many times"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="X_sign" place="intext" text="done many times"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="hunters"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="slewe"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="breakynge"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--them, the-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="corrupted to betraye"/>
+        <mark method="pen" name="dot" place="intext"/> <!--them, he-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="his prisoners"/>
+        
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>11</illustrations>
+    <totalPages>242</totalPages>
+    <dimensions units="mm">
+        <width>274</width>
+        <height>368</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="Le Livre de faiz d'armes et de chevallerie and Le Livre de la mutacion de Fortune">
+            <language>fr</language>
+            <title>Le Livre de faiz d'armes et de chevallerie and Le Livre de la mutacion de Fortune</title>
+            <textId/>
+            <pages end="242v" start="1r">242</pages>
+            <illustrations>11</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Faiz d'armes et de chevalerie and Mutacion de Fortune</title>
+            <commonName>Français 603</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>Paris, France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 603</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Faiz d'armes et de chevalerie et Mutacion de Fortune</title>
+            <commonName>Français 603</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris, France</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 603</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

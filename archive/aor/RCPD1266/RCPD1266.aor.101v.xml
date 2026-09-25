@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.101v.tif" pagination="188" reader="John Dee" signature="[q.iiij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="anno Domini sexcentesimo vigesimoprimo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota A[nn]o 621</marginalia_text> 
+                </position>
+            </language>
+            <translation>Note: in the year 621.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; eorum" type="straight"/>
+        <underline language="LA" method="pen" text="mensem Decembrem" type="straight"/>
+        <underline language="LA" method="pen" text="mensem Ianuarium" type="straight"/>
+        <underline language="LA" method="pen" text="longo post ascensionem Domini" type="straight"/>
+        <underline language="LA" method="pen" text="diei natalis Domini" type="straight"/>
+        <underline language="LA" method="pen" text="Domini celebraretur die Dominica" type="straight"/>
+        <underline language="LA" method="pen" text="fide caret" type="straight"/>
+        <underline language="LA" method="pen" text="primùm statuisse, de natiuitatis Domini" type="straight"/>
+        <underline language="LA" method="pen" text="Paschae" type="straight"/>
+        <underline language="LA" method="pen" text="Pentecostes, &amp; natiuitatis" type="straight"/>
+        <underline language="LA" method="pen" text="quo res festis illis diebus significatae acciderant" type="straight"/>
+        <underline language="LA" method="pen" text="igitur festa Paschae, Pentecostes, &amp; natiuitatis Domini celebrari debuerunt illis temporibus, quibus res quae illis significabantur" type="straight"/>
+        <underline language="LA" method="pen" text="quemadmodum in suis conciliis Episcopi, &amp; qui patres" type="straight"/>
+        <underline language="LA" method="pen" text="Computistarum &amp; eoru[m]" type="triple"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/>  <!-- res festis -->
+        
+    </annotation>
+</transcription>

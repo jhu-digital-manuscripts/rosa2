@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.070v.tif" pagination="124" reader="John Dee" signature="[l 2[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Doce sine invidia, &amp; disce absq[ue] rubore.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Teach without ill will and learn without red. <!-- FSF: not sure about the rubore -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Animaduerte qua r[ati]o[n]e in o[mn]ib[us] seque[n]tibus decretis saturni cursu[m] observet.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Notice by which reasone he observet the course of Saturn in all following decrees.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quam ha[e]c mihi quadrent o[mn]ia fere, Deus novit mihi ♄ in ♉.2. et in 6a domo. 
+                    </marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Taurus"/>
+                </position>
+            </language>
+            <translation>
+                How these things may correspond to me to beget everything, God learned for me, Saturn in Taurus 2 and in the sixth house.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        mihi △ ♀ ♄ q[uadrat]as <!--JG: Unsure about quadratas-->
+                    </marginalia_text>
+                    <symbol_in_text name="Trine"/>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>
+                To me a trine, Venus, Saturn squared.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ne cum libros nostros malignus lector acceperit, aliquid nos dicat, sibi inuidiae liuoribus de negasse" type="straight"/>
+        <underline language="LA" method="pen" text="cursum suu[m] ♄ impleuerit, id est primos XXX" type="straight"/>
+        <underline language="LA" method="pen" text="actus propriis" type="straight"/>
+        <underline language="LA" method="pen" text="acceperint minuant" type="straight"/>
+        <underline language="LA" method="pen" text="deinde per semetipsos" type="straight"/>
+        <underline language="LA" method="pen" text="quaerant substantiae" type="straight"/>
+        <underline language="LA" method="pen" text="inuentute, uariis" type="straight"/>
+        <underline language="LA" method="pen" text="uitae multas patientur" type="straight"/>
+        <underline language="LA" method="pen" text="liberati, longae uita spacia" type="straight"/>
+        <underline language="LA" method="pen" text="Patris tamen substantia omnis dissipabitur" type="straight"/>
+        <underline language="LA" method="pen" text="accedere, nisi ♀ stella, testimonium" type="straight"/>
+        <underline language="LA" method="pen" text="sed tamdiu infelicitatis onere sunt depressi, quandiu primu[m] circuli cursum ♄ impleuerit, illis autem" type="straight"/>
+        <underline language="LA" method="pen" text="Sed si periculorum tempore, beneuolarum stellarum fuerint praesidio liberati" type="straight"/>
+        <underline language="LA" method="pen" text="ad lxiii annum" type="straight"/>
+        <underline language="LA" method="pen" text="Ante autem xxxii annos nunq[uam] eos ♄ patitur ducere uxores nec illis tamen" type="straight"/>
+        <underline language="LA" method="pen" text="uirgines uxores dabuntur" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; si datae fuerint, perditos ab eis filios suscipient, atq[ue] amoribus" type="straight"/>
+        <underline language="LA" method="pen" text="peregrinas uero" type="straight"/>
+        <underline language="LA" method="pen" text="aliis stupratas" type="straight"/>
+        <underline language="LA" method="pen" text="xxx" type="straight"/>
+
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

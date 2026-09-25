@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.044r.insert.tif" origin="added" reader="John Dee" status="fixed"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        nigredine et immunditatia debet fieri mundatio. Vnde inquit Hermes
+                        [etc.]
+                    </marginalia_text>
+                    <person name="Hermes Trismegistus"/>
+                </position>
+            </language>
+            <translation>
+                [From this] blackness and dirtiness it must be cleaned. Of this Hermes says etc.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Item Alteratio est mutatio secundu[m] qualitate[m] facta ex quada[m]
+                        materia[e] locali permutatione[m]. Qui motus [etc]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Alteration is a change of quality, which is achieved from certain thorough change of place. The mover etc.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Primus ergo modus fuit sublimatio. Et causa inventionis
+                        eius fuit: quia non noverunt Antiqui Philosophi, nec nos, 
+                        nec qui post nos venturi su[n]t, aliquod quod vniret corpora nisi <!-- FSF: running over -->
+                    </marginalia_text>
+                    <person name="Hermes Trismegistus"/>
+                </position>
+            </language>
+            <translation>
+                The first mode is sublimation. And the cause of this invention is because the ancient sages did not know,
+                nor do we, nor shall those who follow us. Anything that unites the bodies unless.
+            </translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

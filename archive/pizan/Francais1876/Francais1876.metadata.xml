@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>102</totalPages>
+    <dimensions units="">
+        <width>-1</width>
+        <height>-1</height>
+    </dimensions>
+    <dates>
+        <startDate>1501</startDate>
+        <endDate>1600</endDate>
+    </dates>
+    <texts>
+        <text id="Le Commandement de prudence par Christine de Pisan">
+            <language>fr</language>
+            <title>Le Commandement de prudence par Christine de Pisan</title>
+            <textId/>
+            <pages end="60r" start="1r">60</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>22</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Le Livre de Mandevie par Jean Dupin">
+            <language>fr</language>
+            <title>Le Livre de Mandevie par Jean Dupin</title>
+            <textId/>
+            <pages end="96r" start="61r">35</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>20</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Christine de Pizan</title>
+            <commonName>Français 1876</commonName>
+            <dateLabel>16th century</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 1876</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Christine de Pizan</title>
+            <commonName>Français 1876</commonName>
+            <dateLabel>16e siècle</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 1876</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

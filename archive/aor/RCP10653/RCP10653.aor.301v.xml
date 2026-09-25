@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.301v.tif" pagination="154" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="obijt princeps Northvvalliae Leolinus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Leolini mors.
+                    </marginalia_text>
+                    <person name="Llywelyn the Great"/>
+                </position>
+            </language>
+            <translation>
+                The death of Llywelyn the Great.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="archiepiscopus Cantuar. Eadmundus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Edmundus Cantuar. Archiep[iscop]us
+                    </marginalia_text>
+                    <person name="Edmund of Abingdon"/>
+                </position>
+            </language>
+            <translation>
+                Edmund of Abingdon, Archbishop of Canterbury.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ecclesia cathedralis per menses sex vacaret, viduata pastore, per archiepiscopum dioecesanum eidem prouideretur" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Six monthes respit for Presentations [etc] 
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Griffinum" hand="Italian">   
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        nothum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Illegitimate.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="regis Angliae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Henrici
+                    </marginalia_text>
+                    <person name="Henry III, King of England"/>
+                </position>
+            </language>
+            <translation>
+                Of Henry III, King of England.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="est Comitissa Glouerniae Isabella, vxor Comitis Richardi, sub partus" type="straight"/>
+        <underline language="LA" method="pen" text="nimis dolendo" type="straight"/>
+        <underline language="LA" method="pen" text="obijt princeps Northvvalliae Leolinus, idib[us]" type="straight"/>
+        <underline language="LA" method="pen" text="Dauide[m] natu minore[m]" type="straight"/>
+        <underline id="RCP10653:618:u0001" language="LA" method="pen" text="sed legitimum" type="double"/>
+        <underline language="LA" method="pen" text="&amp; regis Angliae, ex parte sororis" type="straight"/>
+        <underline language="LA" method="pen" text="nepotem" type="double"/>
+        <underline language="LA" method="pen" text="obtinuit" type="straight"/>
+        <underline language="LA" method="pen" text="regno quam sacerdotio" type="straight"/>
+        <underline language="LA" method="pen" text="archiepiscopum dioecesanum" type="straight"/>
+        <underline language="LA" method="pen" text="cassatum" type="double"/>
+        <underline language="LA" method="pen" text="est idem" type="straight"/>
+        <underline language="LA" method="pen" text="pecunia iterum" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="intext"/> <!-- primogenitum, &amp; -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- ve[n]dicantem, &amp; -->
+        
+        <graph book_orientation="0" method="pen" place="left_margin" type="genealogical_tree">
+            <node anchor_text="Comitissa Gouerniae Isabella" id="n1" person="Isabel Marshal">Isabella</node>
+            <node anchor_text="Comitis Richardi" id="n2" person="Richard, 1st Earl of Cornwall">Richard[us] comes gl.</node>
+            <link from="n2" relationship="has_spouse" to="n1"/>
+            <link from="n1" relationship="has_spouse" to="n2"/>
+            <graph_text>
+                <note hand="Italian" id="no3" internal_link="n1" language="LA">Moritur</note>
+                <translation>
+                    She dies.
+                </translation>
+            </graph_text>
+        </graph>
+        
+        <graph book_orientation="0" method="pen" place="tail" type="genealogical_tree">
+            <node id="n3" person="Reinald Rich">Edward Riche</node>
+            <node id="n4" person="Mabel Rich">Mabilia</node>
+            <node anchor_text="Eadmundus" id="n5" person="Edmund of Abingdon">Edmundus</node>
+            <link from="n3" relationship="has_spouse" to="n4"/>
+            <link from="n4" relationship="has_spouse" to="n3"/>
+            <link from="n3" relationship="has_child" to="n5"/>
+            <link from="n4" relationship="has_child" to="n5"/>
+            <graph_text>
+                <note hand="Italian" id="no1" internal_link="n5" language="LA">natus in Abendon</note>
+                <note hand="Italian" id="no2" internal_link="n5" language="LA">post Archiep[iscopu]s Cantuar.</note>
+                <location name="Abingdon-on-Thames"/> 
+                <translation>
+                    Born in Abingdon-on-Thames.
+                    Afterwards Archbishop of Canterbury.
+                </translation>
+            </graph_text>
+        </graph>
+        
+        <physical_link>
+            <!-- FSF: how to make a physical link to something that is otherwise not captured? --> <!--JG: We can't. It's fine like this, as long as this tag can be retrieved via the search-->
+            <marginal_annotation idref="RCP10653:618:u0001"/>
+        </physical_link>
+       
+    </annotation>
+</transcription>

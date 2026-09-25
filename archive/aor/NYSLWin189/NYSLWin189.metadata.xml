@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>60</totalPages>
+  <dates>
+    <startDate>1562</startDate>
+    <endDate>1562</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>de</language>
+      <title>Baderbuchlin : Sechs kostliche Tractat, armen vnd reychen, nutzlich vnd notwendig, von Wasserbadern : Woher die selbige warm, vnd andere Wasser kalt, vnnd auss was Vrsach sy sollicher gewaltiger Krafften, das ihr Vrsprūng mit wachsender Arth ausz der Erdtglobel, gleich wie die Kreuter vnnd Bowme von ihrem Samen, mit schonem Bericht, wie mennigklich ihrs Brauchs sich Behelffen mag ... / durch den hocherfarnen Herren Theophrastum Paracelsum ; mit Fleyss vnd müe Doctor Adams von Bodenstein, zu guten neuwen jar publicirt.</title>
+      <textId>baderbuchlin</textId>
+      <pages end="001r" start="30v">60</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>Baderbuchlin : Sechs kostliche Tractat, armen vnd reychen, nutzlich vnd notwendig, von Wasserbadern : Woher die selbige warm, vnd andere Wasser kalt, vnnd auss was Vrsach sy sollicher gewaltiger Krafften, das ihr Vrsprūng mit wachsender Arth ausz der Erdtglobel, gleich wie die Kreuter vnnd Bowme von ihrem Samen, mit schonem Bericht, wie mennigklich ihrs Brauchs sich Behelffen mag ... / durch den hocherfarnen Herren Theophrastum Paracelsum ; mit Fleyss vnd müe Doctor Adams von Bodenstein, zu guten neuwen jar publicirt.</title>
+      <commonName>Paracelsus, Baderbuchlin (Mülhausen, 1562)</commonName>
+      <dateLabel>1562</dateLabel>
+      <currentLocation>New York</currentLocation>
+      <repository>New York Society Library</repository>
+      <shelfmark>Win 189</shelfmark>
+      <author>
+        <name>Paracelsus</name>
+        <id>http://www.isni.org/isni/000000012276427x</id>
+      </author>
+      <reader>
+        <name>John Dee</name>
+        <id>http://www.isni.org/isni/0000000122785193</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Dee-corpus/Paracelsus-Baderbuchlin</website>
+      <note>Looks like endmatter flyleaf 5r/5v are rotated 180 degrees?</note>
+      <note>Publication: Mülhausen im Oberen Elsåsz : Peter Schmid, 1562.</note>
+      <note>[62] p. : ill. ; 19 cm.</note>
+      <note>Record: http://library.nysoclib.org/record=b1183318~S2</note>
+      <note>Red and black t.p.; initials, tail-pieces. Printer's device on terminal p. Signatures: A-H⁴.</note>
+      <note>Boxed with: Paracelsus' Das Buch Meteororum, 1566 (Win 188).</note>
+      <note>Library copy from the Winthrop Collection; boxed with #188: Das Buch Meteororum, 1566. Inscriptions: 1st blank has No. 466 in blank ink and 38 in red pencil. 2nd blank recto: ms by John Dee and John Winthrop's commentary on the above, signed and dated July 24, 1640. An important reference to John Dee's works, including the authorship of Monas Hieroglyphica. Possibly received by John Winthrop from Arthur Dee. On verso: Wait Winthrop and 168 in pencil. Signed on t.p., above title: Johannes Dee and dated 1562; No. 466 in black ink; annotations above statement of responsibility and throughout. Imperfect, lacking F3, G4 and H3, supplied by reproduction from the copy of the library of Hahnemann Medical College and Hospital of Philadelphia.</note>
+      <note>Added authors: Bodenstein, Adam von, 1528-1577.
+Schmid, Peter, printer.
+Dee, John, 1527-1608, annotator, former owner.
+Winthrop, John, 1606-1676, annotator.
+Winthrop, Wait Still, 1643-1717, signer.
+Dee, Arthur, 1579-1651, associated name.
+Winthrop Collection (New York Society Library).</note>
+    </bibliography>
+  </bibliographies>
+</book>

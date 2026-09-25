@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>18</illustrations>
+    <totalPages>98</totalPages>
+    <dimensions units="mm">
+        <width>259</width>
+        <height>350</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="Compilaton of the Works of Christine de Pizan">
+            <language>fr</language>
+            <title>Compilation of the Works of Christine de Pizan ("Manuscrit du Duc, Vol. III) </title>
+            <textId/>
+            <pages end="98v" start="1r">98</pages>
+            <illustrations>18</illustrations>
+            <linesPerColumn>42</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Compilation of the Works of Christine de Pizan (Manuscrit du Duc, Vol. III)</title>
+            <commonName>Français 836</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>Paris, France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 836</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Divers Ouvrages par Christine de Pizan (Manuscrit du Duc, Vol. III)</title>
+            <commonName>Français 836</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris, France</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 836</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.206r.tif" pagination="206" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Sopra cotai sepolture era vna tauola, scolpita d'alcuni animali" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Burialls [...] the similitude of Christian Dead, [...]</marginalia_text> <!--MB: Note this a partial transcription only due to illegibility of smudged writing.  -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note thy people</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="sopra cotai Sepolture era vna tauola, scolpita d'alcuni animali" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Some short of Christians burialls initiated.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="era vna tauola, scolpita d'alcuni animali; in alcuni de' quali vedeasi la figura" type="straight"/>
+        <underline language="IT" method="pen" text="questi erano Indiani di più ragione, che in tutte" type="straight"/>
+        <underline language="IT" method="pen" text="alcun preso, per sapere i secreti di" type="straight"/>
+        <underline language="IT" method="pen" text="per guida di quella Costa" type="straight"/>
+        <underline language="IT" method="pen" text="porci di quella" type="straight"/>
+        <underline language="IT" method="pen" text="prender lingua" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="head" type="manicule"/>
+        <drawing anchor_text="era vna tauola, scolpita d' alcuni animali; in alcuni de' quali vedeasi la figura" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

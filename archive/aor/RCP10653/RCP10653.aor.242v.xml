@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.242v.tif" pagination="36" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Henrico episcopo VVinton. fratre regis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Henricus Ep[iscop]us Wint f[rate]r Regis
+                    </marginalia_text>
+                    <person name="Henry of Blois"/>
+                    <person name="King Stephen"/>
+                </position>
+            </language>
+            <translation>
+                Henry of Blois, bishop of Winchester, brother of the King.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Comite[m] Alberticu[m] de Veer" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Albericus de Ver Comes
+                    </marginalia_text>
+                    <person name="Aubrey de Vere II"/> 
+                </position>
+            </language>
+            <translation>
+                Aubrey de Vere II.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Eliensem episcopum, Nigellum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nigellus. Ep[iscopu]s Elie[n]s.
+                    </marginalia_text>
+                    <person name="Nigel, Bishop of Ely"/>  
+                </position>
+            </language>
+            <translation>
+                Nigel, bishop of Ely.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ranulphus, Comes Cestriae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ranulfus comes cestria[e].
+                    </marginalia_text>
+                    <person name="Ranulf de Gernon, 4th Earl of Chester"/>
+                </position>
+            </language>
+            <translation>
+                Ranulf de Gernon, 4th Earl of Chester.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quia rex no[n] seruauit sibi iuramentum factum, nec etiam" type="straight"/>
+        <underline language="LA" method="pen" text="quo facto rex priuauit eum omnibus bonis suis in Anglia" type="straight"/>
+        <underline language="LA" method="pen" text="Robert[us] Comes Glouerniae, frater eius cum ea, cum magna fortitudine infesto" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Henrico" type="straight"/>
+        <underline language="LA" method="pen" text="VVinton" type="straight"/>
+        <underline language="LA" method="pen" text="rege[m] vocari" type="triple"/>
+        <underline language="LA" method="pen" text="Comite[m] Albericu[m] de Veer" type="straight"/>
+        <underline language="LA" method="pen" text="causaru[m] varietatibus" type="triple"/>
+        <underline language="LA" method="pen" text="de iure" type="double"/>
+        <underline id="RCP10653:500:u0001" language="LA" method="pen" text="allegante[m], &amp; factum" type="straight"/>
+        <underline language="LA" method="pen" text="Nigellum" type="straight"/>
+        <underline language="LA" method="pen" text="Comes de Veer" type="straight"/>
+        <underline id="RCP10653:500:u0002" language="LA" method="pen" text="Albericus de Veer" type="straight"/>
+        <underline language="LA" method="pen" text="Aldevvinus" type="straight"/>
+        <underline language="LA" method="pen" text="Ranulphus, Comes" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- facto rex -->
+        <mark method="pen" name="comma" place="intext"/> <!-- fortitudine infesto -->
+        <mark method="pen" name="comma" place="intext"/> <!-- quod rege[m] -->
+        <mark method="pen" name="comma" place="intext"/> <!-- Qui Comite[m] -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- episcoporu[m], super -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- erat, se -->
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <errata amendedtext="in festo" copytext="infesto" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP10653:500:u0001"/>
+            <marginal_annotation idref="RCP10653:500:u0002"/>
+            <relation from="RCP10653:500:u0001" to="RCP10653:500:u0002" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

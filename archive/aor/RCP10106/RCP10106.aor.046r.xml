@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.046r.tif" pagination="91" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="καθολικὰ" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>καθολικὰ</marginalia_text>
+                </position>
+            </language>
+            <translation>Universal things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Discobolos Myronis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Discobolos</marginalia_text>
+                    <person name="Discobolus of Myron"/>
+                </position>
+            </language>
+            <translation>Discobolus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="figurae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>figura[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Figures.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Apelles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Apelles</marginalia_text>
+                    <person name="Apelles"/>
+                </position>
+            </language>
+            <translation>Apelles.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tima[n]tes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tima[n]tes</marginalia_text>
+                    <person name="Timanthes"/>
+                </position>
+            </language>
+            <translation>Timanthes.</translation>
+        </marginalia>
+         
+        <marginalia anchor_text="Sallustianu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Salustius.</marginalia_text>
+                    <person name="Sallust"/>
+                </position>
+            </language>
+            <translation>Sallust.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="perpetualia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Perpetualia</marginalia_text>
+                </position>
+            </language>
+            <translation>Perpetual things.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="laudabilis est illa ipsa nouitas" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

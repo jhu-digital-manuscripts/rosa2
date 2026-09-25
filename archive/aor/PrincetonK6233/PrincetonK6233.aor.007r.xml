@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonK6233.007r.tif" reader="Harvey" signature="[α7r]"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="EXCEPTIO" type="straight"/> 
+        <underline language="LA" method="pen" text="Exceptio est" type="straight"/>
+        <underline language="LA" method="pen" text="OBLIGATIO" type="straight"/>
+        <underline language="LA" method="pen" text="Praetoriae" type="straight"/>
+        <underline language="LA" method="pen" text="DELICTA" type="straight"/>
+        <underline language="LA" method="pen" text="Delicta sunt" type="straight"/>
+        <underline language="LA" method="pen" text="Priuata sunt" type="straight"/>
+        <underline language="LA" method="pen" text="publicis iudicijs sunt" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="chalk" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- ciulis aut -->
+        <mark method="pen" name="comma" place="intext"/> <!-- modis tum -->
+        <mark method="pen" name="dash" place="intext"/> <!-- per-fideiussores -->
+        <mark method="pen" name="comma" place="intext"/> <!-- solutione & -->
+        <mark method="pen" name="comma" place="intext"/> <!-- stipulationes rem -->
+        
+    </annotation> 
+</transcription>

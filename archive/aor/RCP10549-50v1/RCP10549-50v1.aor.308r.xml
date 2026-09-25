@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.308r.tif" pagination="595" reader="John Dee" signature="ppp.ii."/>
+    <annotation>
+        
+        <marginalia anchor_text="iratissimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>iratiss[imus]</marginalia_text>
+                </position>
+            </language>
+            <translation>Greatly enraged.</translation>
+        </marginalia>        
+        
+        <marginalia anchor_text="aliquid iracundiae remittebat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>remittere aliquid iracundi[a]e.</marginalia_text>
+                </position>
+            </language>
+            <translation>The remit something of passion</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="loris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>loru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Leather strap.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Centuriones pugnaces &amp; lacertosos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ce[n]turio pugnax lacertosus.</marginalia_text>
+                </position>
+            </language>
+            <translation>A pugnacious and muscular centurion.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Rursus me iam irasci fortasse dices" type="straight"/>
+        <underline language="LA" method="pen" text="Satis multa cu[m] Fusio, ac sine odio omnia, nihil sine dolore. Credo" type="straight"/>
+        <underline language="LA" method="pen" text="oppugnatio respirauit" type="straight"/>
+        <underline language="LA" method="pen" text="An ego ab eo mandata accipere[m], qui Senatus mandata" type="straight"/>
+        <underline language="LA" method="pen" text="loris ceciderunt" type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="An ego ab eo mandata accipere[m], qui Senatus mandata"/>
+        
+        <numeral place="right_margin">21.10</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+    </annotation>
+</transcription>

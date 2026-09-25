@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.303v.tif" pagination="[296v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Antiscia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Antiscia</marginalia_text>
+                </position>
+            </language>
+            <translation>Antiscia.</translation> <!--JG: https://en.wikipedia.org/wiki/Antiscia-->
+        </marginalia>
+        
+        <marginalia anchor_text="Eius qui in aliena habitat regione, reuolutionem facies" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Revolutio p[ro] loco habitationis.</marginalia_text>
+                </position>
+            </language>
+            <translation>A revolution for the place of habitation.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="ad loci in quo habitas initium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Loci initiu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>The beginning of a place.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Additiones, quae fiunt per processum Solis, in annua reuolutione, transferunt ferme significata, per tot dies post reuolutionem, quot sunt anni, qui transiuerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Antiscia, quae ex ascensionibus aequalibus sunt, animos uniunt hominum, sed quae aequaliter à tropicis distant, planetaru[m] uires iungunt" type="straight"/>
+        <underline language="LA" method="pen" text="secundum utrumq[ue] meridianum, ueru[m]tame[n] potentior est primae" type="straight"/>
+        <underline language="LA" method="pen" text="habitas initium" type="straight"/>
+        
+        <symbol language="LA" name="Mars" place="left_margin" text="Mars"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.050v.tif" pagination="[50[v]]" reader="John Dee" signature="[Nij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Nement ein jrdischen Sulphur, ein jrdisch Salnitrum, ein jrdischen Mercurium, vnd die drey bringent durch kunst in ein Corpus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Sal nitru[m] vulgare ☿ &#128781; } in vnu[m] componere</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Salt"/>
+                </position>
+            </language>
+            <translation>Vulgar salnitrum, mercury, and salt composed into one.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Superis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Superi</marginalia_text>
+                </position>
+            </language>
+            <translation>Gods.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Superis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota. praxim supernam</marginalia_text>
+                </position>
+            </language>
+            <translation>Note. Celestial practice.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="jrdischen Sulphur" type="straight"/>
+        <underline language="DE" method="pen" text="jrdisch Salnitrum" type="straight"/>
+        <underline language="DE" method="pen" text="jrdischen Mercurium" type="straight"/>
+        <underline language="DE" method="pen" text="kunst in ein Corpus" type="double"/>
+        <underline language="DE" method="pen" text="nach jrdischer arth ein wund" type="straight"/>
+        <underline language="DE" method="pen" text="erbarlichen impetum finden" type="straight"/>
+        <underline language="DE" method="pen" text="genommen wird von den" type="straight"/>
+        <underline language="DE" method="pen" text="Superis" type="double"/>
+        <underline language="DE" method="pen" text="Magistris" type="double"/>
+        <underline language="DE" method="pen" text="vn[d] zusam[m]en in Aludel das ist in seinen Sternen" type="straight"/>
+        <underline language="DE" method="pen" text="zerlassen den Sulphur" type="double"/>
+        <underline language="DE" method="pen" text="der Salniter" type="double"/>
+        <underline language="DE" method="pen" text="vereinigt er sich zusammen" type="straight"/>
+        <underline language="DE" method="pen" text="doch ohne bewegung vnd impetu" type="straight"/>
+        <underline language="DE" method="pen" text="vbrige gradus der Hitze wie vor gemelt" type="straight"/>
+        <underline language="DE" method="pen" text="so geußt es der Stern auß in die eusser regiones, das ist in" type="straight"/>
+        <underline language="DE" method="pen" text="Lufft" type="double"/>
+        <underline language="DE" method="pen" text="Gewülcke" type="double"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.055v.tif" reader="Harvey" signature="[Fviii[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Scipio Aphricanus" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The prologue of Scipios part, against Carthage. he burned [their] tentes, &amp;
+                    slew many thowsands, that night.</marginalia_text>
+                    <person name="Scipio Africanus"/>
+                    <location name="Carthage"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="them selfes" type="straight"/>
+        <underline language="EN" method="pen" text="receiued in the" type="straight"/>
+        <underline language="EN" method="pen" text="slewe the Romayns" type="straight"/>
+        <underline language="EN" method="pen" text="Syphax" type="straight"/>
+        <underline language="EN" method="pen" text="Penians" type="straight"/>
+        <underline language="EN" method="pen" text="against Scipio Aphricanus" type="straight"/>
+        <underline language="EN" method="pen" text="Syphax armye with fyre" type="straight"/>
+        <underline language="EN" method="pen" text="was of wodde" type="straight"/>
+        <underline language="EN" method="pen" text="apte to bourne great plenty" type="straight"/>
+        <underline language="EN" method="pen" text="Pompeius kepynge" type="straight"/>
+        <underline language="EN" method="pen" text="nyghte. iii.thousande souldiours" type="straight"/>
+        <underline language="EN" method="pen" text="and. v.hundred" type="straight"/>
+        <underline language="EN" method="pen" text="whan the hole hoste" type="straight"/>
+        
+        <symbol language="EN" name="SS" place="left_margin" text="he prologue of Scipios part, against Carthage. he burned [their] tentes, &amp; slew many thowsands, that night."/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="Syphax armye with fyre"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--Aphricanus, he-->
+        <mark method="pen" name="dot" place="intext"/> <!--tentes, &-->
+        <mark method="pen" name="dot" place="intext"/> <!--felowes, and-->
+        <mark method="pen" name="dot" place="intext"/> <!--hoostes, and-->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.073r.tif" pagination="frontispiece" reader="Harvey"/>	<!-- ABO 77right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Gh.
+					</marginalia_text>
+					<person name="Gabriel Harvey"/>
+				</position>
+			</language>
+			<translation>
+				G[abriel] H[arvey].
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="ES">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						gabriel haruejo.
+					</marginalia_text>
+					<person name="Gabriel Harvey"/>
+				</position>
+			</language>
+			<translation>
+				Gabriel Harvey.
+			</translation>
+		</marginalia>
+		<marginalia date="1580" hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Ratione, et diligentia. 1580.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Through reason and diligence. 1580.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						non alius: sed aliud.
+						Vade mecum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Not someone else, but something else.
+				A handbook.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Discursuum vix ullus finis: effectuu[m]
+						vix ullum principium.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				There is hardly any end to discourses, and hardly any beginning to effects.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Salamandrus Mack-dei.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The Mack-dei Salamander.	<!-- CG: Most unclear. --> <!--JG: We've to ask a specialist, no clue what this could be-->
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Dei, et Regis vasallus: Artis, et Virtutis secretarius: Entelechia[e].
+						Monopragmaticus: Euschemosynes, et ironia[e]
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						arcanus politicus: vir ex tetragono absolutus.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The vasal of God and King, the secretary of Art and Virtue, is Actualization.
+				Having skill in one thing: an arcane politician of Refinement and Irony; a man freed from the square.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="FR">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						 ( Combats Olympiques, non pour or,)
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						ny argent, ains pour la seule vertu. Concupiscenses,
+						Les Pygmees. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Olympic Combat: for neither gold nor silver, but for the single virtue. Pygmies, concupiscences. <!-- CG: I really have no idea what the last part is. Possible connection with, which mentions Olympic Combat, Pygmies, and Concupiscences: https://books.google.co.uk/books?id=BxKZ_L0zJFYC&pg=PA935&lpg=PA935&dq=Concupiscences+Les+Pygmees&source=bl&ots=a2PchYYYWW&sig=gxRyeBheciSnk2yCjxAUlBpmBf4&hl=en&sa=X&ved=0CD0Q6AEwBGoVChMIkqC714ihxwIVSkkaCh2MswFV#v=onepage&q=Concupiscences%20Les%20Pygmees&f=false-->
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Matutinus ante gallum: meridianus super Solem: vespertinus, qualis
+						Sol oriens apud Antipodes. Omnes tardi gradi, aut retrogradi,
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						pra[e]ter vnum Gra[e]cum; vnumq[ue] Romanum;
+						et paucissimos euisdem ala[e]. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Early morning, before the rooster; at noon, above the sun; by evening, like
+				the sun rising on the other side of the world. All are slow to move forward or
+				backward, except one Greek and one Roman, and very few of the same wing.
+			</translation>
+		</marginalia>
+		
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="DETTI" type="straight"/>
+		<underline language="IT" method="pen" text="FATTI" type="straight"/>
+		<underline language="IT" method="pen" text="PRINCIPI" type="straight"/>
+		<underline language="IT" method="pen" text="FILOSOFI" type="straight"/>
+		<underline language="IT" method="pen" text="CORTIGIANI" type="straight"/>
+		<underline language="IT" method="pen" text="GVICCIARDINI" type="straight"/>
+		<underline language="IT" method="pen" text="MORALITA'" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="intext"/>
+		
+	    	<!-- Head/Intext/Tail -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- CORTIGIANI -->
+		<mark method="pen" name="horizontal_bar" place="intext"/> <!-- below 'vade mecum' --> 
+		
+		<mark method="pen" name="vertical_bar" place="right_margin"/> <!--under ala[e]-->
+
+    </annotation>
+</transcription>

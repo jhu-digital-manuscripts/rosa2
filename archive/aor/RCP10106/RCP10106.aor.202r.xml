@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.202r.tif" pagination="403" reader="John Dee" signature="C 2"/> 
+    <annotation>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Cicero 3⁰ de oratore.</marginalia_text>
+                    <person name="Cicero"/>
+                    <book title="De Oratore"/>
+                </position>
+            </language>
+            <translation>Cicero's third book of De Oratore. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dißimulatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dissimulatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Dissimulation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dubitatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dubitatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Doubt.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="distributio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Distributio</marginalia_text>
+                </position>
+            </language>
+            <translation>Division.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="correctio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Correctio</marginalia_text>
+                </position>
+            </language>
+            <translation>Correction.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Praemunitio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pra[e]munitio</marginalia_text>
+                </position>
+            </language>
+            <translation>Preliminary defence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="reiectio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Reiectio</marginalia_text>
+                </position>
+            </language>
+            <translation>Rejection.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[m]unicatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Comunicatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Communication.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Personaru[m] ficta inductio</marginalia_text>
+                </position>
+            </language>
+            <translation>The feigned introduction of people.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="geminatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Geminatio</marginalia_text>
+                </position>
+            </language>
+            <translation>The doubling.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="distributio" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>   
+        
+        <drawing book_orientation="0" method="pen" place="head" type="florilegium"/>
+        
+    </annotation>
+</transcription>

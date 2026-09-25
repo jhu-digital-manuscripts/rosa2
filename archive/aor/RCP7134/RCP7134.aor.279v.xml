@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.279v.tif" pagination="[272v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Coniugij tempus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The time of close connection.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uxor" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vxoris natura</marginalia_text>
+                </position>
+            </language>
+            <translation>The nature of a woman.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Communicatio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Comutatio planetarum.</marginalia_text>
+                </position>
+            </language>
+            <translation>The alteration of the planets.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uxor" hand="English_secretary" id="RCP7134:564:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>per regula[m] data[m] fo. 90 v.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:200:m0001" text="90 v"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Through the rule given on folio 90 verso.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Et dispositor loci luminaris ostendit causam potentiae &amp; honoris" type="straight"/>
+        <underline language="LA" method="pen" text="aut nimium lasciua" type="straight"/>
+        <underline language="LA" method="pen" text="Si tamen Sol male sit affectus" type="straight"/>
+        
+        <errata amendedtext="[deleted]" copytext="à coniunctione ad oppositionem" language="LA"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.070r.tif" pagination="70" reader="John Dee"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="dominio" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dominium</marginalia_text>
+                </position>
+            </language>
+            <translation>Rule.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="XXVII di Decembre" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>27 Dece[m]b[er]</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Guacanagari" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Guacanagari</marginalia_text>
+                    <person name="Guacanagarix"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Castiglia con soccorso" type="double"/>
+        <underline language="IT" method="pen" text="chi il guidasse" type="triple"/>
+        <underline language="IT" method="pen" text="popolatione, &amp; dominio" type="double"/>
+        <underline language="IT" method="pen" text="gli si offeriuano" type="straight"/>
+        <underline language="IT" method="pen" text="vi sariano restati" type="straight"/>
+        <underline language="IT" method="pen" text="fabricarui vna torre col legname della naue perduta, di cui niuna cosa lasciò che no[n] cauasse fuori" type="straight"/>
+        <underline language="IT" method="pen" text="non ne tragesse qualche vtile" type="straight"/>
+        <underline language="IT" method="pen" text="Carauella Pinta" type="straight"/>
+        <underline language="IT" method="pen" text="Guacanagari" type="straight"/>
+        <underline language="IT" method="pen" text="XX leghe" type="straight"/>
+        <underline language="IT" method="pen" text="che non fu data" type="double"/>
+        <underline language="IT" method="pen" text="auanti venduta" type="straight"/>
+        <underline language="IT" method="pen" text="al rimaner de' Christiani in quel luogo" type="straight"/>
+        <underline language="IT" method="pen" text="quali ogni di più conosceuano la bontà, &amp; ricchezza di quella terra, portando" type="straight"/>
+        <underline language="IT" method="pen" text="di molte Prouincie" type="straight"/>
+        <underline language="IT" method="pen" text="cotal'oro nasceua" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- DO: comma in 'hauesse, chi il' -->
+        
+        <mark language="IT" method="pen" name="bracket" place="right_margin" text="fabricarui vna torre col legname della naue perduta, di cui niuna cosa lasciò che no[n] cauasse fuori, &amp; non ne tragesse qualche vtile"/>
+        
+    </annotation>
+</transcription>

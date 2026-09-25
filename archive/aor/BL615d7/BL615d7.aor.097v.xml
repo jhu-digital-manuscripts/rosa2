@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.097v.tif" pagination="[97v]" reader="John Dee" signature="[N[v]]"/> 
+    
+    <annotation>
+        
+       <marginalia anchor_text="S. Martino" hand="Italian" method="pen">
+           <language ident="IT">
+               <position book_orientation="0" place="left_margin">
+                   <marginalia_text>S[ant]o Martino.</marginalia_text>
+                   <location name="Saint Martin"/>
+               </position>
+           </language>
+           <translation>Saint Martin.</translation>
+       </marginalia> 
+        
+        <marginalia anchor_text="corallo" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Corall.</marginalia_text>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <marginalia anchor_text="XIIII di Nouembre" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>14. Noue[m]b[er]</marginalia_text>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <marginalia anchor_text="tagliato il membro genitale" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Membra genitalia pr[a]ecisa</marginalia_text>  
+                </position>
+            </language>
+            <translation>Genitals cut off.</translation>
+        </marginalia> 
+        
+        
+        <underline language="IT" method="pen" text="chiamarono S. Martino" type="straight"/>
+        <underline language="IT" method="pen" text="cauauano pezzi di corallo" type="straight"/>
+        <underline language="IT" method="pen" text="per andare à soccorrer quelli, ch'egli haueua" type="straight"/>
+        <underline language="IT" method="pen" text="che si prendesse" type="straight"/>
+        <underline language="IT" method="pen" text="per saper" type="straight"/>
+        <underline language="IT" method="pen" text="quattro donne" type="straight"/>
+        <underline language="IT" method="pen" text="tre fanciulli" type="straight"/>
+        <underline language="IT" method="pen" text="che la donna paßò" type="straight"/>
+        <underline language="IT" method="pen" text="targa dall'vn lato all'altro" type="straight"/>
+        <underline language="IT" method="pen" text="tiraua di molte freccie" type="straight"/>
+        <underline language="IT" method="pen" text="fosse stato in terra" type="straight"/>
+        <underline language="IT" method="pen" text="e poi castrati" type="double"/>
+        <underline language="IT" method="pen" text="ingrassino" type="straight"/>
+        <underline language="IT" method="pen" text="siano piu saporiti" type="double"/>
+        
+        
+        
+    </annotation>
+    
+</transcription>

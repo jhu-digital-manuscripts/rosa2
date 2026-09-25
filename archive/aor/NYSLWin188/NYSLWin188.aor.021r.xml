@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.021r.tif" pagination="21" reader="John Dee" signature="F"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Als im Wasser die Nimphen in der Erden die Gnomi im lufft die Lemures im Him[m]el die Pennates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Pennates Lemures Nympha[e] Gnomi } Coeli A[e]res Aqua[e] Terra[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Household gods in the sky, ghosts in the air, nymphs in the water, gnomes in the earth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Matene; Torteleos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Matene Torteleos</marginalia_text>
+                </position>
+            </language>
+            <translation>Air spirits and fire spirits</translation> <!--JG: Unsure about how to translate these terms!-->
+            <!--JG: https://books.google.co.uk/books?id=f0N2C_fqHIgC&pg=PA370&lpg=PA370&dq=torteleos&source=bl&ots=zmauMj6k9u&sig=IekXb-nSI1MGY4pCe8QKmdnaQ2g&hl=en&sa=X&ved=0ahUKEwjK0ZjC3rzQAhUmLcAKHcWWC10Q6AEIKTAD#v=onepage&q=torteleos&f=false-->
+        </marginalia>
+        
+        <marginalia anchor_text="empfindtliche Creatur in Geists weise" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sensible Creatures like goasts and spirites, in [the] 4 Elements.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="ein gleichnuß sein muß Vnd befindt sich auch dermassen am werck, vn[d] in der Natur vnd in der Kunst" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rationes 4 de istis, .1. ex analogia. 2. ex op[er]ibus. 3. Natura. 4. per artes quasda[m] [cog]noscentur.</marginalia_text>
+                </position>
+            </language>
+            <translation>Four reasons of those will be examined: 1) from analogies; 2) from works; 3) [from] nature; 4) through certain arts.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pennates.</marginalia_text>
+                </position>
+            </language>
+            <translation>Household gods.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="auch vernünfftigs" type="double"/>
+        <underline language="DE" method="pen" text="im Lufft im Himmel" type="straight"/>
+        <underline language="DE" method="pen" text="dergleichen animalia" type="straight"/>
+        <underline language="DE" method="pen" text="Lufft Matene" type="straight"/>
+        <underline language="DE" method="pen" text="Himmel" type="double"/>
+        <underline language="DE" method="pen" text="Torteleos" type="straight"/>
+        <underline language="DE" method="pen" text="auch zu dem" type="double"/>
+        <underline language="DE" method="pen" text="lebendig empfindtliche" type="straight"/>
+        <underline language="DE" method="pen" text="Creatur in Geists weise" type="straight"/>
+        <underline language="DE" method="pen" text="grobem verstandt in der vnderm" type="straight"/>
+        <underline language="DE" method="pen" text="dasselbige gibt vns ein exempel das auch in der obern Sphaer vn[d] in der obern Globul, dergleichen auch              dermassen ein gleichnuß sein muß Vnd befindt sich auch dermassen am werck" type="straight"/>
+        <underline language="DE" method="pen" text="der Natur" type="straight"/>
+        <underline language="DE" method="pen" text="in der Kunst" type="straight"/>
+        <underline language="DE" method="pen" text="generationes geschehen" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!--obersten generationes-->
+        
+        <numeral language="DE" place="intext" text="gleichnuß">1</numeral>
+        <numeral language="DE" place="intext" text="werck">2</numeral>
+        <numeral language="DE" place="intext" text="Natur">3</numeral>
+        <numeral language="DE" place="intext" text="Kunst">4</numeral>
+        
+        <drawing anchor_text="Als im Wasser die Nimphen in der Erden die Gnomi im lufft die Lemures im Him[m]el die Pennates" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.062r.tif" pagination="123" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="θέσις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>θέσις</marginalia_text>
+                </position>
+            </language>
+            <translation>Thesis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ὑποθέσεις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ὑποθέσεις</marginalia_text>
+                </position>
+            </language>
+            <translation>Hypotheses.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tria sunt item, quae praestare debeat orator, ut doceat, moueat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tria oratoris munera</marginalia_text>
+                </position>
+            </language>
+            <translation>Three duties of the orator.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="affectus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Affectus</marginalia_text>
+                </position>
+            </language>
+            <translation>Emotion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="probationem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Probatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Proof.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Celsus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Celsus.</marginalia_text>
+                    <person name="Aulus Cornelius Celsus"/>
+                </position>
+            </language>
+            <translation>Celsus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="esse quaestiones aut in scripto, aut in non scripto: in scripto, sunt de iure: in non scripto, de re: illud legale,             hoc rationae genus." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qu[a]estionis Diuisiones</marginalia_text>
+                </position>
+            </language>
+            <translation>A division of questions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hermagoras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hermagoras</marginalia_text>
+                    <person name="Hermagoras of Temnos"/>
+                </position>
+            </language>
+            <translation>Hermagoras.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quaestiones esse aut infinitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qua[e]stio[n]es infinit[i]</marginalia_text>
+                </position>
+            </language>
+            <translation>Indefinite questions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Infinitae sunt quae remotis personis, &amp; temporibus &amp; lo cis, caeterisq[ue] simulibus, in utranq[ue] partem tracantur, quod             Graeci θέσιν dicunt, Cicero propositum, alij quaestiones uniuersales ciuiles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Infinita[e] qua[e]stionis Nomina.</marginalia_text>
+                </position>
+            </language>
+            <translation>The names for indefinite questions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="esse quaestiones aut in scripto, aut in non scripto: in scripto, sunt de iure: in non scripto, de re: illud legale, hoc             rationale genus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Qua[e]stiones in scripto no[n] scripto } De iure. De re. } Legale Rationale } Genus </marginalia_text>
+                </position>
+            </language>
+            <translation>Questions in writing or not in writing { by law or by fact { legal or rational { type.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="natura, arte, exercitatione, cui" type="straight"/>
+        <underline language="LA" method="pen" text="omnia in" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+        
+    </annotation>
+</transcription>

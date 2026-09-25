@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.069v.tif" pagination="138" reader="John Dee" signature="[i 5[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Credendum est igitur ijs, quorum autoritate[m] secutus est Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ciceroni fides adhibenda.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>We must trust Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iuris disceptatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iuris disceptatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Discussion of the law.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="defensore" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Defensor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Defendant.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dissentio" type="straight"/>
+        <underline language="LA" method="pen" text="Nec enim ulla iuris disceptatio, nisi finitione, qualitate, coniectura potest explicari. Sed" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

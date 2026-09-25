@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.032r.tif" pagination="26" reader="John Dee" signature="G ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Imagines omnes de sui proprietate indicant, ut draco, serpens &amp; scorpio, uenenum: canis &amp; leo, crudelitatem: Cassiopea &amp; Andromeda, carceres &amp;c." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Imaginu[m] natura[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>The nature of images.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diuitias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Diuitia[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Wealth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uitam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vita</marginalia_text>
+                </position>
+            </language>
+            <translation>Life.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mortem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mors</marginalia_text>
+                </position>
+            </language>
+            <translation>Death</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="carceres, labores, hostes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Carcer. labor &amp; hostes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Prison, work, and enemies.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rixas, &amp; apertos hostes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>rixae. hostes ap[er]ti</marginalia_text> 
+                </position>
+            </language>
+            <translation>Quarrels and manifest enemies.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="gloria[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gloria</marginalia_text>
+                </position>
+            </language>
+            <translation>Glory.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="morbos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Morbi</marginalia_text>
+                </position>
+            </language>
+            <translation>Diseases.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vxorex. co[n]cub[inae]</marginalia_text>
+                </position>
+            </language>
+            <translation>Wifes and concubines.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="decapitationem, aut suspensionem" type="straight"/>
+        <underline language="LA" method="pen" text="Imagines omnes de sui proprietate indicant, ut draco, serpens &amp; scorpio, uenenum: canis &amp; leo, crudelitatem: Cassiopea &amp; Andromeda, carceres &amp;c." type="straight"/>
+        <underline language="LA" method="pen" text="IVpiter" type="straight"/>
+        <underline language="LA" method="pen" text="cum domino secundae" type="straight"/>
+        <underline language="LA" method="pen" text="Sol, Luna, &amp; ascendens" type="straight"/>
+        <underline language="LA" method="pen" text="abscisorm ortem" type="straight"/>
+        <underline language="LA" method="pen" text="carceres, labores, hostes occultos" type="straight"/>
+        <underline language="LA" method="pen" text="decima, gloria[m]" type="straight"/>
+        <underline language="LA" method="pen" text="morbos" type="straight"/>
+        
+        <symbol language="LA" name="Jupiter" place="left_margin" text="Iouis"/>
+        <symbol language="LA" name="Mars" place="left_margin" text="Martis"/>
+        <symbol language="LA" name="Sun" place="left_margin" text="Solis"/>
+        <symbol language="LA" name="Mars" place="left_margin" text="Martis"/>
+        <symbol language="LA" name="Mars" place="left_margin" text="Martis"/>
+        <symbol language="LA" name="Mercury" place="left_margin" text="Mercurij"/>
+        <symbol language="LA" name="Mars" place="left_margin" text="Martis"/>
+        <symbol language="LA" name="Moon" place="left_margin" text="Lunae"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Imagines omnes de sui proprietate indicant, ut draco, serpens &amp; scorpio, uenenum: canis &amp; leo, crudelitatem: Cassiopea &amp; Andromeda, carceres &amp;c."/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="abscisor, mortem" copytext="abscisorm,ortem" language="LA"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<refNum xmlns="http://bibnum.bnf.fr/ns/refNum" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://bibnum.bnf.fr/ns/refNum http://bibnum.bnf.fr/ns/refNum.xsd http://bibnum.bnf.fr/ns/detailsOperation http://bibnum.bnf.fr/ns/detailsOperation.xsd">
+<document identifiant="06000755">
+<bibliographie>
+<genre>LOT</genre>
+<titre>Christine de Pizan [Français 606]</titre>
+<nombrePages>47</nombrePages>
+</bibliographie>
+<production>
+<dateNumerisation>2009-12-04</dateNumerisation>
+<nombreVueObjets>107</nombreVueObjets>
+<nombreImages>107</nombreImages>
+<identifiantSupport ordre="1">44001846</identifiantSupport>
+<historique>
+<traitement ordre="1">
+<agentOperation>Atelier BnF</agentOperation>
+<operation ordre="1" type="numerisation">
+<entree date="2009-12-03T08:50:39Z" type="PRODUCT">
+<detailsOperation xmlns="http://bibnum.bnf.fr/ns/detailsOperation">
+<agent role="NUMERISATIONPATRIMOINE" type="ATELIER">DSC - atelier SABLE - DSC8330/PADM1758</agent>
+<outil type="LOGICIELTRAITEMENTDIMAGE">
+<nom>LEADTOOLS</nom>
+<origine>LEADTOOLS</origine>
+<version>12.1</version>
+</outil>
+</detailsOperation>
+</entree>
+<resultat date="2009-12-04T00:00:00Z" type="PRODUCT"/>
+</operation>
+</traitement>
+</historique>
+</production>
+<structure>
+<vueObjet numeroPage="Plat supérieur" ordre="1" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3411,4412" nomImage="0000001" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="Contreplat sup." ordre="2" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3411,4433" nomImage="0000002" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="Page de garde recto" ordre="3" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3378,4312" nomImage="0000003" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="Page de garde verso" ordre="4" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3244,4270" nomImage="0000004" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="Page de garde recto" ordre="5" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3350,4308" nomImage="0000005" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="Page de garde verso" ordre="6" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3244,4270" nomImage="0000006" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="Page de garde recto" ordre="7" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3178,4264" nomImage="0000007" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="Page de garde verso" ordre="8" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3128,4270" nomImage="0000008" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="1r" ordre="9" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3306,4264" nomImage="0000009" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="1v" ordre="10" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3294,4270" nomImage="0000010" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="2r" ordre="11" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3306,4264" nomImage="0000011" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="2v" ordre="12" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3294,4270" nomImage="0000012" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="3r" ordre="13" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3306,4264" nomImage="0000013" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="3v" ordre="14" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3289,4314" nomImage="0000014" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="4r" ordre="15" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3306,4314" nomImage="0000015" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="4v" ordre="16" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3289,4314" nomImage="0000016" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="5r" ordre="17" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3306,4314" nomImage="0000017" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="5v" ordre="18" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3289,4314" nomImage="0000018" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="6r" ordre="19" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3306,4314" nomImage="0000019" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="6v" ordre="20" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3289,4314" nomImage="0000020" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="7r" ordre="21" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3306,4314" nomImage="0000021" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="7v" ordre="22" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3289,4314" nomImage="0000022" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="8r" ordre="23" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3306,4314" nomImage="0000023" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="8v" ordre="24" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3289,4314" nomImage="0000024" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="9r" ordre="25" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3306,4314" nomImage="0000025" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="9v" ordre="26" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3250,4314" nomImage="0000026" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="10r" ordre="27" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3306,4314" nomImage="0000027" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="10v" ordre="28" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3250,4314" nomImage="0000028" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="11r" ordre="29" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3306,4314" nomImage="0000029" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="11v" ordre="30" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3250,4314" nomImage="0000030" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="12r" ordre="31" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3306,4314" nomImage="0000031" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="12v" ordre="32" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3250,4314" nomImage="0000032" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="13r" ordre="33" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3306,4314" nomImage="0000033" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="13v" ordre="34" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3250,4314" nomImage="0000034" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="14r" ordre="35" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3305,4313" nomImage="0000035" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="14v" ordre="36" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3250,4314" nomImage="0000036" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="15r" ordre="37" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3305,4313" nomImage="0000037" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="15v" ordre="38" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3250,4314" nomImage="0000038" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="16r" ordre="39" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3305,4313" nomImage="0000039" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="16v" ordre="40" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3250,4314" nomImage="0000040" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="17r" ordre="41" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3305,4313" nomImage="0000041" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="17v" ordre="42" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3250,4314" nomImage="0000042" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="18r" ordre="43" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3305,4313" nomImage="0000043" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="18v" ordre="44" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3250,4314" nomImage="0000044" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="19r" ordre="45" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3305,4313" nomImage="0000045" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="19v" ordre="46" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3250,4314" nomImage="0000046" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="20r" ordre="47" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3305,4313" nomImage="0000047" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="20v" ordre="48" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3250,4314" nomImage="0000048" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="21r" ordre="49" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3305,4313" nomImage="0000049" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="21v" ordre="50" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3250,4314" nomImage="0000050" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="22r" ordre="51" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3305,4313" nomImage="0000051" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="22v" ordre="52" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3261,4314" nomImage="0000052" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="23r" ordre="53" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3305,4313" nomImage="0000053" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="23v" ordre="54" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3261,4314" nomImage="0000054" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="24r" ordre="55" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3305,4313" nomImage="0000055" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="24v" ordre="56" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000056" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="25r" ordre="57" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000057" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="25v" ordre="58" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000058" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="26r" ordre="59" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000059" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="26v" ordre="60" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000060" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="27r" ordre="61" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000061" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="27v" ordre="62" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000062" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="28r" ordre="63" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000063" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="28v" ordre="64" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000064" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="29r" ordre="65" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000065" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="29v" ordre="66" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000066" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="30r" ordre="67" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000067" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="30v" ordre="68" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000068" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="31r" ordre="69" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000069" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="31v" ordre="70" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000070" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="32r" ordre="71" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000071" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="32v" ordre="72" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000072" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="33r" ordre="73" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000073" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="33v" ordre="74" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000074" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="34r" ordre="75" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000075" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="34v" ordre="76" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000076" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="35r" ordre="77" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000077" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="35v" ordre="78" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000078" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="36r" ordre="79" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000079" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="36v" ordre="80" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000080" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="37r" ordre="81" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000081" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="37v" ordre="82" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000082" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="38r" ordre="83" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000083" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="38v" ordre="84" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000084" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="39r" ordre="85" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000085" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="39v" ordre="86" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000086" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="40r" ordre="87" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000087" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="40v" ordre="88" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000088" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="41r" ordre="89" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000089" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="41v" ordre="90" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000090" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="42r" ordre="91" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000091" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="42v" ordre="92" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000092" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="43r" ordre="93" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000093" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="43v" ordre="94" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3278,4303" nomImage="0000094" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="44r" ordre="95" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000095" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="44v" ordre="96" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3295,4303" nomImage="0000096" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="45r" ordre="97" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000097" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="45v" ordre="98" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3295,4303" nomImage="0000098" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="46r" ordre="99" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000099" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="46v" ordre="100" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3295,4303" nomImage="0000100" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="47r" ordre="101" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3311,4305" nomImage="0000101" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="47v" ordre="102" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3295,4353" nomImage="0000102" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="Page de garde recto" ordre="103" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3383,4353" nomImage="0000103" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="Page de garde verso" ordre="104" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3339,4402" nomImage="0000104" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="Contreplat inf." ordre="105" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3472,4439" nomImage="0000105" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="Plat inférieur" ordre="106" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="3411,4402" nomImage="0000106" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+<vueObjet numeroPage="Dos" ordre="107" typePage="N" typePagination="F">
+<image cadrage="vueObjet" codeResolution="T" dimension="0556,4450" nomImage="0000107" profondeur="24" resolution="0300,0300" supportOrigine="PAPIER REL CO" traitement="MANU" typeFichier="TIF"/>
+</vueObjet>
+</structure>
+</document>
+</refNum>

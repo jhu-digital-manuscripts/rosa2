@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="UclCastiglione1541.011r.tif" reader="Harvey" signature="Aiiii[r]"/>
+<annotation>
+    <marginalia hand="Italian">
+        <language ident="IT">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>
+                    In che consis[te] la forza e la regola di scriuere bene
+                </marginalia_text>
+            </position>
+        </language>
+        <translation>
+            What the force and principle of good writing consist of.
+        </translation>
+    </marginalia>
+    <marginalia hand="Italian">
+        <language ident="IT">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>
+                    Parole di diuerse nation[i] nel Boccacci[o] 
+                </marginalia_text>
+                <person name="Giovanni Boccaccio"/>
+            </position>
+        </language>
+        <translation>
+            Words from different nations in Boccaccio.     
+        </translation>
+    </marginalia>
+    <marginalia hand="Italian">
+        <language ident="IT">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>
+                    Vocaboli Fiorentini corrotti dal Latino.
+                </marginalia_text>
+            </position>
+        </language>
+        <translation>
+            Florentine words corrupted by Latin.  
+        </translation>
+    </marginalia>
+    
+    <mark method="pen" name="vertical_bar" place="intext" text="q[ue]stovsansi"/>
+    
+</annotation> 
+</transcription>

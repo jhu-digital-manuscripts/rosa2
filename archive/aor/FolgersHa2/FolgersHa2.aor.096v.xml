@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.096v.tif" pagination="16" reader="Harvey" signature="[A8v]"/>	<!-- ABO 101left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Cogito ( ) principem iuuentutis:
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Neo-arthurum: eundemq[ue] Neo-merli[num]
+						et iam tandem Hyperca[e]sarem: id
+						est, Imperatorem, et Cosmopragmaticum
+						incomparabilem. Mack-dei.
+					</marginalia_text>
+					<person name="King Arthur"/>
+					<person name="Merlin"/>
+					<person name="Julius Caesar"/>
+				</position>
+			</language>
+			<translation>
+				I consider the prince of youth: 
+				a new Arthur, and also a new Merlin, and now, at last, someone beyond Caesar:
+				That is, an emperor and an imcomparable practical man of the world.
+				
+				Mack-dei.
+					<!-- CG: Mack-dei is still unclear, see Ha2.074v, where Harvey writes "Salamandrus Mack-dei." --> <!--JG: I'll do more research later, perhaps we encounter more instances of this name-->
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Neoarthurus, et Hyperca[e]sar.
+					</marginalia_text>
+					<person name="King Arthur"/>
+					<person name="Julius Caesar"/>
+				</position>
+			</language>
+			<translation>
+				A new Arthur, and someone beyond Caesar.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						{ Plenaria La[e]titia, et Audacia faciunt hominem reiuuenescere; cum viuida
+						Dia[e]ta, et quotidiana Exercitatione in Sole. Sed plenaria semper, et absoluta.
+						Nam dimidiata ista, et vulgaris, parum aut
+					</marginalia_text>
+					<emphasis method="pen" text="Plenaria La[e]titia" type="straight"/>
+					<emphasis method="pen" text="reiuuenescere" type="straight"/>
+					<emphasis method="pen" text="viuida Dia[e]ta" type="straight"/>
+					<emphasis method="pen" text="quotidiana Exercitatione" type="straight"/>
+					<emphasis method="pen" text="Sole" type="straight"/>
+					<emphasis method="pen" text="plenaria" type="straight"/>
+					<emphasis method="pen" text="absoluta" type="straight"/>
+					<emphasis method="pen" text="Nam dimidiata" type="straight"/>
+					<emphasis method="pen" text="vulgaris" type="straight"/>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						nihil valet.
+					</marginalia_text>
+					<emphasis method="pen" text="nihil valet" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				A full happiness and boldness make a man grow young again, together with a vigorous way of living
+				and daily exercise in the sun. But it must be full and absolute.
+				Indeed, if it is halved and vulgar, it is worth little or nothing.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Extraordinaria sunt, et singularia, qua[e] operantur potentum effectum, et admirabilè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Those things which bring about a potent and admirable effect are extraordinary and singular.
+			</translation>
+		</marginalia>		
+		
+
+
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Euscopus. Labor laboris suprà Laborem.  } Eutrapelus. Sed cum la[e]titia la[e]titia[e]
+					</marginalia_text>
+					<person name="Euscopus"/>
+					<person name="Eutrapelus"/>
+				</position>
+				<position book_orientation="180" place="tail">
+					<marginalia_text>
+						- suprà La[e]titiam. Quicquid hominu[m] obstrepuerit: aut
+						facinorum ingruerit: aut calamitatum deniq[ue] obruerit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The work of works is beyond work. Eutrapelus. But with the hapiness of hapiness beyond Happiness. Whatever men may have hindered you, misdeeds fallen upon you, or
+				calamities overwhelmed you.
+			</translation>
+		</marginalia>
+
+		<underline language="IT" method="pen" text="zoppa la legge" type="straight"/>
+		<underline language="IT" method="pen" text="Honestà, nè ragion non han" type="straight"/>
+		<underline language="IT" method="pen" text="Vrbano Quarto" type="straight"/>
+		<underline language="IT" method="pen" text="era molto dotto" type="straight"/>
+		<underline language="IT" method="pen" text="buona eloquentia" type="straight"/>
+		<underline language="IT" method="pen" text="l'ignobilità" type="straight"/>
+		<underline language="IT" method="pen" text="Egli non è virtù di" type="straight"/>
+		<underline language="IT" method="pen" text="ma il farsi" type="straight"/>
+		<underline language="IT" method="pen" text="è virtù" type="straight"/>
+		<underline language="IT" method="pen" text="donaua gratis" type="straight"/>
+		<underline language="IT" method="pen" text="gli vfficij, &amp; beneficij" type="straight"/>
+		<underline language="IT" method="pen" text="compera l'vfficio" type="straight"/>
+		<underline language="IT" method="pen" text="che lo venda" type="straight"/>
+		<underline language="IT" method="pen" text="Lampsaceni" type="straight"/>
+		<underline language="IT" method="pen" text="di Dario, co[n]tra Alessandro" type="straight"/>
+		<underline language="IT" method="pen" text="Anassamene, stato" type="straight"/>
+		<underline language="IT" method="pen" text="già maestro" type="straight"/>
+		<underline language="IT" method="pen" text="giurò per tutti gli" type="straight"/>
+		<underline language="IT" method="pen" text="farebbe ostinatame[n]te tutto 'l co[n]trario" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		<symbol name="JC" place="head"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--nasce-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--estraordinaria-->
+		
+		<mark method="pen" name="dot" place="intext"/> <!--beneficij, alcen-->
+		
+    </annotation>
+</transcription>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.099v.tif" pagination="22" reader="Harvey" signature="[B3v]"/>	<!-- ABO 104left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.099v_0001" marginalia_continues_to="Ha2.100r_0001" marginalia_to_transcription="Ha2.100r.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						{ Pro vno Amico singula: [B4[r]: { In vnum Hostem omnia.]
+							<!-- Continues onto facing page, head, Ha2.100r -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Singular things on behalf of one friend: [B4[r]: All things against one enemy.]
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Sibi quisq[ue], plus quàm omnes
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Historia[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Each person relies on himself, more than on all other men in history.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						In campos Esdras ieiunus: cum suis Libris.
+					</marginalia_text>
+					<person name="Ezra"/>
+				</position>
+			</language>
+			<translation>
+				Ezra fasting in the fields with his books.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Jehu in campos;
+						cum suis instrumentis: etiam ieiunus.
+					</marginalia_text>
+					<person name="Jehu"/>
+				</position>
+			</language>
+			<translation>
+				Jehu in the fields with his instruments, fasting as well.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Necessaria cuiusq[ue] artis Principia, et ipsa Opera,
+						statim possunt edisci:
+						{ Ca[e]tera sequuntur omnia sua sponte.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Those necessary matters of which the principles of art, and the works themselves,
+				can immediately be learned by heart.
+				All other things follow willingly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) Pro Micro[cosmo]
+						Trismegisti.
+					</marginalia_text>
+					<person name="Hermes Trismegistus"/>
+				</position>
+			</language>
+			<translation>
+				On behalf of Trismegistus' microcosm.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Ludum, iocumq[ue] dices
+						fuisse illum alteru[m] (ne Fortium quidem excipio),
+						pra[e]ut huius rabies qua[e] dabit. Omnes
+						Furia[e], Ciphra[e], ad Hyperca[e]sarem.
+					</marginalia_text>
+					<person name="Joachim Fortius Ringelberg"/>
+					<person name="Julius Caesar"/>
+					<X-ref book_title="Eunuchus" language="LA" person="Terence" text="Ludum, iocumq[ue] dices fuisse illum alteru[m]"/>
+				</position>
+			</language>
+			<translation>
+				"You will say that the other one was fun and games" (I will not except even Fortius) <!-- CG: Parenthetical comment is unclear here. --> <!--JG: Yep, but leave for the time being. Can't come up with anything better at the moment-->
+				"in comparison with (the havoc) which this one's frenzy will create."
+				All are Furies and Cyphers to Super-Caesar.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Meus Dominus, succinctus ad Finem: et potentissimorum
+						Mediorum pra[e]parator, longè, latè, profundeq[ue]						
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						subtilissimus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				My lord, equipped for his goal, is most subtle in the far-reaching, wide-ranging, and most profound preparations of his most potent means.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Nihil omnia Mundi exempla, pra[e] vnico exemplari, id est, Teipso.
+						Mnemosyna Mnemosynorum. Aut Ca[e]sar: aut Cato: aut Crassus.
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+					<person name="Cato the Elder"/>
+					<person name="Marcus Licinius Crassus"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Caput Achitophelis:
+						manus aut Jehu,
+						aut Esdra[e].
+					</marginalia_text>
+					<person name="Ahitophel"/>
+					<person name="Jehu"/>
+					<person name="Ezra"/>
+				</position>
+			</language>
+			<translation>
+				All the examples of the world are nothing, except the one examplar that is you yourself.
+				The reminder of reminders. Either Caesar, Cato, or Crassu.
+				The head of Ahitophel, either the hand of Jehu or Ezra.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Euripide" type="straight"/>
+		<underline language="IT" method="pen" text="Pianger si dee" type="straight"/>
+		<underline language="IT" method="pen" text="morto, e alle" type="straight"/>
+		<underline language="IT" method="pen" text="mortal si dee far festa" type="straight"/>
+		<underline language="IT" method="pen" text="Nè per amicitia" type="straight"/>
+		<underline language="IT" method="pen" text="cose dishoneste" type="straight"/>
+		<underline language="IT" method="pen" text="suo amico" type="straight"/>
+		<underline language="IT" method="pen" text="domanda inhonesta" type="straight"/>
+		<underline language="IT" method="pen" text="mestieri dell'amicitia tua" type="straight"/>
+		<underline language="IT" method="pen" text="che mestieri hò della" type="straight"/>
+		<underline language="IT" method="pen" text="per te cose dishoneste" type="straight"/>
+		<underline language="IT" method="pen" text="Nelle cose capitali" type="straight"/>
+		<underline language="IT" method="pen" text="rimettersi di leggieri in alcuno" type="straight"/>
+		<underline language="IT" method="pen" text="Alcibiade" type="straight"/>
+		<underline language="IT" method="pen" text="purgarsi di pena capitale" type="straight"/>
+		<underline language="IT" method="pen" text="giuditio de' tuoi patritij" type="straight"/>
+		<underline language="IT" method="pen" text="questo caso del giuditio" type="straight"/>
+		<underline language="IT" method="pen" text="prendesse il nero" type="straight"/>
+		<underline language="IT" method="pen" text="lo bianco" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="prendesse il nero" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="JC" place="intext"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--Euripi-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--recu-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--mestie-->
+		
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="mortal si dee far festa"/>
+		
+		<mark method="pen" name="plus_sign" place="tail"/>
+		
+    </annotation>
+</transcription>

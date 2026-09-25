@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.008r.tif" pagination="8" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Das ist nun nit sondern hat wol in jm eine Complexion vnd nit mehr vn[d] mag auch kein ander Element in jm haben dan[n] so viel es von seiner muter hat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Omnia [quatuor] Eleme[n]ta no[n] sunt in singulis creatur[is], sed qualis Mater talis Filius.</marginalia_text>
+                </position>
+            </language>
+            <translation>Not all four elements are in each creation, but like the mother like the son.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Complexion" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Complexiones 4.</marginalia_text>
+                </position>
+            </language>
+            <translation>Four combinations.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Limo Terrae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Limus Terra[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Mud of the earth</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quintum esse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quintum esse.</marginalia_text>
+                </position>
+            </language>
+            <translation>To be the fifth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Materia prima der Elementen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Materia prima Elementoru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The chief material of the elements.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="ding in jm vier" type="straight"/>
+        <underline language="DE" method="pen" text="Element: Das ist nun nit" type="straight"/>
+        <underline language="DE" method="pen" text="jm eine Complexion" type="straight"/>
+        <underline language="DE" method="pen" text="kein ander Element" type="double"/>
+        <underline language="DE" method="pen" text="viel es von seiner muter" type="double"/>
+        <underline language="DE" method="pen" text="nur ein Element" type="double"/>
+        <underline language="DE" method="pen" text="d[as] ist Terrae" type="straight"/>
+        <underline language="DE" method="pen" text="eine Complexion" type="straight"/>
+        <underline language="DE" method="pen" text="kaldt oder" type="straight"/>
+        <underline language="DE" method="pen" text="kaldt oder trucken" type="straight"/>
+        <underline language="DE" method="pen" text="warm oder" type="straight"/>
+        <underline language="DE" method="pen" text="warm oder trucken" type="straight"/>
+        <underline language="DE" method="pen" text="dasselbige" type="straight"/>
+        <underline language="LA" method="pen" text="Limo Terrae" type="double"/>
+        <underline language="DE" method="pen" text="des" type="double"/>
+        <underline language="DE" method="pen" text="ist Quintum esse" type="double"/>
+        <underline language="DE" method="pen" text="in das Element ko[m]pt er" type="straight"/>
+        <underline language="DE" method="pen" text="dem fleisch" type="double"/>
+        <underline language="DE" method="pen" text="theil seindt die Materia prima der Elementen" type="straight"/>
+        
+        <mark language="DE" method="pen" name="bracket" place="left_margin" text="jeglichs ding in im vier Element: Das ist nun nit sondern hat wol in im eine Complexion vnd nit mehr vn[d] mag auch kein ander Element in im haben dan[n] so viel es von seiner muter hat"/>
+        <mark language="DE" method="pen" name="bracket" place="right_margin" text="Das ist nun nit sondern hat wol in im eine Complexion vnd nit mehr vn[d] mag auch kein ander Element in im haben"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- jm vier -->
+        
+        <drawing anchor_text="jeglichs ding in im vier Element: Das ist nun nit sondern hat wol in im eine Complexion vnd nit mehr vn[d] mag auch kein ander Element in im haben dan[n] so viel es von seiner muter hat" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

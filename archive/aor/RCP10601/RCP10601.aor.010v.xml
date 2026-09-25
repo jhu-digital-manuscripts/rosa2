@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.010v.tif" pagination="20" reader="John Dee" signature="[b 2[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="nisi uno solo charactere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vnicus solus character apud [s]eclu[m] prius.</marginalia_text>  
+                </position>
+            </language>
+            <translation>The sole unique characteristic amongst the original generation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tabulae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tabula[e] moseos</marginalia_text>
+                    <person name="Moses"/>
+                </position>
+            </language>
+            <translation>The tablets of Moses.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lex ueluti una sola dictio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[L]ex velut [u]na dictio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The law as if one speech.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="omnino ex Mose" type="straight"/>
+        <underline language="LA" method="pen" text="uerum" type="double"/>
+        <underline language="LA" method="pen" text="in lapideis tabulis exaratam" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; character coelestis" type="straight"/>
+        <underline language="LA" method="pen" text="que[m] primò dederat Adamo" type="straight"/>
+        <underline language="LA" method="pen" text="ut ab una parte in alteram omnino transiret exaratio" type="straight"/>
+        <underline language="LA" method="pen" text="Nam eleme[n]tis continua serie scriptis, ita ut nil esset interstitij, sed esset lex ueluti una sola" type="straight"/>
+        <underline language="LA" method="pen" text="tota moles scripturae miraculosè stetisset" type="straight"/>
+        <underline language="LA" method="pen" text="persuadendum, linguam Hebraicam qua nunc utimur, fuisse diuinitùs datam" type="straight"/>
+        
+    </annotation>
+</transcription>

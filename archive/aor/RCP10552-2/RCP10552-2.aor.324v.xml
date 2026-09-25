@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.324v.tif" pagination="156" reader="John Dee" signature="[V.iiij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="sententia depositionis regis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Articuli depositio[n]is Regis.</marginalia_text>
+                    <person name="Richard II of England"/>
+                </position>
+            </language>
+            <translation>Articles of the deposition of the King.</translation>
+        </marginalia>
+   
+        <underline language="LA" method="pen" text="prout in forma cessationis" type="straight"/>
+        <underline language="LA" method="pen" text="sententia depositionis regis lecta" type="straight"/>
+        <underline language="LA" method="pen" text="vacare" type="double"/>
+        <underline language="LA" method="pen" text="in puncto" type="straight"/>
+     
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+
+    </annotation>
+</transcription>

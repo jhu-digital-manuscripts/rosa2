@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.059v.tif" pagination="[52v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mercurij &amp; Veneris; cor Scorpij" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☿ ♀. cor scorpij.</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>Mercury. Venus. The heart of Scorpio.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uel alia naturae Saturni, uel Saturnus cum Spica &amp; Boote, magnum significant infortunium: in eo genere, in quo ipsi Planetae aduersantur, ut si uitae, in uita: si diuitijs, in eis, nam praeter id quod Saturnus per se malus est, plurimum tamen Soli aduersatur" type="straight"/>
+        <underline language="LA" method="pen" text="domino ascendentis" type="straight"/>
+        
+    </annotation>
+</transcription>

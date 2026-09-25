@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Cox Macro, collection privée anonyme.  Français, première moitié du XIVe siècle. </p>
+        </note>
+        <note rend="INFORMATIONS BASIQUES">
+          <p>Parchemin, 295 x 220 mm, 163 feuillets. </p>
+        </note>
+        <note rend="MATERIEL">
+          <p><material>Parchemin</material> a des souillures mineures dûes à l'usage.  Quelques galeries dans les premiers 4 et derniers 8 feuillets.  Le f. <locus>155r</locus> manque et a été remplacé plus tard (à noter que l'écriture postérieure de ce feuillet cherche à se ressembler à la main du reste du ms. et il est clair que la réglure n'est pas originelle).</p>
+        </note>
+        <note rend="CAHIERS">
+          <list>
+            <head>Collation:</head>
+            <item n="I">
+              <locus from="1" to="8">1-8</locus>
+            </item>
+            <item n="II">
+              <locus from="9" to="16">9-16</locus>
+            </item>
+            <item n="III">
+              <locus from="17" to="24">17-24</locus>
+            </item>
+            <item n="IV">
+              <locus from="32" to="25">25-32</locus>
+            </item>
+            <item n="V">
+              <locus from="33" to="40">33-40</locus>
+            </item>
+            <item n="VI">
+              <locus from="41" to="48">41-48</locus>
+            </item>
+            <item n="VII">
+              <locus from="49" to="56">49-56</locus>
+            </item>
+            <item n="VIII"><locus from="57" to="66">57-66</locus>cahier de dix(A)</item>
+            <item n="IX"><locus from="67" to="74">67-74</locus>cahier de huit (B)</item>
+            <item n="X"><locus from="75" to="80">75-80</locus>cahier de six (C) (l'ordre devrait être ACB)</item>
+            <item n="XI">
+              <locus from="81" to="88">81-88</locus>
+            </item>
+            <item n="XII"><locus from="89" to="96">89-96</locus>(à noter que la foliotation moderne est incorrecte à partir de ce cahier).</item>
+            <item n="XIII">
+              <locus from="97" to="104">97-104</locus>
+            </item>
+            <item n="XIV">
+              <locus from="105" to="112">105-112</locus>
+            </item>
+            <item n="XV">
+              <locus from="113" to="120">113-120</locus>
+            </item>
+            <item n="XVI">
+              <locus from="121" to="128">121-128</locus>
+            </item>
+            <item n="XVII">
+              <locus from="129" to="136">129-136</locus>
+            </item>
+            <item n="XVIII">
+              <locus from="137" to="144">137-144</locus>
+            </item>
+            <item n="XIX">
+              <locus from="145" to="152">145-152</locus>
+            </item>
+            <item n="XX"><locus from="153" to="154">153-154</locus>imparfait, deux talons restent.  C'était antérieurement un cahier de quatre feuillets. </item>
+            <item>(f. 155 –feuillet dépareillé ajouté)</item>
+            <item n="XXI">
+              <locus from="156" to="163">156-163</locus>
+              <hi rend="italics">La Chastelaine de Vergi</hi>
+            </item>
+          </list>
+          <p>Relié pour la plupart en quaternions, à part les exceptions notées ci-dessus.  Les ff. <locus from="67" to="74">67-74</locus> et <locus from="75" to="80">75-80</locus> ont été reliés hors de série. Des notations à l'inférieur du f. <locus>66v</locus> (Vte usque ad octa folio) et du f. <locus>74v</locus> (Vte usque ad vi folia) dirigent le lecteur à sauter de huit et de six feuillets respectivement pour lire le texte dans l'ordre correcte. La main responsable pour ces suggestions est apparue très tôt, ce qui implique que les feuillets ont été mal reliés à une date assez tôt dans l'histoire du codex. Sans marques de cahier ni signatures.  Des réclames ne se trouvent qu'aux ff. <locus>32v</locus> et <locus>40v</locus>.  La foliotation moderne se trouve à la droite inférieure des rectos en crayon ; elle saute le f. <locus>92</locus> ; d'ici à la fin, la numérotation se décale d'un feuillet (Bond et Faye notent 162 feuillets à cause de la foliotation moderne incorrecte). </p>
+        </note>
+        <note rend="MISE-EN-PAGE">
+          <p>Réglé en encre brun.  Quelques piqûres restent à la marge intérieure et à l'inférieur des feuillets.  Réglé en deux colonnes.  Il y a huit lignes rectrices majeures verticales et deux horizontales. Chaque colonne se délimite par une ligne rectrice majeure à chaque côté et deux lignes rectrices majeurs de plus, l'une qui forme un compartiment pour la première lettre de chaque ligne et l'autre qui forme un autre compartiment séparant cette première lettre du reste de la ligne.  Une ligne horizontale au côté supérieur du corps de texte et une autre à l'inférieur.  Le corps de texte mesure 205 x 143 mm, et il y a 36 lignes à la colonne.</p>
+        </note>
+        <note rend="ECRITURE">
+          <p>Le manuscrit est l'œuvre de deux scribes ; le premier est responsable du travail jusqu'au f. <locus>27v</locus> et le deuxième termine le manuscrit. L'écriture à travers le ms. est textualis. Les corrections, y compris la rayure, la rature et l'emploi de notes marginales pour indiquer des vers hors de série, se distribuent de manière éparse à travers le codex et certaines sont d'une main différente.  </p>
+        </note>
+        <note rend="DECORATION">
+          <p>Il n'y a ni de rubrication ni d'autre soulignement à part les initiales.  Une lettre fleurie commence le <hi rend="italics">Roman de la Rose</hi> - une M rosâtre filigranée en blanc, 33 x 40 mm ; des crampons feuillés, avec des têtes d'animaux en tête, se trouvent entourés par la lettre.  Fond bleu filigrané en blanc.  Initiales littera duplex filigranés partout dans le ms. ; des lettres bleues filigranées de rouge alternent avec des lettres rouges filigranées de bleu.  Initiale historiée (U) au début de la Chastelaine de Vergi, 44 x 42 mm; la lettre contient l'image d'un arbre au centre.  A la gauche, debout, est l'amant ; à la droite, une dame se tient debout dans une porte.  Un petit chien blanc traverse en bas de la lettre ; il court en direction de l'amant.  L'amant est vêtu d'une robe bleue et la dame se vêt de bleu et d'orange.  Le fond à l'intérieur de la lettre est rouge.  La lettre est rosâtre, filigranée de blanc et assise sur un fond bleu filigrané de blanc.  Un crampon s'étend dans la marge supérieure. Sans bouts-de-ligne ni bordures. </p>
+          <p>Il y a une miniature au début du Roman de la Rose, 52 x 66 mm, qui présente le poète endormi au lit et Dangier au pied du, une massue aux mains.  Un arbre se voit au centre au fond.  Les couvertures sont bleues, Dangier porte une robe brune-rouge, l'arbre a des fleures rouges et la miniature a un cadre rouge filigrané de blanc.  Le fond est orange.  De nombreux espaces blancs qui variant en hauteur de 4 à 6 lignes vers le début du manuscrit ont peut-être été laissés pour d'autres décorations ou des rubriques ou d'autres figures dans la copie exemplaire qui ont été abandonnés vers la fin par le scribe (par exemple 12r, 12v, 14r, 14v, 15r).</p>
+        </note>
+        <note rend="RELIURE">
+          <p>Cinq nervures au dos. Marocain rouge avec motif doré au dos.  Cachet de possession doré de Hudson Gurney au centre des plats du devant et de la fin.  Gardes volantes et gardes de papier. Le f. 163 a été collé au verso à la garde volante. </p>
+        </note>
+        <note rend="HISTOIRE">
+          <p>Il y a plusieurs marques de possession à travers le manuscrit.
+                 Au verso de la première garde volante :  
+               </p>
+          <p>1. L'ex-libris de Clifford Rattey</p>
+          <p>2. <hi rend="italics">" Cette copie notée par ? Ernest Langlois dans son édition de 1914 (Paris)/ Pour la description ‘codicale' voir : Cedric E. Pickford : ‘Bull. John Rylands Library' Vol. 34. No. 2 mars / 1952 pp. 333-365. / de ‘La Chastelaine (?) de Vergi. 11?? ?? XIIIe. ??” Seul ?? noté / (Aucun au R.U. ou EEUU)</hi> [traduction de l'anglais – voire la version anglaise de cette page pour le texte original et celui des autres traductions ci-dessous]
+               </p>
+          <p>Ecrit au verso de l'ex-libris de Harry A. Walton, Jr., dont l'un des côtés a été collé à l'un des bords du recto de la deuxième garde volante :</p>
+          <p>1. <hi rend="italics">Ceci est un très bon et cher ?? du / Roman de la Rose.  A la fin est le conte pathétique de la Chateleaine de Vergy. 
+               </hi>[traduit de l'anglais]</p>
+          <p>2. "<hi rend="italics">*Douce</hi>" (astérisque et ‘ouce' en crayon, D en encre)</p>
+          <p>3. "<hi rend="italics">Bien que ce MS ne soit pas illuminé, il est ??????????? de valeur de la purité du texte – la date en est environ 1380</hi>“ [traduit de l'anglais]</p>
+          <p>4. "<hi rend="italics">Cf. Lettre ?? Callins du Musée de ???????? / datée le 29 octobre 1947, qui date ce mss premières décennies du XIVe siècle.CCR</hi>"[traduit de l'anglais]</p>
+          <p>5. “<hi rend="italics">*Signe monogramme de Francis Douce / C??</hi>”[traduit de l'anglais]</p>
+          <p>Ecrit au f. <locus>163r</locus>:</p>
+          <p>"<hi rend="italics">A CELEA RANDDRE HONEVE PLVS DE VIL Que Joye</hi>"</p>
+          <p>2. Un monogramme qui se lit : "<hi rend="italics">Ospo?inace</hi>"</p>
+          <p>Provenance donnée par Bond et Faye :  "Sir Henry Spelman; Rev. Cox Macro; John Patterson (vente, 1820); Hudson Gurney; C. C. Rattey"</p>
+        </note>
+        <note rend="TEXTE">
+          <p>1. <hi rend="italics">Roman de la Rose</hi> ff. 1r-155r<lb/>
+                  2. <hi rend="italics">La Chastelaine de Vergi</hi> ff. 156r-163v
+               </p>
+          <p>Descriptions antérieures :  Bond et Faye p. 524;  “'The Roman de la Rose' and a Treatise Attributed to Richard de Fournival; Two Mss. in the Johns Rylands Library,” <hi rend="italics">Bulletin of the John Rylands Library</hi>, XXXIV (1951-52) 344-49. </p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscrit</note>
+          <note type="commonName">Cox Macro Rose</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="163" unit="folios">163 feuillets</measure>
+            <dimensions>
+              <height unit="mm">295</height>
+              <width unit="mm">220</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">1</note>
+          <note type="material">parchemin</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1350" notBefore="1300">14e siècle</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Non-spécifié</settlement>
+            <repository>Collection privée, anonyme</repository>
+            <idno>Cox Macro Rose</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="155r">1r-155r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">155</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">36</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="156r" to="162v">156r-162v</locus>
+              <title>La Chastelaine de Vergi </title>
+              <note type="textid">chastelaine</note>
+              <note type="folios">7</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">36</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

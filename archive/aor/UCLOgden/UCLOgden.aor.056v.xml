@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.056v.tif" pagination="96" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Casus ab alto.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A fall from high.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in quibus gaudet locis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Gaudiu[m] Luna[e] in q[ui]bus Locis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The joy of the moon in those places.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Si uero minuta luminibus" type="straight"/>
+        <underline language="LA" method="pen" text="luminibus, patrimonium" type="straight"/>
+        <underline language="LA" method="pen" text="Si uero minuta lumine, à" type="straight"/>
+        <underline language="LA" method="pen" text="si crescens lumine" type="straight"/>
+        <underline language="LA" method="pen" text="Si uero sit minuta" type="straight"/>
+        <underline language="LA" method="pen" text="aliorum obligat linguas" type="straight"/>
+        <underline language="LA" method="pen" text="felicitate, prudentiae fulgoribus exornatus, si in iis, in quibus gaudet locis, sine inimica ♂ aut ♄ radiatione,              ☾ se ♃ aut ♀ radiis co[n]iunxerit, aut de duobus" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="Gaudet autem in horosc. aut in quinto, aut in xi ab horosc., loco, ♃ aut ♀ co[n]iunctionibus" type="dotted"/> 
+        
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/> 
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

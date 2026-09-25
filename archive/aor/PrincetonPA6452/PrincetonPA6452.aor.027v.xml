@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.027v.tif" pagination="38" reader="Harvey"/>
+    <annotation>
+        <marginalia anchor_text="dictatores primum creandi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Primus Dictator, in casu extrema[e] necessitatis. Arctissimum Obedientia[e] Vinculum. Optima lege magister populi creatus, vulgò dictator, id est, iure quàm plenissimo. Festus l. 13.
+                    </marginalia_text>
+                    <person name="Sextus Pompeius Festus"/>
+                    <book title="De verborum significatu"/>
+                    <emphasis method="pen" text="Dictator" type="straight"/>
+                    <emphasis method="pen" text="Obedientia[e]" type="straight"/>
+                </position>
+            </language>
+            <translation>The first dictator, in a situation of extreme need. The strictest bond of obedience. He was made master of the people, commonly ‘dictator’,
+                'optima lege', that is, with the fullest right. Festus bk. 13.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Dictator, aduersùs plebem creatus: i[nfr]a, 44. Tribuni plebis, pro plebe i[nfr]a, 45. Ille monarchicus magistratus: hi populares. 
+                        Vtrisq[ue] suum tempus, aut potiùs tempestas in Romana Repub[lica].
+                    </marginalia_text>
+                    <emphasis method="pen" text="Dictator" type="straight"/>
+                    <emphasis method="pen" text="Tribuni plebis" type="straight"/>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000066" text="44"/>
+                        <target ref="PrincetonPA6452:00000067" text="45"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Dictator, installed against the common people, see below 44. Plebeian tribunes, for the people, see below 45. 
+                The former is a monarchical magistrate, the latter are popular magistrates. Each have their own occasion, or rather disturbance in the 
+                Roman Republic.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="P. Valerius" type="straight"/>
+        <underline language="LA" method="pen" text="princeps belli pacisq[ue] artibus" type="straight"/>
+        <underline language="LA" method="pen" text="gloria ingenti" type="straight"/>
+        <underline language="LA" method="pen" text="adeò exiguis, ut funeri sumptus deesset" type="straight"/>
+        <underline language="LA" method="pen" text="Luxere matronae" type="straight"/>
+        <underline language="LA" method="pen" text="Nec magis post pr[a]eliu[m] quàm in praelio caedibus temperatu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="captos passim trucidauerunt" type="straight"/>
+        <underline language="LA" method="pen" text="ne ab obsidibus quide[m]" type="straight"/>
+        <underline language="LA" method="pen" text="belli abstinuit" type="straight"/>
+        <underline language="LA" method="pen" text="ob iras grauiter ultas" type="straight"/>
+        <underline language="LA" method="pen" text="quòd triginta iam coniurasse populos concitante" type="straight"/>
+        <underline language="LA" method="pen" text="tantarum expectatione rerum" type="straight"/>
+        <underline language="LA" method="pen" text="dictatoris primùm creandi" type="straight"/>
+        <underline language="LA" method="pen" text="quis primùm dictator creatus" type="straight"/>
+        <underline language="LA" method="pen" text="T. Largium dictatore[m] primùm" type="straight"/>
+        <underline language="LA" method="pen" text="Cassiu[m] magistru[m] equitum, creatos inuenio" type="straight"/>
+        <underline language="LA" method="pen" text="lex iubebat, de dictatore creando" type="straight"/>
+        <underline language="LA" method="pen" text="Valerium spectatae uirtutis &amp; consularem" type="straight"/>
+        <underline language="LA" method="pen" text="dictatore primùm Romae, postquam" type="straight"/>
+        <underline language="LA" method="pen" text="praeferri secures uiderunt" type="straight"/>
+        <underline language="LA" method="pen" text="magnus plebem metus" type="straight"/>
+        <underline language="LA" method="pen" text="ut intentiores essent ad dicto parendum" type="straight"/>
+        <underline language="LA" method="pen" text="neq[ue] prouocatio erat" type="straight"/>
+        <underline language="LA" method="pen" text="neq[ue] ullu[m] usquam, nisi" type="straight"/>
+        <underline language="LA" method="pen" text="cura parendi" type="straight"/>
+        
+        <symbol name="JC" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--fero-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--ca-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--crean-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--di-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="dictatoris"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="parendum"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="parendi"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.124v.tif" reader="Harvey" signature="[Ff.ii.[v]]"/>
+    <annotation>  
+        
+        <marginalia anchor_text="Queene Isabel of Spaine" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Isabell of Spayne.
+                    </marginalia_text>
+                    <person name="Isabella I of Castile"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="what Prince hath there bine in our dayes" type="straight"/>
+        <underline language="EN" method="pen" text="yeeres beefore in Christendome" type="straight"/>
+        <underline language="EN" method="chalk" text="Queene Isabel of Spaine" type="straight"/>
+        <underline language="EN" method="pen" text="Ferdinande" type="straight"/>
+        <underline language="EN" method="chalk" text="And I thinke" type="straight"/>
+        <underline language="EN" method="chalk" text="Castilia" type="straight"/>
+        <underline language="EN" method="pen" text="together to lye in her praise" type="straight"/>
+        <underline language="EN" method="pen" text="a more cleere example of true" type="straight"/>
+        <underline language="EN" method="pen" text="her vertue and" type="straight"/>
+        <underline language="EN" method="pen" text="greatest part of Castilia possessed by great Astates" type="straight"/>
+        <underline language="EN" method="pen" text="recouered she the wholl again" type="straight"/>
+        <underline language="EN" method="pen" text="dispossessed" type="straight"/>
+        <underline language="EN" method="pen" text="to make surrender of that" type="straight"/>
+        <underline language="EN" method="pen" text="in possession" type="straight"/>
+        <underline language="EN" method="pen" text="courage and wisedome she alwaies" type="straight"/>
+        <underline language="EN" method="pen" text="the kingdome of Granada, whiche in so longe" type="straight"/>
+        
+        <underline language="EN" method="pen" text="Isabel" type="straight"/>
+        <underline language="EN" method="chalk" text="Isabel Queene of Spaine" type="straight"/>
+        <underline language="EN" method="pen" text="Praise of her" type="straight"/>
+        
+        <!--JG: SS symbol in head of the page is ink from the symbol on the following page-->
+        
+        <symbol language="EN" name="SS" place="left_margin" text="Isabel Queene of Spaine"/>
+        <symbol language="EN" name="SS" place="left_margin" text="a more cleere example of true"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="greatest part of Castilia possessed by great Astates"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.164v.tif" pagination="328" reader="John Dee" signature="[x 4[v]]"/> 
+    <annotation>
+       
+        <marginalia anchor_text="an uoluerit, an potueruit, an fecerit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>An voluerit potuerit fecerit.</marginalia_text>
+                </position>
+            </language>
+            <translation>Did he wish to, was he able to, did he do it?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quibus coniectura, uersatur, defensionis tantùm genere mutato" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>a co[n]iectura ad diffinitionem</marginalia_text>
+                </position>
+            </language>
+            <translation>From a conjecture to a definition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="à qualitiate ad finitionem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A q[ua]litate ad diffinitione[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>From quality to a definition.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nome[n].</marginalia_text>
+                </position>
+            </language>
+            <translation>Name</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Constat maximè, sicut est dictum, genere, species, differentibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ex quibus co[n]stare debet diff[erent]o</marginalia_text>
+                </position>
+            </language>
+            <translation>From which</translation>  <!-- Add trans later -->
+        </marginalia>
+        
+        <marginalia anchor_text="Nam tum est certum de nomine, sed quaeritur, quae res ei subijcienda sit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>De re &amp; de Nomine.</marginalia_text>
+                </position>
+            </language>
+            <translation>About the thing and about the name.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quid sit deus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Deus quid.</marginalia_text>
+                </position>
+            </language>
+            <translation>What is god?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Epicurus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Epicurus.</marginalia_text>
+                    <person name="Epicurus"/>
+                </position>
+            </language>
+            <translation>Epicurus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ut in furtis, depositis, adulterijs" type="straight"/>
+        <underline language="LA" method="pen" text="Finitio igitur est rei propositae, propria &amp; dilucida, &amp; breuiter comprehensa uerbis enunciatio. Constat" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

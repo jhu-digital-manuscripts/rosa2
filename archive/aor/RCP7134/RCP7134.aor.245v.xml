@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.245v.tif" pagination="[238v]" reader="John Dee" signature="[OO ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Sol publicam mortem ut decernit ferro uel igne, sic Luna suspendium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☉ ☾. mortis genus.</marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>The Sun and the Moon. The descent of death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quicquid significat coniunctio duorum planetarum, idem decernit coniunctio planetae aut radius cum fixa eiusdem naturae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Notai fixis stellis qu[a]e insit vis, et radijs planetarum</marginalia_text>
+                </position>
+            </language>
+            <translation>The force which may be in the sign for the fixed stars and the rays of the planets.</translation> <!--JG: Unsure, I find the Latin slightly odd here --> <!-- FSF: I am not sure either -->
+        </marginalia>
+        
+        <marginalia anchor_text="locum interfectoris" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Locus interfectoris qua[m] difficulter inveniatur.</marginalia_text>
+                </position>
+            </language>
+            <translation>The place of the murderer, how it may be discovered with difficulty.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Sol publicam mortem ut decernit ferro uel igne, sic Luna suspendium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>na[m] tu[m] ♂ domus, trigonus, terminus, et facies est</marginalia_text>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>For at that time the house of Mar is a trine, terminus, and facies (a fixed star).</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Infortunae in angulis mortes publicas decernunt, eaede[m] celeriter, ob hoc raro publica mors in senio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>quia anguli ca[e]leriter effectus suos producu[n]t.</marginalia_text>
+                </position>
+            </language>
+            <translation>Because the angles swiftly produce their effects </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; infortuna ex toto" type="straight"/>
+        <underline language="LA" method="pen" text="decernit ferro" type="straight"/>
+        <underline language="LA" method="pen" text="uel igne" type="straight"/>
+        <underline language="LA" method="pen" text="Quicquid significat coniunctio duorum planetarum, idem decernit coniunctio planetae aut radius cum fixa eiusdem naturae" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; tempus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; locus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; genus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- mors uiolenta -->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="intext" type="florilegium"/>
+        
+    </annotation>
+</transcription>

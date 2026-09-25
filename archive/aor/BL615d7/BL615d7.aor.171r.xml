@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.171r.tif" pagination="171" reader="John Dee" signature="Yiij"/>    
+    <annotation>
+        
+        <marginalia anchor_text="propor nuoui patti all' Orlando" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>New accord or othir of accord with Frã[n]cisco Orlando </marginalia_text>
+                    <person name="Francesco Orlando"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="oue i nauigli erano capitati, pur con speranza di tirare alcuno alla loro" type="straight"/>
+        <underline language="IT" method="pen" text="propor nuoui patti all' Orlando" type="straight"/>
+        <underline language="IT" method="pen" text="Pietro Fernandez" type="straight"/>
+        <underline language="IT" method="pen" text="testimonio di veduta" type="double"/>
+        <underline language="IT" method="pen" text="volere aggrandirlo" type="double"/>
+        
+    </annotation>
+</transcription>

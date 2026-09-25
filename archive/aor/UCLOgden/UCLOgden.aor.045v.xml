@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.045v.tif" pagination="74" reader="John Dee" signature="[g[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="uestitores diuinorum simulachrorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vestitores simulachror[um]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A dresser of images.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ☿ cu[m] ♃ in nono loco.
+                    </marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>
+                Mercury with Jupiter in the ninth place.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="constitutus, magos faciet, sed" type="straight"/>
+        <underline language="LA" method="pen" text="in ix loco" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

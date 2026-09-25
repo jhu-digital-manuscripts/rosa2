@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.018v.tif" pagination="22" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="Philastrium nihilominus, cuius extat liber de haeresibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Philastrij Liber.</marginalia_text>
+                    <person name="Philastrius"/>
+                    <book title="Diversarum Hereseon Liber"/>
+                </position>
+            </language>
+            <translation>The book of Philastrius.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Veneris, aut Saturni, nusqua[m] in antiquis autoribus apparent" type="straight"/>
+        <underline language="LA" method="pen" text="agebatur, deest" type="straight"/>
+        <underline language="LA" method="pen" text="Dione Nicaeo" type="straight"/>
+        <underline language="LA" method="pen" text="quum ad Celtarum" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.176r.tif" pagination="177" reader="John Dee" signature="Z.j."/>   
+    <annotation>
+        
+        <marginalia anchor_text="credula" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>credulitas</marginalia_text>
+                </position>
+            </language>
+            <translation>Credulity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="voces" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vox.</marginalia_text>
+                </position>
+            </language>
+            <translation>Voice.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lachrymis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lachrym[a]e</marginalia_text>
+                </position>
+            </language>
+            <translation>Tears.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Qui silet, est firmus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>sile[n]tium</marginalia_text> 
+                </position>
+            </language>
+            <translation>Silence.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Nulla sit vt placeas alienae cura puellae" type="straight"/>
+        <underline language="LA" method="pen" text="Desinimus tarde, quia nos speramus amari" type="straight"/>
+        <underline language="LA" method="pen" text="Dum sibi quisq[ue] placet, credula turba" type="straight"/>
+        <underline language="LA" method="pen" text="nec aeternos pondus habere deos" type="straight"/>
+        <underline language="LA" method="pen" text="Vt flerent, oculos erudiere suos" type="straight"/>
+        <underline language="LA" method="pen" text="Qui silet, est firmus. qui" type="straight"/>
+        <underline language="LA" method="pen" text="parete monenti" type="straight"/>
+        <underline language="LA" method="pen" text="saluber" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        
+    </annotation>
+</transcription>

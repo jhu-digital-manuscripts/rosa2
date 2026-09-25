@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.126r.tif" pagination="251" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Negandi duplicem ostendimus formam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Negandi Forma Duplex.</marginalia_text>
+                </position>
+            </language>
+            <translation>Two forms of denial.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Testes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Testes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Witnesses.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Chirographum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Chirographu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Handwritten document.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nihil erit peius quàm confeßio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Confeßio[n]e nihil peius</marginalia_text>
+                </position>
+            </language>
+            <translation>Nothing worse than a confession.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="translatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Translatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Translation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Videndu[m] etia[m], an simul nobis plura aggredienda, an amolienda singula. Plura simul inuadimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>An plura invade[n]da an amolienda sunt singula</marginalia_text>
+                </position>
+            </language>
+            <translation>Whether we continue attacking points or remove than one by one.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Est multitudine. et ariu[...] quodam congesta.</marginalia_text> <!-- M.B. Not sure of word preceding 'quodam'  -->
+                </position>
+            </language>
+            <translation>It is a great multitude and [....] something accumulated.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="At si singula quaeq[ue] dissolueris, iam illa flamma, quae magna co[n]gerie co[n]ualuerat, diductis quibus alebatur, co[n]cidet." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Similitudo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Similarity.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Vtiq[ue] nihil erit peius quàm confeßio" type="straight"/>
+        <underline language="LA" method="pen" text="quod defendi no[n] poßit, silentio dißimulandu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="malim quide[m] dicere, nihil id ad quaestionem" type="straight"/>
+        <underline language="LA" method="pen" text="resoluere" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

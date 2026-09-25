@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.040r.tif" pagination="63" reader="John Dee" signature="f 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="exulem, &amp; captiuu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        exul vel captiuus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Exiled or imprisoned.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Platice no[n] partiliter in 10a
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Generally and not partially in the tenth.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sed ☉ etiam δυοδεκατημόριομ eiúsq[ue] fines diligenter inquite" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        No[n] vult ☉em fines aliquos habere, sed ut nole[us] in cui[us] fines vel ☉ ... vel eas duodecate. cadet <!-- FSF: not sure -->
+                        <!-- M.B. I am not sure either, the word following the &Sun; is really difficult to make out. I think duodecate is an abbreviation for duodecate[morion] (i.e. δυοδεκατημόριομ). -->
+                    </marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>
+                He does not want the sun to have other limits, but as we shall be unwilling in its ends, either the sun falls [...] or in its dodecatemorium.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Signoru[m] discrimina nota[n]da
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The noteable distinction of sign.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Malici insignes.  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Manifest evils.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dignitatis merito" type="straight"/>
+        <underline language="LA" method="pen" text="per pericula tamen" type="straight"/>
+        <underline language="LA" method="pen" text="exulem, &amp; captiuu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Platice uero ☉ in signo constitutus" type="straight"/>
+        <underline language="LA" method="pen" text="partiliter cum" type="straight"/>
+        <underline language="LA" method="pen" text="si hexagono" type="double"/>
+        <underline language="LA" method="pen" text="maleuolae stellae" type="straight"/>
+        <underline language="LA" method="pen" text="coniunctae, nihil quidem actibus, uel honoribus" type="straight"/>
+        <underline language="LA" method="pen" text="sed solo filiorum loco, acerbi decreti perseuerantia officiet" type="straight"/>
+        <underline language="LA" method="pen" text="eiúsq[ue] fines diligenter" type="straight"/>
+        <underline language="LA" method="pen" text="etiam oratores maximos" type="straight"/>
+        <underline language="LA" method="pen" text="qualitatémq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="dignísq[ue] infulis coronari" type="straight"/>
+        
+        <symbol name="Sun" place="right_margin"/>
+        <symbol name="Mercury" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

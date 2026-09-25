@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.001r.tif" pagination="2" reader="John Dee" signature="A.ij."/>
+    <annotation>
+        
+        <marginalia anchor_text="amor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Amor</marginalia_text>
+                </position>
+            </language>
+            <translation>Love.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>661</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="O vtinam tunc, cum Lacedaemona classe petebat" type="straight"/> 
+        <underline language="LA" method="pen" text="Obrutus insanis esset adulter aquis" type="straight"/>
+        <underline language="LA" method="pen" text="Res est solliciti plena timoris amor" type="straight"/>
+        <underline language="LA" method="pen" text="Flebam successu posse carere dolos" type="straight"/>
+       
+    </annotation>
+</transcription>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.232r.tif" pagination="225" reader="John Dee" signature="LL"/>
+    <annotation>
+        
+        <marginalia anchor_text="Tam purgationes, quàm uomitoria, &amp; uenarum sectiones" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Purgationes Vomitiones Vena[e] sectio</marginalia_text>
+                </position>
+            </language>
+            <translation>Purgations, acts of vomiting, the cutting of a vein.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uestes conficias" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vestiu[m] co[n]fectio</marginalia_text>
+                </position>
+            </language>
+            <translation>The preparation of a garment.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Melius est in purgationibus, ut tam Luna q[uam] dominus asce[n]dentis descendant, &amp; sint sub terra, in uomitorijs ut asce[n]da[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="purgationes" type="straight"/>
+        <underline language="LA" method="pen" text="quàm uomitoria" type="straight"/>
+        <underline language="LA" method="pen" text="uenarum sectio" type="straight"/>
+        <underline language="LA" method="pen" text="incisae cucurbitulae" type="straight"/>
+        <underline language="LA" method="pen" text="inediae" type="straight"/> 
+        <underline language="LA" method="pen" text="Piscium" type="straight"/>
+        <underline language="LA" method="pen" text="si infortuna ibi radios dirigat" type="straight"/>
+        <underline language="LA" method="pen" text="cura, Luna supra terram, in prima quarta, Veneri aut Ioui iuncta caedes" type="straight"/>
+        
+        <symbol language="LA" name="Pices" place="right_margin" text="Piscium"/>
+        <symbol language="LA" name="Cancer" place="right_margin" text="Cancri"/>
+        
+    </annotation>
+</transcription>

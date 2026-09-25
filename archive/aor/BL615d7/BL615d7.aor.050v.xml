@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.050v.tif" pagination="[50v]" reader="John Dee" signature="[Gij[v]]"/>     
+    <annotation>
+        
+        <marginalia anchor_text="due hore" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>12 octob[er] mane hora 2.</marginalia_text>
+                </position>
+            </language>
+            <translation>12 October. 2 hours in the morning.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="due leghe" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Land first discry[b]ed perfectly but at two leagues onely of.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Roderigo di Triana" hand="Italian" id="BL615d7:615_d_7_f050v:m0001" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>There vppon he went to the moones and renownced christes fayth. a pitifull case.</marginalia_text>
+                    <person name="Rodrigo di Triana"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="essere candela" type="straight"/>
+        <underline language="IT" method="pen" text="di pescatori" type="straight"/>
+        <underline language="IT" method="pen" text="vna casa" type="straight"/>
+        <underline language="IT" method="pen" text="fece" type="straight"/>
+        <underline language="IT" method="pen" text="di terra" type="straight"/>
+        <underline id="BL615d7:615_d_7_f050v:u0001" language="IT" method="pen" text="Roderigo di Triana" type="straight"/>
+        <underline language="IT" method="pen" text="due leghe" type="double"/>
+        <underline language="IT" method="pen" text="à" type="straight"/>
+        <underline language="IT" method="pen" text="veduta la luce nel" type="straight"/>
+        
+        <mark language="IT" method="pen" name="tripunctus" place="left_margin" text="vna casa"/>
+        
+        <physical_link>
+            <marginal_annotation idref="BL615d7:615_d_7_f050v:u0001"/>
+            <marginal_annotation idref="BL615d7:615_d_7_f050v:m0001"/>
+            
+            <relation from="BL615d7:615_d_7_f050v:m0001" to="BL615d7:615_d_7_f050v:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

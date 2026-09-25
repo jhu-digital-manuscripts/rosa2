@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.043v.tif" pagination="72" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="coeli coelorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ca[e]li Ca[e]lorum.</marginalia_text>
+                </position>
+            </language>
+            <translation>The Heavens of the Heavens.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aspectabilia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Si aspectabilia tantum, vbi Angeli [etc]</marginalia_text>
+                </position>
+            </language>
+            <translation>If only [there were] visible things, where Angels [etc] [are].</translation>    
+        </marginalia>
+        
+        <marginalia anchor_text="Raqua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ha Rakia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Ha-Rakia.</translation> 
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="sunt coeli coelorum, id est, sphaerae coelestes" type="straight"/>
+        <underline language="LA" method="pen" text="supra coelu[m] ipsum vel aërem, Nubes enim pendent" type="straight"/>
+        <underline language="LA" method="pen" text="videntur esse coelo ipso" type="straight"/>
+        <underline language="LA" method="pen" text="Aspectabilia" type="double"/>
+        <underline language="LA" method="pen" text="Raqua" type="straight"/>
+        <underline language="EN" method="pen" text="σερεόω" type="straight"/>
+        <underline language="LA" method="pen" text="Raquia" type="straight"/>
+        <underline language="LA" method="pen" text="aërem, pro Raquia" type="straight"/>
+        <underline language="LA" method="pen" text="significat aërem cum aethere" type="straight"/>
+        
+    </annotation>
+</transcription>

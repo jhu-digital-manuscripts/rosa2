@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.009v.tif" pagination="2" reader="John Dee" signature="[a[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Constantini Augusti" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Consta[n]tinus Imperator.
+                    </marginalia_text>
+                    <person name="Constantine I"/>
+                </position>
+            </language>
+            <translation>
+                Emperor Constantine.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        raritate[m] oppugnatus refractoria <!-- FSF: I am really not sure --> 
+                        <!-- MB. I could not decipher this. It looks like a comment on the 'qui quanto vehementius pugnant quantumque persuadendi vias quaerunt, tanto fidem astrologiae vehementius [...].' 
+                            Is the final word perhaps something like refractoria?  -->
+                        <!-- FSF: possibly raritate[m]? -->
+                        <!--JG: I think the transcription is correct now, but now clue what it means-->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Domini, atq[ue] Imperatoris nostri Constantini Augusti, setena" type="straight"/>
+        <underline language="LA" method="pen" text="Quos" type="straight"/>
+        <underline language="LA" method="pen" text="Qui quanto uehementius pugnant, quantóq[ue] magis omnes persuadendi uias quaerunt, tanto fidem astrologiae uehemntius, fortiúsq[ue] communiunt" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

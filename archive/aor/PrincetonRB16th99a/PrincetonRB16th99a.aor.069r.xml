@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th99a.069r.tif" pagination="[69r]" reader="Harvey"/>
+    <annotation>
+             
+        <marginalia anchor_text="admonitions" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Techna[e] Oeconomica[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Economic arguments.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>So mought I thee.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="meate is attainted" type="straight"/>
+        <underline language="EN" method="pen" text="breakefast by day starre appere" type="straight"/>
+        <underline language="EN" method="pen" text="snatch" type="straight"/>
+        <underline language="EN" method="pen" text="to worke fellowes" type="straight"/>
+        <underline language="EN" method="pen" text="more tittle tattle" type="straight"/>
+        <underline language="EN" method="pen" text="serue your" type="straight"/>
+        <underline language="EN" method="pen" text="tacke in a pudding" type="straight"/>
+        <underline language="EN" method="pen" text="Huswifely admonitions" type="straight"/>
+        <underline language="EN" method="pen" text="Learne you" type="straight"/>
+        <underline language="EN" method="pen" text="will thee," type="straight"/>
+        <underline language="EN" method="pen" text="breakefast of custome prouide for to saue" type="straight"/>
+        <underline language="EN" method="pen" text="onely for such as deserueth to haue" type="straight"/>
+        <underline language="EN" method="pen" text="seruant what vittles" type="straight"/>
+        <underline language="EN" method="pen" text="seruant his labour, and shew him no" type="straight"/>
+        <underline language="EN" method="pen" text="Of hauocke" type="straight"/>
+        <underline language="EN" method="pen" text="Cat nothing" type="straight"/>
+        <underline language="EN" method="pen" text="wanteth a sauer" type="straight"/>
+        <underline language="EN" method="pen" text="there hauocke is mutch" type="straight"/>
+        <underline language="EN" method="pen" text="window is open" type="straight"/>
+        <underline language="EN" method="pen" text="cat with two legs is worse" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>     
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="more tittle tattle"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="breakefast of custome prouide for to saue"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="seruant what vittles"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="seruant what vittles"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+    </annotation>
+</transcription>

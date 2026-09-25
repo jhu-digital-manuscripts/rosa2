@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.385v.tif" pagination="754" reader="Harvey" signature="[rrr5v]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Eumenes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> 
+                        Eumenis regis historia s[upr]a, hîc, i[nfr]a, notatu perdigna.
+                    </marginalia_text>
+                <person name="Eumenes II"/>
+                    <internal_ref text="s[upr]a">
+                        <target ref="PrincetonPA6452:00000773" text="s[upr]a"/>
+                    </internal_ref>
+                    <internal_ref text="i[nfr]a">
+                        <target ref="PrincetonPA6452:00000777" text="[755]"/>
+                        <target ref="PrincetonPA6452:00000819" text="[797]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+              The very striking history of king Eumenes, above, here, below.  
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Attalum" type="straight"/>
+        <underline language="LA" method="pen" text="regis Eumenis fratrem legatu[m] uenisse" type="straight"/>
+        <underline language="LA" method="pen" text="ipsum Eumenem uenisse" type="straight"/>
+        <underline language="LA" method="pen" text="Eumenes igitur ut Romam uenit, exceptus cum tanto honore," type="straight"/>
+        <underline language="LA" method="pen" text="meritis tantum eius" type="straight"/>
+        <underline language="LA" method="pen" text="sed beneficijs etiam suis, ingentia quae in" type="straight"/>
+        <underline language="LA" method="pen" text="Causam ueniendi sibi" type="straight"/>
+        <underline language="LA" method="pen" text="praeter cupiditatem uisendi deos, hominesq[ue] quorum" type="straight"/>
+        <underline language="LA" method="pen" text="supra quam ne optare quidem" type="straight"/>
+        <underline language="LA" method="pen" text="Persei conatis obuiam iret" type="straight"/>
+        <underline language="LA" method="pen" text="Persea haereditarium" type="straight"/>
+        <underline language="LA" method="pen" text="Quae cum corporis robore ac uiribus uigeat" type="straight"/>
+        <underline language="LA" method="pen" text="animum esse inueteratum diutina arte atque usu belli." type="straight"/>
+        <underline language="LA" method="pen" text="Romanis quoque bellis, non finitimis" type="straight"/>
+        <underline language="LA" method="pen" text="expeditiones multas, uarias que." type="straight"/>
+        <underline language="LA" method="pen" text="uereri maiestatem eius" type="straight"/>
+        <underline language="LA" method="pen" text="His eum fultum societatibus atque amicitijs" type="straight"/>
+        <underline language="LA" method="pen" text="eos domesticos apparatus belli habere, ut externis non egeat" type="straight"/>
+        <underline language="LA" method="pen" text="XXX milia peditum" type="straight"/>
+        <underline language="LA" method="pen" text="V millia equitum" type="straight"/>
+        <underline language="LA" method="pen" text="in decem" type="straight"/>
+        <underline language="LA" method="pen" text="annos frumentum praeparare, ut" type="straight"/>
+        <underline language="LA" method="pen" text="pecuniam tantam" type="straight"/>
+        <underline language="LA" method="pen" text="decem millia mercenariorum" type="straight"/>
+        <underline language="LA" method="pen" text="stipendium in totidem annos praeparatum" type="straight"/>
+        <underline language="LA" method="pen" text="praeter annuum" type="straight"/>
+        <underline language="LA" method="pen" text="metallis regijs capiat uectigal." type="straight"/>
+        <underline language="LA" method="pen" text="Arma uel tribus tantum" type="straight"/>
+        <underline language="LA" method="pen" text="Iuuentutem, ut iam" type="straight"/>
+
+        <mark method="pen" name="dash" place="right_margin"/> <!-- ad -->
+        <mark method="pen" name="dash" place="right_margin"/> <!--ex-->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- appara -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- de -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- prae -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- exerciti -->
+        
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        
+    </annotation>
+</transcription>

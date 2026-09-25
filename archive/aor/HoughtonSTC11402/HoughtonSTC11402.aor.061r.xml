@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.061r.tif" reader="Harvey" signature="[Gvi[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>s[upr]a, Sylla.</marginalia_text>
+                    <person name="Sulla"/>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0127" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] above, Sulla.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sent forth certayne companies to folowe theym" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A resolute deuize, but not voyde of daunger.</marginalia_text>
+                    <emphasis method="pen" text="A resolute deuize" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>scitè.</marginalia_text>
+                </position>
+            </language>
+            <translation>Knowingly.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sent forth certayne companies to folowe theym" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Datames praysit [the] Runne awayes, for setting forwarde so lustely before him.</marginalia_text>
+                    <person name="Datames"/>
+                    <emphasis method="pen" text="Datames" type="straight"/>
+                    <emphasis method="pen" text="setting forwarde so" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="home ageyne, that" type="straight"/>
+        <underline language="EN" method="pen" text="away with no" type="straight"/>
+        <underline language="EN" method="pen" text="the hors" type="straight"/>
+        <underline language="EN" method="pen" text="fledde frome hym to his ennemies" type="straight"/>
+        <underline language="EN" method="pen" text="forth certayne companies to folowe theym" type="straight"/>
+        <underline language="EN" method="pen" text="receyued the Macedoniens fleing" type="straight"/>
+        <underline language="EN" method="pen" text="to them" type="straight"/>
+        <underline language="EN" method="pen" text="with the poynt of their wepons" type="straight"/>
+        <underline language="EN" method="pen" text="them that" type="straight"/>
+        <underline language="EN" method="pen" text="necessitie compelled" type="straight"/>
+        <underline language="EN" method="pen" text="selfe vnto fyght" type="straight"/>
+        <underline language="EN" method="pen" text="Lucullus ennemies" type="straight"/>
+        <underline language="EN" method="pen" text="of his horsmen were fledde away" type="straight"/>
+        <underline language="EN" method="pen" text="reste to folowe hym" type="straight"/> 
+        <underline language="EN" method="pen" text="ouertake[n] them" type="straight"/>
+        <underline language="EN" method="pen" text="lauded and gaue" type="straight"/>
+        <underline language="EN" method="pen" text="great thankes" type="straight"/>
+        <underline language="EN" method="pen" text="cherefully sette oute" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="receyued the Macedoniens fleing"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="forthe certayne companies to folowe theym"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--theym, his-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="with the poynt of their wepons"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="necessitie compelled"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="lauded and gaue"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

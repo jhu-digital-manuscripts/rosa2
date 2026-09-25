@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.327v.tif" pagination="638" reader="Harvey" signature="[hhh1v]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Polyxenida[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> 
+                        sic aduersariorum vel Odium, vel contemptus confutandus: post[quam] esse coeperit intolerabilis. Homo reru[m], no[n] verboru[m], 
+                        spretus Polyxenidas.
+                    </marginalia_text>
+                <person name="Polyxenidas"/>
+                </position>
+            </language>
+            <translation>
+                This is how one should check either the hatred or the contempt of one’s opponents, after it starts to become unbearable. The scorned 
+                Polyxenidas: a man of actions, not words.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Annibalem in Syriam miserat" type="straight"/>
+        <underline language="LA" method="pen" text="Polyxenidam, quo minus prosperè" type="straight"/>
+        <underline language="LA" method="pen" text="Gallogr[a]ecia[m] miserat" type="straight"/>
+        <underline language="LA" method="pen" text="Bellicosiores" type="straight"/>
+        <underline language="LA" method="pen" text="Gallicos adhuc" type="straight"/>
+        <underline language="LA" method="pen" text="Polyxenidas regius" type="straight"/>
+        <underline language="LA" method="pen" text="exul Rhodius" type="straight"/>
+        <underline language="LA" method="pen" text="Pausistratum praefectum superbè quaedam &amp; co[n]temptim in se co[n]cionante[m]" type="straight"/>
+        <underline language="LA" method="pen" text="certamine animi aduersus eum sumpto" type="straight"/>
+        <underline language="LA" method="pen" text="nihil aliud dies noctesq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="animo, quàm ut uerba magnifica, eius reb[us] confutaret." type="straight"/>
+        <underline language="LA" method="pen" text="Pausistrato patriaeq[ue] suae magno usui, si liceat" type="straight"/>
+        <underline language="LA" method="pen" text="agend[a]e co[m]muniter rei" type="straight"/>
+        <underline language="LA" method="pen" text="silentio tegendae" type="straight"/>
+        <underline language="LA" method="pen" text="regia[m] classem aut totam aut maiorem" type="straight"/>
+        <underline language="LA" method="pen" text="Polyxenida[m] tradituru[m] ei." type="straight"/>
+        <underline language="LA" method="pen" text="precium tanti meriti nullu[m] aliud" type="straight"/>
+        <underline language="LA" method="pen" text="quàm reditu[m] in patria[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Magnitudo rei" type="straight"/>
+        <underline language="LA" method="pen" text="ut crederet, nec ut aspernaretur dicta" type="straight"/>
+        <underline language="LA" method="pen" text="nec fides antè" type="straight"/>
+        <underline language="LA" method="pen" text="Polyxenidas sua manu scripsit, se ea quae pollicitus esset, facturum: signoq[ue] suo impressas" type="straight"/>
+        <underline language="LA" method="pen" text="eo uerò pignore" type="straight"/>
+        <underline language="LA" method="pen" text="uelut autoratum sibi proditorem ratus est." type="straight"/>
+        <underline language="LA" method="pen" text="sub rege uiueret" type="straight"/>
+        <underline language="LA" method="pen" text="aduersus semetipsum" type="straight"/>
+        <underline language="LA" method="pen" text="indicia manu sua testata daret" type="straight"/>
+        <underline language="LA" method="pen" text="simulatae proditionis" type="straight"/>
+        <underline language="LA" method="pen" text="per simulatione[m] reficie[n]di quasdam naues" type="straight"/>
+        <underline language="LA" method="pen" text="Quam negligentia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Polyxenidam in classe" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="left_margin" text="animo, quàm ut uerba magnifica, eius reb[us] confutaret."/>
+        <symbol name="JC" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="Pausistrato patriaeq[ue] suae magno usui, si liceat"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="Polyxenidas sua manu scripsit, se ea quae pollicitus esset, facturum: signoq[ue] suo impressas"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- suo -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- co[n]cio -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- tabel -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- omissu -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- habi -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- habi -->
+        
+        <mark method="pen" name="dot" place="intext"/> <!--naues, &-->
+        <mark method="pen" name="dot" place="intext"/> <!--classem, &-->
+        <mark method="pen" name="dot" place="intext"/> <!--dixisse, praecipuo-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="uerba"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- eius reb-->
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--fore, &-->
+        <mark method="pen" name="dot" place="intext"/> <!-- percunctaretur, fide[m]-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="equal_sign" place="intext"/> 
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="simulatae proditionis"/> 
+        
+        <mark language="LA" method="pen" name="straight_quotation_mark" place="tail" text="Quam negligentia[m]"/>
+        
+    </annotation>
+</transcription>

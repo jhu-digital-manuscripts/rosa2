@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.167v.tif" pagination="334" reader="John Dee"/> 
+    <annotation>
+        
+         <!-- M.B. Greek marginalia to be captured later. -->
+        
+        <marginalia anchor_text="Lis est omnis aut de praemio, aut de poena, aut de qua[n]titate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Lis omnis aut de pra[e]mio aut et poena aut de quantiate</marginalia_text>
+                </position>
+            </language>
+            <translation>Every dispute involves a reward, or a penalty or the amount of these.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Est autem qualitas alia de summo genere, atq[ue] ea quide[m] non simplex." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Qualitatis Diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>The division of quality.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="suasorijs" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Suasoria[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Persuasive.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ac non facie[n]da, appetenda, uitanda" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Facie[n]da &amp; no[n] appete[n]da, vita[n]da</marginalia_text>
+                </position>
+            </language>
+            <translation>Should be sought or avoided.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Demo[n]stratiuae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>demonstratiua[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Demonstrative.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="primu[m] genus causae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Primu[m] genus caus[a]e</marginalia_text>
+                </position>
+            </language>
+            <translation>First type of causes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="secundum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>secundu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Second.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="κατ’ ἀντίληψιν" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>κατ’ ἀντίληψιν</marginalia_text>
+                </position>
+            </language>
+            <translation>By objection.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iustum omne continetur natura, uel co[n]stitutione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iustu[m] o[mn]e Natura co[n]stitutione</marginalia_text>
+                </position>
+            </language>
+            <translation>All justice [depends on] nature [or] convention.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Nam &amp; qualis sit cuiusq[ue] rei natura, &amp; quae forma, quaeritur: an" type="straight"/>
+        <underline language="LA" method="pen" text="de mangnitudine" type="straight"/>
+        <underline language="LA" method="pen" text="Caesar" type="straight"/>
+        <underline language="LA" method="pen" text="na[m] tum ignorabatur" type="straight"/>
+        <underline language="LA" method="pen" text="quia illic de futuris, hic de factis" type="straight"/>
+        <underline language="LA" method="pen" text="de praemio, aut de poena, aut de qua[n]titate" type="straight"/>
+        <underline language="LA" method="pen" text="longe potentißima est" type="straight"/>
+       
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+       
+        <numeral place="left_margin">1</numeral>       
+        
+        <errata amendedtext="mentione" copytext="mentionem" language="LA"/>
+        
+        <drawing anchor_text="Lis omnis aut de pra[e]mio aut et poena aut de quantiate" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.183v.tif" pagination="358" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="apud Maldonam, Burgum, &amp; arcem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Burgus et Arx Maldoni.
+                    </marginalia_text>
+                    <location name="Maldon"/>
+                </position>
+            </language>
+            <translation>
+                The fort and the stronghold of Maldon.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad Maldonam à paganis obsessam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Maldona obsessa.
+                    </marginalia_text>
+                    <location name="Maldon"/>
+                </position>
+            </language>
+            <translation>
+                The siege of Maldon.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Burgum, &amp; arcem aedificauit" type="straight"/>
+        <underline language="LA" method="pen" text="Togleas" type="straight"/>
+        <underline language="LA" method="pen" text="Mannano" type="straight"/>
+        <underline language="LA" method="pen" text="rex ad Maldonam" type="straight"/>
+        <underline language="LA" method="pen" text="matrona. viij. anno, ex quo sola regnum Merciorum strenuo" type="straight"/>
+        <underline language="LA" method="pen" text="nomine Algiuam" type="triple"/>
+        
+    </annotation>
+</transcription>

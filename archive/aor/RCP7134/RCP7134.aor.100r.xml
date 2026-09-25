@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.100r.tif" pagination="93" reader="John Dee" signature="aa"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dispositor vt p[rae]fertur p[ro]p[r]io significatori qua[n]doq[ue].</marginalia_text> <!--JG: Unsure abt word after 'vt'--> <!-- FSF: I tink it is p[rae]fertur, but I am not sure either -->
+                </position>
+            </language>
+            <translation>The dispositor as whenever it is taken before its own signifier.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in reuolutionibus" type="straight"/>
+        <underline language="LA" method="pen" text="in loco co[n]iunctionis" type="straight"/>
+        <underline language="LA" method="pen" text="geniturae uel reuolutionis" type="straight"/>
+        <underline language="LA" method="pen" text="quia solum in illis conueniu[n]t effectus tempora, cum temporibus reuolutionis" type="straight"/>
+        <underline language="LA" method="pen" text="lunares stupore[m] &amp; infirmitates diuturnas &amp; acutas, &amp; morbos oculoru[m] &amp; mortem             , &amp; infortunia magna, ex qualitatibus accide[n]tibus tempore illius effectus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

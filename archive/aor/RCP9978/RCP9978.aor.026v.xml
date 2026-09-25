@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.026v.tif" reader="John Dee" signature="[G ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Sardium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sàr[dius]</marginalia_text>
+                </position>
+            </language>
+            <translation>Sardius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Corneolus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Carne[olus]</marginalia_text>
+                </position>
+            </language>
+            <translation>Carnelian.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Onix" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Onix</marginalia_text>
+                </position>
+            </language>
+            <translation>Onyx.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="iram &amp; contentionem" type="straight"/>
+        <underline language="LA" method="pen" text="quartanis" type="straight"/>
+        
+        <errata amendedtext="cane" copytext="carne" language="LA"/>
+        
+    </annotation>
+</transcription>

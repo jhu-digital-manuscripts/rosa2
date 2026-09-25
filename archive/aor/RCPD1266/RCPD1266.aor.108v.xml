@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.108v.tif" pagination="202" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Decembris vltimo constitui in Calendario Iuliano" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Anni Iuliani veru[m] Initium ergo erit ad media[m] nocte[m] vltima[e] diei Dece[m]bris.</marginalia_text>
+                </position>
+            </language>
+            <translation>Indeed the beginning of the Julian year will therefore be in the middle of the night of the final day of December.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="annum sacru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Annus sacer.</marginalia_text>
+                </position>
+            </language>
+            <translation>The sacred year.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cyclos enim suos Paschales incoeperunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cycli Paschales.</marginalia_text>
+                </position>
+            </language>
+            <translation>The Paschal cycles.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vltimo constitui in Calendario Iuliano" type="straight"/>
+        <underline language="LA" method="pen" text="maximi temeritate &amp; audacia" type="straight"/>
+        <underline language="LA" method="pen" text="hominum animalium" type="straight"/>
+        <underline language="LA" method="pen" text="stabile. Quamobrem &amp; istum annu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Iulianum sublatum" type="double"/>
+        <underline language="LA" method="pen" text="quarum menses certo fine, &amp; stato principio progrediuntur" type="straight"/> 
+        <underline language="LA" method="pen" text="definiuntúrque Lunae" type="straight"/>
+        <underline language="LA" method="pen" text="sideralis obseruationis" type="straight"/>
+        <underline language="LA" method="pen" text="regulas nobis" type="double"/>
+        <underline language="LA" method="pen" text="ineptiarum plenas obtulerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Ecclesiasticos" type="straight"/>
+        <underline language="LA" method="pen" text="de epactis, &amp; clauibus" type="straight"/>
+        <underline language="LA" method="pen" text="cyclo decemnouennali" type="straight"/>
+        <underline language="LA" method="pen" text="plurimorum fascinarunt ingenia" type="straight"/>
+        <underline language="LA" method="pen" text="ad annum sacru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Ægyptio Caesariano" type="straight"/>
+        <underline language="LA" method="pen" text="ex Calendario" type="straight"/>
+        <underline language="LA" method="pen" text="noua Luna aequinoctij" type="straight"/>
+        <underline language="LA" method="pen" text="Ecclesiastici Astrologi" type="straight"/>
+        <underline language="LA" method="pen" text="re tanta, quam Dei verbo co[n]stituta[m] habemus, ta[m] neglige[n]tes" type="straight"/>
+        <underline language="LA" method="pen" text="supini fuimus" type="straight"/>
+        <underline language="LA" method="pen" text="contra vulgò" type="double"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- ordinatio paulum -->
+        <mark method="pen" name="bracket" place="intext"/>  <!-- immutata, est -->
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

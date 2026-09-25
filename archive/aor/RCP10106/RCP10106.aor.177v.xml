@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.177v.tif" pagination="354" reader="John Dee" signature="[z[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Asiani" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Asiani</marginalia_text>
+                </position>
+            </language>
+            <translation>Asians.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aridos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aridi</marginalia_text>
+                </position>
+            </language>
+            <translation>Dries.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="qui omissa rerum (qui nerui sunt in causis) dilientia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Reru[m] cura.</marginalia_text>
+                </position>
+            </language>
+            <translation>The care of things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Curam ergo uerborum, rerum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cura verboru[m] &amp; Reru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Care for words and things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diligentia deterior etiam fiat oratio." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quada dilige[n]tia deterior fi[a]t Oratio.</marginalia_text> 
+                </position>
+            </language>
+            <translation>A certain diligence makes speech worse.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quodam inani circa uoces studio" type="straight"/>
+        <underline language="LA" method="pen" text="sed cum sequitur, non cum affectatur" type="straight"/>
+        <underline language="LA" method="pen" text="fucata muliebriter comat" type="straight"/>
+        <underline language="LA" method="pen" text="Similiter illa tra[n]slucida &amp; uersicolor quorunda[m] elocutio" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; capillum reponere" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">1:</numeral>
+        
+    </annotation>
+</transcription>

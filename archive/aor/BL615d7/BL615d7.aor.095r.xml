@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.095r.tif" pagination="95" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Borichen" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Borichen</marginalia_text>
+                    <location name="Puerto Rico"/>
+                </position>
+            </language>
+            <translation>Puerto Rico.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Caribi" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Caribi</marginalia_text>
+                    <location name="Caribbean"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="sei donne" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Six women</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pollicy.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="mangiaua huomini" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Anthropophagi</marginalia_text>
+                </position>
+            </language>
+            <translation>Cannibals.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="conformarono in dire" type="straight"/>
+        <underline language="IT" method="pen" text="Borichen" type="straight"/>
+        <underline language="IT" method="pen" text="erano Caribi" type="straight"/>
+        <underline language="IT" method="pen" text="haueuano fatti prigioni nella loro medesima Isola" type="straight"/>
+        <underline language="IT" method="pen" text="loro sei donne" type="straight"/>
+        <underline language="IT" method="pen" text="per assicurar la" type="straight"/>
+        <underline language="IT" method="pen" text="anzi" type="straight"/>
+        <underline language="IT" method="pen" text="donò loro alcune" type="double"/>
+        <underline language="IT" method="pen" text="fece riportare in terra" type="straight"/>
+        <underline language="IT" method="pen" text="contra il lor volere" type="double"/>
+        <underline language="IT" method="pen" text="acqua, &amp; legna" type="straight"/>
+        <underline language="IT" method="pen" text="mangiaua huomini" type="straight"/>
+        <underline language="IT" method="pen" text="altri due fanciulli" type="straight"/>
+        <underline language="IT" method="pen" text="da' Caribi scampato" type="straight"/>
+        
+        <errata amendedtext="C" copytext="C" language="IT"/>
+        
+    </annotation>
+</transcription>

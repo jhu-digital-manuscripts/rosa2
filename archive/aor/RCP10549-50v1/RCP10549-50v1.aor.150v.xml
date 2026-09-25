@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.150v.tif" pagination="280" reader="John Dee" signature="[ss.iiii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="agros Mithridatis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mithridatis Agri
+                    </marginalia_text>
+                    <person name="Mithridates VI of Pontus"/>
+                </position>
+            </language>
+            <translation>
+                Lands of Mithridates VI of Pontus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="auctionante[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mos auctionandi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The custom of auctioning.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="patefacio vobis, quas isti penitus abstrusas insidias se posuisse arbitrantur contra Cn. Pompeii dignitatem" type="straight"/>
+        <underline language="LA" method="pen" text="ignoscete, si appello talem" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; resistam consiliis hominum, &amp; perficiam profectò quod ego video comparari, vt id vos vniuersi non solum videre, verumetiam tenere possitis" type="straight"/>
+        <underline language="LA" method="pen" text="agros opimos &amp; fertiles" type="straight"/>
+        <underline language="LA" method="pen" text="atque hostiu[m] castra, hasta posita" type="straight"/>
+        <underline language="LA" method="pen" text="formosis finitoribus auctionante[m]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; insignis est &amp; noua, vt vlla res parta bello, nondu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Decemuiros esse translatam. patior non molestè tam stultos esse qui haec spere[n]t: tam impudentes, qui conentur. illud queror,              tam me ab iis esse conte[m]ptum, vt haec" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+    </annotation>
+</transcription>

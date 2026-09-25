@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.190r.tif" pagination="379" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Helenae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Helena.</marginalia_text>
+                    <person name="Helen of Troy"/>
+                </position>
+            </language>
+            <translation>Helena.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Symposio Plato" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Plato in symposio</marginalia_text>
+                    <person name="Plato"/>
+                    <book title="Symposium"/>
+                </position>
+            </language>
+            <translation>Plato in his Symposium.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="clypeus Aiacis, &amp; hasta Pelias Achilles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Homer[i]us. illiad</marginalia_text>
+                    <person name="Homer"/>
+                    <book title="Iliad"/>
+                </position>
+            </language>
+            <translation>Homer's Iliad.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vergilius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vergilius</marginalia_text>
+                    <person name="Virgil"/>
+                </position>
+            </language>
+            <translation>Virgil.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Demoleos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Demoleos</marginalia_text>
+                    <person name="Demoleos"/>
+                </position>
+            </language>
+            <translation>Demoleos.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Antonij" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In Antoniu[m]</marginalia_text>
+                    <book title="Philippics"/>
+                </position>
+            </language>
+            <translation>Against Antony.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Emphasis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Emphasis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Emphasis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="res ipsa uerbis est firmior" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Res verbis firmior est</marginalia_text>
+                </position>
+            </language>
+            <translation>Things carry more weight than words.</translation>
+        </marginalia>
+                
+        <marginalia anchor_text="congeries" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Congeries.</marginalia_text>
+                </position>
+            </language>
+            <translation>Accumulation.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tam obuia" type="straight"/>
+        <underline language="LA" method="pen" text="clypeus Aiacis" type="straight"/>
+        <underline language="LA" method="pen" text="Conchyliatis Cn. Pompeij peristromatis seruorum in cellis stratos lectos uideres" type="straight"/>
+        <underline language="LA" method="pen" text="ultrà infinito plus" type="straight"/>
+        <underline language="LA" method="pen" text="sed illa ex uerbo, hoc ex re coniecturam facitL tanto'q[ue] plus ualet, quantò res ipsa uerbis est firmior" type="straight"/>
+           
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">4.</numeral>
+        
+        
+    </annotation>
+</transcription>

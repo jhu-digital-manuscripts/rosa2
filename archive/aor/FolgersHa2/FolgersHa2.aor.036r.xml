@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.036r.tif" pagination="391" reader="Harvey"/>	<!-- ABO 040right -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="EN">
+            			<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Enioy the souerain repetition of your most excellent notes.
+                      			</marginalia_text>
+            				<emphasis method="chalk" type="straight"/>
+            			</position>
+        			</language>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						notabile.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Notable.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Patientia impatiens.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Impatient patience.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						) { no felicitie, to the repetition, 
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						&amp; the exercise of [the] most essential points.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						ridicolo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Ridiculous.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						Quotidiè Lege, Lege: sed quotidiè
+    						repete, repete, repete.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Daily: read, read, but also: repeat, repeat, repeat.
+    			</translation>
+    		</marginalia>
+        
+        
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="90" place="left_margin">
+    					<marginalia_text>
+    						Nec vanè repete: sed Hoc age pra[e]sentissimè.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Do not repeat in vain, but do it most efficiently.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="90" place="right_margin">
+    					<marginalia_text>
+    						In vita, nihil magis deest, qu&amp;m vita.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				In life, nothing is lacking more than life.
+    			</translation>
+    		</marginalia>
+    		
+	    	<!-- Underlines -->
+	        
+    		<underline language="IT" method="pen" text="non ho potuto hauer tanta patientia" type="straight"/>
+    		<underline language="IT" method="pen" text="giocar teco uno" type="straight"/>
+    		<underline language="IT" method="pen" text="non stai sino a hora di desinare, senza gridare con lei" type="straight"/>
+    		<underline language="IT" method="pen" text="si" type="straight"/>
+    		<underline language="IT" method="pen" text="rispose la moglie sarà quello ubriaco di mio marito" type="straight"/>
+    		<underline language="IT" method="pen" text="in colera" type="straight"/>
+    		<underline language="IT" method="pen" text="tu me[n]ti per la gola rea femina che" type="straight"/>
+    		<underline language="IT" method="pen" text="Rise" type="straight"/>
+    		<underline language="IT" method="pen" text="hai perduto, fratello" type="straight"/>
+    		<underline language="IT" method="pen" text="tutto adirato" type="straight"/>
+    		<underline language="IT" method="pen" text="metterei anchora a rischio di perdere l'anima e il corpo, non" type="straight"/>
+    		<underline language="IT" method="pen" text="questa arrabbiata" type="straight"/>
+    		<underline language="IT" method="pen" text="farebbe perdere la patientia a Giobbe" type="straight"/>
+    		<underline language="IT" method="pen" text="a perdere la patientia per la moglie" type="straight"/>
+    		<underline language="IT" method="pen" text="una sua fanciulla in uno" type="straight"/>
+    		<underline language="IT" method="pen" text="corre una insalata" type="straight"/>
+    		<underline language="IT" method="pen" text="cura lherbe" type="straight"/>
+    		<underline language="IT" method="pen" text="menta" type="straight"/>
+    		<underline language="IT" method="pen" text="le piaceua assai" type="straight"/>
+    		<underline language="IT" method="pen" text="un poco della me[n]ta" type="straight"/>
+    		<underline language="IT" method="pen" text="farle rompere il digiuno" type="straight"/>
+    		<underline language="IT" method="pen" text="dimandò ridendo" type="straight"/>
+    		<underline language="IT" method="pen" text="dell'horto piccolo, o del grande" type="straight"/>
+    		<underline language="IT" method="pen" text="cacommodato tempo" type="straight"/>
+    		<underline language="IT" method="pen" text="le sue herbe la mescolasse" type="straight"/>
+    		<underline language="IT" method="pen" text="Arguto, &amp;" type="straight"/>
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="Sun" place="left_margin"/>
+    		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+    		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- patentia -->
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- scu -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- ri -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- s'ha -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- rispo -->
+    		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- scala; tu -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- Pie -->
+    		<mark method="pen" name="straight_quotation_mark" place="right_margin"/> <!--adirato -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- ani -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- lher -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- della -->
+    		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- accenno' con -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- riden -->
+    		<mark method="pen" name="straight_quotation_mark" place="right_margin"/> <!-- percio -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- Fra[n] -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- cacommoda -->
+    		
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="plus_sign" place="left_margin"/> <!-- do, che  -->
+    		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- tro, dicendo -->
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- ma e il corpo -->
+    		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- le fu uicino -->
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- do; s'ella -->
+    		
+	    	<!-- Intext -->
+	    	<mark method="pen" name="dot" place="intext"/> <!-- farlo, ma -->
+    		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- Chalk mark on left side of first paragraph -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- io -->
+    		<mark method="pen" name="straight_quotation_mark" place="intext"/> <!-- tutto adirato --> 
+    		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- Chalk mark at end of first paragraph -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- arrabbiata, la -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- a Giobbe -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- la moglie -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- colte, s'accorse -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="menta"/>
+    		<mark method="pen" name="dot" place="intext"/> <!-- menta, & -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="poco"/>
+    		<mark method="pen" name="dot" place="intext"/> <!-- menta, & -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- grande, & -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Arguto"/>
+    		
+    		<errata amendedtext="acommodato" copytext="cacommodato" language="IT"/>
+
+    </annotation>
+</transcription>

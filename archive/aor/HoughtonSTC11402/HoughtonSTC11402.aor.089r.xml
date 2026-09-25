@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.089r.tif" reader="Harvey" signature="Lii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Neuer brauer sallyes, then at this day.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Ironicè,</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vt s[upr]a)</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0027" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Ironically, as above.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>( The Romanes ouertaken</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>with [their] own pollicy.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>docti est, no[n] contemnere hostem, sed cautè, valideq[ue] opprimere.</marginalia_text>
+                </position>
+            </language>
+            <translation>A wise man should not look down upon his enemy, but oppress him cautiously and powerfully.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="ennemyes to be careles" type="straight"/>
+        <underline language="EN" method="pen" text="strake" type="straight"/>
+        <underline language="EN" method="pen" text="agaynste a huge" type="straight"/>
+        <underline language="EN" method="pen" text="cowardly at his defence" type="straight"/>
+        <underline language="EN" method="pen" text="to be afrayde" type="straight"/>
+        <underline language="EN" method="pen" text="forthe a runnagate" type="straight"/>
+        <underline language="EN" method="pen" text="Romayne" type="straight"/>
+        <underline language="EN" method="pen" text="in despaire" type="straight"/>
+        <underline language="EN" method="pen" text="alyens encoraged" type="straight"/>
+        <underline language="EN" method="pen" text="loded them selues with" type="straight"/>
+        <underline language="EN" method="pen" text="wodde and bowes to fyll the" type="straight"/>
+        <underline language="EN" method="pen" text="haste and courage" type="straight"/>
+        <underline language="EN" method="pen" text="rushynge downe" type="straight"/> 
+        <underline language="EN" method="pen" text="Galles by heapes" type="straight"/>
+        <underline language="EN" method="pen" text="walles a fewe feble olde men" type="straight"/>
+        <underline language="EN" method="pen" text="Romayns as careles" type="straight"/>
+        <underline language="EN" method="pen" text="lytell hede, the" type="straight"/>
+        <underline language="EN" method="pen" text="townes men sodenly" type="straight"/>
+        
+        <symbol language="EN" name="SS" place="head" text="Neuer brauer sallyes, then at this day."/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="ennemyes to be careles"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="cowardly at his defence"/>
+        <mark method="pen" name="dot" place="intext"/> <!--afrayde, and-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="rushynge"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Romayns as careles"/>
+        
+    </annotation>
+</transcription>

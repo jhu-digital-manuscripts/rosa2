@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.240r.tif" pagination="240" reader="John Dee"/> 
+    
+    <annotation>
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+            
+        <underline language="IT" method="pen" text="XX leghe" type="straight"/>
+        <underline language="IT" method="pen" text="piu di X leghe" type="straight"/>
+        <underline language="IT" method="pen" text="acque da Giamaica alla Spagnuola son contrarie al camino" type="straight"/>
+        <underline language="IT" method="pen" text="morto di sete" type="straight"/>
+        <underline language="IT" method="pen" text="notte senza vista di terra" type="straight"/>
+        <underline language="IT" method="pen" text="della Luna" type="straight"/>
+        <underline language="IT" method="pen" text="soletta copria La Luna a guisa di Eclissi" type="straight"/>
+        
+        <symbol language="IT" name="Moon" place="right_margin" text="Luna"/>
+                
+    </annotation>
+</transcription>

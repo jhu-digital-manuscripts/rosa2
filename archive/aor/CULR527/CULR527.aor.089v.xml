@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.089v.tif" pagination="[89[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Ptolomaeus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ptoloma[e]us
+                    </marginalia_text>
+                    <person name="Ptolemy"/>
+                </position>
+            </language>
+            <translation>
+                Ptolemy.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="informationes falsae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Informatio[n]es falsae.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Wrong information.
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="prorsus omni liberabimus" type="straight"/>
+        <underline language="LA" method="pen" text="labitur" type="straight"/>
+        <underline language="LA" method="pen" text="informationes falsae obstant quominus uerum sit" type="straight"/>
+        <underline language="LA" method="pen" text="omnis numerus &amp; instrume[n]ta" type="straight"/>
+        <underline language="LA" method="pen" text="experientiam nauigantes exercent, quàm illius qui in terra" type="straight"/>
+        <underline language="LA" method="pen" text="uult loca metiri quae" type="straight"/>
+        <underline language="LA" method="pen" text="inueniu[n]tur? Quid" type="straight"/>
+        <underline language="LA" method="pen" text="stultum est enim rogare, quid" type="straight"/>
+        <underline language="LA" method="pen" text="furioso in mentem uenerit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+
+    </annotation>
+</transcription>

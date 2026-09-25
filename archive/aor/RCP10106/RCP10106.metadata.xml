@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>630</totalPages>
+  <dates>
+    <startDate>1540</startDate>
+    <endDate>1540</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>la</language>
+      <title>M. Fabii Quintiliani Institutionum oratoriarum libri duodecim : declamationum eiusdem liber</title>
+      <textId>quintilian</textId>
+      <pages end="315v" start="1r">630</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>M. Fabii Quintiliani Institutionum oratoriarum libri duodecim : declamationum eiusdem liber</title>
+      <commonName>Quintilian, Institutionum oratoriarum (Lyon, 1540)</commonName>
+      <dateLabel>1540</dateLabel>
+      <origin>Lyon</origin>
+      <currentLocation>London, England</currentLocation>
+      <repository>Royal College of Physicians Library</repository>
+      <shelfmark>10106 D1/20-b-3</shelfmark>
+      <author>
+        <name>Quintilian</name>
+        <id>http://www.isni.org/isni/0000000121271967</id>
+      </author>
+      <reader>
+        <name>John Dee</name>
+        <id>http://www.isni.org/isni/0000000122785193</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Dee-corpus/Quintilian</website>
+      <note>Record: http://rcp.soutron.net/Portal/Default/RecordView/Index/35371</note>
+    </bibliography>
+  </bibliographies>
+</book>

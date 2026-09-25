@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.098r.tif" pagination="98" reader="John Dee" signature="Nij"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="L Isole" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>50. Iles</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Santa Orsola" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Santa Orsola</marginalia_text>
+                    <person name="Saint Ursula"/>
+                </position>
+            </language>
+            <translation>Saint Ursula.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="XIM Vergini" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>11000 vergini</marginalia_text>
+                </position>
+            </language>
+            <translation>11000 virgins.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Borichen" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Borrichen</marginalia_text>
+                    <location name="Puerto Rico"/>
+                </position>
+            </language>
+            <translation>Puerto Rico.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="XXII di Nouembre" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>22 Noue[m]b[er]</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="L Isole" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>one of The first is taken fro[m] the Iles, not Spay[ne]</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="chiamò Santa" type="straight"/>
+        <underline language="IT" method="pen" text="XIM Vergini" type="straight"/>
+        <underline language="IT" method="pen" text="detta Borichen" type="straight"/>
+        <underline language="IT" method="pen" text="sorti di pesci" type="straight"/>
+        <underline language="IT" method="pen" text="da Samana vno" type="straight"/>
+        <underline language="IT" method="pen" text="già conuertito alla nostra santa" type="straight"/>
+        
+        <mark method="pen" name="straight_quotation_mark" place="right_margin"/>
+        
+        
+        
+    </annotation>
+    
+</transcription>

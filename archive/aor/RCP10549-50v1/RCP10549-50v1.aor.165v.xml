@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.165v.tif" pagination="310" reader="John Dee" signature="[vv.iii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="lumina ciuitatis extincta" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        lumina ciuitatis extincta
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The lights of the state were snuffed out.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lex" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        lex
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Law.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Conscientia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Conscience.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="omnis hic locus aceruis corporum, &amp; ciuium sanguine redundauit" type="straight"/>
+        <underline language="LA" method="pen" text="lumina ciuitatis extincta sunt" type="straight"/>
+        <underline language="LA" method="pen" text="vrbem conflagrare, sed se in hac vrbe florere voluerunt. atque" type="straight"/>
+        <underline language="LA" method="pen" text="vt omnes, qui salua vrbe salui esse possent, in hostium numero ducerentur: ita" type="straight"/>
+        <underline language="LA" method="pen" text="Quibus pro tantis rebus Quirites, nullum ego à vobis praemium virtutis, nullum insigne honoris, nullum monime[n]tum laudis postulo,              praeterquàm huius diei memoriam sempiternam. In animis ego vestris omnes triumphos meos, omnia ornamenta honoris, monimenta gloriae, laudis" type="straight"/>
+        <underline language="LA" method="pen" text="quorum alter fines vestri imperii, non terrae, sed coeli regionibus terminaret" type="straight"/>
+        <underline language="LA" method="pen" text="magna vis conscientiae, quam qui negligent, cum me violare volent, se ipsi indicabunt" type="straight"/>
+        <underline language="LA" method="pen" text="etiam omnes improbos vltro semper lacessamus" type="straight"/>
+        <underline language="LA" method="pen" text="curémque vt ea, virtute, non casu gesta esse videantur" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

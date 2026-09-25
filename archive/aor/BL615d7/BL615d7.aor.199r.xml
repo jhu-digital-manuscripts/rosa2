@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.199r.tif" pagination="199" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="di Casine" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>La punta di Casine di Honduras } ide[m]</marginalia_text>
+                    <location name="Casine"/>
+                    <location name="Honduras"/>
+                </position>
+            </language>
+            <translation>The tip of Casine [and] of Honduras. Likewise. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="di Casine" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>La punta di Casine</marginalia_text>
+                    <location name="Casine"/>
+                </position>
+            </language>
+            <translation>The tip of Casine.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="non volen" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Pietro di Ledesma" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pietro di Lidisima</marginalia_text>
+                    <person name="Pietro de Ledesma"/>
+                </position>
+            </language>
+            <translation>Pietro de Ledesma</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="di Beragua" type="straight"/>
+        <underline language="IT" method="pen" text="verso Occidente" type="double"/>
+        <underline language="IT" method="pen" text="Costa di Cariai" type="straight"/>
+        <underline language="IT" method="pen" text="di Gratie a" type="straight"/>
+        <underline language="IT" method="pen" text="di Casine" type="straight"/>
+        <underline language="IT" method="pen" text="di Honduras" type="straight"/>
+        <underline language="IT" method="pen" text="i Guanagi" type="straight"/>
+        <underline language="IT" method="pen" text="il nome di tutte" type="straight"/>
+        <underline language="IT" method="pen" text="quel della principale" type="straight"/>
+        <underline language="IT" method="pen" text="non volendo" type="straight"/>
+        <underline language="IT" method="pen" text="confessar" type="double"/>
+        <underline language="IT" method="pen" text="a se stessi quello" type="straight"/>
+        <underline language="IT" method="pen" text="Pietro di Ledesma" type="straight"/>
+        <underline language="IT" method="pen" text="quel viaggio di Beragua" type="straight"/>
+        <underline language="IT" method="pen" text="egli conosceua quelle regioni, &amp; che erano di quelle, ch'ei con l'Ammiraglio" type="straight"/>
+        <underline language="IT" method="pen" text="aiutato a scoprire" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; I'Isola" type="straight"/>
+        <underline language="IT" method="pen" text="istessa forma" type="straight"/>
+        <underline language="IT" method="pen" text="distanza" type="straight"/>
+        <underline language="IT" method="pen" text="Di modo che due volte giace situata nella carta vna medesima terra" type="straight"/>
+        
+    </annotation>
+</transcription>

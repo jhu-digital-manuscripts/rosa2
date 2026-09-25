@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.250v.tif" pagination="18" reader="John Dee" signature="[C.j.[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="regi Sweno" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Swenus Rex Dan[orum]</marginalia_text>
+                    <person name="Sweyn Forkbeard"/>
+                </position>
+            </language>
+            <translation>Sweyn, King of the Danes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Eboraca" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ebroica [forté deleted]</marginalia_text>  
+                    <location name="Evreux"/>
+                </position>
+            </language>
+            <translation>Evreux.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quae Dani abstulissent inimicis, emenda conferrent Normannis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pax inita inter [Ethelredu[m] Rege[m] Ang[lorum]: et deleted] Richardum Duce[m] Nor[thmanniae] et Danoru[m] rege[m] Swenum</marginalia_text>
+                    <person name="Aethelred II"/>
+                    <person name="Richard II, Duke of Normandy"/>
+                    <person name="Sweyn Forkbeard"/>
+                </position>
+            </language>
+            <translation>Peace initiated between Richard, Duke of Normandy, and Sweyn, King of the Danes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ethelredus aute[m] rex apud Wintoniam degens" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ad Duce[m] Norm[anniae]</marginalia_text>
+                    <person name="Richard II, Duke of Normandy"/>
+                </position>
+            </language>
+            <translation>To the Duke of Normandy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="morte[m] obijt" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Swenus moritur.</marginalia_text>
+                    <person name="Sweyn Forkbeard"/>
+                </position>
+            </language>
+            <translation>Sweyn dies.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="filius eius Cnutus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cnutus, Sweni filius</marginalia_text>
+                    <person name="Cnut the Great"/>
+                    <person name="Sweyn Forkbeard"/>
+                </position>
+            </language>
+            <translation>Cnut, the son of Sweyn.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ducis nomine Hadwis iungeretur connubio" type="straight"/>
+        <underline language="LA" method="pen" text="Alanum" type="straight"/>
+        <underline language="LA" method="pen" text="Endonem" type="straight"/>
+        <underline language="LA" method="pen" text="longo tempore" type="double"/>
+        <underline language="LA" method="pen" text="furore sub vna die perimi" type="straight"/>
+        <underline language="LA" method="pen" text="terrae esse defossas" type="straight"/>
+        <underline language="LA" method="pen" text="ferocissimis canibus concitatis mamillas" type="straight"/>
+        <underline language="LA" method="pen" text="pectoribus crudeliter extorqueri" type="straight"/>
+        <underline language="LA" method="pen" text="allisos" type="straight"/>
+        <underline language="LA" method="pen" text="regi Sweno cruenta" type="straight"/>
+        <underline language="LA" method="pen" text="vexilla regalia" type="straight"/>
+        <underline language="LA" method="pen" text="Eboraca" type="grid"/>
+        <underline language="LA" method="pen" text="apud Rhotomagum" type="straight"/>
+        <underline language="LA" method="pen" text="succedentia Danorum regum" type="straight"/>
+        <underline language="LA" method="pen" text="Normannorumq[ue] ducum" type="straight"/>
+        <underline language="LA" method="pen" text="eorum haeredum tempora firma" type="straight"/>
+        <underline language="LA" method="pen" text="maneret inter eos, &amp; quae Dani abstulissent inimicis" type="straight"/>
+        <underline language="LA" method="pen" text="emenda conferrent" type="straight"/>
+        <underline language="LA" method="pen" text="rex apud Wintoniam" type="straight"/>
+        <underline language="LA" method="pen" text="cum vxore &amp; filijs Edwardo scilicet &amp; Aluredo" type="straight"/>
+        <underline language="LA" method="pen" text="morte[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Cnutus" type="straight"/>
+        <underline language="LA" method="pen" text="Etheldredi in Danos crudelitas" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        <mark method="pen" name="quattuorpunctus" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/>  <!-- pagani nephas -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- nauibus pacis -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- gratia apud -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- Rhotomagum ducem -->
+        
+        <errata amendedtext="eleuantes" copytext="eliuantes" language="LA"/>
+        
+        <graph book_orientation="0" method="pen" place="head" type="genealogical_tree">
+            <node id="n1" person="Rollo">Rollo</node>
+            <node id="n2" person="William I Longsword">Will[ia]mus</node>
+            <node id="n3" person="Richard I of Normandy">Rich[ardus] 1: Dux N[orthmanniae]</node>
+            <node id="n4" person="Hawise of Normandy">Hawisia</node>
+            <node id="n5" person="Geoffrey I, Duke of Brittany">Gaufridus Comes Brytannia[e]</node>
+            <node id="n6" person="Alan III">Alanus</node>
+            <node id="n7" person="Odo, Count of Penthievre">Endo</node>
+            <link from="n1" relationship="has_child" to="n2"/>
+            <link from="n2" relationship="has_child" to="n3"/>
+            <link from="n3" relationship="has_child" to="n4"/>
+            <link from="n4" relationship="has_spouse" to="n5"/>
+            <link from="n5" relationship="has_spouse" to="n4"/>
+            <link from="n5" relationship="has_child" to="n6"/>
+            <link from="n5" relationship="has_child" to="n7"/>
+            <link from="n4" relationship="has_child" to="n6"/>
+            <link from="n4" relationship="has_child" to="n7"/>
+        </graph>
+        
+    </annotation>
+</transcription>

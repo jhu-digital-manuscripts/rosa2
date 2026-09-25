@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.074r.tif" reader="Harvey" signature="Iiii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>veteratoriè.</marginalia_text>
+                </position>
+            </language>
+            <translation>Cunningly.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="the holdes that were" type="straight"/>
+        <underline language="EN" method="pen" text="to flee vnto Leucadia, that the vitayles by reason of the multitude" type="straight"/>
+        <underline language="EN" method="pen" text="Phaleris" type="straight"/>
+        <underline language="EN" method="pen" text="he feined a leage" type="straight"/>
+        <underline language="EN" method="pen" text="lefte the residue of the" type="straight"/>
+        <underline language="EN" method="pen" text="the roufes of the chambers" type="straight"/>
+        <underline language="EN" method="pen" text="wherin the grayne" type="straight"/>
+        <underline language="EN" method="pen" text="the wether myghte dryue" type="straight"/>
+        <underline language="EN" method="pen" text="in confidence" type="straight"/>
+        <underline language="EN" method="pen" text="was layde vp in" type="straight"/>
+        <underline language="EN" method="pen" text="for nede of vyttaile" type="straight"/>
+        <underline language="EN" method="pen" text="syege to contynewe styll" type="straight"/>
+        <underline language="EN" method="pen" text="purueyed them vyttayles" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="got the holdes that were"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> 
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the holdes"/>
+        <mark method="pen" name="dot" place="intext"/> <!--borders, and-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="vitayles"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="he feined a leage"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="roufes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="wether"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="for nede of vyttaile"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.457v.tif" pagination="464" reader="John Dee" signature="[Qqqq iiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Castrum quod Mali leonis dicitur" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Castru[m] Mali Leonis.  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mauleon Castle.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pseudo regis" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pseudo Rex
+                    </marginalia_text>
+                    <emphasis method="pen" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                A false king.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quod Mali leonis" type="straight"/>
+        <underline language="LA" method="pen" text="Alexandrum de Brus, + germanum pseudo regis" type="straight"/>
+        
+    </annotation>
+</transcription>

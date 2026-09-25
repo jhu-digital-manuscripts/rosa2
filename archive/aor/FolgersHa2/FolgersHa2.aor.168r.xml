@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.168r.tif" pagination="159" reader="Harvey" signature="[K8r]"/>	<!-- ABO 172right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Qualia Media, talis finis.
+						Axiophili axiozela. Sol in Leone.
+					</marginalia_text>
+					<person name="Axiophilus"/>
+				</position>
+			</language>
+			<translation>As the means are great, such is the end. The worthwhile things of Axiophilus. The sun in the lion.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Quotiès dicitur, aut agitur, totiès de nobis iudicatur.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>As often as it is said or done, so often it is judged by us.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Agilitas corporis, et ingenij dexteritas, instar omnium.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Agility of the body, and the dexterity of the intellect, stands for all the rest.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Nullus habitus admirabilis, aut extraordinarius; qui non quotidianus.
+						A peritiori, aut digniori, exspectatur semper aliquid maius, aut melius.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>No habit is wondrous or extraordinary which is not daily. From a skilled or more worthy thing, something is always expected to be greater or better.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Singula pra[e]stantissimoru[m] viroru[m] dicta, factaq[ue] obseruantur curiosè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Singular sayings and deeds of the most outstanding men are observed attentively.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="lodi si conuersa" type="straight"/>
+		<underline language="IT" method="pen" text="gli huomini" type="straight"/>
+		<underline language="IT" method="pen" text="EPITETO" type="straight"/>
+		<underline language="IT" method="pen" text="osseruare questa regola" type="straight"/>
+		<underline language="IT" method="pen" text="compagno è superiore di dottrina" type="straight"/>
+		<underline language="IT" method="pen" text="è vguale" type="straight"/>
+		<underline language="IT" method="pen" text="inferiore" type="straight"/>
+		<underline language="IT" method="pen" text="Stoltitia esser d'aspettar" type="straight"/>
+		<underline language="IT" method="pen" text="piu oltre" type="straight"/>
+		<underline language="IT" method="pen" text="la natura loro" type="straight"/>
+		<underline language="IT" method="pen" text="gregge di pecore" type="straight"/>
+		<underline language="IT" method="pen" text="che'l lupo giornalmente" type="straight"/>
+		<underline language="IT" method="pen" text="distesa oratione" type="straight"/>
+		<underline language="IT" method="pen" text="paura de' lupi" type="straight"/>
+		<underline language="IT" method="pen" text="gran numero" type="straight"/>
+		<underline language="IT" method="pen" text="hauessero le corna" type="straight"/>
+		<underline language="IT" method="pen" text="vnito animo" type="straight"/>
+		<underline language="IT" method="pen" text="l'vna all'altra" type="straight"/>
+		<underline language="IT" method="pen" text="Quelle pecore" type="straight"/>
+		<underline language="IT" method="pen" text="preso animo" type="straight"/>
+		<underline language="IT" method="pen" text="promettono &amp; guirano, che" type="straight"/>
+		<underline language="IT" method="pen" text="lupo fuggiranno" type="straight"/>
+		<underline language="IT" method="pen" text="rumore al lupo, al lupo" type="straight"/>
+		<underline language="IT" method="pen" text="timore che" type="straight"/>
+		<underline language="IT" method="pen" text="parole &amp; le ragioni del pastore" type="straight"/>
+		<underline language="IT" method="pen" text="vna delle piu sauie" type="straight"/>
+		<underline language="IT" method="pen" text="di far bianco" type="straight"/>
+		<underline language="IT" method="pen" text="il negro" type="straight"/>
+		<underline language="IT" method="pen" text="s'è notte" type="straight"/>
+		<underline language="IT" method="pen" text="giorno diuenti" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="Mercury" place="right_margin"/>
+		
+		<symbol language="IT" name="SS" place="intext" text="gli huomini"/>
+		<symbol language="IT" name="SS" place="intext" text="la natura loro"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="se il compagno è superiore di dottrina     ascoltare, &amp; vbbidire: s'egli è vguale, acconsentire: s'egli è inferiore, persuaderlo modestamente."/>
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Mentre che di far bianco, il negro tenti; Cerchi     s'è notte, che giorno diuenti."/>
+		
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- above marginal note 'totie[n]s' -->
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="la natura loro"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="gran numero"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="corna"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="vnito animo"/>
+		<mark method="pen" name="comma" place="intext"/> <!-- altra ch'egli -->
+		<mark method="pen" name="horizontal_bar" place="intext"/> <!-- above 'che le' -->
+		
+    </annotation>
+</transcription>

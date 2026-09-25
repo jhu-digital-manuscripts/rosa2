@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.206r.tif" pagination="411" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="[Urbes etiam populique] uoces accipiunt" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vrbes</marginalia_text>
+                </position>
+            </language>
+            <translation>Cities.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="διαλογοί" hand="Italian"> 
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>διαλογοί</marginalia_text> 
+                </position>
+            </language>
+            <translation>Dialogues.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Falsa enim &amp; incredibilia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>falsa &amp; Incredibilia.</marginalia_text>
+                </position>
+            </language>
+            <translation>False and unbelievable.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ita scripta qupq[ue]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>scripta ficta</marginalia_text>
+                </position>
+            </language>
+            <translation>Fictious writing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Asinius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Asinius</marginalia_text>
+                    <person name="Gaius Asinius Pollio"/>
+                </position>
+            </language>
+            <translation>Asinius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="P. Nouanius Gallio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>P[ublius] Nouanius Galli[o]</marginalia_text>
+                    <person name="Publius Novanius Gallio"/>
+                </position>
+            </language>
+            <translation>Publius Novanius Gallio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="παρωδιὴ" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>παρωδιὴ</marginalia_text> <!-- for παρῳδία -->
+                </position>
+            </language>
+            <translation>Parody.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sed formas quoq[ue]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>forma[e] ficta[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Forms of fiction.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Prodicus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>P[r]odicus</marginalia_text>
+                    <person name="Prodicus"/>
+                </position>
+            </language>
+            <translation>Prodicus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ennius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ennius.</marginalia_text>
+                    <person name="Ennius"/>
+                </position>
+            </language>
+            <translation>Ennius.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quibus &amp; corpora, &amp; uerba fingimus. Sermones" type="straight"/>
+        <underline language="LA" method="pen" text="sermocinationem" type="straight"/>
+        <underline language="LA" method="pen" text="Nam certè sermo fingi non potest, ut non personae sermo fingatur. Sed" type="straight"/>
+        <underline language="LA" method="pen" text="Falsa enim &amp; incredibilia natura necesse est aut magis moueant, quia supra uera sunt: aut pro uanis accipiantur, quia              uera no[n] sunt" type="straight"/>
+        <underline language="LA" method="pen" text="abusiue etia[m] in uersificationis" type="straight"/>
+        <underline language="LA" method="pen" text="ut famam" type="straight"/>
+        <underline language="LA" method="pen" text="uoluptatem ac uirtutem (quemadmodum à Xenophonte traditur)" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

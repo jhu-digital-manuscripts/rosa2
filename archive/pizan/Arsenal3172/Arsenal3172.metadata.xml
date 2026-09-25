@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>636</totalPages>
+    <dimensions units="mm">
+        <width>260</width>
+        <height>184</height>
+    </dimensions>
+    <dates>
+        <startDate>1501</startDate>
+        <endDate>1600</endDate>
+    </dates>
+    <texts>
+        <text id="Le livre de la mutation de fortune">
+            <language>fr</language>
+            <title>Le livre de la mutation de fortune</title>
+            <textId/>
+            <pages end="301r" start="1r">304</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>24</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Christine de Pizan</title>
+            <commonName>Arsenal 3172</commonName>
+            <dateLabel>16th century</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Arsenal 3172</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Christine de Pizan</title>
+            <commonName>Arsenal 3172</commonName>
+            <dateLabel>16e siècle</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Arsenal 3172</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

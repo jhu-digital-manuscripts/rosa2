@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.023v.tif" reader="Harvey" signature="[Bviii[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="thynges that we want" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Shiftes, to supply wants.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Georgieuiz Botes of escape, owt of Turky.</marginalia_text>
+                    <location name="Turkey"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Anniball" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hannibalis scitu[m] inue[n]tu[m].</marginalia_text>
+                    <person name="Hannibal"/>
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+            </language>
+            <translation>The invention of Hannibal was known.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="elephantes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Elephas uindicte Cupidus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The elephant, eager for vengeance.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>" a[e]quipollentium idem effectus.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Wellworth anything at A pinch.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Etiam quidlibet ex quolibet facit Callida Necessitas. Nihil Virtus. 
+                    Inexpertum relinquit. Aristomenes semper euadit.</marginalia_text>
+                    <person name="Aristomenes"/>
+                </position>
+            </language>
+            <translation>The same effect of the equivalents. Wellworth anything at A pinch.
+                Even skilled necessity makes anything from something. No virtue remains untried. Aristomenes always avoids. </translation> <!--JG: Check translation, seems odd-->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="270" place="right_margin">
+                    <marginalia_text>Hîc maximu[m] Experimentu[m], Quatenus quisq[ue] esse possit fortuna[e] faber, aut occasionis artifex.</marginalia_text>
+                </position>
+            </language>
+            <translation>Here, the greatest experiment: to what extent can anyone be the artisan of fortune or the craftsman of chance.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="they all to crushed a great nomber" type="straight"/>
+        <underline language="EN" method="pen" text="theyr ennemies" type="straight"/>
+        <underline language="EN" method="pen" text="we want" type="straight"/>
+        <underline language="EN" method="pen" text="to lacke" type="straight"/>
+        <underline language="EN" method="pen" text="may supplye the" type="straight"/>
+        <underline language="EN" method="pen" text="vse of them" type="straight"/>
+        <underline language="EN" method="pen" text="Cecilius Metellus" type="straight"/>
+        <underline language="EN" method="pen" text="shyppes to conuey" type="straight"/>
+        <underline language="EN" method="pen" text="barrelles and tonnes togyther, and" type="straight"/>
+        <underline language="EN" method="pen" text="couered them" type="straight"/>
+        <underline language="EN" method="pen" text="bourdes" type="straight"/>
+        <underline language="EN" method="pen" text="Anniball" type="straight"/>
+        <underline language="EN" method="pen" text="of the fiercest elephantes to be wounded vnder the" type="straight"/>
+        <underline language="EN" method="pen" text="that strake hym" type="straight"/>
+        <underline language="EN" method="pen" text="swymme ouer the ryuer" type="straight"/>
+        <underline language="EN" method="pen" text="to ronne streight" type="straight"/>
+        <underline language="EN" method="pen" text="moued and greued" type="straight"/>
+        <underline language="EN" method="pen" text="swamme after hym" type="straight"/>
+        <underline language="EN" method="pen" text="reuenge his griefe" type="straight"/>
+        <underline language="EN" method="pen" text="tacle" type="straight"/>
+        <underline language="EN" method="pen" text="wanted stuffe" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="barrelles and"/>
+        <mark language="LA" method="pen" name="hash" place="left_margin" text="Hannibalis scitu[m] inve[n]tu[m]"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="of the fiercest elephantes to be wounded vnder the"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="hash" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--in, he-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="that strake hym"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="reuenge"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

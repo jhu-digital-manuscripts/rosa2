@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.028r.tif" reader="Harvey" signature="Cv[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Multa paulatim superantur, qua[e] Vno impetu superari, non possunt. Emblema: Ingenium plus, quàm Vires.</marginalia_text>
+                    <X-ref book_title="Moriae Encomium" language="LA" person="Erasmus" text="Multa paulatim superantur, quae uno impetu superari, non possunt."/>
+                </position>
+            </language>
+            <translation>"Many things which cannot be surpassed in one attempt, are gradually overcome." A device: more a clever trick than large forces.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Mars, cum Mercurio: Jupiter, cum Saturno: Sol, cum Luna.</marginalia_text>
+                </position>
+            </language>
+            <translation>Mars with Mercury; Jupiter with Saturn; the sun with the moon.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Via, non admodùm expedita, sed tuta.</marginalia_text>
+                </position>
+            </language>
+            <translation>Life, not exceedingly unencumbered, but protected.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="90" place="left_margin">
+                    <marginalia_text>So [the] Impresa of Consaluo [the] great Captain: A Crosbow bent with A rack: &amp; the mot,
+                    showing that his great victorys procedid more of pollicy, then force.</marginalia_text>
+                    <person name="Gonzalo Fernández de Córdoba"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="90" place="left_margin">
+                    <marginalia_text>Ingenium superat vires.</marginalia_text>
+                </position>
+            </language>
+            <translation>A clever trick overcomes large forces.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sertorius" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sertorius two Horses, on fatt, th'other leane.</marginalia_text>
+                    <person name="Quintus Sertorius"/>
+                    <emphasis method="pen" text="Sertorius" type="straight"/>
+                    <emphasis method="pen" text="two Horses" type="straight"/>
+                    <emphasis method="pen" text="on fatt" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Com. Purl. L.I. obser. 83. </marginalia_text>
+                    <person name="Jacopo di Porcia"/>
+                    <book title="The preceptes of warre"/>
+                </position>
+            </language>
+                    <language ident="EN">
+                        <position book_orientation="0" place="right_margin">
+                            <marginalia_text>that examples, similitudes, fables, [etc]. do helpe to encourage, and
+                                rule Souldiours.</marginalia_text>
+                        </position>
+                    </language>
+            <translation>Jacopo di Porcia, book 1, observation 83.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Difficiles aditus, impetus omnis habet: nisi improuisus.</marginalia_text>
+                    <X-ref book_title="Remedia Amoris" language="LA" person="Ovid" text="Difficiles aditus, impetus omnis habet"/>
+                </position>
+            </language>
+            <translation>"All of us find approaching its onrush difficult [trans. Kline, 2001]:" except when unexpected.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hispani hodiernus modus procedendi: regna regnis paulatim addentis.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Today's way of Spanish advancement: royal power, by having added kingdoms gradually.</translation> <!--JG: Don't get the Latin here. One would expect regnis addentibus instead of regnis addentis. Chris, please check--> 
+                                                                                                                            <!-- CG: This is perplexing, perhaps it's an error. Also I'm wondering if 'regna' isn't an accustiave, so something like 'with kingdoms gradually adding power' or something to that effect.-->
+                                                                                                                            <!--JG: That's also a possibility. I'll ask a specialist, just to be sure!-->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="270" place="right_margin">
+                    <marginalia_text>Qua[e] breuî finem assequu[n]t[u]r, viribus maioribus indigent: vt s[upr]a e Cardano.</marginalia_text>
+                    <person name="Girolamo Cardano"/>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0036" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language> 
+            <translation>The things which achieve the end soon require powerful men. As above, by Cardano.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Sic Romani, Orbis Domini fi[e]bant: Gra[e]cis, et Asiaticis Principibus, Alexandri sucessoribus, paulatim consumptis:
+                    maximè mutuis bellis.</marginalia_text>
+                    <person name="Alexander the Great"/>
+                </position>
+            </language>
+            <translation>Thus the Romans became the rulers of the world: with the Greek and Asian rulers, the successors of Alexander the Great,
+            having been consumed gradually, chiefly by mutual wars.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Sertorius" type="straight"/>
+        <underline language="EN" method="pen" text="not able" type="straight"/>
+        <underline language="EN" method="pen" text="matche with the hole host of the Romaines" type="straight"/>
+        <underline language="EN" method="pen" text="vnaduisedly desired" type="straight"/>
+        <underline language="EN" method="pen" text="brought forthe two horses" type="straight"/>
+        <underline language="EN" method="pen" text="before them all" type="straight"/>
+        <underline language="EN" method="pen" text="and two yong me[n]" type="straight"/>
+        <underline language="EN" method="pen" text="myghtye man of armes" type="straight"/>
+        <underline language="EN" method="pen" text="styl wrastlynge and tuggynge" type="straight"/>
+        <underline language="EN" method="pen" text="the power of the" type="straight"/>
+        <underline language="EN" method="pen" text="Romaynes army" type="straight"/>
+        <underline language="EN" method="pen" text="all together" type="straight"/>
+        <underline language="EN" method="pen" text="shall fynde them" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <symbol name="JC" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="not able"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--Romaines, therfore-->
+        <mark method="pen" name="dot" place="intext"/> <!--commaunded, the-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="all together"/>
+    </annotation>
+</transcription>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.016v.tif" pagination="32" reader="John Dee" signature="[b8[v]]"/>
+    <annotation>
+        
+        <underline id="RCP10601:038:u0001" language="LA" method="pen" text="matre" type="double"/>
+        <underline id="RCP10601:038:u0002" language="LA" method="pen" text="matre" type="double"/>
+        <underline language="LA" method="pen" text="monetam" type="straight"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP10601:038:u0001"/>
+            <marginal_annotation idref="RCP10601:038:u0002"/>
+            <relation from="RCP10601:038:u0001" to="RCP10601:038:u0002" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.072v.tif" pagination="124" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="tanta authoritas est in eorum hominum fidelitate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ta[n]ta authoritas in eor[um] ho[minu]m fidelitate
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Such authority in these men's loyalty.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="reges Persarum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Reges persarum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The kings of the Persians.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="redimiculum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Redimiculu[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Female headband.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pippa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pippa
+                    </marginalia_text>
+                    <person name="Pipa"/>
+                </position>
+            </language>
+            <translation>
+                Pipa.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tertiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tertia
+                    </marginalia_text>
+                    <person name="Tertia, daughter of Isidorus the ballet-dancer"/>
+                </position>
+            </language>
+            <translation>
+                Tertia.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de capite demptum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        demere de capite
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Te reduce numbers.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="solere aiunt barbaros reges" type="straight"/>
+        
+    </annotation>
+</transcription>

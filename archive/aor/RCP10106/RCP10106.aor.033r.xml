@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.033r.tif" pagination="65" reader="John Dee" signature="e"/>
+    <annotation>
+        
+        <marginalia anchor_text="gra[m]matice" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gra[m]matica</marginalia_text>
+                </position>
+            </language>
+            <translation>Grammar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rhetorice" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rhetorice.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rhetoric.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quaerimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qua[e]stio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Inquiry.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Et ne diutius disseram, quando sit rhetori tradendus, sic optime finiri credo, cu[m] poterit." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Responsio</marginalia_text>
+                </position>
+            </language>
+            <translation>Response.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="antiquis hoc fuisse ad augendam eloquentiam genus exercitationis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Antiquoru[m] mos.</marginalia_text>
+                </position>
+            </language>
+            <translation>The custom of the ancients.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="theseis dicerent, &amp; co[m]munes locos, &amp; caetera citra complexum" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

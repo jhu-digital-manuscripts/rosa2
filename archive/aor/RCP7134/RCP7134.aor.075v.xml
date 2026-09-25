@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.075v.tif" pagination="[68v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Genitura igitur in qua planetae radiationibus sunt colligati ualida dicitur, in qua non debilis &amp; infirma" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Genitura { valida infirma</marginalia_text>
+                </position>
+            </language>
+            <translation>Genitures: valid or ineffectual.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="De morbis nati" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vide infra fo 270. et 271.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:559" text="270"/>
+                        <target ref="RCP7134:561" text="271"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See below folio 270 and 271.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nobiles" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>artes</marginalia_text>
+                </position>
+            </language>
+            <translation>Arts.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ignobiles" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>artes</marginalia_text>
+                </position>
+            </language>
+            <translation>Arts.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="pessima sexta" type="straight"/>
+        <underline language="LA" method="pen" text="duodecima" type="straight"/>
+        <underline language="LA" method="pen" text="Dominus ascendentis si in his etiam fuerit" type="straight"/>
+        <underline language="LA" method="pen" text="nunciat" type="straight"/>
+        <underline language="LA" method="pen" text="Difficillima certe omniu[m] haec est quaestio" type="straight"/>
+        <underline language="LA" method="pen" text="in locis sint" type="straight"/>
+        <underline language="LA" method="pen" text="ac signis" type="straight"/>
+        <underline language="LA" method="pen" text="planetis" type="straight"/>
+        <underline language="LA" method="pen" text="Dixit Ptolemaeus" type="straight"/>
+        <underline language="LA" method="pen" text="Ignae quidem" type="straight"/>
+        <underline language="LA" method="pen" text="Condiscere" type="straight"/>
+        
+        <symbol name="South_Node" place="left_margin"/>
+        
+        <symbol name="Mars" place="intext"/>
+        <symbol name="Mercury" place="intext"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- mixta nobiles -->
+        <mark method="pen" name="comma" place="intext"/> <!-- infortunis ignobiles -->
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+                
+        <numeral language="LA" place="left_margin" text="Dixit Ptolemaeus">1</numeral>
+        <numeral language="LA" place="left_margin" text="Ignae quidem">2</numeral>
+        <numeral language="LA" place="left_margin" text="Rursus">3</numeral>
+        
+        <numeral language="LA" place="intext" text="locis">.1.</numeral>
+        <numeral language="LA" place="intext" text="signis">2</numeral>
+        <numeral language="LA" place="intext" text="quibusq[ue] planetis">3</numeral>
+        
+        <numeral language="LA" place="intext" text="Dixit Ptolemaeus">.1.</numeral>
+        <numeral language="LA" place="intext" text="Ignae quidem">2</numeral>
+        <numeral language="LA" place="intext" text="Rursus">3</numeral>
+        
+    </annotation>
+</transcription>

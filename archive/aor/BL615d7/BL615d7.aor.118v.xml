@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.118v.tif" pagination="[118v]" reader="John Dee" signature="[Pvi[v]]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="Capo del Fanò" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Capo del Fano</marginalia_text>
+                    <location name="Capo del Fano"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Capo di San Michele" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cap[e] S[ain]t Michael fro[m] Iamaica 30 leagues.</marginalia_text>
+                    <location name="Cape St. Michael"/>
+                    <location name="Jamaica"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Capo del Tiburone" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cap[o] de[l] Toburo[n].</marginalia_text>
+                    <location name="Tiburon"/>
+                </position>
+            </language>
+            <translation>Cape Tiburon.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Altouelo" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Alto velo, Isola</marginalia_text>
+                    <location name="Alto Velo Island"/>
+                </position>
+            </language>
+            <translation>Alto Velo, Island.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="più Oriental" type="straight"/>
+        <underline language="IT" method="pen" text="Capo del Fanò" type="straight"/>
+        <underline language="IT" method="pen" text="Capo di San" type="straight"/>
+        <underline language="IT" method="pen" text="punta" type="double"/>
+        <underline language="IT" method="pen" text="Oriental" type="straight"/>
+        <underline language="IT" method="pen" text="Giamaica XXX" type="straight"/>
+        <underline language="IT" method="pen" text="Capo del Tiburone" type="straight"/>
+        <underline language="IT" method="pen" text="vn Cacique" type="straight"/>
+        <underline language="IT" method="pen" text="suo nome" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; esprimeua altre cose" type="double"/>
+        <underline language="IT" method="pen" text="Altouelo" type="straight"/>
+        <underline language="IT" method="pen" text="altri duo nauigli" type="straight"/>
+        <underline language="IT" method="pen" text="quell'Isoletta" type="straight"/>
+        <underline language="IT" method="pen" text="molto alta" type="straight"/>
+        <underline language="IT" method="pen" text="gran distantia" type="straight"/>
+        <underline language="IT" method="pen" text="non essendo" type="straight"/>
+        
+        <errata amendedtext="di" copytext="di" language="IT"/>
+        
+    </annotation>
+</transcription>

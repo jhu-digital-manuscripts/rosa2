@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Le livre du chemin de lonc estude</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Français 1188, Bibliothéque national de France, Paris. Paris, 1403. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 270 x 200 mm, 101 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p> The <material>parchment</material> presents a yellow tonality, with some defects such as large stained areas, several plies, and an unrepaired holes. The rule vis-à-vis is respected.</p>
+                  
+            </note>
+            
+            <note rend="QUIRES">
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     
+                     <locus from="1" to="8">1-8</locus>
+                  
+                  </item>
+                  
+                  <item n="II">
+                     
+                     <locus from="9" to="16">9-16</locus>
+                  
+                  </item>
+                  
+                  <item n="III">
+                     
+                     <locus from="17" to="24">17-24</locus>
+                  
+                  </item>
+                  
+                  <item n="IV">
+                     
+                     <locus from="25" to="32">25-32</locus>
+                  
+                  </item>
+                  
+                  <item n="V">
+                     
+                     <locus from="33" to="40">33-40</locus>
+                     
+                  </item>
+                  
+                  <item n="VI">
+                     
+                     <locus from="41" to="48">41-48</locus>
+                     
+                  </item>
+                  
+                  <item n="VII">
+                     
+                     <locus from="49" to="56">49-56</locus>
+                     
+                  </item>     
+                  
+                  <item n="VIII">
+                     
+                     <locus from="57" to="64">57-64</locus>
+                     
+                  </item>
+                  
+                  <item n="IX">
+                     
+                     <locus from="65" to="72">65-72</locus>
+                     
+                  </item>
+                  
+                  <item n="X">
+                     
+                     <locus from="73" to="80">73-80</locus>
+                     
+                  </item>         
+                    
+                  <item n="XI">
+                     
+                     <locus from="81" to="88">81-88</locus>
+                     
+                  </item>
+                  
+                  <item n="XII">
+                     
+                     <locus from="89" to="96">89-96</locus>
+                     
+                  </item>
+                  
+                  <item n="XIII">
+                     
+                     <locus from="97" to="101">97-101</locus>
+                     
+                  </item>
+                    
+               </list>
+                
+               <p>(I) + 101 + (I). Modern foliation in ink on the top right corner is accurate. </p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>There are uniform light gray ruling marks on the folios done with a lead pencil. There is evidence of pricking, with 2 pricks in every folio. There is one column with 32 (sometimes 31) lines.</p>
+
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text is written in dark brown ink and the rubrics are bright red. There seems to be one scribal hand for the whole manuscript (Hand R) using a semicursive minuscule script. The only punctuation mark used throuhgout the text is the period. There are corrections done by the scribe's own hand, and another hand (Hand X), most of them in a semi quick cursive script.</p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>The ornamental decoration of the manuscript was made by the workshop "aux échancrures". There is one large foliated initial in folio <locus>1</locus>, a T in blue over a gold leave background (vignette). It has red, blue and gold leaf foliate extenders coming out of the left side. The initial is connected to a decorative frame in alternating red, blue, and gold leaf. In addition there are two smaller foliate initials in red or blue with shorter foliate extenders that partially frame a miniature above and/or text above and below the initials (ff. <locus>2</locus>, <locus>8</locus>, <locus>14</locus>, <locus>26</locus>, <locus>34</locus>, <locus>46</locus>, <locus>68</locus>, <locus>74</locus>, <locus>79</locus>, <locus>88</locus>). In addition, there are many other smaller decorated initials in gold leaf over an alternating red or blue background.</p>
+               
+               <p>The miniatures in this manuscript were the product of the Master of the Coronation of the Virgin. All the miniatures have been done in grisaille and they are surrounded by a simple double frame in black and gold leaf. </p>
+             
+             <p>Miniatures:</p>
+               <list>
+                  <item> Fol. <locus>1</locus>, Christine presenting her manuscript to the king. </item>
+                  <item> Fol. <locus>8</locus>, Christine and the Sibyl of Cumae. </item>
+                  <item> Fol. <locus>14</locus>, Pegasus and the Fountain of Wisdom. </item>
+                  <item> Fol. <locus>26</locus>, Ascent to Heaven.</item>
+                  <item> Fol. <locus>46</locus>, The heart of Reason in Heaven. </item>
+                 
+                </list>
+                              
+            </note>
+            
+            <note rend="BINDING">
+               
+               <p>The manuscript is bound in red moroccan leather with the aid of wood plates. The cover contains the coat of arms of Charles IX with the title <hi rend="italics"> "Le Chemain [sic] de long estude"</hi>, surrounded by a golden cartouche. The covers have holes, indicating the existence of metal clasps to close the manuscript. There are 5 nerves on the spine, with the initials of the Louis XIV surmounted by a small star. The spine, divided by six nerves, contains the initials of Charles IX surmounted by a crown.</p>
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>The manuscript can be dated to the beginnings of 1403. The manuscript was presented to Jean de Berry the 20th of March, 1403.</p>
+               <p>Provenance: Jean de Berry; the royal library. It contains previous shelfmarks on folio <locus>1</locus>: 1127 (Rigault), 797 (Dupuy); 7401 (Regius). There is a stamp from the BN on ff. <locus>1</locus> and <locus>101</locus>. </p>
+                  
+            </note>
+            
+            <note rend="TEXT">
+               
+               <p>It only contains <hi rend="italics">Le livre du chemin de lonc estude</hi>.</p>
+               
+               
+            
+            </note>
+            
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 1188</note>
+               
+               <title>Le livre du chemin de lonc estude</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="101" unit="folios">101 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">270</height>
+                     
+                     <width unit="mm">200</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">5</note>
+                        
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 1188</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="101v">1r-101v</locus>
+                     <title>Le livre du chemin de lonc estude</title>
+                     <note type="textid">Le livre du chemin de lonc estude</note>
+                     <note type="folios">101</note>
+                     <note type="illustrations">5</note>
+                     <note type="linesPerColumn">32</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

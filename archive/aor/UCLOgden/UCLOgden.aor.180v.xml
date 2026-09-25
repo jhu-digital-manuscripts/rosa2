@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.180v.tif" pagination="110" reader="John Dee" signature="[I 2[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Sol in medio coeli cum Saturno" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ☉ cu[m] ♄ in corde Co[e]li. 
+                    </marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>
+               The Sun with Saturn in midheaven. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cum no[n] fuerit inter aliquem planetarum, &amp; significatorem ictisal aspectus, et fuerit uterq[ue] in eodem circulo, &amp; circulis parallelis in nadir uel anahat, uel in aequinoctiali itinere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Et illa mea opimio est quod melius fuerit co[n]siderare parallelos a[e]quatori quam zodiaci pro directionibus p[er]ficiendis 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                And it is my opinion that it would be better to consider parellels of the equator than of the zodiac for the completed directions.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sicut dixit in 2. aphoris.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Thus he said in the second aphorism.
+            </translation>
+        </marginalia>
+            
+            <marginalia anchor_text="Sola[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        vnicam
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Unique.
+            </translation>
+            </marginalia>
+            
+        <marginalia anchor_text="Cum diuersificantur duo climata, diuersificatur planetaru[m] aspectus &amp; eoru[m] radii." hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Planetar[um] aspectus r[ati]o[n]e climatis variantur.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The aspects of the planets are changed becuase of the climate.</translation>
+            </marginalia>
+                
+        <underline language="LA" method="pen" text="Saturno erit in signo masculino orientalis" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ex circulis" type="straight"/>
+        <underline language="LA" method="pen" text="sola[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quonia[m] eoru[m] lumen est Saturni" type="straight"/>
+        <underline language="LA" method="pen" text="domini terminorum sint ex rei incipie[n]dae natura." type="straight"/>
+        <underline language="LA" method="pen" text="sunt 1413" type="straight"/>
+        <underline language="LA" method="pen" text="Cum diuersificantur duo climata, diuersificatur planetaru[m] aspectus &amp; eoru[m] radii." type="straight"/>
+        
+        <symbol name="North_Node" place="left_margin"/>
+        <symbol name="South_Node" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

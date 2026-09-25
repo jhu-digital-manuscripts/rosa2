@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.146r.tif" pagination="146" reader="John Dee" signature="Tij"/>    
+    <annotation>
+        
+        <marginalia anchor_text="città Isabella" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Isabella fort</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="CCXXV" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>225 Spaniard</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="XXX Indians" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>30 Indians</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="MCCCCXCVI" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A[nn]o 1496</marginalia_text>
+                </position>
+            </language>
+            <translation>In the year 1496.</translation>
+        </marginalia>
+       
+        <underline language="IT" method="pen" text="hoggimai ridotta l'Isola assai pacifica, &amp; fabricata la città Isabella" type="straight"/>
+        <underline language="IT" method="pen" text="e tre Fortezze nella terra" type="straight"/>
+        <underline language="IT" method="pen" text="molti maligni, &amp; mordaci, i quali, mossi da inuidia, non restauano di far mala relatione a quei Re delle" type="straight"/>
+        <underline language="IT" method="pen" text="con CCXXV" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; XXX Indiani" type="straight"/>
+        <underline language="IT" method="pen" text="a' X di Marzo" type="straight"/>
+        <underline language="IT" method="pen" text="MCCCCXCVI s'imbarcô" type="straight"/>
+        <underline language="IT" method="pen" text="dal porto dell'Isabella, &amp;" type="straight"/>
+        
+    </annotation>
+</transcription>

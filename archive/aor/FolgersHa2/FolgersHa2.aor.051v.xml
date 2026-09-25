@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.051v.tif" pagination="422" reader="Harvey"/>	<!-- ABO 56left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Hic etiam ex abundantia cordis os loquitur.
+					</marginalia_text>
+					<X-ref book_title="Gospel of Matthew" language="LA" person="Matthew" text="ex abundantia enim cordis os loquitur"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				"Even here the mouth speaks due to the abundance of the heart."
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) Solus Mercurius habet Quodlibetum ingenij,
+						Lingua[e], Manus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Only Mercury has the subtlety [quodlibet] of talent, tongue, and hand.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Virtus non queritur de Fortuna. )
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Virtue does not complain about Fortune.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Quod facturus eris, dicere sustuleris. Ausonius.
+					</marginalia_text>
+					<person name="Ausonius"/> 
+					<X-ref book_title="Epigrammata de diversis rebus" language="LA" person="Ausonius" text="Quod facturus eris, dicere sustuleris"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				"Refrain from saying what you will do." Ausonius.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Nusq[uam] ha[e]ret Trismegisti Quodlibetum.
+					</marginalia_text>
+					<person name="Hermes Trismegistus"/>
+				</position>
+			</language>
+			<translation>
+				The subtlety of Trismegistus never stays fixed.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Plurimus vsus facetiarum in Conuiuijs, et festiuis Colloquijs: in quibus etiam
+						delectant Problemata, qualia in Mensa Philosophica: proposita vrbana, qualia in
+						4.to Guatij, et 1.o Castilionis: a[e]nigmata, vulgo <!--JG: Perhaps better to transcribe [quarto] and [primo]-->
+					</marginalia_text>
+					<person name="Stefano Guazzo"/>
+					<person name="Castiglione"/>
+					<book title="Mensa philosophica"/>
+					<book title="The civil conversation"/>
+					<book title="Book of the Courtier"/>
+				</position>
+			</language>
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						riddles.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				There are many uses for jokes at dinner parties or festive gatherings, where even problems
+				are delightful, such as those found in the Mensa Philsophia; otherwise, there are urbane propositions, 
+				such as those in the fourth book of Guazzi, and the first book of Castiglione; else puzzles, and riddles in the vernacular. 
+			</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.051v_0001" marginalia_continues_to="Ha2.052r_0001" marginalia_to_transcription="Ha2.05r.xml">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Dexterrimi ingenij est, et pra[e]gnantiss[im]a[e] 
+						facultatis pragmatica[e], conuertere lecta [p. 423: omnia, antiqua, et neoterica, ad pra[e]sentes personas, res ante oculas positas, et
+						instantes Occasiones. Atq[ue] ità ex alienis facere tua: ex veteribus, noua.]
+						<!-- Continues onto facing page, left margin, Ha2.052r  -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Those most skillful in natural talent, and with the faculty of a most pregnant pragmaticism, transform [all] their readings [p. 423: , whether ancient or modern, for people present today, placing those things before your eyes, and 
+				in present circumstances. And so they make foreign things yours, and old things new.]
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="accorto giouane" type="straight"/>
+		<underline language="IT" method="pen" text="spilletto in" type="straight"/>
+		<underline language="IT" method="pen" text="hauuto in dono da una delle più nobili" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; leggiadre donne" type="straight"/>
+		<underline language="IT" method="pen" text="è possibile" type="straight"/>
+		<underline language="IT" method="pen" text="uno spilletto Milanese" type="straight"/>
+		<underline language="IT" method="pen" text="il galant'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="spilletti Milanesi" type="straight"/>
+		<underline language="IT" method="pen" text="altroue, che qui" type="straight"/>
+		<underline language="IT" method="pen" text="gran cognitione" type="straight"/>
+		<underline language="IT" method="pen" text="de gli spilletti?" type="straight"/>
+		<underline language="IT" method="pen" text="non lauora d'altro" type="straight"/>
+		<underline language="IT" method="pen" text="fo loro la punta" type="straight"/>
+		<underline language="IT" method="pen" text="la mano sulla brachetta" type="straight"/>
+		<underline language="IT" method="pen" text="fatemi dunque" type="straight"/>
+		<underline language="IT" method="pen" text="poco la punta a questo" type="straight"/>
+		<underline language="IT" method="pen" text="Pronto" type="straight"/>
+		<underline language="IT" method="pen" text="galante ser bestia" type="straight"/>
+		<underline language="IT" method="pen" text="della sua dama" type="straight"/>
+		<underline language="IT" method="pen" text="le fanciulle" type="straight"/>
+		<underline language="IT" method="pen" text="come il sole" type="straight"/>
+		<underline language="IT" method="pen" text="di Marzo" type="straight"/>
+		<underline language="IT" method="pen" text="muouono, &amp; non risoluono" type="straight"/>
+		<underline language="IT" method="pen" text="uoi altri houmini" type="straight"/>
+		<underline language="IT" method="pen" text="i tafani d'Agosto" type="straight"/>
+		<underline language="IT" method="pen" text="non ci lasciate" type="straight"/>
+		<underline language="IT" method="pen" text="uiuere" type="straight"/>
+		<underline language="IT" method="pen" text="Essendo infermo M. Honofrio" type="straight"/>
+		<underline language="IT" method="pen" text="un medico" type="straight"/>
+		<underline language="IT" method="pen" text="M. Mercurio: ilquale" type="straight"/>
+		<underline language="IT" method="pen" text="che domenica" type="straight"/>
+		<underline language="IT" method="pen" text="andarete in chiesa a messa" type="straight"/>
+		<underline language="IT" method="pen" text="galant'huomo mentre scherzando" type="straight"/>
+		<underline language="IT" method="pen" text="cercò di rispondergli" type="straight"/>
+		<underline language="IT" method="pen" text="un'ottimo indouino" type="straight"/>
+		<underline language="IT" method="pen" text="non ne dubito punto, anzi lo tengo" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="d'altro, &amp; io fo loro la punta" type="straight"/>
+		<underline language="IT" method="chalk" text="il galant'huomo la mano sulla brachetta" type="straight"/>
+		<underline language="IT" method="chalk" text="fatemi dunque un poco la punta a questo" type="straight"/>
+		<underline language="IT" method="chalk" text="Vn galante ser bestia" type="straight"/>
+		<underline language="IT" method="chalk" text="di Marzo" type="straight"/>
+		<underline language="IT" method="chalk" text="tafani d'Agosto" type="straight"/>		
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="right_margin"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- don -->
+		<mark method="pen" name="vertical_bar" place="right_margin"/> <!-- lauo ... allho -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- huo -->
+		
+	    	<!-- Left margin -->
+	    <mark method="pen" name="plus_sign" place="left_margin"/> <!-- fatemi dunque -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- quando .. uiuere -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark method="pen" name="dot" place="intext"/> <!-- giouane, udendo -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- piu nobili -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="spilletti Milanesi"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="gran cognitione"/>
+	    <mark method="pen" name="dot" place="intext"/> <!-- altro, & -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- sulla brachetta -->
+		<mark method="pen" name="dot" place="intext"/> <!-- bracheta, le -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Pronto"/>
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- scurrile -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="galante ser bestia"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="le fanciulle"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="come il sole"/>
+		<mark method="pen" name="comma" place="intext"/> <!-- dama gli -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- uoi altri huo -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="i tafani d'Agosto"/>
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- uiuere -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="un' ottimo indouino"/>
+
+    </annotation>
+</transcription>

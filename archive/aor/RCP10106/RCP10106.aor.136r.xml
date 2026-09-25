@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.136r.tif" pagination="271" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Caluus</marginalia_text>
+                    <person name="Licinius Macer Calvus"/>
+                </position>
+            </language>
+            <translation>Calvus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Verrem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In verrem</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Metus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Metus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Fear.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]citandi affectus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Affectuu[m] co[n]citatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Stimulating emotions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cossutiamis Capitonis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cossutiani</marginalia_text>
+                    <person name="Cossutianus Capito"/>
+                </position>
+            </language>
+            <translation>Cossutianus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="accusatori" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Accusator.</marginalia_text>
+                </position>
+            </language>
+            <translation>Prosecutor.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Atrocitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Atrocitas</marginalia_text>
+                </position>
+            </language>
+            <translation>Outrage.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vt demosthenes a medïa</marginalia_text>
+                    <person name="Demosthenes"/>
+                </position>
+            </language>
+            <translation>As Demosthenes from the middle.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Plurimum tame[n] affert atrocitatis modus, si grauiter, si contumeliose, ut Demosthenes ex parte percußi corporis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Modus Demosthenes</marginalia_text>
+                </position>
+            </language>
+            <translation>The method of Demosthenes.</translation> <!-- FSF: if it was genitive, it would be Demosthenis; at the same time, I don't know any better solution to this -->
+        </marginalia>
+
+        <underline language="LA" method="pen" text="Erubescit caesarem" type="straight"/>
+        <underline language="LA" method="pen" text="ex his, quid factum sit, à quo, in quem, quo animo, quo tempore, quo loco, quo modo: quae omnia infinitos anfractus habent" type="straight"/>
+        <underline language="LA" method="pen" text="Et si die fortè solenni" type="straight"/>
+        <underline language="LA" method="pen" text="Et si plus etiam uideri potest uoluisse, quàm fecit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+       
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/> 
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.041r.tif" pagination="81" reader="John Dee" signature="f"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vbi hoc habetur?</marginalia_text>
+                </position>
+            </language>
+            <translation>Where is this held?</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uoco Samaritanam linguam Gallica[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Moses antequa[m] in monte raperetur, 12. uoluminibus legem Dei pro 12. tribubus exposuerat, ita ut duodecies quinq[ue] libri, siue 60. uolumina" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

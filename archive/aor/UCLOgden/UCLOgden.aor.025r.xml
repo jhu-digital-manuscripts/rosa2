@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.025r.tif" pagination="33" reader="John Dee"/>
+    <annotation>
+                
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        .1. ἀνατολὴ
+                        .2. ἀναφορὰ
+                        .3. θεὰ
+                        .4. ὑπόγειον
+                        .5. ἀγαθὴ τύχη
+                        .6. κακὴ τύχη
+                        .7. δύσις
+                        .8. ἐπικαταφορά 
+                        .9. θεὸς
+                        .10: μεσουράνια
+                        :11: ἀγαθοδαίμον
+                        :12: κακοδαίμον
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>1. Ascendent. 2. The rising. 3. Goddess. 4. Nadir. 5. Good fortune. 6. Bad fortune. 7. Descendent. 8. Following. 9. God. 10. Midheaven. 11. Good spirit. 12. Evil spirit.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Decim[a]e domus vis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Strength of the tenth house.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mediu[m] ca[e]li partiliter aliquando in vndecima
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                At some point the middle of the sky is partly in the eleventh [house].
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Dispositionis locus co[n]syderandus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The place of disposition is to be considered.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="loco hominu[m] sectas inuenimus" type="straight"/>
+        <underline language="LA" method="pen" text="est, &amp; omnium cardinum potestate sublimior, hic locus à nobis MC, à Graecis uero" type="straight"/>
+        <underline language="LA" method="pen" text="in media parte totius mu[n]di" type="straight"/>
+        <underline language="LA" method="pen" text="In hoc loco MC frequenter partiliter" type="straight"/>
+        <underline language="LA" method="pen" text="animaduerte, quae stell[a]e loca ipsa possideant" type="straight"/>
+        <underline language="LA" method="pen" text="quae quaerenda diximus, feliciter proueniunt" type="straight"/>
+        <underline language="LA" method="pen" text="Inspice etia[m], qu[a]e stella, in" type="straight"/>
+        <underline language="LA" method="pen" text="an in q[ui]b[us] naturali quoda[m] dolore tristet[ur]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/> <!-- FSF: dotted -->
+        
+        <errata amendedtext="μεσουράνια" copytext="μεσουράνινα" language="EL"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

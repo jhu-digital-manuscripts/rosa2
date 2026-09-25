@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.246r.tif" pagination="246" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="DCC leghe" hand="Italian" method="pen">
+            <language ident="IT"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>700 Leghe</marginalia_text>
+                </position>
+            </language>
+            <translation>700 leagues.</translation>
+        </marginalia>        
+        
+        <marginalia anchor_text="MDV" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1505</marginalia_text>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <marginalia anchor_text="già l'anno auanti la gloriosa Reina Dóna Isabella era passata a miglior vita." hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Elizabeth</marginalia_text>
+                    <person name="Isabella I of Castile"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Regina mortua A[nn]o 1504
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Queen Elizabeth died in 1504. </translation>
+          </marginalia> 
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Invidioso Spagnuolo</marginalia_text>
+                </position>
+            </language>
+            <translation>Envious Spaniard</translation>
+        </marginalia> 
+        
+        <underline language="IT" method="pen" text="&amp; noi in riposo, l'abero siruppe in IIII pezzi" type="straight"/>
+        <underline language="IT" method="pen" text="per le gotte" type="double"/>
+        <underline language="IT" method="pen" text="picciolo albero" type="straight"/>
+        <underline language="IT" method="pen" text="DCC leghe" type="straight"/>
+        <underline language="IT" method="pen" text="Porto di S. Lucar di Barameda" type="straight"/>
+        <underline language="IT" method="pen" text="già l'anno auanti la gloriosa Reina Don[n]a Isabella era passata a miglior vita" type="straight"/>
+        <underline language="IT" method="pen" text="secco, &amp; contrario a suoi negocij" type="straight"/>
+        <underline language="IT" method="pen" text="volontà di totalmente piuarnelo" type="double"/>
+        <underline language="IT" method="pen" text="la vergogna" type="double"/>
+        
+        <errata amendedtext="rioso" copytext="riposo" language="LA"/>
+        
+    </annotation>
+</transcription>

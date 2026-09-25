@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.024r.tif" pagination="47" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="M. Tullius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>M[arcus] Tullius.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>M[arcus] Tullius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Caesarem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>C[aius] Caesar</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Julius Caesar</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="his ingenia concidi, &amp; comminui credo" type="straight"/>
+        <underline language="LA" method="pen" text="Non obstant hae disciplinae" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/> 
+        
+    </annotation>
+</transcription>

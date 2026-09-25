@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.292v.tif" pagination="564" reader="John Dee" signature="[nnn.iii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="catamitum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>catamitus</marginalia_text>
+                </position>
+            </language>
+            <translation>Pretty boy [Loeb 189, 131].</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="stupiditatem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>stupiditas</marginalia_text>
+                </position>
+            </language>
+            <translation>Senselessness.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="nunciationem solu[m] habemus: Consules &amp; reliqui magistratus etiam inspectione[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>habere nu[n]ciatione[m] inspectione[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>To have a notice; to have an inquiry.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="prudentia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Prudentia</marginalia_text>
+                </position>
+            </language>
+            <translation>Prudence.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="naufeet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>nauseare</marginalia_text>
+                </position>
+            </language>
+            <translation>To feel sick.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="celeriter isti &amp; redisti" type="straight"/>
+        <underline language="LA" method="pen" text="inuectus est copiosius multo in istum &amp; paratius" type="straight"/>
+        <underline language="LA" method="pen" text="enim nunciationem solu[m] habemus" type="straight"/>
+        <underline language="LA" method="pen" text="nec enim ab homine nunqua[m] sobrio postulanda prudentia" type="straight"/>
+        <underline language="LA" method="pen" text="pulcherrimam tra[n]siliat oratio" type="straight"/>
+        <underline language="LA" method="pen" text="sudat, pallet" type="straight"/>
+        
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">13</numeral>
+        
+        <drawing anchor_text="Prudentia" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

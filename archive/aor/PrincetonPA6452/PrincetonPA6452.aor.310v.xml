@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.310v.tif" pagination="604" reader="Harvey" signature="[eee2v]"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="Philopoemenis sententiam" type="straight"/>
+        <underline language="LA" method="pen" text="Pr. is tum erat" type="straight"/>
+        <underline language="LA" method="pen" text="omnes eo tempore &amp; prudentia" type="straight"/>
+        <underline language="LA" method="pen" text="autoritate anteibat" type="straight"/>
+        <underline language="LA" method="pen" text="Praetor" type="straight"/>
+        <underline language="LA" method="pen" text="terrestrium certaminu[m] arte que[n]uis claroru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ingenio aequabat" type="straight"/> <!--very light underscoring-->
+
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Philopoemenis"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Philopoeme -->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="prudentia"/>
+        <mark method="pen" name="plus_sign" place="intext"/> <!-- arte -->
+        <mark method="pen" name="dot" place="intext"/> <!--aequabat, ita-->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.084r.tif" pagination="84" reader="John Dee" signature="Liiij"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="XIII di Marzo" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>13 Martij</marginalia_text>
+                </position>
+            </language>
+            <translation>13 March.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="III di Agosto" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>7 Months 11 dayes.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="vittoria" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Victoria</marginalia_text>
+                </position>
+            </language>
+            <translation>Victory.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="XIII" type="straight"/>
+        <underline language="IT" method="pen" text="di Palos" type="straight"/>
+        <underline language="IT" method="pen" text="era partito a' III di Agosto dell'anno" type="straight"/>
+        <underline language="IT" method="pen" text="cioè sette mesi" type="straight"/>
+        <underline language="IT" method="pen" text="vittoria" type="straight"/>
+        <underline language="IT" method="pen" text="tanto accrescimento si aspettaua, si per la Christiana Religione, come per lo stato de' Re Catolici, facendo" type="straight"/>
+        
+        
+        
+    </annotation>
+    
+</transcription>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.016r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Tyrrhenos giga[n]tes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        hic co[n]sidera [an?] Tyr[r]henos [Lex? lege?] debent. <!--Parts of marginalia not visible / NBW: "consider this, that the Tyrhennians are bound by law?" still guesses, based on view of gutter from preceding photo.-->
+                    </marginalia_text>
+                    <location name="Tyrrhenian Sea"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Tyrrhenos giga[n]tes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        J[ohn] d[ee]. Gygantes Tyrrhenos. forte pyreneos.
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                    <location name="Tyrrhenian Sea"/>
+                    <location name="Pyrenees"/>
+                </position>
+            </language>
+            <translation>John Dee. Tyrhenian giants: likely Pyrenean</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="reges" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Regati
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Princes.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="congressum Corineo" type="dotted"/>
+        <underline language="LA" method="pen" text="soleo Tyrrhenos giga[n]tes in fugam" type="straight"/>
+        <underline language="LA" method="pen" text="Subardus" type="straight"/>
+        <underline language="LA" method="pen" text="era[n]t duodecim reges in Gallia" type="straight"/>
+        
+    </annotation>
+</transcription>

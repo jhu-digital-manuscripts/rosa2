@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.144r.tif" pagination="27" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="memoriam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Memoria</marginalia_text>
+                </position>
+            </language>
+            <translation>Memory.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="MEMORIA" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Memoria 2</marginalia_text>
+                </position>
+            </language>
+            <translation>Memory, 2.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Su[n]t igitur duae memoriae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Memori[a]e Diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>The division of memory.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Constat igitur artificiosa memoria ex locis &amp; imaginibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex quibus co[n]stat artificiosa</marginalia_text>
+                </position>
+            </language>
+            <translation>From which things the artificial [memory] arises.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Locos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Loci qui.</marginalia_text>
+                </position>
+            </language>
+            <translation>Which scenes.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Imagines" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Imagines</marginalia_text>
+                </position>
+            </language>
+            <translation>Images.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Simile.</marginalia_text>
+                </position>
+            </language>
+            <translation>A simile.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="scire tame[n] oportet, pronuntiatonem bona[m] id perficere, vt res ex animo agi videatur" type="straight"/>
+        <underline language="LA" method="pen" text="ingenii bonitas imitatur saepe doctrinam" type="straight"/>
+        <underline language="LA" method="pen" text="vt ingenio, doctrina, praeceptione" type="straight"/>
+        <underline language="LA" method="pen" text="imaginibus co[m]moniti" type="straight"/>
+        
+        <drawing anchor_text="vt ingenio, doctrina, praeceptione" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

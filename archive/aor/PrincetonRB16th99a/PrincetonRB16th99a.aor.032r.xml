@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th99a.032r.tif" pagination="32[r]" reader="Harvey" signature="ij."/>
+    <annotation>
+        
+        <marginalia anchor_text="trees or fruites" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>The Alphabet of the Orchyard.</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The Gardene Alphabeth, i[nfr]a, in March.</marginalia_text>
+                    <internal_ref>
+                        <target ref="PrincetonRB16th99a:00000086" text="i[nfr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>The Alphabet of the Orchyard. The Gardene Alphabete, [see] below, in March.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="mattock" type="straight"/>
+        <underline language="EN" method="pen" text="Stub roote so" type="straight"/>
+        <underline language="EN" method="pen" text="greater crime" type="straight"/>
+        <underline language="EN" method="pen" text="losse of time" type="straight"/>
+        <underline language="EN" method="pen" text="good tilth" type="straight"/>
+        <underline language="EN" method="pen" text="Small profit" type="straight"/>
+        <underline language="EN" method="pen" text="péeling of ground" type="straight"/>
+        <underline language="EN" method="pen" text="Land past the" type="straight"/>
+        <underline language="EN" method="pen" text="vp to rest" type="straight"/>
+        <underline language="EN" method="pen" text="broome" type="straight"/>
+        <underline language="EN" method="pen" text="and firs" type="straight"/>
+        
+        <underline language="EN" method="pen" text="earth be not" type="straight"/>
+        <underline language="EN" method="pen" text="dig it aloft" type="straight"/>
+        <underline language="EN" method="pen" text="set their" type="straight"/>
+        <underline language="EN" method="pen" text="vnset leaue" type="straight"/>
+        <underline language="EN" method="pen" text="Sowe kirnels" type="straight"/>
+        <underline language="EN" method="pen" text="such stocks" type="straight"/>
+        <underline language="EN" method="pen" text="trees or fruites" type="straight"/>
+        <underline language="EN" method="pen" text="remooued" type="straight"/>
+        <underline language="EN" method="pen" text="Apricocks" type="straight"/>
+        <underline language="EN" method="pen" text="Boollesse" type="straight"/>
+        <underline language="EN" method="pen" text="Medlars" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="greater crime"/>
+        <mark language="EN" method="pen" name="vertical_bar" place="intext" text="What greater crime, then losse of time."/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="good tilth"/>
+        <mark language="EN" method="pen" name="vertical_bar" place="intext" text="Small profit is found, by péeling of ground."/>
+        <mark language="EN" method="pen" name="vertical_bar" place="intext" text="Land past the best, cast vp to rest."/>
+        
+    </annotation>
+</transcription>

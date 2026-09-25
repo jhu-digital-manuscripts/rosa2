@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.148v.tif" pagination="[148v]" reader="John Dee" signature="[Tiiij[v]]"/>    
+    <annotation>
+        
+        <marginalia anchor_text="il Re Caminabo" hand="Italian" id="BL615d7:615_d_7_f148v:m0002">
+            <language ident="IT">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Il Re Caminabo</marginalia_text> 
+                    <person name="Caminabo"/> <!-- MB. Name of a  pre-Columbian cacique, therefore no modernized name provided. -->
+                </position>
+            </language>
+            <translation>The King Caminabo</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" id="BL615d7:615_d_7_f148v:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sup[ra] fol. 123 v.</marginalia_text>
+                    <internal_ref>
+                        <target ref="BL615d7:615_d_7_f123v:m0001" text="123 v"/>
+                    </internal_ref>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="XX di Aprile" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ap[r]ilis. 20:</marginalia_text>
+                </position>
+            </language>
+            <translation>April 20.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The Course kept in the parallell of 22</marginalia_text>  
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="XX di Maggio" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Maij. 20:</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="itinerario" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Itinerariu[m] Christofer Colon</marginalia_text>   
+                    <person name="Columbus"/>
+                </position>
+            </language>
+            <translation>The itinerary of Christopher Columbus</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="contentò di uenire in Castiglia" type="straight"/>
+        <underline language="IT" method="pen" text="dalla Spagnuola" type="straight"/>
+        <underline language="IT" method="pen" text="il Re Caminabo" type="straight"/>
+        <underline language="IT" method="pen" text="s'è detto" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; questo," type="straight"/>
+        <underline language="IT" method="pen" text="non era natiuo" type="straight"/>
+        <underline language="IT" method="pen" text="ma de' Caribi" type="triple"/>
+        <underline language="IT" method="pen" text="però" type="double"/>
+        <underline language="IT" method="pen" text="Guadalupe" type="straight"/>
+        <underline language="IT" method="pen" text="ventiduo" type="straight"/>
+        <underline language="IT" method="pen" text="haueua l'esperienza" type="double"/>
+        <underline language="IT" method="pen" text="che hora si" type="straight"/>
+        <underline language="IT" method="pen" text="bene a Tramontana" type="double"/>
+        <underline language="IT" method="pen" text="trouare i venti Vendauali" type="double"/>
+        <underline language="IT" method="pen" text="a' XX di" type="straight"/>
+        <underline language="IT" method="pen" text="giauano sei oncie di pane al dì" type="straight"/>
+        <underline language="IT" method="pen" text="vna inghistara e" type="straight"/>
+        <underline language="IT" method="pen" text="VIII," type="straight"/>
+        <underline language="IT" method="pen" text="oue" type="double"/>
+        <underline language="IT" method="pen" text="alquanto più all' Occidente delle isole" type="straight"/>
+        <underline language="IT" method="pen" text="gli Astori" type="straight"/>
+        <underline language="IT" method="pen" text="ragion nel suo itinerario dicendo" type="straight"/>
+        <underline language="IT" method="pen" text="Questa matina" type="double"/>
+        <underline language="IT" method="pen" text="aguglie Fiaminghe" type="double"/>
+        
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        
+        <errata amendedtext="sapeue, piloti oue" copytext="sapeue, oue" language="IT"/> 
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <physical_link>
+            <marginal_annotation idref="BL615d7:615_d_7_f148v:m0002"/>
+            <marginal_annotation idref="BL615d7:615_d_7_f148v:m0001"/>
+            
+            <relation from="BL615d7:615_d_7_f148v:m0002" to="BL615d7:615_d_7_f148v:m0001" type="undirected"/>
+            
+        </physical_link>        
+    </annotation>
+</transcription>

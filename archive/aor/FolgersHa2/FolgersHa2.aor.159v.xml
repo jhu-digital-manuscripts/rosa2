@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.159v.tif" pagination="142" reader="Harvey" signature="[I7v]"/>	<!-- ABO 164left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Ha[e]c omnia breuissima, facillima, dulcissima:
+						et citissimè percursa: vsus aute[m]
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						quotidiani, et infiniti.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>All these things are most short, easy, and pleasant, and are passed over most quickly: but for daily and endless use.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						The onlie
+						( Summist of arts, &amp; practises.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						risoluto.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Resolute.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Nerui artis, et medulla ingenij. Occulta[e] /
+						artificium proprietates, et specifica[e] professorum
+						differentia[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The sinews of art and the marrow of the intellect. The hidden qualities of professions and the specific differences of professors.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Arts, et Virtus in specialissima specie.
+						( Prat[e]ij aureu[m] alphabetu[m] Legu[m]
+						Rom: Lipsius de Magistratibus.
+					</marginalia_text>
+					<person name="Peter of Ravenna"/>
+					<person name="Lipsius"/>
+					<book title="Alphabetum aureum"/>
+					<book title="De magistratibus veteris populi Romani"/>
+				</position>
+			</language>
+			<translation>Art and virtue are in the most special kind. Peter of Ravenna 'The golden alphabet of the Roman laws', Lipsius 'On magistrates'.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Gothofredi Institutiones, cu[m] Hopperi [quarto] Elementoru[m];
+						Principiu[m], dimidium totius. Althusij ars
+						iuris, dimidiu[m] plus toto: sed ad unguem tota.
+					</marginalia_text>
+					<person name="Denis Godefroy"/>
+					<person name="Joachim Hoppers"/>
+					<book title="Corpus juris civilis"/>
+					<book title="Elementorum iuris"/>
+					<book title="Jurisprudentia Romana"/>
+				</position>
+			</language>
+			<translation>Denis Godefroy's 'Institutions' with Joachim Hoppers's fourth book of the 'Elementorum iuris' is a start, the half of the whole. Johannes Althusius's 'Art of law' is half more than the whole: but all by heart.</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.159v_0001" marginalia_continues_from="Ha2.160r_0001" marginalia_from_transcription="Ha2.160r.xml">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						<!-- Continued from facing page, left margin, Ha2.160v --> [p. 143: Excellunt iudicio Ca[e]sar, Sallustius, Virgilius: qui soli possunt prudentissimu[m] viru[m]
+						efficere: pra[e]sertim cum Ciceronis Officijs: de administranda prouincia: de petitione
+						Consulatus. Pragmaticum etiam astutissimu[m] Tacitus, Gandinus, Durandus. Pra[e]sertim cu[m] Mithridatis
+						epistola, et concione contra Romanos: = = Aristotelis politicis, Oeconomicisq[ue] technis: Xenophontis Tyranno: Dionis apistia:
+						Plutarchi politicis: Jouis Elogio Ca[e]saris Borgia[e]: Catharina[e] Medicea[e] practicis:]
+						Equitis Poncetti discursu aulico de Principijs imperij Turcici:
+					</marginalia_text>
+					<person name="Maurice Poncet"/>
+					<book title="La France-Turquie"/>
+				</position>
+			</language>
+			<language ident="IT">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Ritratti di Guicciardini:
+					</marginalia_text>
+					<person name="Francesco Guicciardini"/>
+					<book title="Ritratti allocuzioni e pensieri scelti dalla storia d'Italia"/>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Phalardis tyranni Epistolis: Mahometis 2. epistolis.
+					</marginalia_text>
+					<book title="In Phalaridis tyranni agrigentini Epistolas"/>
+					<book title="Epistolae Maumetis"/>
+				</position>
+			</language>
+			<translation>[p. 143: Caesar, Sallust, and Virgil excel in judgement, they alone who can create the most prudent man: especially with Cicero's 'On duties', 'On administering an office', 'On running for the consulship'. Also Tactitus, Gandinus, and Durandus
+				[can create] a most astute pragmatist. Especially with Mithridatis' letter and with his speech against the Romans: and with Aristotle's economic and political artifices: with Xenophon's 'Hiero', Dio Chrysostom's 'Diffidence', Plutarch's political 'Opuscula',
+				with the Giovio's' eulogy of Cesare Borgia, with the practices of Catherine de' Medici:] With the golden discourse of Maurice Poncet, a knight, 'on the rulers of the Turkish empire', Francesco Guicciardini's 'Ritratti', 'In Phalaridis tyranni agrigentini Epistolas', with the 'letters of Mehmed 2'.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Discursus discursuu[m], Bodini Methodus historica: cum totius
+						Romana[e] historia[e] speculo aureo, Eutropio: externa[e], Justino: vtriusq[ue] simul, Neandro. 
+					</marginalia_text>
+					<person name="Jean Bodin"/>
+					<person name="Flavius Eutropius"/>
+					<person name="Justin"/>
+					<person name="Michael Neander"/> <!--JG: Unsure-->
+					<book title="Methodus ad facilem historiarum cognitionem"/>
+					<book title="Breviarium Historiae Romanae"/>
+					<book title="Externae historiae in compendium ab Iustino redacta"/>
+				</position>
+			</language>
+			<translation>Bodin's 'Methodus historica', the discourse of discourses: with Eutropius' 'golden mirror of all Roman history': with Justin's 'Externae'. At the same time of both, Neander.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="L'animo ben qualificato" type="straight"/>
+		<underline language="IT" method="pen" text="tolerare ogni fastidio" type="straight"/>
+		<underline language="IT" method="pen" text="il corpo ben disposto tolera" type="straight"/>
+		<underline language="IT" method="pen" text="ben qualificata, tolera" type="straight"/>
+		<underline language="IT" method="pen" text="perturbationi" type="straight"/>
+		<underline language="IT" method="pen" text="vitij" type="straight"/>
+		<underline language="IT" method="pen" text="tre furie infernali" type="straight"/>
+		<underline language="IT" method="pen" text="Aletto assimigliano" type="straight"/>
+		<underline language="IT" method="pen" text="inquietudine" type="straight"/>
+		<underline language="IT" method="pen" text="Tesiphone" type="straight"/>
+		<underline language="IT" method="pen" text="all'ira" type="straight"/>
+		<underline language="IT" method="pen" text="Megera" type="straight"/>
+		<underline language="IT" method="pen" text="superbia" type="straight"/>
+		<underline language="IT" method="pen" text="ricchezze" type="straight"/>
+		<underline language="IT" method="pen" text="superbia humana" type="straight"/>
+		<underline language="IT" method="pen" text="natura piu debile" type="straight"/>
+		<underline language="IT" method="pen" text="con due teste" type="straight"/>
+		<underline language="IT" method="pen" text="quattro mani" type="straight"/>
+		<underline language="IT" method="pen" text="quattro piedi" type="straight"/>
+		<underline language="IT" method="pen" text="l'altre membra ad l'auuenante" type="straight"/>
+		<underline language="IT" method="pen" text="superbissimi" type="straight"/>
+		<underline language="IT" method="pen" text="gyerra à Gioue" type="straight"/>
+		<underline language="IT" method="pen" text="diuider per il mezzo" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="SS" place="intext"/>
+		<symbol language="IT" name="SS" place="intext" text="tre furie infernali"/> 
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- antichissima -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- auuenan -->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- l'vna -->
+		
+	</annotation>
+</transcription>

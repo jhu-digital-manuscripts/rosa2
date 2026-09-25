@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.184r.tif" pagination="177" reader="John Dee" signature="yy"/>
+    <annotation>
+        
+        <marginalia anchor_text="in coeli corde sit, &amp; in nono loco" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>♃ in nono Loco &amp; in coeli corde.</marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>Jupiter [is] in the ninth house and in midheaven.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="translatio luminis" hand="English_secretary" id="RCP7134:373:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Translatio lumini[s]</marginalia_text>
+                </position>
+            </language>
+            <translation>The translation of light.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Stellae, quae in eadem parte sunt, sed non coascendunt, naturam quidem largiuntur, sed non fortunam" type="straight"/>
+        <underline language="LA" method="pen" text="Venus enim &amp; Iupiter" type="straight"/>
+        <underline language="LA" method="pen" text="Marti ualidiori deferunt" type="straight"/>
+        <underline language="LA" method="pen" text="aliquid ad potentiam" type="straight"/>
+        <underline language="LA" method="pen" text="si ad eruditionem" type="straight"/>
+        <underline language="LA" method="pen" text="contentionem" type="straight"/>
+        
+        <mark method="pen" name="slash" place="intext"/> <!--pertinet, cum-->
+        
+        <errata amendedtext="secunda" copytext="sexta in" language="LA"/> 
+        <errata amendedtext="," copytext="." language="LA"/> <!-- Leone Potentiam-->
+        <errata amendedtext="," copytext="." language="LA"/> <!-- fuerit Scientia[m]-->
+        
+    </annotation>
+</transcription>

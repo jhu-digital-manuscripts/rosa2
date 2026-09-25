@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.024v.tif" reader="John Dee" signature="[Gv]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="fistel" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fistula</marginalia_text>
+                </position>
+            </language>
+            <translation>Fistula.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="wasser tugend" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[AE] Aquae vis</marginalia_text>
+                </position>
+            </language>
+            <translation>Benefits of water.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lutum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Luti preparatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Preparation of the mud.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vlcerationes vesciae verletzte blasen" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vlcerationes vesica[e]</marginalia_text> 
+                </position>
+            </language>
+            <translation>Ulcers of the bladder.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="reolis; pilis albis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Reola .Pili albi.</marginalia_text>
+                </position>
+            </language>
+            <translation>[...]. White hears.</translation> <!-- FSF: to be added --> <!--JG: Pili albi is white hairs, I think. Unsure about reola, maybe refers to a plant or something like that?-->
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="vbelgeheilten" type="straight"/>
+        <underline language="DE" method="pen" text="ander etlich wasser tugend" type="straight"/>
+        <underline language="DE" method="pen" text="allen wasseren" type="straight"/>
+        <underline language="DE" method="pen" text="grad" type="straight"/>
+        <underline language="DE" method="pen" text="sich selbs" type="straight"/>        
+        <underline language="LA" method="pen" text="selbig lutum" type="triple"/>
+        <underline language="DE" method="pen" text="calce[n] reuerberiert" type="straight"/>
+        <underline language="DE" method="pen" text="demnach" type="straight"/>
+        <underline id="NYSLWin189:00000060:u0001" language="DE" method="pen" text="resoluiert in ein liquorem" type="double"/>
+        <underline language="LA" method="pen" text="alcali" type="double"/>
+        <underline language="DE" method="pen" text="nach dem außgang vom" type="double"/>
+        <underline language="LA" method="pen" text="vlcerationes vesicae" type="straight"/>
+        <underline id="NYSLWin189:00000060:u0002" language="DE" method="pen" text="also resoluiert" type="double"/>
+        <underline language="DE" method="pen" text="podagricen vn[nd] paraliticen" type="double"/>
+        <underline language="DE" method="pen" text="mucilaginosischen liquoribus" type="double"/>
+        <underline language="DE" method="pen" text="gesüchten" type="straight"/>
+        <underline language="LA" method="pen" text="reolis" type="double"/>
+        <underline language="LA" method="pen" text="pilis albis" type="straight"/>
+        <underline language="DE" method="pen" text="der zeyt vnd gůten weg" type="double"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/> 
+        <mark method="pen" name="tripunctus_with_tail" place="left_margin"/> 
+        <mark method="pen" name="tripunctus_with_tail" place="left_margin"/> 
+        <mark method="pen" name="tripunctus_with_tail" place="left_margin"/> 
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- compositum was -->
+        
+        <drawing anchor_text="fürderen den somen er sy wol oder vbel geseyt" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <physical_link>
+            <marginal_annotation idref="NYSLWin189:00000060:u0001"/>
+            <marginal_annotation idref="NYSLWin189:00000060:u0002"/>
+            
+            <relation from="NYSLWin189:00000060:u0001" to="NYSLWin189:00000060:u0002" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

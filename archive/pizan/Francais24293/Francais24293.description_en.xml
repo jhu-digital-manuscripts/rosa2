@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Le Livre de la Cité des Dames</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Français 24293, Bibliothéque national de France, Paris. Paris, 1405. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 284 x 200 mm, 154 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p> The <material>parchment</material> is rather yellowed and has a number of imperfections with a few holes, rough edges, and stitches. The <hi rend="italics">vis-à-vis</hi> rule is respected throughout the manuscript.</p>
+                  
+            </note>
+            
+            <note rend="QUIRES">
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     
+                     <locus from="5" to="12">5-12</locus>
+                  
+                  </item>
+                  
+                  <item n="II">
+                     
+                     <locus from="13" to="20">13-20</locus>
+                  
+                  </item>
+                  
+                  <item n="III">
+                     
+                     <locus from="21" to="28">21-28</locus>
+                  
+                  </item>
+                  
+                  <item n="IV">
+                     
+                     <locus from="29" to="36">29-36</locus>
+                  
+                  </item>
+                  
+                  <item n="V">
+                     
+                     <locus from="37" to="44">37-44</locus>
+                     
+                  </item>
+                  
+                  <item n="VI">
+                     
+                     <locus from="45" to="52">45-52</locus>
+                     
+                  </item>
+                  
+                  <item n="VII">
+                     
+                     <locus from="53" to="60">53-60</locus>
+                     
+                  </item>
+                  
+                  <item n="VIII">
+                     
+                     <locus from="61" to="68">61-68</locus>
+                     
+                  </item>
+                  
+                  <item n="IX">
+                     
+                     <locus from="69" to="76">69-76</locus>
+                  </item>
+                  
+                  <item n="X">
+                     
+                     <locus from="77" to="84">77-84</locus>
+                     
+                  </item>
+                  
+                  <item n="XI">
+                     
+                     <locus from="85" to="92">85-92</locus>
+                     
+                  </item>
+                  
+                  <item n="XII">
+                     
+                     <locus from="93" to="100">93-100</locus>                
+                  </item>
+                  
+                  <item n="XIII">
+                     
+                     <locus from="101" to="108">101-108</locus>
+                     
+                  </item>
+                  
+                  <item n="XIV">
+                     
+                     <locus from="109" to="116">109-116</locus>
+                     
+                  </item>
+                  
+                  <item n="XV">
+                     
+                     <locus from="117" to="124">117-124</locus>
+                     
+                  </item>
+                
+                  <item n="XVI">
+                     
+                     <locus from="125" to="132">125-132</locus>
+                     
+                  </item>
+                  
+                  <item n="XVII">
+                     
+                     <locus from="133" to="140">133-140</locus>                
+                  </item>
+                  
+                  <item n="XVIII">
+                     
+                     <locus from="141" to="148">141-148</locus>
+                     
+                  </item>
+                  
+                  <item n="XIX">
+                     
+                     <locus from="149" to="156">149-156</locus>
+                     
+                  </item>
+                  
+                  <item n="XX">
+                     
+                     <locus from="157" to="158">157-158</locus>
+                     
+                  </item>
+                                              
+               </list>
+                
+               <p>(IV, paper) + 154 + (IV, paper). Modern foliation in ink on the top right corner. </p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>There are thin light brown ruling marks on the folios. There is evidence of pricking in all the folios done with a very small oval awl. There are two columns with 32 lines.</p>
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text is written in a dark brown ink, except for folios <locus>130</locus> and <locus>131</locus> which is a very dark brown ink.  Most of the rubics are bright red, while some are orange red. The text seems to have been written by one scribe in a semicursive minuscule script. Punctuation marks are also used, especially the period and the comma. There are some corrections done by the hand of the scribe and two others.</p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>The ornamental decoration of the manuscript was made by one artist whose style was described as "aux araignées". There are three large foliated initials in folios <locus>7</locus>, <locus>66</locus> and <locus>135</locus>, an S and two As respectively in blue or pink over a goldleaf background (vignette), which connects to the border. The text in folio <locus>7</locus> is fully framed by a foliate bar border with multiple gold leaf "sperm" and crosslets between the leaves, while folios <locus>66</locus> and <locus>135</locus> are only partially framed by a foliate border with gold leaf "sperm" and crosslets. There are many smaller initials in gold leaf over a red or blue background and viceversa.</p>
+                                                             
+            </note>
+            
+            <note rend="BINDING">
+               
+               <p> The manuscript is binded with calfskin embossed with silver threads on two wooden boards, containing the coat of arms of Nicolas Moreau. Thirteen bolts mark the location of the locks, which have disappeared. On the spine there are seven golden bands, six of which are filled with arabesque motifs alternating with golden diamond patterns. The title appears in gold letters on the spine, <hi rend="italics">"LA CITE DES DAMES"</hi>.</p>
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>The manuscript can be dated to 1405, which was the date when it was first composed. This manuscript is the oldest one that has been preserved and it combined chapter I, 21 and chapters II, 53 and 54 into one text, which was much less developed than in later copies of the manuscript where these chapters were divided.</p>
+               <p>Provenance: John the Fearless or Margaret of Bavaria (?), and later Agnes of Burgundy, wife of Charles I of Bourbon; an inscription in folio <locus>5</locus> identifies one of its owners <hi rend="italics">"J de Poiphylle Bourtaigleure"</hi> (Paris, 16th century); Nicolas Moreau, lord of Auteuil (1556-1619), whose coat of arms appear on the covers; Claude Joly, cantor of Notre-Dame (1674).There are two old shelfmarks from Notre Dame located on the interior of the front cover and on folio <locus>2</locus>: K38 (early 17th century) and N.9 (end of the 17th century). This manuscript was among those that the chapter house of the Church of Notre Dame sold to Louis XV in 1756. There are also two stamps from Josserand-Bruno nº 16, dated between 1782-1792 and 1815-1817.</p>
+                  
+            </note>
+            
+            <note rend="TEXT">
+               
+               <p>It only contains <hi rend="italics">La Cité des Dames</hi>.</p>
+               
+               
+            
+            </note>
+            
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 24293</note>
+               
+               <title>La Cité des Dames</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="154" unit="folios">154 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">284</height>
+                     
+                     <width unit="mm">200</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">0</note>
+                        
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 24293</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="154v">1r-154v</locus>
+                     <title>Le Livre de la Cité des Dames</title>
+                     <note type="textid">Le Livre de la Cité des Dames</note>
+                     <note type="folios">154</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">32</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

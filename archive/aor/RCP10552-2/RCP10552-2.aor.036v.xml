@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.036v.tif" pagination="62" reader="John Dee" signature="[F.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Comes de Fif" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Comes de Fif.</marginalia_text>
+                    <person name="Donnchadh IV, Earl of Fife"/>
+                </position>
+            </language>
+            <translation>Earl of Fife.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vxorem ac fratrem suum Nigellum ibi cepit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Uxor Rob[erti] Brus Nigellus fr[ater] Rob[erti] Brus</marginalia_text>
+                    <person name="Robert VI de Brus"/>
+                    <person name="Nigel de Brus"/>
+                </position>
+            </language>
+            <translation>Wife of Robert Brus. Nigel, brother of Robert Brus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Robertus de Brus aspirans ad regnum Scotiae, nobilem" type="straight"/>
+        <underline language="LA" method="pen" text="Iohannem Comyn" type="straight"/>
+        <underline language="LA" method="pen" text="proditiosae factioni assentire noluit, apud villam de Dunfres" type="straight"/>
+        <underline language="LA" method="pen" text="Iusticiarij regis" type="straight"/>
+        <underline language="LA" method="pen" text="Comitis de Bovvan" type="straight"/>
+        <underline language="LA" method="pen" text="quia frater eius Comes de Fif" type="straight"/>
+        <underline language="LA" method="pen" text="iure haereditario spectat" type="straight"/>
+        <underline language="LA" method="pen" text="officium, tunc absens in Anglia morabatur" type="straight"/>
+        <underline language="LA" method="pen" text="de Brus inuasoris regiae dignitatis" type="straight"/>
+        <underline language="LA" method="pen" text="sed vxorem ac fratrem suum Nigellum ibi cepit" type="straight"/>
+        
+    </annotation>
+</transcription>

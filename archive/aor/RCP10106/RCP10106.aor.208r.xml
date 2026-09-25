@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.208r.tif" pagination="415" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="pro Roscio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Roscio.</marginalia_text>
+                    <book title="Pro Roscio Amerino"/>
+                </position>
+            </language>
+            <translation>"Pro Roscio".</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ἀποσιώπησις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ἀποσιώπησις</marginalia_text>
+                </position>
+            </language>
+            <translation>Aposiopesis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Ctesiphonte" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Ctesiphonte.</marginalia_text>
+                    <book title="Pro Ctesiphonte"/>
+                </position>
+            </language>
+            <translation>Pro Ctesiphonte.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="digreßio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Digressio</marginalia_text>
+                </position>
+            </language>
+            <translation>Digression.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="alia non quidem reticentia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Alia retice[n]tia</marginalia_text>
+                </position>
+            </language>
+            <translation>Another aposiopesis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἠθοποιία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἠθοποιία</marginalia_text>
+                </position>
+            </language>
+            <translation>Copying the custom of others.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="μίμησις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>μίμησις.</marginalia_text>
+                </position>
+            </language>
+            <translation>Imitation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ὑποτύποσις" hand="Italian"> 
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ὑποτύποσις</marginalia_text> <!-- for ὑποτύπωσις -->
+                </position>
+            </language>
+            <translation>Outline.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="reticentiam" type="straight"/>
+        <underline language="LA" method="pen" text="obticentiam" type="straight"/>
+        <underline language="LA" method="pen" text="interruptionem" type="straight"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+    </annotation>
+</transcription>

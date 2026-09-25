@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.262r.tif" pagination="39" reader="John Dee" signature="E.iiij."/>
+    <annotation>
+        
+        <marginalia anchor_text="non legibus patris sui Henrici, quia graues erant" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Henrici primi Leges graues</marginalia_text>
+                    <person name="Henry I of England"/>
+                </position>
+            </language>
+            <translation>The serious laws of Henry I.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="comes Robertus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Robertus Comes Glouernia[e], Henrici primi fil[ius] nothus</marginalia_text>
+                    <person name="Robert, 1st Earl of Gloucester"/>
+                    <person name="Henry I of England"/>
+                </position>
+            </language>
+            <translation>Robert, Earl of Gloucester, an illegitimate son of Henry I.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dux Normannorum appellatus est" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Galfridus Plant[agenet] appellatus Dux N[ormannorum]</marginalia_text>
+                    <person name="Geoffrey Plantagenet, Count of Anjou"/>
+                </position>
+            </language>
+            <translation>Geoffrey Plantagenet named Duke of the Normans.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ranulphum comite[m] Cestriae" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ranulphus Comes Cestria[e].</marginalia_text>
+                    <person name="Ranulf de Gernon, 4th Earl of Chester"/>
+                </position>
+            </language>
+            <translation>Ranulf, Earl of Chester.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="concessit in fata" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mors Galfridi Pla[n]t[agenet]</marginalia_text>
+                    <person name="Geoffrey Plantagenet, Count of Anjou"/>
+                </position>
+            </language>
+            <translation>The death of Geoffrey Plantagenet.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diuortium inter regem Francorum &amp; regina[m] Alienoram" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Alienora repudiata Regis Francoru[m]</marginalia_text>
+                    <person name="Eleanor of Aquitaine"/>
+                    <person name="Louis VII of France"/>
+                </position>
+            </language>
+            <translation>Eleanor divorced by the King of the Franks.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dux Aquitanniorum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ducatus Aquitania[e]</marginalia_text>
+                    <location name="Aquitaine"/>
+                </position>
+            </language>
+            <translation>Command of Aquitaine.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sui Henrici, quia graues" type="straight"/>
+        <underline language="LA" method="pen" text="est expulsa" type="straight"/>
+        <underline language="LA" method="pen" text="frater eius comes Robertus in exaltatione sancta[e] crucis captus est" type="straight"/>
+        <underline language="LA" method="pen" text="hinc rex" type="straight"/>
+        <underline language="LA" method="pen" text="hinc comes" type="straight"/>
+        <underline language="LA" method="pen" text="dux Normannorum" type="straight"/>
+        <underline language="LA" method="pen" text="sua Ranulphum" type="straight"/>
+        <underline language="LA" method="pen" text="castrum Lincolniae" type="double"/>
+        <underline language="LA" method="pen" text="clericus Papale priuilegium attulisset, quod" type="straight"/>
+        <underline language="LA" method="pen" text="Euerso monasteriolo" type="straight"/>
+        <underline language="LA" method="pen" text="ducatum Normanniae" type="straight"/>
+        <underline language="LA" method="pen" text="comes Andegauorum" type="straight"/>
+        <underline language="LA" method="pen" text="regina[m] Alienoram" type="straight"/>
+        <underline language="LA" method="pen" text="est ratione coniugis dux Aquitanniorum" type="straight"/>
+        <underline language="LA" method="pen" text="Litorae Papae combustae" type="straight"/>
+        
+    </annotation>
+</transcription>

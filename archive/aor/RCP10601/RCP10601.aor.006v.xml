@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.006v.tif" pagination="12" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Vitis patru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vita[e] patru[m].</marginalia_text>
+                    <book title="Vitae Patrum"/>
+                </position>
+            </language>
+            <translation>The Vitae Patrum.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Syrictae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[S]yricta[e]</marginalia_text>
+                    <person name="Syrictae"/>
+                </position>
+            </language>
+            <translation>The Syrictae.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="si sunt ut ferunt" type="straight"/>
+        <underline language="LA" method="pen" text="De Satyris" type="straight"/>
+        <underline language="LA" method="pen" text="De Cynocefalis" type="straight"/>
+        <underline language="LA" method="pen" text="Alali" type="straight"/>
+        <underline language="LA" method="pen" text="Syrictae" type="straight"/>
+        
+    </annotation>  
+</transcription>

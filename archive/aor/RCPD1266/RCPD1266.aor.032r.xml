@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.032r.tif" pagination="49" reader="John Dee" signature="e.j."/>
+    <annotation>
+        
+        <marginalia anchor_text="Beda Æquinoctis ergo definit annos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A[E]quinoctijs definuntur Anni.</marginalia_text>
+                </position>
+            </language>
+            <translation>Years are defined by the equinoxes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Olympiadibus. quas nostri Chronographi existimant celebrari solitas Antumni tempore" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Olympiades q[uo] anni tempore celebraba[n]tur</marginalia_text> 
+                </position>
+            </language>
+            <translation>The Olympic Games are celebrated at that time of year.</translation>    
+        </marginalia>
+        
+        <marginalia anchor_text="Arabes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Annus Arabu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>The year of the Arabs.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fuit, vt sibi de diebus festis iudicium" type="straight"/>
+        <underline language="LA" method="pen" text="potius deo gratam vitam, virtutem" type="straight"/>
+        <underline language="LA" method="pen" text="traderent atque inducerent" type="straight"/>
+        <underline language="LA" method="pen" text="transito aequinoctio plenum suum globum ostenderit, primi mensis" type="straight"/>
+        <underline language="LA" method="pen" text="hactenus" type="straight"/>
+        <underline language="LA" method="pen" text="Beda Æquinoctis" type="straight"/>
+        <underline language="LA" method="pen" text="Latini" type="straight"/>
+        <underline language="LA" method="pen" text="Athenienses" type="straight"/>
+        <underline language="LA" method="pen" text="Ægyptij" type="straight"/>
+        <underline language="LA" method="pen" text="Ægyptij, quia tum effundi Nilus per arua incipit" type="straight"/>
+        <underline language="LA" method="pen" text="solitas Antumni" type="straight"/>
+        <underline language="LA" method="pen" text="manifesto &amp; perspicuo" type="straight"/>
+        <underline language="LA" method="pen" text="constabit, errore" type="straight"/>
+        <underline language="LA" method="pen" text="menses: quum Luna alternis mensibus triginta numeros impleat" type="straight"/>
+        <underline language="LA" method="pen" text="alternis detrahat singulos" type="straight"/>
+        <underline language="LA" method="pen" text="menses, dies reddunt trecentos quinquagintaquatuor" type="straight"/>
+        <underline language="LA" method="pen" text="fit vt dies vndecim cum quadrante prope diei" type="straight"/>
+        <underline language="LA" method="pen" text="anno Israelitico siue Hebraico, menses fuisse tantu[m] 12." type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="ita" copytext="ta" language="LA"/>
+        
+    </annotation>
+</transcription>

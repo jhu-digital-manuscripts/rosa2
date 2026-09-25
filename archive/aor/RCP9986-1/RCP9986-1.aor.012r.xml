@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.012r.tif" pagination="13" reader="John Dee"/>  
+    
+    <annotation>
+        
+        <marginalia anchor_text="Populus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>populus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The people.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Xanthi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Xanthus</marginalia_text>
+                    <person name="Scamander"/>
+                </position>
+            </language>
+            <translation>Xanthos.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="rugoso cortice" type="straight"/>
+        <underline language="LA" method="pen" text="Pessima mutati coepit amoris hyems" type="straight"/>
+        <underline language="LA" method="pen" text="hoc saltem parce negare, Praeterito magis est iste pudendus amor" type="straight"/>
+        
+        <symbol name="Taurus" place="right_margin"/>
+        
+        <mark method="pen" name="scribble" place="right_margin"/> <!-- FSF: this might be a new symbol or mark -->
+        <mark method="pen" name="scribble" place="right_margin"/> 
+        
+    </annotation>
+    
+</transcription>

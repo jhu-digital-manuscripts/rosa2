@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.007r.tif" pagination="7" reader="John Dee" signature="Biij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Saturni; Minium; Cerussam; Glaß; Spiritum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>♄ Minium Cerussam Vitrum Spiritus</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>Saturn. Minium. Ceruse. Glass. Spirit.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Goldt vn[d] Silber vnd Kupffer" type="straight"/>
+        <underline language="DE" method="pen" text="so were doch ein jeglichs wie das ander am leibe doch in der forme nit" type="straight"/>
+        <underline language="DE" method="pen" text="Pley" type="double"/>
+        <underline language="DE" method="pen" text="wie Pley" type="double"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- viere Pley -->
+        
+    </annotation>
+</transcription>

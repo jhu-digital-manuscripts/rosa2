@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.019r.tif" pagination="21" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="superiores" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        predicta[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Predicted.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="radiationes" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Radiationes planetaru[m] easdem constitionis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The beaming light of the planets <!-- FSF: unsure -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cum quo stellae matutinae gaudeant, cum quo vespertinae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cum q[uo] stell[a]e matutina[e] gaudent cu[m] q[uo] vespetinua[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Where a star rejoices in the morning, there it rejoices in the evening.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        partes
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Parts.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Planeta[e] cu[m] aut sub radijs solis sunt, aut matutin[a]e, aut
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ακρονυκτα,
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        aut vespertin[a]e.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The planets as either under the rays of the sun, or as the morning star, or Acronyctae, or as the evening star.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p." hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        partes
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Parts.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="☉" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        a
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                [From the sun.]
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="gaudent ☉, ♃ &amp; ♄, conditionem" type="straight"/>
+        <underline language="LA" method="pen" text="in opportunis semper" type="straight"/>
+        <underline language="LA" method="pen" text="ut plurimum bonam" type="straight"/>
+        <underline language="LA" method="pen" text="sed Orientalis diurnus est, Occidentalis uero" type="straight"/>
+        <underline language="LA" method="pen" text="diuersas inucem radiationes" type="straight"/>
+        <underline language="LA" method="pen" text="Nam si deficientem ☾ ♀ exceperit, aut ♂ in" type="straight"/>
+        <underline language="LA" method="pen" text="♀" type="straight"/>
+        <underline language="LA" method="pen" text="♂" type="straight"/>
+        <underline language="LA" method="pen" text="Sed ideo ♀ crescenti lunae contraria est, quia naturali quodam inuidiae sibi stridore diffentiu[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="Matutinae sunt in ortu, quae praecedentes ☉ orbem oriuntur" type="straight"/>
+        <underline language="LA" method="pen" text="quod omnibus stellis noceat uicinitas" type="straight"/>
+        <underline language="LA" method="pen" text="In efficaces uero stellae fiunt, quoties ☉ orbem, uespertino ortu fuerint subsecurae. In" type="straight"/>
+        <underline language="LA" method="pen" text="qua ratione stellae" type="straight"/>
+        <underline language="LA" method="pen" text="id est cum praecedens orta fuerit, matutina erit" type="straight"/>
+        <underline language="LA" method="pen" text="Vespertinae uero sunt, cum in ista parte numero constituae, ☉ subsecurae fuerint" type="straight"/>
+        <underline language="LA" method="pen" text="Omnibus stellis nocet uicinitus Solis" type="straight"/>
+        
+        <symbol name="Mercury" place="right_margin"/>
+        <symbol name="Mars" place="right_margin"/>
+        
+        <mark colour="red" method="pen" name="triple_dash" place="right_margin"/>
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/> 
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

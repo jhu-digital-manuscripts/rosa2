@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.149v.tif" pagination="278" reader="John Dee" signature="[ss.iii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="permissu legis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        permissu legis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                By permission of the law.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sacella" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        sacella
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Shrine.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mons Gaurus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mons Gaurus
+                    </marginalia_text>
+                    <location name="Mount Gaurus"/>
+                </position>
+            </language>
+            <translation>
+                Mount Gaurus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="via vendibilis Herculanea multarum deliciarum, &amp; magnae pecuniae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        via [ vendibilis multoru[m] deliciaru[m] magn[a]e pecuni[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A road, valuable for the many delightful and fertile surroundings.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="venditionis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        venditio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Selling.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ditioni, iudicio, potestatíque" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ditio Iudiciu[m] potestas ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Sway, jurisdiction and authority.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mitylen[a]e
+                    </marginalia_text>
+                    <location name="Mytilene"/>
+                </position>
+            </language>
+            <translation>
+                Mytilene.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        a setter of bondes
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Minturas" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        that cytie in ca[m]pania
+                    </marginalia_text>
+                    <location name="Campania"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Verbum mihi deest Quirites, cum ego hanc potestatem regiam" type="straight"/>
+        <underline language="LA" method="pen" text="cur hoc tam est obscurum atque" type="straight"/>
+        <underline language="LA" method="pen" text="fortasse propter" type="straight"/>
+        <underline language="LA" method="pen" text="magna potestas permittitur. nisi fortè nihil est aequum vos de eorum audacia suspicari, quorum cupiditati nimium angustus" type="straight"/>
+        <underline language="LA" method="pen" text="terrarum esse videatur" type="straight"/>
+        <underline language="LA" method="pen" text="intelligo: sed attendite animos ad ea quae consequuntur: hunc quasi gradum" type="straight"/>
+        <underline language="LA" method="pen" text="atque aditum ad caetera iactum intelligetis" type="straight"/>
+        <underline language="LA" method="pen" text="longum putauit, &amp; timuit nequid praeteriret. adscripsit" type="straight"/>
+        <underline language="LA" method="pen" text="Pergamum" type="straight"/>
+        <underline language="LA" method="pen" text="vtrum oratio ad eius rei discaeptationem deerit: an cum idem &amp; disseret" type="straight"/>
+        <underline language="LA" method="pen" text="falsum" type="straight"/>
+        <underline language="LA" method="pen" text="quid, quòd disputari contrà nullo pacto potest? quoniam statutum" type="straight"/>
+        <underline language="LA" method="pen" text="vobis est &amp; iudicatum" type="straight"/>
+        <underline language="LA" method="pen" text="vrbs &amp; natura &amp; situ, &amp; descriptio[ne]" type="straight"/>
+        
+        <symbol name="Asterisk" place="left_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">19</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonPE1137.070v.tif" pagination="[24v]" reader="Harvey" signature="F.iv.v"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Insignis locus Epictetj. Enchiridij Cap[ut] LXV.
+                    </marginalia_text>
+                    <person name="Epictetus"/>
+                    <book title="Enchiridion of Epictetus"/>
+                </position>
+            </language>
+            <translation>
+                The extraordinary passage in Epictetus. Chapter 65 of the 'Enchiridion'.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ansa humanitatis, non jmmanitatis prehende[n]da.
+                    </marginalia_text>
+                    <emphasis method="pen" text="Ansa humanitatis, non jmmanitatis prehende[n]da" type="straight"/>
+                </position>
+            </language> 
+            <translation>
+                The rudder of humanity is to be grasped, not that of barbarism.
+            </translation>
+        </marginalia>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

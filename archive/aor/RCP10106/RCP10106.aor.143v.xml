@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.143v.tif" pagination="286" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ita planè affirmo praecipue positum in natura, &amp; in occasione." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Risus co[n]stat &amp; arte natura.</marginalia_text>
+                </position>
+            </language>
+            <translation>Laughter corresponds even with a natural art.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Occasioni" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Occasio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Opportunity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sunt enim longe uenustiora omnia in respondendo, quàm in prouocando." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>huius rei difficulitas</marginalia_text>
+                </position>
+            </language>
+            <translation>The difficulty of this thing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="festae licentiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>festa[e] lice[n]tiae</marginalia_text>
+                </position>
+            </language>
+            <translation>Festival licence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Catullus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Catullus.</marginalia_text>
+                    <person name="Catullus"/>
+                </position>
+            </language>
+            <translation>Catullus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ut eade[m] illa minus dicente alio uideantur urbana esse" type="straight"/>
+        <underline language="LA" method="pen" text="longe" type="straight"/>
+        <underline language="LA" method="pen" text="Vtiq[ue] in conuiuijs, &amp; sermonibus multi dicases" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

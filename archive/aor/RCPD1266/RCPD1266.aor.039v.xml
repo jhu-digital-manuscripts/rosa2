@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.039v.tif" pagination="64" reader="John Dee" signature="[f.ij.[v]]"/> 
+
+    <annotation>
+        
+       <marginalia anchor_text="Martini Raymundi" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="left_margin">
+                   <marginalia_text>Martinus Raymundus.</marginalia_text>
+                   <person name="Raymond Martini"/>
+               </position>
+           </language>
+           <translation>Raymond Martini.</translation>
+       </marginalia> 
+        
+        <marginalia anchor_text="Galatinus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Galatinus.</marginalia_text>
+                    <person name="Pietro Colonna Galatino"/>
+                </position>
+            </language>
+            <translation>Galatino.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="à mundo condito ad Legem, anni bis mille quingenti &amp; tredecim. Et à lege promulgata, ad Domini nostri Iesu Christi passione[m], pro nobis expletum, anni sunt mille quadringenti quinquagintaduo, cui temporis interuallo dant annos bis mille" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A Mundo Condito ad Chr[ist]i Passionem Anni 3965.</marginalia_text>
+                    <person name="Jesus Christ"/>
+                </position>
+            </language>
+            <translation>From the creation of the world to the Passion of Christ, 3965 years.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="Galatinum libro De arcanis catholicae fidei" type="straight"/>
+        <underline language="LA" method="pen" text="decimo secundae" type="straight"/>
+        <underline language="LA" method="pen" text="Galatinus autem (vt hoc obiter moneam" type="straight"/>
+        <underline language="LA" method="pen" text="Martini Raymundi scripta pro suis edidit, commutato rerum ordine, &amp; argumento nonnihil" type="straight"/>
+        <underline language="LA" method="pen" text="vt Pugionem ipsius Raymundi scriptum" type="straight"/>
+        <underline language="LA" method="pen" text="bibliotheca Francisci" type="straight"/>
+        <underline language="LA" method="pen" text="Elianam explodendam" type="triple"/>
+        <underline language="LA" method="pen" text="more qui nobis Pasquillos ex detortis Scripturae" type="straight"/>
+        <underline language="LA" method="pen" text="manibus illotis Dei verbum tractant" type="straight"/>
+        <underline language="LA" method="pen" text="enim à mundo condito ad Legem, anni bis mille quingenti &amp; tredecim" type="straight"/>
+        <underline language="LA" method="pen" text="Et à lege promulgata" type="straight"/>
+        <underline language="LA" method="pen" text="ad Domini nostri Iesu Christi passione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="anni sunt mille quadringenti quinquagintaduo" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.036r.tif" pagination="71" reader="John Dee" signature="e 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="Chalamni" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Chalamni</marginalia_text>
+                </position>
+            </language>
+            <translation>Astronomers.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="distillationum coelestium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Destillation[es] c[o]elestes</marginalia_text>
+                </position>
+            </language>
+            <translation>Celestial distillations.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="eoru[m] trium regum qui nomine patriae uenere ad adorandum Christum" hand="Italian" id="RCP10601:077:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Nota de tribus Magis</marginalia_text>
+                    <person name="Biblical Magi"/>
+                </position>
+            </language>
+            <translation>Note about the three Magi.</translation>  
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="per Chalon" type="straight"/>
+        <underline language="LA" method="pen" text="per coelum clarum" type="straight"/>
+        <underline language="LA" method="pen" text="utilißimè" type="double"/>
+        <underline language="LA" method="pen" text="praecipuè distillationum coelestium obseruatores" type="straight"/>
+        <underline language="LA" method="pen" text="caritati annonae" type="straight"/>
+        <underline language="LA" method="pen" text="eoru[m] trium regum qui" type="straight"/>
+        <underline id="RCP10601:077:u0001" language="LA" method="pen" text="nomine patriae" type="double"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP10601:077:m0001"/>
+            <marginal_annotation idref="RCP10601:077:u0001"/>
+            <relation from="RCP10601:077:m0001" to="RCP10601:077:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

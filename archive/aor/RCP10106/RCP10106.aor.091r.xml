@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.091r.tif" pagination="181" reader="John Dee" signature="m 3"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ut armorum ratione antiquior cauendi, quàm ictum inferendi cura est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>similitudo</marginalia_text>
+                </position>
+            </language>
+            <translation>Similarity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Caelius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>M[arcus] Ca[e]lius</marginalia_text>
+                    <person name="Marcus Caelius Rufus"/>
+                </position>
+            </language>
+            <translation>Marcus Caelius</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nam cum sit declamatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Declamatio quid</marginalia_text>
+                </position>
+            </language>
+            <translation>What declamation?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="zelotypum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Zelotypus</marginalia_text>
+                </position>
+            </language>
+            <translation>Jealous.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cynicum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cynicus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Cynic.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Apollodorus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Apollodorus</marginalia_text>
+                    <person name="Apollodorus of Pergamon"/>
+                </position>
+            </language>
+            <translation>Apollodorus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Isocrate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Isocrates</marginalia_text>
+                    <person name="Isocrates"/>
+                </position>
+            </language>
+            <translation>Isocrates.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoteles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aristoteles.</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ideo'q[ue] narratio prooemio semper subiungitur" type="straight"/>
+        <underline language="LA" method="pen" text="cum totu[m] crimen uno uerbo, in qualibet actionis parte postio, satis indicetur" type="straight"/>
+        <underline language="LA" method="pen" text="ab Isocrate" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+    <page filename="FolgersHa2.009v.tif" pagination="338" reader="Harvey"/>	<!-- ABO 14left -->
+    <annotation>
+        
+        <!-- Marginalia -->
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                      Vita Philotimi.
+                    </marginalia_text>
+                	<person name="Philotimus"/>
+                </position>
+            </language>
+        	<translation>
+        		The life of Philotimus.
+        	</translation>
+        </marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					Corruptio vnius, generatio alterius. 
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			The corruption of one thing, the generation of another.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					Quid pro quo: sed minus pro maiori.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			This for that: but less for greater.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="IT">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					ridicolo.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			ridiculous.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					Caesaris, et Alexandri
+    				</marginalia_text>
+    				<person name="Julius Caesar"/>
+    				<person name="Alexander the Great"/>
+    			</position>
+    		</language>
+    		<language ident="EL">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					φιλοπρωτία
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					in omni genere.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Caesar's and Alexander's fondness for first rank in every form.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					Borgiae Emblema: Aut Caesar aut nihil.
+    				</marginalia_text>
+    				<person name="Borgia"/> 
+    			</position>
+    		</language>
+    		<translation>
+    			The emblem of the Borgias: Eitther Caesar or nothing.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					Eccè elogiu[m] Iouij: Icon Guicciar.
+    				</marginalia_text>
+    				<person name="Jupiter"/>
+    				<person name="Francesco Guicciardini"/>
+    			</position>
+    		</language>
+    		<translation>
+    			Here is the praise of Jove: an icon of Guicciardini.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="90" place="left_margin">
+    				<marginalia_text>
+    					Faelix est, qui agit vtilia; aut legit necessaria. Miser, qui otiatur inutiliter; aut scribit
+    					non necessaria.
+    				</marginalia_text>
+    				<emphasis method="chalk" type="straight"/>
+    			</position>
+    		</language>
+    		<translation>
+    			Happy is he who does useful things; or reads necessary things. Miserable is he who idles about uselessly;
+    			or writes unnecessary things.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="90" place="left_margin">
+    				<marginalia_text>
+    					{ Sola mihi vita est, verbis, factisq[ue] praeire;
+    					Anticipare omnes; summa parare breuì. } 
+    				</marginalia_text>
+    				<emphasis method="chalk" type="straight"/>
+    			</position>
+    		</language>
+    		<translation>
+    			{ Only life belongs to me: to lead the way with words and deeds;
+    			To anticipate everyone; to prepare in few words the highest things.
+    		</translation>
+    	</marginalia>
+    	
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="90" place="right_margin">
+    				<marginalia_text>
+    					The cordiallest cordial in the World, is a cordial hart.
+    				</marginalia_text>
+    				<emphasis method="chalk" type="straight"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	
+        
+        <!-- Underlines -->
+        
+    	<underline language="IT" method="pen" text="perduto il coltello" type="straight"/>
+    	<underline language="IT" method="pen" text="rimetteua un'altro di legno in luogo" type="straight"/>
+    	<underline language="IT" method="pen" text="Galeotto da Narni" type="straight"/>
+    	<underline language="IT" method="pen" text="frati Inquisitori" type="straight"/>
+    	<underline language="IT" method="pen" text="Heresia" type="straight"/>
+    	<underline language="IT" method="pen" text="a un tribunale" type="straight"/>
+    	<underline language="IT" method="pen" text="si ridicesse di quel" type="straight"/>
+    	<underline language="IT" method="pen" text="perdono" type="straight"/>
+    	<underline language="IT" method="pen" text="subito riso" type="straight"/>
+    	<underline language="IT" method="pen" text="mise sotto sopra quel giuditio" type="straight"/>
+    	<underline language="IT" method="pen" text="grandissimo" type="straight"/>
+    	<underline language="IT" method="pen" text="dishonesta uita della moglie" type="straight"/>
+    	<underline language="IT" method="pen" text="passar Galeotto" type="straight"/>
+    	<underline language="IT" method="pen" text="porco grasso" type="straight"/>
+    	<underline language="IT" method="pen" text="uolto allegro, &amp; ridente" type="straight"/>
+    	<underline language="IT" method="pen" text="un porco grasso" type="straight"/>
+    	<underline language="IT" method="pen" text="becco magro" type="straight"/>
+    	<underline language="IT" method="pen" text="Galeotto" type="straight"/>
+    	<underline language="IT" method="pen" text="tanto sconciamente grasso" type="straight"/>
+    	<underline language="IT" method="pen" text="gran cauallo, o mulo non lo poteua portare" type="straight"/>
+    	<underline language="IT" method="pen" text="una carretta" type="straight"/>
+    	<underline language="IT" method="pen" text="monsignore Egnatio" type="straight"/>
+    	<underline language="IT" method="pen" text="Lodouico undecimo" type="straight"/>
+    	<underline language="IT" method="pen" text="riceuuto in dono" type="straight"/>
+    	<underline language="IT" method="pen" text="dieci mila scudi" type="straight"/>
+    	<underline language="IT" method="pen" text="gli ufficiali" type="straight"/>
+    	<underline language="IT" method="pen" text="u'uccellano" type="straight"/>
+    	<underline language="IT" method="pen" text="piu le speranze d'ogniuno" type="straight"/>
+    	
+    
+        
+        <!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+        
+        <symbol name="Sun" place="head"/>
+    	<symbol name="JC" place="left_margin"/>
+        
+        <!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|tilde|triple_dash|vertical_bar|X_sign -->
+    	
+    	<!-- Right margin -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- Pa -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- guai -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- doma[n] -->
+    	<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- riso -->
+    	<mark method="pen" name="bracket" place="right_margin"/> <!-- gli ... grasso, -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- po -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- car -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- riceuu -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- quan -->
+    	
+    	<!-- Left margin -->
+    	<mark method="pen" name="bracket" place="left_margin"/> <!-- pa ... na, ne -->
+    	<mark method="pen" name="plus_sign" place="left_margin"/> <!-- per lo quale -->
+    	<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- dasse -->
+    	<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- rispose -->
+    	<mark method="pen" name="plus_sign" place="left_margin"/> <!-- u'uccellano -->
+    
+    	<!-- Intext -->
+    	<mark method="pen" name="plus_sign" place="intext"/> <!-- di quello. -->
+    	<mark language="IT" method="pen" name="equal_sign" place="intext" text="Heresia"/>
+    	<mark method="pen" name="plus_sign" place="intext"/> <!-- sotto sopra. -->
+    	<mark method="pen" name="quotation_mark" place="intext"/> <!-- uolto allegro -->
+
+    </annotation>
+</transcription>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.040r.insert.tif" origin="added" reader="John Dee" status="fixed"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Primu[m] ergo principium naturale, est materia, seu causa materialis terra[e]
+                        aqua[e], Ignis &amp; Aeris, sub Nutu Dei, vel Marthek: quod gra[e]cè
+                        neusi theu dicitur. &amp; Hebrairè recon heloim, positis in literis &amp;
+                        numeris: notatis per linea[m] perpendiculare[m], vt infra: ac diuisis p[er] 
+                        a[e]quales et ina[e]quales partes, tali videlicet modo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The first natural principle is matter or the material cases soil, water, fire and air, under God's will or [Marthek], which is in Greek [neusi theu] and in Hebrew [rec on heloim], encoded in words and numbers.
+                Note through the line of the plummet, as below, and divided in equal and unequal parts, in such evident way.
+            </translation>
+        </marginalia>
+        
+        <calculation book_orientation="0" method="pen" place="full_page" type="arithmetic">
+            20 + 13 +19 + 20 = 72
+            4 + 5 + 9 = 18
+            72 + 18 = 90
+        </calculation>
+        
+        <calculation book_orientation="0" method="pen" place="full_page" type="arithmetic">
+            12 + 1 + 17 + 19 + 8 + 5 + 10  = 72
+            4 + 5 + 9 = 18
+            72 + 18 = 90
+        </calculation>
+        
+        <calculation book_orientation="0" method="pen" place="full_page" type="arithmetic">
+            9 + 2 = 18
+            9 x 8 = 72
+            18 + 72 = 90
+        </calculation>
+        
+        <calculation book_orientation="0" method="pen" place="full_page" type="arithmetic">
+            42 + 30 + 18 = 90
+        </calculation>
+        
+        <calculation book_orientation="0" method="pen" place="full_page" type="arithmetic">
+            9 + 2 = 18
+            9 x 8 = 72
+            18 + 72 = 90
+        </calculation>
+
+        <table place="full_page" type="standard_table">
+            <tr>
+                <td>N</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>T</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>72</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>I</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>90</td>
+            </tr>
+            <text hand="Italian" language="LA">NUTUS DEI</text>
+            <translation>The will of God.</translation>
+        </table>
+        
+        <table place="full_page" type="standard_table">
+            <tr>
+                <td>M</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>R</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>T</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>H</td>   
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>K</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>72</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>I</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>90</td>
+            </tr>
+            <text hand="Italian" language="LA">MARTHEK DEI</text>
+            <translation>The will of God.</translation>
+        </table>
+        
+        <table place="full_page" type="standard_table">
+            <tr>
+                <td/>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td/>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>72</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>90</td>
+            </tr>
+        </table>
+        
+        <table place="full_page" type="standard_table">
+            <tr>
+                <td>42</td>
+                <td>} 72</td>
+                <td>} 90</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>}48</td>
+            </tr>
+            <tr>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>90</td>
+            </tr>
+            <text hand="Italian" language="LA">J.D.</text>
+            <text hand="Italian" language="LA">Putrefactio</text>
+            <text hand="Italian" language="LA">Generatio</text>
+            <text hand="Italian" language="LA">Alteratio</text>
+            <person name="John Dee"/>
+            <translation>Putrefaction, generation, alteration.</translation>
+        </table>
+        
+        <table place="full_page" type="standard_table">
+            <tr>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td/>
+            </tr>
+            <tr>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td/>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>72</td>
+            </tr>
+            <tr>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>19</td>
+            </tr>
+        </table>
+        
+    </annotation>
+</transcription>

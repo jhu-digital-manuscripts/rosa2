@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th99a.077r.tif" pagination="77[r]" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>M. Ascham, &amp; M. Mulcaster</marginalia_text>
+                    <person name="Roger Ascham"/>
+                    <person name="Richard Mulcaster"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Doth cause good spéede, confesse of force we must." hand="Italian">
+            <language ident="ES">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>poco, y bueno.</marginalia_text>
+                </position>
+            </language>
+            <translation>Little, and good.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="come by larning" type="straight"/>
+        <underline language="EN" method="pen" text="in Musiek" type="straight"/>
+        <underline language="EN" method="pen" text="nature first," type="straight"/>
+        <underline language="LA" method="pen" text="Grossum caput, is" type="straight"/>
+        <underline language="EN" method="pen" text="learned Muses, léene" type="straight"/>
+        <underline language="EN" method="pen" text="homelie breaker, mar fine ambling ball." type="straight"/>
+        <underline language="EN" method="pen" text="rod in mad" type="straight"/>
+        <underline language="EN" method="pen" text="gentle skill, doth make the proper" type="straight"/>
+        <underline language="EN" method="pen" text="Skill mirt with will, is he that teacheth best" type="straight"/>
+        <underline language="EN" method="pen" text="quickly well, for" type="straight"/>
+        <underline language="EN" method="pen" text="Mistaught at first" type="straight"/>
+        <underline language="EN" method="pen" text="taught" type="straight"/>
+        <underline language="EN" method="pen" text="God, how shortly doth excell" type="straight"/> 
+        <underline language="EN" method="pen" text="perfect howers, abide their" type="straight"/>
+        <underline language="EN" method="pen" text="easie steps, and perfect way to trust," type="straight"/>
+        <underline language="EN" method="pen" text="cause good spéede, confesse of force" type="straight"/>
+        <underline language="EN" method="pen" text="cocking Mams" type="straight"/>
+        <underline language="EN" method="pen" text="shifting Dads from" type="straight"/>
+        <underline language="EN" method="pen" text="pregnant wits, to proue vnlearned fooles." type="straight"/>
+        <underline language="EN" method="pen" text="learning childe" type="straight"/>
+        <underline language="EN" method="pen" text="apt time that" type="straight"/>
+        <underline language="EN" method="pen" text="cunning man to teach" type="straight"/>
+        
+        <symbol language="EN" name="SS" place="right_margin" text="gentle skill, doth make the proper"/>
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="come by learning"/>
+        
+        <mark language="EN" method="pen" name="bracket" place="left_margin" text="Yet easie steps, and perfect way to trust, Doth cause good spéede, confesse of force we must."/>
+        <mark language="EN" method="pen" name="bracket" place="left_margin" text="Apt learning childe; apt time that thing to frame: Apt cunning man to teach, else all is naught;"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="homelie breaker, mar fine ambling ball."/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="homelie breaker, mar fine ambling ball."/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="gentle skill, doth make the proper"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="Skill mirt with will, is he that teachet best:"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="Although as ships, must tarrie winde"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="easie steps, and perfect way to trust,"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="in Musiek"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="homelie"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="and perfect way to trust"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="learning childe"/>
+        <mark method="pen" name="dot" place="intext"/> <!--childe, apt-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="apt time"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="cunning man to teach"/>
+                
+    </annotation>
+</transcription>

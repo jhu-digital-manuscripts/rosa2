@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.032r.tif" pagination="32" reader="John Dee"/>   
+    <annotation>
+        
+      <marginalia anchor_text="MCCCCLXXXIIII" hand="Italian" method="pen">
+          <language ident="EN">
+              <position book_orientation="0" place="right_margin">
+                  <marginalia_text>1484.</marginalia_text>
+              </position>
+          </language>
+      </marginalia>  
+        
+        <marginalia anchor_text="in Cordoua" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In Corduba</marginalia_text>
+                    <location name="Cordoba"/>
+                </position>
+            </language>
+        </marginalia>  
+        
+        <marginalia anchor_text="Re" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        il Re
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The king.</translation>
+        </marginalia>
+        
+       <underline language="IT" method="pen" text="lo a chiamare" type="double"/>  
+        <underline language="IT" method="pen" text="l'Ammiraglio in quel" type="straight"/>
+        <underline language="IT" method="pen" text="andato, &amp; tornato" type="double"/>
+        <underline language="IT" method="pen" text="MCCCLXXXIIII" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; desideraua, ch'egli tornasse alle prattiche dell'impressa" type="straight"/>
+        <underline language="IT" method="pen" text="perdè la ventura" type="straight"/>
+        <underline language="IT" method="pen" text="monasterio" type="straight"/>
+        <underline language="IT" method="pen" text="di Palos" type="double"/>
+        <underline language="IT" method="pen" text="in Cordoua" type="straight"/>
+        
+        <mark method="pen" name="dash" place="head"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.058r.tif" pagination="58" reader="John Dee" signature="P ij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="excrementen ; flores" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        flores Excrementa. } stellaru[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Flowers, excrements of the stars.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Solche himlitzen aber kom[m]en von den Som[m]ersternen nit Wettersternen vn seind jre purgatz" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nighth Lyghtening is
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        purgatio stellaru[m] a[e]stimaliu[m] [etc].                        
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Nighth Lyghtening is the purification of the stars in summer.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vnd nit das sie allein bey der Nacht kom[m]en sondern zu tags auch aber am tage seind sie vnsichtbar" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Day lightening not seene.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Sonderlich gegen Mittag da sie jre Exaltation am meristen haben vnd im Orient" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Oriens Meridies
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>East. Midday.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Som[m]ersternen" type="straight"/>
+        <underline language="DE" method="pen" text="seind" type="straight"/>
+        <underline language="DE" method="pen" text="jre purgatz" type="double"/>
+        <underline language="DE" method="pen" text="vo[n] jnen werffen" type="double"/>
+        <underline language="DE" method="pen" text="vberfluß" type="straight"/>
+        <underline id="NYSLWin188:00000129:u0001" language="DE" method="pen" text="vnd excrementen" type="double"/>
+        <underline language="DE" method="pen" text="als brennende schweffel welche" type="straight"/>
+        <underline language="DE" method="pen" text="Schweffeliche brunst" type="straight"/>
+        <underline language="DE" method="pen" text="gibt" type="straight"/>
+        <underline id="NYSLWin188:00000129:u0002" language="DE" method="pen" text="seindt jre Flores" type="double"/>
+        <underline language="DE" method="pen" text="die Him[m]litzen bey" type="straight"/>
+        <underline language="DE" method="pen" text="kom[m]en sondern" type="straight"/>
+        <underline language="DE" method="pen" text="sie vnsichtbar" type="straight"/>
+        <underline language="DE" method="pen" text="dorrets laub vnd graß" type="straight"/>
+        <underline language="DE" method="pen" text="gegen Mittag" type="straight"/>
+        <underline language="DE" method="pen" text="Exaltation am meristen haben" type="straight"/>
+        <underline language="DE" method="pen" text="im Orient" type="straight"/>
+        <underline language="DE" method="pen" text="der Sommersternen" type="straight"/>
+        <underline language="DE" method="pen" text="häuser vn[d]" type="straight"/>
+        <underline language="DE" method="pen" text="weldt anzünd" type="double"/>
+        <underline language="DE" method="pen" text="man nichts sicht vo[n] fewer" type="straight"/>
+        <underline language="DE" method="pen" text="nit dan[n] die" type="straight"/>
+        <underline language="DE" method="pen" text="figuren vo[n] Him[m]el" type="straight"/>
+        <underline language="DE" method="pen" text="creutz" type="straight"/>
+        <underline language="DE" method="pen" text="formen geisseln menschen" type="straight"/>
+        <underline language="DE" method="pen" text="Leide[n] Christi" type="straight"/>
+        <underline language="DE" method="pen" text="es nicht Meteorisch" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <physical_link>
+            
+            <marginal_annotation idref="NYSLWin188:00000129:u0001"/>
+            <marginal_annotation idref="NYSLWin188:00000129:u0002"/>
+            
+            <relation from="NYSLWin188:00000129:u0001" to="NYSLWin188:00000129:u0002" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

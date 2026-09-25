@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.177r.tif" pagination="178" reader="John Dee" signature="Z.ij."/>   
+    <annotation>
+        
+        <marginalia anchor_text="Diuitijs" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Diuitia[e]</marginalia_text>       
+                </position>
+            </language>
+            <translation>Wealth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="paupertas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>paupertas</marginalia_text>
+                </position>
+            </language>
+            <translation>Poverty.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="poetas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>poëta[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Poets.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tibulli" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tibullus</marginalia_text>
+                    <person name="Albius Tibullus"/>
+                </position>
+            </language>
+            <translation>Tibullus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gallo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gallus.</marginalia_text>
+                    <person name="Gaius Cornelius Gallus"/>
+                </position>
+            </language>
+            <translation>Gallus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Diuitijs alitur luxuriosus amor" type="straight"/>
+        <underline language="LA" method="pen" text="Non habet vnde suum paupertas pascat amorem" type="straight"/>
+        <underline language="LA" method="pen" text="Eneruant animos citharae, cantúsq[ue], lyrae'q[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="Et vox, &amp; numeris brachia mota" type="straight"/>
+        <underline language="LA" method="pen" text="teneros ne tange poetas" type="straight"/>
+        <underline language="LA" method="pen" text="Carmina quis potuit tuto legisse Tibulli" type="straight"/>
+        
+    </annotation> 
+</transcription>

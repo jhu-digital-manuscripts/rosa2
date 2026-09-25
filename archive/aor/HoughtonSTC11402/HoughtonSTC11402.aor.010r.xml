@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.010r.tif" reader="Harvey" signature="Aiii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>It is almost vnpossible, in conueying intelligence, to escape al casualtyes of miscarriage. Therefore it neerly, &amp;
+                    deeply concernith euery Intelligentiar, fitt to be imployed in secret affaires, to prouide with all possible Circuspectio[n]</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>&amp; cautele, euen in euery respect, &amp; circu[m]stance, subiect to any ieoperdy. The only surist way,
+                        to pra[e]uent al circumuentio[n], and to auoide all incident daunger. So procede, so succede.
+                   </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>In negotijs peremptorijs, aut valde periculosis, nulla cautela superabundans.</marginalia_text>
+                </position>
+            </language>
+            <translation>In matters pertaining to killing or great danger, no precaution is very abundant.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="the hylles" type="straight"/>
+        <underline language="EN" method="pen" text="lower waye" type="straight"/>
+        <underline language="EN" method="pen" text="leyinge bridges ouer" type="straight"/>
+        <underline language="EN" method="pen" text="xl." type="straight"/>
+        <underline language="EN" method="pen" text="gathered his strength together, and" type="straight"/>
+        <underline language="EN" method="pen" text="Parthenians came" type="straight"/>
+        <underline language="EN" method="pen" text="theym in battayle" type="straight"/>
+        <underline language="EN" method="pen" text="Mithridates" type="straight"/>
+        <underline language="EN" method="pen" text="Pompeius" type="straight"/>
+        <underline language="EN" method="pen" text="his men a forraging" type="straight"/>
+        <underline language="EN" method="pen" text="many his ennemies" type="straight"/>
+        <underline language="EN" method="pen" text="talke with them" type="straight"/>
+        <underline language="EN" method="pen" text="fyers to" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="theym in battayle"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="his men a forraging"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.023v.tif" pagination="[23v]" reader="John Dee" signature="[Cvii[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="chiamati Michele, e Gasparo Cortereale; l'anno 1502 perirono" hand="Italian" method="pen"> 
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Michael Gaspar} Cortereale perier[u]nt. A[nn]o 1502</marginalia_text> 
+                    <person name="Miguel Corte-Real"/>
+                    <person name="Gaspar Corte-Real"/> 
+                </position>
+            </language>
+            <translation>Miguel and Gaspar Corte-Real died in the year 1502.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Isola Terza" type="double"/>
+        <underline language="IT" method="pen" text="chiamati Michele" type="straight"/>
+        <underline language="IT" method="pen" text="Gasparo" type="straight"/>
+        <underline language="IT" method="pen" text="1502" type="straight"/>
+        <underline language="IT" method="pen" text="che si sapesse doue" type="double"/>
+        <underline language="IT" method="pen" text="ne come" type="double"/>
+        <underline language="IT" method="pen" text="che gli Spagnuoli hauessero anticamente il Dominio dell' Indie, secondo che Consaluo d'Ouiedo si sforza di prouar nelle sue historie" type="straight"/>
+        <underline language="IT" method="pen" text="Consaluo Fernandez di Ouiedo ne terzo" type="straight"/>
+        <underline language="IT" method="pen" text="certo suo insogno" type="straight"/>
+        
+    </annotation>
+</transcription>

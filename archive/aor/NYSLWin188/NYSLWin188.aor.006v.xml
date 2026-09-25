@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.006v.tif" pagination="[6[v]]" reader="John Dee" signature="[Bij[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Coelu[m] p[ri]mò Creatu[m] tanqu[am] vas pro reliquis Elementis</marginalia_text>
+                </position>
+            </language>
+            <translation>The heaven was created first as if a vessel for the other elements.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="das alle vier Corpora der vier Elementen gemacht seindt auß nichts" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ex nihilo omnia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Everything [created] from nothing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fiat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Fiat</marginalia_text>
+                </position>
+            </language>
+            <translation>Let it be done.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nichts" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nihil.</marginalia_text>
+                </position>
+            </language>
+            <translation>Nothing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="etwas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aliquid.</marginalia_text>
+                </position>
+            </language>
+            <translation>Something.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Also daß das wort Fiat ist worden ein dreyfach Corpus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Fiat, produxit corpus triforme siue triplex: vel potius Vnitrinum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Let it be done, he produced a threefold or triple corpus; or rather a triple in one.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Reseruauel" type="straight"/>
+        <underline language="DE" method="pen" text="auß nichts" type="double"/>
+        <underline language="DE" method="pen" text="das wort Gottes" type="straight"/>
+        <underline language="LA" method="pen" text="Fiat" type="straight"/>
+        <underline language="DE" method="pen" text="Nichts" type="double"/>
+        <underline language="DE" method="pen" text="dem etwas" type="double"/>
+        <underline language="DE" method="pen" text="Dasselbige Corpus aller vier" type="straight"/>
+        <underline language="DE" method="pen" text="drey Species" type="double"/>
+        <underline language="DE" method="pen" text="dreyfach Corpus" type="double"/>
+        
+    </annotation>
+</transcription>

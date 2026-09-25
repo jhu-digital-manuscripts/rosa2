@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.043v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Asclepiodot[us] ; decem annis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Asclepiodotus deinde 10 annis regnauit.
+                    </marginalia_text>
+                    <person name="Asclepiodotus"/>
+                </position>
+            </language>
+            <translation>Asclepiodotus then reigned for 10 years.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="pace decem annis" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

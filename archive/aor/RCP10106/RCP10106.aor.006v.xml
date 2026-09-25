@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.006v.tif" pagination="12" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="eas tabellae quàm optimè insculpi, ut per illos uelut sulcos ducatur stylus." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Modus literas ducendi.</marginalia_text>
+                </position>
+            </language>
+            <translation>Mode of delivering letters.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in lectione quoq[uqe]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lectio qualis eße debet.</marginalia_text>
+                </position>
+            </language>
+            <translation>Reading should be like that.</translation>
+        </marginalia>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

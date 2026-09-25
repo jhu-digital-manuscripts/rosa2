@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonK6233.002r.tif" reader="Harvey" signature="α2r"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        glossa[e] adamantina[e]: aut nulla[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An incorruptible glossary, or none. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sacrae militiae D. IOANNIS" type="straight"/>
+        <underline language="LA" method="pen" text="Germaniam Magistro" type="straight"/>
+        <underline language="LA" method="pen" text="in ius commentarios fieri prohibuit" type="straight"/> 
+        <underline language="LA" method="pen" text="paratitla" type="straight"/>
+        <underline language="LA" method="pen" text="librorum cumulum" type="straight"/>
+        <underline language="LA" method="pen" text="legem" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="Germaniam Magistro"/> 
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="in ius commentarios fieri prohibuit"/> 
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="sacrae militiae D. IOANNIS"/> 
+        <mark method="pen" name="dash" place="intext"/> <!-- REVEREN -->
+
+    </annotation>
+</transcription>

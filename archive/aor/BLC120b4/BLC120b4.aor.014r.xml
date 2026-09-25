@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.014r.tif" pagination="14" reader="John Dee" signature="[Bvi]"/> 
+    <annotation>
+        
+        <calculation book_orientation="0" method="pen" place="tail" type="arithmetic">
+            1 + 1 + 4 = 6
+            50 + 5 + 1 + 10 = 66
+            6 + 66 = 72
+        </calculation>
+        
+        <table place="tail" type="standard_table"> <!--JG: Hebrew to be added-->
+            <tr>
+                <td>א‬</td>
+                <td>א‬</td>
+                <td>ד</td>
+                <td>נ‬</td>
+                <td/>
+                <td>א‬</td>
+                <td/>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1‬</td>
+                <td>4</td>
+                <td>50‬</td>
+                <td>5</td>
+                <td>1‬</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>‬</td>
+                <td>6</td>
+                <td/>
+                <td>‬</td>
+                <td/>
+                <td>66‬</td>
+                <td/>
+            </tr>
+            <tr>
+                <td>‬</td>
+                <td>‬</td>
+                <td/>
+                <td>72</td>
+                <td/>
+                <td>‬</td>
+                <td/>
+            </tr>
+        </table>
+        
+        
+    </annotation>
+</transcription>

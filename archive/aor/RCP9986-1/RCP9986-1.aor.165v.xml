@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.165v.tif" pagination="[166v]" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="mora" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mora.</marginalia_text>
+                </position>
+            </language>
+            <translation>Delay.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ama[n]s" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Amans</marginalia_text>
+                </position>
+            </language>
+            <translation>Loving.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="morae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mora</marginalia_text>
+                </position>
+            </language>
+            <translation>Delay.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Opprime, dum noua sunt subiti mala semina" type="straight"/>
+        <underline language="LA" method="pen" text="Et tuus incipiens ire resistat equus" type="straight"/>
+        <underline language="LA" method="pen" text="Nam mora dat vires, teneras mora percoquit" type="straight"/>
+        <underline language="LA" method="pen" text="Principijs obsta. sero medicina paratur" type="straight"/>
+        <underline language="LA" method="pen" text="Cum mala per longas conualuere moras" type="straight"/>
+        <underline language="LA" method="pen" text="Qui non est hodie, cras minus aptus erit" type="straight"/>
+        <underline language="LA" method="pen" text="Optima vindictae proxima quaeq[ue] dies" type="straight"/>
+        <underline language="LA" method="pen" text="Uidi ego, quod fuerat primo" type="straight"/>
+        <underline language="LA" method="pen" text="sanabile" type="double"/>
+        <underline language="LA" method="pen" text="Dilatum longae damna tulisse morae" type="straight"/>
+        
+        <symbol name="Taurus" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" colour="red" method="pen" place="left_margin" type="manicule"/>      
+        
+    </annotation>
+</transcription>

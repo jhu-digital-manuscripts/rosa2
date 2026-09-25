@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.031v.tif" pagination="46" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="qui μυριογένεσις appellatur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        AEsculapij Liber qui
+                    </marginalia_text>
+                    <person name="Asclepius"/>
+                    <book title="Myriogenesis"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        μυριογενεσις
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        appellatur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The book by Asclepius, which is called Myriogenesis. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Aesculapii continetur, qui μυριογένεσις appellatur" type="straight"/>
+        <underline language="LA" method="pen" text="omnia quae diximus, etiam in genituris hominum uolunt obseruari sebere" type="straight"/>
+        <underline language="LA" method="pen" text="putant se fatum hominis inuenire" type="straight"/>
+        
+    </annotation>
+</transcription>

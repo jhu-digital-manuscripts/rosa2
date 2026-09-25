@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.126v.tif" pagination="76" reader="Harvey" signature="[E6v]"/>	<!-- ABO 131left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Vir absolutus est solus, qui Hoc agit totus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Only a complete man is he who can do This entirely. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						( Vt Sylla, et post cum Ca[e]sar. )
+					</marginalia_text>
+					<person name="Sulla"/>
+					<person name="Julius Caesar"/>
+				</position>
+			</language>
+			<translation>
+				As Sulla, and afterwards, Caesar.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Alij
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						omnes semiuiri, et hominu[m] Nuga[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				All others are half-men and triflers.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Hoc tamen ipsum agens, quasi aliud agens ) .
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				However one must do this very thing as if one is doing something else.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Diuino ingenio singula fluunt sua sponte. s[upr]a.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				With a divine character, singular matters flow forth of their own accord. [See] above.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Tutto vno: come viaggio del sole.	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				All as one, like the sun's voyage.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Primus Epictetus pragmaticus: tam foris serius,
+					</marginalia_text>
+					<person name="Epictetus"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						quàm intus solidus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Epictetus is the first pragmatic man, as serious outside as he is solid inside.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Post philosophi seruitutem, statim
+						Æsopus regius professor: et magnus Aulicus apud
+						Croesum, Lydoru[m] regem;
+						Babyloniorum: Nectenabonem, Ægyptiorum.
+					</marginalia_text>
+					<person name="Aesop"/>
+					<person name="Croesus"/>
+					<person name="Nectanebo"/>
+					<location name="Lydia"/>
+					<location name="Babylon"/>
+					<location name="Egypt"/>
+					<location name="Delphi"/>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Summus etiam orbis Apodemicus, vbiq[ue]
+						cum philosophis disputans, quàm illi acutiùs: et ipsius
+						Delphici Oraculi contemptor: licèt iustè propter 
+						sacerdotum inscitiam, tamen non impùne propter eorum
+						inexorabilem sa[e]uitiam.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				After his servitude to the philosopher, Aesop immediately became a royal teacher
+				and a great courtier at the court of Croesus, king of the Lydians;
+				then among the Babylonians; then with Nectanebo, king of the Egyptians.
+				He even became the greatest teacher in the world, disputing everywhere with philosophers,
+				being much more intelligent than they. And he even disdained the Delphic Oracle, although
+				justly due to the ignorance of the priests. However he did not escape punishment due to their
+				unyielding savageness.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Iuuat hodiè mouere: cras quiescere. Hodiè uigilare:
+						cras dormire.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Movement is beneficial today; tomorrow, rest. Today remain vigilant; tomorrow, sleep.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Scitum est hodiè ridere: cras plorare.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It is best to laugh today, cry tomorrow.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Punture impertinenti, facilmente" type="straight"/>
+		<underline language="IT" method="pen" text="sei indgeno de' tuoi antichi" type="straight"/>
+		<underline language="IT" method="pen" text="sei degno de' tuoi moderni" type="straight"/>
+		<underline language="IT" method="pen" text="consiglio dell" type="straight"/>
+		<underline language="IT" method="pen" text="maturamente" type="straight"/>
+		<underline language="IT" method="pen" text="della Donna" type="straight"/>
+		<underline language="IT" method="pen" text="subitaneo" type="straight"/>
+		<underline language="IT" method="pen" text="Democrito" type="straight"/>
+		<underline language="IT" method="pen" text="ne' consigli" type="straight"/>
+		<underline language="IT" method="pen" text="che la celerità" type="straight"/>
+		<underline language="IT" method="pen" text="piena d'errori" type="straight"/>
+		<underline language="IT" method="pen" text="Biante" type="straight"/>
+		<underline language="IT" method="pen" text="gran nimici" type="straight"/>
+		<underline language="IT" method="pen" text="la celerità" type="straight"/>
+		<underline language="IT" method="pen" text="l'iracundia" type="straight"/>
+		<underline language="IT" method="pen" text="Ariosto" type="straight"/>
+		<underline language="IT" method="pen" text="Molti consigli delle Donne" type="straight"/>
+		<underline language="IT" method="pen" text="improuiso" type="straight"/>
+		<underline language="IT" method="pen" text="maturo discorso non aiti" type="straight"/>
+		<underline language="IT" method="pen" text="ruminarui sopra" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<mark method="pen" name="bracket" place="right_margin"/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="indegno"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="degno"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="sei degno de' tuoi moderni"/>
+		<mark method="pen" name="dot" place="intext"/> <!--pensato, &-->
+		<mark method="pen" name="apostrophe" place="intext"/> <!--penitentia. Et-->
+		<mark method="pen" name="apostrophe" place="intext"/> <!--iracundia. Et-->
+
+    </annotation>
+</transcription>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.031r.tif" pagination="31" reader="John Dee" signature="Hiij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Sulphur, Sale, vnd Mercurio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[o[mn]e] - sulph. sal - Mercurius </marginalia_text> <!--JG: Unsure, is coc a contraction of coctae (see next page)?? Or does it starts with a flourish and is it o[mn]e?--> <!--KS: Not sure, could it be a strange abbreviation for 'coelus'?-->
+                </position>
+            </language>
+            <translation>[Everthing consists of] sulfur, salt, mercury.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vrsprung der Winde" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Venti causa</marginalia_text> 
+                </position>
+            </language>
+            <translation>The cause of the wind. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="den Centrum der Welt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Centru[m] Mundi</marginalia_text> 
+                </position>
+            </language>
+            <translation>The centre of the world.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota</marginalia_text> 
+                </position>
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Exemplu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Note the example.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="sein Fewer" type="double"/>
+        <underline language="DE" method="pen" text="Sulphur" type="straight"/>
+        <underline language="DE" method="pen" text="Sale" type="straight"/>
+        <underline language="DE" method="pen" text="Mercurio" type="straight"/>
+        <underline language="DE" method="pen" text="diese Prima" type="straight"/>
+        <underline language="DE" method="pen" text="kein ander vrsprung der Winde ist dann so die drey ersten bewegt werden vom Vulcano in jr operation" type="straight"/>
+        <underline language="DE" method="pen" text="in jr Action" type="double"/>
+        <underline language="DE" method="pen" text="gibt jetzt" type="straight"/>
+        <underline language="DE" method="pen" text=" den Windt" type="double"/>
+        <underline language="DE" method="pen" text="ein Wind außgehet vo[n] eim Fewr den es selbst macht" type="straight"/>
+        <underline language="DE" method="pen" text="das die drey alle ding sollent geben vnd geberen in jren stedten" type="straight"/>
+        <underline language="DE" method="pen" text="operationibus in den Centrum der" type="straight"/>
+        <underline language="DE" method="pen" text="Sulphur ein Fewer ist" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

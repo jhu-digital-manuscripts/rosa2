@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.032v.tif" pagination="56" reader="John Dee" signature="[E iiij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="tributu[m] patri suo" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Dacia tibutaria Brytannia[e]    
+                    </marginalia_text>
+                    <location name="Denmark"/>
+                    <location name="Britain"/>
+                </position>
+            </language>
+            <translation>
+                Denmark paying tribute to Britain.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        De ortu Hiberne[n]siu[m].
+                    </marginalia_text>
+                    <location name="Ireland"/>
+                </position>
+            </language>
+            <translation>
+                On the origin of Ireland. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Hibernia primu[m] incolas nunc recipit 375 annos ante Chr[istu]m natum. 
+                    </marginalia_text>
+                    <location name="Ireland"/>
+                </position>
+            </language>
+            <translation>
+                Ireland first received inhabitants 375 years before the birth of Christ.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sabrinum mare" type="straight"/>
+        <underline language="LA" method="pen" text="Dacia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="tributu[m] patri suo debitu[m] sibi reddere coegit" type="straight"/>
+        <underline language="LA" method="pen" text="Partholaim" type="straight"/>
+        <underline language="LA" method="pen" text="quae tunc omni incola carebat, eamq[ue] illis concessit" type="straight"/>
+        <underline language="LA" method="pen" text="Guithelinus" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

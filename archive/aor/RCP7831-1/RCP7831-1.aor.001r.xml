@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="RCP7831-1.001r.tif" pagination="title page" reader="Dee"/>
+    <annotation>
+        
+        <marginalia date="17 September 1553" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Joannes Dee 1553. Londini 17 Sep.</marginalia_text>
+                    <person name="John Dee"/>
+                    <location name="London"/>
+                </position>
+            </language>
+            <translation>John Dee, 17 September 1553, in London.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>P Sau[n]d[er]</marginalia_text> <!--JG: Saunders? Not sure-->
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>S</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        
+    </annotation>
+</transcription>

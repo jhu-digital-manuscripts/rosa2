@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.012v.tif" pagination="8" reader="John Dee" signature="[a 4[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sapiens dominabitur astris.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The wise is master of the stars.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dilata responsione ea, quae de moribus, &amp; coloribus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        differt respo[n]sione[m] in proximu[m] caput de colorib[us] et moribus 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The response differs in the next chapter about colours and behaviours.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="esse, quod parimur, &amp; quod nos incentiuis quibusdam stimulat ignibus, diuinitatis uero esse animi, quod repugnamus" type="straight"/>
+        <underline language="LA" method="pen" text="ostendamus etiam leges potestati fatorum necessitatíque seruire, &amp; hoc eas semper facere, quod fatorum decreuit autoritas" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; minacem mucronis aciem, costis innocentibus condidit. Ille" type="straight"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/> 
+        
+    </annotation>
+</transcription>

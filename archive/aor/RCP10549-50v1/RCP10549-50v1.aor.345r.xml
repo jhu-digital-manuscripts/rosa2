@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.345r.tif" pagination="21" reader="John Dee" signature="B.iii.[r]"/>
+    <annotation> 
+        
+        <marginalia anchor_text="CCC" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>500.</marginalia_text>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <marginalia anchor_text="Tarsi" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tarsus.</marginalia_text>
+                    <location name="Tarsus"/>
+                </position>
+            </language>
+            <translation>Tarsus.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="Rhodum" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rhodus.</marginalia_text>
+                    <location name="Rhodes"/>
+                </position>
+            </language>
+            <translation>Rhodes.</translation>       
+        </marginalia> 
+        
+        <marginalia anchor_text="Asia" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Asia.</marginalia_text>
+                    <location name="Asia"/>
+                </position>
+            </language>
+            <translation>Asia.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="kegem Iuliam" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lex Iulia.</marginalia_text>
+                </position>
+            </language>
+            <translation>The Julian Law.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="Apamea" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Apamea</marginalia_text>
+                    <location name="Apamea"/>
+                </position>
+            </language>
+            <translation>Apamea.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="Parthi" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Parthi</marginalia_text>
+                </position>
+            </language>
+            <translation>Parthians.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="Laodiceae" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Laodicea</marginalia_text>
+                    <location name="Laodicea"/> 
+                </position>
+            </language>
+            <translation>Laodicea.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="Syria" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Syria</marginalia_text>
+                    <location name="Syria"/>
+                </position>
+            </language>
+            <translation>Syria.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="Marium" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Marius.</marginalia_text>
+                    <person name="Lucius Marius"/>
+                </position>
+            </language>
+            <translation>Lucius Marius.</translation>  <!-- NBW: Loeb says that this is tentative. Best to leave as just Marius? --> <!--JG: Lucius Marius is fine-->   
+        </marginalia> 
+        
+        <marginalia anchor_text="Bibuluo" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bibulus.</marginalia_text>
+                    <person name="Marcus Calpurnius Bibulus"/>
+                </position>
+            </language>
+            <translation>Marcus Calpurnius Bibulus.</translation>      
+        </marginalia>  
+        
+        <marginalia anchor_text="Antiochiae" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Antiochia</marginalia_text>
+                    <location name="Antioch"/>
+                </position>
+            </language>
+            <translation>Antioch.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="Thermum" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Thermus.</marginalia_text>
+                    <person name="Thermus"/>
+                </position>
+            </language>
+            <translation>Thermus.</translation>      
+        </marginalia> 
+        
+        <marginalia anchor_text="Ariobarzanem" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Arobarzanes</marginalia_text>
+                    <person name="Arobarzanes III, King of Cappadocia"/>
+                </position>
+            </language>
+            <translation>Arobarzanes III.</translation>      
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="mihi stator tuus" type="straight"/>
+        <underline language="LA" method="pen" text="quam tibi scribis à Bibulo fieri potestatem" type="straight"/>
+        <underline language="LA" method="pen" text="praesidium deduci" type="straight"/>
+        <underline language="LA" method="pen" text="commodos sermones maleuolorum" type="straight"/>
+        <underline language="LA" method="pen" text="Parthi transierint" type="straight"/>
+        <underline language="LA" method="pen" text="Ro[manum]. teruncium" type="straight"/>
+        <underline language="LA" method="pen" text="Laodiceae me praedes accepturum" type="straight"/>
+        <underline language="LA" method="pen" text="sine vecturae periculo" type="straight"/> 
+        <underline language="LA" method="pen" text="legionibus, quae decretae" type="straight"/>
+        <underline language="LA" method="pen" text="in quo mihi voluntas non deest, sed locus videtur esse tecum expostulandi. Solus" type="straight"/>
+        <underline language="LA" method="pen" text="quàm valde Bibuli" type="straight"/>
+        <underline language="LA" method="pen" text="ad me literam nunquam" type="straight"/>
+        <underline language="LA" method="pen" text="de auguratu filii" type="straight"/>
+        <underline language="LA" method="pen" text="proprium, vt alariis transpadanis vti negarem" type="straight"/>
+        <underline language="LA" method="pen" text="Illud verò pusilli animi, &amp; ipsa maleuolentia ieiuni, atque inanis, quòd" type="straight"/>
+        <underline language="LA" method="pen" text="per me" type="straight"/>
+        <underline language="LA" method="pen" text="Hoc animo qui sunt, deteriores fiunt rogati." type="straight"/>
+        <underline language="LA" method="pen" text="scito in dies maiori curae" type="straight"/>
+        <underline language="LA" method="pen" text="ipso integritate, &amp; clementia tua sic amplificata" type="straight"/>
+        
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+                
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+    </annotation>
+</transcription>

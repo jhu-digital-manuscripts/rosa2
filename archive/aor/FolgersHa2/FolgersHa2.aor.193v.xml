@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.193v.tif" pagination="210" reader="Harvey" signature="[Ov]"/>	<!-- ABO 198left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Citò; tutò; iucundè: optima tam Oeconomica, et
+					</marginalia_text>
+					<emphasis method="pen" text="Citò" type="straight"/>
+					<emphasis method="pen" text="iucundè" type="straight"/>
+					<emphasis method="pen" text="tutò" type="straight"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						politica, quà[m] Therapeutica.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Quickly, safely, pleasantly: the best economic and political things, rather than therapeutic ones.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) Nondum satis: adhuc parum: nunq[uam] nimiu[m].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Not yet enough: still a little: never too much.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						The Lord Cromwell, a ball of Fortune.
+					</marginalia_text>
+					<person name="Thomas Cromwell"/>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						The Lord Burgley, a globe of Fortune.
+					</marginalia_text>
+					<person name="William Cecil"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Semper ad scopum; ca[e]tera obitèr.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Always towards the goal; the remaining things in passing.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Quis prudens in ea a[e]tate aliquid ediderit, in qua Virgilius, et Homerus,
+						Cicero, et Demosthenes tantùm non contemnuntur: ipse etiam Ca[e]sar,
+					</marginalia_text>
+					<person name="Virgil"/>
+					<person name="Homer"/>
+					<person name="Cicero"/>
+					<person name="Demosthenes"/>
+					<person name="Julius Caesar"/>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						et Xenophon satis frigidè lauda[n]tur.
+					</marginalia_text>
+					<person name="Xenophon"/>
+				</position>
+			</language>
+			<translation>Anyone prudent might spread someting in that era, in which Virgil and Homer, Cicero and Demosthenes are not scorned so much:
+			even Caesar himself and Xenophon are praised coldly.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Nemo Auctorum curatur, nisi pro forma: pra[e]ter paucos in mundo vtilissimos,
+						planéq[ue] necessarios. Vt vel nihil publicandu[m] Sit; uel Singulari stilo rariss[im]a.
+						Pra[e]sertim adamantino ingenio, et pragmatica vtilitate. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>No one is worried about authors, unless for the sake of form: beyond the few, most useful, and clearly necessary, authors in the world.
+			So that either nothing must be published, or only the most rare ones with a unique style. Especially those with incorruptable character and pragmatic usefulness.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="douersi fondare" type="straight"/>
+		<underline language="IT" method="pen" text="virtù" type="straight"/>
+		<underline language="IT" method="pen" text="Gromuello" type="straight"/>
+		<underline language="IT" method="pen" text="tanto grado in Inghilterra" type="straight"/>
+		<underline language="IT" method="pen" text="gouernaua" type="straight"/>
+		<underline language="IT" method="pen" text="interamente il Re, e'l Regno" type="straight"/>
+		<underline language="IT" method="pen" text="insolentissimamente" type="straight"/>
+		<underline language="IT" method="pen" text="fondamento di nobiltà, ò di virtù" type="straight"/>
+		<underline language="IT" method="pen" text="Alciato" type="straight"/>
+		<underline language="IT" method="pen" text="la zucca" type="straight"/>
+		<underline language="IT" method="pen" text="altissimo pin" type="straight"/>
+		<underline language="IT" method="pen" text="Il pino" type="straight"/>
+		<underline language="IT" method="pen" text="Ch'ogni vigor in tè lascierà estinto" type="straight"/>
+		<underline language="IT" method="pen" text="Accorgimenti belli &amp; vtili" type="straight"/>
+		<underline language="IT" method="pen" text="i maldicenti" type="straight"/>
+		<underline language="IT" method="pen" text="diceua mal" type="straight"/>
+		<underline language="IT" method="pen" text="direbbe ta[n]to peggio, &amp; spargerebbelo" type="straight"/>
+		
+		<symbol name="SS" place="right_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--nobil-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--at-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="head" text="fondare"/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="virtù"/>
+		<mark method="pen" name="dot" place="intext"/> <!--Regno, &--> 
+		<mark method="pen" name="comma" place="intext"/> <!--insolentissimamente vi-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="fondamento"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="la zucca"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Ch'ogni vigor in tè lascierà estinto"/>
+
+    </annotation>
+</transcription>

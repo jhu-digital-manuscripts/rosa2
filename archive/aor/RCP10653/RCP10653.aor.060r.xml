@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.060r.tif" pagination="111" reader="John Dee" signature="K ij."/>
+    <annotation>
+        
+        <marginalia anchor_text="ANno gratiae. clxxxv. Eleutherius Papa" hand="Italian">  
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        NS: Eleutherius was elected Pope A[nn]o 170: therfore this Date is so much out of the way to late as the whole tyme of his goevrnme[n]t
+                    </marginalia_text>
+                    <person name="Eleuterus"/>
+                    <person name="John Dee"/>
+                    <person name="Nicholas Saunder"/>
+                </position>
+            </language>
+        </marginalia>
+         
+        <underline language="LA" method="pen" text="gratiae. clxxxv. Eleutherius" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+    </annotation>
+</transcription>

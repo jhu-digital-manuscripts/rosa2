@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.185r.tif" pagination="185" reader="John Dee" signature="Aa"/>
+    <annotation>
+        
+        <marginalia anchor_text="Taquimo" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Port[o] Taquimo i del Brasile</marginalia_text>
+                    <location name="Taquimo"/>
+                </position>
+            </language>
+            <translation>The Port Taquimo in Brasil</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="MCCCCXCIX" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1499</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Taquimo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Il porto del Brasile</marginalia_text>
+                    <location name="Taquimo"/>
+                </position>
+            </language>
+            <translation>The port of Brasil.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tumults malitiousy procured</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Vescouo" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Joh[a]ni Fonseca, sup[ra]</marginalia_text>  
+                    <person name="Don Giovanni Fonseca"/>
+                    <internal_ref text="sup[ra]">
+                        <target ref="BL615d7:615_d_7_f151r:m0001" text="f. 151r"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Don Giovanni Fonseca, [see] above.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Haniguaiagua" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Haniguaigua</marginalia_text>
+                    <person name="Haniguaiagua"/> <!-- M.B. Name of a cacique/chief -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="alla ve[n]tura" type="double"/>
+        <underline language="IT" method="pen" text="Taquimo" type="straight"/>
+        <underline language="IT" method="pen" text="di torre a gl'Indiani quel" type="straight"/>
+        <underline language="IT" method="pen" text="potesse, &amp; caricar di verzino, &amp; di schiaui." type="straight"/>
+        <underline id="BL615d7:615_d_7_f151r:u0001" language="IT" method="pen" text="di schiaui." type="double"/>
+        <underline language="IT" method="pen" text="tutto dato al mal fare" type="double"/>
+        <underline language="IT" method="pen" text="membro" type="double"/>
+        <underline language="IT" method="pen" text="Vescouo" type="double"/>
+        <underline language="IT" method="pen" text="di suscitare vn'altro nuouo tumulto" type="straight"/>
+        <underline language="IT" method="pen" text="che la Reina" type="straight"/>
+        <underline language="IT" method="pen" text="non vi sarebbe stato chi piu haueße fauorito l'Ammiraglio; &amp; che egli, come" type="straight"/>
+        <underline language="IT" method="pen" text="detto Vescouo" type="double"/>
+        <underline language="IT" method="pen" text="dell'Ammiraglio, per l'inimicitia che tra loro due era." type="straight"/>
+        <underline language="IT" method="pen" text="andò contra lui con" type="straight"/>
+        <underline language="IT" method="pen" text="che eli" type="straight"/>
+        <underline language="IT" method="pen" text="XX huomini da van Cacique" type="straight"/>
+        <underline language="IT" method="pen" text="cosi" type="straight"/>
+        <underline language="IT" method="pen" text="coglierlo all'improuiso" type="straight"/>
+        <underline language="IT" method="pen" text="di ladro il fedele" type="triple"/>
+
+        <!-- M.B. Uncertain about "arrow" symbol in margin above manicle  -->
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <physical_link>
+            <marginal_annotation idref="BL615d7:615_d_7_f151r:u0001"/> 
+        </physical_link>
+        
+    </annotation>
+</transcription>

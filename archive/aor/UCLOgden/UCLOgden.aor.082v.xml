@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.082v.tif" pagination="148" reader="John Dee" signature="[n 2[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="tussicos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tussici
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Those suffering from a cough.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="habentes tamen ingeniu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="tussicos" type="straight"/>
+
+    </annotation>
+</transcription>

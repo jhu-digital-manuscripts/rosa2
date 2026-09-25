@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.114r.tif" pagination="227" reader="John Dee" signature="p 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="tria sine dubio rursus specta[n]da" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tria specta[n]da</marginalia_text>
+                </position>
+            </language>
+            <translation>Three points to be considered.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex finitione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A finitione</marginalia_text>
+                </position>
+            </language>
+            <translation>To the boundary..</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rhetorice est bene dicendi scientia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rhetorice quid.</marginalia_text>
+                </position>
+            </language>
+            <translation>What is rhetoric?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qatuor pra[e]dicabilia finitio[n]i subiecta.</marginalia_text>
+                </position>
+            </language>
+            <translation>The four things that can be predicated on a subject definition.</translation> <!-- M.B. Not sure of praedicabilia and the phrasing of this translation. -->
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A genere ad spe[cie]m affirmatiue no[n] valet sed negatiue</marginalia_text>
+                </position>
+            </language>
+            <translation>From genus to species is affirmative but non valid when negative.</translation> <!-- M.B. Not sure of this translation? --> <!-- FSF: I can't think of a better way to be honest -->
+        </marginalia>
+        
+        <marginalia anchor_text="species firman probationem habet generis, infirmam refutationem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Spe[cie]s firma[m] probatione[m], infirma[m] refutationem habet</marginalia_text>
+                </position>
+            </language>
+            <translation>Species offer stong proof but a weak refutation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Praeterea finimus aut ui, sicut superiora, aut ἐτυμoλoγίᾳ," hand="Italian"> <!-- M.B. Translate Greek marginalia later. -->
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>finimus vi</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>ἐτυμολογία..</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>p[er] partes</marginalia_text>
+                </position>
+            </language>
+            <translation>We finish by force, etyomology, [and] through parts.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Finitioni subiecta maximè uidentur, genus, species, proprium. Ex" type="straight"/>
+        <underline language="LA" method="pen" text="Proprijs confirmatur finitio, differentibus soluitur. Proprium" type="straight"/>
+        
+    </annotation>
+</transcription>

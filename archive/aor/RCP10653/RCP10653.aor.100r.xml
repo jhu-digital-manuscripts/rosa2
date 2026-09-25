@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.100r.tif" pagination="191" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="proditor [...] Mordredo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mordredus Proditor.
+                    </marginalia_text>
+                    <person name="Mordred"/>
+                </position>
+            </language>
+            <translation>
+                The traitor Mordred.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="regibus tantum insulanis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Reges Insulani
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Islander Kings. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="exitus eius dubius erit" type="straight"/>
+        <underline language="LA" method="pen" text="secunda mensis" type="straight"/>
+        <underline language="LA" method="pen" text="Mordedus Arthuri nepos" type="straight"/>
+        <underline language="LA" method="pen" text="Saxonibus proditor" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] regibus" type="straight"/>
+        <underline language="LA" method="pen" text="tantu[m] insulanis" type="double"/>
+        <underline language="LA" method="pen" text="in Rutupi portu, qui modo Sandvvicum dicitur" type="straight"/>
+        <underline language="LA" method="pen" text="Anguselus rex Albaniae" type="straight"/>
+        <underline language="LA" method="pen" text="VValvvanus nepos regis" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; impijssimus" type="double"/>
+        <underline language="LA" method="pen" text="purificationem beatae Mariae coelebrari constituit" type="straight"/>
+        
+    </annotation>
+</transcription>

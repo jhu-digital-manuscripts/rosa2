@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.270v.tif" pagination="520" reader="John Dee" signature="[IzIzIz.iiii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="acu punctum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        [accu - deleted] acu punctu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A prick by a pin.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Repetitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Repetition.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="insedisset ista suspicio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        insedere suspitione[m] alicui. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To cast suspicion on someone.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vicissitudo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Change.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="post homines natos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        post ho[m]i[n]es natos
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                After men were born.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="arcessor" type="straight"/>
+        <underline language="LA" method="pen" text="cauebat magis Pompeius, quàm timebat" type="straight"/>
+        <underline language="LA" method="pen" text="omnia falsa atque insidiosè ficta comperta sunt" type="straight"/>
+        <underline language="LA" method="pen" text="nullo vt euelli modo" type="straight"/>
+        <underline language="LA" method="pen" text="sit varia vitae, commutabilísque ratio, quàm vaga, volubilísque fortuna, quantae infidelitates in amicis, quàm ad tempus aptae simulationes, qua[n]tae in periculis fugae proximorum, qua[n]tae timiditates" type="straight"/>
+        <underline language="LA" method="pen" text="post homines natos" type="straight"/>
+        <underline language="LA" method="pen" text="in eius" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        
+        <drawing anchor_text="vicissitudo" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+        
+    </annotation>
+</transcription>

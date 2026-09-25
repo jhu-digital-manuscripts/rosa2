@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.276v.tif" pagination="532" reader="John Dee" signature="[lll.ii.[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Repetitio</marginalia_text>
+                </position>
+            </language>
+            <translation>Repetition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="reformido" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>reformido</marginalia_text>
+                </position>
+            </language>
+            <translation>I shun.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vestigium facere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>facere vestigium</marginalia_text>
+                </position>
+            </language>
+            <translation>To create a trace.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dolebam enim P.C. ac vehementer angebar" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>dolere angi</marginalia_text>
+                </position>
+            </language>
+            <translation>To hurt. To cause pain.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="flumen ingenii" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>flume[n] ingenij</marginalia_text>
+                </position>
+            </language>
+            <translation>The overflowing of genius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pace dicam tua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>pace tua</marginalia_text>
+                </position>
+            </language>
+            <translation>For your peace.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">2.3</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+    </annotation>
+</transcription>

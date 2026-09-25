@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.281r.tif" pagination="541" reader="John Dee" signature="[lll.vii.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="memoria teneo; meminisse; reminiscentem recordari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>memoria tenere. reminisci meminisse recordari</marginalia_text>
+                </position>
+            </language>
+            <translation>To remind. To recollect. To remember. To call to mind.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dies tibi gloriosissimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>dies gloriosiss[imus]</marginalia_text>
+                </position>
+            </language>
+            <translation>A most glorious day.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="bonitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>bonitas</marginalia_text>
+                </position>
+            </language>
+            <translation>Benevolence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="misericordia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Misericordia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Merciful.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Castor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Castor</marginalia_text>
+                    <person name="Castor"/>
+                </position>
+            </language>
+            <translation>Castor.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="qui obliuisci nihil soles nisi iniurias" type="straight"/>
+        <underline language="LA" method="pen" text="homines enim ad deos nulla re propius accedunt, quàm salutem hominibus dando. nihil habet nec fortuna" type="straight"/>
+        <underline language="LA" method="pen" text="vt possis: nec natura tua melius, quàm vt velis co[n]seruare quamplurimos" type="straight"/>
+        <underline language="LA" method="pen" text="ineuntis aetatis ab impietate &amp; scelere duxerit: ac aui" type="straight"/>
+        <underline language="LA" method="pen" text="Nam cum more maiorum de seruo in dominum, ne tormentis quidem quaeri liceat, in qua quaestione dolor veram vocem" type="straight"/>
+        <underline language="LA" method="pen" text="quod tame[n], cum te penitus recognoui, timere desino. re enim iniquum est, sed tua sapientia sit aequissimum.              nam dicere apud eum de facinore, contra cuius vitam consilium facinoris inisse arguare, si per se ipsum consideres" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">.1.</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">12.2</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

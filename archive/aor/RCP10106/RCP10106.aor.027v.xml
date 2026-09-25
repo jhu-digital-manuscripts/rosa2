@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.027v.tif" pagination="54" reader="John Dee" signature="[d 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Architas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Architas</marginalia_text>
+                    <person name="Archytas"/>
+                </position>
+            </language>
+            <translation>Archytas.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoxenus" hand="Italian">
+        <language ident="LA">
+            <position book_orientation="0" place="left_margin">
+                <marginalia_text>Aristoxenus.</marginalia_text>
+                <person name="Aristoxenus"/>
+            </position>
+        </language>
+            <translation>Aristoxenus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Plato" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Plato.</marginalia_text>
+                    <person name="Plato"/>
+                </position>
+            </language>
+            <translation>Plato.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Eupolis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Eupolis.</marginalia_text>
+                    <person name="Eupolis"/>
+                </position>
+            </language>
+            <translation>Eupolis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Prodamus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Prodamus.</marginalia_text>
+                    <person name="Prodamus"/>
+                </position>
+            </language>
+            <translation>Prodamus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Maricas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Maricas</marginalia_text>
+                    <person name="Maricas"/> <!-- M.B. Fictious charcter based on Hyperbolus. -->
+                    <X-ref book_title="Maricas" person="Eupolis"/>
+                </position>
+            </language>
+            <translation>Maricas.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristophanes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aristophanes.</marginalia_text>
+                    <person name="Aristophanes"/>
+                </position>
+            </language>
+            <translation>Aristophanes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mena[n]drum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Menander.</marginalia_text>
+                    <person name="Menander"/>
+                </position>
+            </language>
+            <translation>Menander.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Laudem" type="straight"/>
+        <underline language="LA" method="pen" text="artis pulcherrimae" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

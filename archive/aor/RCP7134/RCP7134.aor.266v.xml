@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.266v.tif" pagination="[259v]" reader="John Dee" signature="[TT iij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fortuna[e] vt fia[n]t infortuna[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Fortunate things so that unfortunate things may become.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="applicat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Applicatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Application.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Non icipias iter" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Itineris susceptio</marginalia_text>
+                </position>
+            </language>
+            <translation>The undertaking of a journey.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cum fuerit fortuna retrograda uel debilis" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

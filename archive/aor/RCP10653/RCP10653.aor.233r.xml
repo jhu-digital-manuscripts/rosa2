@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.233r.tif" pagination="17" reader="John Dee" signature="Bbb iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="rex Gulihelmus in VValliam duxit exercitum, eò quòd anno ptaeterito, VVallenses multos Normannorum occiderant" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Contra Wallos
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Against the Welsh.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="apud Clarum montem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Claromon
+                    </marginalia_text>
+                    <location name="Clermont-Ferrand"/>
+                </position>
+            </language>
+            <translation>
+                Clermont-Ferrand.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="anno ptaeterito, VVallenses multos Normannorum occiderant, &amp; eorum firmitates confregerunt, castellum de monte Gomerico confregerunt" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; eius habitatores necauerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Quid non speremus si nummos poßideamus?" type="straight"/>
+        <underline language="LA" method="pen" text="apud Clarum montem" type="straight"/>
+        
+    </annotation>
+</transcription>

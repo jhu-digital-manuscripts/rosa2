@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.085v.tif" pagination="[85v]" reader="John Dee" signature="[Lv[v]]"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="più chiaro, &amp; giusto titolo" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>A more clere and iust Title by the Popes [gift] Then by force of sword. : neyther good, as it was vse </marginalia_text>  <!--JG: Not entirely sure of 'gift'-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="titolo" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The Title</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="possesso" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Possession</marginalia_text>  
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="del primo" hand="Italian" id="BL615d7:615_d_7_f085v:m0001" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Note</marginalia_text>  
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="accrescere la popolatione" type="double"/>
+        <underline language="IT" method="pen" text="&amp; soggiogar" type="triple"/>
+        <underline language="IT" method="pen" text="scoperte" type="double"/>
+        <underline language="IT" method="pen" text="che si doueuano" type="straight"/>
+        <underline language="IT" method="pen" text="più chiaro, &amp; giusto" type="double"/>
+        <underline language="IT" method="pen" text="di subito" type="double"/>
+        <underline language="IT" method="pen" text="l'approbatione, &amp; donatione della conquista di tutte le dette Indie" type="straight"/>
+        <underline language="IT" method="pen" text="Alessandro VI" type="straight"/>
+        <underline language="IT" method="pen" text="liberalissimamente" type="double"/>
+        <underline language="IT" method="pen" text="solo" type="double"/>
+        <underline language="IT" method="pen" text="stato scoperto" type="straight"/>
+        <underline language="IT" method="pen" text="che si haueua a scoprire" type="straight"/>
+        <underline language="IT" method="pen" text="verso Occidente" type="double"/>
+        <underline language="IT" method="pen" text="oue a quel tempo alcun" type="straight"/>
+        <underline language="IT" method="pen" text="attual possesso" type="double"/>
+        <underline language="IT" method="pen" text="che non entrassero in detti confini" type="straight"/>
+        <underline language="IT" method="pen" text="era stato causa, &amp; principio" type="double"/>
+        <underline language="IT" method="pen" text="e scoprimento" type="double"/>
+        <underline language="IT" method="pen" text="acquistata l'attione" type="straight"/>
+        <underline language="IT" method="pen" text="e il possesso" type="double"/>
+        <underline language="IT" method="pen" text="vn'altro nuouo" type="double"/>
+        <underline language="IT" method="pen" text="vn'ispositione &amp; dichiaratione" type="straight"/>
+        <underline id="BL615d7:615_d_7_f085v:u0001" language="IT" method="pen" text="del primo" type="straight"/>
+        
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- qual Papa -->
+        
+        <mark language="IT" method="pen" name="bracket" place="intext" text="a quel tempo"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>  <!-- Christiano hauesse -->
+        
+        <errata amendedtext="popolatione" copytext="popolatione" language="IT"/>
+        
+        <errata amendedtext="si" copytext="si" language="IT"/>
+        
+        <errata amendedtext="Christiano non hauesse" copytext="Christiano hauesse" language="IT"/>
+        
+        <physical_link>
+            <marginal_annotation idref="BL615d7:615_d_7_f085v:m0001"/>
+            <marginal_annotation idref="BL615d7:615_d_7_f085v:u0001"/>
+            
+            <relation from="BL615d7:615_d_7_f085v:m0001" to="BL615d7:615_d_7_f085v:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

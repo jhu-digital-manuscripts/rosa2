@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.142r.tif" pagination="283" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="φαντασίαι" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>φαντασίαι</marginalia_text>
+                </position>
+            </language>
+            <translation>Visions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="εὐφαντασίωτος" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>εὐφαντασίωτος</marginalia_text>
+                </position>
+            </language>
+            <translation>Of vivid imagination.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἐνάργεια" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἐνάργεια</marginalia_text>
+                </position>
+            </language>
+            <translation>Clearness.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vbi uerò miseratione opus erit, nobis ea, de quibus querimur, accidise credamus, atq[ue] id animo nostro persuadeamus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quo[mod]o fiat Miseratio</marginalia_text>
+                </position>
+            </language>
+            <translation>The way pity takes place.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Has quisquis bene" type="straight"/>
+        <underline language="LA" method="pen" text="peregrinari, nauigare, praeliari, populos alloqui, diuitiarum, quas non habemus, usum uideamur disponere, nec cogitare, sed facere: hoc              animi uitium ad utilitatem non transferemus?" type="straight"/>
+        <underline language="LA" method="pen" text="ἐνάργ[ει]α, quae à Cicerone illustratio" type="straight"/> <!-- M.B. Note ligature [ει]. --> <!-- FSF: I am not sure about the Greek word, but I am by far no expert of Greek --> 
+        <underline language="LA" method="pen" text="Vbi uerò miseratione opus erit, nobis ea, de quibus querimur, accidise credamus, atq[ue] id animo nostro persuadeamus." type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        
+    </annotation>
+</transcription>

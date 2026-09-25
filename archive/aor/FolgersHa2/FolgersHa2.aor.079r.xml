@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.079r.tif" reader="Harvey" signature="[*8r]"/>	<!-- ABO 83right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Aforismi del mondo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Aphorisms of the world.
+			</translation>
+		</marginalia>
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.079r_0001" marginalia_continues_from="Ha2.078v_0001" marginalia_from_transcription="Ha2.078v.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						[[*7v]: Quidvis audeo, pra[e]ter impossibile: et quod =] = intolerabilius est, turpe.
+							<!-- Continued from facing page, head, Ha2.079v -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				[[*7v]: I dare whatever you want, beyond the impossible. And that which] is more tolerable is disgraceful.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Sol sine Eclipse.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The sun without an eclipse.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Seipso contentus, non leditur ab alijs.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who is not wounded by others is content with himself.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Omnia Eutrapelo dulcia:
+						( nihil amarum.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				For Eutrapelus, all things are sweet, nothing is bitter.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Heauen vpon Earth. )
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Eutrapelus semper
+						) la[e]tus, la[e]tior, la[e]tiss[im]us
+						) omnium viuoru[m] facilè
+						) la[e]tissimus. Tamen
+						) prudentior, quàm la[e]tior.
+						Vnica Charitum,
+						) Suada[e]q[ue] medulla.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Eutrapelus is always happy, happier, happiest. Of all men,
+				he is easily the happiest. However he is more prudent than happy.
+				He is one of the Graces and the marrow of eloquence.			
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						The philosopher of the Sun: the polititian of the Sun:
+						the Knight of the Sun.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Nunq[uam] erit Vnicus, qui non est quotidiè Singularis. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who is not singular every day will never be unique.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Da mihi prudentem, qui Hoc agens, semper iocatur, nunq[uam] nugatur.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Give me someone prudent, who while doing This, is always joking and never trifling.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Scitum est, dextrè expedire, et facillimè, quod alij difficillimè exequuntur.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It is best to procure skillfully and more easily that which others pursue with more difficulty.
+			</translation>
+		</marginalia>
+
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Foelix, qui ad finem vsq[ue] perseuerat indomitus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who perseveres unbroken until the very end is happy.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="iaspettate risposte" type="straight"/>
+		<underline language="IT" method="pen" text="Marauigliosi rimedi" type="straight"/>
+		<underline language="IT" method="pen" text="per saluare la lor Republica" type="straight"/>
+		<underline language="IT" method="pen" text="dalla prudenza" type="straight"/>
+		<underline language="IT" method="pen" text="de' saui" type="straight"/>
+		<underline language="IT" method="pen" text="il beneficio del te[m]po" type="straight"/>
+		<underline language="IT" method="pen" text="Nelle cose capitali" type="straight"/>
+		<underline language="IT" method="pen" text="non douer l'huomo rimettersi" type="straight"/>
+		<underline language="IT" method="pen" text="fattion del naso" type="straight"/>
+		<underline language="IT" method="pen" text="Le lettere apprezzarsi" type="straight"/>
+		<underline language="IT" method="pen" text="huomini saui" type="straight"/>
+		<underline language="IT" method="pen" text="Conoscere la occasione essere cosa" type="straight"/>
+		<underline language="IT" method="pen" text="douer far tanto del famigliare" type="straight"/>
+		<underline language="IT" method="pen" text="trapassi il decoro" type="straight"/>
+		<underline language="IT" method="pen" text="Breui essere" type="straight"/>
+		<underline language="IT" method="pen" text="modi violenti" type="straight"/>
+		<underline language="IT" method="pen" text="Signorie" type="straight"/>
+		<underline language="IT" method="pen" text="pecunia co'cattiui" type="straight"/>
+		<underline language="IT" method="pen" text="verità esser potente" type="straight"/>
+		<underline language="IT" method="pen" text="conosce se medesimo" type="straight"/>
+		<underline language="IT" method="pen" text="celerità di farsi grande in vno stante" type="straight"/>
+		<underline language="IT" method="pen" text="preuenire" type="straight"/>
+		<underline language="IT" method="pen" text="l'inuidia" type="straight"/>
+		<underline language="IT" method="pen" text="confusione massima fra" type="straight"/>
+		<underline language="IT" method="pen" text="della superbia" type="straight"/>
+		<underline language="IT" method="pen" text="clemenza" type="straight"/>
+		<underline language="IT" method="pen" text="l'altre virtù, rilucer ne'Principi" type="straight"/>
+		<underline language="IT" method="pen" text="L'amore" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="SS" place="intext"/>
+		<symbol name="SS" place="intext"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Piu miserabile il nascerci, che'l morire 21"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--Cit-->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="il beneficio del te[m]po"/>
+		<mark method="pen" name="bracket" place="right_margin"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="right_margin" text="La fattion del naso dimostrar assai della natura dell'huomo"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="right_margin" text="Conoscere la occasione essere cosa"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--vio-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--mor-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--su-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ver-->
+		
+		<mark method="pen" name="quotation_mark" place="intext"/>
+		<mark method="pen" name="plus_sign" place="intext"/>
+		<mark method="pen" name="comma" place="intext"/> <!-- naso dimostrar -->
+		
+    </annotation>
+</transcription>

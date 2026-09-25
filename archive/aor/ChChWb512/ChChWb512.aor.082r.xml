@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.082r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Doldonius rex Gelandiae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Doldonius Rex Gelandiae %; Friselandae Insulae.
+                    </marginalia_text>
+                    <person name="Doldonius"/>
+                    <location name="Gothland"/>
+                    <location name="Frisian Islands"/>
+                </position>
+            </language>
+            <translation>Doldonius, king of Gothland, that is, the Frisian Islands.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary" id="ChChWb512:WB5-12_0171_074r_u0001">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Islandia[m]
+                    </marginalia_text>
+                    <location name="Iceland"/>
+                </position>
+            </language>
+            <translation>Iceland.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dirigit in Islandiam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Islandia[m] petit.
+                    </marginalia_text>
+                    <location name="Iceland"/>
+                </position>
+            </language>
+            <translation>He sought Iceland.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Doldonius ; Gimnasius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Doldonius
+                        Gimnasius
+                    </marginalia_text>
+                    <person name="Doldonius"/>
+                    <person name="Gimnasius"/>
+                </position>
+            </language>
+            <translation>Doldonius [and] Gimnasius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in firmam pacem renouans moram duodecim annorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        12. Annorum quies.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Of 12 years of quiet.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="NorWegiam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Norwegia.
+                    </marginalia_text>
+                    <location name="Norway"/>
+                </position>
+            </language>
+            <translation>Norway.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Loth" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Loth.
+                    </marginalia_text>
+                    <person name="Lot"/>
+                </position>
+            </language>
+            <translation>Loth.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Subiugatis itaq[ue] totius Hyberniae partibus classem suam" type="straight"/>
+        <underline id="ChChWb512:WB5-12_0171_074r:u0001" language="LA" method="pen" text="dirigit in Islandiam" type="double"/>
+        <underline language="LA" method="pen" text="Islandiam ea[m]q[ue] debellato populo" type="straight"/>
+        <underline language="LA" method="pen" text="subiugat" type="straight"/>
+        <underline language="LA" method="pen" text="per caeteras insulas" type="straight"/>
+        <underline language="LA" method="pen" text="Doldonius" type="straight"/>
+        <underline language="LA" method="pen" text="rex Gelandiae" type="double"/>
+        <underline language="LA" method="pen" text="Gimnasius rex Orcadu[m]" type="double"/>
+        <underline language="LA" method="pen" text="gali" type="double"/>
+        <underline language="LA" method="pen" text="Emensa deinde hyeme reuersus" type="double"/>
+        <underline language="LA" method="pen" text="in firmam pacem renouans" type="straight"/>
+        <underline language="LA" method="pen" text="moram duodecim annorum ibidem" type="straight"/>
+        <underline language="LA" method="pen" text="ex longe positis regnis coepit" type="straight"/>
+        <underline language="LA" method="pen" text="extremos mundi cardines diuulgata reges transmarinorum" type="straight"/>
+        <underline language="LA" method="pen" text="inuadebat timor" type="double"/>
+        <underline language="LA" method="pen" text="tota[m] Europa[m] sibi subdere" type="straight"/>
+        <underline language="LA" method="pen" text="deinde nauigiis NorWegiam primu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="adiuit vt illius diademate" type="straight"/>
+        <underline language="LA" method="pen" text="Loth nepos Sichelini regis" type="straight"/>
+        
+        <physical_link>
+            <marginal_annotation idref="ChChWb512:WB5-12_0171_074r:m0001"/>
+            <marginal_annotation idref="ChChWb512:WB5-12_0171_074r:u0001"/>
+            
+            <relation from="ChChWb512:WB5-12_0171_074r:m0001" to="ChChWb512:WB5-12_0171_074r:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

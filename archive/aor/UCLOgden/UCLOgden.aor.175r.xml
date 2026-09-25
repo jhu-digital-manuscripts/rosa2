@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.175r.tif" pagination="89" reader="John Dee" signature="H 3"/>
+    <annotation>
+        
+        <marginalia anchor_text="magna coniunctio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        magna coniunctio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Great union.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Variantur semper significationes stellaru[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Significatio[n]es stellarum earu[n]dem vari[a]e fiunt.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                There are various meanings of the same stars.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Auget in octauo maleuolus suam malitiam, beneuolus uero ibidem neque bona exhibet neq[ue] mala" type="straight"/>
+        <underline language="LA" method="pen" text="Lunam aspexerint per quadratum" type="straight"/>
+        <underline language="LA" method="pen" text="In propria domo uel exaltatione, si fuerit maleuolus, licet cum tarditate, tamen exhibet bonum finem" type="straight"/>
+        <underline language="LA" method="pen" text="uidelicet per 4 locum" type="straight"/>
+        <underline language="LA" method="pen" text="Scias quod planetae retrogradi sunt" type="straight"/>
+        <underline language="LA" method="pen" text="Cadens uero" type="straight"/>
+        <underline language="LA" method="pen" text="Combustus" type="straight"/>
+        <underline language="LA" method="pen" text="Stans ad retrogradationem" type="straight"/>
+        <underline language="LA" method="pen" text="Stans ad directionem" type="straight"/>
+        <underline language="LA" method="pen" text="Obsessus ut timens" type="straight"/>
+        <underline language="LA" method="pen" text="Quando est inter duas fortunas ut" type="dotted"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark colour="red" method="chalk" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark colour="red" method="chalk" name="dash" place="right_margin"/>
+        <mark colour="red" method="chalk" name="dash" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <drawing book_orientation="0" colour="red" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

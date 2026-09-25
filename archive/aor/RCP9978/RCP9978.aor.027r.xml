@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.027r.tif" reader="John Dee" signature="G iij"/>
+    <annotation>
+        
+       <marginalia anchor_text="dentes" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="left_margin">
+                   <marginalia_text>[Den]tes</marginalia_text>
+               </position>
+           </language>
+           <translation>Teeth.</translation>
+       </marginalia>
+        
+        <marginalia anchor_text="Incantantioni, Adiurationi, in collo suspensis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Incantatio Adiuratio Collo suspensa.</marginalia_text>
+                </position>
+            </language>
+            <translation>Incantation. Adjuration. Suspended from the neck.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Lapis Corallius multum" type="straight"/>
+        <underline language="LA" method="pen" text="dentes ligatae, trahunt sine dolore" type="straight"/>
+        <underline language="LA" method="pen" text="dextro armo" type="straight"/>
+        <underline language="LA" method="pen" text="canis facit, nisi eius generis sit, cuius iecur fuerit" type="straight"/>
+        <underline language="LA" method="pen" text="pedem testudinis" type="straight"/>
+        <underline language="LA" method="pen" text="non refragetur amplius" type="straight"/>
+        <underline language="LA" method="pen" text="Similiter plumbum, rumpit Adamantem" type="straight"/>
+        
+        <symbol name="Taurus" place="right_margin"/>
+        
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+           
+    </annotation>
+</transcription>

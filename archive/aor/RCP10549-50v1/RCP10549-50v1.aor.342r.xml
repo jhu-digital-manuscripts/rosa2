@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.342r.tif" pagination="15" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>beneficia</marginalia_text> 
+                </position>
+            </language>
+            <translation>Good things.</translation> <!-- NBW: Likely an insertion of text after innumerabilia, w/ caret --> 
+        </marginalia>
+        
+        <marginalia anchor_text="satietate" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Satietas.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Satisfaction.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="cuius causa inventa" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cur inventa epistola sit.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Why the letter was written.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="epistolarum genera" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tria epist[olarum] genera.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Three types of letters.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Arguta admonitio.</marginalia_text> 
+                </position>
+            </language>
+            <translation>An eloquent rebuke.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="in eadem es naui" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In eadem es naui.</marginalia_text> 
+                </position>
+            </language>
+            <translation>You are in the same boat.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Correctio.</marginalia_text> 
+                </position>
+            </language>
+            <translation>A correction.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Sex. Villium" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>S. Villius.</marginalia_text> 
+                    <person name="Sextus Villius Annalis"/>
+                </position>
+            </language>
+            <translation>Sextus Villius Annalis.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Italiam" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Italia.</marginalia_text> 
+                    <location name="Italy"/>                
+                </position>
+            </language>
+            <translation>Italy.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Asia Romam versus" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Asia Roma</marginalia_text> 
+                    <location name="Asia"/>
+                    <location name="Rome"/>
+                </position>
+            </language>
+            <translation>Asia. Rome.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>γνώμη</marginalia_text> 
+                </position>
+            </language>
+            <translation>A maxim.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="neque quisquam est quin satietate iam desessus sit" type="straight"/>
+        <underline language="LA" method="pen" text="hanc disputationem" type="straight"/>
+        <underline language="LA" method="pen" text="vt certiores faceremus absenteis" type="straight"/>
+        <underline language="LA" method="pen" text="ciuem mehercule no[n] puto esse qui temporibus his ridere possit" type="straight"/>
+        <underline language="LA" method="pen" text="In hanc sententiam scriberem plura, nisi" type="straight"/>
+        <underline language="LA" method="pen" text="non feci infla[m]mandi tui causa, sed testica[n]di amoris mei" type="straight"/>
+        <underline language="LA" method="pen" text="in eadem es naui, tamen quòd" type="straight"/>
+        <underline language="LA" method="pen" text="vel quòd excelso &amp; illustri loco sita sit laus tua in plurimoru[m] &amp; socioru[m] &amp; ciuium conspectu, quae ad nos nec obscuro, nec vario sermone, sed &amp; clarissima &amp; vna, vna omnium voce perfertur." type="straight"/>
+        <underline language="LA" method="pen" text="ita sunt omnia debilitata, &amp; iam prope" type="straight"/>
+        <underline language="LA" method="pen" text="eo ciui ac viro debent, qui sit rempublicam afflictam &amp; oppressam miseris temporibus, ac perditis moribus, in veterem dignitatem ac libertatem vindicaturus" type="straight"/>
+        <underline language="LA" method="pen" text="appropinquare tuus adue[n]tus putaretur" type="straight"/>
+        <underline language="LA" method="pen" text="Romam versus" type="straight"/>
+        <underline language="LA" method="pen" text="officia solu[m] Curio tanta, qua[n]ta magis à teipso praedicari, quàm à me ponderari solent" type="straight"/>
+        <underline language="LA" method="pen" text="EST enim homini pudenti petere aliquid magnu[m] ab eo, de quo se bene meritu[m] putet: ne id quod petat, exigere magis quàm rogare, &amp; in mercedis potius quàm beneficii loco numerare videatur." type="straight"/>
+        <underline language="LA" method="pen" text="ESTQVEANIMI ingenui, cui multu[m] debeas, eidem plurimu[m] velle debere:" type="straight"/>
+        <underline language="LA" method="pen" text="vel in remunerando cumulandóque illustrare" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/> <!-- NBW: w/flourish? -->
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="circumflex" place="intext"/> <!-- NBW: above "animus" -->
+        
+        <numeral place="right_margin">12</numeral>
+        
+    </annotation>
+</transcription>

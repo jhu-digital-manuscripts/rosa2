@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.020v.tif" pagination="364" reader="Harvey"/>	<!-- ABO 025left -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="EN">
+            			<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Witt dailie prouides for the maine chauner
+                    					of his
+                      			            </marginalia_text>
+            				<emphasis method="chalk" type="straight"/>
+            			</position>
+        				<position book_orientation="0" place="left_margin">
+        					<marginalia_text>
+        						boddie, and state.
+        					</marginalia_text>
+        				</position>
+        			</language>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						scitè, et profundè.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Knowingly, and profoundly.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Qui à seipso non dependet, nullus est.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				He who does not depend on himself is nothing.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Qui ab alio dependet, accidens est, non substantia.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				He who depends on another is secondary, not fundamental. 
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="left_margin">
+    					<marginalia_text>
+    						Alterius adiunctum, non subiectum sui. 
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						Homo nullius pra[e]dicamenti:
+    						quia accidens non subsistit sine substantia.    						
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Another's addition, not his own subject. A man of no predication: 
+    				because secondary qualities cannot exist without a foundation. 
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position book_orientation="270" place="left_margin">
+    					<marginalia_text>
+    						All great volumes, in one little
+    						Epitome. All dead autours, in one liuing Center.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.020v_0001" marginalia_continues_to="Ha2.021r_0001" marginalia_to_transcription="Ha2.021r.xml">
+    			<language ident="EN">
+    				<position book_orientation="90" place="right_margin">
+    					<marginalia_text>
+    						No hart gallant enowgh: no witt nimble enowgh: no discourse = [p. 365: fine enowgh: no dispute subtill enowgh: no behauiour sweet enowgh: no discouerie,
+    						or intelligence profound enowgh: no desert meritorious enowgh: "" no cautell superabundant: no action supererogatorie. 
+    						No no: this age is a fox: &amp; this world a Lion.]
+    						<!-- Continues onto facing page, left margin, Ha2.021r. -->
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    		</marginalia>
+        
+	    	<!-- Underlines -->
+	        
+    		<underline language="IT" method="pen" text="uitio della gola, &amp;" type="straight"/>
+    		<underline language="IT" method="pen" text="uanità in" type="straight"/>
+    		<underline language="IT" method="pen" text="Massimino" type="straight"/>
+    		<underline language="IT" method="pen" text="Heliogabalo, &amp;" type="straight"/>
+    		<underline language="IT" method="pen" text="uiltà, che era in" type="straight"/>
+    		<underline language="IT" method="pen" text="imitatione di Nerone" type="straight"/>
+    		<underline language="IT" method="pen" text="infiniti homicidij, &amp; altre" type="straight"/>
+    		<underline language="IT" method="pen" text="Pungente" type="straight"/>
+    		<underline language="IT" method="pen" text="Disputauano in Pisa" type="straight"/>
+    		<underline language="IT" method="pen" text="due lettori co[n]correnti a Metafisica" type="straight"/>
+    		<underline language="IT" method="pen" text="talmente fra loro incaniti" type="straight"/>
+    		<underline language="IT" method="pen" text="diceuano ogni uillania" type="straight"/>
+    		<underline language="IT" method="pen" text="filosofo eccellente" type="straight"/>
+    		<underline language="IT" method="pen" text="sopra la disputa" type="straight"/>
+    		<underline language="IT" method="pen" text="certa decisione commune" type="straight"/>
+    		<underline language="IT" method="pen" text="subitamente" type="straight"/>
+    		<underline language="IT" method="pen" text="con argutia mordendolo" type="straight"/>
+    		<underline language="IT" method="pen" text="non tenghiate conto" type="straight"/>
+    		<underline language="IT" method="pen" text="mosca non hà in consideratione il cielo" type="straight"/>
+    		<underline language="IT" method="pen" text="animale senza intelletto" type="straight"/>
+    		<underline language="IT" method="pen" text="conto delle cose pregiate" type="straight"/>
+    		<underline language="IT" method="pen" text="Bellissima risposta" type="straight"/>
+    		<underline language="IT" method="pen" text="alcuni uffici" type="straight"/>
+    		<underline language="IT" method="pen" text="accattò da suo Zio quattrocento scudi d'oro" type="straight"/>
+    		<underline language="IT" method="pen" text="prestò uolentieri per aiutarlo a fare" type="straight"/>
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="Sun" place="intext"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- crudel -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- co[n] -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- in -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- s'in -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- ma -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- me per- -->
+    			    	
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="X_sign" place="left_margin"/> <!-- correnti -->
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- che ancora -->
+		    
+	    	<!-- Intext -->
+	    	<mark method="pen" name="vertical_bar" place="intext"/> <!-- simili. Et -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Pungente"/>
+    		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="caniti"/>
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- decisione -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- con argutia -->
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- mosca -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- il cielo -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- amoreuole, il quale -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- d'oro, il quale -->
+    		
+    		
+
+    </annotation>
+</transcription>

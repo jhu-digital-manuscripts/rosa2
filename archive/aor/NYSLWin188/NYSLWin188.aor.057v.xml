@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.057v.tif" pagination="[57[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ein brinnender Schweffel verzert sich also mit dem Regen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ignea pluuia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Fiery rain.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="so besenget es die Erden oder dörts" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        The gras singing and Burning.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Die Nacht him[m]litzen so one donner kom[m]en" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Night Lightening W[it]hout Thunder
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="so fallet noch das vbrige auch" type="straight"/>
+        <underline language="DE" method="pen" text="der Action ein brinnender Schweffel" type="straight"/>
+        <underline language="DE" method="pen" text="alle von eim brinnenden Schweffel" type="straight"/>
+        <underline language="DE" method="pen" text="im Rege[n]" type="straight"/>
+        <underline language="DE" method="pen" text="begreifft so" type="straight"/>
+        <underline language="DE" method="pen" text="besenget" type="double"/>
+        <underline language="DE" method="pen" text="es die Erden" type="straight"/>
+        <underline language="DE" method="pen" text="wächst ein zeit lauge" type="straight"/>
+        <underline language="DE" method="pen" text="wo es vnder dem" type="straight"/>
+        <underline language="DE" method="pen" text="Nacht him[m]litzen" type="straight"/>
+        <underline language="DE" method="pen" text="one donner kom[m]en" type="straight"/>
+        
+    </annotation>
+</transcription>

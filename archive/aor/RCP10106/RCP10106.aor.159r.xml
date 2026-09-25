@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.159r.tif" pagination="317" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="uoluisse legum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>legislatoris voluntas</marginalia_text>
+                </position>
+            </language>
+            <translation>The will of the legislator.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="posse ex uno statu duas generales fieri quaestiones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex vno statu dua qua[e]stiones generales fieri poßunt</marginalia_text>
+                </position>
+            </language>
+            <translation>From one condition, two general questions can be generated.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="genus speciem sequitur, it apeciem genus praecedit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Genus spe[cie]m seq[ui]tur</marginalia_text>
+                </position>
+            </language>
+            <translation>Species comes after genus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="E' tertia autem quae est aduersariij, nulla" type="straight"/>
+        <underline language="LA" method="pen" text="controuersia" type="straight"/>
+        <underline language="LA" method="pen" text="Nam ut genus speciem sequitur, ita speciem genus praecedit. Fingamus" type="straight"/>
+        <underline language="LA" method="pen" text="nec improbu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="simil accipi" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

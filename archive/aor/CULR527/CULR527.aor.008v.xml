@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.008v.tif" pagination="[8[v]]" reader="John Dee" signature="[Aviij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="illud notius est &amp; uerius" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Notius.
+                        Verius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Quite well known.
+                Quite well founded.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="anima quando uult, sentiat: sed quando uult, intelligit" type="straight"/>
+        <underline language="LA" method="pen" text="ut uniuersale" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; experimentum sermonum uerorum est, ut concordent sensaris" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; uerius, in quo plures sensus" type="straight"/>
+        <underline language="LA" method="pen" text="principiorum uniuersalium" type="straight"/>
+        
+    </annotation>
+</transcription>

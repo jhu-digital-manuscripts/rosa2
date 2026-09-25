@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.248v.tif" pagination="476" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="&amp; cum in vniuersam Rempublicam, tum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        cu[m] &amp; tu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                As well as.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Macedonia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Macedonia.
+                    </marginalia_text>
+                    <location name="Macedonia"/>
+                </position>
+            </language>
+            <translation>
+                Macedonia.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="auaritiam" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Avaritia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Greed.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in gremio imperii" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        in gremio imperij
+                    </marginalia_text>
+                    <location name="Rome"/>
+                </position>
+            </language>
+            <translation>
+                In the bosom of the Empire.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="via illa nostra quae per Macedoniam est vsque ad Hellespo[n]tum militaris, non solum excursionibus Barbarorum sit infesta, sed etiam castris Thraciis distincta ac notata" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Via militaris excursio[n]ib[us] infesta castris distincta ac notata
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A military way, molested by armies, distinguished and known for its fortifications.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="firmata iam stirpe" type="straight"/>
+        <underline language="LA" method="pen" text="Nunc vero P. C. no[n] parua afficior voluptate, vel quòd" type="straight"/>
+        <underline language="LA" method="pen" text="Pisonem duo Reipublicae portenta ac penè funera" type="straight"/>
+        <underline language="LA" method="pen" text="illud insigne scelus eorum &amp; importunam" type="straight"/>
+        <underline language="LA" method="pen" text="crudelitatem" type="straight"/>
+        <underline language="LA" method="pen" text="Annibal huic vrbi tantu[m] mali optarit" type="straight"/>
+        <underline language="LA" method="pen" text="auaritiam pax" type="straight"/>
+        <underline language="LA" method="pen" text="Thessalonicenses positi in" type="straight"/>
+        <underline language="LA" method="pen" text="imperii nostri relinquere oppidum, &amp; acrem munire cogantur" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <errata amendedtext="cogitarit" copytext="ogitarit" language="LA"/> <!-- FSF: in the fourth line of the new speech -->
+        
+        <drawing anchor_text="Macedonia" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Avaritia" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

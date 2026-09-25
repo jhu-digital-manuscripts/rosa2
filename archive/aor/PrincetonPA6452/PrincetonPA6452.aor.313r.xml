@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.313r.tif" pagination="609" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        Egregium Alexameni facinus, Nabidis tyranni insidiosa ca[e]des.
+                    </marginalia_text>
+                <person name="Nabis of Sparta"/> <!-- LS, I added this one -->
+                <person name="Alexamenus of Aetolia"/> <!-- LS, I added this one -->
+                </position>
+            </language>
+            <translation>
+                The insidious murder of the tyrant Nabis, an excellent deed of Alexamenes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Diocles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        Dioclis egregiu[m] facinus, vrbis occupatio.
+                    </marginalia_text>
+                <person name="Diocles"/> 
+                </position>
+            </language>
+            <translation>
+                The occupation of the city [of Demetrias], an excellent deed of Diocles.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        assassination.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Alexamenus" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Error Alexameni, paulò post à Philopoemene reformatus.
+                    </marginalia_text>
+                <person name="Philopoemen"/>
+                <person name="Alexamenus of Aetolia"/>
+                </position>
+            </language>
+            <translation>
+                The mistake of Alexamenus, corrected a little later by Philopoemen.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Diocles cum omni" type="straight"/>
+        <underline language="LA" method="pen" text="centis exulem hospitem" type="straight"/>
+        <underline language="LA" method="pen" text="ac nocte inge[n]s iter emensus" type="straight"/>
+        <underline language="LA" method="pen" text="luce prima" type="straight"/>
+        <underline language="LA" method="pen" text="tribus electis turmis" type="straight"/>
+        <underline language="LA" method="pen" text="portae appropinquabat" type="straight"/>
+        <underline language="LA" method="pen" text="desilire omnes ex" type="straight"/>
+        <underline language="LA" method="pen" text="itineris maximè modo" type="straight"/>
+        <underline language="LA" method="pen" text="comitatus magis praefecti" type="straight"/>
+        <underline language="LA" method="pen" text="quàm pr[a]esidium" type="straight"/>
+        <underline language="LA" method="pen" text="foru[m] manu Eurylochum tene[n]s" type="straight"/>
+        <underline language="LA" method="pen" text="domum deduxit" type="straight"/>
+        <underline language="LA" method="pen" text="mox equitum plena" type="straight"/>
+        <underline language="LA" method="pen" text="occupaba[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="tum in domos missi, qui principes aduersae factionis" type="straight"/>
+        <underline language="LA" method="pen" text="Demetrias Aetolorum" type="straight"/>
+        <underline language="LA" method="pen" text="Lacedaemone" type="straight"/>
+        <underline language="LA" method="pen" text="urbi uis afferenda" type="straight"/>
+        <underline language="LA" method="pen" text="tyrannus dolo capie[n]dus" type="straight"/>
+        <underline language="LA" method="pen" text="spoliatum maritimis oppidis" type="straight"/>
+        <underline language="LA" method="pen" text="intra moenia etiam Lacedaemonijs" type="straight"/>
+        <underline language="LA" method="pen" text="Achaeis co[m]pulsum" type="straight"/>
+        <underline language="LA" method="pen" text="occupasset occidere" type="straight"/>
+        <underline language="LA" method="pen" text="gratia[m] rei apud Lacedaemonios" type="straight"/>
+        <underline language="LA" method="pen" text="Causam mittendi" type="straight"/>
+        <underline language="LA" method="pen" text="auxilia sibi" type="straight"/>
+        <underline language="LA" method="pen" text="mittere[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="pedites Alexameno dati sunt" type="straight"/>
+        <underline language="LA" method="pen" text="triginta delecti ex iuuentute equites" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]cilio arcano gentis" type="straight"/>
+        <underline language="LA" method="pen" text="ne se ad bellu[m] Achaicum" type="straight"/>
+        <underline language="LA" method="pen" text="quicquid Alexamenu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="subiti consilij capere: ad" type="straight"/>
+        <underline language="LA" method="pen" text="quamuis inopinatu[m], temerarium, audax" type="straight"/>
+        <underline language="LA" method="pen" text="obedienter exequendum parati essent" type="straight"/>
+        <underline language="LA" method="pen" text="accipere[n]t, tanqua[m]" type="straight"/>
+        <underline language="LA" method="pen" text="id unum agendu[m] missos à domo se scirent" type="straight"/>
+        <underline language="LA" method="pen" text="Alexamenus" type="straight"/>
+        <underline language="LA" method="pen" text="tyrannum uenit" type="straight"/>
+        <underline language="LA" method="pen" text="extemplò spei impleuit" type="straight"/>
+        <underline language="LA" method="pen" text="Antiochum iam in Europa[m]" type="straight"/>
+        <underline language="LA" method="pen" text="mox in Graecia fore" type="straight"/>
+        <underline language="LA" method="pen" text="terras, maria" type="straight"/>
+        <underline language="LA" method="pen" text="armis uiris completuru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] cum Philippo" type="straight"/>
+        <underline language="LA" method="pen" text="numerum iniri peditu[m] equitu[m]q[ue], ac nauium no[n] posse" type="straight"/>
+        <underline language="LA" method="pen" text="elephantorum aciem co[n]spectu" type="straight"/>
+        <underline language="LA" method="pen" text="Aetolos toto suo exercitu paratos" type="straight"/>
+        <underline language="LA" method="pen" text="frequentes armatos oste[n]dere aduenienti" type="straight"/>
+        <underline language="LA" method="pen" text="Nabidi quoq[ue] &amp; ipsi facie[n]du[m]" type="straight"/>
+        <underline language="LA" method="pen" text="copias, no[n] sineret sub" type="straight"/>
+        <underline language="LA" method="pen" text="tectis marcescere ocio" type="straight"/>
+        <underline language="LA" method="pen" text="educeret, &amp; in" type="straight"/>
+        <underline language="LA" method="pen" text="simul animos acueret" type="straight"/>
+        <underline language="LA" method="pen" text="corpora exerceret" type="straight"/>
+        <underline language="LA" method="pen" text="consuetudine leuiore[m] laborem fore" type="straight"/>
+        <underline language="LA" method="pen" text="comitate ac benignitate" type="straight"/>
+        <underline language="LA" method="pen" text="ducis etiam non iniucundum fieri posse" type="straight"/>
+        <underline language="LA" method="pen" text="Educi inde frequenter ante" type="straight"/>
+        <underline language="LA" method="pen" text="Satellites tyranni" type="straight"/>
+        <underline language="LA" method="pen" text="tyrannus cum tribus summum equitibus, inter" type="straight"/>
+        <underline language="LA" method="pen" text="quos pleru[m]q[ue] Alexamenus" type="straight"/>
+        <underline language="LA" method="pen" text="cornua extrema" type="straight"/>
+        <underline language="LA" method="pen" text="uenerant mille cum Alexameno" type="straight"/>
+        <underline language="LA" method="pen" text="Fecerat sibi more[m]" type="straight"/>
+        <underline language="LA" method="pen" text="nunc cum tyranno inter paucos ordines circumeundi" type="straight"/>
+        <underline language="LA" method="pen" text="mox inde, uelut" type="straight"/>
+        <underline language="LA" method="pen" text="recipiendi se ad tyrannum" type="straight"/>
+        <underline language="LA" method="pen" text="quem diem patra[n]do" type="straight"/>
+        <underline language="LA" method="pen" text="facinori statuerat, eò paulisper cum tyra[n]no uectatus" type="straight"/>
+        <underline language="LA" method="pen" text="cùm ad suos concessisset" type="straight"/>
+        <underline language="LA" method="pen" text="equitibus à domo secum" type="straight"/>
+        <underline language="LA" method="pen" text="Agenda" type="straight"/>
+        <underline language="LA" method="pen" text="res est iuuenes" type="straight"/>
+        <underline language="LA" method="pen" text="audendaq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="impigrè exequi iussi estis" type="straight"/>
+        <underline language="LA" method="pen" text="parate animos dextrasq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="quis in eo quod me uiderit faciente[m]" type="straight"/>
+        <underline language="LA" method="pen" text="cesset" type="straight"/>
+        <underline language="LA" method="pen" text="cunctatus fuerit, &amp; suum co[n]silium" type="straight"/>
+        <underline language="LA" method="pen" text="sibi reditum ad" type="straight"/>
+        <underline language="LA" method="pen" text="Horror cunctos" type="straight"/>
+        <underline language="LA" method="pen" text="cum quibus mandatis" type="straight"/>
+        <underline language="LA" method="pen" text="Tyra[n]nus ab laeuo" type="straight"/>
+        <underline language="LA" method="pen" text="Ponere hastas" type="straight"/>
+        <underline language="LA" method="pen" text="Alexamenus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; se intueri" type="straight"/>
+        <underline language="LA" method="pen" text="colligit &amp; ipse animum" type="straight"/>
+        <underline language="LA" method="pen" text="confusum tant[a]e cogitatione" type="straight"/>
+        <underline language="LA" method="pen" text="appropinquabat" type="straight"/>
+        <underline language="LA" method="pen" text="impetum facit" type="straight"/>
+        <underline language="LA" method="pen" text="transfixo equo" type="straight"/>
+        <underline language="LA" method="pen" text="tyra[n]num deturbat" type="straight"/>
+        <underline language="LA" method="pen" text="iace[n]tem equites confodiunt" type="straight"/>
+        <underline language="LA" method="pen" text="multis frustra in loricam" type="straight"/>
+        <underline language="LA" method="pen" text="tande[m] in nudum corpus uulnera" type="straight"/>
+        <underline language="LA" method="pen" text="peruenerunt" type="straight"/>
+        <underline language="LA" method="pen" text="à media acie succurerretur" type="straight"/>
+        <underline language="LA" method="pen" text="expirauit" type="straight"/>
+        <underline language="LA" method="pen" text="Alexamenus cum" type="straight"/>
+        <underline language="LA" method="pen" text="citato gradu" type="straight"/>
+        <underline language="LA" method="pen" text="regiam occupa[n]dam pergit" type="straight"/>
+        <underline language="LA" method="pen" text="Corporis custodes" type="straight"/>
+        <underline language="LA" method="pen" text="pauor primò" type="straight"/>
+        <underline language="LA" method="pen" text="concurrunt ad relictum tyranni corpus" type="straight"/>
+        <underline language="LA" method="pen" text="ectatorum turba" type="straight"/>
+        <underline language="LA" method="pen" text="custodibus" type="straight"/>
+        <underline language="LA" method="pen" text="uitae mortisq[ue] ultorib[us]" type="straight"/>
+        <underline language="LA" method="pen" text="nec mouisset" type="straight"/>
+        <underline language="LA" method="pen" text="si extemplò" type="straight"/>
+        <underline language="LA" method="pen" text="positis armis" type="straight"/>
+        <underline language="LA" method="pen" text="uocata in concionem" type="straight"/>
+        <underline language="LA" method="pen" text="oratio habita tempori conuenie[n]s" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="double_vertical_bar" place="left_margin"/>
+        <mark method="pen" name="double_vertical_bar" place="left_margin"/>
+        <mark method="pen" name="double_vertical_bar" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- ius -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- lo -->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Damo -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- acue -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- man -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- uulne -->
+        
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="ac nocte inge[n]s iter emensus"/>
+        <mark method="pen" name="dot" place="intext"/> <!--posset, media-->
+        <mark method="pen" name="bracket" place="intext"/> <!-- est. Lacedaemone-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="co[n]cilio arcano gentis"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- essent, ac-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Alexamenus"/>
+        <mark method="pen" name="dot" place="intext"/> <!--uenit, que[m]-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="simul animos acueret"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="corpora"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="suetudine leuiore[m] laborem fore"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="etiam non iniucundum fieri"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Educi"/>
+        <mark method="pen" name="straight_quotation_mark" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- concessisset, tum-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="audendaq[ue]"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="animos"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="dextrasq[ue]"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="colligit"/>
+        <mark method="pen" name="straight_quotation_mark" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- Aetolis citato-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="regiam"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        
+        <mark method="pen" name="equal_sign" place="tail"/>
+        
+    </annotation>
+</transcription>

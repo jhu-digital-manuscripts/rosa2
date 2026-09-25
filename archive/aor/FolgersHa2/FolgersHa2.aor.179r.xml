@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.179r.tif" pagination="181" reader="Harvey" signature="M3r"/>	<!-- ABO 183right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Aut paritum in arte: aut callidum in praxi:
+						Ca[e]tera transeant. Simplicia, aut
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						vulgaria.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Either skilled in art, or experienced in practice: let the other things pass by. Simple things, but common things.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						L'adirato, et [vn deleted] il pazzo sono una cosa medesima.	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The angry [man] and the madman are equal.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Singula
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ἐν ἀκμῆ:
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						omnia
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						κατ' ἐξοχὴν.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Singular matters at their peak; all things at their best.</translation> 
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Pra[e]ter peritiam in theorieis, et calliditate[m]
+						in practicis, frigent omnia.						
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Everything is cold before experience in theory and aptness in practice.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Parua est scriptorum fama, et contemnenda; nisi scripta ipsa et exquisitè
+						prudentissima Sint; et mundo vtilissima; et pra[e]ter ca[e]teros scholaru[m]
+						Libros, immortalitate digna.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The fame of writers is small, and must be disregarded; unless the writings themselves are also exquisitely most prudent
+			and most useful in the world, and other than the other books of scholars, worthy of immortality.	
+			</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.179r_0001" marginalia_continues_to="Ha2.178v_0001" marginalia_to_transcription="Ha2.178v.xml">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Vnus liber, pragmaticè prudens, et efficax, plus valet, quàm Centum
+						vulgariter docti: nec tantùm possunt mille scholastica opera quantu[m] [p. 180: Vnum solidè pragmaticum. In paucis libris, plurimu[m] scientia[e]: in multis,
+						minimum. Quod petis, intus habes: exceptis Necessarijs; paucissimis Singularibus.]
+							<!-- Continues onto facing page, right margin, Ha2.179v -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>One book that is pragmatically prudent and efficient, is worth more than a hundred commonly taught: nor can thousand scholastic works be so great as [p. 180: one complete pragmatic book. In a few books, there are many things of science: in many books, there is a minimum of it.
+				What you strive for, you have within: with the necessary things taken out; with the fewest singular things.]</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="&amp; da l'ira" type="straight"/>
+		<underline language="IT" method="pen" text="la ragion" type="straight"/>
+		<underline language="IT" method="pen" text="che'l cieco furor" type="straight"/>
+		<underline language="IT" method="pen" text="si piange" type="straight"/>
+		<underline language="IT" method="pen" text="che l'error s'emende" type="straight"/>
+		<underline language="IT" method="pen" text="I principi non" type="straight"/>
+		<underline language="IT" method="pen" text="comunemente ammonitioni" type="straight"/>
+		<underline language="IT" method="pen" text="QVANTO  pericolosa" type="straight"/>
+		<underline language="IT" method="pen" text="ammonire certi" type="straight"/>
+		<underline language="IT" method="pen" text="de'lor vitij" type="straight"/>
+		<underline language="IT" method="pen" text="Cambise, Re di" type="straight"/>
+		<underline language="IT" method="pen" text="suo Segretario" type="straight"/>
+		<underline language="IT" method="pen" text="cosa di se dicessero i Persiani" type="straight"/>
+		<underline language="IT" method="pen" text="gra[n]demente il lodavano" type="straight"/>
+		<underline language="IT" method="pen" text="troppo dedito al vino" type="straight"/>
+		<underline language="IT" method="pen" text="Cambise sdegnato" type="straight"/>
+		<underline language="IT" method="pen" text="costoro mentono, ò pure se" type="straight"/>
+		<underline language="IT" method="pen" text="il tuo figliuolo à quella" type="straight"/>
+		<underline language="IT" method="pen" text="questa freccia nel cuore, egli" type="straight"/>
+		<underline language="IT" method="pen" text="essi Persiani me[n]tono" type="straight"/>
+		<underline language="IT" method="pen" text="potrà creder" type="straight"/>
+		<underline language="IT" method="pen" text="scaricato l'arco, che egli hauea" type="straight"/>
+		<underline language="IT" method="pen" text="giouaue nel petto" type="straight"/>
+		<underline language="IT" method="pen" text="burlando disse" type="straight"/>
+		<underline language="IT" method="pen" text="no[n] ti pare egli, che questi tuoi Persiani" type="straight"/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="che l'error s'emende"/>
+		<mark language="IT" method="pen" name="X_sign" place="right_margin" text="ammonitioni"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- esem -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- gra[n]demen -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- veggia -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- cre -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ma -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- appun -->
+		
+    </annotation>
+</transcription>

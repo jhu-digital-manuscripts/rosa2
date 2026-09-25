@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.059r.tif" pagination="437" reader="Harvey"/>	<!-- ABO 63right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						paucissimi in indiuiduo: quis sibi, et mundo?
+							<!-- Continued from facing page, head, Ha2.058v -->
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The least number of people know things individually. Who is for himself and for the world? 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						efficace.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Effective.
+			</translation>
+		</marginalia>		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Historia singularis. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A singular history.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ per la gratia diuina huomo libero.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				By divine grace man is free.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						veritas.
+						s[upr]a, 185.
+						i[nfr]a, 447.
+					</marginalia_text>
+					<internal_ref>
+						<target ref="FolgersHa2:Ha2.064r" text="447"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				Truth.
+				[See] above, pg. 185.
+				[See] below, pg. 447.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						giudicioso Critico; et libero.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A critic both judicious and free.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Per tutti gli huomini il risolutissimo: cioè, lo audacissimo, il determinatissimo, e
+						l'inuittissimo spirito del questo mondo. Cosi discretissimo, come risolutissimo.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Among all men, the most resolute, the most audacious, the most determine, and the most unconquerable spirit
+				of this world. As utterly discrete, as he is utterly resolute.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						L[udovic]o Sforza, di spirito vigilantissimo, e di ingegno molto acuto. Del quale fu
+						proprio, parer con inuentioni no[n] pensate da altri, Superiore di prudenza a Ciascuno.
+					</marginalia_text>
+					<person name="Ludovico Sforza"/>
+					<X-ref book_title="Ritratti di diversi principi et personaggi illustri" language="IT" person="Francesco Guicciardini" text="L[udovic]o Sforza, di spirito vigilantissimo, e di ingegno molto acuto. Del quale fu proprio parer con inuentioni no[n] pensate da altri, Superiore di prudenza a Ciascuno."/>
+					<emphasis method="pen" text="con inuentioni no[n] pensate" type="straight"/>
+					<emphasis method="pen" text="da altri" type="straight"/>
+					<emphasis method="pen" text="Superiore di prudenza" type="straight"/>
+					<emphasis method="pen" text="a Ciascuno" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Ludovico Sforza, most vigilant of spirit and most acute of intellect,
+				whose character was to seem superior in prudence to everyone else through inventions never imagined by others.
+			</translation>
+		</marginalia>
+				
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="subito &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="lodeuol pensiero" type="straight"/>
+		<underline language="IT" method="pen" text="dal riso de'" type="straight"/>
+		<underline language="IT" method="pen" text="della pace" type="straight"/>
+		<underline language="IT" method="pen" text="Vi ridete" type="straight"/>
+		<underline language="IT" method="pen" text="cosi gran pancia" type="straight"/>
+		<underline language="IT" method="pen" text="mia moglie" type="straight"/>
+		<underline language="IT" method="pen" text="la metà più grande di me" type="straight"/>
+		<underline language="IT" method="pen" text="in pace" type="straight"/>
+		<underline language="IT" method="pen" text="amendue stiamo in un letticel bene stretto" type="straight"/>
+		<underline language="IT" method="pen" text="siamo in discordia, ne ancho" type="straight"/>
+		<underline language="IT" method="pen" text="tutta la casa ci puo" type="straight"/>
+		<underline language="IT" method="pen" text="gran forza" type="straight"/>
+		<underline language="IT" method="pen" text="Atheniesi a far pace" type="straight"/>
+		<underline language="IT" method="pen" text="Grammatico" type="straight"/>
+		<underline language="IT" method="pen" text="un poema" type="straight"/>
+		<underline language="IT" method="pen" text="Dionigi tiranno" type="straight"/>
+		<underline language="IT" method="pen" text="tutti gli" type="straight"/>
+		<underline language="IT" method="pen" text="magnificamente l'hebbero lodato" type="straight"/>
+		<underline language="IT" method="pen" text="solo fra" type="straight"/>
+		<underline language="IT" method="pen" text="dir liberamente" type="straight"/>
+		<underline language="IT" method="pen" text="non hauena" type="straight"/>
+		<underline language="IT" method="pen" text="alcuna cosa degna di lode d'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="cognition dellaarte poetica" type="straight"/>
+		<underline language="IT" method="pen" text="dal popolo" type="straight"/>
+		<underline language="IT" method="pen" text="da' dotti a ragione" type="straight"/>
+		<underline language="IT" method="pen" text="s'adirò Dionigi" type="straight"/>
+		<underline language="IT" method="pen" text="nell'horrenda prigion delle Latomie" type="straight"/>
+		<underline language="IT" method="pen" text="d'onde pochi n'usciuano uiui" type="straight"/>
+		<underline language="IT" method="pen" text="prieghi di Filippo, che scriueua le historie" type="straight"/>
+		<underline language="IT" method="pen" text="che perdeuano i lor figliuoli, non hauendo chi insegnasse più loro" type="straight"/>
+		<underline language="IT" method="pen" text="Dionigi" type="straight"/>
+		<underline language="IT" method="pen" text="una Tragedia" type="straight"/>
+		<underline language="IT" method="pen" text="tutti i litterati, accioche ne" type="straight"/>
+		<underline language="IT" method="pen" text="dessero giudicio" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="stiamo in un letticel bene stretto" type="straight"/>
+		<underline language="IT" method="chalk" text="siamo in discordia" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="head"/>
+		<symbol name="Sun" place="head"/>
+		<symbol name="JC" place="intext"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- ma per -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- pa -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- tiran -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- tan -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- esser -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Dioni -->
+		
+	    	<!-- Head/Intext/Tail -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="subito"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="mia moglie"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="in pace"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="discordia"/>
+	    <mark method="pen" name="vertical_bar" place="intext"/> <!-- capire. Queste  -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="un poema"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Dionigi tiranno"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- composto, dopo -->
+		<mark method="pen" name="dot" place="intext"/> <!-- lodato, solo -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="solo"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="dir liberamente"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="degna"/>
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- popolo -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="dotti"/>
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- lodati. Di -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- casa. Indi -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="una Tragedia"/>
+		<mark method="pen" name="comma" place="intext"/> <!-- Tragedia secondo -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+
+    </annotation>
+</transcription>

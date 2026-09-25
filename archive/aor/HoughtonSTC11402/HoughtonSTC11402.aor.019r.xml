@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.019r.tif" reader="Harvey" signature="Biiii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>s[upr]a /</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0045" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] above.</translation>
+        </marginalia>
+            
+        <marginalia anchor_text="Cesar" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Caesar.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Julius Caesar.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="great dyche ouerthwarte the waye" type="straight"/>
+        <underline language="EN" method="pen" text="trenche meete to bourne" type="straight"/>
+        <underline language="EN" method="pen" text="sette fyre" type="straight"/>
+        <underline language="EN" method="pen" text="Cesar" type="straight"/>
+        <underline language="EN" method="pen" text="aray agaynste Afranius" type="straight"/>
+        <underline language="EN" method="pen" text="not recule backe without" type="straight"/>
+        <underline language="EN" method="pen" text="stelthe brought backe certayn" type="straight"/>
+        <underline language="EN" method="pen" text="dyche of .xv. fote behynd" type="straight"/>
+        <underline language="EN" method="pen" text="Pericles" type="straight"/>
+        <underline language="EN" method="pen" text="Peloponesus" type="straight"/>
+        <underline language="EN" method="pen" text="intended" type="straight"/>
+        <underline language="EN" method="pen" text="caste a dyche of greatte bredthe, vnder" type="straight"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--hym, he-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="great dyche ouerthewarte the waye"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="sette fyre"/>
+        <mark method="pen" name="dot" place="intext"/> <!--out, before-->
+        <mark method="pen" name="dot" place="intext"/> <!--enemies, and-->
+        
+    </annotation>
+</transcription>

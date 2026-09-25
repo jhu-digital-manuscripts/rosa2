@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.071v.tif" pagination="142" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Aristoteles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aristoteles</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Theophrastus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Theophrast[us]</marginalia_text>
+                    <person name="Theophrastus"/>
+                </position>
+            </language>
+            <translation>Theophrastus.</translation>
+        </marginalia>
+       
+        <marginalia anchor_text="Sed mos Romanus, etiam notijs hoc munus inseruit. Nam &amp; funebres laudationes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>funebres laudationes Romanoru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Funeral laudations of the Romans.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="laudes Capitolini Iouis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iupiter Capitolinus</marginalia_text>
+                    <location name="Temple of Jupiter Optimus Maximus"/>
+                </position>
+            </language>
+            <translation>Jupiter Capitolinus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Romulum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Romulus</marginalia_text>
+                    <person name="Romulus"/>
+                </position>
+            </language>
+            <translation>Romulus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Nihil enim dicitur, cui" type="straight"/>
+        <underline language="LA" method="pen" text="insit ratio, &amp; quò iudicium referatur, &amp; quod re[m] maxime contineat. Sed" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

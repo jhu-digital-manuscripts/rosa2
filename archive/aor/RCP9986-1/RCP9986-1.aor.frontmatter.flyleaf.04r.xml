@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.frontmatter.flyleaf.04r.tif" pagination="title page" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia date="1546" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Joannes dee 1546.</marginalia_text>   
+                    <person name="John Dee"/>
+                </position>
+            </language>
+            <translation>John Dee, 1546.</translation>
+        </marginalia>
+        
+        <marginalia date="1586" hand="English_secretary" other_reader="Nicholas Saunder">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Nich[olas]:Saunder 15[8]6.</marginalia_text>   
+                    <person name="Nicholas Saunder"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>xiid.</marginalia_text>     <!-- DO: This suggests '12 pence': http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(16)30086-1/abstract -->
+                </position>
+            </language>
+            <translation>12 pence.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>(1</marginalia_text>                        
+                </position>
+            </language>
+        </marginalia>
+        
+        
+        <marginalia colour="red" hand="English_secretary">         
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>[deleted]</marginalia_text>     
+                </position>
+            </language>
+        </marginalia>
+        
+        <mark method="pen" name="scribble" place="head"/>
+        
+        <errata amendedtext="Duo" copytext="tres" language="LA"/>
+        
+    </annotation>
+</transcription>

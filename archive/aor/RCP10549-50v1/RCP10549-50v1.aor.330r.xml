@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.330r.tif" pagination="639" reader="John Dee" signature="fff.ii."/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>PRAECATÏO</marginalia_text>
+                </position>
+            </language>
+            <translation>Supplication.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vti liberum spiritum ducendi nullam habeat potestam" type="straight"/>
+        
+        <numeral place="right_margin">3</numeral>
+        
+    </annotation>
+</transcription>

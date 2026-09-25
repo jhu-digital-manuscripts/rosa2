@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.075v.tif" reader="Harvey" signature="[*3[v]]"/>	<!-- ABO 80left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Prudens non est, qui sibi ipsi est imprudens.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="IT">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Poco fa, chi à se non gioua.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who is imprudent with himself is not prudent.
+				He who is not useful to himself accomplishes little.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Sera nimis Vita est Crastina: viue hodie.
+						Sufficit diei sua malitia:
+						inquit ipse Christus. Sua militia:
+						ait Ca[e]sar. Hodiè mihi: cras tibi.
+						In Experientia, finis conspicitur
+						eorum, in quibus aliquis est excellentior.
+						Inter pueros puer: inter viros vir: inter senes
+						senex: qualem partem vnamquamq[ue] habemus mortale
+						genus. Percurrit autem et quatuor Virtutes
+						mortale a[e]vum. Cogitare autem decet de eo, quod
+						propè est. Pindarus Ode 3. Nemeorum.
+						Qui vincit, reliqua in vita habet mellitam
+						tranquillitatem, propter pra[e]mia victoria[e]. Semper
+						autem quod vno quolibet die obuenit bonu[m], summu[m]
+						venit omni mortali. Idem Ode I. Olymp.
+						Luctus opprimitur grauis à potiorib[us] bonis. Ode 2.
+						Ex fluctibus semper is, qui circa pedem nauis
+						voluitur, dicitur cui libet maximè perturbare animu[m].
+						Ode 6. Nemeorum.
+					</marginalia_text>
+					<person name="Pindar"/>
+					<person name="Jesus Christ"/>
+					<person name="Julius Caesar"/>
+					<book title="Nemean Odes"/>
+					<book title="Olympian Odes"/>
+					<X-ref book_title="Bible" language="LA" person="Matthew" text="Sufficit diei sua malitia"/>
+					<emphasis method="pen" text="Sera nimis Vita" type="straight"/>
+					<emphasis method="pen" text="Crastina" type="straight"/>
+					<emphasis method="pen" text="viue hodie" type="straight"/>
+					<emphasis method="pen" text="Sufficit diei sua malitia" type="straight"/>
+					<emphasis method="pen" text="Hodiè mihi: cras tibi" type="straight"/>
+					<emphasis method="pen" text="In Experientia" type="straight"/>
+					<emphasis method="pen" text="Cogitare autem decet de eo, quod propè est" type="straight"/>
+					<emphasis method="pen" text="Qui vincit" type="straight"/>
+					<emphasis method="pen" text="mellitam" type="straight"/>
+					<emphasis method="pen" text="tranquillitatem" type="straight"/>
+					<emphasis method="pen" text="Sera quod vno quolibet die obuenit bonu[m], summu[m] venit omni Vita" type="straight"/>
+					<emphasis method="pen" text="Luctus opprimitur" type="straight"/>
+					<emphasis method="pen" text="qui circa pedem nauis" type="straight"/>
+					<emphasis method="pen" text="dicitur cui libet maximè perturbare" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				"Tomorrow is too late for life: live today.
+				Christ himself says, "Sufficent for each day is its own trouble."
+				Caesar says, "Its own warfare." 
+				Today is mine, tomorrow is yours. 
+				
+				By trial the accomplishment is made manifest, of that in which a man proves himself preeminent,
+				as a boy among young boys, a man among men, or, thirdly, among elders, according to each stage 
+				which we, the race of men, possess.  And mortal life sets in motion four excellences, and bids us 
+				to think of what is at hand. 
+				Pindar's Third Nemean Ode. 
+				
+				A victor throughout the rest of his life enjoys honeyed calm, so far as contests can bestow it. 
+				But at any given time the glory of the present day is the highest one that comes to every mortal man.
+				The same, First Olympian Ode.
+				
+				Their heavy sorrow collapsed in the presence of greater blessings.
+				Second Olympian Ode.
+				
+				But the wave that rolls nearest to the ship is said to stir the spirit most of all.
+				Sixth Nemean Ode." [Trans. Diane Arnson Svarllien]
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( Hoc age. Vnum necessariu[m].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Do this one necessary thing.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Valdè sapit, qui Sibi ipsi nunq[uam] repugnat in Medijs, ad suum Finem:
+						sed semper Causas applicat, suo Effectui accommodatas. Memor Scopi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who never contradicts himself in the middle of things until he reaches the end knows much. <!--JG: His end instead of the end, no?-->
+				But he always turns his mind to opportunities suitable  for his accomplishment. Mindful of the goal.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Oculus semper in vexillo. Ad scopum, vnaqua[e]q[ue]
+						pharetra[e] sagitta. Ad vnu[m], eundemq[ue]. Scopum ta[e]la singula.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Always keep your eye on the prize. Towards the goal, each and every arrow of the quiver. Towards on and the same thing. Singular spears of the goal.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="picciola dimostratione del mio cuore" type="straight"/>
+		<underline language="IT" method="pen" text="partial amatore delle sue gentilissime" type="straight"/>
+		<underline language="IT" method="pen" text="dou'io sia buono à seruirla" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--di-->
+		
+		<mark method="pen" name="dot" place="intext"/> <!--qualita, &-->
+		
+    </annotation>
+</transcription>

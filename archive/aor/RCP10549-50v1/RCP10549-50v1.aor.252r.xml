@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.252r.tif" pagination="483" reader="John Dee" signature="hhh.ii."/>
+    <annotation>
+        
+        <marginalia anchor_text="recordatione, &amp; proximi memoria" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        recordatio memoria.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Recollection, memory.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="euellere ... excidere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        evellere excidere]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To pull out, to deprive of.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="persapientis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        p[er]sapiens.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Very wise.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="perhonorificum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        p[er]honorificu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Very honourable.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Conclusio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Conclusion.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="magisteriu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        magisterium
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Instruction.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quòd ta[n]tum" type="straight"/>
+        <underline language="LA" method="pen" text="possem etia[m] summoru[m] viroru[m] exe[m]plo inimicitias Reip. causa deponere: sed cu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="vestra authoritate texeru[n]t: aut his" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="right_margin">19</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">22</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">18</numeral>
+
+    </annotation>
+</transcription>

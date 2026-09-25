@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.146r.tif" pagination="275" reader="Harvey"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Romana[e] historia[e] primus flos, et vigor: vnius alteriusq[ue] lectoris opinione.
+                        Virescit vulnere virtus: adamantinum generosa[e] a[e]mulationis, pra[e]stantia[e]q[ue] fundamentum. 
+                        Ni Carthago fuisset Roma[e] asperrima hostis; nunq[uam] Roma fuisset Orbis potentissima domina. 
+                        Quò aduersa
+                    </marginalia_text>
+                    <location name="Rome"/>
+                    <location name="Carthage"/>
+                    <X-ref book_title="Unknown" language="LA" person="Aulus Furius Antias" text="Virescit vulnere virtus"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> fortuna infestior, eò tandem prospera fortuna ingentior: vbi militat virtus indomita; palma[e] praeclara a[e]mula.</marginalia_text>
+                </position>
+            </language>
+            <translation>The first flourishing and vigour of Roman history in the opinion of one or two readers.
+                "Courage grows strong from a wound:" The solid basis of noble and extraordinary rivalry. Had Carthage not been Rome’s harshest enemy, 
+                Rome would never have been the most powerful master of the world. The more troublesome the misfortune is, 
+                the greater the luck in the end, when valour fights unbroken, as an excellent competitor for victory.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="legatos maiores natu" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Honoratissima[e] Romanorum Legationes: ad Carthaginenses: Hispanos: Gallos. Nullus historicus tam vividè legatu[m] agit, 
+                        aut Iurisc[onsultus] quàm Liuius. hîc s[upr]a, i[nfr]a. Valdè conducit pragmatico, tales omnes legationes penitùs excutere.
+                    </marginalia_text>
+                    <person name="Livy"/>
+                    <location name="Rome"/>
+                    <location name="Carthage"/>
+                    <location name="Spain"/>
+                    <location name="Gaul"/>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000039" text="s[upr]a"/>
+                    </internal_ref>
+                    <internal_ref text="i[nfr]a">
+                        <target ref="PrincetonPA6452:00000680" text="[658]"/>
+                        <target ref="PrincetonPA6452:00000681" text="[659]"/>
+                        <target ref="PrincetonPA6452:00000759" text="[737]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>The most honorable embassies of the Romans to the Carthaginians, Spaniards, Gauls. No historian discusses the 
+                ambassador or jurist so lively as Livy does. [See] here above, below. It is very beneficial for the pragmatic fully to examine all 
+                such embassies.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        directa belli denunciatio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>A straightforward declaration of war.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Politicum desidero, qui vtrunq[ue] adamantinum fundamentum altioribus radicibus figens, et optima pra[e]cepta optimis 
+                        exemplis illustrans, Aristotelem ipsum Principiorum pondere; Machiauellum historiarum delectu superauerit. 
+                        Mihi placeret, ibi incipere, vbi Machiauellus, Dana[e]usq[ue] desinunt: et posterioribus Romanorum consilijs, legibus, armis, 
+                        iudicijs, magistratibus, negotijs, industrijs, imperijs, priora solerter corrigere, nauiterq[ue] extendere. Nec non alia superaddere, 
+                        qua[e] in alijs florentissimis mundi imperijs, regnis, rebuspublicis eminentissima pra[e]celluerunt. Tum nihil in subtilissimis scholae 
+                        doctoribus, aut profundissimis mundi pragmaticis inexcussum relinquere, aut inexploratum, vndè ipsis principijs aliquid accedat 
+                        reformationis, aut incrementi.
+                    </marginalia_text>
+                    <person name="Aristotle"/>
+                    <person name="Machiavelli"/>
+                    <person name="Lambert Daneau"/>
+                </position>
+            </language>
+            <translation>I long for a politician who will surpass Aristotle himself in the weight of his principles and Machiavelli through the appeal 
+                of his stories, securing each of them on a solid foundation with very long roots, and illuminating the best advice with the best examples.
+                I would like to start at the point where Machiavelli and Daneau stop, and in the later councils of the Romans, their laws, arms, 
+                judgments, magistrates, affairs, activities, orders, skilfully correct the previous [lessons] and diligently continue them. 
+                And to add some other absolutely brilliant ones, that excelled in other very successful empires, kingdoms and republics in the world. 
+                Furthermore to leave nothing unexamined or unexplored in the most sophisticated doctors of the schools, or in the most profound 
+                pragmatics of the world, which may add some point of correction or improvement.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Latu[m] inde" type="straight"/>
+        <underline language="LA" method="pen" text="uellent, iuberent, populo Carthaginensi bellu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="terrestribus maritimisq[ue] copijs T." type="straight"/>
+        <underline language="LA" method="pen" text="Gallia prouincia" type="straight"/>
+        <underline language="LA" method="pen" text="anno uersa in" type="straight"/>
+        <underline language="LA" method="pen" text="omnia iusat ante bellum fierent" type="straight"/>
+        <underline language="LA" method="pen" text="legatos maiores" type="straight"/>
+        <underline language="LA" method="pen" text="Fabium" type="straight"/>
+        <underline language="LA" method="pen" text="Licinium" type="straight"/>
+        <underline language="LA" method="pen" text="Æmylium" type="straight"/>
+        <underline language="LA" method="pen" text="Liciniu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Bebium" type="straight"/>
+        <underline language="LA" method="pen" text="percunctandos Carthaginenses" type="straight"/>
+        <underline language="LA" method="pen" text="publicóne consilio Annibal" type="straight"/>
+        <underline language="LA" method="pen" text="defenderent publico consilio" type="straight"/>
+        <underline language="LA" method="pen" text="indicerent populo Carthaginensi" type="straight"/>
+        <underline language="LA" method="pen" text="Romani" type="straight"/>
+        <underline language="LA" method="pen" text="Carthaginem" type="straight"/>
+        <underline language="LA" method="pen" text="Q. Fabius" type="straight"/>
+        <underline language="LA" method="pen" text="quàm unum" type="straight"/>
+        <underline language="LA" method="pen" text="percunctatus" type="straight"/>
+        <underline language="LA" method="pen" text="Carthaginensibus unus princeps" type="straight"/>
+        <underline language="LA" method="pen" text="Vana" type="straight"/>
+        <underline language="LA" method="pen" text="prior legatio fuit" type="straight"/>
+        <underline language="LA" method="pen" text="tanquam suo consilio Sagu[n]tum" type="straight"/>
+        <underline language="LA" method="pen" text="uerbis adhuc lenior" type="straight"/>
+        <underline language="LA" method="pen" text="re asperior" type="straight"/>
+        <underline language="LA" method="pen" text="confessio culpae" type="straight"/>
+        <underline language="LA" method="pen" text="confessis res extemplò repetuntur" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] priuato" type="straight"/>
+        <underline language="LA" method="pen" text="publicóne consilio" type="straight"/>
+        <underline language="LA" method="pen" text="utru[m] iure" type="straight"/>
+        <underline language="LA" method="pen" text="an iniuria" type="straight"/>
+        <underline language="LA" method="pen" text="nostra enim haec quaestio" type="straight"/>
+        <underline language="LA" method="pen" text="nostro" type="straight"/>
+        <underline language="LA" method="pen" text="an suo" type="straight"/>
+        <underline language="LA" method="pen" text="uobiscum una discepatio" type="straight"/>
+        <underline language="LA" method="pen" text="licuerit ne per foedus fieri" type="straight"/>
+        <underline language="LA" method="pen" text="publico consilio" type="straight"/>
+        <underline language="LA" method="pen" text="sua sponte" type="straight"/>
+        <underline language="LA" method="pen" text="uobiscum" type="straight"/>
+        <underline language="LA" method="pen" text="foedus est à Luctatio" type="straight"/>
+        <underline language="LA" method="pen" text="cauetur utrorumq[ue] socijs" type="straight"/>
+        <underline language="LA" method="pen" text="nihil de Saguntinis" type="straight"/>
+        <underline language="LA" method="pen" text="necdum enim" type="straight"/>
+        <underline language="LA" method="pen" text="cautum est" type="straight"/>
+        <underline language="LA" method="pen" text="foedere, quod cum" type="straight"/>
+        <underline language="LA" method="pen" text="Saguntini excipiuntur" type="straight"/>
+        <underline language="LA" method="pen" text="quod à" type="straight"/>
+        <underline language="LA" method="pen" text="primò nobiscum foedus icit" type="straight"/>
+        <underline language="LA" method="pen" text="autoritate patrum" type="straight"/>
+        <underline language="LA" method="pen" text="populi iussu ictum" type="straight"/>
+        <underline language="LA" method="pen" text="negastis" type="straight"/>
+        <underline language="LA" method="pen" text="aliud" type="straight"/>
+        <underline language="LA" method="pen" text="publico consilio" type="straight"/>
+        <underline language="LA" method="pen" text="non tenent uestra foedera, nisi ex autoritate" type="straight"/>
+        <underline language="LA" method="pen" text="ne nos quide[m] Asdrubalis foedus, quod nobis" type="straight"/>
+        <underline language="LA" method="pen" text="quod diu parturit animus" type="straight"/>
+        <underline language="LA" method="pen" text="aliquando pariat" type="straight"/>
+        <underline language="LA" method="pen" text="Romanus sinu" type="straight"/>
+        <underline language="LA" method="pen" text="Hic" type="straight"/>
+        <underline language="LA" method="pen" text="bellum &amp; pacem portamus" type="straight"/>
+        <underline language="LA" method="pen" text="utrum placet, sumite" type="straight"/>
+        <underline language="LA" method="pen" text="daret utrum uellet, succlamatum" type="straight"/>
+        <underline language="LA" method="pen" text="bellum dare" type="straight"/>
+        <underline language="LA" method="pen" text="quibus accipere[n]t animis, ijsdem se gesturos" type="straight"/>
+        <underline language="LA" method="pen" text="directa percunctatio ac denunciatio belli magis ex dignitate P." type="straight"/>
+        <underline language="LA" method="pen" text="foederum iure uerbis disceptare, cum ante" type="straight"/>
+        <underline language="LA" method="pen" text="si uerborum disceptationis" type="straight"/>
+        <underline language="LA" method="pen" text="quod foedus Asdrubalis" type="straight"/>
+        <underline language="LA" method="pen" text="Lactatij foedere disertè" type="straight"/>
+        <underline language="LA" method="pen" text="ratum foere, si populus" type="straight"/>
+        <underline language="LA" method="pen" text="Adrubalis foedere" type="straight"/>
+        <underline language="LA" method="pen" text="nec exceptum" type="straight"/>
+        
+        <symbol name="JC" place="left_margin"/>
+        
+        <symbol name="JC" place="right_margin"/>
+        <symbol language="LA" name="Mercury" place="right_margin" text="Honoratissima[e] Romanorum Legationes: ad Carthaginenses: Hispanos: Gallos. Nullus historicus tam vividè legatu[m] agit, aut Iurisc[onsultus] quàm Liuius. hîc s[upr]a, [infr]a. Valdè conducit pragmatico, tales omnes legationes penitùs excutere."/>
+        <symbol name="Mars" place="right_margin"/>
+        <symbol name="JC" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--Romanos, Gallia-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="publicóne"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="defenderent publico consilio"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="unum"/>  
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--esset: tum-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="tanquam suo consilio"/>  
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="iure"/>  
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="nostro"/>  
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="suo"/>  
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="publico"/>  
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="cauetur utrorumq[ue] socijs"/>  
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="aliud"/>  
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="autoritate"/>  
+        <mark method="pen" name="plus_sign" place="intext"/>  
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--pariat Tum-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="foedere"/>  
+        <mark method="pen" name="dash" place="intext"/>
+        
+    </annotation>
+</transcription>

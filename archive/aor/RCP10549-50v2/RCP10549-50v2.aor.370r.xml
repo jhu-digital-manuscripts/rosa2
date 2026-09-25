@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.370r.tif" pagination="191" reader="John Dee" signature="[Mm.viii.]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="ab iis degatur aetas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        qua[e] ab ijs degatur a[e]tas.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'How they pass their days' [LCL 268:50-51].
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        tra[n]silio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I leap.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        imme[n]sa interminata. imme[n]sitas. ] regionu[m] magnitudo in o[mn]es partes.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Immeasurable, endless abundance; the greatness of regions in all parts.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        altitudo p[ro]funditas.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Height, depth.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Velleius
+                    </marginalia_text>
+                    <person name="Gaius Velleius Paterculus"/>
+                    <emphasis method="pen" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                Gaius Velleius Paterculus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Epicurus
+                    </marginalia_text>
+                    <person name="Epicurus"/>
+                    <emphasis method="pen" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                Epicurus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="στερέμνια" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Στερεόν
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Solid.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ἰσονομία
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Equal distribution.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quid agat Deus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                What does God do.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mundus deus est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mundus cur no[n] sit Deus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Whether the world is not God,
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nisi quietu[m] autem nil beatum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nisi quietum sit nihil beatum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Unless the quiet is nothing happy.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="beatam vitam in animi securitate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vita beata in a[nim]i securitate.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'But repose is an essential condition of happiness' [LCL 268:52-53].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="&amp; in omniu[m] vacatione munerum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        et in o[mn]i[u]m vacatio[n]e munerum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Even in the freedom of all duties.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="effectum esse mundu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mundus q[uo] modo effectus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The world was made in this manner.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tragici" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tragicoru[m] mos, quomodo ad deos confugiunt.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The custom of tragic poets. How they take refuge in the gods.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="reru[m] formae &amp; figurae quas vos effici posse sine follibus &amp; incudibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Rerum forma[e] et forma[e] no[n] follibus no[n] incudib[us] effecta[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The forms and shapes of things created without bellows and anvils.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quem dies &amp; noctes timeremus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Deu[m] dies &amp; noctes timerem[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                We feared God at night and day.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ftalis necessitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fatalis necessitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A fatal necessity.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        μαντική
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Divination in general.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pie sanctéque colimus naturam escellentem atque praestantem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pie colamus natura[m] excelle[n]tem atq[ue] pra[e]stantem.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Let us respectfully cherish the excellent and extraordinary nature.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cotta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cotta.
+                    </marginalia_text>
+                    <person name="Gaius Aurelius Cotta"/>
+                </position>
+            </language>
+            <translation>
+                Gaius Aurelius Cotta.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Academicus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Academic.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        facilius est quare falsu[m] quid sit, q[uam] q[ua]re veru[m] ostendere.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It is easier to show why something is wrong than why it is right.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="L. Crasso" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        L. Crassus.
+                    </marginalia_text>
+                    <person name="Lucius Licinius Crassus"/>
+                </position>
+            </language>
+            <translation>
+                Lucius Licinius Crassus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="propter beneuolentiam vberius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Propter benevole[n]tia[m] vberius quos amamus, laudamus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                We praise those we love fully for their benevolence.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aniculis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        anicul[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Little old women.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        animus inijceus se et intendeus in . mens intenta in iuxta nostra intellige[n]tia nulla[m] ora[m] vltimi videre <!-- FSF: not sure about second word -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        curiosus pleuus negotij
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Diligent, full of activity.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        negotia [ molesta operosa.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Business, tiresome and laborious.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Longitudo latitudo altitudo ] tres dime[n]sio[n]es geometri[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Length, breadth, height, the three dimensions of geometry.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Hic summè nota[n]du[m] q[uod] Cicero co[n]fide[n]tem Velleium &amp; Modestum Cotta[m] introduxit et vtriq[ue] in more fuisse positu[m], vt eo modo disputare[n]t
+                    </marginalia_text>
+                    <person name="Cicero"/>
+                    <person name="Gaius Velleius"/>
+                    <person name="Gaius Aurelius Cotta"/>
+                </position>
+            </language>
+            <translation>
+                Here it is to note that Cicero introduced the confident Gaius Velleius and the modest Gaius Aurelius Cotta and that he placed both in this arrangement, so that they could debate in this way.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="transitione" type="straight"/>
+        <underline language="LA" method="pen" text="mentem intentam, infixámque nostram" type="straight"/>
+        <underline language="LA" method="pen" text="vt omnia omnibus, paribus paria respondeant" type="straight"/>
+        <underline language="LA" method="pen" text="aequabile[m] tributionem" type="straight"/>
+        <underline language="LA" method="pen" text="ab iis degatur aetas" type="straight"/>
+        <underline language="LA" method="pen" text="qua nihil beatius, nihil omnibus bonis affluentius cogitari potest" type="straight"/>
+        <underline language="LA" method="pen" text="laboriosissimu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="puncto temporis intermisso versari circu[m] axem caeli admirabili celeritate" type="straight"/>
+        <underline language="LA" method="pen" text="ille est implicatus molestis negotiis, &amp; operosis" type="straight"/>
+        <underline language="LA" method="pen" text="natura effectum esse mundu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="effectura" type="straight"/>
+        <underline language="LA" method="pen" text="efficiat" type="straight"/>
+        <underline language="LA" method="pen" text="effecerit" type="straight"/>
+        <underline language="LA" method="pen" text="quam se iniiciens animus &amp; intendens" type="straight"/>
+        <underline language="LA" method="pen" text="vltimi" type="straight"/>
+        <underline language="LA" method="pen" text="immensitate" type="straight"/>
+        <underline language="LA" method="pen" text="altitudinum" type="straight"/>
+        <underline language="LA" method="pen" text="aliae alias apprehendentes continuantur" type="straight"/>
+        <underline language="LA" method="pen" text="posse sine follibus &amp; incudibus non putatis" type="straight"/>
+        <underline language="LA" method="pen" text="imposuistis in ceruicibus nostris sempiternum" type="straight"/>
+        <underline language="LA" method="pen" text="Quis enim non timeat omnia prouidentem, &amp; cogitantem, &amp; animaduertentem, &amp; omnia ad se pertinere putantem,              curiosum &amp; plenum negotii deum" type="straight"/>
+        <underline language="LA" method="pen" text="accidat, id ex aeterna veritate causarúmque continuatione fluxisse dicatis" type="straight"/>
+        <underline language="LA" method="pen" text="aniculis" type="straight"/>
+        <underline language="LA" method="pen" text="tanta imbueremur superstitione si vos audire vellemus" type="straight"/>
+        <underline language="LA" method="pen" text="aruspices, augures, arioli, vates, coniectores nobis essent colendi. His" type="straight"/>
+        <underline language="LA" method="pen" text="libertatem vindicati" type="straight"/>
+        <underline language="LA" method="pen" text="Sed elatus studio vereor ne longior fuerim" type="straight"/>
+        <underline language="LA" method="pen" text="mentem venire solet quare verum sit aliquid, quàm quare falsum: ídque quum saepe, tum quum te audirem paulo ante contigit" type="straight"/>
+        <underline language="LA" method="pen" text="antequa[m] aggrediar ad" type="straight"/>
+        <underline language="LA" method="pen" text="quae à te disputata sunt, de teipso dicam" type="straight"/>
+        <underline language="LA" method="pen" text="mirifice diligi intelligebam, arbitrabar illum propter beneuolentiam vberius id dicere" type="straight"/>
+        
+        <symbol name="Phi" place="left_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="tail"/>
+        <symbol name="Phi" place="tail"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="section_sign" place="intext"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">13</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="fatalis necessitas" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Cotta" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.155r.tif" pagination="156" reader="John Dee" signature="V.iiij."/>   
+    <annotation>
+        
+        <marginalia anchor_text="canor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cantus</marginalia_text>
+                </position>
+            </language>
+            <translation>A song.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="poetae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Poeta[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Poets.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Et profugum aeneam, altae primordia Romae, Quo nullum latio clarius extat opus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vergilij Laus.</marginalia_text>
+                    <person name="Virgil"/>
+                </position>
+            </language>
+            <translation>Praise of Virgil.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Res est blanda canor" type="straight"/>
+        <underline language="LA" method="pen" text="Pro facie multis vox sua lena fuit" type="straight"/>
+        <underline language="LA" method="pen" text="tergeminúmq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="naublia" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

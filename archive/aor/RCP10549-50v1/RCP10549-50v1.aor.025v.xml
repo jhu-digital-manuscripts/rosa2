@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.025v.tif" pagination="34" reader="John Dee" signature="[cc.i.[v]]"/>
+    <annotation> 
+        
+        <marginalia anchor_text="aliena misericordia viuo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        aliena misericordia viuo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I live on the mercy of others.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praedo [...] pirata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        pr[a]edo pirata
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A Robber, a pirate.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Repetitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Repetition
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="crudelitate sanguinis perlitus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        crudelitate sa[n]gu[in]is perlitus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Erased by the cruelty of blood.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="per deos immortales quae ista tanta crudelitas est, quae tam fera immanísque natura? Quis" type="straight"/>
+        <underline language="LA" method="pen" text="pirata" type="straight"/>
+        <underline language="LA" method="pen" text="spectatissima foemina" type="straight"/>
+        <underline language="LA" method="pen" text="amplissimos patruos, ornatissimu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="fratre[m] haberet, tame[n] cum esset mulier, virtute" type="straight"/>
+        <underline language="LA" method="pen" text="An quòd dilige[n]ter defenditur, id tibi indignu[m] facinus videtur" type="straight"/>
+        <underline language="LA" method="pen" text="consistere mehercule vobis isto in loco non liceret" type="straight"/>
+        <underline language="LA" method="pen" text="dicendu[m] impedime[n]to est aetas, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="ornat aetatem, causam mihi tradidit, que[m] sua" type="straight"/>
+        <underline language="LA" method="pen" text="assiduitate, consilio, authoritate, diligentia" type="straight"/>
+        <underline language="LA" method="pen" text="qui iniuriae resistere[n]t: qui quantum possent, in salute alterius, quàm in exitio mallent ostendere" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Resp. ex illis, &amp; ipsi ex inuidia minus laborarent" type="straight"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">.11.</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">3</numeral>
+        
+        <drawing anchor_text="qui iniuriae resistere[n]t: qui quantum possent, in salute alterius, quàm in exitio mallent ostendere" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.041r.tif" reader="Harvey" signature="Eii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Nihil vires magis promouet, quàm ordo, et cohortatio:
+                    qua[e] nunq[uam] in vllo pra[e]lio omittenda; sed inuiolabili diligentiâ pra[e]cipùe seruanda.</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>i[nfr]a, c. 5.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0105" text="c. 5"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Nothing advances strength more than order and encouragement, which must never be omitted in battle, but 
+            must be preserved particularly with imperishable diligence. [See] below, chapter 5.</translation>
+        </marginalia>
+            
+        <marginalia anchor_text="Spanyardes, a sturdy kynde of souldiours" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Spanyards, sturdy Souldiours.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In [the] latin,</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>robustus quidem miles.</marginalia_text>
+                </position>
+            </language>
+            <translation>In [the] Latin, a robust man indeed [was] a soldier.</translation> <!--JG: Not sure abt translation--> <!--KS: or 'a robust soldier indeed', referring to the marginal note above?-->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>The terribilityes in [the]</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>front.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>i[nfr]a. c.4. Medusa[e] caput.</marginalia_text>
+                    <person name="Medusa"/>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0098" text="c.4"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>The terribilityes in [the] front. [See] below, chapter 4. The head of Medusa.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Ca[e]saris excellentissima Regula: A tua firmissima parte inchoandum pra[e]lium, aduersùs
+                    hostium partem infirmissimam.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>The most excellent rule of Caesar: the battle must be started from your strongest side 
+                against the weakest side of the enemy.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="order the" type="straight"/>
+        <underline language="EN" method="pen" text="Scipio" type="straight"/>
+        <underline language="EN" method="pen" text="Spanyardes" type="straight"/>
+        <underline language="EN" method="pen" text="sturdy kynde of souldiours" type="straight"/>
+        <underline language="EN" method="pen" text="were the Aphriens" type="straight"/>
+        <underline language="EN" method="pen" text="of moche more constant mynd" type="straight"/>
+        <underline language="EN" method="pen" text="purpose" type="straight"/>
+        <underline language="EN" method="chalk" text="weakest of his ennemies" type="straight"/>
+        <underline language="EN" method="chalk" text="strongest of his army" type="straight"/>
+        <underline language="EN" method="pen" text="the Aphriens" type="straight"/>
+        <underline language="EN" method="pen" text="the Spanyardes, whiche" type="straight"/>
+        <underline language="EN" method="pen" text="his araye to be spreade" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        <symbol language="EN" name="SS" place="right_margin" text="strongest of his army"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="strongest of his army"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--man-->
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="of moche more constant mynd"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--with-->
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="weakest of his ennemies"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--Aphriens, he-->
+        
+    </annotation>
+</transcription>

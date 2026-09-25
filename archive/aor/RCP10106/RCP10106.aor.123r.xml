@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.123r.tif" pagination="245" reader="John Dee" signature="q 3"/> 
+    <annotation>
+        
+        <marginalia anchor_text="sententijs quidem poëtarum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Poëtaru[m] se[n]te[n]tia[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Reflections of the poets.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Homeri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Homerus.</marginalia_text>
+                    <person name="Homer"/>
+                </position>
+            </language>
+            <translation>Homer</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vbi amici, ibi opes. Et: conscientia mille testes " hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Adagia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Adages.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Neq[ue] enim duarassent haec in aeternu[m], nisi uera omnibus uiderentur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Adagia o[mn]ia sunt uera</marginalia_text>
+                </position>
+            </language>
+            <translation>All adages are true.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="deorum autoritas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Deoru[m] autoritas</marginalia_text>
+                </position>
+            </language>
+            <translation>The authority of the gods.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="contra Catilinam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contra Catilina[m]</marginalia_text>
+                    <book title="In Catilinam"/>
+                </position>
+            </language>
+            <translation>In Catilinam.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Ligario" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Ligario.</marginalia_text>
+                    <book title="Pro Ligario"/>
+                </position>
+            </language>
+            <translation>Pro Ligario.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Neq[ue] enim durassent haec in aeternu[m], nisi uera omnibus" type="straight"/>
+        <underline language="LA" method="pen" text="in libro" type="straight"/>
+        <underline language="LA" method="pen" text="argume[n]ta" type="straight"/>
+        <underline language="LA" method="pen" text="Extrà petita, nisi ad aliquam praesentis disceptationis utilitatem ingenio applicantur, nihil per se ualent" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

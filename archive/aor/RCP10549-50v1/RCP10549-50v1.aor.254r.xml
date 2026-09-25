@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.254r.tif" pagination="487" reader="John Dee" signature="hhh.iiii."/>
+    <annotation>
+        
+        <marginalia anchor_text="cominus in acie saepe pugnarit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        co[m]minus pugnare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To fight hand to hand.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="seruos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Serui
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Slaves.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="subegimus, atque in ditione[m] nostra[m] redegimus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        subigere in ditione[m] redigere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To conquer, to bring under [our] sway.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="minui ... debilitari" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        minui debilitari ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be diminished, to be debilitated.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="post genus hominu[m] natum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        post genus ho[m]i[nu]m natu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                After the birth of mankind.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="pauci post genus hominum natum reperti " type="straight"/>
+        <underline language="LA" method="pen" text="qui nullis praemiis propositis vta[m] suam hostiu[m] telis obiecerint, pro aliena Rep. quenqua[m]fore putatis, qui se opponant periculis,              non modo nullo proposito praemio, sed etia[m] interdicto" type="straight"/>
+        <underline language="LA" method="pen" text="tu[m] verò ius omne noster iste magister muta[n]dae ciuitatis ignorat. quod est" type="straight"/>
+        
+        <drawing anchor_text="Serui" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

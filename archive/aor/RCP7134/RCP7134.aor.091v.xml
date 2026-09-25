@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.091v.tif" pagination="[84v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>habetur ha[e]c distinctio ex almansor[e] et ex Halij in Ptolomeu[m].</marginalia_text>
+                    <person name="Almansor"/>
+                    <person name="Ptolemy"/>
+                    <person name="Ali ibn Ridwan"/>
+                </position>
+            </language>
+            <translation>This distinction is held from Almansor and from Haly (Ali ibn Ridwan) to Ptolemy.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="animam uitalem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Anima Vitalis..</marginalia_text>
+                </position>
+            </language>
+            <translation>The soul of life.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cerebrum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>.Cerebrum..</marginalia_text>
+                </position>
+            </language>
+            <translation>Brain.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="naturali uirtute" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Epar et naturalis virtus..</marginalia_text>
+                </position>
+            </language>
+            <translation>The liver and character of nature.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dispositiones animi, &amp; corporis, &amp; fortunae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tria genera reru[m] significataru[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Three kinds of signified matters.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mores et Virtutes animi.</marginalia_text>
+                </position>
+            </language>
+            <translation>Habits and characteristics of the mind.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="res corporis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Corporis stat[us]</marginalia_text>
+                </position>
+            </language>
+            <translation>State of the body.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="res corporis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Almansor, aphor 131</marginalia_text> <!--JG: There are various aphorisms #131, at this point impossible to say to which one Dee refers-->
+                    <person name="Almansor"/>
+                </position>
+            </language>
+            <translation>Almansor, aphorism 131.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="una" type="straight"/>
+        <underline language="LA" method="pen" text="ut q[uae] sunt in primo mobili sunt secundu[m] substantia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="dispositiones animi" type="straight"/>
+        <underline language="LA" method="pen" text="corporis" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ego non sum de illis" type="straight"/>
+        
+        <numeral language="LA" place="left_margin">1</numeral>
+        <numeral language="LA" place="left_margin">2</numeral>
+        <numeral language="LA" place="left_margin">3</numeral>
+        
+        <errata amendedtext="[deleted]" copytext="consanguinei" language="LA"/>
+        <errata amendedtext="domonatores" copytext="significatores" language="LA"/>
+        
+        <errata amendedtext="," copytext="." language="LA"/> <!-- accidens In -->
+        
+    </annotation>
+</transcription>

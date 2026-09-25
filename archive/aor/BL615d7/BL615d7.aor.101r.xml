@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.101r.tif" pagination="101" reader="John Dee"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="corona Regale" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Corona Regalis.</marginalia_text>
+                </position>
+            </language>
+            <translation>A royal crown.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="caualli" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Horses.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Good preaching.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="vna corona Regale ancor d'oro" type="straight"/>
+        <underline language="IT" method="pen" text="zucchette" type="straight"/>
+        <underline language="IT" method="pen" text="scambieuolmente" type="double"/>
+        <underline language="IT" method="pen" text="donò molte" type="straight"/>
+        <underline language="IT" method="pen" text="valere tre Reali" type="straight"/>
+        <underline language="IT" method="pen" text="quantunque si trouasse grauemente ammalato, volle andar con l'Ammiraglio" type="straight"/>
+        <underline language="IT" method="pen" text="vedere i caualli" type="straight"/>
+        <underline language="IT" method="pen" text="alcuno de' morti l'haueua informato male delle cose della" type="straight"/>
+        <underline language="IT" method="pen" text="nostra fede" type="double"/>
+        <underline language="IT" method="pen" text="che la legge de' Christiani era vana, bisognò, che l'Ammiraglio il confermaße in essa: &amp; volle appresso, ch'ei portasse al collo vna imagine di argento della Madonna, la qual" type="straight"/>
+        <underline language="IT" method="pen" text="prima non hauea voluto riceuere" type="double"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/>  <!-- amma lato -->
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        
+    </annotation>
+    
+</transcription>

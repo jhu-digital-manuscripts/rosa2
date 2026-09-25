@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.080r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="quadringentos &amp; septuaginta viros solo caliburno gladio peremit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        470: Una die ab Arthuro interfecti.
+                    </marginalia_text>
+                    <person name="King Arthur"/>
+                </position>
+            </language>
+            <translation>470 killed by Arthur in one day.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quadringentos &amp; septuaginta viros" type="straight"/>
+        <underline language="LA" method="pen" text="Colgrinus" type="straight"/>
+        <underline language="LA" method="pen" text="Baldulfus" type="straight"/>
+        <underline language="LA" method="pen" text="periculo Cheldricus" type="straight"/>
+        <underline language="LA" method="pen" text="Hyberniam: qua subiugata &amp; Gillomano capto" type="straight"/>
+        <underline language="LA" method="pen" text="caeterae" type="double"/>
+        <underline language="LA" method="pen" text="insulae sese ditioni" type="straight"/>
+        <underline language="LA" method="pen" text="eius submiserunt. Item Britones" type="straight"/>
+        <underline language="LA" method="pen" text="Loth h[a]erediatro" type="straight"/>
+        <underline language="LA" method="pen" text="subiugatis NorWegensibus" type="straight"/>
+        <underline language="LA" method="pen" text="tota Gallia ipsi" type="straight"/>
+        
+    </annotation>
+</transcription>

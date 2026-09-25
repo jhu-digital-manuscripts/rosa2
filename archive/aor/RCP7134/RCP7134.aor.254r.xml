@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.254r.tif" pagination="247" reader="John Dee" signature="QQ iij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>De moribus</marginalia_text>
+                </position>
+            </language>
+            <translation>On habits.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In q[u]a potissimu[m] re homo delectatur ex signo ♀ in natiis</marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>In which matter, man is particularly delighted in the children born under the sign of Venus.</translation>  
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nam quae in ascendente, mores solum significat" type="straight"/>
+        <underline language="LA" method="pen" text="nam desiderium est in iecore" type="straight"/>
+        <underline language="LA" method="pen" text="Haec autem in pueris clariora uidentur, qui institutione aut pudore minus tenentur" type="straight"/>
+       
+        <symbol language="LA" name="Saturn" place="right_margin" text="Saturnus"/>
+        <symbol language="LA" name="Mercury" place="right_margin" text="Mercurio"/>
+        <symbol language="LA" name="Jupiter" place="right_margin" text="Iupiter"/>
+        <symbol language="LA" name="Jupiter" place="right_margin" text="Iupiter"/>
+        <symbol language="LA" name="Mars" place="right_margin" text="Marti"/>
+        
+    </annotation>
+</transcription>

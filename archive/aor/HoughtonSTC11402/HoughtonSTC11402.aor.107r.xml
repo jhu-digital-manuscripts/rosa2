@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.107r.tif" reader="Harvey" signature="Niiii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>A prisoners Exercise.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Cato; promyse them largely" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Catoes Promises/ 1. Large. 2.</marginalia_text> <!--JG: Unclear which Cato this is-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Quintus Maximus; Statilius" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Statilius ouercam w[ith] Maximus comme[n]dation and liborality.</marginalia_text> <!--JG: Unclear who these men are-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>lib.3.cap.16.</marginalia_text>
+                </position>
+            </language>
+            <translation>Book 3, chapter 16.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="their forefete reysed vppe" type="straight"/>
+        <underline language="EN" method="pen" text="their naturall wonte and" type="straight"/>
+        <underline language="EN" method="pen" text="trauersed and" type="straight"/>
+        <underline language="EN" method="pen" text="flonge with their" type="straight"/>
+        <underline language="EN" method="pen" text="vntil they swette" type="straight"/>
+        <underline language="EN" method="pen" text="conducte hym in" type="straight"/>
+        <underline language="EN" method="pen" text="also a garrison" type="straight"/>
+        <underline language="EN" method="pen" text="them a great" type="straight"/>
+        <underline language="EN" method="pen" text="promyse them largely" type="straight"/>
+        <underline language="EN" method="pen" text="other paye them obtaynynge" type="straight"/>
+        <underline language="EN" method="pen" text="their deathe be lowsed of" type="straight"/>
+        <underline language="EN" method="pen" text="Quintus Maximus" type="straight"/>
+        <underline language="EN" method="pen" text="oone Statilius" type="straight"/>
+        <underline language="EN" method="pen" text="to flee frome hym" type="straight"/>
+        <underline language="EN" method="pen" text="an excuse" type="straight"/>
+        <underline language="EN" method="pen" text="the enuye of his felowes" type="straight"/>
+        <underline language="EN" method="pen" text="neuer knewe vnto that day his manly qualities" type="straight"/>
+        <underline language="EN" method="pen" text="gyuynge to hym a horse" type="straight"/>
+        <underline language="EN" method="pen" text="and money: he opteyned" type="straight"/>
+        <underline language="EN" method="pen" text="him feareful" type="straight"/>
+        <underline language="EN" method="pen" text="departed chierefull. And" type="straight"/>
+        <underline language="EN" method="pen" text="mystrusted" type="straight"/>
+        <underline language="EN" method="pen" text="faythful and valyant" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="their naturall wonte and"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="flonge with their"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="promyse them largely"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="an excuse"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="neuer knewe vnto that day his manly qualities"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="their naturall wonte and"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="vntil they swette"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--pro-->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="faythful and valyant"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--Cato men-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="money"/>
+        <mark method="pen" name="dot" place="intext"/> <!--money, he-->
+        <mark method="pen" name="dot" place="intext"/> <!--largely, bycause-->
+        <mark method="pen" name="dot" place="intext"/> <!--ennemies, or-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="an excuse"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the enuye of his felowes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="manly"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="horse"/>
+        
+    </annotation>
+</transcription>

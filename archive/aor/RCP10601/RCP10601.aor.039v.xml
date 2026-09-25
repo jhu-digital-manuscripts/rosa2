@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.039v.tif" pagination="78" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Ara coeli" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ara coeli.</marginalia_text>
+                </position>
+            </language>
+            <translation>The Altar of Heaven.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="saxum Venetijs" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Saxum mirabile Venetijs</marginalia_text>
+                    <location name="Venice"/>
+                </position>
+            </language>
+            <translation>The wondrous rock of Venice.</translation>    <!-- DO: Not sure what this is referring to --> <!-- FSF: not sure either -->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aeterni uenisset solum ad" type="straight"/>
+        <underline language="LA" method="pen" text="peregrinandum" type="double"/>
+        <underline language="LA" method="pen" text="ad reproba[n]dum" type="straight"/>
+        <underline language="LA" method="pen" text="sensibiliter in cruce funderet" type="straight"/>
+        <underline language="LA" method="pen" text="incarnatae salutis tempus" type="straight"/>
+        <underline language="LA" method="pen" text="Babylonica turri, seu à Syriae principio Romam usq[ue] delata ostenderet" type="straight"/>
+        <underline language="LA" method="pen" text="Ara coeli" type="straight"/>
+        <underline language="LA" method="pen" text="ille Iesus uniuersi spiritus" type="straight"/>
+        <underline language="LA" method="pen" text="intellectus" type="straight"/>
+        <underline language="LA" method="pen" text="mens" type="straight"/>
+        <underline language="LA" method="pen" text="arbiter" type="straight"/>
+        <underline language="LA" method="pen" text="cuius medio dum" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>   <!-- omnium uitam -->
+        
+        <errata amendedtext="[deleted]" copytext="," language="LA"/>  <!-- nomine omnium -->
+        
+    </annotation>
+</transcription>

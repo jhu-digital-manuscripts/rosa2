@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.166r.tif" pagination="323" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Genealogia retropetita vsq[ue] ad Adam
+                    </marginalia_text>
+                    <person name="Adam"/>
+                </position>
+            </language>
+            <translation>
+                A genealogy reaching back to Adam.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aethelulfi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Àthelulfus Magn[us].
+                    </marginalia_text>
+                    <person name="Æthelwulf"/>
+                </position>
+            </language>
+            <translation>
+                Æthelwulf the Great.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Alcumundi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Alcumundus 
+                    </marginalia_text>
+                    <person name="Ealhmund of Kent"/>
+                </position>
+            </language>
+            <translation>
+                Ealhmund of Kent.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gevvisa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gewisa. 
+                    </marginalia_text>
+                    <person name="Gewisa"/>
+                </position>
+            </language>
+            <translation>
+                Gewisa.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Seaf" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        a sheaf.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Aelfredus frater" type="straight"/>
+        <underline language="LA" method="pen" text="Aelfredus Aethelulfi Magni" type="straight"/>
+        <underline language="LA" method="pen" text="Egberti" type="double"/>
+        <underline language="LA" method="pen" text="Alcumundi" type="grid"/>
+        <underline language="LA" method="pen" text="filij Kenredi" type="straight"/>
+        <underline language="LA" method="pen" text="Cerdici" type="straight"/>
+        <underline language="LA" method="pen" text="fuit Gevvisae reginae" type="straight"/>
+        <underline language="LA" method="pen" text="Gevvisa filia fuit" type="straight"/>
+        <underline language="LA" method="pen" text="Getae" type="straight"/>
+        <underline language="LA" method="pen" text="Scandalin" type="straight"/>
+        <underline language="LA" method="pen" text="iordanus Gothorum" type="straight"/>
+        
+        <errata amendedtext="Jordanus" copytext="iordanus" language="LA"/>
+        
+    </annotation>
+</transcription>

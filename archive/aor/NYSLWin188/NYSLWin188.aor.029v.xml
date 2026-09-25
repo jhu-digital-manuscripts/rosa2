@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.029v.tif" pagination="[29[v]]" reader="John Dee" signature="[H[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="etlich tausent; vo[n] dene[n] entspringe[n] alle Wind" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Aliquot Millen[a]e stella[e] Ventoru[m] causa.</marginalia_text>
+                </position>
+            </language>
+            <translation>Several thousand stars are the cause of the winds.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Prima materia der dreye[n] Ersten" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tria prima, Materia ventorum</marginalia_text>
+                </position>
+            </language>
+            <translation>The three primes, matter of the winds.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="auch Winde werde[n] vom andern Sterne[n] der" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="etlich tausent" type="straight"/>
+        <underline language="DE" method="pen" text="dere[n] kein zal" type="straight"/>
+        <underline language="DE" method="pen" text="vo[n] dene[n] entspringe[n] alle Wind" type="straight"/>
+        <underline language="DE" method="pen" text="auch Winde werde[n] vom andern Sterne[n] der" type="straight"/>
+        <underline language="DE" method="pen" text="Regen" type="double"/>
+        <underline language="DE" method="pen" text="Schauern" type="double"/>
+        <underline language="DE" method="pen" text="nicht in Windzirckel gerechnet" type="double"/>
+        <underline language="DE" method="pen" text="die vier theil" type="double"/>
+        <underline language="DE" method="pen" text="vom eusserste[n] des Him[m]els" type="straight"/>
+        <underline language="DE" method="pen" text="das dieselbigen Sternen in jnnen habben zugeberen die Winde" type="straight"/>
+        <underline language="DE" method="pen" text="auch mit solchen Sternen zu verstehen" type="straight"/>
+        <underline language="DE" method="pen" text="der sahm" type="straight"/>
+        <underline language="DE" method="pen" text="seind die Mütter" type="double"/>
+        <underline language="DE" method="pen" text="Winde" type="straight"/>
+        <underline language="DE" method="pen" text="Zephyro. Wie nun die Natur der dreien Ersten ist" type="straight"/>
+        <underline language="DE" method="pen" text="also ist jre Frucht vnd" type="straight"/>
+        
+    </annotation>
+</transcription>

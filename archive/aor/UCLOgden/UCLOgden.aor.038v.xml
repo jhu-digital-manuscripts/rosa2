@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.038v.tif" pagination="60" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="☉, ♀" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Aspectum ♀ ad ☉ forsan platice intelligit
+                    </marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>
+                Perhaps the general summary understands the appearance of Venus to the sun.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sexto loco" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sexti Loci infortuna vt mitigatur.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                As the misfortune of the sixth places softens.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="maiores quidem fratres" type="straight"/>
+        <underline language="LA" method="pen" text="omnes fratres suos, primus nascetur, ac eorum maior" type="straight"/>
+        <underline language="LA" method="pen" text="constitutu[m] ☉, ♀ aut" type="straight"/>
+        <underline language="LA" method="pen" text="patrimonii iactura uoluntaria" type="straight"/>
+        <underline language="LA" method="pen" text="☉ in omnibus suis actibus, infeliciter impediri" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ☿ radiatione coniunxerint" type="straight"/>
+        <underline language="LA" method="pen" text="horosc partiliter co[n]stitutus" type="straight"/>
+        <underline language="LA" method="pen" text="signo, se ♀ stella sociauerit, uel e hexagono" type="straight"/>
+        <underline language="LA" method="pen" text="sub tali sydere natum" type="straight"/>
+        <underline language="LA" method="pen" text="sed filiis solum nocebit" type="straight"/>
+        <underline language="LA" method="pen" text="Nam si in sexto loco ☉ constituto, quaecunque stella decimum locu[m], hoc est MC possederit, faciet locupletes diuites, affluentes" type="straight"/>
+        
+    </annotation>
+</transcription>

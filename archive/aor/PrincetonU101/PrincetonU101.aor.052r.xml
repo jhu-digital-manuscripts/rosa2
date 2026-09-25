@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.052r.tif" pagination="xlviii[r]" reader="Harvey" signature="[Miv[r]]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia anchor_text="the artillerie" hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					The Vse, &amp; form of [the] Artillery.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					euen against all armours, &amp; orders.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="not your" type="straight"/>
+    	<underline language="EN" method="pen" text="ordina[n]ce" type="straight"/>
+    	<underline language="EN" method="pen" text="shoote more then" type="straight"/>
+    	<underline language="EN" method="pen" text="them to" type="straight"/>
+    	<underline language="EN" method="pen" text="leueled the" type="straight"/>
+    	<underline language="EN" method="pen" text="enemie high, and appointed" type="straight"/>
+    	<underline language="EN" method="pen" text="strike the rankes" type="straight"/>
+    	<underline language="EN" method="pen" text="what remedie haue" type="straight"/>
+    	<underline language="EN" method="pen" text="the artillerie" type="straight"/>
+    	<underline language="EN" method="pen" text="manye dispraise the armours" type="straight"/>
+    	<underline language="EN" method="pen" text="orders of the aunciente" type="straight"/>
+    	<underline language="EN" method="scoring" text="armies, arguing" type="straight"/>
+    	<underline language="EN" method="pen" text="vnprofitable, hauing respect to the furie of the" type="straight"/>
+    	<underline language="EN" method="pen" text="artillerie: because, this breaketh the orders, and passeth" type="straight"/>
+    	<underline language="EN" method="pen" text="armours in such wise, that" type="straight"/>
+    	<underline language="EN" method="pen" text="foolishenesse to make an order, which cannot" type="straight"/>
+    	<underline language="EN" method="pen" text="to beare a harneis, that cannot defend" type="straight"/>
+    	<underline language="EN" method="pen" text="to shoote more then" type="straight"/>
+    	<underline language="EN" method="pen" text="ones" type="straight"/>
+    	<underline language="EN" method="pen" text="it importeth more, for one" type="straight"/>
+    	<underline language="EN" method="pen" text="heede not to be strike[n]" type="straight"/>
+    	<underline language="EN" method="pen" text="then it importeth to strike" type="straight"/>
+    	<underline language="EN" method="pen" text="enemie" type="straight"/>
+    	<underline language="EN" method="pen" text="that to purpose" type="straight"/>
+    	<underline language="EN" method="pen" text="a peece of ordinaunce hurte you not, it is" type="straight"/>
+    	<underline language="EN" method="pen" text="to stande where it can not retche" type="straight"/>
+    	<underline language="EN" method="pen" text="behinde a wall, or behinde a banke" type="straight"/>
+    	<underline language="EN" method="pen" text="that can withholde it" type="straight"/>
+    	<underline language="EN" method="pen" text="the one and the other be moste strong" type="straight"/>
+    	<underline language="EN" method="pen" text="fielde, cannot stande" type="straight"/>
+    	<underline language="EN" method="pen" text="where they may" type="straight"/>
+    	<underline language="EN" method="pen" text="be retched" type="straight"/>
+    	<underline language="EN" method="pen" text="cannot finde a way: to defende the[m]" type="straight"/>
+    	<underline language="EN" method="pen" text="some meane" type="straight"/>
+    		
+    	<underline language="EN" method="pen" text="demau[n]ded, co[n]cerning the shoting" type="straight"/>
+    		
+    	<!-- Symbols -->
+    	<symbol name="Bisected_circle" place="right_margin"/> 
+    	<symbol name="Bisected_circle" place="right_margin"/>
+    	<symbol name="Bisected_circle" place="right_margin"/>
+
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="not your ordina[n]ce"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="because, this breaketh the orders, and passeth"/>
+    	<mark method="pen" name="hash" place="right_margin"/>
+    	
+    	<mark method="pen" name="dot" place="intext"/> <!-- be, yet -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="strike the rankes"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="remedie"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="this breaketh the orders"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="and passeth"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="cannot"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="that cannot defend"/>
+    	<mark method="pen" name="plus_sign" place="intext"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="heede not to be strike[n]"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="to strike"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="it is necessary"/>
+    	<mark method="pen" name="comma" place="intext"/> <!-- necessary either -->
+    	<mark method="pen" name="dot" place="intext"/> <!-- you, or -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the one and the other be moste strong"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- bankes, nor -->
+    	<mark language="EN" method="pen" name="plus_sign" place="tail" text="cannot finde a way"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="tail" text="to defende the[m]"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- them, to finde -->
+    	
+    	<!-- Numerals -->
+    	<numeral language="EN" place="intext" text="to stande where it can not retche">
+    		I.
+    	</numeral>
+    	<numeral language="EN" place="intext" text="behinde a wall, or behinde a banke">
+    		2.
+    	</numeral>
+    	
+    </annotation>
+</transcription>

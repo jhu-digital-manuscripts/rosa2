@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.112r.tif" pagination="223" reader="Harvey" signature="Oviiir"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="iniquum est legibus imputare" type="straight"/>
+        <underline language="LA" method="pen" text="uitij professores" type="straight"/>
+        <underline language="LA" method="pen" text="res iudicant" type="straight"/>
+        <underline language="LA" method="pen" text="indocti ferè" type="straight"/>
+        <underline language="LA" method="pen" text="aliquem ex uulgaribus pragmaticis" type="straight"/>
+        
+        <symbol name="JC" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="res iudicant"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- sa-piant -->
+        <mark method="pen" name="dot" place="intext"/> <!-- nequissimus. Huius -->
+        <mark method="pen" name="dot" place="intext"/> <!-- omnes, quod -->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.143r.tif" pagination="136" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="eius cum capite Algol" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Caput Algol</marginalia_text>
+                </position>
+            </language>
+            <translation>The head of Algol</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eius cum capite Algol" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>no[n] est veru[m] quod erexit vera[m] figuram ☊ incognita[m] omni quantitate[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>It is not true because he erected a true figure of the North node, an unknown quantity to all.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="eius cum capite Algol" type="straight"/>
+        <underline language="LA" method="pen" text="anno in angulo " type="straight"/>
+        
+        <errata amendedtext="[deleted]" copytext="Ictu igitur" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="anno in angulo, Mars in 7" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="&amp; Saturnus in ascendente" language="LA"/>
+        
+    </annotation>
+</transcription>

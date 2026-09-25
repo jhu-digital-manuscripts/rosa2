@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.009r.tif" reader="John Dee" signature="Cij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="tincturen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tincturae</marginalia_text>
+                </position>
+            </language>
+            <translation>Tinctures.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="wann die selbig zeyt verlauffen ist" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Temporum vicissitudo</marginalia_text>
+                </position>
+            </language>
+            <translation>Vicissitude of times.</translation>
+        </marginalia>
+
+        <underline language="DE" method="pen" text="bemelten dreyen Elemente[n]" type="straight"/>
+        <underline language="DE" method="pen" text="theyl im jar lauffen" type="straight"/>
+        <underline language="DE" method="pen" text="etlichs theyls nichts" type="straight"/>
+        <underline language="DE" method="pen" text="tincturen" type="straight"/>
+        <underline language="DE" method="pen" text="die tinctur" type="straight"/>
+        <underline language="DE" method="pen" text="digest wider kompt" type="straight"/>
+        <underline language="DE" method="pen" text="dann auß dem entspringt" type="straight"/>
+        <underline language="DE" method="pen" text="werme solcher wasseren" type="straight"/>
+        <underline language="DE" method="pen" text="wasser inhielt" type="straight"/>
+        <underline language="DE" method="pen" text="werme" type="double"/>
+        
+        <numeral language="DE" place="left_margin" text="das Eleme[n] feur">4.</numeral>
+        
+    </annotation>
+</transcription>

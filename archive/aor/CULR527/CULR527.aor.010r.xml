@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.010r.tif" pagination="10" reader="John Dee" signature="Bij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="multi disciplinas Mathematicas uenerantur &amp; amant, quia regulae &amp; propositiones Mathematicae inuentae sunt &amp; deseruiu[n]t" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mathematica[e] fruct[us] secundu[m] hu[n]c
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The fruits of mathematics according to him.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="certissima earu[m] principia, à quibusdam nega[n]tur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Certissima principia Math[ematicae] nega[n]tur a q[ui]busda[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The most certain principles of mathematics are denied by some.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="operationibus &amp; figuris, quae" type="straight"/>
+        <underline language="LA" method="pen" text="quia regulae &amp; propositiones Mathematicae inuentae sunt &amp; deseruiu[n]t, ut per eas &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="res naturales atq[ue] ordines elementoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="motus ca[e]lorum &amp; eorundem" type="straight"/>
+        <underline language="LA" method="pen" text="quod dolentius dicendu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="certissima earu[m] principia, à quibusdam nega[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="sunt scientiaru[m] modi" type="straight"/>
+        <underline language="LA" method="pen" text="una scie[n]tia" type="straight"/>
+        <underline language="LA" method="pen" text="nulla alia indiget" type="straight"/>
+        
+    </annotation>
+</transcription>

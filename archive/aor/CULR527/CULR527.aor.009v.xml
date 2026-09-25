@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.009v.tif" pagination="[9[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="causa[e] cuiuscunq[ue]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Causa[e] an sint in mathematicis demo[n]strationib[us]  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Whether there are causes in mathematical demonstrations.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="[cau]saru[m] alicuius" type="straight"/>
+        <underline language="LA" method="pen" text="causa[e] cuiuscunq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="bonum" type="straight"/>
+        <underline language="LA" method="pen" text="neque finis" type="straight"/>
+        <underline language="LA" method="pen" text="causa finali" type="straight"/>
+        <underline language="LA" method="pen" text="materiali" type="straight"/>
+        <underline language="LA" method="pen" text="aut efficienti" type="straight"/>
+        <underline language="LA" method="pen" text="formali" type="straight"/>
+        <underline language="LA" method="pen" text="propter quid" type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="propter quid"/>
+        
+    </annotation>
+</transcription>

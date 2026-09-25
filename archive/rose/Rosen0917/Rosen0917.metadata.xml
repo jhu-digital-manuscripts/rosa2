@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>140</illustrations>
+    <totalPages>153</totalPages>
+    <dimensions units="mm">
+        <width>210</width>
+        <height>300</height>
+    </dimensions>
+    <dates>
+        <startDate>1500</startDate>
+        <endDate>1600</endDate>
+    </dates>
+    <texts>
+        <text id="rosemoralisé">
+            <language>fr</language>
+            <title>Roman de la Rose moralisé</title>
+            <textId/>
+            <pages end="150" start="1">153</pages>
+            <illustrations>140</illustrations>
+            <linesPerColumn>45</linesPerColumn>
+            <leavesPerGathering>6</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Rosenwald 917</commonName>
+            <dateLabel>16th century</dateLabel>
+            <type>printed book</type>
+            <material>Paper</material>
+            <origin>Lyons, France</origin>
+            <currentLocation>Washington, DC</currentLocation>
+            <repository>Library of Congress</repository>
+            <shelfmark>Rosenwald 917</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Rosenwald 917</commonName>
+            <dateLabel>16e siècle</dateLabel>
+            <type>livre imprimé</type>
+            <material>papier</material>
+            <origin>Lyon, France</origin>
+            <currentLocation>Washington, DC</currentLocation>
+            <repository>Library of Congress</repository>
+            <shelfmark>Rosenwald 917</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

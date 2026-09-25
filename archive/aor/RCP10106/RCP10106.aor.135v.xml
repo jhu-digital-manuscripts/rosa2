@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.135v.tif" pagination="270" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Athenis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Athemenses</marginalia_text>
+                </position>
+            </language>
+            <translation>Athenians.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Affectibus quoque eisdem ferè utuntur, sed rarius hic ille saepius ac magis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Accusator sa[e]pi[us] ac magis vtit[u]nt[er] affectibus patro[n]o</marginalia_text> 
+                    <!-- M.B. Not sure about the 'vtitntr' contractions, possibly some variant form of utuntur? Or the corresponding translation. -->
+                    <!-- FSF: I don't know either, to be honest -->
+                </position>
+            </language>
+            <translation>The prosecutor will often use more appeals to emotion than the defender.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="utrisq[ue] co[m]mune" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vtrisq[ue] co[mmun]e.</marginalia_text>
+                </position>
+            </language>
+            <translation>Common to both.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praeceptu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pr[a]eceptu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Precept.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="affectus mouere etia[m] per praecone[m] prohibebatur orator" type="straight"/>
+        <underline language="LA" method="pen" text="Necessarios tame[n] affectus fatebu[n]tur, si aliter obtineri uera &amp; iusta, &amp; in commune profutura non poßint" type="straight"/>
+       
+       
+       <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

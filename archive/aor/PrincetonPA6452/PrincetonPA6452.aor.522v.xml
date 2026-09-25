@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.522v.tif" reader="Harvey" signature="Q2[v]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                      Hactenùs Chronologia septum Regum Romanorum.  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+              Thus far the chronology of the seven Roman kings.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Tomyris Massagetarum" type="straight"/>
+        <underline language="LA" method="pen" text="autoribus Liuio" type="straight"/>
+        <underline language="LA" method="pen" text="Dionysio." type="straight"/>
+        <underline language="LA" method="pen" text="maluimus hos sequi" type="straight"/>
+        <underline language="LA" method="pen" text="ut ex proposito" type="straight"/>
+        <underline language="LA" method="pen" text="omnia reliqua seposuimus" type="straight"/>
+        <underline language="LA" method="pen" text="Iudaeorum captiuitas iam" type="straight"/>
+        <underline language="LA" method="pen" text="Defecerant etiam Lydorum Aegyptiorumq[ue]; regna" type="straight"/>
+        <underline language="LA" method="pen" text="sub Cyro" type="straight"/>
+        <underline language="LA" method="pen" text="obtinentibus Persis" type="straight"/>
+        <underline language="LA" method="pen" text="non magnopere ad Romanam historiam illustrandam" type="straight"/>
+        <underline language="LA" method="pen" text="ad Consules" type="straight"/>
+        <underline language="LA" method="pen" text="Olympiadum" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Tomyris Massagetarum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="obtinentibus Persis"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--sumus. Caeter&ugrave;m-->
+        <mark method="pen" name="dot" place="intext"/> <!--historiam [over comma]-->
+        <mark method="pen" name="dot" place="intext"/> <!--sufficiant [over comma]-->
+        <mark method="pen" name="dot" place="intext"/> <!--Cyro [over comma]-->
+            
+    </annotation>
+</transcription>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.172r.tif" pagination="323" reader="John Dee" signature="xx.ii."/>
+    <annotation>
+        
+        <marginalia anchor_text="lex haec, quae ad ludos pertinet" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Lex qu[a]e ad ludos perinet
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The law pertaining to the games.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="habuit proficiscens delectu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        habere delectu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To hold a levy.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inquisitio candidati praenuncia repulsae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        inquisitio prenu[n]cia repuls[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Collecting evidence, a harbringer of defeat [Loeb 324, 243].
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="delectatione omni negocio impedimur, &amp; in ipsa occupatione delectationes alias multas habere possumus, ludis tamen oblectamur &amp; ducimur, quid tu admirere de multitudine" type="straight"/>
+        <underline language="LA" method="pen" text="tristis, atrox" type="straight"/>
+        <underline language="LA" method="pen" text="cui placet, obliuiscitur" type="straight"/>
+        <underline language="LA" method="pen" text="nonnulloru[m] amicoru[m] studia minui solere in eos, à quibus prouincias" type="straight"/>
+        <underline language="LA" method="pen" text="prouincialium negociorum in Murena atque in Sulpitio fuisse: dicam iam apertius in quo meus necessarius fuerit inferior Seruius, &amp; ea dicam vobis audientibus misso iam tempore, quae ipsi soli re integra saepe dixi" type="straight"/>
+        <underline language="LA" method="pen" text="candidatus accusationem meditari visus est, vt honorem" type="straight"/>
+        <underline language="LA" method="pen" text="inquisitio candidati praenuncia repulsae" type="straight"/>
+        <underline language="LA" method="pen" text="iacet, diffidit, abiecit hastas: serpit hic rumor, Scis" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+        <!-- FSF: there is something small left of the 21 -->
+        
+    </annotation>
+</transcription>

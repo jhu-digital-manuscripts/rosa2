@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.100r.tif" pagination="199" reader="John Dee" signature="n 4"/> 
+    <annotation>
+        
+        <marginalia anchor_text="παρέκβασις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>παρέκβασις</marginalia_text>
+                </position>
+            </language>
+            <translation>Digression.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="egreßio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Egressio</marginalia_text>
+                </position>
+            </language>
+            <translation>Egress.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Milone" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro milone.</marginalia_text>
+                    <book title="Pro Milone"/>
+                </position>
+            </language>
+            <translation>Pro Milone.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="propositio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Propistio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Proposition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἐπιχειρήματα" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἐπιχειρήματα</marginalia_text>
+                </position>
+            </language>
+            <translation>Dialectical proofs.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="at qui ex media erumpit" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

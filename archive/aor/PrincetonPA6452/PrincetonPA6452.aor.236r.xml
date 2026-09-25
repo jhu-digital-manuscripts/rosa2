@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.236r.tif" pagination="455" reader="Harvey"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Liuio plus pompa[e]: Neroni plus honoris.
+                    </marginalia_text>
+                    <person name="Marcus Livius Salinator"/>
+                    <person name="Nero"/>
+                </position>
+            </language>
+            <translation>More ostentation for Livy; more honor for Nero.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in prouincia M. Liuij" type="straight"/>
+        <underline language="LA" method="pen" text="gesta esset" type="straight"/>
+        <underline language="LA" method="pen" text="Liuium quadrigis urbem ineuntem" type="straight"/>
+        <underline language="LA" method="pen" text="Claudius equo sine militibus" type="straight"/>
+        <underline language="LA" method="pen" text="cùm utri" type="straight"/>
+        <underline language="LA" method="pen" text="magis ei, qui" type="straight"/>
+        <underline language="LA" method="pen" text="quantum merito anteibat, tantum honore collegae cesserat" type="straight"/>
+        <underline language="LA" method="pen" text="gloriam" type="straight"/>
+        <underline language="LA" method="pen" text="Illum equitem aiebant" type="straight"/>
+        <underline language="LA" method="pen" text="sex dierum spacio transcurrisse longitudinem Itali[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="eo die cum Asdrubale in Gallia signis" type="straight"/>
+        <underline language="LA" method="pen" text="eum castra aduersus" type="straight"/>
+        <underline language="LA" method="pen" text="Annibal credidisset" type="straight"/>
+        <underline language="LA" method="pen" text="unum consulem pro" type="straight"/>
+        <underline language="LA" method="pen" text="utraq[ue] parte Italiae" type="straight"/>
+        <underline language="LA" method="pen" text="aduersus duos duces, duos imperatores, hinc" type="straight"/>
+        <underline language="LA" method="pen" text="consilium suum" type="straight"/>
+        <underline language="LA" method="pen" text="hinc corpus opposuisse" type="straight"/>
+        <underline language="LA" method="pen" text="nomen Neronis satis" type="straight"/>
+        <underline language="LA" method="pen" text="continendum castris Annibalem" type="straight"/>
+        <underline language="LA" method="pen" text="Asdrubale[m] uerò" type="straight"/>
+        <underline language="LA" method="pen" text="aduentu eius obrutum atq[ue] extinctum" type="straight"/>
+        <underline language="LA" method="pen" text="iret alter" type="straight"/>
+        <underline language="LA" method="pen" text="sublimis curru" type="straight"/>
+        <underline language="LA" method="pen" text="multijugis, si uellet," type="straight"/>
+        <underline language="LA" method="pen" text="uno equo per urbem" type="straight"/>
+        <underline language="LA" method="pen" text="uerum triumphum" type="straight"/>
+        <underline language="LA" method="pen" text="Neronemq[ue] etiam si pedes incedat" type="straight"/>
+        <underline language="LA" method="pen" text="memorabilem fore" type="straight"/>
+        <underline language="LA" method="pen" text="sermones spectantium Neronem" type="straight"/>
+        <underline language="LA" method="pen" text="eo die plura carmina" type="straight"/>
+        <underline language="LA" method="pen" text="militaribus iocis" type="straight"/>
+        <underline language="LA" method="pen" text="in C. Claudium" type="straight"/>
+        <underline language="LA" method="pen" text="in consulem suum iactata" type="straight"/>
+        <underline language="LA" method="pen" text="Caecilium legatos magnis tulisse laudibus" type="straight"/>
+        <underline language="LA" method="pen" text="C. Claudius consul" type="straight"/>
+        <underline language="LA" method="pen" text="Liuium collegam dictatorem dixit" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        <symbol language="LA" name="SS" place="right_margin" text="eo die plura carmina"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--respon-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--ue-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--mi-->
+        
+        <mark method="pen" name="dot" place="intext"/> <!--sequerentur, C.-->
+        <mark method="pen" name="dot" place="intext"/> <!--q[ue], tum-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="straight_quotation_mark" place="intext" text="sex dierum"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="longitudinem"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="unum consulem"/>
+        <mark method="pen" name="dot" place="intext"/> <!--equis, uno-->
+        <mark method="pen" name="dot" place="intext"/> <!--dixit, Liuius-->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.096r.tif" pagination="191" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="mentiendi licentiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mentie[n]di aers.</marginalia_text>
+                </position>
+            </language>
+            <translation>The art of lying.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="est illud quod uolgò dicitur, Me[n]dacem memorem esse oportere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Prouerbium</marginalia_text>
+                </position>
+            </language>
+            <translation>A proverb.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Fingenra, uerò meminerimus ea, quae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qua[e] finge[n]da</marginalia_text>
+                </position>
+            </language>
+            <translation>What is to be forged?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="probatio sola sit in asseueratione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Probatio in asseveratione co[n]sitit</marginalia_text>
+                </position>
+            </language>
+            <translation>Proof consists of affirmation.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="mentiendi licentiam" type="straight"/>
+        <underline language="LA" method="pen" text="quoniam solent excidere quae falsa sunt" type="straight"/>
+        <underline language="LA" method="pen" text="coloribus, nisi per totam actionem consentiant: cum" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">5</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.175r.tif" pagination="176" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="ancillula" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ancillula.</marginalia_text>
+                </position>
+            </language>
+            <translation>A maid.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lingua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lingua.</marginalia_text>
+                </position>
+            </language>
+            <translation>Language.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Uulnus in antiquum redijt male sana cicatrix" type="straight"/>
+        <underline language="LA" method="pen" text="erit lucro lingua retenta tuo" type="straight"/>
+        <underline language="LA" method="pen" text="melius sic te vlciscêre tacendo" type="straight"/>
+        <underline language="LA" method="pen" text="Qui nimium multis non amo dicit, amat" type="straight"/>
+        <underline language="LA" method="pen" text="lente desine, tutus eris" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+         
+    </annotation>
+</transcription>

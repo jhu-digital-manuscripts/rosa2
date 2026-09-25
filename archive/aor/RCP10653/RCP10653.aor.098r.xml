@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.098r.tif" pagination="187" reader="John Dee" signature="Q iiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Colgrinus &amp; Balduphus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Colgrinus Baldulphus
+                    </marginalia_text>
+                    <person name="Colgrin"/>
+                    <person name="Baldulff"/>
+                </position>
+            </language>
+            <translation>
+                Colgrin, Bladulf.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cheldrico" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cheldricus
+                    </marginalia_text>
+                    <person name="Childeric I"/>
+                </position>
+            </language>
+            <translation>
+                Childeric.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Piranno" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pirannus
+                    </marginalia_text>
+                    <person name="Pirannus"/>
+                </position>
+            </language>
+            <translation>
+                Pirannus.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="octingentos .xl. viros" type="straight"/>
+        <underline language="LA" method="pen" text="Caeciderunt ilicò Colgrinus &amp; Baldulphus" type="straight"/>
+        <underline language="LA" method="pen" text="At Cheldricus" type="straight"/>
+        <underline language="LA" method="pen" text="perempto Cheldrico" type="straight"/>
+        <underline language="LA" method="pen" text="Boëtius exilio fatigat[us], à Theodorico Gothorum rege perimitur" type="straight"/>
+        <underline language="LA" method="pen" text="Alclud Hoëlum regem obsidisse" type="straight"/>
+        <underline language="LA" method="pen" text="populo, Piranno capellano suo archiepiscopatus" type="straight"/>
+        <underline language="LA" method="pen" text="Arthurus ecclesias renouat" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.108r.tif" reader="Harvey" signature="Nv[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Marcellus signet in Annibals hande/</marginalia_text>
+                    <person name="Marcus Claudius Marcellus"/>
+                    <person name="Hannibal"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Scipio; Cannas; wolde not take an othe" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>P. Scipoes valorous Intendiment after [the] losse at Cannes.</marginalia_text>
+                    <person name="Scipio Africanus"/>
+                    <location name="Cannae"/>
+                    <emphasis method="pen" text="P. Scipoes" type="straight"/>
+                    <emphasis method="pen" text="valorous" type="straight"/>
+                    <emphasis method="pen" text="Intendiment" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="common welth" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>To reuenge [th]e co[m]monwelth vppo[n] Hannibal.</marginalia_text>
+                    <person name="Hannibal"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A braue fellow, at A pinch.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Syllas bravure /</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>s[upr]a, l.2.c.8. Idem fa[e]lix, vt Scipio.</marginalia_text>
+                    <person name="Sulla"/>
+                    <person name="Scipio Africanus"/>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0133" text="l.2.c.8."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Valiant men cannot be too wary: nor wary men, too valiant.</marginalia_text>
+                </position>
+            </language>
+            <translation>Syllas bravure, [see] above, book 2, chapter 2. Also successful, as Scipio. 
+                Valiant men cannot be too wary: nor wary men, too valiant.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="wherby he attempted" type="straight"/>
+        <underline language="EN" method="pen" text="gette Salapia" type="straight"/>
+        <underline language="EN" method="pen" text="dyscomfiture at Cannas" type="straight"/>
+        <underline language="EN" method="pen" text="so dismayde and" type="straight"/>
+        <underline language="EN" method="pen" text="with the nobles" type="straight"/>
+        <underline language="EN" method="pen" text="determyned to forsake Italye" type="straight"/>
+        <underline language="EN" method="pen" text="Scipio beinge" type="straight"/>
+        <underline language="EN" method="pen" text="very yonge" type="straight"/>
+        <underline language="EN" method="pen" text="vyolently into the same company" type="straight"/>
+        <underline language="EN" method="pen" text="playnly protested" type="straight"/>
+        <underline language="EN" method="pen" text="wolde" type="straight"/>
+        <underline language="EN" method="pen" text="hym with his owne hande" type="straight"/>
+        <underline language="EN" method="pen" text="wolde not take an othe" type="straight"/>
+        <underline language="EN" method="pen" text="abyde by the common welth" type="straight"/>
+        <underline language="EN" method="pen" text="with an othe" type="straight"/>
+        <underline language="EN" method="pen" text="his sworde" type="straight"/>
+        <underline language="EN" method="pen" text="slee hym, that was" type="straight"/>
+        <underline language="EN" method="pen" text="made not the same" type="straight"/>
+        <underline language="EN" method="pen" text="by fear" type="straight"/>
+        <underline language="EN" method="pen" text="sweare the same othe" type="straight"/>
+        <underline language="EN" method="pen" text="Milciades" type="straight"/>
+        <underline language="EN" method="pen" text="of the Perseans at Marathon" type="straight"/>
+        <underline language="EN" method="pen" text="the tyme" type="straight"/>
+        <underline language="EN" method="pen" text="thankes giuynge" type="straight"/>
+        <underline language="EN" method="pen" text="make spede toward" type="straight"/>
+        
+        <symbol language="EN" name="SS" place="tail" text="Valiant men cannot be too wary: nor wary men, too valiant."/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="dyscomfiture at Cannas"/>
+        
+        <mark method="pen" name="scribble" place="right_margin"/> <!--JG: used to tie marginal note to the text. How to tag this?-->
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="gette Salapia"/>
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--Italye, Publius-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="very yonge"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="vyolently into the same company"/>
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="playnly protested"/>
+        <mark language="EN" method="pen" name="scribble" place="intext" text="wolde not take an othe"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="with an othe"/>
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="sworde"/>
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="slee hym"/>
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="oth"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="sweare the same othe"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Milciades"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="straight_quotation_mark" place="intext" text="Perseans"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Marathon"/>
+        <mark method="pen" name="dot" place="intext"/> <!--giuynge, to-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="make spede toward"/>
+        
+    </annotation>
+</transcription>

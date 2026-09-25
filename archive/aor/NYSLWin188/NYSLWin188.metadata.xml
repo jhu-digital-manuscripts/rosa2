@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>212</totalPages>
+  <dates>
+    <startDate>1566</startDate>
+    <endDate>1566</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>de</language>
+      <title>Das Buch meteororvm / des Edlen vnd Hochgelerten Herrn Avreoli Theophrasti von Hohenheim Paracelsi genant ... ; Item: Liber qvartvs Paramiri de Matrice. Vor in Truck nie aussgangen.</title>
+      <textId>meteorum</textId>
+      <pages end="001r" start="106v">212</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>Das Buch meteororvm / des Edlen vnd Hochgelerten Herrn Avreoli Theophrasti von Hohenheim Paracelsi genant ... ; Item: Liber qvartvs Paramiri de Matrice. Vor in Truck nie aussgangen.</title>
+      <commonName>Paracelsus, Das buch meteororvm (Cologne, 1566)</commonName>
+      <dateLabel>1566</dateLabel>
+      <currentLocation>New York</currentLocation>
+      <repository>New York Society Library</repository>
+      <shelfmark>Win 188</shelfmark>
+      <author>
+        <name>Paracelsus</name>
+        <id>http://www.isni.org/isni/000000012276427x</id>
+      </author>
+      <reader>
+        <name>John Dee</name>
+        <id>http://www.isni.org/isni/0000000122785193</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Dee-corpus/Paracelsus-Meteorum</website>
+      <note>Publication: C̊oln : Arnoldi Byrckmans Erben, 1566.</note>
+      <note>Record: http://library.nysoclib.org/record=b1183321~S2</note>
+      <note>[1], 106 leaves (214 p.) ; 21 cm. (4°)</note>
+      <note>Above imprint: "Cum gratia &amp; priuilegio imperiali".
+Liber de matrice: p. 66-106.
+Signatures: [Pi]A-2C⁴2D².
+Ornamental border on t.p.; initials; black letter. Numeration on rectos only.
+Printing error: running title on p. 68 Matricis misprinted as Meteororvm. Pagination errors: p. 90 repeated, p. 99 omitted; p. 100 misnumbered as 98 and 98 as 100.</note>
+      <note>Boxed with: Paracelsus' Baderbůchlin, 1562 (Win #189)</note>
+      <note>Library copy from Winthrop Collection, No. 188. On 1st blank recto in ms, black ink John Winthrop's inscription with references to John Dee and his authorship of "Monas Hieroglyphica", signed and dated 1640; on verso: autograph of Wait Winthrop "Wintropi"; 16 in red pencil, 188 in pencil, No. 455 in black ink. On 2nd blank recto annotations and drawing by John Dee. Extensive annotations throughout.</note>
+    </bibliography>
+  </bibliographies>
+</book>

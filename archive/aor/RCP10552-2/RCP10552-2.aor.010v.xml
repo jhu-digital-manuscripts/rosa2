@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.010v.tif" pagination="10" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Aimericus de Monteforti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Aimericus de Monteforti</marginalia_text>
+                    <person name="Americo Monteforte"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="renuncians clericatui miles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>renuncians clericatui fr[a]t[er] miles.</marginalia_text>
+                </position>
+            </language>
+            <translation>Renouncing their clerical brother soldiers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Levvlino" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>&gt;Lewelini, principis [deleted] interitus</marginalia_text> <!-- MB. Not certain about the last word or translation below. -->
+                    <person name="Llywelyn ap Gruffudd"/>
+                </position>
+            </language>
+            <translation>The destruction of prince Llywelyn.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Resi filij Mereduci" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Resus fil[ij] Mereduci</marginalia_text>
+                    <person name="Rhys ap Maredudd"/>
+                    <person name="Maredudd ap Rhys Gryg"/>
+                </position>
+            </language>
+            <translation>Rhys son of Maredudd.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Griffinu[m] filium Mereduci" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Griffinum fil[ium] Mer[educi]</marginalia_text>
+                    <person name="Rhys ap Gruffydd"/>
+                    <person name="Gwenllian ferch Gruffydd"/> <!-- M.B. Note, Gwenllian ferch Gruffydd was born ferch Madoc Ap Meredith.-->
+                </position>
+            </language>
+            <translation>Griffith son of Meredith</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Resum filium Maylgonis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Rhesus fil[ium] Maylgonis</marginalia_text> 
+                    <person name="Rees ap Maylgon"/>
+                </position>
+            </language>
+            <translation>Rees son of Maylgon</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Edmundus de Mortuomari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Edmundus de Mortuo mari</marginalia_text>
+                    <person name="Edmund Mortimer"/> <!-- MB. Note different Edmund Mortimier from Edmund Mortimer 4th (and 5th) Earl of March-->
+                </position>
+            </language>
+            <translation>Edmund Mortimer.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="castrum de Lampadernaur per Resum filium Maylgonis, &amp; Griffinu[m] filium Mereduci. Capta" type="straight"/>
+        <underline language="LA" method="pen" text="Aimericus de Monteforti" type="straight"/>
+        <underline language="LA" method="pen" text="aliquot annos recuncians clericatui miles efficitur. Sed infaustus" type="straight"/>
+        <underline language="LA" method="pen" text="Principem VValliae, &amp; germanum suum, sategit ad pacem reducere, se frustratus, regressus in Angliam excommunicationis in ipsos sententiam" type="straight"/>
+        <underline language="LA" method="pen" text="Eo tempore Gilbertus Comes Glouerniae magnas praedas VVallensium cum militia sua faciens iuxta Lantilovvhir, facta copia" type="straight"/>
+        <underline language="LA" method="pen" text="VVilhelmus Valentis" type="straight"/>
+        <underline language="LA" method="pen" text="terras Resi filij Mereduci, qui cum Rege contra Principem tenuit" type="straight"/>
+        <underline language="LA" method="pen" text="Edmundus de Mortuomari" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- iunior, consanguineus -->
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+        <errata amendedtext="Lampaderbaur" copytext="Lampadernaur" language="LA"/>
+
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>87</illustrations>
+    <totalPages>148</totalPages>
+    <dimensions units="mm">
+        <width>195</width>
+        <height>290</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1400</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="148v" start="1r">148</pages>
+            <illustrations>87</illustrations>
+            <linesPerColumn>38</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Egerton 1069</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>Parchment</material>
+            <origin>Paris, France</origin>
+            <currentLocation>London</currentLocation>
+            <repository>British Library</repository>
+            <shelfmark>Egerton MS 1069</shelfmark>
+	    <website>http://searcharchives.bl.uk/IAMS_VU2:IAMS032-001984148</website>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Egerton 1069</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>Paris, France</origin>
+            <currentLocation>London</currentLocation>
+            <repository>British Library</repository>
+            <shelfmark>Egerton MS 1069</shelfmark>
+	    <website>http://searcharchives.bl.uk/IAMS_VU2:IAMS032-001984148</website>
+        </bibliography>
+    </bibliographies>
+</book>

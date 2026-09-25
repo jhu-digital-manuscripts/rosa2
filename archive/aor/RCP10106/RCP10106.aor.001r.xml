@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.001r.tif" pagination="title page" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian" other_reader="Nicholas Saunder">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Nicholas Saunder 1582 <!-- FSF: I read Nicholaus Fannder[us] Decemb 1582 --> 
+                        <!-- FSF: I have the feeling that under the obvious writing there was the name of John Dee with the year 154? underneath; in other words, Nicholaus Flannderus simply wrote over John Dee's entry -->
+                        <!-- M.B. The signature is definitely Nicholaus Saunder with Dee's signature underneath see: http://maedchenimmond.blogspot.co.uk/2016/03/john-dee-photo-editing-to-reveal-hidden.html. I think the date might read 1545 but difficult to be certain.. 
+                            Not sure how best to capture Dee's deleted signature. I 've added it as a second [deleted] marginalia for now. -->
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                       [John Dee 1545] 
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" other_reader="Unknowm">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        117 L 13
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" other_reader="Unknowm">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        CC1
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscrit</note>
+          <note type="commonName">Arsenal 2872</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="477" unit="folios">477</measure>
+            <dimensions>
+              <height unit="mm">336</height>
+              <width unit="mm">270</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">35</note>
+          <note type="material">parchemin</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1400" notBefore="1300">14e siècle</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>
+                     
+                     Bibliothèque de l'Arsenal</repository>
+            <idno> 2872</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="21v">1r-21v</locus>
+              <title>Le Kalendrier la Royne (Guillaume de Saint-Cloud)</title>
+              <note type="textid">kalendrier</note>
+              <note type="folios">21</note>
+              <note type="illustrations">28</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="22r" to="38r">22r-38r</locus>
+              <title>Ci commence l'agregacion des secrés de nature</title>
+              <note type="textid">agregacion</note>
+              <note type="folios">17</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="38r" to="56v">38r-56v</locus>
+              <title>Ci commence le livre des secréz de nature</title>
+              <note type="textid">secréz</note>
+              <note type="folios">19</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="4">
+              <locus from="57r" to="79v">57r-79v</locus>
+              <title>Ci commence le livre de Ypocras</title>
+              <note type="textid">ypocras</note>
+              <note type="folios">23</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="5">
+              <locus from="79v" to="83r">79v-83r</locus>
+              <title>Ci commence l'epistre Messahala</title>
+              <note type="textid">messahala</note>
+              <note type="folios">5</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="6">
+              <locus from="83r" to="84v">83r-84v</locus>
+              <title>Ci commence le livre de Seni le philozophe</title>
+              <note type="textid">seni</note>
+              <note type="folios">2</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="7">
+              <locus from="84v" to="84v">84v-84v</locus>
+              <title>Ci commence le livre que les philozophes de Rome...</title>
+              <note type="textid">philozophesrome</note>
+              <note type="folios">1</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="8">
+              <locus from="85r" to="309v">85r-309v</locus>
+              <title>Ci commence le livre des 9 anciens juges de astrologie</title>
+              <note type="textid">jugesastrologie</note>
+              <note type="folios">225</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="9">
+              <locus from="309v" to="341r">309v-341r</locus>
+              <title>C'est le livre du gouvernement ou regime des princes</title>
+              <note type="textid">gouvernement</note>
+              <note type="folios">33</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="10">
+              <locus from="342r" to="394r">342r-394r</locus>
+              <title>Ci commence le livre de la deite universal...</title>
+              <note type="textid">deite</note>
+              <note type="folios">53</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="11">
+              <locus from="394r" to="397r">394r-397r</locus>
+              <title>Ci commence le livre des mansions de la lune</title>
+              <note type="textid">mansions</note>
+              <note type="folios">4</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="12">
+              <locus from="397r" to="398">397r-398r</locus>
+              <title>Après commence une doctrine de Socrates prise sur la nature des 12 signes</title>
+              <note type="textid">socrates</note>
+              <note type="folios">2</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="13">
+              <locus from="398r" to="400v">398r-400v</locus>
+              <title>Ci commence le livre de l'influence de la lune sur les XII signes</title>
+              <note type="textid">luneXII</note>
+              <note type="folios">3</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="14">
+              <locus from="400r" to="400v">400r-400v</locus>
+              <title>Tables de Daniel le prophète </title>
+              <note type="textid">daniel</note>
+              <note type="folios">1</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="15">
+              <locus from="400v" to="400v">400v-400v</locus>
+              <title>Tables des nativités pour trouver la planete et le signe de chascun</title>
+              <note type="textid">nativités</note>
+              <note type="folios">1</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="16">
+              <locus from="401r" to="416r">401r-416r</locus>
+              <title>Ci commence le testament des nobles philozophes</title>
+              <note type="textid">noblesphilozophes</note>
+              <note type="folios">16</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="17">
+              <locus from="416r" to="425v">416r-425v</locus>
+              <title>Ci commence le livre du parfait magistere Aristote</title>
+              <note type="textid">aristote</note>
+              <note type="folios">9</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="18">
+              <locus from="425v" to="425v">425v-425v</locus>
+              <title>L'eaue de mercure</title>
+              <note type="textid">mercure</note>
+              <note type="folios">1</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="19">
+              <locus from="426r" to="429v">426r-429v</locus>
+              <title>Ci commence le livre de la Branchete</title>
+              <note type="textid">branchet</note>
+              <note type="folios">4</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="20">
+              <locus from="429v" to="451r">429v-451r</locus>
+              <title>Ci commence le rosaire de maistre Arnauld de Villeneuve...</title>
+              <note type="textid">villeneuve</note>
+              <note type="folios">23</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="21">
+              <locus from="451r" to="457v">451r-457v</locus>
+              <title>C'est le livre de Roussinus sur la operacion de la pierre de philosophes</title>
+              <note type="textid">roussinus</note>
+              <note type="folios">7</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="22">
+              <locus from="457v" to="462v">457v-462v</locus>
+              <title>Glorieuse margarite</title>
+              <note type="textid">margarite</note>
+              <note type="folios">6</note>
+              <note type="illustrations">3</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="23">
+              <locus from="462v" to="473r">462v-473r</locus>
+              <title>Ci après commence le livre des dissolucions solennes</title>
+              <note type="textid">dissolucions</note>
+              <note type="folios">12</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="24">
+              <locus from="473r" to="475v">473r-475v</locus>
+              <title>Ci commence la pratiqe de la pierre...</title>
+              <note type="textid">pratiqe</note>
+              <note type="folios">3</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="25">
+              <locus from="475v" to="477v">475v-477v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">3</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">43</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

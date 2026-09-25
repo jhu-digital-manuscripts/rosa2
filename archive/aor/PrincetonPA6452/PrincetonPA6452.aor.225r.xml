@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.225r.tif" pagination="433" reader="Harvey" signature="oo[1r]"/> 
+    <annotation>
+        
+        <underline language="LA" method="pen" text="regem eum" type="straight"/>
+        <underline language="LA" method="pen" text="Tum Scipio" type="straight"/>
+        <underline language="LA" method="pen" text="maximum nomen imperatoris esse" type="straight"/>
+        <underline language="LA" method="pen" text="regium nomen alibi magnum" type="straight"/>
+        <underline language="LA" method="pen" text="Romae intolerandum esse" type="straight"/>
+        <underline language="LA" method="pen" text="regalem animu[m] in se esse" type="straight"/>
+        <underline language="LA" method="pen" text="in hominis ingenio amplissimum" type="straight"/>
+        <underline language="LA" method="pen" text="tacitè iudicarent" type="straight"/>
+        <underline language="LA" method="pen" text="uocis usurpatione abstinerent" type="straight"/>
+        <underline language="LA" method="pen" text="magnitudinem animi" type="straight"/>
+        <underline language="LA" method="pen" text="miraculo nominis alij mortales" type="straight"/>
+        <underline language="LA" method="pen" text="ex tam" type="straight"/>
+        <underline language="LA" method="pen" text="fastigio asperna[n]tis" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="right_margin" text="regem eum"/>
+            
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Sensere etia[m] barbari magnitudinem animi, cuius miraculo nominis alij mortales stuperent, id ex tam alto fastigio asperna[n]tis"/>
+       
+       <mark method="pen" name="dash" place="right_margin"/> <!--am-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="regem"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="imperatoris"/>
+        <mark method="pen" name="dot" place="intext"/> <!--esse, regalem-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="regalem animu[m]"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        
+    </annotation>
+</transcription>

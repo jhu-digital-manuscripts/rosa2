@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.273v.tif" pagination="526" reader="John Dee" signature="[lzlzlz.vii.[v]]"/>
+    <annotation>
+         
+        <marginalia anchor_text="consilia euentis po[n]deremus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Consilia euentis ponderem[us]</marginalia_text>
+                </position>
+            </language>
+            <translation>We weigh the intelligence by results.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cui bene quid processerit, multum illum prouidisse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cui quid bene p[ro]cedit, multu[m] ille prouidit</marginalia_text>
+                </position>
+            </language>
+            <translation>He to whom it appears well foresaw much.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="diuinare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Diuinare</marginalia_text>
+                </position>
+            </language>
+            <translation>To divine.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="deuotione vitae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>deuotio uit[a]e</marginalia_text>
+                </position>
+            </language>
+            <translation>The sacrifice of life [Loeb 252, 367].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="natura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Natura</marginalia_text>
+                </position>
+            </language>
+            <translation>Nature.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="locupletare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Locupletare</marginalia_text>
+                </position>
+            </language>
+            <translation>To enrich.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dolosis consiliis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>dolosu[m] co[n]silium</marginalia_text>
+                </position>
+            </language>
+            <translation>Crafty advice.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="is maxime probabit, qui in iudicibus legendis optimum &amp; sapientissimum que[m]que" type="straight"/>
+        <underline language="LA" method="pen" text="vt consilia euentis po[n]deremus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; cui bene quid processerit, multum illum prouidisse: cui secus, nihil sensisse dicamus" type="straight"/>
+        <underline language="LA" method="pen" text="satis est homines imprudentia lapsos non erigere. vrgere verò iacentes, aut praecipitantes impellere, certe est inhumanum" type="straight"/>
+        <underline language="LA" method="pen" text="locupletare" type="straight"/>
+        <underline language="LA" method="pen" text="aut quis iam non admonet, quod male cecidit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">22</numeral>
+        <numeral place="left_margin">2</numeral>
+        
+        <drawing anchor_text="is maxime probabit, qui in iudicibus legendis optimum &amp; sapientissimum que[m]que" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Natura" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

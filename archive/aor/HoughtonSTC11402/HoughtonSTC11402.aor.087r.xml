@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.087r.tif" reader="Harvey" signature="[Kviii[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>hypocritica beneficentia. l.4.c.7.</marginalia_text> <!--internal reference, without use of s[upr]a or infra-->
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0215" text="l.4.c.7."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Hypocritical kindness. Book 4, chapter 7.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>s[upr]a.</marginalia_text> 
+                </position>
+            </language>
+            <translation>[See] above.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="benefite healed of his" type="straight"/>
+        <underline language="EN" method="pen" text="delyuered out of prison" type="straight"/>
+        <underline language="EN" method="pen" text="durste" type="straight"/>
+        <underline language="EN" method="pen" text="not slee Batteus" type="straight"/>
+        <underline language="EN" method="pen" text="a right valyant man of armes" type="straight"/>
+        <underline language="EN" method="pen" text="to stycke styll on his parte" type="straight"/>
+        <underline language="EN" method="pen" text="honourable and courteis" type="straight"/>
+        <underline language="EN" method="pen" text="gaue him" type="straight"/>
+        <underline language="EN" method="pen" text="an horse" type="straight"/>
+        <underline language="EN" method="pen" text="whiche benignitie he" type="straight"/>
+        <underline language="EN" method="pen" text="Amilcar" type="straight"/>
+        <underline language="EN" method="pen" text="Galles oft tymes" type="straight"/>
+        <underline language="EN" method="pen" text="vnto the Romayns" type="straight"/>
+        <underline language="EN" method="pen" text="receiued as frendis" type="straight"/>
+        <underline language="EN" method="pen" text="maner to feine them selfe" type="straight"/>
+        <underline language="EN" method="pen" text="whyche slewe the Romaynes" type="straight"/>
+        <underline language="EN" method="pen" text="whiche crafty polycie" type="straight"/>
+        <underline language="EN" method="pen" text="the Romaynes afterwarde" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="a right valyant man of armes"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="a right valyant man of armes"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="whyche slewe the Romaynes"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="to stycke styll on his parte"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="gaue"/>
+        
+    </annotation>
+</transcription>

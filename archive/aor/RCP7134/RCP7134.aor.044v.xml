@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.044v.tif" pagination="[38v]" reader="John Dee" signature="[K ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Triplex autem Planetarum ad Solem oberuatio habebitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Triplex observatio planetaru[m] ad ☉.</marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>A threefold observation of the planets near the sun.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="instrumenta &amp; debet" type="straight"/>
+        <underline language="LA" method="pen" text="erit in superioribus planetis exemplo" type="straight"/>
+        
+        <mark method="pen" name="slash" place="intext"/> <!--cogitu[m]-->
+        
+    </annotation>
+</transcription>

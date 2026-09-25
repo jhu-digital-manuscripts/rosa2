@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.282r.tif" pagination="543" reader="John Dee" signature="[lll.viii.]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Repetitio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Repetition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ephesum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ephesus</marginalia_text>
+                    <location name="Ephesus"/>
+                </position>
+            </language>
+            <translation>Ephesus.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Repetitio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Repetition.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>à maiore.</marginalia_text>
+                </position>
+            </language>
+            <translation>From the greater.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="credibiliter" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>credibilit[er].</marginalia_text>
+                </position>
+            </language>
+            <translation>Credibly.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="munerare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>munerare.</marginalia_text>
+                </position>
+            </language>
+            <translation>To give.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Caussa hui[us] Or[ati]o[n]is.</marginalia_text>
+                </position>
+            </language>
+            <translation>The reason for this oration.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="arguitur domi te suae" type="straight"/>
+        <underline language="LA" method="pen" text="etsi à veritate longe, tamen à consuetudine" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">11</numeral>
+        
+    </annotation>
+</transcription>

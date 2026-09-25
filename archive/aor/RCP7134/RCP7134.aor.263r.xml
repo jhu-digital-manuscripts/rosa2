@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.263r.tif" pagination="256" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Dominus secundae" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Domini domuu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The lord of the houses.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Redditus lucis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Reddit[us] lucis</marginalia_text>
+                </position>
+            </language>
+            <translation>The return of the light.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Natiuitates fratrum, plerunq[ue] habent ascendens unum, quia locus filiorum in parentibus unus saepe existit" type="straight"/>
+        <underline language="LA" method="pen" text="hi omni erga pueros &amp; sacras uirgines laborant incestu" type="straight"/>
+        <underline language="LA" method="pen" text="igitur Planeta in domo sua, aliquid facile bonum aut malum ostendit" type="straight"/>
+        <underline language="LA" method="pen" text="Redditus lucis ad meliorem bonus est" type="straight"/>
+        <underline language="LA" method="pen" text="Quicunq[ue] natus fuerit aequinoctij meridie, uel hoc solo magnus euadet" type="straight"/>
+        
+    </annotation>
+</transcription>

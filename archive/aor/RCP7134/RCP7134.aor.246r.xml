@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.246r.tif" pagination="239" reader="John Dee" signature="OO iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="radij foelices luminarium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Luminarium radij △ et </marginalia_text>
+                </position>
+            </language>
+            <translation>The rays of light of a trine and sextile.</translation> <!--JG: Unsure how trine and sextile fit in this sentence.--> <!-- FSF: not sure either -->
+        </marginalia>
+        
+        <marginalia anchor_text="uitio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Oculoru[m] viti[um].</marginalia_text>
+                </position>
+            </language>
+            <translation>The fault of the eyes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="natus morietur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mors.</marginalia_text>
+                </position>
+            </language>
+            <translation>Death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cometae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cometa[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Comets.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quatuor cardines geniturae, sic quatuor elementis assimilantur, ut cui Taurus ascendit, plus terra, post aer domietur, cui Leo, plus ignis post terra, ac sic de alijs" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex quatuor eleme[n]tis vt sum[us] co[m]positi et qu[a]e qualitas potissimu[m] dominetur.</marginalia_text>
+                </position>
+            </language>
+            <translation>From four elements, as we have been composed et which quality may be mastered above all.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cum hominibus conueniere" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hominu[m] concordi[a]e &amp; discordi[a]e.</marginalia_text>
+                </position>
+            </language>
+            <translation>The agreements and disagreements with men.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="caecabitur" type="straight"/>
+        <underline language="LA" method="pen" text="natur morietur" type="straight"/>
+        <underline language="LA" method="pen" text="seditiones" type="straight"/>
+        <underline language="LA" method="pen" text="mobiles" type="straight"/>
+        <underline language="LA" method="pen" text="In cardinibus" type="straight"/>
+        <underline language="LA" method="pen" text="in undecimo, nobilium" type="straight"/>
+        <underline language="LA" method="pen" text="Quatuor cardines geniturae, sic quatuor elementis assimilantur, ut cui Taurus ascendit, plus terra, post aer domietur, cui Leo, plus ignis post terra, ac sic de alijs" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Cometae immobilies, seditiones, mobiles autem bella in dicant ab externis. In cardinibus, regum mortes, in nono loco, religionis iacturam, in octauo uel duodecimo loco, pestile[n]tiam, aut iacturam segetum, in undecimo, nobilium mortes"/>
+        
+    </annotation>
+</transcription>

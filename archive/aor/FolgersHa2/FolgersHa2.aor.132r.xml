@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.132r.tif" pagination="87" reader="Harvey" signature="F4[r]"/>	<!-- ABO 136right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nondùm viri sunt, qui egent libris ad dicendu[m], }
+						aut agendum peritissimè. Clericus in libro, non
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						valet obolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whoever needs books for speaking and acting expertly is not yet a man.
+				A priest in a book is not worth an obol.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Bookewoormes:
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						scribblers: pen &amp; inkhorn men;
+						) paperbook men.
+						Men in their bookes, or papers:
+						not in their heds, or harts.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						The serious intention of Eutrapelus, to speak aswell, as is
+						possible for the toung of a man to speak.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						And to execute aswell, as is possible for the hand, &amp; hart of a man to execute.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Euer most strictly to the purpose, &amp; most effectually.
+						Like that supereminent Scope of Fortius: allwais most
+						deeply affecting to excell the most superexcellent.
+					</marginalia_text>
+					<person name="Joachim Fortius Ringelberg"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						But Eutrapelus goes not so plainly to work, as Fortius:
+						but in the vtterest violence of his spirit pretendes no force at all: makes
+						a familiar matter of it: as if it were nothing with him: or as if he coowld do no otherwise.
+						
+						<!-- CG: Missing text added. -->
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+					<person name="Joachim Fortius Ringelberg"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="studio d'Amore" type="straight"/>
+		<underline language="IT" method="pen" text="ogni altro" type="straight"/>
+		<underline language="IT" method="pen" text="GIROLAMO Padouano" type="straight"/>
+		<underline language="IT" method="pen" text="leggeua quasi dì &amp; notte" type="straight"/>
+		<underline language="IT" method="pen" text="per peruenire" type="straight"/>
+		<underline language="IT" method="pen" text="gli suoi disegni" type="straight"/>
+		<underline language="IT" method="pen" text="fiamme d'Amore" type="straight"/>
+		<underline language="IT" method="pen" text="l'Alciato" type="straight"/>
+		<underline language="IT" method="pen" text="Legista, che" type="straight"/>
+		<underline language="IT" method="pen" text="seruitù d'Amore" type="straight"/>
+		<underline language="IT" method="pen" text="Nè difender si può" type="straight"/>
+		<underline language="IT" method="pen" text="Cosi Venere oppresso" type="straight"/>
+		<underline language="IT" method="pen" text="Pallade" type="straight"/>
+		<underline language="IT" method="pen" text="Mondo tien suggetto" type="straight"/>
+		<underline language="IT" method="pen" text="Morte sia fuggita" type="straight"/>
+		<underline language="IT" method="pen" text="sparlato di Dionisio" type="straight"/>
+		<underline language="IT" method="pen" text="tagliato il naso &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="cauato vn'occhio e" type="straight"/>
+		<underline language="IT" method="pen" text="la fronte" type="straight"/>
+		<underline language="IT" method="pen" text="faceuano viuere" type="straight"/>
+		<underline language="IT" method="pen" text="morire" type="straight"/>
+		<underline language="IT" method="pen" text="lasciato il bere" type="straight"/>
+		<underline language="IT" method="pen" text="e'l mangiare" type="straight"/>
+		<underline language="IT" method="pen" text="la sua vita finisse" type="straight"/>
+		<underline language="IT" method="pen" text="non però sbigottito" type="straight"/>
+		<underline language="IT" method="pen" text="L'huomo debbe sempre sperar" type="straight"/>
+		<underline language="IT" method="pen" text="ch'egli hà vita" type="straight"/>
+		<underline language="IT" method="pen" text="ogni disgratia" type="straight"/>
+		<underline language="IT" method="pen" text="furiosamonte" type="straight"/>
+		<underline language="IT" method="pen" text="al capestro" type="straight"/>
+		
+		<symbol name="SS" place="left_margin"/> <!-- dotto -->
+		
+		<symbol name="JC" place="intext"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Cosi Venere oppresso ogn'intelletto, Pallade vince,     e'l Mondo tien suggetto."/>
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="L'huomo debbe sempre sperar bene insino ch'egli hà vita"/>
+		
+		<mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- under marginalia, 'or harts.' -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- gl'orec -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- on -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- sbigotti -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- partially written over. -->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- partially written over. -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="ogni altro"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="peruenire"/>
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- vita; il -->
+		
+    </annotation>
+</transcription>

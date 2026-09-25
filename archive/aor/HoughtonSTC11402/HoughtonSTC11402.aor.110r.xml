@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.110r.tif" reader="Harvey" signature="[Nvii[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>M[iste]r Digges Stratioticos. M[iste]r Dees Roiall Nauy.</marginalia_text>
+                    <person name="Leonard Digges"/>
+                    <person name="John Dee"/> <!--JG: Unsure-->
+                    <book title="Stratioticos"/>
+                    <book title="General and rare memorials"/> <!--JG: Unsure-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>thowgh the name of A fugitiue, be to new frends suspected;</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>to owld, odious. mach. addit.</marginalia_text>
+                    <person name="Machiavelli"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="many stronge wardes behynde the forefront" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ordo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Order.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="strength" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vires.</marginalia_text>
+                </position>
+            </language>
+            <translation>Strength.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="well chosen place" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Locus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Place.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hope" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cohortatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Encouragement.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sodayne dedes of warre affrayeth the enmies, the vsual featis ar not regardid" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Subita conterrent hostes: vsitata vilescunt.</marginalia_text>
+                    <X-ref book_title="De re Militari" person="Vegetius"/>
+                </position>
+            </language>
+            <translation>"Sudden deeds frighten the enemy: habitual deeds become worthless." </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Therfore try A new Enemy, with smal skermishes, before you fight the field. Machi.</marginalia_text>
+                    <person name="Machiavelli"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>disorder, [the] breakneck, &amp; ruine of any army,
+                    how lusty, or valorous so euer otherwise.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>thowgh [the] name</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+           
+        <marginalia anchor_text="vertue" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Discipline may do more, then</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fury. Machia.</marginalia_text>
+                    <person name="Machiavelli"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="ennemies, whiche" type="straight"/>
+        <underline language="EN" method="pen" text="fleers from" type="straight"/>
+        <underline language="EN" method="pen" text="hym more harmefull" type="straight"/>
+        <underline language="EN" method="pen" text="many stronge wardes behynde the forefront" type="straight"/>
+        <underline language="EN" method="pen" text="harde to ouercome" type="straight"/>
+        <underline language="EN" method="pen" text="truly iudge his own strength" type="straight"/>
+        <underline language="EN" method="pen" text="his aduersarye hath" type="straight"/>
+        <underline language="EN" method="pen" text="vertue" type="straight"/>
+        <underline language="EN" method="pen" text="multitude" type="straight"/>
+        <underline language="EN" method="pen" text="well chosen place" type="straight"/>
+        <underline language="EN" method="pen" text="vertue or" type="straight"/>
+        <underline language="EN" method="pen" text="bringeth forth few" type="straight"/>
+        <underline language="EN" method="pen" text="diuised ordinance maketh" type="straight"/>
+        <underline language="EN" method="pen" text="with labour" type="straight"/>
+        <underline language="EN" method="pen" text="idelnesse, waxeth" type="straight"/> 
+        <underline language="EN" method="pen" text="fyght a battayl" type="straight"/>
+        <underline language="EN" method="pen" text="them hope" type="straight"/> 
+        <underline language="EN" method="pen" text="Sodayne dedes" type="straight"/>
+        <underline language="EN" method="pen" text="warre affrayeth" type="straight"/>
+        <underline language="EN" method="pen" text="the vsual featis" type="straight"/>
+        <underline language="EN" method="pen" text="people disparpled" type="straight"/>
+        <underline language="EN" method="pen" text="pursueth his enemies" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="head"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="truly iudge his own strength"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="many stronge wardes behynde the forefront"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="diuised ordinance maketh"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--pur-->
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="hym more harmefull"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="many stronge wardes behynde the forefront"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="truly iudge his own strength"/>
+        <mark method="pen" name="dot" place="intext"/> <!--strength, and-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="power"/>
+        <mark language="EN" method="pen" name="X_sign" place="intext" text="his aduersarye hath"/>
+        <mark method="pen" name="X_sign" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="vertue"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="multitude"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="well chosen place"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="bringeth forth few"/>
+        <mark method="pen" name="dot" place="intext"/> <!--men, but-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="diuised ordinance maketh"/>
+        <mark method="pen" name="dot" place="intext"/> <!--profiteth, with-->
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="idelnesse, waxeth"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="fyght a battayl"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="hope"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="Sodayne dedes"/>
+        <mark method="pen" name="dot" place="intext"/> <!--enmies, the-->
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="people disparpled"/>
+        
+        <mark method="pen" name="plus_sign" place="tail"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,12 @@
+/* The Archaeology of Reading: charcoal and oxblood over parchment. */
+
+:root {
+  --rosa-header-bg: #27221e;
+  --rosa-header-fg: #f2ebdd;
+  --rosa-header-muted: rgba(242, 235, 221, 0.7);
+  --rosa-title-color: #e6c9a3;
+  --rosa-accent: #8a2b21;
+  --rosa-page-bg: #f5f0e6;
+  --rosa-banner-fallback: #3d3128;
+  --rosa-banner-height: 72px;
+}

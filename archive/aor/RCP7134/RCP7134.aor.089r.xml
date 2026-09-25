@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.089r.tif" pagination="82" reader="John Dee" signature="X ij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vide segmenti primi aphorismu[m] 77.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:445" text="77"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See aphorism 77 of first segment.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1. Annus.</marginalia_text> 
+                </position>
+            </language>
+            <translation>1. A year.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>.2. Mensis Lunaris.</marginalia_text>
+                </position>
+            </language>
+            <translation>2. A lunar month.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>.3. Ebdomada</marginalia_text>
+                </position>
+            </language>
+            <translation>3. Week</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dicit, loca quadrata lun[a]e, no[n] cu[m] ☾ ip[s]a dichotomos fuerit, sed quomodocu[m]q[ue] ip[s]a fuerit, aspectus
+                    quadratos in [quo] pu[n]cta cada[n]t, observare monet, vt cu[m] ☾ ibid[em] fuerit figura exacte erigatur.</marginalia_text> 
+                </position>
+            </language>
+            <translation>He says that there [are] quadruple places of the moon, not when the moon itself was cut in two, but whenever it was, the guadruple aspects
+            in which the points fall, he admonishes to observe, so that the moon would be raised when it exactly was the same figure.</translation> <!--JG: Extremely unsure-->
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>.4. Dies</marginalia_text>
+                </position>
+            </language>
+            <translation>4. Days.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>.5. Hora</marginalia_text>
+                </position>
+            </language>
+            <translation>5. Hour.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ut artes natorum" type="straight"/>
+        <underline language="LA" method="pen" text="modo generali" type="straight"/>
+        <underline language="LA" method="pen" text="motus augis fallat" type="straight"/>
+        <underline language="LA" method="pen" text="distantiam planetae uel loci ab occidente" type="straight"/>
+        <underline language="LA" method="pen" text="si super terram fuerit, aut ab oriente, si sub terra" type="straight"/>
+        
+    </annotation>
+</transcription>

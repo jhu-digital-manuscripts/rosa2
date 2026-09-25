@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.210r.tif" pagination="210" reader="John Dee" signature="Ddij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Guigua" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Guigua.</marginalia_text>
+                    <location name="Guigua"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Cerago" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cerago.</marginalia_text>
+                    <location name="Cerago"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Retrete" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Retrete.</marginalia_text>
+                    <location name="Retrete"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="spatio di meza" type="straight"/>
+        <underline language="IT" method="pen" text="gli vccelli di acqua, si sommergeua, &amp; vsciua poi vn tratto" type="straight"/>
+        <underline language="IT" method="pen" text="due di balestra lontatno" type="straight"/>
+        <underline language="IT" method="pen" text="indietro vacuo" type="straight"/>
+        <underline language="IT" method="pen" text="verso Oriente fino ad vna terra" type="straight"/>
+        <underline language="IT" method="pen" text="Guigua dello istesso nome, che si" type="straight"/>
+        <underline language="IT" method="pen" text="Beragua, &amp; Cerago" type="straight"/>
+        <underline language="IT" method="pen" text="barattare di quelle" type="straight"/>
+        <underline language="IT" method="pen" text="Retrete" type="straight"/>
+        <underline language="IT" method="pen" text="piu du V" type="straight"/>
+        
+        <drawing anchor_text="gli vccelli di acqua, si sommergeua, &amp; vsciua poi vn tratto" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Guigua dello istesso nome, che si" book_orientation="0" method="pen" place="left_margin" type="manicule"/>   
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.064v.tif" pagination="118" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="1535." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[1355] 1335.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="1536." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>1536.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="spiritu incubo dilecti sui spem sibi apparente in foresta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>speciae</marginalia_text> <!-- NBW: this is a correction to the text. Not sure what the mark above the word is but this is the most likely reading-->
+                </position>
+            </language>
+            <translation>Appearance.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="1535." type="straight"/>
+        <underline language="LA" method="pen" text="à spiritu incubo dilecti sui spem sibi apparente in foresta" type="straight"/>
+        <underline language="LA" method="pen" text="intollerabili quasi foetore domus repletur" type="straight"/>
+        <underline language="LA" method="pen" text="toto corpore inflato, vnà cum ventre &amp; labijs in nigredine obijt, ab. 8. viris ad tumulum est vix delata" type="straight"/>
+        <underline language="LA" method="pen" text="1536." type="straight"/>
+        
+        <mark method="pen" name="box" place="intext"/> <!-- spem -->
+        
+        
+    </annotation>
+</transcription>

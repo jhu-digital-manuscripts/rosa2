@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.118v.tif" pagination="60" reader="Harvey" signature="[D6v]"/>	<!-- ABO 123left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Thomaso Moro, risoluto, e faceto.
+						come Luciano, ò Martiale.
+					</marginalia_text>
+					<person name="Thomas More"/>
+					<person name="Lucian"/>
+					<person name="Martial"/>
+				</position>
+			</language>
+			<translation>
+				Thomas More was as resolute and witty as Lucian or Martial.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Non curo, qua[e] non procuro. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				I do not care for what I cannot manage.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Ha[e]c oportet prosequi: illa non negligere.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It is necessary to follow these matters and not neglect those other ones.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Hodiè meis Artibus: Cras tuis )
+						Discursibus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Today with my skills, tomorrow with your discourses.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Plurimi vbiq[ue] Scholastici: paucissimi vsq[ue] Technopractici.
+						Academici termini sine pragmaticis operibus inanes.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Everywhere there are many scholastics and very few pragmatic skilled men. <!-- CG: Odd neologism --> 
+				Academic terms without pragmatic activities are worthless.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Scitum est, quemq[ue] parare sua[e] Hypothesi necessaria.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It is best for one to prepare the necessary components of his proposition. 
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="il Re Henrico ottauo" type="straight"/>
+		<underline language="IT" method="pen" text="far supremo capo della chiesa Anglicana" type="straight"/>
+		<underline language="IT" method="pen" text="finalmente à morte" type="straight"/>
+		<underline language="IT" method="pen" text="mutarsi di fantasia" type="straight"/>
+		<underline language="IT" method="pen" text="fusse mutato di opinione" type="straight"/>
+		<underline language="IT" method="pen" text="la gratia regia" type="straight"/>
+		<underline language="IT" method="pen" text="il costantissimo Moro" type="straight"/>
+		<underline language="IT" method="pen" text="non solo disprezzando il Re" type="straight"/>
+		<underline language="IT" method="pen" text="stimando la morte" type="straight"/>
+		<underline language="IT" method="pen" text="piaceuolmente" type="straight"/>
+		<underline language="IT" method="pen" text="da poco" type="straight"/>
+		<underline language="IT" method="pen" text="sono mutato di oppinione" type="straight"/>
+		<underline language="IT" method="pen" text="rallegrandosi i" type="straight"/>
+		<underline language="IT" method="pen" text="prima pensato" type="straight"/>
+		<underline language="IT" method="pen" text="farmi tagliare la barba, innazi" type="straight"/>
+		<underline language="IT" method="pen" text="lasciar tagliar la barba et la testa in vn" type="straight"/>
+		<underline language="IT" method="pen" text="medesimo tempo" type="straight"/>
+		<underline language="IT" method="pen" text="andiamo à vostra" type="straight"/>
+		<underline language="IT" method="pen" text="vn'amico che" type="straight"/>
+		<underline language="IT" method="pen" text="di consolar" type="straight"/>
+		<underline language="IT" method="pen" text="bei versi del" type="straight"/>
+		<underline language="IT" method="pen" text="piu d'vn giorno" type="straight"/>
+		<underline language="IT" method="pen" text="è la" type="straight"/>
+		<underline language="IT" method="pen" text="Che puo bella parer" type="straight"/>
+		<underline language="IT" method="pen" text="ma nulla vale" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- gra -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- so -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- me -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- vol -->
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- morte, dandogli -->
+		<mark method="pen" name="dot" place="intext"/> <!-- tempo, si -->
+		<mark method="pen" name="dot" place="intext"/> <!-- lui, disse -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="Che puo bella parer, ma nulla vale"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- huomini -->
+		
+    </annotation>
+</transcription>

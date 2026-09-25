@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.161r.tif" pagination="161" reader="John Dee" signature="X"/>    
+    <annotation>
+        
+        <marginalia anchor_text="pigliassero sei di coloro" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Six Indians take[n]</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Isola di Gratia" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Isola di Gratia</marginalia_text>
+                    <location name="Santa Maria della Grazia"/>
+                </position>
+            </language>
+            <translation>Santa Maria della Grazia Island</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="guanini" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Guanini</marginalia_text>
+                </position>
+            </language>
+            <translation>A Haitian Indian name given to a metal (possibly from Guinean merchants) which was found to be made of thirty-two parts to eighteen of gold, six of silver, and eight of copper.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="la qual mangia gli huomini" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Anthropophagi</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="perle grosse" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Perle</marginalia_text>
+                </position>
+            </language>
+            <translation>Pearls.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tanto domestica, e trattabile" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gentle people</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="tanto domestica, e trattabile" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Guamini: ☉</marginalia_text>
+                </position>
+            </language>
+            <translation>A Haitian Indian name given to a metal (possibly from Guinean merchants) which was found to be made of thirty-two parts to eighteen of gold, six of silver, and eight of copper.</translation> 
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="pigliasseri sei di" type="straight"/>
+        <underline language="IT" method="pen" text="Isola di Gratia, non foß terra" type="straight"/>
+        <underline language="IT" method="pen" text="al Ponente" type="straight"/>
+        <underline language="IT" method="pen" text="campi seminati" type="straight"/>
+        <underline language="IT" method="pen" text="guanini, che è oro molto" type="double"/>
+        <underline language="IT" method="pen" text="&amp; diceuano" type="straight"/>
+        <underline language="IT" method="pen" text="qual mangia gli huomini" type="straight"/>
+        <underline language="IT" method="pen" text="perle grosse" type="straight"/>
+        <underline language="IT" method="pen" text="che nelle Conche delle Ostriche, le" type="straight"/>
+        <underline language="IT" method="pen" text="di terra di Gratia" type="straight"/>
+        <underline language="IT" method="pen" text="si fermò quiui" type="double"/>
+        <underline language="IT" method="pen" text="dimostrò tanto domestica, e trattabile, che importunarono i Christiani" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

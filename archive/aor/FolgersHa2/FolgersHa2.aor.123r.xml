@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.123r.tif" pagination="69" reader="Harvey" signature="E3[r]"/>	<!-- ABO 127right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						( The currentest &amp; pregnantest Entelechie in =
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						= in art, philosophie, physique, Lawe, diuinitie, pollicie,
+						warr, intercourse, nauigation, &amp; Whatsoeuer facultie, or emploiment
+						of importance. No practis comparable.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Il diuino Aretino,	
+					</marginalia_text>
+					<person name="Pietro Aretino"/>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Flagellum Principum:
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						et esso Apollonio Tianeo,
+					</marginalia_text>
+					<person name="Apollonius of Tyana"/>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Malleus Tyrannorum. Etiam hodiè Junius Brutus, Tyrannomastix.
+					</marginalia_text>
+					<person name="Lucius Junius Brutus"/>
+				</position>
+			</language>
+			<translation>
+				The divine Aretino was the scourge of princes and Apollonius of Tyana was the hammer of tyrants.
+				Even today, Junius Brutus is the Tyrant-Whip.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Hermes, Microcosmus.
+					</marginalia_text>
+					<person name="Hermes"/>
+				</position>
+			</language>
+			<translation>
+				Hermes, a Microcosm.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Eudromus, Neocosmus.
+					</marginalia_text>
+					<person name="Eudromus"/>
+				</position>
+			</language>
+			<translation>
+				Eudromus, a new world.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Meus mihi Efficiens: mea Materia: mea Forma: meus
+						Finis. Mea vnius Effecta, et Adiuncta.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				My own efficient cause, material cause, formal cause, and final cause.
+				My only effect and supplement.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Quod non potest Deucalion, potest Vulcanus: et contra.
+					</marginalia_text>
+					<person name="Deucalion"/>
+					<person name="Vulcan"/>
+				</position>
+			</language>
+			<translation>
+				That which Deucaleon cannot do, Vulcan can; and vice-versa.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						The sacking of Gadis. Shall I tell in a word, What conquer'd Cales? A strong Imagination,
+						&amp; braue tales.
+					</marginalia_text>
+					<location name="Cadiz"/>
+					<location name="Cales"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="alcuni Principi" type="straight"/>
+		<underline language="IT" method="pen" text="pazzie soaui" type="straight"/>
+		<underline language="IT" method="pen" text="d'esser padrone di tutte" type="straight"/>
+		<underline language="IT" method="pen" text="quelle naui che pigliauano" type="straight"/>
+		<underline language="IT" method="pen" text="alcuna n'era andata male" type="straight"/>
+		<underline language="IT" method="pen" text="marauigliosa festa le raccoglieua" type="straight"/>
+		<underline language="IT" method="pen" text="quando elle si" type="straight"/>
+		<underline language="IT" method="pen" text="documenti le licentiaua" type="straight"/>
+		<underline language="IT" method="pen" text="ottimi medici, di tal humor sanato" type="straight"/>		
+		<underline language="IT" method="pen" text="hauete occiso amici" type="straight"/>
+		<underline language="IT" method="pen" text="tolto ogni piacere" type="straight"/>
+		<underline language="IT" method="pen" text="Con trarmi à forza di sì dolce errore" type="straight"/>
+		<underline language="IT" method="pen" text="MONSIGNOR di Desse eccellente" type="straight"/>
+		<underline language="IT" method="pen" text="valoroso" type="straight"/>
+		<underline language="IT" method="pen" text="Re in Scotia con buon'" type="straight"/>
+		<underline language="IT" method="pen" text="co[n]tra gl'Inglesi" type="straight"/>
+		<underline language="IT" method="pen" text="hauevano occupato" type="straight"/>
+		<underline language="IT" method="pen" text="con buon'ordine &amp; disciplina militare al lor" type="straight"/>
+		<underline language="IT" method="pen" text="gl'Inglesi" type="straight"/>
+		<underline language="IT" method="pen" text="che'l suo valore non" type="straight"/>
+		<underline language="IT" method="pen" text="sfuggendo" type="straight"/>
+		<underline language="IT" method="pen" text="Capitano" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="La virtù essere ammirata, &amp; temuta" type="straight"/>
+		
+		<symbol name="SS" place="head"/> <!--DEL-->
+		
+		<symbol language="IT" name="SS" place="left_margin" text="La virtù essere ammirata, &amp; temuta"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--stol-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ma-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--discipli-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--Ingle-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--bat-->
+		
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="humor"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="Con trarmi à forza di sì dolce errore"/>
+		<mark method="pen" name="dot" place="intext"/> <!--Inglesi, iquali-->
+		<mark method="pen" name="dot" place="intext"/> <!--occupato, s'-->
+		<mark method="pen" name="comma" place="intext"/> <!--auano  sfuggendo-->
+		
+    </annotation>
+</transcription>

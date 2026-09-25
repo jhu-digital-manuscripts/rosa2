@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.179v.tif" pagination="358" reader="John Dee" signature="[z 3[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="uortex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vortex</marginalia_text>
+                </position>
+            </language>
+            <translation>Vortex.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Rectè inquam, dixeris haec omnia uertices, propriè" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Prop[ri]è &amp; recte differunt</marginalia_text> 
+                </position>
+            </language>
+            <translation>Proper and correctly different.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Augustale" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Augustale</marginalia_text>
+                </position>
+            </language>
+            <translation>Auguraculum.</translation> <!-- M.B. https://en.wikipedia.org/wiki/Auguraculum  -->
+        </marginalia>
+        
+        <marginalia anchor_text="Cato" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cato</marginalia_text>
+                    <person name="Cato the Younger"/>
+                </position>
+            </language>
+            <translation>Cato.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vergil" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vergilius.</marginalia_text>
+                </position>
+            </language>
+            <translation>Virgil.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Horat." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Horatius</marginalia_text>
+                    <person name="Horace"/>
+                </position>
+            </language>
+            <translation>Horace.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="epitheta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Epitheta</marginalia_text>
+                </position>
+            </language>
+            <translation>Epithets.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Fabius inter plures imperatorias uirtues Cu[n]cator" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fabius cuncator.</marginalia_text>
+                    <person name="Quintus Fabius Maximus Verrucosus"/>
+                </position>
+            </language>
+            <translation>Fabius was called the delayer.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="emphasim" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Emphasis</marginalia_text>
+                </position>
+            </language>
+            <translation>Emphasis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="obscuritas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>obscuritas</marginalia_text>
+                </position>
+            </language>
+            <translation>Obscurity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Fallunt etiam uerba" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Qua r[ati]o[n]e verba interdu[m] fallu[n]t</marginalia_text>
+                </position>
+            </language>
+            <translation>For this reason, words are occasionally deceiving.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="propriè tamen, unde initium" type="straight"/>
+        <underline language="LA" method="pen" text="quibusdam traditum propiij genus ex appositis, quae" type="straight"/>
+        <underline language="LA" method="pen" text="uerba, quae plus significant, quàm eloquuntur, in" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <numeral place="left_margin">.3.</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">.5.</numeral>
+        <numeral place="left_margin">6</numeral>
+        <numeral place="left_margin">7</numeral>
+        <numeral place="left_margin">.1.</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Epitheta" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+
+    </annotation>
+</transcription>

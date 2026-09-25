@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.120r.tif" pagination="63" reader="Harvey" signature="[D8r]"/>	<!-- ABO 124right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Dicens dic melius: fac melius faciens.
+						Axiophilus in Ode 3. Mercurij sublimati.
+					</marginalia_text>
+					<person name="Axiophilus"/>
+					<person name="Mercury"/>
+					<book title="Odes"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Ars iuuenis: virtus vir: Furor ipse, deus. in
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						eade[m] Ode.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				While speaking, speak better; do better, while doing.
+				Axiophilus in the Third Ode of elevated Mercury. <!-- CG: I'm not entirely sure what this Ode 3 is. --> <!--JG: Me neither. One of Horace's Odes is addressed to Mercury, but this is Ode X. Have to ask a specialist--> <!--JG: Odes 3.11 is addressed to Mercury as well, so I guess Horace's Odes are probably what Harvey is referring to-->
+				Art is a youth; virtue a man; fury itself, god. In the same Ode.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						i[nfr]a, 91.
+					</marginalia_text>
+					<internal_ref>
+						<target ref="FolgersHa2:Ha2.134r" text="91"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				Below, pg. 91.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EL">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ἀπιστία
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Dionis.
+					</marginalia_text>
+					<person name="Dion of Syracuse"/>
+				</position>
+			</language>
+			<translation>
+				The distrust of Dion.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Ride asinos istos,
+						qui pondera agrestia
+						portant, Collige
+						tu minimo maxima
+						quanta potes.
+						Axiophilus.
+						Sireno-phoenix.
+					</marginalia_text>
+					<person name="Axiophilus"/>
+				</position>
+			</language>
+			<translation>
+				Laugh at these asses who bring forth rustic weights;
+				Collect as many great things as possible with the least effort.
+				Axiophilus. The Sireno-phoenix.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Arcta via ducit ad superos: lata via ad inferos.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The narrow path leads to higher places; 
+				the wide path to lower places.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Futilissimi plurimi: pauci ex summis vtilissimi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Many things are most futile; few of the highest are most useful.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="FR">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Dieu toutes choses contient en soy.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				God contains all things in himself.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						{ Plus ingenij, et scientia[e], quàm potes paucis: plus virtutis,
+						et industria[e], quàm vales multis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				As much genius and wisdom as you can manage with a few matters;
+				as much virtue and industriousness as you can manage with most matters.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Lawgh at quarrels &amp; dispatch your busines.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Mihi Ars, Tibi Schola[e]. Hodiè virtus.
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						Cras Voluptas.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				For me, the art; for you, the scholia.
+				Today, virtue; tomorrow, desire.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						The Nauigatour allwaies respectes the rhombe, or the point of [the] compas.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="acuto" type="straight"/>
+		<underline language="IT" method="pen" text="queste gratiate" type="straight"/>
+		<underline language="IT" method="pen" text="approuate sententie" type="straight"/>
+		<underline language="IT" method="pen" text="Di sei cose" type="straight"/>
+		<underline language="IT" method="pen" text="nulla" type="straight"/>
+		<underline language="IT" method="pen" text="volta di dado" type="straight"/>
+		<underline language="IT" method="pen" text="prosperitate" type="straight"/>
+		<underline language="IT" method="pen" text="della State" type="straight"/>
+		<underline language="IT" method="pen" text="del Sereno" type="straight"/>
+		<underline language="IT" method="pen" text="cherica rasa" type="straight"/>
+		<underline language="IT" method="pen" text="lealtà di Donna" type="straight"/>
+		<underline language="IT" method="pen" text="Nelle confederationi" type="straight"/>
+		<underline language="IT" method="pen" text="qualità de' suoi" type="straight"/>
+		<underline language="IT" method="pen" text="intimata la guerra" type="straight"/>
+		<underline language="IT" method="pen" text="terresti" type="straight"/>
+		<underline language="IT" method="pen" text="gli vccelli" type="straight"/>
+		<underline language="IT" method="pen" text="vccelli trouandosi" type="straight"/>
+		<underline language="IT" method="pen" text="co' pesci à" type="straight"/>
+		<underline language="IT" method="pen" text="questo aiuto" type="straight"/>
+		<underline language="IT" method="pen" text="inimici" type="straight"/>
+		<underline language="IT" method="pen" text="i pesci" type="straight"/>
+		<underline language="IT" method="pen" text="possono venire in terra" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="quali cose conuenga poco, ò niente fidarsi" type="straight"/>
+		
+		<symbol name="SS" place="head"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--ter-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--bat-->
+		
+		<mark method="pen" name="plus_sign" place="head"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="intext" text="Non di volta di dado; Vecchia prosperitate; Il nugol della State; Il verno del Sereno, Et d'vn'altra ancor meno; Ch'è di cherica rasa. La sesta c'è rimasa; Di lealtà di Donna."/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="volta di dado"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="del Sereno"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="lealtà di Donna"/>
+		<mark method="pen" name="comma" place="intext"/> <!--altro e-->
+		<mark method="pen" name="quotation_mark" place="intext"/>
+
+    </annotation>
+</transcription>

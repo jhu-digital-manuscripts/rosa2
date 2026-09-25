@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.184v.tif" pagination="[177v]" reader="John Dee" signature="[yy[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Saturnus in sexto aut duodecimo loco" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♄ in 12 aut 6.</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>Saturn in [place] 12 or 6.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mars enim, ad instrumenta iuuat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♂ ad instrume[n]ta[m] iuvat</marginalia_text> 
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>Mars supports the instrument.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mercurius in octauo loco" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☿ in octavo. Co[n]trarius est sibi sup[ra] fol. 49.v.</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                    <internal_ref>
+                        <target ref="RCP7134:116" text="49.v"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Mercury in [place] 8. It's contrary to itself, [see] above, folio 49 verso.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Morbu[m] quidem, cum minime affecerit Lunam, aut ascendentis" type="straight"/>
+        <underline language="LA" method="pen" text="Mars enim, ad instrumenta iuuat" type="straight"/>
+        <underline language="LA" method="pen" text="ingenium, attamen" type="straight"/>
+        <underline language="LA" method="pen" text="ut in morbo laterali" type="straight"/>
+        
+        <errata amendedtext="decimo" copytext="decano" language="LA"/>
+        
+    </annotation>
+</transcription>

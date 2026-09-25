@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.174r.tif" pagination="347" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="per casus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Per casus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Through a case.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Per collocationem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Per collatione[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Through comparing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="per flexum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>per flexu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Through inflection.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="soluitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>solutio</marginalia_text>
+                </position>
+            </language>
+            <translation>Solution.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Diuisio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>Division.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">5</numeral>
+        
+    </annotation>
+</transcription>

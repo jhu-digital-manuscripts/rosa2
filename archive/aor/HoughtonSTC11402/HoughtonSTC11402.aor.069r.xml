@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.069r.tif" reader="Harvey" signature="[Hvi[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Great, &amp; incredible Marches sumtime necessary: to giue the Camisado on Enemyes far off: or to lye in ambush,
+                        to defeat conuoys: or to surprise sum castle, or Towne, simply defendid:
+                    </marginalia_text>
+                </position>
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>or to do sum like braue exploite, Vpon intelligence of aduantage. Great part of owt moderne stratagems in such 
+                    extraordinary marches.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="to hoyse" type="straight"/>
+        <underline language="EN" method="pen" text="vp the sayles" type="straight"/> 
+        <underline language="EN" method="pen" text="sayles swellynge with fulle wynde" type="straight"/>
+        <underline language="EN" method="pen" text="reder to harken to them" type="straight"/>
+        <underline language="EN" method="pen" text="touchyng the assaute, and defense of townes" type="straight"/>
+        <underline language="EN" method="pen" text="for the assautyng" type="straight"/>
+        <underline language="EN" method="pen" text="thinges may instructe the besieged" type="straight"/>
+        <underline language="EN" method="pen" text="T. Quintius Consul" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <symbol name="SS" place="intext"/>
+        <symbol name="SS" place="intext"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="to hoyse"/>
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="page_break" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--them I-->
+        <mark method="pen" name="dot" place="intext"/> <!--townes, nother-->
+        <mark method="pen" name="dot" place="intext"/> <!--townes, and-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Of sodeyne assaute. Capit.i."/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="sodeyne"/>
+        
+        <numeral language="EN" place="intext" text="for the assautyng">I.</numeral>
+        <numeral language="EN" place="intext" text="thinges may instructe the besieged">2.</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.145r.tif" pagination="273" reader="Harvey"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Qui politica axiomata hîc velit, aut legat Dana[e]i ex Polybio aphorismos politicos; aut potiùs ipse colligat ex Principijs Politicis, 
+                        quos potest, prudentiores, et ciuili, militariq[ue] disciplina[e] accommodatiores. Quales Iustiniani regula[e] iuris; 
+                        Vegetij, bellorum; Isocratis, morata[e] vita[e]. Aut qualia potiùs ipsa Aristotelis Principia Politica ex Herodoto, 
+                        Thucydide, Xenophonte, Homero, nonnullis alijs. 
+                    </marginalia_text>
+                    <person name="Lambert Daneau"/>
+                    <person name="Polybius"/>
+                    <person name="Justinian"/>
+                    <person name="Aristotle"/>
+                    <person name="Herodotus"/>
+                    <person name="Thucydides"/>
+                    <person name="Xenophon"/>
+                    <person name="Homer"/>
+                    <book title="Politicorum aphorismorum silva"/>
+                    <book title="The History"/>
+                </position>
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Neq[ue] enim vllus adhuc tantus artifex uel politicoru[m], uel oeconomicoru[m], 
+                        uel ethicorum ex historijs, poetisq[ue] axiomatum, quantus est Aristoteles in suis politicis, oeconomicis, ethicis. 
+                        Qui tamen quantò maior fuisset, si historias nosset tantò maiores, praesertim Romanam? Cuius potissimùm obseruatione, 
+                        non dubium est Machiauellum praestitisse Aristoteli: tametsi artificiosis regulis, principijs philosophicis minùs fundatum. 
+                        Vndè est, quòd Aristotelis praecepto; Machiauelli exempla pla[e]runq[ue] malim.</marginalia_text>
+                    <person name="Machiavelli"/>
+                    <book title="Politics"/>
+                    <book title="Economics"/>
+                    <book title="The Nicomachean Ethics"/>
+                </position>
+            </language>
+            <translation>Let him who wants political principles here read either Daneau’s political aphorisms taken from Polybius, or rather let himself 
+                collect any aphorisms he can find from the political starting points, ones that are very prudent and suitable for civil, military training. 
+                Such as those of Justinian’s rules of law; those of Vegetius on war, of Isocrates about well-mannered life. 
+                Or rather ones such as Aristotle’s political principles from Herodotus, Thucydides, Xenophon, Homer and a few others. For so far no one 
+                has been so great a creator of political, economic or ethical principles taken from historical accounts and from poets, as Aristotle in his 
+                political, economic and ethical ones. Yet how much greater would he have been if he had known histories that were equally more 
+                impressive, especially the Roman one. Especially on account of this insight of his Machiavelli has undoubtedly surpassed Aristotle, 
+                even though with technical rules, as he was less grounded in philosophical principles. For this reason I mostly prefer Machiavelli’s 
+                examples to Aristotle’s advice.
+            </translation>
+        </marginalia>
+        
+        <symbol name="Bisected_circle" place="head"/> <!--JG: symbols used to connect the two parts of the marginal note-->
+        <symbol name="Bisected_circle" place="tail"/> <!--JG: symbols used to connect the two parts of the marginal note-->
+        
+        <mark method="chalk" name="horizontal_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

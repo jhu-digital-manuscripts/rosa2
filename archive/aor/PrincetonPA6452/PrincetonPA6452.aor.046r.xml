@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.046r.tif" pagination="75" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Appij populares et plausibiles techna[e].
+                    </marginalia_text>
+                    <person name="Appius Claudius Crassus"/>
+                </position>
+            </language>
+            <translation>The popular and admirable skills of Appius.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        X. Tabularum Leges, et deinceps XII. fons omnis publici, priuatiq[ue] Iuris. Corpus totius Iuris Romani.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The law of the ten, and later twelve, tables is the basis of any public and private law. The body of the entire Roman law.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Iuuat hîc memorabilem C. Taciti locum transscribere, ex Annalium l. 3.
+                        Pulso Tarquinio, adversùm Patrum factiones multa Populus parauit tuenda[e] Libertatis, et firmanda[e] Concordia[e]: creatiq[ue] Decemuiri; 
+                        et accitis, qua[e] vsq[uam] egregia, composita[e] duodecim tabula[e]; finis a[e]qui iuris. Censura Romanarum Legum, obseruatu digna cum primis. 
+                        XII. Tabularum compositio, finis a[e]qui iuris. Quid ità? ratio seria, et adhuc momentosa. Nam secuta[e] Leges, etsi aliquando in maleficos ex delicto; 
+                        sa[e]piùs tamen dissensione ordinum, et apiscendi illicitos honores, aut pellendi claros viros, aliaq[ue] ob praua per vim lata[e] sunt. 
+                        Vin’ ipsa exempla? Hinc Gracchi, et Saturnini, turbatores plebis: nec minor largitor nomine senatus Drusus: corrupti spe, 
+                        aut illusi per intercessionem Socij.
+                    </marginalia_text> <!--JG: Impossible to know exactly whom Harvey meant with the Saturni and Drusus-->
+                    <person name="Tacitus"/>
+                    <person name="Lucius Tarquinius Superbus"/>
+                    <person name="Tiberius Gracchus"/>
+                    <person name="Gaius Gracchus"/>
+                    <book title="The Annals"/>
+                </position>
+            </language>
+            <translation>It is useful here to copy a remarkable passage of Cornelius Tacitus, from bk 3 of the Annals:
+                “After Tarquin's expulsion, the people, to check cabals among the Senators, devised many safeguards for freedom and for the establishment of unity. 
+                Decemvirs were appointed; everything specially admirable elsewhere was adopted, and the Twelve Tables drawn up, the last specimen of equitable 
+                legislation.” His review of the Roman laws is particularly noteworthy. The composition of the Twelve Tables was the last specimen of equitable 
+                legislation: Why so? There is a serious and still weighty reason: “For subsequent enactments, though occasionally directed against evildoers 
+                for some crime, were oftener carried by violence amid class dissensions, with a view to obtain honours not as yet conceded, or to banish 
+                distinguished citizens, or for other base ends.” Do you want the very examples? “Hence the Gracchi and Saturnini, those popular agitators, 
+                and Drusus too, as flagrant a corrupter in the Senate's name; hence, the bribing of our allies by alluring promises and the cheating them by 
+                tribunes vetoes.” 
+            </translation> <!--What do we do with the source of the translation that ABO includes: [Transl. Tacitus by Jackson and Brodribb]. How/where do we cite our sources??-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Decemuiri creati Ap." type="straight"/>
+        <underline language="LA" method="pen" text="designati co[n]sules in" type="straight"/>
+        <underline language="LA" method="pen" text="pro honore honor redditus: &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="proximi legati tres habiti, qui Athenas" type="straight"/>
+        <underline language="LA" method="pen" text="pro legatione tam lo[n]ginqua pr[a]emio esset honos:" type="straight"/>
+        <underline language="LA" method="pen" text="simul peritos" type="straight"/>
+        <underline language="LA" method="pen" text="legum peregrinaru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]denda noua iura usui fore credebant" type="straight"/>
+        <underline language="LA" method="pen" text="graues quoq[ue] aetate electos" type="straight"/>
+        <underline language="LA" method="pen" text="Regime[n] totius magistratus penes Appiu[m] erat fauore plebis" type="straight"/>
+        <underline language="LA" method="pen" text="nouu[m] sibi ingeniu[m] induerat, ut plebicola repe[n]tè, omnisq[ue] aurae popularis captator euaderet" type="straight"/>
+        <underline language="LA" method="pen" text="pro truci saeuoq[ue] insectatore" type="straight"/>
+        <underline language="LA" method="pen" text="Decimo die ius populo singuli" type="straight"/>
+        <underline language="LA" method="pen" text="die penes praefectu[m] iuris" type="straight"/>
+        <underline language="LA" method="pen" text="unica co[n]cordia inter ipsos" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]sensus priuatis" type="straight"/>
+        <underline language="LA" method="pen" text="interdu[m] inutilis" type="straight"/>
+        <underline language="LA" method="pen" text="summa aduersus alios aequitas" type="straight"/>
+        <underline language="LA" method="pen" text="Moderationis eoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Cum sine prouocatione creati" type="straight"/>
+        <underline language="LA" method="pen" text="Iulius dece[m]uir" type="straight"/>
+        <underline language="LA" method="pen" text="de[m]ptu[m] de ui magistratus" type="straight"/>
+        <underline language="LA" method="pen" text="populi libertati" type="straight"/>
+        <underline language="LA" method="pen" text="pro[m]ptu[m] hoc ius uelut ex oraculo incorruptu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="pariter ab his summi" type="straight"/>
+        <underline language="LA" method="pen" text="tum legib[us] co[n]de[n]dis opera" type="straight"/>
+        <underline language="LA" method="pen" text="inge[n]tiq[ue] hominu[m] expectatione" type="straight"/>
+        <underline language="LA" method="pen" text="decem tabulis" type="straight"/>
+        <underline language="LA" method="pen" text="quod bonu[m], faustum" type="straight"/>
+        <underline language="LA" method="pen" text="legere leges propositas" type="straight"/>
+        <underline language="LA" method="pen" text="quantu[m] dece[m] hominu[m] ingenijs prouideri" type="straight"/>
+        <underline language="LA" method="pen" text="summis infimisq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="iura aequasse" type="straight"/>
+        <underline language="LA" method="pen" text="pollere multoru[m] ingenia, consiliaq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="uersarent in animis secum" type="straight"/>
+        <underline language="LA" method="pen" text="mediu[m], quid in quaq[ue] re plus minus" type="straight"/>
+        <underline language="LA" method="pen" text="eas leges habituru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="consensus omniu[m] inuasisse" type="straight"/>
+        <underline language="LA" method="pen" text="iussisse latas magis" type="straight"/>
+        <underline language="LA" method="pen" text="tulisse uideri" type="straight"/>
+        <underline language="LA" method="pen" text="unoquoque legum capite" type="straight"/>
+        <underline language="LA" method="pen" text="satis correctae" type="straight"/>
+        <underline language="LA" method="pen" text="X tabularu[m] leges" type="straight"/>
+        <underline language="LA" method="pen" text="hoc immenso aliaru[m] super alias aceruatatu[m] legu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="fons omnis publici priuatiq[ue] est iuris" type="straight"/>
+        <underline language="LA" method="pen" text="duas de esse" type="straight"/>
+        <underline language="LA" method="pen" text="absolui posse uelut corupus omnis Romani iuris" type="straight"/>
+        <underline language="LA" method="pen" text="Ea expectatio" type="straight"/>
+        <underline language="LA" method="pen" text="decemuiros iteru[m] crea[n]di" type="straight"/>
+        <underline language="LA" method="pen" text="plebs" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]sulum nomen haud secus quàm regum perosa" type="straight"/>
+        <underline language="LA" method="pen" text="ne tribunitium" type="straight"/>
+        <underline language="LA" method="pen" text="cedentibus inuice[m] appellatione dece[m]uiris" type="straight"/>
+        <underline language="LA" method="pen" text="ta[n]ta exarsit ambitio" type="straight"/>
+        <underline language="LA" method="pen" text="primores quoq[ue] ciuitatis" type="straight"/>
+        <underline language="LA" method="pen" text="ne ta[n]ti possessio imperij" type="straight"/>
+        <underline language="LA" method="pen" text="prehe[n]sarent homines" type="straight"/>
+        <underline language="LA" method="pen" text="honore[m] summa ope ab" type="straight"/>
+        <underline language="LA" method="pen" text="suppliciter pete[n]tes" type="straight"/>
+        <underline language="LA" method="pen" text="App. Claudium" type="straight"/>
+        <underline language="LA" method="pen" text="inter decemuiros" type="straight"/>
+        <underline language="LA" method="pen" text="inter candidatos numerares" type="straight"/>
+        <underline language="LA" method="pen" text="propior interdum pete[n]do" type="straight"/>
+        <underline language="LA" method="pen" text="criminari optimates" type="straight"/>
+        <underline language="LA" method="pen" text="extollere candidatoru[m] leuissimum" type="straight"/>
+        <underline language="LA" method="pen" text="que[m]q[ue] humillimu[m]que" type="straight"/>
+        <underline language="LA" method="pen" text="medius inter tribunitios" type="straight"/>
+        <underline language="LA" method="pen" text="illos se plebi ue[n]ditare" type="straight"/>
+        <underline language="LA" method="pen" text="collegae quoq[ue], qui unicè illi dediti" type="straight"/>
+        <underline language="LA" method="pen" text="eum oculos, mirantes quid sibi uellet" type="straight"/>
+        <underline language="LA" method="pen" text="apparere nihil synceri" type="straight"/>
+        <underline language="LA" method="pen" text="gratuita[m] in tanta superbia comitate[m] fore:" type="straight"/>
+        <underline language="LA" method="pen" text="nimium in ordine[m] se ipsum" type="straight"/>
+        <underline language="LA" method="pen" text="uulgari cum priuatis, no[n] tam propera[n]tis abire magistratu" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]tinuandu[m] magistratu[m] quaere[n]tis esse. Propalàm" type="straight"/>
+        <underline language="LA" method="pen" text="obsecundando mollire, impetu[m] aggrediu[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="qua[n]do minimus" type="straight"/>
+        <underline language="LA" method="pen" text="natu sit" type="straight"/>
+        <underline language="LA" method="pen" text="ars h[a]ec erat, ne semetipse creare posset, quod" type="straight"/>
+        <underline language="LA" method="pen" text="pr[a]eter tribunos plebis" type="straight"/>
+        <underline language="LA" method="pen" text="nemo unqua[m]" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="JC" place="right_margin"/>
+        <symbol name="LL" place="right_margin"/>
+        
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/> 
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--alio-->
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--una[m]-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--le-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--tribu-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--impu-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--uo-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--ob-->
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Decemuiri"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Regime[m]"/>
+        <mark method="pen" name="straight_quotation_mark" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="nouu[m]"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="praefectu[m]"/>
+        <mark method="pen" name="dot" place="intext"/> <!--ipsos, qui-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="priuatis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Moderationis"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="decem"/>
+        <mark method="pen" name="comma" place="intext"/> <!--tabulis populum-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="ingenijs"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="leges"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="consensus"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!--cumulo fons-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="publici"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="priuatiq[ue]"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="duas"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="corpus"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="co[n]sulum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="regum"/>
+        <mark method="pen" name="dot" place="intext"/> <!--erat, ne-->
+        <mark method="pen" name="dot" place="intext"/> <!-- sunt, ta[n]ta-->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--donec-->
+        <mark language="LA" method="pen" name="diacritic" place="intext" text="nimium"/> 
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="co[n]tinuandu[m]"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="semetipse"/>
+        <mark method="pen" name="dot" place="intext"/> <!--posset, quod-->
+        
+    </annotation>
+</transcription>

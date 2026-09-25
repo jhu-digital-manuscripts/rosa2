@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.106r.tif" reader="Harvey" signature="Aa.iiii.[r]"/>
+    <annotation>  
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        s[upr]a.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                [See] above.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Men lawgh at nothing more, then at shreud turnes,
+                        or vnhappie haps: at the simple or awke
+                        sayings, or doings of fooles, or madd fellowes:
+                        at the horseplay, or Farters Logique of
+                        swaggering companions:
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="to well sett him furth" type="straight"/>
+        <underline language="EN" method="chalk" text="especiallye sins we must compare a woman to him" type="straight"/>
+        <underline language="EN" method="pen" text="must compare" type="straight"/>
+        <underline language="EN" method="pen" text="Bernardes Iestes haue made" type="straight"/>
+        <underline language="EN" method="pen" text="accomplish both the one" type="straight"/>
+        <underline language="EN" method="pen" text="leaue reuerentlye of the" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="quotation_mark" place="right_margin" text="Bernardes Iestes haue made"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- furth, especiallye -->
+        <mark method="pen" name="dot" place="intext"/> <!-- Courtier, and -->
+        <mark method="pen" name="dot" place="intext"/> <!-- feete, and -->
+        
+    </annotation>
+</transcription>

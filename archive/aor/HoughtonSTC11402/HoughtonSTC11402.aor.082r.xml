@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.082r.tif" reader="Harvey" signature="Kiii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Naualis oppugnatio.</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>i[nfr]a, l.4.c.7.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0126" text="l.4.c.7."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>A naval assault. [See] below, book 4, chapter 7.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>The Spanish</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Armada, thie sommer, 1588. could not espy any such advantage against Ingland or other wise pryvaile, ether
+                    by force, or pollicy.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>( Non solent periti Duces proclamare aduentum, aut minari conqua[e]stum, sed securos ex inopinato inuadere.</marginalia_text>
+                </position>
+            </language>
+            <translation>Experienced generals are not accustomed to proclaim invasion, or to threaten conquest, 
+                but to invade by surprise those secure.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>hypocritica affabilitas. ad Legatos.</marginalia_text>
+                </position>
+            </language>
+            <translation>Hypocritic friendliness towards ambassadors.</translation>
+        </marginalia>  
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Fistula dulce canit, volucre[m] du[m] decipit Auceps. Lysandri humanissima oratio, l.I. Polua[e]ni.</marginalia_text>
+                    <person name="Lysander"/>
+                    <book title="Stratagems"/>
+                    <X-ref book_title="Distichs of Cato " person="Dionysius Cato"/>
+                </position>
+            </language>
+            <translation>'The shepherds-pipe sings sweetly, while the fowler traps the bird.' The most civilized speech of Lysander, book 1 of Polyaenus' Stratagems. </translation>
+        </marginalia> 
+        
+        <underline language="EN" method="pen" text="on the" type="straight"/>
+        <underline language="EN" method="pen" text="a nauy pryuely" type="straight"/>
+        <underline language="EN" method="pen" text="behynde certayne" type="straight"/>
+        <underline language="EN" method="pen" text="promontories" type="straight"/>
+        <underline language="EN" method="pen" text="his swyftest shyppes" type="straight"/>
+        <underline language="EN" method="pen" text="shoulde" type="straight"/>
+        <underline language="EN" method="pen" text="make out harde by" type="straight"/>
+        <underline language="EN" method="pen" text="kepe the hauen" type="straight"/>
+        <underline language="EN" method="pen" text="out a mayne" type="straight"/>
+        <underline language="EN" method="pen" text="pursue her" type="straight"/>
+        <underline language="EN" method="pen" text="swypte in to the hauen" type="straight"/>
+        <underline language="EN" method="pen" text="citie" type="straight"/>
+        <underline language="EN" method="pen" text="by land" type="straight"/>
+        <underline language="EN" method="pen" text="see, Barca" type="straight"/>
+        <underline language="EN" method="pen" text="parte of his nauy" type="straight"/>
+        <underline language="EN" method="pen" text="Romaynes sawe that, they made out" type="straight"/>
+        <underline language="EN" method="pen" text="in secrete" type="straight"/>
+        <underline language="EN" method="pen" text="dissemble retreate" type="straight"/>
+        <underline language="EN" method="pen" text="countreye of Calchidense" type="straight"/>
+        <underline language="EN" method="pen" text="cause why" type="straight"/>
+        <underline language="EN" method="pen" text="benigne and curteys" type="straight"/>
+        <underline language="EN" method="pen" text="nyght" type="straight"/>
+        
+        <symbol language="EN" name="Mars" place="intext" text="The Spanish Armada, thie sommer, 1588. could not espy any such advantage against Ingland or other wise pryvaile, ether             by force, or pollicy."/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="benigne and curteys"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="a nauy pryuely"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="swypte in to the hauen"/>
+        <mark method="pen" name="dot" place="intext"/> <!--see, Barca-->
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark language="EN" method="pen" name="apostrophe" place="intext" text="why"/>
+        <mark language="EN" method="pen" name="apostrophe" place="intext" text="why"/>
+        
+    </annotation>
+</transcription>

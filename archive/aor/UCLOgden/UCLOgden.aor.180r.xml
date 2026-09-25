@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.180r.tif" pagination="109" reader="John Dee" signature="I 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="Quartae autem anni sunt solius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quartae ha[e] notanda[e] veniunt 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                These notable four come.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Singularis admonitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>A remarkable advice.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dominus 11 ascendentis, uel 11 Lunae, aut 11 partis fortunae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nota istas domas vndecimas tres. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Note that there are three of these eleventh houses
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Videtur hinc repugnare 7a 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Hence he seems to disagree with the seventh.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Angulos asce[n]detis dicit quonia[m] respectu alior[um] planetor[um] anguli etia[m] sunt.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>He says the angles of the ascendant becuase the are angles with respect to the other planets.  
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de ascensione in descensionem &amp; econuerso" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mutatio de asce[n]sione ad descensione[m] et co[n]tra 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation> A mutation of the ascension towards descension and contrary.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="planetae masculini sunt qui agunt, feminini uero sunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                      Planeta[e] masc. fa[e]mi.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Masculine and feminine planets.
+            </translation>
+        </marginalia>
+
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Hinc accepit cardanus sua[m] distinctione[m] significatoris secundu[m] substa[n]tia[m] et secundu[m] accidens. 
+                    </marginalia_text>
+                    <person name="Girolamo Cardano"/>
+                </position>
+            </language>
+            <translation>Hence Cardano accepts his distinctions according to the substance and accident of the signifier. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="anni sunt" type="straight"/>
+        <underline language="LA" method="pen" text="naturam consideres, in quo coiniuncti suerint: utrum sit ex eorum similitudine, nec ne, si enim fuerit ex eorum similitudine, co[n]forabis eorum significationem." type="straight"/>
+        <underline language="LA" method="pen" text="dominus 11 ascendentis, uel 11 Lunae, aut 11 partis fortunae" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; in eodem" type="straight"/>
+        <underline language="LA" method="pen" text="sed &amp; septimi circuli" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; duae infortunae in angulis" type="straight"/>
+        <underline language="LA" method="pen" text="poterit esse nisi à Marte" type="straight"/>
+        <underline language="LA" method="pen" text="super eos de ascensione in descensionem" type="straight"/> 
+        <underline language="LA" method="pen" text="mutantur de una triplicitate" type="straight"/>
+        <underline language="LA" method="pen" text="ponderosorum, planetae masculini sunt qui agunt, feminini uero sunt" type="straight"/>
+        <underline language="LA" method="pen" text="Aspice ascensionem planetae, &amp; gradum exaltationis, gradum quoq[ue] sui casus, nam haec sunt quae significant homines &amp; eorum opera." type="straight"/>
+        <underline language="LA" method="pen" text="aget in eum, id est, uincet alteru[m] ille cuius signum est masculinum, &amp; in masculino signo" type="straight"/>
+        <underline language="LA" method="pen" text="Saturno in latitudine" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; hoc no[n] fallit" type="straight"/>
+        <underline language="LA" method="pen" text="Ioui in latitudine" type="straight"/>
+        <underline language="LA" method="pen" text="Iupiter &amp; Venus in eodem gradu cum Sole fuerint." type="straight"/>
+        
+        <symbol name="Conjunction" place="right_margin"/>
+        <symbol name="Conjunction" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- circuli est -->
+
+        <errata amendedtext="[deleted]" copytext="," language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>    
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.032v.tif" pagination="32[v]" reader="John Dee" signature="[Giv[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vide fo[lio] 12. Theorica[e] 
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="BLC120b4:c_120_b_4_(2)_f012r" text="12"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                See folio 12. Theories.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="horas. 321" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Dies: 13 9/24:
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Days: 13 9/24.</translation>
+        </marginalia>
+             
+        <marginalia anchor_text="in pane" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        panno
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                [In] a piece of cloth.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ducentis septuaginta" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        72 |0 27|0
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        vide synonia pag[ina] 54:
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="BLC120b4:c_120_b_4_(2)_f054v" text="pag[ina] 54"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                See the synonyms on page 54.
+            </translation>
+        </marginalia>
+  
+        <underline language="LA" method="pen" text="horas.321." type="straight"/>
+        <underline language="LA" method="pen" text="Aqua[e] ca[e]lestis" type="straight"/>
+        <underline language="LA" method="pen" text="nonaginta" type="straight"/>
+        <underline language="LA" method="pen" text="uniusmet ponderis" type="grid"/>
+        <underline language="LA" method="pen" text="dies tres" type="straight"/>
+        
+    </annotation>
+</transcription>

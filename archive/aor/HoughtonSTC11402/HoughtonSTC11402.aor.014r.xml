@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.014r.tif" reader="Harvey" signature="[Avii[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Cutt yo[u]r Coate according to yo[u]r Cloth. Euery man knowith best, where his
+                    shooe pinchith him.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Alexander, si fuisset Parmenio, procederet vt Parmenio. Metiri se quemq[ue] suo modulo, ac pede, 
+                    justum est, ait Horatius.</marginalia_text>
+                    <person name="Alexander the Great"/>
+                    <person name="Parmenion"/>
+                    <person name="Horace"/>
+                </position>
+            </language>
+            <translation>Alexander, if he would be Parmenion, would proceed as Parmenion. Horace says 'it is just that every men is measured by his own model and standard.'</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>The place, A mighty frend, &amp; parlous Enemy.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>(Vires duoru[m] Incomparabiliu[m] Impp[eratorum].</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Alexandri, et Ca[e]saris. Tantu[m] potest Assuetudo; Callidè instructa.</marginalia_text>
+                    <person name="Alexander the Great"/>
+                    <person name="Julius Caesar"/>    
+                </position>
+            </language>
+            <translation>The strength of two incomparable emperors. Of Alexander and Caesar. So potent experience, having been instructed skillfully, can [be]. </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qua[e] breui finem assegunt[u]r, viribus maioribus indigent. Cardano sa[e]pè: de Subtil. 206.</marginalia_text>
+                    <person name="Girolamo Cardano"/>
+                    <book title="De subtilitate"/>
+                </position>
+            </language>
+            <translation>Things which are small pursue the end, they require greater men. Frequently in Cardano's 'De subtilitate', p. 206.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hùc Dituuij Strategema.</marginalia_text>
+                </position>
+            </language>
+            <translation>Here the stratagem of Dituvius.</translation> <!--JG: No clue abt Dituvius-->
+        </marginalia>
+        
+        <marginalia anchor_text="Fabius Maximus; Cunctator" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Fabius Cunctator, sapientissimus Imperator.</marginalia_text>
+                    <person name="Fabius Maximus"/>
+                    <emphasis method="pen" text="Cunctator" type="straight"/>
+                </position>
+            </language>
+            <translation>Fabius Maximus, a most wise general.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A wisemans first Cautel, to Prouide for his own defences, before he attempt to offend other.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Fabius Maximus; Cunctator" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>" Etia[m] Ca[e]sar, cum callido hoste egit cautiùs.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Even Caesar acted carefully with a cunning enemy.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>" principaliu[m] partiu[m], Cura, et Munitio principalis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The watchfulness and fortification of the principal parts.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>(Iis armis, modisq[ue] pugnandum maxime, in quibus vires maxima[e]: Vt i[nfr]a, in Regulis Vegetij. Nosce teipsum: et rarò Vincêris.)</marginalia_text>
+                    <person name="Vegetius"/>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0226" text="i[nfr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>One must fight chiefly with those arms, in which the greatest strengths [are]. As below, in the rules of Vegetius.
+                Know yourself, and you are rarely beaten.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Sieges, &amp; assaults, require more labour, time &amp; other cost.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="fyghte in playne battayle" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Aperto Marte.</marginalia_text>
+                </position>
+            </language>
+            <translation>In open battle.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="The kepynge of an order in warre" type="straight"/>
+        <underline language="EN" method="pen" text="vehement and fierce" type="straight"/>
+        <underline language="EN" method="pen" text="fyghte in playne battayle" type="straight"/>
+        <underline language="EN" method="pen" text="C. Cesar" type="straight"/>
+        <underline language="EN" method="pen" text="longe vse perfect" type="straight"/>
+        <underline language="EN" method="pen" text="to trie with his" type="straight"/>
+        <underline language="EN" method="pen" text="in a pyght felde" type="straight"/>
+        <underline language="EN" method="pen" text="proude" type="straight"/>
+        <underline language="EN" method="pen" text="great vyctories" type="straight"/>
+        <underline language="EN" method="pen" text="fyght" type="straight"/>
+        <underline language="EN" method="pen" text="to defende &amp; kepe Italy" type="straight"/>
+        <underline language="EN" method="pen" text="yet to" type="straight"/>
+        <underline language="EN" method="pen" text="taken for the best and wysest capitayne" type="straight"/>
+        <underline language="EN" method="pen" text="daungier of" type="straight"/>
+        <underline language="EN" method="pen" text="playne fyght" type="straight"/>
+        <underline language="EN" method="pen" text="defence of thier borders, kepte them" type="straight"/>
+        <underline language="EN" method="pen" text="munimentes of their cities" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="fyghte in playne battayle"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        
+        <mark method="pen" name="quotation_mark" place="tail"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="fyghte in playne battayle"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="longe vse perfect"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="to defende &amp; kepe Italy"/>
+        
+    </annotation>
+</transcription>

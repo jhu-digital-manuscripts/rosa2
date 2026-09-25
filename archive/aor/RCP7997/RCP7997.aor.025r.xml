@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.025r.tif" reader="John Dee" signature="Ei"/> 
+    <annotation>
+        
+        <marginalia anchor_text="p[ar]alogismus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Parallogismus       
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A paralogism
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="qua[m]uis alie sc[i]e[n]tie p[er] rationes disputant mathematic[us] v[er]o sensibiliter lineis in puluere descriptis" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mathematic[us] sensibiliter p[otes]t disputare ali[a]e artes tantu[m] r[ati]o[n]es possu[n]t.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A mathematician can discuss sensibly. Other arts only can [discuss] reasons.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Et p[ri]mo ostendit quom[od]o sume[n]da sit instantia c[on]tra silogismu[m] demonstratiuu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quomodo est sumenda insta[n]tia co[n]tra demo[n]stratiuu[m] syllogis[mum]. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In this way urgency is to be gathered against the demonstrative syllogism.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="indemo[n]stratiuis scie[n]tijs no[n] fiu[n]t p[ar]alogismi in dictio[n]e. secu[n]do nec extra dictione[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        In Mathematicis et demo[n]stratiuis scie[n]tijs, no[n] fiu[n]t parallogismi in dictione, aut extra dictionem:
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In mathematics and demonstrative science, paralogisms appear neither in or outside of speech.  
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in p[ri]mo gradu sunt certitudinis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mathematica disciplina in p[ri]mo gradu certitudinis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The mathematical discipline is first and foremost about certainty.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in demo[n]stratiuis scie[n]tijs no[n] accidit deceptio p[er] fallacia[m] extra dictione[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Fallacia[m] extra dictionem no[n] committi in demo[n]stratiuis scie[n]tijs
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                 In the demonstrative sciences, deceipts are not to be commited outside of speech.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="p[ro]bat hoc duplicit[ur] p[ri]mo q[ue] indemo[n]stratiuis scie[n]tijs no[n] fiu[n]t p[ar]alogismi in dictio[n]e. secu[n]do nec extra dictione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Sicut hoc nome[n] circulus equiuoce dicit[ur] de figura [et] poemate" type="straight"/>
+        <underline language="LA" method="pen" text="deceptio excludit[ur] p[er] hoc q[uod] mediu[m] sc[ilicet] circul[us] demo[n]strat[ur] ad sensum. ita" type="straight"/>
+        <underline language="LA" method="pen" text="intellectu[m] cu[m] e[ni]m aliquid diffinit[ur] ita se hab[et] ad intellectu[m] sicut illud q[uod] sensibilit[er] describit[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="qua[m]uis alie sc[i]e[n]tie p[er] rationes disputant mathematic[us] v[er]o sensibiliter lineis in puluere descriptis. Illos" type="straight"/>
+        <underline language="LA" method="pen" text="vide egidiu[m] pulcre sup[er] huiusmo[d]i" type="straight"/>
+        <underline language="LA" method="pen" text="causa est que p[re]cesserat q[uod] angulus extrinsecus valet duos" type="straight"/>
+        <underline language="LA" method="pen" text="accidit deceptio p[er] fallacia[m] extra dictione[m] sicut nec in dictio[n]e q[uod] demo[n]strauimus. Et" type="straight"/>
+        <underline language="LA" method="pen" text="quom[od]o sume[n]da sit instantia c[on]tra silogismu[m] demonstratiuu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] potest esse p[ar]alogism[us] s[e]c[un]d[u]m fallatia[m] extra dictione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Cum om[n]is p[ro]positio demo[n]stratiua in om[n]ibus sit [et] v[niversa]lis. ex vniuersali[bus]" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- alijs appare[n]t -->
+        <mark method="pen" name="comma" place="intext"/> <!-- disputant mathematic[us] -->
+        
+        <errata amendedtext="ignouauerit" copytext="ignonauerit" language="LA"/>
+        <errata amendedtext="ex" copytext="[blank]" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>92</illustrations>
+    <totalPages>185</totalPages>
+    <dimensions units="mm">
+        <width>290</width>
+        <height>395</height>
+    </dimensions>
+    <dates>
+        <startDate>1490</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="185v" start="1r">185</pages>
+            <illustrations>92</illustrations>
+            <linesPerColumn>34</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Harley 4425</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>Parchment</material>
+            <origin>Bruges, Netherlands</origin>
+            <currentLocation>London</currentLocation>
+            <repository>British Library</repository>
+            <shelfmark>Harley 4425</shelfmark>
+	    <website>http://searcharchives.bl.uk/IAMS_VU2:IAMS040-002050262</website>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Harley 4425</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>Bruges, Netherlands</origin>
+            <currentLocation>London</currentLocation>
+            <repository>British Library</repository>
+            <shelfmark>Harley 4425</shelfmark>
+	    <website>http://searcharchives.bl.uk/IAMS_VU2:IAMS040-002050262</website>
+        </bibliography>
+    </bibliographies>
+</book>

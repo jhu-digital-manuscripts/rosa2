@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.075v.tif" reader="Harvey" signature="[R.i.[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ars defendendi, fundamentu[m] valoris. s[upr]a, i[nfr]a.
+                        Minerua Herculis, Achillis. Diomedis, Aiacis. Nestoris, Vlyssis.
+                    </marginalia_text>
+                    <person name="Minerva"/>
+                    <person name="Hercules"/>
+                    <person name="Achilles"/>
+                    <person name="Diomedes"/>
+                    <person name="Ajax"/>
+                    <person name="Nestor of Gerenia"/>
+                    <person name="Odysseus"/>
+                    <internal_ref>
+                        <target ref="Newberry27495:case_712_c27495_059" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                The art of defending, the foundation of value. [See] above, below.
+                Minerva Hercules, Achilles. Diomedes, Ajax. Nestor, Odysseus. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        perfection in his owne profession:
+                        sufficiencie in other faculties. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>s[upr]a.</marginalia_text>
+                </position>
+            </language>
+            <translation>[See] above.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="couning in that which is not their profession" type="straight"/>
+        <underline language="EN" method="pen" text="better in that thei professe in deede" type="straight"/>
+        <underline language="EN" method="pen" text="coopled with a good iudgemente" type="straight"/>
+        <underline language="EN" method="pen" text="verie deceite" type="straight"/>
+        <underline language="EN" method="pen" text="an ornament that" type="straight"/>
+        <underline language="EN" method="pen" text="a deceite" type="straight"/>
+        <underline language="EN" method="pen" text="beateth his felow" type="straight"/>
+        <underline language="EN" method="pen" text="beeguyleth hym" type="straight"/>
+        <underline language="EN" method="pen" text="more art" type="straight"/>
+        <underline language="EN" method="pen" text="iewell that vnsett seemeth faire" type="straight"/>
+        <underline language="EN" method="pen" text="well setting it maketh" type="straight"/>
+        <underline language="EN" method="pen" text="goldsmith deceiueth the eyes of them that" type="straight"/>
+        <underline language="EN" method="pen" text="a couninge hande doeth manie tymes ad a grace and ornament to yuorie, or to syluer, or to a stone that is faire in sight, settinge it in golde" type="straight"/>
+        <underline language="EN" method="pen" text="skilfull in a matter" type="straight"/>
+        <underline language="EN" method="pen" text="seeke occasyon after a comelye sorte to showe hys feat" type="straight"/>
+        <underline language="EN" method="pen" text="couer the" type="straight"/>
+        <underline language="EN" method="pen" text="certeine warye dyssymulacion" type="straight"/>
+        <underline language="EN" method="pen" text="to seeke" type="straight"/>
+        <underline language="EN" method="pen" text="occasion verye well to stryppe hymselfe sometyme into his doblet?" type="straight"/>
+        <underline language="EN" method="pen" text="knewe he was verye well made and nymble wythall" type="straight"/>
+        <underline language="EN" method="pen" text="not at all of the fairest" type="straight"/>
+        <underline language="EN" method="pen" text="plucked of hys gloues" type="straight"/>
+        <underline language="EN" method="pen" text="neuer" type="straight"/>
+        <underline language="EN" method="pen" text="heede to this warinesse of hys" type="straight"/>
+        
+        <symbol name="Mars" place="left_margin"/>
+        <symbol language="EN" name="SS" place="left_margin" text="a couninge hande doeth manie tmes ad a grace and ornament to yuorie, or to syluer, or to a stone that is faire in sight, settinge it in golde"/>
+        
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="not all of the fairest"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="quotation_mark" place="right_margin" text="plucked of hys gloues"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="beateth his felow"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- hym, and -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="more art"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- praise, for -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="hande"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- therein, and -->
+        <mark method="pen" name="dot" place="intext"/> <!-- praise, yet -->
+        <mark method="chalk" name="vertical_bar" place="intext"/> <!-- red chalk, starting at 'how kinge' -->
+
+    </annotation>
+</transcription>

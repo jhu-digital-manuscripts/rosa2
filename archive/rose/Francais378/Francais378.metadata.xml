@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>41</illustrations>
+    <totalPages>74</totalPages>
+    <dimensions units="mm">
+        <width>272</width>
+        <height>365</height>
+    </dimensions>
+    <dates>
+        <startDate>1200</startDate>
+        <endDate>1300</endDate>
+    </dates>
+    <texts>
+        <text id="morsvis">
+            <language>fr</language>
+            <title>C'est des trois mors et des trois vis</title>
+            <textId/>
+            <pages end="1v" start="1r">1</pages>
+            <illustrations>2</illustrations>
+            <linesPerColumn>60</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>3</columnsPerPage>
+        </text>
+        <text id="sereurs">
+            <language>fr</language>
+            <title>C'est li dis des Quatre sereurs</title>
+            <textId/>
+            <pages end="3v" start="1v">3</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>60</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>3</columnsPerPage>
+        </text>
+        <text id="berzi">
+            <language>fr</language>
+            <title>La Bible Hugue de Berzi</title>
+            <textId/>
+            <pages end="6v" start="3v">4</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>60</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>3</columnsPerPage>
+        </text>
+        <text id="tremontaine">
+            <language>fr</language>
+            <title>Li dis de la Tremontaine</title>
+            <textId/>
+            <pages end="7v" start="6v">2</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>60</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>3</columnsPerPage>
+        </text>
+        <text id="dismorsvis">
+            <language>fr</language>
+            <title>Dis des trois mors et des trois vis</title>
+            <textId/>
+            <pages end="8r" start="7v">2</pages>
+            <illustrations>2</illustrations>
+            <linesPerColumn>60</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>3</columnsPerPage>
+        </text>
+        <text id="cerf">
+            <language>fr</language>
+            <title>Li dis dou cerf amoureus</title>
+            <textId/>
+            <pages end="8v" start="8r">1</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>60</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>3</columnsPerPage>
+        </text>
+        <text id="faucon">
+            <language>fr</language>
+            <title>La Comparoison dou Faucon</title>
+            <textId/>
+            <pages end="9v" start="9r">1</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>60</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>3</columnsPerPage>
+        </text>
+        <text id="pré">
+            <language>fr</language>
+            <title>La Comparoisons du Pré</title>
+            <textId/>
+            <pages end="10r" start="9v">2</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>60</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>3</columnsPerPage>
+        </text>
+        <text id="roilarron">
+            <language>fr</language>
+            <title>C'est dou roi qui racheta le larron</title>
+            <textId/>
+            <pages end="11r" start="10r">2</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>60</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>3</columnsPerPage>
+        </text>
+        <text id="brebis">
+            <language>fr</language>
+            <title>C'est la brebis desrobee</title>
+            <textId/>
+            <pages end="12r" start="11r">2</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>60</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>3</columnsPerPage>
+        </text>
+        <text id="conte">
+            <language>fr</language>
+            <title>Dou sot le conte</title>
+            <textId/>
+            <pages end="12v" start="12r">1</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>60</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>3</columnsPerPage>
+        </text>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="74v" start="13r">32</pages>
+            <illustrations>28</illustrations>
+            <linesPerColumn>60</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>3</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Français 378</commonName>
+            <dateLabel>13th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 378</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Français 378</commonName>
+            <dateLabel>13e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 378</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

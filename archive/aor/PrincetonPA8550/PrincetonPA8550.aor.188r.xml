@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.188r.tif" pagination="375" reader="Harvey" signature="aiiij[r]"/>
+    <annotation>
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        .2. honestu[m] 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                2. Distinguished.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="certa &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="discernent tempora" type="straight"/>
+        <underline language="LA" method="pen" text="annos" type="straight"/>
+        <underline language="LA" method="pen" text="annum conficiat" type="straight"/>
+        <underline language="LA" method="pen" text="obseruatio" type="straight"/>
+        <underline language="LA" method="chalk" text="pra[e]terquam quod" type="straight"/>
+        <underline language="LA" method="chalk" text="pulcherrimus ordo motuum" type="straight"/>
+        <underline language="LA" method="chalk" text="extitisse casu" type="straight"/>
+        <underline language="LA" method="chalk" text="certissimas" type="straight"/>
+        <underline language="LA" method="chalk" text="motuum leges" type="straight"/>
+        
+        <mark language="LA" method="pen" name="X_sign" place="right_margin" text="discernent tempora"/>
+
+    </annotation>
+</transcription>

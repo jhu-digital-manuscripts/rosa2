@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.015r.tif" pagination="13" reader="John Dee" signature="b"/>
+    <annotation>
+        
+        <marginalia anchor_text="de coloribus scilicet hominum, ac moribus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        De coloribus ho[m]i[n]um et moribus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                On the colour of men and customs.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="omnibus animantibus, quae terrena congregatione gignu[n]tur, uiuendi" type="straight"/>
+        <underline language="LA" method="pen" text="necessitatis ineuitabili sententia contineri. Cedamus" type="straight"/>
+        <underline language="LA" method="pen" text="corusci solis incensa luminibus, &amp; sempiterni ardoris adustione torrida" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

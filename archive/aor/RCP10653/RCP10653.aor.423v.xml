@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.423v.tif" pagination="396" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Roger Pylston, not [.row..ed]  
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Roger Pyvelesdune 
+                    </marginalia_text>
+                    <person name="Roger de Puleston"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="primò Morganus" type="straight"/>
+        <underline language="LA" method="pen" text="misericordiam" type="straight"/>
+        <underline language="LA" method="pen" text="Rogerium de Pyuelesdune" type="straight"/>
+        <underline language="LA" method="pen" text="terra paucis" type="double"/>
+        
+    </annotation>
+</transcription>

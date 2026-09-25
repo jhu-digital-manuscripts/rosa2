@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.237v.tif" pagination="[237v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="lodando continuamente il Dio de Christiani" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Note, how naturall effects, may precurre Glory to god. 
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="infiammation della Luna." type="straight"/>
+        <underline language="IT" method="pen" text="&amp; lodauano il suo Dio: &amp; cosi stettero" type="straight"/>
+        <underline language="IT" method="pen" text="lodando" type="straight"/>
+        <underline language="IT" method="pen" text="continuamente" type="double"/>
+        <underline language="IT" method="pen" text="il Dio de' Christiani" type="straight"/>
+        <underline language="IT" method="pen" text="congiura, la" type="straight"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.079r.tif" pagination="157" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="officijs constat duobus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Duo officia</marginalia_text>
+                </position>
+            </language>
+            <translation>Two duties.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="partes, ut plurimis autoribus placuit, quinq[ue]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Partes quinq[ue]</marginalia_text>
+                </position>
+            </language>
+            <translation>Five parts.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Partitio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Partitio</marginalia_text>
+                </position>
+            </language>
+            <translation>Subdivisions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Egreßio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Egreßio</marginalia_text>
+                </position>
+            </language>
+            <translation>Egress.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoteles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aristoteles</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sed ante omnia intueri oportet, quod sit genus causae, quid in ea quaeratur, quae prosint, quae noceant, deinde quid co[n]firmandum sit ae refellendum, tum quomodo narrandum." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qua[e] facie[n]da sunt in hoc o[mn]e</marginalia_text>
+                </position>
+            </language>
+            <translation>These [things] are all to be done in every one.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Expositio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Expositio</marginalia_text>
+                </position>
+            </language>
+            <translation>Expoistion.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quaru[m] priores dua[e] probationi succedunt" type="straight"/>
+        <underline language="LA" method="pen" text="nouat, quòd" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

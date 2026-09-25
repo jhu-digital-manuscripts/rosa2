@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.098v.tif" pagination="188" reader="John Dee" signature="[Q iiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="statum pristinum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Pristinus status.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The original situation.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        A[nn]o 525  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In the year 525.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="regnum orientalium Saxonum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Regnu[m] Saxonum orie[n]taliu[m] incipit
+                    </marginalia_text>
+                    <location name="Essex"/>
+                </position>
+            </language>
+            <translation>
+                The Kingdom of Essex begins.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Saxonibus expulsos" type="straight"/>
+        <underline language="LA" method="pen" text="terras eius &amp; possessiones paternas affluenter subministrat" type="straight"/>
+        <underline language="LA" method="pen" text="rex" type="double"/>
+        <underline language="LA" method="pen" text="statum" type="double"/>
+        <underline language="LA" method="pen" text="vxorem duxit nomine Guenhumaram, ex nobili Romanorum genere procreatam" type="straight"/>
+        <underline language="LA" method="pen" text="magnificis ex regnis longe positis" type="double"/>
+        <underline language="LA" method="pen" text="longè manentes" type="double"/>
+        <underline language="LA" method="pen" text="regibus transmarinis" type="double"/>
+        <underline language="LA" method="pen" text="Arthurus parata" type="straight"/>
+        <underline language="LA" method="pen" text="classe maxima" type="grid"/>
+        <underline language="LA" method="pen" text="insulam" type="straight"/>
+        <underline language="LA" method="pen" text="Holandiam" type="straight"/>
+        <underline language="LA" method="pen" text="Guthla[n]diam" type="straight"/>
+        <underline language="LA" method="pen" text="atque Orcadum insulas ferrò flammáque" type="straight"/>
+        <underline language="LA" method="pen" text="has omnes" type="straight"/>
+        <underline language="LA" method="pen" text="constituit sub tributo" type="straight"/>
+        <underline language="LA" method="pen" text="anno, regnum orientalium" type="straight"/>
+        <underline language="LA" method="pen" text="Estsaxia" type="double"/>
+        <underline language="LA" method="pen" text="Erkenvvinus" type="double"/>
+        <underline language="LA" method="pen" text="fuit Saxuad" type="straight"/>
+        <underline language="LA" method="pen" text="VVoden" type="straight"/>
+        
+        <symbol name="Trine" place="left_margin"/>
+        <symbol name="Trine" place="left_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- maxima Hiberniae -->
+        <mark method="pen" name="comma" place="intext"/> <!-- applicanti Gillamurius -->
+        
+        <graph book_orientation="0" method="pen" place="tail" type="genealogical_tree">
+            <node anchor_text="Erkenvvinus" id="n1" person="Aescwine of Essex">Erkenwinus</node>
+            <node anchor_text="Off[a]e" id="n2" person="Offa">Offa</node>
+            <node anchor_text="Bredecani" id="n3" person="Bedca">Bredecanus</node>
+            <node anchor_text="Sigeuulf" id="n4" person="Sigefugel">Sigeuulf</node>
+            <node anchor_text="Spetuae" id="n5" person="Swaeppa">Spetua</node>
+            <node anchor_text="Gesac" id="n6" person="Gesecg">Gesac</node>
+            <node anchor_text="Andessc" id="n7" person="Andsecg">Andessc</node>
+            <node anchor_text="Saxuad" id="n8" person="Seaxneat">Saxuad</node>
+            <node anchor_text="VVoden" id="n9" person="Odin">Woden</node>
+            <link from="n9" relationship="has_child" to="n8"/>
+            <link from="n8" relationship="has_child" to="n7"/>
+            <link from="n7" relationship="has_child" to="n6"/>
+            <link from="n6" relationship="has_child" to="n5"/>
+            <link from="n5" relationship="has_child" to="n4"/>
+            <link from="n4" relationship="has_child" to="n3"/>
+            <link from="n3" relationship="has_child" to="n2"/>
+            <link from="n2" relationship="has_child" to="n1"/>
+        </graph>
+        
+    </annotation>
+</transcription>

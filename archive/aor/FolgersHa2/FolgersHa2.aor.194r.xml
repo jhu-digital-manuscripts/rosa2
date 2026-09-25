@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.194r.tif" pagination="211" reader="Harvey" signature="O2[r]"/>	<!-- ABO 198right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Lentum est, dabit: dat, hoc quoq[ue] est lentum: dedit.
+						Seneca in Hercule furente.
+					</marginalia_text>
+					<person name="Seneca"/>
+					<book title="Hercules Furens"/>
+				</position>
+			</language>
+			<translation>"Shall pay is slow – he pays; that, too, is slow – he has paid." [trans. Frank Miller, 1917]. Seneca in 'Hercules furens'.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Non lenta Herculis via, vt Bacchi.
+					</marginalia_text>
+					<person name="Hercules"/>
+					<person name="Bacchus"/>
+				</position>
+			</language>
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Lentezza, viltà.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Hercules' life is not sluggish, as is Bacchus'.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Fredericus 2. Dania[e]
+					</marginalia_text>
+					<person name="Frederick II of Denmark"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Rex.
+						È principe, priuatus:
+						è priuato, Princeps.
+						Vtrunq[ue] decorè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Frederick II, king of Denmark. Out of a prince, a private citizen; out of a private citizen, a prince. Both honorable.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Pater hodierni Regis adolescentis, Christiani 4.
+						Certè egregius vir, et magnus Rex.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The father of today's adolescent king, Christian 4.
+			Clearly a famous man and a great king.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Theise great Lords, little actours: but pretty men for a time. A short floorish, &amp; Godnight.
+						<!-- CG: Missing text added. -->
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Fac audire Demosthenem, Homeru[m]:
+						Legere Ciceronem, aut Virgilium:
+						et singula accuratissimè.
+					</marginalia_text>
+					<person name="Demosthenes"/>
+					<person name="Homer"/>
+					<person name="Cicero"/>
+					<person name="Virgil"/>
+				</position>
+			</language>
+			<translation>Do listen to Demosthenes and Homer. Do read Cicero, or Virgil: and singular authors most accurately.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Audit Deus: leget
+						Rex: iudicabit Criticus
+						Mundus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>God listens; the king will read; the world-critic will judge.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Nec in astra lentâ veniet, ut Baccus, viâ. Juno de Hercule.
+					</marginalia_text>
+					<person name="Bacchus"/>
+					<person name="Juno"/>
+					<person name="Hercules"/>
+				</position>
+			</language>
+			<translation>He does not come into the skies in a sluggish way, as Bacchus. Juno on Hercules.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Cesar' Augusto" type="straight"/>
+		<underline language="IT" method="pen" text="sparlaua di lui" type="straight"/>
+		<underline language="IT" method="pen" text="mi proui questa cosa" type="straight"/>
+		<underline language="IT" method="pen" text="io hò la lingua" type="straight"/>
+		<underline language="IT" method="pen" text="dir peggio di lui ch'egli" type="straight"/>
+		<underline language="IT" method="pen" text="Tiberio" type="straight"/>
+		<underline language="IT" method="pen" text="diceuano mal" type="straight"/>
+		<underline language="IT" method="pen" text="p[er]der piu" type="straight"/> <!--JG: Uncertain about contraction-->
+		<underline language="IT" method="pen" text="dice mal di" type="straight"/>
+		<underline language="IT" method="pen" text="il dire importa" type="straight"/>
+		<underline language="IT" method="pen" text="basta, che nessuno ci possa far male" type="straight"/>
+		<underline language="IT" method="pen" text="Principi saui" type="straight"/>
+		<underline language="IT" method="pen" text="godere della libertà" type="straight"/>
+		<underline language="IT" method="pen" text="Re Federigo di Danimarca" type="straight"/>
+		<underline language="IT" method="pen" text="valore &amp; di gran gouerno" type="straight"/>	
+		<underline language="IT" method="pen" text="solo riuerire" type="straight"/>
+		<underline language="IT" method="pen" text="anco amare sommamente" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; da ognuno" type="straight"/>
+		<underline language="IT" method="pen" text="molto humano &amp; piaceuole" type="straight"/>
+		<underline language="IT" method="pen" text="à tempo" type="straight"/>
+		<underline language="IT" method="pen" text="esser priuato co' suoi piu intimi famigliari" type="straight"/>	
+		<underline language="IT" method="pen" text="spogliatosi della grauità Regia" type="straight"/>
+		<underline language="IT" method="pen" text="priega maniero" type="straight"/>
+		<underline language="IT" method="pen" text="à rellegrarsi seco, &amp; far delle baie" type="straight"/>
+		<underline language="IT" method="pen" text="scherziamo" type="straight"/>
+		<underline language="IT" method="pen" text="burliamo" type="straight"/>
+		<underline language="IT" method="pen" text="siamo gioco[n]di, siamo liberi che no[n] ci è'l" type="straight"/>
+		<underline language="IT" method="pen" text="ei s'è ritirato" type="straight"/>
+		<underline language="IT" method="pen" text="sollazzato" type="straight"/>
+		<underline language="IT" method="pen" text="ritrattosi poi in sul" type="straight"/>
+		
+		<symbol name="SS" place="intext"/>
+		<symbol language="IT" name="Sun" place="intext" text="Principi saui"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="plus_sign" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--riferi-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--sen-->
+		<mark method="pen" name="quotation_mark" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--mal-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--qual-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ma-->
+		<mark method="pen" name="quotation_mark" place="right_margin"/>
+		<mark method="pen" name="plus_sign" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--gio-->
+		
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--persone. Et-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Danimarca"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="gouerno"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="solo riuerire"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="amare"/>
+		<mark method="pen" name="apostrophe" place="intext"/> <!--persone Costui-->
+		<mark method="pen" name="dot" place="intext"/> <!--baie, dicendo-->
+		<mark method="pen" name="plus_sign" place="intext"/>
+		<mark method="pen" name="apostrophe" place="intext"/> <!--ritirato. Et-->
+
+    </annotation>
+</transcription>

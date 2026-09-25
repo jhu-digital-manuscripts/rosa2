@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.166r.tif" pagination="331" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="in Philippicis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In philippics</marginalia_text>
+                    <book title="Philippics"/>
+                </position>
+            </language>
+            <translation>Philippics.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Et siquando firma comprehendi poterit, &amp; breui complexu uerborum finitio, esse id tum elegans" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qua[n]do breui v[er]borum co[m]plexu finire oratori licebit</marginalia_text>
+                </position>
+            </language>
+            <translation>When the speaker is permitted to a brief definition.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="quid sit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quid sit.</marginalia_text>
+                </position>
+            </language>
+            <translation>What something is?</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>finitionis vitia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Division of crimes.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Diffinie[n]di ratio</marginalia_text>
+                </position>
+            </language>
+            <translation>The reason of defining.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sacrilegij" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sacriligeiu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Sacrilege.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="furtum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>furtum</marginalia_text>
+                </position>
+            </language>
+            <translation>Theft.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Actor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Actor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Prosectutor.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ea duobus generibus euertitur, si aut falsa est, aut parum plena" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Diffi[niti]o[n]is infirma Duob[us] mo[d]is</marginalia_text> 
+                </position>
+            </language>
+            <translation>The weak parts of a definition in two manners.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Eius certus ordo est, quid sit, an hoc sit: &amp; in hoc ferè labor maior est, ut finitionem confirmes, quàm" type="straight"/>
+        <underline language="LA" method="pen" text="superuacua" type="straight"/>
+        <underline language="LA" method="pen" text="nihil ad causam per" type="straight"/>
+        <underline language="LA" method="pen" text="an ambigua, an contraria, an co[m]munis" type="straight"/>
+        <underline language="LA" method="pen" text="accomodari ad uoluntatem uerba poteru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="ut à notißimo exemplo, quò sit res lucidior, no[n] recedamus: Qui" type="straight"/>
+        <underline language="LA" method="pen" text="si aut falsa est, aut parum plena. Nam" type="straight"/>
+        <underline language="LA" method="pen" text="ut nihil ad quaestionem pertineat. Falsa" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="90" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

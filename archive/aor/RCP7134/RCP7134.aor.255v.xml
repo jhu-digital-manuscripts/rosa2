@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.255v.tif" pagination="[248v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>De moribus</marginalia_text>
+                </position>
+            </language>
+            <translation>On habits.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Homo ad ea inclinatur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ad qua[e] homines propensi erunt. vniversaliter in vita.</marginalia_text>
+                </position>
+            </language>
+            <translation>The things toward which men will be favourably disposed. Universally in life.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="auaros" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.113v.tif" pagination="224" reader="John Dee" signature="[T[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Pellitu[m]" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pellitus Astrologus
+                    </marginalia_text>
+                    <person name="Pellitus"/>
+                </position>
+            </language>
+            <translation>
+                The astrologer Pellitus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Salomon rex Bri[ta]n[niae].
+                    </marginalia_text>
+                    <person name="Salomon, King of Brittany"/>
+                </position>
+            </language>
+            <translation>
+                Salomon, King of Brittany
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tria eorum regna Demeciae" type="straight"/>
+        <underline language="LA" method="pen" text="videlicet, Venedociae" type="straight"/>
+        <underline language="LA" method="pen" text="Moeneuiae" type="straight"/>
+        <underline language="LA" method="pen" text="prouincias in sua iura" type="straight"/>
+        <underline language="LA" method="pen" text="obuiauit illi" type="straight"/>
+        <underline language="LA" method="pen" text="indicabat ei o[mn]ia qu[a]e fieba[n]t. Cadvvalin[us] verò" type="straight"/>
+        <underline language="LA" method="pen" text="Salomone[m] in minorem" type="straight"/>
+        <underline language="LA" method="pen" text="Cadvvalinu[m] regem Britonum" type="straight"/>
+        
+    </annotation>
+</transcription>

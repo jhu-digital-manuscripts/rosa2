@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.153v.tif" pagination="[153v]" reader="John Dee" signature="[V[v]"/>    
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>The hunting or taking of the tortoise...</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+
+        <marginalia anchor_text="continuando essi questo medicamento" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note the cure of the Leprosy.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="numero di testugini" type="straight"/>
+        <underline language="IT" method="pen" text="mangiano gli ammalati" type="straight"/>
+        <underline language="IT" method="pen" text="loro sangue" type="straight"/>
+        <underline language="IT" method="pen" text="che nacquero" type="double"/>
+        <underline language="IT" method="pen" text="tardano" type="double"/>
+        <underline language="IT" method="pen" text="esser tutta la Costa spiaggia arenosa; oue ne' tre mesi di Giugno, Luglio, &amp; Agosto ueniua no le testugini dalla terra ferma dell'" type="straight"/>
+        <underline language="IT" method="pen" text="una rotella commune" type="straight"/>
+        <underline language="IT" method="pen" text="a dormire, &amp; a far l'uoua nell'arena." type="straight"/>
+        <underline language="IT" method="pen" text="sta[n]chezza, per hauer fatto si lungo camino, dorme" type="straight"/>
+        <underline language="IT" method="pen" text="profondamente, che" type="straight"/>
+        <underline language="IT" method="pen" text="perche elle non possono drizzarsi" type="straight"/>
+        <underline language="IT" method="pen" text="mouersi dal luogo, doue le lasciano" type="straight"/>
+        <underline language="IT" method="pen" text="far la scielta" type="double"/>
+        
+        <mark method="pen" name="comma" place="intext" text="estugini era"/>
+        
+    </annotation>
+</transcription>

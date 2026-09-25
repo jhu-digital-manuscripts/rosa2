@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.443v.tif" pagination="436" reader="John Dee" signature="[Oooo ij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tàm" type="double"/>
+        <underline language="LA" method="pen" text="temporibus Britonu[m]" type="grid"/>
+        <underline language="LA" method="pen" text="quàm Anglorum, superius &amp; directu[m] dominium, regni Scoti[a]e habuerunt in possessione vel capitanei superioritatis" type="straight"/>
+        <underline language="LA" method="pen" text="nec vllis temporibus ipsum regnum in temporalibus pertinuit vel pertinet, quouis iure ad ecclesiam vestram supradictam" type="straight"/>
+        <underline language="LA" method="pen" text="sibi, feodale extitit" type="straight"/>
+        <underline language="LA" method="pen" text="Angliae, subfuerunt vel subijci consueuerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Neque reges Angliae super iuribus suis in regno praedicto, aut alijs suis temporalibus, coram aliquo iudice ecclesiastico vel seculari,              ex praeeminentia status su[a]e regiae dignitatis &amp; consuetudinis, cunctis temporibus irrefragabiliter obseruatae, responderunt, aut respondere debebant" type="straight"/>
+        <underline language="LA" method="pen" text="iudicialiter coram vobis, nec iudiciu[m] subeat quoquo modo, aut iura sua praedicta in dubium questionis deducat, nec" type="straight"/>
+        <underline language="LA" method="pen" text="vestram procuratores aut nuncios" type="straight"/>
+        <underline language="LA" method="pen" text="praecipuè" type="straight"/>
+        <underline language="LA" method="pen" text="praemissa cederent" type="straight"/>
+        <underline language="LA" method="pen" text="manifeste in exheridatione[m] iuris Coron[a]e" type="triple"/>
+        <underline language="LA" method="pen" text="necnon" type="straight"/>
+        <underline language="LA" method="pen" text="in praeiudicium" type="triple"/>
+        <underline language="LA" method="pen" text="libertatis" type="straight"/>
+        <underline language="LA" method="pen" text="defensione[m] ex debito, praestiti iuramenti astringimur" type="straight"/>
+        <underline language="LA" method="pen" text="permittimus" type="straight"/>
+        <underline language="LA" method="pen" text="sicut non possumus nec debemus" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- regnum alijs -->
+        
+        <errata amendedtext="partib[us]" copytext="paritib[us]" language="LA"/>
+        <errata amendedtext="exheredatione[m]" copytext="exheridatione[m]" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

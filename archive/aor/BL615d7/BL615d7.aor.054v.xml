@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.054v.tif" pagination="[54[v]]" reader="John Dee" signature="[Gvi[v]]"/>  
+    <annotation>
+        
+        <marginalia anchor_text="vn'altra Isola" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>3a Insula.</marginalia_text>
+                </position>
+            </language>
+            <translation>3rd island.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Fernandina" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Fernandina</marginalia_text>
+                    <location name="Fernandina"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A Policy.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="marauiglia" type="straight"/>
+        <underline language="IT" method="pen" text="che il tutto era vna istessa cosa, il" type="straight"/>
+        <underline language="IT" method="pen" text="per otto leghe" type="straight"/>
+        <underline language="IT" method="pen" text="vn'altra Isola" type="straight"/>
+        <underline language="IT" method="pen" text="XXVIII" type="straight"/>
+        <underline language="IT" method="pen" text="Corona di vetro verde" type="straight"/>
+        <underline language="IT" method="pen" text="da S. Saluatore" type="straight"/>
+        <underline language="IT" method="pen" text="Fernandina" type="straight"/>
+        <underline language="IT" method="pen" text="mandarlo con sue ambasciate" type="straight"/>
+        <underline language="IT" method="pen" text="fece, dandogli appresso alcune cosette" type="straight"/>
+        <underline language="IT" method="pen" text="lo dispensasse fra gli" type="straight"/>
+        <underline language="IT" method="pen" text="La cui buona relatione" type="double"/>
+        <underline language="IT" method="pen" text="causa, che subito la gente di quella Fernandina" type="straight"/>
+        
+    </annotation>    
+</transcription>

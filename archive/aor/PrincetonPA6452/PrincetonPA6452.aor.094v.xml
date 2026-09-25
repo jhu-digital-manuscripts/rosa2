@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.094v.tif" pagination="172" reader="Harvey" signature="[P2 v]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ludiones.</marginalia_text>
+                </position>
+            </language>
+            <translation>Players.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quia numerus Mineruae inuentum sit" hand="Italian">
+            <language ident="FR">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Au regard des nombres, Tite Liue en donne l’invention à Minerue, au commencement du 7. liure. 
+                        Mais la maniere de compter a esté diuerse à plusieurs peuples. 
+                        </marginalia_text>
+                    <person name="Livy"/>
+                    <person name="Minerva"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vigeners annotation upo[n] Palamedes, in Les Heroiques de Philostrate.</marginalia_text>
+                    <person name="Blaise de Vigenère"/>
+                    <person name="Palamedes"/>
+                    <book title="Les images, ou Tableaux de platte peinture de Philostrate Lemnien"/>
+                </position>
+            </language>
+            <translation>"Regarding numbers, Livy attributes their invention to Minerva, at the beginning of bk. 7. 
+                Yet the method of counting has varied among the various people." Vigeners annotation upo[n] Palamedes, 
+                in Les Heroiques de Philostrate.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ludi quoq[ue] scenici" type="straight"/>
+        <underline language="LA" method="pen" text="noua res bellicoso populo" type="straight"/>
+        <underline language="LA" method="pen" text="alia coelstis irae placamina" type="straight"/>
+        <underline language="LA" method="pen" text="parua quoq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="fermè principia omnia" type="straight"/>
+        <underline language="LA" method="pen" text="ipsa peregrina res" type="straight"/>
+        <underline language="LA" method="pen" text="sine carmine" type="straight"/>
+        <underline language="LA" method="pen" text="Iudiones ex Hetruria" type="straight"/>
+        <underline language="LA" method="pen" text="haud indecoros motus" type="straight"/>   
+        <underline language="LA" method="pen" text="imitari deinde eos iuuentus" type="straight"/>
+        <underline language="LA" method="pen" text="inconditis inter se iocularia funde[n]tes uersib[us]" type="straight"/>
+        <underline language="LA" method="pen" text="absoni à uoce motus" type="straight"/>
+        <underline language="LA" method="pen" text="L. Manlius Imperiosus, L." type="straight"/>
+        <underline language="LA" method="pen" text="aedis Iouis optimi" type="straight"/>
+        <underline language="LA" method="pen" text="qua Mineruae templu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quia numerus Mineruae inuentum sit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="head"/>
+        
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--car-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--mo-->
+        <mark method="pen" name="quotation_mark" place="right_margin"/> 
+        <mark method="pen" name="dash" place="right_margin"/> <!--Impe-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--scri-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="quia numerus Mineruae inuentum sit"/>
+        
+    </annotation>
+</transcription>

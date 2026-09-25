@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.006r.tif" reader="Harvey" signature="[Avii[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Roberti Valturij, de Re Militari, Libri XIJ: ad Pandulphu[m] Malatestam, Ariminensium Rege[m].</marginalia_text> <!--JG: It part of the title of the 12th chapter of this book-->
+                    <person name="Robertus Valturius"/>
+                    <person name="Sigismondo Pandolfo Malatesta"/>
+                    <book title="De re Militari"/>
+                    <location name="Rimini"/>
+                </position>
+            </language>
+            <translation>Book 12 of Robertus Valturius' 'De re militari': to Sigismondo Pandolfo Malatesta, lord of Rimini.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>The Dialogue betwene Mercury, and the Inglish Sowldiour,</marginalia_text>
+                    <book title="A right exelent and pleasaunt Dialogue"/>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>A fole of +</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>+ Frontines Mare.</marginalia_text> 
+                    <person name="Frontinus"/>
+                </position>
+            </language>
+        </marginalia>
+                
+           <marginalia hand="Italian"> <!--JG: I think this belongs to marginal note in head (Harvey uses #  and line to visualise the link). Should connect with REF ID-->           
+               <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>De Valturio, Jouius in Elgoijs Doctoru[m].
+                    </marginalia_text>
+                    <person name="Paolo Giovio"/>
+                    <person name="Robertus Valturius"/>
+                    <book title="Elogia doctorum virorum"/>
+                </position>
+            </language>
+               <translation>About Robertus Valturius, Paolo Giovio in 'Elogia doctorum virorum'.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>(Cohortatio.)</marginalia_text>
+                </position>
+            </language>
+            <translation>Encouragement.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Strategems, practicable in the Battail, &amp; also after [the] battail.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="To chose a place to fyght in." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Locus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Place.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="To order the araye" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ordo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Order.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The only resolute, &amp; actiue, rightly wise man, pra[e]sently applieth al to himself, &amp;
+                    actually appropriatith whatsoeuer worthy doings, writings, or sayings, of any other,
+                    To his own pra[e]gnant vses; &amp; to [the] quicker dispatching of his particular Causes, &amp; Effects:
+                    with powerable, &amp; inuincible successe.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>{ Omnis autem Polemica[e] Scientia[e], et Virtutis, ad hodierna[m] Vsque diem perfectissima Idea, Vnica
+                    Ca[e]saris Militia: Opus Inco[m]parabile, et ad cuius Methodu[m] Omnia Strategemata debeant referri: cum hodierna etiam Praxi.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>But towards this very day, the most perfect archetype of all military skills and virtues, [is] the unparallelled campaign of Caesar: 
+            an incomparable work, and all strategems ought to be referred to his methods: even with today's praxis.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="away feare" type="straight"/>
+        <underline language="EN" method="pen" text="oportunitie and tyme" type="straight"/>
+        <underline language="EN" method="pen" text="a place to" type="straight"/>
+        <underline language="EN" method="pen" text="order the araye" type="straight"/>
+        <underline language="EN" method="pen" text="traynes and disceytes" type="straight"/>
+        <underline language="EN" method="pen" text="ennemye escape" type="straight"/>
+        <underline language="EN" method="pen" text="through dispaire" type="straight"/>
+        <underline language="EN" method="pen" text="dissemble aduersities" type="straight"/>
+        <underline language="EN" method="pen" text="to order the battayle" type="straight"/>
+        <underline language="EN" method="pen" text="by constancye" type="straight"/>
+        <underline language="EN" method="pen" text="after the" type="straight"/>
+        <underline language="EN" method="pen" text="confirme and establysshe" type="straight"/>
+        <underline language="EN" method="pen" text="harde chaunces" type="straight"/>
+        <underline language="EN" method="pen" text="to ease aduersities" type="straight"/>
+        <underline language="EN" method="pen" text="keepe wauerynge" type="straight"/>
+        <underline language="EN" method="pen" text="myndes faythefull" type="straight"/>
+        
+        <mark method="pen" name="hash" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="hash" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/> <!--curved-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="oportunitie and tyme"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="a place to"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="order the araye"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="through dispaire"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/> <!--curved-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="after the"/>
+        
+        
+    </annotation>
+</transcription>

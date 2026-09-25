@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.062r.tif" pagination="443" reader="Harvey"/>	<!-- ABO 66right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nec inutilibus argutijs quicq[uam] vanius: nec utilibus subtilitatibus quicq[uam]
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						preciosius.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing is more vain than useless sophistry, nor is anything more precious than useful subtleties.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						dextrè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skillfully.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia anchor_text="diuersi humori di persone" hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( humori di persone.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The humors of different people.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Ingenium ingeniorum ad vivum. )
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The genius of geniuses, in the flesh.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Totius subtilitatis subtilitas subtiliss[im]a
+						sed in vtilissimis. Vt s[upr]a, 26.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The most subtle subtley of all subtlety,
+				but in useful things. As above, p. 26.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Infinitos supplet defectus, ingenij et lingua[e] celeritas.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Haste produces infinite failures in character and language. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Nihil in mundo, plus prodest, aut delectat, quàm ingenij acumen: quo
+						omnes vel inuiti capiuntur.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Nothing in the world is more useful or delightful than a sharp wit, with which
+				all reluctant people can be overcome.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="tempo riesce" type="straight"/>
+		<underline language="IT" method="pen" text="molto pronto" type="straight"/>
+		<underline language="IT" method="pen" text="diuersi humori di persone" type="straight"/>
+		<underline language="IT" method="pen" text="diuersamente uestite et adorne" type="straight"/>
+		<underline language="IT" method="pen" text="a ogn'uno" type="straight"/>
+		<underline language="IT" method="pen" text="qualche oppositione" type="straight"/>
+		<underline language="IT" method="pen" text="accorgeuamo di che sorte humor fosse il nostro" type="straight"/>
+		<underline language="IT" method="pen" text="notar gli humori altrui" type="straight"/>
+		<underline language="IT" method="pen" text="due Francesi molto bene" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; attilatamente" type="straight"/>
+		<underline language="IT" method="pen" text="feminilmente adorni" type="straight"/>
+		<underline language="IT" method="pen" text="anelletti di oro a gli orecchi" type="straight"/>
+		<underline language="IT" method="pen" text="donne delicate" type="straight"/>
+		<underline language="IT" method="pen" text="Quiui ridendo" type="straight"/>
+		<underline language="IT" method="pen" text="queste morbidezze portateci" type="straight"/>
+		<underline language="IT" method="pen" text="già di Libia" type="straight"/>
+		<underline language="IT" method="pen" text="soleuan forarsi gli orecchi" type="straight"/>
+		<underline language="IT" method="pen" text="riportate in Italia" type="straight"/>
+		<underline language="IT" method="pen" text="argutamente M." type="straight"/>
+		<underline language="IT" method="pen" text="una congiettura" type="straight"/>
+		<underline language="IT" method="pen" text="dita" type="straight"/>
+		<underline language="IT" method="pen" text="nelle" type="straight"/>
+		<underline language="IT" method="pen" text="l'anella nelle orecchie" type="straight"/>
+		<underline language="IT" method="pen" text="un cantadino a Vinetia" type="straight"/>
+		<underline language="IT" method="pen" text="alcune robe al Pattrone" type="straight"/>
+		<underline language="IT" method="pen" text="da far collettione" type="straight"/>
+		<underline language="IT" method="pen" text="portar senza altro" type="straight"/>
+		<underline language="IT" method="pen" text="del pane &amp; del uino" type="straight"/>
+		<underline language="IT" method="pen" text="non hauesse" type="straight"/>
+		<underline language="IT" method="pen" text="ardimento di mangiar" type="straight"/>
+		<underline language="IT" method="pen" text="staua, non so che" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="notar diuersi humori di persone" type="straight"/>
+		<underline language="IT" method="chalk" text="uestite et adorne passauano, a ogn'uno" type="straight"/>
+		<underline language="IT" method="chalk" text="sorte humor fosse il nostro in uoler" type="straight"/>
+		<underline language="IT" method="chalk" text="attilatamente, per non dir feminilmente" type="straight"/>
+		<underline language="IT" method="chalk" text="c'haueuano gli anelletti di" type="straight"/>
+		<underline language="IT" method="chalk" text="dita nelle mani. &amp; perche?" type="straight"/>
+		<underline language="IT" method="chalk" text="egli, portan l'anella nelle" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol language="IT" name="SS" place="right_margin" text="diuersi humori di persone"/>
+		<symbol name="SS" place="left_margin"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- Borgomi -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- anelletti di -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- orec -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- porta -->
+		
+	    	<!-- Left margin -->
+	    <mark language="IT" method="pen" name="plus_sign" place="left_margin" text="molto pronto"/> 
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- quiui -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- che ... demmo -->
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- ler notar -->
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- oro a gli -->
+		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- ci gia di Libia -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- che ... le orecchie -->
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- fece portar -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark method="pen" name="dot" place="intext"/> <!-- d'honore, a -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- lode. Erauamo -->
+		<mark method="pen" name="comma" place="intext"/> <!-- Vinetia egli -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark: notar -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="humori"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark: persone -->
+	    <mark method="pen" name="dot" place="intext"/> <!-- passauano, a -->
+		<mark method="pen" name="equal_sign" place="intext"/> <!-- qualche oppositione -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="humor"/>
+		<mark method="pen" name="comma" place="intext"/> <!-- nostro in -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="gli humori altrui"/>
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- altru. Fra -->
+		<mark method="pen" name="comma" place="intext"/> <!-- adorni come -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark: anelletti -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="queste morbidezze"/>
+		<mark method="pen" name="comma" place="intext"/> <!-- chi fossero -->
+		<mark method="pen" name="dot" place="intext"/> <!-- Italia, argutamente -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="argutamente"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="una congiettura"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- habbiano dita -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark: dita -->
+		<mark method="pen" name="comma" place="intext"/> <!-- io perche-->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- orecchie -->
+		<mark method="pen" name="dot" place="intext"/> <!-- mangiar, si -->
+
+    </annotation>
+</transcription>

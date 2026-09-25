@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.042r.tif" pagination="67" reader="John Dee" signature="f 4"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Varia[e] ♀ decernendi potestates difficile inveniri possunt. 
+                    </marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>
+                Venus's various abilities of determining can be invented easily.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Comparatio pictura[e] et influenti[a]e coelestis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The comparison of pictures and celestial influences.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="semper ♀, cum ☾" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ♀ et ☾
+                    </marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>
+                Venus and the moon
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mulieris genitura
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The constellation of a woman.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Signi natura re[m] auget  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The nature of the sign increases the matter.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ♀ gaudet sole[m] sequi
+                    </marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>
+                Venus rejoices in following the sun.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ♀ datrix vitae.
+                    </marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>
+                Venus the donor of life.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="habet enim haec stella uarias, sed quae difficile inueniri possint decernendi" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; erunt ab omni uitiorum labe sepositi" type="straight"/>
+        <underline language="LA" method="pen" text="nouercis, aut filiabus, uel fratribus coire cognuntur" type="straight"/>
+        <underline language="LA" method="pen" text="♀, cum ☾ simul posita, aut de quadrato coniuncta, amoris illecebras, aut infamiae" type="straight"/>
+        <underline language="LA" method="pen" text="cupiditate praeposteros" type="straight"/>
+        <underline language="LA" method="pen" text="Alias quoq[ue] mulieres, uiriles facit actus appetere. Sed haec tunc fortius facit, si simul cum ☾, ista radiatione coniuncta" type="straight"/>
+        <underline language="LA" method="pen" text="Gaudet e[ni]m per nocte[m], si se ☾, ♂ Merurióq[ue] co[n]iu[n]xerit" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]stituit[ur] ♀, si cu[m] ☉ fuerit collocata" type="straight"/>
+        
+        <symbol name="Saturn" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Moon" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="☉is" copytext="☉" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+   
+    </annotation>
+</transcription>

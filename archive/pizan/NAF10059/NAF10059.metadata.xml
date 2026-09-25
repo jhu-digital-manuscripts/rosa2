@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>192</totalPages>
+    <dimensions units="mm">
+        <width>215</width>
+        <height>298</height>
+    </dimensions>
+    <dates>
+        <startDate>1401</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="">
+            <language>fr</language>
+            <title>Recueil d'opuscules français de Jean Gerson, Guillaume de Tignonville, Christine de Pisan, etc.</title>
+            <textId/>
+            <pages end="191v" start="1r">191</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>48</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="">
+            <language>fr</language>
+            <title>Traité de Jean Gerson contre le Roman de la Rose</title>
+            <textId/>
+            <pages end="10r" start="1r">10</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>45</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="">
+            <language>fr</language>
+            <title>Plusieurs exemples et enseignemens du tressaint nom de nostre sire Jhesucrist, et comme l'on peut pechier en pluseurs manieres en l'esglise... C'est grant paresce quand on renomme...</title>
+            <textId/>
+            <pages end="15v" start="10v">5</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>45</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="">
+            <language>fr</language>
+            <title>Dits des philosophes, traduits en français par Guillaume de Tignonville</title>
+            <textId/>
+            <pages end="63v" start="16r">47</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>43</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="">
+            <language>fr</language>
+            <title>Épître d'Othéa à Hector, poème de Christine de Pisan, avec glose et explication allégorique</title>
+            <textId/>
+            <pages end="113r" start="65r">48</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>33</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="">
+            <language>fr</language>
+            <title>Heures de contemplacion sur la Passion de nostre seigneur Jhesucrist, par Christine de Pisan.</title>
+            <textId/>
+            <pages end="144r" start="114r">30</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>29</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Christine de Pizan</title>
+            <commonName>Français NAF10059</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>NAF 10059</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Christine de Pizan</title>
+            <commonName>Français NAF10059</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscript</type>
+            <material>parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>NAF 10059</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

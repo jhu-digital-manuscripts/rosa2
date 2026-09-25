@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.303r.tif" pagination="57" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="quodam animi ardore atque impetu concitati; morte[m] arde[n]tiore studio peteret" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        quoda[m] ardore a[nim]i atq[ue] impetu co[n]citati
+                        morte[m] arde[n]tiore studio petere.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Agitated by a certain frenzy of the mind and impluse.
+                To seek death with more fervent passion.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="imperiosum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                       imp[er]iosus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Powerful.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]sessori" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                      consessor
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>A companion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aequitas, fides, iustitia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Æquitas. fides. iusticia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Equality. Faithfulness. Justice.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tempera[n]tiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tempera[n]tia.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Temperance.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fortes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fortes.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Brave.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="P. Decius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        P. Decius.
+                    </marginalia_text>
+                    <person name="Publius Decius Mus I"/>
+                </position>
+            </language>
+            <translation>Publius Decius Mus I.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Leonidas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Leonidas.
+                    </marginalia_text>
+                    <person name="Leonidas I"/>
+                </position>
+            </language>
+            <translation>Leonidas I.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Epamino[n]das" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Epaminondas.
+                    </marginalia_text>
+                    <person name="Epaminondas"/>
+                </position>
+            </language>
+            <translation>Epaminondas.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="A. Varus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        A Varus
+                    </marginalia_text>
+                    <person name="Alfenus Varus"/>
+                </position>
+            </language>
+            <translation>Alfenus Varus.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        [Br - deleted] Torquatus.
+                    </marginalia_text>
+                    <person name="Lucius Manlius Torquatus"/>   <!-- DO: This might be referring to his father; not sure... -->
+                </position>
+            </language>
+            <translation>Lucius Manlius Torquatus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="L. Thorius Balbus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        L. Thorius balbus
+                    </marginalia_text>
+                    <person name="Lucius Thorius Balbus"/>
+                </position>
+            </language>
+            <translation>Lucius Thorius Balbus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sacrificia &amp; fana contemneret" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sacrificia, fana spreta.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Sacrifices and shrines rejected.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Epicuri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Epicuri vita.
+                    </marginalia_text>
+                    <person name="Epicurus"/>
+                </position>
+            </language>
+            <translation>The life of Epicurus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M . Regulu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        M Regulus.
+                    </marginalia_text>
+                    <person name="Marcus Atilius Regulus"/>   
+                </position>
+            </language>
+            <translation>Marcus Regulus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="potantem in rosa Thorium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Potans in Rosa Thorius.
+                    </marginalia_text>
+                    <person name="Lucius Thorius Balbus"/>
+                </position>
+            </language>
+            <translation>Thorius carousing amongst the roses.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fidem co[n]stantiámque" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Fides, Constantia Reguli.
+                    </marginalia_text>
+                    <person name="Marcus Atilius Regulus"/>   
+                </position>
+            </language>
+            <translation>The faithfulness and constancy of Regulus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aequitas, fides, iustitia proficisca[n]tur à natura, etsi" type="straight"/>
+        <underline language="LA" method="pen" text="vel tempera[n]tiam, quae moderatio est cupiditatu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="seipsum flagitiosum" type="straight"/>
+        <underline language="LA" method="pen" text="voluptatúmne calculis subductis praelium ineunt, sanguinem pro patria profundunt, an quodam" type="straight"/>
+        <underline language="LA" method="pen" text="imperiosum" type="straight"/>
+        <underline language="LA" method="pen" text="sciret confestim esse moriendu[m], eámque morte[m] arde[n]tiore studio peteret" type="straight"/>
+        <underline language="LA" method="pen" text="è continenti genere" type="straight"/>
+        <underline language="LA" method="pen" text="virtuti tradat constringendam voluptas, sed" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]sessori" type="straight"/>
+        <underline language="LA" method="pen" text="ponebas cumulatu[m] aliquem plurimis &amp; maximis voluptatibus" type="straight"/>
+        <underline language="LA" method="pen" text="exquisita posset inueniri voluptas" type="straight"/>
+        <underline language="LA" method="pen" text="vt illa plurima in sua patria sacrificia &amp; fana contemneret: ita non timidus ad morte[m]" type="straight"/>
+        <underline language="LA" method="pen" text="vt in acie sit ob remp. interfectus" type="straight"/>
+        <underline language="LA" method="pen" text="eo cibo qui &amp; suauissimus esset, &amp; idem facillimus ad concoquendum: vino ad voluptatem, &amp; ne noceret: caetera illa adhibebat,              quibus demptis, negat" type="straight"/>
+        <underline language="LA" method="pen" text="tamen medicis plus quàm philosophis vteretur: color" type="straight"/>
+        <underline language="LA" method="pen" text="vigiliis &amp; fame cruciaretur" type="straight"/>
+        <underline language="LA" method="pen" text="potantem in rosa Thorium" type="straight"/>
+        <underline language="LA" method="pen" text="casum, quem propter fidem co[n]stantiámque susceperat: qui nobis miserabilis videtur au[dientibus]" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="pin" place="head" text="imp[er]iosus"/>
+        <mark language="LA" method="pen" name="duopunctus_with_antenna" place="head" text="consessor"/>
+        <mark method="pen" name="pin" place="right_margin"/>
+        <mark method="pen" name="duopunctus_with_antenna" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+       
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+    </annotation>
+</transcription>

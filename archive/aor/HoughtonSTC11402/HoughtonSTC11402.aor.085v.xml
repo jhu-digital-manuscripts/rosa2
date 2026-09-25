@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.085v.tif" reader="Harvey" signature="[Kvi[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>pore helpes/</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vt s[upr]a. l.I.c.7.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0055" text="l.I.c.7."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Pore helpes, as above, book 1, chapter 7.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="constant and bold disceite" type="straight"/>
+        <underline language="EN" method="pen" text="Pompeius garrison" type="straight"/>
+        <underline language="EN" method="pen" text="of Cesars hoste" type="straight"/>
+        <underline language="EN" method="pen" text="Annibal laye" type="straight"/>
+        <underline language="EN" method="pen" text="barelles of meale downe" type="straight"/>
+        <underline language="EN" method="pen" text="the streme" type="straight"/>
+        <underline language="EN" method="pen" text="the besyeged" type="straight"/>
+        <underline language="EN" method="pen" text="Anniball with castynge a chaine ouer the" type="straight"/>
+        <underline language="EN" method="pen" text="they scatered nuttes" type="straight"/>
+        <underline language="EN" method="pen" text="in the ryuer" type="straight"/>
+        <underline language="EN" method="pen" text="whiche passed the chaynes" type="straight"/>
+        <underline language="EN" method="pen" text="that foode" type="straight"/>
+        <underline language="EN" method="pen" text="salte to" type="straight"/>
+        <underline language="EN" method="pen" text="packed in wyne vessels" type="straight"/>
+        <underline language="EN" method="pen" text="sent beastes downe" type="straight"/>
+        <underline language="EN" method="pen" text="the streme" type="straight"/>
+        <underline language="EN" method="pen" text="we want" type="straight"/>
+        <underline language="EN" method="pen" text="seme plentuouse" type="straight"/>
+        <underline language="EN" method="pen" text="Romaynes" type="straight"/>
+        
+        <mark method="pen" name="double_vertical_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="constant and bold disceite"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="Anniball with castynge a chaine ouer the"/>   
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="packed in wyne vessels"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="sent beastes downe"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--great-->
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="constant"/>
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="bold disceite"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="barelles of meale"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

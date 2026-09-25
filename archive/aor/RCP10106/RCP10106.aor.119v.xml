@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.119v.tif" pagination="238" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Nam ut cantus uocis plurimum iuuat sociata neruorum concordia, si tamen tardior manus, nisi inspectis, dimensis'que singulis, quibus quaeq[ue] uox fidibus iungenda sit,              dubitet, potius fuerit esse contentum eo, quod simplex canendi natura tulerit: ita huiusmodi praeceptis debet quidem apta esse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Similitudo</marginalia_text>
+                </position>
+            </language>
+            <translation>Similarity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exercitatione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Exercitatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Exercise.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sic oratoris cogitationem nihil moretur haec uarietas argumentorum &amp; copia, quasi offerat se, &amp; occurrat: &amp; ut litterae syllabaeq[ue] scribentium cogitationem              non exigunt, sic rationes sponte quadam sequantur." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Comparatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Comparison.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="παράδειγμα" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>παράδειγμα</marginalia_text>
+                </position>
+            </language>
+            <translation>Comparison.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="παραβολή" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>παραβολή</marginalia_text>
+                </position>
+            </language>
+            <translation>Simile.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="παράδειγμα τί" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>παράδειγμα τί</marginalia_text>
+                </position>
+            </language>
+            <translation>Some comparison.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Socrates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Socratis mos.</marginalia_text>
+                    <person name="Socrates"/>
+                </position>
+            </language>
+            <translation>The manner of Socrates.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sed hoc exercitatione multa consequendum" type="straight"/>
+        <underline language="LA" method="pen" text="omni similium appostione" type="straight"/>
+        <underline language="LA" method="pen" text="ijs, quae rerum gestarum autoritate nituntur" type="straight"/>
+        <underline language="LA" method="pen" text="collationem" type="straight"/>
+        
+    </annotation>
+</transcription>

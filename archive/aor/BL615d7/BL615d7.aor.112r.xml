@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.112r.tif" pagination="112" reader="John Dee"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="Giardino della Reina" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Giardino della Reina</marginalia_text>
+                    <location name="Jardines de la Reina"/>
+                </position>
+            </language>
+            <translation>Jardines de la Reina.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="CLX Isole" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>160 Insula[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>160 islands.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Grue; rosse, come scarlatto" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>red Cranes.</marginalia_text>
+               </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Testuggini, &amp; molte delle loro voua" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The Tortace eggs</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="e vano il voler metter nome a ciascuna" type="straight"/>
+        <underline language="IT" method="pen" text="le chiamò tutte in generale Giardino della Reina" type="straight"/>
+        <underline language="IT" method="pen" text="Nordeste" type="straight"/>
+        <underline language="IT" method="pen" text="al Noroeste" type="straight"/>
+        <underline language="IT" method="pen" text="al Sudoeste" type="straight"/>
+        <underline language="IT" method="pen" text="CLX" type="straight"/>
+        <underline language="IT" method="pen" text="diuise da canali profondi" type="straight"/>
+        <underline language="IT" method="pen" text="molte Grue della grandezza" type="straight"/>
+        <underline language="IT" method="pen" text="erano rosse, come scarlatto" type="double"/>
+        <underline language="IT" method="pen" text="Corui, &amp; Grue" type="straight"/>
+        <underline language="IT" method="pen" text="Corui marini" type="straight"/>
+        <underline language="IT" method="pen" text="tanto il numero de' canali" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="head" type="map"/>
+        
+    </annotation>
+</transcription>

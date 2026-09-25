@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.138v.tif" pagination="276" reader="Harvey" signature="[Aaij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        On kyngdom sufficient for on kynge.
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Ne Hercules quide[m] contra duos.
+                    </marginalia_text>
+                    <person name="Hercules"/>
+                </position>
+            </language>
+            <translation>
+                Not even Hercules against both.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Danoru[m] in Anglia[m] militaris jncursio.
+                    </marginalia_text>
+                    <emphasis method="pen" text="militaris incursio" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                The military incursion of the Danish against England. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Danorum Reges" type="straight"/>
+        <underline language="LA" method="pen" text="ambiunt vicina regna" type="straight"/>
+        <underline language="LA" method="pen" text="parta celerius perdunt" type="straight"/>
+        <underline language="LA" method="pen" text="Canutus propagaturus" type="straight"/>
+        <underline language="LA" method="pen" text="bellicam maiorum gloriam" type="straight"/>
+        <underline language="LA" method="pen" text="Anglicis creuisse titulis" type="straight"/>
+        <underline language="LA" method="pen" text="ex vnius insulae" type="straight"/>
+        <underline language="LA" method="pen" text="stolidi, ac" type="straight"/>
+        <underline language="LA" method="pen" text="regno carere" type="straight"/>
+        <underline language="LA" method="pen" text="quàm inter paruulae" type="straight"/>
+        <underline language="LA" method="pen" text="Daniae angustias" type="straight"/>
+        <underline language="LA" method="pen" text="inclusum maiestatis" type="straight"/>
+        <underline language="LA" method="pen" text="Angliae sple[n]dor &amp; opulentia" type="straight"/>
+        <underline language="LA" method="pen" text="qui duo regna" type="straight"/>
+        <underline language="LA" method="pen" text="vel affinitate quaesita" type="straight"/>
+        <underline language="LA" method="pen" text="gubernare student" type="straight"/>
+        <underline language="LA" method="pen" text="maius habebunt ingenium in conseruando" type="straight"/>
+        <underline language="LA" method="pen" text="quàm acquirendo" type="straight"/>
+        <underline language="LA" method="pen" text="discordiarum semina" type="straight"/>
+        <underline language="LA" method="pen" text="vel internae" type="straight"/>
+        <underline language="LA" method="pen" text="rebellionis" type="straight"/>
+        <underline language="LA" method="pen" text="externae incursionis" type="straight"/>
+        <underline language="LA" method="pen" text="pro illis, vel" type="straight"/>
+        <underline language="LA" method="pen" text="Duo i[m]peria vix ab vno feliciter gunerna[n]t. Exercitus semper" type="straight"/>
+        <underline language="LA" method="pen" text="impendere sanguinem" type="straight"/>
+        <underline language="LA" method="pen" text="latrocinandi indubitatam" type="straight"/>
+        <underline language="LA" method="pen" text="confirmatam" type="straight"/>
+        <underline language="LA" method="pen" text="esse contemptui" type="straight"/>
+        <underline language="LA" method="pen" text="Rex duobus, vel pluribus regnis" type="straight"/>
+        <underline language="LA" method="pen" text="vtrumuis intendere" type="straight"/>
+        <underline language="LA" method="pen" text="Regi vtrius" type="straight"/>
+        <underline language="LA" method="pen" text="vtriusq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="dimidiari" type="straight"/>
+        <underline language="LA" method="pen" text="praefecerit Viceregem" type="straight"/>
+        <underline language="LA" method="pen" text="citius" type="straight"/>
+        <underline language="LA" method="pen" text="ad vnum" type="straight"/>
+        <underline language="LA" method="pen" text="thesauri exhauriuntur" type="straight"/>
+        <underline language="LA" method="pen" text="populi perimuntur" type="straight"/>
+        <underline language="LA" method="pen" text="deniq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="pro vno regno" type="straight"/>
+        <underline language="LA" method="pen" text="plura, peioraq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="pro pluribus" type="straight"/>
+        <underline language="LA" method="pen" text="acquirendis, &amp; conseruandis" type="straight"/>
+        <underline language="LA" method="pen" text="Rex ergo" type="straight"/>
+        <underline language="LA" method="pen" text="imperetq[ue] suauiter" type="straight"/>
+        <underline language="LA" method="pen" text="alia regna" type="straight"/>
+        <underline language="LA" method="pen" text="veluti continuos cruciatus" type="straight"/>
+        <underline language="LA" method="pen" text="valere" type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="Duo iperia vix ab vno feliciter gunerna[n]t. Exercitus semper"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- deficere, stolidi -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="inclusum maiestatis"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- maiestatis -->
+        <mark method="pen" name="dot" place="intext"/> <!-- in deditos --> 
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Rex duobus, vel pluribus regnis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="vtrumuis intendere"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="pro vno regno"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="pro pluribus"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="alia regna"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="cruciatus"/>
+        
+    </annotation>
+</transcription>

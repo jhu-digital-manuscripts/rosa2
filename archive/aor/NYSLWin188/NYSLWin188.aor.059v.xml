@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.059v.tif" pagination="[59[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="stein ; Eysen" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Lapides ferrum }
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Rocks, metal.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sternen habent ein anziehende krafft" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Stellarum vis attractiua
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The attractive force of stars.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="die Leut auß dene[n] er zeucht die wärme so sie in kra[n]ckheiten belade[n] sein" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sick folks fele [that] mones operation most, in her Attraction
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="ist in der wärme keine kranckheit oder kleine" hand="Italian">
+            <language ident="DE">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        In der Wärme ist keine kranckheit oder kleine
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>In the heat there is little or no illness.</translation> 
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="kein Mineral geboren" type="straight"/>
+        <underline language="DE" method="pen" text="bewiesen hat" type="straight"/>
+        <underline language="DE" method="pen" text="rechte natürliche stein seindt von Him[m]el gefallen" type="straight"/>
+        <underline language="DE" method="pen" text="kein anderst als Eysen" type="straight"/>
+        <underline language="DE" method="pen" text="als Eysen" type="straight"/>
+        <underline language="DE" method="pen" text="genus von einem steine" type="double"/>
+        <underline language="DE" method="pen" text="alle Sternen habent ein anziehende krafft an sich" type="straight"/>
+        <underline language="DE" method="pen" text="Sonne zeucht an sich was feucht" type="straight"/>
+        <underline language="DE" method="pen" text="der Mondt zeucht an sich was warm ist in der natur" type="straight"/>
+        <underline language="DE" method="pen" text="das kalte" type="straight"/>
+        <underline language="DE" method="pen" text="das Wasser" type="straight"/>
+        <underline language="DE" method="pen" text="Mond das warm" type="straight"/>
+        <underline language="DE" method="pen" text="eine warme natur ist in eine[m] gescho[e]pff die" type="straight"/>
+        <underline language="DE" method="pen" text="zeucht er" type="straight"/>
+        <underline language="DE" method="pen" text="auss dene[n] er" type="straight"/>
+        <underline language="DE" method="pen" text="zeucht die wärme" type="double"/>
+        <underline language="DE" method="pen" text="so sie in kra[n]ckheiten belade[n] sein so empfinde[n] sie so die kranckheit" type="straight"/>
+        <underline language="DE" method="pen" text="von kälte ist" type="double"/>
+        <underline language="DE" method="pen" text="vnd ist in der wärme keine kranckheit oder kleine" type="straight"/>
+        <underline language="DE" method="pen" text="entzeucht er jm die wärme darumb so wirt er krancker" type="straight"/>
+        <underline language="DE" method="pen" text="das sonst nicht" type="straight"/>
+        
+        <symbol language="DE" name="Sun" place="right_margin" text="die Sonne"/>
+        <symbol language="DE" name="Moon" place="right_margin" text="der Mond"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

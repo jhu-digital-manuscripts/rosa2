@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.090v.tif" pagination="180" reader="John Dee" signature="[m 2[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="praeparatione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pra[e]paratio</marginalia_text>
+                </position>
+            </language>
+            <translation>Preparation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quaeritur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Qua[e]stio</marginalia_text>
+                </position>
+            </language>
+            <translation>Question.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Milone" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Milone</marginalia_text>
+                    <book title="Pro Milone"/>
+                </position>
+            </language>
+            <translation>Pro Milone.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro* Vareno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro [Vareno]</marginalia_text>
+                    <book title="Pro Vareno"/>
+                </position>
+            </language>
+            <translation>Pro [Vareno].</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="Scire quidem eum in summa quid actum sit, tamen rationem quoque facti cuiusq[ue] cognoscere ne grauetur" type="straight"/>
+        <underline language="LA" method="pen" text="Interim" type="straight"/>
+        <underline language="LA" method="pen" text="interim" type="straight"/>
+        <underline language="LA" method="pen" text="quoties crimen non repellendum tantum, sed etiam transferendum erit: ut prius his defensis, uelut initium              sir aliu[m] culpandi" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.033v.tif" pagination="66" reader="John Dee" signature="[e[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Non co[m]munes loci, siue qui sunt in uitia directi, quales legimus à Cicerone co[m]positos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Loci co[mmun]es Ciceronis.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Common-places Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quinto quoque Hortensio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Q[uintus] Hortensius.</marginalia_text>
+                    <person name="Quintus Hortensius"/>
+                </position>
+            </language>
+            <translation>Quintus Hortensius.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="neq[ue] erit uerendum" type="straight"/>
+        
+        <mark method="pen" name="dot" place="left_margin"/>
+        <mark method="pen" name="dot" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

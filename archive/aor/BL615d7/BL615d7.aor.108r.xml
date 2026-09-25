@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.108r.tif" pagination="108" reader="John Dee" signature="Oiiij"/>
+    
+    <annotation>
+                
+        <marginalia anchor_text="l'acquetassero" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>rather disquiet theyr myndes</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="l'Ogieda" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ogíeda</marginalia_text>
+                    <person name="Alonso de Ojeda"/>
+                </position>
+            </language>
+            <translation>Ojeda.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Pietro" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>M. Pietro Margarete</marginalia_text>
+                    <person name="Pedro Marguerite"/>
+                </position>
+            </language>
+            <translation>M. Pedro Marguerite.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cibao, che in lingua Indiana vuol dir Sassosa" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cibao [is] Sassosa</marginalia_text>
+                    <location name="Cibao"/>
+                </position>
+            </language>
+        </marginalia>
+       
+        <marginalia anchor_text="XXIX" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>IX. forte</marginalia_text>     <!-- DO: Not quite sure what this refers to. It's 18 days since the last date mentioned, so I've anchored the date. It could be related to the 'fortezza' but this seems unlikely...-->
+                <!-- MB. I would go 'forte' here too. -->
+                </position>
+            </language>
+            <translation>19 by chance.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="CCCC huomini" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>400</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Fiume dell'oro" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Fl[umen] dell'oro.</marginalia_text>
+                </position>
+            </language>
+            <translation>The del Oro river.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fece prigione il Cacique, che quiui era, &amp; vn suo fratello, &amp; vn nipote, &amp; li mandò in ferri all'Ammiraglio; &amp; fece tagliar le orecchie ad vn suo suddito" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rigor</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="percioche" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The reason why.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="CCCC huomini" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>These are the 400 which Peter Martyr speaketh of.</marginalia_text>
+                    <person name="Peter Martyr d'Anghiera"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="region, l'acquetassero" type="double"/>
+        <underline language="IT" method="pen" text="&amp; fossero temuti da gl'Indiani, &amp; si auezzassero a'loro cibi a" type="straight"/>
+        <underline language="IT" method="pen" text="Capitano l'Ogieda, fin che giungessero" type="straight"/>
+        <underline language="IT" method="pen" text="M. Pietro" type="straight"/>
+        <underline language="IT" method="pen" text="il qual" type="straight"/>
+        <underline language="IT" method="pen" text="loro per l'Isola" type="straight"/>
+        <underline language="IT" method="pen" text="l'Ogieda" type="straight"/>
+        <underline language="IT" method="pen" text="Castellano nella fortezza" type="straight"/>
+        <underline language="IT" method="pen" text="passato verno" type="double"/>
+        <underline language="IT" method="pen" text="Cibao" type="straight"/>
+        <underline language="IT" method="pen" text="dir Sassosa" type="straight"/>
+        <underline language="IT" method="pen" text="volta di San" type="straight"/>
+        <underline language="IT" method="pen" text="con tutta la suddetta gente" type="straight"/>
+        <underline language="IT" method="pen" text="CCCC" type="straight"/>
+        <underline language="IT" method="pen" text="huomini" type="double"/>
+        <underline language="IT" method="pen" text="Fiume dell'oro" type="straight"/>
+        <underline language="IT" method="pen" text="prigione il Cacique" type="double"/>
+        <underline language="IT" method="pen" text="suo fratello" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; vn nipote" type="straight"/>
+        <underline language="IT" method="pen" text="mandò in ferri" type="straight"/>
+        <underline language="IT" method="pen" text="fece tagliar le orecchie ad vn" type="straight"/>
+        <underline language="IT" method="pen" text="percioche" type="double"/>
+        <underline language="IT" method="pen" text="in luogo di castigare il delitto" type="straight"/>
+        <underline language="IT" method="pen" text="hauea voluti" type="double"/>
+        <underline language="IT" method="pen" text="che habitaua dall'altro lato del fiume, confidato ne' seruigi, da se fatti a' Christiani, delibero" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        
+    </annotation>
+    
+    
+</transcription>

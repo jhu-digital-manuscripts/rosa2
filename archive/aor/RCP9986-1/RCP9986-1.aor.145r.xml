@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.145r.tif" pagination="146" reader="John Dee" signature="T.ij."/>   
+    <annotation>
+        
+        <marginalia hand="Italian"> <!-- FSF: having spoken to Jaap about the different hands, I think this is English secretary -->
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[Cog]nosce p[rinc]ipia</marginalia_text>  <!-- DO: Not sure of either of these words --> <!-- FSF: the first is just nosce; I have no idea about the second word -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Qui sibi notus erit, solus sapienter amabit, Atq[ue] opus ad vires exiget omne suas" type="straight"/>
+        <underline language="LA" method="pen" text="placet, taciturna silentia vitet" type="straight"/>
+        <underline language="LA" method="pen" text="Qui canit, arte canat. qui bibit" type="straight"/>
+        <underline language="LA" method="pen" text="Certa dei sacro est huius in ore fides" type="straight"/>
+        <underline language="LA" method="pen" text="Quod iuuat, exiguu[m] est, plus est, quod laedit ama[n]tes" type="straight"/>
+        
+    </annotation>
+</transcription>

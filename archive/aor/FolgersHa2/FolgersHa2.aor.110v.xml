@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.110v.tif" pagination="44" reader="Harvey" signature="[C6v]"/>	<!-- ABO 115left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Demosthenis ipsius securis, Demades salibus: Phocion
+						gnomis: Diogenes, apophthegmat[is].
+					</marginalia_text>
+					<person name="Demosthenes"/>
+					<person name="Demades"/>
+					<person name="Phocion"/>
+					<person name="Diogenes of Sinope"/>
+				</position>
+			</language>
+			<translation>
+				With his wit, Demades was the chopper of Demosthenes himself; Phocion,
+				with his wisdom; Diogenes with his aphorisms.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Lucianus in Demosthene ipso requirit gratiam.
+					</marginalia_text>
+					<person name="Lucian"/>
+					<person name="Demosthenes"/>
+				</position>
+			</language>
+			<translation>
+				Lucian asks for favor against Demosthenes himself.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Demosthenes Demadi; sus Minerua[e].
+					</marginalia_text>
+					<person name="Demosthenes"/>
+					<person name="Demades"/>
+					<X-ref book_title="Moralia" language="LA" person="Plutarch" text="Demadi, sus Minerua[e]"/>
+				</position>
+			</language>
+			<translation>
+				Demosthenes to 'Demades; the sow of Minerva'.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Totus vir,
+						plenusq[ue] actor: vt Luna in plenilunio. }
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A whole man and a full actor: just as the full moon.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Scribitur prodigè: doc[e]tur parcè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It is written wastefully; it is taught sparingly.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Sol sine Eclipsi. Flamma sine fumo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A sun without eclipse. A flame without smoke.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Semivirorum plena sunt omnia: quanta penuria viroru[m], animo, lingua, manu;
+						omni deniq[ue] humana industria absolutorum? Completem esse						
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						viru[m], Vnici proprietas.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				All things are full of half-men. How much destitution is there in the minds, tongues, and hands of men?
+				And indeed, how much destitution is there in all the human industriousness of free men? 
+				The quality of a unique man is to be a complete man.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Semper tamen adsint Eunapij Oratores: nec unq[uam] absint Juliani Ca[e]sares:
+						cum Misopogone propter alacritatem; et Epinicion Bartasij, propter						
+					</marginalia_text>
+					<person name="Eunapius"/>
+					<person name="Julian"/>
+					<person name="Guillaume Du Bartas"/>
+					<book title="Lives of Philosophers and Sophists"/>
+					<book title="Caesars"/>
+					<book title="Misopogon"/> 
+					<book title="A canticle of the victorie"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						vigorem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				However , let there always be the Orators of Eunapius, and let there never be absent the Caesars of Julian,
+				with the Misopogon for liveliness, and the Canticle of the Victorie of Bartas for vigor.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="d'ottenerla, o per amor" type="straight"/>
+		<underline language="IT" method="pen" text="La donna dall'altro" type="straight"/>
+		<underline language="IT" method="pen" text="mostrata à Ligo à quella foggia" type="straight"/>
+		<underline language="IT" method="pen" text="d'esser tradita, &amp; che il" type="straight"/>
+		<underline language="IT" method="pen" text="potestà di Ligo, si rimase" type="straight"/>
+		<underline language="IT" method="pen" text="all'homicidial" type="straight"/>
+		<underline language="IT" method="pen" text="adultero se diede col Regno" type="straight"/>
+		<underline language="IT" method="pen" text="cose far mutar di natura" type="straight"/>
+		<underline language="IT" method="pen" text="far mutar di natura, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="Stato" type="straight"/>
+		<underline language="IT" method="pen" text="Donna" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; Vino" type="straight"/>
+		<underline language="IT" method="pen" text="di Cortegiane" type="straight"/>
+		<underline language="IT" method="pen" text="spiccò vn pezzo d'una catena d'oro" type="straight"/>
+		<underline language="IT" method="pen" text="dare quattro" type="straight"/>
+		<underline language="IT" method="pen" text="tre, &amp; mezzo" type="straight"/>
+		<underline language="IT" method="pen" text="Cortigiana" type="straight"/>
+		<underline language="IT" method="pen" text="sentiteui voi qualche male" type="straight"/>
+		<underline language="IT" method="pen" text="qualche humidità" type="straight"/>
+		<underline language="IT" method="pen" text="molto ingrossato il capo" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- deli -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- huo -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Cortigia -->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="adultero se die de col Regno"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="far mutar di natura, &amp;"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- Vino. -->
+		
+    </annotation>
+</transcription>

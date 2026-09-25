@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.187r.tif" pagination="373" reader="Harvey" signature="aiij[r]"/>
+    <annotation>
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Alatis alis.    <!-- CG: This is my guess, based on the fact that he's distinguishing between having wings and not having wings. --> <!--JG: Could be, but I'm still not sure. I'll show it to other people-->
+                    </marginalia_text>
+                    <emphasis method="chalk" text="Alate, hi[n]c." type="straight"/>
+                </position>
+            </language>
+            <translation>
+                    With winged wings.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nudae" hand="English_secretary">
+          <language ident="LA">
+              <position book_orientation="0" place="right_margin">
+                  <marginalia_text>
+                      sine alis.
+                  </marginalia_text>
+                  <emphasis method="chalk" text="sine alis." type="straight"/>
+              </position>
+          </language> 
+            <translation>Without wings.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ala[e] Platonis sunt heroici impetus animoru[m]?
+                    </marginalia_text>
+                    <emphasis method="chalk" text="ala[e] Platonis" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                Are the wings of Plato heroic impulses of the soul?
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sunt igitur alae mentis humana[e], Arithmetica &amp; Geometria." hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                      Ala[e] me[n]tis humanes, Arithmetica, et geomet[ria].
+                    </marginalia_text>
+                    <emphasis method="chalk" text="Ala[e] me[n]tis humanes, Arithmetica, et geomet[ria]" type="straight"/> 
+                </position>
+            </language>
+            <translation>
+                Therefore mathematics and geometry are the wings of the human mind.
+            </translation>
+        </marginalia>
+        
+        
+                <!-- CG: So there's a particular mark/symbol in the right margin that I've seen in the Domenichi once before (Ha2.049v), it looks like 'ɔc.' Not sure what to make of it. -->
+                <!-- Although I think it's definitely a symbol rather than a mark. -->
+        <!--JG: That's interesting. We've just tagged it as two brackets, no clue what this can be. Let's treat it as an unknown mark for the moment.-->
+        
+        
+        <underline language="LA" method="pen" text="in inferiore" type="straight"/>
+        <underline language="LA" method="chalk" text="in aëre" type="straight"/>
+        <underline language="LA" method="chalk" text="corporibus" type="straight"/>
+        <underline language="LA" method="chalk" text="hominum studijs" type="straight"/>
+        <underline language="LA" method="chalk" text="uarijs imperiorum &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="animae toto" type="straight"/>
+        <underline language="LA" method="chalk" text="nudae" type="straight"/>
+        <underline language="LA" method="pen" text="ille" type="straight"/>
+        <underline language="LA" method="pen" text="humi uagantur" type="straight"/>
+        <underline language="LA" method="pen" text="alas" type="straight"/>
+        <underline language="LA" method="pen" text="heroicos" type="straight"/>
+        <underline language="LA" method="pen" text="impetus ingeniorum" type="straight"/>
+        <underline language="LA" method="chalk" text="quidem impetus soli" type="straight"/>
+        <underline language="LA" method="pen" text="artibus" type="straight"/>
+        <underline language="LA" method="chalk" text="ipsi impetus attollantur" type="straight"/>
+        <underline language="LA" method="pen" text="ala[e] mentis humana[e]" type="straight"/>
+        <underline language="LA" method="pen" text="alligauerit" type="straight"/>
+        <underline language="LA" method="chalk" text="facillimè penetrabit in co[e]lum" type="straight"/>
+        <underline language="LA" method="pen" text="Alae mentis hii mana[e]" type="straight"/>
+        <underline language="LA" method="pen" text="has alas" type="straight"/>
+        
+        <mark method="chalk" name="bracket" place="right_margin"/>
+        <mark method="chalk" name="bracket" place="right_margin"/>
+        <mark method="chalk" name="hash" place="right_margin"/>
+        
+        <errata amendedtext="illa[e]" copytext="ille" language="LA"/>  <!-- a cedilla has been added -->
+        
+        
+    </annotation>
+</transcription>

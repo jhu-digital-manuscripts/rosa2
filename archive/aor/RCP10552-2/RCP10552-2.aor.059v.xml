@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.059v.tif" pagination="108" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="proditionem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Proditio.</marginalia_text>         
+                </position>
+            </language>
+            <translation>Betrayal.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tamen per proditionem quorunda[m] magnoru[m]" type="straight"/>
+        
+        <errata amendedtext="Stannehopparke" copytext="Stanneparke" language="LA"/>
+        
+    </annotation>
+</transcription>

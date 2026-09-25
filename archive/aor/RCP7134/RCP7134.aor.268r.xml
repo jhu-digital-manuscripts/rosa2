@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.268r.tif" pagination="261" reader="John Dee" signature="VV"/>
+    <annotation>
+        
+        <marginalia anchor_text="Vt resistimus tertianae futurae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tertian[a]e vt resistatur.</marginalia_text>
+                </position>
+            </language>
+            <translation>For the third day, so that it may be resisted.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quartana" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quartana</marginalia_text>
+                </position>
+            </language>
+            <translation>The fourth day.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iram" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ira.</marginalia_text>
+                </position>
+            </language>
+            <translation>Anger.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sole ualido existente, non fiunt febres ex putrescente materia, nisi casu" type="straight"/>
+        <underline language="LA" method="pen" text="Saturni frigus ac siccitatem" type="straight"/>
+        
+    </annotation>
+</transcription>

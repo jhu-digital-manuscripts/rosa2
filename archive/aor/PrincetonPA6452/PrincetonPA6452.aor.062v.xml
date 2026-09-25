@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.062v.tif" pagination="108" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="documentoq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="complurium imperium bello inutile esse" type="straight"/>
+        <underline language="LA" method="pen" text="Tendendo ad sua quisq[ue] consilia" type="straight"/>
+        <underline language="LA" method="pen" text="aperuerunt ad occasionem locum hosti" type="straight"/>
+        <underline language="LA" method="pen" text="incertam nanq[ue] aciem" type="straight"/>
+        <underline language="LA" method="pen" text="itaq[ue] ignominiae quàm cladis est" type="straight"/>
+        <underline language="LA" method="pen" text="ciuitas fuit, uinci insueta" type="straight"/>
+        <underline language="LA" method="pen" text="poscere dictatorem" type="straight"/>
+        <underline language="LA" method="pen" text="in eo uerti spes ciuitatis" type="straight"/>
+        <underline language="LA" method="pen" text="simul fortuna ciuitatis uirtute" type="straight"/>
+        <underline language="LA" method="pen" text="nisi ab scelere bellu[m] ordiri nefas" type="straight"/>
+        <underline language="LA" method="pen" text="sicut legatorum antea" type="straight"/>
+        <underline language="LA" method="pen" text="nouorum colonorum caede imbutis" type="straight"/>
+        <underline language="LA" method="pen" text="dictator ad" type="straight"/>
+        <underline language="LA" method="pen" text="animos ex tam leuibus" type="straight"/>
+        <underline language="LA" method="pen" text="fortunae momentis suspensos gererent" type="straight"/>
+        <underline language="LA" method="pen" text="non uirtute" type="straight"/>
+        <underline language="LA" method="pen" text="nec ignauia Romani" type="straight"/>
+        <underline language="LA" method="pen" text="discordia imperatorum" type="straight"/>
+        <underline language="LA" method="pen" text="hostibus scelus legatoru[m] contra ius gentium interfectorum" type="straight"/>
+        
+        <symbol language="LA" name="JC" place="left_margin" text="hostibus scelus legatoru[m] contra ius gentium interfectorum"/>
+        
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--augu-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--Veienti-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--con-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="head" text="complurium"/>
+        <mark language="LA" method="pen" name="plus_sign" place="head" text="discordia imperatorum"/>
+        
+    </annotation>
+</transcription>

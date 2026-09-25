@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.164v.tif" pagination="[164]v" reader="John Dee" signature="[Xiiij[v]]"/>    
+    <annotation>
+        
+        <marginalia anchor_text="di CLX ammalati di mal Francese" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>160 sik of the french pocks</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="MCCCCXCVI" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>1496</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="XXX mesi dal girono della sua tornata" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>30 months space</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Francesco Orlando" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Francesco Orlando"</marginalia_text>
+                    <person name="Francesco Orlando"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="gran parte della" type="straight"/>
+        <underline language="IT" method="pen" text="da lui lasciataui" type="straight"/>
+        <underline language="IT" method="pen" text="morta, &amp; de gli" type="straight"/>
+        <underline language="IT" method="pen" text="di CLX ammalati di mal Francese" type="straight"/>
+        <underline language="IT" method="pen" text="erano solleuati con" type="straight"/>
+        <underline language="IT" method="pen" text="cominiciando dal giorno, che l' Ammiraglio" type="straight"/>
+        <underline language="IT" method="pen" text="anno MCCCCXCVI" type="straight"/>
+        <underline language="IT" method="pen" text="scorsi XXX mesi dal girono della sua tornata" type="straight"/>
+        <underline language="IT" method="pen" text="nel principio" type="double"/>
+        <underline language="IT" method="pen" text="tornata, &amp; d' essere di breue soccorsi, fu nella gente" type="straight"/>
+        <underline language="IT" method="pen" text="alcuna quiete" type="double"/>
+        <underline language="IT" method="pen" text="il primo anno, mancando loro di quelle cose di Castiglia" type="straight"/>
+        <underline language="IT" method="pen" text="crescendo le infermità" type="straight"/>
+        <underline language="IT" method="pen" text="le querele di" type="straight"/>
+        <underline language="IT" method="pen" text="discontenti, fra i" type="straight"/>
+        <underline language="IT" method="pen" text="pretenda farsi" type="straight"/>
+        <underline language="IT" method="pen" text="Capo di parte" type="double"/>
+        <underline language="IT" method="pen" text="Francesco Orlando" type="double"/>
+        <underline language="IT" method="pen" text="Ximeno" type="double"/>
+        <underline language="IT" method="pen" text="lasciarlo giudice maggiore, che non meno era vbidito" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- ( Di che -->
+        <mark method="pen" name="bracket" place="left_margin" text="tornata, &amp; d' essere di breue soccorsi, fu nella gente alcuna quiete"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="lasciarlo giudice maggiore, che non meno era vbidito" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

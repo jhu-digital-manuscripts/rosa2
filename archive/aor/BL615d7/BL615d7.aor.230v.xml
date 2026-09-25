@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.230v.tif" pagination="[230v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="quel, che l'era necessario, &amp; gl'Indiani senza fastidio della nostra compagnia, &amp; vicinanza" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="correnti" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The current</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="quel, che l'era necessario, &amp; gl'Indiani senza fastidio della nostra compagnia, &amp; vicinanza" type="straight"/>
+        <underline language="IT" method="pen" text="correnti" type="double"/>
+        <underline language="IT" method="pen" text="all'Occidente" type="double"/>
+        
+    </annotation>
+</transcription>

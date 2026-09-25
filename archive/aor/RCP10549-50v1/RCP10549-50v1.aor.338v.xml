@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.338v.tif" pagination="8" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="rumor erat" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="head">
+                    <marginalia_text>rumor erat</marginalia_text> 
+                </position>
+            </language>
+            <translation>It was rumored.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="me sibi ille affixum habebit" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="head">
+                    <marginalia_text>me illi affixum habebit</marginalia_text> 
+                    <person name="Publius Clodius Pulcher"/>
+                </position>
+            </language>
+            <translation>He had impressed that thing upon me.</translation> <!-- NBW: illi doesn't really agree here since its a dative form? --> <!--JG: I'm struggling with this as well, illi doesn't really make sense-->
+        </marginalia>
+        
+        <marginalia anchor_text="cum pares esse non possent, pugnare desisterent" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cu[m] par esse no[n] possis pugnare dessistas</marginalia_text> 
+                </position>
+            </language>
+            <translation>When you are not able to be evenly matched, avoid battle.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="otium nobis exoptandum est" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Otium.</marginalia_text>
+                </position>
+            </language>
+            <translation>Tranquility.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="sanctissimum nomen pietas" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pietas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Piety.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="quidam abundantia quadam amoris" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Amor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Love.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="ille perennis inimicus" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Clodius.</marginalia_text>
+                    <person name="Publius Clodius Pulcher"/>
+                </position>
+            </language>
+            <translation>Publius Clodius Pulcher.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Caesare &amp; cum Appio" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>C[a]esar. Appius.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                    <person name="Appius Claudius Pulcher"/>    
+                </position>
+            </language>
+            <translation>Julius Caesar. Appius Claudius Pulcher.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Vatinium autem scire" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vatinium cur defe[n]debat.</marginalia_text>
+                    <person name="Publius Vatinius"/>                
+                </position>
+            </language>
+            <translation>Why he defended Publius Vatinius.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="scribis esse factum" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>scribis &amp; adscribis</marginalia_text>
+                </position>
+            </language>
+            <translation>Being written and rewritten.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="eius, si, cum pares esse non possent, pugnare desisterent." type="straight"/>
+        <underline language="LA" method="pen" text="nam aut assentiendum est nulla cum grauitate paucis, aut frustra dissentiendum. Haec ego ad te ob eam cuasam maximè" type="straight"/>
+        <underline language="LA" method="pen" text="rei totius publicae" type="straight"/>
+        <underline language="LA" method="pen" text="patentius eorum potentiam ferre potuerint" type="straight"/>
+        <underline language="LA" method="pen" text="omnia quae voles, obtinebis" type="straight"/>
+        <underline language="LA" method="pen" text="me sibi ille affixum habebit" type="straight"/>
+        <underline language="LA" method="pen" text="sedulitate mihimet ipse satisfacere possum: re quidem ipsa ideo mihi non satisfacio, quòd" type="straight"/>
+        <underline language="LA" method="pen" text="rumor erat" type="straight"/>
+        <underline language="LA" method="pen" text="cum illud ipsum grauissimum" type="straight"/>
+        <underline language="LA" method="pen" text="sanctissimum nomen pietatis" type="straight"/>
+        <underline language="LA" method="pen" text="grata sint ea, quae praetermitti sine nefario scelere non possunt" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; vnà, &amp; Romae" type="straight"/>
+        <underline language="LA" method="pen" text="post qui sit meus sensus &amp; status" type="straight"/>
+        <underline language="LA" method="pen" text="exercitu victore" type="straight"/>
+        <underline language="LA" method="pen" text="eos vberiores, &amp; praesta[n]tiores praesens capere potuisses" type="straight"/>
+        <underline language="LA" method="pen" text="Quanqua[m] ille perennis inimicus amico[r]u[m] suorum, qui" type="straight"/>
+        <underline language="LA" method="pen" text="in te potissimu[m] fractam illam, &amp; debilitata[m] vim suam contulit" type="straight"/>
+        <underline language="LA" method="pen" text="mercede" type="grid"/>
+        <underline language="LA" method="pen" text="qua[m] ego maximo dolore cognoram" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; cum Appio esse in gratia" type="straight"/>
+        <underline language="LA" method="pen" text="reprehendere adscribis" type="straight"/>
+        <underline language="LA" method="pen" text="quibus rebus adductus" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/> <!-- NBW: w/flourish -->
+        <symbol name="Jupiter" place="left_margin"/> <!-- NBW: w/flourish -->
+        <symbol name="Jupiter" place="left_margin"/> <!-- NBW: w/flourish -->
+        <symbol name="Jupiter" place="left_margin"/> <!-- NBW: w/flourish -->
+        
+        <mark language="LA" method="pen" name="pin" place="head" text="rumor erat"/> 
+        <mark language="LA" method="pen" name="Ichthys" place="head" text="me illi affixum habebit"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark language="LA" method="pen" name="Ichthys" place="left_margin" text="me sibi ille affixum habebit"/>
+        <mark language="LA" method="pen" name="pin" place="left_margin" text="rumor erat"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark language="LA" method="pen" name="guillemet" place="left_margin" text="scribis esse factum"/>
+        <mark language="LA" method="pen" name="guillemet" place="tail" text="scribis &amp; adscribis"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

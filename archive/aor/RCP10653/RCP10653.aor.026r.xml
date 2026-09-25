@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.026r.tif" pagination="43" reader="John Dee" signature="D iiij."/>
+    <annotation>
+        
+        <marginalia anchor_text="Non est aequum in sterquilineo &amp; in loco diuersis contaminationibus polluto, sacramentum detegère" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mysteria no[n] su[n]t Locis fatidis tracta[n]da
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'Worship is not to be practised in foul places.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Non est aequum in sterquilineo &amp; in loco diuersis contaminationibus polluto, sacramentum" type="straight"/>
+        <underline language="LA" method="pen" text="monte[m] Auentinu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Nouem soles, quos vidistis, dissimilis vita erit in" type="straight"/>
+        <underline language="LA" method="pen" text="Quartus aute[m] sol" type="triple"/>
+        <underline language="LA" method="pen" text="quarta" type="straight"/>
+        <underline language="LA" method="pen" text="illis diebus exurget mulier de genere Hebraeorum, nomine Maria, habens sponsum nomine Ioseph" type="straight"/>
+        <underline language="LA" method="pen" text="pariet, &amp; erit virgo ante partum, virgo post partum" type="straight"/>
+        <underline language="LA" method="pen" text="vos non credetis" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral language="LA" place="right_margin" text="Quartus aute[m] sol quarta generatio est">4</numeral>
+        
+    </annotation>
+</transcription>

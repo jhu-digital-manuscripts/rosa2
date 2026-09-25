@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.220r.tif" pagination="419" reader="John Dee" signature="ddd.ii."/>
+    <annotation>
+        
+        <marginalia anchor_text="perfacetum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        p[er]facetu[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Very witty.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sodalitiis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sodalitia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Illegal combinations.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="edititios iudices" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Edititius Iudex
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Nominated judge.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Q. Horte[n]tio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Q. Hortensius
+                    </marginalia_text>
+                   <person name="Quintus Hortensius"/>
+                </position>
+            </language>
+            <translation>
+                Quintus Hortensius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aequum, &amp; certe expectatum est, &amp; fuit dignum constantia tua" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        a[e]quu[m] expectatu[m] dignu[m] co[n]sta[n]tia tua.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Equal, expected, fair, your steadiness.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inexorabiles, quos inhumanos, quos crudeles" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        inexorabilis inhumanus crudelis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Relentless, inhumane, cruel.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad iudices non carnifices veniremus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ad iudices no[n] carnifices venire.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To come up to the judges, not the executioners.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="hic quod cum caeteris animo sentiebat, id magis quàm caeteri &amp; vultu promptum habuit &amp; lingua" type="straight"/>
+        <underline language="LA" method="pen" text="Ego autem siquid est quod mihi scitu[m] esse videatur, &amp; homine ingenuo dignum atque docto, non aspernor" type="straight"/>
+        <underline language="LA" method="pen" text="stomachor verò" type="straight"/>
+        <underline language="LA" method="pen" text="Senatu res agebatur, &amp; disputata hesterno die copiosius" type="straight"/>
+        <underline language="LA" method="pen" text="quid enim potest dicere cur ista editio non summam habeat acerbitate[m] remota ratione illa quam in decerne[n]do secuti sumus?" type="straight"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+        
+    </annotation>
+</transcription>

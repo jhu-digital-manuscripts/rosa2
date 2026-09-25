@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.040v.tif" pagination="80" reader="John Dee"/>
+    <annotation>
+        
+                                                               <!-- Hebrew at top of page -->
+        
+        <marginalia anchor_text="reges" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Reges</marginalia_text>
+                    <book title="Books of Kings"/>
+                </position>
+            </language>
+            <translation>Kings.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in Iehouah" type="straight"/>
+        <underline language="LA" method="pen" text="de eodem spiritu" type="straight"/>
+        <underline language="LA" method="pen" text="decem gradibus cognitionis" type="straight"/>
+        <underline language="LA" method="pen" text="reges" type="straight"/>
+        
+    </annotation>
+</transcription>

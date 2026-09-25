@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.018v.tif" pagination="[18[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Imo alia experie[n]tia, quales habet ptoloma[e]us &amp; Joannes n[oste]r
+                    </marginalia_text>
+                    <person name="Ptolemy"/>
+                    <!-- FSF: I am not sure who our John is? is it Dee himself? --> <!--JG: Don't know, best not to tag him-->
+                </position>
+            </language>
+            <translation>
+                On the contrary, Ptolemy and our John have other expositions.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        pixis navigatoria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A compass.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Magnetinus Index qualem h[abet] naturam
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A magnetic needle has a particular nature.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        poli / % in parallela a[e]quator[.] 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The poles, that is, in the parallel lines [of the equator].
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quia grauis" type="straight"/>
+        <underline language="LA" method="pen" text="sine causa[e] autem &amp; natura[e] rei cognitione, nihil ueri mathematicus demonstrare potest. Eadem" type="straight"/>
+        <underline language="LA" method="pen" text="ducere nauem eadem semper" type="straight"/>
+        <underline language="LA" method="pen" text="altitudine" type="straight"/>
+        <underline language="LA" method="pen" text="absoluta censebitur, quanuis demonstratione mathematica" type="straight"/>
+        <underline language="LA" method="pen" text="Quu[m] necesse sit, mathematicas regulas explanare, inquantum possunt, naturam &amp; substantiam sua ratione formali" type="straight"/>
+
+    </annotation>
+</transcription>

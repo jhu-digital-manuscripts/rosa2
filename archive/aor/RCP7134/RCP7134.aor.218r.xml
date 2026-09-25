@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.218r.tif" pagination="211" reader="John Dee" signature="GG iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Oportet &amp; mensem appelare, lunarem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mensis lunaris</marginalia_text>
+                </position>
+            </language>
+            <translation>The lunar month.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="morbo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Morbus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Disease.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Oportet &amp; mensem appelare, lunarem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ca[e]teros planetas et stellas fixas effectuu[m] no[n]nulloru[m] esse causas</marginalia_text>
+                </position>
+            </language> 
+            <translation>That the remaining planets and fixed stars are the cause of several effects.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Oportet &amp; mensem appelare, lunarem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>at dista[n]tia[m] co[n]siderato.</marginalia_text>
+                </position>
+            </language>
+            <translation>But as considered at distance.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dies per reditus Lunae ad circulu[m] horizontis, diebus 26, horis 9. minutijs 30. secundis 51. igitur" type="straight"/>
+        <underline language="LA" method="pen" text="morbo contrarios" type="straight"/>
+        <underline language="LA" method="pen" text="ubi igitur ordo, &amp; ratio etiam ordinis erit" type="straight"/>
+        <underline language="LA" method="pen" text="neq[ue] enim delitescere uis syderis potest nec aboleri" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Mariora cum sint astra quâm Luna, moueanturq[ue], &amp; radijs inferiora illustrent, necesse est etiam, ut maiores quondoq[ue] effectus in haec inferiora producant"/>
+               
+    </annotation>
+</transcription>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.056v.tif" pagination="[56[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="regnet Blut" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pluuia sanguinis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Rain of blood.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Frösche" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Rana[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Frogs.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="das Wasser so vom Him[m]el falt" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Aqua pluuialis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Rainwater.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="regnet Blut" type="straight"/>
+        <underline language="DE" method="pen" text="vom Sulphur" type="double"/>
+        <underline language="DE" method="pen" text="ein Tenacitet decoquiret" type="straight"/>
+        <underline language="DE" method="pen" text="ein leichter schaum" type="straight"/>
+        <underline language="DE" method="pen" text="Mucilaginis oder Bituminis natur kompt" type="straight"/>
+        <underline language="DE" method="pen" text="transmutiert so lests der Himmel fallen" type="straight"/>
+        <underline language="DE" method="pen" text="etwa[s] fürsich selbest etwan mit eim" type="straight"/>
+        <underline language="DE" method="pen" text="Frösche im Firmament seind nicht Substantz" type="straight"/>
+        <underline language="DE" method="pen" text="aber sie werden Substantz" type="straight"/>
+        <underline language="DE" method="pen" text="einer farbe[n]" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

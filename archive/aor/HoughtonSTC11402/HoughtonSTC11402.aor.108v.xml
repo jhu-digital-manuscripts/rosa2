@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.108v.tif" reader="Harvey" signature="[Nv[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Milciadis Tropha[e]a, non sinebant Themistoclem dormire, neq[ue] cessare.</marginalia_text>
+                    <person name="Miltiades"/>
+                    <person name="Themistocles"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Why shoold not [the] valiant, and</marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fortunate Aduentures of Captain Drake by Sea, &amp; Captain Norrice by land,
+                    worke the same effect in many Noble Inglish Harts?</marginalia_text>
+                    <person name="Francis Drake"/>
+                    <person name="John Norris"/>
+                </position>
+            </language>
+            <translation>Miltiades' trophies did not allow Themistocles to sleep or to be inactive.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Megarensians" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Athenians, in Megarensians shippes.</marginalia_text>
+                    <emphasis method="pen" text="Athenians" type="straight"/>
+                    <emphasis method="pen" text="Megarensians shippes" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>A mixt Stratagem/</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="aide of a citie" type="straight"/>
+        <underline language="EN" method="pen" text="to inuade" type="straight"/>
+        <underline language="EN" method="pen" text="had preuented them" type="straight"/>
+        <underline language="EN" method="pen" text="replenysshed the walles with" type="straight"/>
+        <underline language="EN" method="pen" text="battaylle" type="straight"/>
+        <underline language="EN" method="pen" text="at Marathon was foughte" type="straight"/>
+        <underline language="EN" method="pen" text="with one armye" type="straight"/>
+        <underline language="EN" method="pen" text="and the walles kepte with an other" type="straight"/>
+        <underline language="EN" method="pen" text="Pisistratus" type="straight"/>
+        <underline language="EN" method="pen" text="Megarenciens" type="straight"/>
+        <underline language="EN" method="pen" text="Elewsis by nyght, to" type="straight"/>
+        <underline language="EN" method="pen" text="rauysshed" type="straight"/>
+        <underline language="EN" method="pen" text="women of Athens" type="straight"/>
+        <underline language="EN" method="pen" text="wel reuenged their" type="straight"/>
+        <underline language="EN" method="pen" text="gret number of the sayd" type="straight"/>
+        <underline language="EN" method="pen" text="the same shyppes" type="straight"/>
+        <underline language="EN" method="pen" text="taken of theirs" type="straight"/>
+        <underline language="EN" method="pen" text="with souldiours of Athens" type="straight"/>
+        <underline language="EN" method="pen" text="settynge oute in syghte" type="straight"/>
+        <underline language="EN" method="pen" text="aboue the hatches" type="straight"/>
+        <underline language="EN" method="pen" text="certayn women" type="straight"/>
+        <underline language="EN" method="pen" text="ordred lyke prisoners" type="straight"/>
+        <underline language="EN" method="pen" text="the Megarensians" type="straight"/>
+        <underline language="EN" method="pen" text="out to mete them" type="straight"/>
+        <underline language="EN" method="pen" text="after their enterprise luckely achieued" type="straight"/>
+        
+        <symbol language="EN" name="SS" place="head" text="Milciadis Tropha[e]a, non sinebant Themistoclem dormire, neq[ue] cessare.             Why shoold not [the] valiant, and fortunate Aduentures of Captain Drake by Sea, &amp; Captain Norrice by land,             worke the same effect in many Noble Inglish Harts?"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="X_sign" place="left_margin" text="the same shyppes"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="had preuented them"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="and the walles kepte with an other"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Elewsis by nyght, to"/>
+        <mark method="pen" name="dot" place="intext"/> <!--Ceres, and-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--Megarenses, he-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the same shyppes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="women"/>
+        
+    </annotation>
+</transcription>

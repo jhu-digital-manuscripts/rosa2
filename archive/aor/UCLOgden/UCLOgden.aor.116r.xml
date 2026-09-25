@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.116r.tif" pagination="215" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="caecitate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ca[e]citatis Locus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The place of obscurity.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Necepso" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Necepso.
+                    </marginalia_text>
+                    <person name="Nekauba"/>
+                </position>
+            </language>
+            <translation>
+                Nekauba.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="huius ego libri interpetationem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Interpretatio huius Libri.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The interpretation of this book. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="unius signi spatium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vnius signi spatium.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The space of a single sign.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="hácq[ue] de causa, si quis in ipsis partibus ☉ habuerit, aut ☾ sine beneuolarum stellarum testimono, aut perpetua caecitate,              aut miseris corporu[m] debilitatibus pprimentur, ex ista igitur partium diuisione, cum" type="straight"/>
+        <underline language="LA" method="pen" text="manifestis tractatibus" type="straight"/>
+        <underline language="LA" method="pen" text="ego libri interpretationem" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <errata amendedtext="primentur" copytext="pprimentur" language="LA"/>
+        
+    </annotation>
+</transcription>

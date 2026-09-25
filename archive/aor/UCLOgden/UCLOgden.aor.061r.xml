@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.061r.tif" pagination="105" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="ad Murinu[m] nostru[m] scripsimus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                       Liber firmici ad Murinu[m] de D[omi]no genituae &amp;c
+                    </marginalia_text>
+                    <person name="Julius Firmicus Maternus"/>
+                    <!-- FSF: I am not sure how Murinus is; here it is only described as a friend of Maternus https://books.google.co.uk/books?id=MB5LMQ5j1z8C&pg=PA247&lpg=PA247&dq=Julius+Firmicus+Maternus+murinus&source=bl&ots=gqfQhTDk8y&sig=SBJrJhkPEtVHrYRprMY49W-XICQ&hl=en&sa=X&ved=0ahUKEwjX5Mrk67zTAhWBcBoKHahhCJcQ6AEIPjAD#v=onepage&q=Julius%20Firmicus%20Maternus%20murinus&f=false -->
+                    <!-- M.B. Jean Rhys Bram notes in his translation, 'this character is unidentified. The name is not a Roman one, but a descriptive one signifying "mousy." -->
+                </position>
+            </language>
+            <translation>
+                The book of [Julius] Firmicus [Maternus] dedicated to Murinus about the lord of the constellation etc.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="septeni anni, ac noueni" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Septeni anni ac noueni
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                By seven and nine years.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="androdas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Androdas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Androdas.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Effractor dicitur apud Ranzouiu: pag: 285
+                    </marginalia_text>
+                    <person name="Heinrich Rantzau"/> 
+                    <!-- FSF: I assume that the work referred to here is Rantzau's Tractatus astrologicus de genethliacorum thematum; according to wikipedia however, this was first published in 1597, whereas the book was dated by Dee in 1550  -->
+                </position>
+            </language>
+            <translation>
+                The housebreaker was named according to Rantzau p. 285
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Periculor[um] varia r[ati]o.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Various reasons for the dangers.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quis planeta actus nostros decernet.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Which planet determines our actions. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="atq[ue] chronocratore, ad Murinu[m] nostru[m] scripsimus, &amp; co[m]prehensa sunt" type="dotted"/>
+        <underline language="LA" method="pen" text="&amp; 63 annus" type="straight"/>
+        <underline language="LA" method="pen" text="androdas" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="hebdomatici à Graecis, atq[ue] enneatici appellant[ur]" type="dotted"/> 
+        <underline language="LA" method="pen" text="quod omné uitae substantiam frangat, at[que] debilitet" type="straight"/>
+        <underline language="LA" method="pen" text="in horosc. &amp; ☾ partili radiatione" type="straight"/>
+        <underline language="LA" method="pen" text="ac temporu[m] &amp; geniturae dominum uiderint" type="straight"/>
+        <underline language="LA" method="pen" text="Cum itaq[ue] uideris, quale sit periculi discrimen in loco, respice" type="straight"/>
+        <underline language="LA" method="pen" text="fueris de uitae substantia" type="straight"/>
+        <underline language="LA" method="pen" text="concitabit, id est in qua est temporu[m] dominus" type="straight"/>
+        <underline language="LA" method="pen" text="ita ut mors imminens, seu periculum" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="♂, ♀, &amp; ☿. Sed" type="dotted"/>
+        <underline language="LA" method="pen" text="Hebdomatici anni. Androdas:" type="straight"/>
+        
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/> <!-- FSF: dotted --> 
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/> 
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/> 
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" colour="red" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

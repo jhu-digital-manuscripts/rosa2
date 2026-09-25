@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.129r.tif" reader="John Dee"/>  
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+               <position book_orientation="0" place="tail">
+                <marginalia_text>
+                    Vitup[er]ationes. Acad. [7]. 61
+                    65. 69. 97. 99. 109 .111.
+                    203. 237.
+                    De finib. li. p[ri]mo. 7. 13. 25. 29
+                    69. 79. 83. 91. 93.
+                </marginalia_text>
+                   <book title="Academica"/>
+                   <book title="De finibus bonorum et malorum"/>
+                   <internal_ref>
+                       <target ref="RCP10549-50v2:0568" text="[7]"/>
+                       <target ref="RCP10549-50v2:0573" text="61"/>
+                       <target ref="RCP10549-50v2:0574" text="65"/>
+                       <target prefix="65. " ref="RCP10549-50v2:0574" suffix=". 97." text="69"/>
+                       <target ref="RCP10549-50v2:0577" text="97"/>
+                       <target ref="RCP10549-50v2:0577" text="99"/>
+                       <target ref="RCP10549-50v2:0578" text="109"/>
+                       <target ref="RCP10549-50v2:0578" text="111"/>
+                       <target ref="RCP10549-50v2:0587" text="203"/>
+                       <target ref="RCP10549-50v2:0591" text="237"/>
+                       <!-- De finibus references -->
+                       <target ref="RCP10549-50v2:0594" text="7"/>
+                       <target ref="RCP10549-50v2:0595" text="13"/>
+                       <target ref="RCP10549-50v2:0596" text="25"/>
+                       <target ref="RCP10549-50v2:0597" text="29"/>
+                       <target ref="RCP10549-50v2:0601" suffix=". 79." text="69"/>
+                       <target ref="RCP10549-50v2:0602" text="79"/>
+                       <target ref="RCP10549-50v2:0602" text="83"/>
+                       <target ref="RCP10549-50v2:0603" text="91"/>
+                       <target ref="RCP10549-50v2:0603" text="93"/>
+                   </internal_ref>
+               </position>
+            </language>
+            <translation>
+                Censures. Academica 4. 61
+                65. 69. 97. 99. 109. 111.
+                203. 237.
+                De finibus. In the first book. 7. 13. 25. 29
+                69. 79. 83. 91. 93.
+            </translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

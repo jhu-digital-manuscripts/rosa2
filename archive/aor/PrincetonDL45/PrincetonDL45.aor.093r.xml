@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.093r.tif" pagination="185" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia anchor_text="De stratagematibus Fridleui." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Stratagemata Fridleuj.
+                    </marginalia_text>
+                    <person name="Fridlevus"/>
+                </position>
+            </language>
+            <translation>
+                The stratagems of Fridlevus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hirundinu[m] alis ingem affixit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        quibus tecta incenderentur.
+                    </marginalia_text>
+                    <emphasis method="pen" text="incenderentur" type="straight"/>
+                </position>
+            </language>
+            <translation> 
+              By which the roofs were set on fire.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="contemptrix ferri tunica," type="straight"/>
+        <underline language="LA" method="pen" text="fiduciam ministrabat" type="straight"/>
+        <underline language="LA" method="pen" text="salutis cultu vsus" type="straight"/>
+        <underline language="LA" method="pen" text="Gunholmum quendam" type="straight"/>
+        <underline language="LA" method="pen" text="carminibus hebetare" type="straight"/>
+        <underline language="LA" method="pen" text="Hadingiani acuminis ingenium" type="straight"/>
+        <underline language="LA" method="pen" text="hirundinum alis inclusum fungis ignem affigi praecepit" type="straight"/>
+        <underline language="LA" method="pen" text="quibus propria nidificatione receptis" type="straight"/>
+        <underline language="LA" method="pen" text="Hirundinu[m] alis ignem affixit." type="straight"/>
+        <underline language="LA" method="pen" text="Cadauera erecta" type="straight"/>
+        <underline language="LA" method="pen" text="flammis tecta luxerunt" type="straight"/>
+        <underline language="LA" method="pen" text="apud Britanniam" type="straight"/>
+        <underline language="LA" method="pen" text="interfectorum cadaueribus erectis" type="straight"/>
+        <underline language="LA" method="pen" text="acie collocatis" type="straight"/>
+        <underline language="LA" method="pen" text="pristinum multitudinis habitum" type="straight"/>
+        <underline language="LA" method="pen" text="eius specie" type="straight"/>
+        <underline language="LA" method="pen" text="non solùm conserendae" type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="hirundinum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="fungis"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>     
+        
+        
+    </annotation>
+</transcription>

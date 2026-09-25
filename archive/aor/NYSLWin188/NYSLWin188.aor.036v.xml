@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.036v.tif" pagination="[36[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Preparation in Sternen von den dreinen Ersten" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pra[e]paratio in stellis ex trib[us] primis</marginalia_text>
+                </position>
+            </language>
+            <translation>Preparation in the stars from the three primes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Regen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pluuia</marginalia_text>
+                </position>
+            </language>
+            <translation>Rain.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Regen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pluuia</marginalia_text>
+                </position>
+            </language>
+            <translation>Rain.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="die Preparation in Sternen von den dreien Ersten auff solche" type="straight"/>
+        <underline language="DE" method="pen" text="das gewülcke" type="straight"/>
+        <underline language="DE" method="pen" text="resoluierung" type="straight"/>
+        <underline language="DE" method="pen" text="durch den Lufft" type="double"/>
+        <underline language="DE" method="pen" text="auff die" type="straight"/>
+        <underline language="DE" method="pen" text="tropffen weise" type="double"/>
+        <underline language="DE" method="pen" text="auf Alchimistisch" type="straight"/>
+        <underline language="DE" method="pen" text="Resolution langsam" type="straight"/>
+        <underline language="DE" method="pen" text="langsam tropffen" type="straight"/>
+        <underline language="DE" method="pen" text="das jar vnd die zeit ist" type="straight"/>
+        <underline language="DE" method="pen" text="als ein Resoluierets Sal, Sul. vnd Merc." type="straight"/>
+        <underline language="DE" method="pen" text="Regens arth gescheiden" type="straight"/>
+        <underline language="DE" method="pen" text="ersten extraction" type="straight"/> <!--KS: line departing from 'extraction'-->
+        <underline language="DE" method="pen" text="vnd separation" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

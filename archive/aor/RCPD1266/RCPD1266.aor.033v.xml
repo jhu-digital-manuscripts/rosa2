@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.033v.tif" pagination="52" reader="John Dee" signature="[e.ij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mathematicas artes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mathematicaru[m] artiu[m] vtilitas.</marginalia_text>
+                </position>
+            </language>
+            <translation>The usefulness of the mathematical arts.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tres horas sumi pro quarta" type="straight"/>
+        <underline language="LA" method="pen" text="de tertia hora" type="straight"/>
+        <underline language="LA" method="pen" text="partibus temporis dicenda fuisse videntur, tum argumenti praesentis necessitate nos ad id cogente, tum vt Mathematicas artes &amp;              disciplinas sibi esse cognoscendas, qui sunt earum ignari, intelligerent, atque agnoscerent earum opus esse notitia ad anni restituendam ex Dei ordinatione rationem" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/>  <!-- notitia ad -->
+          
+    </annotation>
+</transcription>

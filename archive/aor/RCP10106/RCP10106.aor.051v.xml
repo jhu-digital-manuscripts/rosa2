@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.051v.tif" pagination="102" reader="John Dee" signature="[g 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Polycratem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Polycrates</marginalia_text>
+                    <person name="Polycrates"/>
+                </position>
+            </language>
+            <translation>Polycrates.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="naturalem esse rhetoricen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rhetorica naturalis est.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rhetoric is natural.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lysias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lysias.</marginalia_text>
+                    <person name="Lysias"/>
+                </position>
+            </language>
+            <translation>Lysias.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="primum repertos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Qui primi rhetoricam docuerunt.</marginalia_text>
+                </position>
+            </language>
+            <translation>The first to teach rhetoric.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Homerum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Homerus.</marginalia_text>
+                    <person name="Homer"/>
+                </position>
+            </language>
+            <translation>Homer.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="non ideo, ut pro uero accipiamus, est positum, sed ut Antonij persona seruetur, qui dißimulator artis fuit. Hanc" type="straight"/>
+        <underline language="LA" method="pen" text="quae ars consummarit, à natura initia duxisse:" type="straight"/>
+        <underline language="LA" method="pen" text="deligauit" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

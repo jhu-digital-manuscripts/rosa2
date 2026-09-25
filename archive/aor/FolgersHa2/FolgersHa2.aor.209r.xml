@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.209r.tif" pagination="flyleaf" reader="Harvey"/>	<!-- ABO 213right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian"> 
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Propria Eulogi bibliotheca. <!--JG: Not sure whether this is a person (perhaps an invented one) or not. Chris, what do you think?--> <!-- CG: Hard to say. This might be something like 'a good speaker' or a character named 'Eulogus' who represets good speaking. -->
+					</marginalia_text>
+					<emphasis method="pen" text="Propria Eulogi bibliotheca" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The proper library of a Good Speaker. <!-- CG: I translated the name, since I'm not sure it's a character or person. -->
+			</translation>
+		</marginalia>
+		<marginalia date="1590" hand="Italian">
+			<language ident="ES">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Poco, y bueno:
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						1590. Pro Eulogo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Little and good:
+				1590. For speaking well.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Ciuilis Elocutionis necessarius apparatus.
+						I. Aula ciuilis Conuersationis: qua[e] est aureum <!--JG: See Domenichi, 055v: uncertainty about this title--> <!-- CG: I wonder if this isn't Castiglione's Courtier? -->
+						fundamentum vrbani sermonis; ipsaq[ue] regia
+						professio aulica[e] Eloquentia[e].
+						2. Eliota[e] dialogi Ciuilis commertij. } <!--JG: No idea abt this book. Perhaps a work by Thomas Elyot? Doesn't appear in the list given by Stern--> <!-- CG: Probably John Eliot's Ortho-epia gallica, which is a series of dialogues -->
+						3. Guazzi quartus Ciuilis Conuiuij.
+						4. Aschami discursus Politicarum Caroli 5.
+						negociationum. Singula ad unguem promptiss[im]a.
+						Prodest etiam familiariss[im]a habere Heiuodi
+						5. Communia Prouerbia; et propria Epigrammata,
+						6. Item Bartasij florentissimu[m] Epinicion Regi[e] 
+						Gallici: quo nihil legi viuidius. Cum
+						delicata omnium medulla in Eunapij Vitis;
+						7.8. ( et Dominici salibus, Ha[e]c breuissima,
+						maximéq[ue] necessaria. { Cum longioribus uacat
+						plenioriq[ue] varietati; malim ante omnes Arcad[ia]
+						9.10. ( Comitissa[e]; et dicta factaq[ue] heroica Gargantua[e]
+						Addo etiam ad omnigenos discursus, Apologiam 
+						11.12. Herodoti; et locos Communes, Manlij.
+						13. Cum vtilissimis, dulcissimisq[ue] strategematib[us]
+						Marcantonij Gandini. Ca[e]tera; viua praxis
+						excellenttissimoru[m] in mu[n]do actoru[m] demonstrat pra[e]gnatiss[ima].
+					</marginalia_text>
+					<person name="John Eliot"/>
+					<person name="Stefano Guazzo"/>
+					<person name="Roger Ascham"/>
+					<person name="John Heywood"/>
+					<person name="Eunapius"/>
+					<person name="Johannes Jacobus Manlius"/>
+					<person name="Marcantonio Gandino"/>
+					<person name="Guillaume Du Bartas"/>
+					<book title="Ortho-epia gallica"/>
+					<book title="The civil conversation"/>
+					<book title="Report and Discourse"/>
+					<book title="The Proverbs, Epigrams, and Miscellanies of John Heywood"/>
+					<book title="Loci communes"/>
+					<book title="Stratagemata"/>
+					<book title="Lives of Philosophers and Sophists"/>
+					<book title="A canticle of the victorie"/>
+					<book title="The Countess of Pembroke's Arcadia"/>
+					<book title="Gargantua"/>
+					<book title="Apologie pour Hérodote"/>
+					<emphasis method="pen" text="Ciuilis Elocutionis" type="straight"/>
+					<emphasis method="pen" text="Aula ciuilis Conuersationis" type="straight"/>
+					<emphasis method="pen" text="fundamentum Urbani sermonis" type="straight"/>
+					<emphasis method="pen" text="professio aulica[e] Eloquentia[e]" type="straight"/>
+					<emphasis method="pen" text="Ciuilis commertij" type="straight"/>
+					<emphasis method="pen" text="Ciuilis Conuiuij" type="straight"/>
+					<emphasis method="pen" text="Politicarum Caroli 5. negociationum" type="straight"/>
+					<emphasis method="pen" text="ad unguem promptiss[im]a" type="straight"/>
+					<emphasis method="pen" text="Prouerbia" type="straight"/>
+					<emphasis method="pen" text="Epigrammata" type="straight"/>
+					<emphasis method="pen" text="Epinicion" type="straight"/>
+					<emphasis method="pen" text="legi viuidius" type="straight"/>
+					<emphasis method="pen" text="in Eunapij Vitis" type="straight"/>
+					<emphasis method="pen" text="Dominici salibus" type="straight"/>
+					<emphasis method="pen" text="Ha[e]c breuissima, maximéq[ue] necessaria" type="straight"/>
+					<emphasis method="pen" text="longioribus" type="straight"/>
+					<emphasis method="pen" text="omnes Arcad[ia]" type="straight"/>
+					<emphasis method="pen" text="heroica Gargantua[e]" type="straight"/>
+					<emphasis method="pen" text="Apologiam Herodoti" type="straight"/>
+					<emphasis method="pen" text="locos Communes, Manlij" type="straight"/>
+					<emphasis method="pen" text="stratagematib[us] Marcantonij Gandini" type="straight"/>
+					<emphasis method="pen" text="viua praxis excellenttissimoru[m] in mu[n]do actoru[m] demonstrat" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The essential preparation for civil elocution. 
+				1) The Aula ciuilis Conuersationis, which is the golden foundation of an urban speech; and the actual royal profession of princely eloquence. 
+				2) John Eliot's dialogues on civil commerce [the Ortho-epia gallica]
+				3) Stefano Guazzo, book 4 [of 'The civil conservation'], of 'a civil banquet'.
+			    	4) Roger Ascham's 'Discourse' of Charles V's political negotations. Singular, most speedily by heart. It is even useful to have Heywood's most familiar 5) general proverbs and his own epigrams. 
+			    	6) Likewise Du Bartas' brightest 'triumph of the French king': in which nothing more lively can be read. With the delicate inner parts of all in Eunapius' 'Lives'.
+			    	7, 8) (and with Domenichi's witticisms. These are the shortest and most necessary. Although it is free of longer and fuller variety.
+					Before all things I prefer the 
+				9, 10) 'Arcadia of the Countess' and the 'heroic sayings and deeds of Gargantua'. 	
+					I even add to the variety of discourses, 
+				11) the Apology of Herodotus, 
+				12) and Manlius' common places.
+				13) With the most useful and sweetest strategies of Marcantonio Gandino. And others; a living praxis demonstrates the most fruitful things of the most excellent actors in the world.
+			</translation> 
+		</marginalia>
+		
+		<symbol name="Sun" place="full_page"/>
+
+    </annotation>
+</transcription>

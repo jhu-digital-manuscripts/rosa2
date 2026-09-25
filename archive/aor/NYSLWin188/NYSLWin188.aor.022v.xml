@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.022v.tif" pagination="[22[v]]" reader="John Dee" signature="[Fij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Theologia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Theologia</marginalia_text>
+                </position>
+            </language>
+            <translation>Theology.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="das Gott den Menschen beschaffen hat vnd dem alles vnderworffen was er geschaffen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>O[mn]ia subiecisti sub pedibus eius.</marginalia_text>
+                </position>
+            </language>
+            <translation>You place everthing under his feet.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Darumb seindt sie auch de[m] Menschen gar nichts vnderworffen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ista[e] [quatuor] species no[n] sunt ho[min]ibus subiecta[e]: i[m]mo no[n] possu[n]t ab ho[min]ibus cogi.</marginalia_text>
+                </position>
+            </language>
+            <translation>Those four species are not subjected to mankind: indeed, they cannot be confined by men.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="beschaffen hat vnd dem alles vnderworffen was" type="straight"/>
+        <underline language="DE" method="pen" text="geschlechten" type="double"/>
+        <underline language="DE" method="pen" text="de[n] Mensche[n] gar nichts vnderworffen" type="straight"/>
+        <underline id="NYSLWin188:00000058:u0001" language="DE" method="pen" text="Saganas" type="double"/>
+        <underline language="DE" method="pen" text="zwingen in jren" type="double"/>
+        <underline language="DE" method="pen" text="schwartzen Kunst" type="straight"/>
+        <underline id="NYSLWin188:00000058:u0002" language="DE" method="pen" text="den Saganis" type="straight"/>
+        
+        <physical_link>
+            <marginal_annotation idref="NYSLWin188:00000058:m0001"/>
+            <marginal_annotation idref="NYSLWin188:00000058:u0001"/>
+            
+            <relation from="NYSLWin188:00000058:m0001" to="NYSLWin188:00000058:u0001" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

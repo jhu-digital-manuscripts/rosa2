@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.046v.tif" pagination="412" reader="Harvey"/>	<!-- ABO 51left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Resolutio resolutionum: Semper dicendum, agendumq[ue] 
+						malius.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The weakness of weakneses: always speaking and acting evilly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Et quicquid in prima, secunda, media, aut vltima instantia acciderit ( 
+						oppositi, aut infesti; semper procedendu[m] excellentiùs. (
+						Tantóq[ue] pergendum alacriùs,
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						quantò oppugnatur aduersius.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				And whatever contrary or hostile thing occurs in the first, second, middle, or last instance, 
+				one must always go forward more excellent. And one must proceed so much more swiftly.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Prognostio, ò Semeiotico de gi Cornuti.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Prognosis, or Semeiotics of Cuckolds.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						paulò i[nfr]a, 413.
+					</marginalia_text>
+					<internal_ref>
+						<target ref="FolgersHa2:Ha2.047r" text="413"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				Somewhat below, p. 413.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Dia[e]ta breuis pra[e]stat longa[e].
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				A humble diet lasts long. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Ex vngue Leonem, in Jouij Elogijs bellicis.
+					</marginalia_text>
+					<person name="Paolo Giovio"/>
+					<book title="Elogia virorum bellica virtute illustrium"/>
+				</position>
+			</language>
+			<translation>
+				From the lion's claw, in Giovio's Elogia.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						destramente.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skillfully.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						argutè. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Cleverly.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Tu né cede Malis: sed contrà aude[n]tior ito.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				You must cede not to Evil, but go more boldly against it.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Quotidiana exercitatio Corporis corpus. Quotidiana repetitio, animi animus.
+						Assuetudo est, qua[e] perficit omnia.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Daily exercise of the body of body. Daily repetition of the mind of mind. <!--JG: Could it be 'Daily exercise is the body of the body' etc?-->
+				Habit is that which perfects all things.
+			</translation>
+		</marginalia>
+		
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="caduti quasi tutti i denti della mascella" type="straight"/>
+		<underline language="IT" method="pen" text="di sopra a" type="straight"/>
+		<underline language="LA" method="pen" text="animalia cornuta carent dentibus in superiori" type="straight"/>
+		<underline language="IT" method="pen" text="Honorato Fascitello" type="straight"/>
+		<underline language="IT" method="pen" text="persona di grandissima" type="straight"/>
+		<underline language="IT" method="pen" text="suo libro de' motti" type="straight"/>
+		<underline language="IT" method="pen" text="di fare stampare" type="straight"/>
+		<underline language="IT" method="pen" text="honorato libretto" type="straight"/>
+		<underline language="IT" method="pen" text="rispose argutamente" type="straight"/>
+		<underline language="IT" method="pen" text="bischizzando" type="straight"/>
+		<underline language="IT" method="pen" text="honorato Fascitello" type="straight"/>
+		<underline language="IT" method="pen" text="di piccola statura" type="straight"/>
+		<underline language="IT" method="pen" text="piu animosi de gli" type="straight"/>
+		<underline language="IT" method="pen" text="hanno manco da guardare" type="straight"/>
+		<underline language="IT" method="pen" text="quale correua a tutto corso, &amp;" type="straight"/>
+		
+		<underline language="LA" method="chalk" text="animalia cornuta carent dentibus" type="straight"/>
+		<underline language="IT" method="chalk" text="Honorato Fascitello" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="left_margin"/>
+		<symbol name="SS" place="intext"/>
+		
+		<!-- Marks -->	
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- grandis -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- gen -->
+				
+	    	<!-- Left margin -->
+	    <mark language="IT" method="pen" name="plus_sign" place="left_margin" text="animalia cornuta carent dentibus in superiori"/> 
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Honorato Fascitello, io ne farò forse un tratto uno honorato Fascitello"/> 
+		<mark language="IT" method="pen" name="plus_sign" place="left_margin" text="hanno manco da guardare"/> 
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark method="pen" name="dot" place="intext"/> <!-- tura, disse -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Honorato Fascitello"/>
+	    <mark method="pen" name="dot" place="intext"/> <!-- dottrina, mando -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="motti"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="honorato Fascitello"/>
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- Fascitello -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="piccola"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- piu animosi -->
+		<mark method="pen" name="comma" place="intext"/> <!-- altri ilquale -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> 
+		<mark method="pen" name="vertical_bar" place="intext"/>
+		<mark method="pen" name="comma" place="intext"/> <!-- sboccato il -->
+		<mark method="pen" name="dot" place="intext"/> <!-- re, gli --> 
+		
+    </annotation>
+</transcription>

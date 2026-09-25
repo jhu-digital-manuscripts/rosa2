@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.383r.tif" pagination="315" reader="John Dee" signature="Dddd ij"/>
+    <annotation>
+        
+        <marginalia anchor_text=".I. Mau[n]sel" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Jo. Maunsel.
+                    </marginalia_text>
+                    <person name="John Maunsell"/>
+                </position>
+            </language>
+            <translation>
+                John Maunsell.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Castru[m] illud muntissimu[m] de VVindesores" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Castru[m] de Windesores
+                    </marginalia_text>
+                    <location name="Windsor Castle"/>
+                </position>
+            </language>
+            <translation>
+                Windsor Castle.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; .I. Mau[n]sel" type="straight"/>
+        <underline language="LA" method="pen" text="potius incubator" type="straight"/>
+        <underline language="LA" method="pen" text="quòd ditior eo clericus non videretur" type="straight"/>
+        <underline language="LA" method="pen" text="de VVindesores" type="straight"/>
+        
+    </annotation>
+</transcription>

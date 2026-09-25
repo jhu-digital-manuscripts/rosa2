@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.107r.tif" pagination="193" reader="John Dee" signature="nn.i."/>
+    <annotation>
+        
+        <marginalia anchor_text="fra[n]ge ceruicem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        frangere ceruice[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To break the neck.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="crimina sua extinguere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        crimina extinguere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To extinguish crimes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="carnificis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        carnifex
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Tormenting.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fra[n]ge" type="straight"/>
+        <underline language="LA" method="pen" text="Audite, vt vestra humanitas" type="straight"/>
+        <underline language="LA" method="pen" text="in quem ne falsò quidem causa conferri criminis" type="straight"/>
+        <underline language="LA" method="pen" text="in qua docet, quot à ciuitate" type="straight"/>
+        <underline language="LA" method="pen" text="oculi" type="straight"/>
+        <underline language="LA" method="pen" text="crimina sua extinguere" type="straight"/>
+        <underline language="LA" method="pen" text="quàm si viuus in iudiciu[m] produceretur" type="straight"/>
+        <underline language="LA" method="pen" text="sceleris, audaciae, crudelitate testem" type="straight"/>
+        <underline language="LA" method="pen" text="Nihil addi iam videtur Iudices ad hanc improbitate[m], amentiam, crudelitatémque posse. &amp; recti" type="straight"/>
+        <underline language="LA" method="pen" text="sed secu[m] certat: id agit, vt semper superius suum facinus nouo scelere vincat. Phalargum" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">7</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">19</numeral>
+        
+        
+    </annotation>
+</transcription>

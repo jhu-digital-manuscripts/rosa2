@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.205r.tif" pagination="401" reader="John Dee" signature="Ll iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="corona Eadmu[n]do rema[n]sit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Corona rema[n]sit Edmu[n]do
+                    </marginalia_text>
+                    <person name="Edmund II"/>
+                </position>
+            </language>
+            <translation>
+                The crown remained with Edmund II.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aldgiua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aldgiua sup[ra] Aldgitha pag[ina] 396.
+                    </marginalia_text>
+                    <person name="Ealdgyth"/>
+                    <internal_ref>
+                        <target ref="RCP10653:420" text="396"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                Aldgiva, Eadgyth, see above page 396.   
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Eadrici" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Eadricus Streone.
+                    </marginalia_text>
+                    <person name="Eadric Streona"/>
+                </position>
+            </language>
+            <translation>
+                Eadric Streona.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Flore[n]ti[us] Wig. 
+                    </marginalia_text>
+                    <person name="Florence of Worcester"/>
+                </position>
+            </language>
+            <translation>
+                Florence of Worcester.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="virorum fortissimè" type="double"/>
+        <underline language="LA" method="pen" text="vniuerso orbi iudico" type="double"/>
+        <underline language="LA" method="pen" text="cupidior tui sum quàm regni" type="double"/>
+        <underline language="LA" method="pen" text="Dania seruit" type="double"/>
+        <underline language="LA" method="pen" text="Norvvegia succumbit" type="double"/>
+        <underline language="LA" method="pen" text="rex Suenoru[m]" type="double"/>
+        <underline language="LA" method="pen" text="modum te &amp; amicum cupiam, &amp; regnorum consortem" type="straight"/>
+        <underline language="LA" method="pen" text="Eadmundus" type="straight"/>
+        <underline language="LA" method="pen" text="cedit verbis, qui flecti non potuit armis. Depositis" type="straight"/>
+        <underline language="LA" method="pen" text="muta[n]tes &amp; arma" type="double"/>
+        <underline language="LA" method="pen" text="Cnuto &amp; Cnuto" type="double"/>
+        <underline language="LA" method="pen" text="sed corona" type="double"/>
+        <underline language="LA" method="pen" text="Eadvvardum" type="double"/>
+        <underline language="LA" method="pen" text="Eadvvinum" type="double"/>
+        <underline language="LA" method="pen" text="Aldgiua" type="double"/>
+        <underline language="LA" method="pen" text="inuidit eius prosperitari" type="straight"/>
+        <underline language="LA" method="pen" text="proditor, &amp; iniquus" type="double"/>
+        <underline language="LA" method="pen" text="Dux Merciorum Eadricus" type="straight"/>
+        <underline language="LA" method="pen" text="domum secretiorem" type="triple"/>
+        <underline language="LA" method="pen" text="filius dicti Eadrici, patris instinctu" type="straight"/>
+        <underline language="LA" method="pen" text="cultello bis" type="triple"/>
+        <underline language="LA" method="pen" text="primis regni diebus" type="double"/>
+        <underline language="LA" method="pen" text="Merciam Eadrico" type="double"/>
+        <underline language="LA" method="pen" text="Turkillo" type="straight"/>
+        <underline language="LA" method="pen" text="Iricio" type="double"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th99a.010r.tif" pagination="10[r]" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>{ ad rem.</marginalia_text>
+                </position>
+            </language>
+            <translation>Towards the matter.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Diet.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="follie" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ffishars folly in London.</marginalia_text>
+                    <location name="Fisher's Folly"/>
+                    <location name="London"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="suertie" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Suertyship.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="often exceeding, but alwaie inough" type="straight"/>
+        <underline language="EN" method="pen" text="husbandlie fare, and the" type="straight"/>
+        <underline language="EN" method="pen" text="to be feasted" type="straight"/>
+        <underline language="EN" method="pen" text="to feast, is" type="straight"/>
+        <underline language="EN" method="pen" text="measurely feasting, with neighbors" type="straight"/>
+        <underline language="EN" method="pen" text="thee beloued, and liue" type="straight"/>
+        <underline language="EN" method="pen" text="husbandly handsom, let workman" type="straight"/>
+        <underline language="EN" method="pen" text="in dooing, consumeth his stock" type="straight"/>
+        <underline language="EN" method="pen" text="get but a mock" type="straight"/>
+        <underline language="EN" method="pen" text="Spend none but your owne, howsoeuer" type="straight"/>
+        <underline language="EN" method="pen" text="bribing and shifting, haue" type="straight"/>
+        <underline language="EN" method="pen" text="suertie seldome" type="straight"/>
+        <underline language="EN" method="pen" text="purse penniles" type="straight"/>
+        <underline language="EN" method="pen" text="Skarborow warning, as" type="straight"/>
+        <underline language="EN" method="pen" text="arest yee" type="straight"/>
+        <underline language="EN" method="pen" text="hold of thy sleeue" type="straight"/>
+        <underline language="LA" method="pen" text="legem pone" type="straight"/>
+        <underline language="EN" method="pen" text="to paie at thy" type="straight"/>
+        <underline language="LA" method="pen" text="Oremus) for" type="straight"/>
+        <underline language="EN" method="pen" text="other collects" type="straight"/>
+        <underline language="EN" method="pen" text="the lender doth" type="straight"/>
+        <underline language="EN" method="pen" text="Be pinched by lending, for kiffe" type="straight"/>
+        <underline language="EN" method="pen" text="nor for kin" type="straight"/>
+        <underline language="EN" method="pen" text="by spending, by" type="straight"/>
+        <underline language="EN" method="pen" text="betwixt bark" type="straight"/>
+        <underline language="EN" method="pen" text="to craue, but to liue of thine owne" type="straight"/>
+        <underline language="EN" method="pen" text="comforts" type="straight"/>
+        
+        <symbol name="JC" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="bracket" place="left_margin" text="Not often exceeding, but alwaie inough,             is husbandlie fare, and the guise of the plough."/>
+        <mark language="EN" method="pen" name="bracket" place="left_margin" text="So neuer to craue, but to liue of thine owne,             brings comforts a thousand, to many vnknowne."/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="often exceeding, but alwaie inough"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="thee beloued, and liue"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="in dooing, consumeth his stock"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="bribing and shifting, haue"/>
+        <mark language="EN" method="pen" name="bracket" place="right_margin" text="Be suertie seldome, (but neuer for much) for feare of purse penniles,             hanging by such: Or Skarborow warning, as ill I beleeue, when (sir I arest yee) gets hold of thy sleeue."/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="bracket" place="right_margin" text="Vse (legem pone) to paie at thy daie, but vse not (Oremus) for often delaie:             Yet (Praesta quaesumus) out of a grate, of al other collects, the lender doth hate."/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="bracket" place="right_margin" text="Be pinched by lending, for kiffe nor for kin, nor also by spending, by such as com in: Nor put to thy hand betwixt bark and the tree, least through thy owne follie, so pinched thou bee."/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="to craue, but to liue of thine owne"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--reeke,-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Spend none but your owne, howsoeuer"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="suertie"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Skarborow"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="legem pone"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Praesta"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="pinched by ending"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="spending"/>
+        <mark method="pen" name="dot" place="intext"/> <!--tree,-->
+        
+    </annotation>
+</transcription>

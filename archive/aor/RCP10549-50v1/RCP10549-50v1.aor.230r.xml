@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.230r.tif" pagination="439" reader="John Dee" signature="eee.iiii."/>
+    <annotation>
+        
+        <marginalia anchor_text="C. Marium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        C Marius
+                    </marginalia_text>
+                    <person name="Gaius Marius"/>
+                </position>
+            </language>
+            <translation>
+                Gaius Marius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oras Africae desertissimas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        or[a]e desertiss[ima]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The most desolate coast lines.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        à maiori.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Generally.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="terrorem suu[m] falsò iactari, opponíque" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        terrore[m] iactari opponi.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To shake off and oppose terror.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="casum tam horribilem, tam graue[m], tam repentinu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Casus horribilis grauis repentin[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A case, horrible, serious and unexpected.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="rapinas meo" type="straight"/>
+        <underline language="LA" method="pen" text="quibus nos, radicibus natum" type="straight"/>
+        <underline language="LA" method="pen" text="qui mihi funestus fuit, omnibus bonis luctuosus, cu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="sed tecta vrbis ac templa lugerent" type="straight"/>
+        <underline language="LA" method="pen" text="monstra, quae scelera vidistis" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">3</numeral>
+
+
+    </annotation>
+</transcription>

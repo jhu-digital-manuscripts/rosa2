@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.422r.tif" pagination="393" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="In vigilia sancti Matthaei apostoli coadunatis clero, &amp; populo apud VVestmonast. postulat rex à tota ecclesia, per totum regnum Angliae locata,              medietatem omnium bonorum, tàm temporalium quàm spiritualiu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nota.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        hîc se prodit monachus.   
+                    </marginalia_text>
+                    <person name="Matthew Paris"/>
+                </position>
+            </language>
+            <translation>
+                Here the monk reveals himself.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="In vigilia sancti Matthaei apostoli coadunatis clero, &amp; populo apud VVestmonast. postulat rex à tota ecclesia, per totum regnum Angliae locata,              medietatem omnium bonorum, tàm temporalium quàm spiritualiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Quam quidem medietatem, si prius prudentius &amp; melius cogitassent, sede apostolica inconsulta, regi concedere non praesumere[n]t vllo modo" type="straight"/>
+        
+        <errata amendedtext="praecaue[n]s" copytext="praecaues" language="LA"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.303r.tif" pagination="119" reader="John Dee" signature="P.iij."/>
+    
+    
+    <annotation>
+        
+        <marginalia anchor_text="Dauid rex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dauid Rex</marginalia_text>
+                    <person name="David II of Scotland"/>
+                </position>
+            </language>
+            <translation>King David.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="capto Dauide rege" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dauid Scotoru[m] Rex captus</marginalia_text>
+                    <person name="David II of Scotland"/>
+                </position>
+            </language>
+            <translation>David, King of the Scots, captured.</translation>
+        </marginalia>
+        
+        
+        
+        <underline language="LA" method="pen" text="Dauid rex Scotorum, solicitatus per literas Philippi regis Francorum venit in partes Northumbriae cum exercitu sexaginta" type="straight"/>
+        <underline language="LA" method="pen" text="Beurepeyr" type="straight"/>
+        <underline language="LA" method="pen" text="Baronetti" type="straight"/>
+        <underline language="LA" method="pen" text="cum rege superbo" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; gente sua" type="straight"/>
+        <underline language="LA" method="pen" text="sunt hostes" type="straight"/>
+        <underline language="LA" method="pen" text="capto Dauide" type="double"/>
+        <underline language="LA" method="pen" text="Iohan. Coupelond" type="straight"/>
+        
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+       
+    </annotation>
+    
+</transcription>

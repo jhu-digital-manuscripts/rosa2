@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Faiz d'armes et de chevalerie and Mutacion de Fortune</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Français 603, Bibliothèque national de France, Paris. Paris, 1410-1411. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 368 x 274 mm, 242 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p>
+                  The skin of the <material>parchment</material> is quite tanned and has many imperfections, as well as some small holes, cuts and seams. There are wet spots in the first pages (ff. <locus from="1" to="9">1-9</locus>>). The vís-à-vís is respected except in ff. <locus>58</locus>, <locus>59</locus>, <locus>62</locus> and <locus>63</locus>. </p> 
+            
+            </note>
+            
+            <note rend="QUIRES">
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     
+                     <locus from="1" to="8">1-8</locus>
+                  
+                  </item>
+                  
+                  <item n="II">
+                     
+                     <locus from="9" to="16">9-16</locus>
+                  
+                  </item>
+                  
+                  <item n="III">
+                     
+                     <locus from="17" to="24">17-24</locus>
+                  
+                  </item>
+                  
+                  <item n="IV">
+                     
+                     <locus from="25" to="32">25-32</locus>
+                  
+                  </item>
+                  
+                  <item n="V">
+                     
+                     <locus from="33" to="40">33-40</locus>
+                  
+                  </item>                  
+                               
+                  <item n="VI">
+                     
+                     <locus from="41" to="48">41-48</locus>
+                  
+                  </item>    
+                  
+                  <item n="VII">
+                     
+                     <locus from="49" to="56">49-56</locus>
+                     
+                  </item>
+                  
+                  <item n="VIII">
+                     
+                     <locus from="57" to="64">57-64</locus>
+                     
+                  </item>
+                  
+                  <item n="IX">
+                     
+                     <locus from="65" to="72">65-72</locus>
+                     
+                  </item>
+                  
+                  <item n="X">
+                     
+                     <locus from="73" to="80">73-80</locus>
+                     
+                  </item>
+                  
+                  <item n="XI">
+                     
+                     <locus from="81" to="88">81-88</locus>
+                     
+                  </item>
+                  
+                  <item n="XII">
+                     
+                     <locus from="89" to="96">89-96</locus>
+                     
+                  </item>
+                  
+                  <item n="XIII">
+                     
+                     <locus from="97" to="104">97-104</locus>
+                     
+                  </item>
+                  
+                  <item n="XIV">
+                     
+                     <locus from="105" to="112">105-112</locus>
+                     
+                  </item>
+                  
+                  <item n="XV">
+                     
+                     <locus from="113" to="120">113-120</locus>
+                     
+                  </item>
+                  
+                  <item n="XVI">
+                     
+                     <locus from="121" to="128">121-128</locus>
+                     
+                  </item>
+                  
+                  <item n="XVII">
+                     
+                     <locus from="129" to="136">129-136</locus>
+                     
+                  </item>
+                  
+                  <item n="XVIII">
+                     
+                     <locus from="137" to="142">137-142</locus>
+                     
+                  </item>
+                  
+                  <item n="XIX">
+                     
+                     <locus from="143" to="150">143-150</locus>
+                     
+                  </item>
+                  
+                  <item n="XX">
+                     
+                     <locus from="151" to="158">151-158</locus>
+                     
+                  </item>
+                  
+                  <item n="XXI">
+                     
+                     <locus from="159" to="166">159-166</locus>
+                     
+                  </item>
+                  
+                  <item n="XXII">
+                     
+                     <locus from="167" to="174">167-174</locus>
+                     
+                  </item>
+                  
+                  <item n="XXIII">
+                     
+                     <locus from="175" to="182">175-182</locus>
+                     
+                  </item>
+                  
+                  <item n="XXIV">
+                     
+                     <locus from="183" to="190">183-190</locus>
+                     
+                  </item>
+                  
+                  <item n="XXV">
+                     
+                     <locus from="191" to="198">191-198</locus>
+                     
+                  </item>
+                  
+                  <item n="XXVI">
+                     
+                     <locus from="199" to="206">199-206</locus>
+                     
+                  </item>
+                  <item n="XXVII">
+                     
+                     <locus from="207" to="214">207-214</locus>
+                     
+                  </item>
+                  
+                  <item n="XXVIII">
+                     
+                     <locus from="215" to="222">215-222</locus>
+                     
+                  </item>
+                  
+                  <item n="XXIX">
+                     
+                     <locus from="223" to="230">223-230</locus>
+                     
+                  </item>
+                  
+                  <item n="XXX">
+                     
+                     <locus from="231" to="238">231-238</locus>
+                     
+                  </item>
+                  
+                  <item n="XXXI">
+                     
+                     <locus from="239" to="242">239-242</locus>
+                     
+                  </item>
+                  
+               </list>
+                               
+                              
+     
+               
+               <p>(VI, paper) + 242 + (VI, paper). There are two modern foliations one in ink and the other in pencil, both are accurate.</p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>There are dark gray ruling marks on the folios done with a lead pencil. There is some evidence of pricking, with 4 or 8 pricks on the folios, of triangular form, probably to mark the place where the columns should appear. There are two columns with 39 (sometimes 40 or 41) lines each. The text block is rather even.</p>
+
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text is written in dark brown ink in different tones throughout the manuscript, with a darker one being used in the <hi rend="italics">Mutacion</hi> and a lighter one for the <hi rend="italics">Fais d'armes</hi>. The ink used for the rubrics is a dark orange-red. There seems to be one scribal hand for the whole manuscript (Hand P) using a small semi-cursive minuscule script. There is evidence of punctuation marks (commas and periods) and corrections (mispelled words or whole passages that were copied twice, etc.).</p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>There are rubrics located before every chapter. The main ornamental decoration was done by several artists. The first artist was responsible for the decoration of the <hi rend="italics">Fais d'armes</hi> in folios <locus>2</locus>, <locus>27</locus>, <locus>49</locus>, and <locus>66</locus>, and folios <locus>109</locus> and <locus>127</locus> of the <hi rend="italics">Mutacion</hi>. A second artist decorated the folios <locus>81</locus> and <locus>143</locus> of the <hi rend="italics">Mutacion</hi>. Finally, other artists worked on the folios <locus>91</locus>, <locus>174</locus>, <locus>178</locus>, and <locus>206</locus>. On the ohter hands, the miniature themselves were decorated by the hand of the Master of the <hi rend="italics">Cité des dames</hi>. The manuscript contains a rare inscription with instructions for the artist of the miniatures in folio <locus>127</locus>, but it was partially erased.</p>
+               
+               <p> Some folios have beautiful decorative borders, usually when a miniature is present. These borders can frame the entire text block, appear on the left, or in the intercolumnation.These are spray borders, consisting of fine foliate tendrils with small gilded leaves. In some examples the gilded leaves are accompanied by red and blue flowers.</p> 
+               
+               <p> There are 12 large foliated initials in either blue or pink embedded within a gold leaf background (vignette) with foliated extenders that turn into the decorative borders. There are also a large number of smaller initials, also either blue or pink on a gold leaf background.</p>
+               
+               <p>Miniatures:</p>
+               <list>
+                  <item> Fol. <locus>2</locus>, Christine and Minerva. </item>
+                  <item> Fol. <locus>27</locus>, Scene of a siege by land and sea. </item>
+                  <item> Fol. <locus>49</locus>, Christine and Honoré Bouvet. </item>
+                  <item> Fol. <locus>66</locus>, The king asks for counsel.</item>
+                  <item> Fol. <locus>81</locus>, Christine in her study.</item>
+                  <item> Fol. <locus>91</locus>, Eur welcoming visitors to the castle of Fortune.</item>
+                  <item> Fol. <locus>109</locus>, The interior of the castle, the highest seat. </item>
+                  <item> Fol. <locus>127</locus>, The Hall of Fortune. </item>
+                  <item> Fol. <locus>143</locus>, The Kings of the Land. </item>
+                  <item> Fol. <locus>174</locus>, The Battle of the Amazons.</item>
+                  <item> Fol. <locus>206</locus>, The Founding of Rome.</item>
+                  
+                             
+                  </list>
+            </note>
+            
+            <note rend="BINDING">
+               
+               <p>The manuscript was rebound with calf skin the 22nd of december, 1969. The spine is covered with red moroccan lether divided in six sections, the second and fourth contain the titles <hi rend="italics">"LIVRE DES FAITS D'ARMES"</hi> and <hi rend="italics">"LIVRE DE LA MUTACION DE FORTUNE"</hi>. In the first and last section, the coat of arms of Louis VIII can be seen, while in the third and fifth sections there are large<hi rend="italics">fleur-de-lys</hi> flanked by smaller ones on the sides and the corners.</p>
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>The manuscript can be dated between 1410 and 1411. The <hi rend="italics">Faiz d'armes et de chevalerie</hi>, the first text in this volume, was composed in 1410; textually, it was written soon after KBR 10476, and the text and tables employ a systematic use of paragraph markigs. The first miniature did not use all the reserved space, and it appears like it was copied from an pre-existing model. Old shelfmarks written on folio <locus>1</locus> are 345 (Rigault), 361 (Dupuy), and 7087 (Regius).</p>
+               
+               <p>Provenance: The manuscript was probably made for a member of the Armagnac party, since this text does not mention the victory of John the Fearless in Liège, a victory that was praised in the  <hi rend="italics">Faiz d'armes</hi> from Bruxelles. The presence of bookmarks might indicate Jean d'Angoulême as a posible owner, since he was in the habit of using them. Yet, this manuscript does not appear in the inventory of his possessions before his death. The manuscript became part of the royal library in the 17th century.</p>             
+              
+            </note>
+            
+            <note rend="TEXT">
+               <p>
+               Contains the following texts:
+               Fols. <locus from="1" to="80">1-80</locus>, <hi rend="italics">Faiz d'armes et de chevalerie</hi>.
+               Fols. <locus from="81" to="242">81-242</locus>, <hi rend="italics">Mutacion de Fortune</hi>.
+              </p>
+            </note>
+            
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 603</note>
+               
+               <title>Le Livre de faiz d'armes et de chevallerie and Le Livre de la mutacion de fortune</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="242" unit="folios">242 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">368</height>
+                     
+                     <width unit="mm">274</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">11</note>
+               
+               
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 603</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="242v">1r-242v</locus>
+                     <title>Le Livre de faiz d'armes et de chevallerie and Le Livre de la mutacion de Fortune</title>
+                     <note type="textid">Le Livre de faiz d'armes et de chevallerie and Le Livre de la mutacion de Fortune</note>
+                     <note type="folios">242</note>
+                     <note type="illustrations">11</note>
+                     <note type="linesPerColumn">40</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

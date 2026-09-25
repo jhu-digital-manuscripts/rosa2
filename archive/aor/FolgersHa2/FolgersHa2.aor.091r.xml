@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.091r.tif" pagination="5" reader="Harvey" signature="A3[r]"/>	<!-- ABO 95right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Vir, semper paratus: semper alatus.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="IT">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						questo punto.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A man who is always prepared is always winged. This point.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vt perlarum magisterium extrahendum: sic omniu[m] memorabilium.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				As teaching must be extracted from pearls, so too must it be extracted from all noteworthy things.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Sera nimis vita est Crastina: viue hodiè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A life tomorrow is too late: live today.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Ars, iuuenis: Virtus,
+						vir: Furor ipse, Deus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Art is a young man; virtue is an old man; fury itself is God.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) Viuat vir.
+						Non Quis, sed quid.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Let man live.
+				Not who, but what.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Etiam maxima, magno actore minora.
+						Qua[e] alijs grauissima, huic uni leuia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Even the greatest things are lesser for a great actor.
+				Those things which are heaviest for another are light for him alone.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Qui non est hodiè, cras minùs aptus erit. 
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						μηδὲν ἀναβαλλόμενος:
+					</marginalia_text>
+					<X-ref book_title="Emblemata" language="EL" person="Alciati" text="μηδὲν ἀναβαλλόμενος"/>
+						<!-- Emblem 3 -->
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Alexandru[m] fecit magnu[m].
+					</marginalia_text>
+					<person name="Alexander the Great"/>
+				</position>
+			</language>
+			<translation>
+				He who is not present today will be less capable tomorrow.
+				"Never postpone": this motto made Alexander great.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Homo est bestia, qui non se cogit quotidiè esse hominem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The man who does not force himself daily to be a man, is a beast.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="FR">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Desir n'a repos.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Nec mora, nec requies: è Ca[e]saris disciplina.
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+				</position>
+			</language>
+			<translation>
+				Desire does not rest. 
+				Neither delay, nor rest: from the training of Caesar.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Aut viuam lepidè: aut moriar magnificè. Eutrapelus autarces.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Either I shall live pleasantly, or I shall die magnificently. The self-sufficiency of Eutrapelus.
+			</translation>
+		</marginalia>
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.091r_0001" marginalia_continues_to="Ha2.090v_0001" marginalia_to_transcription="Ha2.090v.xml">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Alij egent alijs:	Autarces seipso. Qui se habet, habet omnes: qui = [[A2v]: = alios tenet, tenet neminem. Totus vir, solus vir.] 
+						<!-- Continues onto facing page, right margin, Ha2.090v --> 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Others need other things; self-sufficiency needs itself. He who has himself, has everything. He who [[A2v]: keeps others, keeps no one. Only a man alone is completely a man.]
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="mandasse piu tosto" type="straight"/>
+		<underline language="IT" method="pen" text="la Morte d'aspetto horribile" type="straight"/>
+		<underline language="IT" method="pen" text="Io non sono quel che tu cerchi" type="straight"/>
+		<underline language="IT" method="pen" text="là nel letto" type="straight"/>
+		<underline language="IT" method="pen" text="il marito" type="straight"/>
+		<underline language="IT" method="pen" text="farsi beffe del" type="straight"/>
+		<underline language="IT" method="pen" text="male" type="straight"/>
+		<underline language="IT" method="pen" text="SOLEMONE Sofista" type="straight"/>
+		<underline language="IT" method="pen" text="dalle gotte" type="straight"/>
+		<underline language="IT" method="pen" text="io ho bisogno" type="straight"/>
+		<underline language="IT" method="pen" text="d'andare" type="straight"/>
+		<underline language="IT" method="pen" text="piedi" type="straight"/>
+		<underline language="IT" method="pen" text="di far qualcosa" type="straight"/>
+		<underline language="IT" method="pen" text="non ho mani" type="straight"/>
+		<underline language="IT" method="pen" text="la gotta mi" type="straight"/>
+		<underline language="IT" method="chalk" text="la gotta mi prende, io ho ben mani, &amp; piedi" type="straight"/>
+		<underline language="IT" method="pen" text="Strani" type="straight"/>
+		<underline language="IT" method="pen" text="essere i casi della Fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="hauendo perduti" type="straight"/>
+		<underline language="IT" method="pen" text="cinquecento scudi" type="straight"/>
+		<underline language="IT" method="pen" text="come disperato per impiccarsi" type="straight"/>
+		<underline language="IT" method="pen" text="vna traue" type="straight"/>
+		<underline language="IT" method="pen" text="mille scudi riposti" type="straight"/>
+		<underline language="IT" method="pen" text="tutto rasserenato" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; lieto" type="straight"/>
+		<underline language="IT" method="pen" text="dipoi il padrone" type="straight"/>
+		<underline language="IT" method="pen" text="loro vegge[n]do il capestro" type="straight"/>
+		<underline language="IT" method="pen" text="pensar piu oltre, s'appiccò con esso" type="straight"/>
+		
+		<symbol name="SS" place="intext"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--pre-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--gran-->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!--Fortuna-->
+		
+		<mark method="pen" name="quotation_mark" place="intext"/>
+		<mark method="pen" name="dot" place="intext"/> <!--piedi, s'-->
+		
+    </annotation>
+</transcription>

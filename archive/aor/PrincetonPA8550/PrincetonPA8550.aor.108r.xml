@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonPA8550.108r.tif" pagination="215" reader="Harvey" signature="Oiiiir"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        sa[e]pe dictu[m] à Melanchthone, et Munstero.
+                    </marginalia_text>
+                    <person name="Philipp Melanchthon"/>
+                    <person name="Sebastian Munster"/>
+                </position>
+            </language>
+            <translation>
+                Often said by Melanchthon and Munster.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="discedunt, qui à" type="straight"/>
+        <underline language="LA" method="pen" text="sanè quàm multum" type="straight"/>
+        <underline language="LA" method="pen" text="maximè in foro, apud nos non" type="straight"/>
+        <underline language="LA" method="pen" text="in Bibliothecis eas adseruari" type="straight"/>
+        <underline language="LA" method="pen" text="gerendae Reipub[lici] rationem aequi" type="straight"/>
+        <underline language="LA" method="pen" text="iustum discrimen peterent, quicunq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="munera tractanda animum adiecerunt" type="straight"/>
+        
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- leges, in -->
+        <mark method="pen" name="comma" place="intext"/> <!-- rationem aequi -->
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

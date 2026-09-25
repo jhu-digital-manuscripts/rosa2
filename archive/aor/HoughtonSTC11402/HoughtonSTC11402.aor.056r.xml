@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.056r.tif" reader="Harvey" signature="G[i[r]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="lay in wayte" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Insidi[a]e/</marginalia_text>
+                </position>
+            </language>
+            <translation>Ambushes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="behynde on the backe" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>a tergo /</marginalia_text>
+                </position>
+            </language>
+            <translation>From the back.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lay in wayte" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vt s[upr]a /</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0088" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>As above.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="priuily hyrynge" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Assassination.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Lucullus" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lucullus, circu[m]specte, and wary.</marginalia_text>
+                    <person name="Lucius Licinius Lucullus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        ἀπιστία
+                    </marginalia_text> 
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Prudentis Ducis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The distrust of a prudent leader.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="priuily hyrynge" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Had not Myl. of Leicester now in [the] Low Cu[n]tryes, need to haue an eie to Captain Skink, so long Spanish? </marginalia_text>
+                    <person name="Robert Dudley"/>
+                    <person name="Maarten Schenck"/>
+                    <location name="Leicester"/>
+                    <location name="Netherlands"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="myghte kepe theyr araye" type="straight"/>
+        <underline language="EN" method="pen" text="gyue backe a" type="straight"/>
+        <underline language="EN" method="pen" text="space" type="straight"/>
+        <underline language="EN" method="pen" text="wayte for the same purpose, to ryse" type="straight"/>
+        <underline language="EN" method="pen" text="of theyr ennemies" type="straight"/>
+        <underline language="EN" method="pen" text="that semed to haue" type="straight"/>
+        <underline language="EN" method="pen" text="men approchynge nere" type="straight"/>
+        <underline language="EN" method="pen" text="gored" type="straight"/>
+        <underline language="EN" method="pen" text="and great affiance, that the king" type="straight"/>
+        <underline language="EN" method="pen" text="in the multitude of his" type="straight"/>
+        <underline language="EN" method="pen" text="Mithridates" type="straight"/>
+        <underline language="EN" method="pen" text="Lucullus" type="straight"/>
+        <underline language="EN" method="pen" text="ouercame by very power of chiualrie" type="straight"/>
+        <underline language="EN" method="pen" text="agayne by craft" type="straight"/>
+        <underline language="EN" method="pen" text="a certain" type="straight"/>
+        <underline language="EN" method="pen" text="excellente man of strengthe" type="straight"/>
+        <underline language="EN" method="pen" text="Adathantes to runne" type="straight"/>
+        <underline language="EN" method="pen" text="meanes to wynne his fauour" type="straight"/>
+        <underline language="EN" method="chalk" text="wynne his fauour" type="straight"/>
+        <underline language="EN" method="pen" text="than to slee hym" type="straight"/>
+        <underline language="EN" method="pen" text="manfully attempted" type="straight"/>
+        <underline language="EN" method="pen" text="as oone of" type="straight"/>
+        <underline language="EN" method="pen" text="his knyghtes" type="straight"/>
+        <underline language="EN" method="pen" text="layde priuie wayte" type="straight"/>
+        <underline language="EN" method="pen" text="on hym, supposynge" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="wayte for the same purpose, to ryse"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="wayte for the same purpose, to ryse"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="and great affiance, that the king"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="agayne by craft"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!--Mithridates, whom-->
+        <mark method="pen" name="bracket" place="intext"/> <!--chiualrie, sette-->
+        <mark method="pen" name="dot" place="intext"/> <!--hym, whych-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="layde priuie wayte"/>
+        
+    </annotation>
+</transcription>

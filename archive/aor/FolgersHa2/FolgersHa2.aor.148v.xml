@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.148v.tif" pagination="120" reader="Harvey" signature="[H4v]"/>	<!-- ABO 153left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						{ Semper dicendum, agendumq[ue], quàm potes optimè:
+						et alijs quibuscunq[ue]
+						meliùs: et teipso quotidiè excellentiùs.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Always speaking and acting as best as you can and better than all the others;
+				and daily more excellent than yourself.
+			</translation>
+		</marginalia>
+		
+		<marginalia anchor_text="Piouvan' Arloto" hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Piouano.
+					</marginalia_text>
+					<person name="Pievano Arlotto"/>
+				</position>
+			</language>
+			<translation>Pievano Arlotto.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Pulcherrimum Artis, virtutisq[ue] certamen: et Sola diuina
+						a[e]mulatio.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The most beautiful competition of art and virtue, and the sole divine emulation.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Liberè in Presbyteros.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Freely against the Presbyterians.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Generosissimorum animorum nobilissima Contentio,
+						Artis, et Virtutis pra[e]stantia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A most noble struggle of the most generous spirits of art and the excellence of virtue. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Eris heroica.
+						Zelus aurea[e] a[e]tatis.
+					</marginalia_text>
+					<person name="Eris"/>
+				</position>
+			</language>
+			<translation>
+				Heroic Eris.
+				The zeal of the golden age.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Circumfertur Hermolai Barbari generosum Carmen:
+						venter, pluma, Venus Laudem fugienda Sequenti. | 
+					</marginalia_text>
+					<person name="Ermolao Barbaro"/>
+				</position>
+			</language>
+			<translation>
+				The generous song of Ermolao Barbaro is published;
+				"The belly; a feather bed; lust; one who seeks praise should run from these things."
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="FR">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Desir n'a repos.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Desire does not rest.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Jacta est alea: sed inuicti valoris.
+					</marginalia_text>
+					<X-ref book_title="De vita Caesarum" language="LA" person="Suetonius" text="Jacta est alea"/>
+				</position>
+			</language>
+			<translation>
+				"The die is cast," but of invincible valor.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						I. Vinum balsami. 2. Oleum balsami. 3. ipsum preciosum balsamum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				1. Balsam wine. 2. Balsam oil. 3. Precious balsam itself.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Virtus non curat gloriam, sed dignitatem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Virtue cares not for glory, but dignity.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Miserescit succumbentium vllo modo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				In any way, I take compassion on those who surrender. 
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Preti" type="straight"/>
+		<underline language="IT" method="pen" text="Frati" type="straight"/>
+		<underline language="IT" method="pen" text="i più saui huomini" type="straight"/>
+		<underline language="IT" method="pen" text="Piouan' Arloto, nostro" type="straight"/>
+		<underline language="IT" method="pen" text="delle sue facetie" type="straight"/>
+		<underline language="IT" method="pen" text="sententie &amp; prouerbi" type="straight"/>
+		<underline language="IT" method="pen" text="raccontarne quì alquanti" type="straight"/>
+		<underline language="IT" method="pen" text="più saui huomini del mondo" type="straight"/>
+		<underline language="IT" method="pen" text="adoprano le nostre mogli" type="straight"/>
+		<underline language="IT" method="pen" text="nutriamo i lor figliuoli" type="straight"/>
+		<underline language="IT" method="pen" text="della maluagia" type="straight"/>
+		<underline language="IT" method="pen" text="auanti" type="straight"/>
+		<underline language="IT" method="pen" text="nel" type="straight"/>
+		<underline language="IT" method="pen" text="dopò" type="straight"/>
+		<underline language="IT" method="pen" text="beesse altro che maluagia" type="straight"/>
+		<underline language="IT" method="pen" text="il capo" type="straight"/>
+		<underline language="IT" method="pen" text="barba, canuto" type="straight"/>
+		<underline language="IT" method="pen" text="capelli hanno venti anni" type="straight"/>
+		
+		<symbol name="SS" place="intext"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- alquan -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- dia -->
+		<mark method="pen" name="bracket" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ca -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- rispo -->
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- prouerbi, mi -->
+		<mark method="pen" name="comma" place="intext"/> <!-- mogli, & -->
+    </annotation>
+</transcription>

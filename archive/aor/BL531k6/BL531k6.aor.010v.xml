@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL531k6.010v.tif" pagination="[010v]" reader="John Dee" signature="[C2v]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="reuolutionibus conuersis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Reuolutiones conversa[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Modified rotations.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="annis sidereis" type="straight"/>
+        <underline language="LA" method="pen" text="reuolutionibus" type="straight"/>
+        <underline language="LA" method="pen" text="conuersis" type="double"/>
+        <underline language="LA" method="pen" text="residuum cum titulo" type="straight"/>
+        
+    </annotation>
+</transcription>

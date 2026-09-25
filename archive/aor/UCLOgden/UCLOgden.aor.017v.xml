@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.017v.tif" pagination="18" reader="John Dee" signature="[b 3[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Licet hic hunc luna[e] ordine[m] animadvertere q[uod] planeta[e] vt ordine[m] se complectuntur, et sequitur mutuo ita hic desruptos esse serie co[n]tinuata. <!--JG: Unruse about 'quod' and 'desruptos'-->
+                        vt co[n]stituto semel exordio a ♂ decano, quonia[m] hinc succidit ☉: solis proximus est positus decanus deinde ♀, tu[m] ☿ vltimo ☾: Trium ad Saturnu[m] reverti ordine[m] persequimur p[ri]ore.
+                    </marginalia_text>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>
+                Here it is allowed to estimate this succession of the moon, since the planets are themselves encompassed by this sucession, and it follows in return that thus they have been [...] by an unbroken succession.
+                as constituted at the first beginning by Mars in the decan, because it was succeeded by the sun. The next decan is positioned in/by Venus, then Mercury and finally the moon. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Est aute[m] pars in signo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        quid sit pars signi.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                What is the part of the sign.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="conati sunt disputationis attingere, in primis uestigiis constitutionis, istum tractatu[m], cum quodam dissimulationis fastidio reliquerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Est aute[m] pars in signo" type="straight"/>
+        
+    </annotation>
+</transcription>

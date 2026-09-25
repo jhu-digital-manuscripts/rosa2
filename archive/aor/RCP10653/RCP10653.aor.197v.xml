@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.197v.tif" pagination="386" reader="John Dee" signature="[Kk[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Eadrico cuidam proditori, cognomento Streon[a]e" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Eadricus Streon[a]e  
+                    </marginalia_text>
+                    <person name="Eadric Streona"/>
+                </position>
+            </language>
+            <translation>
+                Eadric Streona.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Burtuna super fluuiu[m] de Trent" hand="Italian"> 
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Burton vppon Trent   
+                    </marginalia_text>
+                    <location name="Burton upon Trent"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Eadricus streone
+                        filius Leofwini fit Mercioru[m] Dux: cui Æthelredus Rex (seu vt Flore[n]tius Wig) a[e]gelredus, filia[m] sua Edgitha[m], vxoru[m] dedit 
+                    </marginalia_text>
+                    <person name="Eadric Streona"/>
+                    <person name="Leofwine, Ealdorman of the Hwicce"/>
+                    <person name="Aethelred II"/> 
+                    <person name="Eadgyth of England"/>
+                    <person name="Florence of Worcester"/>
+                    <book title="Chronicon ex chronicis"/>
+                </position>
+            </language>
+            <translation>
+                Eadric Streona, son of Leofwine was leader of the Mercians: to whom King Æthelred (or as Florence of Worcester [says]) Ægelredus, gave his daughter Eadgyth as a wife.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Monam insulam" type="straight"/>
+        <underline language="LA" method="pen" text="Merciorum Eadrico cuidam" type="straight"/>
+        <underline language="LA" method="pen" text="Streon[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="non nobilitas sed" type="straight"/>
+        <underline language="LA" method="pen" text="dedecus Angloru[m]" type="straight"/>  
+        <underline language="LA" method="pen" text="tributum dedit" type="straight"/>
+        <underline language="LA" method="pen" text="Descriptio Eadrici proditoris" type="straight"/>
+        
+    </annotation>
+</transcription>

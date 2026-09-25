@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.173r.tif" pagination="174" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="patientia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>patie[n]tia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Patience.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Te quoq[ue] fallet amor, dum sit tibi finis amandi" type="straight"/>
+        <underline language="LA" method="pen" text="Propositis frenis saepe repugnet equus" type="straight"/>
+        <underline language="LA" method="pen" text="Posse pati facile est, tibi ni patientia desit, Protinus ex facili gaudia ferre licet" type="straight"/>
+        <underline language="LA" method="pen" text="Nam, quoniam variant animi, variabimus artes" type="straight"/>
+        <underline language="LA" method="pen" text="Mille male species, mille salutis erunt" type="straight"/>
+        
+        <symbol name="Taurus" place="right_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

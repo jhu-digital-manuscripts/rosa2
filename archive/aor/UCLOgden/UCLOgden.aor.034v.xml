@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.034v.tif" pagination="52" reader="John Dee" signature="[e 2[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota hic de ve[n]tis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note here the winds.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="♂ ei, uel ♀, uel ☾ contrario" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ♃ ☍ ♂ ♀ ☾ Nota hic de natura[m] signoru[m]
+                    </marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Opposite_planets"/>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>
+                Jupiter on oppotision to Mars, Venus and the moon. Note here the nature of the signs.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="biothanatos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Biothanati.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Those killed by by violence.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in domo ☉ fuerit" type="straight"/> 
+        <underline language="LA" method="pen" text="habuerit, forti corpore, &amp; ualidis offibus. Et" type="straight"/>
+        <underline language="LA" method="pen" text="faciet inuictos Imperatores &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="Gaudet aute[m] per diem ♃, solis radiatione adornatus praesertim si in matutino ortu fuerit constitutus" type="straight"/>
+        <underline language="LA" method="pen" text="(no[n] enim gaudet ♃ in nocturnis genituris" type="straight"/> 
+        <underline language="LA" method="pen" text="faciet utiis implicati, secundu[m] natura[m] scilicet signoru[m] atq[ue] substantia[m] " type="straight"/>
+        <underline language="LA" method="pen" text="&amp; plus uolentes scire q[uam] patiatur humanae naturae substa[n]tia" type="straight"/>
+        <underline language="LA" method="pen" text="recedens ab eo ☾, nullius stellae habuerit coniunctione[m], maximas infelicitates, labores, miseriásq[ue] decernit. Si" type="straight"/>
+        <underline language="LA" method="pen" text="Vnde per noctem in hoc signo ♃ frequenter malas decernit erumnas, &amp; calamitates" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- Imperatores &amp; -->
+        
+    </annotation>
+</transcription>

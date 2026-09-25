@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Paris, Bibliothèque nationale de France, fr. 24391</p>
+        </note>
+        <note rend="CONTENTS">
+          <p><hi rend="italics">Roman de la Rose</hi> (ff. 1r-139r), <hi rend="italics">La prise amoureuse</hi> (ff. 139r-151v)</p>
+        </note>
+        <note rend="MATERIAL">
+          <p>Parchment</p>
+        </note>
+        <note rend="ORIGIN">
+          <p>France</p>
+        </note>
+        <note rend="DATE">
+          <p>Second quarter of 14th century</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>Gothic, written in 2 columns of 40 lines</p>
+        </note>
+        <note rend="DECORATION">
+          <p>Opening miniature (scenes of "L'Amans Sleeps" and "Portrait of Oiseuse") with pink, blue frame patterned in white and outlined in black at the top of f. <locus>1r</locus>, above a decorated opening initial. Blue initials flourished in red and red initials flourished in blue throughout.</p>
+        </note>
+        <note rend="DIMENSIONS">
+          <p>388 x 265 (this measurement is from Langlois)</p>
+        </note>
+        <note rend="FOLIATION">
+          <p>ff. i + 151 + i</p>
+        </note>
+        <note rend="BINDING">
+          <p>French, 17th century?</p>
+        </note>
+        <note rend="PROVENANCE">
+          <p>Signature of "Jehan Canut" on f. <locus>71r</locus>; the ms. was 197 in the library of Notre Dame until the 18th century; stamps of Bibliotèque Royale.</p>
+          <p>2 folios missing between 7 and 8 and 136 and 137, according to Langlois</p>
+        </note>
+        <note rend="SELECT BIBLIOGRAPHY">
+          <p>1. Langlois, <hi rend="italics">Les manuscrits</hi>, pp. 60-61
+               </p>
+        </note>
+        <note rend="N.B.">
+          <p>This description has been compiled using the site's images and various published sources. If you have corrections or additional information on the manuscript, please do contact us.</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl><note type="format">manuscript</note><note type="commonName">Français 24391</note><title>Roman de la Rose</title><extent><measure quantity="151" unit="folios">151</measure><dimensions><height unit="mm">270</height><width unit="mm">193</width></dimensions></extent><note type="illustrations">1</note>
+               
+               
+               -
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>France</pubPlace>
+               
+               <date notAfter="1400" notBefore="1300">14th century</date>
+            
+            </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de France</repository>
+            <idno>fr. 24391</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="139r">1r-139r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">139</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">40</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="139r" to="151v">139r-151v</locus>
+              <title>La Prise amoureuse</title>
+              <note type="textid">prise</note>
+              <note type="folios">13</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">40</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.155v.tif" pagination="[148v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Alij ponunt 20 m[inutae] te[m]poris tardius sed Cardanus fortissimu[m] se posuisse putat.</marginalia_text>
+                    <person name="Girolamo Cardano"/>
+                </position>
+            </language>
+            <translation>Others add 20 minutes later, but Cardano reckons that the strongest did it himself .</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="reueretur, fixa enim adiacet" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>reversa omnino est anno 1554 in [amita] anni</marginalia_text> <!--JG: Unsure--> <!-- FSF: I am not sure either; I think anni is fine -->
+                </position>
+            </language>
+            <translation>It completely turned in the year 1554 in [...] of a year.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="90" place="tail">
+                    <marginalia_text>1516. 18.[Feb]. hor </marginalia_text> 
+                </position>
+                <position book_orientation="90" place="left_margin">
+                    <marginalia_text>8. fere</marginalia_text>
+                </position>
+            </language>
+            <translation>February 18, 1516, eight hours, almost.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>☉.8.21 ♓; ☾ 10.52 ♍ ♀ 19.41 ♓; ♃ 9 45 ♑ ♋; ♄ 17 19 ♐;
+                    ♂ 14 51 ♑; ☿ 18 43 ♒; ☊ 3.5 ♌; [H]. 23.51.♈ C.C.9.11 ♑</marginalia_text> <!--JG: Unsure about the 'H'--> <!-- FSF: not sure -->
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Pices"/>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Virgo"/>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Capricorn"/>
+                    <symbol_in_text name="Cancer"/>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Aquarius"/>
+                    <symbol_in_text name="North_Node"/>
+                    <symbol_in_text name="Leo"/>
+                    <symbol_in_text name="Aries"/>
+                </position>
+            </language>
+            <translation> Sun, 8⁰21' Pisces; Moon, 10⁰.52'. Virgo; Venus 19⁰.41' Pisces; Jupiter 9⁰ 45' Capricorn Cancer;
+            Saturn 17⁰ 19' Saggitarius; Mars 14⁰ 51' Capricorn; Mercury 18⁰ 43' Aquarius; North node 3⁰ 5' Leo; [H] 23⁰ 51' Aries; Midheaven 9⁰ 11' Capricorn </translation>
+        </marginalia>
+        
+        <!--JG: Unsure about the 'M' in between these two marginal notes-->
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>☿ij loc[us] examinand[us]. ♀, ponu[n]t, 20.38 ♓ occup[...] <!--JG: Need to check original, still unclear though-->
+                    alij ponu[n]t die[m] 17. hora[m] 17. m[inutam] 56 ascende[n]te ♒ 19. m[inutae] 30 secu[n]d. Cor. C. <!-- FSF: alij is lower case, I think -->
+                    ♐ 10.40. ♓ 24.3. /3a[m]/ ♉.5.15a[m]/ ♋ 2. /6a[m]/ ♋ 22 30</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Pices"/>
+                    <symbol_in_text name="Aquarius"/>
+                    <symbol_in_text name="Sagittarius"/>
+                    <symbol_in_text name="Taurus"/>
+                    <symbol_in_text name="Cancer"/>
+                </position>
+            </language>
+            <translation>The place of Mercury must be examined. Venus, they put 20⁰.38' [...]. Others put day 17, hour 17, minute 56, with
+            Aquarius ascending, minute 19, second 30. Midheaven. Sagittarius 10⁰ 40'. Pisces 24 ⁰. 3'. Third. Taurus 5⁰.
+            Fifth. Cancer 2⁰. Sixth. Cancer 22⁰ 30'.</translation> <!--JG: Unsure-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="reuertetur, fixa enim adiacet" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="reuertetur"/>
+        
+    </annotation>
+</transcription>

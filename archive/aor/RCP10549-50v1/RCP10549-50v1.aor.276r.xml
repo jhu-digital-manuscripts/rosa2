@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.276r.tif" pagination="531" reader="John Dee" signature="lll.ii."/>
+    <annotation>
+        
+        <marginalia anchor_text="Dominatus est enim, inquit, Alexa[n]driae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>dominari alexandri[a]e</marginalia_text>
+                    <location name="Alexandria"/>
+                </position>
+            </language>
+            <translation>To be in control over Alexandria.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="subinuisum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>subinuisus a, u[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>To be somewhat envious of.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vmbram Equitis Ro. &amp; imagine[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vmbra imago. ]</marginalia_text>
+                </position>
+            </language>
+            <translation>Shade. Image.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="castris locu[m] capere, exercitu[m] instruere, expugnare vrbes, acie[m] hostiu[m] profligare: hanc vim frigoru[m] hyemémque, qua[m] nos vix huius vrbis tectis sustinemus,              excipere: his ipsis diebus hostem persequi, tu[m] cum etia[m] ferae latibulis se tegant, atque omnia bella iure gentiu[m] conquiesca[n]t: sunt ea quide[m] magna: quis negat?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Res militaris.</marginalia_text>
+                </position>
+            </language>
+            <translation>Military matters.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Conclusio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Conclusion.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="propositae, &amp; penè populares. castris locu[m] capere, exercitu[m] instruere, expugnare vrbes, acie[m] hostiu[m] profligare:              hanc vim frigoru[m] hyemémque, qua[m] nos vix huius vrbis tectis sustinemus, excipere: his ipsis diebus hostem persequi, tu[m] cum etia[m] ferae latibulis se tegant,              atque omnia bella iure gentiu[m] conquiesca[n]t: sunt ea quide[m] magna: quis negat?" type="straight"/>
+        <underline language="LA" method="pen" text="Haec mira laus est, quae non poetaru[m] carminibus, non annaliu[m] monimentis celebratur" type="straight"/>
+        <underline language="LA" method="pen" text="de iudicio animi mei, vt volet, quisque sentiat" type="straight"/>
+        <underline language="LA" method="pen" text="claris ac praepote[n]tibus" type="straight"/>
+        <underline language="LA" method="pen" text="Satis multa hominibus non iniquis haec esse debent" type="straight"/>
+        <underline language="LA" method="pen" text="solidum suum cuique soluatur" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+    </annotation>
+</transcription>

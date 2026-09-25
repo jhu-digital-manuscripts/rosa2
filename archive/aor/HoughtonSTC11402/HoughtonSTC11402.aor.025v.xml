@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.025v.tif" reader="Harvey" signature="[Cii[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="how to get home agayne the hostages" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A Deuize to recoouer Hostages.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Romayne ambassadours" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Romane Ambass.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="theyr prysoners" type="straight"/>
+        <underline language="EN" method="pen" text="was prepared" type="straight"/>
+        <underline language="EN" method="pen" text="certain cities had purposed" type="straight"/>
+        <underline language="EN" method="pen" text="home agayne the hostages" type="straight"/>
+        <underline language="EN" method="pen" text="was a great sedytion amonge" type="straight"/>
+        <underline language="EN" method="pen" text="the borderers, the whiche" type="straight"/>
+        <underline language="EN" method="pen" text="excepte the Romaynes sente ouer theyr ambassadours" type="straight"/>
+        <underline language="EN" method="pen" text="kepte them, as contrary hostages" type="straight"/>
+        <underline language="EN" method="pen" text="and pledges, and" type="straight"/>
+        <underline language="EN" method="pen" text="them" type="straight"/>
+        <underline language="EN" method="pen" text="kynge Antiochus" type="straight"/>
+        <underline language="EN" method="pen" text="Annibal in court with him" type="straight"/>
+        <underline language="EN" method="pen" text="whose counsayle" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="excepte the Romaynes sente ouer theyr ambassadours"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--pledges, and-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/> <!--sente-->
+        
+        
+    </annotation>
+</transcription>

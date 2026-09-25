@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.216r.tif" pagination="216" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="sopra i monti di Beragua" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Beragua</marginalia_text>
+                    <location name="Beragua"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="di S. Christoforo" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>S. Christofers mountaynes</marginalia_text>
+                    <person name="Saint Christopher"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The high mountayns of Beragua</marginalia_text>
+                    <location name="Beragua"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="sopra i monti di Beragua" type="straight"/>
+        <underline language="IT" method="pen" text="di S. Christoforo" type="straight"/>
+        <underline language="IT" method="pen" text="auanzaua la regione dell' aere" type="straight"/>
+        <underline language="IT" method="pen" text="più basse di" type="straight"/>
+        <underline language="IT" method="pen" text="XX leghe fra" type="straight"/>
+        <underline language="IT" method="pen" text="lontan mezo miglio" type="straight"/>
+        <underline language="IT" method="pen" text="per fabricarui" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; soggiogassero quella terra, fin ch' egli fosse andato" type="straight"/> 
+        
+    </annotation>
+</transcription>

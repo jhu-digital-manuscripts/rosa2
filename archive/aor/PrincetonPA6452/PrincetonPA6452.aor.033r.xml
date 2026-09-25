@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.033r.tif" pagination="49" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sp. Cassius, propter popularem largitionem, Regni affectati suspectus, damnatusq[ue]. Si in populari statu non licet esse populari; 
+                        quantò minùs in Regno? Idem successus Sp. Melij: Manlij Capitolini:
+                    </marginalia_text>
+                    <person name="Spurius Cassius Viscellinus"/>
+                    <person name="Spurius Maelius"/>
+                    <person name="Marcus Manlius Capitolinus"/>
+                    <emphasis method="pen" text="Sp. Cassius" type="straight"/>
+                    <emphasis method="pen" text="Regni affectati" type="straight"/>
+                </position>
+            </language>
+            <translation>Spurius Cassius was suspected and condemned of aspiring to a kingship, because of his generosity towards the common people. 
+                If it is not allowed to be popular in a popular constitution, how much less so in a monarchy? The same outcome for Spurius Melius, 
+                Manlius Capitolinus.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Qua[e]re, quibus casibus pra[e]da Militibus distributa; quibus in publicum relata. Nam vtrunq[ue] factum sa[e]piùs in prudenti, frugiq[ue] 
+                        Rep. i[nfr]a, 131.
+                    </marginalia_text>
+                    <emphasis method="pen" text="pra[e]da" type="straight"/>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000153" text="131"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Consider in which cases booty is distributed among the soldiers, and in which cases brought back for public use. 
+                For very often both happens in a prudent and virtuous Republic, see above p. 131.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="templum Fortunae muliebri aedificatum" type="straight"/>
+        <underline language="LA" method="pen" text="Ibi fortuna" type="straight"/>
+        <underline language="LA" method="pen" text="duos hostium exercitus haud minus" type="straight"/>
+        <underline language="LA" method="pen" text="pernicioso, quàm pertinaci" type="straight"/>
+        <underline language="LA" method="pen" text="gentes pro Coriolano" type="straight"/>
+        <underline language="LA" method="pen" text="Casiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Popularis iam esse" type="straight"/>
+        <underline language="LA" method="pen" text="deinde consul" type="straight"/>
+        <underline language="LA" method="pen" text="certatim plebi indulgere" type="straight"/>
+        <underline language="LA" method="pen" text="Cassius, quia in agraria largitione ambitiosus in socios" type="straight"/>
+        <underline language="LA" method="pen" text="ciuibus uilior" type="straight"/>
+        <underline language="LA" method="pen" text="alio munere sibi reconciliaret ciuiu[m] animos" type="straight"/>
+        <underline language="LA" method="pen" text="pro Siculo frumento pecuniam accepta[m]" type="straight"/>
+        <underline language="LA" method="pen" text="retribui populo" type="straight"/>
+        <underline language="LA" method="pen" text="mercedem regni aspernata" type="straight"/>
+        <underline language="LA" method="pen" text="propter suspicionem insitam regni" type="straight"/>
+        <underline language="LA" method="pen" text="damnatu[m] necatumq[ue] co[n]stat" type="straight"/>
+        <underline language="LA" method="pen" text="qui patre[m] autore[m]" type="straight"/>
+        <underline language="LA" method="pen" text="cognita domi causa" type="straight"/>
+        <underline language="LA" method="pen" text="uerberasse ac necasse" type="straight"/>
+        <underline language="LA" method="pen" text="dictam perduellionis" type="straight"/>
+        <underline language="LA" method="pen" text="damnatu[m]que populi iudicio" type="straight"/>
+        <underline language="LA" method="pen" text="publicum fuit iudicium" type="straight"/>
+        <underline language="LA" method="pen" text="Haud diuturna" type="straight"/>
+        <underline language="LA" method="pen" text="populi in Cassium" type="straight"/>
+        <underline language="LA" method="pen" text="dulcedo agrari[a]e legis" type="straight"/>
+        <underline language="LA" method="pen" text="accensaq[ue] ea cupiditas est malignitate patrum" type="straight"/>
+        <underline language="LA" method="pen" text="militem praeda fraudauêre" type="straight"/>
+        <underline language="LA" method="pen" text="quicquid captu[m] ex hostibus est" type="straight"/>
+        <underline language="LA" method="pen" text="uendidit Fabius consul" type="straight"/>
+        <underline language="LA" method="pen" text="ac redegit in publicu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="seditio domestica bellum externu[m] exciuit" type="straight"/>
+        <underline language="LA" method="pen" text="bello deinde" type="straight"/>
+        <underline language="LA" method="pen" text="ciuiles discordiae intermissae" type="straight"/>
+        <underline language="LA" method="pen" text="uno animo" type="straight"/>
+        <underline language="LA" method="pen" text="hostium fuga" type="straight"/>
+        <underline language="LA" method="pen" text="pertinaciter fusos insecuti sunt equites" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="JC" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--certa-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--perduel-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--le-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--pa-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--exci-->
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="seditio domestica bellum externu[m] exciuit"/> 
+        <mark method="pen" name="dash" place="right_margin"/> <!--eo-->
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--est. Rediere-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="fortuna"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="dulcedo"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="fraudauêre"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="publicu[m]"/>
+        
+    </annotation>
+</transcription>

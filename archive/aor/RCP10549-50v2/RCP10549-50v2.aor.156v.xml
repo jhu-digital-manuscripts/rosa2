@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.156v.tif" pagination="52" reader="John Dee" signature="[d.ii.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="infantes &amp; insipientes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>infans insipiens.</marginalia_text>
+                </position>
+            </language>
+            <translation>Childish, foolish.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aequari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>a[e]quari</marginalia_text>
+                </position>
+            </language>
+            <translation>To be made equal.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="consuetudine" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Consuetudo.</marginalia_text>
+                </position>
+            </language>
+            <translation>A custom.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="no[n] incallidos homines" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>no[n] incallidus homo.</marginalia_text>
+                </position>
+            </language>
+            <translation>A not unskillful man.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>similitudo.</marginalia_text>
+                </position>
+            </language>
+            <translation>A comparison.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="non fugit Catone[m], neque Laelium, neque horu[m] (vt vere dica[m]) discipulu[m] Aphricanum, neque Gracchos Aphricani nepotes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cato Lelius Gracchi Aphricanus.</marginalia_text>
+                    <person name="Cato the Elder"/>
+                    <person name="Gaius Laelius"/>
+                    <person name="Tiberius Gracchus"/>
+                    <person name="Gaius Gracchus"/>
+                    <person name="Scipio Africanus"/>
+                </position>
+            </language>
+            <translation>Cato, Gaius Laelius, Tiberius Gracchus, Gaius Gracchus, Scipio Africanus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eloque[n]tiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Laus eloquentu[a]e.</marginalia_text>
+                </position>
+            </language>
+            <translation>Praise of eloquence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sapie[n]tia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sapientia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Wisdom.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="loqui" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Loqui.</marginalia_text>
+                </position>
+            </language>
+            <translation>To speak.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Eius quaedam magna &amp; ampla pars est artificiosa eloque[n]tia, quam Rhetorica[m] vocant; eam ciuilis scientiae partem esse dicamus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>.RHETORICA. ciuilis scientie pars.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rhetoric, the civl part of knowledge.</translation>     
+        </marginalia>
+        
+        <marginalia anchor_text="Officium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Officiu[m] rhetorices.</marginalia_text>
+                </position>
+            </language>
+            <translation>Duty. Rhetorics.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Finis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>.Finis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The aim.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="infantes &amp; insipientes" type="straight"/>
+        <underline language="LA" method="pen" text="obsoleuisse eo" type="straight"/>
+        <underline language="LA" method="pen" text="summo cu[m] reip. detrimento" type="straight"/>
+        <underline language="LA" method="pen" text="dignitas co[n]fluit" type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="head" text="aequari"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">5</numeral>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.316r.tif" pagination="145" reader="John Dee" signature="S.iiij."/>
+    <annotation>
+        
+        <marginalia anchor_text="Michael Attepool" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Michael Atte pool</marginalia_text>
+                    <person name="Michael de la Pole, 1st Earl of Suffolk"/>
+                </position>
+            </language>
+            <translation>Michael de la Pole.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ioh. Clanbow" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Io[hannes] Clanbow.</marginalia_text>
+                    <person name="John Clanvowe"/>
+                </position>
+            </language>
+            <translation>John Clanvowe.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ioh. Clanbow" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Ioannes Clanbow.</marginalia_text>
+                    <person name="John Clanvowe"/>
+                </position>
+            </language>
+            <translation>John Clanvowe.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Robertus de Veer dux Hyberniae" type="straight"/>
+        <underline language="LA" method="pen" text="Michael Attepool comes Southfolciae" type="straight"/>
+        <underline language="LA" method="pen" text="Ioh. Clanbow" type="straight"/>
+        <underline language="LA" method="pen" text="vt imagines, quas apud praediu[m]" type="straight"/>
+        
+    </annotation>
+</transcription>

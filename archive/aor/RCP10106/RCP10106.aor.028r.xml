@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.028r.tif" pagination="55" reader="John Dee" signature="d 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="εὐρυθμία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>εὐρυθμία</marginalia_text>
+                </position>
+            </language>
+            <translation>Eurhythmy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nanq[ue] &amp; uoce, &amp; modulatione grandia elate, iucu[n]da dulciter, moderata leniter canit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Canendi modus</marginalia_text>
+                </position>
+            </language>
+            <translation>Mode of singing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="affectus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Affectus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Affected.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="organis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>organa</marginalia_text>
+                </position>
+            </language>
+            <translation>Musical instruments.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Gracchi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>C[aius] Gracchus.</marginalia_text>
+                    <person name="Gaius Gracchus"/>
+                </position>
+            </language>
+            <translation>Gaius Gracchus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Chirone" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Chirous</marginalia_text>
+                    <person name="Chiron"/>
+                </position>
+            </language>
+            <translation>Chiron.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Achille" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Achilles</marginalia_text>
+                    <person name="Achilles"/>
+                </position>
+            </language>
+            <translation>Achilles.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Nanq[ue] &amp; uoce, &amp; modulatione grandia elate, iucu[n]da" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

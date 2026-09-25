@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.083r.tif" reader="Harvey" signature="Kiiii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Mirus Ironia[e] Vsus, opportunè adhibita[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>The wonderful use of irony, employed advantageously.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A braue Aduenturer.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Epaminundas" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Epaminondas Counsell disclosid.</marginalia_text>
+                    <person name="Epaminondas"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Hactenùs Oppugnationis strategemata: sequu[n]tur propugnationis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Hitherto the statagems of the attack follow the stratagems of the defense.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="to retreate backe" type="straight"/>
+        <underline language="EN" method="pen" text="Viriatus retreatyng backe, had" type="straight"/>
+        <underline language="EN" method="pen" text="iii. dayes iourneye" type="straight"/>
+        <underline language="EN" method="pen" text="same ageyne in one daye" type="straight"/>
+        <underline language="EN" method="pen" text="Sogobrians careles" type="straight"/>
+        <underline language="EN" method="pen" text="theyr sacrifice" type="straight"/>
+        <underline language="EN" method="pen" text="Epaminundas" type="straight"/>
+        <underline language="EN" method="pen" text="succour his ennemye" type="straight"/>
+        <underline language="EN" method="pen" text="it possible inoughe" type="straight"/>
+        <underline language="EN" method="pen" text="their citie Lacedemonia" type="straight"/>
+        <underline language="EN" method="pen" text="priuily" type="straight"/>
+        <underline language="EN" method="pen" text="many fyres to be made by" type="straight"/>
+        <underline language="EN" method="pen" text="cloke his goinge" type="straight"/>
+        <underline language="EN" method="pen" text="betrayed of a runaway" type="straight"/>
+        <underline language="EN" method="pen" text="ouertaken of the Lacedemoniens hoste" type="straight"/>
+        <underline language="EN" method="pen" text="towarde Sparta" type="straight"/>
+        <underline language="EN" method="pen" text="Neuer the lesse" type="straight"/>
+        <underline language="EN" method="pen" text="this his polycie" type="straight"/>
+        <underline language="EN" method="pen" text="makynge lykewyse fyres" type="straight"/>
+        <underline language="EN" method="pen" text="Lacedemoniens" type="straight"/>
+        <underline language="EN" method="pen" text="iourneyeng. xl." type="straight"/>
+        <underline language="EN" method="pen" text="myles backe" type="straight"/>
+        <underline language="EN" method="pen" text="destitute of aide and" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="same ageyne in one daye"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="priuily"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="their citie Lacedemonia"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="chalk" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="retreatyng"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="iii. dayes iourneye"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="same ageyne in one daye"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="theyr sacrifice"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="priuily"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="betrayed"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="ouertaken"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Neuer the lesse"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="this his polycie"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="iourneyeng. xl."/>
+        
+        <mark method="pen" name="horizontal_bar" place="tail"/> <!--through marginal note-->
+        
+    </annotation>
+</transcription>

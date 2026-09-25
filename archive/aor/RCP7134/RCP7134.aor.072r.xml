@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.072r.tif" pagination="65" reader="John Dee" signature="R"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☉ ☾ as. ☌ ☍ }</marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Conjunction"/>
+                    <symbol_in_text name="Opposite_planets"/>
+                </position>
+            </language>
+            <translation>[Of the] sun, moon, ascendant, conjunction, opposition.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>[quattuor]</marginalia_text>
+                </position>
+            </language>
+            <translation>Four.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="loci" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>sui</marginalia_text> 
+                </position>
+            </language>
+            <translation>Of its.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>D[omi]n[u]s loco[rum - deleted] [☾ - deleted] ☌ vel ☍</marginalia_text> 
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Conjunction"/>
+                    <symbol_in_text name="Opposite_planets"/>
+                </position>
+            </language>
+            <translation>Lord of [deleted].</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>D[omi]n[u]s 4 locorum</marginalia_text>
+                </position>
+            </language>
+            <translation>Lord of four places.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Domini 4 locorum</marginalia_text>
+                </position>
+            </language>
+            <translation>Lords of four places.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vide infra fo. 272</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:563" text="272"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See below, folio 272.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="semper considerabimus Solem" type="straight"/>
+        <underline language="LA" method="pen" text="domo, non tamen erit" type="straight"/>
+        <underline language="LA" method="pen" text="ipse" type="straight"/>
+        <underline language="LA" method="pen" text="sit" type="straight"/>
+        <underline language="LA" method="pen" text="dispositor" type="straight"/>
+        <underline language="LA" method="pen" text="Cumq[ue] uitae significator dominus fuerit loci aspicientis planetae, tunc" type="straight"/>
+        <underline language="LA" method="pen" text="unde artes operarias" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        
+        <errata amendedtext="[deleted]" copytext="," language="LA"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.099v.tif" reader="Harvey" signature="[Miiii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Constancy, &amp; tru valour, ouerthrowes al pollicy, being in armes reddy to fight withowt delayes.</marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sir Roger Williams, in his new Discourse of Warr. 40.</marginalia_text>
+                    <person name="Roger Williams"/>
+                    <book title="A Brief Discourse of War"/>
+                </position>
+            </language>
+        </marginalia>
+            
+        <marginalia anchor_text="boldenesse" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>resolute, but very hazardous bowldnes.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Miraculous good fortune.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vsq[ue] adeò Audaces Fortuna iuuat.</marginalia_text>
+                    <person name="Fortuna"/>
+                    <X-ref book_title="Aeneid" language="LA" person="Virgil" text="Audaces Fortuna iuuat"/>
+                </position>
+            </language>
+            <translation>Indeed, "Fortune favours the bold" continuously.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>quantò honoratius fuisset Paulo Æmilio, Marcelli illu[m] violent[um] exitum expressisse, et
+                    viam vi extorsisse?</marginalia_text>
+                    <person name="Lucius Aemilius Paullus Macedonicus"/>
+                    <person name="Marcus Claudius Marcellus"/>
+                </position>
+            </language>
+            <translation>How much more honorable was Paulus Aemilius, to have copied that violent result of Marcellus and to have
+            extorted the journey by force?</translation> <!--JG: Not entirely happy with translation-->
+            <!--KS: My two cents: 'How much more honorable was it of Lucius Aemilius Paullus Macedonicus to have copied that violent escape of Marcellus and to have wrenched out the way by force?'-->
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="them folowe hym" type="straight"/>
+        <underline language="EN" method="pen" text="catchyng and aduansynge the standerde" type="straight"/>
+        <underline language="EN" method="pen" text="he fyrste of all" type="straight"/>
+        <underline language="EN" method="pen" text="L. Marcellus" type="straight"/>
+        <underline language="EN" method="pen" text="vnwares into the handes of" type="straight"/>
+        <underline language="EN" method="pen" text="his horse" type="straight"/>
+        <underline language="EN" method="pen" text="[the] goddis to helpe" type="straight"/>
+        <underline language="EN" method="pen" text="strake into" type="straight"/>
+        <underline language="EN" method="pen" text="stode bashefully meruaylynge at his boldenesse" type="straight"/>
+        <underline language="EN" method="pen" text="he escaped" type="straight"/>
+        <underline language="EN" method="pen" text="slewe their capitayn" type="straight"/>
+        <underline language="EN" method="pen" text="hope of lyfe" type="straight"/>
+        <underline language="EN" method="pen" text="great rychesse" type="straight"/>
+        <underline language="EN" method="pen" text="Paulus" type="straight"/>
+        <underline language="EN" method="pen" text="Lentulus" type="straight"/>
+        <underline language="EN" method="pen" text="hym a horse to flee" type="straight"/>
+        <underline language="EN" method="pen" text="wolde not lyue" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="L. Marcellus"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="stode bashefully meruaylynge at his boldenesse"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="them folowe hym"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="he fyrste of all"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="goddis"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="stode bashefully meruaylynge at his boldenesse"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="great rychesse"/>
+        
+    </annotation>
+</transcription>

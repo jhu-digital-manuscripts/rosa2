@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.044r.tif" reader="Harvey" signature="Ev[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>These orders, more particularly analyzed, in [the] Inglish History of Annibal, &amp; Scipio: owt of + Liuy, [etc]</marginalia_text>
+                    <person name="Hannibal"/>
+                    <person name="Scipio Africanus"/>
+                    <book title="Ab Urbe Condita"/>
+                    <book title="Parallel Lives"/> <!--JG: Unsure abt this, but USTC list's a French translation of Plutarch's 'The lives of Hannibal and Scripio' (Paris, 1567).-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Cesar; Alexander" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ca[e]sar, &amp; Alexander, euer prouided,</marginalia_text>
+                    <person name="Julius Caesar"/>
+                    <person name="Alexander the Great"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ad omnia quare.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>neuer taken tardy, or napping. A present remedy for euery mischif.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>aut reuerâ, aut sophisticè</marginalia_text>
+                </position>
+            </language>
+            <translation>Ca[e]sar, &amp; Alexander, ever prouided, hence towards everything. Never taken tardy, or napping. A present remedy for every mischief. Either in reality or sophistically.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="prudente order" type="straight"/>
+        <underline language="EN" method="chalk" text="prudente order" type="straight"/>
+        <underline language="EN" method="pen" text="cause of the victorie" type="straight"/>
+        <underline language="EN" method="chalk" text="victorie" type="straight"/>
+        <underline language="EN" method="pen" text="C. Cesar" type="straight"/>
+        <underline language="EN" method="pen" text="with stakes" type="straight"/>
+        <underline language="EN" method="pen" text="the hoked" type="straight"/>
+        <underline language="EN" method="pen" text="chariottes of" type="straight"/> 
+        <underline language="EN" method="pen" text="Alexander" type="straight"/>
+        <underline language="EN" method="pen" text="multitude of" type="straight"/>
+        <underline language="EN" method="pen" text="good affyance" type="straight"/>
+        <underline language="EN" method="pen" text="manlynesse of his" type="straight"/>
+        <underline language="EN" method="pen" text="ordered" type="straight"/>
+        <underline language="EN" method="pen" text="they might" type="straight"/>
+        <underline language="EN" method="pen" text="tourne them selfe euery way" type="straight"/>
+        <underline language="EN" method="pen" text="fyghte" type="straight"/>
+        <underline language="EN" method="pen" text="euery syde" type="straight"/>
+        <underline language="EN" method="pen" text="be enclosed of their" type="straight"/>
+        <underline language="EN" method="pen" text="Archelaus" type="straight"/>
+        <underline language="EN" method="pen" text="L. Sylla" type="straight"/>
+        <underline language="EN" method="pen" text="set chariottes, armed with hokes lyke sythes" type="straight"/>
+        <underline language="EN" method="pen" text="the fronte of his" type="straight"/>
+        <underline language="EN" method="chalk" text="the fronte of" type="straight"/>
+        <underline language="EN" method="pen" text="the foote men" type="straight"/>
+        <underline language="EN" method="chalk" text="in array after" type="straight"/>
+        <underline language="EN" method="pen" text="facion of Macedons" type="straight"/>
+        <underline language="EN" method="pen" text="thyrde" type="straight"/>
+        <underline language="EN" method="pen" text="as the Romaynes vsed" type="straight"/>
+        <underline language="EN" method="pen" text="them, that came to ayde hym" type="straight"/>
+        <underline language="EN" method="pen" text="with fugitiues" type="straight"/>
+        <underline language="EN" method="pen" text="lyght harneised he set" type="straight"/>
+        <underline language="EN" method="pen" text="Than to inclose his" type="straight"/>   
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="prudente order"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="cause"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="cause of the victorie"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="with stakes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="multitude"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="manlynesse"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="ordered"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="euery"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="enclosed"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="chariottes"/>
+        <mark method="pen" name="dot" place="intext"/> <!--ennemies, in-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="foote men"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="to inclose"/>
+        
+    </annotation>
+</transcription>

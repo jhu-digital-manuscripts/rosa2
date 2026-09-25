@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.169v.tif" pagination="78" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="caput illud erit; Secundarium; Postremo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        caput illud erit
+                        secundarium.
+                        postremo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                There will be that key part.   
+                Secondly. 
+                Finally.
+            </translation>  
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Potestas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                       Potestas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Power.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Facultas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Facultas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Ability.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Voluntas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Voluntas.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Desire.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Defensor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        DEFENSOR
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The defender.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="exempla &amp; similitudines" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Exemplu[m]. Similitudo.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>An example. A parallel.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nomen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nomen. 1.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The name. 1.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="de natura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Natura. 2.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The nature. 2.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="ex victu" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Victus. 3.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The way of life. 3.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="ex fortuna" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Fortuna. 4.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The fortune. 4.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="caput illud erit" type="straight"/>
+        <underline language="LA" method="pen" text="Secundarium" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; in vnum multa sunt conducenda" type="straight"/>
+        <underline language="LA" method="pen" text="ex contrario" type="straight"/>
+        <underline language="LA" method="pen" text="facta nasci" type="straight"/>
+        <underline language="LA" method="pen" text="Quo erit in loco" type="straight"/>
+        <underline language="LA" method="pen" text="tantae esse stultitiae" type="straight"/>
+        <underline language="LA" method="pen" text="summae fuisse" type="straight"/>
+        <underline language="LA" method="pen" text="temerario &amp; repentino consilio sit" type="straight"/>
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Ex persona aute[m] coniectura capietur, si eae res, quae personis attributae sunt, diligenter consyderabuntur, quas omnes in primo libro exposuimus" book_orientation="0" method="pen" place="left_margin" type="scroll">
+            <text hand="English_secretary" language="LA">2 PERSONA</text>
+            <text hand="English_secretary" language="LA">.fo 61</text>
+            <internal_ref>
+                <target ref="RCP10549-50v2:0331" text="61"/>
+            </internal_ref>
+            <translation>2. Character. Folio 61.</translation>
+        </drawing>
+        
+    </annotation>
+</transcription>

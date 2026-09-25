@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.072r.tif" pagination="72" reader="John Dee"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="che fu giunto" hand="Italian" id="BL615d7:615_d_7_f072r:m0001" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Ergo he had byn at Baueche</marginalia_text>
+                    <location name="Baueche"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="partì conproponimento di volere andare alle Isole di Babeca" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>sup[ra] fol. 60 Baueche. Iles</marginalia_text> 
+                    <location name="Baueche"/>
+                    <internal_ref>
+                        <target ref="BL615d7:615_d_7_f060r" text="fol. 60"/>
+                    </internal_ref>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ergo Baueche and Spagnuola are two diverse Iles.</marginalia_text>
+                    <location name="Baueche"/>
+                    <location name="Hispaniola"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Fiume di Gratia" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Fl[umen] Gratiae</marginalia_text>
+                </position>
+            </language>
+            <translation>River of Grace.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="era della patria di Martino Alfonso" type="straight"/>
+        <underline language="IT" method="pen" text="partì con proponimento di volere andare alle Isole di Babeca" type="straight"/>
+        <underline language="IT" method="pen" text="molto oro" type="double"/>
+        <underline id="BL615d7:615_d_7_f072r:u0001" language="IT" method="pen" text="che fu giunto" type="double"/>
+        <underline language="IT" method="pen" text="il contrario di quel" type="double"/>
+        <underline language="IT" method="pen" text="verso la Spagnuola" type="double"/>
+        <underline language="IT" method="pen" text="XX" type="double"/>
+        <underline language="IT" method="pen" text="di XV leghe" type="double"/>
+        <underline language="IT" method="pen" text="del Natale" type="double"/>
+        <underline language="IT" method="pen" text="ad vna fiumara" type="straight"/>
+        <underline language="IT" method="pen" text="Fiume di Gratia" type="straight"/>
+        <underline language="IT" method="pen" text="XVI dì" type="straight"/>
+        <underline language="IT" method="pen" text="dando per ciò cose" type="straight"/>
+        <underline language="IT" method="pen" text="per acquistarlasi, &amp; per tenerla queta" type="straight"/>
+        <underline language="IT" method="pen" text="contenta, ch'egli sotto titolo di Capitano si rimanesse sol resto. &amp; volle" type="straight"/>
+        <underline language="IT" method="pen" text="presso a Monte" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <mark language="IT" method="pen" name="diacritic" place="intext" text="sua"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- DO: comma between 'oro, egli' -->   
+        
+        <physical_link>
+            <marginal_annotation idref="BL615d7:615_d_7_f072r:m0001"/>
+            <marginal_annotation idref="BL615d7:615_d_7_f072r:u0001"/>
+            
+            <relation from="BL615d7:615_d_7_f072r:m0001" to="BL615d7:615_d_7_f072r:u0001" type="directed"/>
+            
+        </physical_link>
+        
+    </annotation>
+    
+</transcription>

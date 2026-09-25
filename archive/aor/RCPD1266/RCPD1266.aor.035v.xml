@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.035v.tif" pagination="56" reader="John Dee" signature="[e.iiij.[v]]"/> 
+    <annotation>
+           
+        <marginalia anchor_text="Poëtis igitur, omnis impietatis magistris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Poeta[e] o[mn]is impietatis Magistri.</marginalia_text>
+                </position>
+            </language>
+            <translation>Poets, the masters of all impiety.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fabulosa habet omnia" type="straight"/>
+        <underline language="LA" method="pen" text="Ita Graeci ab Olympiadibus rerum gestarum certitudinem repetunt. Latini autem ab Vrbe condita, rerum suarum" type="straight"/>
+        <underline language="LA" method="pen" text="exterarum" type="straight"/>
+        <underline language="LA" method="pen" text="vrbs ipsa Romana, quemadmodum mox intelligetur, non longo post Olympiadas tempore, condita fuit" type="straight"/>
+        <underline language="LA" method="pen" text="Christi domini natali" type="double"/>
+        <underline language="LA" method="pen" text="Mahumedici Hegiras" type="straight"/>
+        
+    </annotation>
+</transcription>

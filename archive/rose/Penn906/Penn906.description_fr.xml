@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>MS Codex 906, Philadelphie, PA, University of Pennsylvania (olim MS French 1).
+                     Français, dernier quartier du XVe siècle. Il ne comprend que le
+                     <hi rend="italics">Roman de la Rose</hi> (ff. <locus from="1" to="340">1-340</locus>).</p>
+        </note>
+        <note rend="INFORMATIONS BASIQUES">
+          <p>Papier,
+                     300 x 210 mm
+                  340 feuillets. (La foliation moderne commence au f. <locus>2</locus>, ce qui est numéroté
+                  “1” d'une main moderne. Puisque cette foliation saute f. <locus>318</locus>,
+                  les numérotisations correspondent l'une à l'autre avant la fin. </p>
+        </note>
+        <note rend="MATERIEL">
+          <p>Le <material>papier</material>, est en bon état, sauf des galeries de vers ou d'insecte dans les premiers
+                  cahiers. Les dix-neuf premiers cahiers portent plusieurs exemples d'une filigrane
+                  correspondant à Briquet 1799. Le cahier XX, copié par un scribe différent, portent celles de Briquet
+                  1548 et 1701. Le cahier XXI porte une filigrane semblable à Briquet 1546, sauf que
+                  les trois flèches sont des lignes droites sans pointes,
+                  aussi bien qu'une autre filigrane absente de Briquet.</p>
+          <p>Les numéros de Briquet viennent de C. M. Briquet, <hi rend="italics">Les Filigranes:
+                     Dictionnaire Historique des Marques du Papier dès leur Apparition vers 1282
+                     jusqu'en 1600.</hi> 4 vols. New York: Hacker Art Books, 1966:</p>
+          <p>1799: “31X44. Toulouse, 1474. A. MUN., CC. 1106 : <hi rend="italics">Pièces à l'appui des cptes</hi>.”</p>
+          <p>1548: “31X44. Châteaudun, 1463. A. EURE-ET-LOIR, E. 2739: <hi rend="italics">Tabellionage</hi>. Var. ident. : Blois, 1466; Poitiers, 1466-74;
+                  Bretagne, 1472.”</p>
+          <p>1701: “31,5X44. Châteaudun, 1454. A. EURE-ET-LOIR, E. 2734. : <hi rend="italics">Tabellionage</hi>. Var. ident. : Orleans, 1457;
+                  Châteaudun, 1457-65; Champagne (Sarthe), 1458; Angers, 1464</p>
+          <p>1546: “31X44. Châteaudun, 1457. IBID. E. 2735 : <hi rend="italics">id.</hi> Var. simil. : Blois, 1496.</p>
+          <p>D'après ces indices, l'on peut établir un <hi rend="italics">terminus a quo</hi> de 1474. Il est pourtant intéressant à noter que les cahiers XX et XXI sont 
+					 d'un papier qui date d'environ vingt ans plus tôt, et que chacun est le travail d'un scribe différent. </p>
+        </note>
+        <note rend="CAHIERS">
+          <p>Relié en cahiers de 16, à l'exception du cahier XIX.  Sans numérotation de cahiers.  Les signatures 
+			   se trouvent à la droite inférieure ; à noter que la signature <hi rend="italics">a</hi> commence au f. 2
+			   (le premier feuillet avec texte) et donc les signatures vont de ai à aii (et non pas ai à aiii, comme l'on 
+			   attendrait d'un cahier de 16 feuillets).  L'alphabète des signatures ne comprend pas la <hi rend="italics">j</hi>. Au cahier XX, où la main change, l'on numérote seulement les premiers 
+					 feuillets i à viij, tout ainsi que le cahier XXI (où la main change de nouveau).  Le cahier XXI 
+					 se numérote aussi bien que ce ne soit pas apparemment nécessaire, car c'est un bifeuillet.  Les 
+					 réclames se trouvent au centre inférieur, mais elles sont souvent coupées.  La foliotation moderne 
+					 commence au f. <locus>2</locus>, c'est-à-dire que le f. <locus>2</locus> est numéroté “1” d'une main 
+					 moderne.  Puisque la foliotation saute le f. <locus>318</locus>, la numérotation termine au f. 340 
+					 à la fin, ce qui est correcte. Dans cette description, les feuillets se numérotent consécutivement 
+					 en commençant avec le f. <locus>1r</locus>, comme indiqué dans la collation. </p>
+          <list>
+            <item n="I">
+              <locus from="1" to="16">1-16</locus>
+            </item>
+            <item n="II">
+              <locus from="17" to="32">17-32</locus>
+            </item>
+            <item n="III">
+              <locus from="33" to="48">33-48</locus>
+            </item>
+            <item n="IV">
+              <locus from="49" to="64">49-64</locus>
+            </item>
+            <item n="V">
+              <locus from="65" to="80">65-80</locus>
+            </item>
+            <item n="VI">
+              <locus from="81" to="96">81-96</locus>
+            </item>
+            <item n="VII">
+              <locus from="97" to="112">97-112</locus>
+            </item>
+            <item n="VIII">
+              <locus from="113" to="128">113-128</locus>
+            </item>
+            <item n="IX">
+              <locus from="129" to="144">129-144</locus>
+            </item>
+            <item n="X">
+              <locus from="145" to="160">145-160</locus>
+            </item>
+            <item n="XI">
+              <locus from="161" to="176">161-176</locus>
+            </item>
+            <item n="XII">
+              <locus from="177" to="192">177-192</locus>
+            </item>
+            <item n="XIII">
+              <locus from="193" to="208">193-208</locus>
+            </item>
+            <item n="XIV">
+              <locus from="209" to="224">209-224</locus>
+            </item>
+            <item n="XV">
+              <locus from="225" to="240">225-240</locus>
+            </item>
+            <item n="XVI">
+              <locus from="241" to="256">241-256</locus>
+            </item>
+            <item n="XVII">
+              <locus from="257" to="272">257-272</locus>
+            </item>
+            <item n="XVIII">
+              <locus from="273" to="288">273-288</locus>
+            </item>
+            <item n="XIX"><locus from="289" to="306">289-306</locus>(cahier de 18 au lieu de 16 feuillets)</item>
+            <item n="XX">
+              <locus from="307" to="322">307-322</locus>
+            </item>
+            <item n="XXI">
+              <locus from="323" to="338">323-338</locus>
+            </item>
+            <item n="XXII">
+              <locus from="339" to="340">339-340</locus>
+            </item>
+          </list>
+        </note>
+        <note rend="MISE-EN-PAGE">
+          <p>Réglé en pointe sèche avec seulement quatre lignes rectrices majeures pour délimiter le 
+			   corps du texte ; il n'y a pas de réglage pour les vers individuels. Sans piqûres.  Un seul 
+			   corps de texte et une colonne de texte par feuillet.  Le corps de texte varie, mais mesure 
+			   typiquement de 190 mm x 100-110 mm.  Il y a normalement 33 à 35 lignes aux premiers vingt 
+			   cahiers ; 31-34 au cahier XXI et 33-37 au cahier XXII.</p>
+        </note>
+        <note rend="ECRITURE">
+          <p>La main principale est responsable pour les premiers dix-neuf cahiers, qui sont écrites 
+			   en cursiva en encre brune.  Une deuxième main a copié le cahier XX d'une écriture semblable 
+			   à celle du scribe principal ; le cahier XXI s'est aussi copié d'une écriture semblable à 
+			   celle du scribe principal, mais elle appartient probablement à un troisième scribe.  Les 
+			   lignes qui suivent les initiales rubriquées s'emploient d'une écriture plus grande et plus 
+			   formelle.  Les corrections sont éparses, mais il y en a quelques unes (voir, par exemple, 
+			   une rayure en bas du f. <locus>306</locus>). Sans titres courants.</p>
+        </note>
+        <note rend="DECORATION">
+          <p>De nombreux titres rubriqués partout, typiquement avec une ligne d'attente en encre brune
+			   à la marge.  Ces guides marginaux sont souvent partiellement coupés.  De nombreuses initiales 
+			   de deux linges partout.  La première lettre de chaque ligne et touchée de jaune (sauf les 
+			   initiales).  Il n'y a pas de bouts-de-lignes.  Il n'y a non plus de miniatures ; pourtant des 
+			   blancs de neuf lignes ont été laissés pour en ajouter.  Ceux-ci se voient fréquemment au début 
+			   du manuscrit, mais ils deviennent de plus en plus épars et disparaissent vers la fin.</p>
+        </note>
+        <note rend="RELIURE">
+          <p>Reliure contemporaine estampée de peau de veau ; les ais ont été remplacés (Zacour – Hirsch). 
+			   Sans fermoirs ou parties en métal.  Une garde volante de papier au devant et à la fin (donc i + 
+			   340 + i).  Titre au dos : “LE ROMAN DE LA ROSE” “DE JEAN MEUN DIT CLOPINEL” “MANUSCRIPT DU XV 
+			   ?[S]IECLE.” Fragment de reliure en parchemin se voit entre les ff. <locus>338</locus> et
+                     <locus>339</locus>.</p>
+        </note>
+        <note rend="HISTOIRE">
+          <p>Selon la note du catalogue de l'Université de Pennsylvanie, “Vendu aux enchères comme partie de 
+			   la collection Ashburnham à Sotheby's, le 10 juin, 1901, lot 607 " et “Acheté de        
+			   la Librairie J. Thiebaud, 1950.” [Traduit de l'anglais – voir la version anglaise de cette page pour
+			   le texte original]. On voit écrit au contre-plat du devant : “Archives du
+                  Bibliophile XV Bulletin No.” et une signature que transcribent Zacour-Hirsch ainsi :
+                  “Marcel(?).” Au f. : “Delaplanches.” Un morceau de papier qui contient les vers 64-73, apparemment
+				  de la main du scribe principal, est collé au f. 1.</p>
+          <p>Descriptions antérieures:</p>
+          <p>Zacour, Norman P. et Rudolf Hirsch. <hi rend="italics">Catalogue of Manuscripts
+                     in the Libraries of the University of Pennsylvania to 1800.</hi> Philadelphia:
+                  U of Pennsylvania P, 1965. p. 54.</p>
+          <p>
+            <hi rend="italics">Archives du bibliophile; ou, Bulletin de l'amateur de livres et
+                     du libraire. Bulletin XV.</hi>
+          </p>
+          <p>Voir aussi la cote “Ms. Codex 906” dans le  Penn Libraries Catalog, disponible en ligne. .</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscrit</note>
+          <note type="commonName">Penn Codex 906</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="340" unit="folios">340 feuillets</measure>
+            <dimensions>
+              <height unit="mm">300</height>
+              <width unit="mm">210</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">0</note>
+          <note type="material">papier</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1500" notBefore="1475">15e siècle</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Philadelphie, PA</settlement>
+            <repository>Université de Pennsylvanie</repository>
+            <idno>Codex 906</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="2r" to="340v">2r-340v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">339</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">37</note>
+              <note type="leavesPerGathering">16</note>
+              <note type="columnsPerFolio">1</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

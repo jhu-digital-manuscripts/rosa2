@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.058r.tif" pagination="435" reader="Harvey"/>	<!-- ABO 62right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.058r_0001" marginalia_continues_from="Ha2.057v_0001" marginalia_from_transcription="Ha2.057v.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						[p. 434: Entelechia primùm rhetorica, Logica, mathematica,] philosophica: tum medica, iuridica, theologica.
+							<!-- Continued from facing page, head, Ha2.057v.xml -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				[p. 434: Actualization first, then rhetoric, logic, mathematics] philosphical: then medical, juridical, theological.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( 2. Motti nelle cose. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				( 2. Witty remarks based on things. )
+			</translation>
+		</marginalia>		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.058r_0002" marginalia_continues_from="Ha2.057v_0002" marginalia_from_transcription="Ha2.057v.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						[p. 434: Polemica, arcana in omni genere Secretoru[m],] tandem etiam thaumaturgica, et panerga.
+							<!-- Continued from facing page, tail, Ha2.057v.xml -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				[p. 434: Polemics, hidden in every sort of secret,] and finally thaumaturgical, and panerga.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Motti logichi, et filosofichi, e altri artificiali.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Logical, philosophical, and other artifical witticisms.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Appareat tandem, quid Orator Academicus pra[e]stet Discursori Aulico.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="pen" text="Orator" type="straight"/>
+					<emphasis method="pen" text="Discursori" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				In the end, let it be clear that the Academic Orator surpasses the Courtly Speaker. 
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="la circuitione, o 'l giro" type="straight"/>
+		<underline language="IT" method="pen" text="hiperbole" type="straight"/>
+		<underline language="IT" method="pen" text="nelle cose" type="straight"/>
+		<underline language="IT" method="pen" text="molti piu capi" type="straight"/>
+		<underline language="IT" method="pen" text="grande" type="straight"/>
+		<underline language="IT" method="pen" text="maggior materia da ridere" type="straight"/>
+		<underline language="IT" method="pen" text="luoghi de gli argomenti" type="straight"/>
+		<underline language="IT" method="pen" text="tutte le" type="straight"/>
+		<underline language="IT" method="pen" text="forme del sentimento" type="straight"/>
+		<underline language="IT" method="pen" text="domanda" type="straight"/>
+		<underline language="IT" method="pen" text="rifiuta, concede" type="straight"/>
+		<underline language="IT" method="pen" text="riprende" type="straight"/>
+		<underline language="IT" method="pen" text="finge" type="straight"/>
+		<underline language="IT" method="pen" text="dissimula" type="straight"/>
+		<underline language="IT" method="pen" text="si marauiglia" type="straight"/>
+		<underline language="IT" method="pen" text="dimostra affetto d'animo" type="straight"/>
+		<underline language="IT" method="pen" text="luoghi, onde" type="straight"/>
+		<underline language="IT" method="pen" text="breui &amp; acuti" type="straight"/>
+		<underline language="IT" method="pen" text="dalle cose" type="straight"/>
+		<underline language="IT" method="pen" text="la similitudine: l'imagine" type="straight"/>
+		<underline language="IT" method="pen" text="comparatione" type="straight"/>
+		<underline language="IT" method="pen" text="argomento dal simile" type="straight"/>
+		<underline language="IT" method="pen" text="dal contrario" type="straight"/>
+		<underline language="IT" method="pen" text="di motti nel riprendere &amp; nel rifiutare" type="straight"/>
+		<underline language="IT" method="pen" text="nell'ammonire" type="straight"/>
+		<underline language="IT" method="pen" text="nel conuincere" type="straight"/>
+		<underline language="IT" method="pen" text="nel finger la difesa" type="straight"/>
+		<underline language="IT" method="pen" text="nello scemar l'altrui uanagloria" type="straight"/>
+		<underline language="IT" method="pen" text="scemare il perdono" type="straight"/>
+		<underline language="IT" method="pen" text="nel ributtar la colpa" type="straight"/>
+		<underline language="IT" method="pen" text="nello scusare" type="straight"/>
+		<underline language="IT" method="pen" text="schernire diuerse" type="straight"/>
+		<underline language="IT" method="pen" text="co[n] l'allusione" type="straight"/>
+		<underline language="IT" method="pen" text="somiglianza delle" type="straight"/>
+		<underline language="IT" method="pen" text="co 'l burlare colui che ci burla" type="straight"/>
+		<underline language="IT" method="pen" text="dir mal di colui, che dice mal" type="straight"/>
+		<underline language="IT" method="pen" text="finger qualche" type="straight"/>
+		<underline language="IT" method="pen" text="bugia" type="straight"/>
+		<underline language="IT" method="pen" text="co[n]cedendo quel che" type="straight"/>
+		<underline language="IT" method="pen" text="cede[n]do il mal" type="straight"/>
+		<underline language="IT" method="pen" text="fingendo di no[n] inte[n]dere intendendo" type="straight"/>
+		<underline language="IT" method="pen" text="detti sententiosi" type="straight"/>
+		<underline language="IT" method="pen" text="dissimulando" type="straight"/>
+		<underline language="IT" method="pen" text="pigliando altramente" type="straight"/>
+		<underline language="IT" method="pen" text="dicendo una cosa" type="straight"/>
+		<underline language="IT" method="pen" text="intendendone un'altra" type="straight"/>
+		<underline language="IT" method="pen" text="secreto sospetto" type="straight"/>
+		<underline language="IT" method="pen" text="fingendo noi di credere" type="straight"/>
+		<underline language="IT" method="pen" text="la patientia finta" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="nelle cose" type="straight"/>
+		<underline language="IT" method="chalk" text="dalle cose sono questi" type="straight"/>
+		<underline language="IT" method="chalk" text="schernire diuerse" type="straight"/>
+				
+		<!-- Symbols -->
+		<symbol name="SS" place="head"/>
+		<symbol name="SS" place="left_margin"/>
+		<symbol name="SS" place="right_margin"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- quel -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- rice -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- scher -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- burla -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- qual -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- co[n]tra -->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- una co -->
+		
+	    	<!-- Left margin -->
+	    <mark method="pen" name="circumflex" place="left_margin"/> <!-- antonomasia -->
+		<mark language="IT" method="pen" name="circumflex" place="left_margin" text="hiperbole"/> 
+		
+		<!--JG: Chris, I'd tag all the straight quotation marks here as SS symbols-->
+		
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- ue tutte -->
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- dubita -->
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- de, ammonisce -->
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- nisce -->
+		<mark method="pen" name="X_sign" place="left_margin"/> <!-- fine -->
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- motti breui -->
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- argomento -->
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- nel rifiutare -->
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- lo scemare -->
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- schernire -->
+		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- co 'l dir mal -->
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- che bugia -->
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- rio -->
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- sa, e -->
+		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- creda -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- scemado. I -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="nelle cose"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark method="pen" name="comma" place="intext"/> <!-- capi & -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="grande"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="materia da ridere"/>
+	    <mark method="pen" name="dot" place="intext"/> <!-- ridere, come -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="argomenti"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="sentimento"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="dimostra"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="affetto d'animo"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="luoghi"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="motti"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="acuti"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="cose"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="schernire"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- intendendone un'altra -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="la patientia finta"/>
+		
+		<!-- Numerals -->
+		<numeral place="left_margin">2.</numeral>
+		<numeral place="right_margin">2.</numeral>
+
+    </annotation>
+</transcription>

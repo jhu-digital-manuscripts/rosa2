@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.174v.tif" pagination="88" reader="John Dee" signature="[H 2[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ☊ ☋ Vide Cardanus multo audacius multa de capite et cauda pronunciat 
+                    </marginalia_text>
+                    <symbol_in_text name="North_Node"/>
+                    <symbol_in_text name="South_Node"/>
+                    <person name="Girolamo Cardano"/>
+                </position>
+            </language>
+            <translation>
+                See, Cardano delivers much about the head and tail much more audaciously.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Luna existente in signis ruminantibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Luna in ruminantibus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The moon in ruminating [signs].
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Et ego expertus sum p[er] ♒ 
+                    </marginalia_text>
+                    <symbol_in_text name="Aquarius"/>
+                </position>
+            </language>
+            <translation>
+                As I am an expert through Aquarius.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="configuratus eidem cadenti ab angulo, erit natus" type="straight"/>
+        <underline language="LA" method="pen" text="In loco 6 natiuitatis suae si aliquis habet Mercurium, conuertetur à fide sua in aliam" type="straight"/>
+        <underline language="LA" method="pen" text="A Luna initium omnis rei accipitur, omnis finis uero à domino domus suae" type="straight"/>
+        <underline language="LA" method="pen" text="Iupiter &amp; Saturnus" type="straight"/>
+        <underline language="LA" method="pen" text="Maleuolus cum erit orientalis in domo propria uel exaltatione melior est retrogrado &amp; impedito beneuolo" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="Erit impedimentum circa illam partem corporis" type="dotted"/> 
+        <underline colour="red" language="LA" method="pen" text="fuerit natiuitatis tempore impeditum" type="dotted"/> 
+        
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="left_margin"/>
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/>
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="left_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

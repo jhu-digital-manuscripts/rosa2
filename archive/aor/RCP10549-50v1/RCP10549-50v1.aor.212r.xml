@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.212r.tif" pagination="403" reader="John Dee" signature="ccc.ii."/>
+    <annotation>
+        
+        <marginalia anchor_text="ostento [...] prodigio [...] portentis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ostentum. p[ro]gigium. porte[n]tum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Marvel, prodigiy and portent.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="multo maxima ex parte" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        multo maxima ex parte
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Much from the greatest part.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tempestate ac nocte Reipub." hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Reip. te[m]pestas nox
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The storm and night of the state.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="satis sanctu[m], satis augustum, satis religiosum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        sacrificium violatu[m] satis sanctum satis angustu[m] satis religiosu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A sacrifice, dishonoured, sacred enough, small enough, pious enough.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="intorserit" type="straight"/>
+        <underline language="LA" method="pen" text="cuius concionis primum vniuersum argumentum, sententiámque audite" type="straight"/>
+        <underline language="LA" method="pen" text="cum riseritis impudentiam hominis, tum à me de tota" type="straight"/>
+        <underline language="LA" method="pen" text="negligi, violari, pollui" type="straight"/>
+        <underline language="LA" method="pen" text="mirum si hoc vobis ridiculum" type="straight"/>
+        <underline language="LA" method="pen" text="stuprum intulerit" type="straight"/>
+        <underline language="LA" method="pen" text="virili, sed flagitio" type="straight"/>
+        <underline language="LA" method="pen" text="à religiosissimo sacerdote P." type="straight"/>
+        <underline language="LA" method="pen" text="de toto hoc ostento" type="straight"/>
+        <underline language="LA" method="pen" text="toto prodigio" type="straight"/>
+        <underline language="LA" method="pen" text="expiabo religionem" type="straight"/>
+        <underline language="LA" method="pen" text="portentis" type="straight"/>
+        <underline language="LA" method="pen" text="multo maxima ex parte" type="straight"/>
+        <underline language="LA" method="pen" text="illa tempestate ac nocte Reipub." type="straight"/>
+        
+        <numeral place="right_margin">11</numeral>
+        <numeral place="right_margin">11</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">19</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+    </annotation>
+</transcription>

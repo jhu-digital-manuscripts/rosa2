@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.303v.tif" pagination="158" reader="John Dee" signature="[Ooo[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Richardus" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Richardus Comes.
+                    </marginalia_text>
+                    <person name="Richard, 1st Earl of Cornwall"/>
+                </position>
+            </language>
+            <translation>
+                Richard, 1st Earl of Cornwall.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="abundauit, tu[m] quia sororius erat Imperatoris" type="straight"/>
+        <underline language="LA" method="pen" text="regis Angloru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="erat Pictauiae &amp; Cornubiae" type="straight"/>
+        <underline language="LA" method="pen" text="verò Nauariae" type="straight"/>
+        <underline language="LA" method="pen" text="Comes est" type="straight"/>
+        <underline language="LA" method="pen" text="Comes quoque Britanniae, cognosce[n]tes Comitis Richardi prudentia[m] &amp; magnificentia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="inuidia stimulati, &amp; dolentes, si, quod ipsi cu[m] suis Francis" type="straight"/>
+        <underline language="LA" method="pen" text="potuerunt ad optatu[m] effectum perducere, ipse Richardus, quem" type="straight"/>
+        <underline language="LA" method="pen" text="Anglicum impubem" type="straight"/>
+        <underline language="LA" method="pen" text="inexpertum" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

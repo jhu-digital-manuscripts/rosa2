@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.083v.tif" pagination="[83[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="iter debeat facere irculi maioris, aut linea[e] curua[e]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Iter [ circuli maioris
+                        linea[e] curva[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Journey of a major circle or of a curved line.
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="nordeste iter debeat facere circuli maioris, aut lineae curuae: rumus nordeste" type="straight"/>
+        <underline language="LA" method="pen" text="itinera sint uera, omnes rumi in qualibet patre aequidistantes alij abs alijs debent esse. Si autem aequidistantes              non sunt, iter eiusdem rumi in una parte non potest esse idem in alia" type="straight"/>
+        <underline language="LA" method="pen" text="Et si linea curua esse deberet qua uauigamus: itinera eorumdem rumorum omnia sese              mutuò arriperent" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+
+    </annotation>
+</transcription>

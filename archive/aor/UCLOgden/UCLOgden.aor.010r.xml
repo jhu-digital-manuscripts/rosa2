@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.010r.tif" pagination="3" reader="John Dee" signature="a 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="coloribúsq[ue]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Colores
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Colours.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="moribus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mores
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Customs.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gentium variaru[m] ingenia natiua
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The native qualities of different peoples.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uirtutum officia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Virtutu[m] officia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The duty of virtues.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Delectus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The chosen.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Deorum invocatio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Invocation of gods.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="de moribus" type="straight"/>
+        <underline language="LA" method="pen" text="coloribúsq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="cur quaedam gentes sunt sic formatae, ut propria sint morum quodammodo unitate perspicuae" type="straight"/>
+        <underline language="LA" method="pen" text="Galli stolidi" type="straight"/>
+        <underline language="LA" method="pen" text="Gallicam stolliditatem ☿ sapientissimum" type="straight"/> 
+        <underline language="LA" method="pen" text="Ex istius artis instituto, omnia, ex rebus homanis uirtutum officia tolli" type="straight"/>
+        <underline language="LA" method="pen" text="stellarum iudiciis ascribat" type="straight"/>
+        <underline language="LA" method="pen" text="si te sentis ad illas aliunde compulsum" type="straight"/>
+        <underline language="LA" method="pen" text="si sine ipsorum numine, stellis tantum iuuantibus, omnia consequi possumus" type="straight"/>
+        
+    </annotation>
+</transcription>

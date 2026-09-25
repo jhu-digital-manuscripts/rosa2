@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.271r.tif" pagination="521" reader="John Dee" signature="[IzIzIz.v.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Spurium Melium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Spurius Melius
+                    </marginalia_text>
+                    <person name="Spurius Maelius"/>
+                </position>
+            </language>
+            <translation>
+                Spurius Maelius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="T. Gracchum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        T Gracchos
+                    </marginalia_text>
+                    <person name="Tiberius Gracchus"/>
+                </position>
+            </language>
+            <translation>
+                Tiberius Gracchus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Repetitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Repetition.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="terminabat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        terminare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To restrict.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lyntribus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        lynter
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A skiff.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="agere fundamenta" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        agere fundame[n]ta 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To lay the foundation.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="obduruerat, &amp; percalluerat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        obduruerat p[er]calluerat.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                He had endured and had become callous.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fraenare" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fro[e]nare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To restrain.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="qui aedem Nympharum incendit" type="straight"/>
+        <underline language="LA" method="pen" text="Remp. in priuatos, in longinquos, in propinquos, in alienos, in suos irruebat" type="straight"/>
+        <underline language="LA" method="pen" text="Fingi haec putatis quae pate[n]t, quae nota omnibus, quae tene[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="effectu[m] est, vt ius, aequitas, leges, libertas, pudor, pudicitia in ciuitate manerent" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">20</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.238v.tif" pagination="456" reader="John Dee" signature="[fff.iiii.[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Qua[n]ta sustulit Cicero
+                    </marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>
+                How much Cicero suffers.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="indignitas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        indignitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Humiliation.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="te refutandum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        refutare alique[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To refute someone.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="atque tectorum, praesidium Curiae, sordidatum &amp; reum: video P. Lentulum, cuius ego patrem deum ac parentem statuo fortunae ac nominis mei,             fratris, rerúmque nostrarum in hoc misero squallore &amp; sordibus: cui superior annus idem &amp; virilem patris, &amp; praetextata[m] populi iudicio togam dederit, hunc hoc anno in hac toga, rogationis iniustissimae subitam" type="straight"/>
+        <underline language="LA" method="pen" text="hic luctus, hae sordes suscaeptae sunt propter vnum me, quia me defenderunt: quia meum casum, luctúmque doluerunt:              quia me lugenti patriae, flagita[n]ti Senatui, poscenti Italiae, vobis omnibus orantibus reddiderunt" type="straight"/>
+        <underline language="LA" method="pen" text="si scelestum est amare patriam" type="straight"/>
+        <underline language="LA" method="pen" text="praestat, in eandem illam recidere fortuna[m], quàm tanta[m] importare meis defensoribus &amp; conseruatoribus calamitate[m]" type="straight"/>
+        <underline language="LA" method="pen" text="pulsis qui me huius vrbis compotem fecerunt?" type="straight"/>
+        <underline language="LA" method="pen" text="hunc exulem propter me sine me videbunt" type="straight"/>
+        <underline language="LA" method="pen" text="propter turpitudinem vitae, sordésque domesticas nullius momenti putaretur" type="straight"/>
+        <underline language="LA" method="pen" text="sed sui paulo in te inte[m]perantior fortasse quàm debui: odio enim" type="straight"/>
+        <underline language="LA" method="pen" text="minus conte[m]nerem quàm odissem, tamen vexatum potius quàm despectum vellem dimittere" type="straight"/>
+        <underline language="LA" method="pen" text="nulla me ad id causa impulisset, nisi vt ferocitate[m] tuam istam co[m]primerem, &amp; audaciam frangerem,              &amp; loquacitate[m] paucissimis interrogationibus irretitam retardarem" type="straight"/>
+
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">22</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">10</numeral>
+        
+    </annotation>
+</transcription>

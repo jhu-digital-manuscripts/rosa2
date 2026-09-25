@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Christine de Pizan</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+        
+         <sourceDesc> 
+            
+            <bibl>
+               <note type="format">manuscript</note>
+               <note type="commonName">Français 835</note>
+               <title>Christine de Pizan</title>
+
+               <extent>
+                  <measure quantity="103" unit="folios">103</measure>
+                  <dimensions>
+                     
+                     <height unit="mm">348</height>
+                     <width unit="mm">260</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">6</note>
+               
+               <note type="material">parchemin</note>
+               
+               <pubPlace>France</pubPlace>
+               
+               <date notBefore="1400" notAfter="1500">15e siècle</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>fr. 835</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="103v">1r-103v</locus>
+                     <title>Recueil des ouvres de Christine de Pisan, Tome I</title>
+                     <note type="textid">Recueil des ouvres de Christine de Pisan, Tome I</note>
+                     <note type="folios">103</note>
+                     <note type="illustrations">6</note>
+                     <note type="linesPerColumn">40</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="2">
+                     <locus from="1r" to="18v">1r-18v</locus>
+                     <title>Cent Balades</title>
+                     <note type="textid">Cent Balades</note>
+                     <note type="folios">18</note>
+                     <note type="illustrations">1</note>
+                     <note type="linesPerColumn">35</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="3">
+                     <locus from="18v" to="21v">18v-21v</locus>
+                     <title>Virelays</title>
+                     <note type="textid">Virelays</note>
+                     <note type="folios">3</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">36</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="4">
+                     <locus from="21v" to="25r">21v-25r</locus>
+                     <title>Balade retrograde, Balade à rimes reprises, Balade à responses</title>
+                     <note type="textid">Balade retrograde, Balade à rimes reprises, Balade à responses</note>
+                     <note type="folios">4</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">37</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="5">
+                     <locus from="25r" to="31r">25r-31r</locus>
+                     <title>Lays, Rondiaux</title>
+                     <note type="textid">Lays, Rondiaux</note>
+                     <note type="folios">6</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">32</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="6">
+                     <locus from="31r" to="34r">31r-34r</locus>
+                     <title>Jeux à vendre</title>
+                     <note type="textid">Jeux à vendre</note>
+                     <note type="folios">3</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">35</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="7">
+                     <locus from="34r" to="44v">34r-44v</locus>
+                     <title>Autres Balades</title>
+                     <note type="textid">Autres Balades</note>
+                     <note type="folios">10</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">35</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="8">
+                     <locus from="45r" to="50r">45r-50r</locus>
+                     <title>L'Epistre au dieu d'amours</title>
+                     <note type="textid">L'Epistre au dieu d'amours</note>
+                     <note type="folios">5</note>
+                     <note type="illustrations">1</note>
+                     <note type="linesPerColumn">42</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="9">
+                     <locus from="50r" to="51v">50r-51v</locus>
+                     <title>Complainte amoureuse</title>
+                     <note type="textid">Complainte amoureuse</note>
+                     <note type="folios">1</note>
+                     <note type="illustrations">1</note>
+                     <note type="linesPerColumn">42</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

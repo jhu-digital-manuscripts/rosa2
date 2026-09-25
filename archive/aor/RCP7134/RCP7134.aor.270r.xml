@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.270r.tif" pagination="263" reader="John Dee" signature="VV iij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lapides pra[e]tiosi et gemma[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Expensive stones and gems.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Qui uero affines sunt his, ad genus suum reducu[n]tur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vt affines hijs pra[e]dictis ad eos reduca[n]tur.</marginalia_text>
+                </position>
+            </language>
+            <translation>So that [those who are] adjacent to these aforesaid things are brought back to them.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="arboribus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Arbores.</marginalia_text>
+                </position>
+            </language>
+            <translation>Trees</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="animalia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Animalia</marginalia_text>
+                </position>
+            </language>
+            <translation>Animals.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Colores.</marginalia_text>
+                </position>
+            </language>
+            <translation>Colours.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Magnetem" type="straight"/>
+        <underline language="LA" method="pen" text="Qui uero affines sunt his, ad genus suum reducu[n]tur, ut Prassius" type="straight"/>
+        <underline language="LA" method="pen" text="Saturnus autem salamandras" type="straight"/>
+        
+    </annotation>
+</transcription>

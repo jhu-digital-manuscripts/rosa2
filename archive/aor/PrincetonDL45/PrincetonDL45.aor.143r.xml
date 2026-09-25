@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.143r.tif" pagination="285" reader="Harvey" signature="BB[ir]"/>
+    <annotation>
+       
+        <marginalia anchor_text="Ignis Gr[a]ecus" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fyreworkes.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ignis Gr[a]ecus" type="straight"/>
+        <underline language="LA" method="pen" text="igne Graeco" type="straight"/>
+        <underline language="LA" method="pen" text="Aspaltum" type="straight"/>
+        <underline language="LA" method="pen" text="nepta" type="straight"/>
+        <underline language="LA" method="pen" text="dragantum, pix quoq[ue] Gr[a]eca" type="straight"/>
+        <underline language="LA" method="pen" text="Sulphur" type="straight"/>
+        <underline language="LA" method="pen" text="vernicis" type="straight"/>
+        <underline language="LA" method="pen" text="petrolio quoq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="Mercurii" type="straight"/>
+        <underline language="LA" method="pen" text="sal gemm[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="Gr[a]eci dicitur ignis" type="straight"/>
+        <underline language="LA" method="pen" text="Aspaltum" type="straight"/>
+        <underline language="LA" method="pen" text="camphora" type="straight"/>
+        <underline language="LA" method="pen" text="nepta" type="straight"/>
+        <underline language="LA" method="pen" text="damo" type="straight"/>
+        <underline language="LA" method="pen" text="benedictum" type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="Ignis Gr[a]ecus"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="igne Graeco"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.199v.tif" pagination="[199v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Guanaia" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Guanaia v</marginalia_text>
+                    <location name="Guanaja"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="vna Canoa" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A marvaylous</marginalia_text> <!-- MB: Still not totally certain about this transcription. -->  <!-- DO: I think the whole note is 'A marvaylous Canoa' -->
+                </position>
+            </language>
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Canoa</marginalia_text>
+                </position>
+            </language>
+            <translation>A marvellous canoe.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="troueran paese di quella forma piu di" type="straight"/>
+        <underline language="IT" method="pen" text="di Guanaia" type="straight"/>
+        <underline language="IT" method="pen" text="le fronte si larga" type="straight"/>
+        <underline language="IT" method="pen" text="Calcide" type="straight"/>
+        <underline language="IT" method="pen" text="rame" type="straight"/>
+        <underline language="IT" method="pen" text="vna Canoa" type="straight"/>
+        <underline language="IT" method="pen" text="galea, &amp; larga VIII piedi" type="straight"/>
+        <underline language="IT" method="pen" text="mercantie" type="double"/>
+        <underline language="IT" method="pen" text="parti Occidentali" type="double"/>
+        <underline language="IT" method="pen" text="le gondole" type="straight"/>
+        <underline language="IT" method="pen" text="felzi;" type="straight"/>
+        <underline language="IT" method="pen" text="XXV" type="straight"/>
+        
+    </annotation>
+</transcription>

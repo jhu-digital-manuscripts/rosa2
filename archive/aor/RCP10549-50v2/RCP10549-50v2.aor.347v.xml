@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.347v.tif" pagination="146" reader="John Dee" signature="[Klz.i.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="fasciculum ad naris" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        fascitulu[m] admouere ad nares
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To move a bouquet to the noses.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="refertus ... confertus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        refertus co[n]fertus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Stuffed and crammed. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sapientias" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Sapie[n]ti[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Wisdom.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vocem inanem fundere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        voce[m] inane[m] fu[n]dere me[n]tiri
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To give an empty judgement, to deceive.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Epucri dicta
+                    </marginalia_text>
+                    <person name="Epicurus"/>
+                </position>
+            </language>
+            <translation>
+                Sayings of Epicurus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ὕδραυλος
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Water pipe.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        αὐλῶν
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        al[ias]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Elswhere: pipe.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Telamonis verba apud Enniu[m]
+                    </marginalia_text>
+                    <person name="Telamon"/>
+                    <person name="Ennius"/>
+                </position>
+            </language>
+            <translation>
+                Telamon's words according to Ennius.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Andromacha[e] Verba apud Ennium
+                    </marginalia_text>
+                    <person name="Andromache"/>
+                    <person name="Ennius"/>
+                </position>
+            </language>
+            <translation>
+                Andromache's words according to Ennius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cantoribus Euphorionis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cantores Euphorionis
+                    </marginalia_text>
+                    <person name="Euphorion of Chalcis"/>
+                </position>
+            </language>
+            <translation>
+                Imitators of Euphorion of Chalcis.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="omnia repentina nec opinata esse grauiora" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Omnia repentina nec opinata grauiora
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                All sudden and unexpected things are more grevious.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hedychrum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        al[ia]s Cedrum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Elsewhere cedar.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="calix mulsi impingendus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        impingere calice[m] multi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To thrust a gobblet of mead.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ex formis percipiu[n]tur, oculis suaues motiones, siue quae aliae voluptates in toto homine gignu[n]tur quolibet è sensu" type="straight"/>
+        <underline language="LA" method="pen" text="nisi si vellent voces inanis fundere" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; sapientias, nihil" type="straight"/>
+        <underline language="LA" method="pen" text="acipenserem" type="straight"/>
+        <underline language="EL" method="pen" text="" type="straight"/>
+        <underline language="LA" method="pen" text="quae spectet florida &amp; varia, fasciculum ad naris admouebis, incendes odores, &amp; sertis redimiri iubebis &amp; rosa" type="straight"/>
+        <underline language="LA" method="pen" text="calix mulsi impingendus est, vt" type="straight"/>
+        <underline language="LA" method="pen" text="Fana flamma deflagrata, tosti alti stant parietes" type="straight"/>
+        <underline language="LA" method="pen" text="omnia repentina nec opinata esse grauiora" type="straight"/>
+        <underline language="LA" method="pen" text="Est enim &amp; rebus, &amp; verbis, &amp; modis lugubre" type="straight"/>
+        <underline language="LA" method="pen" text="Collocemus in culcitra plumea, psaltriam adducamus, hedychrum ince[n]damus, demus scutellam dulciculae potionis, aliquid videamus &amp; cibi. Haec" type="straight"/>
+        <underline language="LA" method="pen" text="aut libidinosas eius fuisse sententias" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="guillemet" place="head" text="Sapie[n]ti[a]e"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="guillemet" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <errata amendedtext="Cedrum" copytext="hedychrum" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

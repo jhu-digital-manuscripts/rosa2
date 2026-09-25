@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonPE1137.030r.tif" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Agrippicè.
+                    </marginalia_text>
+                    
+                    <!-- CG: I've re-read this page a few times and I still can't quite figure out what is going on here. Basically Smith wants to get
+                    rid of the letter Q because he finds it useless, much like in Genesis when Sarah casts out Agar and Ismael when they
+                    become useless. My only thought would be that this should read "Agrippine" or something, referring to one of the Agrippinas. 
+                    What's clear is that he is not referring to anything in the text itself.  --> <!--JG: I'll ask a specialist, can't figure this one out either-->
+                    
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Si princeps essem Grammaticorum" type="straight"/>
+        <underline language="LA" method="pen" text="leges aeternas" type="straight"/>
+        <underline language="LA" method="pen" text="vt Sara" type="straight"/>
+        <underline language="LA" method="pen" text="fecit Agar" type="straight"/>
+        <underline language="LA" method="pen" text="Ismaelem" type="straight"/>
+        <underline language="LA" method="pen" text="Verè seruilis" type="straight"/>
+        <underline language="LA" method="pen" text="tanqua[m] bacillo" type="straight"/>
+        <underline language="LA" method="pen" text="in alio iampride[m] orbe" type="straight"/>
+        <underline language="LA" method="pen" text="in specu" type="straight"/>
+        <underline language="LA" method="pen" text="Platonico" type="straight"/>
+        <underline language="LA" method="pen" text="vmbrae pro corporibus" type="straight"/>
+        <underline language="LA" method="pen" text="Deum Opt[imum] Max[imum] &amp; superos omnes" type="straight"/>
+        <underline language="LA" method="pen" text="verè Patrum limbus" type="straight"/>
+        <underline language="LA" method="pen" text="Purgatorium Pontificis Romani" type="straight"/>
+        <underline language="LA" method="pen" text="expiatus emitteris" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- q? Si -->
+        <mark language="LA" method="pen" name="hash" place="right_margin" text="Si princeps essem Grammaticorum"/>       
+        <mark language="LA" method="pen" name="hash" place="right_margin" text="leges aeternas"/>
+        <mark method="pen" name="straight_quotation_mark" place="intext"/> <!-- vt Sara -->
+        <mark method="pen" name="straight_quotation_mark" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+    </annotation>
+</transcription>

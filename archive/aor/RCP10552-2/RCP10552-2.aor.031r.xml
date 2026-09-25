@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.031r.tif" pagination="51" reader="John Dee" signature="E.ij."/>
+    <annotation>
+        
+        <marginalia anchor_text="fluuiu[s] de Dee" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Fluuius de Dee.</marginalia_text>
+                    <location name="River Dee"/>
+                </position>
+            </language>
+            <translation>River Dee</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="VVilhelmus Dunvvaldum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dunwaldus.</marginalia_text>
+                    <person name="William Dunwald"/>
+                </position>
+            </language>
+            <translation>William Dunwald</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Dee iuxta" type="straight"/>
+        <underline language="LA" method="pen" text="Dunvvaldum de regno Scotiae ex iustis causis amouit" type="straight"/>        
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

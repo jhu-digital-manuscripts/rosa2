@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.017v.tif" pagination="354" reader="Harvey"/>	<!-- ABO 022left  -->
+    	<annotation>
+    
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+        				<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Multa Specula Cristallina : sed paucissima adamantina.  
+                    				</marginalia_text>
+        				</position>
+        			</language>
+        			<translation>
+        				Many mirrors are crystalline: but very few are adamantine. 
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="left_margin">
+    					<marginalia_text>
+    						Christus nec ullis ipse egebat libris: nec vllum Apostolis comme[n]dauit,
+    						orbem terraru[m] superare
+    					</marginalia_text>
+    					<person name="Apostles"/>
+    					<person name="Jesus Christ"/>
+    				</position>
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						) cogitantibus.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Christ himself did not need any books: nor did he recommend a single book to the Apostles who were intent on transcending the world.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="left_margin">
+    					<marginalia_text>
+    						Spiritu, et industria quid non? sed utroq[ue] singulari.
+    					</marginalia_text>
+    				</position>
+    			</language>			
+    			<translation>
+    				Why not by spirit and industry? But with each being singular.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						Et musca[e] suus est splen: et vespa[e] sua	
+    						bilis. ( Martyres apostoli: sed inoffensi.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				The fly has his spleen: and the wasp has his bile. 
+    				(   The apostles are martyrs: but unhindered.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Sed liberatus est insanus, qui prudens
+    						( est incarceratus.    						
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				The madman is free, while whoever is prudent is imprisoned.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="270" place="right_margin">
+    					<marginalia_text>
+    						Incomparabilis est Spiritus, Industria, Peritia; qua[e] maximaru[m] reru[m]
+    					</marginalia_text>
+    				</position>
+    				<position book_orientation="270" place="intext">
+    					<marginalia_text>
+    						potitur.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Incomparable is the Spirit, Industry, Experience; which becomes master of the greatest matters.
+    				<!-- CG: Missing text added. -->
+    			</translation>
+    		</marginalia>
+    	
+    		<underline language="IT" method="pen" text="prelati suoi amici" type="straight"/>
+    		<underline language="IT" method="pen" text="disgratia" type="straight"/>
+    		<underline language="IT" method="pen" text="da un Signore, il quale" type="straight"/>
+    		<underline language="IT" method="pen" text="teneua, che fusse stato principal cagione della" type="straight"/>
+    		<underline language="IT" method="pen" text="usati saluti" type="straight"/>
+    		<underline language="IT" method="pen" text="facesse debole accoglie[n]za" type="straight"/>
+    		<underline language="IT" method="pen" text="ui conosco troppo ben" type="straight"/>
+    		<underline language="IT" method="pen" text="del proprio giorno che uoi nasceste" type="straight"/>
+    		<underline language="IT" method="pen" text="cacciato tutto quel dì intiero" type="straight"/>
+    		<underline language="IT" method="pen" text="molta solecitudine" type="straight"/>
+    		<underline language="IT" method="pen" text="pigliammo altro, che una ciuetta" type="straight"/>
+    		<underline language="IT" method="pen" text="Restò confuso" type="straight"/>
+    		<underline language="IT" method="pen" text="l'arguto motto del pazzo" type="straight"/>
+    		<underline language="IT" method="pen" text="si partì subito da lui" type="straight"/>
+    		<underline language="IT" method="pen" text="Mordace" type="straight"/>
+    		<underline language="IT" method="pen" text="compagnia di begli ingegni" type="straight"/>
+    		<underline language="IT" method="pen" text="della cagione, perche" type="straight"/>
+    		<underline language="IT" method="pen" text="per la uia sacra di" type="straight"/>
+    		<underline language="IT" method="pen" text="spatiosa" type="straight"/>
+    		<underline language="IT" method="pen" text="tempij &amp; edifitij antichi" type="straight"/>
+    		<underline language="IT" method="pen" text="è solitaria" type="straight"/>
+    		<underline language="IT" method="pen" text="per competere con Horatio" type="straight"/>
+    		<underline language="IT" method="pen" text="uia sacra" type="straight"/>
+    		<underline language="IT" method="pen" text="altre cagioni" type="straight"/>
+    		<underline language="IT" method="pen" text="Antonio Platone, molto gentile" type="straight"/>
+    		<underline language="IT" method="pen" text="discreto cortigiano" type="straight"/>
+    		<underline language="IT" method="pen" text="dotato di molte uirtuose &amp;" type="straight"/>
+	       
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- al Si -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- ri -->
+
+	    	<mark method="pen" name="plus_sign" place="left_margin"/> <!-- beneath the Apostolis annotation -->
+    		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- non pigliammo -->
+    		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- re con Horatio -->
+    		<mark method="pen" name="horizontal_bar" place="left_margin"/> <!-- discreto cortigiano -->
+
+	    	<mark method="pen" name="dot" place="intext"/> <!-- Ambruogio, dopo -->
+    		<mark method="pen" name="plus_sign" place="intext"/> 
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="arguto"/>
+    		<mark method="pen" name="plus_sign" place="intext"/>
+    		<mark method="pen" name="plus_sign" place="intext"/>
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="discreto"/>
+
+    </annotation>
+</transcription>

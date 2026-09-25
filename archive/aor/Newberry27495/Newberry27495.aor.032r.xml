@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.032r.tif" reader="Harvey" signature="Fii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>It importeth a courtier, to speak &amp; write excellently: without all appearance of Affectation.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>His speech, must be sensible, fine &amp; sententious; with a flowing facilitie: like the elegant &amp; 
+                        gallant stile of Ca[e]sar, Tullie, Osorius, most eloquent, but most easie.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                    <person name="Cicero"/>
+                    <person name="John Osorius"/> <!--JG: Probably Harvey is meaning John Osorius, the Spanish preacher-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nec intelligo, quid Homero magnificentius legere possim: nec quid Virgilio diuinius. 
+                    Plurima su[n]t in Homero, quae in coelu[m] tolli; nihil in nostro, quod melius possit optari. Sadoletus.</marginalia_text>
+                    <person name="Homer"/>
+                    <person name="Virgil"/>
+                    <person name="Jacopo Sadoleto"/>
+                    <X-ref book_title="De liberis recte instituendis liber" language="LA" person="Jacopo Sadoleto" text="Plurima esse in Homero, quae in coelu[m] tolli; nihil in nostro, quod melius possit optari"/> <!--JG: See: https://books.google.co.uk/books?id=beDfGS4XvK0C&pg=PA110&lpg=PA110&dq=nihil+in+nostro,+quod+melius+possit+optari&source=bl&ots=nCptNLCufM&sig=VUV_0RCaQv-xTkPt2MWbb9Y4XMQ&hl=en&sa=X&ei=bdAsVZqJFdLLaLr5gIgF&ved=0CCMQ6AEwAA#v=onepage&q=nihil%20in%20nostro%2C%20quod%20melius%20possit%20optari&f=false-->
+                </position>
+            </language>
+            <translation>I do not understand, what more splendid I can read in Homer, nor what more divine in Virgil. "The greatest things are in
+            Homer, which are lifted into heaven; [there is] nothing in ours, that can be chosen better". Sadoletus.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>s[upr]a.</marginalia_text>
+                    <internal_ref text="">
+                        <target ref="Newberry27495:case_712_c27495_048" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] above.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="chalk" text="swarueth from" type="straight"/>
+        <underline language="EN" method="pen" text="walketh in the dark without lyght" type="straight"/>
+        <underline language="EN" method="pen" text="disdeigne" type="straight"/>
+        <underline language="EN" method="pen" text="dylygente heede to folowinge" type="straight"/>
+        <underline language="EN" method="chalk" text="Virgill declarethe a greate" type="straight"/>
+        <underline language="EN" method="chalk" text="with his so deuine a witte" type="straight"/>
+        <underline language="EN" method="pen" text="deuine a witte and iudgemente" type="straight"/>
+        <underline language="EN" method="pen" text="to folowe him at" type="straight"/>
+        <underline language="EN" method="pen" text="he folow Homer" type="straight"/>
+        <underline language="EN" method="pen" text="of writinge" type="straight"/>
+        <underline language="EN" method="pen" text="ought to speake" type="straight"/>
+        <underline language="EN" method="pen" text="with speakyng" type="straight"/>
+        <underline language="EN" method="chalk" text="with speakyng the[n]" type="straight"/>
+        <underline language="EN" method="pen" text="wrytinge" type="straight"/>
+        <underline language="EN" method="pen" text="both the one and the" type="straight"/>
+        <underline language="EN" method="pen" text="without these two qualyties parauenture all the rest should not be much woorthye prayse" type="straight"/>
+        <underline language="EN" method="pen" text="vndertake this enterprise" type="straight"/>
+        <underline language="EN" method="pen" text="greate folye for" type="straight"/>
+        <underline language="EN" method="pen" text="vnderstand" type="straight"/>
+        <underline language="EN" method="pen" text="remit our Courtyer" type="straight"/>
+        <underline language="EN" method="chalk" text="our Courtyer" type="straight"/>
+        <underline language="EN" method="chalk" text="to write &amp; to speake" type="straight"/>
+        <underline language="EN" method="chalk" text="meaneth the speaking" type="straight"/>
+        <underline language="EN" method="pen" text="of the vulgar tunge" type="straight"/>
+        
+        <underline language="EN" method="pen" text="Imitation." type="straight"/>
+        <underline language="EN" method="pen" text="Virgil." type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="Sun" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        <symbol language="EN" name="SS" place="right_margin" text="without these two qualyties parauenture all the rest should not be much woorthye prayse"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--folowinge, without-->
+        <mark method="pen" name="dot" place="intext"/> <!--this, whoo-->
+        <mark method="pen" name="dot" place="intext"/> <!--tyme, yet-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="deuine"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="speake"/>
+        <mark method="pen" name="dot" place="intext"/> <!--speake, for-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="with speaking"/>
+        <mark method="pen" name="dot" place="intext"/> <!--other, and-->
+        <mark method="pen" name="dot" place="intext"/> <!--Courtyer, if-->
+        <mark method="pen" name="dot" place="intext"/> <!--Latin, therfore-->
+        <mark method="pen" name="dot" place="intext"/> <!--knowe, as-->
+        
+    </annotation>
+</transcription>

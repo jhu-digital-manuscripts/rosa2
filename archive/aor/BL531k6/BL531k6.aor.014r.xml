@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL531k6.014r.tif" pagination="[014r]" reader="John Dee" signature="D2"/> 
+    <annotation>
+        
+        <marginalia anchor_text="exquisitißima sit haec operatio" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Non est exquisitissima ha[e]c ratio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>This method is not the most exquisite.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="absolutam" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Absoluta quantitas Anni.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The complete span of a year.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Correctio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Correction.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="autem exquisitißima sit haec operatio" type="straight"/>
+        <underline language="LA" method="pen" text="Canon eccentrotetis" type="straight"/>
+        <underline language="LA" method="pen" text="circa minima" type="straight"/>
+        <underline language="LA" method="pen" text="tertia scrupula" type="double"/>
+        <underline language="LA" method="pen" text="praecisionem magnitudinis" type="straight"/>
+        <underline language="LA" method="pen" text="in secundis scrupulis" type="straight"/>
+        <underline language="LA" method="pen" text="quorum singula interuallo 60 annorum vnius scrupuli primi" type="straight"/>
+        <underline language="LA" method="pen" text="continuationem aequalitatis" type="straight"/>
+        <underline language="LA" method="pen" text="integris horis aberrant" type="straight"/>
+        <underline language="LA" method="pen" text="postea" type="straight"/>
+        <underline language="LA" method="pen" text="poßint emendari" type="triple"/>
+        <underline language="LA" method="pen" text="titulo Anomaliae Sol. quatuor" type="straight"/>
+        <underline language="LA" method="pen" text="omnibus mundi aetatibus congrueret, motum" type="straight"/>
+        <underline language="LA" method="pen" text="in apogeo aut perigeo" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--annorum vnius-->
+        
+    </annotation>
+</transcription>

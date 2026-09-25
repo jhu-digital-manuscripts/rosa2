@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.162r.tif" pagination="303" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="conscientia" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Conscie[n]tia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Conscience.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in armis volitare" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        volitare in armis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To march to and fro in arms.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Repetitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Repetition.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quae resecanda erunt, non patiar ad perniciem ciuitatis" type="straight"/>
+        <underline language="LA" method="pen" text="videlicet timidus &amp; permodestus vocem" type="straight"/>
+        <underline language="LA" method="pen" text="qui verbo ciues in exilium eiicio, quasiui" type="straight"/>
+        <underline language="LA" method="pen" text="Cum ille homo audacissimus conscientia co[n]victus primò reticuisset, patefeci caetera" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] aquila[m] illam arge[n]team (cui ille etiam sacrarium" type="straight"/>
+        <underline language="LA" method="pen" text="conseruandae Reipub." type="straight"/>
+        <underline language="LA" method="pen" text="co[n]siliis, laboribus, periculis meis circunclusus ac debilitatus subito" type="straight"/>
+        <underline language="LA" method="pen" text="atque in armis" type="straight"/>
+        <underline language="LA" method="pen" text="tamen latrocinante[m] se interfici mallet, quàm exule[m] viuere" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; que[m], quia quod semper volui, murus interest, no[n] timeo?" type="straight"/>
+        <underline language="LA" method="pen" text="volu[n]tas verò, &amp; causa impude[n]tissima" type="straight"/>
+        
+        <mark method="pen" name="est_mark" place="right_margin"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">19</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">5</numeral>
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.065v.tif" pagination="[58v]" reader="John Dee" signature="[P ij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>De aspectibus in genitura, &amp; revolutione:</marginalia_text>
+                </position>
+            </language>
+            <translation>On the aspects in a geniture and revolution.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Receptio quid sit</marginalia_text>
+                </position>
+            </language>
+            <translation>What is reception.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Duplex significatio planetarum.+.</marginalia_text>
+                </position>
+            </language>
+            <translation>The twofold significance of the planets.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quonia est dominus exaltationis 12ae [duodecimae] sed pra[e]sertim domin[us] octaua[e], sivee, vt dicunt, dispositor.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Since it is the lord of the exaltation of the twelfth, but in the meantime the lord of the eigth, rather, as they said, [being] the disposer.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>naturaliter, proprie, &amp; immutabiliter.</marginalia_text>
+                </position>
+            </language>
+            <translation>Naturally, individually, and unchangeably.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Iupiter carceres" type="straight"/>
+        
+        <mark method="pen" name="section_sign" place="left_margin"/> <!--Cum-->
+        
+        <errata amendedtext="[deleted]" copytext="Et significatur iter extra patriam, quia Mars est dominus ascendentis, &amp; peregrinus, &amp; in trino Lunae" language="LA"/>
+        
+    </annotation>
+</transcription>

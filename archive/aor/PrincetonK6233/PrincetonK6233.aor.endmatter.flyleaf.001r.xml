@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd"> 
+    
+<page filename="PrincetonK6233.endmatter.flyleaf.001r.tif" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                            Lex Rationis, in Institutionibus, et Pandectis:
+                        {   Lex ad Placitum, in Codice, et Nouellis Constituionib[us]
+                    </marginalia_text>
+                    <book title="Institutes of Justinian"/>
+                    <book title="Digest"/>
+                    <book title="Codex Theodosianus"/>
+                    <book title="Novellae Constitutiones"/>
+                </position>
+            </language>
+            <translation>
+                Law by reasoning: in the 'Institutes' and 'Digest'.
+                Law in court: in the 'Codex' and 'Novellae Constitutiones'.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Lex Rationis, in Institutionibus
+                    </marginalia_text>
+                    <book title="Institutes of Justinian"/>
+                </position>
+            </language>
+            <translation>
+                Law by reasoning: in the 'Institutes'
+            </translation>
+        </marginalia>
+    </annotation>
+</transcription>

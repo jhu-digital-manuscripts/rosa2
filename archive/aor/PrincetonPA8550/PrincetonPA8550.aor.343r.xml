@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.343r.tif" pagination="692" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cambysis tyrannica Ebrietas.
+                    </marginalia_text>
+                    <person name="Cambyses II"/>
+                    <emphasis method="pen" text="Ebrietas" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                Cambyses' tyrannical drunkenness. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="metu mussaba[n]t," type="straight"/>
+        <underline language="LA" method="pen" text="hoc ulcus tangere" type="straight"/>
+        <underline language="LA" method="pen" text="patri etiam Cyro praeserebant" type="straight"/>
+        <underline language="LA" method="pen" text="Prexaspen solum accersi iubet" type="straight"/>
+        <underline language="LA" method="pen" text="me etiam potum" type="straight"/>
+        <underline language="LA" method="pen" text="tamen mentis compotem" type="straight"/>
+        <underline language="LA" method="pen" text="sistes mihi filium tuum minorem natu in" type="straight"/>
+        <underline language="LA" method="pen" text="foribus coenaculi" type="straight"/>
+        <underline language="LA" method="pen" text="in eum cum arcu" type="straight"/>
+        <underline language="LA" method="pen" text="sagittam emisero" type="straight"/>
+        <underline language="LA" method="pen" text="ipsum pueri cor vulnerauero" type="straight"/>
+        <underline language="LA" method="pen" text="tum tu me ebriosum atq[ue] insanu[m] iudicato" type="straight"/>
+        <underline language="LA" method="pen" text="largius iam inuitasset" type="straight"/>
+        <underline language="LA" method="pen" text="arcu accepto" type="straight"/>
+        <underline language="LA" method="pen" text="sagitta[m] in eum eiaculator" type="straight"/>
+        <underline language="LA" method="pen" text="collapsumq[ue] exuulnere" type="straight"/>
+        <underline language="LA" method="pen" text="secari &amp; ictum inspici" type="straight"/>
+        <underline language="LA" method="pen" text="arundo in ipso corde" type="straight"/>
+        <underline language="LA" method="pen" text="cachinnans" type="straight"/>
+        <underline language="LA" method="pen" text="ebrium me" type="straight"/>
+        <underline language="LA" method="pen" text="tamen egregium esse iaculandi" type="straight"/>
+        <underline language="LA" method="pen" text="artificem" type="straight"/>
+        <underline language="LA" method="pen" text="continuit" type="straight"/>
+        <underline language="LA" method="pen" text="dolorem dissimulans" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; duodecim principes Persarum" type="straight"/>
+        <underline language="LA" method="pen" text="causam" type="straight"/>
+        <underline language="LA" method="pen" text="crudelissimo supplicio affecit" type="straight"/>
+        <underline language="LA" method="pen" text="uiuos defodiens" type="straight"/>
+        
+        <symbol name="Bisected_circle" place="right_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- ho -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- iu -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- col -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- prin -->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="solum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="cor"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="iaculandi"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="dolorem dissimulans"/>
+        
+        
+    </annotation>
+</transcription>

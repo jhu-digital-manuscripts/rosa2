@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>6</illustrations>
+    <totalPages>103</totalPages>
+    <dimensions units="mm">
+        <width>260</width>
+        <height>348</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="Poetic Works of Christine de Pizan (Manuscrit du Duc, Vol. I)">
+            <language>fr</language>
+            <title>Poetic Works of Christine de Pizan (Manuscrit du Duc, Vol. I)</title>
+            <textId/>
+            <pages end="103v" start="1r">103</pages>
+            <illustrations>6</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="Cent Balades">
+            <language>fr</language>
+            <title>Cent Balades</title>
+            <textId/>
+            <pages end="18v" start="1r">18</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="Virelays">
+            <language>fr</language>
+            <title>Virelays</title>
+            <textId/>
+            <pages end="21v" start="18v">3</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>36</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="Balade retrograde, Balade à rimes reprises, Balade à responses">
+            <language>fr</language>
+            <title>Balade retrograde, Balade à rimes reprises, Balade à responses</title>
+            <textId/>
+            <pages end="25r" start="21v">4</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>37</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="Lays, Rondiaux">
+            <language>fr</language>
+            <title>Lays, Rondiaux</title>
+            <textId/>
+            <pages end="31r" start="25r">6</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>32</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="Jeux à vendre">
+            <language>fr</language>
+            <title>Jeux à vendre</title>
+            <textId/>
+            <pages end="34r" start="31r">3</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="Autres Balades">
+            <language>fr</language>
+            <title>Autres Balades</title>
+            <textId/>
+            <pages end="44v" start="34r">10</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="L'Epistre au dieu d'amours">
+            <language>fr</language>
+            <title>L'Epistre au dieu d'amours</title>
+            <textId/>
+            <pages end="50r" start="45r">5</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>42</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="Complainte amoureuse">
+            <language>fr</language>
+            <title>Complainte amoureuse</title>
+            <textId/>
+            <pages end="51v" start="50r">1</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>42</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Poetic Works of Christine de Pizan (Manuscrit du Duc, Vol. I)</title>
+            <commonName>Français 835</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>Paris, France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 835</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Christine de Pizan</title>
+            <commonName>Français 835</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscript</type>
+            <material>parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 835</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

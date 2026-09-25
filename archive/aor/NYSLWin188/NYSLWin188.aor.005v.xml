@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.005v.tif" pagination="[5[v]]" reader="John Dee" signature="[B[v]]"/> 
+    <annotation>
+        
+        <marginalia book_id="9689847" hand="Italian" id="NYSLWin188:00000024:m0001" marginalia_continues_to="NYSLWin188:00000025:m0001" marginalia_to_transcription="00000025.xml">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Igne[m] no[n] esse Elementu[m]: sed</marginalia_text>
+                </position>
+            </language>
+            <translation>Fire is not an element: but</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ignis quid.</marginalia_text>
+                </position>
+            </language>
+            <translation>What is fire.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Das fewer vnd der Todt seind gleich" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mors et Ignis similes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Death and fire are similar.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="feurig" type="double"/>
+        <underline language="DE" method="pen" text="das fewer d[as] rechte Element" type="straight"/>
+        <underline language="DE" method="pen" text="holtz fewer" type="triple"/>
+        <underline language="DE" method="pen" text="dem fewer" type="straight"/>
+        <underline language="DE" method="pen" text="Element Himmel" type="straight"/>
+        <underline language="DE" method="pen" text="Co[e]lum ist aber ein Element" type="straight"/>
+        <underline language="DE" method="pen" text="da" type="double"/>
+        <underline language="LA" method="pen" text="Vltimam Materiam" type="straight"/>
+        <underline language="DE" method="pen" text="fewer vnd" type="straight"/>
+        <underline language="DE" method="pen" text="der Todt seind gleich" type="straight"/>
+        <underline language="DE" method="pen" text="seinen früchten" type="straight"/>
+        <underline language="DE" method="pen" text="Sternen" type="straight"/>
+        <underline language="DE" method="pen" text="vieren eins zu" type="straight"/>
+        <underline language="DE" method="pen" text="das nicht sein mag" type="double"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.024r.tif" pagination="24" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Aber die Saganae wissen was in der Prima materia ist; Wiewol der Mensch Primam materiam auch verstehet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Saganarum, Philosophia longè pra[e]stantior qua[m] ho[m]i[ne]m.</marginalia_text>
+                </position>
+            </language>
+            <translation>The philosophy of the Sagani is by far more excelling that that of men.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eine[n] der vo[n] ferne in einer schmiden sicht schmide[n] der darinnen ist der ist gewisser dann der darfür ist" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota exe[m]plu[m].</marginalia_text> 
+                </position>
+            </language>
+            <translation>Note the example.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vulcanus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>in o[mn]ibus Elementis</marginalia_text> 
+                </position>
+            </language>
+            <translation>[Vulcan is] in all elements.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="die Lemures" type="straight"/>
+        <underline language="DE" method="pen" text="was zu jm kompt" type="straight"/>
+        <underline language="DE" method="pen" text="auff" type="double"/>
+        <underline language="DE" method="pen" text="auß dem Wasser" type="straight"/>
+        <underline language="DE" method="pen" text="herfür geben" type="straight"/>
+        <underline language="DE" method="pen" text="Aber die Saganae wissen was in der Prima materia" type="straight"/>
+        <underline language="DE" method="pen" text="Philosophieren vnd operiren" type="straight"/>
+        <underline language="DE" method="pen" text="ist vnd höher" type="double"/>
+        <underline language="DE" method="pen" text="zu achten dann die Philosophey" type="straight"/>
+        <underline language="DE" method="pen" text="der Vltimae materiae" type="double"/>
+        <underline language="DE" method="pen" text="Mensch Primam materiam auch verstehet" type="straight"/>
+        <underline language="DE" method="pen" text="eine[n] der vo[n] ferne in einer schmiden sicht schmide[n] der darinnen ist der ist gewisser dann der darfür ist" type="straight"/>
+        <underline language="DE" method="pen" text="in den" type="double"/>
+        <underline language="DE" method="pen" text="der Fabricator" type="straight"/>
+        <underline language="DE" method="pen" text="Eleme[n]t des Him[m]els ist" type="straight"/>
+        <underline language="DE" method="pen" text="andern Elementen" type="straight"/>
+        <underline language="DE" method="pen" text="bereits" type="straight"/>
+        <underline language="DE" method="pen" text="Vltimam Materiam" type="straight"/>
+        
+        <mark language="DE" method="pen" name="bracket" place="right_margin" text="Aber die Saganae wissen was in der Prima materia ist in derselbigen zu Philosophieren vnd operiren das mehr ist vnd höher zu achten dann die Philosophey der Vltimae materiae"/>
+        
+        <errata amendedtext="," copytext="." language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Eleme[n]t des Him[m]els ist" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

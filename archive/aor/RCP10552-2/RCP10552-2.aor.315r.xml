@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.315r.tif" pagination="143" reader="John Dee" signature="S.iij."/>
+    <annotation>
+        
+        <marginalia anchor_text="dux Lancastriaa proponeret regnum Castellae vendicare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Castella[e] vendicatio p[er] Io[hannem] Duce[m] La[n]c[astriae]</marginalia_text>  
+                    <person name="John of Gaunt"/>
+                    <location name="Castile"/>
+                </position>
+            </language>
+            <translation>The avenging of Castile by John, Duke of Lancaster.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Eodem tempore rex Portugaliae intoxicatus haustu laetifero, dolo reginae vitam finiuit" type="straight"/>
+        <underline language="LA" method="pen" text="infausta hora" type="straight"/>
+        <underline language="LA" method="pen" text="regno suo per Tartaros" type="straight"/>
+        <underline language="LA" method="pen" text="Lancastriae proponeret regnum" type="straight"/>
+        <underline language="LA" method="pen" text="vendicare" type="straight"/>
+        <underline language="LA" method="pen" text="festum Paschae" type="straight"/>
+        <underline language="LA" method="pen" text="cum exercitu" type="straight"/>
+        <underline language="LA" method="pen" text="Hispaniam, quae sibi iure suae coniugis dominae Constantiae" type="straight"/>
+        <underline language="LA" method="pen" text="domini Petronis nuper regis Castillae &amp; Legionis" type="straight"/>
+        <underline language="LA" method="pen" text="quia Hispani fuere" type="double"/>
+        <underline language="LA" method="pen" text="schismatici" type="straight"/>
+        <underline language="LA" method="pen" text="secum proficisce[n]tibus" type="straight"/>
+        <underline language="LA" method="pen" text="profectioni quicqua[m]" type="straight"/>
+        <underline language="LA" method="pen" text="portum Geromiae" type="straight"/>
+        <underline language="LA" method="pen" text="Rex Portugalia exspirat" type="straight"/>
+        <underline language="LA" method="pen" text="Dux Lancastria regnum Hispania vendicat" type="straight"/>
+        
+
+        <mark method="pen" name="bracket" place="left_margin"/>
+
+    </annotation>
+</transcription>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.022r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Aganippus Francorum rex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aganippus francor[um] Rex.
+                    </marginalia_text>
+                    <person name="Aganippus"/>
+                </position>
+            </language>
+            <translation>Aganippus, king of the Franks.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cornubi[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="Albani[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="Aganippus Francorum rex fama" type="straight"/>
+        <underline language="LA" method="pen" text="tertiam parte[m] Galliae" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Aganippo" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.017r.tif" reader="Harvey" signature="Bii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Videbant[ur] Carthaginenses naues, no[n] Laconica[e].</marginalia_text>
+                    <location name="Carthage"/>
+                    <location name="Sparta"/>
+                </position>
+            </language>
+            <translation>The ships seem to be Carthaginian, not Spartan.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>False Letters.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="toke the messanger" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[the] messengar takin.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>" Many such counterfait rumors, &amp; </marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>contrary p[re]tences in France. stowtly countenancid for A few dayes. [etc].</marginalia_text>
+                    <location name="France"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="toke the messanger" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>On great pollicy of [the] Queen moother, &amp; [the] Cardinal of Lorrain.</marginalia_text>
+                    <person name="Mary of Guise"/>
+                    <person name="Charles de Lorraine"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>" Fingere quiduis, q[uo]d uideret[ur] Commodum.</marginalia_text>
+                </position>
+            </language>
+            <translation>To mold whatever which seems agreeable.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Antipater, that Tracia was vp, and rebelled, the garrison, which he there left" type="straight"/>
+        <underline language="EN" method="pen" text="disceyte" type="straight"/>
+        <underline language="EN" method="pen" text="shulde set all other" type="straight"/>
+        <underline language="EN" method="pen" text="ordered the matter" type="straight"/>
+        <underline language="EN" method="pen" text="toke the messanger, that bare" type="straight"/>
+        <underline language="EN" method="pen" text="the priuities of the Macedoniens" type="straight"/>
+        <underline language="EN" method="pen" text="passed Philyppe" type="straight"/>
+        <underline language="EN" method="pen" text="the straytes, no manne withstandynge" type="straight"/>
+        <underline language="EN" method="pen" text="a fewe of his shyppes" type="straight"/>
+        <underline language="EN" method="pen" text="passe by the hauen, coniecturynge" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="Antipater, that Tracia was vp, and rebelled, the garrison, which he there left"/>
+        
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--depar-->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--there, he-->
+        <mark method="pen" name="dot" place="intext"/> <!--thither, and-->
+        <mark method="pen" name="dot" place="intext"/> <!--nauie, and-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="a few of his shyppes"/>
+        
+    </annotation>
+</transcription>

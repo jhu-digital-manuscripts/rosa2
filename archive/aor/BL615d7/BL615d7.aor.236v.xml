@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.236v.tif" pagination="[236v]" reader="John Dee" signature="[Ggiiij[v]]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="Ricordossi, che nel terzo di doueua essere vn Eclissi dì Luna da prima notte" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Eclipsis ☾ A[nn]o
+                    </marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        1504 Febr[uary] 29.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Lunar eclipse in the year 1504, on the 29th of February</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Eclipsis ☾ totalis
+                    </marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>A complete lunar eclipse.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Eclipsis ☾ erat A[nn]o 1504 Febr[uarii] 29 hor[a] 13 m[inutae] 36 ad meridianu[m] Tubingensis, dimidia duratio. Hor[a] 1. m[inutae] 46. Puncta 13.
+                    </marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <location name="Tubingen"/>
+                </position>
+            </language>
+            <translation>There was an eclipse of the moon in the year 1504, on the 29th of February. Hour 13, minute 36, towards noon in Tübingen. Half a duration. One hour, 46 minutes. Magnitude 13.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="dar loro x volte più" type="straight"/>
+        <underline language="IT" method="pen" text="che si daua" type="straight"/>
+        <underline language="IT" method="pen" text="no fare i lor" type="double"/>
+        <underline language="IT" method="pen" text="Ricordossi, che nel terzo dì doueua essere" type="straight"/>
+        <underline language="IT" method="pen" text="di Luna da prima notte" type="straight"/>
+        <underline language="IT" method="pen" text="che noi erauamo Christiani, &amp; credeuamo" type="straight"/>
+        <underline language="IT" method="pen" text="tutta l'Isola erano" type="straight"/>
+        
+        <drawing anchor_text="dar loro X volte più di quel, che si dauna prima" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

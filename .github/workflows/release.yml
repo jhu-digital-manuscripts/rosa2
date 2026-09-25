@@ -1,0 +1,166 @@
+name: Release
+
+# Creates a GitHub release from the selected branch containing:
+#   rosa-tool.jar                        the CLI
+#   rosa-viewer-<version>.tar.gz         the viewer library build (dist/)
+#   aor-site.tar.gz, dlmm-site.tar.gz    deployable sites: viewer + IIIF files,
+#                                        built for the given site URLs
+# then bumps both components to the next development version.
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_version:
+        description: 'Release version (e.g., 1.0.0)'
+        required: true
+        type: string
+      next_version:
+        description: 'Next development version (e.g., 1.1.0-SNAPSHOT)'
+        required: true
+        type: string
+      branch:
+        description: 'Branch to release. Leave empty to use the branch selected in "Use workflow from".'
+        required: false
+        type: string
+      opensearch_url:
+        description: 'Opensearch _search URL written into the sites (the prod API Gateway endpoint)'
+        required: true
+        type: string
+      aor_site_url:
+        description: 'URL the AoR site will be served from'
+        required: true
+        default: 'https://archaeologyofreading.org/viewer'
+        type: string
+      dlmm_site_url:
+        description: 'URL the DLMM site will be served from'
+        required: true
+        default: 'https://dlmm.library.jhu.edu/viewer'
+        type: string
+      image_base_url:
+        description: 'IIIF Image API base URL'
+        required: true
+        default: 'https://image.library.jhu.edu/iiif'
+        type: string
+      image_api_version:
+        description: 'IIIF Image API version'
+        required: true
+        default: '2'
+        type: choice
+        options:
+          - '2'
+          - '3'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.branch || github.ref }}
+
+      - name: Set up Java 25
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '25'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: rosa-viewer/package-lock.json
+
+      # Build rosa-tool
+      - name: Set rosa-tool release version
+        run: mvn versions:set -DnewVersion=${{ inputs.release_version }} -DgenerateBackupPoms=false
+        working-directory: rosa-tool
+
+      - name: Build and test rosa-tool
+        run: mvn verify --no-transfer-progress
+        working-directory: rosa-tool
+
+      # Build rosa-viewer
+      - name: Set rosa-viewer version
+        run: npm version ${{ inputs.release_version }} --no-git-tag-version
+        working-directory: rosa-viewer
+
+      - name: Install rosa-viewer dependencies
+        run: npm ci
+        working-directory: rosa-viewer
+
+      - name: Lint rosa-viewer
+        run: npm run lint
+        working-directory: rosa-viewer
+
+      - name: Test rosa-viewer
+        run: npm test
+        working-directory: rosa-viewer
+
+      - name: Build rosa-viewer library
+        run: npm run build
+        working-directory: rosa-viewer
+
+      - name: Package rosa-viewer library
+        run: tar -czf ../rosa-viewer-${{ inputs.release_version }}.tar.gz dist/
+        working-directory: rosa-viewer
+
+      # Deployable sites: viewer + IIIF files, built for their production URLs
+      - name: Package AoR site
+        run: |
+          rosa-viewer/scripts/package-site.sh \
+            --site aor \
+            --site-url "${{ inputs.aor_site_url }}" \
+            --opensearch-url "${{ inputs.opensearch_url }}" \
+            --image-base-url "${{ inputs.image_base_url }}" \
+            --image-api-version "${{ inputs.image_api_version }}" \
+            --output build/sites/aor \
+            --tarball aor-site.tar.gz
+
+      - name: Package DLMM site
+        run: |
+          rosa-viewer/scripts/package-site.sh \
+            --site dlmm \
+            --site-url "${{ inputs.dlmm_site_url }}" \
+            --opensearch-url "${{ inputs.opensearch_url }}" \
+            --image-base-url "${{ inputs.image_base_url }}" \
+            --image-api-version "${{ inputs.image_api_version }}" \
+            --output build/sites/dlmm \
+            --tarball dlmm-site.tar.gz
+
+      # Create GitHub Release
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ inputs.release_version }}
+          name: Release ${{ inputs.release_version }}
+          target_commitish: ${{ inputs.branch || github.ref_name }}
+          files: |
+            rosa-tool/target/rosa-tool.jar
+            rosa-viewer-${{ inputs.release_version }}.tar.gz
+            aor-site.tar.gz
+            dlmm-site.tar.gz
+          generate_release_notes: true
+
+      # Set next development versions
+      - name: Set next development versions
+        run: |
+          # Update rosa-tool version
+          cd rosa-tool
+          mvn versions:set -DnewVersion=${{ inputs.next_version }} -DgenerateBackupPoms=false
+          cd ..
+
+          # Update rosa-viewer version (strip -SNAPSHOT for npm)
+          cd rosa-viewer
+          NEXT_NPM_VERSION=$(echo "${{ inputs.next_version }}" | sed 's/-SNAPSHOT/-dev.0/')
+          npm version $NEXT_NPM_VERSION --no-git-tag-version
+          cd ..
+
+          # Commit and push
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add rosa-tool/pom.xml rosa-viewer/package.json rosa-viewer/package-lock.json
+          git commit -m "Set next development version to ${{ inputs.next_version }}"
+          git push

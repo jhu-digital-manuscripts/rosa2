@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.199r.tif" pagination="397" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="principe[m] Lyricorum Pindarum uideor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>pindarus lyricoru[m] princeps.</marginalia_text>
+                    <person name="Pindar"/>
+                </position>
+            </language>
+            <translation>The great Lyric poet Pindar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero pindaru[m] imitatus in Verrem</marginalia_text>
+                    <person name="Cicero"/>
+                    <person name="Pindar"/>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>Cicero imitated Pindar in 'In Verrem'.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="genera minuendu" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Minue[n]di g[e]n[er]a</marginalia_text>
+                </position>
+            </language>
+            <translation>The types of attenuation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="loculari libello" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iocularis libellus</marginalia_text>
+                </position>
+            </language>
+            <translation>Amusing book.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="κακοζηλία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>κακοζηλία</marginalia_text>
+                </position>
+            </language>
+            <translation>Affectation.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="est hyperbole uirtus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quando hyp[er]bole virtus</marginalia_text>
+                </position>
+            </language>
+            <translation>When hyperbole is a virtue.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sitam uero figuram huius" type="straight"/>
+        <underline language="LA" method="pen" text="Pindarum uideor" type="straight"/>
+        <underline language="LA" method="pen" text="ioculari libello" type="straight"/>
+        <underline language="LA" method="pen" text="hyperbole ultra fidem, no[n] tamen esse debet utra modum" type="straight"/>
+        <underline language="LA" method="pen" text="mentiri hyperbolen, nec ita ut me[n]dacio fallere uelit. Quo" type="straight"/>
+        <underline language="LA" method="pen" text="nec quisquam uerò contentus est. Sed" type="straight"/>
+        <underline language="LA" method="pen" text="Tum est hyperbole uirtus, cùm res ipsa, de qua loque[n]dam est, naturalem modum exceßit. Conceditur enim              amplius dicere, quia dici quantum est, non potest, melius'q[ue] ultrà citrà stat oratio. Sed de hac satis quia eundem" type="straight"/>
+ 
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

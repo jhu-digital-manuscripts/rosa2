@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.060r.tif" pagination="53" reader="John Dee" signature="O"/>
+    <annotation>
+        
+        <marginalia anchor_text="Caput Serpentarij" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Caput serpe[n]ta.</marginalia_text> <!--JG: Unsure, one expects 'serpentarii', also because serpenta doesn't exist--> 
+                </position>
+            </language>
+            <translation>Head of the serpent.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in collo Tauri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In collo ♉.</marginalia_text>
+                    <symbol_in_text name="Taurus"/>
+                </position>
+            </language>
+            <translation>In the neck of Taurus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Venus cu[m] Scorpij corde" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cor ♏. ♀.</marginalia_text>
+                    <symbol_in_text name="Scorpio"/>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>The heart of Scorpio [and] Venus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Biothanatos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Biothanati.</marginalia_text>
+                </position>
+            </language>
+            <translation>Those who die a violent death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mercurij uel Martis uel Lunae, cu[m] Sole; Iouis &amp; Veneris." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☿. ♂. ☾ ♃. ♀ } cu[m] ☉.</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>Of Mercury, Mars, the moon, Judpiter, Venis, with the sun.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mercurius; Saturni &amp; Jovis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☿. ☿ ♂. ☿ ♄.</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>Of Mercury, [or] of Mercury and Mars, [or] of Mercury and Saturn.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mercurius; Saturni &amp; Jovis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>♄ ♃ cu[m] ☿</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>Saturn, Jupiter with Mercury.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="repentinam mortem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Repentina mors.</marginalia_text>
+                </position>
+            </language>
+            <translation>A sudden death.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Iouis &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="cum luminosiore lancis meridionalis, mortem ex sanguinis p[er]fluuio denu[n]ciat, eade[m] stella in occasu, facit hemorragia[m]" type="straight"/>
+        
+        <symbol language="LA" name="Moon" place="left_margin" text="Luna"/>
+        <symbol language="LA" name="Sun" place="left_margin" text="Sole"/>
+        <symbol language="LA" name="Moon" place="left_margin" text="Luna"/>
+        <symbol language="LA" name="Sun" place="left_margin" text="Sole"/>
+        <symbol language="LA" name="Mars" place="left_margin" text="Martis"/>
+        <symbol language="LA" name="Mercury" place="left_margin" text="Mercurius"/>
+        <symbol language="LA" name="Moon" place="left_margin" text="Luna"/>
+        <symbol language="LA" name="Sun" place="left_margin" text="Sole"/>
+        <symbol language="LA" name="Moon" place="left_margin" text="Luna"/>
+        
+        <symbol language="LA" name="Jupiter" place="right_margin" text="Iouis"/>
+        <symbol language="LA" name="Mars" place="right_margin" text="Martis"/>
+        <symbol language="LA" name="Venus" place="right_margin" text="Veneris"/>
+        <symbol language="LA" name="Mercury" place="right_margin" text="Mercurijs"/>
+        <symbol language="LA" name="Jupiter" place="right_margin" text="Iouis"/>
+        <symbol language="LA" name="Mars" place="right_margin" text="Martis"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Luna cum capite Algol, Biothanatos facit, idem cum dextro latere Persei, cum pede uel cingulo Orionis, uel cu[m] luminosiore lancis borealis, uel cum crure uel dorso Pegasi, uel iuncta corpore sequente de duabus quae sunt in cauda Capricorni"/>
+                
+    </annotation>
+</transcription>

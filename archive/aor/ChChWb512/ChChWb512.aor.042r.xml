@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.042r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="centesimo quinquagesimosexto" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        A[nn]o Chri[sti] 156
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>In the year of the Lord 156.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vallu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vallu[m] seueri anglia[m] diuidens
+                    </marginalia_text>
+                    <location name="England"/>
+                </position>
+            </language>
+            <translation> Severus' wall separating England (i.e. from Scotland).</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="transfretauit in Scythia[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Navigatio in Scythia[m]
+                    </marginalia_text>
+                    <location name="Scythia"/>
+                </position>
+            </language>
+            <translation>Voyage in Scythia.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="centesimo quinquagesimosexto" type="straight"/>
+        <underline language="LA" method="pen" text="senatus Seueru[m] senatore[m] duasq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="construi vallu[m] i[n]ter Deiram &amp; Albania[m]" type="straight"/>
+        <underline language="LA" method="pen" text="i[m]petum eius, p[ro]pius accedere prohiberet" type="straight"/>
+        <underline language="LA" method="pen" text="transfretauit in Scythia[m] vt" type="straight"/>
+        <underline language="LA" method="pen" text="procerum auxilio dignitati restitueretur" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] maximo nauigio" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

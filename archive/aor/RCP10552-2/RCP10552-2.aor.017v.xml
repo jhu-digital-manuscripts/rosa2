@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.017v.tif" pagination="24" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gulielmus Comes Bar[es] infra in Ypodig[ma] Pag[ina] 98.</marginalia_text>
+                    <person name="William de Bares"/>
+                    <book title="Ypodigma"/>
+                    <internal_ref>
+                        <target ref="RCP10552-2:594:u0001" text="98"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>William Earl Bares below in Ypodigma page 98.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hugone de Veer filio Comitis Oxoniensis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Hugo de Veer fil[ius]. Commitis Ox[oniensis].</marginalia_text>
+                    <person name="Hugh de Vere, 4th Earl of Oxford"/>
+                </position>
+            </language>
+            <translation>Hugh de Vere, 4th Earl of Oxford, son of the Earl of Oxford</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Michaêlis, Alienora" type="straight"/>
+        <underline language="LA" method="pen" text="filia" type="double"/>
+        <underline language="LA" method="pen" text="regis Angliae apud Bristolliam" type="straight"/>
+        <underline language="LA" method="pen" text="Henrico" type="triple"/>
+        <underline language="LA" method="pen" text="Comiti Barrensi traditur" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; filiam" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Hugone de Veer filio" type="straight"/>
+        
+    </annotation>
+</transcription>

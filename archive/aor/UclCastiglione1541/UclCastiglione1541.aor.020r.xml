@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+<page filename="UclCastiglione1541.020r.tif" pagination="VIII[r]" reader="Harvey" signature="[Bvr]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                       Giuoco V. proposto dal S. Ottauiano per qual sorte di sdegno vorrebbe l'amante,
+                       che la sua Donn[a] si adirasse seco.     
+                    </marginalia_text>
+                    <person name="Ottaviano Fregoso"/>
+                </position>
+            </language>
+            <translation>
+                Game V, proposed by Signor Ottaviano: by what sorts of indignation the lover
+                would prefer his lady to become angry with him.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Costume degli amatori.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The customs of lovers. 
+            </translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

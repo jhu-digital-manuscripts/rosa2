@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.156r.tif" pagination="51" reader="John Dee" signature="d.ii."/>  
+    <annotation>
+        
+        
+        <marginalia anchor_text="sibi victu ferino vitam propagabant" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>victu ferino vita[m] p[ro]pagare</marginalia_text>
+                </position>
+            </language>
+            <translation>To propagate life on a wild diet.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Laus Eloque[n]ti[a]e</marginalia_text>
+                </position>
+            </language>
+            <translation>Praise of eloquence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="principiu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vnde orta Eloque[n]tia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Where eloquence came from.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="cupiditas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cupiditas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Desire.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="existime[m] sapientia[m] sine eloquentia paru[m] prodesse ciuitatibus: eloquentia[m] vero sine sapientia nimiu[m] obesse pleru[m]que, prodesse nunqua[m]" type="straight"/>
+        <underline language="LA" method="pen" text="sibi victu ferino vitam propagabant" type="straight"/>
+        <underline language="LA" method="pen" text="viribus corporis abutebatur" type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="head" text="victu ferino vita[m] p[ro]pagare"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.054r.tif" pagination="54" reader="John Dee" signature="Oij"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Fulminis mira vis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The extraordinary strength of lightning.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[...] 55.</marginalia_text>  <!--JG: Part of marginal note hidden in gutter-->
+                    <internal_ref>
+                        <target ref="NYSLWin188:00000123" text="55"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[...] 55.</translation>
+        </marginalia>
+       
+        
+        <underline language="DE" method="pen" text="für mein theil" type="double"/>
+        <underline language="DE" method="pen" text="natürlich zu sein nit achte[n]" type="straight"/>
+        <underline language="DE" method="pen" text="zerbrochen Ror nit verletzen" type="straight"/>
+        <underline language="DE" method="pen" text="funcken am docht nicht leschen" type="straight"/>
+        <underline language="DE" method="pen" text="die Superi solche Kunst" type="straight"/>
+        <underline language="DE" method="pen" text="Teuffel muß solchs" type="straight"/>
+        <underline language="DE" method="pen" text="ich bey dem ersten" type="straight"/>
+        
+        <mark method="pen" name="quattuorpunctus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

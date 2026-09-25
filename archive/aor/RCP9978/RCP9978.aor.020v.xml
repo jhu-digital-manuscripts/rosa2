@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.020v.tif" reader="John Dee" signature="[Eiiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Primus extat (ut equidem inuenio) co[m]mentatus de ea Osthanes" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Osthanes prim[us]</marginalia_text>
+                    <person name="Ostanes"/>
+                </position>
+            </language>
+            <translation>The first Ostanes.</translation>   <!-- https://en.wikipedia.org/wiki/Ostanes_(son_of_Darius_II) -->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="operis ex eadem in" type="straight"/>
+        <underline language="LA" method="pen" text="inferorum euocatione" type="straight"/>
+        <underline language="LA" method="pen" text="de ea Osthanes" type="straight"/>
+        <underline language="LA" method="pen" text="Osthanes ad rabiem" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.007v.tif" pagination="14" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Zoharis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Zohar</marginalia_text>
+                    <book title="Zohar"/>
+                </position>
+            </language>
+            <translation>Zohar.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="naturae" type="straight"/>
+        <underline language="LA" method="pen" text="gratiae" type="straight"/>
+        <underline language="LA" method="pen" text="quae ad summum rationis aeternae" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; legis in omnium mentibus scriptae, apicem pertinent: id'q[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="De" type="straight"/>
+        <underline language="LA" method="pen" text="De naturae &amp; gratiae" type="straight"/>
+        <underline language="LA" method="pen" text="Zoharis" type="straight"/>
+        <underline language="LA" method="pen" text="collectu[m] à Symeone BenIohai" type="straight"/>
+        <underline language="LA" method="pen" text="ut non minus Ismaelita &amp; Israelita, duce ratione, salutis aeternae essentiam omnibus hominibus expetitam" type="straight"/>
+        <underline language="LA" method="pen" text="Iesum" type="double"/>
+        <underline language="LA" method="pen" text="quàm ipse initiatus cognoscat Christianus" type="straight"/>
+        <underline language="LA" method="pen" text="rem legis aeternae" type="straight"/>
+        <underline language="LA" method="pen" text="linguae uidelicet &amp; locutionis" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        
+    </annotation>    
+</transcription>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.433r.tif" pagination="415" reader="John Dee" signature="Mmmm iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="pr[a]ecepit dominus papa sub interminatione anathematis pecuniam ipsam eius necessitatibus custodiri" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Papa emuxit minoritas 400000 aureis Florenis. 
+                    </marginalia_text>
+                    <person name="Boniface VIII"/>
+                </position>
+            </language>
+            <translation>
+                The pope stole at least 4000000 gold florins.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="apud Brotherestone" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Brotherton.
+                    </marginalia_text>
+                    <location name="Brotherton"/>
+                    <emphasis method="pen" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="[de]positi custodia, pr[a]ecepit dominus papa sub interminatione anathematis pecuniam ipsam eius necessitatibus custodiri" type="straight"/>
+        <underline language="LA" method="pen" text="Brotherestone" type="straight"/>
+
+         <mark method="pen" name="circumflex" place="intext"/>
+        
+        <errata amendedtext="adquisierunt" copytext="adqusierunt" language="LA"/>
+        <errata amendedtext="familia[m]" copytext="familia" language="LA"/>
+        
+    </annotation>
+</transcription>

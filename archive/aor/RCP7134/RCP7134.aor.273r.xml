@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.273r.tif" pagination="266" reader="John Dee" signature="XX ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mars &amp; Mercurius domini sunt mendacij, Sol &amp; Iupiter ueritatis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mendaciu[m]. veritas</marginalia_text>
+                </position>
+            </language>
+            <translation>Lies. The truth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pudoris Sol &amp; fortunae, impudentiae infortunae cum Luna" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pudor. Impude[n]tia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Decency. Impudence. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mortes uulgares" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mortes vulgares.</marginalia_text>
+                </position>
+            </language>
+            <translation>Vulgar deaths.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="natus haeresis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ha[e]reticus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Heretic.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sol omnibus planetis tribuit uires, Luna autem recipit, ob id decreta Lunae non omnia, nec ex maiore parte, sua sunt, sed quia aliorum" type="straight"/>
+        <underline language="LA" method="pen" text="Sol &amp; Iupiter" type="straight"/>
+        <underline language="LA" method="pen" text="Si quis Luna inter infortunas existente superuixerit" type="straight"/>
+        
+        <symbol language="LA" name="Sun" place="right_margin" text="Sol"/>
+        <symbol language="LA" name="Moon" place="right_margin" text="Luna"/>
+        <symbol name="Mars" place="right_margin"/>
+        <symbol name="Moon" place="right_margin"/>
+        <symbol name="Saturn" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Sol omnibus planetis tribuit uires, Luna autem recipit, ob id decreta Lunae non omnia, nec ex maiore parte, sua sunt, sed quia aliorum planetarum"/>
+        
+    </annotation>
+</transcription>

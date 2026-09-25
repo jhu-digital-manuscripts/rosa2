@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.155v.tif" pagination="310" reader="John Dee" signature="[u 3[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="anteacte uitae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Anteacta Vita</marginalia_text>
+                </position>
+            </language>
+            <translation>Past life.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Vareno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Vareno</marginalia_text>
+                    <book title="Pro Vareno"/>
+                </position>
+            </language>
+            <translation>Pro Vareno</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="simplex intentio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Simplex Inte[n]tio</marginalia_text>
+                </position>
+            </language>
+            <translation>Simple charge.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀντινομία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἀντινομία</marginalia_text>
+                </position>
+            </language>
+            <translation>Antinomy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Raibrio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Rabirio</marginalia_text>
+                    <book title="Pro Rabirio Posthumo"/>
+                </position>
+            </language>
+            <translation>Pro Rabirio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iuris autem quaestiones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iuris Qua[e]stiones</marginalia_text>
+                </position>
+            </language>
+            <translation>Questions of law.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="illa palàm false erunt" type="straight"/>
+        <underline language="LA" method="pen" text="Nam uis quaestionum semper crescere debet, &amp; ad pote[n]tißima ad infirmißimis              peruenire, siue sunt eiusdem generis, siue diuersi. Iuris" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

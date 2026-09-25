@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.013v.tif" pagination="26" reader="John Dee" signature="[b 5[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="uir insigni prude[n]tia Ezras, non alia ratione publicos fecerit Adami Mosisq[ue] characteres" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ezras Publicauit [n]o[n] excogitauit</marginalia_text>
+                    <person name="Ezra"/>
+                </position>
+            </language>
+            <translation>Ezra published rather than invented.</translation>   
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ratione publicos fecerit Adami Mosis'q[ue]" type="double"/>
+        <underline language="LA" method="pen" text="absconditos" type="double"/>
+        <underline language="LA" method="pen" text="publicando finxerit apud" type="straight"/>
+        <underline language="LA" method="pen" text="populum, se nouos reperisse" type="double"/>
+        <underline language="LA" method="pen" text="propter leones" type="straight"/>
+        <underline language="LA" method="pen" text="etiam" type="straight"/>
+        <underline language="LA" method="pen" text="finxit se" type="double"/>
+        
+    </annotation>
+</transcription>

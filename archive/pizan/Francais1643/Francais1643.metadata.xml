@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>93</totalPages>
+    <dimensions units="mm">
+        <width>217</width>
+        <height>286</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="Le livre du chemin de long estude">
+            <language>fr</language>
+            <title>Le livre du chemin de long estude</title>
+            <textId/>
+            <pages end="93v" start="1r">93</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Le livre du chemin de long estude</title>
+            <commonName>Français 11643</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>Paris, France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 1643</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Le livre du chemin de long estude</title>
+            <commonName>Français 1643</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris, France</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 1643</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

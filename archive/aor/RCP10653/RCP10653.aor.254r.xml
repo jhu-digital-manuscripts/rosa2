@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.254r.tif" pagination="59" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Gulihelm[us] de Veer" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gul. de Veer. filius Alberici de Veer Regis Camerarij.
+                    </marginalia_text>
+                    <person name="William de Vere"/>
+                    <person name="Aubrey de Vere II"/>
+                </position>
+            </language>
+            <translation>
+                William de Vere, son of Aubrey de Vere II, the King's chamberlain.  
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Gulihelm[us] de Veer" type="double"/>
+        
+    </annotation>
+</transcription>

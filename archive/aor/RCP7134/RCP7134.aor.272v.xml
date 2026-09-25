@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.272v.tif" pagination="[265v]" reader="John Dee" signature="[XX[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="directionibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Directio</marginalia_text>
+                </position>
+            </language>
+            <translation>Direction.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mors accidit uiolenta, Mars aut Venus ascendenti" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mors violenta a ♀ et ♂.</marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>A violent death by Venus and Mars.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cadente Marte, natus erit timidus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Audacia eni[m] a marte pendet.</marginalia_text>  
+                </position>
+            </language>
+            <translation>For audacity weighs out from Mars.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Mars in octauo loco" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♂ in 8</marginalia_text>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>Mars in the eigth [place].</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="proditores" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Proditores.</marginalia_text>
+                </position>
+            </language>
+            <translation>Traitors.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sicut superiores orientales descendunt in paruo circulo, occidentales ascendunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quando superiores ascendunt vel desce[n]du[n]t in parvo circulo.</marginalia_text>
+                </position>
+            </language>
+            <translation>When the superior [planets] ascend or descend in a small circle.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quibus mors accidit uiolenta" type="straight"/>
+        <underline language="LA" method="pen" text="Venus &amp; Luna &amp; Saturnus" type="straight"/>
+        <underline language="LA" method="pen" text="Aquea signa faciunt proditores, atq[ue] in his" type="straight"/>
+        <underline language="LA" method="pen" text="tamen artes industrios, unde tales" type="straight"/>
+        <underline language="LA" method="pen" text="motus e[ni]m eoru[m] in paruo circulo cu[m] motu in eccentrico motum Solis superat" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.118v.tif" pagination="236" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Thebas euertisset Alexander" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Theba[e] ad Alexandro euersa[e]</marginalia_text>
+                    <person name="Alexander the Great"/>
+                    <location name="Thebes"/>
+                </position>
+            </language>
+            <translation>Alexander's sacking of Thebes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quaeritur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Qua[e]stio</marginalia_text>
+                </position>
+            </language>
+            <translation>The question.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iure belli" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ius belli</marginalia_text>
+                </position>
+            </language>
+            <translation>The law of war.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tum secundo gradu no[n] potuisse donari à uictore ius, quia id demum sit eius, quod ipse teneat: ius, quòd sit incorporale, apprehendi manu non posse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>2a pars diuisio[n]is</marginalia_text>
+                </position>
+            </language>
+            <translation>The second part of the division.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="commulitio" type="straight"/>
+        <underline language="LA" method="pen" text="prima quidem actio facilis, ac fauorabilis, repetentiu[m] iure, quod ui sit ablatum" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/> 
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

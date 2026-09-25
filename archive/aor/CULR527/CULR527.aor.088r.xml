@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.088r.tif" pagination="88" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="curua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Linea curva
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A curved line.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex lineis curuis planisphaerium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Planispha[e]riu[m] ex lineis curuis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A celestial plane from curved lines.
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="&amp; iter quod in leste facimus, semper agit cum nouis meridianis aequalem angulum illi à quo profecti sumus: quamobrem non" type="straight"/>
+        <underline language="LA" method="pen" text="pergere" type="straight"/>
+        <underline language="LA" method="pen" text="cogitabant" type="double"/>
+        <underline language="LA" method="pen" text="sed per quam procedebamus erat curuaa.c.b. &amp; in omni eo quod dicis, uis nos per ciculum minorem nisi per maiorem nauigare non posse neq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="lineam rectam " type="grid"/>
+        <underline language="LA" method="pen" text="nisi curuam: &amp; rotae à circulo maiore" type="straight"/>
+        <underline language="LA" method="pen" text="non minore debeant extrahi quamobrem" type="straight"/>
+        <underline language="LA" method="pen" text="iterum dicis" type="double"/>
+        <underline language="LA" method="pen" text="ex lineis curuis planisphaerium" type="double"/>
+        <underline language="LA" method="pen" text="nostro nauigandi modo" type="straight"/>
+        <underline language="LA" method="pen" text="lineae planae &amp; rectae" type="straight"/>
+        <underline language="LA" method="pen" text="lineas curuas esse debere" type="straight"/>
+        <underline language="LA" method="pen" text="cum leste: &amp; illuc non pergit, imò pergit aequidistans" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- modo ut -->
+        
+    </annotation>
+</transcription>

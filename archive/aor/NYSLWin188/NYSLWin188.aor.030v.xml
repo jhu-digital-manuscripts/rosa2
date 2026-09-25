@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.030v.tif" pagination="[30[v]]" reader="John Dee" signature="[Hij[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Nota similitudine[m]</marginalia_text> 
+                </position>
+            </language>
+            <translation>Note the likeness.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vulcanus Igneus; Sein Schweffel ein Salniter ein Merc" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Vulcani Ignei - Sulphur - Sal nitr - Mercurius</marginalia_text>
+                    <person name="Vulcan"/>
+                </position>
+            </language>
+            <translation>Of the fiery Vulcan: sulfur, salpetre, mercury.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="jrdische exempel" type="straight"/>
+        <underline language="DE" method="pen" text="trucken sieden wie den Alchimisten im" type="straight"/>
+        <underline language="DE" method="pen" text="Vulcanus Igneus" type="straight"/>
+        <underline language="DE" method="pen" text="Sternen sendt" type="triple"/>
+        <underline language="DE" method="pen" text="die drey" type="straight"/>
+        <underline language="DE" method="pen" text="Ersten" type="double"/>
+        <underline language="DE" method="pen" text="ist selbst der Windt" type="straight"/>
+        <underline language="DE" method="pen" text="Schweffel" type="straight"/>
+        <underline language="DE" method="pen" text="Salniter" type="straight"/>
+        <underline language="DE" method="pen" text="Merc" type="double"/>
+        <underline language="DE" method="pen" text="wann der funck" type="straight"/>
+        <underline language="DE" method="pen" text="Fewer in die drey" type="straight"/>
+        <underline language="DE" method="pen" text="der Action" type="double"/>
+        <underline language="DE" method="pen" text="der Sulpur ventorum" type="straight"/>
+        
+    </annotation>
+</transcription>

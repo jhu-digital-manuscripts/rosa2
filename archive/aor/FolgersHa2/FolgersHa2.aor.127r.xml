@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.127r.tif" pagination="77" reader="Harvey" signature="[E7r]"/>	<!-- ABO 131right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Negocium ostendit virum. In quo decet esse
+						serium virum: atq[ue] adeò virorum virum.
+					</marginalia_text>
+					<emphasis method="pen" text="Negocium ostendit virum" type="straight"/>
+					<emphasis method="pen" text="virorum virum" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Business reveals the man. For this, one must be a serious man;
+				indeed, a man of men.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nihil magis commendat virum, quàm prosequendi, expediendiq[ue]
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						negocij promptissima resolutio, dexteritas, industria,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) facultas: 
+						postremò inuicta constantia; cum effectu planè efficacissimo.
+						Quò magis insperato, aut arcano, eò magis egregio,
+					</marginalia_text>
+					<emphasis method="pen" text="inuicta constantia" type="straight"/>
+					<emphasis method="pen" text="effectu planè efficacissimo" type="straight"/>
+					<emphasis method="pen" text="insperato, aut arcano" type="straight"/>
+					<emphasis method="pen" text="et" type="straight"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						et honorifico.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing recommends a man more than pursuing and completing a matter 
+				with the most ready resolve, skill, industriousness, and ability;
+				last of all, an unconquerable constancy, with a most efficient execution.
+				The more unexpected and mysterious this execution, the more illustrious and honorable it will be.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Ipse Diogenes, qui
+						Aristippum spreuit, et Platonem, voluisset esse aulicus,
+						si Æsopi vitam cognouisset. Cui foeliciùs successum est apud Reges,
+					</marginalia_text>
+					<person name="Diogenes of Sinope"/>
+					<person name="Aristippus"/>
+					<person name="Plato"/>
+					<person name="Aesop"/>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						quàm apud sacerdotes, aut philosophos.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Even Diogenes himself, who scorned Aristippus and Plato, if he had known the life of Aesop,
+				he would have wanted to be a courtier. He would have happily found success among kings,
+				just as among priests and philosophers.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Solus Chymicus nouit vsum, et abusu[m] eleme[n]toru[m]: =
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						= quibus nihil potentius.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Only the chemist knows the use and abuse of the elements; nothing is more potent than this. 
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="pronti &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="occorrimenti" type="straight"/>
+		<underline language="IT" method="pen" text="gli errori de' Principi" type="straight"/>
+		<underline language="IT" method="pen" text="da Filippo Re" type="straight"/>
+		<underline language="IT" method="pen" text="alterato dal vino in" type="straight"/>
+		<underline language="IT" method="pen" text="appello à Filippo" type="straight"/>
+		<underline language="IT" method="pen" text="fia sobrio" type="straight"/>
+		<underline language="IT" method="pen" text="preso errore" type="straight"/>
+		<underline language="IT" method="pen" text="valente donna" type="straight"/>
+		<underline language="IT" method="pen" text="senza" type="straight"/>
+		<underline language="IT" method="pen" text="mutare la" type="straight"/>
+		<underline language="IT" method="pen" text="realmente compensare" type="straight"/>
+		<underline language="IT" method="pen" text="vanagloria" type="straight"/>
+		<underline language="IT" method="pen" text="per pazzia" type="straight"/>
+		<underline language="IT" method="pen" text="Caualliere Milanese huomo" type="straight"/>
+		<underline language="IT" method="pen" text="sue vanità" type="straight"/>
+		<underline language="IT" method="pen" text="qualche catena d'oro al" type="straight"/>
+		<underline language="IT" method="pen" text="disprezzando tanta boria" type="straight"/>
+		<underline language="IT" method="pen" text="basta vna catena" type="straight"/>
+		<underline language="IT" method="pen" text="molte gliene bisognano" type="straight"/>
+		<underline language="IT" method="pen" text="specie d'accordo" type="straight"/>
+		<underline language="IT" method="pen" text="i piu semplici" type="straight"/>
+		<underline language="IT" method="pen" text="di triegua fra'" type="straight"/>
+		
+		<symbol name="Sun" place="right_margin"/>
+		
+		<symbol name="JC" place="intext"/>
+		<symbol name="Mercury" place="intext"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--allho-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--Niccoli-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--manie-->
+		
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="molte gliene bisognano"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/> 
+		
+    </annotation>
+</transcription>

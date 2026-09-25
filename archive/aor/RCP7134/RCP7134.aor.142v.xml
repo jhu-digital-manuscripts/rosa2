@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.142v.tif" pagination="[135v]" reader="John Dee" signature="[ll iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="dominus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dominus asce[n]de[n]tis et eius dispositor.</marginalia_text>
+                </position>
+            </language>
+            <translation>The lord of the ascendant and its depositor.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dominus etiam geniturae alter co[m]bustus, alter â Martis quadrato ex angulo" type="straight"/>
+        
+    </annotation>
+</transcription>

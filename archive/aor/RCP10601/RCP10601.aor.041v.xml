@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.041v.tif" pagination="82" reader="John Dee" signature="[f[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Turchi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Turchi.</marginalia_text>
+                </position>
+            </language>
+            <translation>Turks.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Leuitaru[m], in 13. loco" type="straight"/>
+        <underline language="LA" method="pen" text="Muhamedes fuit Meßias decennio" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+    </annotation>
+</transcription>

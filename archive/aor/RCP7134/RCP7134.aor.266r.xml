@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.266r.tif" pagination="259" reader="John Dee" signature="TT iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Operationes planetarum nunq[uam] cessant" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quando operationes planetarum cessant et q[u]omodo cessant.</marginalia_text> 
+                </position>
+            </language>
+            <translation>When the operations of the planets cease and how they cease.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sol geminatur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Solis geminatio vel triplicatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The doubling or tripling of the sun.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="retrogradando separatur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Separatio ex retrogradatione.</marginalia_text>
+                </position>
+            </language>
+            <translation>The separation from retrogradation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hoc idem in alijs domibus significat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Regula.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rule.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cum in genitura alicuius Sol geminatur, ut aliquando contingit ex ratione aspectus, ille seditionem mouebit aduersus principe[m], aut illustris erit, &amp; hoc cu[m] in eadem hora hoc acciderit" type="straight"/>
+        <underline language="LA" method="pen" text="Hoc idem in alijs domibus significat" type="straight"/>
+        <underline language="LA" method="pen" text="ascendunt, nec cadunt casu aliquo" type="straight"/>
+        
+    </annotation>
+</transcription>

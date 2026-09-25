@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.144r.tif" pagination="144" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>D. Christofer Colon not in spayn</marginalia_text>
+                    <person name="Columbus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Note to much rigor for [deleted] breaking or pissing vppo[n] materiall artificiall thi[n]gs</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="vi pisciarono sopra" type="straight"/>
+        <underline language="IT" method="pen" text="Hor saranno buoni, &amp; grandi i tuoi frutti: &amp; questo, percioche" type="straight"/>
+        <underline language="IT" method="pen" text="per vituperio" type="straight"/>
+        <underline language="IT" method="pen" text="dissero, che la gente di Guarionex haueua stratiate, &amp; vituperate le imagini." type="straight"/>
+        <underline language="IT" method="pen" text="Don Bartolomeo" type="straight"/>
+        <underline language="IT" method="pen" text="che se n'era" type="straight"/>
+        <underline language="IT" method="pen" text="Isole, formò processo contra i malfattori" type="straight"/>
+        <underline language="IT" method="pen" text="saputa la verità" type="straight"/>
+        <underline language="IT" method="pen" text="gli fece abbruciar publicamente" type="double"/>
+        
+        <errata amendedtext="Guarionex" copytext="Guarinex" language="IT"/>
+        
+    </annotation>
+</transcription>

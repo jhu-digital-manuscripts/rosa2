@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.024r.tif" pagination="367" reader="Harvey"/>	<!-- ABO 028right -->
+    	<annotation>
+
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            				<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Ca[e]sar cibi, vini, somni parcissimus. Maximeq[ue]
+                      				</marginalia_text>
+            					<person name="Julius Caesar"/>
+            				</position>
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						) Ca[e]saris ambulatio, plus quàm omnes
+    						Asclepiadis Exercitationes.
+    					</marginalia_text>
+    					<person name="Julius Caesar"/>
+    					<person name="Asclepius"/>
+    					<emphasis method="pen" text="Ca[e]seris ambulatio, plus" type="straight"/>
+    				</position>
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Nec eget alia abstinentia, frictione, gestatione,
+    					</marginalia_text>
+    				</position>
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						aut articulorum, sensuu[m]q[ue] agitatione; cui Ca[e]saris dia[e]ta, ) ambulatio,
+    						) quotidianus sudor; generosiss[im]a mundi disciplina.
+    					</marginalia_text>
+    					<person name="Julius Caesar"/>
+    				</position>
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						) Ca[e]saris dia[e]ta, ambulatio, sudar vnica Hygiena. 
+    					</marginalia_text>
+    					<person name="Julius Caesar"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Caesar is most sparing in food, wine, and sleep. 
+    				And Caesar's walking is greater than all of Asclepius' exercises.
+    				Nor does he require other fasting, rubbing down, being carried, or the exercise of his joints and senses:
+    				for Caesar, a diet, walking, and daily sweat are the most honorable disciplines in the world.
+    				Caesar's diet, walking, and sweat are the only Hygiene.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Epitaffio canino.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				An epitaph for a dog.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="EL">
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						( διότι. )	<!-- Greek: dioti --> 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				( because. ) 
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Sublata causa, tollitur Effectus.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				With the cause removed, the effect is removed.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						M[aste]r Astley of [the] Court. 
+    					</marginalia_text>
+    					<person name="John Astley"/>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						apophthegma iuridicum. 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				A legal aphorism.
+    			</translation>
+    		</marginalia>
+    		
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="90" place="left_margin">
+    					<marginalia_text>
+    						Solus mihi sapit Ca[e]sar, in Animi, corporis, Fortuna regim[ine]. 
+    					</marginalia_text> 
+    					<person name="Julius Caesar"/>
+    				</position>
+    			</language>
+    			<translation>
+    				<!-- CG: Missing text added. -->
+    				Caesar alone is sensible for me, in the prosperous guidance of mind and body.	
+    			</translation>
+    		</marginalia>
+        
+    		<underline language="IT" method="pen" text="io l'hò fatto" type="straight"/>
+    		<underline language="IT" method="pen" text="del cane" type="straight"/>
+    		<underline language="IT" method="pen" text="cagniaccio ribaldo, á traditore" type="straight"/>
+    		<underline language="IT" method="pen" text="il dispetto" type="straight"/>
+    		<underline language="IT" method="pen" text="chiamato AMORE" type="straight"/>
+    		<underline language="IT" method="pen" text="altri di buon" type="straight"/>
+    		<underline language="IT" method="pen" text="can del Duca" type="straight"/>
+    		<underline language="IT" method="pen" text="Laura Battiferra" type="straight"/>
+    		<underline language="IT" method="pen" text="sple[n]dore della nostra" type="straight"/>
+    		<underline language="IT" method="pen" text="altre sue rare qualità" type="straight"/>
+    		<underline language="IT" method="pen" text="natura de' caualli" type="straight"/>
+    		<underline language="IT" method="pen" text="guarire un suo" type="straight"/>
+    		<underline language="IT" method="pen" text="bellissimo cauallo" type="straight"/>
+    		<underline language="IT" method="pen" text="era restio" type="straight"/>
+    		<underline language="IT" method="pen" text="la cagione del male" type="straight"/>
+    		<underline language="IT" method="pen" text="trouar il rimedio" type="straight"/>
+    		<underline language="IT" method="pen" text="cagione dell'essere" type="straight"/>
+    		<underline language="IT" method="pen" text="bestia ombrosa &amp; restia" type="straight"/>
+    		<underline language="IT" method="pen" text="non conosce, &amp; non scorge bene la cosa" type="straight"/>
+    		<underline language="IT" method="pen" text="paura" type="straight"/>
+    		<underline language="IT" method="pen" text="d'occhiali, che possa uedere bene" type="straight"/>
+    		<underline language="IT" method="pen" text="non sarà ombroso, ne restio" type="straight"/>
+    		<underline language="IT" method="pen" text="meglio le cose, che" type="straight"/>
+    		<underline language="IT" method="pen" text="magistrato de gli Otto di Balia" type="straight"/>
+    		<underline language="IT" method="pen" text="hauer rubato" type="straight"/>
+    		<underline language="IT" method="pen" text="bellissimo canino" type="straight"/>
+    		<underline language="IT" method="pen" text="non negò altrimenti" type="straight"/>
+    		<underline language="IT" method="pen" text="seco testimoni" type="straight"/>
+    		<underline language="IT" method="pen" text="giustificare il furto" type="straight"/>
+    		<underline language="IT" method="pen" text="lo tolsi" type="straight"/>
+    		<underline language="IT" method="pen" text="stato tolto ancho a Me" type="straight"/>
+    		<underline language="IT" method="pen" text="forse grande" type="straight"/>
+    		<underline language="IT" method="pen" text="canino lungo un palmo" type="straight"/>
+    		<underline language="IT" method="pen" text="non uo se non ragione" type="straight"/>
+	       
+	    	<symbol name="Sun" place="left_margin"/>
+    		<symbol name="SS" place="right_margin"/>
+    		<symbol name="JC" place="right_margin"/>
+	      		
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- ho -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- ha -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> 
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- be -->
+    		<mark method="pen" name="quotation_mark" place="right_margin"/>
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- co -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- tenu -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- pi -->
+    		
+	    	<mark language="IT" method="pen" name="bracket" place="left_margin" text="Vn cagniaccio ribaldo, &amp; traditore, Che era il dispetto, &amp; fu chiamato AMORE. Non hebbe altro di buon; fu can del Duca."/>
+    		<mark method="pen" name="bracket" place="left_margin"/>
+    		<mark method="pen" name="straight_quotation_mark" place="left_margin"/> 
+    		<mark method="pen" name="plus_sign" place="left_margin"/>
+    		<mark method="pen" name="plus_sign" place="left_margin"/>
+    		
+	    	<mark method="pen" name="plus_sign" place="intext"/> <!-- il dispetto -->
+    		<mark method="pen" name="quotation_mark" place="intext"/>
+    		<mark method="pen" name="equal_sign" place="intext"/>
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Battiferra"/>
+    		<mark method="pen" name="comma" place="intext"/> <!-- Battiferra sple[n]dore-->
+    		<mark method="pen" name="plus_sign" place="intext"/>
+    		<mark method="pen" name="plus_sign" place="intext"/> 
+    		<mark method="pen" name="dot" place="intext"/> <!-- caualli, da  -->
+    		<mark method="pen" name="equal_sign" place="intext"/>
+    		<mark method="pen" name="dot" place="intext"/> <!-- restio, rispose -->
+    		<mark method="pen" name="plus_sign" place="intext"/>
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="rimedio"/>
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="cagione"/>
+    		<mark method="pen" name="straight_quotation_mark" place="intext"/>
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="paura"/>
+    		<mark method="pen" name="dot" place="intext"/> <!--bene, et-->
+    		<mark method="pen" name="dot" place="intext"/> <!-- restio, scorgendo -->
+    		<mark method="pen" name="plus_sign" place="intext"/> 
+    		<mark method="pen" name="dot" place="intext"/> <!-- pregio, non -->
+    		
+    </annotation>
+</transcription>

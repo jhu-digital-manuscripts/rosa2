@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.078v.tif" reader="Harvey" signature="[Ivii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Xenophon l.I. Polya[e]ni.</marginalia_text>
+                    <person name="Xenophon"/>
+                    <book title="Stratagems"/>
+                </position>
+            </language>
+            <translation>Xenophon, in book 1 of Polyaenus' 'Stratagems'.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>in A great storme</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Jugurthe" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sallust. bello Jugur.</marginalia_text>
+                    <person name="Sallust"/>
+                    <book title="Jugurthine War"/>
+                </position>
+            </language>
+            <translation>Sallust's 'Jugurthine War'.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="a certayne Lumbarde, a symple souldiour" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>quida[m] Ligus, ex cohortibus auxiliarijs, miles gregarius.</marginalia_text>
+                </position>
+            </language>
+            <translation>A certain Lombard from auxiliary regiments, a common soldier.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="garison of Annibals" type="straight"/>
+        <underline language="EN" method="pen" text="the darke nyght syx. C. souldiours" type="straight"/>
+        <underline language="EN" method="pen" text="on the stro[n]gest" type="straight"/>
+        <underline language="EN" method="pen" text="syde of the towne, bycause it was leeste" type="straight"/>
+        <underline language="EN" method="pen" text="and so" type="straight"/>
+        <underline language="EN" method="pen" text="open the gates" type="straight"/>
+        <underline language="EN" method="pen" text="great rushe and noyse" type="straight"/>
+        <underline language="EN" method="pen" text="water made" type="straight"/>
+        <underline language="EN" method="pen" text="the other syde" type="straight"/>
+        <underline language="EN" method="pen" text="set vpon Axpos" type="straight"/>
+        <underline language="EN" method="pen" text="and won" type="straight"/>
+        <underline language="EN" method="pen" text="Marius" type="straight"/>
+        <underline language="EN" method="pen" text="conquere a castell" type="straight"/>
+        <underline language="EN" method="pen" text="on a stony hyll" type="straight"/>
+        <underline language="EN" method="pen" text="but one strayte and" type="straight"/>
+        <underline language="EN" method="pen" text="narowe way" type="straight"/>
+        <underline language="EN" method="pen" text="pitchelonge downerighte" type="straight"/> 
+        <underline language="EN" method="pen" text="lyke a wall" type="straight"/>
+        <underline language="EN" method="pen" text="Lumbarde" type="straight"/>
+        <underline language="EN" method="pen" text="symple souldiour" type="straight"/>
+        <underline language="EN" method="pen" text="gatherynge of snayles" type="straight"/>
+        <underline language="EN" method="pen" text="rockes, he came" type="straight"/>
+        <underline language="EN" method="pen" text="he sawe" type="straight"/>
+        <underline language="EN" method="pen" text="the castell" type="straight"/>
+        <underline language="EN" method="pen" text="easely be wonne" type="straight"/>
+        <underline language="EN" method="pen" text="centurions" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="the darke nyght syx. C. souldiours"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="easely be wonne"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="X_sign" place="right_margin" text="gatheryne of snayles"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the darke nyght syx. C. souldiours"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="bycause it was leeste"/>
+        
+    </annotation>
+</transcription>

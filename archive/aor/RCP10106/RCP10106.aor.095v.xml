@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.095v.tif" pagination="190" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Nec saepius narrare dixerim nefas, quod Cicero pro Cluentio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>S[a]epi[us] aliq[ua]n[do] narra[nd]dum est Pro Cluentio.</marginalia_text> <!--JG: Not sure abt 'aliquando'-->
+                    <book title="Pro Cluentio"/>
+                </position>
+            </language>
+            <translation>Frequently [...] it must be narrated in Pro Cluentio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="superstione praeceptorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pra[e]ceptorum Superstitio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Superstitious precepts.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cur igitur si singula probanda aut refellenda erunt, non singula etiam narrentu?" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A fine.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="turpiter conuertuntur, ut si peperisse narres" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ordo narra[ndi] turpis</marginalia_text> <!-- FSF: I am not sure how to expand this here; maybe narra[nd]i? as in the order of narrating? I don't know -->
+                </position>
+            </language>
+            <translation>A disgraceful order of narrating.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="falsae expositiones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Falsa[e] expositio[n]es</marginalia_text>
+                </position>
+            </language>
+            <translation>False exposition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="color" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Color.</marginalia_text>
+                </position>
+            </language>
+            <translation>Colour.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="pro re, pro tempore intuenda quae" type="straight"/>
+        <underline language="LA" method="pen" text="Nec saepius narrare dixerum nefas, quod Cicero pro Cluentio fecit" type="straight"/>
+        <underline language="LA" method="pen" text="superstitione praeceptorum contra rationem causa trahi. Narrationem" type="straight"/>
+        <underline language="LA" method="pen" text="Quaedam uerò etiam turpiter conuertuntur, ut" type="straight"/>
+        <underline language="LA" method="pen" text="peperisse narres, deinde concepisse: apertum testamentum, deinde refignatum" type="straight"/>
+        <underline language="LA" method="pen" text="utrumcunque" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        
+    </annotation>
+</transcription>

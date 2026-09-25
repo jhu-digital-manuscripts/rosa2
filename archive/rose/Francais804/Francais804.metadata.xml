@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>1</illustrations>
+    <totalPages>195</totalPages>
+    <dimensions units="mm">
+        <width>255</width>
+        <height>330</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="152v" start="1r">152</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>48</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="septarticles">
+            <language>fr</language>
+            <title>Sept articles de la foi</title>
+            <textId/>
+            <pages end="164r" start="153r">12</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>48</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="codicille">
+            <language>fr</language>
+            <title>Codicille</title>
+            <textId/>
+            <pages end="164v" start="164v">1</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>48</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="codicillelatin">
+            <language>fr</language>
+            <title>Codicille en latin</title>
+            <textId/>
+            <pages end="165v" start="165r">1</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>48</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="testament">
+            <language>fr</language>
+            <title>Testament</title>
+            <textId/>
+            <pages end="195r" start="166r">30</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>48</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Français 804</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 804</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Français 804</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 804</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

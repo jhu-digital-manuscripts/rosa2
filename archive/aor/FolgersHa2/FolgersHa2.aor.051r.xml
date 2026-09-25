@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.051r.tif" pagination="421" reader="Harvey"/>	<!-- ABO 55right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.051r_0001" marginalia_continues_from="Ha2.050v_0001" marginalia_from_transcription="Ha2.050v.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						[p. 420: Ille vir, ille mihi, cui vocula nulla tepescit, =] = vlteriùs volitat nescia stare ratis. Axiophilus.
+							<!-- Continued from facing page, head, Ha2.050v -->
+					</marginalia_text>
+					<person name="Axiophilus"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				<!-- From previous page: Ille vir, ille mihi, cui vocula nulla tepescit, = -->
+				[p. 420: That man of mine, whom no feeble voice can warm,] = flies above those matters incapable of standing firm. Axiophilus. <!-- CG: Still unsure of translation. Specialist advice needed. -->
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Mensa philosophica: et Sylua
+						nuptialis: philologia pra[e]gnantissima, et vbiq[ue] gratiss[im]a.
+					</marginalia_text>
+					<book title="Mensa philosophica"/>
+					<book title="Sylva nuptialis"/>
+				</position>
+			</language>
+			<translation>
+				The Mensa philosophica and the Sylva nuptialis: philology most pregnant and everywhere most pleasing. 
+			</translation>
+		</marginalia>
+		
+		<marginalia anchor_text="l'usanza quasi commune di tutta Italia" hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						L'usanza d'Italia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The custom in Italy.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Witt turneth feare into hope: greife into ioy:
+						hate into Looue.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Economico. Equiuoco.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Economical. Equivocal.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						No miserie in a hart of felicitie.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						A great World of trubble, not
+						equiualent to a little World of content.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<!-- Orientation 270 -->
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Euerie place a Paradise, thowgh a Purgatorie: euerie
+						occurent a restoratiue, thowgh a Corsiue.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Euerie crosse a blessing: &amp; euerie losse a gaine.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="uostro Diauolo" type="straight"/>
+		<underline language="IT" method="pen" text="l'hauermi cauato" type="straight"/>
+		<underline language="IT" method="pen" text="denari della" type="straight"/>
+		<underline language="IT" method="pen" text="leuarmi anco parole" type="straight"/>
+		<underline language="IT" method="pen" text="dir a Voi" type="straight"/>
+		<underline language="IT" method="pen" text="stato incarcerato con" type="straight"/>
+		<underline language="IT" method="pen" text="pericolo della uita" type="straight"/>
+		<underline language="IT" method="pen" text="dopò la sua liberatione" type="straight"/>
+		<underline language="IT" method="pen" text="una mona poco" type="straight"/>
+		<underline language="IT" method="pen" text="pretesto di gentildonna si" type="straight"/>
+		<underline language="IT" method="pen" text="del bene per l'anima" type="straight"/>
+		<underline language="IT" method="pen" text="o quanto desiderio" type="straight"/>
+		<underline language="IT" method="pen" text="giustitia ui mettesse" type="straight"/>
+		<underline language="IT" method="pen" text="rimasa non poca speranza" type="straight"/>
+		<underline language="IT" method="pen" text="ne temo di" type="straight"/>
+		<underline language="IT" method="pen" text="strana auuentura" type="straight"/>
+		<underline language="IT" method="pen" text="son sicurissimo" type="straight"/>
+		<underline language="IT" method="pen" text="Voi mi chiedereste per marito" type="straight"/>
+		<underline language="IT" method="pen" text="l'usanza a quasi commune di tutta" type="straight"/>
+		<underline language="IT" method="pen" text="sien richieste" type="straight"/>
+		<underline language="IT" method="pen" text="marito da cortigiane" type="straight"/>
+		<underline language="IT" method="pen" text="Cardinale Sauello" type="straight"/>
+		<underline language="IT" method="pen" text="gran litterato" type="straight"/>
+		<underline language="IT" method="pen" text="galant'huomo domandò" type="straight"/>
+		<underline language="IT" method="pen" text="che lettere" type="straight"/>
+		<underline language="IT" method="pen" text="Greche" type="straight"/>
+		<underline language="IT" method="pen" text="Latine" type="straight"/>
+		<underline language="IT" method="pen" text="Toscane" type="straight"/>
+		<underline language="IT" method="pen" text="egli altre lettere" type="straight"/>
+		<underline language="IT" method="pen" text="che altra sorte" type="straight"/>
+		<underline language="IT" method="pen" text="il galant'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="quelle di cambio" type="straight"/>
+		<underline language="IT" method="pen" text="Vna buona donna" type="straight"/>
+		<underline language="IT" method="pen" text="pungere" type="straight"/>
+		<underline language="IT" method="pen" text="arrosire hor" type="straight"/>
+		<underline language="IT" method="pen" text="quello poco accorto" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="faceua del bene per l'anima" type="straight"/>
+		<underline language="IT" method="chalk" text="occasione Voi mi chiedereste per marito" type="straight"/>
+		<underline language="IT" method="chalk" text="quosto huomo l'usanza quasi commune di tutta Italia" type="straight"/>
+		<underline language="IT" method="chalk" text="ragionamento, &amp; che lettere" type="straight"/>
+		<underline language="IT" method="chalk" text="Greche, Latine, &amp; Toscane" type="straight"/>
+		<underline language="IT" method="chalk" text="uoi, che egli habbia" type="straight"/>
+		<underline language="IT" method="chalk" text="quelle di cambio" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="JC" place="intext"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- haueua a -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ragio -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Tosca -->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- quel -->
+		
+	    	<!-- Left margin -->
+	    <mark method="pen" name="bracket" place="left_margin"/> <!-- uostro ... dir -->
+		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- uostro -->
+		<mark language="IT" method="pen" name="quotation_mark" place="left_margin" text="occasione Voi mi chiedereste per marito"/> 
+		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- si dona -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- egli ... ne -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- queste ... le -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark language="IT" method="pen" name="plus_sign" place="head" text="denari"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="leuarmi anco parole"/> 
+	    <mark method="pen" name="dot" place="intext"/> <!-- huomo, ilquale -->
+		<mark method="pen" name="dot" place="intext"/> <!-- ma, gli -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- o quanto desiderio -->
+		<mark method="pen" name="comma" place="intext"/> <!-- rispose io -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="son sicurissimo"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- chiedereste -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="l'usanza"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- da cortigiane -->
+		<mark method="pen" name="dot" place="intext"/> <!-- Roma, quando -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="che lettere"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Greche"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Latine"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="altre lettere"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="cambio"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark: cambio -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="Vna buona donna"/> 
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="pungere"/>
+
+    </annotation>
+</transcription>

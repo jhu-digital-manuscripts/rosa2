@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.004r.tif" reader="John Dee" signature="[A iiij]"/>
+    <annotation>
+        
+        <marginalia anchor_text="omnia in vnum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Omnia in vnu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>All in one.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="similia per similia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Similia p[er] similia</marginalia_text>
+                </position>
+            </language>
+            <translation>Similar through similar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cum natura humanum corpus figurare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ho[min]is generatio</marginalia_text>
+                </position>
+            </language>
+            <translation>The generation of a man.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sic nec miscetur anima corpori, nisi per spiritum: nec intellectus spiritui, nisi per animam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Corpus. Spiritus. A[n]i[m]a. Intellectus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Body. Spirit. Soul. Intellect.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="mutua rerum naturalium &amp; oportuna applicatione" type="straight"/>
+        <underline language="LA" method="pen" text="compassionem, omnia in vnum" type="straight"/>
+        <underline language="LA" method="pen" text="Perpendendum praeterea, naturale per artem attrahi: Diuinum, per naturam" type="straight"/>
+        <underline language="LA" method="pen" text="attrahendoq[ue] sibi similia per similia" type="straight"/>
+        <underline language="LA" method="pen" text="miscetur anima corpori, nisi per scriptum: nec intellectus" type="straight"/>
+        <underline language="LA" method="pen" text="humanum corpus" type="straight"/>
+        <underline language="LA" method="pen" text="spiritum statim ab vniuerso" type="straight"/>
+        <underline language="LA" method="pen" text="quibusdam praeparamentis naturalibus &amp; artificialibus, coelestia quaedam dona, inferiora suscipere posse. Rursus" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+    </annotation>
+</transcription>

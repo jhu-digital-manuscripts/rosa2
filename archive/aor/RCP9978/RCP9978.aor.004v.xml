@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.004v.tif" reader="John Dee" signature="[Aiiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="superc[a]elestia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Superca[e]lestia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Supercelestia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="humanae speciei proprietatem esse Solarem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>H[om]o. Solaris.</marginalia_text>
+                </position>
+            </language>
+            <translation>Man. Solar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vna" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vna</marginalia_text>
+                </position>
+            </language>
+            <translation>One.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="serie, radios suos dispertiendo" type="straight"/>
+        <underline language="LA" method="pen" text="usque alterum resonet" type="straight"/>
+        <underline language="LA" method="pen" text="Tradunt enim Magi, per inferiora superioribus conformia posse oportunis coeli influxibus, c[a]elestia dona trahi" type="straight"/>
+        <underline language="LA" method="pen" text="etiam superc[a]elestia" type="straight"/>
+        <underline language="LA" method="pen" text="vna" type="double"/>
+        <underline language="LA" method="pen" text="occulta, ut attrahat per radios stellarum, per tonos" type="straight"/>
+        <underline language="LA" method="pen" text="esse Solarem" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Mercurialem" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>   <!-- manifesta occulta -->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

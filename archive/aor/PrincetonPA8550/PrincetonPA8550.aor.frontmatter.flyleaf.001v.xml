@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+<page filename="PrincetonPA8550.frontmatter.flyleaf.001v.tif" reader="Unknown"/>
+    <annotation>
+        <marginalia hand="Italian" other_reader="Unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        On the cover of this book you have a curious Impression in vellom of [the] Pictures of Melanthon &amp; Luther - 
+                        Under one are these words
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Forma, Philippe, tua est, sed Mens tua nescia pingi nota est ante Bonis, et tua est. 1565 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                This is your image, Philipp, but your famous mind is unable to be depicted to good men, and it is yours. 1565 &gt;
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        On the other side under Luther are these words - 
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Nosse cujus faciem Lutheri hanc cerne Tabellam, si Mentem Libros consule, certus eris.
+                        <!-- JE: this is garbled as well - 'cujus' should be 'cupis' -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                If you want to know the face of Luther, look at this picture. If you want to know his mind, look in his books and you will be sure.
+            </translation>
+        </marginalia>
+    </annotation>
+</transcription>

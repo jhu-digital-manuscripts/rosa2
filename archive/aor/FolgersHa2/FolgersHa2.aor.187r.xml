@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.187r.tif" pagination="197" reader="Harvey" signature="N3r"/>	<!-- ABO 191right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Tota vis est non in Multo, sed in perfecto.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The whole strength is not in quantity, but in completion. </translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Qui vnum habet Ca[e]serem, omnes habet, et plus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>He who has one Caesar, has all, and more.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Quò minus, eò cominus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The less, the closer.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Economico.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Economically.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EL">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Βασιλέως ὀφθαλμός.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Commune seruoru[m] vitium,
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						ὀφθαλμοδουλεία
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						In quam Paulus ad Ephesios, 6.
+					</marginalia_text>
+					<person name="Saint Paul"/>
+					<book title="Epistle to the Ephesians"/>
+				</position>
+			</language>
+			<translation>
+				The eye of the king. The common vice of servants: slaves of the eye. In Paul's Epistle to the Ephesians, 6.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						All must be dispatched with a natural facilitie, &amp; a kinde of appropriate expedition:
+						whatsoeuer speaches or discourses: studies, or Writings:
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="tail">
+					<marginalia_text>
+						acts, or exploits.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						The greatest negociations of priuate, or publique state, ar to be speeded
+						with an effectuall Celeritie, &amp; felicitie. As roundly, &amp; soundly, as is possible. 
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="rispose risolutamente" type="straight"/>
+		<underline language="IT" method="pen" text="s'egli le guardasse sempre, no[n] resterebbe mai vinto" type="straight"/>
+		<underline language="IT" method="pen" text="cascato nelle fiamme" type="straight"/>
+		<underline language="IT" method="pen" text="voleua rassicurare" type="straight"/>
+		<underline language="IT" method="pen" text="ridendo" type="straight"/>
+		<underline language="IT" method="pen" text="che insino à gl'Iddij" type="straight"/>
+		<underline language="IT" method="pen" text="stati piu volte ingannati &amp; vinti dallo Amore" type="straight"/>
+		<underline language="IT" method="pen" text="Acuta esser la vista" type="straight"/>
+		<underline language="IT" method="pen" text="grossa" type="straight"/>
+		<underline language="IT" method="pen" text="del seruitore" type="straight"/>
+		<underline language="IT" method="pen" text="Ceruio fuggendo" type="straight"/>
+		<underline language="IT" method="pen" text="vn Muletto, il" type="straight"/>
+		<underline language="IT" method="pen" text="il padrone" type="straight"/>
+		<underline language="IT" method="pen" text="seruidore" type="straight"/>
+		<underline language="IT" method="pen" text="tenersi sicuro" type="straight"/>
+		<underline language="IT" method="pen" text="s'egli nol tradisce" type="straight"/>
+		<underline language="IT" method="pen" text="il seruitore" type="straight"/>
+		<underline language="IT" method="pen" text="ingannare questo seruo Talpa" type="straight"/>
+		<underline language="IT" method="pen" text="padrone Argo sarà" type="straight"/>
+		<underline language="IT" method="pen" text="padrone, il" type="straight"/>
+		<underline language="IT" method="pen" text="bene ogni cosa, vidde" type="straight"/>
+		<underline language="IT" method="pen" text="popolo il pigliarono" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="facile à ingannare questo seruo Talpa, ma se viene il padrone Argo sarà difficile; perciò" type="straight"/>
+		
+		<mark method="pen" name="plus_sign" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="plus_sign" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--vin-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--fat-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--vole-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--Mu-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--guar-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="seruitore"/>
+		
+		<mark method="pen" name="vertical_bar" place="tail"/>
+
+    </annotation>
+</transcription>

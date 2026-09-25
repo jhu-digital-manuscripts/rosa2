@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.045v.tif" pagination="74" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Leges Attica[e], accersita[e]. Item Laconica[e] et alia[e] Gra[e]ca[e].</marginalia_text>
+                    <location name="Attica"/>
+                    <location name="Sparta"/>
+                    <location name="Greece"/>
+                </position>
+            </language>
+            <translation>Attic laws were introduced. Also the Spartan ones and other Greek laws.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Placet creari dece[m]uiros" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Xviri: Rerum domini. etiam sine prouocatione. Vnde Oligarchia. quantò maior, tantò minor.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Decemviri: rulers of affairs, even without right of appeal. From which Oligarchy. The greater [the institution], the smaller [the power].
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Altera Status Romani Innouatio. Nec Reges, nec Consules, nec Decemuiri, nec vlli magistratus placent diu, vbi necessitas summi, fixiq[ue] 
+                        Imperij non imponitur; sed penès populum est potestas mutandi. Quem Romanus poeta prudenter, iusteq[ue] vocauit Belluam multorum capitum. 
+                        Neq[ue] enim vllus vsus talium magistratuum in fixo Regno: et leui pollice pra[e]teriri possunt, qua[e] sunt nimiùm popularia, aut Oligarchica: 
+                        nisi quatenùs iuuat obitèr notare rationem dissimilium formarum Gubernandi: et tantò solidiore iudicio adha[e]rescere optimis, aut necessarijs.
+                    </marginalia_text>
+                    <X-ref book_title="Epistles" language="LA" person="Horace" text="belluam multorum capitum"/>
+                </position>
+            </language>
+            <translation>Another innovation of the Roman state. Neither Kings, nor Consuls, nor Decemviri, nor any other magistrates satisfy for long, when supreme, 
+                unchangeable authority is not imposed as a necessary requirement, but when the people has the power to change. And a Roman poet sagaciously 
+                and rightly called them "a monster with many heads". For there is no use whatsoever for such magistrates in an unchangeable rule and we can pass over 
+                ‘with nimble thumb’ the elements that are too popularist, or the oligarchical, except that it is helpful to a certain extent to note in passing the reason for disparate forms of government, 
+                and with all the more solid judgement stick to the best or necessary ones.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="si plebeiae leges discplicerent" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]muniter legumlatores, &amp; ex plebe, &amp; ex patrib[us]" type="straight"/>
+        <underline language="LA" method="pen" text="aequandae libertatis essent, sinerent" type="straight"/>
+        <underline language="LA" method="pen" text="daturu[m] leges" type="straight"/>
+        <underline language="LA" method="pen" text="neminem nisi ex patribus aiebant" type="straight"/>
+        <underline language="LA" method="pen" text="de legib[us]" type="straight"/>
+        <underline language="LA" method="pen" text="de latore ta[n]tum" type="straight"/>
+        <underline language="LA" method="pen" text="legati Athenas Sp." type="straight"/>
+        <underline language="LA" method="pen" text="inclytas leges Solonis describere" type="straight"/>
+        <underline language="LA" method="pen" text="aliarum Graeciae ciuitatu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="legatoru[m], qui Athenas iera[n]t, legu[m]q[ue] peregrinaru[m] expectatio pr[a]ebuit" type="straight"/>
+        <underline language="LA" method="pen" text="pestile[n]tiaq[ue] foeda homini, foeda pecori" type="straight"/>
+        <underline language="LA" method="pen" text="rediera[n]t legati cu[m] Atticis legibus. eo" type="straight"/>
+        <underline language="LA" method="pen" text="scribendarum legum initium fieret" type="straight"/>
+        <underline language="LA" method="pen" text="creari dece[m]uiros sine" type="straight"/>
+        <underline language="LA" method="pen" text="quis eo anno alius magistratus esset" type="straight"/>
+        <underline language="LA" method="pen" text="sacratae" type="straight"/>
+        <underline language="LA" method="pen" text="iteru[m] mutatur forma ciuitatis, ab" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]sulibus ad decemuiros" type="straight"/>
+        <underline language="LA" method="pen" text="quemadmodum ab regibus antè" type="straight"/>
+        <underline language="LA" method="pen" text="minus insignis, quia non diuturna, mutatio fuit" type="straight"/>
+        <underline language="LA" method="pen" text="eius nimis luxuriauere" type="straight"/>
+        <underline language="LA" method="pen" text="citius lapsa res est repetitumq[ue]" type="straight"/>
+        
+        <symbol name="LL" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--le-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--Came-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--lega-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--ma-->
+        <mark method="pen" name="equal_sign" place="right_margin"/> 
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Athenas"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="leges"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="peregrinaru[m]"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="dece[m]uiros"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="mutatur"/>
+        <mark language="LA" method="pen" name="quotation_mark" place="intext" text="eius"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="citius"/>
+        
+    </annotation>
+</transcription>

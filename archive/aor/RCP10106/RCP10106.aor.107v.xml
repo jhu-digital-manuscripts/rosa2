@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.107v.tif" pagination="214" reader="John Dee" signature="[o 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Omnis autem interrogatio est aut in causa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Interrogationu[m] Diuisio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Division of interrogations.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exemplu[m] ad imitatione[m] demo[n]stra[n]dum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vnde huiuscemodi exe[m]pla pete[n]tur.</marginalia_text>
+                </position>
+            </language>
+            <translation>From where we can seek such a type of model.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dialogis Socraticoru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Socratica[e] p[er]co[n]tationes</marginalia_text>
+                </position>
+            </language>
+            <translation>Socractic questioning.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="interrogatio ad hoc, quod casua fieri solet, etiam ratione perducet. Extra causam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Interrogatio extra caussarum.</marginalia_text>
+                </position>
+            </language>
+            <translation>An examination beyond the reasons.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Omnis aute[m] interrogatio est aut in causa, aut extra causam. In" type="straight"/>
+        <underline language="LA" method="pen" text="Actua aute[m] interrogatio ad hoc, quod casu fieri solet, etiam ratione perducet. Extra causam" type="straight"/>
+        <underline language="LA" method="pen" text="eiq[ue] praecipue uulgò fauctur: tum" type="straight"/>
+        <underline language="LA" method="pen" text="quod interrogantis non leue frigus est" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.051r.tif" pagination="85" reader="John Dee" signature="h"/>
+    <annotation>
+        
+        <marginalia anchor_text="in institutionis libro" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Liber Institutionis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Book of institutes.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vari[a]e Luna[e] species 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Different species of the moon
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="primo natalis die, genitura tractantes, &amp; tertio rursus die" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Primus dies &amp; tertius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The first day and the third.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Qua[e] in Luna co[n]sydera[n]da
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Which in the moon are to be considered.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quàm plurimas species" type="triple"/>
+        <underline language="LA" method="pen" text="institutionis libro" type="triple"/>
+        <underline colour="red" language="LA" method="pen" text="synodica aut plena" type="straight"/> 
+        <underline colour="red" language="LA" method="pen" text="dichotomos" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="menoides" type="straight"/> 
+        <underline colour="red" language="LA" method="pen" text="amphicyrtos" type="straight"/> 
+        <underline language="LA" method="pen" text="&amp; primo natalis die, genituram tractantes, &amp; tertio" type="straight"/>
+        <underline language="LA" method="pen" text="ac quibus se coniungat" type="double"/>
+        <underline language="LA" method="pen" text="quibus defluat" type="double"/>
+        <underline language="LA" method="pen" text="post primam" type="double"/>
+        <underline language="LA" method="pen" text="quando per altum feratur" type="straight"/>
+        <underline language="LA" method="pen" text="conditionis suae stellis iungatur" type="straight"/>
+        <underline language="LA" method="pen" text="in necessariis geniturae" type="straight"/>
+        <underline language="LA" method="pen" text="crescens lumine" type="straight"/>
+        <underline language="LA" method="pen" text="cum maximo uitae discrimine" type="straight"/>
+        <underline language="LA" method="pen" text="minuta luminibus" type="straight"/>
+        <underline language="LA" method="pen" text="sed haec tunc co[m]plentur" type="straight"/>
+        <underline language="LA" method="pen" text="cresce[n]s lumine" type="straight"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        <mark method="pen" name="dot" place="right_margin"/>
+        <mark method="pen" name="dot" place="right_margin"/>
+        
+    </annotation>
+</transcription>

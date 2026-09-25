@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.293r.tif" pagination="565" reader="John Dee" signature="nnn.iii."/>
+    <annotation>
+        
+        <marginalia anchor_text="de die, sed etiam in die[m] viuere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>de die in die[m] viuere</marginalia_text>
+                </position>
+            </language>
+            <translation>To live early in the day; to live day after day [Loeb 189, 139].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="timor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Timor</marginalia_text>
+                </position>
+            </language>
+            <translation>Fear.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="deflagrauit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>deflagrare</marginalia_text>
+                </position>
+            </language>
+            <translation>To be burnt down.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fuligini" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fuligo</marginalia_text>
+                </position>
+            </language>
+            <translation>Soot.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="si vllam parte[m] habes sensus, lacerat, haec cruentat oratio" type="straight"/>
+        <underline language="LA" method="pen" text="Sed incidi in id tempus, quod iis de rebus, in quas ingressa erat oratio, praetereundum non sit" type="straight"/>
+        <underline language="LA" method="pen" text="quanquam te bonu[m] timor faciebat, non diuturni magister officii: improbu[m]" type="straight"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">13</numeral>
+        
+        <drawing anchor_text="Timor" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

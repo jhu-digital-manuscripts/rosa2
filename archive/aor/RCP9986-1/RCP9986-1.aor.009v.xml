@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.009v.tif" pagination="[10v]" reader="John Dee" signature="[B.ij.[v]]"/>  
+    <annotation>
+        
+        <marginalia anchor_text="amor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Amor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Love.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="virilis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vir.</marginalia_text>
+                </position>
+            </language>
+            <translation>A man.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Acer in extremis ossibus haesit amor" type="straight"/>
+        <underline language="LA" method="pen" text="Sint procul à nobis iuuenes, vt foemina, compti" type="straight"/>
+        <underline language="LA" method="pen" text="Fine coli modico forma virilis amat" type="straight"/>
+        <underline language="LA" method="pen" text="Te tuus iste rigor, positíq[ue] sine arte capilli" type="straight"/>
+        <underline language="LA" method="pen" text="Et leuis egregio puluis in ore decet" type="straight"/>
+        <underline language="LA" method="pen" text="Deniq[ue] nostra iuuat lumina quicquid agas" type="straight"/>
+        
+    </annotation>
+</transcription>

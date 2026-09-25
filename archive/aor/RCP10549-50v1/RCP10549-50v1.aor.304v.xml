@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.304v.tif" pagination="588" reader="John Dee" signature="[ooo.vii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="impensam fecerant" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>impensam facere</marginalia_text>
+                </position>
+            </language>
+            <translation>To create expense.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="clientela" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>clie[n]tela</marginalia_text>
+                </position>
+            </language>
+            <translation>Clientship.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="expe[n]sum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>expensus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Paid out money.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="paucorum dierum molestiam deuorate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>paucoru[m] dieru[m] molestiam deuorate</marginalia_text>
+                </position>
+            </language>
+            <translation>To absorb trouble for a few days.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Conclusio</marginalia_text>
+                </position>
+            </language>
+            <translation>A conclusion.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="excubabo vigilabóque" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>excubo vigilo.</marginalia_text>
+                </position>
+            </language>
+            <translation>To keep watch. To be attentive.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="fatalis casus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fatalis Casus.</marginalia_text>
+                </position>
+            </language>
+            <translation>A fatal accident.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="exercitu Caesaris" type="straight"/>
+        <underline language="LA" method="pen" text="Iace[n]t beneficia" type="straight"/>
+        <underline language="LA" method="pen" text="nu[m]mûm" type="straight"/>
+        <underline language="LA" method="pen" text="paucorum dierum molestiam deuorate" type="straight"/>
+        <underline language="LA" method="pen" text="Quamobrem" type="straight"/>
+        <underline language="LA" method="pen" text="quàm potero excubab vigilabóque" type="straight"/>
+        <underline language="LA" method="pen" text="sed tamen ita maturum, vt differri iam hora" type="straight"/>
+        <underline language="LA" method="pen" text="aliquis fatalis casus, vt ita dicam, quam tulimus: quoquo modo ferendus fuit" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="left_margin"/> <!--debant-->
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">15</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">22</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">8</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

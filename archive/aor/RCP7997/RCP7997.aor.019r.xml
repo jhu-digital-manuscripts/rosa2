@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.019r.tif" reader="John Dee" signature="D"/> 
+    <annotation>
+        
+        <marginalia anchor_text="dupla p[ro]portio no[n] sit rationalis p[ro]portio cuboru[m] vel quadratorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Dupla p[ro]portio no[n] est r[ati]o[n]alis cubor[um] aut □or[um]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The double proportion is not rational of cubes but of squares.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="accide[n]s co[m]mune" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Accidentia co[mmun]ia    
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Common accidents. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sepe sunt demo[n]strationes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Demo[n]strationes eoru[m] q[uae] sa[e]pe fiu[n]t.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Demonstrations of what often happens.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[er] duo opposita sicut i[n] a[n]tea dixim[us]" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Passio p[er] opposita no[m]i[n]a explicata
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Property explained by the opposite names. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[ro]portio nota" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Proportio nota.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A notable proportion.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="algebra" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Algebra.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Algebra.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Accidentia prop[ri]a su[n]t adduce[n]da in demo[n]strationes, no[n] co[mmun]ia, no[n] extranda.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Proper accidents are to be extrapolated from demonstrations, not commonly known ones, not to be extracted. <!-- FSF: I am not really sure -->  <!-- DO: Not sure either -->
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="equalia nu[n]q[uam] c[on]stituu[n]t cubu[m] v[e]l quadratu[m] cu[m] dupla p[ro]portio no[n] sit rationalis p[ro]portio" type="straight"/>
+        <underline language="LA" method="pen" text="tibi algebra aperuit" type="straight"/>
+        <underline language="LA" method="pen" text="ex ineq[ua]libus hoc bene co[n]tingit sicut postea dicem[us] Secundu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="q[uo]dlibet" type="straight"/>
+        <underline language="LA" method="pen" text="accide[n]s p[ro]priu[m] et p[er]" type="straight"/>
+        <underline language="LA" method="pen" text="accide[n]tia co[m]munia" type="straight"/>
+        <underline language="LA" method="pen" text="na[m] pulcr[um] [et] a[m]miratiuu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="etia[m] q[uae] sunt freque[n]ter" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] vt sunt sepe sed vt sunt semp[er] sed" type="straight"/>
+        <underline language="LA" method="pen" text="q[uo] referunt[ur] ad suas causas q[uo]" type="straight"/>
+        <underline language="LA" method="pen" text="illis vbi p[ro]pria passio de subiecto non vno no[m]i[n]e exp[ri]mit[ur] s[ed] p[er] duo opposita sicut i[n]" type="straight"/>
+        <underline language="LA" method="pen" text="semp[er] est in ordine ad illa[m] causam" type="straight"/>
+        <underline language="LA" method="pen" text="Sic rationalis nu[m]eri causa est p[ro]portio nota" type="straight"/>
+        <underline language="LA" method="pen" text="q[uo] sunt s[ecundu]m illud i[d est]" type="straight"/>
+        <underline language="LA" method="pen" text="ex p[ro]prijs" type="straight"/>
+        <underline language="LA" method="pen" text="proxima et q[ui]" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- fiunt demo[n]strationes -->
+        <mark method="pen" name="comma" place="intext"/> <!-- demo[n]strabilia sunt -->
+        <mark method="pen" name="comma" place="intext"/> <!-- ostensum est -->
+        
+    </annotation>
+</transcription>

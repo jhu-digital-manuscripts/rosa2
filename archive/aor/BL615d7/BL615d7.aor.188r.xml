@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.188r.tif" pagination="188" reader="John Dee" signature="Aaiiij"/>
+    <annotation>
+        
+       <marginalia hand="Italian">
+           <language ident="EN">
+               <position book_orientation="0" place="head">
+                   <marginalia_text>Note this side well for many respects</marginalia_text>
+               </position>
+           </language>
+       </marginalia> 
+        
+        <marginalia anchor_text="gl' Indiani stauano obedienti, &amp; con gran paura dell' Ammiraglio," hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note of the Indians</marginalia_text>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The Indians co[n]strayned to wer apparell</marginalia_text> 
+                    <!-- M.B. Difficulty deciphering words following 'Indians' --> <!-- FSF: I think it is 'The Indians co[n]strayned to how apparell', though I am not sure about the last word -->  <!-- DO: Might be 'The Indians co[n]strayned to wear apparell'? --> <!--JG: could be wer, not entirely sure though-->
+                </position>
+            </language>
+        </marginalia> 
+       
+        <marginalia anchor_text="MCCCCXCIX" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1499</marginalia_text>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <marginalia anchor_text="Nostro Signore, dicendomi, O huomo di poca fede, non hauer paura, io sono." hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Heavenly cumfort</marginalia_text>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <underline language="IT" method="pen" text="gl'Indiani stauano obedienti, &amp; con gran paura dell'Ammiraglio," type="straight"/>
+        <underline language="IT" method="pen" text="volontieri si faceano Christiani" type="straight"/>
+        <underline language="IT" method="pen" text="di andar vestito" type="straight"/>
+        <underline language="IT" method="pen" text="a' XX" type="straight"/>
+        <underline language="IT" method="pen" text="da S. Domenico" type="straight"/>
+        <underline language="IT" method="pen" text="Venerdì" type="straight"/>
+        <underline language="IT" method="pen" text="Il giorno poi di Natale del MCCCCXCIX, hauendomi tutto il; mondo adandonato" type="straight"/>
+        <underline language="IT" method="pen" text="assalito con guerra da Indiani, &amp; da' cattiui Christiani" type="straight"/>
+        <underline language="IT" method="pen" text="ond'io" type="double"/>
+        <underline language="IT" method="pen" text="Nostro Signore, dicendomi, O huomo di poca fede, non hauer paura, io sono." type="straight"/>
+        <underline language="IT" method="pen" text="speranza del mondo" type="straight"/>
+        <underline language="IT" method="pen" text="a S. Domenico" type="straight"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        <mark method="pen" name="equal_sign" place="right_margin"/>  
+        <mark method="pen" name="comma" place="intext" text="quindi il"/>
+        <mark method="pen" name="bracket" place="right_margin" text="gl' Indiani stauano obedienti, &amp; con gran paura dell' Ammiraglio,"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+   
+    </annotation>
+</transcription>

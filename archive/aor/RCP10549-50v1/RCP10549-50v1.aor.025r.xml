@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.025r.tif" pagination="32" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="gaudeo Iudices, vehementérque laetor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        gaudeo letor
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I am glad, I am delighted.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="non recreatus, neque restitutus, sed subactus oppressúsque Populus Romanus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Populus recreatus restitutus subactus oppressus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The people, remade, reestablished, subdued, crushed.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nobiles, nisi vigilantes, &amp; boni, &amp; fortes, &amp; misericordes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        nobiles vigilantes boni fortes misericordes
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Nobles: watchful, kind, brave, merciful.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Repetitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Repetition.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Querimonia.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Complaint.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nobilitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        NOBILITAS
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Nobility.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="culpa liberatus, &amp; crimine nefario solutus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        culpa liberatus cr[imin]e solutus]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Freed of blame, acquitted of accusation.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="concessit, adnumerauit, appendit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        co[n]cedere adnumerare appe[n]dere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To hand over, to count, to weigh up.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nolo in eos grauius quicquam" type="straight"/>
+        <underline language="LA" method="pen" text="via[m] munitet" type="straight"/>
+        <underline language="LA" method="pen" text="iter affectet" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">11</numeral>
+        <numeral place="right_margin">18</numeral>
+        
+        
+    </annotation>
+</transcription>

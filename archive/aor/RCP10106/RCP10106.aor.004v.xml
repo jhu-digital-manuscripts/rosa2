@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.004v.tif" pagination="8" reader="John Dee" signature="[a 4[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Chrysippus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Chrysippus.</marginalia_text>
+                    <person name="Chrysippus"/>
+                </position>
+            </language>
+            <translation>Chrysippus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Juxta illund Horatij. Quo semel e[st] imbuta rece[n]s: et.</marginalia_text>
+                    <person name="Horace"/>
+                    <X-ref book_title="Epistles" language="LA" person="Horace" text="Quo semel est imbuta recens, servabit odorem."/>
+                </position>
+            </language>
+            <translation>According to Horace, "Once it has permeated [...] and."</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Nam bona facilè mutantur in peius: nunc" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+
+        <drawing anchor_text="Nam bona facilè mutantur in peius: nunc" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

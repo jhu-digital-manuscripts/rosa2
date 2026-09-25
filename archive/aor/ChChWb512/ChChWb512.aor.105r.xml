@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.105r.tif" reader="Dee"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="Qui cu[m] vicem nobiliu[m] obtinere coepissent extuleru[n]t se vltra q[uam] dignitas expetebat" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; vt Gildas" type="straight"/>
+        <underline language="LA" method="pen" text="odiu[m] veritatis" type="straight"/>
+        <underline language="LA" method="pen" text="amorq[uam] me[n]dacii" type="straight"/>
+        <underline language="LA" method="pen" text="admirandu[]m est degeneres tales deo ob talia scelera inuisos patria[m] illa[m] amittere qua[m] p[re]dicto m[od]o maculauerant" type="straight"/>
+        <underline language="LA" method="pen" text="p[er]mitteret: ciues pristin[a]e dignitati restituere" type="straight"/>
+        <underline language="LA" method="pen" text="Ide[m] etenim nobis atauus fuit" type="straight"/>
+        <underline language="LA" method="pen" text="Malgo" type="straight"/>
+        <underline language="LA" method="pen" text="post Arthuru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Iago Caduanu[m]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!--aut[em] qui-->
+        
+        <drawing book_orientation="0" method="pen" place="tail" type="crown"/> <!--Malgo-->
+        
+        <graph book_orientation="0" method="pen" place="tail" type="genealogical_tree">
+            <node anchor_text="Malgo" id="n1" person="Maelgwn">Malgo</node>
+            <node anchor_text="Ennian[a]" id="n2" person="Enniana">Ennian[us]</node>
+            <node anchor_text="Belin" id="n3" person="Beli ap Rhun">Beli</node>
+            <node anchor_text="Iago" id="n4" person="Iago ap Beli">Jago</node>
+            <node anchor_text="Caduanu[m]" id="n5" person="Caduanus">Caduanus</node>
+            <node anchor_text="Run" id="n6" person="Rhun Hir">Run</node>
+            <node id="n7">filia</node>
+            <node id="n8" person="Alanus">Alanus</node>
+            <node id="n9" person="Hoelus">Hoelus</node>
+            <node anchor_text="Alanus" id="n10" person="Salomon">Salomon</node>
+            <node id="n11">Alanus</node>
+            <node id="n12" person="Hoelus Magnus">Hoelus Magnus</node>
+            <node id="n13" person="Hoelus Dux">Hoelus Dux</node>
+            
+            <link from="n1" relationship="has_child" to="n2 n3"/>
+            <link from="n2" relationship="has_child" to="n3"/>
+            <link from="n3" relationship="has_child" to="n4"/>
+            <link from="n4" relationship="has_child" to="n5"/>
+            
+            <link from="n6" relationship="has_child" to="n7"/>
+            <link from="n7" relationship="has_child" to="n8"/>
+            <link from="n8" relationship="has_child" to="n9"/>
+            <link from="n9" relationship="has_child" to="n10"/>
+            <link from="n10" relationship="has_child" to="n11"/>
+            
+            <link from="n7" relationship="has_spouse" to="n13"/>
+            <link from="n12" relationship="has_child" to="n13"/>
+        </graph>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.082r.tif" pagination="163" reader="John Dee" signature="l 2"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Menandrum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Menander.</marginalia_text>
+                    <person name="Menander"/>
+                </position>
+            </language>
+            <translation>Menander.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ne plausum affectantibus arma excida[n]t. Theodori" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.070r.tif" pagination="63" reader="John Dee" signature="Q iij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>[cum] ecliptica descripti, vt su[n]t lo[n]gitudinu[m] circuli [..] J.D.</marginalia_text> 
+                    <person name="John Dee"/>
+                </position>
+            </language>
+            <translation>with the described eclipse, as they are the orbits of longitudes. John Dee.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="addendo partes" type="straight"/>
+        
+    </annotation>
+</transcription>

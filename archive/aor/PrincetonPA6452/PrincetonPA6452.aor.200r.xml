@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.200r.tif" pagination="383" reader="Harvey"/> 
+    <annotation>
+        
+        <underline language="LA" method="pen" text="Marcellus initio" type="straight"/>
+        <underline language="LA" method="pen" text="obsidione Syracusas premeret" type="straight"/>
+        <underline language="LA" method="pen" text="ui capi uidebat" type="straight"/>
+        <underline language="LA" method="pen" text="inexpugnabilem terrestri" type="straight"/>
+        <underline language="LA" method="pen" text="fame, quam" type="straight"/>
+        <underline language="LA" method="pen" text="ne quid inexpertum" type="straight"/>
+        <underline language="LA" method="pen" text="relinqueret" type="straight"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--inexper-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--nobilissi-->
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--urbem, nec-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="fame"/> 
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="inexpertum"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.189r.tif" pagination="369" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        A fowle behauiour of a King
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="adhaerebat, vt sese, vel fila[m] suam, sub co[n]iugali titulo sociaret" type="straight"/>
+        <underline language="LA" method="pen" text="consecratus est" type="straight"/>
+        <underline language="LA" method="pen" text="regiam vnctionem" type="straight"/>
+        <underline language="LA" method="pen" text="mensa subitò prosiliuit princeps" type="straight"/>
+        <underline language="LA" method="pen" text="vinolentus" type="grid"/>
+        <underline language="LA" method="pen" text="principum iussa" type="triple"/>
+        <underline language="LA" method="pen" text="Cynesio episcopo, cognato" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- sepulturae. Successit -->
+        
+    </annotation>
+</transcription>

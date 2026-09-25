@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.113v.tif" pagination="[113v]" reader="John Dee" signature="[P[v]]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="nell'apparir della Luna suanisce il tutto" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>1508</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="il vento" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note the Wynde</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="se ne và col Sole" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The Winde following the Sonne.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="S. Marta" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>S[an]ta Marta</marginalia_text>
+                    <location name="Santa Marta"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="cielo al Leste" type="straight"/>
+        <underline language="IT" method="pen" text="sono i tuoni, &amp; i lampi" type="straight"/>
+        <underline language="IT" method="pen" text="nell'apparir" type="straight"/>
+        <underline language="IT" method="pen" text="in" type="straight"/>
+        <underline language="IT" method="pen" text="tanto ordinario" type="straight"/>
+        <underline language="IT" method="pen" text="ma io ancor vidi" type="double"/>
+        <underline language="IT" method="pen" text="l'anno MDIII" type="double"/>
+        <underline language="IT" method="pen" text="di Veragua" type="straight"/>
+        <underline language="IT" method="pen" text="quiui soffia di notte da" type="straight"/>
+        <underline language="IT" method="pen" text="Tramontana" type="double"/>
+        <underline language="IT" method="pen" text="dell'Isola di Cuba" type="straight"/>
+        <underline language="IT" method="pen" text="da Leste" type="straight"/>
+        <underline language="IT" method="pen" text="se ne và col Sole" type="double"/>
+        <underline language="IT" method="pen" text="volta all'Occidente" type="straight"/>
+        <underline language="IT" method="pen" text="nome S. Marta" type="straight"/>
+        <underline language="IT" method="pen" text="molti" type="double"/>
+        <underline language="IT" method="pen" text="Cani come mastini" type="straight"/>
+        
+        <symbol language="IT" name="Moon" place="left_margin" text="Luna"/>
+        
+        <mark language="IT" method="pen" name="bracket" place="left_margin" text="quiui soffia di notte da Tramontana, percioch'esce dell'Isola di Cuba, &amp; se ne và col Sole, fin ch'ei da la volta all'Occidente"/>
+        
+    </annotation>
+</transcription>

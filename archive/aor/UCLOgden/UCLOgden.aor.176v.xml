@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.176v.tif" pagination="92" reader="John Dee" signature="[H 4[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Luna in trino aspectu" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        △ ☾ ad alios planetas
+                    </marginalia_text>
+                    <symbol_in_text name="Trine"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>
+                The moon in 120 degrees to the other planets. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Saturnus in ascende[n]te" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ♄ in asc.
+                    </marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>
+                Rising Saturn.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in quarta à Sole" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quarta a sole.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A quarter from the sun.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uenatione" type="straight"/>
+        <underline language="LA" method="pen" text="Iupiter dissoluit quod Saturnus ligat" type="straight"/>
+        <underline language="LA" method="pen" text="Similiter Venus quod ligat Mars" type="straight"/>
+        <underline language="LA" method="pen" text="qu[a]estionem, &amp; desolat negocia, &amp; facit superfluere superfluitatem" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/> 
+        <mark method="pen" name="bracket" place="left_margin"/> 
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

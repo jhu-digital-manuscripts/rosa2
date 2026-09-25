@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.230r.tif" pagination="223" reader="John Dee" signature="KK iij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>De morte</marginalia_text>
+                </position>
+            </language>
+            <translation>On death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Et oportet ut in hoc uerseris experimento longo, propter regionum &amp; morum uarietatem, no[n] enim secus continget, quâm ei qui herbas uult cognoscere, potest enim per longum experimentum inter simillima exiguam perspicere differentiam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Regionis co[n]suetudo</marginalia_text>
+                </position>
+            </language>
+            <translation>The custom of the region</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="corpus mortui insepultum iacebit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quid cu[m] cadavere fiet post viole[n]tam mortem.</marginalia_text>
+                </position>
+            </language>
+            <translation>What happens with the corpse after a violent death.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>De fama &amp; honore post mortem.</marginalia_text>
+                </position>
+            </language>
+            <translation>On the fame and honour after death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad eum enim deferetur haereditas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ad que[m] deferetur ha[e]reditas.</marginalia_text>
+                </position>
+            </language>
+            <translation>To whom the inheritance will be offered.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Electio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Electio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Election.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Gemini &amp; Sagitarius, &amp; Pisces, multiplex genus mortis significabunt, quod &amp; Saturnus &amp; Mars cu[m] simul domoninant[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="si in signis auium, aut quadrupedum, aut piscium fuerint" type="straight"/>
+        <underline language="LA" method="pen" text="Electio non proficit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.008v.tif" pagination="6" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Insulas Siluias" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The Isles of Sylley</marginalia_text>
+                    <location name="Isles of Scilly "/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vt Levvlino Principi VValliae liberior" type="straight"/>
+        <underline language="LA" method="pen" text="desuo feodo expugnare." type="straight"/>
+        <underline language="LA" method="pen" text="Siluias" type="double"/>
+        <underline language="LA" method="pen" text="Paganum de Canusijs" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

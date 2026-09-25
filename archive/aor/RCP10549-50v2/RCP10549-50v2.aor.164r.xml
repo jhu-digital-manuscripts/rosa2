@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.164r.tif" pagination="67" reader="John Dee" signature="e.ii."/>   
+    <annotation>
+        
+        <marginalia anchor_text="oportet emanet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>oportet emanat</marginalia_text>
+                </position>
+            </language>
+            <translation>It ought, it arises.</translation>     
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Quinque sunt igitur partes eius argumentationis quae per ratiocinatione[m] tractatur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quinq[ue] partes ratiocinatio[n]is</marginalia_text>
+                </position>
+            </language>
+            <translation>The five parts of deduction.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Quinquepertita" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quinquepartita .1.</marginalia_text>
+                </position>
+            </language>
+            <translation>Fivefold. 1.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Quatuor aute[m] partibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quadripertita .2</marginalia_text>
+                </position>
+            </language>
+            <translation>Fourfold. 2.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quae plurimas habet argumentatio partes, ea constat ex his quinque partibus. Secunda est quadripertita. Tertia tripertita. Dein bipertita, quod in co[n]trouersia est. De vnaquaque parte potest alicui videri posse argumentationem" type="straight"/>
+        <underline language="LA" method="pen" text="Scripto videlicet legis omisso, scriptoris sententia[m] consyderare debebat" type="straight"/>
+        <underline language="LA" method="pen" text="primo quidem decipi incommodum est, iterum stultum, tertio turpe" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="head"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">.1.</numeral>
+        <numeral place="right_margin">2.</numeral>
+        <numeral place="right_margin">.3.</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">5</numeral>
+        
+        <drawing anchor_text="Quae plurimas habet argumentatio partes, ea constat ex his quinque partibus. Secunda est quadripertita. Tertia tripertita. Dein bipertita, quod in co[n]trouersia est. De vnaquaque parte potest alicui videri posse argumentationem" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+        <drawing anchor_text="primo quidem decipi incommodum est, iterum stultum, tertio turpe" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+        
+    </annotation>
+</transcription>

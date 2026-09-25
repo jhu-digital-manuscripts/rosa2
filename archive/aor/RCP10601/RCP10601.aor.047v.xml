@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.047v.tif" pagination="94" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Orla[n]dinus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Orlandus</marginalia_text>     <!-- DO: Not sure who this is --> <!-- FSF: possibky Paulus Orlandinus; https://www.digitale-sammlungen.de/index.html?c=autoren_index&ab=Orlandinus%2C+Paulus&l=en; http://incunables.bodleian.ox.ac.uk/author/3964?concise=no&calling_page=browse -->
+                </position>                                                                           <!-- DO: Possibly; there also seems to have been someone called 'Orlandinus Glerolus', who appears to have been a poet. Not sure whom this refers to... -->
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uel herbam" type="straight"/>
+        <underline language="LA" method="pen" text="poeta Orla[n]dinus" type="straight"/>
+        <underline language="LA" method="pen" text="per mortem &amp; uiam mundo contrariam" type="straight"/>
+        <underline language="LA" method="pen" text="sit immortale" type="straight"/>
+        <underline language="LA" method="pen" text="uitae gratia" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

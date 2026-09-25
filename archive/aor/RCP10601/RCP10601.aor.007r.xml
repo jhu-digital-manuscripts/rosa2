@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.007r.tif" pagination="13" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Platychili" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Platychili</marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Platychile beetles.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cum angelis, aut cum spiritu age[n]te mundi praeditu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Angeli spiritus Mun[di] agens.</marginalia_text>
+                </position>
+            </language>
+            <translation>Angels. The driving spirit of the world.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tales facti essent, tales generarent" type="straight"/>
+        <underline language="LA" method="pen" text="Platychili" type="straight"/>
+        <underline language="LA" method="pen" text="b" type="straight"/>
+        <underline language="LA" method="pen" text="p" type="straight"/>
+        <underline language="LA" method="pen" text="m" type="straight"/>
+        <underline language="LA" method="pen" text="f" type="straight"/>
+        <underline language="LA" method="pen" text="u" type="straight"/>
+        <underline language="LA" method="pen" text="rationis, &amp; colloquutionis cum angelis" type="straight"/>
+        <underline language="LA" method="pen" text="spiritu age[n]te mundi" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- deprauatum esse -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- Lusitaniae in -->
+        
+        <errata amendedtext="[deleted]" copytext="," language="LA"/>
+        
+    </annotation>
+</transcription>

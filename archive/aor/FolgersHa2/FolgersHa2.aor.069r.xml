@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.069r.tif" pagination="457" reader="Harvey"/>	<!-- ABO 73right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Jurisconsulti Liber facetus, Sylua nuptialis. Theologi,
+						et Medici, Loci Comunes
+					</marginalia_text>
+					<book title="Sylva nuptialis"/>
+					<book title="Loci communes"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Manlij. sed ambo post Domenicu[m]: qui est
+						omniu[m] professorum delitia[e]. Pra[e]sertim cu[m] ) [quarto]
+					</marginalia_text>
+					<person name="Johannes Jacobus Manlius"/>
+					<person name="Lodovico Domenichi"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Guazzi: et [quarto] Mensa[e] Philosophica[e].
+					</marginalia_text>
+					<person name="Stefano Guazzo"/>
+					<book title="The civil conversation"/>
+					<book title="Mensa philosophica"/>
+				</position>
+			</language>
+			<translation>
+				A witty book for a lawyer is the Sylva nuptialis. For a theologian or doctor, it is
+				the Common Places of Manlius. But both come after Domenichi, who is
+				the delight of all professions, especially together with the fourth book of Guazzo's
+				Civil Conversation and the fourth book of the Mensa Philosophica.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						scolari.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Scholars.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						destramente.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skillfully.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						argutè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Cleverly.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						s[upr]a /
+					</marginalia_text>
+					<internal_ref>
+						<target ref="FolgersHa2:Ha2.013v" text="s[upr]a"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				[See] above.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Extremarum virium extensio in solo Ca[e]sare: sed
+						tanq[uam] aliud agente. Ita erat uel in tragicis Comicus.
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="pen" text="Extramarum virium extensio" type="straight"/>
+					<emphasis method="pen" text="in solo Ca[e]sare" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The extension of outward strengths is found only in Caesar, but only as something in action. 
+				In the same way as a comic actor was in a tragedy.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Multa voluuntur, et reuoluu[n]tur: nec vllus finis: sed tale dimidium plus Toto. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Many matters are turned over and over without any goal. But half of such is greater than the whole.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Malo viuere la[e]tus et pauper,
+						qu&amp;m tristis, et diues.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				I'd rather live happy and poor, than sad and rich.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="Vna gentildonna" type="straight"/>
+		<underline language="IT" method="pen" text="tutta malinconica" type="straight"/>
+		<underline language="IT" method="pen" text="giouane Padouano ueduta" type="straight"/>
+		<underline language="IT" method="pen" text="uien grandissimo" type="straight"/>
+		<underline language="IT" method="pen" text="cordoglio" type="straight"/>
+		<underline language="IT" method="pen" text="poca discetone di uoi asini" type="straight"/>
+		<underline language="IT" method="pen" text="moltitudin de' giouani" type="straight"/>
+		<underline language="IT" method="pen" text="e scolari, &amp; Padouani" type="straight"/>
+		<underline language="IT" method="pen" text="intentamente a guardare le donne" type="straight"/>
+		<underline language="IT" method="pen" text="che uisi cagneschi" type="straight"/>
+		<underline language="IT" method="pen" text="saltare adosso alle pouere donne" type="straight"/>
+		<underline language="IT" method="pen" text="cosi gran discretion" type="straight"/>
+		<underline language="IT" method="pen" text="ha Frate Arcangelo" type="straight"/>
+		<underline language="IT" method="pen" text="quel Frate" type="straight"/>
+		<underline language="IT" method="pen" text="suo amante" type="straight"/>
+		<underline language="IT" method="pen" text="Signora Aurora d'Este" type="straight"/>
+		<underline language="IT" method="pen" text="l'acutezza del loro" type="straight"/>
+		<underline language="IT" method="pen" text="intelletto, &amp; per gli ornamenti conuenienti a due rari spiriti" type="straight"/>
+		<underline language="IT" method="pen" text="ui darò già noia" type="straight"/>
+		<underline language="IT" method="pen" text="uengo all'alba a trouarui" type="straight"/>
+		<underline language="IT" method="pen" text="d'essere suegliata, come arriuo" type="straight"/>
+		<underline language="IT" method="pen" text="Signora Aurora" type="straight"/>
+		<underline language="IT" method="pen" text="Questi non sono i patti" type="straight"/>
+		<underline language="IT" method="pen" text="no mi dar noia" type="straight"/>
+		<underline language="IT" method="pen" text="sopra l'ignoranza" type="straight"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- uisi ca -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- poue -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- honora -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Signo -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ri -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Signo -->
+		
+	    	<!-- Left margin -->
+	    <mark method="pen" name="plus_sign" place="left_margin"/> <!-- uoi asini -->
+		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- re donne -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- me .. te -->
+		<mark language="IT" method="pen" name="plus_sign" place="left_margin" text="uengo all'alba a trouarui"/> 
+		<mark language="IT" method="pen" name="straight_quotation_mark" place="left_margin" text="d'essere suegliata, come arriuo"/> 
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="cosi gran discretion"/>
+	    <mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark: discretion -->
+		<mark method="pen" name="dot" place="intext"/> <!-- sbigottita, sentendo -->
+		<mark method="pen" name="comma" place="intext"/> <!-- solazzo, fuor -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="acutezza"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- due rari -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- noia. Il -->
+
+    </annotation>
+</transcription>

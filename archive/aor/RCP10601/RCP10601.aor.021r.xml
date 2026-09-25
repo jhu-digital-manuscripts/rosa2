@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.021r.tif" pagination="41" reader="John Dee" signature="c 5"/>
+    <annotation>
+        
+        <marginalia anchor_text="Seruiana, Dalmatica, Georgiana &amp; Coffitica" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Seruiana Dalmatica Georgiana Coffitica</marginalia_text>
+                    <location name="Serbia"/>
+                    <location name="Dalmatia"/>
+                    <location name="Georgia"/>
+                </position>
+            </language>
+            <translation>Serbian, Dalmatian, Georgian, </translation>   <!-- DO: Not sure what 'Coffitica' is --> <!-- FSF: I can't find it either; I was thinking of Corfu, but it doesn't seems to be the case -->  <!-- DO: I'm not sure if this is - or is related to - Coptic? -->
+        </marginalia>
+        
+        <marginalia anchor_text="literas Latinas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Latina[e] Litera[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Latin letters.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="additis aut deprauatis" type="straight"/>
+        <underline language="LA" method="pen" text="Seruiana" type="straight"/>
+        <underline language="LA" method="pen" text="Dalmatica" type="straight"/>
+        <underline language="LA" method="pen" text="Georgiana" type="straight"/>
+        <underline language="LA" method="pen" text="Coffitica" type="straight"/>
+        <underline language="LA" method="pen" text="Graecis &amp; Latinis &amp; Hebraeis" type="straight"/>
+        <underline language="LA" method="pen" text="literas Latinas fuisse sacrarum rerum &amp; mysteriorum custodiae addictas" type="straight"/>
+        <underline language="LA" method="pen" text="quòd in uarijs Ethruscorum" type="straight"/>
+        <underline language="LA" method="pen" text="certißima inuersionis" type="straight"/>
+        <underline language="LA" method="pen" text="prisco &amp; sancto" type="straight"/>
+        <underline language="LA" method="pen" text="ch" type="straight"/>
+        <underline language="LA" method="pen" text="a b c d e" type="straight"/>
+        
+        <errata amendedtext="Γ" copytext="[inverted gamma]" language="EL"/>
+        <errata amendedtext="Γ" copytext="[inverted gamma]" language="EL"/>
+        
+    </annotation>
+</transcription>

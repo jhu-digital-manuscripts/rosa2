@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.022v.tif" pagination="[22[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Et, ut ipsi Seneca[e] placuit, ut Geometria Philosophia[e] necessaria est, ia ipsi faber" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        faber geometria[e] necessari[us] q[uo]modo?
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In what way is a workman of geometry necessary?
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Geometriae testimonio statur" type="straight"/>
+        <underline language="LA" method="pen" text="Multa quidem adiuuant nos, neque partes nostri ideo sunt, Nam" type="straight"/>
+        <underline language="LA" method="pen" text="Geometria Philosophiae necessaria" type="straight"/>
+        <underline language="LA" method="pen" text="particeps dum haec uixerit disputatio" type="straight"/>
+
+    </annotation>
+</transcription>

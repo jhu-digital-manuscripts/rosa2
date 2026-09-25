@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.060r.tif" pagination="60" reader="John Dee" signature="Hiiij"/> 
+    <annotation>
+
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        hoc veru[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                This is true.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cursum suum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Comparatio cursus navigationis cu[m] motu scili[cet] <!-- FSF: to be completed -->  <!-- DO: Not sure, possibly some kind of abbreviation of 'scilicet' ('sciliz'?) Doesn't really look like it though... --> <!--JG: Scilicet makes most sense-->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The comparison of the voyage's direction with the movement of course. 
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="talis circulus aut linea demonstratiuus erit, ut" type="straight"/>
+        
+    </annotation>
+</transcription>

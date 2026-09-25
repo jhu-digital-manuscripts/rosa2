@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.094r.tif" pagination="94" reader="John Dee"/> 
+    
+    
+    <annotation>
+        
+        <marginalia anchor_text="Ocche" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>geese</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="letti di rete" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Beds of nets</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Why did you not so still?</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="ferro" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iern</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="quale non trouarono alcuno, percioche la gente n'era fuggita al monte, fuor che alcuni fanciulli, al" type="straight"/>
+        <underline language="IT" method="pen" text="Ocche" type="straight"/>
+        <underline language="IT" method="pen" text="letti di rete" type="straight"/>
+        <underline language="IT" method="pen" text="quali i nostri non tolsero alcuna" type="straight"/>
+        <underline language="IT" method="pen" text="accioche gl'Indiani si assicuraßero piu de Christiani" type="straight"/>
+        <underline language="IT" method="pen" text="vn tegame dì ferro" type="straight"/>
+        <underline language="IT" method="pen" text="pietre focate" type="straight"/>
+        <underline language="IT" method="pen" text="color di lucidissimo" type="straight"/>
+        
+        <mark method="pen" name="dot" place="right_margin"/>
+        <mark method="pen" name="dot" place="right_margin"/>
+        <mark method="pen" name="dot" place="right_margin"/>
+        <mark method="pen" name="dot" place="right_margin"/>
+        <mark method="pen" name="dot" place="right_margin"/>  
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- stimasse di -->
+        <mark method="pen" name="bracket" place="intext"/>  <!-- leggieri di -->
+        
+        <drawing anchor_text="ferro" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+        
+    </annotation>
+    
+</transcription>

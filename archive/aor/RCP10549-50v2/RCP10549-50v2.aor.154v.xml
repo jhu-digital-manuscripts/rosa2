@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.154v.tif" pagination="48" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="iubatus draco; ei dicit in aurem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>iubatus draco dicere alieni in aure[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>A crested snake; to speak into someone else's ear.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Exemplum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Exemplum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Exemplification.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Id sumitur iisdem de causis, quibus similitudo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quibus caußis sumitur Exemplu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>For what purposes exemplification is applied.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Imago; Haec sumitur aut laudis, aut vituperationis causa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>.Imago. 2.</marginalia_text>
+                </position>
+            </language>
+            <translation>Simile, 2.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Effictio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Effictio</marginalia_text>
+                </position>
+            </language>
+            <translation>Portrayal.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Notatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Notatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Characterisation.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="decima venitote" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>decima venire.</marginalia_text>
+                </position>
+            </language>
+            <translation>To come at the tenth hour.</translation>  
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="enim res tota toti rei necesse est similis sit, sed ad ipsum ad quod conferetur similitudine[m] habeat oportet" type="straight"/>
+        <underline language="LA" method="pen" text="Vituperationis, vt in odium, aut in inuidiam, aut in conte[m]ptione[m] adducat. Vt" type="straight"/>
+        <underline language="LA" method="pen" text="iubatus draco" type="straight"/>
+        <underline language="LA" method="pen" text="ei dicit in aurem" type="straight"/>
+        <underline language="LA" method="pen" text="asturconi" type="straight"/>
+        <underline language="LA" method="pen" text="in quibus sodalitium erat eodem die futuru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="decima venitote" type="straight"/>
+        
+        <mark language="LA" method="pen" name="pin" place="head" text="iubatus draco"/>
+        <mark language="LA" method="pen" name="Ichthys" place="head" text="dicere alieni in aure[m]"/>
+        
+        <mark method="pen" name="pin" place="left_margin"/>
+        <mark method="pen" name="Ichthys" place="left_margin"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- aedium ingreditur -->
+        
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing anchor_text="enim res tota toti rei necesse est similis sit, sed ad ipsum ad quod conferetur similitudine[m] habeat oportet" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.355r.tif" pagination="161" reader="John Dee" signature="Ll.i"/>   
+    <annotation>
+        
+        <marginalia anchor_text="patibiles &amp; dolores" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        patibiles dolores.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Enduring pain.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="infinitum odium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        infinitu[m] odiu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Infinite hate.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aphricanus
+                    </marginalia_text>
+                    <person name="Scipio Africanus"/>
+                </position>
+            </language>
+            <translation>
+                Scipio Africanus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="De L. Bruto" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        L. Brutus.
+                    </marginalia_text>
+                    <person name="Lucius Junius Brutus"/>
+                </position>
+            </language>
+            <translation>
+                Lucius Junius Brutus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Herculem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Hercules.
+                    </marginalia_text>
+                    <person name="Hercules"/>
+                </position>
+            </language>
+            <translation>
+                Hercules.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Theseus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Theseus.
+                    </marginalia_text>
+                    <person name="Theseus"/>
+                </position>
+            </language>
+            <translation>
+                Theseus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Scipio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Scipio.
+                    </marginalia_text>
+                    <person name="Scipio Africanus"/>
+                </position>
+            </language>
+            <translation>
+                Scipio Africanus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="An est quidquam similius insaniae quàm ira?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nihil insania[e] similius q[uam] ira
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                No insanity similar to wrath.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ira" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ira
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Wrath.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vinolentiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vinolentia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Wine-drinking.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fortitudinis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Fortitudo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Strength.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Chrysippus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Chrysippus
+                    </marginalia_text>
+                    <person name="Chrysippus"/>
+                </position>
+            </language>
+            <translation>
+                Chrysippus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sphaeri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Spha[e]rus.
+                    </marginalia_text>
+                    <person name="Sphaerus of Borysthenes"/>
+                </position>
+            </language>
+            <translation>
+                Sphaerus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Definitionis munus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Service of a definition.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="omnes insipientes insanos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        omnes insapie[n]tes insani.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                All unwise are insane.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[m]moue, senties" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Commoue se[n]ties.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Agitate, you perceive.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="bellatrix iracundia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Bellatrix iracu[n]dia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The warrior of passion.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Oratore[m] irasci minime decet, simulare non dedecet
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It is fitting that the speaker gets the least angry, and unsuitable that he pretends.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="AEsopu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Æsopus.
+                    </marginalia_text>
+                    <person name="Aesop"/>
+                </position>
+            </language>
+            <translation>
+                Aesop.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Accium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Accius.
+                    </marginalia_text>
+                    <person name="Lucius Accius"/>
+                </position>
+            </language>
+            <translation>
+                Lucius Accius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="monstra dicere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        monstra dicis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                You say show.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="metuo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        metuo. flere me
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I fear that I cry.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        morbosi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The sick.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        nota
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note!
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="scuto protexerit" type="straight"/>
+        <underline language="LA" method="pen" text="infinitum odium" type="straight"/>
+        <underline language="LA" method="pen" text="patibiles &amp; dolores" type="straight"/>
+        <underline language="LA" method="pen" text="Color, vox, oculi, spiritus, impotentia dictorum" type="straight"/>
+        <underline language="LA" method="pen" text="Quid Achille Homerico" type="straight"/>
+        <underline language="LA" method="pen" text="aduocatam" type="straight"/>
+        <underline language="LA" method="pen" text="satis est instructa, parata, armata" type="straight"/>
+        <underline language="LA" method="pen" text="Tracta definitionem fortitudinis" type="straight"/>
+        <underline language="LA" method="pen" text="in primis" type="straight"/>
+        <underline language="LA" method="pen" text="animi in patiendo ac perferendo summae legi parens sine timore. Licet enim insectemur" type="straight"/>
+        <underline language="LA" method="pen" text="metuo" type="straight"/>
+        <underline language="LA" method="pen" text="omnes de fortitudine tectam atque" type="straight"/>
+        <underline language="LA" method="pen" text="rabie" type="straight"/>
+        <underline language="LA" method="pen" text="monstra" type="straight"/>
+        <underline language="LA" method="pen" text="male olere" type="straight"/>
+        <underline language="LA" method="pen" text="ista bellatrix iracundia" type="straight"/>
+        <underline language="LA" method="pen" text="transactis &amp; praeteritis orationes scribimus" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <symbol name="Unidentified" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="tripunctus" place="head" text="infinitu[m] odiu[m]"/>
+        <mark language="LA" method="pen" name="tripunctus" place="right_margin" text="Nihil insania[e] similius q[uam] ira"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark language="LA" method="pen" name="tripunctus" place="tail" text="monstra dicis"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Ira" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="vinolentia" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Fortitudo" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

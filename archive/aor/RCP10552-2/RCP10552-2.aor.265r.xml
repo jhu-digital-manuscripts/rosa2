@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.265r.tif" pagination="43" reader="John Dee" signature="F.iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Gulielmus comes Glocestriae" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gulielmi Comitis gloc[estriae] Mors.</marginalia_text>
+                    <person name="William Fitz Robert, 2nd Earl of Gloucester"/>
+                </position>
+            </language>
+            <translation>The death of William, Earl of Gloucester.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>C</marginalia_text>
+                </position>
+            </language>
+            <translation>C.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Gulielmus comes Glocestriae dum filium non haberet, aegrè" type="straight"/>
+        <underline language="LA" method="pen" text="haereditatem inter filias diuidendam, Iohannem filium" type="straight"/>
+        <underline language="LA" method="pen" text="haeredem instituit" type="straight"/>
+        <underline language="LA" method="pen" text="Windeleshores" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="Celticam" copytext="Selticam" language="LA"/>
+        
+    </annotation>
+</transcription>

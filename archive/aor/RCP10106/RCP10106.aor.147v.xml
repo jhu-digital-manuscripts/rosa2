@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.147v.tif" pagination="294" reader="John Dee" signature="[t 3[v]]"/> 
+    <annotation>
+        
+    
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Minores parentibus semper liberi su[n]t nasce[n]do</marginalia_text>
+                </position>
+            </language>
+            <translation>The parents are always inferiors to the children they have begotten.</translation> <!-- M.B. Not sure of translation? -->
+        </marginalia>
+        
+        <marginalia anchor_text="Augustus de pantomimis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Augustus de pantomimis</marginalia_text>
+                    <person name="Augustus"/>
+                </position>
+            </language>
+            <translation>Augustus on the pantomime actors.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Galba" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Galba</marginalia_text>
+                    <person name="Galba"/>
+                </position>
+            </language>
+            <translation>Galba.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Proinde genere, specie, proprijs, differentibus, iugatis, adiunctis, co[n]sequentibus, antecedentibus, repugnantibus, causis, effectis, comparatione parium,              minoru[m], similis materia praebeturm sicut in tropos quoq[ue] omnes cadunt." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>locuru[m] repetitio</marginalia_text>
+                </position>
+            </language>
+            <translation>Repetition in passages.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="καθ’ ὑπερβολὴν" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>καθ’ ὑπερβολὴν</marginalia_text>
+                </position>
+            </language>
+            <translation>In a superlative degree.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ironia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ironia</marginalia_text>
+                </position>
+            </language>
+            <translation>Irony.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Liuius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Titus liuius</marginalia_text>
+                    <person name="Livy"/>
+                </position>
+            </language>
+            <translation>Livy.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Interim, inquit, usura fruar" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark language="LA" method="pen" name="pin" place="head" text="Minores parentibus semper liberi su[n]t nasce[n]do"/>
+        <mark method="pen" name="pin" place="left_margin"/>
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">1</numeral>
+       
+    </annotation>
+</transcription>

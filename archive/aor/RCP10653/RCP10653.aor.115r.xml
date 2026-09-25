@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.115r.tif" pagination="221" reader="John Dee" signature="T iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="linguam Scotoru[m]" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Lingua scotor[um]   
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The language of the Scots.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Scotoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="superbi regis Britanni" type="straight"/>
+        <underline language="LA" method="pen" text="ducis Pendae" type="straight"/>
+        
+    </annotation>
+</transcription>

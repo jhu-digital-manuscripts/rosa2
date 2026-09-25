@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.079r.tif" reader="Harvey" signature="[Iviii[r]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="most wightiest and nymblest felowes" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>actiue, &amp; nimble me[n]</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>most imployable.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="without defence; thought it nedeles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cautela abundans non nocet.</marginalia_text>
+                </position>
+            </language>
+            <translation>Abundant caution does not kill.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gedeons woonderful, &amp; Heroical Exploit, with 300. upon [the] whole host of [the]
+                    Madianites, terrified w[i]th A like sownd &amp; noise [etc]. Who imagining ther Enemyes to be amonst the[m], slew 
+                    on an other. A braue practis in
+                   </marginalia_text>
+                    <person name="Gideon"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tenebris.</marginalia_text>
+                </position>
+            </language>
+            <translation>Gedeons woonderful, &amp; Heroical Exploit, with 300. upon [the] whole host of [the]
+                Madianites, terrified w[i]th A like sownd &amp; noise [etc]. Who imagining ther Enemyes to be amonst the[m], slew 
+                on an other. A braue practis in darkeness.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="most wightiest" type="straight"/>
+        <underline language="EN" method="pen" text="nymblest" type="straight"/>
+        <underline language="EN" method="pen" text="bare heeded" type="straight"/>
+        <underline language="EN" method="pen" text="and barefooted" type="straight"/>
+        <underline language="EN" method="pen" text="easelye espie and see" type="straight"/>
+        <underline language="EN" method="pen" text="tergates and weapons they ha[n]ged" type="straight"/>
+        <underline language="EN" method="pen" text="led by the lumbarde" type="straight"/>
+        <underline language="EN" method="pen" text="fastnynge dartes and nayles" type="straight"/>
+        <underline language="EN" method="pen" text="clamme vp, and" type="straight"/>
+        <underline language="EN" method="pen" text="voyde without defence" type="straight"/>
+        <underline language="EN" method="pen" text="nedeles, to defende" type="straight"/>
+        <underline language="EN" method="pen" text="to blowe vp their trumpettes" type="straight"/>
+        <underline language="EN" method="pen" text="make greate ado" type="straight"/>
+        <underline language="EN" method="pen" text="Marius manfullye" type="straight"/>
+        <underline language="EN" method="pen" text="encouragynge them in this" type="straight"/>
+        <underline language="EN" method="pen" text="beganne fyercely to assaute" type="straight"/>
+        <underline language="EN" method="pen" text="men of armes" type="straight"/>
+        <underline language="EN" method="pen" text="the castell was wonne on the backe" type="straight"/>
+        <underline language="EN" method="pen" text="Marius to" type="straight"/>
+        <underline language="EN" method="pen" text="Cornelius cons." type="straight"/>
+        <underline language="EN" method="pen" text="Sardinia" type="straight"/>
+        <underline language="EN" method="pen" text="by this policie" type="straight"/>
+        <underline language="EN" method="pen" text="by nyght" type="straight"/>
+        <underline language="EN" method="pen" text="of his host in imbushment" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <mark method="pen" name="horizontal_bar" place="head"/>
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="most wightiest"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="nymblest"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="bare heeded"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="barefooted"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="dartes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="nayles"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="without defence"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="to blowe vp their trumpettes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="make greate ado"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="beganne fyercely to assaute"/>
+        <mark method="pen" name="comma" place="intext"/> <!--within being-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the castell was wonne on the backe"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="of his host in imbushment"/>
+        
+    </annotation>
+</transcription>

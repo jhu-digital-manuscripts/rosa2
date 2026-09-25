@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.303r.tif" pagination="157" reader="John Dee" signature="Ooo"/>
+    <annotation>
+        
+        <marginalia anchor_text="rex de Cunnach" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Rex de Connach         
+                    </marginalia_text>
+                    <person name="Felim Ua Conchobair, King of Connacht"/>
+                </position>
+            </language>
+            <translation>
+                Felim Ua Conchobair, King of Connacht.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Comes Rochard[us]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Richardus Comes [Glouern deleted] Cornub. 
+                    </marginalia_text>
+                    <person name="Richard, 1st Earl of Cornwall"/>
+                </position>
+            </language>
+            <translation>
+                Richard, 1st Earl of Cornwall.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Comiti Gilberto Marescallo" type="straight"/>
+        <underline language="LA" method="pen" text="Comitis Richardi Marescalli" type="straight"/>
+        <underline language="LA" method="pen" text="rex de Cunnach" type="straight"/>
+        <underline language="LA" method="pen" text="Interim Comes Richard[us], qui se precibus omnium relgiosorum Angliae comme[n]dauerat, per dei gratiam &amp; precum fideliu[m]" type="straight"/>
+        
+    </annotation>
+</transcription>

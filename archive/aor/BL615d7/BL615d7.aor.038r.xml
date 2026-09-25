@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.038r.tif" pagination="38" reader="John Dee"/> 
+    <annotation>
+        
+       <marginalia anchor_text="XII di Maggio del detto anno XCII" hand="Italian" method="pen">
+           <language ident="LA">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>1492: Maij 12</marginalia_text>
+               </position>
+           </language>
+           <translation>12 May 1492.</translation>
+       </marginalia> 
+        
+        <marginalia anchor_text="Palos" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Palas hauen</marginalia_text> 
+                    <location name="Palos de la Frontera"/>
+                </position>
+            </language>
+        </marginalia>       
+        
+        <marginalia anchor_text="tre di Agosto" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1492 Agusti 3⁰</marginalia_text> 
+                </position>
+            </language>
+            <translation>3rd August 1492.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="&amp; da quel punto fu diligentissimo l'Ammiraglio a scriuer di giorno in giorno minutamente tutto quello, che succesdeua nel viaggio, specificando i venti, che sofficauano, quanto viaggio egli facea con ciascuno, &amp; con quali vele, &amp; correnti, &amp; quali cose per la via egli vedeua, vccelli, ò pesci, od altri così fatti" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note what things are to be noted in a Voyage by sea:</marginalia_text> 
+                </position>
+            </language>
+        </marginalia> 
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Note. go men</marginalia_text> 
+                </position>
+            </language>
+        </marginalia> 
+        
+        <underline language="IT" method="pen" text="per Palos" type="straight"/>
+        <underline language="IT" method="pen" text="per esser quella terra obligata a seruir le loro Altezze" type="straight"/>
+        <underline language="IT" method="pen" text="tre mesi" type="double"/>
+        <underline language="IT" method="pen" text="con due Carauelle" type="straight"/>
+        <underline language="IT" method="pen" text="Santa Maria" type="straight"/>
+        <underline language="IT" method="pen" text="Pinta" type="straight"/>
+        <underline language="IT" method="pen" text="della Nigna" type="straight"/>
+        <underline language="IT" method="pen" text="con nouanta huomini" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; da quel punto fu diligentissimo l'Ammiraglio a scriuer di giorno in giorno minutamente tutto quello, che succesdeua nel viaggio, specificando i venti, che sofficauano, quanto viaggio egli facea con ciascuno, &amp; con quali vele, &amp; correnti, &amp; quali cose per la via egli vedeua, vccelli, ò pesci, od altri così fatti" type="straight"/>
+        <underline language="IT" method="pen" text="minutamente tutto" type="double"/>
+        <underline language="IT" method="pen" text="quali vele" type="triple"/>
+        <underline language="IT" method="pen" text="&amp; correnti" type="double"/>
+        
+    </annotation>   
+</transcription>

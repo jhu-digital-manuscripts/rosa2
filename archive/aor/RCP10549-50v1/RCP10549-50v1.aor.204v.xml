@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.204v.tif" pagination="388" reader="John Dee" signature="[bbb.ii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Persas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Persa[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Persians.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="epulabantur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        epulari.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To feast.
+            </translation>
+        </marginalia>
+
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Patie[n]tia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Patience.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Decii" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Decij
+                    </marginalia_text>
+                    <person name="Decia"/>
+                </position>
+            </language>
+            <translation>
+                People of the Decia.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cementis ac tignis tectorum" type="straight"/>
+        <underline language="LA" method="pen" text="expleturas putauerunt" type="straight"/>
+        <underline language="LA" method="pen" text="instrumentum" type="straight"/>
+        <underline language="LA" method="pen" text="non fortuito, sed oblato incendio" type="straight"/>
+        <underline language="LA" method="pen" text="Hanc ego vim Pontifices, hoc scelus, hunc furorem, meo corpore opposito, à bonorum omnium ceruicibus depuli: omnémque impetum discordiarum,              omnem diu collectam vim improborum, quae inueterata compresso odio atque tacito iam erumpebat in actum, tam audaces duces excepi meo corpore: in me vno Consulares faces iactae manibus Tribunitiis: in" type="straight"/>
+        <underline language="LA" method="pen" text="se in medios hostes ad perspicuam mortem pro salute exercitus iniecisse" type="straight"/>
+        <underline language="LA" method="pen" text="futor tuus inanes faciebat" type="straight"/>
+        <underline language="LA" method="pen" text="sciatis non hominibus istum, sed virtutibus hostem semper fuisse, me expulso" type="straight"/>
+        <underline language="LA" method="pen" text="quanta vis illa fuerit oriens &amp; congregata" type="straight"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+    </annotation>
+</transcription>

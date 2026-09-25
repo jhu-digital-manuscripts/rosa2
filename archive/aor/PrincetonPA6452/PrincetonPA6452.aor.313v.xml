@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.313v.tif" pagination="610" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> 
+                        Tertio Strategemati non est successum: vel nimia mora: vel detectione.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                They did not succeed in the third stratagem, either because of too much delay, or disclosure.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Thoas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> 
+                        Thoas, acerrimum Suoru[m] apud Antiochu[m] Instrumentum: i[nfr]a, 612. 654.
+                    </marginalia_text>
+                    <person name="Thoas"/> 
+                    <person name="Antiochus III the Great"/>
+                    <internal_ref text="i[nfr]a">
+                        <target ref="PrincetonPA6452:00000634" text="612"/>
+                        <target ref="PrincetonPA6452:00000676" text="654"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                [For] Thoas, the sharpest instrument among his peers around Antiochus. [See] below, 612, 654.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        En singulare etiam Ætolorum, uti uidetur, strategema, i[nfr]a 655. seu perpetratum ab Antiocho facinus, pra[e]textu colloquij: 
+                        seu designatum tantumm[odo] ab Ætolis: seu etiam rumor duntaxat ab eorum Legatis astutè fictus pro tempore.
+                    </marginalia_text>
+                    <person name="Antiochus III the Great"/>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000677" text="655"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Cunning politicians for fine designes, &amp; braue exploits.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                See also the remarkable stratagem by the Aetolians, it seems, on below 655, which action was either carried out by Antiochus under the 
+                pretext of a conversation, or just planned by the Aetolians; or even merely a rumor cleverly invented for the time being by their ambassadors.
+                Cunning politicians for fine designes, &amp; braue exploits.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="armis Aetoli, sine iniuria cuiusquam" type="straight"/>
+        <underline language="LA" method="pen" text="oportuit in co[n]silio fraude" type="straight"/>
+        <underline language="LA" method="pen" text="omnia in maturandam perniciem eorum qui fecera[n]t, sunt acta." type="straight"/>
+        <underline language="LA" method="pen" text="Dux regia" type="straight"/>
+        <underline language="LA" method="pen" text="diem ac noctem in scrutandis thesauris tyranni co[n]sumpsit" type="straight"/>
+        <underline language="LA" method="pen" text="Aetoli uelut capta" type="straight"/>
+        <underline language="LA" method="pen" text="in praedam uersi" type="straight"/>
+        <underline language="LA" method="pen" text="indignitas rei" type="straight"/>
+        <underline language="LA" method="pen" text="simul conte[m]ptus" type="straight"/>
+        <underline language="LA" method="pen" text="animos Laced[a]emonijs" type="straight"/>
+        <underline language="LA" method="pen" text="ut caput agend[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="regij generis alique[m] in" type="straight"/>
+        <underline language="LA" method="pen" text="stirpis erat puer" type="straight"/>
+        <underline language="LA" method="pen" text="educatus cum liberis tyra[n]ni" type="straight"/>
+        <underline language="LA" method="pen" text="regiam inuadunt" type="straight"/>
+        <underline language="LA" method="pen" text="Alexamenum cum paucis" type="straight"/>
+        <underline language="LA" method="pen" text="resistentem obtruncant" type="straight"/>
+        <underline language="LA" method="pen" text="Aetoli circa" type="straight"/>
+        <underline language="LA" method="pen" text="congregati c[a]eduntur" type="straight"/>
+        <underline language="LA" method="pen" text="Philopoemen audita" type="straight"/>
+        <underline language="LA" method="pen" text="c[a]ede tyranni" type="straight"/>
+        <underline language="LA" method="pen" text="profectus Lacedaemone[m]" type="straight"/>
+        <underline language="LA" method="pen" text="oratione habita, qualis habenda ab Alexameno fuerat, societati Achaeoru[m] Lacedaemonios" type="straight"/>
+        <underline language="LA" method="pen" text="circa Chalcidem Thoas" type="straight"/>
+        <underline language="LA" method="pen" text="Euthymidam principem" type="straight"/>
+        <underline language="LA" method="pen" text="Herodorum Cianum mercatore[m]" type="straight"/>
+        <underline language="LA" method="pen" text="potente[m] Chalcide propter diuitias" type="straight"/>
+        <underline language="LA" method="pen" text="pr[a]eparatis ad proditionem ijs" type="straight"/>
+        <underline language="LA" method="pen" text="Euthymid[a]e factionis erant" type="straight"/>
+        <underline language="LA" method="pen" text="nequaqua[m] eandem fortuna[m], qua" type="straight"/>
+        <underline language="LA" method="pen" text="Euthymidas ab Athenis" type="straight"/>
+        <underline language="LA" method="pen" text="Herodorus ad Throniu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Thoas duce[n]tos equites" type="straight"/>
+        <underline language="LA" method="pen" text="inde, cum" type="straight"/>
+        <underline language="LA" method="pen" text="Chalcide[m] traijceret" type="straight"/>
+        <underline language="LA" method="pen" text="copias nocturnis maximè itineribus" type="straight"/>
+        <underline language="LA" method="pen" text="quanta poterant celeritate, Chalcide[m]" type="straight"/>
+        <underline language="LA" method="pen" text="penes quos tu[m] summa reru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="seu ipsi per se suspicati" type="straight"/>
+        <underline language="LA" method="pen" text="seu indicata re" type="straight"/>
+        <underline language="LA" method="pen" text="pauidi nihil usqua[m] spei, nisi in fuga ponebant" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; prodi &amp; deseri no[n] patria[m] modò" type="straight"/>
+        <underline language="LA" method="pen" text="consilio tali animum adieceru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="Eretrienses Caristiosq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="suarum fortunarum in eade[m] insula" type="straight"/>
+        <underline language="LA" method="pen" text="Romanam" type="straight"/>
+        <underline language="LA" method="pen" text="societatem respicerent" type="straight"/>
+        <underline language="LA" method="pen" text="ne sinerent Aetolorum Chalcide[m] fieri" type="straight"/>
+        <underline language="LA" method="pen" text="Euboeam habituros" type="straight"/>
+        <underline language="LA" method="pen" text="Chalcide[m]" type="straight"/>
+        <underline language="LA" method="pen" text="fuisse Macedonas dominos" type="straight"/>
+        <underline language="LA" method="pen" text="minus tolerabiles" type="straight"/>
+        <underline language="LA" method="pen" text="futuros Aetolos" type="straight"/>
+        <underline language="LA" method="pen" text="Romanorum maximè respectus ciuitates mouit" type="straight"/>
+        <underline language="LA" method="pen" text="uirtutem nuper" type="straight"/>
+        <underline language="LA" method="pen" text="uictoria iustitiam" type="straight"/>
+        <underline language="LA" method="pen" text="His tuenda moenia Chalcidis oppidani" type="straight"/>
+        <underline language="LA" method="pen" text="caduceator primu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="deinde legati ad Aetolos missi" type="straight"/>
+        <underline language="LA" method="pen" text="suo dicto factoue" type="straight"/>
+        <underline language="LA" method="pen" text="socij atq[ue] amici ad se oppugnandos uenirent" type="straight"/>
+        <underline language="LA" method="pen" text="Thoas dux" type="straight"/>
+        <underline language="LA" method="pen" text="non" type="straight"/>
+        <underline language="LA" method="pen" text="ad liberandos ab Romanis uenire sese" type="straight"/>
+        <underline language="LA" method="pen" text="sple[n]didiore nunc" type="straight"/>
+        <underline language="LA" method="pen" text="multo grauiore uinctos esse" type="straight"/>
+        <underline language="LA" method="pen" text="cum pr[a]esidiu[m] Macedonu[m] in" type="straight"/>
+        <underline language="LA" method="pen" text="Se uerò negare Chalcidenses" type="straight"/>
+        <underline language="LA" method="pen" text="aut seruire ulli" type="straight"/>
+        <underline language="LA" method="pen" text="praesidio cuiusqua[m] egere" type="straight"/>
+        <underline language="LA" method="pen" text="Thoas &amp; Aetoli" type="straight"/>
+        <underline language="LA" method="pen" text="omnem in eo, ut improuiso" type="straight"/>
+        <underline language="LA" method="pen" text="iustu[m] bellu[m] oppugntionemq[ue] urbis mari ac" type="straight"/>
+        <underline language="LA" method="pen" text="haudquaqua[m] pares" type="straight"/>
+        <underline language="LA" method="pen" text="Euthymidas posteaquam" type="straight"/>
+        <underline language="LA" method="pen" text="profectosq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="Thebis Athenas redijt" type="straight"/>
+        <underline language="LA" method="pen" text="Herodorus" type="straight"/>
+        <underline language="LA" method="pen" text="speculatoria naue" type="straight"/>
+        <underline language="LA" method="pen" text="quid mor[a]e esset" type="straight"/>
+        <underline language="LA" method="pen" text="re[m] omissam à socijs uidit" type="straight"/>
+
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="LA" method="pen" name="equal_sign" place="left_margin" text="iustu[m] bellu[m] oppugntionemq[ue] urbis mari ac"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- ad -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- con -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- ty -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- principi -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- fu -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Ca -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- fu -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- iuuentu -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- ca -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- impro -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- He -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Thro -->
+        
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="diem ac noctem in scrutandis thesauris tyranni co[n]sumpsit"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--uenierunt. Philopoemne-->
+        <mark method="pen" name="apostrophe" place="intext"/> <!-- fuerat -->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--accessit. Iisde[m]-->
+        <mark method="pen" name="comma" place="intext"/> <!-- Thoas per-->
+        <mark method="pen" name="dot" place="intext"/> <!--diuitias, pr[a]eparatis-->
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="uirtutem nuper"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="uictoria iustitiam"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- habuissent. Se -->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="speculatoria"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--repetit. Quintius-->
+        
+    </annotation>
+</transcription>

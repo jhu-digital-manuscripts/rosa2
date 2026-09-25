@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.074r.tif" pagination="131" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia anchor_text="fatalis dux" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Magnus semper, et fatalis Dux, Furius Camillus.</marginalia_text>
+                    <person name="Marcus Furius Camillus"/>
+                </position>
+            </language>
+            <translation>Always a great and fateful leader, Furius Camillus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Pra[e]da[e] divisio mixta: maxima pars Qua[e]stori; minor militi data. Romana Oeconomia publica: s[upr]a, i[nfr]a. Diuisio Oligarchica magis, 
+                        quàm Democratica: aut etiam Democratica, ad publicos, non privatos vsus. Quid mirum, si in Monarchia, plus Qua[e]stori, quàm Militi distribuatur? 
+                        Stipendium, Militis merces; vt operetur Regi conductori, non sibi: nisi quatenùs aliqua incidunt priuata spolia, tolerata magis, quàm concessa: 
+                        aut quatenùs Dux interdum aliquid indulget animandi causa. In Monarchia, regula est; Omnis Honor, et Qua[e]stus Regis: Officia et pra[e]mia, 
+                        non debita, sed favores, et indulgentia[e]. Prudens Rex respiciet Virtutem; et Meritorum habebit rationem honorificam.
+                    </marginalia_text>
+                    <emphasis method="pen" text="pra[e]da[e] diuisio" type="straight"/>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000071" text="s[upr]a"/>
+                        <target ref="PrincetonPA6452:00000235" text="i[nfr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>A varied distribution of booty. The bigger part is given to the quaestor, the smaller one to the soldiers. The Roman public administration, 
+                above, below. Rather an oligarchical than a democratic distribution, or even democratic for public, not private benefit. Small wonder, if in a monarchy 
+                more is given to the quaestor than to the soldiers! There is pay, the soldier's salary, so that he is at work for the king as his employer, not for himself; 
+                except insofar as some private spoils happen to come available, tolerated rather than granted, or insofar as a leader occasionally grants some favour 
+                for the sake of animating. In a monarchy the rule is: all honor and all profit is the King’s; services and rewards are favours and kindnesses, 
+                not obligations. A prudent king will have regard for virtue and will have an honorable system of rewards.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fatalis dux ad excidium illius" type="straight"/>
+        <underline language="LA" method="pen" text="feruandaeq[ue] patriae" type="straight"/>
+        <underline language="LA" method="pen" text="Furius Camillus dictator dictus" type="straight"/>
+        <underline language="LA" method="pen" text="Omnia repentè mutauerat" type="straight"/>
+        <underline language="LA" method="pen" text="imperator mutatus" type="straight"/>
+        <underline language="LA" method="pen" text="alia spes, alius" type="straight"/>
+        <underline language="LA" method="pen" text="animus hominum" type="straight"/>
+        <underline language="LA" method="pen" text="fortuna quoq[ue] alia urbis uideri" type="straight"/>
+        <underline language="LA" method="pen" text="Omnium primum" type="straight"/>
+        <underline language="LA" method="pen" text="pauore fugerant" type="straight"/>
+        <underline language="LA" method="pen" text="more militari animaduertit" type="straight"/>
+        <underline language="LA" method="pen" text="ne hostis maximè" type="straight"/>
+        <underline language="LA" method="pen" text="time[n]dus" type="straight"/>
+        <underline language="LA" method="pen" text="expectatione hominu[m] maiore q[uam] spe" type="straight"/>
+        <underline language="LA" method="pen" text="summa ratione consilioq[ue] acta" type="straight"/>
+        <underline language="LA" method="pen" text="fortuna etia[m], ut sit, secuta est" type="straight"/>
+        <underline language="LA" method="pen" text="non praelio tantu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="castris quoq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="ingentiq[ue] praeda est potitus" type="straight"/>
+        <underline language="LA" method="pen" text="maxima ad quaestorem" type="straight"/>
+        <underline language="LA" method="pen" text="ita multum militi" type="straight"/>
+        <underline language="LA" method="pen" text="densioraq[ue] castella" type="straight"/>
+        <underline language="LA" method="pen" text="ne quis iniussu pugnaret" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--ser-->
+        <mark method="pen" name="equal_sign" place="right_margin"/> 
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="fatalis dux ad excidium illius"/>
+        <mark method="pen" name="dot" place="intext"/> <!--hominum, fortuna-->
+        <mark method="pen" name="dot" place="intext"/> <!--animaduertit, efficitq[ue]-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="consilioq[ue]"/>
+        <mark method="pen" name="dot" place="intext"/> <!--acta, fortuna-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="fortuna"/>
+        
+    </annotation>
+</transcription>

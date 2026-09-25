@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.169v.tif" pagination="338" reader="John Dee" signature="[y[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Immutabile est quod factum est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Immutabile est quod factu[m] est</marginalia_text>
+                </position>
+            </language>
+            <translation>The act is unalterable.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="affectus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Affectus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Emotion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Virginius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>virginius</marginalia_text>
+                    <person name="Verginius Flavus"/>
+                </position>
+            </language>
+            <translation>Verginius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Abdicationum formae sunt duae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Abdicationu[m] forma[e] dua[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Two forms of disowning.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="causas abdicationis, deme[n]tiae, malae tractationis, orbaru[m] nuptias" type="straight"/>
+        <underline language="LA" method="pen" text="immutabile est enim, quod factum" type="straight"/>
+        
+        <mark language="LA" method="pen" name="Ichthys" place="head" text="Immutabile est quod factu[m] est"/>
+        <mark method="pen" name="Ichthys" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

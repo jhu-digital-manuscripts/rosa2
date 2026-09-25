@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>212</totalPages>
+  <dates>
+    <startDate>1549</startDate>
+    <endDate>1549</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>la</language>
+      <title>De nauigatione libri tres : quibus mathematicae disciplinae explicantur / ab Iacobo à Saa ... nuper in lucem editi.</title>
+      <textId></textId>
+      <pages end="001r" start="106v">212</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>De nauigatione libri tres : quibus mathematicae disciplinae explicantur / ab Iacobo à Saa ... nuper in lucem editi.</title>
+      <commonName>Jacobo a Saa, De navigatione (Paris, 1549)</commonName>
+      <dateLabel>1549</dateLabel>
+      <currentLocation>Cambridge, England</currentLocation>
+      <repository>Cambridge University Library</repository>
+      <shelfmark>CUL R*.5.27(F)</shelfmark>
+      <author>
+        <name>Saa, Jacobus a</name>
+        <id></id>
+      </author>
+      <reader>
+        <name>John Dee</name>
+        <id>http://www.isni.org/isni/0000000122785193</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Dee-corpus/Saa</website>
+      <note>Record: http://idiscover.lib.cam.ac.uk/primo-explore/fulldisplay?docid=44CAM_CAMBRDGEDB3862264&amp;context=L&amp;vid=44CAM_PROD&amp;search_scope=CAM_ALL&amp;isFrbr=true&amp;tab=cam_lib_coll&amp;lang=en_US</note>
+      <note>Publisher note: Parisijs : Ex officina Reginaldi Calderij, &amp; Claudij eius filij, 1549.</note>
+      <note>106 leaves : diagrams ; 17 cm. (8vo)</note>
+      <note>Manuscript annotation on title page: Joannes : Deeus: 1552 : . MS annotations, underlinings and marginal nota in the hand of Dee, and a pencil doodle on the verso of leaf 106 of a breastplate with Dee's hieroglyphical monad (see Sherman, John Dee: The politics of reading and writing in the English renaissance, p. 88). Previous shelfmark: Cc.11.45 UkCU
+Volvelles on leaf 98 v and 103 v both intact. UkCU</note>
+    </bibliography>
+  </bibliographies>
+</book>

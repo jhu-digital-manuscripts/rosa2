@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.311r.tif" pagination="605" reader="Harvey" signature="eee3[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Philopoemen" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        Philopoemen, a cunning fine Captain, &amp; most expert Soldiour. A skilfull &amp; perfect master of his Art. 
+                    </marginalia_text>
+                    <person name="Philopoemen"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        quô minus roboris; eô plus artis necessarium, et assuetudinis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Philopoemen, a cunning fine Captain, and most expert Soldiour. A skilfull and perfect master of his Art. The less strength, the more skill 
+                and experience is needed.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        i[nfr]a, 643.
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000665" text="643"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                [See] below, 643.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Duae res simul inopinatae" type="straight"/>
+        <underline language="LA" method="pen" text="praeoccupatus" type="straight"/>
+        <underline language="LA" method="pen" text="locus" type="straight"/>
+        <underline language="LA" method="pen" text="primo agmini occurrisse" type="straight"/>
+        <underline language="LA" method="pen" text="loca confragosa" type="straight"/>
+        <underline language="LA" method="pen" text="Philopoemen" type="straight"/>
+        <underline language="LA" method="pen" text="praecipuae in" type="straight"/>
+        <underline language="LA" method="pen" text="ducendo agmine" type="straight"/>
+        <underline language="LA" method="pen" text="locisq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="nec belli" type="straight"/>
+        <underline language="LA" method="pen" text="etiam in pace ad id maximè animum exercuerat" type="straight"/>
+        <underline language="LA" method="pen" text="Vbi iter quópiam" type="straight"/>
+        <underline language="LA" method="pen" text="ad difficilem transitu saltu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="loci natura[m]" type="straight"/>
+        <underline language="LA" method="pen" text="secum ipse agitabat" type="straight"/>
+        <underline language="LA" method="pen" text="comites" type="straight"/>
+        <underline language="LA" method="pen" text="hostis eo loco apparuisset" type="straight"/>
+        <underline language="LA" method="pen" text="si à fronte" type="straight"/>
+        <underline language="LA" method="pen" text="ab latere" type="straight"/>
+        <underline language="LA" method="pen" text="à tergo adoriretur" type="straight"/>
+        <underline language="LA" method="pen" text="instructos" type="straight"/>
+        <underline language="LA" method="pen" text="inconditu[m] agmen" type="straight"/>
+        <underline language="LA" method="pen" text="tantummodo aptu[m] uiae" type="straight"/>
+        <underline language="LA" method="pen" text="quem locu[m] ipse" type="straight"/>
+        <underline language="LA" method="pen" text="quot armatus, aut quo genere" type="straight"/>
+        <underline language="LA" method="pen" text="armorum" type="straight"/>
+        <underline language="LA" method="pen" text="plurimum enim interesse" type="straight"/>
+        <underline language="LA" method="pen" text="quò impedimenta" type="straight"/>
+        <underline language="LA" method="pen" text="quò farcinas, quò" type="straight"/>
+        <underline language="LA" method="pen" text="quali praesidio custodiret" type="straight"/>
+        <underline language="LA" method="pen" text="pergere" type="straight"/>
+        <underline language="LA" method="pen" text="repetere" type="straight"/>
+        <underline language="LA" method="pen" text="castris quoq[ue] quem locum" type="straight"/>
+        <underline language="LA" method="pen" text="munimento amplecteretur" type="straight"/>
+        <underline language="LA" method="pen" text="opportuna aquatio" type="straight"/>
+        <underline language="LA" method="pen" text="pabuli" type="straight"/>
+        <underline language="LA" method="pen" text="mouenti tutum maximè iter" type="straight"/>
+        <underline language="LA" method="pen" text="qu[a]e forma agminis" type="straight"/>
+        <underline language="LA" method="pen" text="His curis cogitationibusq[ue] ita ab ineunte [a]etate animu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="nulla ei noua in tali" type="straight"/>
+        <underline language="LA" method="pen" text="omnium primu[m] agmen constituit" type="straight"/>
+ 
+        <symbol name="Bisected_circle" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/> 
+        <symbol name="Mars" place="right_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- exi -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- praeoccupa -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- tur -->
+        <mark method="pen" name="dash" place="right_margin"/> <!--pabu-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--for-->
+        
+        <mark language="LA" method="pen" name="straight_quotation_mark" place="intext" text="locisq[ue]"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="solerti[a]e"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="nec belli"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="in pace"/>
+        <mark method="pen" name="straight_quotation_mark" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--uenisset, co[n]templatus-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="comites"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="loco"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="locu[m]"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="genere"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="praesidio"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="castris"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="munimento"/>
+        <mark method="pen" name="dot" place="intext"/> <!--iter, que-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="forma"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="noua"/>
+        <mark method="pen" name="apostrophe" place="intext"/> <!--esset. Et-->
+        <mark method="pen" name="comma" place="intext"/> <!--equites binos-->
+        
+    </annotation>
+</transcription>

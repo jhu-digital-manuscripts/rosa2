@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.014v.tif" reader="Harvey" signature="[Avii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Omnia Ordine, et Industria.</marginalia_text>
+                    <emphasis method="pen" text="Ordine" type="straight"/>
+                    <emphasis method="pen" text="Industria" type="straight"/>
+                </position>
+            </language>
+            <translation>Everything in order and by diligence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Annibal; Italy; Scipio; Aphrike" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Com. Purl. l.I.76.</marginalia_text>
+                    <book title="The preceptes of warre"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hannibal in Italy: Scipio in Afrigue. }
+                    Ower Army to be Lodgid in [the] marshes, or pale of ower enemyes.</marginalia_text>
+                    <emphasis method="pen" text="Hannibal in Italy" type="straight"/>
+                    <emphasis method="pen" text="Scipio in Afrigue" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vide singulare ex[emplu]m de Agesilao, et Tysapherne, cap. 8.</marginalia_text> <!--image_0061-2-->
+                    <person name="Agesilaus II"/>
+                    <person name="Tissaphernes"/>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0061" text="cap. 8"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See the singular example of Agesilaus and Tissaphernes, chapter 8.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>If he chaunce to gett [the] cheife City, where his Enemyes Munitio[n], and Treasure lyeth; no hope
+                    in a manner of recoouery.</marginalia_text>
+                    <emphasis method="pen" text="cheife City" type="straight"/>
+                    <emphasis method="pen" text="cheife City" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>{ the 3. example in [the] next chapt. Agesilaus cap. 8. Fabius Max. Curius.
+                    </marginalia_text>
+                    <person name="Agesilaus II"/>
+                    <person name="Fabius Maximus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Agathocles.
+                    </marginalia_text>
+                    <person name="Agathocles of Syracuse"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Hasdrubal" type="straight"/>
+        <underline language="EN" method="pen" text="warre of Carthage" type="straight"/>
+        <underline language="EN" method="pen" text="ayenst Spain" type="straight"/>
+        <underline language="EN" method="pen" text="deuided" type="straight"/>
+        <underline language="EN" method="pen" text="discomfited into sondrye cities" type="straight"/>
+        <underline language="EN" method="pen" text="with the assaut of so many and dyuers cities" type="straight"/>
+        <underline language="EN" method="pen" text="places of rest, for all" type="straight"/>
+        <underline language="EN" method="pen" text="Anniball taryed styl" type="straight"/>
+        <underline language="EN" method="pen" text="conueyeng his into Aphrike" type="straight"/>
+        <underline language="EN" method="pen" text="him home to" type="straight"/>
+        <underline language="EN" method="pen" text="conductynge his armie" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="head" text="Omnia Ordine, et Industria."/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="conueyeng his into Aphrike"/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--grey chalk bar, through text and left margin-->
+        <mark method="pen" name="dot" place="intext"/> <!--cities, and-->
+        <mark method="pen" name="dot" place="intext"/> <!--Italy, Scipio-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="him home to"/>
+        <mark method="pen" name="dot" place="intext"/> <!--countrey, and-->
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

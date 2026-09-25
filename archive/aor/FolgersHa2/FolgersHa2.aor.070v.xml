@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.070v.tif" pagination="460" reader="Harvey"/>	<!-- ABO 75left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Il Re Frederico di Denmarca.
+					</marginalia_text>
+					<person name="Frederick II of Denmark"/>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						i[nfr]a, 211.
+					</marginalia_text>
+					<internal_ref>
+						<target ref="FolgersHa2:Ha2.194r" text="211"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				King Frederick of Denmark. [See] below, pg. 211.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Comedie facetissime del Vnico Aretino, et Machiauelli.
+					</marginalia_text>
+					<person name="Bernardo Accolti"/>
+					<person name="Machiavelli"/>
+				</position>
+			</language>
+			<translation>
+				The wittiest comedies of Bernardo Accolti and Machiavelli.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Iocorum veteru[m], ac recentiu[m] Libri tres:
+						Auctor Adriano Barlando.
+						E' Macrobio: Quintiliano: Cicerone: Suetonio:
+						Laertio: Plutarcho: Pontano: Erasmo:
+						Martiale: Horatio: Ausonio: Thoma Moro.
+						Ego soleo addere Castilionis Aulicu[m]: Mensam
+						Philosophicam: Wilsoni Rhetoricam:
+						Speculum La[e]titia[e] Gallicum: Rabelaisiu[m]:
+						Manlium: nec omninò quicq[uam] Stratagematibus
+						par, vel vtilitate, vel voluptate.
+						Techna[e], et Stratagemata, pra[e]gnantes Joci.
+						Item multa[e] Pragmaticorum Cautela[e].
+					</marginalia_text>
+					<person name="Adriaan van Baerland"/>
+					<person name="Macrobius"/>
+					<person name="Quintilian"/>
+					<person name="Cicero"/>
+					<person name="Suetonius"/>
+					<person name="Diogenes Laertius"/>
+					<person name="Plutarch"/>
+					<person name="Giovanni Pontano"/>
+					<person name="Erasmus"/>
+					<person name="Martial"/>
+					<person name="Horace"/>
+					<person name="Ausonius"/>
+					<person name="Thomas More"/>
+					<person name="Castiglione"/>
+					<person name="Thomas Wilson"/>
+					<person name="Francois Rabelais"/>
+					<person name="Johannes Jacobus Manlius"/>
+					<book title="Iocorum veterum ac recentium"/>
+					<book title="Book of the Courtier"/>
+					<book title="Mensa philosophica"/>
+					<book title="The Arte of Rhetorique"/>	
+					<book title="Stratagemata"/>
+					<emphasis method="pen" text="Adriano Barlando" type="straight"/>
+					<emphasis method="pen" text="Castilionis" type="straight"/>
+					<emphasis method="pen" text="Mensam" type="straight"/>
+					<emphasis method="pen" text="Wilsoni" type="straight"/>
+					<emphasis method="pen" text="Speculum La[e]titia[e]" type="straight"/>
+					<emphasis method="pen" text="Rabelaisiu[m]" type="straight"/>
+					<emphasis method="pen" text="Manlium" type="straight"/>
+					<emphasis method="pen" text="Techna[e]" type="straight"/>
+					<emphasis method="pen" text="Stratagemata" type="straight"/>
+					<emphasis method="pen" text="Cautela[e]" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The Three Books of old and Recent Jokes, by Adriaan van Baerland,
+				taken from Macrobius, Quintilian, Cicero, Suetonius, Diogenes Laertius, Plutarch, Giovanni Pontano,
+				Erasmus, Martial, Horace, Ausonius, Thomas Moore.
+				I am in the habit of adding Castiglione's Courtier, the Mensa Philosophica, Wilson's Rhetoric,
+				the French source of joy, Rabelais, and Manlius. But there is nothing entirely comparable to the 
+				Stratagems, either in utility or enjoyment. Skills, stratagems, pregnant jokes.
+				Likewise, the many precautions of pragmatic men.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Vita Plinio vigilia: Seneca[e] militia. Quid Ca[e]sari? quid Hyperca[e]sari?
+					</marginalia_text>
+					<person name="Pliny the Elder"/>
+					<person name="Seneca"/>
+					<person name="Julius Caesar"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The vigilant life is found in Pliny, the militant life in Seneca. What of Caesar? What of Super-Cesar? 
+						<!-- CG: Unclear of term 'Hypercaesar'. Specialist help appreciated! -->
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						In rebus afflictis, Patie[n]tia[e] doctor Augustinus: securitatis, Epictetus: tranquilitatis,  
+					</marginalia_text>
+					<person name="Augustine"/>
+					<person name="Epictetus"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="270" place="tail">
+					<marginalia_text>
+						Seneca: serenitatis, Antoninus: iucunditatis, Vespasianus:
+						la[e]titia[e], Julius, et 
+						splendoris. 
+						Nunq[uam]
+						magnificentior, quàm cùm oppugnatus maximè.
+					</marginalia_text>
+					<person name="Seneca"/>
+					<person name="Marcus Aurelius"/>
+					<person name="Vespasian"/>
+					<person name="Julius Caesar"/>
+				</position>
+			</language>
+			<translation>
+				In vexing situations, Augustine is the teacher of patience; Epictetus of safety; 
+				Seneca of tranquility; Marcus Aurelius of serenity; Vespasian of pleasantness;
+				Julius of fruitfulness and splendor. Never is Julius more magnificent than when he is
+				under heavy attack.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Nihil omnes Oratores, aut Philosophi, aut etiam historici, ad Julium.
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+					<emphasis method="chalk" type="straight"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Compared to Julius, all Orators, Philosophers, and even Historians, are nothing.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="Galeno" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; d'eccellenza" type="straight"/>
+		<underline language="IT" method="pen" text="professione di filosofia &amp; di medicina" type="straight"/>
+		<underline language="IT" method="pen" text="apparechio d'armi, che secretamente" type="straight"/>
+		<underline language="IT" method="pen" text="Gentil'huomini. Perche usciti" type="straight"/>
+		<underline language="IT" method="pen" text="apparecchi d'armi, &amp; addobbamenti di soldati" type="straight"/>
+		<underline language="IT" method="pen" text="che 'l Papa fosse morto" type="straight"/>
+		<underline language="IT" method="pen" text="sicurezza delle case loro" type="straight"/>
+		<underline language="IT" method="pen" text="Signor Piercamillo" type="straight"/>
+		<underline language="IT" method="pen" text="fretta dunque" type="straight"/>
+		<underline language="IT" method="pen" text="Papa è morto hoggi" type="straight"/>
+		<underline language="IT" method="pen" text="sarà egli morto ancho domani &amp; l'altro?" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="head"/>
+		<symbol language="IT" name="Mars" place="left_margin" text="apparecchi d'armi, &amp; addobbamenti di soldati"/>
+		<symbol name="SS" place="tail"/>		
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- d'ar -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- dubi -->
+		
+	    <!-- Left margin -->
+	    <mark method="pen" name="bracket" place="left_margin"/> <!-- fretta .. sara' -->
+		    
+	    <!-- Head/Intext/Tail -->
+		<mark method="pen" name="dot" place="intext"/> <!-- soldati, ci -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark: Piercamillo -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- morto hoggi -->
+	    <mark method="pen" name="equal_sign" place="intext"/> <!-- domani -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- l'altro? -->
+
+    </annotation>
+</transcription>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.095r.tif" pagination="189" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="argumentis dico, non argumentatione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Arg[v]me[n]tu[m] &amp; Argume[n]tatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Argument and argumentation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="narrandu[m] est, quicquid aliter quàm aduersarius exposuit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quom[od]o hîc narrandum est</marginalia_text>
+                </position>
+            </language>
+            <translation>How is must be narrated here.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Coniecturalis autem causae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Coniecturalis causae</marginalia_text>
+                </position>
+            </language>
+            <translation>Conjectural Causes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nam ne ijs quidem accedo, qui semper eo putant ordine, quo quid actu[m] sit, esse narrandum: sed eo modo quo expedit. Quod" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contra ciceronem</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Contrary to Cicero.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Deniq[ue] utiq[ue] narrandu[m] est, quicquid aliter quàm aduersarius exposuit, narrari potest, aut              eò etiam prooemia sunt in his causis superuacua: quae" type="straight"/>
+        <underline language="LA" method="pen" text="Nam ne ijs quidem accedo, qui sempter eo putant ordine, quo quid actu[m] sit, esse narrandum: sed eo modo              quo expedit. Quod" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

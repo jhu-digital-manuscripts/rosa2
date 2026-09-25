@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.030r.tif" pagination="59" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="imitatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Imitatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Imitation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="In primus uotia, siqua sunt, oris eme[n]det" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Oris uitia</marginalia_text>
+                </position>
+            </language>
+            <translation>Incorrect pronunciation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Demosthenes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Demosthenes.</marginalia_text>
+                    <person name="Demosthenes"/>
+                </position>
+            </language>
+            <translation>Demosthenes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ne extremae syllabae intercidant" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Extrema[e] syllaba[e] ne intercidant, est cauendu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>The final syllables not clipped, it is cautious.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uernilitate" type="straight"/>
+        <underline language="LA" method="pen" text="Nam frequens" type="straight"/>
+        <underline language="LA" method="pen" text="nec uultu, nec manu, nec exursionibus nimius" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

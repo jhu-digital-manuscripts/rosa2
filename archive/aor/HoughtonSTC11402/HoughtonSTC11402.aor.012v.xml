@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.012v.tif" reader="Harvey" signature="[Av[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Tradit Boccatius, Saladinu[m], Ægipti, Syria[e]q[ue] Sulthanu[m]; 
+                        explorandis Christianoru[m] opibus, atq[ue] co[n]silijs; Mercatoris habitu, Italiam, atq[ue] Gallia[m] peragrasse.</marginalia_text>
+                    <person name="Giovanni Boccaccio"/> 
+                    <person name="Saladin"/>
+                    <location name="Italy"/>
+                    <location name="Gaul"/>
+                </position>
+            </language>
+            <translation>Giovanni Boccaccio relates that Saladin, the sultan of Egypt and Syria, had travelled over Italy and France, as a merchant, 
+                for exploring the resources and purposes of Christians.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hamilchar; hymselfe banyshed" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hamilchar sayuid himself bannished.</marginalia_text>
+                    <person name="Hamilcar Barca"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sinonlyke.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Hamilchar; hymselfe banyshed" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Don Bernardin Mendoza, [the] Spanish Ambass. in Ingland.</marginalia_text>
+                    <person name="Bernardino de Mendoza"/>
+                    <location name="Spain"/>
+                    <location name="England"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>The Carthaginians had there Legates a longe tyme togither at Roome, to Spy, and serch owte there intendiments,
+                        and priuityes there. The French haue at tymes dealte so with us. [etc].
+                       </marginalia_text>
+                    <location name="Carthage"/>
+                    <location name="Rome"/>
+                    <location name="France"/>
+                    <emphasis method="pen" text="priuityes there" type="straight"/>
+                    <emphasis method="pen" text="dealte so with" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="espy" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>to see into [their] doings, [etc]/</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+                
+        <underline language="EN" method="pen" text="purpose let go an horse" type="straight"/>
+        <underline language="EN" method="pen" text="the place, where" type="straight"/>
+        <underline language="EN" method="pen" text="kynges prouision" type="straight"/>
+        <underline language="EN" method="pen" text="by fyer" type="straight"/>
+        <underline language="EN" method="pen" text="Alexander ryches and power" type="straight"/>
+        <underline language="EN" method="pen" text="Hamilchar" type="straight"/>
+        <underline language="EN" method="pen" text="fayninge hym selfe banyshed" type="straight"/>
+        <underline language="EN" method="pen" text="fauour" type="straight"/>
+        <underline language="EN" method="pen" text="the kinges secretes" type="straight"/>
+        <underline language="EN" method="pen" text="a longe" type="straight"/>
+        <underline language="EN" method="pen" text="colour of ambassage" type="straight"/>
+        <underline language="EN" method="pen" text="espy" type="straight"/>
+        <underline language="EN" method="pen" text="Cato in Spain" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="fyer"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="purpose let go an horse"/>
+        
+    </annotation>
+</transcription>

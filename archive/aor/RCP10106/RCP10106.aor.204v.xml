@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.204v.tif" pagination="408" reader="John Dee" signature="[C 4[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Vergilium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Virgilius.</marginalia_text>
+                    <person name="Virgil"/>
+                </position>
+            </language>
+            <translation>Virgil.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Ligario" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Ligario.</marginalia_text>
+                    <book title="Pro Ligario"/>
+                </position>
+            </language>
+            <translation>Pro Ligario.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Caelio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro ca[e]lio</marginalia_text>
+                    <book title="Pro Caelio"/>
+                </position>
+            </language>
+            <translation>Pro Caelio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="πρόληψις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>πρόληψις</marginalia_text>
+                </position>
+            </language>
+            <translation>Prolepsis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ciceronis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Rabirio Posthumo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Rabirio</marginalia_text>
+                    <book title="Pro Rabirio Posthumo"/>
+                </position>
+            </language>
+            <translation>Pro Rabirio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Verborum quoque uis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Verboru[m] vis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The force of words.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dißimulatio" type="straight"/>
+        <underline language="LA" method="pen" text="Nam seriò si fiat, pro confeßione est" type="straight"/>
+        <underline language="LA" method="pen" text="est, cum alium rogaueris, non expectare responsum &amp; statim subijcere: Domus" type="straight"/>
+        <underline language="LA" method="pen" text="per subiectionem" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; comparatione" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; praecipue prooemio conuenit" type="straight"/>
+        <underline language="LA" method="pen" text="praemunitio" type="straight"/>
+        <underline language="LA" method="pen" text="Quaedam praedictio" type="straight"/>
+        <underline language="LA" method="pen" text="Quaedam emendatio" type="straight"/>
+        <underline language="LA" method="pen" text="Frequentißima" type="straight"/>
+        <underline language="LA" method="pen" text="uel praesumptione" type="straight"/>
+
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">1</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

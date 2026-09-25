@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.021v.tif" reader="John Dee" signature="[Fijv]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="perlarum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Perlae</marginalia_text>
+                </position>
+            </language>
+            <translation>Perls.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>carabe minerall</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="säften" type="straight"/>
+        <underline language="LA" method="pen" text="Carabe" type="straight"/> 
+        <underline language="DE" method="pen" text="Citrinen" type="double"/>
+        <underline language="LA" method="pen" text="perlarum" type="straight"/>
+        
+    </annotation>
+</transcription>

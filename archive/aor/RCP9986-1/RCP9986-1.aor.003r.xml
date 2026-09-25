@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.003r.tif" pagination="4" reader="John Dee" signature="A.iiij."/>
+    <annotation>
+        
+        <marginalia anchor_text="ama[n]tes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Amantes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Lovers.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="iam sua lumina condas" type="straight"/>
+        <underline language="LA" method="pen" text="Vltra promissum te[m]pus abesse queror" type="straight"/>
+        <underline language="LA" method="pen" text="anchora pacta tua est" type="straight"/>
+        <underline language="LA" method="pen" text="bene quae numeramus ama[n]tes" type="straight"/>
+        <underline language="LA" method="pen" text="deuoui" type="straight"/>
+        
+    </annotation>
+</transcription>

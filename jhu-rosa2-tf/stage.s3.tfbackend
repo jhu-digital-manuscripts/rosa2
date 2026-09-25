@@ -1,0 +1,4 @@
+bucket       = "jhu-drcc-tf-state-bucket"
+key          = "jhunet/rosa2-stage/opentofu.tfstate"
+region       = "us-east-1"
+use_lockfile = true

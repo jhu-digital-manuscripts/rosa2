@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.050v.tif" reader="Harvey" signature="[Fiii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Doctor Parries new Stratagem with [the] queen: to practis treason by reuealing treason.</marginalia_text>
+                    <person name="Elizabeth I of England"/>
+                    <person name="William Parry"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Anniball at Cannas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Comes Purl. l.2. obseruat. 51.</marginalia_text>
+                    <person name="Jacopo di Porcia"/>
+                    <book title="The preceptes of warre"/>
+                </position>
+            </language>
+            <translation>Jacopo di Porcia, book 2, observation 51.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="to leaue theyr campe without defence" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>A fowle ouersighte to leave [their] Campe withoute defence.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <!--JG: Marginal note crosses over to other page.-->        
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="270" place="left_margin">
+                    <marginalia_text>Eccè l.I. Polya[e]ni, quàm subdolè, et veteratorie Gylippus, arcana prodens, de arcanis proditis
+                    querit[u]r; inde Occasione[m] captans, reru[m] solus gerendaru[m].</marginalia_text>
+                    <person name="Gylippus"/>
+                    <book title="Stratagems"/>
+                </position>
+            </language>
+            <translation>Look at book one of Polyaenus, how deceitfully and craftily Gylippus, producing secrets, complained about the produced secrets.
+            Hence aiming for the occasion, he alone [is aware?] of events to come.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vide l.I.c.8. Mithridates, amicu[m] Regem hostiliter infestat. Polya[e]nus, l.7.</marginalia_text>
+                    <person name="Mithridates II of Cius"/>
+                    <book title="Stratagems"/>
+                </position>
+            </language>
+            <translation>See book 1, chapter 8. Mithridates damaged a befriended king in a hostile manner. Polyaenus, book 7.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ite[m] Seuthes, Ibid.</marginalia_text>
+                    <person name="Seuthes I"/>
+                </position>
+            </language>
+            <translation>Likewise Seuthes I. Ibidem.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Alexander makith his owne men (in his Enemyes apparrel) wast, and destroy his owne Entry.</marginalia_text>
+                    <person name="Alexander the Great"/>
+                    <emphasis method="pen" text="owne men" type="straight"/>
+                    <emphasis method="pen" text="Enemyes" type="straight"/>
+                    <emphasis method="pen" text="his owne" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Minùs Probabilia, magis efficacia. Vt hîc ubiq[ue].</marginalia_text>
+                </position>
+            </language>
+            <translation>What is less probable is more effective. Both here and everywhere.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="chasynge theym" type="straight"/>
+        <underline language="EN" method="pen" text="wonte to leaue theyr campe without defence" type="straight"/>
+        <underline language="EN" method="pen" text="his time" type="straight"/>
+        <underline language="EN" method="pen" text="his armye" type="straight"/>
+        <underline language="EN" method="pen" text="with the lyght harneysed" type="straight"/>
+        <underline language="EN" method="pen" text="backe syde of their tentes" type="straight"/>
+        <underline language="EN" method="pen" text="ouer the bulwarke" type="straight"/>
+        <underline language="EN" method="pen" text="theyr campe" type="straight"/>
+        <underline language="EN" method="pen" text="hoste, farre greatter than" type="straight"/>
+        <underline language="EN" method="pen" text="their tentes in" type="straight"/>
+        <underline language="EN" method="pen" text="borders" type="straight"/>
+        <underline language="EN" method="pen" text="sette on fyre certayne vyllages" type="straight"/>
+        <underline language="EN" method="pen" text="the hoste, by his" type="straight"/>
+        <underline language="EN" method="pen" text="thynkynge their owne felowes to haue" type="straight"/>
+        <underline language="EN" method="pen" text="scatter abrode in hope" type="straight"/>
+        <underline language="EN" method="pen" text="certayne of his men" type="straight"/>
+        <underline language="EN" method="pen" text="Illyriens apparayle" type="straight"/>
+        <underline language="EN" method="pen" text="waste and distroy his owne countreye" type="straight"/>
+        <underline language="EN" method="pen" text="Epirus:" type="straight"/>
+        <underline language="EN" method="pen" text="nowe carelesse" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="double_vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="waste and distroy his owne countreye"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="wonte to leaue theyr campe without defence"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="ouer the bulwarke"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="to waste and distroy his owne countreye"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--campe, without-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--souldiors, to-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="thynkynge their owne felowes to haue"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="owne men"/>
+        
+    </annotation>
+</transcription>

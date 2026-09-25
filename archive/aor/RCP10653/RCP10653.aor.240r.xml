@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.240r.tif" pagination="31" reader="John Dee" signature="Ccc iiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Roberti de Melle[n]to" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Castrum Roberti de Mellent.
+                    </marginalia_text>
+                    <person name="Robert, 1st Earl of Gloucester"/> 
+                </position>
+            </language>
+            <translation>
+                The castle of Robert, 1st Earl of Gloucester.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Roberti de Melle[n]to" type="straight"/>
+        <underline language="LA" method="pen" text="Obijt Gilbertus fundator" type="straight"/>
+        <underline language="LA" method="pen" text="VVigorniensem" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.135v.tif" pagination="94" reader="Harvey" signature="[F7v]"/>	<!-- ABO 140left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Eutrapelus quicquid dicit, aut scribit, aut agit: id semper 
+						expedit pra[e]cellenti
+						gratia: vt qui non possit aliter. Habitus dicendi,
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						agendiq[ue] egregius:
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						tanq[uam] naturalis, aut diuinus.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Qualis decet viru[m] à radice pra[e]stantem:
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						nullius affectationis rem; sed insita[e]
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						perfectionis compotem.
+						Optimè
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Semper Eutrapelus: tanq[uam] non possit aliter.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Magis a[e]stimata, qua[e] Fluu[n]t Sua sponte:
+						et plus in se habere videt[u]r, qui semper dicit, agitq[ue]
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						meliùs. Qui quotidianus scopus Eutrapeli.
+						Certè excellentis viri intima hypothesis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whatever Eutrapelus says, writes, or does, he always carries it out with surpassing grace;
+				as if one who could not do otherwise. He has the habit of speaking and acting exceptionally, as if it were natural, or divine. 
+				Just as is suitable for a man surpassing his own foundation, a matter of no affectation; but possessing an innate perfection. 
+				Eutrapelus is always excellent, as if he could not be otherwise.
+				Those matters which flow forth of their own accord are valued more, and it seems that he who always speaks and acts better has more for himself.
+				He who daily has the goal of Eutrapelus.
+				Certainly an innermost hypothesis for excellent men. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						giusto premio
+						del traditore. Equiuocatione accomodata.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Just desserts for a traitor.
+				A suitable equivocation.
+			</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.135v_0001" marginalia_continues_to="Ha2.136r_0001" marginalia_to_transcription="Ha2.136r.xml">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Anabaptista[e] audent se profiteri homines deificatos: = [p. 95: illuminatos Primates: et Seniores sancta[e] intelligentia[e].
+						Spiritui tribuunt omnia.]
+						<!-- Continues onto facing page, left margin, Ha2.136r -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The Anabaptists dare to profess themselves deified men [p. 95: the first to be illuminated, and senior [recipients] of holy intelligence. They assign everything to the spirit.]
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Descrittione dell'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="fusse l'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="esempio d'imbecillità" type="straight"/>
+		<underline language="IT" method="pen" text="preda del tempo" type="straight"/>
+		<underline language="IT" method="pen" text="giuoco della Fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="imagine della inconstanza" type="straight"/>
+		<underline language="IT" method="pen" text="dell'inuidia" type="straight"/>
+		<underline language="IT" method="pen" text="stoffo della calamità mondana" type="straight"/>
+		<underline language="IT" method="pen" text="collera" type="straight"/>
+		<underline language="IT" method="pen" text="flemma" type="straight"/>
+		<underline language="IT" method="pen" text="Stratagemme di valoroso" type="straight"/>
+		<underline language="IT" method="pen" text="grandi effetti nella" type="straight"/>
+		<underline language="IT" method="pen" text="AVRELIANO Imperadore" type="straight"/>
+		<underline language="IT" method="pen" text="à porte chiuse" type="straight"/>
+		<underline language="IT" method="pen" text="entro in" type="straight"/>
+		<underline language="IT" method="pen" text="ci lascierò can viuo" type="straight"/>
+		<underline language="IT" method="pen" text="per cagion della preda" type="straight"/>
+		<underline language="IT" method="pen" text="corragio" type="straight"/>
+		<underline language="IT" method="pen" text="grandissimo sforzo" type="straight"/>
+		<underline language="IT" method="pen" text="Heraclemeone terrazzano" type="straight"/>
+		<underline language="IT" method="pen" text="timore" type="straight"/>
+		<underline language="IT" method="pen" text="per premio" type="straight"/>
+		<underline language="IT" method="pen" text="patria à tradimento" type="straight"/>
+		<underline language="IT" method="pen" text="Aureliano" type="straight"/>
+		<underline language="IT" method="pen" text="solamente il" type="straight"/>
+		<underline language="IT" method="pen" text="traditor Heraclemeone" type="straight"/>
+		<underline language="IT" method="pen" text="il sacco" type="straight"/>
+		<underline language="IT" method="pen" text="suuersione della terra" type="straight"/>
+		<underline language="IT" method="pen" text="l'intendeua à quel modo" type="straight"/>
+		<underline language="IT" method="pen" text="can viuo in questa" type="straight"/>
+		<underline language="IT" method="pen" text="tutti i cani che ci sono" type="straight"/>
+		
+		<symbol name="Sun" place="right_margin"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- huo -->
+		<mark method="pen" name="dash" place="right_margin"/> <!--sug-->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- l'eserci -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ter -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Aure -->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="preda del tempo"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="giuoco della Fortuna"/>
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- flemma -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- vccidere solamente -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="traditor Heraclemeone"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="tutti i cani che ci sono"/>
+		
+		
+    </annotation>
+</transcription>

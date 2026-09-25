@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.123v.tif" pagination="[123v]" reader="John Dee" signature="[Qiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="ei non uolle giustitiare un si gran personaggio" hand="Italian" id="BL615d7:615_d_7_f123v:m0001" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Why did they exercut afterward greater persons then he without thinking of Spayn? vid Infra folio 148. v.</marginalia_text>
+                    <location name="Spain"/>
+                    <internal_ref>
+                        <target ref="BL615d7:615_d_7_f148v:m0001" text="folio 148. v."/>
+                    </internal_ref>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="DCXXX" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>630 spaniards</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="un'anno" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>One yere</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="tutti promesso di pagar tributo a' Re Catolici ogni tre mesi" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Promiss made of all to pay tribute.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>he ment to send him and was in ship [...], but the ship was drowned as som after say, but he sayth so</marginalia_text> <!--JG: Unsure abt word after ship--> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="ei non uolle giustitiare un si gran personaggio" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>fol[io] 148. v.</marginalia_text>
+                    <internal_ref>
+                        <target ref="BL615d7:615_d_7_f148v" text="148. v."/>
+                    </internal_ref>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Christiani, che erano rimasi con Arana nella villa del Natale" type="straight"/>
+        <underline language="IT" method="pen" text="egli haueua" type="double"/>
+        <underline language="IT" method="pen" text="delitto, &amp; di questa seconda ribellione, &amp; rauna mento di genti, egli era uscito contra di lui" type="straight"/>
+        <underline language="IT" method="pen" text="con un suo fratello" type="straight"/>
+        <underline language="IT" method="pen" text="gli menò tutti" type="double"/>
+        <underline language="IT" method="pen" text="un si gran personaggio" type="straight"/>
+        <underline language="IT" method="pen" text="i Re Catolici lo sapessero" type="straight"/>
+        <underline language="IT" method="pen" text="Con" type="straight"/>
+        <underline language="IT" method="pen" text="essendo allhora piu" type="straight"/>
+        <underline language="IT" method="pen" text="DCXXX, &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="lor donne" type="straight"/>
+        <underline language="IT" method="pen" text="spatio di un'anno" type="straight"/>
+        <underline language="IT" method="pen" text="scorse" type="straight"/>
+        <underline language="IT" method="pen" text="senza che fosse astretto a" type="straight"/>
+        <underline language="IT" method="pen" text="sfoderar piu spada" type="double"/>
+        <underline language="IT" method="pen" text="obediente, &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="quieta" type="double"/>
+        <underline language="IT" method="pen" text="fu da tutti" type="double"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- lor donne -->
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- l'Isola, senza -->
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- spada, la -->
+        
+        
+        
+        
+        
+    </annotation>
+    
+</transcription>

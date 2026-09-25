@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.228r.tif" pagination="7" reader="John Dee" signature="Aaa iiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Guiscardus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Robertus Guiscardus.
+                    </marginalia_text>
+                    <person name="Robert Guiscard"/>
+                </position>
+            </language>
+            <translation>
+                Robert Guiscard.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rex misit fratrem suum Odone[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Odo, f[rate]r Gulielmi
+                    </marginalia_text>
+                    <person name="Odo of Bayeux"/>
+                    <person name="William the Conqueror"/>
+                </position>
+            </language>
+            <translation>
+                Odo of Bayeux, [half-]brother of William the Conqueror.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Guiscardus" type="straight"/>
+        <underline language="LA" method="pen" text="Eodem anno Gulihelmus Comes VVarenniae" type="straight"/>
+        <underline language="LA" method="pen" text="qui venit in Anglia[m] cu[m] Gulihelmo Bastardo fundauit prioratum sancti Pancratij de Levves" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ab" type="double"/>
+        <underline language="LA" method="pen" text="eiusdem regulis homagia per fideles obsides suscepit" type="straight"/>
+        <underline language="LA" method="pen" text="rex misit fratrem suum Odone[m]" type="straight"/>
+        
+        <errata amendedtext="militari" copytext="militaria" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="crown"/>
+        
+    </annotation>
+</transcription>

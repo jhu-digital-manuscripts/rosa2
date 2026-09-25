@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.005v.tif" pagination="10" reader="John Dee" signature="[a 5[v]]"/>
+    <annotation>
+        
+      <marginalia anchor_text="Symeon Beniohai" hand="Italian">
+          <language ident="LA">
+              <position book_orientation="0" place="left_margin">
+                  <marginalia_text>Symeon Beniohai.</marginalia_text>    <!-- DO: Possible some writing before this has been cut off before this -->
+                  <person name="Simeon bar Yochai"/>
+              </position>
+          </language>
+          <translation>Simeon bar Yochai.</translation>
+      </marginalia>
+      
+        <marginalia anchor_text="Euangelica historia Iacobi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Euangeliu[m] Iacobi</marginalia_text>    
+                    <book title="Gospel of James"/> 
+                </position>
+            </language>
+            <translation>The gospel of James.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="librorum Enoch" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Libri Enoch</marginalia_text>    
+                    <book title="Book of Enoch"/>
+                </position>
+            </language>
+            <translation>The Books of Enoch.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Pontifex ultimus" type="straight"/>
+        <underline language="LA" method="pen" text="aposynagogus ab illa Pharisaeorum" type="straight"/>
+        <underline language="LA" method="pen" text="in Talmudo" type="straight"/>
+        <underline language="LA" method="pen" text="ipso Zohare" type="straight"/>
+        <underline language="LA" method="pen" text="illustratione scripturarum" type="straight"/>
+        <underline language="LA" method="pen" text="Zoharis ipsius descriptor" type="straight"/>
+        <underline language="LA" method="pen" text="Symeonem Iustum alterum" type="straight"/>
+        <underline language="LA" method="pen" text="minus ducentis annis distent" type="straight"/>
+        <underline language="LA" method="pen" text="librorum Enoch argumentum" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.345r.tif" pagination="692" reader="Harvey" signature="x[ir]"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="illi in fronte scriptum putemus" type="straight"/>
+        <underline language="LA" method="pen" text="Tantalo" type="straight"/>
+        <underline language="LA" method="pen" text="ad me ire ilico istic" type="straight"/>
+        <underline language="LA" method="pen" text="contagio mea bonis" type="straight"/>
+        <underline language="LA" method="pen" text="umbraue obsit" type="straight"/>
+        <underline language="LA" method="pen" text="Tanta uis sceleris in corpore &amp; animo haeret meo." type="straight"/>
+        <underline language="LA" method="pen" text="ebrietate reuocat ad ieiunium" type="straight"/>
+        <underline language="LA" method="pen" text="grauentur crapula" type="straight"/>
+        <underline language="LA" method="pen" text="populum Israëliticum à crapula ad Idolatriam prolapsum affirmat. Atq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="daemoniorum non eijcitur, nisi ieiunio et oratione." type="straight"/>
+        <underline language="LA" method="pen" text="Satanam accersi &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="euentus talium symposiorum" type="straight"/>
+        <underline language="LA" method="pen" text="Angelos illic mensae" type="straight"/>
+
+        <symbol name="Bisected_circle" place="intext"/>
+        <symbol name="Bisected_circle" place="intext"/>
+        <symbol language="LA" name="Bisected_circle" place="right_margin" text="daemoniorum non eijcitur, nisi ieiunio et oratione."/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- prola -->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- soci -->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="illi in fronte scriptum putemus"/>
+        
+    </annotation>
+</transcription>

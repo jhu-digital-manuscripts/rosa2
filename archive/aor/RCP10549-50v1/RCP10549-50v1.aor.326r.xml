@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.326r.tif" pagination="631" reader="John Dee" signature="rrr.iiii."/>
+    <annotation>
+         
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Liceat semel peccare impune Sit erra[n]ti Medicina Confessio</marginalia_text>
+                </position>
+            </language>
+            <translation>"Let one blunder go unpunished, let confession medicine the error" [source: LCL 462: 352-353].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="verissime memoria propagata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>memoria propagari.</marginalia_text>
+                </position>
+            </language>
+            <translation>To be propagated by history.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contentio [..]</marginalia_text>  
+                </position>
+            </language>
+            <translation>Struggle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="precariu[m] fecerit quaestum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>pr[a]ecariu[m] qu[a]estu[m] facere</marginalia_text>
+                </position>
+            </language>
+            <translation>To make a precarious gain.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vitam simul fugere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vita[m] fugere</marginalia_text>
+                </position>
+            </language>
+            <translation>To escape life.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="verissime memoria propagata" type="straight"/>
+        <underline language="LA" method="pen" text="Liceat semel impune peccare: sit" type="straight"/>
+        <underline language="LA" method="pen" text="quia dignitate domini minus turpis est fortuna serui. In duobus autem malis cum fugiendum maius sit, leuius est eligendum" type="straight"/>
+        <underline language="LA" method="pen" text="nostrorum sepultae reliquiae sapiunt, si non vnà cum corpore sensus omnis vno atque eodem consumptus est igni: quid illis interrogantibus, quid" type="straight"/>
+        <underline language="LA" method="pen" text="in dotali" type="straight"/>
+        <underline language="LA" method="pen" text="si viuus ista subterfugere non potero, vnà cum istis vitam simul fugere" type="straight"/>
+        
+        <mark language="LA" method="pen" name="tripunctus_with_tail" place="head" text="Liceat semel peccare impune Sit erra[n]ti Medicina Confessio"/>
+        <mark method="pen" name="tripunctus_with_tail" place="right_margin"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+        <drawing anchor_text="Contentio" book_orientation="0" method="pen" place="right_margin" type="florilegium"/> 
+        
+    </annotation>
+</transcription>

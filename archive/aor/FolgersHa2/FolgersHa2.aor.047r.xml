@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.047r.tif" pagination="413" reader="Harvey"/>	<!-- ABO 51right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Lepidi in toto genere, et faceti.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Witty remarks and jokes in every genre. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Dialogi Luciani; Pontani; Aretini. Comoedia[e] Aristophanis;
+					</marginalia_text>
+					<person name="Lucian"/>
+					<person name="Giovanni Pontano"/>
+					<person name="Pietro Aretino"/>
+					<person name="Aristophanes"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Plauti; Aretini; Machiauelli.
+					</marginalia_text>
+					<person name="Plautus"/>
+					<person name="Pietro Aretino"/>
+					<person name="Machiavelli"/>
+				</position>
+			</language>
+			<translation>
+				The dialogues of Lucian, Pontano, and Aretino. The comedies of Aristophanes, Plautus, Aretino, and Machiavelli.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						( Epigramma).
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Epigram.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Epigrammata Gra[e]coru[m]; Martialis, Mori;
+						Heiuodi. Homeri Batrachomyomachia.
+					</marginalia_text>
+					<person name="Martial"/>
+					<person name="Thomas More"/>
+					<person name="John Heywood"/>
+					<person name="Homer"/>
+					<book title="Batrachomyomachia"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Galeomyomachia. Ouidij Metamorphoses.
+					</marginalia_text>
+					<person name="Ovid"/>
+					<book title="Galeomyomachia"/>
+					<book title="Metamorphoses"/>
+				</position>
+			</language>
+			<translation>
+				The epigrams of the Greeks, of Martial, Moore, and Heywood. The Batrachomyomachia of Homer.
+				The Galeomyomachia. Ovid's Metamorphoses.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Boccatij Decameron: Magarita[e]
+						Nauarra[e] Heptameron: Chauceri fabula[e]
+					</marginalia_text>
+					<person name="Giovanni Boccaccio"/>
+					<person name="Marguerite de Navarre"/>
+					<person name="Geoffrey Chaucer"/>
+					<book title="Decameron"/>
+					<book title="Heptaméron"/>
+					<book title="The Canterbury Tales"/> 
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Cantuarienses. Rabela[e]sij Heroica.
+					</marginalia_text>
+					<person name="Francois Rabelais"/>
+				</position>
+			</language>
+			<translation>
+				Boccaccio's Decameron, Maguerite de Navarre's Heptameron, Chaucer's Canterbury Tales.
+				The heroic tales of Rabelais.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						argutè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Cleverly.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						ridicolo.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Pythagora[e] Arithmomachia.
+						Vranomachia. Ars iocosa Ciceronis,
+						Quinctiliani; Castilionis, Vilsoni; Mensa[e] philosophica[e],
+					</marginalia_text>
+					<person name="Pythagoras"/>
+					<person name="Cicero"/>
+					<person name="Quintilian"/>
+					<person name="Castiglione"/>
+					<person name="Thomas Wilson"/>
+					<book title="Mensa philosophica"/>
+				</position>
+			</language>
+			<translation>
+				Pythagoras' Rithmomachia. The Uranomachia. 
+				Cicero's and Quintilians art of joking; and that of Castiglione and Wilson. 
+				and of the Mensa philosophica.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="head">
+					<marginalia_text>
+						Apophthegmata. Strategemata. Nonnulla Paradoxa. Apologi. Parabola[e].
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Aphorisms. Strategems. Several paradoxes. Stories. Parables.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="non lo ritenete uoi" type="straight"/>
+		<underline language="IT" method="pen" text="senza punto pensarui" type="straight"/>
+		<underline language="IT" method="pen" text="ch'io lo fermi, che non ho sproni" type="straight"/>
+		<underline language="IT" method="pen" text="Reina di Polonia" type="straight"/>
+		<underline language="LA" method="pen" text="Pauper ubique iacet" type="straight"/>
+		<underline language="IT" method="pen" text="suo Segretario per" type="straight"/>
+		<underline language="IT" method="pen" text="udendola" type="straight"/>
+		<underline language="LA" method="pen" text="thalamis ego" type="straight"/>
+		<underline language="LA" method="pen" text="Regina, iacerem" type="straight"/>
+		<underline language="LA" method="pen" text="pauper ubique iacet" type="straight"/>
+		<underline language="IT" method="pen" text="Pronto" type="straight"/>
+		<underline language="IT" method="pen" text="poco discreto uerso tal donna" type="straight"/>
+		<underline language="IT" method="pen" text="Signora" type="straight"/>
+		<underline language="IT" method="pen" text="Mangiando il S. Giulio" type="straight"/>
+		<underline language="IT" method="pen" text="un conuito" type="straight"/>
+		<underline language="IT" method="pen" text="grandissimi mangiatori" type="straight"/>
+		<underline language="IT" method="pen" text="gentilissima Signor Tecla" type="straight"/>
+		<underline language="IT" method="pen" text="male Signora" type="straight"/>
+		<underline language="IT" method="pen" text="io sto fra Caribdi, &amp; Scilla" type="straight"/>
+		<underline language="IT" method="pen" text="si gratiosamente, che" type="straight"/>
+		<underline language="IT" method="pen" text="ridere ogniuno" type="straight"/>
+		<underline language="IT" method="pen" text="intagliator" type="straight"/>
+		<underline language="IT" method="pen" text="Camei eccellentissimo" type="straight"/>
+		<underline language="IT" method="pen" text="hoggi dì senza pari" type="straight"/>
+		<underline language="IT" method="pen" text="pocchissimi denti" type="straight"/>
+		<underline language="IT" method="pen" text="parolaccie tanto sciocche" type="straight"/>
+		<underline language="IT" method="pen" text="i denti si uergognano d'udirle" type="straight"/>
+		<underline language="IT" method="pen" text="fuggiti di bocca" type="straight"/>
+		<underline language="IT" method="pen" text="Mordace" type="straight"/>
+		<underline language="IT" method="pen" text="sottile" type="straight"/>
+		
+		<underline language="LA" method="chalk" text="Si foret hoc uerum, pauper ubique iacet." type="straight"/>
+		<underline language="IT" method="chalk" text="hoggi dì senza pari" type="straight"/>
+		<underline language="IT" method="chalk" text="che i denti si uergognano d'udirle; &amp; percio ti sono fuggiti di bocca" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="head"/>
+		<symbol name="JC" place="right_margin"/>
+		
+		<!-- Marks -->	
+		<!-- Right margin -->
+		<mark method="chalk" name="horizontal_bar" place="right_margin"/>
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- uolete -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- do -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- gran -->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- Scilla -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- pa -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- den -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- d'u -->		
+		
+	    	<!-- Left margin -->
+	    <mark method="pen" name="bracket" place="left_margin"/> <!-- In thalamis ... si foret -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- ti ... ce -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="ch'io lo fermi, che non ho sproni"/> 
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- Reina di Polonia -->
+		<mark method="pen" name="dot" place="intext"/> <!-- iacet, quando -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Segretario"/>
+	    <mark method="pen" name="dot" place="intext"/> <!-- lettere, e -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- ubique iacet -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Pronto"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- Pronto, ma -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- poco discreto -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- fra Caraibdi -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="ridere ogniuno"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- senza -->
+		<mark method="pen" name="dot" place="intext"/> <!-- ri, dandosi -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="denti"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="uergognano"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="sottile"/> 
+		
+    </annotation>
+</transcription>

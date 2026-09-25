@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.284r.tif" pagination="547" reader="John Dee" signature="mmmm.ii."/>
+    <annotation>
+        
+        <marginalia anchor_text="incolumitates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>incolumitates</marginalia_text>
+                </position>
+            </language>
+            <translation>Safety.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="regiu[m] nomen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Regiu[m] nome[n]</marginalia_text>
+                </position>
+            </language>
+            <translation>The name of kings.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="suspicit &amp; criminibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>supponere se criminib[us]</marginalia_text>
+                </position>
+            </language>
+            <translation>To substitute himself with crimes.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Conclusio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Conclusion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="incolumitates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>obliuione[m] sempiterna delere</marginalia_text>
+                </position>
+            </language>
+            <translation>To erase everlasting oblivion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Caesaris co[m]me[n]tariis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Comme[n]tarij C. Ca[a]saris</marginalia_text>
+                    <person name="Gaius Caesar"/>
+                </position>
+            </language>
+            <translation>Gaius Caesar's commentaries.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dictatura[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dictatura.</marginalia_text>
+                </position>
+            </language>
+            <translation>Dictatorship.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="pestem importatura[m] esse Regibus, aut incolumem" type="straight"/>
+        
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">5</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">13</numeral>
+        
+    </annotation>
+</transcription>

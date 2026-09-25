@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.066v.tif" pagination="[59v]" reader="John Dee" signature="[Piij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Regula generalis pro radicis judicio</marginalia_text>
+                </position>
+            </language>
+            <translation>General rule for the calculation of the root.</translation>  
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Promissore[m] mortis intelligit, quem mox abscisorem appellat.</marginalia_text> <!--JG: promittor is technical term: http://www.astrologyweekly.com/dictionary/promittor.php; abscissor: https://www.astrologycom.com/glossary.html-->
+                </position>
+            </language>
+            <translation>He understands the promisor of death, which he soon calls 'killing planet'.</translation>  
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Eadem regula pro Revolutione</marginalia_text>
+                </position>
+            </language>
+            <translation>The same rule for a revolution.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Auxiliatore[m] possum[us] appellare promissorem boni, abscisore[m] vero, mali promissore[m] lic[et] vulgariter abscisor intelligatur de vit[a]e interremptore.</marginalia_text>
+                </position>
+            </language>
+            <translation>We can call the auxiliary the promisor of good, actually [we can name] the 'killing planet' the promisor of evil, although commonly the 'killing planet' is understood from the interruptor of life.</translation>  
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>In radicis figura.</marginalia_text>
+                </position>
+            </language>
+            <translation>In the figure of the root.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>In radice</marginalia_text>
+                </position>
+            </language>
+            <translation>In the root.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Et aliquando occidit" type="straight"/>
+        <underline language="LA" method="pen" text="radius infortunae, quamuis non sit promissor" type="straight"/>
+        <underline language="LA" method="pen" text="significatoris uitae" type="straight"/>
+        <underline language="LA" method="pen" text="alterius" type="straight"/>
+        <underline language="LA" method="pen" text="robustus significator" type="straight"/>
+        <underline language="LA" method="pen" text="promissor" type="straight"/>
+        <underline language="LA" method="pen" text="si mediocris" type="straight"/>
+        <underline language="LA" method="pen" text="fuerit debilissimus" type="straight"/>
+        <underline language="LA" method="pen" text="Significatore" type="straight"/>
+        <underline language="LA" method="pen" text="existente" type="straight"/>
+        <underline language="LA" method="pen" text="habent significatores debiles" type="straight"/>
+        <underline language="LA" method="pen" text="directionem" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; in Planetis, Quod de corporibus dixi, etiam de radijs intelligo" type="straight"/>
+        
+        <mark method="pen" name="section_sign" place="intext"/>
+        
+        <numeral language="LA" place="intext" text="Et aliquando occidit">2</numeral>
+        <numeral language="LA" place="intext" text="promissor">1</numeral>
+        <numeral language="LA" place="intext" text="nec depositor">2</numeral>
+        <numeral language="LA" place="intext" text="dominus loci promissoris">3</numeral>
+        
+        <numeral language="LA" place="intext" text="significatoris uitae">1</numeral>
+        <numeral language="LA" place="intext" text="alterius">2</numeral>
+        <numeral language="LA" place="intext" text="robustus significator">1</numeral>
+        <numeral language="LA" place="intext" text="mediocris">2.</numeral>
+        <numeral language="LA" place="intext" text="debilissimus">3.</numeral>
+        
+        <numeral language="LA" place="intext" text="existente">1</numeral>
+        
+        <numeral language="LA" place="intext" text="directionem">1</numeral>
+        <numeral language="LA" place="intext" text="ascendentis">2</numeral>
+        <numeral language="LA" place="intext" text="malam reuolutionem">3</numeral>
+        <numeral language="LA" place="intext" text="capitis congressum">4</numeral>
+        <numeral language="LA" place="intext" text="propter">5</numeral>
+        
+        <errata amendedtext="promissor" copytext="significator" language="LA"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.149v.tif" pagination="[149v]" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia hand="Italian" id="BL615d7:615_d_7_f149v:m0001">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>A mervaylous error in Latitude</marginalia_text>
+                </position>
+            </language>
+          </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note great error in Marinars reckoning</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Well sayd if you allwayes made such accownt of them.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="auanti temperò" type="straight"/>
+        <underline language="IT" method="pen" text="furia delle" type="straight"/>
+        <underline language="IT" method="pen" text="al capo di san" type="straight"/>
+        <underline id="BL615d7:615_d_7_f149v:u0001" language="IT" method="pen" text="canal di Fiandra" type="straight"/>
+        <underline language="IT" method="pen" text="in Inghilterra" type="straight"/>
+        <underline language="IT" method="pen" text="errauano" type="double"/>
+        <underline language="IT" method="pen" text="in Gallicia" type="double"/>
+        <underline language="IT" method="pen" text="amainare" type="straight"/>
+        <underline language="IT" method="pen" text="della fame" type="double"/>
+        <underline language="IT" method="pen" text="che molti" type="straight"/>
+        <underline language="IT" method="pen" text="Caribi, voleano mangiar gl'Indiani" type="straight"/>
+        <underline language="IT" method="pen" text="che si gittassero" type="straight"/>
+        <underline language="IT" method="pen" text="che erano loro prossimi, &amp; Christiani, &amp; che però non si douessero" type="straight"/>
+        <underline language="IT" method="pen" text="men bene, che gli altri" type="straight"/>
+        <underline language="IT" method="pen" text="Di che" type="straight"/>
+        <underline language="IT" method="pen" text="alla gente di mare egli fu tenuto per" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; diuino nelle cose della nauigatione" type="straight"/>
+        
+        <mark language="IT" method="pen" name="comma" place="intext" text="che poi"/>
+        <mark language="IT" method="pen" name="comma" place="intext" text="poi presse"/>
+        
+        <drawing anchor_text="A marvaylous error in Latitude" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <physical_link>
+            <marginal_annotation idref="BL615d7:615_d_7_f149v:m0001"/>
+            <marginal_annotation idref="BL615d7:615_d_7_f149v:u0001"/>
+            
+            <relation from="BL615d7:615_d_7_f149v:m0001" to="BL615d7:615_d_7_f149v:u0001" type="directed"/>
+            
+        </physical_link>
+        
+    </annotation>
+</transcription>

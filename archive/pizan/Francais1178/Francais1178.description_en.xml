@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Le Livre de la Cité des Dames</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Français 1178, Bibliothéque national de France, Paris. Paris, c. 1413. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 301.5 x 214.5 mm, 160 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p> The <material>parchment</material>, rather yellowed, has many imperfections with holes, patches and stitches. Three large pieces were added later after the manuscript had been copied. The lighter tone parchment was reserved for the first quires. The <hi rend="italics">vis-à-vis</hi> rule is respected throughout the manuscript except in ff. <locus>97</locus> and <locus>98</locus>. On folio <locus>154</locus>, the parchment maker has included his mark, two circles that contain a cross, each one followed by a vertical line.</p>
+                  
+            </note>
+            
+            <note rend="QUIRES">
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     
+                     <locus from="2" to="3">2-3</locus>, <locus from="3bis" to="8">3bis-8</locus>
+                  
+                  </item>
+                  
+                  <item n="II">
+                     
+                     <locus from="9" to="16">9-16</locus>
+                  
+                  </item>
+                  
+                  <item n="III">
+                     
+                     <locus from="17" to="24">17-24</locus>
+                  
+                  </item>
+                  
+                  <item n="IV">
+                     
+                     <locus from="25" to="32">25-32</locus>
+                  
+                  </item>
+                  
+                  <item n="V">
+                     
+                     <locus from="33" to="40">33-40</locus>
+                     
+                  </item>
+                  
+                  <item n="VI">
+                     
+                     <locus from="41" to="48">41-48</locus>
+                     
+                  </item>
+                  
+                  <item n="VII">
+                     
+                     <locus from="49" to="56">49-56</locus>
+                     
+                  </item>
+                  
+                  <item n="VIII">
+                     
+                     <locus from="57" to="64">57-64</locus>
+                     
+                  </item>
+                  
+                  <item n="IX">
+                     
+                     <locus from="65" to="72">65-72</locus>
+                  </item>
+                  
+                  <item n="X">
+                     
+                     <locus from="73" to="80">73-80</locus>
+                     
+                  </item>
+                  
+                  <item n="XI">
+                     
+                     <locus from="81" to="88">81-88</locus>
+                     
+                  </item>
+                  
+                  <item n="XII">
+                     
+                     <locus from="89" to="96">89-96</locus>                
+                  </item>
+                  
+                  <item n="XIII">
+                     
+                     <locus from="97" to="104">94-104</locus>
+                     
+                  </item>
+                  
+                  <item n="XIV">
+                     
+                     <locus from="104" to="112">104-112</locus>
+                     
+                  </item>
+                  
+                  <item n="XV">
+                     
+                     <locus from="113" to="120">113-120</locus>
+                     
+                  </item>
+                
+                  <item n="XVI">
+                     
+                     <locus from="121" to="128">121-128</locus>
+                     
+                  </item>
+                  
+                  <item n="XVII">
+                     
+                     <locus from="129" to="136">129-136</locus>                
+                  </item>
+                  
+                  <item n="XVIII">
+                     
+                     <locus from="137" to="144">137-144</locus>
+                     
+                  </item>
+                  
+                  <item n="XIX">
+                     
+                     <locus from="145" to="152">145-152</locus>
+                     
+                  </item>
+                  
+                  <item n="XX">
+                     
+                     <locus from="153" to="160">153-160</locus>                
+                  </item>
+                                             
+               </list>
+                
+               <p> (II) + I + 160 + (II). Modern foliation in ink on the top right corner is correct, but with the addition of an extra folio, fol. <locus>3bis</locus>. </p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>There are thick brown ruling marks on the folios. There is evidence of pricking in all the folios, with an average of ten pricks per folio. There are two columns with 33 lines (sometimes 32) each.</p>
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text is written evenly in dark brown ink. Most of the rubics are either bright red or orange red. The text seems to have been written by one scribe in a semicursive minuscule script. Punctuation marks are also used, especially the period and the comma. There are some corrections done by the hand of the main scribe and by another scribe who worked on the preparations for the correction.</p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>The ornamental decoration of the manuscript was made by two different groups of artists, the first identified as working in the "à la vigne d'or" style and the second in the "aux échancrures" style. There are three large foliated initials in folios <locus>3bis</locus>, <locus>64</locus> and <locus>135</locus>, an S and two As respectively in blue the first and last, and pink the other one, all of them resting over a goldleaf background (vignette), which in turn are connected to the foliated bar-border. The text in folio <locus>3</locus> is fully framed by a foliate bar border with multiple goldleaf crosslets between the leaves. The folios <locus>64</locus> and <locus>135</locus> are only partially framed by a foliate border with goldleaf crosslets. There are many smaller initials in gold leaf over a red or blue background and viceversa.</p>
+               <p> There are three miniatures in this manuscript, which were created by the Master of the <hi rend="italics">Cité des dames</hi>. They all have a double frame in goldleaf outlined in black on the exterior an a pink and/or blue frame on the interior.</p>
+               <p>Miniatures:</p>
+               <list>
+                  <item> Fol. <locus>3bis</locus>, The Construction of the City of Ladies. </item>                                             
+                  <item> Fol. <locus>64</locus>, The Entrance of the Ladies into the City. </item> 
+                  <item> Fol. <locus>135</locus>, The Ladies Welcome the Virgin and Saints. </item> 
+               
+               </list>
+            </note>
+            
+            <note rend="BINDING">
+               
+               <p> The manuscript is bound in mustard Moroccan leather embossed with three gold filets containing the royal coat of arms over the covers. On the spine there are five golden bands with the king's initials surrounded by stars and by smaller slanted <hi rend="italics">fleur-de-lys</hi> with two half suns and palmettes.The title appears in gold letters on the spine, <hi rend="italics">"LA CITÉ DES/ DAMES-ET/PAR CHRI/DE PISAN"</hi>.</p>
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>This manuscript can be dated to 1413, or slightly before that. This is the newest original manuscript of this work that has come down to us; judging by the state of the text, it is slightly later to the copy contained in the collection that was presented to the Queen Isabeau of Bavaria in January 1414 (the <hi rend="italics">Cité des Dames</hi> is one of the oldest elements of this collection).</p>
+               <p>Provenance: There is no trace regarding the identity of the destinatary of this manuscript. This manuscript was probably part of the royal collection added in the second half of the sixteenth century and perhaps even earlier. There is a note on folio <locus>1</locus> written by a librarian that says <hi rend="italics">"Le livre de la Cité des dames composé par (Chris)tine de Pisan contre matheolus et aultres qui mesdisent des femmes".</hi>. There is a stamp with the inscription "Josserand-Bruno n.1" from 1724. There are three old shelfmarks: 1044 (Rigault), 964 (Dupuy), and 7396 (Regius). </p>
+                  
+            </note>
+            
+            <note rend="TEXT">
+               
+               <p>It only contains <hi rend="italics">La Cité des Dames</hi>.</p>
+               
+               
+            
+            </note>
+            
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 1178</note>
+               
+               <title>La Cité des Dames</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="160" unit="folios">160 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">302</height>
+                     
+                     <width unit="mm">215</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">3</note>
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 1178</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="2r" to="160v">2r-160v</locus>
+                     <title>Le Livre de la Cité des Dames</title>
+                     <note type="textid">Le Livre de la Cité des Dames</note>
+                     <note type="folios">160</note>
+                     <note type="illustrations">3</note>
+                     <note type="linesPerColumn">33</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

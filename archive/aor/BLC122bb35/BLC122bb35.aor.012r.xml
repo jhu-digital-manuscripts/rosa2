@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC122bb35.012r.tif" pagination="12" reader="John Dee" signature="[Biiij]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="vtroq[ue]" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>τὸ διδόμενον</marginalia_text> <!-- FSF: to be completed -->
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>latus maius:</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>τὸ ζητούμενον</marginalia_text> 
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>angulum examinat.</marginalia_text>
+                </position>
+            </language>
+            <translation>What is given: the longer side. What is sought, he examines the angle.</translation> 
+        </marginalia>
+
+        <marginalia anchor_text="vtroq[ue]" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>τὸ διδόμενον</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>angulus maior</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>τὸ ζητούμενον</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>latus maius.</marginalia_text>
+                </position>
+            </language>
+            <translation>What is sought: the greater angle. What is given: the larger side.</translation>
+        </marginalia>
+        
+        <underline language="EL" method="pen" text="ὑπὸ τὴν" type="straight"/>
+        
+        <!-- FSF: Dee seems to have changed the first of three triangles on the page, i.e. decreased it in size  -->
+        
+    </annotation>
+</transcription>

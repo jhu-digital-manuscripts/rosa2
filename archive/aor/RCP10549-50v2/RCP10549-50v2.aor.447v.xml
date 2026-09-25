@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.447v.tif" pagination="346" reader="John Dee" signature="[Yy.v.[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ciuiliter contendimus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>ciuiliter co[n]tendere</marginalia_text>
+                </position>
+            </language>
+            <translation>To compete in a civil sphere.</translation>
+        </marginalia>
+         
+        <marginalia anchor_text="crudeles in bello nec immanes" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Crudelis immanis</marginalia_text>
+                </position>
+            </language>
+            <translation>Cruel, inhuman.</translation>
+        </marginalia>
+         
+        <marginalia anchor_text="Carthaginem &amp; Numantiam funditus sustulerunt. Nollem Corinthums" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Carthago Numantia Corinthus</marginalia_text>
+                    <location name="Carthage"/>
+                    <location name="Numantia"/>
+                    <location name="Corinth"/>
+                </position>
+            </language>
+            <translation>Carthage, Numantia, Corinth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="loci, maxime, ne posset aliquando ad bellum faciendum locus ipse adhortari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Locus ad bellu[m] adhortati p[otes]t, vt bolonia gallos.</marginalia_text>
+                    <!--JG: Unsure to which place this refers. Could it be Boulogne-sur-le-mer, where the English fought against the French in the sixteenth century?-->
+                    <!-- FSF: possibly! French troops marched against Bologna in 1506 -->
+                </position>
+            </language>
+            <translation>The place might encourage war, as does Bolonia to the French.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="paci" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pax.</marginalia_text>
+                </position>
+            </language>
+            <translation>Peace.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Bellu[m] cu[m] misericordia</marginalia_text>
+                </position>
+            </language>
+            <translation>War with mercy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="belli quidem aequitas sanctissime Feciali Po. Ro. iure perscripta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Belli a[e]quitas Feciali iure perscripta.</marginalia_text>
+                </position>
+            </language>
+            <translation>The equality of war described by the ceremonial law.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="bellem esse iustu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Bellum iustum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Just war.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="summa erat obseruatio in bello mouendo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>summa obseruatio in bello mouendo</marginalia_text>
+                </position>
+            </language>
+            <translation>Strictest observance in waging war.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Catonis senis est epistola" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Catonis Epistola.</marginalia_text>
+                    <person name="Cato the Elder"/>
+                </position>
+            </language>
+            <translation>A letter of Cato.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mansuetudinem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mansuetudo</marginalia_text>
+                </position>
+            </language>
+            <translation>Mildness.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eu[m] quicum bellum geras, tam molli nomine appellari?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hostis vocabulum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Name of the enemy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="imperii gloria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Imperij gloria.</marginalia_text>
+                </position>
+            </language>
+            <translation>The glory of the empire.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pyrrhi quidem de captiuis reddendis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pyrrh[us] de captiuis red[dendis].</marginalia_text>
+                    <person name="Pyrrhus of Epirus"/>
+                </position>
+            </language>
+            <translation>Pyrrhus on delivering the captives.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hosti promiserint, est in eo ipso fides" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hosti data fides serua[n]da</marginalia_text>
+                </position>
+            </language>
+            <translation>The trust given to the enemy must be preserved.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aduersus infimos iustitiam esse seruandam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aduersus infirmos iustitia seruanda.</marginalia_text>
+                </position>
+            </language>
+            <translation>Towards the weakest justice is to be maintained.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="seruoru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Seruus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Servant.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="funditus sustulerunt. Nollem" type="straight"/>
+        <underline language="LA" method="pen" text="ipse adhortari" type="straight"/>
+        <underline language="LA" method="pen" text="quos vi deuiceris" type="straight"/>
+        <underline language="LA" method="pen" text="deuictas bello" type="straight"/>
+        <underline language="LA" method="pen" text="aut rebus repetitis geratur, aut denunciatum antè sit &amp; indictum" type="straight"/>
+        <underline language="LA" method="pen" text="obseruatio in bello" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; proprie in eo qui arma contra ferret, remansit" type="straight"/>
+        <underline language="LA" method="pen" text="proposita est, minus acerbe gere[n]da sunt" type="straight"/>
+        <underline language="LA" method="pen" text="ciuiliter contendimus" type="straight"/>
+        <underline language="LA" method="pen" text="Regalis sanè" type="straight"/>
+        <underline language="LA" method="pen" text="infirma conditio &amp; fortuna seruoru[m]" type="straight"/>
+        
+        <mark method="pen" name="section_sign" place="intext"/> <!-- est. Meminerimus -->
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+        <!-- FSF: unknown symbol -->
+        
+    </annotation>
+</transcription>

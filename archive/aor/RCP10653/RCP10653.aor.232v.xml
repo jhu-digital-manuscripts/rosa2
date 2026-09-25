@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.232v.tif" pagination="16" reader="John Dee" signature="[Bbb ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="empto praesulatu" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Emptus presulatus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A superintendent gained.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gulihelmus de Anco" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Gulielmus de Anco.
+                    </marginalia_text>
+                    <person name="William de Auco"/>
+                </position>
+            </language>
+            <translation>
+                William de Auco.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="empto praesulatu" type="double"/>
+        <underline language="LA" method="pen" text="est, &amp; Simoniacum baculum" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; annulu[m] papae resignauit" type="straight"/>
+        <underline language="LA" method="pen" text="Anco" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

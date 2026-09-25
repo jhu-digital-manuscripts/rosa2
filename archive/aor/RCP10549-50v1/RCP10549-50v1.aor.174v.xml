@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.174v.tif" pagination="328" reader="John Dee" signature="[xx.iiii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="cum bene magna caterua" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cum bene magna caterua
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                With a well-sized crowd.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tributim" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        tributim
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                By tribes.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="talis viri nomine rogatos" type="straight"/>
+        
+    </annotation>
+</transcription>

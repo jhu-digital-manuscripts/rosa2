@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.142r.tif" pagination="267" reader="Harvey" signature="Z2[r]"/> 
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Huc vsq[ue] Dana[e]i aphorismi; et Machiauelli discursus Liuiani. 
+                    </marginalia_text>
+                    <person name="Lambert Daneau"/>
+                    <person name="Machiavelli"/>
+                    <person name="Livy"/>
+                    <book title="Politicorum aphorismorum silva"/>
+                    <book title="Discourses on Livy"/>
+                    <book title="Ab Urbe Condita"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sed notatu dignum, qui ex tertia Decade excerpi poterant aphorismi, eos ferè ex Polybio fuisse descriptos; 
+                        ideoq[ue] inde hîc etia[m] repetendos. Qui autem ex quarta Decade delibari potuissent, planè cum superiorib[us] 
+                        conuenire. Vnde Dana[e]us sua aphoristica opera in prima Decade defunctus, omnibus abundè satisfactum existimauit. 
+                        Eadem ferè Machiavelli ratio: exceptis nonnullis singularibus.</marginalia_text>
+                    <person name="Polybius"/>
+                    <book title="The Histories"/>
+                </position>
+            </language>
+            <translation>Daneau's aphorisms and Machiavelli’s discourses on Livy go up to this point. Yet it is worth to note that the aphorisms that 
+                could be excerpted from the third Decade were practically copied from Polybius. And therefore they should also be repeated here from then on. 
+                The ones, however, that can be derived from the fourth Decade clearly agree with those given above. From which [follows that] Danaeus finished his 
+                works of aphorisms in the first Decade, believing he had amply satisfied everyone. Machiavelli followed more or less the same course, 
+                except for some specific issues.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Æsculapius, Roma[e] tale miraculum Medicorum; quale Archimedes Syracusis miraculum mathematicorum.
+                    </marginalia_text>
+                    <person name="Aesculapius"/>
+                    <person name="Archimedes"/>
+                    <location name="Rome"/>
+                    <location name="Syracuse"/>
+                </position>
+            </language>
+            <translation>Aesculapius, as much a miracle of the doctors at Rome, as in Syracuse Archimedes was the miracle of mathematicians.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ut Aesculapij signum Romam ab Epidauro" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Inane est, lugere amissa: vti, quod</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>superest, scitum est. ) Ouidius, pa[e]ne historicus l. 15 Metam. nam pauca Plinius, ) de Æsculapii delubro Epidauri: fonte Athenis:</marginalia_text>
+                    <person name="Ovid"/>
+                    <person name="Pliny the Elder"/>
+                    <person name="Aesculapius"/>
+                    <book title="Metamorphoses"/>
+                    <location name="Athens"/>
+                    <location name="Epidaurus"/>
+                </position>
+            </language>
+            <translation>It is futile to deplore what is gone, as it is known what is left. Ovid is nearly a historian in bk. 15 of the Metamorphoses. 
+                For Pliny says little about the temple of Aesculapius in Epidaurus, and the spring in Athens.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pyrrhus Epirotarum rex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pyrrhus rex. s[upr]a, 185.</marginalia_text>
+                    <person name="Pyrrhus of Epirus"/>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000207" text="185"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>King Pyrrhus, [see] above 185.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="legatum eius" type="straight"/>
+        <underline language="LA" method="pen" text="fugerat in legationem" type="straight"/>
+        <underline language="LA" method="pen" text="populi iudicium" type="straight"/>
+        <underline language="LA" method="pen" text="iactariq[ue] magis, q[uam] peragi accusatio eius" type="straight"/>
+        <underline language="LA" method="pen" text="uitio creati" type="straight"/>
+        <underline language="LA" method="pen" text="coronati primùm ob res bello bene gestas" type="straight"/>
+        <underline language="LA" method="pen" text="ludos Romanos" type="straight"/>
+        <underline language="LA" method="pen" text="palmaeq[ue] tum primùm" type="straight"/>
+        <underline language="LA" method="pen" text="uictoribus datae" type="straight"/>
+        <underline language="LA" method="pen" text="pestile[n]tiae urentis" type="straight"/>
+        <underline language="LA" method="pen" text="Æculapium" type="straight"/>
+        <underline language="LA" method="pen" text="Epidauro" type="straight"/>
+        <underline language="LA" method="pen" text="diem Æsculapio supplicatio" type="straight"/>
+        
+        <underline language="LA" method="pen" text="SECUNDAM TITI" type="straight"/>
+        <underline language="LA" method="pen" text="Decadem Epitome" type="straight"/>
+        
+        <underline language="LA" method="pen" text="ciuitas pestilentia laboraret" type="straight"/>
+        <underline language="LA" method="pen" text="legatis, ut Aesculapij signum Romam ab Epidauro" type="straight"/>
+        <underline language="LA" method="pen" text="anguem" type="straight"/>
+        <underline language="LA" method="pen" text="in quo ipsum numen esse constabat" type="straight"/>
+        <underline language="LA" method="pen" text="loco sedes Aesculapij constituta" type="straight"/>
+        <underline language="LA" method="pen" text="legati Romanorum à Gallis Senonibus interfecti" type="straight"/>
+        <underline language="LA" method="pen" text="bello ob id Gallis indicto" type="straight"/>
+        <underline language="LA" method="pen" text="classis Romana direpta esset" type="straight"/>
+        <underline language="LA" method="pen" text="legati ad eos à senatu" type="straight"/>
+        <underline language="LA" method="pen" text="pulsati sunt ob" type="straight"/>
+        <underline language="LA" method="pen" text="bellum ijs indictum" type="straight"/>
+        <underline language="LA" method="pen" text="Samnites defecerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Pyrrhus Epirotarum rex, ut" type="straight"/>
+        <underline language="LA" method="pen" text="ferret Tarentis" type="straight"/>
+        <underline language="LA" method="pen" text="Valerius Leuinus" type="straight"/>
+        <underline language="LA" method="pen" text="aduersus Pyrrhum pugnauit" type="straight"/>
+        <underline language="LA" method="pen" text="elephantorum maximè inusitata facie territis" type="straight"/>
+        <underline language="LA" method="pen" text="corpora Romanoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="omnia uersa in hoste[m] inuenit" type="straight"/>
+        <underline language="LA" method="pen" text="populabandusq[ue] ad urbem" type="straight"/>
+        <underline language="LA" method="pen" text="Fabricius missus" type="straight"/>
+        <underline language="LA" method="pen" text="ut patriam deseret" type="straight"/>
+        <underline language="LA" method="pen" text="rege tentatus" type="straight"/>
+        <underline language="LA" method="pen" text="Cyneas legatus à Pyrrho" type="straight"/>
+        <underline language="LA" method="pen" text="componendae pacis causa rex in urbem" type="straight"/>
+        <underline language="LA" method="pen" text="Ap. Claudius" type="straight"/>
+        <underline language="LA" method="pen" text="sententia sua tenuit, ut id Pyrrho negaretur" type="straight"/>
+        <underline language="LA" method="pen" text="aduersus Pyrrhum dubio euentu" type="straight"/>
+        <underline language="LA" method="pen" text="regi uenenum daturum" type="straight"/>
+        <underline language="LA" method="pen" text="Pyrrhum iterum" type="straight"/>
+        <underline language="LA" method="pen" text="Cum Ptolemaeo" type="straight"/>
+        <underline language="LA" method="pen" text="Carthaginensium" type="straight"/>
+        <underline language="LA" method="pen" text="classis auxilio" type="straight"/>
+        <underline language="LA" method="pen" text="quo facto" type="straight"/>
+        <underline language="LA" method="pen" text="ijs foedus uiolatum est" type="straight"/>
+        <underline language="LA" method="pen" text="Pyrrhi mortem continet" type="straight"/>
+        
+        <symbol language="LA" name="JC" place="right_margin" text="legati Romanorum à Gallis Senonibus interfecti essent"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--Arui-->
+        <mark method="pen" name="straight_quotation_mark" place="right_margin"/> 
+        <mark method="pen" name="dash" place="right_margin"/> <!--con-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--sup-->
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--cae-->
+        
+        <mark language="LA" method="pen" name="straight_quotation_mark" place="intext" text="coronati primùm ob res bello bene gestas"/>
+        <mark language="LA" method="pen" name="straight_quotation_mark" place="intext" text="palmaeq[ue] tum primùm"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="anguem"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="in quo ipsum numen esse constabat"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="legati"/>
+        <mark method="pen" name="dot" place="intext"/> <!--essent, bello-->
+        <mark method="pen" name="dot" place="intext"/> <!--occiso, legati-->
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--ageret, frustra-->
+        <mark method="pen" name="plus_sign" place="tail"/> <!--continet-->
+        
+        <errata amendedtext="ducibus" copytext="dicibus" language="LA"/>
+        
+    </annotation>
+</transcription>

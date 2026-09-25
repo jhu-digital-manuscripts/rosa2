@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.029v.tif" reader="Harvey" signature="[Cvi[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="the tenth legion" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>X. legio Ca[e]saris.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Caesar's tenth legion.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>[the] flinging of [the] standard amongst [the] Enemys:</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>s[upr]a, l.2.c.8.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0132" text="l.2.c.8"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[see] above, book 2, chapter 8.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="the legions to betraye" type="straight"/>
+        <underline language="EN" method="pen" text="the Tribunes" type="straight"/>
+        <underline language="EN" method="pen" text="the Centurions" type="straight"/>
+        <underline language="EN" method="pen" text="the fyrste order" type="straight"/>
+        <underline language="EN" method="pen" text="redy moneye" type="straight"/>
+        <underline language="EN" method="pen" text="golde" type="straight"/>
+        <underline language="EN" method="pen" text="the traytours their rewarde" type="straight"/>
+        <underline language="EN" method="pen" text="greate comfort and" type="straight"/>
+        <underline language="EN" method="pen" text="a worthy vyctorie" type="straight"/>
+        <underline language="EN" method="pen" text="Cesar" type="straight"/>
+        <underline language="EN" method="pen" text="no mo that day to helpe hym" type="straight"/>
+        <underline language="EN" method="pen" text="the tenth legion" type="straight"/>
+        <underline language="EN" method="pen" text="tenthe legion" type="straight"/>
+        <underline language="EN" method="pen" text="speciall testimonie of manlynes" type="straight"/>
+        <underline language="EN" method="pen" text="other for very" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="no mo that day to helpe hym"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="tenthe"/>
+        
+    </annotation>
+</transcription>

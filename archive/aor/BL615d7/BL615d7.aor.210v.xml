@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.210v.tif" pagination="[210v]" reader="John Dee" signature="[Ddij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note thy offense given by Christians</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Note that after hurt receyved they wold be quieted.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="era si profondo" type="straight"/>
+        <underline language="IT" method="pen" text="riferirono il falso, per dismontare" type="straight"/>
+        <underline language="IT" method="pen" text="terra" type="straight"/>
+        <underline language="IT" method="pen" text="stemmo IX giorni con tempo turbato, nel principio" type="straight"/>
+        <underline language="IT" method="pen" text="i Christiani ascosamente vscir de' nauigli" type="straight"/>
+        <underline language="IT" method="pen" text="come gente" type="straight"/>
+        <underline language="IT" method="pen" text="et auara" type="straight"/>
+        <underline language="IT" method="pen" text="oltraggi" type="straight"/>
+        <underline language="IT" method="pen" text="furono cagione" type="double"/>
+        <underline language="IT" method="pen" text="che gl'Indiani si alterassero in modo" type="straight"/>
+        <underline language="IT" method="pen" text="che su ruppe la pace con" type="double"/>
+        <underline language="IT" method="pen" text="riguardo ad acquetarli" type="straight"/>
+        <underline language="IT" method="pen" text="patientia, &amp; con cortesia" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+  
+        <!-- FSF: I think there is also an errata in the right margin connecting the word parti --> <!-- MB: tagged as quotation. -->
+        
+    </annotation>
+</transcription>

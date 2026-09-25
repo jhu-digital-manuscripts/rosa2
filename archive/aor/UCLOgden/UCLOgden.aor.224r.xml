@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.224r.tif" reader="John Dee" signature="Q 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="Tot numerare iubet fulgens horoscopus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Summa difficultas in horoscopo exacte habe[n]do.</marginalia_text>  
+                </position>
+            </language>
+            <translation>The greatest difficulty in accurately creating a horoscope.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quot'q[ue] ab ea Phoebus partes &amp; signa recedit, Tot numerare iubet fulgens horoscopus" type="straight"/>
+        <underline language="LA" method="pen" text="Cardinibus quoniam falsis quae cuncta gubernant Mentitur faciem mundus, nec constat origo" type="straight"/>
+        <underline language="LA" method="pen" text="Ac tantae molis minimum deprendere punctum" type="straight"/>
+        <underline language="LA" method="pen" text="Nec me" type="straight"/>
+        <underline language="LA" method="pen" text="Vix finit luces Cancer, uix bruma reducit" type="straight"/>
+        <underline language="LA" method="pen" text="Adde quod incerta est horae mensura, neq[ue] ullam" type="straight"/>
+        <underline language="LA" method="pen" text="Cum tamen in quocunq[ue] dies deducitur astro Sex habeat supra terras, sex signa sub illis" type="straight"/>
+        
+       <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

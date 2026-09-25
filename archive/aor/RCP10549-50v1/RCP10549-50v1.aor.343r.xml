@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.343r.tif" pagination="17" reader="John Dee" signature="B.i.[r]"/>
+    <annotation> 
+        
+        <marginalia anchor_text="πολιτικώτερον enim te adhuc neminem cognoui" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>te</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>πολιτικώτερον</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>nemine[m] cognoui.</marginalia_text>
+                </position>
+            </language>
+            <translation>I realize that there is no one more civil than you.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rumor" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rumor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rumor.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pompeio" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pompeius</marginalia_text>
+                    <person name="Pompey"/>
+                </position>
+            </language>
+            <translation>Pompey.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Athenis" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Athenae</marginalia_text>
+                </position>
+            </language>
+            <translation>Athenians.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gallus noster Caninius" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gallus Caninius.</marginalia_text>
+                    <person name="Lucius Caninius Gallus"/>
+                </position>
+            </language>
+            <translation>Lucius Caninius Gallus.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Epistola subobscura haec est.</marginalia_text>
+                </position>
+            </language>
+            <translation>This letter is somewhat rare.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="latrocinia" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Latrocinia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Robbery.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de nihilo" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>de Hillo.</marginalia_text> 
+                    <person name="Caius Lucilius Hirrus"/>
+                </position>
+            </language>
+            <translation>Concerning Caius Lucilius Hirrus.</translation> <!-- NBW: the mark in front of this is some sort of erratum. The sense of the note is "this should read 'de Hillo' -->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>De rebus gestis cic[erone]. in Bello Parthico.</marginalia_text> 
+                    <person name="Cicero"/>
+                </position> 
+            </language>
+            <translation>The deeds done by Cicero in the Parthian war.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Amanum" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Amanus. m[ons].</marginalia_text>
+                    <location name="Amanus Mountains"/>
+                </position>
+            </language>
+            <translation>The Amanus mountains.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hiccine" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hiccine est ille?</marginalia_text>
+                </position>
+            </language>
+            <translation>Is he not that man?</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Amanum" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Amanus mons.</marginalia_text>
+                    <location name="Amanus Mountains"/>
+                </position>
+            </language>
+            <translation>The Amanus mountains.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cassius" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cassius</marginalia_text>
+                    <person name="Gaius Cassius Longinus"/> 
+                </position>
+            </language>
+            <translation>Gaius Cassius Longinus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Antiochia" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Antiochia</marginalia_text>
+                    <location name="Antioch"/>
+                </position>
+            </language>
+            <translation>Antioch.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Bibulus" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bibulus.</marginalia_text>
+                    <person name="Marcus Calpurnius Bibulus"/>
+                </position>
+            </language>
+            <translation>Marcus Calpurnius Bibulus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vt mihi gladiatorum compositiones, vt vadimonia dilata, &amp; Chresti co[m]pilationem" type="straight"/>
+        <underline language="LA" method="pen" text="[Greek] enim" type="straight"/> <!-- NBW: Needs Greek -->
+        <underline language="LA" method="pen" text="ne illa quidem curo mihi scribas, quae maximis in rebus reip[sis]. geruntur quotidie, nisi quid ad meipsum pertinebit." type="straight"/>
+        <underline language="LA" method="pen" text="nuntiabunt, perferet multa etiam ipse rumor." type="straight"/>
+        <underline language="LA" method="pen" text="longe in posterum prospiciente" type="straight"/>
+        <underline language="LA" method="pen" text="dies nullis in aliis, nisi de rep. sermonibus versatus sum: quae nec possunt scribi, nec scribe[n]da sunt. tantu[m]" type="straight"/> <!-- NBW: Check Abbreviation -->
+        <underline language="LA" method="pen" text="iam iidem illi &amp; boni &amp; mali ciues videntur, qui nobis viceri sole[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="mea co[m]mendatissima" type="straight"/>
+        <underline language="LA" method="pen" text="in eo mihi sunt omnia" type="straight"/>
+        <underline language="LA" method="pen" text="egíque omneis illos adolescenteis, quos ille iactitat. difficile" type="straight"/>
+        <underline language="LA" method="pen" text="verò incessi omnibus laetitiis" type="straight"/>
+        <underline language="LA" method="pen" text="Ego voluptatem animi nimiam." type="straight"/>
+        <underline language="LA" method="pen" text="dum illum rideo, penè sum factus ille." type="straight"/>
+        <underline language="LA" method="pen" text="enim possum adduci vt" type="straight"/>
+        <underline language="LA" method="pen" text="me laetitia extulerunt: ex" type="straight"/>
+        <underline language="LA" method="pen" text="domum misi vnam epistolam, quin esset ad te altera: nec" type="straight"/>
+        <underline language="LA" method="pen" text="tantum modo" type="straight"/>
+        <underline language="LA" method="pen" text="quod esset ad laureolam" type="straight"/>
+        <underline language="LA" method="pen" text="exercitum adduxi" type="straight"/>
+        <underline language="LA" method="pen" text="probe ornatum auxiliis" type="straight"/>
+        <underline language="LA" method="pen" text="enim in his locis, Hiccine est ille, qui vrbem? quem" type="straight"/>
+        <underline language="LA" method="pen" text="est, diuisus aquaru[m] diuortiis: Cassius" type="straight"/>
+        <underline language="LA" method="pen" text="Antiochia hoste[m] reiecerat, Bibulus" type="straight"/>
+        <underline language="LA" method="pen" text="omnibus vexaui Amanienseis hosteis sempiternos. multi occisi, capti, reliqui dissipati:" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/> <!-- NBW: Poss w/flourish -->
+        <symbol name="Jupiter" place="right_margin"/> <!-- NBW: Poss w/flourish -->
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/> <!-- NBW: Poss w/flourish -->
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="dagger" place="intext" text="de nihilo"/> 
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        
+        <errata amendedtext="tactu[m]" copytext="factu" language="LA"/>
+        
+        <drawing anchor_text="ne illa quidem curo mihi scribas, quae maximis in rebus reip[sis]. geruntur quotidie, nisi quid ad meipsum pertinebit." book_orientation="0" method="pen" place="right_margin" type="manicule"/> 
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+
+
+    </annotation>
+</transcription>

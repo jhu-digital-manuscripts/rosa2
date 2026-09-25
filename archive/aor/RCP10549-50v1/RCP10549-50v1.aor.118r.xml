@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.118r.tif" pagination="215" reader="John Dee" signature="oo.iiii."/>
+    <annotation>
+        
+        <marginalia anchor_text="fundi extrema[m] partem oleae directo ordine definiunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        diffinire parte[m] extrema[m] fundi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To define the boundary of the estate.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="clara voce" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        clara voce
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                With a clear voice.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tere[n[tianus est Phormio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tere[n]tianus Phormio
+                    </marginalia_text>
+                    <person name="Terence"/>
+                    <person name="Phormio"/>
+                </position>
+            </language>
+            <translation>
+                Phormio in Terence.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tamen in hac re plus mihi animi, quàm co[n]silii videtur habuisse" type="straight"/>
+        <underline language="LA" method="pen" text="etenim no[n] minus nos stultitia illius subleuat, quàm laedit improbi" type="straight"/>
+        <underline language="LA" method="pen" text="de se autem hoc praedicat" type="straight"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+    </annotation>
+</transcription>

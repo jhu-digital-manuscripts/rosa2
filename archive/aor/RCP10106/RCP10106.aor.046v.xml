@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.046v.tif" pagination="92" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="ars dice[n]di" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ars Dicendi</marginalia_text>
+                </position>
+            </language>
+            <translation>The art of speaking.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quae sunt tame[n] tradita, quid ex ijs optimum, &amp; siqua mutari, adijci, detrahi melius uidebitur, dicere experiar" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>O[mn]i[um] reru[m] heus vicßitudo,</marginalia_text>
+                </position>
+            </language>
+            <translation>Listen! The vicissitude of all matters.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Flauij" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>.Flauius.</marginalia_text>
+                    <person name="Verginius Flavus"/>
+                </position>
+            </language>
+            <translation>Flavus</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="duplice[m] intellectum habet. Nanq[ue] uno modo fit appo situm ars rhetorica, ut nauis piractica: altera, nomen rei, qualis est philosophica, amicitia.              Nos ipsam nunc uolumus significare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rhetorica duplicem habet significatione[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Rhetoric has two meanings.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Tullius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>M[arcus] Tullius</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Marcus Tullius</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Multo labore, aßiduo" type="straight"/>
+        <underline language="LA" method="pen" text="varia exercitatione, pluribus experimentis, altißima prudentia, praesentißimo co[n]silio co[n]stat ars dice[n]di" type="straight"/>
+        <underline language="LA" method="pen" text="Sed non omnia nos ducentes ex Graeco sequuntur" type="straight"/>
+        <underline language="LA" method="pen" text="ne illos quide[m], quoties suis utiq[ue] uerbis signare nostra uolueru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="substantia[m], ut gra[m]matice literatura est no[n] literatrix" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

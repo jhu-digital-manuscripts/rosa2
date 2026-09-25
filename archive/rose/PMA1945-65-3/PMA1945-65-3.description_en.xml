@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Philadelphia, Philadelphia Museum of Art, The Philip S. Collins Collection, 1945-65-3</p>
+        </note>
+        <note rend="CONTENTS">
+          <p><hi rend="italics">Roman de la Rose</hi> (ff. 1r-150v), <hi rend="italics">Le Testament</hi> of Jean de Meun (ff. 151r-177v), <hi rend="italics">Song rimé</hi> (ff. 178r-179v), <hi rend="italics">Le Codicille</hi> of Jean de Meun (ff. 180r-200v), <hi rend="italics">Les Lois des trespassez</hi> (ff. 200v-201v), <hi rend="italics">Miserere defunctorum</hi> (ff. 201v-202v)</p>
+        </note>
+        <note rend="MATERIAL">
+          <p>Parchment</p>
+        </note>
+        <note rend="ORIGIN">
+          <p>Paris, France</p>
+        </note>
+        <note rend="DATE">
+          <p>ca. 1440-80</p>
+        </note>
+        <note rend="LANGUAGE">
+          <p>French</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>Bâtarde, written in 2 columns of 40 lines, 1 scribe</p>
+        </note>
+        <note rend="ARTISTS">
+          <p>Workshop of Maître François, 2 artists</p>
+        </note>
+        <note rend="DECORATION">
+          <p>2 double-column miniatures with 4-sided foliate marginal borders, in colors and gold (ff. <locus>1r</locus>, <locus>151r</locus>), 1 historiated initial ‘M’ (f. <locus>1r</locus>), and 74 single-column miniatures (22 with arched tops) on folios with partial foliate marginal borders, in colors and gold (ff. 2r (x2), 2v (x2), 3r (x2), 3v, 4r, 4v, 5r, 6r, 7r, 9r, 9v, 10r, 10v, 11r (x2), 12r, 12v, 13v, 14r, 15v, 16r, 16v, 17r, 21v, 22v, 23r, 23v, 24v (x2), 25v, 26r, 26v, 27r, 27v, 28r (x2), 28v, 29r, 30r, 30v, 32r, 33v, 38r, 43v, 47r, 47v, 49r, 49v, 50v, 54v, 62v, 63v, 72v, 73v, 74v, 75v, 76r, 79r, 79v, 87r, 89v, 91r, 92v, 95r, 105r, 107v, 108v, 117v, 135r, 143r, 143v). (The scene on f. 155r is for the <hi rend="italics">Le Codicille</hi> of Jean de Meun.) Large and small decorated initials, in pink, blue, and gold.</p>
+        </note>
+        <note rend="DIMENSIONS">
+          <p>339 x 236 mm (text block, 228 x 157mm)</p>
+        </note>
+        <note rend="FOLIATION">
+          <p>ff. i + 202 + i</p>
+        </note>
+        <note rend="BINDING">
+          <p>French, ca. 1900; green velvet, with gilded ornamental clasps and corner pieces, silver plaque engraved with title on upper cover.</p>
+        </note>
+        <note rend="PROVENANCE">
+          <p>François César Le Tellier, marquis de Courtanvaux (1718-1781), late 18th century (armorial book stamp on first and last pages); sale, Paris, July 7, 1783, lot 1258; Joseph-Louis, baron d’Heiss; sale, De Bure fils aîné, Paris, March 8, 1785, lot 223; M. and Mme. Paignon-Dijonval, Paris; Charles Gilbert Terray, vicomte Morel-Vindé (1759-1842), Paris; sale, De Bure frères, Paris, March 17, 1823, lot 1379; Henry Perkins (1788-1855), Springfield, Surrey, England, ca. 1825; Algernon Perkins (d. 1872); sale, Gadsden, Ellis and Co. (London booksellers), Hanworth Park, <hi rend="italics">Catalogue of the…Library Formed by the late Henry Perkins, Esq</hi>., June 3-6, 1873, lot 637, illus.; Thomas Shadford Walker (1834-1885), Liverpool; sale, Sotheby’s, London, June 23-24, 1886, lot 277; Bernard Quaritch (bookseller), London, cat. 369, 1886, no. 35727; cat. 103, 1890, no. 362; cat. 138, 1893, no. 104; Henri Bordes, Bourdeaux (bookplate); sale, Paris, June 10, 1899, lot 6; Robert Hoe (1839-1909), New York; sale, Anderson Auction Company, New York, January 8, 1912, II, lot  2491, illus.; James F. Drake (bookseller), New York; Cortlandt Field Bishop, New York; his sale, American Art Association, Anderson Galleries, New York, April 25-27, 1938, II, lot 1364, illus.; Philip S. Collins, Philadelphia (bookplate); given by his wife, Mary Schell Collins, to the Philadelphia Museum of Art in 1945 in memory of her husband. </p>
+        </note>
+        <note rend="NOTES">
+          <p>Text has additions and revisions of Gui de Mori and there are marginal inscriptions in a 16th-century reader’s hand.</p>
+        </note>
+        <note rend="SELECT BIBLIOGRAPHY">
+          <p>1. Maxwell Luria, “A Sixteenth-Century Gloss on the Roman de la Rose,” <hi rend="italics">Mediaeval Studies</hi>, 44 (1982), pp. 333-70. </p>
+          <p>2. James R. Tanis et al., <hi rend="italics">Leaves of Gold: Manuscript Illumination from Philadelphia Collections</hi> (Philadelphia, PA: Philadelphia Museum of Art, 2001), pp. 210-14 (cat. no. 73).</p>
+        </note>
+        <note rend="N.B.">
+          <p>This description has been compiled using the site's images and various published sources. If you have corrections or additional information on this manuscript, please do contact us.</p>
+        </note>
+        <note>
+          <p>Description by Beatrice Radden Keefe</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">PMA 1945-65-3</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="202" unit="folios">202</measure>
+            <dimensions>
+              <height unit="mm">339</height>
+              <width unit="mm">236</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">76</note>
+          <note type="material">parchment</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1500" notBefore="1400">15th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Philadelphia, PA</settlement>
+            <repository>Philadelphia Museum of Art</repository>
+            <idno>The Philip S. Collins Collection, 1945-65-3</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="150r">1-150r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">150</note>
+              <note type="illustrations">75</note>
+              <note type="linesPerColumn">40</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="151r" to="177v">151r-177v</locus>
+              <title>Testament</title>
+              <note type="textid">testament</note>
+              <note type="folios">27</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">40</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="178r" to="179v">178r-179v</locus>
+              <title>Rhyming song</title>
+              <note type="textid"/>
+              <note type="folios">2</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">40</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+            <msItem n="4">
+              <locus from="180r" to="200v">180r-200v</locus>
+              <title>Codicille</title>
+              <note type="textid">codicille</note>
+              <note type="folios">21</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">40</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+            <msItem n="5">
+              <locus from="200v" to="201v">200v-201v</locus>
+              <title>Les Lois des trespassez</title>
+              <note type="textid">trespassez</note>
+              <note type="folios">2</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">40</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+            <msItem n="6">
+              <locus from="201v" to="202v">201v-202v</locus>
+              <title>Codicille in Latin</title>
+              <note type="textid">codicillelatin</note>
+              <note type="folios">2</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">40</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

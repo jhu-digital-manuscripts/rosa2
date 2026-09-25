@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.167v.tif" pagination="158" reader="Harvey" signature="[K7v]"/>	<!-- ABO 172left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Quanta[e] Causa[e], tanti Effectus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>As the causes are great, so are the effects.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						risoluto.	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Resolute.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Pueri Laceda[e]mone: viri nusq[uam].
+					</marginalia_text>
+					<location name="Sparta"/>
+				</position>
+			</language>
+			<translation>For a Spartan boy: never for a man.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Socratica aliorum Obseruatio.
+					</marginalia_text>
+					<person name="Socrates"/>
+				</position>
+			</language>
+			<translation>A Socratic observation of others.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Chi la dura, la vince.	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>No pain, no gain.</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Natura quotidiè corroboranda: Ars quotidiè augenda: Exercitatio, aut
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						actio quotidiè
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="tail">
+					<marginalia_text>
+						perseque[n]da.
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Omnia quotidiè
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="tail">
+					<marginalia_text>
+						extende[n]da.
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Incrementi quotidiè reminisce[n]du[m].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Nature must be strengthened daily: Art must be increased daily. Excercise, or action, must be pursued daily. Everything must be extended daily.
+				Growth must be called to mind daily.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Telemachus; et Pyrrhus, statim egregij viri: quia Hoc agebant, quotidiana
+						Confidentia, industria, a[e]mulatione maximorum Heroum.
+					</marginalia_text>
+					<person name="Telemachus"/>
+					<person name="Pyrrhus of Epirus"/>
+				</position>
+			</language>
+			<translation>Telemachus and Pyrrhus were extraordinary men immediately: because they did this with daily confidence, industry, and the emulation of the greatest heroes.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="il biasimauano" type="straight"/>
+		<underline language="IT" method="pen" text="molto mal diceuano" type="straight"/>
+		<underline language="IT" method="pen" text="tenda del padiglione" type="straight"/>
+		<underline language="IT" method="pen" text="dir mal" type="straight"/>
+		<underline language="IT" method="pen" text="andate piu discosto" type="straight"/>
+		<underline language="IT" method="pen" text="della curta vita" type="straight"/>
+		<underline language="IT" method="pen" text="la superbia humana" type="straight"/>
+		<underline language="IT" method="pen" text="XERSE" type="straight"/>
+		<underline language="IT" method="pen" text="io son beato" type="straight"/>
+		<underline language="IT" method="pen" text="veggendo tanta mutatione" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; brieue la vita de" type="straight"/>
+		<underline language="IT" method="pen" text="di cento anni" type="straight"/>
+		<underline language="IT" method="pen" text="tutti noi altri indubitatamente" type="straight"/>
+		<underline language="IT" method="pen" text="saremo morti, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="sà molto" type="straight"/>
+		<underline language="IT" method="pen" text="parlar poco" type="straight"/>
+		<underline language="IT" method="pen" text="huomo troppo loquace" type="straight"/>
+		<underline language="IT" method="pen" text="sapessi assai" type="straight"/>
+		<underline language="IT" method="pen" text="parleresti poco" type="straight"/>
+		<underline language="IT" method="pen" text="Saggio chi" type="straight"/>
+		
+		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- la tenda -->
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- con -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- appres -->
+		
+		<mark method="pen" name="plus_sign" place="tail"/> <!-- tace -->
+    </annotation>
+</transcription>

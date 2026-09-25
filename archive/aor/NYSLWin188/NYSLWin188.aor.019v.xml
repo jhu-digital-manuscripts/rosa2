@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.019v.tif" pagination="[19[v]]" reader="John Dee" signature="[Eiij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="als ein Geist außgezogen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <language ident="DE">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Als ein Geist auszgezogen.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note. Shown like a mind.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Also ist ein Corpus Solis, Sulphur ein Corpus Lunae, vnd der Liquor ein Corpus der finstere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sal - ☉ Sulph - ☾ Mer[curiu]m - Teneb.</marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>Salt - the sun; Sulfur - the moon; Mercury - darkness.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Darumb hat Gott sechs tag gewürcket biß er extrahiert separiert geformiert has" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Separatio diuina, sex dieru[m] labor in Genesi.</marginalia_text>
+                    <book title="Book of Genesis"/>
+                </position>
+            </language>
+            <translation>Divine separation, six days of labour in Genesis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in sechs tagen herauß gescheiden" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Creatio Dei in sex diebus</marginalia_text>
+                </position>
+            </language>
+            <translation>The creation of God in six days.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="als ein Geist außgezogen" type="triple"/>
+        <underline language="DE" method="pen" text="die Sonne[n]" type="double"/>
+        <underline language="DE" method="pen" text="schein des Rötten" type="straight"/>
+        <underline language="LA" method="pen" text="Corpus Sulphuris" type="double"/>
+        <underline language="DE" method="pen" text="Rötte" type="straight"/>
+        <underline language="DE" method="pen" text="Diaphinitet vnd Perspicuitet" type="straight"/>
+        <underline language="DE" method="pen" text="Sulphuris Rubei" type="double"/>
+        <underline language="DE" method="pen" text="Liquor ein Corpus der finstere" type="double"/>
+        <underline language="DE" method="pen" text="hat zu sein" type="double"/>
+        <underline language="DE" method="pen" text="selbst gescheiden wider" type="double"/>
+        <underline language="DE" method="pen" text="sechs tag gewürcket biß er extrahiert" type="straight"/>
+        <underline language="DE" method="pen" text="separiert" type="straight"/>
+        <underline language="DE" method="pen" text="geformiert" type="straight"/>
+        <underline language="LA" method="pen" text="Prima materia, Vltimas materias" type="straight"/>
+        <underline language="DE" method="pen" text="auff die zergehung der Welt" type="straight"/>
+        <underline language="DE" method="pen" text="eins geschaffen" type="double"/>
+        <underline language="DE" method="pen" text="sechs tagen herauß gescheiden" type="straight"/>
+        
+        <symbol name="Sun" place="head"/>
+        <symbol name="Moon" place="head"/>
+        
+        <mark method="pen" name="X_sign" place="right_margin"/>        
+        <mark method="pen" name="comma" place="intext"/> <!--materia alle-->
+        <mark method="pen" name="circumflex" place="intext"/>    
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <errata amendedtext="Also ist sal ein Corpus Solis" copytext="Also ist ein Corpus Solis" language="DE"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.endmatter.flyleaf.02r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        One Rice Merik dwelling in Bolston in Clamorgan Shiere hath good store of Moniments.
+                    </marginalia_text>
+                    <person name="Rice Merik"/>
+                    <location name="Glamorganshire"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Rice ap howell bedo [deleted: Dee] Dee otherwise called Rice ap Howell Dee dwelling at Discod, is executor to his brother Lewys, who gaue me the first note of my pedygree.: 1567. This Rice is dead also.
+                    </marginalia_text>
+                    <person name="Rice ap Howell Bedo Dee"/>
+                    <person name="Lewys ap Howell Bedo Dee"/>
+                    <emphasis method="pen" text="Lewys, who" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        M[iste]r Clyderall, hath at Newcastell a barell full, of old hystories of this land. This M[iste]r Clyderall was a student of Cambrige in my tyme, and of M[iste]r Morley his acquayntance and my als[o].
+                    </marginalia_text>
+                    <location name="Newcastle"/>
+                    <location name="Cambridge"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        } Maclin[us] de Legibus Druidu[m] Aluredi te[m]pore Iervasius de antiquis Brytannia[e] regibus 
+                        Pancratius de statu Bryta[n]nia[e] te[m]porib[us] suis et ante 200 a[n]nos Ieoslin[us] de ep-iscop]is 
+                        Henric[us] Lacestre[n]s <!-- NBW: Possibly partially lost -->
+                    </marginalia_text>
+                    <book title="De Legibus druidum"/>
+                    <book title="De antiquis Brytannia regibus"/>
+                    <book title="De Statu Brytanniae temporibus suis et ante 200 annos"/>
+                </position>
+            </language>
+            <translation>} Maclinus' "De Legibus Druidum in Aluredi tempori", Gervasius' "De Antiquis Brytannia regibus", Pancratius' "De Statu Brytanniae" in his own time and 200 years before, Goscelinus, "De Episcopis",  </translation>
+        </marginalia>
+      
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        M[iste]r Cary in chepes side hath many good moniments. as of Syluester Gyraldus Ca[m]brensis his sundry works. 
+                        Nennius. Hovedon Higdon, Avesbury [etc.] 
+                    </marginalia_text>
+                    <person name="Nennius"/>
+                    <person name="Gerald of Wales"/>
+                    <person name="Ranulph Higden"/>
+                    <person name="Roger of Howden"/>
+                    <person name="Robert of Avesbury"/>
+                    <location name="Cheapside"/>
+                    <!-- NBW: These are both references to authors and their works, as on the front flyleaves. -->
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Galfredus Monemuthe[n]sis
+                    </marginalia_text>
+                    <person name="Geoffrey of Monmouth"/>
+                </position>
+            </language>
+            <translation>Geoffrey of Monmouth.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        John stow also the Taylor hath good monime[n]ts. who set out the sommary of the english Chronicle. he hath Robart Avesbury
+                    </marginalia_text>
+                    <person name="John Stow"/>
+                    <person name="Robert of Avesbury"/>
+                    <book title="Summary of the Chronicles of England"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        M[iste]r D. Cay of Oxford had Caradocus Lancarvanensis in Latyn it is to be enquired who had his bokes.
+                    </marginalia_text>
+                    <!-- NBW: This is possibly a later correction of the note from "has" to "had" -->
+                    <person name="Caradoc of Llancarfan"/>
+                    <location name="Oxford"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

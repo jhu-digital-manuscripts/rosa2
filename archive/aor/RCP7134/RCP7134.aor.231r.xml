@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.231r.tif" pagination="224" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vide aphorismu[m] 103. 137 138. 139. 144.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:463" text="103"/>
+                        <target ref="RCP7134:466" text="137"/>
+                        <target ref="RCP7134:466" text="138"/>
+                        <target ref="RCP7134:466" text="139"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See aphorisms 103, 137, 138, 139, 144.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in Alfridaria conuenienti ceciderit in ascendente, natus eo anno occidet hominem" type="straight"/> 
+        <underline language="LA" method="pen" text="est dominus ascendentis" type="straight"/>
+        
+    </annotation>
+</transcription>

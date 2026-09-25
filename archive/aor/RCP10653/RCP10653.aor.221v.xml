@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.221v.tif" pagination="434" reader="John Dee" signature="[Oo [v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="mors filiae Ducis Gulihelmi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        filia Gulielmi Ducis Nor. moriebatur ante Nuptiar[um] tempus cu[m] Haraldo pr[a]esentu[m] 
+                    </marginalia_text>
+                    <person name="William the Conqueror"/>
+                    <person name="Adeliza"/>
+                    <person name="Harold Godwinson"/>
+                </position>
+            </language>
+            <translation>
+                The daughter of the Duke of Normandy, William the Conqueror, died before her wedding with Harold Godwinson had come.  
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="mors filiae Ducis Gulihelmi, quam infrà nubiles annos desponderat" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>   
+        <mark method="pen" name="tripunctus" place="tail"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- annos desponderat -->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        
+        <errata amendedtext="Duci" copytext="Ducis" language="LA"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.306r.tif" pagination="591" reader="John Dee" signature="[ooo.viii.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Lucule[n]tam tamen ipse plagam accaepit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>accipere plaga[m] lucule[n]ta[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>To receive a brilliant blow.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="cicatrix" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>cicatrix.</marginalia_text>
+                </position>
+            </language>
+            <translation>scar.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="parati sint ad nutum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ad nutu[m] parat[us]</marginalia_text>
+                </position>
+            </language>
+            <translation>Prepared for the order.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="coagmentari quide[m] posse pace[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>pace[m] coagme[n]tari</marginalia_text>
+                </position>
+            </language>
+            <translation>That the peace is joined.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="qui planè &amp; Latine loquuntur" type="straight"/>
+        <underline language="LA" method="pen" text="Lucule[n]tam" type="straight"/>
+        <underline language="LA" method="pen" text="vt declarat" type="straight"/>
+        <underline language="LA" method="pen" text="posterum quàm longissime prouidere" type="straight"/>
+        <underline language="LA" method="pen" text="metu Populum" type="straight"/>
+        <underline language="LA" method="pen" text="Turpe est summo co[n]silio orbis terrae, praesertim in re tam perspicua, consilium intelligendi defuisse" type="straight"/>
+        <underline language="LA" method="pen" text="sine culpa Senatus" type="straight"/>
+        <underline language="LA" method="pen" text="deero, monebo, praedicabo" type="straight"/>
+        
+        <symbol name="Asterisk" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">13</numeral>
+        
+        <drawing anchor_text="Turpe est summo co[n]silio orbis terrae, praesertim in re tam perspicua, consilium intelligendi defuisse" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

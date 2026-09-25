@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.227r.tif" pagination="220" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Cacod[a]emonis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cacoda[e]mon.</marginalia_text>
+                </position>
+            </language>
+            <translation>Cacodaemon.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cum'q[ue] Eudaemon potens est, &amp; cadit in domum cadentem, habebit magnam potentiam in qua opprimetur, si autem debilis &amp; in angulo beatus erit in minimis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Eudemonis domus</marginalia_text>
+                </position>
+            </language>
+            <translation>The house of Eudaemon.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vltimi &amp; levissimi cacodaemonis locus in alijs causis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota. Levissimi cacoda[e]monis locu[m] in alijs significationib[us] et dispositionibus invare posse.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note that the most nimble Cacodaemons can enter a place in other signifiers and dispositions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cu[m] Luna fuerit in Scorpio[n]e, in q[ua]drato Saturni" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☾ in ♏ in □ ♄</marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Scorpio"/>
+                    <symbol_in_text name="Square"/>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>The Moon in Scorpio in 90 decrees to Saturn.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vide figuram seque[n]te[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>See the following figure.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cum'q[ue] Eudaemon potens est, &amp; cadit in domum cadentem, habebit magnam potentiam in qua opprimetur, si autem debilis &amp; in angulo beatus erit in minimis" type="straight"/>
+        <underline language="LA" method="pen" text="quae ad eruditione[m] &amp; gratia[m] facit" type="straight"/>
+        <underline language="LA" method="pen" text="Vltimi &amp; levissimi cacodaemonis locus in alijs causis" type="straight"/>
+        <underline language="LA" method="pen" text="p[er] parte[m]" type="double"/>
+        <underline language="LA" method="pen" text="natus uxore filijsq[ue] carebit" type="straight"/>
+        <underline language="LA" method="pen" text="si in sexto uel ex sexto loco" type="straight"/>
+        
+    </annotation>
+</transcription>

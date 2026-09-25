@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.155v.tif" pagination="[156v]" reader="John Dee" signature="[V.iiij.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="saltare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Saltare</marginalia_text>
+                </position>
+            </language>
+            <translation>Dancing.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ille nouauit" type="straight"/>
+        <underline language="LA" method="pen" text="Reticulóq[ue] pilae leues fundantur aperto" type="straight"/>
+        <underline language="LA" method="pen" text="lubricus annus" type="straight"/>
+        <underline language="LA" method="pen" text="Ludere. ludendo saepe paratur amor" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Mille face esse iocos. turpe est nescire puellam Ludere. ludendo saepe paratur amor"/>
+         
+    </annotation>
+</transcription>

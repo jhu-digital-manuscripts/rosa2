@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.062v.tif" pagination="108" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        J Dee.
+                        Ex Ephastione Thebano.
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                    <person name="Hephaestion of Thebes"/>
+                </position>
+            </language>
+            <translation>
+                J[ohn] Dee
+                From Hephaestion of Thebes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aries: Asiccan, Senacher, Asentacer; Taurus: Asicath, Viroaso, Aharph; Gemini: Thesogar, Verasua, Tepisatosoa; Cancer: Sothis, Syth, Thuimis; Leo: Aphruimis, Sithacer, Phuonisie." hand="English_secretary"> 
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>♈ { χονταρέτ [χονταρχρεν - deleted] χονταχρήν σικέτ | ♉ { χωού ἔρω ῥομβρόμαρε | ♊ { θοσόλβ οὐαρέ δαωρί |♋ { σωθὶς
+                        σίτων χνουμίς |♌ { χάρ χνοῦς μῦσ</marginalia_text>
+                    <symbol_in_text name="Aries"/>
+                    <symbol_in_text name="Gemini"/>
+                    <symbol_in_text name="Taurus"/>
+                    <symbol_in_text name="Leo"/>
+                </position>
+            </language>
+            <translation>Aries: Asiccan, [Senacher - deleted], Asentacer; Taurus: Asicath, Viroaso, Aharph; Gemini: Thesogar, Verasua, Tepisatosoa; Cancer: Sothis, Syth, Thuimis;
+                Leo: Aphruimis, Sithacer, Phuonisie.</translation>
+        </marginalia>
+        
+        <!-- M.B. Note the Greek terms are the equivalent decanal names from Hephaestion of Thebes and can be linked to the underlined terms above (from Maternus's table). 
+            Dee's Greek terms appear to follow the same form (and contractions) as in  the'Ek tôn Hêphaistiônos tou Thêbaiou apotelesmatikôn' section of Joachim Camerarius' Astrologica, quorum titulos versa pagella indicabit (1532). -->
+        
+        <!--JG: The decans have been named differently across different traditions: https://en.wikipedia.org/wiki/Decan-->
+        
+        <underline language="LA" method="pen" text="Asicath" type="straight"/>
+        <underline language="LA" method="pen" text="Viroaso" type="straight"/>
+        <underline language="LA" method="pen" text="Aharph" type="straight"/>
+        <underline language="LA" method="pen" text="7" type="straight"/>
+        <underline language="LA" method="pen" text="Thesogar" type="straight"/>
+        <underline language="LA" method="pen" text="Verasua" type="straight"/>
+        <underline language="LA" method="pen" text="Tepisatosoa" type="straight"/>
+        <underline language="LA" method="pen" text="Sothis" type="straight"/>
+        <underline language="LA" method="pen" text="Syth" type="straight"/>
+        <underline language="LA" method="pen" text="Thuimis" type="straight"/>
+        <underline language="LA" method="pen" text="Aphruimis" type="straight"/>
+        <underline language="LA" method="pen" text="Sithacet" type="straight"/>
+        <underline language="LA" method="pen" text="Phuonisie" type="straight"/>
+        <underline language="LA" method="pen" text="Thumis" type="straight"/>
+        <underline language="LA" method="pen" text="Thopitus" type="straight"/>
+        <underline language="LA" method="pen" text="Aphut" type="straight"/>
+        <underline language="LA" method="pen" text="Serucuth" type="straight"/>
+        <underline language="LA" method="pen" text="Aterechinis" type="straight"/>
+        <underline language="LA" method="pen" text="Arepien" type="straight"/>
+        
+        <table place="intext" type="standard_table"> <!-- M.B. The Grad[us] column is the cumulative sum of each preceding degree of separation between the decanal positions in the zodiac.-->
+           
+            <tr>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td>30</td>
+            </tr>
+        </table>
+        
+    </annotation>
+</transcription>

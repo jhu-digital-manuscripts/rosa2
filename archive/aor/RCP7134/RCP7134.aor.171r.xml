@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.171r.tif" pagination="164" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mortis te[m]pus</marginalia_text>
+                </position>
+            </language>
+            <translation>The time of death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mortem ex genere strangulationis aut ueneni" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mortis genus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The kind of death.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; Mars est in coeli medio significat carcerem, &amp; tormenta, &amp; mortem" type="straight"/>
+        <underline language="LA" method="pen" text="Et quia Luna erat in octaua in ariete, significabat" type="straight"/>
+        
+    </annotation>
+</transcription>

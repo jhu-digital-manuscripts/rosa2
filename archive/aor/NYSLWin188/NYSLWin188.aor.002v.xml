@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.002v.tif" pagination="[2[v]]" reader="John Dee" signature="[Aij[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ex fructibus eoru[m] cognoscetis eos</marginalia_text>
+                    <book title="Gospel of Matthew"/> <!-- NBW: again, Matt 7:20-->
+                </position>
+            </language>
+            <translation>You will know them by their fruits.</translation> 
+        </marginalia>
+        
+        
+        <marginalia anchor_text="erste[n] Matery naß sein" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Materia p[r]ima Aqueoru[m], humida</marginalia_text> 
+                </position>
+            </language>
+            <translation>The first matter of watery things is humid.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Erden" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Materia prima Terrenorum, sicca</marginalia_text> 
+                </position>
+            </language>
+            <translation>The first matter of earthy things is dry.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="hat nun sein mutter auß dem Element wasser: Vnd im Element wasser wachsen die Vltimae materiae, der anfang Liquidum ist vnd Humidum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mineraliu[m] prima Materia, Liquido[rum]</marginalia_text> 
+                </position>
+            </language>
+            <translation>Of minerals, the first matter is liquid.</translation>  
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Dan[n] wie das ist das vo[n] jm wachst also ist auch das dasselbige gemacht vn[d] geboren hat" type="straight"/>
+        <underline language="DE" method="pen" text="saltz" type="straight"/>
+        <underline language="DE" method="pen" text="stein" type="straight"/>
+        <underline language="DE" method="pen" text="seiner erste[n]" type="straight"/>                                                          
+        <underline language="DE" method="pen" text="Matery naß" type="double"/>
+        <underline language="DE" method="pen" text="sein" type="straight"/>
+        <underline language="DE" method="pen" text="in ein Coagulation" type="straight"/>
+        <underline language="DE" method="pen" text="dürrer Materia" type="straight"/>
+        <underline language="DE" method="pen" text="Compactirt sey" type="straight"/>
+        <underline language="DE" method="pen" text="ein Liquor" type="double"/>
+        <underline language="DE" method="pen" text="Liquidum ist vnd Humidum" type="double"/>
+        
+        <mark language="DE" method="pen" name="bracket" place="left_margin" text="hat nun sein mutter auß dem Element wasser: Vnd im Element wasser wachsen die Vltimae materiae, der anfang Liquidum ist vnd Humidum"/>
+     
+    </annotation>
+</transcription>

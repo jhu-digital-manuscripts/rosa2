@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="RCP7831-1.012r.tif" pagination="13" reader="Dee" signature="Biij[r]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Imo nu[n]q[uam] sursu[m] deor[sus] ante, retroq[ue] potuisse moveri p[er] vnu[m] orbe[m]</marginalia_text> <!--JG: Seems like it it sursus, but that doesn't make much sense to me-->
+                </position>
+            </language>
+            <translation>Indeed, it never has been able to move upwardly [or] downwardly, previously and backwards, through one sphere. </translation>  <!--Jg: Very unsure-->
+        </marginalia>
+        
+        <marginalia anchor_text="circulos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Circuli planetaru[m]</marginalia_text> 
+                </position>
+            </language>
+            <translation>The circles of the planets.</translation>  
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="à quibusnam circuli illi moueantur" type="straight"/>
+        <underline language="LA" method="pen" text="si planetarum corpora, qu[a]e (ut diximus) ex co[n]cretiore sui orbis parte constant" type="straight"/>
+        <underline language="LA" method="pen" text="credibile est &amp; circulos, &amp; orbes, re ipsa in coelis nullos esse: quos docendi, demonstrandiq[ue] gratia, unà cum uariis linearum sectionibus, &amp;" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

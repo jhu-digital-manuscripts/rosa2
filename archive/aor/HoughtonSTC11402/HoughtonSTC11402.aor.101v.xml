@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.101v.tif" reader="Harvey" signature="[Mvi[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Cic. L.I. Offic. Hinc noster Cocles; hinc Decij; hinc Cn. et P. Scipiones; hinc M. Marcellus, et innumerabilis alij;
+                    maximeq[ue] ipse Pop. Rom. Animi magnitudine excellit.</marginalia_text>
+                    <person name="Cicero"/>
+                    <person name="Horatius Cocles"/>
+                    <person name="Publius Decius Mus I"/>
+                    <person name="Gnaeus Cornelius Scipio Calvus"/>
+                    <person name="Publius Cornelius Scipio"/>
+                    <person name="Marcus Claudius Marcellus"/>
+                    <book title="De Officiis"/>
+                    <emphasis method="pen" text="Cocles" type="straight"/>
+                    <emphasis method="pen" text="Decij" type="straight"/>
+                    <emphasis method="pen" text="Cn." type="straight"/>
+                    <emphasis method="pen" text="P. Scipiones" type="straight"/>
+                    <emphasis method="pen" text="M. Marcelles" type="straight"/>
+                    <emphasis method="pen" text="ipse Pop. Roma" type="straight"/>
+                    <emphasis method="pen" text="Animi magnitudine" type="straight"/>
+                </position>
+            </language>
+            <translation>Cicero, book one of 'De Officiis': here our Cocles; here Publius Decius; here Gnaeus and Publius Scipio; here Marcus Marcellus, and
+            innumerable others. And especially the Roman population was eminent in the greatness of mind.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>two of [the] brauist Romans examples. Resolute mindes.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+            
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Crassus chose rather to be slayne, the[n] be dishonorid by captiuity, and seruitude.</marginalia_text>
+                    <person name="Publius Licinius Crassus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="that if the byrd were let" type="straight"/>
+        <underline language="EN" method="pen" text="theyr ennemies" type="straight"/>
+        <underline language="EN" method="pen" text="she were killed" type="straight"/>
+        <underline language="EN" method="pen" text="Caelius with all his" type="straight"/>
+        <underline language="EN" method="pen" text="shulde perishe" type="straight"/>
+        <underline language="EN" method="pen" text="slewe the byrde" type="straight"/>
+        <underline language="EN" method="pen" text="of Lelius" type="straight"/>
+        <underline language="EN" method="pen" text="of Caelius" type="straight"/>
+        <underline language="EN" method="pen" text="Publius Decius" type="straight"/>
+        <underline language="EN" method="pen" text="fyrste the" type="straight"/>
+        <underline language="EN" method="pen" text="vowed" type="straight"/>
+        <underline language="EN" method="pen" text="theym selfes to dye for" type="straight"/>
+        <underline language="EN" method="pen" text="out on horsebacke" type="straight"/>
+        <underline language="EN" method="pen" text="amonge theyr enemis" type="straight"/>
+        <underline language="EN" method="pen" text="the victory" type="straight"/>
+        <underline language="EN" method="pen" text="Crassus" type="straight"/>
+        <underline language="EN" method="pen" text="caried away a lyue" type="straight"/>
+        <underline language="EN" method="pen" text="abhorringe captiuitie in a Romayne consull" type="straight"/>
+        <underline language="EN" method="pen" text="his rydynge rodde" type="straight"/>
+        <underline language="EN" method="pen" text="eye" type="straight"/>
+        <underline language="EN" method="pen" text="that helde" type="straight"/>
+        <underline language="EN" method="pen" text="the spitefull" type="straight"/>
+        <underline language="EN" method="pen" text="griefe of his" type="straight"/>
+        <underline language="EN" method="pen" text="thrust him" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="ipse Pop. Rom."/>
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="Animi magnitudine"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="that if the byrd were let"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="she were killed"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--obteyne, but-->
+        <mark method="pen" name="dot" place="intext"/> <!--welthe, and-->
+        <mark method="pen" name="dot" place="intext"/> <!--lyue, he-->
+        
+        <mark method="pen" name="plus_sign" place="tail"/>
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+        
+    </annotation>
+</transcription>

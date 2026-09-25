@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.059r.tif" pagination="59" reader="John Dee" signature="P iij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="die Tonitrua nicht ohne solche vrsache so wunderbarlich" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tonitrua interdu[m] mirabilia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The thunder is sometimes wonderful.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="figuren vnd similutdines arth" type="straight"/>
+        <underline language="DE" method="pen" text="mehr acht darauff haben dann auff d[as] gantze natürliche" type="straight"/>
+        <underline language="DE" method="pen" text="die" type="straight"/>
+        <underline language="LA" method="pen" text="Tonitrua" type="straight"/>
+        
+    </annotation>
+</transcription>

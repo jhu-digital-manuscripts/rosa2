@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.049v.tif" pagination="84" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Sur conuertit Hagra: ea verò fuit regia eorum Arabum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sur. Hagra. Regia.</marginalia_text>
+                    <person name="Hagar"/>
+                    <location name="Sur"/>
+                </position>
+            </language>
+            <translation>Sur. Royal Hagar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Heuila" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Heuila</marginalia_text>
+                    <location name="Havilah"/>
+                </position>
+            </language>
+            <translation>Havilah.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Bedola" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Bedola.</marginalia_text>
+                </position>
+            </language>
+            <translation>Bdellium.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Chaldaeus" type="straight"/>
+        <underline language="LA" method="pen" text="conuertit Hagra" type="straight"/>
+        <underline language="LA" method="pen" text="regia eorum" type="straight"/>
+        <underline language="LA" method="pen" text="sinus Elanitici" type="straight"/>
+        <underline language="LA" method="pen" text="Plinio" type="straight"/>
+        <underline language="LA" method="pen" text="Hagra" type="straight"/>
+        <underline language="LA" method="pen" text="Hassasson-thamar" type="straight"/>
+        <underline language="LA" method="pen" text="Heuila limes earum regionum" type="straight"/>
+        <underline language="LA" method="pen" text="quas Amalecitae possederunt" type="straight"/>
+        <underline language="LA" method="pen" text="ad Euphratem &amp; sinum Persicum" type="straight"/>
+        <underline language="LA" method="pen" text="finierit Arabiae petraeae &amp; desertae incolas" type="straight"/>
+        <underline language="LA" method="pen" text="statue[n]dam esse ad Arabiam foelicem, iuxta sinum Persicum" type="straight"/>
+        <underline language="LA" method="pen" text="vniones &amp; onyches" type="straight"/>
+        <underline language="LA" method="pen" text="historiae prophanae" type="straight"/>
+        <underline language="EL" method="pen" text="ἄνθρακα" type="double"/>       
+        <underline language="LA" method="pen" text="intelligi vnio" type="double"/>
+        <underline language="LA" method="pen" text="vnionis" type="straight"/>
+        <underline language="LA" method="pen" text="pruinae more" type="straight"/>
+        <underline language="LA" method="pen" text="dictis, labi in sinum Persicum affirmare possumus" type="straight"/>
+        <underline language="LA" method="pen" text="cum terra Chus" type="straight"/>
+        <underline language="LA" method="pen" text="Est verò alius ab isto amne Geon" type="straight"/>
+        <underline language="LA" method="pen" text="dicunt Siloë" type="straight"/>
+        
+    </annotation>
+</transcription>

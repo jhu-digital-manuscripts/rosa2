@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Paris, Bibliothèque nationale de France, fr. 805</p>
+        </note>
+        <note rend="CONTENTS">
+          <p><hi rend="italics">Roman de la Rose</hi> (ff. 1r-145r)</p>
+        </note>
+        <note rend="MATERIAL">
+          <p>Parchment</p>
+        </note>
+        <note rend="ORIGIN">
+          <p>France</p>
+        </note>
+        <note rend="DATE">
+          <p>15th century</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>Gothic, written in 2 columns of 35-40 lines, 1 scribe</p>
+        </note>
+        <note rend="ARTISTS">
+          <p>2 artists (1st responsible for miniatures up to 8v, 2nd for those after 10r)</p>
+        </note>
+        <note rend="DECORATION">
+          <p>2 single-column miniatures in colors and gold accompanied by decorated initials in pink, blue and gold, and a 3-sided foliate bar border containing a hybrid creature (f. <locus>1r</locus>). 17 single-column miniatures in black, brown, pink and green (ff. 2r (x2), 3r, 4r, 5r, 7r, 8v, 10v, 12r, 13v, 15r, 15v, 21v, 24v, 25v, 28r, 31r); at least 5 empty spaces left for miniatures (ff. 44r, 49r, 49v, 51v, 55v). Gold initials (2 with foliate extenders) on pink and blue ground throughout. Figures in grisaille on ff. <locus>2r</locus>, <locus>3r</locus>, <locus>4r</locus>, <locus>5r</locus>, <locus>7r</locus>.</p>
+        </note>
+        <note rend="DIMENSIONS">
+          <p>350 x 263 mm (this measurement is from Langlois)</p>
+        </note>
+        <note rend="FOLIATION">
+          <p>ff. ii + 145 + ii</p>
+        </note>
+        <note rend="BINDING">
+          <p>French; panelled calf binding painted blue with gilt fillet border on upper and lower covers, raised spine bands, marbled endpapers.</p>
+        </note>
+        <note rend="PROVENANCE">
+          <p> Pierre (1582-1651) and Jacques (1591-1656) Du Puy, 1st half of 17th century - it was ms. no 11 in their collection - bequethed to royal library in 1656; 18th century stamp of Bibliotheca Regiae (royal library), where it was ms. 7200 (ff. <locus>1r</locus>, <locus>144v</locus>)</p>
+        </note>
+        <note rend="SELECT BIBLIOGRAPHY">
+          <p>1. Paulin Paris, <hi rend="italics">Les manuscrits françois de la Bibliothèque du roi</hi> (Paris: Techener, 1836-1848), IV, p. 238</p>
+          <p>2. Langlois, <hi rend="italics">Les manuscrits</hi>, p. 12</p>
+        </note>
+        <note rend="N.B.">
+          <p>This description has been compiled using the site's images and various published sources. If you have corrections or additional information, please do contact us.</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">Français 805</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="145" unit="folios">145</measure>
+            <dimensions>
+              <height unit="mm">350</height>
+              <width unit="mm">263</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">19</note>
+          <note type="material">parchment</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1500" notBefore="1400">15th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de France</repository>
+            <idno>fr. 805</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="145r">1r-145r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">145</note>
+              <note type="illustrations">19</note>
+              <note type="linesPerColumn">39</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

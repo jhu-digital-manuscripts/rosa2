@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.136r.tif" pagination="95" reader="Harvey" signature="[F8r]"/>	<!-- ABO 140right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						{ Nihil vulgare, probat rarum artificem: aut
+						ordinarium aliquid, virum Singularem. ||
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						|| Sola rara, extraordinaria, Singularia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He approves a rare artist, nothing common,
+				else something ordinary, a singular man. 
+				Only uncommon, extraordinary, singular matters.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Non nisi incomparabili Oratione, et actione demonstratur
+						eminentissima ars, et virtus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Unless a most illustrious art and virtue is not demonstrated by an incomparable speech or action. 
+			</translation>
+		</marginalia>
+		<marginalia anchor_text="Palingenio" hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Il Palingenio, s[upr]a 48.
+					</marginalia_text>
+					<person name="Marcellus Palingenius Stellatus"/>
+					<internal_ref>
+						<target ref="FolgersHa2:Ha2.112v" text="48"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				The Palingenio, above, pg. 48. <!-- Reference to Ha2.112v -->
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Astrophil enforced himself, to be the most 
+						seruicable man of all other.
+					</marginalia_text>
+					<person name="Astrophilus"/>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Ad transcendentem dignitatem, industria opus est transcende[n]ti:
+						sed qualis Eutrapeli: cum difficillima, tum facillima.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				For transcending dignity, a transcending industriousness is necessary,
+				but like that of Eutrapelus, where it is easiest when it is most difficult. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Microcosmo.	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Microcosm.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Vnica Nobilitas, Virtus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The sole nobility is virtue.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Sir Francis Walsingha[m]
+						allwais stroue to be the most emploiable &amp; industrious ma[n].
+					</marginalia_text>
+					<person name="Francis Walsingham"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.136r_0001" marginalia_continues_from="Ha2.135v_0001" marginalia_from_transcription="Ha2.135v.xml">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						<!-- Continued from facing page, left margin, Ha2.135v --> [p. 94: Anabaptista[e] audent se profiteri homines deificatos: =]
+						illuminatos Primates: et Seniores sancta[e] intelligentia[e].
+						Spiritui tribuunt omnia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>[p. 94: The Anabaptists dare to profess themselves deified men] the first to be illuminated, and senior [recipients] of holy intelligence. They assign everything to the spirit.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Quicquid alius potest, an tu non potes? Ignauus es,
+						vilis es, asinus es, Si non potes plus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whatever another can do, can you not do it too?
+				You are cowardly, vile, and an ass, if you cannot do more.
+			</translation>
+		</marginalia>
+		
+		
+		<underline language="IT" method="pen" text="L'inuidia nuocere" type="straight"/>
+		<underline language="IT" method="pen" text="priuato" type="straight"/>
+		<underline language="IT" method="pen" text="publico" type="straight"/>
+		<underline language="IT" method="pen" text="guardar principalmente dall'inuidia de" type="straight"/>
+		<underline language="IT" method="pen" text="insidie de' nimici" type="straight"/>
+		<underline language="IT" method="pen" text="purga il grano dal Loglio &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="poltroni" type="straight"/>
+		<underline language="IT" method="pen" text="purgare la Republica da gl'inuidiosi" type="straight"/>
+		<underline language="IT" method="pen" text="Palingenio" type="straight"/>
+		<underline language="IT" method="pen" text="peste dell'inuidia" type="straight"/>
+		<underline language="IT" method="pen" text="Inuidia" type="straight"/>
+		<underline language="IT" method="pen" text="Mostro horrendo" type="straight"/>
+		<underline language="IT" method="pen" text="peste crudel" type="straight"/>
+		<underline language="IT" method="pen" text="la virtù" type="straight"/>
+		<underline language="IT" method="pen" text="Non perdona all'amico" type="straight"/>
+		<underline language="IT" method="pen" text="del debito honor, se può, lo" type="straight"/>
+		<underline language="IT" method="pen" text="qualunque stato, ò fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="la Virtù essere necessaria" type="straight"/>
+		<underline language="IT" method="pen" text="bello animale del mondo" type="straight"/>
+		<underline language="IT" method="pen" text="l'huomo ornato di virtù" type="straight"/>
+		<underline language="IT" method="pen" text="auanzare tutti" type="straight"/>
+		<underline language="IT" method="pen" text="gli huomini di virtù che d'Imperio" type="straight"/>
+		<underline language="IT" method="pen" text="Democrito" type="straight"/>
+		<underline language="IT" method="pen" text="radici della virtù son'amare" type="straight"/>
+		<underline language="IT" method="pen" text="frutto è dolcissimo &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="Aristotile" type="straight"/>
+		<underline language="IT" method="pen" text="nobilissima virtù con più" type="straight"/>
+		<underline language="IT" method="pen" text="l'amante l'amata sua" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<symbol name="Sun" place="right_margin"/>
+		<symbol name="SS" place="right_margin"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="guardar principalmente dall'inuidia de"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- mala -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- vir -->
+		<mark method="pen" name="apostrophe" place="right_margin"/> <!-- cosa. -->
+		
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- dall'inuidia -->
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- gl'inuidiosi. Et -->
+		<mark method="pen" name="apostrophe" place="right_margin"/> <!-- d'Imperio. Democrito -->
+		
+		<mark method="pen" name="quotation_mark" place="tail"/>
+		
+    </annotation>
+</transcription>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.frontmatter.flyleaf.005r.tif" reader="John Dee"/> 
+    <annotation>
+        <marginalia hand="English_secretary" id="NYSLWin188:00000011:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Christianus Ratz scit vbi isti libri Paracelsi su[n]t. [Et - deleted] vt mihi retulit Georgius Marquarolus 1567. feb. 20.
+                    Archidoxa
+                    De renovatione et Restauratione, Th[eo]ph[ras]ti Germaniae Ph[ilosoph]i et Medici, [.iti] Paracelsi magni.
+                    Morboru[m] com[m]e[n]tarij
+                    </marginalia_text>
+                    <person name="Christian Ratz"/> <!--JG: Don't know who this guy is-->
+                    <person name="Georgius Marquarolus"/>
+                    <book title="Archidoxa"/>
+                    <book title="Liber de renovatione et restauratione"/>
+                    <!--JG: Unsure which book Dee means by the 'Morborum commentarii' Perhaps a commentary on Galen's work? https://books.google.co.uk/books?id=1K3ye6HeXmkC&pg=RA3-PT77&lpg=RA3-PT77&dq=commentarii+morborum&source=bl&ots=VCgyvtVn3M&sig=npvDSXfov4Mx6B1gRMdjHiwEvig&hl=en&sa=X&ved=2ahUKEwjZtJKSmPLeAhUIKuwKHcClD_o4ChDoATAPegQIAhAB#v=onepage&q=commentarii%20morborum&f=false-->
+                </position>
+            </language>
+            <language ident="DE">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>D[as] erst bu⁰ch von den naturlichen ding[en]</marginalia_text> 
+                    <book title="Von natürlichen dingen"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Liber de virtutibus mineraliu[m] in der medicin <!--JG: Don't know this work-->
+                    Liber de nascentibus ex terra et virtutibus eor[um]
+                        Phi[lippi] Th[eophras]ti. </marginalia_text>
+                    <book title="Liber de nascentibus ex terra"/>
+                </position>
+            </language>
+            <language ident="DE">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Ihren Vrsprung der minerall vnd metal. </marginalia_text>
+                    <book title="Elf trakat von Ursprung"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>De diuina prouidentia in consideratione fabricationis mundi et om[n]i creaturarum &amp;c</marginalia_text>  <!--JG: Don't know this work-->
+                </position>
+            </language>
+            <language ident="DE">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Von den 14 gradation &amp;c Th[eopras]ti</marginalia_text>  <!--JG: Don't know this work--> 
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Liber de Mucilagine  <!-- FSF: I think it is Mucilagine, see https://it.wikipedia.org/wiki/Mucillagine-->
+                    Alter Fragmenta Th[eopras]ti <!--JG: Don't know this work-->
+                    De transmutatione metallor[um]</marginalia_text>
+                    <book title="De transmutatione metallorum"/>
+                </position>
+            </language>
+            <language ident="DE">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>ist am ander[en] ort auch zubekommen doch zu gepürender zeit.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Jo[hann]es habet. 1. de creatione ho[mini]is 2. der grund der arzneije
+                    </marginalia_text>
+                    <book title="De generatione hominis"/> <!--JG: Probably Dee means Paracelsus 'De generatione hominis'-->
+                    <book title="Paragranum"/>
+                </position>
+            </language>
+            <translation>Christian Ratz knows where those books of Paracelsus are. As Georgius Marquarolus told me, 20 February 1567. Paracelsus's 'Archidoxa' and 'Liber de renovatione et restauratione', the 'Morborum commentarii',
+                the first book of 'Von naturlichen dingen', the 'Book on the virtues of minerals' in medicine, the 'Liber de nascentibus ex terra', 'Elf trakat von Ursprung', 'On divine provindence in the consideration of the 
+                structure of the world and all its creatures', 'Of the fourteen gradations of Paracelsus', 'Book on Mucilage', and other fragments of Paracelsus. 'De transmutatione metallorum', has also arrived at another place, yet at a more fitting time.
+            John has: 1) 'De creatione hominis' 2) 'Paragranum'.</translation>
+        </marginalia>
+        
+        <drawing book_orientation="0" method="pen" place="full_page" type="scientific_instrument">
+            <text hand="English_secretary" language="EN">by this is more done at ones destilling than at ten tymes by an ale[mb]ik.</text>
+            <text hand="English_secretary" language="LA">J D suspicor tale quid apponi posse p[otes]t [etia[m]] [sine] tali.</text> <!--JG: impossible to read--> <!--KS: makes no sense-->
+            <person name="John Dee"/>
+            <translation>I suppose that such a thing can be assigned. It even ca be [done] [without] such a thing. </translation>
+        </drawing>
+        
+    </annotation>
+</transcription>

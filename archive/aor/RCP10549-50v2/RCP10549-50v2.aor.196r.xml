@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.196r.tif" pagination="131" reader="John Dee" signature="i.ii."/>   
+    <annotation>
+        
+        <marginalia anchor_text="Ser. Galbam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ser. Galba.</marginalia_text>
+                    <person name="Servius Sulpicius Galba"/>  <!-- DO: Not completely sure this is the right one; see: https://en.wikipedia.org/wiki/Galba_(cognomen) -->
+                </position>
+            </language>
+            <translation>Servius Galba.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>I wolde be [the] Capitayne of a great many.</marginalia_text>     <!-- JG: Original needed-->
+                </position>
+            </language>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="multísque praeessem" type="straight"/>
+        <underline language="LA" method="pen" text="florente" type="straight"/>
+        <underline language="LA" method="pen" text="illis ferebatur" type="straight"/>
+        <underline language="LA" method="pen" text="obtineba[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="audierat" type="straight"/>
+        <underline language="LA" method="pen" text="vigebat" type="straight"/>
+        <underline language="LA" method="pen" text="Panaetii illius tui" type="straight"/>
+        <underline language="LA" method="pen" text="praeclari" type="straight"/>
+        <underline language="LA" method="pen" text="nobiles" type="straight"/>
+        <underline language="LA" method="pen" text="vna penè repelli voce oratorem à gubernaculis ciuitatum, excludi ab omni doctrina rerúmque maiorem scientia, ac tantum in iudicia &amp; conciunculas, tanquam in aliquod pistrinum detrudi &amp; compingi videbam" type="straight"/>
+        <underline language="LA" method="pen" text="assentiebar" type="straight"/>
+        <underline language="LA" method="pen" text="inuentori &amp; principi" type="straight"/>
+        <underline language="LA" method="pen" text="in hoc" type="straight"/>
+        <underline language="LA" method="pen" text="quòd mihi in oratoribus irridendis ipse esse orator summus videbatur: verbi enim co[n]trouersia" type="straight"/>
+        <underline language="LA" method="pen" text="torquet" type="straight"/>
+        <underline language="LA" method="pen" text="multa tribuat &amp; co[n]cedat" type="straight"/>
+        <underline language="LA" method="pen" text="multa pertractatione" type="straight"/>
+        <underline language="LA" method="pen" text="satis callide versari &amp; perite" type="straight"/>
+        <underline language="LA" method="pen" text="ne illa quidem minima in causis quisquam recte tueri potest" type="straight"/>
+        <underline language="LA" method="pen" text="quid huic abesse poterit de maximarum rerum scientia" type="straight"/>
+        <underline language="LA" method="pen" text="composite, ornate" type="straight"/>
+        
+    </annotation>
+</transcription>

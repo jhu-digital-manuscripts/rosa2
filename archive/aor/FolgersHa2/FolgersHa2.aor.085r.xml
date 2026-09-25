@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.085r.tif" reader="Harvey" signature="[**5r]"/>	<!-- ABO 89right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Janus Lascaris Constantinopolitanus, de Carolo Gallorum Rege.
+					</marginalia_text>
+					<person name="Janus Lascaris"/>
+				</position>
+			</language>
+			<translation>
+				Janus Lascaris from Constantinople on Charles, King of the French.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Ars in sua abside: Virtus in suo apoga[e]o.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Art in its apsis, virtue in its apogee.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Maximu[m] Fortij arcanu[m], omnia agere
+						Extremis viribus.)
+					</marginalia_text>
+					<person name="Joachim Fortius Ringelberg"/>
+				</position>
+			</language>
+			<translation>
+				The mysterious maxim of Fortius: to do all things with the utmost strength.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Negligere tot vulgares /
+						mundi/
+						nugas; et Hoc agendum exequi /
+						efficacissimè: id
+						Secretum Secretorum est.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				To disregard completely the common trifles of the world: and in doing so, to perform
+				most efficiently. This is the secret of secrets.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Non magnum est, esse 
+						) multoru[m] honoratissimu[m]
+						sed maximum est, esse omnium dignissimum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It is no great thing to be most honorable men of many, but it is the greatest thing
+				to be the most worthy man of all.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Guazzo.
+					</marginalia_text>
+					<person name="Stefano Guazzo"/>
+				</position>
+			</language>
+			<translation>
+				Stefano Guazzo.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						M[e]ritis expendite causam.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Decide the cause by merit.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Quod nunc est, eo vti decet: et quicquid
+						agas, agere pro viribus. Cato Maior.
+					</marginalia_text>
+					<person name="Cato the Elder"/>
+					<X-ref book_title="De senectute" language="LA" person="Cicero" text="Quod est, eo uti decet: et quicquid agas, agere pro viribus"/>
+				</position>
+			</language>
+			<translation>
+				"Such strength as a man has he should use, 
+				and whatever he does should be done in proportion to his strength."
+				Cato the Elder. [trans. William Armistead Falconer]
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Petrus dormit: Joannes ambulat: Marcus currit: Georgius equitat: Gabriel
+						volat. Volare, est avium, Pegasorum, Angelorum.
+					</marginalia_text>
+					<person name="St. Peter"/>
+					<person name="John the Evangelist"/>
+					<person name="Mark the Evangelist"/>
+					<person name="St. George"/>
+					<person name="Gabriel"/>
+				</position>
+			</language>
+			<translation>
+				Peter sleeps, John walks, Mark runs, George rides, Gabriel flies.
+				Flying belongs to birds, pegasi, and angels.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Hîc Ca[e]lum Titan; ne se properantiùs orbem
+						Ambiret victor; condidit ante diem.
+					</marginalia_text>
+					<person name="Titan"/>
+				</position>
+			</language>
+			<translation>
+				Here Titan, son of Caelum, was buried before his time, so that he would not go round the earth as a conqueror. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						} Elogium, ex arcanis Entelechia[e], et Euschemosynes.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A saying taken from the mysteries of actualization and refinement.
+			</translation>
+		</marginalia>
+		
+		
+		<underline language="IT" method="pen" text="magnanimità" type="straight"/>
+		<underline language="IT" method="pen" text="vbbidir piu tosto al senso" type="straight"/>
+		<underline language="IT" method="pen" text="maneggiando la donna" type="straight"/>
+		<underline language="IT" method="pen" text="Scherzi &amp; beffe piaceuoli, che tra" type="straight"/>
+		<underline language="IT" method="pen" text="raffrenino il mal dire de'" type="straight"/>
+		<underline language="IT" method="pen" text="vtilmente, &amp; con lodi si conuersa con" type="straight"/>
+		<underline language="IT" method="pen" text="piu oltra, che la natura loro" type="straight"/>
+		<underline language="IT" method="pen" text="Ne l'uso" type="straight"/>
+		<underline language="IT" method="pen" text="nelle lor prosperità, risplender" type="straight"/>
+		<underline language="IT" method="pen" text="La prontezza del risponder" type="straight"/>
+		<underline language="IT" method="pen" text="molto salutifera" type="straight"/>
+		
+		<symbol name="SS" place="intext"/>
+		<symbol name="SS" place="right_margin"/>
+		<symbol name="SS" place="right_margin"/> <!--next to '162'-->
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--facilmen-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--per-->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="piu oltra, che la natura loro"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--communemen-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--risplen--> 
+
+    </annotation>
+</transcription>

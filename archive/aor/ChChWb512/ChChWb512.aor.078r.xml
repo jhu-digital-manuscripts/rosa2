@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.078r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Callidu[m] consiliu[m] initu[m], ut confabulandi occatione[m] acquiesceret.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>A cunning plan begun, so that he (ie.Baldulphus) could have the opportunity to confer.</translation>
+            <!-- NBW: "A cunning plan begun, so that he (ie.Baldulphus) could have the opportunity to confer" This looks like it refers to the underlined passage, where Chelderic's brother disguises himself in order to sneak through Arthur's siege-->
+        </marginalia>
+        
+        <marginalia anchor_text="duce Cheldrico" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cheldricus.
+                    </marginalia_text>
+                    <person name="Cheldric"/>
+                </position>
+            </language>
+            <translation>Cheldric.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sex centas naues" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        600 Naves.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>600 ships.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fuga Baldulphus" type="double"/>
+        <underline language="LA" method="pen" text="Cheldrici" type="straight"/>
+        <underline language="LA" method="pen" text="Cadorem ducem Cornubiae" type="straight"/>
+        <underline language="LA" method="pen" text="Cum ergo alterius modi aditum non haberet: rasit capillos suos &amp; barbam cultumq[ue] ioculatoris cum cythara fecit." type="straight"/>
+        <underline language="LA" method="pen" text="Deinde intra castra deambula[n]s modulis quos in lyra componebat sese cytharistam exhibebat" type="straight"/>
+        <underline language="LA" method="pen" text="duce Cheldrico sex centas naues milite" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.121v.tif" pagination="66" reader="Harvey" signature="[Ev]"/>	<!-- ABO 126left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Non tamen parui libri, sed magnus animus facit virum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				However, a man is made not with a few books but with a great mind.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>s[upr]a. /</marginalia_text>
+					<internal_ref text="s[upr]a">
+						<target ref="FolgersHa2:Ha2.040r" text="[399]"/>
+						<target ref="FolgersHa2:Ha2.058v" text="[436]"/>
+						<target ref="FolgersHa2:Ha2.062v" text="[444]"/>
+						<target ref="FolgersHa2:Ha2.067v" text="[454]"/>
+						<target ref="FolgersHa2:Ha2.080v" text="[*9v]"/>
+						<target ref="FolgersHa2:Ha2.095v" text="[14]"/>
+						<target ref="FolgersHa2:Ha2.096r" text="[15]"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				[See] above.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Spiritus heroum, et philosophoru[m]; prophetaru[m], et apostoloru[m];
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Apollonij, et Maximi;
+					</marginalia_text>
+					<person name="Apollonius of Tyana"/>
+					<person name="Valerius Maximus"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						instar omnium Librorum: immò plus quàm omnes Libri.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The spirit of heroes and philosohpers; prophets and apostles; of Apollonius and Maximus -
+				an example among all books; or should I say, an example better than all books.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						risoluto, e discreto.	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Resolute and discreet.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						In corde Pyropus: in Lingua magnes: in manu adamas. Tria ad
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Omnia, potentiss[im]a Instrumenta.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Bronze in the heart, a magnet on the tongue, steel in the hand:
+				three most powerful instruments for all matters.
+			</translation>
+		</marginalia>	
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						A seipso pendet: et per seipsum valet Eutrapelus.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Eutrapelus depends on himself and has value for himself.
+			</translation>
+		</marginalia>
+				
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Simplex est, qui non est Orlando Furioso furiosior. Nec Achillem
+						metuerim;
+					</marginalia_text>
+					<person name="Achilles"/>
+					<book title="Orlando Furioso"/>
+				</position>
+				<position book_orientation="90" place="tail">
+					<marginalia_text>
+						nec Alexandru[m]; nec ipsu[m] Ca[e]sarem; nec vllu[m] Herou[m], aut Gigantum.
+					</marginalia_text>
+					<person name="Alexander the Great"/>
+					<person name="Julius Caesar"/>
+				</position>
+			</language>
+			<translation>
+				Simple is he who is not more furious than Orlando Furioso. 
+				May I not fear Achilles, Alexander, or Caesar himself, nor any other hero or giant.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Ca[e]tera fragilia: vir sibi constat.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Other matters are fragile. A man must be consistent with himself
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Nec Hic: nec Ille: sed Tu.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Neither this man, nor that man, but You.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="inuitto animo" type="straight"/>
+		<underline language="IT" method="pen" text="fosse nobilità" type="straight"/>
+		<underline language="IT" method="pen" text="temperanza dell'animo" type="straight"/>
+		<underline language="IT" method="pen" text="Magnanimità Regia" type="straight"/>
+		<underline language="IT" method="pen" text="perdonare" type="straight"/>
+		<underline language="IT" method="pen" text="riceuute, sotto humil" type="straight"/>
+		<underline language="IT" method="pen" text="Re Carlo Ottauo" type="straight"/>
+		<underline language="IT" method="pen" text="Luigi Duca d'Orliens" type="straight"/>
+		<underline language="IT" method="pen" text="venuto il tempo di vendicarsi" type="straight"/>
+		<underline language="IT" method="pen" text="era Duca" type="straight"/>
+		<underline language="IT" method="pen" text="al Duca d'Orliens" type="straight"/>
+		<underline language="IT" method="pen" text="che'l Re di Francia vendicasse" type="straight"/>
+		<underline language="IT" method="pen" text="Maestà Diuina" type="straight"/>
+		<underline language="IT" method="pen" text="cosa imcomprensibile" type="straight"/>
+		<underline language="IT" method="pen" text="Simonide Filosofo" type="straight"/>
+		<underline language="IT" method="pen" text="Hierone Tiranno" type="straight"/>
+		<underline language="IT" method="pen" text="Iddio" type="straight"/>
+		<underline language="IT" method="pen" text="quanto piu ci penso" type="straight"/>
+		<underline language="IT" method="pen" text="cosa oscura" type="straight"/>
+		<underline language="IT" method="pen" text="ci confondo dentro" type="straight"/>
+		<underline language="IT" method="pen" text="penetrantissimo Dante" type="straight"/>
+		<underline language="IT" method="pen" text="nostra ragione" type="straight"/>
+		<underline language="IT" method="pen" text="l'infinita via" type="straight"/>
+		
+		<underline language="IT" method="pen" text="al Duca d'Orliens che'l Re di Francia vendicasse i suoi crucci &amp; i suoi sdegni" type="straight"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Et Socrate domandato che cosa fosse nobilità, ripose: temperanza dell'animo &amp; del corpo"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="right_margin" text="Et Socrate domandato che cosa fosse nobilità, ripose: temperanza dell'animo &amp; del corpo"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--pre-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--sem-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--lun-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--Si-->
+		
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--animo. Et-->
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="fosse nobilità"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="temperanza"/>
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--dentro. Et-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="penetrantissimo"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="ragione"/>
+
+    </annotation>
+</transcription>

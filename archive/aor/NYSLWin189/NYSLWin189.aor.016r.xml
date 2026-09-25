@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.016r.tif" reader="John Dee" signature="E"/> 
+    <annotation>
+        
+        <underline language="DE" method="pen" text="die zeiche[n]" type="straight"/>
+        <underline language="LA" method="pen" text="zum außschlahen vrsachend" type="straight"/>
+        <underline language="DE" method="pen" text="keiner tugend" type="double"/>
+        <underline language="DE" method="pen" text="selbig salz" type="double"/>
+        <underline language="DE" method="pen" text="fäderweiß" type="straight"/>
+        <underline language="DE" method="pen" text="auff fressen" type="straight"/>
+        <underline language="DE" method="pen" text="außschlahe[n]" type="straight"/>
+        <underline language="DE" method="pen" text="auß der corrosiuischen art" type="straight"/>
+        <underline language="DE" method="pen" text="auch sich selber wider zů" type="straight"/>
+        <underline language="DE" method="pen" text="grien" type="double"/>
+        <underline language="DE" method="pen" text="vnnd so bald es die griene verleurt so gadt es wider zů" type="straight"/>
+        <underline language="DE" method="pen" text="dise art" type="double"/>
+        <underline language="DE" method="pen" text="corrosiuisch auff fressen" type="straight"/>
+        <underline id="NYSLWin189:00000043:u0001" language="DE" method="pen" text="beschehe on das" type="straight"/> 
+        <underline id="NYSLWin189:00000043:u0002" language="DE" method="pen" text="vber die gemeine" type="double"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/> <!-- FSF: with tail -->
+        
+        <numeral place="right_margin">.1.</numeral>
+        
+        <errata amendedtext="plumoso" copytext="pulmoso" language="LA"/>
+        
+        <drawing anchor_text="beschehe on das" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <physical_link>
+            <marginal_annotation idref="NYSLWin189:00000043:u0001"/>
+            <marginal_annotation idref="NYSLWin189:00000043:u0002"/>
+            
+            <relation from="NYSLWin189:00000043:u0001" to="NYSLWin189:00000043:u0002" type="undirected"/>
+                
+        </physical_link>
+   
+    </annotation>
+</transcription>

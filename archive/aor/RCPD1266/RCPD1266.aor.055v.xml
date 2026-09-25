@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.055v.tif" pagination="96" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Sem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sem</marginalia_text>
+                    <person name="Shem"/>
+                </position>
+            </language>
+            <translation>Shem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iapheth" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iaphet.</marginalia_text>
+                    <person name="Japheth"/>
+                </position>
+            </language>
+            <translation>Japheth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="electio diuina" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Electio diuina</marginalia_text>
+                </position>
+            </language>
+            <translation>Divine election.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Chronographia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Chronology.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Phaleg" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Phaleg</marginalia_text>
+                    <person name="Peleg"/>
+                </position>
+            </language>
+            <translation>Peleg.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="attigerat" type="straight"/>
+        <underline language="LA" method="pen" text="sed quia praerogatiua quadam" type="straight"/>
+        <underline language="LA" method="pen" text="etsi est à multis erratum" type="straight"/>
+        <underline language="LA" method="pen" text="hac aetate confusio" type="straight"/>
+        <underline language="LA" method="pen" text="trium orbis terrae" type="straight"/>
+        <underline language="LA" method="pen" text="quam est consecuta ipsa trium orbis terrae" type="straight"/>
+        <underline language="LA" method="pen" text="est 101" type="straight"/>
+        <underline language="LA" method="pen" text="nomen vni Phaleg, eò quòd in diebus" type="straight"/>
+        <underline language="LA" method="pen" text="eius Iectan" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+    </annotation>
+</transcription>

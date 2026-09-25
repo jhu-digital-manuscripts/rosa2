@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.030v.tif" pagination="[24v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Saturnus" hand="Italian">
+            <language ident="IW">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sabtai</marginalia_text> <!--JG: See: http://adsabs.harvard.edu/full/2011IAUS..260..301Z-->
+                </position>
+            </language>
+            <translation>Shabtay (Saturn).</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iupiter" hand="Italian">
+            <language ident="IW">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Zedek</marginalia_text>
+                </position>
+            </language>
+            <translation>Tzedek (Jupiter)</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mars" hand="Italian">
+            <language ident="IW">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ma adim</marginalia_text>
+                </position>
+            </language>
+            <translation>Ma'dim (Mars).</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="pestes" type="straight"/>
+        <underline language="LA" method="pen" text="Iupiter" type="straight"/>
+        <underline language="LA" method="pen" text="religionis" type="straight"/>
+        <underline language="LA" method="pen" text="Mars" type="straight"/>
+        <underline language="LA" method="pen" text="cometes" type="straight"/>
+        <underline language="LA" method="pen" text="mortes repentinas" type="straight"/>
+        
+    </annotation>
+</transcription>

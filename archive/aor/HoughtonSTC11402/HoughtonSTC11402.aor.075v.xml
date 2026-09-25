@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.075v.tif" reader="Harvey" signature="[Iiiii[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="the chiefest cite" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[the] Metropolis.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="ranne thyther to defende it" type="straight"/>
+        <underline language="EN" method="pen" text="retired home to the defence" type="straight"/>
+        <underline language="EN" method="pen" text="his owne" type="straight"/>
+        <underline language="EN" method="pen" text="Delminum" type="straight"/>
+        <underline language="EN" method="pen" text="succours" type="straight"/>
+        <underline language="EN" method="pen" text="the chiefest" type="straight"/>
+        <underline language="EN" method="pen" text="dispeyrynge to" type="straight"/>
+        <underline language="EN" method="pen" text="assaulte the other cyties" type="straight"/>
+        <underline language="EN" method="pen" text="that theyr chiefe" type="straight"/>
+        <underline language="EN" method="pen" text="strongely inoughe fortified" type="straight"/>
+        <underline language="EN" method="pen" text="the Cytie, voyde" type="straight"/>
+        <underline language="EN" method="pen" text="inuincible" type="straight"/>
+        <underline language="EN" method="pen" text="a prisoner" type="straight"/>
+        <underline language="EN" method="pen" text="entysed" type="straight"/>
+        <underline language="EN" method="pen" text="to perswade" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="retired home to the defence"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="the Cytie, voyde"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="retired home to the defence"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--townes. and-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="his owne"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="succours"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="chiefest cite"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="assaulte the other cyties"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="that theyr chiefe"/>
+        
+    </annotation>
+</transcription>

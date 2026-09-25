@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.frontmatter.flyleaf.004r.tif" reader="John Winthrop"/> 
+    <annotation>
+        
+        <marginalia date="1640" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>The writing on [the] next leafe &amp; the name on the top [is] <!--JG: unsure-->
+                    the ffrontispice &amp; [the] marginall notes in [the] booke were written by that famous and learned philosopher
+                    John Dee warden of Manchester, w[i]th his owne hand writing, this booke was his while he lived. I have divers other
+                    bookes both printed &amp; some manuscripts [that] came out of his study, in them he hath likewise written
+                    both his name &amp; [deleted: other] [deleted] notes: for w[hic]h they are farre the morre pretious. He was [the] Joh: Dee [that] wrote the learned treatise called 
+                    Monas Hierogliphica also propadeumata Aphoristica &amp; the preface to Euclids Elements in English Folio.
+                    Juli 25. 1640. John Winthrop.</marginalia_text>
+                    <person name="John Winthrop"/>
+                    <person name="John Dee"/>
+                    <book title="Hieroglyphic Monad"/>
+                    <book title="Propaedumata Aphoristica"/>
+                    <book title="Stoicheia"/>
+                    <location name="Manchester"/>
+                    <internal_ref>
+                        <target prefix="[the] " ref="NYSLWin188:00000011:m0001" suffix=" leafe" text="next"/>
+                    </internal_ref>
+                </position>
+            </language>
+        </marginalia>
+    </annotation>
+</transcription>

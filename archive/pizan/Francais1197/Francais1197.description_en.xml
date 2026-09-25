@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title><hi rend="italics">Le livre du corps de policie</hi> by Christine de Pizan</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Français 1197, Bibliothéque national de France, Paris. Paris, 1406-1407. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 291 x 209 mm, 81 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p> The <material>parchment</material> presents numerous imperfections like varios types of holes, stitches, many stains including red ink ones and some wormholes to folio <locus>6</locus>. The <hi rend="italics">vis-à-vis</hi> is respected.</p>
+                  
+            </note>
+            
+            <note rend="QUIRES">
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     
+                     <locus>Garde</locus>
+                     
+                  </item>
+                  
+                  <item n="II">
+                     
+                     <locus from="1" to="8">1-8</locus>
+                     
+                  </item>
+                  
+                  <item n="III">
+                     
+                     <locus from="9" to="16">9-16</locus>
+                     
+                  </item>
+                  
+                  <item n="IV">
+                     
+                     <locus from="17" to="22">17-22</locus>
+                     
+                  </item>
+                  
+                  <item n="V">
+                     
+                     <locus from="23" to="30">23-30</locus>
+                     
+                  </item>
+                  
+                  <item n="VI">
+                     
+                     <locus from="31" to="38">31-38</locus>
+                     
+                  </item>
+                  
+                  <item n="VII">
+                     
+                     <locus from="39" to="46">39-46</locus>
+                     
+                  </item>
+                  
+                  <item n="VIII">
+                     
+                     <locus from="47" to="54">47-54</locus>
+                     
+                  </item>
+                  
+                  <item n="IX">
+                     
+                     <locus from="55" to="62">55-62</locus>
+                  </item>
+                  
+                  <item n="X">
+                     
+                     <locus from="63" to="70">63-70</locus>
+                     
+                  </item>
+                  
+                  <item n="XI">
+                     
+                    <locus from="71" to="78">71-78</locus>
+                     
+                  </item>      
+                  
+                  <item n="XII">
+                     
+                     <locus from="79" to="86">79-86</locus>
+                     
+                  </item>
+                  
+                  <item n="XIII">
+                     
+                     <locus from="87" to="94">87-94</locus>
+                     
+                  </item>
+                  
+                  <item n="XIV">
+                     
+                     <locus from="95" to="102">95-102</locus>
+                  </item>
+                  
+                  <item n="XV">
+                     
+                     <locus from="103" to="106">103-106</locus>
+                     
+                  </item>
+               </list>
+                                 
+               <p> (III, paper) + I (parchment) + 106 + (I, parchment) + (I, paper). Modern foliation on the top right is accurate.</p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>There are regular light brown ruling marks. There is also evidence of pricking with 2-4 master pricks on every single folio. The pricks were done with an oval awl. There are two columns with 29, sometimes 28 or 31, lines each.</p>
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text is written quite uniformely in dark brown ink, with bright red for the rubrics. The text seems to have been written by one scribe (Hand P), except for the first rubric, which appears to have been written by a different scribe (Hand X). The text seems to have been written in an elongated semicursive minuscule script. Punctuation marks are also used, especially the comma and period. Corrections were mostly done by Hand X, including a number of marginal additions to ff. <locus>18</locus>, <locus>62</locus>, <locus>94</locus>, and <locus>105</locus>. These additions are marked by a cross or a caret sign with a cross above it.</p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>The ornamental decoration of the manuscript was created by the workshop whose style has been identified as <hi rend="italics">"aux échancrures"</hi>. The manuscript contains three elaborate foliated initials over a gold leaf background (vignette). In folio <locus>1</locus>, the initial S, with red, blue and white foliates, is connected to the gold leaf foliated bar border. Some goldleaf "sperms" are interspersed between the foliage on the border. On folios <locus>54</locus> and <locus>87</locus> there is an initial S and A respectively, with red, blue and white foliates, over a gold leaf and blue background (vignette), with foliate extenders that partially frame text above and below.</p>
+               <p>There are many small gold leaf initials at the beginning of each text over alternating backgrounds in either blue or pink.</p>
+               </note>
+            
+            <note rend="BINDING">
+               
+               <p> The invetory of 1417 describes the original binding as <hi rend="italics">"cuir rouge marqueté"</hi>. The inventory of 1496 said that this volume was covered by a <hi rend="italics">"veloux tanné"</hi>. Currently, the manuscript is bound in red Moroccan leather with the royal coat of arms on the covers within three golden filets. The spine is decorated with four <hi rend="italics">fleurs de lys</hi> surrounded by smaller ones. The title of the work appears as <hi rend="italics">"CORPS DE POLICE"</hi> on the spine as well with gold inlaid. In the bottom of the spine, the Angulême coat of arms appears partially erased.</p>
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>This manuscript can be dated circa 1406-1407, the date of the composition of this work. This manuscript appears to be the second copy of this work after Chantilly 294.</p>
+               <p>Provenance: Probably Louis d'Orléans; Charles d'Orléans, his oldest son; Jean d'Orléans, Count of Angoulême, his brother; Charles d'Angoulême, the son of the latter; it entered the royal library before the advent of François I, son of Charles d'Angoulême. The manuscript has an etiquette on parchment from the 16th century attached to the interior of the front cover with the following inscription: <hi rend="italics">"Le corps \de/ policie en françois composé par une femme no(m)mee (Crist)ine de pisan"</hi>; next to the title, by another hand, it is written: <hi rend="italics">"des moeurs de v(er)tu"</hi>. Old shelfmarks on folio <locus>1</locus>: 660 (Rigault), 729 (Dupuy) and 7409 (Regius).</p>
+                  
+            </note>
+            
+            <note rend="TEXT">
+               
+               <p>The manuscript only contains the <hi rend="italics">Corps de Policie</hi> by Christine de Pizan. </p>
+                             
+            </note>
+           
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 1197</note>
+               
+               <title> <hi rend="italics">Corps de Policie</hi> by Christine de Pizan</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="106" unit="folios">106 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">299</height>
+                     
+                     <width unit="mm">228</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">0</note>
+                        
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 1197</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="106v">1r-106v</locus>
+                     <title> <hi rend="italics">Corps de Policie</hi> by Christine de Pizan</title>
+                     <note type="textid"> <hi rend="italics">Corps de Policie</hi> by Christine de Pizan</note>
+                     <note type="folios">106</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">30</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.155v.tif" pagination="[155v]" reader="John Dee" signature="Viij"/>    
+    <annotation>
+        
+        <marginalia anchor_text="perduti molti vasi, &amp; crepauano i cerchi" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note the inconvenience of this extreme heat.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="la differenza" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Note this simple dowt in Nauigation.</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="perduti molti vasi, &amp; crepauano i cerchi" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; ardeua tutto il formento" type="straight"/>
+        <underline language="IT" method="pen" text="che portauano" type="straight"/>
+        <underline language="IT" method="pen" text="soleua auuenire nel parallelo de" type="straight"/>
+        <underline language="IT" method="pen" text="Il che dice che experimentò" type="straight"/>
+        <underline language="IT" method="pen" text="inalzato VI gradi" type="straight"/>
+        <underline language="IT" method="pen" text="trouò la Tramontana" type="straight"/>
+        <underline language="IT" method="pen" text="gradi" type="straight"/>
+        <underline language="IT" method="pen" text="VI gradi" type="straight"/>
+        <underline language="IT" method="pen" text="la differenza" type="triple"/>
+        
+    </annotation>
+</transcription>

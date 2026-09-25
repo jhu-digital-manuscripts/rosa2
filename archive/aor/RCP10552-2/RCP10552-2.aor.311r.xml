@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.311r.tif" pagination="135" reader="John Dee" signature="R.iij."/>
+    
+    
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>1378</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="hactenus inaudita, vt perciperet" type="straight"/>
+        <underline language="LA" method="pen" text="caput omniu[m] ecclesiarum plusquam" type="straight"/>
+        
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        
+        <errata amendedtext="[deleted]" copytext="1387" language="LA"/> 
+        
+    </annotation>
+    
+</transcription>

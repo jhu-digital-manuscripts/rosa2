@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+    <page filename="FolgersHa2.008r.tif" pagination="335" reader="Harvey"/>	<!-- ABO 12right -->
+    <annotation>
+        
+        <!-- Marginalia -->
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                      Vita Eutrapeli.
+                    </marginalia_text>
+                	<person name="Eutrapelus"/>
+                </position>
+            </language>
+        	<translation>
+        		The life of Eutrapelus.
+        	</translation>
+        </marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Vita Solis in cursu.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			The life of the sun in motion.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					Rara avis in terris.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			A rare bird upon the earth.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					} Neophoebus.
+    				</marginalia_text>
+    				<person name="Neophoebus"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					Barland. 	
+    				</marginalia_text>
+    				<person name="Adriaan van Baerland"/>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="IT">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					sauio, et non sauio.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Wise, and not wise.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					Aut excellentius: aut nihil. }
+    				</marginalia_text>
+    				<emphasis method="chalk" type="straight"/>
+    			</position>
+    		</language>
+    		<translation>
+    			Either more excellent: or nothing. }
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="EL">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					( ἐν ἀκμῆ. <!-- en axme -->    						
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<language ident="IT">
+    			<position book_orientation="0" place="intext">
+    				<marginalia_text>
+    					in auge.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			( At the zenith. at the summet.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="tail">
+    				<marginalia_text>
+    					Vita vitaru[m]
+    					{ Plutarchi. Laertij.
+    					{ Juliani. Eunapij.
+    					Philo[strati.]
+    				</marginalia_text>
+    				<person name="Plutarch"/>
+    				<person name="Diogenes Laertius"/>
+    				<person name="Julian"/>
+    				<person name="Eunapius"/>
+    			</position>
+    		</language>
+    		<translation>
+    			The life of the lives of Plutarch. Of Laertius. Of Julian. Of Eunapius. [Of Philostratus.]
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="270" place="left_margin">
+    				<marginalia_text>
+    					Viuidissima Creatura mundi, et agillima. Laetitia in abstracto.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			The most lively and most nimble creature of the world. Happiness in abstract.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="90" place="right_margin">
+    				<marginalia_text>
+    					[So]la mihi vita est, mera dictio, et actio Solis:
+    					[e]ntelechia triplex: vnica vita globi.	
+    				</marginalia_text>
+    				<emphasis method="chalk" type="straight"/>
+    			</position>
+    		</language>
+    		<translation>
+    			One life belongs to me: pure speech, and the action of the sun:  
+    			a triple realization: a unique life in the crowd. 
+    		</translation>
+    	</marginalia>
+        
+    	<underline language="IT" method="pen" text="poteua" type="straight"/>
+    	<underline language="IT" method="pen" text="il marito n'hauesse poco" type="straight"/>
+    	<underline language="IT" method="pen" text="lo puoi sapere" type="straight"/>
+    	<underline language="IT" method="pen" text="altri che da moglieta, che l'hà" type="straight"/>
+    	<underline language="IT" method="pen" text="prouato" type="straight"/>
+    	<underline language="IT" method="pen" text="ogniuno ammutolì" type="straight"/>
+    	<underline language="IT" method="pen" text="risposta mordace" type="straight"/>
+    	<underline language="IT" method="pen" text="quello impronto" type="straight"/>
+    	<underline language="IT" method="pen" text="Maffio" type="straight"/>
+    	<underline language="IT" method="pen" text="padrone" type="straight"/>
+    	<underline language="IT" method="pen" text="molti nauili" type="straight"/>
+    	<underline language="IT" method="pen" text="felicità, che pende dalle funi" type="straight"/>
+    	<underline language="IT" method="pen" text="sauio" type="straight"/>
+    	<underline language="IT" method="pen" text="tre donne" type="straight"/>
+    	<underline language="IT" method="pen" text="posero pegno" type="straight"/>
+    	<underline language="IT" method="pen" text="maggiore schiocchezza facesse" type="straight"/>
+    	<underline language="IT" method="pen" text="creder" type="straight"/>
+    	<underline language="IT" method="pen" text="suo marito" type="straight"/>
+    	<underline language="IT" method="pen" text="prima" type="straight"/>
+    	<underline language="IT" method="pen" text="fece radere" type="straight"/>
+    	<underline language="IT" method="pen" text="uestirlo da frate" type="straight"/>
+    	<underline language="IT" method="pen" text="per il capo del padre" type="straight"/>
+    	<underline language="IT" method="pen" text="del messere" type="straight"/>
+    	<underline language="IT" method="pen" text="uilla frati d'un" type="straight"/>
+    	<underline language="IT" method="pen" text="padre mio" type="straight"/>
+    	<underline language="IT" method="pen" text="che i uostri frati" type="straight"/>
+    	<underline language="IT" method="pen" text="sentendosi raso" type="straight"/>
+    	<underline language="IT" method="pen" text="uestito da frate" type="straight"/>
+    	<underline language="IT" method="pen" text="io Berto" type="straight"/>
+    
+        
+        <!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+        
+        <symbol name="Sun" place="right_margin"/>
+        
+        <!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|tilde|triple_dash|vertical_bar|X_sign -->
+    	
+    	<!-- Right margin -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- pre -->
+    	<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- pre -->
+    	<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- da -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- pre -->
+    	<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- punto -->
+    	<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- suo ma -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- suo ma -->
+    	<mark method="pen" name="comma" place="right_margin"/> <!-- messere -->
+    	<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- messere -->
+    	<mark method="pen" name="dash" place="right_margin"/> <!-- comin -->
+    	   	
+    	<!-- Left margin -->
+ 
+    	<!-- Intext -->
+    	<mark method="pen" name="dot" place="intext"/> <!-- Gallo, la -->
+    	<mark method="pen" name="dot" place="intext"/> <!-- marito -->
+    	<mark method="pen" name="plus_sign" place="intext"/> <!-- da moglieta -->
+    	<mark language="IT" method="pen" name="plus_sign" place="intext" text="prouato"/>
+    	<mark language="IT" method="pen" name="plus_sign" place="intext" text="mordace"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- nauili, rispose -->
+    	<mark method="pen" name="plus_sign" place="intext"/> <!-- dalle funi -->
+    	<mark method="pen" name="plus_sign" place="intext"/> <!-- creder -->
+
+    </annotation>
+</transcription>

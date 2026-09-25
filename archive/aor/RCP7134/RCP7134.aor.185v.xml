@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.185v.tif" pagination="[178v]" reader="John Dee" signature="[yy ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="perpetuam moram extra patriam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mora extra patriam //</marginalia_text> <!-- FSF: there are two slashes, which in the past you have captured in the note -->
+                </position>
+            </language>
+            <translation>A delay beyond the fatherland.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mortuus est" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mors eius.</marginalia_text>
+                </position>
+            </language>
+            <translation>His death.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in septima, foelicem ac perpetuam" type="straight"/>
+        <underline language="LA" method="pen" text="extra patriam decernit" type="straight"/>
+        
+    </annotation>
+</transcription>

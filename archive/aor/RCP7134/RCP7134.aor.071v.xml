@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.071v.tif" pagination="[64v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aspectuu[m] vires in hoc negotio</marginalia_text>
+                </position>
+            </language>
+            <translation>The strenghts of the aspects in this matter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="causa" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Caussa.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Cause.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>De Vita[e]</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>significatore</marginalia_text>
+                </position>
+            </language>
+            <translation>On the signifier of life.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nutritionem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro te[m]pore nutritionis.</marginalia_text>
+                </position>
+            </language>
+            <translation>For the time of nutrition.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sola Venus in Scorpione si dominetur ascendenti, efficere potest cinaedos" type="straight"/>
+        <underline language="LA" method="pen" text="Sol autem &amp; Iupiter, haec tegunt, minuunt'q[ue[ mala, &amp; aliquando tollunt, prout robustiores fuerint" type="straight"/>
+        <underline language="LA" method="pen" text="dominos trigoni ascendentis, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="prima" type="straight"/>
+        <underline language="LA" method="pen" text="septima" type="straight"/>
+        <underline language="LA" method="pen" text="decima" type="straight"/>
+        <underline language="LA" method="pen" text="nona" type="straight"/>
+        <underline language="LA" method="pen" text="undecima" type="straight"/>
+        
+        <mark method="pen" name="double_vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

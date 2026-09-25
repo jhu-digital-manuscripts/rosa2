@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.186r.tif" pagination="371" reader="Harvey" signature="aij[r]"/>
+    <annotation>
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        o[mn]es
+                        Arithmetices
+                        expertes. <!-- the 'r' in expertes is somewhat unclear, but given context, makes sense.-->
+                    </marginalia_text>
+                    <emphasis method="chalk" text="o[mn]es" type="straight"/>
+                </position>
+            </language>
+            <translation>Everyone lacks experience in mathematics. </translation>
+        </marginalia>
+    
+        <underline language="LA" method="pen" text="mercatus" type="straight"/>
+        <underline language="LA" method="pen" text="uenarum" type="straight"/>
+        <underline language="LA" method="pen" text="mediocris oeconomiae" type="straight"/>
+        <underline language="LA" method="chalk" text="Thraces" type="straight"/>
+        <underline language="LA" method="pen" text="in Rep" type="straight"/>
+        <underline language="LA" method="pen" text="aerarij" type="straight"/>
+        <underline language="LA" method="pen" text="iudicijs quaestiones" type="straight"/>
+        <underline language="LA" method="chalk" text="incidunt, quae requirunt" type="straight"/> 
+        <underline language="LA" method="pen" text="computationem" type="straight"/>
+        <underline language="LA" method="chalk" text="numeros naturae beneficio" type="straight"/>
+        <underline language="LA" method="chalk" text="ars addenda" type="straight"/>
+        <underline language="LA" method="pen" text="ciues cogantur discere Arithmeticam" type="straight"/>
+        <underline language="LA" method="chalk" text="sit stolidior Thracensibus" type="straight"/>
+        <underline language="LA" method="chalk" text="pariter omnes adolescentes" type="straight"/>
+        <underline language="LA" method="pen" text="singulis magno usui Arithmetica" type="straight"/>
+        <underline language="LA" method="chalk" text="Romanis magnae" type="straight"/>
+        <underline language="LA" method="chalk" text="liberi eorum" type="straight"/>
+        <underline language="LA" method="pen" text="Arithmeticen" type="straight"/>
+        
+        <mark method="chalk" name="X_sign" place="right_margin"/> 
+        <mark language="LA" method="chalk" name="X_sign" place="right_margin" text="ciues cogantur discere Arithmeticam"/>
+        <mark method="chalk" name="X_sign" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="chalk" place="right_margin" type="florilegium"/>
+                     
+    </annotation>
+</transcription>

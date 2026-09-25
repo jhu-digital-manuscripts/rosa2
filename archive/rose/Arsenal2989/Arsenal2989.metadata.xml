@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>327</totalPages>
+    <dimensions units="mm">
+        <width>194</width>
+        <height>263</height>
+    </dimensions>
+    <dates>
+        <startDate>1700</startDate>
+        <endDate>1800</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="653" start="1">327</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Arsenal 2989</commonName>
+            <dateLabel>18th century</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>
+                     
+                     Bibliothèque de l'Arsenal</repository>
+            <shelfmark>2989</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Arsenal 2989</commonName>
+            <dateLabel>18e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>papier</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>
+                     
+                     Bibliothèque de l'Arsenal</repository>
+            <shelfmark>2989</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

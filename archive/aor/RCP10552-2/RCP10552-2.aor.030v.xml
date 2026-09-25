@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.030v.tif" pagination="50" reader="John Dee" signature="[E[v]]."/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="insignis, Brutus nomine" type="straight"/>
+        <underline language="LA" method="pen" text="Posteà Dunvvallus rex Britonum Staterium Regem Scotiae sibi rebellem occidit, &amp; terram in deditionem accepit" type="straight"/>
+        <underline language="LA" method="pen" text="Petebat enim Troiana consuetudo, vt dignitas haereditatis" type="straight"/>
+        <underline language="LA" method="pen" text="Arthurus" type="straight"/>
+        <underline language="LA" method="pen" text="ibidem omnes reges sibi" type="straight"/>
+        <underline language="LA" method="pen" text="Stregvvallorum" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- insula, ipsius -->
+        <mark method="pen" name="circumflex" place="intext"/> <!-- Cumbroru[m] -->
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <errata amendedtext="Succedens" copytext="Succedentibus" language="LA"/>
+        <errata amendedtext="regis" copytext="regibus" language="LA"/>
+        <errata amendedtext="Monarchiam" copytext="monarchiam" language="LA"/>
+        
+    </annotation>
+</transcription>

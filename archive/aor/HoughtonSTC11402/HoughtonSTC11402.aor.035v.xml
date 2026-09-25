@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.035v.tif" reader="Harvey" signature="[Diiii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>A falcon, howlding in her talents A clock: Fal con tempo</marginalia_text> <!--JG: No clue what Harvey means by 'Fal con tempo--> <!--KS: It looks like a play on words, not sure if it is any more than that.-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Idem.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>The Alcions know [their] best time.</marginalia_text>
+                </position>
+            </language>
+            <language ident="FR">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Nous sçauous bien le temps.</marginalia_text>
+                </position>
+            </language>
+            <translation>We know the time well.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="brake theyr faste" type="straight"/>
+        <underline language="EN" method="pen" text="hungre, thyrst, and longe" type="straight"/>
+        <underline language="EN" method="pen" text="at the sprynge" type="straight"/>
+        <underline language="EN" method="pen" text="vi. houre" type="straight"/>
+        <underline language="EN" method="pen" text="fresshe and" type="straight"/>
+        <underline language="EN" method="pen" text="weryed" type="straight"/>
+        <underline language="EN" method="pen" text="great heate" type="straight"/>
+        <underline language="EN" method="pen" text="Metellus" type="straight"/>
+        <underline language="EN" method="pen" text="Pompeius" type="straight"/>
+        <underline language="EN" method="pen" text="Sertorius in Spayne" type="straight"/>
+        <underline language="EN" method="pen" text="not able to matche them bothe" type="straight"/>
+        <underline language="EN" method="pen" text="souldiours were greatly encouraged" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

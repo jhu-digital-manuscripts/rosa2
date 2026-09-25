@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.022r.tif" pagination="22" reader="John Dee" signature="Fij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="von was Superis ich rede zeige ich sie hie an" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quos superos hîc intelligit</marginalia_text>
+                </position>
+            </language>
+            <translation>Which deities he understands here.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="es seind noch mehr in den solcher verstandt vnd mehrer auch ist dann im Menschen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Superi</marginalia_text>
+                </position>
+            </language>
+            <translation>Deities.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="zu erforschen die Natur damit sei die wunderwerck Gottes herfür zeihen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A natura exquirere debem[us] Dei magnalia</marginalia_text>
+                </position>
+            </language>
+            <translation>We ought to seek out God's mighty works from nature.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="die werck Gottes getheilt: in die werck der Natur; Vnd in die werck Christi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Intelligo Opera Dei in operibus Natura[e] - in operibus Christi</marginalia_text>
+                    <person name="Jesus Christ"/>
+                </position>
+            </language>
+            <translation>I understand the works of God in the works of nature [and] in the works of Christ.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="von was Superis ich rede" type="straight"/>
+        <underline language="DE" method="pen" text="Firmament vn[d] wonend im selbige[n] mit alle[n] weißheite[n] vn[d] verstandnuß" type="straight"/>
+        <underline language="DE" method="pen" text="vn[d] künsten" type="straight"/>
+        <underline language="DE" method="pen" text="vn[d] der gleiche[n]" type="straight"/>
+        <underline language="DE" method="pen" text="vber die Natur" type="double"/>
+        <underline language="DE" method="pen" text="Erden solchen" type="straight"/>
+        <underline language="DE" method="pen" text="sondern es seind noch mehr in den solcher verstandt vnd" type="straight"/>
+        <underline language="DE" method="pen" text="mehrer" type="triple"/>
+        <underline language="DE" method="pen" text="auch ist" type="straight"/>
+        <underline language="DE" method="pen" text="dann im Menschen" type="straight"/>
+        <underline language="DE" method="pen" text="allem dem das die Natur antrifft" type="straight"/>
+        <underline language="DE" method="pen" text="in natürlichen verstandt" type="straight"/>
+        <underline language="DE" method="pen" text="zu erforschen die Natur" type="straight"/>
+        <underline language="DE" method="pen" text="damit sie die wunderwerck Gottes" type="straight"/>
+        <underline language="DE" method="pen" text="dann allein in Göttlichen wercke[n] zu" type="straight"/>
+        <underline language="DE" method="pen" text="sie zu erkenne[n]" type="straight"/>
+        <underline language="DE" method="pen" text="die werck Gottes getheilt" type="straight"/>
+        <underline language="DE" method="pen" text="werck der Natur" type="straight"/>
+        <underline language="DE" method="pen" text="werck Christi" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

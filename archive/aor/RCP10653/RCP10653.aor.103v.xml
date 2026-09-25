@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.103v.tif" pagination="198" reader="John Dee" signature="[R iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Dorkacestria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Dorkacestria
+                    </marginalia_text>
+                    <location name="Dorchester"/>
+                </position>
+            </language>
+            <translation>
+                Dorchester.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Eode[m] anno, rex VVestsaxonum Ceaulinus" type="straight"/>
+        <underline language="LA" method="pen" text="eius Cuthvvinus bellum" type="straight"/>
+        <underline language="LA" method="pen" text="Britannis commiserunt apud Frithenleiam, vbi Cuthvvinus" type="straight"/>
+        <underline language="LA" method="pen" text="oppressus &amp; peremptus est. Victi sunt igitur Angli &amp; fugae dati" type="straight"/> 
+        <underline language="LA" method="pen" text="Dorkacestria, nunc verò Lincolnia" type="straight"/>
+        <underline language="LA" method="pen" text="commisso praelio ipsum vltra Sebrinam in VValliam" type="straight"/>
+        <underline language="LA" method="pen" text="exterminium pellebanrur. Secesserunt itaque Britannorum reliquiae" type="straight"/>
+        <underline language="LA" method="pen" text="Cornubia" type="straight"/>
+        <underline language="LA" method="pen" text="atq[ue] VVallia" type="straight"/>
+        <underline language="LA" method="pen" text="Britones patriam suam deserenres, in VVallia[m] fecesserunt" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

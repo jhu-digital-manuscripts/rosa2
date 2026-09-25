@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.534v.tif" reader="Harvey" signature="S[2v]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Asinius Pollio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        Virgilij Ecloga 4. Pollio.
+                    </marginalia_text>
+                    <person name="Virgil"/>
+                    <person name="Gaius Asinius Pollio"/>
+                    <book title="Eclogues"/>
+                </position>
+            </language>
+            <translation>
+                Virgil's Eclogue 4. Pollio.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="A.Hirtius" type="straight"/>
+        <underline language="LA" method="pen" text="quida[m] Augusti ordiuntur imperiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Aemylius Lepidus" type="straight"/>
+        <underline language="LA" method="pen" text="M.q[ue]; Lepido:" type="straight"/>
+        <underline language="LA" method="pen" text="IIII &amp; XL solus Rempub. tenuit." type="straight"/>
+        <underline language="LA" method="pen" text="L. Antonius" type="straight"/>
+        <underline language="LA" method="pen" text="Antonij Trumuiri frater" type="straight"/>
+        <underline language="LA" method="pen" text="Asinius Pollio" type="straight"/>
+        <underline language="LA" method="pen" text="Claudius Pulcher" type="straight"/>
+        <underline language="LA" method="pen" text="Cocceius Nerua" type="straight"/>
+        <underline language="LA" method="pen" text="Satyra quinta Horatius" type="straight"/>
+        <underline language="LA" method="pen" text="Caesar Octauianus" type="straight"/>
+        <underline language="LA" method="pen" text="Cicerone, M.Laelium Volcatiu[m] Tullum" type="straight"/>
+        <underline language="LA" method="pen" text="Tullius Cicero" type="straight"/>
+        <underline language="LA" method="pen" text="Tullij Ciceronis fuisse filium" type="straight"/>
+        <underline language="LA" method="pen" text="Domitius Aenobardus" type="straight"/>
+        <underline language="LA" method="pen" text="Octauianus IIII" type="straight"/>
+        <underline language="LA" method="pen" text="Caesar Octauianus solus" type="straight"/>
+        <underline language="LA" method="pen" text="Augusti uerum imperium" type="straight"/>
+        <underline language="LA" method="pen" text="Valerius Messala" type="straight"/>
+        <underline language="LA" method="pen" text="Licinius Crassus" type="straight"/>
+        <underline language="LA" method="pen" text="Vipsanius Agrippa" type="straight"/>
+        <underline language="LA" method="pen" text="Octauianus Augustus" type="straight"/>
+        <underline language="LA" method="pen" text="Augustus XI" type="straight"/>
+        <underline language="LA" method="pen" text="Calphurnius Piso" type="straight"/>
+        <underline language="LA" method="pen" text="Claudius Marcellus" type="straight"/>
+        <underline language="LA" method="pen" text="Lollius" type="straight"/>
+        <underline language="LA" method="pen" text="horum Coss. libro 1." type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        <symbol language="LA" name="SS" place="intext" text="C.Caesar"/>
+        <symbol language="LA" name="SS" place="intext" text="solus"/>
+        <symbol name="SS" place="intext"/>
+        <!--Augustus VIII-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="imperiu[m]"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--fe-->
+        <mark method="pen" name="dot" place="intext"/> <!--fuit [over comma]-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Pollio"/>
+        <mark method="pen" name="dot" place="intext"/> <!--Horatius-->
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="filium"/>
+        <mark method="pen" name="dot" place="intext"/> <!--Suetonio [over comma]-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Augustus"/>
+        <mark method="pen" name="dot" place="intext"/> <!--Augustus VIII-->
+        <mark method="pen" name="dot" place="intext"/> <!--Augustus XI-->
+        
+        <errata amendedtext="III" copytext="IIII" language="LA"/>
+        
+    </annotation>
+</transcription>

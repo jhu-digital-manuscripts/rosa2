@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.276r.tif" pagination="3" reader="John Dee" signature="Aa.ii."/>   
+    <annotation>
+        
+        <marginalia anchor_text="intermittere; praetermittas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        intermittere
+                        pr[a]etermittere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To interrupt.
+                To pass over.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="percontari; quaero; flagitare; requirere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                       Perco[n]tor
+                       Quero
+                       Flagito
+                       requiro
+                       postulo 13.39
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0571" text="13.39"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                I inquire.
+                I ask.
+                I entreat.
+                I request. 
+                I demand. 13.39.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="intemperantis enim arbitror esse, scribere quod occultari velit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Inte[m]pera[n]tis arbitor eße, scribere, quod occultari velit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>I judge that it is reckless to write down what one would wish to be hidden.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="limantur à me politius; accuratius tractare; Latinis literis illustrare; diligentissime Graecis literis explicatum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Lima[n]tur à me politius
+                        Accuratius tractare.
+                        latinis litteris illustrare.
+                        Diligentissime gra[e]cis litteris explicatu[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                They are finished off as more polished by me.
+                To treat more accurately.
+                To illustrate in Latin treatises.
+                Explained very carefully in Greek treatises.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="excellas; antecedat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        excello
+                        Antecedo
+                        presto .5.25
+                        anteponeba[n]tur .6.33.
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0563" text="5.25"/>
+                    </internal_ref>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0564" text="6.33"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                I excel.
+                I surpass.
+                I stand before, [page] 5, [section] 25.
+                They were preferred, [page] 6, [section] 33.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="celare; occultari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        celare
+                        occultari
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To conceal.
+                To be hidden.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="putauimus; existimo; arbitror; cogitaui; censent; sucipiatur" hand="Italian">  <!-- DO: I can't find 'iudico' or 'mihi videtur' in the text... -->
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Puto.
+                        Existimo.
+                        Arbitror.
+                        Cogito.
+                        Censeo.
+                        4
+                        suspicor.
+                        iudico.
+                        mihi videtur.
+                        sentio 6.33
+                        reor 6.39
+                    </marginalia_text>
+                    <emphasis method="pen" text="Censeo" type="straight"/>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0564" text="6.33"/>
+                    </internal_ref>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0564" text="6.39"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                I suspect.
+                I consider.
+                I judge.
+                I think.
+                I suppose.
+                
+                Four: 
+                I suspect.
+                I determine.
+                It seems to me.
+                I feel, [page] 6, [section] 33.
+                I reckon, [page] 6, [section] 39.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="pridie vesperi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pridìe vesperi.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>On the evening of the previous day.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="de via fessus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        de via fessus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Tired from the journey.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="quin videremus hominem nobiscum &amp; studiis eisdem, &amp; vetustate amicitiae coniunctum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        co[n]iunctus
+                        nobiscu[m] et {
+                        studijs eisdem
+                        vetustate
+                        Amicitia[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Joined to use by both the same studies, and longstanding friendship.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="confestim" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Confestim
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Immediately.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="villa abessemus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        villa abeßem[us].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>We were away from the villa.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="mos amicorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mos Amicoru[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The custom of friends.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="ad hunc eum ipsum (me autem dicebat) quaeda[m] institui" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ad hunc eu[m] ip[su]m qua[e]da[m] institui
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>I established certain things to 'our friend here himself' [Loeb 268, 413].</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Libone" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Libo.
+                    </marginalia_text>
+                    <person name="Lucius Libonius Libo"/> 
+                </position>
+            </language>
+            <translation>Libo.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="in me[n]tem venit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        in me[n]te[m] venit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>It came to mind.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="philosophiámque vetere[m] illam à Socrate ortam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Philosophia vetus à Socrate orta.
+                    </marginalia_text>
+                    <person name="Socrates"/>
+                </position>
+            </language>
+            <translation>The old philosophy originated in Socrates.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="praesertim quum &amp; ipse in eo excellas, &amp; id studium, totáque ea res longe caeteris &amp; studiis &amp; artibus antecedat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        LAVS: PHILOSOPHÏÆ.   
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Praise to philosophy.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="quae mihi sunt in promptu" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Qua[e] mihi su[n]t in pro[m]ptu.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The things which come to me at once.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="philosophiam viderem diligentissime Graecis literis explicatam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Philosophia dilige[n]tissime in gra[e]cis litteris explicata.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Philosophy explained very carefully in Greek treatises.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="eius studio tenerentur, si essent Graecis doctrinis eruditi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        eius studio teneri
+                        graecis doctrinis eruditi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be retained by their study.
+                Knowledgable of the Greek doctrines.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Amafanii aut Rabirii" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Amafanius. Rabirius
+                    </marginalia_text>
+                    <person name="Amafinius"/>
+                    <person name="Rabirius"/>
+                </position>
+            </language>
+            <translation>Amafinius. Rabirius.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="dialecticorum, &amp; oratorum. Et quoniam vtra[m]que vim virtutem esse nostri putant" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        DIALECTICA &amp; ARS
+                        ORATORÏA SV[N]T VIRTVTES.     
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Dialectis and the art of oratory are virtues.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="verbis quanquam nouis cogimur vti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nova verba.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>New words.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="physica" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        PHÏSICA.           
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Physics.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="de corpusculorum (ita enim appellat atomes)" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Corpuscula Attomi.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Little bodies. Atoms.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Geometria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Geometria.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Geometry.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Zenomen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Zeno.
+                    </marginalia_text>
+                    <person name="Zeno of Citium"/>
+                </position>
+            </language>
+            <translation>Zeno of Citium.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="fingit &amp; format" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        fingere
+                        formare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To shape.
+                To form.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="doctrinis; artibus &amp; disciplinis; eruditione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Doctrina
+                        Ars
+                        Disciplina
+                        Eruditio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Doctrine. Art. Discipline. Study.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="partiuntur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Partiri
+                        Diuidi .5.29.
+                        Diuidere 6.38
+                        Secari 6.41
+                        dispertire 17.79
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0563" text="5.29"/>
+                    </internal_ref>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0564" text="6.38"/>
+                    </internal_ref>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0564" text="6.41"/>
+                    </internal_ref>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0575" text="17.79"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                To distribute.
+                To be divided, [page] 5, [section] 29.
+                To divide, [page] 6, [section] 38.
+                To be separated, [page] 6, [section] 41.
+                To disperse. [page] 17, [section] 79.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="pridie" type="double"/>
+        <underline language="LA" method="pen" text="vesperi" type="straight"/>
+        <underline language="LA" method="pen" text="eum ire perreximus" type="straight"/>
+        <underline language="LA" method="pen" text="quae nec percontari, nec audire sine molestia possumus" type="straight"/>
+        <underline language="LA" method="pen" text="Sile[n]t enim diutius" type="straight"/>
+        <underline language="LA" method="pen" text="istum cessare" type="straight"/>
+        <underline language="LA" method="pen" text="intemperantis enim arbitror esse, scribere quod occultari velit. Sed habeo opus" type="straight"/>
+        <underline language="LA" method="pen" text="institui" type="straight"/>
+        <underline language="LA" method="pen" text="limantur à me politius" type="straight"/>
+        <underline language="LA" method="pen" text="sum ingressus res eas quas tecum simul" type="straight"/>
+        <underline language="LA" method="pen" text="mandare monumentis" type="straight"/>
+        <underline language="LA" method="pen" text="vetere[m] illam à Socrate" type="straight"/>
+        <underline language="LA" method="pen" text="quaero quid sit cur quum" type="straight"/>
+        <underline language="LA" method="pen" text="Itaque non haesitans respondebo" type="straight"/>
+        <underline language="LA" method="pen" text="dicam quae mihi sunt in promptu" type="straight"/>
+        <underline language="LA" method="pen" text="ista ipsa de re" type="straight"/>
+        <underline language="LA" method="pen" text="philosophiam viderem" type="straight"/>
+        <underline language="LA" method="pen" text="de nostris eius studio tenerentur" type="straight"/>
+        <underline language="LA" method="pen" text="eruditi" type="straight"/>
+        <underline language="LA" method="pen" text="quae nec indocti intelligere possent, nec docti legere curare[n]t. Vides autem eade[m] ipse" type="straight"/>
+        <underline language="LA" method="pen" text="nihil apta interrogatione concludunt" type="straight"/>
+        <underline language="LA" method="pen" text="quoniam vtra[m]que vim virtutem" type="straight"/>
+        <underline language="LA" method="pen" text="cogimur" type="straight"/>
+        <underline language="LA" method="pen" text="à Graecis petere" type="straight"/>
+        <underline language="LA" method="pen" text="frustra" type="straight"/>
+        <underline language="LA" method="pen" text="Illi enim" type="straight"/>
+        <underline language="LA" method="pen" text="simpliciter" type="straight"/>
+        
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>          
+        
+        <mark language="LA" method="pen" name="pin" place="head" text="Inte[m]pera[n]tis arbitor eße, scribere, quod occultari velit"/>
+        
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+        <mark method="pen" name="pin" place="left_margin"/>
+        
+        <errata amendedtext="." copytext="," language="LA"/>  <!-- noui, Atticus -->  <!-- DO: Not completely sure if this is the change that has been made -->
+        <errata amendedtext="," copytext="." language="LA"/>  <!-- Atticus. Omitte -->
+        <errata amendedtext="," copytext="." language="LA"/>  <!-- oratorum. Et -->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.173r.tif" pagination="169" reader="Harvey" signature="[L5r]"/>	<!-- ABO 177right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nulli sunt libri, quibus non malim carere, quàm
+						istis: suntq[ue] hi ante omnes ad unguem percallendi. Pro
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						pubblica negociatione:
+						Gandinua, et Polya[e]nus:
+						cum Aristotelis technis Oeconomicis;
+					</marginalia_text>
+					<person name="Marcantonio Gandino"/>
+					<person name="Polyaenus"/>
+					<person name="Aristotle"/>
+					<person name="Mithridates VI of Pontus"/>
+					<book title="Stratagemata"/>
+					<book title="Stratagems"/>
+					<book title="Economics"/>
+					<book title="Histories"/> <!--JG: This includes Mithridates' letter-->
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						et Ciceronis
+						Pebitione Consulatus. Pragmatica Mithridatis
+					</marginalia_text>
+					<person name="Cicero"/>
+					<book title="De petitione consulatus"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Epistola,
+						et Concio, contra Rom.
+						Elogia F. Feltrij, L. Sfortia[e], C. Borgia[e]:
+						) cum historia Ca. Medicea[e].
+						Methodus historica Bodini,
+						ad omnes discursus.
+					</marginalia_text>
+					<person name="Frederick Feltrius"/>
+					<person name="Ludovico Sforza"/>
+					<person name="Cesare Borgia"/>
+					<person name="Catherine de' Medici"/>
+					<person name="Jean Bodin"/>
+					<book title="Methodus ad facilem historiarum cognitionem"/>
+				</position>
+			</language>
+			<translation>There are no books, which I would prefer not to lack than these, and they must be truly understood by heart before al othersl. For public business,
+				Marcantonio Gandino and Polyaenus, with Aristotele's 'Economics' and Cicero's 'On running for the consulship'. Mithridates' 'Pragmatic letter and speech against Rome'. The eulogies of 
+				Frederick Feltrius, Ludovico Sforza, and Cesare Borgia, with the history of Catherine de' Medici. Bodin's 'Method for the easy knowledge of history' for all discourses.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						risoluto.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Resolute.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Qui se habet, nil perdidit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>He who has himself does not lose anything.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Pro priuata professione. Althusij Ars iuris: cu[m] Decij,
+						Dyniq[ue] regulis. Durandi speculum pragmaticu[m];
+						cum Bartholi distinctionib[us] et Vigelij methodo "
+					</marginalia_text>
+					<person name="Johannes Althusius"/>
+					<person name="Filippo Decio"/>
+					<person name="Dinus de Rossonibus de Mugello"/>
+					<person name="Guillaume Durand"/>
+					<person name="Bartolus de Saxoferrato"/>
+					<person name="Nicolas Virgil"/> 
+					<book title="Jurisprudentia Romana"/>
+					<book title="Lectura super titulo de regulis iuris"/>
+					<book title="De regulis juris"/>
+					<book title="Speculum iucidiale"/>
+					<book title="Distinctiones"/>
+					<book title="Methodus juris controversi"/>
+				</position>
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						" Juris Controuersi. Tria illa sophistica Capita in arte Notae. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>For the private profession: Johannes Althusius 'Art of law': with the rules of Filippo Decio and Dinus' 'de Rossonibus de Mugello'. Guillaume Durand's 'Pragmatic mirror'; with
+				Bartolus de Saxoferrato's 'Distinctions' and Nicolas Virgil's 'Method of controversial law'. These three sophistical headers are esteemed in art.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="d'esser nato" type="straight"/>
+		<underline language="IT" method="pen" text="sottoposto à tutti i colpi di Fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="certa consolatione" type="straight"/>
+		<underline language="IT" method="pen" text="noi siamo huomini" type="straight"/>
+		<underline language="IT" method="pen" text="d'ssere sottoposti à tutti i colpi di Fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="quella conditione, che noi" type="straight"/>
+		<underline language="IT" method="pen" text="quelle disgratie, le quali" type="straight"/>
+		<underline language="IT" method="pen" text="consiglio non si possono" type="straight"/>
+		<underline language="IT" method="pen" text="i casi ad altri interuenuti" type="straight"/>
+		<underline language="IT" method="pen" text="noi non è auuenuta cosa nuoua" type="straight"/>
+		<underline language="IT" method="pen" text="souerchio dannar qua" type="straight"/>
+		<underline language="IT" method="pen" text="Danno" type="straight"/>
+		<underline language="IT" method="pen" text="ò disnor cbe" type="straight"/>
+		<underline language="IT" method="pen" text="Soffrir" type="straight"/>
+		<underline language="IT" method="pen" text="n'è forza" type="straight"/>
+		<underline language="IT" method="pen" text="tollerare in pace" type="straight"/>
+		<underline language="IT" method="pen" text="Rimedij" type="straight"/>
+		<underline language="IT" method="pen" text="idonei contra l'amore" type="straight"/>
+		<underline language="IT" method="pen" text="qual rimedio fosse" type="straight"/>
+		<underline language="IT" method="pen" text="argutamente" type="straight"/>
+		<underline language="IT" method="pen" text="dice[n]do la fame" type="straight"/>
+		<underline language="IT" method="pen" text="il te[m]po" type="straight"/>
+		<underline language="IT" method="pen" text="il laccio" type="straight"/>
+		<underline language="IT" method="pen" text="fame" type="straight"/>
+		<underline language="IT" method="pen" text="tempo" type="straight"/>
+		<underline language="IT" method="pen" text="che per morte" type="straight"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- conside -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- arguta -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- amo -->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="fame"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="basta"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="il laccio"/>
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- morte. Et -->
+
+    </annotation>
+</transcription>

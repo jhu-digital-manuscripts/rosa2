@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.035v.tif" reader="John Dee" signature="[Fv[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="vt tria ad" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vt 3 ad
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Like 3 to.
+            </translation>
+        </marginalia>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- semel minor -->
+        
+        <errata amendedtext="[deleted]" copytext="vt tria ad duo dicit[ur] tripla p[ro]portio [et] tria dicunt[ur] triplu[m] [et] duo subtriplu[m]" language="LA"/> 
+        <errata amendedtext="rariores" copytext="radiores" language="LA"/> 
+        
+    </annotation>
+</transcription>

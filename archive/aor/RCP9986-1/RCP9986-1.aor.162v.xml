@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.162v.tif" pagination="[163v]" reader="John Dee" signature="[X.iij.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="mora" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mora</marginalia_text>
+                </position>
+            </language>
+            <translation>Delay.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="gestus edendi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Edendi gest[us].</marginalia_text>
+                </position>
+            </language>
+            <translation>The action of eating.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="multo madefacta Lyaeo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ebrietas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Drunkenness.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sed repetamus iter" type="straight"/>
+        <underline language="LA" method="pen" text="Et latebras" type="straight"/>
+        <underline language="LA" method="pen" text="Per somnos fieri multa pudenda solent" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.026v.tif" pagination="36" reader="John Dee" signature="[cc.ii.[v]]"/>
+    <annotation> 
+        
+        <marginalia anchor_text="menstrua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Menstrua
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Monthly ledger.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="extemplo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        exte[m]plo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                On the spur of the moment.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="menstruas penè rationes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        me[n]stru[a]e r[ati]o[n]es
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Monthly account.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="si etiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        si etiam
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                If also.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aliud est iudicium, aliud est arbitrium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        judiciu[m] et Arbitriu[m] quo differant
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Judgement and arbitration differ in this.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        satis súp[er]q[ue]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Even more than due.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="causam labefactari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                       caussa[m] labefactari 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To fail a case.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Magnum est quod conor: difficile est quod poilliceor" type="straight"/>
+        <underline language="LA" method="pen" text="sed satis supérque habere" type="straight"/>
+        <underline language="LA" method="pen" text="causam labefactari" type="straight"/>
+        
+        <numeral place="left_margin">15</numeral>
+        <numeral place="left_margin">10.11</numeral>
+        <numeral place="left_margin">15</numeral>
+        
+    </annotation>
+</transcription>

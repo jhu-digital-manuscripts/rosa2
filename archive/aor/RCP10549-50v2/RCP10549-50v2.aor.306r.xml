@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.306r.tif" pagination="63" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Leonidas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Leonidas</marginalia_text>
+                    <person name="Leonidas I"/>
+                </position>
+            </language>
+            <translation>Leonidas I.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Praeclarae mortes sunt imperatoriae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pra[e]clara[e] mortes su[n]t imp[er]atoria[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>The deaths of commanders are famous.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Audio equide[m] philosophi voce[m] Epicure" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Epicuri dictum.</marginalia_text>
+                    <person name="Epicurus"/>
+                </position>
+            </language>
+            <translation>A saying of Epicurus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Metrodori liberos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Metrodori liberi.</marginalia_text>
+                    <person name="Metrodorus of Lampsacus the Younger"/>
+                </position>
+            </language>
+            <translation>The children of Metrodorus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="summa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Summa.</marginalia_text>
+                </position>
+            </language>
+            <translation>The chief points.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mortem nihil ad nos pertinere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mors nihil ad nos p[er]tinet.</marginalia_text>
+                </position>
+            </language>
+            <translation>Death does not affect us.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sensus omnis extinguatur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sensus omnis extinguitur morte</marginalia_text>
+                </position>
+            </language>
+            <translation>Every sense is extinguished in death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Amynomachus &amp; Timocrates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Amynomachus
+                        Timocrates.
+                    </marginalia_text>
+                    <person name="Amynomachus"/>
+                    <person name="Timocrates"/>
+                </position>
+            </language>
+            <translation>
+                Amynomachus. Timocrates.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad diem agendum natalem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Natalis dies.</marginalia_text>
+                </position>
+            </language>
+            <translation>The date of birth.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Annus</marginalia_text>
+                </position>
+            </language>
+            <translation>A year.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Democritus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Democritus.</marginalia_text>
+                    <person name="Democritus"/>
+                </position>
+            </language>
+            <translation>Democritus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="post morte[m] epulis celebrari memoriam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Epulis post morte[m] celebrari Memoriam.</marginalia_text>
+                </position>
+            </language>
+            <translation>The memory to be celebrated with a feast after death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dissolutione" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>dissolutio</marginalia_text>
+                </position>
+            </language>
+            <translation>Dissolution.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in quanta[m] hominum facetosam vrbanitate[m] incurratis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>in hominu[m] facetosa[m] vrbanitate[m] incurrere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To incur the wit of humerous men.</translation>   
+            <!-- DO: Not sure how to translate 'facetosam' --> 
+            <!--JG: Acc to Loeb it's facetorum, translated it as such. See: https://www.loebclassics.com/view/marcus_tullius_cicero-de_finibus_bonorum_et_malorum/1914/pb_LCL040.195.xml-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="eam qua erat transfixus hastam" type="straight"/>
+        <underline language="LA" method="pen" text="Praeclare mortes sunt imperatoriae" type="straight"/>
+        <underline language="LA" method="pen" text="tuas te video co[m]pensare" type="straight"/>
+        <underline language="LA" method="pen" text="summorum officioru[m] in extremo spiritu conseruatio" type="straight"/>
+        <underline language="LA" method="pen" text="mercedibus euocatam" type="straight"/>
+        <underline language="LA" method="pen" text="cum summa" type="straight"/>
+        <underline language="LA" method="pen" text="enim dissolutum sit, id esse sine sensu" type="straight"/>
+        <underline language="LA" method="pen" text="quum dissolutione" type="straight"/>
+        <underline language="LA" method="pen" text="quanuis &amp; belli &amp; humani" type="straight"/>
+        <underline language="LA" method="pen" text="nisi quum multa annoru[m] intercesserint milia, vt omnium syderu[m] eodem vnde profecta sint, fiat ad vnum tempus reuersio. Nullus" type="straight"/>
+        <underline language="LA" method="pen" text="morte[m] epulis celebrari memoriam" type="straight"/>
+        <underline language="LA" method="pen" text="facetosam vrbanitate[m] incurratis" type="straight"/>
+        <underline language="LA" method="pen" text="nihil opus est litibus" type="straight"/>
+        
+        <symbol name="Unidentified" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="quattuorpunctus" place="right_margin" text="Leonidas"/>
+        <mark language="LA" method="pen" name="tripunctus_with_tail" place="right_margin" text="Pra[e]clara[e] mortes su[n]t imp[er]atoria[e]"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+    </annotation>
+</transcription>

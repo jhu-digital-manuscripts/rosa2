@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonK6233.015r.tif" reader="Harvey" signature="β7r"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Pandectarum in VII. partes distinctio.
+                    </marginalia_text>
+                    <book title="Digest"/>
+                </position>
+            </language>
+            <translation>
+                The separation of the 'Digest' into seven parts.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tautologia[e]. Antinomia[e]. Commentarij. Nota[e]. }
+                        rursus uetite.   
+                    </marginalia_text>  
+                    <emphasis method="pen" text="rursus" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                Tautologies. Antinomias. Commentaries. Notes. }
+                Again, forbidden.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Digestu[m] { Vetus. Infort[iatum]. Nouum. 
+                    </marginalia_text>
+                    <emphasis method="pen" text="Digestu[m]" type="straight"/>
+                    <emphasis method="pen" text="distinctio" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                Arrangement { Old. Infortiatum [=second part of the Digest]. New.        
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        recèns conficta distinctio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A newly invented separation.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Animaduersio Freigiana.
+                    </marginalia_text>
+                    <person name="Johann Thomas Freigius"/>
+                </position>
+            </language>
+            <translation>
+                Freigius's criticism.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vtilissima" type="straight"/>
+        <underline language="LA" method="pen" text="pulcherrima" type="straight"/>
+        <underline language="LA" method="pen" text="Quinta de" type="straight"/>
+        <underline language="LA" method="pen" text="Sexta" type="straight"/>
+        <underline language="LA" method="pen" text="Septima" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; terribiles libri de delictis" type="straight"/>
+        <underline language="LA" method="pen" text="similitudine[m]" type="straight"/>
+        <underline language="LA" method="pen" text="nullum contrarium" type="straight"/>
+        <underline language="LA" method="pen" text="Commentarios in ius fieri" type="straight"/>
+        <underline language="LA" method="pen" text="dicuntur κατὰ πόδα" type="straight"/>    
+        <underline language="LA" method="pen" text="paratitla" type="straight"/>
+        <underline language="LA" method="pen" text="vetatq[ue] notas iuris fieri" type="straight"/>
+        <underline language="LA" method="pen" text="error veterum" type="straight"/>
+        <underline language="LA" method="pen" text="Digestum diuiserunt" type="straight"/>
+        <underline language="LA" method="pen" text="in Vetus" type="straight"/>
+        <underline language="LA" method="pen" text="Infortiatum" type="straight"/>
+        <underline language="LA" method="pen" text="Nouum" type="straight"/>
+        <underline language="LA" method="pen" text="geminae leges" type="straight"/>
+        <underline language="LA" method="pen" text="singulis rebus" type="straight"/>
+        <underline language="LA" method="pen" text="oportet ea" type="straight"/>
+        <underline language="LA" method="pen" text="de eodem penè" type="straight"/>
+        <underline language="LA" method="pen" text="in co[n]finio ponere" type="straight"/>
+        <underline language="LA" method="pen" text="nullam regulam frequentius in" type="straight"/>
+        <underline language="LA" method="pen" text="peccatum est" type="straight"/>
+        <underline language="LA" method="pen" text="Captisiosa &amp; odiosae" type="straight"/>
+        <underline language="LA" method="pen" text="superuacuae" type="straight"/>
+        <underline language="LA" method="pen" text="scrupulosae diuersiates" type="straight"/>
+        <underline language="LA" method="pen" text="Antiquitas reuerenda est" type="straight"/>
+        <underline language="LA" method="pen" text="portanda[m] ciuilis sapientiae molem" type="straight"/>
+        <underline language="LA" method="pen" text="idonei" type="straight"/>
+
+        <mark method="chalk" name="horizontal_bar" place="right_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="vtilissima"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="pulcherrima"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="&amp; terribiles libri de delictis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="&amp; terribiles libri de delictis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="similitudine[m]"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="nullum contrarium"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Commentarios in ius fieri"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="vetatq[ue] notas iuris fieri"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="error veterum"/>
+        <mark method="pen" name="scribble" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- Infortiatum & -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="geminae leges"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="singulis rebus"/>         
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="in co[n]finio ponere"/>         
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- ponere. Verum -->
+        <mark language="LA" method="pen" name="diacritic" place="intext" text="frequentius"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="peccatum est"/>         
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="peccatum est"/>        
+        <mark method="pen" name="comma" place="intext"/> <!-- item & -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="portanda[m] ciuilis sapientiae molem"/>         
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- rudes & -->
+        
+        <numeral language="LA" place="right_margin" text="Quinta de testamentis"> 
+            5.
+        </numeral>
+        <numeral language="LA" place="right_margin" text="Sexta de bonorum possessionibus">
+            6.
+        </numeral>
+        <numeral language="LA" place="right_margin" text="Septima de stipulationibus seu verborum obligatiobibus: &amp; terribiles libri de delictis">
+            7.
+        </numeral>
+        
+        <errata amendedtext="diuersitates" copytext="diuersiates" language="LA"/>
+    </annotation>
+</transcription>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.373v.tif" pagination="296" reader="John Dee" signature="[Bbbb iiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Cuius haereditas mox Comiti Glouerniae tradebatur custodienda, per .xv. adhuc annos secundum aetatem haeredis duratura" hand="Italian">   
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        The Wardeship of the yong erle daumarle. being now but 5 yeres old. 
+                    </marginalia_text>
+                    <person name="Thomas de Forz, 5th Earl of Albemarle"/>
+                </position>           
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Comite Glouerniae suisque fautoribus" type="straight"/>
+        <underline language="LA" method="pen" text="Quo audito, Comes Glouerniae" type="straight"/>
+        <underline language="LA" method="pen" text="consentaneis, timens sibi post praedicti Comitis" type="straight"/>
+        <underline language="LA" method="pen" text="Sed quia incredibiles" type="straight"/>
+        <underline language="LA" method="pen" text="Comes de Albamarla" type="straight"/>
+        <underline language="LA" method="pen" text="haereditas mox Comiti Glouerniae tradebatur custodienda" type="straight"/>
+        <underline language="LA" method="pen" text="adhuc annos secundum" type="straight"/>
+        <underline language="LA" method="pen" text="aetatem haeredis" type="grid"/>
+        <underline language="LA" method="pen" text="communem regni prouisionem est &amp; iuramentum" type="straight"/>
+        <underline language="LA" method="pen" text="computatus est valor per annum, vt de tanta pecunia regi sit exinde annuatim satisfactum" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+        <errata amendedtext="relatorem" copytext="relatorum" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

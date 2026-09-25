@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.011v.tif" pagination="[12v]" reader="John Dee" signature="[B.iiij.[v]]"/>  
+    <annotation>
+        
+        <marginalia anchor_text="ex merito" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ex merito</marginalia_text>
+                </position>
+            </language>
+            <translation>Out of merit.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Leniter, ex merito quicquid patiare, ferendum est" type="straight"/> 
+        <underline language="LA" method="pen" text="Quae venit indigne, poena, dolenda venit" type="straight"/>
+        <underline language="LA" method="pen" text="venatibus" type="straight"/>
+        <underline language="LA" method="pen" text="citos egi per iuga summa canes" type="straight"/>
+        
+    </annotation>
+</transcription>

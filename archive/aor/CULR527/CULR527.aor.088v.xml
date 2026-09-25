@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.088v.tif" pagination="[88[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="figura lineae curuae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Figura linea[e] curva[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The shape of a curved line.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        J. d. Sed si tum p[ro]cessent p[er] circulu[m] maiore[m], no[n] retinebu[n]t angulos a[e]quales cu[m] meridianis   
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                </position>
+            </language>
+            <translation>
+                John Dee. But if they then procede through a greater circle, they will not retain equal angles with the meridian.
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="Nec intelligunt homines" type="straight"/>
+        <underline language="LA" method="pen" text="debet, &amp; non curuus: quum illam" type="straight"/>
+        <underline language="LA" method="pen" text="debeant seruare absq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="figura lineae" type="straight"/>
+        <underline language="LA" method="pen" text="aequidistantiam alij alijs seruare debeant, ut paralleli AEquatori: patet quòd extra horizontem rectum rumus nordeste              sudueste, circulus maior esse non potest, sicut etia[m] leste oeste nisi cum processerit" type="straight"/>
+        <underline language="LA" method="pen" text="per AEquatore[m]" type="double"/>
+        <underline language="LA" method="pen" text="sunt" type="double"/>
+        <underline language="LA" method="pen" text="istae rationes mathematicorum, quid" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>   
+
+    </annotation>
+</transcription>

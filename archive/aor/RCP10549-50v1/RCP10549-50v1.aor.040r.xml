@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.040r.tif" pagination="63" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        in a[n]i[m]o est
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It is in mind (to intend).
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pueritiae suae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pueritia Verris
+                    </marginalia_text>
+                    <person name="Verres"/>
+                </position>
+            </language>
+            <translation>
+                The childhood of Verres.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="adolescentia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Adolesce[n]tia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Adolescence.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Petitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Petition.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        occupatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Occupation.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="abhinc annos quatuordecim: ex die ad hanc diem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        abhinc a[n]nos 14.// hanc die[m] ex ea die ad
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Fourteen years ago, from that day to this.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="erigit se" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        erigere se
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To build up oneself.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Vos quaeso date hoc, &amp; concedite pudori meo, vt aliquam partem de istius impudentia reticere possim" type="straight"/>
+        <underline language="LA" method="pen" text="veteris infamiae: patiatur eius" type="straight"/>
+        <underline language="LA" method="pen" text="ex ea die ad hanc diem quae fecisti, in iudiciu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="dissensionísque" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="est_mark" place="right_margin"/>
+        
+        <numeral place="right_margin">10.12</numeral>
+        <numeral place="right_margin">10.11</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">18</numeral>
+        
+    </annotation>
+</transcription>

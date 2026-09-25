@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.159v.tif" pagination="310" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Iudetha nouerca" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quo m[od]o noverca?
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In what way stepmother? 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dimissa Iudetha nouerca" type="straight"/>
+        <underline language="LA" method="pen" text="Aethelbaldus" type="straight"/>
+        <underline language="LA" method="pen" text="Ca[n]tian" type="straight"/>
+        <underline language="LA" method="pen" text="Estsaxiam" type="straight"/>
+        <underline language="LA" method="pen" text="Suthsexiam" type="straight"/>
+        
+        <errata amendedtext="[deleted]" copytext="nouerca" language="LA"/>
+        
+    </annotation>
+</transcription>

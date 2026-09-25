@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.406v.tif" pagination="362" reader="John Dee" signature="[Hhhh[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Tartari (qui Moalli)" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tartari qui et Moalli dici volunt 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The Tartars who also want to be called Moalli. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="filius Comitis de Aquino" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Thomas de Aquino.
+                    </marginalia_text>
+                    <person name="Thomas Aquinas"/>
+                </position>
+            </language>
+            <translation>
+                Thomas Aquinas.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Tartari (qui Moalli) cu[m] literis" type="straight"/>
+        <underline language="LA" method="pen" text="potentiam Moallorum" type="straight"/>
+        <underline language="LA" method="pen" text="non baptizatos fecit" type="straight"/>
+        <underline language="LA" method="pen" text="Campan[us], filius Comitis" type="straight"/>
+        
+    </annotation>
+</transcription>

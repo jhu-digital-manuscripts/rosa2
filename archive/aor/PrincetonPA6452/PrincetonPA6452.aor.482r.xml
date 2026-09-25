@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.482r.tif" reader="Harvey" signature="I4[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        Lex regia Romuli, et Augusti, hîc in primis erat obseruanda. Qua[e] tamen post defunctum Romulu[m], partim populari licentia, 
+                        partim senatorio astu, sophisticè fuit imminuta: ad Tarquinium usq[ue] Superbum, qui ad absolutam monarchiam, tyrannicumq[ue] imperium 
+                        aspirauit: eodemq[ue] potiri potuisset, ni facinorosa illa effroenati filij Libido intempestiuè erupisset.
+                    </marginalia_text>
+                    <person name="Romulus"/>
+                    <person name="Augustus"/>
+                    <person name="Lucius Tarquinius Superbus"/>
+                    <person name="Sextus Tarquinius"/>
+                </position>
+            </language>
+            <translation>
+                Here especially the royal law of Romulus and Augustus had to be observed. Yet after Romulus’ death, this law was cleverly subverted, partly 
+                through unruly behaviour of the people, partly through cunning of the senate, until Tarquinius Superbus, who aspired to a monarchical and 
+                tyrannical power; which he could have obtained, if not, at the wrong time, that wicked lust of his unbridled son had broken out.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Asylo" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        sanctuarie.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="rebus gestis uitaq[ue] Romuli Liuius" type="straight"/>
+        <underline language="LA" method="pen" text="quantum satis fuit historico" type="straight"/>
+        <underline language="LA" method="pen" text="plura apud" type="straight"/>
+        <underline language="LA" method="pen" text="Graeci enim historici more suo plurima effingunt iuxtà" type="straight"/>
+        <underline language="LA" method="pen" text="falsa &amp; uera" type="straight"/>
+        <underline language="LA" method="pen" text="breuem catalogum addamus legu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Romanam stabilijt Romulus" type="straight"/>
+        <underline language="LA" method="pen" text="hae leges Regiae" type="straight"/>
+        <underline language="LA" method="pen" text="Curiatae, tanquam" type="straight"/>
+        <underline language="LA" method="pen" text="quindecim leges" type="straight"/>
+        <underline language="LA" method="pen" text="LEGES ROMVLI" type="straight"/>
+        <underline language="LA" method="pen" text="Romuli regia" type="straight"/>
+        <underline language="LA" method="pen" text="sine habitu augustiore, nec absq[ue] insignibus, regi" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; magistratum in publico sine lictoribus" type="straight"/>
+        <underline language="LA" method="pen" text="licere cuiquam incedere inter regem &amp; lictores" type="straight"/>
+        <underline language="LA" method="pen" text="cedendum esse magistratibus" type="straight"/>
+        <underline language="LA" method="pen" text="in loco insigniori" type="straight"/>
+        <underline language="LA" method="pen" text="Non licere praetextam regiam &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="ipsis magistratibus" type="straight"/>
+        <underline language="LA" method="pen" text="Ex Asylo" type="straight"/>
+        <underline language="LA" method="pen" text="immunis locus" type="straight"/>
+        <underline language="LA" method="pen" text="Hinc autem nata est immunitas" type="straight"/>
+        <underline language="LA" method="pen" text="Senatum" type="straight"/>
+        <underline language="LA" method="pen" text="publicum" type="straight"/>
+        <underline language="LA" method="pen" text="non nisi patritios" type="straight"/>
+        <underline language="LA" method="pen" text="Nuptias" type="straight"/>
+        <underline language="LA" method="pen" text="maritus &amp; uxor co[n]ueniunt in societatem" type="straight"/>
+        
+        <symbol language="LA" name="JC" place="right_margin" text="leges Regiae"/>
+        
+        <symbol language="LA" name="LL" place="intext" text="LEGES ROMVLI"/>
+        <symbol name="SS" place="intext"/>
+        <symbol language="LA" name="SS" place="intext" text="non nisi patritios"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Plutar -->
+        <mark language="LA" method="pen" name="quotation_mark" place="right_margin" text="Graeci enim historici more suo plurima effingunt iuxtà falsa &amp; uera"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- lo -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- co[n] -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- patri -->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- instituta, -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Senatum"/>
+        
+    </annotation>
+</transcription>

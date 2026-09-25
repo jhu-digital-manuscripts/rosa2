@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.095r.tif" reader="Harvey" signature="[Lviii[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Iniussu Imperatoris nihil conandu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Nothing must be undertaken without the order of the emperor.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>His absolute autority, &amp; martial Law, Iron bonds</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>of gowlden obedience.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="nother wolde he forgyue the punyshement" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>stowt, sterne, &amp; rigorous maintenance of autority.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>No contempt, or contumacy, sufferable in subiects, against soueraigne dradd Maiesty, especially in Martial affayres:
+                        where continual, &amp; praesent obedience exceeding necessary.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Two rare, &amp; notorious Examples. Noman more popular, or more plausible, then Ca[e]sar: yet he in militar
+                    defaults, A seuere Exacter of Discipline: thowgh otherwhiles remisse in moral points.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="foure thousande" type="straight"/>
+        <underline language="EN" method="pen" text="them were commytted" type="straight"/>
+        <underline language="EN" method="pen" text="no wyse be buried nor" type="straight"/>
+        <underline language="EN" method="pen" text="Papyrius Cursor" type="straight"/>
+        <underline language="EN" method="pen" text="Fabius Rutilius, maister" type="straight"/>
+        <underline language="EN" method="pen" text="shuld be beaten with" type="straight"/>
+        <underline language="EN" method="pen" text="roddis, and beheeded" type="straight"/>
+        <underline language="EN" method="pen" text="ageynst his commaundement" type="straight"/>
+        <underline language="EN" method="pen" text="not withstandyng he hadde the vpper hande" type="straight"/>
+        <underline language="EN" method="pen" text="he forgyue the punyshement" type="straight"/>
+        <underline language="EN" method="pen" text="contention or intercession and" type="straight"/>
+        <underline language="EN" method="pen" text="requeste of the souldiours" type="straight"/>
+        <underline language="EN" method="pen" text="Rome pursued" type="straight"/>
+        <underline language="EN" method="pen" text="remytte the dredefull punyshment" type="straight"/>
+        <underline language="EN" method="pen" text="Fabius with his father" type="straight"/>
+        <underline language="EN" method="pen" text="downe at his knees" type="straight"/>
+        <underline language="EN" method="pen" text="senate &amp; people made intercession" type="straight"/>
+        <underline language="EN" method="pen" text="named Manlius the proude or imperious" type="straight"/>
+        <underline language="EN" method="pen" text="his sonne" type="straight"/>
+        <underline language="EN" method="pen" text="agaynste" type="straight"/>
+        <underline language="EN" method="pen" text="fathers commaundemente, had encountred" type="straight"/>
+        <underline language="EN" method="pen" text="gotte the vyctorie" type="straight"/>
+        <underline language="EN" method="pen" text="to be beaten with roddes" type="straight"/>
+        <underline language="EN" method="pen" text="and haue his heed stryken" type="straight"/>
+        
+        <symbol language="EN" name="SS" place="head" text="His absolute autority, &amp; martial Law, Iron bonds of gowlden obedience."/>
+        
+        <mark method="pen" name="horizontal_bar" place="head"/>
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="foure thousande"/>
+        
+        <mark language="EN" method="pen" name="X_sign" place="right_margin" text="shuld be beaten with"/>
+        <mark language="EN" method="pen" name="X_sign" place="right_margin" text="not withstandyng he hadde the vpper hande"/>
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        
+        <mark method="pen" name="quotation_mark" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Papyrius Cursor"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Rutilius, maister"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="ageynst his commaundement"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="vpper hande"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="forgyue"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="pursued"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="dredefull"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="senate &amp; people made intercession"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="named Manlius the proude or imperious"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="gotte the vyctorie"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

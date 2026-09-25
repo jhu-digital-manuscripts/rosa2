@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.051r.tif" reader="Harvey" signature="Fiiii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>What say you by that Captain, that sett on fier his own frends Castell, to incense him [the] more 
+                    a[e]gerly against [their] Common Enemy: as most likely to be doon by</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>him.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>I haue heard of an howse, fired by A frend, not in malice, but in pollicy.</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>It may passe amongst Unico</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aretinos monstrous knaueryes. </marginalia_text>
+                    <person name="Bernardo Accolti"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[the] same.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="commaunded to set a fyer his owne fieldes, vyllages, and certayne castelles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Simili consilio, etia[m] Seipsos vulneraru[n]t Zopyrus, Pisistratus, Tarquinij filius.</marginalia_text>
+                    <person name="Zopyrus"/>
+                    <person name="Pisistratus"/>
+                    <person name="Lucius Tarquinius Superbus"/>
+                </position>
+            </language>
+            <translation>Even Zopyrus, Pisistratus, and the son of Tarquinus injured themselves with a similar plan.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>(Waters, wells, vessels, [etc],</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>corrupted.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ca[e]sar, l.8.Polya[e].</marginalia_text>
+                    <person name="Julius Caesar"/>
+                    <book title="Stratagems"/>
+                </position>
+            </language>
+            <translation>Julius Caesar, in book 8 of Polyaenus' 'Stratagems'.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="wyne, myngled a great quantitie therof with Mandrage, which hath a vertue to caste men into a deade slepe" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Wyne, mingled with Mandrage: whose vertu is, to cast men in A Deade sleepe.</marginalia_text>
+                    <emphasis method="pen" text="Wyne" type="straight"/>
+                    <emphasis method="pen" text="with Mandrage" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[the] pike sauce. Aconitum.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>i[nfr]a, l.3.c.7.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0161" text="l.3.c.7."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] below, book 3, chapter 7.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Cunning Empoisenments.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Mercurialis de Venenis: cum eiusdem argumenti maiori volumine in folio. Manard[us]. </marginalia_text>
+                    <person name="Girolamo Mercuriale"/>
+                    <person name="Johannes Manardus"/>
+                    <book title="De venenis"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Monsieur Renes perfumid glooues, dublets, apples, [etc].</marginalia_text> <!--JG: No clue abt Monsieur Renes--> <!--KS: Possibly Renato Bianco, the perfumer of Catherine de Medici? He had a reputation of poisoning gloves and jewels.--> <!--JG: Interesting suggestion, will tag him-->
+                    <person name="Renato Bianco"/>
+                </position>
+            </language>
+            <translation>Cunning Empoisenments. Girolamo Mercuriale's 'De venenis': with the larger volume of his argument in folio. Johannes Manardus. Monsieur Renes perfumid glooues, dublets, apples, [etc].</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="90" place="tail">
+                    <marginalia_text>One deuise,</marginalia_text>
+                </position>
+                <position book_orientation="90" place="left_margin">
+                    <marginalia_text>to conquer Virginia, with [omnia - deleted] sugar, &amp;Arsenick, cunningly mixt.</marginalia_text>
+                    <location name="Virginia"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="syde to pyllage" type="straight"/>
+        <underline language="EN" method="pen" text="the townes" type="straight"/>
+        <underline language="EN" method="pen" text="a fire" type="straight"/>
+        <underline language="EN" method="pen" text="be spies &amp; scoutwatches of" type="straight"/>
+        <underline language="EN" method="pen" text="owne parte" type="straight"/>
+        <underline language="EN" method="pen" text="daungerous places, where many" type="straight"/>
+        <underline language="EN" method="pen" text="a fyer his owne fieldes" type="straight"/>
+        <underline language="EN" method="pen" text="vyllages" type="straight"/>
+        <underline language="EN" method="pen" text="certayne castelles" type="straight"/>
+        <underline language="EN" method="pen" text="owne felowes hadde" type="straight"/>
+        <underline language="EN" method="pen" text="Maharbal" type="straight"/>
+        <underline language="EN" method="pen" text="Denia[n]s" type="straight"/>
+        <underline language="EN" method="pen" text="Aphriens, that rebelled" type="straight"/>
+        <underline language="EN" method="pen" text="desyrous of wyne" type="straight"/>
+        <underline language="EN" method="pen" text="with Mandrage" type="straight"/>
+        <underline language="EN" method="pen" text="caste men into a deade slepe" type="straight"/>
+        <underline language="EN" method="pen" text="the nyght fayned to departe" type="straight"/>
+        <underline language="EN" method="pen" text="thens" type="straight"/>
+        <underline language="EN" method="pen" text="packes in his campe" type="straight"/>
+        <underline language="EN" method="pen" text="the wyne infected" type="straight"/>
+        
+        <symbol language="EN" name="SS" place="head" text="What say you by that Captain, that sett on fier his own frends Castell, to incense him [the] more              a[e]gerly against [their] Common Enemy: as most likely to be doon by him."/>
+        <symbol name="SS" place="head"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="wyne infected"/>
+        <mark language="EN" method="pen" name="quotation_mark" place="tail" text="Cunning Empoisenments. Mercurialis de Venenis: cum eiusdem argumenti maiori volumine in folio. Johannes Manardus. Monsieur Renes perfumid glooues, dublets, apples, [etc]."/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="quotation_mark" place="intext" text="It may passe amongst Unico Aretinos monstrous knaueryes"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="a fyer his owne fieldes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="desyrous of wyne"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="caste men into a deade slepe"/>
+        
+    </annotation>
+</transcription>

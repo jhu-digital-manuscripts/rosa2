@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.177r.tif" pagination="353" reader="Harvey" signature="Zir"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Astrologia, et Geographia coniu[n]ctes Artes.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Astrology and Geography as joined arts..</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="initia in a[e]quinoctio constituit" type="straight"/>
+        <underline language="LA" method="pen" text="doctrina, de motibus co[e]lestibus" type="straight"/>
+        <underline language="LA" method="pen" text="Geographia" type="straight"/>
+        <underline language="LA" method="pen" text="uitam carere posse" type="straight"/>
+        <underline language="LA" method="pen" text="arte" type="straight"/>
+        <underline language="LA" method="pen" text="monstrante situs regionum" type="straight"/>
+        <underline language="LA" method="pen" text="interualla" type="straight"/>
+        <underline language="LA" method="pen" text="naturas" type="straight"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- coelesti-bus -->
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="doctrina, de motibus co[e]lestibus"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- coelestibus & -->
+        
+    </annotation>
+</transcription>

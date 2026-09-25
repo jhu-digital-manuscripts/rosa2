@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.083v.tif" pagination="[76v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="â multis quaesitum est nati eadem hora, eodem momento" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cur nati eadem hora et eode[m] mome[n]to diuersa vtantur fortuna</marginalia_text>
+                </position>
+            </language>
+            <translation>Why do those born in the same hour and same moment enjoy diverse fortunes.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="â multis quaesitum est nati eadem hora, eodem momento" type="straight"/>
+        <underline language="LA" method="pen" text="nam cum loco distent reuolutiones" type="straight"/>
+        <underline language="LA" method="pen" text="comparationes ad uerticales stellas sunt necessario diuersae" type="straight"/>
+        <underline language="LA" method="pen" text="gloriam, quae" type="straight"/>
+        
+        <!--JG: New mark after marginal note? 5 dots?-->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonK6233.010r.tif" reader="Harvey" signature="2βr"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Tritemij steganographia. Porta de furtiuis literaru[m] notis.
+                    </marginalia_text>
+                    <person name="Johannes Trithemius"/>
+                    <person name="Giovanni Battista Porta"/>
+                    <book title="Steganographia"/>
+                    <book title="De furtivis literarum notis"/>
+                </position>
+            </language>
+            <translation>
+                Trithemius's 'Steganographia'. Della Porta, 'De furtivis literarum notis'.
+            </translation>        
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in uaginae internis figuris" type="straight"/>
+        <underline language="LA" method="pen" text="notatarum membranam" type="straight"/>
+        <underline language="LA" method="pen" text="notarum perite" type="straight"/>
+        <underline language="LA" method="pen" text="notis" type="straight"/>
+        <underline language="LA" method="pen" text="scripsit" type="straight"/>
+        <underline language="LA" method="pen" text="notarum vsum" type="straight"/>
+        <underline language="LA" method="pen" text="scribas" type="straight"/>
+        <underline language="LA" method="pen" text="describendis olim" type="straight"/>
+        <underline language="LA" method="pen" text="notarum compendio" type="straight"/>
+        <underline language="LA" method="pen" text="Quarum intelligentia" type="straight"/>
+        <underline language="LA" method="pen" text="oppressis assidua" type="straight"/>
+        <underline language="LA" method="pen" text="iurisprudentiae studijs" type="straight"/>
+        <underline language="LA" method="pen" text="paulatim obsoleuisset" type="straight"/>
+        <underline language="LA" method="pen" text="eae minus difficultatis" type="straight"/>
+        <underline language="LA" method="pen" text="res ipsae notis" type="straight"/>
+        <underline language="LA" method="pen" text="notis &amp; siglis eiusmodi" type="straight"/>
+        <underline language="LA" method="pen" text="notis deformatos" type="straight"/>
+        <underline language="LA" method="pen" text="sese laqueis" type="straight"/>
+        
+        <mark method="chalk" name="horizontal_bar" place="right_margin"/>
+        <mark method="chalk" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- Amydam in -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="notarum membranum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="notarum perite"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- libro, quae -->
+        <mark method="pen" name="comma" place="intext"/> <!-- nomine literas -->
+        <mark method="pen" name="comma" place="intext"/> <!-- notis ad -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="notarum vsum"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- est scribas -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="notarum compendio"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Quarum intelligentia"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- intelligentia cum -->                
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="paulatim obsoleuisset"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="res ipsae notis"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- Iustinianus ne -->
+        <mark method="pen" name="comma" place="intext"/> <!-- enim si -->
+        
+    </annotation>
+</transcription>

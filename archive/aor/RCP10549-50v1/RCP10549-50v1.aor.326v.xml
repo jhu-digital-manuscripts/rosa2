@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.326v.tif" pagination="632" reader="John Dee" signature="[rrr.iiii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="eloquentia[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Eloquentia</marginalia_text>
+                </position>
+            </language>
+            <translation>Eloquence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="animos tollit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>a[n]i[m]os tollere</marginalia_text>
+                </position>
+            </language>
+            <translation>To excite.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="scilicet istam immoderata[m] eloquentia[m] apud M. Pisone[m] no[n]" type="straight"/>
+        <underline language="LA" method="pen" text="absque carnificis" type="straight"/>
+        <underline language="LA" method="pen" text="aut si retices, cui potest esse dubium quin opulentiam" type="straight"/>
+        <underline language="LA" method="pen" text="Atque paru[m] est quòd impune fecisti, verumetia[m] commemorando exprobras, neque licet obliuisci seruitutis suae" type="straight"/>
+        <underline language="LA" method="pen" text="Ceda[n]t arma togae, concedat laurae linguae" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">11</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+    </annotation>
+</transcription>

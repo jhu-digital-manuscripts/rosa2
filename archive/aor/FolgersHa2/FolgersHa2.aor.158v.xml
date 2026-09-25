@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.158v.tif" pagination="140" reader="Harvey" signature="[I6v]"/>	<!-- ABO 163left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Ciceronis triduum: Scaligeri trihorium.
+						Aurearum horarum aurea negociatio.
+					</marginalia_text>
+					<person name="Cicero"/>
+					<person name="Joseph Justus Scaliger"/>
+				</position>
+			</language>
+			<translation>The three days of Ciceco: the three hours of Scaliger.</translation> 
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Benè: sed non satis benè, si quid potes meliùs.
+						Optimè; sed no[n] satis optimè, si quis
+						potest melius.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Well, but not well enough, if there is something you can do better. Optimal, but not optimal enough, if anyone can do better.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Sola prudentissima, aut validissima perdura[n]t
+						in precio; phantastica citò euanescunt, aut
+						vana vllo modo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Only the most prudent and valid things endure in value; imaginary or vain things quickly vanish in some way.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Communia satis docet sensus communis: et Ethica ferè omnia in Martinij Juliano.
+						Aut ca[e]tera demonstrat pra[e]stantissimorum virorum Curiosa Obseruatio.
+					</marginalia_text>
+					<person name="Petrus Martinius"/>
+					<person name="Julian"/>
+				</position>
+			</language>
+			<translation>Common sense teaches common things sufficiently: and generally all ethics in Martinius' edition of Julian.
+			Or the careful observation of the most excellent men demonstrate the remainder.</translation> 
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Vulgaria faciunt vulgarem: rara rarum: singularem tantumm[od]o singularia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Vulgarities make vulgar: rare things make rare: singular things only make singular.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Philosophus est Pa[e]dantius, qui non est Aristippus, Rabela[e]sius, Apollonius plus quàm
+					</marginalia_text>
+					<person name="Aristippus"/>
+					<person name="Francois Rabelais"/>
+					<person name="Apollonius"/>
+					<person name="Vertumnus"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Vertumnus. Nec Valla, nec Rodolphus,
+						nec Viues, nec Melanchthon, nec Ramus, nec Bodinus, nec ullus "
+					</marginalia_text>
+					<person name="Lorenzo Valla"/>
+					<person name="Rodolphus Agricola"/>
+					<person name="Juan Luis Vives"/>
+					<person name="Philipp Melanchthon"/>
+					<person name="Petrus Ramus"/>
+					<person name="Jean Bodin"/>
+				</position>
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						" neotericoru[m] <!--JG: Chris, do you have any idea what the word 'neotericorum' means?--> <!-- CG: 'Neoterismus' seems to mean 'modern' as opposed to old or classical. -->
+						satis ciuilis, vrbanus, aulicus, pragmaticus, Cosmopoliticus, polyda[e]dalus, panergus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A philosopher, who is not  Aristippus, Rabelais, or Apollonius more than Vertumnus, is pedantic. Neither Valla, Rodolphus Agricola, Juan Luis Vives, Melanchton, Ramus, Bodin, or any of the moderns
+				is civil, urbane, courtly, pragmatic, cosmopolitan, many-skilled, or all-effective enough.</translation> 
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="di continenza" type="straight"/>
+		<underline language="IT" method="pen" text="Frina" type="straight"/>
+		<underline language="IT" method="pen" text="haueua parlato d'un" type="straight"/>
+		<underline language="IT" method="pen" text="non d'una statua" type="straight"/>
+		<underline language="IT" method="pen" text="Amore non hauer leggi" type="straight"/>
+		<underline language="IT" method="pen" text="vno si innamorasse d'una" type="straight"/>
+		<underline language="IT" method="pen" text="donna brutta" type="straight"/>
+		<underline language="IT" method="pen" text="una vecchia" type="straight"/>
+		<underline language="IT" method="pen" text="cortegiana ci[m]mune à ogn'uno" type="straight"/>
+		<underline language="IT" method="pen" text="l'amore" type="straight"/>
+		<underline language="IT" method="pen" text="cieco" type="straight"/>
+		<underline language="IT" method="pen" text="dar legge all'amoroso" type="straight"/>
+		<underline language="IT" method="pen" text="L'un d'una cosa" type="straight"/>
+		<underline language="IT" method="pen" text="lo spirto" type="straight"/>
+		<underline language="IT" method="pen" text="la figura" type="straight"/>
+		
+		<symbol language="IT" name="Sun" place="intext" text="di continenza"/>
+		
+		<symbol language="IT" name="Sun" place="intext" text="non d'una statua"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ri -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- compa -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- di -->
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- leggi, & -->
+		
+	</annotation>
+</transcription>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.257r.tif" pagination="29" reader="John Dee" signature="Diij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Dunelmum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dunelmum</marginalia_text>
+                    <location name="Durham"/>
+                </position>
+            </language>
+            <translation>Durham.</translation>
+        </marginalia>
+  
+        <marginalia anchor_text="puerum sibi praeficientes regem ex Edwardi Regis nobilitate genus ducentem" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Puer ex Edwardi prosapia ab Eborace[n]sibus assumptus in suum regem.</marginalia_text>  <!-- DO: Not really sure who this is referring to; perhaps https://en.wikipedia.org/wiki/Richard,_Count_of_Évreux --> 
+                    <!-- FSF: I don't know either -->
+                    <person name="Edward the Confessor"/>
+                </position>
+            </language>
+            <translation>A boy from Edward's lineage accepted by the people of Evreux in his reign.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="duo Haroldi regis filij" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Duo Haraldi filij</marginalia_text>
+                    <person name="Harold Godwinson"/>
+                    <person name="Godwin Godwinson"/>
+                    <person name="Edmund Godwinson"/>
+                </position>
+            </language>
+            <translation>Two sons of Harold.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="regem Hyberniae nomine Dirmetum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dirmotus Hibernia[e] Rex</marginalia_text>
+                    <location name="Diarmait mac Mael na mBo"/>
+                </position>
+            </language>
+            <translation>Diarmait, King of Ireland.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Brienus Endonis ducis Brita[n]niae minoris filius" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Brien[n]us filius Endonis Ducis Bryta[nniae].</marginalia_text>
+                    <person name="Brian of Brittany"/>
+                    <person name="Odo, Count of Penthievre"/>
+                </position>
+            </language>
+            <translation>Brian, son of Odo, Duke of Brittany.</translation>
+        </marginalia>
+                
+        <underline language="LA" method="pen" text="Rhotomage[n]sis" type="straight"/>
+        <underline language="LA" method="pen" text="Abrincatensis" type="straight"/>
+        <underline language="LA" method="pen" text="Goisfridus Constantinensis" type="straight"/>
+        <underline language="LA" method="pen" text="Luxoniensis" type="straight"/>
+        <underline language="LA" method="pen" text="Ebroicensis" type="straight"/>
+        <underline language="LA" method="pen" text="hijs nuptijs" type="double"/>
+        <underline language="LA" method="pen" text="Eustachius comes" type="straight"/>
+        <underline language="LA" method="pen" text="Odonis Baiocasinae" type="straight"/>
+        <underline language="LA" method="pen" text="Hugonis fortis mo[n]tis" type="straight"/>
+        <underline language="LA" method="pen" text="inde deiecêre deorsum praecipites" type="straight"/>
+        <underline language="LA" method="pen" text="Roberto filio suo iuuenili flore vernanti" type="straight"/>
+        <underline language="LA" method="pen" text="cuiusdam Comitatus partem aquis pariter &amp; siluis inaccessibilem se contulerunt" type="straight"/>
+        <underline language="LA" method="pen" text="castrum" type="straight"/>
+        <underline language="LA" method="pen" text="Dunelmum" type="straight"/>
+        <underline language="LA" method="pen" text="Sweni Danorum" type="straight"/>
+        <underline language="LA" method="pen" text="Eboracenses enim" type="straight"/>
+        <underline language="LA" method="pen" text="praeficientes regem" type="straight"/>
+        <underline language="LA" method="pen" text="Edwardi Regis nobilitate genus" type="straight"/>
+        <underline language="LA" method="pen" text="quàm igne a puero vsq[ue] ad senem totam pene deleuerunt" type="straight"/>
+        <underline language="LA" method="pen" text="per Humbre fluuium" type="straight"/>
+        <underline language="LA" method="pen" text="duo Haroldi regis" type="straight"/>
+        <underline language="LA" method="pen" text="regem Hyberniae nomine Dirmetum" type="straight"/>
+        <underline language="LA" method="pen" text="cum sexaginta sex nauibus" type="straight"/>
+        <underline language="LA" method="pen" text="Brienus Endonis ducis Brita[n]niae minoris filius" type="straight"/>
+        <underline language="LA" method="pen" text="Cae sisq[ue] mille &amp; septingentis" type="straight"/>
+        <underline language="LA" method="pen" text="Eustachius Doueri castrum obsidet" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- regno ipso -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- suffragante paruo -->
+        
+        
+    </annotation>
+</transcription>

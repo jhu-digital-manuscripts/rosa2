@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.183r.tif" pagination="365" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="antigerio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Antigerio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Greatly.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="totus propè mutatus est sermo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Totus mutatus est sermo propè</marginalia_text>
+                </position>
+            </language>
+            <translation>The whole language has changed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uetera" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vetera</marginalia_text>
+                </position>
+            </language>
+            <translation>Old.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sallustius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Salustius</marginalia_text>
+                    <person name="Sallust"/>
+                </position>
+            </language>
+            <translation>Sallust.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Odiosa cura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Odiosa cura.</marginalia_text>
+                </position>
+            </language>
+            <translation>Odious zeal</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Graecus magis concessum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gra[e]coru[m] lice[n]tia</marginalia_text>
+                </position>
+            </language>
+            <translation>A liberty of the Greeks.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="qua ill primi homines rebus appellationes dererunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Primi no[m]i[nu]m impositores...</marginalia_text>
+                </position>
+            </language>
+            <translation>First givers of the names.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pompium, &amp; Senecam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pomponius &amp; seneca.</marginalia_text>
+                    <person name="Pomponius Secundus"/>
+                    <person name="Seneca"/>
+                </position>
+            </language>
+            <translation>Pomponius and Seneca.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="expectorat quidem timuerunt. Et sanè eiusdem notae est exanimat." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Expectorat exanimat.</marginalia_text>
+                </position>
+            </language>
+            <translation>To deprive and to banish from the mind</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quod horridum reor, tolerabile autumo" type="straight"/>
+        <underline language="LA" method="pen" text="ipsa gratius nite[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="Emancipare, &amp; fari, &amp; multa alia etiam audientibus grata inseri possunt, sed ita demum, si non appareat affectatio. In" type="straight"/>
+        <underline language="LA" method="pen" text="Et uerba antiqui multum furate Catonis, Crispe Iugurthinae conditor historiae." type="straight"/>
+        <underline language="LA" method="pen" text="Nam est cuilibet facilis, &amp; hoc peßima, quòd rei studiosus, no[n] rebus uerba aptauit, sed res extrinsecus              areceßit, quibus haec uerba conueniant" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] alia libertate, quàm qua illi primi homines rebus apellationes dederunt" type="straight"/>
+        <underline language="LA" method="pen" text="an gradus eliminat" type="straight"/>
+        <underline language="LA" method="pen" text="ne expectorat" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

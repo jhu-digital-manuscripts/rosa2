@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.055r.tif" pagination="95" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="26" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>32</marginalia_text> 
+                </position>
+            </language>       
+        </marginalia>
+        
+        <marginalia anchor_text="Abrahamum natum esse, quum ipsius pater Thare annum ageret centesimum &amp; tricesimum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Thare 130 annor[um] gerunt Abraha[m]</marginalia_text> 
+                    <person name="Terah"/>
+                    <person name="Abraham"/>
+                </position>
+            </language>
+            <translation>Terah, of age 130 years, fathered Abraham.</translation>      
+        </marginalia>
+        
+        <marginalia anchor_text="sicuti malè annotatum est &amp; proditum Chronographorum monumentis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Chronographoru[m] error.</marginalia_text>   
+                </position>
+            </language>
+            <translation>The chroniclers' error.</translation>          
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="praeterquam in vnius Abrahami tempore. Quia enim Genesis" type="straight"/>
+        <underline language="LA" method="pen" text="notant vulgò. Sed" type="straight"/>
+        <underline language="LA" method="pen" text="Nam Thare vixit annos ducentos quinque" type="straight"/>
+        <underline language="LA" method="pen" text="septuagintaquinque" type="straight"/>
+        <underline language="LA" method="pen" text="autem septuagesimo, sicuti malè" type="straight"/>
+        <underline language="LA" method="pen" text="Abrahamus non sit natu maximus, esti primo loco recenset" type="straight"/>
+        <underline language="LA" method="pen" text="quingentoru[m] esset annorum, genuit Sem, Cham, &amp; Iapheth" type="straight"/>
+        <underline language="LA" method="pen" text="postremu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ipsius natu minimus" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <errata amendedtext="[deleted]" copytext="26" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

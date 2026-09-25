@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.273v.tif" pagination="[266v]" reader="John Dee" signature="[XX ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Quadrata radiatio Iouis &amp; Mercurij" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♃ ☿ □.</marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Square"/>
+                </position>
+            </language>
+            <translation>The square [radiation] of Jupiter and Mercury.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mars" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♂ ♃</marginalia_text>  <!-- JG: Not entirely sure that second symbol is Jupiter -->
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>Mars and Jupiter.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sciet secreta multa in disciplinis" type="straight"/>
+        
+    </annotation>
+</transcription>

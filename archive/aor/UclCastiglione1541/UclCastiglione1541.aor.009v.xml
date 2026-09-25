@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="UclCastiglione1541.009v.tif" reader="Harvey" signature="[Aii[v]]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Glihuomini sempre cupidi di nouità.
+                    </marginalia_text>                    
+                </position>
+            </language>
+            <translation>
+                Men always desire novelty.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        M. Alfonso Ariosto.
+                    </marginalia_text>
+                    <person name="Alfonso Ariosto"/>
+                </position>
+            </language>
+            <translation>
+                Alfonso Ariosto.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Duca Juliano de Medici.
+                    </marginalia_text>
+                    <person name="Giuliano di Lorenzo de' Medici"/>
+                </position>
+            </language>
+            <translation>
+                Duke Giuliano de Medici.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cardinal Bibiena.
+                    </marginalia_text>
+                    <person name="Bernardo Dovizi"/>
+                </position>
+            </language>
+            <translation>
+                Cardinal Bibbiena.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        S. Ottauian Fregoso.
+                    </marginalia_text>
+                    <person name="Ottaviano Fregoso"/>
+                </position>
+            </language>
+            <translation>
+                Signor Ottaviano Fregoso.
+            </translation>
+        </marginalia> 
+        
+        <underline language="IT" method="pen" text="huomo à nostri tempi rarissimo, magnanimo, religioso,              pieno di bontà, d'ingegno, prudenza, et cortesia et ueramente amico d'honore" type="straight"/> 
+        
+        <mark method="chalk" name="plus_sign" place="left_margin"/>
+    </annotation>
+</transcription>

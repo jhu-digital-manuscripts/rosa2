@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.175r.tif" reader="Harvey" signature="Tt.i.[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        s[upr]a.
+                    </marginalia_text>
+                    <internal_ref text="s[upr]a">
+                        <target ref="Newberry27495:case_712_c27495_231" text="[Cc.i[r]]"/>
+                        <target ref="Newberry27495:case_712_c27495_299" text="[Ll.iii[r]]"/>
+                        <target ref="Newberry27495:case_712_c27495_332" text="[Pp.iii.[v]]"/>
+                        <target ref="Newberry27495:case_712_c27495_337" text="[Qq.ii.[r]]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                [See] above.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Peter" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fine Bembo.
+                    </marginalia_text>
+                    <person name="Pietro Bembo"/>
+                </position>
+            </language>
+        </marginalia>
+
+        <underline language="EN" method="pen" text="not bine muche" type="straight"/>
+        <underline language="EN" method="pen" text="troubled, in oure reasoninges" type="straight"/>
+        <underline language="EN" method="chalk" text="this so happie a loue" type="straight"/>
+        <underline language="EN" method="pen" text="so happie a loue" type="straight"/>
+        <underline language="EN" method="pen" text="any inconuenience" type="straight"/>
+        <underline language="EN" method="pen" text="necessariest and profitablest" type="straight"/>
+        <underline language="EN" method="pen" text="hitherto hath bine giuen him" type="straight"/>
+        <underline language="EN" method="pen" text="good felowship" type="straight"/>
+        <underline language="EN" method="pen" text="for olde men to loue" type="straight"/>
+        <underline language="EN" method="pen" text="to thinke me olde" type="straight"/>
+        <underline language="EN" method="chalk" text="go aske counsell of my Heremite Lauinello" type="straight"/>
+        <underline language="EN" method="pen" text="Heremite Lauinello" type="straight"/>
+        <underline language="EN" method="pen" text="company so disobedient as you be (M." type="straight"/>
+        <underline language="EN" method="pen" text="to chastice you somewhat" type="straight"/>
+        <underline language="EN" method="pen" text="loue of God" type="straight"/>
+        <underline language="EN" method="pen" text="say what euer you will haue me" type="straight"/>
+        <underline language="EN" method="pen" text="somewhat settlinge hym" type="straight"/>
+        <underline language="EN" method="pen" text="vppon a waightie matter" type="straight"/>
+        <underline language="EN" method="pen" text="what loue is, and" type="straight"/>
+        <underline language="EN" method="chalk" text="that louers maye haue" type="straight"/>
+        <underline language="EN" method="pen" text="hearynge wyth heedefulnesse" type="straight"/>
+        <underline language="EN" method="chalk" text="to be a louer" type="straight"/>
+        <underline language="EN" method="pen" text="louer" type="straight"/>
+        <underline language="EN" method="pen" text="xv. or xx." type="straight"/>
+        <underline language="EN" method="pen" text="then M. Morello" type="straight"/>
+        
+        <underline language="EN" method="chalk" text="Olde men may loue without sclaunder." type="straight"/>
+        <underline language="EN" method="pen" text="may loue" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="head"/>
+        
+        <mark language="EN" method="pen" name="bracket" place="left_margin" text="Dutchesse answered: You ought not to refuse to be counted olde in knowleage, thoughe ye be yonge in yeeres.              Therfore saye on, and excuse your self no more."/>
+        
+        <mark language="EN" method="pen" name="bracket" place="right_margin" text="Dutchesse answered: You ought not to refuse to be counted olde in knowleage, thoughe ye be yonge in yeeres."/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark language="EN" method="pen" name="quotation_mark" place="right_margin" text="loue of God"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- night, for -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="so happie a loue"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- him, there -->
+        <mark language="EN" method="pen" name="dot" place="intext" text="smilinge"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- me, for -->
+        <mark method="pen" name="dot" place="intext"/> <!-- heedefulnesse, for -->
+        <mark method="pen" name="dot" place="intext"/> <!-- louer, in -->
+        
+    </annotation>
+</transcription>

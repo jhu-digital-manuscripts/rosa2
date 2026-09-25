@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.020v.tif" reader="John Dee" signature="[Dij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="linea visualis est aliquo m[od]o alteru[m] genus a linea simplicit[er]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        linea visualis geometrice
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A line geometrically visible.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="linear[um] s[e]c[un]d[u]m abstractione[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Linea secu[n]du[m] abstractione[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A line according to abstraction.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aliqua[m] esse co[n]clusione[m] demo[n]stra[n]da[m]             p[ro] p[ri]ncipio ad aliqua[m] alia[m] sumit[ur] vt lacius dicet[ur]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Co[n]clusio demo[n]strationis p[ro] principio alicui[us] accipi p[otes]t. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The conclusion of the demonstration can be accepted for anything on principle.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vt linea visualis est aliquo" type="straight"/>
+        <underline language="LA" method="pen" text="s[e]c[un]d[u]m se" type="straight"/>  
+        <underline language="LA" method="pen" text="s[e]c[un]d[u]m abstractione[m]" type="straight"/>  
+        <underline language="LA" method="pen" text="p[ro]pter quid" type="straight"/>  
+        <underline language="LA" method="pen" text="no[n] esse in co[n]uenie[n]s aliqua[m] esse co[n]dusione[m] demo[n]stra[n]da[m] q[uae] p[ro] p[ri]ncipio ad aliqua[m] alia[m] sumit[ur] vt lacius dicet[ur]" type="straight"/>  
+       
+        <mark method="pen" name="comma" place="intext"/> <!-- quid spectat -->
+       
+    </annotation>
+</transcription>

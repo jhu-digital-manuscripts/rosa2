@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.123r.tif" pagination="123" reader="John Dee" signature="Qiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="CM" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>100000</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="XX caualli, &amp; altrettanti cani Corsi" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dogs 20</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="cani Corsi" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dogs</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>con suo [?] vide post</marginalia_text>  <!-- DO: Can't make out the last word. I think it might relate to 'co' suoi figliuoli' or 'con le sue donne' but doesn't look like Italian or Latin words for this.  -->
+                       <!-- MB: Last word appears to start with 'f' and has an 'i' in the middle, possibly something like 'filiorum'??  -->  <!-- DO: I think it might be something then 'etc'... -->
+                </position>
+            </language>
+            <translation>With his [?] See afterwards.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Confeßò poscia questo Caunabo di hauere vccisi XX di quei Christiani" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>sup[ra] ar 22 reckoned: but he confesses but 20</marginalia_text>  
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Confeßò poscia questo Caunabo di hauere vccisi XX di quei Christiani" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>This Confession excuseth Guacanagari. and moveth th[e] Spaniards to haue falsly reported of h[im]</marginalia_text>  
+                    <person name="Guacanagarix"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Confeßò poscia questo Caunabo di hauere vccisi XX di quei Christiani" hand="Italian" id="BL615d7:615_d_7_f123r:m0001" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>as Guacanagari told sup[ra] fol[io]. 100</marginalia_text>  <!-- DO: 200 maybe? --> 
+                    <person name="Guacanagarix"/>
+                    <internal_ref>
+                        <target ref="BL615d7:615_d_7_f100r" text="fol[io]. 100"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>As Guacanagarix told, [see] above, folio 100.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="punto per far guerra" type="double"/>
+        <underline language="IT" method="pen" text="sopradetto Guacanagari" type="straight"/>
+        <underline language="IT" method="pen" text="di opprimere i suoi" type="straight"/>
+        <underline language="IT" method="pen" text="di CM Indiani" type="double"/>
+        <underline language="IT" method="pen" text="XX" type="straight"/>
+        <underline language="IT" method="pen" text="altrettanti cani Corsi" type="straight"/>
+        <underline language="IT" method="pen" text="dalla Isabella" type="straight"/>
+        <underline language="IT" method="pen" text="paura di sentir le strida da varij lati doueße piu d'ogni altra cosa" type="straight"/>
+        <underline language="IT" method="pen" text="hauendo gli squadroni de' fanti da due" type="straight"/>
+        <underline language="IT" method="pen" text="balestre" type="straight"/>
+        <underline language="IT" method="pen" text="gli archibugi" type="straight"/>
+        <underline language="IT" method="pen" text="samente i caualli" type="double"/>
+        <underline language="IT" method="pen" text="i cani Corsi" type="double"/>
+        <underline language="IT" method="pen" text="pusillanimi" type="straight"/>
+        <underline language="IT" method="pen" text="ammazzandone molti, ne fecero tanta strage, che in breue col fauor di Dio ne riportarono la vittoria, essendo" type="straight"/>
+        <underline language="IT" method="pen" text="Caunabo" type="straight"/>
+        <underline id="BL615d7:615_d_7_f123r:u0001" language="IT" method="pen" text="Caunabo di hauere vccisi XX di quei" type="straight"/>
+        
+        <physical_link>
+            <marginal_annotation idref="BL615d7:615_d_7_f123r:m0001"/>
+            <marginal_annotation idref="BL615d7:615_d_7_f123r:u0001"/>
+            
+            <relation from="BL615d7:615_d_7_f123r:m0001" to="BL615d7:615_d_7_f123r:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

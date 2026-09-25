@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.054r.tif" pagination="54" reader="John Dee"/>  
+    <annotation>
+        
+        <marginalia anchor_text="vna penisola" hand="Italian" id="BL615d7:615_d_7_f054r:m0001" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Note this Peninsula</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="semplicità" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>semplicita</marginalia_text>
+                </position>
+            </language>
+            <translation>Simplicity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fortezza" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A fort to be made</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="tolse sette Indiani di quelli, acciò che le servissero per interpreti" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>7 Interpreters taken</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="molto popolate" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Very populus</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="VII leghe" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>7 leagues of.</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="S. Maria della Concettione" hand="Italian" method="pen">
+            <language ident="IT"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>.2. S. Maria della Concettione</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="in loro tanta semplicità" type="straight"/>
+        <underline id="BL615d7:615_d_7_f054r:u0001" language="IT" method="pen" text="vna penisola" type="straight"/>
+        <underline language="IT" method="pen" text="in tre dì" type="double"/>
+        <underline language="IT" method="pen" text="fortezza" type="straight"/>
+        <underline language="IT" method="pen" text="sei case" type="straight"/>
+        <underline language="IT" method="pen" text="molti giardini" type="straight"/>
+        <underline language="IT" method="pen" text="si belli, come in Castiglia" type="straight"/>
+        <underline language="IT" method="pen" text="stanca del remar" type="straight"/>
+        <underline language="IT" method="pen" text="tolse sette Indiani di quelli" type="straight"/>
+        <underline language="IT" method="pen" text="che li seruissero per interpreti" type="straight"/>
+        <underline language="IT" method="pen" text="dalla Penisola si vedeuano" type="straight"/>
+        <underline language="IT" method="pen" text="ancora piane, &amp; verdi" type="straight"/>
+        <underline language="IT" method="pen" text="molto popolate" type="straight"/>
+        <underline language="IT" method="pen" text="discosta VII leghe" type="straight"/>
+        <underline language="IT" method="pen" text="S. Maria della Concettione" type="straight"/>
+        <underline language="IT" method="pen" text="cinque" type="straight"/>
+        <underline language="IT" method="pen" text="più di X" type="straight"/>
+        <underline language="IT" method="pen" text="quello, che nella passata hauea" type="straight"/>
+        <underline language="IT" method="pen" text="concorse prestamente, per vedere i Christiani" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!--penisola, la-->
+        <mark method="pen" name="comma" place="intext"/> <!--fatica in-->
+        <mark method="pen" name="comma" place="intext"/> <!--di si-->
+        <mark method="pen" name="bracket" place="intext"/> <!--acqua, habitabile-->
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="map">
+            <text hand="Italian" language="IT">5</text>
+            <text hand="Italian" language="IT">10</text>
+        </drawing>
+        
+        <physical_link>
+            <marginal_annotation idref="BL615d7:615_d_7_f054r:m0001"/>
+            <marginal_annotation idref="BL615d7:615_d_7_f054r:u0001"/>
+            <relation from="BL615d7:615_d_7_f054r:m0001" to="BL615d7:615_d_7_f054r:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

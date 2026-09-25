@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.131r.tif" pagination="85" reader="Harvey" signature="F3[r]"/>	<!-- ABO 135right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						{ Fortius, totus Labor; totusq[ue] Ignis.
+						Merus vigor, et mera industria.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="IT">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Piu Oltre, del Carlo 
+					</marginalia_text>
+					<person name="Charles V"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Imperadore: La brauissima Impresa del mondo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				All work is stronger, and all fire.
+				Undiluted vigor, and undiluted industriousness.
+				Going beyond emperor Charles: the most impressive device of the world.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Vnum Hoc proemium, instar omniu[m]. 
+						Aliàs, Opt[im]a Pra[e]fatio, Nulla pra[e]fatio. 
+						Sed statim ad rem: et ia[m] iamq[ue]
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						/ ad ipsam artem, aut professionem; ad ipsum
+						opus, aut actionem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				This one preface here is an example for all.
+				At other times, an excellent introduction is no introduction,
+				but immediately to the matter at hand, immediately to the art itself,
+				or to the profession; to the work itself or to the action.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						improuiso.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Improvised.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Quicquid potes vlla vi. Quantum vlla valet
+						Entelechia, aut Euschemosyne.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whatever you can do with any power.
+				How great is the worth of any Actualization or Refinement.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Qui se emasculat, aut effoeminat ullo modo, Seipsum facit anathema. Nemo nimis,
+						aut satis validus: etiamsi tot fugiat corruptelas. Decet Eutrapelum,
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						omnium esse horarum, negociorumq[ue] hominem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who emasculates himself, or becomes effeminate in any way, becomes anathema to himself.
+				No one is ever too strong, or strong enough, even if he flees all corruption. It is suitable for Eutrapelus
+				to be a man of all hours and affairs.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="saui cittadini placare" type="straight"/>
+		<underline language="IT" method="pen" text="non irritare" type="straight"/>
+		<underline language="IT" method="pen" text="l'ira del popolo" type="straight"/>
+		<underline language="IT" method="pen" text="HAVENDO i Sauonesi" type="straight"/>
+		<underline language="IT" method="pen" text="dominio de' Genouesi" type="straight"/>
+		<underline language="IT" method="pen" text="Genoua di punirgli grauemente" type="straight"/>
+		<underline language="IT" method="pen" text="rouinare, &amp; disfare" type="straight"/>
+		<underline language="IT" method="pen" text="gli habitatori à dimorare in Corsica" type="straight"/>
+		<underline language="IT" method="pen" text="Paolo Spinola cittadino" type="straight"/>
+		<underline language="IT" method="pen" text="cosi leggiermente" type="straight"/>
+		<underline language="IT" method="pen" text="dare luogo alla furia" type="straight"/>
+		<underline language="IT" method="pen" text="raffreddare alqua[n]to gli accesi" type="straight"/>
+		<underline language="IT" method="pen" text="disfare Sauona" type="straight"/>
+		<underline language="IT" method="pen" text="mandarui à stare" type="straight"/>
+		<underline language="IT" method="pen" text="tali, i quali essendo pur'hora falliti di piu di settecento mila ducati" type="straight"/>
+		<underline language="IT" method="pen" text="hanno rouinati il quarto di questa potentissima città" type="straight"/>
+		<underline language="IT" method="pen" text="presto presto rouineranno" type="straight"/>
+		<underline language="IT" method="pen" text="distruggera[n]no del tutto quella debile terra" type="straight"/>
+		<underline language="IT" method="pen" text="l'acutezza" type="straight"/>
+		<underline language="IT" method="pen" text="dell'ingegno humano" type="straight"/>
+		<underline language="IT" method="pen" text="aria pura, &amp; sottile habitano" type="straight"/>
+		<underline language="IT" method="pen" text="piu acuti, et piu" type="straight"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dot" place="right_margin"/> <!-- Corsica -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- roui -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- corret -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- rouine -->
+		
+		<mark language="IT" method="pen" name="straight_quotation_mark" place="intext" text="Sauonesi"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="hanno rouinati il quarto di questa potentissima     città"/>
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--after/beneath marginal note-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="aria pura, &amp; sottile habitano"/>
+		
+    </annotation>
+</transcription>

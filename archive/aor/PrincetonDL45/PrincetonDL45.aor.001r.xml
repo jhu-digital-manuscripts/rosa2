@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.001r.tif" reader="Harvey" signature="[air]"/>
+    <annotation>
+        
+        <marginalia date="1578" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        1578. 
+                        Gabriel Harueijus..
+                    </marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                    <emphasis method="pen" text="1578." type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Democrito, qui" type="straight"/>
+        <underline language="LA" method="pen" text="vltra octoginta annos continuos" type="straight"/>
+        <underline language="LA" method="pen" text="ad centum &amp; octo annos perueniens" type="straight"/>
+        <underline language="LA" method="pen" text="aliquid se discere posse arbitrabatur" type="straight"/>
+        <underline language="LA" method="pen" text="quod vspiam ab homine" type="straight"/>
+        <underline language="LA" method="pen" text="indagando percipi posset." type="straight"/>
+        <underline language="LA" method="pen" text="Babylonem" type="straight"/>
+        <underline language="LA" method="pen" text="Aegyptum" type="straight"/>
+        <underline language="LA" method="pen" text="sacerdotibus Geometriam" type="straight"/>
+        <underline language="LA" method="pen" text="Magos" type="straight"/>
+        <underline language="LA" method="pen" text="Chaldaeos subinde" type="straight"/>
+        <underline language="LA" method="pen" text="Astronomiam" type="straight"/>
+        <underline language="LA" method="pen" text="in Indiam" type="straight"/>
+        <underline language="LA" method="pen" text="Gymnosophistis propriam" type="straight"/>
+        <underline language="LA" method="pen" text="Aethiopiam" type="straight"/>
+        <underline language="LA" method="pen" text="vno in angluo non delituerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Osiris Rex" type="straight"/>
+        <underline language="LA" method="pen" text="OSIRIS" type="straight"/>
+        <underline language="LA" method="pen" text="Saturni antiquior" type="straight"/>
+        <underline language="LA" method="pen" text="nullum orbis locum reliqui, ad quem" type="straight"/>
+        <underline language="LA" method="pen" text="docens ea omnia" type="straight"/>
+        <underline language="LA" method="pen" text="Alexander Magnus, qui" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Osiris Rex Aegyptiterrarum orbem             magna ex parte listrauit: OSIRIS Rex sum Saturni antiquior filius, qui nullum orbis locum reliqui, ad quem non             penetrauerim, docems ea omnia, quae pro humani generis vtilitate inuéni; vt Diodorus Siculus lib. primo attestatur."/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- congrederetur -->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- attestatur -->
+        <mark method="pen" name="dot" place="intext"/> <!-- inueni -->
+        
+        <errata amendedtext="Aegypti terrarum" copytext="Aegyptiterrarum" language="LA"/>
+        <errata amendedtext="qua" copytext="quia" language="LA"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.146r.tif" pagination="271" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="effundamus aerarium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        effundere a[e]rariu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To drain the treasury.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="coloniae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Coloni[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Colonies.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="machinatoribus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        machinator
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Engineer.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="templum Iouis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Templu[m] Iovis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Temple of Jupiter.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Iam omnis omnium tolletur error" type="straight"/>
+        <underline language="LA" method="pen" text="qui locus propter vbertatem agrorum, abundantiámque rerum omnium" type="straight"/>
+        <underline language="LA" method="pen" text="superbiam" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; crudelitatem genuisse dicitur: ibi" type="straight"/>
+        <underline language="LA" method="pen" text="sustulerunt: neque aliud quicquam nisi inane nomen" type="straight"/>
+        <underline language="LA" method="pen" text="quid enim illis fuit clementius, qui etiam externis hostibus victis sua saepissime reddiderunt) sed consilio" type="straight"/>
+        <underline language="LA" method="pen" text="in pace niteat" type="straight"/>
+        <underline language="LA" method="pen" text="praetermitto omnem hanc orationem, &amp; concioni referuo" type="straight"/>
+        <underline language="LA" method="pen" text="cum omni egentium atque improborum manu, cum omnibus" type="straight"/>
+        <underline language="LA" method="pen" text="lacesso vos, in concionem voco" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">10</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

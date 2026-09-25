@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.124v.tif" pagination="234" reader="John Dee" signature="[v.iij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mosis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Moses</marginalia_text>
+                    <person name="Moses"/>
+                </position>
+            </language>
+            <translation>Moses.</translation>
+        </marginalia>        
+        
+        <marginalia anchor_text="Diodorus Siculus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dionysius Siculus</marginalia_text>
+                    <person name="Diodorus Siculus"/>
+                </position>
+            </language>
+            <translation>Diodorus Siculus.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Strabo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Strabo.</marginalia_text>
+                    <person name="Strabo"/>
+                </position>
+            </language>
+            <translation>Strabo.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="reginam Saba grauidam ex Salomonis congressu, rediisse ad suos Æthiopas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>That the Quene of Saba was not Solomon his paramour</marginalia_text>
+                    <person name="Queen of Sheba"/>
+                    <person name="Solomon"/>
+                    <location name="Saba"/>
+                </position>
+            </language>
+        </marginalia> 
+        
+        <marginalia anchor_text="Ælaniticus sinus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sinus Ælanitic[us].</marginalia_text>
+                    <location name="Gulf of Aqaba"/>
+                </position>
+            </language>
+            <translation>The Gulf of Aqaba.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="tradiderit, praeter Mosem" type="straight"/>
+        <underline language="LA" method="pen" text="mendacio verò Iosephi" type="straight"/>
+        <underline language="LA" method="pen" text="scilicet reginam Saba grauidam ex Salomonis" type="straight"/>
+        <underline language="LA" method="pen" text="rediisse ad suos Æthiopas" type="straight"/>
+        <underline language="LA" method="pen" text="reges Æthiopum" type="straight"/>
+        <underline language="LA" method="pen" text="Æthiopum regem gloriari" type="straight"/>
+        <underline language="LA" method="pen" text="prognatis Salomone" type="straight"/>
+        <underline language="LA" method="pen" text="Heroopoliticus" type="straight"/>
+        <underline language="LA" method="pen" text="Ælaniticus sinus" type="straight"/>
+        <underline language="LA" method="pen" text="AElana" type="straight"/>
+        <underline language="LA" method="pen" text="Gaza[m]" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/>  <!-- id alia -->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.344r.tif" pagination="694" reader="Harvey"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="Barbaries et crapula coniuncta" type="straight"/>
+        <underline language="LA" method="pen" text="foedere quoda[m] inter se iunctae" type="straight"/>
+        <underline language="LA" method="pen" text="barbaries" type="straight"/>
+        <underline language="LA" method="pen" text="et crapula" type="straight"/>
+        <underline language="LA" method="pen" text="hercle," type="straight"/>
+        <underline language="LA" method="pen" text="societas" type="straight"/>
+        <underline language="LA" method="pen" text="dignum habet patella operculum" type="straight"/>
+        <underline language="LA" method="pen" text="Fera etiam quaeda[m] in illis" type="straight"/>
+        <underline language="LA" method="pen" text="Septentrionalis ac Sarmarica fera" type="straight"/>
+        <underline language="LA" method="pen" text="cibo immodicè ingesto" type="straight"/>
+        <underline language="LA" method="pen" text="uentrem" type="straight"/>
+        <underline language="LA" method="pen" text="quin crepet" type="straight"/>
+        <underline language="LA" method="pen" text="uiolenta ibidem co[m]pressione" type="straight"/>
+        <underline language="LA" method="pen" text="crudu[m] illum cibum iterum per annu[m] exprimit" type="straight"/>
+        <underline language="LA" method="pen" text="sese exonerat," type="straight"/>
+        <underline language="LA" method="pen" text="nisi faceret" type="straight"/>
+        <underline language="LA" method="pen" text="periculu[m] uitae erat" type="straight"/>
+        <underline language="LA" method="pen" text="uentris ingluuies" type="straight"/>
+        <underline language="LA" method="pen" text="inte[m]pera[n]tiae ac morum earum" type="straight"/>
+        <underline language="LA" method="pen" text="immanibus conuiuijs" type="straight"/>
+        <underline language="LA" method="pen" text="Rarò transigi symposium" type="straight"/>
+        <underline language="LA" method="pen" text="Caedespropinantium" type="straight"/>
+        <underline language="LA" method="pen" text="propinantum dolium haurire" type="straight"/>
+        
+        <symbol name="Bisected_circle" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- co[m]pressio -->
+
+        <mark method="pen" name="comma" place="intext"/> <!-- barbaries -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="cibo immodicè ingesto"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- passes through 'annu[m] and faceret -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="conuiuijs"/>        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.087r.tif" pagination="80" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>♄ in ♋</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Cancer"/>
+                </position>
+            </language>
+            <translation>Saturn in Cancer.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Leo &amp; Scorpio" type="straight"/>
+        <underline language="LA" method="pen" text="uolu[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="sed q[uod] contratios effectus, cu[m] sibi obuia[n]t pariu[n]t" type="straight"/>
+                
+        <symbol language="LA" name="Cancer" place="right_margin" text="Ca[n]cro"/>
+        <symbol language="LA" name="Virgo" place="right_margin" text="Virgine"/>
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/> <!--JG: modification of table-->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--JG: modification of table-->
+        
+    </annotation>
+</transcription>

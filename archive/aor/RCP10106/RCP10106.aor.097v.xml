@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.097v.tif" pagination="194" reader="John Dee" signature="[n [v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="enim effugiendae morae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>O[mn]is mora absit.</marginalia_text>
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Tullius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>M[arcus] Tullius</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Marcus Tullius</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Narratio o[mn]i gr[ati]a ac venere exornanda est.</marginalia_text> 
+                </position>
+            </language>
+            <translation>' Narrative should be adorned with all possible grace and charm' [Loeb 125, 277].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Zeno" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Zeno.</marginalia_text>
+                    <person name="Zeno of Elea"/>
+                </position>
+            </language>
+            <translation>Zeno.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uarietate taedium effugiat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Varietas temp[us] exiguu[m] reddit</marginalia_text>
+                </position>
+            </language>
+            <translation>Variety restores a dreary time.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quid ulli epilogi poßunt magis habere miserabile?" type="straight"/>
+        <underline language="LA" method="pen" text="mutare habitum animi semel constitutum" type="straight"/>
+        <underline language="LA" method="pen" text="omni qua potest gratia &amp; uenere" type="straight"/>
+        <underline language="LA" method="pen" text="leuet, ne in eundem casum, similem compositonem, pares" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

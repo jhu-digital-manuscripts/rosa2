@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.231r.tif" pagination="441" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="splendore[m] maculare" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        splendore[m] maculare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To tarnish the reputation.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="virtus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        VIRTVS
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Virtue.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="temeritatibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        temeritates.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Rashness.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="macula regni puplicati maneret, quam nemo iam posset eluere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        eluere macula[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To wash clean the stain.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="luctum nos hausimus, maiorem, dolorem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        haurire luctu[m] dolorem
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To drink sorrow and pain.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="temeritatibus, vt cum reibup. nihil prosit, se ciue rempub. priuet" type="straight"/>
+        <underline language="LA" method="pen" text="dux, author, actor rerum illarum fuit" type="straight"/>
+        <underline language="LA" method="pen" text="iam mihi dicere non est necesse" type="straight"/>
+        <underline language="LA" method="pen" text="His de tot, tantísque" type="straight"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">15</numeral>
+        
+        <drawing anchor_text="VIRTVS" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+        
+    </annotation>
+</transcription>

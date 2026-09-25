@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.189r.tif" pagination="182" reader="John Dee" signature="zz ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Iupiter igitur hostis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>♃ hostis.</marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+            <translation>Jupiter [is] an enemy.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>♂ applica[n]s loco ☿ rad qui ia[m] d[omi]n[u]s asc[endentis] est. ♂ in trigono 
+                    loci proprij et ♄ radius ♂ in □ ☾ elapso Domin[us] 7a[e] in asce[n]de[n]te p[e]r ide[m] <!--JG: 'P[er]' could also be 2a[e]-->
+                    d[omi]n[u]s 4a[e] in asce[n]de[n]te [insertatus/infortunatus]. Vtriq[ue] pr[im]is significatores debites cadentes ☿  
+                    D[omi]n[u]s asce[n]de[n]tis co[n]bust[us] et profectio erat in 8a domo in 4 ♋ in cui[us] ☍ 
+                    etia[m] ☉ et ☿ etc.</marginalia_text>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Square"/>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Cancer"/>
+                    <symbol_in_text name="Opposite_planets"/>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>Mars approaching the place of Mercury [...] [...] already is the lord of the ascendant. <!-- FSF: possibly: Mercury radius, which is already the ascending lord -->
+            Mars in a triangle of its own place and the ray of Saturn. Mars [is] in square (120 degrees) to the Moon by having elapsed. The lord of the seventh [house]
+            in ascendent, through same lord of the fourth [inserted/unfortunate] in the ascendent. Both weak signifiers to the first [primis?], falling. 
+            Mercury, the lord of the ascendant, having been combusted, and the departure was in the eight house in 4 Cancer in the opposition of which also the Sun
+            and Mercury [et cetera].</translation> <!--JG: Extremely unsure-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="igitur hostis" type="straight"/>
+        
+        <table place="tail" type="astrological_chart">
+            <tr>
+                <th/>
+                <th label="House"/>
+                <th label="Position"/>
+            </tr>
+            <tr>
+                <td>Virgo</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Libra</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Saturn</td>
+                <td>2</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Scorpio</td>
+                <td>3</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Venus</td>
+                <td>3</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>Sagittarius</td>
+                <td>4</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Mars</td>
+                <td>4</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>Capricorn</td>
+                <td>5</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Mercury</td>
+                <td>5</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Aquarius</td>
+                <td>6</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Mars</td>
+                <td>6</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Pisces</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Aries</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Taurus</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Moon</td>
+                <td>9</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Gemini</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Cancer</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>Leo</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Jupiter</td>
+                <td>12</td>
+                <td>30 2[8]</td> <!--JG: Unsure-->
+            </tr>
+            <text hand="English_secretary" language="LA">1540 hor. 9 m[inutae]. 30 die 10 Dece[m]bris a meridie.
+            Vera revolutio iuxta vera[m] anni qua[n]titate[m]: Cor C. ♉ 23 ferè.</text>
+            <symbol_in_text name="Taurus"/>
+            <translation>1540 hours 9, minutes 30, on December 10 from noon. The true revolution close to the true quantity of a year.
+            Midheaven [at] almost Taurus 23.</translation>
+        </table>
+        
+    </annotation>
+</transcription>

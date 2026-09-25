@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.038v.tif" reader="John Dee" signature="[Gij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="insta[n]tia[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Insta[n]tia.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Urgency.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Binomius numerus origo alterationis et augme[n]tationis. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Binomial numbers are the origin of alteration and augmentation.
+            </translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

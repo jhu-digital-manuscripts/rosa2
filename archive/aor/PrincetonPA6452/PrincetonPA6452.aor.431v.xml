@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.431v.tif" reader="Harvey" signature="[A1v]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> 
+                        Liuij Decas
+                    </marginalia_text>
+                <person name="Livy"/>
+                </position>
+            </language>
+            <translation>
+                Livy's decade.
+            </translation>
+        </marginalia>
+ 
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> 
+                        Romae Ætas.
+                    </marginalia_text>
+                    <location name="Rome"/>
+                </position>
+            </language>
+            <translation>
+                The ages of Rome.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        Eccè Roma[e] quinq[ue] a[e]tates, in Velcurionis argumento totius historia[e] Romana[e]. i[nfr]a.
+                    </marginalia_text>
+                    <person name="Johannes Velcurio"/>
+                    <location name="Rome"/>
+                    <internal_ref text="i[nfr]a">
+                        <target ref="PrincetonPA6452:00000965" text="[I2[r]]"/>
+                        <target ref="PrincetonPA6452:00000967" text="[I3[r]]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                See the five ages of Rome in Velcurio’s argument of the entire Roman history, below.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="COMPENDIVM ROMANAE" type="straight"/>
+        <underline language="LA" method="pen" text="septingentorum quinquaginta annorum" type="straight"/>
+        <underline language="LA" method="pen" text="à Liuio descripta est Decadib[us] quatuordecim" type="straight"/>
+        <underline language="LA" method="pen" text="quatuor non integrae" type="straight"/>
+        <underline language="LA" method="pen" text="utinam aliae aliquando in" type="straight"/>
+        <underline language="LA" method="pen" text="eas alicubi in Germania" type="straight"/>
+        <underline language="LA" method="pen" text="utinam aliae aliquando" type="straight"/>
+        <underline language="LA" method="pen" text="eas alicubi in Germania" type="straight"/>
+        <underline language="LA" method="pen" text="Prima Decas" type="straight"/>
+        <underline language="LA" method="pen" text="reges Romanos" type="straight"/>
+        <underline language="LA" method="pen" text="deinde COSS" type="straight"/>
+        <underline language="LA" method="pen" text="Tribunos" type="straight"/>
+        <underline language="LA" method="pen" text="Decemuiros" type="straight"/>
+        <underline language="LA" method="pen" text="Tribunos mil. cons." type="straight"/>
+        <underline language="LA" method="pen" text="rursus COSS" type="straight"/>
+        <underline language="LA" method="pen" text="bella uaria aduersus" type="straight"/>
+        <underline language="LA" method="pen" text="nonnullos Italiae populos" type="straight"/>
+        <underline language="LA" method="pen" text="obsidio à regibus" type="straight"/>
+        <underline language="LA" method="pen" text="Vrbis euersio sub Gallis" type="straight"/>
+        <underline language="LA" method="pen" text="Secunda Decas non extat" type="straight"/>
+        <underline language="LA" method="pen" text="ab Aesculapio Romam" type="straight"/>
+        <underline language="LA" method="pen" text="secundi belli Punici" type="straight"/>
+        <underline language="LA" method="pen" text="tria atrocissima bella" type="straight"/>
+        <underline language="LA" method="pen" text="Primum" type="straight"/>
+        <underline language="LA" method="pen" text="Pyrrho Epirotarum" type="straight"/>
+        <underline language="LA" method="pen" text="Secundum cu[m] Carthaginensibus" type="straight"/>
+        <underline language="LA" method="pen" text="primum bellum" type="straight"/>
+        <underline language="LA" method="pen" text="cum Gallis" type="straight"/>
+        <underline language="LA" method="pen" text="magis quàm ullam gentem toto terraru[m] orbe" type="straight"/>
+        <underline language="LA" method="pen" text="equitu[m] octoginta milliu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="peditu[m] septingentoru[m] milliu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="secundum bellum Punicum" type="straight"/>
+        <underline language="LA" method="pen" text="Hannibale" type="straight"/>
+        <underline language="LA" method="pen" text="Macedonicum aduersus Philippum" type="straight"/>
+        <underline language="LA" method="pen" text="Asiaticum contra Antiochum" type="straight"/>
+        <underline language="LA" method="pen" text="prouinciarum reges" type="straight"/>
+        <underline language="LA" method="pen" text="nuper inuenti" type="straight"/>
+        <underline language="LA" method="pen" text="bellum cum Perseo Macedonum" type="straight"/>
+        <underline language="LA" method="pen" text="Paulus Aemylius" type="straight"/>
+        <underline language="LA" method="pen" text="populum Romanum" type="straight"/>
+        <underline language="LA" method="pen" text="hominem" type="straight"/>
+        <underline language="LA" method="pen" text="totamq[ue] aetatem eius percenset" type="straight"/>
+        <underline language="LA" method="pen" text="coeperit" type="straight"/>
+        <underline language="LA" method="pen" text="ut adoleuerit" type="straight"/>
+        <underline language="LA" method="pen" text="quasi ad quendam iuuentae" type="straight"/>
+        <underline language="LA" method="pen" text="senuerit" type="straight"/>
+        <underline language="LA" method="pen" text="non rotundo" type="straight"/>
+        <underline language="LA" method="pen" text="Romulo" type="straight"/>
+        <underline language="LA" method="pen" text="Caesarem Augustum" type="straight"/>
+        <underline language="LA" method="pen" text="septingentoru[m] annorum" type="straight"/>
+        <underline language="LA" method="pen" text="Primam autem" type="straight"/>
+        <underline language="LA" method="pen" text="uelut infantiam" type="straight"/>
+        <underline language="LA" method="pen" text="sub regibus fuisse" type="straight"/>
+        <underline language="LA" method="pen" text="Sequentem aetatem" type="straight"/>
+        <underline language="LA" method="pen" text="adolescentiam" type="straight"/>
+        <underline language="LA" method="pen" text="Bruto" type="straight"/>
+        <underline language="LA" method="pen" text="COSS." type="straight"/>
+        <underline language="LA" method="pen" text="Tertiam hinc" type="straight"/>
+        <underline language="LA" method="pen" text="primo Punico" type="straight"/>
+        <underline language="LA" method="pen" text="Caesarem Augustum" type="straight"/>
+        <underline language="LA" method="pen" text="quo solus regnauit" type="straight"/>
+        <underline language="LA" method="pen" text="iuuentam" type="straight"/>
+        <underline language="LA" method="pen" text="quandam robustam" type="straight"/>
+        <underline language="LA" method="pen" text="Reliquam aetatem uocat" type="straight"/>
+        <underline language="LA" method="pen" text="senecta[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ad sua usq[ue] tempora" type="straight"/>
+        <underline language="LA" method="pen" text="ea à Liuio intacta" type="straight"/>
+        <underline language="LA" method="pen" text="exceptis aliquot" type="straight"/>
+        <underline language="LA" method="pen" text="Augusto annis" type="straight"/>
+        <underline language="LA" method="pen" text="Nostra aetas" type="straight"/>
+        <underline language="LA" method="pen" text="nunc illud regnum uocare" type="straight"/>
+        <underline language="LA" method="pen" text="enim duas" type="straight"/>
+        <underline language="LA" method="pen" text="Mathusalem" type="straight"/>
+        <underline language="LA" method="pen" text="Troia capta" type="straight"/>
+        <underline language="LA" method="pen" text="Lauinium conditum" type="straight"/>
+        <underline language="LA" method="pen" text="Ab eadem" type="straight"/>
+        <underline language="LA" method="pen" text="urbem Romam condita[m]" type="straight"/>
+        <underline language="LA" method="pen" text="anni quadringenti" type="straight"/>
+        <underline language="LA" method="pen" text="à Troia capta" type="straight"/>
+        <underline language="LA" method="pen" text="urbem conditam" type="straight"/>
+        <underline language="LA" method="pen" text="anni sunt" type="straight"/>
+        <underline language="LA" method="pen" text="quadringenti trigintaduo" type="straight"/>
+        <underline language="LA" method="pen" text="septem" type="straight"/>
+        <underline language="LA" method="pen" text="annis ducentis quadragintaquatuor" type="straight"/>
+        <underline language="LA" method="pen" text="COSS. ac alij magistratus" type="straight"/>
+        <underline language="LA" method="pen" text="liberam rexerunt" type="straight"/>
+        <underline language="LA" method="pen" text="annos quadringentos sexagintaduos" type="straight"/>
+        <underline language="LA" method="pen" text="Caesarem" type="straight"/>
+        <underline language="LA" method="pen" text="primus" type="straight"/>
+        <underline language="LA" method="pen" text="solus singulare" type="straight"/>
+        <underline language="LA" method="pen" text="obtinuit imperium" type="straight"/>
+        <underline language="LA" method="pen" text="Troia" type="straight"/>
+        <underline language="LA" method="pen" text="ad COSS. fuere" type="straight"/>
+        <underline language="LA" method="pen" text="anni sexcenti septuagintasex" type="straight"/>
+        <underline language="LA" method="pen" text="quot annos Liuius" type="straight"/>
+        <underline language="LA" method="pen" text="nimis succincté" type="straight"/>
+        <underline language="LA" method="pen" text="omnia" type="straight"/>
+        <underline language="LA" method="pen" text="libris quatuor" type="straight"/>
+        <underline language="LA" method="pen" text="diligentissimè" type="straight"/>
+        
+        <symbol name="SS" place="intext"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        <symbol language="LA" name="SS" place="left_margin" text="Hannibale"/>
+        <symbol name="SS" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark language="LA" method="pen" name="equal_sign" place="left_margin" text="Paulus Aemylius"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- con -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Ro -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- mi -->
+        
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="COMPENDIVM ROMANAE"/>
+        <mark method="pen" name="dot" place="intext"/> <!--natalem, qui-->
+        <mark method="pen" name="dot" place="intext"/> <!--nonus &agrave-->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--aiunt. Prima-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="reges Romanos"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- Romanos, deinde-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="COSS."/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Tribunos"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Decemuiros"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Tribunos mil. cons."/>
+        <mark method="pen" name="dot" place="intext"/> <!-- potestate, ac-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="rursus COSS."/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--COSS. bella-->
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- Porsenam, &amp-->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--460. Secunda-->
+        <mark method="pen" name="bracket" place="intext"/> 
+        <mark method="pen" name="dot" place="intext"/> <!-- extat, in-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Aesculapio"/>
+        <mark method="pen" name="straight_quotation_mark" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Carthaginensibus"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="cum Gallis"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- timueru[n]t, ut-->
+        <mark method="pen" name="bracket" place="intext"/> <!--75. Tertia-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Hannibale"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--caepit. L.-->
+        <mark method="pen" name="dot" place="intext"/> <!-- percenset, ut-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="infantiam"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="urbem conditam"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="liberam"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="solus singulare"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- septuagintasex, -->
+        
+        <numeral language="LA" place="left_margin" text="reges Romanos">I.</numeral>
+        <numeral language="LA" place="left_margin" text="secudni Belli Punici">2.</numeral>
+        <numeral language="LA" place="left_margin" text="Hannibale aduersus">3.</numeral>
+        <numeral language="LA" place="left_margin" text="prouinciarum reges">4.</numeral>
+        <numeral language="LA" place="left_margin" text="populum Romanum">5.</numeral>
+        
+        <numeral language="LA" place="intext" text="coeperit">1.</numeral>
+        <numeral language="LA" place="intext" text="adoleuerit">2.</numeral>
+        <numeral language="LA" place="intext" text="quasi ad quendam iuuentae">3.</numeral>
+        <numeral language="LA" place="intext" text="consenuerit">4.</numeral>
+        
+        <numeral place="left_margin">1.</numeral>
+        <numeral place="left_margin">2.</numeral>
+        <numeral place="left_margin">3.</numeral>
+        <numeral place="left_margin">4.</numeral>
+        
+        <errata amendedtext="Traianus" copytext="Troianus" language="LA"/> 
+        
+    </annotation>
+</transcription>

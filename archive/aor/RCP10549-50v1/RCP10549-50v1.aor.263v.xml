@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.263v.tif" pagination="506" reader="John Dee" signature="[iii.v.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Cedant arma togae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ceda[n]t arma toga[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'Arms to the gown must yield' [Loeb 252, 227].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="compe[n]sabit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        co[m]pe[n]sare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To balance.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oratum in Albanum obsecratúmque venerant" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        venire oratu[m] obsecratu[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To come for begging and entreating
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quid nu[n]c te asine literas doceam?" type="straight"/>
+        <underline language="LA" method="pen" text="non opus est verbis, sed fustibus" type="straight"/>
+        <underline language="LA" method="pen" text="haererem enim, nisi tu" type="straight"/>
+        <underline language="LA" method="pen" text="expedisses" type="straight"/>
+        <underline language="LA" method="pen" text="vt si versus mihi nocuerit, ab eo, que[m] is versus offenderit, videatur mihi pernicies esse quaesita" type="straight"/>
+        <underline language="LA" method="pen" text="compe[n]sabit cu[m] vno versiculo tot mea" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">7</numeral>
+        <numeral place="left_margin">18</numeral>
+        
+        <drawing anchor_text="Ceda[n]t arma toga[e]" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+        <!-- FSF: there is a c in the left margin -->
+        
+        
+    </annotation>
+</transcription>

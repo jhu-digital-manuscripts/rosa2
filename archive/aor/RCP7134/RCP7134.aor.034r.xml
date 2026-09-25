@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.034r.tif" pagination="28" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="tempestuosa" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tempestuosa</marginalia_text>
+                </position>
+            </language>
+            <translation>Tempestuous.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ventosa" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ventosa</marginalia_text>
+                </position>
+            </language>
+            <translation>Windy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pluuiosa" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pluuiosa.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rainy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aestuosa" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Æstuosa.</marginalia_text>
+                </position>
+            </language>
+            <translation>Burning hot.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="octavae signa" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>octava[e] signa.</marginalia_text>
+                </position>
+            </language>
+            <translation>The sign of the eigth [house].</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Finis autem unius, alterius est initium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Imò sunt aliq[u]a loca inania et imaginu[m] expertia.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Indeed, there are other places void and free of likeness.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="signorum octauae Sphaerae, ad quae cum Sol accedit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Signoru[m] octav[a]e spha[e]r[a]e virtutes cu[m] ☉ ad ea pervenerit, vt hic loquitur.</marginalia_text> 
+                </position>
+            </language>
+            <translation>The characteristics of the sign of the eight spheres when the Sun came to reach them, as he mentioned here.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Iupiter cum Mercurio" type="straight"/>
+        <underline language="LA" method="pen" text="pluuias no[n] generales facit" type="straight"/>
+        <underline language="LA" method="pen" text="Mars cu[m] Venere" type="straight"/>
+        <underline language="LA" method="pen" text="sunt Orion" type="straight"/>
+        <underline language="LA" method="pen" text="Arcturus" type="straight"/>
+        <underline language="LA" method="pen" text="Corona" type="straight"/>
+        <underline language="LA" method="pen" text="Ventosa" type="straight"/>
+        <underline language="LA" method="pen" text="Aestuosa" type="straight"/>
+        <underline language="LA" method="pen" text="leonis partes anteriores" type="straight"/>
+        <underline language="LA" method="pen" text="Solis in octauae signa" type="straight"/>
+        <underline language="LA" method="pen" text="Finis autem unius, alterius est initium" type="straight"/>
+        <underline language="LA" method="pen" text="ad quae cum Sol accedit, tales fiunt mutationes" type="straight"/>
+        
+        <symbol language="LA" name="Jupiter" place="right_margin" text="Iupiter"/>
+        <symbol language="LA" name="Mercury" place="right_margin" text="Mercurio"/>
+        <symbol language="LA" name="Mars" place="right_margin" text="Mars"/>
+        <symbol language="LA" name="Venus" place="right_margin" text="Venere"/>
+        
+    </annotation>
+</transcription>

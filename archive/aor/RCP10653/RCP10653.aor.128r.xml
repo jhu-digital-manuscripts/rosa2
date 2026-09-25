@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.128r.tif" pagination="247" reader="John Dee" signature="X iiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Cedvvalla" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cedwalla[e] genealogia.
+                    </marginalia_text>
+                    <person name="Caedwalla of Wessex"/>
+                </position>
+            </language>
+            <translation>
+                Cædwalla's genealogy.  
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iutorum prouinciam" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Iutoru[m] Prouinci
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The province of the Jutes.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Reg. B. Cadwaldr[us]" type="straight"/>
+        <underline language="LA" method="pen" text="Sax. Cedvvalla" type="straight"/>
+        <underline language="LA" method="pen" text="filius Kiniberti" type="straight"/>
+        <underline language="LA" method="pen" text="Ceadd[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="fuit Cuthae" type="straight"/>
+        <underline language="LA" method="pen" text="fuit Ceaulini" type="straight"/>
+        <underline language="LA" method="pen" text="iubente Cedvvalla" type="double"/>
+        
+    </annotation>
+</transcription>

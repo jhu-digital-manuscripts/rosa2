@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.096r.tif" pagination="183" reader="John Dee" signature="Q ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Lotho co[n]suli Leyli" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Lothus, Consul Leyr <!-- DO: Not entirely sure. I think the place referred to might be: https://en.wikipedia.org/wiki/Leire. I can't find a clear connection between King Lot and Leire though -->
+                        <!-- FSF: I can't see anything speaking against it being Leire, though there is no obvious connection really -->
+                    </marginalia_text>
+                    <person name="King Lot"/>
+                    <location name="Leire"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Nathanlioth" type="straight"/>
+        <underline language="LA" method="pen" text="perforatis Duce[m] Nathanlioth peremerunt" type="straight"/>  
+        <underline language="LA" method="pen" text="Lotho co[n]suli Leyli" type="double"/>
+        
+    </annotation>
+</transcription>

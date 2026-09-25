@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.071r.tif" pagination="64" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mercurium effoeminatum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>☿ effa[e]minatus.</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                </position>
+            </language>
+            <translation>Mercury is effeminate.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vide igitur vt sup[ra] te[m]peranda Iudicia r[ati]on[e] Loci, et co[n]suetudinis patri[a]e</marginalia_text> 
+                </position>
+            </language> <!-- FSF: translation maybe along the lines of:  -->
+            <translation>See therefore as above the judgement that is to be tempered by the method of space and of the customs of the native land.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="foeminino" type="straight"/>
+        <underline language="LA" method="pen" text="Veneris" type="straight"/>
+        <underline language="LA" method="pen" text="meridionalis" type="straight"/>
+        <underline language="LA" method="pen" text="in infima" type="straight"/>
+        <underline language="LA" method="pen" text="Taurus, Libra, Carpicornus, &amp; Pisces" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; pudenda significat" type="straight"/>
+        <underline language="LA" method="pen" text="significabit adulteros" type="straight"/>
+        <underline language="LA" method="pen" text="adulteros" type="straight"/>
+        <underline language="LA" method="pen" text="paedicones" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; incestos" type="straight"/>
+        
+        <symbol name="Taurus" place="right_margin"/>
+        <symbol name="Libra" place="right_margin"/>
+        <symbol name="Capricorn" place="right_margin"/>
+        <symbol name="Pices" place="right_margin"/>
+        
+    </annotation>
+</transcription>

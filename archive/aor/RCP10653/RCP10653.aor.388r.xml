@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.388r.tif" pagination="325" reader="John Dee" signature="Eeeee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Marchiones VValliae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Marchiones Wallia[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Marchioness of Wales.   
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Marchiones VValliae" type="straight"/>
+        <underline language="LA" method="pen" text="Rogerius de Mortuo" type="straight"/>
+        <underline language="LA" method="pen" text="Iacobus de Andeleg" type="straight"/>
+        <underline language="LA" method="pen" text="Rogerius de" type="straight"/>
+        <underline language="LA" method="pen" text="Rogerius de" type="straight"/>
+        <underline language="LA" method="pen" text="Haimo Extraneus" type="straight"/>
+        <underline language="LA" method="pen" text="illi de Turberuilla" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

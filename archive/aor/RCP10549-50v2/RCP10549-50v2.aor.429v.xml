@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.429v.tif" pagination="310" reader="John Dee" signature="[Vv.iii.[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="lectus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>lectus</marginalia_text>
+                </position>
+            </language>
+            <translation>Read.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="suffragari" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Suffragari</marginalia_text>
+                </position>
+            </language>
+            <translation>To favour.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inambulans" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>inambulans</marginalia_text>
+                </position>
+            </language>
+            <translation>Wandering.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="anquiras" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>anquiro</marginalia_text>
+                </position>
+            </language>
+            <translation>I seek.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="poetae versu" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Poeta[e] versus</marginalia_text>
+                </position>
+            </language>
+            <translation>A poet's verses.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quercus huic loco no[n] deerit, quae Mariana" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quercus Mariana</marginalia_text>
+                </position>
+            </language>
+            <translation>Marian oak.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vlysses" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vlisses</marginalia_text>
+                    <person name="Odysseus"/>
+                </position>
+            </language>
+            <translation>Odysseus.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="inambulans post excessum suu[m] Romulus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Romulus post excessum inambulabat</marginalia_text>
+                    <person name="Romulus"/>
+                </position>
+            </language>
+            <translation>Romulus wandered after his death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="non vt à poeta, sed vt à teste" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Poeta vt poeta no[n] vt testis citandus est.</marginalia_text>
+                </position>
+            </language>
+            <translation>A poet should be cited as a poet, not as a witness.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="historia leges seruandas putare, alias in poemate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Historia. Poema</marginalia_text>
+                </position>
+            </language>
+            <translation>History. Poetry.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Herodotum patre[m] historiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Historia[e] p[ate]r Herodotus.</marginalia_text>
+                    <person name="Herodotus"/>
+                </position>
+            </language>
+            <translation>Herodotus, the father of history.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="historia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Historia.</marginalia_text>
+                </position>
+            </language>
+            <translation>History.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="annales Pontificum Maximorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Annales pontificu[m] Max[imorum]</marginalia_text>
+                </position>
+            </language>
+            <translation>The annals of the pontifices maximi.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Historographi.</marginalia_text>
+                </position>
+            </language>
+            <translation>Historians.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quaesumus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>qu[a]esumus</marginalia_text>
+                </position>
+            </language>
+            <translation>We beg.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>postulare flagitare</marginalia_text>
+                </position>
+            </language>
+            <translation>To postulate, to solicit.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="lectus in" type="straight"/>
+        <underline language="LA" method="pen" text="agricolae cultu strips tam diuturna, quàm poetae versu" type="straight"/>
+        <underline language="LA" method="pen" text="dum Latinè loquentur literae" type="straight"/>
+        <underline language="LA" method="pen" text="Canescet" type="straight"/>
+        <underline language="LA" method="pen" text="ea[m] tempestas, vetustásve co[n]sumpserit" type="straight"/>
+        <underline language="LA" method="pen" text="inambulns post excessum suu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="anquiras" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; in recenti memoria" type="straight"/>
+        <underline language="LA" method="pen" text="alias in historia leges seruandas putare, alias in poemate" type="straight"/>
+        <underline language="LA" method="pen" text="Herodotum patre[m] historiae, &amp; apud Theopompum sunt innumerabiles fabulae" type="straight"/>
+        <underline language="LA" method="pen" text="ea salua per te est, per te eunde[m] sit ornata" type="straight"/>
+        <underline language="LA" method="pen" text="quaesumus" type="straight"/>
+        <underline language="LA" method="pen" text="nudius" type="straight"/>
+        <underline language="LA" method="pen" text="in ore est, Catonem" type="straight"/>
+        <underline language="LA" method="pen" text="habet virium" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+            
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

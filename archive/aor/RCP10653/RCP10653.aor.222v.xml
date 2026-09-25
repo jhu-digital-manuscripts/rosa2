@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.222v.tif" pagination="436" reader="John Dee" signature="[Oo ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="fuga simulata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        fuga simulata
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A simulated flight.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="illo presbyteros videri" type="straight"/>
+        <underline language="LA" method="pen" text="quòd faciam" type="straight"/>
+        <underline language="LA" method="pen" text="cum vtroq[ue] labio rasam haberent, vndè" type="straight"/>
+        <underline language="LA" method="pen" text="Gurtha" type="straight"/>
+        <underline language="LA" method="pen" text="sacramentu[m] feceris" type="straight"/>
+        <underline language="LA" method="pen" text="more suo, fuga simulata" type="straight"/>
+        
+        <errata amendedtext="faciem" copytext="faciam" language="LA"/>
+        
+        <graph book_orientation="0" method="pen" place="left_margin" type="genealogical_tree">
+            <node id="n1" person="Harold Godwinson">Haraldus</node>
+            <node anchor_text="Gurtha" id="n2" person="Gyrth Godwinson">Gurtha</node>
+            <link from="n2" relationship="has_sibling" to="n1"/>
+            <link from="n1" relationship="has_sibling" to="n2"/>
+        </graph>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscrit</note>
+          <note type="commonName">Français 9345</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="73" unit="folios">73</measure>
+            <dimensions>
+              <height unit="mm">376</height>
+              <width unit="mm">260</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">83</note>
+          <note type="material">parchemin</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1400" notBefore="1300">14e siècle</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de France</repository>
+            <idno>fr. 9345</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="2r" to="62v">2r-62v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">61</note>
+              <note type="illustrations">83</note>
+              <note type="linesPerColumn">62</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">3</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="63r" to="72r">63r-72r</locus>
+              <title>Sept articles de la foi</title>
+              <note type="textid">septarticles</note>
+              <note type="folios">10</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">50</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="72r" to="72v">72r-72v</locus>
+              <title>Codicille</title>
+              <note type="textid">codicille</note>
+              <note type="folios">1</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">44</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="4">
+              <locus from="72v" to="73r">72v-73r</locus>
+              <title>Codicille en latin</title>
+              <note type="textid">codicillelatin</note>
+              <note type="folios">2</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">44</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,29 @@
+services:
+
+  opensearch:
+    image: opensearchproject/opensearch:3
+    container_name: opensearch
+    environment:
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - "OPENSEARCH_JAVA_OPTS=-Xms1g -Xmx1g"
+      - DISABLE_INSTALL_DEMO_CONFIG=true
+      - DISABLE_SECURITY_PLUGIN=true
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    volumes:
+      - osdata:/usr/share/opensearch/data
+      - ./opensearch.yml:/usr/share/opensearch/config/opensearch.yml:ro,Z
+      - ../rosa-search/opensearch/latin-stemmer-rules.txt:/usr/share/opensearch/config/analyzers/latin-stemmer-rules.txt:ro,Z
+      - ../rosa-search/opensearch/latin-charmap.txt:/usr/share/opensearch/config/analyzers/latin-charmap.txt:ro,Z
+    ports:
+      - "9200:9200"
+
+volumes:
+  osdata:
+    driver: local

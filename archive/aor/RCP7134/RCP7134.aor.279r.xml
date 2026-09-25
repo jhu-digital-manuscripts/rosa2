@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.279r.tif" pagination="272" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>De diuitijs</marginalia_text>
+                </position>
+            </language>
+            <translation>On riches.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Saturni cum Iouve; Saturni ac Veneris; Saturni ac Lunae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>♄ ♃: ♄ ♀: ♄ ☾</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>Saturn [with] Jupiter: Saturn and Venus; Saturn and the Moon.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Status hominis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Status hominis</marginalia_text>
+                </position>
+            </language>
+            <translation>The state of man.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Saturni ac Veneris" type="straight"/>
+        <underline language="LA" method="pen" text="Iouis ac Veneris" type="straight"/>
+        <underline language="LA" method="pen" text="proxime si in aereis signis" type="straight"/>
+        
+        <drawing anchor_text="Oportet autem in his tempora conuenire, ne prius uitae significator impediatur" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.007r.tif" pagination="333" reader="Harvey"/>	<!-- ABO 11right -->
+	<annotation>
+		
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Vita Chrysotechni. 
+						(nidus phoenicis: plenus aromatum Orientis (.) 
+					</marginalia_text>
+					<person name="Chrysotechnus"/>
+				</position>
+			</language>
+			<translation>
+				The life of Chrysotechnus.
+				(the nest of the phoenix: full of aromas from the East (.)
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						scitè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				knowingly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						nota. vae proditorib[us].
+					</marginalia_text>
+					<emphasis method="pen" text="proditorib[us]" type="straight"/>
+					<emphasis method="pen" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				note. woe to traitors.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Mnemosini notabili.  
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Notable memorials.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						discreto, et profondo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				discrete, and profound.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia anchor_text="Giudeo" hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( Giudeo sabatista. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				( Sabbath-following Jew. )
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Hebreo apodemico.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Wandering Israelite. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Apes, parvu[m] animal, nec formosu[m]: sed m[o]llificu[m].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The bee, a small animal, not beautiful: but weak.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						non curo corporis quantitatem, sed animi: nec externam qualitatem veneror, sed
+						interna.
+					</marginalia_text>
+					<emphasis method="pen" text="curo" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				I do not care for the quantity of the body, but of the soul: and I do not honor the external quality, but the internal.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Sola mihi vita est, ars viuida, seria virtus,
+						Feruida Sedulitas, vnica Dexteritas. }
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				One life belongs to me: a vigorous art, an earnest virtuousness, a burning zeal, a singular readiness.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Sine scientia, et valore,
+						omnia turpia
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Without wisdom, and valor, all things are ugly.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		
+		<underline language="IT" method="pen" text="cose inanimate" type="straight"/>
+		<underline language="IT" method="pen" text="piu ferme" type="straight"/>
+		<underline language="IT" method="pen" text="sospetto" type="straight"/>
+		<underline language="IT" method="pen" text="uento" type="straight"/>
+		<underline language="IT" method="pen" text="la lealtà" type="straight"/>
+		<underline language="IT" method="pen" text="primo" type="straight"/>
+		<underline language="IT" method="pen" text="donde poi" type="straight"/>
+		<underline language="IT" method="pen" text="l'altro" type="straight"/>
+		<underline language="IT" method="pen" text="onde non uegga" type="straight"/>
+		<underline language="IT" method="pen" text="la terza" type="straight"/>
+		<underline language="IT" method="pen" text="una uolta" type="straight"/>
+		<underline language="IT" method="pen" text="non ui ritorna" type="straight"/>
+		<underline language="IT" method="pen" text="Piero Fracani" type="straight"/>
+		<underline language="IT" method="pen" text="medico eccellentissimo" type="straight"/>
+		<underline language="IT" method="pen" text="Giudeo" type="straight"/>
+		<underline language="IT" method="pen" text="di sabato" type="straight"/>
+		<underline language="IT" method="pen" text="humilmente si raccomandò" type="straight"/>
+		<underline language="IT" method="pen" text="che fusse sabato" type="straight"/>
+		<underline language="IT" method="pen" text="lauorare, per esser la lor festa" type="straight"/>
+		<underline language="IT" method="pen" text="hauer patientia fino" type="straight"/>
+		<underline language="IT" method="pen" text="ostinati Giudei, per guardare il sabato" type="straight"/>
+		<underline language="IT" method="pen" text="cauare il lor fratello fuor del cesso" type="straight"/>
+		<underline language="IT" method="pen" text="la Domenica" type="straight"/>
+		<underline language="IT" method="pen" text="la festa de' Christiani" type="straight"/>
+		<underline language="IT" method="pen" text="furono sforzati ubbidire" type="straight"/>
+		<underline language="IT" method="pen" text="Giudeo stette nel puzzo, &amp; nel pericolo due giorni, &amp; due" type="straight"/>
+		<underline language="IT" method="pen" text="la ostination" type="straight"/>
+		<underline language="IT" method="pen" text="seguono la lettera" type="straight"/>
+		<underline language="IT" method="pen" text="laquale uccide" type="straight"/>
+		<underline language="IT" method="pen" text="di leuare il uelo dal uiso di Mose" type="straight"/>
+		<underline language="IT" method="pen" text="per non uedere" type="straight"/>
+		<underline language="IT" method="pen" text="ciò che u'è sotto" type="straight"/>
+		<underline language="IT" method="pen" text="loro compassione" type="straight"/>
+		
+		
+		
+		<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+		
+		<symbol name="Sun" place="head"/>
+		
+		<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|tilde|triple_dash|vertical_bar|X_sign -->
+		
+		<mark method="pen" name="equal_sign" place="head"/> 
+		
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Fra -->
+		<mark method="pen" name="comma" place="right_margin"/> <!-- non entra -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- scia -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- haueua- -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Domeni" -->
+		<mark method="pen" name="dash" place="right_margin"/> <!--me -->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- la- -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- sop -->
+		
+		<!-- Left margin -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- ro uso ... cani da -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- quale ... dere -->
+		
+		<!-- Intext -->
+		<mark method="pen" name="comma" place="intext"/> <!-- uso il -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="sospetto"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="lealtà"/>
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- parta: -->
+		<mark method="pen" name="equal_sign" place="intext"/> <!-- non -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- Vertical chalk mark in first paragraph -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- l'uscita: -->
+		<mark method="pen" name="equal_sign" place="intext"/> <!-- non -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- ritorna. -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Sentenza"/>
+		<mark method="pen" name="equal_sign" place="intext"/> <!-- medico eccellentissimo -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="sabato"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- notti, accioche -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="lettera"/>
+		<mark language="IT" method="pen" name="straight_quotation_mark" place="intext" text="uelo"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="sotto"/>
+		
+		
+	</annotation>
+</transcription>

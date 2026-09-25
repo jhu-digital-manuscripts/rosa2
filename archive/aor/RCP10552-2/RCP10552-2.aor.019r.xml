@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.019r.tif" pagination="27" reader="John Dee" signature="C.ij."/>
+    <annotation>
+       
+        <marginalia hand="Italian">
+            <language ident="FR">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Beau mareys.</marginalia_text>
+                    <location name="Beaumaris"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="captus est Madocus praedictus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Madocus captus.</marginalia_text>
+                    <person name="Madog ap Llywelyn"/>
+                </position>
+            </language>
+            <translation>Madog ap Llywelyn captured.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hugo de Veer" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hugo de Veer</marginalia_text>
+                    <person name="Hugh de Vere, 4th Earl of Oxford"/>
+                </position>
+            </language>
+            <translation>Hugh de Vere, 4th Earl of Oxford.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="VVallia apud Aberton" type="straight"/>
+        <underline language="LA" method="pen" text="captis bigis &amp; curribus victualibus onustis, à" type="straight"/>
+        <underline language="LA" method="pen" text="per aliquod tempus penuria coarctatur, ita vt quousque veniret ad eum reliqua pars exercitus, aquam melle mixtam biberet, paneqúe              cum salsis carnibus vesceretur." type="straight"/>
+        <underline language="LA" method="pen" text="cum balistarijs" type="straight"/>
+        <underline language="LA" method="pen" text="sagittarijs" type="straight"/>
+        <underline language="LA" method="pen" text="tantam stragem iutulit, quanta eis vna vice illata, non creditur temporibus retroactis" type="straight"/>
+        <underline language="LA" method="pen" text="bellum Mariscum" type="straight"/>
+        <underline language="LA" method="pen" text="Madocus praedictus" type="straight"/>
+        <underline language="LA" method="pen" text="VVallenses more Anglicorum penè viuere" type="straight"/>
+        <underline language="LA" method="pen" text="rerum damna de caetero" type="straight"/>
+        <underline language="LA" method="pen" text="die reddita est Anglicis villa Sancti Seueri, cuius capitaneus Hugo de Veer constituitur" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.020r.tif" pagination="20" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Massa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Chaos, Massa p[ri]m[a].</marginalia_text> <!--JG: probably 'prima', compara with annotation on 00000018.tif-->
+                </position>
+            </language>
+            <translation>Chaos, prime mass.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="zal" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Numeri</marginalia_text>
+                </position>
+            </language>
+            <translation>Numbers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="spen" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>chip</marginalia_text> <!--JG: Unsure-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="früling" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>ver</marginalia_text>
+                </position>
+            </language>
+            <translation>Spring.</translation>
+        </marginalia>
+        
+        
+        <underline language="DE" method="pen" text="auß einer Massa" type="straight"/>
+        <underline language="DE" method="pen" text="vnd Materia" type="straight"/>
+        <underline language="DE" method="pen" text="extrahiert" type="straight"/>
+        <underline language="DE" method="pen" text="separiert" type="straight"/>
+        <underline language="DE" method="pen" text="spen" type="double"/>
+        <underline language="DE" method="pen" text="die zal" type="straight"/>
+        <underline language="DE" method="pen" text="der früling" type="straight"/>
+        <underline language="DE" method="pen" text="kommen die farbe[n] alle herfür" type="straight"/>
+        
+    </annotation>
+</transcription>

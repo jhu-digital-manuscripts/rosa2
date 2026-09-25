@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.067r.tif" pagination="67" reader="John Dee" signature="Iiij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="cur Æquator emendatione non egeat?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cur cursus extra a[e]quatore[m] castigari debe[n]t.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Why the courses beyond the equator ought to be corrected.
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="nauem per altitudinem paralleli unde profecta" type="straight"/>
+        <underline language="LA" method="pen" text="additione aut diminutione cuiuslibet rei. Sed" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="right_margin"/> <!-- FSF: with tail -->
+        
+    </annotation>
+</transcription>

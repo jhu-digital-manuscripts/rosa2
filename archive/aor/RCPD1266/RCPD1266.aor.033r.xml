@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.033r.tif" pagination="51" reader="John Dee" signature="e.ij."/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Reformatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Reformation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="intercalarent" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Intercalatio [deleted]</marginalia_text>
+                </position>
+            </language>
+            <translation>An insert.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="libri primi tomo tertio contra haereses" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>esset libri tertij tomo primo, ha[e]res[is]: 70.</marginalia_text>
+                </position>
+            </language>
+            <translation>It was in the first volume of the third book, heresy: 70.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sine vllius mensis nomine, quantum" type="straight"/>
+        <underline language="LA" method="pen" text="quum cognouisset nouus Astrologus, qui non tam coeli rationem duceret, quàm caelati argenti" type="straight"/>
+        <underline language="LA" method="pen" text="Cephaleditani" type="straight"/>
+        <underline language="LA" method="pen" text="Quam nobis" type="straight"/>
+        <underline language="LA" method="pen" text="sunt, ita vt octauo quóque anno xc. dies" type="straight"/>
+        <underline language="LA" method="pen" text="libri primi tomo tertio" type="straight"/>
+        <underline language="LA" method="pen" text="ratio per Octoeridas" type="straight"/>
+        <underline language="LA" method="pen" text="&amp;" type="straight"/>
+        <underline language="LA" method="pen" text="horis tribus" type="double"/>
+        <underline language="LA" method="pen" text="dies epactae" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/> 
+        
+    </annotation>
+</transcription>

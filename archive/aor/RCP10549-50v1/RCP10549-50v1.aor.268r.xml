@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.268r.tif" pagination="515" reader="John Dee" signature="IzIzIz.ii."/>
+    <annotation>
+        
+        <marginalia anchor_text="boni nullo emolume[n]to impelluntur in fraudem, improbi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Boni Improbi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The good, the wicked.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="peregrinantur aures, neque in hoc peruagato ciuitatis sermone versantur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        aures perigrinari aures v[er]sari p[er]uagato sermone
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be alien to the ears, to turn the ears from the widespread rumour.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="semiustulatu[m]." hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                       imponere [...rere] leges <!--JG: Unsure about second word-->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To impose and [..] laws.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="semiustulatu[m]." hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        semiustulatu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Half-burnt.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="segetem ac materiam suae gloriae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        seges materia ] glori[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The soil and matter of glory.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vexatorem furoris, domitorem armorum suorum: postremo etia[m] accusatore[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vexator domitor accusator
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Harasser, subduer, accuser.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sin hoc &amp; ratio doctis, &amp; necessitas barbaris, &amp; gentibus, &amp; feris natura ipsa praescripsit, vt omnem semper vim,              quacunque ope possent, à corpore, à capite, à vita sua propulsarent: non" type="straight"/>
+        <underline language="LA" method="pen" text="Ita &amp; Senatus rem, non hominem notauit: &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="etsi boni nullo emolume[n]to impelluntur in fraudem, improbi saepe paruo" type="straight"/>
+        <underline language="LA" method="pen" text="corroboratam iam vetustate audacia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="vestrae peregrinantur" type="straight"/>
+        <underline language="LA" method="pen" text="cruentum cadauer eiecisti domo: tu in publicum eiecisti: tu spoliatum imaginibus, exequiis, pompa, laudatione,              infelicissimis lignis semiustulatum nocturnis canibus dilaniandum reliquisti" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="scroll">
+            <text hand="English_secretary" language="LA">vim vi repellere licet</text>
+            <translation>It is allowed to repel violence by violence.</translation>
+        </drawing>
+        
+        
+    </annotation>
+</transcription>

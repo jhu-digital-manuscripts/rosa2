@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.009v.tif" pagination="8" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Rogerus de Mortuo mari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Rogerus de mortuo mari</marginalia_text>
+                    <person name="Roger de Mortimer"/>
+                </position>
+            </language>
+            <translation>Roger de Mortimer</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="filiam Comitis Debeiae, quae nuper alio fuerat viduta" type="straight"/>
+        <underline language="LA" method="pen" text="VVallensibus infamis &amp; odibilis propter" type="straight"/>
+        <underline language="LA" method="pen" text="admissionem" type="grid"/>
+        <underline language="LA" method="pen" text="dominationis insuatae" type="straight"/>
+        <underline language="LA" method="pen" text="Rex Angliae circa tempus istud filiam Comitis" type="straight"/>
+        <underline language="LA" method="pen" text="Principi VValli[a]e dedit vxorem," type="straight"/>
+        <underline language="LA" method="pen" text="VVallensibus sub silentio quietéque transactus" type="straight"/>
+        <underline language="LA" method="pen" text="Rogerus de Mortuo mari" type="straight"/>
+        <underline language="LA" method="pen" text="voca[n]t rotundam" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+       <mark method="pen" name="comma" place="intext"/> <!-- militarem, quem -->
+        
+    </annotation>
+</transcription>

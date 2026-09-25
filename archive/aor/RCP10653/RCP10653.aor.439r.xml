@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.439r.tif" pagination="427" reader="John Dee" signature="Nnnn iiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="anno domini millesimo trecentesimo" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        1300
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Holmcoltran" type="straight"/>
+        <underline language="LA" method="pen" text="millesimo" type="straight"/>
+        <underline language="LA" method="pen" text="Eadvvardi regis Angliae" type="straight"/>
+        <underline language="LA" method="pen" text="antecessores &amp; progenitores nostri, reges Angliae" type="straight"/>
+        <underline language="LA" method="pen" text="iure superioris &amp; directi dominij ab antiquissimis retro temporibus regno Scotiae" type="straight"/>
+        <underline language="LA" method="pen" text="à quibus habere volebant, legalia" type="straight"/>
+        <underline language="LA" method="pen" text="possessionem continuantes huiusmodi" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="bracket" place="left_margin"/>         
+        <mark method="pen" name="comma" place="intext"/> <!-- Rex apostolicis -->
+        <mark method="pen" name="comma" place="intext"/> <!-- continuantes huiusmodi -->
+        <mark method="pen" name="comma" place="intext"/> <!-- huiusmodi pro -->     
+        <mark method="pen" name="comma" place="intext"/> <!-- recipimus tam -->
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="tail"/>
+        
+        <errata amendedtext="eum" copytext="enim" language="LA"/>
+        <errata amendedtext="vt et" copytext="quod" language="LA"/>
+        
+    </annotation>
+</transcription>

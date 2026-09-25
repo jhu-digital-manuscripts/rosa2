@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.171v.tif" pagination="[171v]" reader="John Dee" signature="[Yiij[v]]"/>    
+    <annotation>
+        
+        <marginalia anchor_text="sole de' Caribi, le quai son le prime, che i nauiganti, per andare al porto di S. Domenico, trouano nella              strada" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note the lying of these Iles</marginalia_text>       
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The current</marginalia_text>      
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="all' alloggiamento" type="straight"/>
+        <underline language="IT" method="pen" text="lui buoni intercessori" type="straight"/>
+        <underline language="IT" method="pen" text="il Prefetto erano" type="straight"/>
+        <underline language="IT" method="pen" text="nauigli" type="double"/>
+        <underline language="IT" method="pen" text="alle Canarie" type="double"/>
+        <underline language="IT" method="pen" text="Isole de' Caribi, le quai son le prime, che i nauiganti, per andare al porto di S. Domenico, trouano nella              strada" type="straight"/>
+        <underline language="IT" method="pen" text="dalle correnti" type="straight"/>
+        <underline language="IT" method="pen" text="all' Occidente" type="straight"/>
+        <underline language="IT" method="pen" text="Suragna" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin" text="Isole de' Caribi, le quai son le prime, che i nauiganti, per andare al porto di S. Domenico, trouano nella              strada"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

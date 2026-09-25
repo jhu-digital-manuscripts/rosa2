@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.051r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="AGnitio ter co[n]suli" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Æetio
+                    </marginalia_text>
+                    <person name="Agitius"/>
+                </position>
+            </language>
+            <translation>Agitius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Armorica siue Letania" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        <!--faded 'A'--> Armorica. Letania.
+                    </marginalia_text>
+                    <location name="Armorica"/>
+                    <location name="Letavia"/>
+                </position>
+            </language>
+            <translation>Armorica. Letavia.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="AGnitio ter co[n]suli" type="double"/>
+        <underline language="LA" method="pen" text="Armorica siue Letania" type="double"/>
+        <underline language="LA" method="pen" text="illa Aldroenus" type="straight"/>
+        <underline language="LA" method="pen" text="Conano" type="straight"/>
+        <underline language="LA" method="pen" text="diademate Co[n]sta[n]tini &amp; Maximiani debeat coronari, cu[m] aui tui atq[ue] proaui ipso i[n]signiti fuerint" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Paris, Bibliothèque nationale de France, fr. 12587</p>
+        </note>
+        <note rend="CONTENTS">
+          <p>Disordered and damaged fragments of a <hi rend="italics">Roman de la Rose</hi> (ff. 1r-103v)</p>
+        </note>
+        <note rend="MATERIAL">
+          <p>Parchment</p>
+        </note>
+        <note rend="ORIGIN">
+          <p>France</p>
+        </note>
+        <note rend="DATE">
+          <p>Beginning of 14th century</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>Gothic, mostly written in 2 columns of 42 lines</p>
+        </note>
+        <note rend="ARTISTS">
+          <p>2 artists (a 2nd artist is responsible for the illustration on f. <locus>68r</locus>)</p>
+        </note>
+        <note rend="DECORATION">
+          <p>70 single-column panel miniatures in colors, frames in pink or blue patterned in white with gold boxes at corners (ff. 11r, 15r, 22r, 23v, 26r, 28r, 28v, 30r, 30v (x2), 31r (x3), 32v (x2), 33r (x2), 33v (x2), 40r, 41r, 42r, 42v, 46v, 47r, 47v (x2), 50r, 50v (x2), 51r, 53r, 54v, 55r, 57v, 59r, 60r, 68r, 69v, 78v, 79r (x2), 79v (x2), 83v, 84v, 85r (x3), 85v (x2), 86r, 87r, 87v (x3), 88r, 88v, 89v, 91r, 91v, 92r (x3), 92v (x2), 93r, 94r. Blue initials flourished in red, red initials flourished in blue.</p>
+        </note>
+        <note rend="DIMENSIONS">
+          <p>ca. 280 x 195 mm (this measurement is from Langlois)</p>
+        </note>
+        <note rend="FOLIATION">
+          <p>ff. ii + 103 + ii</p>
+        </note>
+        <note rend="COLLATION">
+          <p>19th-century foliation (below in the left column) is beside the original foliation according to Langlois (on the right)</p>
+          <p>
+            <list>
+              <item n="1">
+                <locus>85</locus>
+              </item>
+              <item n="2">
+                <locus>47</locus>
+              </item>
+              <item n="3">
+                <locus>24</locus>
+              </item>
+              <item n="4">
+                <locus>25</locus>
+              </item>
+              <item n="5">
+                <locus>50</locus>
+              </item>
+              <item n="6">
+                <locus>86</locus>
+              </item>
+              <item n="7">
+                <locus>87</locus>
+              </item>
+              <item n="8">
+                <locus>59</locus>
+              </item>
+              <item n="9">
+                <locus>22</locus>
+              </item>
+              <item n="10">
+                <locus>54</locus>
+              </item>
+              <item n="11">
+                <locus>23</locus>
+              </item>
+              <item n="12">
+                <locus>26</locus>
+              </item>
+              <item n="13">
+                <locus>44</locus>
+              </item>
+              <item n="14">
+                <locus>27</locus>
+              </item>
+              <item n="15">
+                <locus>62</locus>
+              </item>
+              <item n="16">
+                <locus>44</locus>
+              </item>
+              <item n="17">
+                <locus>30</locus>
+              </item>
+              <item n="18">
+                <locus>33</locus>
+              </item>
+              <item n="19">
+                <locus>83</locus>
+              </item>
+              <item n="20">
+                <locus>84</locus>
+              </item>
+              <item n="21">
+                <locus>28</locus>
+              </item>
+              <item n="22">
+                <locus>31</locus>
+              </item>
+              <item n="23">
+                <locus>41</locus>
+              </item>
+              <item n="24">
+                <locus>53</locus>
+              </item>
+              <item n="25">
+                <locus>4</locus>
+              </item>
+              <item n="26">
+                <locus>17</locus>
+              </item>
+              <item n="27">
+                <locus>60</locus>
+              </item>
+              <item n="28">
+                <locus>61</locus>
+              </item>
+              <item n="29">
+                <locus>20</locus>
+              </item>
+              <item n="30">
+                <locus>9</locus>
+              </item>
+              <item n="31">
+                <locus>56</locus>
+              </item>
+              <item n="32">
+                <locus>6</locus>
+              </item>
+              <item n="33">
+                <locus>5</locus>
+              </item>
+              <item n="34">
+                <locus>12</locus>
+              </item>
+              <item n="35">
+                <locus>64</locus>
+              </item>
+              <item n="36">
+                <locus>66</locus>
+              </item>
+              <item n="37">
+                <locus>13</locus>
+              </item>
+              <item n="38">
+                <locus>8</locus>
+              </item>
+              <item n="39">
+                <locus>19</locus>
+              </item>
+              <item n="40">
+                <locus>48</locus>
+              </item>
+              <item n="41">
+                <locus>49</locus>
+              </item>
+              <item n="42">
+                <locus>18</locus>
+              </item>
+              <item n="43">
+                <locus>68</locus>
+              </item>
+              <item n="44">
+                <locus>70</locus>
+              </item>
+              <item n="45">
+                <locus>7</locus>
+              </item>
+              <item n="46">
+                <locus>16</locus>
+              </item>
+              <item n="47">
+                <locus>34</locus>
+              </item>
+              <item n="48">
+                <locus>36</locus>
+              </item>
+              <item n="49">
+                <locus>35</locus>
+              </item>
+              <item n="50">
+                <locus>38</locus>
+              </item>
+              <item n="51">
+                <locus>37</locus>
+              </item>
+              <item n="52">
+                <locus>39</locus>
+              </item>
+              <item n="53">
+                <locus>21</locus>
+              </item>
+              <item n="54">
+                <locus>81</locus>
+              </item>
+              <item n="55">
+                <locus>80</locus>
+              </item>
+              <item n="56">
+                <locus>52</locus>
+              </item>
+              <item n="57">
+                <locus>29</locus>
+              </item>
+              <item n="58">
+                <locus>32</locus>
+              </item>
+              <item n="59">
+                <locus>57</locus>
+              </item>
+              <item n="60">
+                <locus>82</locus>
+              </item>
+              <item n="61">
+                <locus>46</locus>
+              </item>
+              <item n="62">
+                <locus>64</locus>
+              </item>
+              <item n="63">
+                <locus>48</locus>
+              </item>
+              <item n="64">
+                <locus>10</locus>
+              </item>
+              <item n="65">
+                <locus>14</locus>
+              </item>
+              <item n="66">
+                <locus>63</locus>
+              </item>
+              <item n="67">
+                <locus>67</locus>
+              </item>
+              <item n="68">
+                <locus>51</locus>
+              </item>
+              <item n="69">
+                <locus>69</locus>
+              </item>
+              <item n="70">
+                <locus>40</locus>
+              </item>
+              <item n="71">
+                <locus>42</locus>
+              </item>
+              <item n="72">
+                <locus>11</locus>
+              </item>
+              <item n="73">
+                <locus>14</locus>
+              </item>
+              <item n="74">
+                <locus>43</locus>
+              </item>
+              <item n="75">
+                <locus>45</locus>
+              </item>
+              <item n="71-79">
+                <locus from="71" to="79">71-79</locus>
+              </item>
+              <item n="88-103">
+                <locus from="88" to="103">88-103</locus>
+              </item>
+            </list>
+          </p>
+        </note>
+        <note rend="BINDING">
+          <p>French; brown calf binding with gilt ornamental borders on covers, missing its spine, marbled endpapers.</p>
+        </note>
+        <note rend="PROVENANCE">
+          <p>Stamps of Bibliotèque Royale; it was formerly ms. anc. supl. fr. 1276.</p>
+        </note>
+        <note rend="NOTES">
+          <p>Corrections in a number of hands of different periods. A knight has been drawn on a slip of parchment pasted into f. <locus>53v</locus>
+               </p>
+        </note>
+        <note rend="SELECT BIBLIOGRAPHY">
+          <p>1. Langlois, <hi rend="italics">Les manuscrits</hi>, pp. 40-43.
+               </p>
+        </note>
+        <note rend="N.B.">
+          <p>This description has been compiled using the site's images and various published sources. If you have corrections or additional information on the manuscript, please do contact us.</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl><note type="format">manuscript</note><note type="commonName">Français 12587</note><title>Roman de la Rose</title><extent><measure quantity="103" unit="folios">103</measure><dimensions><height unit="mm">280</height><width unit="mm">195</width></dimensions></extent><note type="illustrations">70</note>
+               
+               
+               -
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>France</pubPlace>
+               
+               <date notAfter="1400" notBefore="1300">14th century</date>
+            
+            </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de France</repository>
+            <idno>fr. 12587</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="103v">1r-103v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">103</note>
+              <note type="illustrations">70</note>
+              <note type="linesPerColumn">42</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

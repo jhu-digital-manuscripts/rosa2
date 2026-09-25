@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.130r.tif" pagination="259" reader="Harvey" signature="Riir"/>
+    <annotation>
+        
+        <marginalia anchor_text="seruitute" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        seueritate
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                With severity.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="contra Dictatoris interdictum" type="straight"/>
+        <underline language="LA" method="pen" text="interficiendum esse" type="straight"/>
+        <underline language="LA" method="pen" text="inuitatus occasione" type="straight"/>
+        <underline language="LA" method="pen" text="occasione rei" type="straight"/>
+        <underline language="LA" method="pen" text="sequeretur" type="straight"/>
+        <underline language="LA" method="pen" text="uictoriam" type="straight"/>
+        <underline language="LA" method="pen" text="militaris disciplina[e] conseruationem" type="straight"/>
+        <underline language="LA" method="pen" text="seruitute" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Di-ctatore -->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- scri-tam -->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- pugnauerat, sed -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- occa-sionem -->
+        
+        <errata amendedtext=";" copytext=":" language="LA"/>
+
+    </annotation>
+</transcription>

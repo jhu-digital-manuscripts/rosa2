@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.040v.tif" pagination="[40[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="die geburt des schönen Gewülcks vnd Windts" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nubiu[m] splendidor[um] et salubrium ventoru[m] caussa</marginalia_text>
+                </position>
+            </language>
+            <translation>The cause of splendid clouds and healthy winds.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="die auch den Regen vn[d] solche weter verkünden" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Prenuncia Pluuiaru[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>The pronouncement of rains.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mann sagt Morgenrütte Abenrötte ist nun recht dann vrsach so ein Regenstern wil angehen" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Morning red and euening red is sygne of rayne.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="kein Gewülcke geben" type="straight"/>
+        <underline language="DE" method="pen" text="auch keinen Regen" type="straight"/>
+        <underline language="DE" method="pen" text="Sonne ist am selbigen ort durch scheinig scheindt dardurch" type="straight"/>
+        <underline language="DE" method="pen" text="schönen Gewülcks vnd Windts" type="double"/>
+        <underline language="DE" method="pen" text="subtilen wolbereiten Sul, Sal vnd Merc" type="straight"/>
+        <underline language="DE" method="pen" text="desselbigen Vulcani" type="straight"/>
+        <underline language="DE" method="pen" text="zugäng" type="straight"/>
+        <underline language="DE" method="pen" text="verkünden" type="double"/>
+        <underline language="DE" method="pen" text="Morgenrütte" type="straight"/>
+        <underline language="DE" method="pen" text="Abenrötte" type="straight"/>
+        <underline language="DE" method="pen" text="Regenstern wil angehen" type="straight"/>
+        <underline language="DE" method="pen" text="zu grob" type="straight"/>
+        <underline language="DE" method="pen" text="zu grob" type="straight"/>
+        
+        <mark method="pen" name="tripunctus_with_tail" place="right_margin"/>
+        
+    </annotation>
+</transcription>

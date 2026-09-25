@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.139v.tif" pagination="278" reader="John Dee" signature="[s 3[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="iudicialium causarum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Causa Iudicialis</marginalia_text>
+                </position>
+            </language>
+            <translation>Judicial Cause.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>sup[ra]</marginalia_text>
+                </position>
+            </language>
+            <translation>Above</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="proprium oratoris opus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Propriu[m] oratoris opus</marginalia_text>
+                </position>
+            </language>
+            <translation>The orator's own work.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Nam &amp; per totam, ut diximus, causam, locus est affectibus, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="Atque hoc est, quod dominatur in iudicijs, haec eloquentiam regunt. Nanq[ue]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

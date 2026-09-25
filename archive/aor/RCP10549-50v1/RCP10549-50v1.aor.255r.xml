@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.255r.tif" pagination="489" reader="John Dee" signature="[hhh.v.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="sacrosanctum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sacrosanctum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Sacrosanct.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praepotens terra maríque Carthago" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Carthago pr[a]epote[n]s terra mari'q[ue]
+                    </marginalia_text>
+                    <location name="Carthage"/>
+                </position>
+            </language>
+            <translation>
+                Carthage is very powerful on land and at sea. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="foedus icisse" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fo[e]dus icisse
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To have made a treatise.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iniussu suo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        iniussu suo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Without his orders.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex suo foedere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fo[e]dus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A treatise.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="imperantis est, non precantis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        imperantis est no[n] p[re]ca[n]tis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A command, not an entreaty.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="verbum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Verbum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A word.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Comes" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Comes qui
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A knight who.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nihil esse sacrosanctum quod excaeptum videretur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Nihil est sacrosanctu[m], quod lege exceptu[m] videtur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Nothing that appears saved from law is sacrosanct.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Deinde sanctiones sacrandae sunt, aut genere ipso, aut obtestatione &amp; consecratione legis aut poenae, cum caput" type="straight"/>
+        <underline language="LA" method="pen" text="duo fulmina nostri" type="straight"/>
+        <underline language="LA" method="pen" text="foedus icisse" type="straight"/>
+        <underline language="LA" method="pen" text="grauissimis enim &amp; plurimis rebus est fulta. sed isti disputationi certe nihil est" type="straight"/>
+        <underline language="LA" method="pen" text="idem suffragiis" type="straight"/>
+        <underline language="LA" method="pen" text="imperantis est, non precantis" type="straight"/>
+        <underline language="LA" method="pen" text="quasi vero priscum aliquod aut insolitum verbum interpretaretur" type="straight"/>
+        <underline language="LA" method="pen" text="sacrosanctum quod lege excaeptum videretur: si esset" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="right_margin"/>
+        
+        <numeral place="right_margin">17</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">11</numeral>
+        <numeral place="right_margin">10</numeral>
+        
+        <drawing anchor_text="foedus" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="verbum" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="comes qui" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+        
+    </annotation>
+</transcription>

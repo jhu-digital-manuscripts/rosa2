@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.089r.tif" pagination="177" reader="John Dee" signature="m"/> 
+    <annotation>
+        
+        <marginalia anchor_text="narratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Narratio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Narrative.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="personae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Persona.</marginalia_text>
+                </position>
+            </language>
+            <translation>Person.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Loci" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Locus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Place.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="temporis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tempus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Time.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Causarum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Causa[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Causes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ciceronis de discursu amicorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>P.[ro] Rossio Am[erino]</marginalia_text>
+                    <book title="Pro Roscio Amerino"/>
+                </position>
+            </language>
+            <translation>Pro Roscio Amerino.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ὑποτυπωσις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ὑποτυπωσις</marginalia_text> <!-- for ὑποτύπωσις -->
+                </position>
+            </language>
+            <translation>Outline.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pubertas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pubertas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Puberty.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="praeteritorum esse temporum" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; praesentium" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; futurorum" type="straight"/>
+        
+    </annotation>
+</transcription>

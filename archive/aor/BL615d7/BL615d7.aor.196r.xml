@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.196r.tif" pagination="196" reader="John Dee" signature="Bbiiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="XXVIII nauigli" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>28 ships</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="percioche, se arriuaua no costoro in Castiglia, non sarebbone mai stati castigati" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Justitia  Diuina</marginalia_text>
+                </position>
+            </language>
+            <translation>Divine Justice.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="per otto giorni egli non lasciasse vscir l' armata del" type="straight"/>
+        <underline language="IT" method="pen" text="XXVIII nauigli" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; Francesco Orlando" type="straight"/>
+        <underline language="IT" method="pen" text="e tutti gli altri, che si erano solleuati contra di loro," type="straight"/>
+        <underline language="IT" method="pen" text="Dio di acciecar glio occhi, &amp; l'intelletto" type="straight"/>
+        <underline language="IT" method="pen" text="ciò fu prouidenza" type="straight"/>
+        <underline language="IT" method="pen" text="percioche, se arriuauano costoro in Castiglia, non sarebbone mai stati castigati" type="straight"/>
+        <underline language="IT" method="pen" text="fauoreggiati dal Vescouo, haurebbono riceuuti molti fauori, &amp; gratie. Alle" type="straight"/>
+        <underline language="IT" method="pen" text="la naue Capitana" type="double"/>
+        <underline language="IT" method="pen" text="venia il Bouadiglia" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        <mark method="pen" name="equal_sign" place="right_margin"/> <!--ca-->
+        
+        
+    </annotation>
+</transcription>

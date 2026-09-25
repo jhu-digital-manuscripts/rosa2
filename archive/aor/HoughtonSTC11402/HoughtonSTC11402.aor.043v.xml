@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.043v.tif" reader="Harvey" signature="[Eiiii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>[the] order of Annibal, &amp; Scipio, in that most famous battel betwene them.</marginalia_text>
+                    <person name="Hannibal"/>
+                    <person name="Scipio Africanus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>rerewarde.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Scipios order better, in [the] vaward. [the] place of most valorous and furious bravure.</marginalia_text>
+                    <person name="Scipio Africanus"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>s[upr]a)</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0090" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] above.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Romaynes weried" type="straight"/>
+        <underline language="EN" method="pen" text="myddell warde" type="straight"/>
+        <underline language="EN" method="pen" text="laste of all" type="straight"/>
+        <underline language="EN" method="pen" text="Italians" type="straight"/>
+        <underline language="EN" method="pen" text="ageynste theyr wylles" type="straight"/>
+        <underline language="EN" method="pen" text="strengthe of his legion" type="straight"/>
+        <underline language="EN" method="pen" text="in thre" type="straight"/>
+        <underline language="EN" method="pen" text="the front" type="straight"/>
+        <underline language="EN" method="pen" text="chiefe and strongeste souldiours" type="straight"/>
+        <underline language="EN" method="pen" text="lefte a space betwene" type="straight"/>
+        <underline language="EN" method="pen" text="elephantes dryuen by" type="straight"/>
+        <underline language="EN" method="pen" text="myght easely passe" type="straight"/>
+        <underline language="EN" method="pen" text="troublynge or breakinge the order of his" type="straight"/>
+        <underline language="EN" method="pen" text="eyther recule backe" type="straight"/>
+        <underline language="EN" method="pen" text="go a syde" type="straight"/>
+        <underline language="EN" method="pen" text="horsemen" type="straight"/>
+        <underline language="EN" method="pen" text="the wynges" type="straight"/>
+        <underline language="EN" method="pen" text="Romayne horsemen" type="straight"/>
+        <underline language="EN" method="pen" text="Lelius" type="straight"/>
+        <underline language="EN" method="pen" text="Masinissa ouer" type="straight"/>
+        
+        <symbol language="EN" name="Mars" place="left_margin" text="[the] order of Annibal, &amp; Scipio, in that most famous battle betwene them."/>
+        <symbol name="Opposite_planets" place="left_margin"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="Romaynes weried"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--wylles. Scipio-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="strengthe"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="in thre"/>
+        <mark method="pen" name="dot" place="intext"/> <!--batayles, in-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the front"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="chiefe and strongeste souldiours"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/> <!--souldiours: he-->
+        <mark method="pen" name="bracket" place="intext"/> <!--syde. farther-->
+        
+    </annotation>
+</transcription>

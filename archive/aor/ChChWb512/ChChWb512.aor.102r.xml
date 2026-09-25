@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.102r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Broemael" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Brochwellus Skithrog.
+                    </marginalia_text>
+                    <person name="Brochwellus Skithrog"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Mardagud rex Demetorum: Caduanus Venedotorum ; Bledricus dux Cornubiae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Margadud rex Demetor[um]
+                        Caduanus. Rex Venedotor[um]
+                        Bledricus Dux Cornubia[e].
+                    </marginalia_text>
+                    <person name="Margadud"/>
+                    <person name="Caduanus"/>
+                    <person name="Bledricus"/>
+                    <location name="Cornwall"/>
+                </position>
+            </language>
+            <translation>Margadud, king of the Demetians. Caduanus, king of the Venedotians. Bledricus, lord of Cornwall.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Legecestria[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Broemael" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; sic mille duce[n]ti eoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="rex Demetorum" type="straight"/>
+        <underline language="LA" method="pen" text="Caduanus" type="straight"/>
+        <underline language="LA" method="pen" text="Bledricus" type="straight"/>
+        
+    </annotation>
+</transcription>

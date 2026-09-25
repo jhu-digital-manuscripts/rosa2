@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.217v.tif" pagination="[217v]" reader="John Dee" signature="[Ee[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="copia di oro, &amp; gente armata, si come noi." hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Zobraba, doue erano più di VI leghe di Maizali, che son come campi di formenti;&amp;             quindi andò a Cateba" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Zobraba. Marzali Cateba</marginalia_text>
+                    <location name="Zobraba"/>
+                    <location name="Marzali"/>
+                    <location name="Cateba"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="sono come patene di calici" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Theyr gold glassses of what fashion</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="copia di oro, &amp; gente armata, si come noi" type="straight"/>
+        <underline language="IT" method="pen" text="Zobraba" type="straight"/>
+        <underline language="IT" method="pen" text="a Cateba" type="straight"/>
+        <underline language="IT" method="pen" text="sono come patene de calici" type="straight"/>
+        <underline language="IT" method="pen" text="di XII ducati" type="straight"/>
+        <underline language="IT" method="pen" text="portrano al collo" type="straight"/>
+        <underline language="IT" method="pen" text="vno spaghetto," type="straight"/>
+        <underline language="IT" method="pen" text="vn'Agnus" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

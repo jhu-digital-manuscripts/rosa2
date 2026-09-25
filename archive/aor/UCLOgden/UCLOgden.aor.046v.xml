@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.046v.tif" pagination="76" reader="John Dee" signature="[g 2[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="uectigaliarii" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vectigaliari[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The collector of taxes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fideiussores" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        fideiussores
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Guarantors.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="biothanata" hand="English_secretary" id="UCLOgden:099:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Biothanati.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Those who died of violence. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aut à seruis [aut propter seruos]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        aut à servis aut propter servos.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Either from the slave or because of the slaves.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uectigaliarii" type="straight"/>
+        <underline language="LA" method="pen" text="fideiussores" type="straight"/>
+        <underline language="LA" method="pen" text="sed biothanata" type="straight"/>
+        <underline language="LA" method="pen" text="sed quae aut à seruis" type="straight"/>
+        
+        <errata amendedtext="☾a[m]" copytext="☾" language="LA"/>
+        
+    </annotation>
+</transcription>

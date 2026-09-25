@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.009r.tif" pagination="9" reader="John Dee" signature="B"/> 
+    <annotation>
+        <marginalia anchor_text="M CCCC LXXVII" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1477</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="chiamata Frislanda" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A Non Frislanda sed Grontonda</marginalia_text> 
+                    <location name="Frisland"/>
+                    <location name="Grontonda"/>
+                </position>
+            </language>
+            <translation>A. Not Frisland but Grontonda.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="che il grado risponde nella terra a cinquantasei miglia, &amp; duo terzi" hand="Italian" method="pen"> 
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>gradui vni respondet miliaria 56 ⅔</marginalia_text>  
+                </position>
+            </language>
+            <translation>56 ⅔ miles corresponds to one degree.</translation> 
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="nel mese di Febraio" type="double"/>
+        <underline language="IT" method="pen" text="oltra Tile isola cento leghe" type="straight"/>
+        <underline language="IT" method="pen" text="settantatre gradi" type="straight"/>
+        <underline language="IT" method="pen" text="non sessantatre" type="straight"/>
+        <underline language="IT" method="pen" text="a quest' isola" type="double"/>
+        <underline language="IT" method="pen" text="grande, come l'Inghilterra" type="straight"/>
+        <underline language="IT" method="pen" text="non era congelato il mare" type="straight"/>
+        <underline language="IT" method="pen" text="braccia, &amp; discendeua" type="double"/>
+        <underline language="IT" method="pen" text="di cui" type="double"/>
+        <underline language="IT" method="pen" text="moderni è" type="grid"/> 
+        <underline language="IT" method="pen" text="chiamata Frislanda" type="double"/>
+        <underline language="IT" method="pen" text="Sirene nella costa della" type="straight"/>
+        <underline language="IT" method="pen" text="che il grado risponde nella terra a cinquantasei miglia, &amp; duo terzi." type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/> 
+        <mark method="pen" name="plus_sign" place="right_margin"/> 
+        <mark method="pen" name="plus_sign" place="right_margin"/> 
+        
+        
+        
+    </annotation> 
+</transcription>

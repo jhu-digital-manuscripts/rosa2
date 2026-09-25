@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.126v.tif" pagination="[126v]" reader="John Dee" signature="[Qvi[v]]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="acutissimo ingegno" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Acutissimu[m] Ingenium</marginalia_text>
+                </position>
+            </language>
+            <translation>A very sharp wit.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="un fra Roman" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Fryre Roma[n]</marginalia_text>
+                    <person name="Ramon Pane"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="le fauole" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Fables.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="certo natural rispetto" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lex Natura[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>The law of Nature.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="che cosa credono" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; se san doue uadano dopo morti" type="straight"/>
+        <underline language="IT" method="pen" text="huomo di età, &amp; di gran sapere, &amp; di acutissimo ingegno : &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="nel suo" type="double"/>
+        <underline language="IT" method="pen" text="ritrouare i lor padri" type="straight"/>
+        <underline language="IT" method="pen" text="antecessori" type="straight"/>
+        <underline language="IT" method="pen" text="seguente scrittura" type="straight"/>
+        <underline language="IT" method="pen" text="commandai ad un fra Roman" type="straight"/>
+        <underline language="IT" method="pen" text="la loro lingua" type="straight"/>
+        <underline language="IT" method="pen" text="le antichità" type="straight"/>
+        <underline language="IT" method="pen" text="le fauole" type="double"/>
+        <underline language="IT" method="pen" text="se non che ciascun di loro ha certo natural rispetto al futuro" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; tiene l'immortalità delle anime nostre" type="straight"/>
+        <underline language="IT" method="pen" text="huomo che sà la lor lingua" type="straight"/>
+        
+        <numeral language="IT" place="left_margin" text="Alcuni ancora">7</numeral>
+        
+    </annotation>
+    
+</transcription>

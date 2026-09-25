@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>University of Chicago 1380, Chicago, IL. Paris, fin XIVe siècle</p>
+        </note>
+        <note rend="INFORMATIONS BASIQUES">
+          <p>Parchemin, 265 x 180 mm, 171 feuillets (et 10 feuillets papier dans une fascicule supplémentaire)</p>
+        </note>
+        <note rend="MATERIEL">
+          <p><material>Parchemin</material> un peu creusé et souillé, mais en bon état. Réparition d'un coin manquant au f. 6.</p>
+        </note>
+        <note rend="CAHIERS">
+          <list>
+            <head>Collation:</head>
+            <item n="I"><locus from="1" to="6">1-6</locus> (Il manque 2 feuillets entre ff. 3 et 4 (c'est-à-dire le bifeuillet médian) ; Lecoy vv. 377-617)
+                  </item>
+            <item n="II"><locus from="7" to="12">7-12</locus> (Il manque un feuillet après f. 6 et un autre autre après f. 11 ; Lecoy 1017-1133 et 1815-1944)
+                  </item>
+            <item n="III">
+              <locus from="13" to="20">13-20</locus>
+            </item>
+            <item n="IV">
+              <locus from="28" to="21">21-28</locus>
+            </item>
+            <item n="V">
+              <locus from="29" to="36">29-36</locus>
+            </item>
+            <item n="VI">
+              <locus from="37" to="44">37-44</locus>
+            </item>
+            <item n="VII">
+              <locus from="45" to="52">45-52</locus>
+            </item>
+            <item n="VIII">
+              <locus from="53" to="60">53-60</locus>
+            </item>
+            <item n="IX">
+              <locus from="61" to="68">61-68</locus>
+            </item>
+            <item n="X"><locus from="69" to="75">69-75</locus>(Il manque un feuillet après f. 68 ; Lecoy vv. 10592-10718)</item>
+            <item n="XI">
+              <locus from="76" to="83">76-83</locus>
+            </item>
+            <item n="XII">
+              <locus from="84" to="91">84-91</locus>
+            </item>
+            <item n="XIII">
+              <locus from="92" to="99">92-99</locus>
+            </item>
+            <item n="XIV">
+              <locus from="100" to="107">100-107</locus>
+            </item>
+            <item n="XV">
+              <locus from="108" to="115">108-115</locus>
+            </item>
+            <item n="XVI">
+              <locus from="116" to="123">116-123</locus>
+            </item>
+            <item n="XVII">
+              <locus from="124" to="131">124-131</locus>
+            </item>
+            <item n="XVIII">
+              <locus from="132" to="139">132-139</locus>
+            </item>
+            <item n="XIX">
+              <locus from="140" to="147">140-147</locus>
+            </item>
+            <item n="XX">
+              <locus from="148" to="155">148-155</locus>
+            </item>
+            <item n="XXI">
+              <locus from="156" to="163">156-163</locus>
+            </item>
+            <item n="XXII"><locus from="164" to="169">164-169</locus> (cahier de six feuillets)
+                  </item>
+            <item n="XXIII"><locus from="170" to="171">170-171</locus>(bifeuillet indépendant)*</item>
+            <item>(Paper Booklet)</item>
+            <item n="XXIV">
+              <locus from="172" to="179">172-179</locus>
+            </item>
+            <item n="XXV">
+              <locus from="180" to="181">180-181 (bifeuillet indépendant)</locus>
+            </item>
+          </list>
+          <p>* Le cahier de six feuillets et un bifeuillet dans les cahiers XXII-XXIII sont hors norme, remontant peut-être à l'occasion de la rereliure du livre en 1907. L'évidence est très difficile à voir, et il est possible que ces deux ensemble constituent un cahier de huit.</p>
+          <p>v+171+10+v. Quelques signatures survivent aux cahiers II-IV, et des réclames aux feuillets <locus>12v</locus>, <locus>20v</locus>, et <locus>28v</locus>. La foliation moderne, au coin supérieur droit des recto, en encre, est correcte. Une pagination antérieure en crayon, le plus visible dans la fascicule papier, reste, largement effacée.</p>
+        </note>
+        <note rend="MISE-EN-PAGE">
+          <p>Réglé en hématite. Quelques piqûres restent visibles au long du bord inférieur du manuscrit, surtout au cahier VI, mais la plupart en ont été abattues. Ff. <locus from="1" to="141">1r-141r</locus>, c'est-à-dire le <hi rend="italics">Roman de la Rose</hi>, réglé pour deux colonnes de 39 lignes chacune. Trois lignes rectrices majeures, une en haut et deux (rapprochées l'une de l'autre) en bas. Six lignes majeures verticales, bordant des deux côtés chacune des colonnes et une autre pour marquer la première lettre de chaque ligne. Le Testament, ff. 142r-170r, q reglé du même nombre et emplacement des lignes rectrices majeures horizontales, mais pour une seule corps du texte de 39 lignes, avec quatre lignes majeures verticales, une bordant chaque côté du corps de la page et deux à la droit de chaque initiale. F. 170v, comprenant la fin du <hi rend="italics">Codicille</hi>, reglé comme 1r-141r mais pour 38 lignes. Fascicule papier, ff. 172-181, réglé simplement d'une seule ligne verticale de chaque bord du corps de la page. Ff. 1-170, corps de la page 215 x 150 mm; pour le <hi rend="italcs">Roman de la Rose</hi> chaque colonne 65 mm de largeur. La taille du corps de la page varie dans la fascicule papier ; elle est en moyenne 230 x 100 mm.</p>
+        </note>
+        <note rend="ECRITURE">
+          <p>Un scribe, écrivant en textualis, ff. 1-141. La fascicule papier comprend deux mains cursives du fin XVIe ou début XVIIe siècle. 
+			   Une variété de corrections se trouvent partout, en érasant ou en surchargeant le texte (de nombreux exemples <locus from="116" to="118">116v-118r</locus>) 
+			   ou bien en le barrant (e.g. <locus>63r</locus>, <locus>125r</locus>). De nombreux exemples de vers (e.g. <locus>32v</locus>) 
+			   et de couplets (e.g. <locus>36r</locus>) rajoutés après-coup par plusieurs mains. On a ajouté aussi du texte dans une colonne 
+			   étendue au f. <locus>65r</locus> et dans les marges inférieures de <locus from="100" to="101">100v-101r</locus>, mais la plupart de ce dernier est perdu à cause de l'abattement. Des vers que des lecteurs ultérieurs ont trouvés hors de série sont marqués “a” et “b” pour indiquer l'ordre correcte (par exemple <locus>38r</locus>, <locus>60v</locus>).</p>
+        </note>
+        <note rend="DECORATION">
+          <p>De nombreux rubriques partout. Sinon ornamentée, l'initiale de chaque vers est touchée de jaune, maintenant passé – voir par exemple <locus from="61" to="62">61v-62r</locus>, où c'est encore visible. Une initiale six lignes de hauteur ornamentée de vignes au feuillet <locus>1r</locus>; lettre bleu tracée de blanc et d'or, vignes bleues et rouges. Des initiales de deux lignes de hauteur partout, alternant entre initiales dorées filigranées de bleu et initiales bleues filigranées de rouge. Une seule initiale historiée, 10 lignes de hauteur, à la tête du <hi rend="italics">Testament</hi>. Bordures aux feuillets <hi>1r</hi> et <hi>142r</hi> – bordures dorées, rouges et bleues avec vignes et boutons des mêmes couleurs.</p>
+        </note>
+        <note rend="RELIURE">
+          <p>Relié en 1907 par Katharine Adams à Broadway, Worcestershire. Reliure 275 mm de hauteur, 215 mm du centre de l'échine à la gouttière. Fait de cuir rouge, probablement de la basane (bien que l'inscription de la garde volante de Cockerell l'identifie comme peau de truie), sur carton. Cinq nerfs apparents à l'échine. Tranchefiles de fil vert, probablement le même fil visible au centre des cahiers. La couverture devant et l'échine n'ont d'autre décor que des titres en lettres poussées. La couverture et les bords ne sont pas ornés. Il y a un seul filet d'or bordant les contre-gardes devant et finale. Le grand manuscrit et la fascicule ont les tranches dorées, mais ce sont décolorées, de toute évidence antérieures à la reliure de 1907.</p>
+          <p>Centé 25mm en dessous du bord supérieur de la couverture devant : “LE ROMAN DELA ROSE / TESTAMENT ET CODICILE / DE JEHAN DE MEUN” Centré 65mm au dessus du bord inférieur de la couverture devant : “PARISIAN MS CIR. MCCCLXV” Centré en haut du dos : “LE / ROMAN / DELA / ROSE” Centré au bord inférieur du dos : “C.MCCCLXV” Ces titres sont tous en lettres poussées. Signé par le relieur au coin gauche inférieur du rempli final, initiales poussées “K A” d'une estampille. Au dessus, écrit de la main de Cockerell : “Bound by Katharine Adams of Broadway Worcestershire 1907”. Il y a une contre-garde parchemin devant et une à la fin et cinq gardes-volantes de chaque côté.</p>
+        </note>
+        <note rend="HISTOIRE"><p>(Beaucoup des inscriptions sont passées, dans lesquels cas nous avons consulté les transcriptions de Langlois dans <hi rend="italics">Les Manuscrits</hi>, pp. 152-53.)</p><p>1. Petro Gendron</p><p>Au feuillet <locus>171v</locus>: “Romanus iste Rosse pertinet Petro Gendron ex oppido Cintrey. Ille aut illa quis inveniat reddat sibi et ipse solvet vinum. P. Gerdon” Dans cette inscription, “Petro Gendron” est barré et "Bertrando Garnier" écrit au dessus. En bas du feuillet <locus>168v</locus>: “Dieu doint bonne vie a Perres Gendron qui est de grant . . .”, “qui est de grant . . .” ayant été éffacé.</p><p>2. J. Gendron</p><p>Au feuillet <locus>171r</locus>: “Le dimanche de Pasques flouris, en l'an mile ci[edge cropped] et seix, Jehanne Laberte s'en alla et print cong[edge cropped] paya de sa main.” En dessous se trouve la signature “J. Gendron”. Au même feuillet se lisent les vers suivants :</p><p>Versus<lb/>
+                  Putain bien veytue<lb/>
+                  Souvent sort En rue<lb/>
+                  Pour son corps mo[n]trer<lb/>
+                  A putain ne chaud<lb/>
+                  Qui seus son cul sauld<lb/>
+                  Mes q[ui]lait monnoye<lb/>
+                  A cul de putain<lb/>
+                  Metez i la main<lb/>
+                  Et vo[us] trouvez merde
+               </p><p>En dessous, la signature ““J. Gendron”</p><p>Au feuillet <locus>171v</locus>: “Le xxieme Jors de decembre lan mil cincq cens et deulx, Il fut enterré ugne femme de g[ra]nt saigesse qui e nommee Jeha[n]ne Letexier oprion touz dieu debo[n]ayre qui li plaisse luy pardonez toutez ces fautez et cest pechiez”. En dessous est écrit “Jehan Gendron, filz de sa fille agnee, fait cessi de dieu”.</p><p>3. Bertran Garnier</p><p>Au feuillet <locus>141v</locus>: “Bertran Garnier a qui je suys après la mort de dom Jehan Garnier q[ue] decebda en lan mil cinq cents”. En dessous, la signature “B. Garnier”. En bas du même feuillet est écrit : Je prye a dieu le roy puissant q[ue] luy plaisse si bien conduire Perres Garnier en revenant”</p><p>Au feuillet <locus>168v</locus> la signature “B. Garnier” se trouve en dessous des vers suivants :</p><p>Le 15 jour daoust<lb/>
+                     1551
+                  </p><p>Ce q[ue] me faut cy lire<lb/>
+                  et tant y ennuyer<lb/>
+                  cest pour ester deliver<lb/>
+                  damours et levyter
+               </p><p>Au feuillet <locus>170v</locus> a la fin du “Codicille,” la signature “B. Garnier” se trouve en dessous des vers suivants :</p><p>Le 19 jour daoust 1551</p><p>Jay cy tant leu et veu le estes<lb/>
+                  Que damours je suys delivré<lb/>
+                  Et pour myeulx faire ses prestre<lb/>
+                  Sil playst a dieu que j'ay pryé
+               </p><p>Au feuillet 171r : “Bertan Garnier”</p><p>4. A la fin de la fascicule paper, au f. <locus>181r</locus>, il y des armes portant une corne de chasse, et à droite des armes la devise “SECRE E LOYAL” (Langlois la transcrit comme “SECRE F LOYAL", ajoutant que le F est probablement un E malformé). Les armes en bas du f. <locus>1r</locus> pourraient être les mêmes que celles de <locus>181r</locus> ; elles portent aussi une corne de chasse et semblent être plus récentes que les autres décorations du <hi rend="italics">Roman de la Rose</hi>. Des vignes ont été érasées pour accommoder les armes. Langlois note que la devise “Secret et Loyal” est adopté par deux familles, les Cabilliau de Brabant les Butkens de Belgique, mais que les armes n'appartiennent ni à l'une ni à l'autre (p. 153 n. 2).</p><p>5. Thomas Crofts</p><p>Une note de la main de Cockerell sur la première garde volante dit que le manuscrit était “Part of lot 8299 in the sale by Paterson of King St. Covent Garden of the Library of Thomas Crofts, M.A., Chancellor of the Diocese of Peterborough, April-May 1783”.</p><p>6. Sydney Cockerell</p><p>Acheté le 16 mars, 1907 par Sydney Cockerell. Son inscription sur la première garde volante :</p><p>“I bought this book at Sotheby's. The name of the owner did not appear but Dr Warner tells me that he was a Captain Douglas, and that he brought the book to show him at the British Museum. It was rebound for me by Miss Adams of Broadway in red pigskin. It had no cover when I bought it, Mar 16, 1907, lot 382. </p><p>The date is about 1365, the date of the Coronation book of Charles V, Tiber. B. viii, in which, as well as in Mr Yates Thompson’s Vincent of Beauvais of Jean Duke of Berry (vol 1), sleeves with long pendant lappets may be seen. The miniatures in this MS are perhaps by the same hand as those in the second part of an Historic Universelle, no. 61 in Vol VI of the Firmin-Didot Catalogue, in which four miniatures are reproduced.”</p><p>Sur la même garde volante est inscrit aussi “Sydney C. Cockerell / Richmond Surrey / Mar. 16, 1907”.</p><p>Sur la garde devant, de la main de Cockerell : “This manuscript is described by Prof. Ernest Langlois in his “Les manuscrits de Roman de la Rose” (Lille, 1910) pp. 152-4, 253-4, 422 &amp;c.” </p>
+               7. Cockerell a vendu le manuscrit à Pierre Berès le 18 février, 1957.
+               <p>8. Pierre Berès l'a vendu en 1958 à Gérard de Berny, dont l'ex-libris se trouve sur la garde devant.</p>
+               
+               <p>De plus, on trouve les noms “Roullet” et "Macé Bancheu” au f. 141r, et “Jehanne le???...” en haut du f. <locus>146v</locus>, ce dernier ayant été abbatu.</p>
+               
+               <p>Ecrit en crayon, au coin gauche supérieur du contre-plat : “8265” En crayon sur la première garde volante près de l'intérieur : “97/16”</p>
+             
+            
+            </note>
+        <note rend="TEXTE">
+          <p>1. <hi rend="italics">Roman de la Rose</hi>, Guillaume de Lorris et Jean de Meun, fols. <locus from="1" to="141">1r-141r</locus>
+                  <lb/>
+                  2. <hi rend="italics">Testament</hi>, Jean de Meun, <locus from="142" to="170">142r-170r</locus>
+                  <lb/>
+                  3. “Le Codicille,” Jean de Meun, <locus from="170" to="170">170r-170v</locus>
+                  <lb/>
+                  4. Poème du XVIIe siècle sur l'alchémie, <locus from="172" to="181">172r-181r</locus>
+               
+               </p>
+          <p><hi rend="italics">Le Roman de la Rose</hi> a des lacunes aux vers Lecoy 377-617, 1017-1133, 1815-1944, et 10592-10718 à cause des feuillets perdus (voir la collation ci-dessus)</p>
+          <p>Ce manuscrit était autrefois relié avec <hi rend="italics">Le Jeu des échecs moralisé</hi> (University of Chicago 392), mais en 1907 Cockerell les ont faits relier séparément, aux reliures identiques, par Katharine Adams. L'Université de Chicago a acheté <hi rend="italics">Le Jeu des échecs moralisé</hi> en 1931 ; les deux manuscrits se sont réunis quand l'Université a aquis celui du <hi rend="italics">Roman de la Rose</hi> en 2007.</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscrit</note>
+          <note type="commonName">UC 1380</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="171" unit="folios">171 feuillets (10 feuillets supplémentaires dans une deuxième fascicule)</measure>
+            <dimensions>
+              <height unit="mm">265</height>
+              <width unit="mm">180</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">42</note>
+          <note type="material">parchment</note>
+          <pubPlace>Paris, France</pubPlace>
+          <date notAfter="1400" notBefore="1375">14e siècle</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Chicago</settlement>
+            <repository>Université de Chicago</repository>
+            <idno>MS 1380</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="141r">1-141r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">141</note>
+              <note type="illustrations">41</note>
+              <note type="linesPerColumn">39</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="142r" to="170r">142r-170r</locus>
+              <title>Testament</title>
+              <note type="textid">testament</note>
+              <note type="folios">29</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">39</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="170r" to="170v">170r-170v</locus>
+              <title>Codicille</title>
+              <note type="textid">codicille</note>
+              <note type="folios">1</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">39</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="4">
+              <locus from="172r" to="181r">172r-181r</locus>
+              <title>Poème sur l'alchimie</title>
+              <note type="textid"/>
+              <note type="folios">10</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">30</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

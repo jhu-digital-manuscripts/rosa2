@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.126v.tif" pagination="252" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="semel hoc intuendum negemus, quia non quisquis causam faciendi sceleris habuit, &amp;fecerit." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Accusatori est vtile argume[n]ta congerere.</marginalia_text>
+                </position>
+            </language>
+            <translation>It is useful for the prosecutor to compile arguments.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quomodo refutari debeat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Refutandi r[ati]o</marginalia_text>
+                </position>
+            </language>
+            <translation>Repressed reason.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Clunetio Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Clue[n]tio</marginalia_text>
+                    <book title="Pro Cluentio"/>
+                </position>
+            </language>
+            <translation>Pro Cluentio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="contrarium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A contrarijs.</marginalia_text>
+                </position>
+            </language>
+            <translation>Contradictory.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Rabirium " hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro rabirio</marginalia_text>
+                    <book title="Pro Rabirio Posthumo"/>
+                </position>
+            </language>
+            <translation>Pro Rabirio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ligarium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Ligario</marginalia_text>
+                    <book title="Pro Ligario"/>
+                </position>
+            </language>
+            <translation>Pro Ligario.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="negemus, quia non quisquis causam faciendi sceleris habuit, &amp; fecerit." type="straight"/>
+        <underline language="LA" method="pen" text="negat eodem die mortuu[m]. Palàm etiam contraria &amp; superuacua" type="straight"/>
+        <underline language="LA" method="pen" text="Caetera quae proponuntur, communes locos habent" type="straight"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">.5.</numeral>
+        <numeral place="left_margin">.6.</numeral>
+        <numeral place="left_margin">7</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

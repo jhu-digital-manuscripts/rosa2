@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.231r.tif" pagination="231" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="le Canoe" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The Canoa</marginalia_text>
+                    <location name="Canoa"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="MDIII" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1503</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+    
+        <marginalia anchor_text="CLL leghe lontano" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>250 leagues</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Bartolomeo Fiesco, gentilhuomo Genouese" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Bartolomeo Fiesco Genouese</marginalia_text>
+                    <person name="Bartolomeo Fiesco"/>
+                    <location name="Genoa"/>
+                </position>
+            </language>
+            <translation>Bartolomeo Fiesco, a Genoese.</translation>
+        </marginalia>
+            
+        <underline language="IT" method="pen" text="le Canoe" type="straight"/>
+        <underline language="IT" method="pen" text="come era forza che" type="straight"/>
+        <underline language="IT" method="pen" text="vn palmo" type="double"/>
+        <underline language="IT" method="pen" text="Diego Mendez" type="straight"/>
+        <underline language="IT" method="pen" text="i quali vogassero" type="straight"/>
+        <underline language="IT" method="pen" text="Bartolomeo" type="straight"/>
+        <underline language="IT" method="pen" text="CCL leghe lontano" type="straight"/>
+    
+    </annotation>
+</transcription>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.025v.tif" reader="John Dee" signature="[G[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>No[ta]</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Medecina corpus, incantatione anima adiuuetur" hand="English_secretary" id="RCP9978:058:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Medicina corpus, Inca[n]tatione a[n]i[m]a san[itas]</marginalia_text>
+                </position>
+            </language>
+            <translation>With medicine the health of the body, with incantation the health of the soul.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ventris solutione" type="straight"/>
+        <underline language="LA" method="pen" text="constipatione" type="straight"/>
+        <underline language="LA" method="pen" text="nimia defectione" type="straight"/>
+        <underline language="LA" method="pen" text="secundum interpretationem" type="straight"/>
+        <underline language="LA" method="pen" text="secundum timoris" type="straight"/>
+        <underline language="LA" method="pen" text="secundum desperatione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Intellectus &amp; scientia in anima ex complexione augmentatur cholerica" type="straight"/>
+        <underline language="LA" method="pen" text="melancholia" type="straight"/>
+        <underline language="LA" method="pen" text="Deambulatio uero &amp; delectatio" type="straight"/>
+        <underline language="LA" method="pen" text="iuuerit incantationae" type="straight"/>
+        <underline language="LA" method="pen" text="adiuratione" type="straight"/>
+        <underline language="LA" method="pen" text="siue colli" type="straight"/>
+        <underline language="LA" method="pen" text="cum Medicina corpus" type="straight"/>
+        <underline language="LA" method="pen" text="incantatione" type="straight"/>
+        <underline id="RCP9978:058:u0001" language="LA" method="pen" text="Quibus coniunctis necesse est sanitatem" type="straight"/>
+                
+        <symbol language="LA" name="Mars" place="left_margin" text="cholerica"/>             <!-- DO: There is another mark next to these symbols, possibly a hash mark, that has been partly cut off --> 
+        <!-- FSF: I would link them to the tempraments here (cholerica, melancholica, sanguinea); see also the table in the (German) wikipedia (English doesn't have the table, the names of the planets are the same) https://de.wikipedia.org/wiki/Temperamentenlehre -->
+        <symbol language="LA" name="Saturn" place="left_margin" text="melancholica"/>
+        <symbol language="LA" name="Jupiter" place="left_margin" text="sanguinea"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+       
+        <physical_link>
+            <marginal_annotation idref="RCP9978:058:m0001"/>
+            <marginal_annotation idref="RCP9978:058:u0001"/>
+            <relation from="RCP9978:058:u0001" to="RCP9978:058:m0001" type="directed"/>
+        </physical_link>
+         
+    </annotation>
+</transcription>

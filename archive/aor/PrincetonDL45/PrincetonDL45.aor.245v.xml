@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.245v.tif" pagination="490" reader="Harvey" signature="[TTi[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Casus quasi omniu[m] legu[m] imunicipalibus co[m]prehensus." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Casus quasi omniu[m] legu[m] i[n] municipalibus co[m]prehensus." type="straight"/>
+        <underline language="LA" method="pen" text="tamen mortis extraordinaria" type="straight"/>
+        <underline language="LA" method="pen" text="qualia sunt stellionatus" type="straight"/>
+        <underline language="LA" method="pen" text="non inquirunt" type="straight"/>
+        <underline language="LA" method="pen" text="crudelibus" type="straight"/>
+        <underline language="LA" method="pen" text="ea sufficere omnia" type="straight"/>
+        <underline language="LA" method="pen" text="in suis municipalibus maiorum prudenti" type="straight"/>
+        <underline language="LA" method="pen" text="censura conscripta leguntur, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="Nec casus in toto corpore Iuris ciuilis insertus est" type="straight"/>
+        <underline language="LA" method="pen" text="cuius compendiosam in eisdem suis municipalibus non habeant resolutionem." type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="Casus quasi omniu[m] legu[m] i[n] municipalibus co[m]prehensus."/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Nec casus in toto corpore Iuris ciuilis insertus est"/>
+
+    </annotation>
+</transcription>

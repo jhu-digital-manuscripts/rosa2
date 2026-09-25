@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.297v.tif" pagination="574" reader="John Dee" signature="[nnn.vii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="disperditionem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>disperditio</marginalia_text>
+                </position>
+            </language>
+            <translation>Ruin.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Concordia</marginalia_text>
+                </position>
+            </language>
+            <translation>Harmony.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="neque diurnum, neque nocturnum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>temp[us] diurnu[m] nocturnum</marginalia_text>
+                </position>
+            </language>
+            <translation>Daily and nightly time.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>demosthe</marginalia_text> <!--JG: Not sure--> <!-- FSF: no idea either -->
+                </position>
+            </language>
+            <translation/>
+        </marginalia> 
+        
+        <marginalia anchor_text="fatum extremum Reipulicae venit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fatu[m] extremu[m] venire</marginalia_text>
+                </position>
+            </language>
+            <translation>The ultimate fate comes.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="seruitute" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Seruitus</marginalia_text>
+                </position>
+            </language>
+            <translation>Servitude.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="fatum extremum Reipulicae venit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>detestabiliu[s] fo[e]dius</marginalia_text>
+                </position>
+            </language>
+            <translation>More detestable, more foul.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="domesticum mercatum" type="straight"/>
+        <underline language="LA" method="pen" text="ad decus &amp; libertatem nati sumus. aut haec teneamus aut cu[m]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        
+        <drawing anchor_text="disperditio" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Concordia" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

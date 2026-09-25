@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.217r.tif" pagination="425" reader="John Dee" signature="Nn iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Palumbo cuidam, presbytero suburbano" hand="Italian" id="RCP10653:449:m0001">  
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Palumbus presbyter.
+                    </marginalia_text>
+                    <person name="Palumbus"/> <!--JG: See, e.g. https://books.google.co.uk/books?id=rTpLAwAAQBAJ&pg=PA233&lpg=PA233&dq=priest+palumbus&source=bl&ots=rDh-3vvmSy&sig=cRIjrfEkskVu3X2Von64fL2vJBA&hl=en&sa=X&ved=0ahUKEwiKqJ7KvO3WAhWJPxoKHSfLCNEQ6AEISDAM#v=onepage&q=priest%20palumbus&f=false-->
+                </position>
+            </language>
+            <translation>
+                Palumbus, the priest. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nebulosum sensit" type="double"/>
+        <underline language="LA" method="pen" text="densum inter se &amp; illam volutari, quod" type="double"/>
+        <underline language="LA" method="pen" text="sentiri potuit" type="straight"/>
+        <underline language="LA" method="pen" text="sed non videri" type="double"/>
+        <underline language="LA" method="pen" text="mecum" type="double"/>
+        <underline language="LA" method="pen" text="concumbe, quia" type="triple"/>
+        <underline language="LA" method="pen" text="hodie me disponsasti" type="double"/>
+        <underline language="LA" method="pen" text="Ego sum Venus, cuius digito annulum" type="straight"/>
+        <underline language="LA" method="pen" text="Erat ille nicromanticis artibus" type="straight"/>
+        <underline language="LA" method="pen" text="magicas excitaret figuras" type="straight"/>
+        <underline language="LA" method="pen" text="daemones prouocaret" type="straight"/>
+        <underline language="LA" method="pen" text="ad opus quodlibet agendum stimularet" type="straight"/>
+        <underline language="LA" method="pen" text="Transient enim ibi figurae hominum vtriusque sexus, omnis aetatis, gradus omnis, &amp; conditionis" type="straight"/>
+        <underline language="LA" method="pen" text="Nulli respondebis" type="double"/>
+        <underline language="LA" method="pen" text="&amp; si loquantur tibi. Nam" type="straight"/>
+        <underline language="LA" method="pen" text="cui tacitus epistolam ad legendum tradens, fiet continuò, quod volueris, si constanter tantummodo perseueraueris. Adolescens" type="straight"/>
+        <underline language="LA" method="pen" text="vidit mulierem ornatu meretricio, mulam inequitantem, crinibus solutis humeros velantem, in manibus virgam tenebat auream, qua equitaturam regebat" type="straight"/>
+        <underline language="LA" method="pen" text="quae prae vestium subtilitate" type="straight"/>
+        <underline language="LA" method="pen" text="nuda, gestus exercuit impudicos" type="straight"/>
+        <underline language="LA" method="pen" text="oculos terribiles in iuuenem retorquens" type="straight"/>
+        <underline language="LA" method="pen" text="iuuenis nihil respo[n]dens" type="double"/>
+        <underline language="LA" method="pen" text="Daemon" type="double"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

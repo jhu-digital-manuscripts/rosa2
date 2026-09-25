@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.043r.tif" reader="Harvey" signature="Eiiii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>s[upr]a.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0061" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] above.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="forewarde" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>forewarde.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Philips pollicy,</marginalia_text>
+                    <person name="Philip II of Macedon"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>i[nfr]a, c. 8.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0134" text="c. 8"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Philips pollicy, [see] below, chapter 8.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>middlewarde.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="couer theyr helmettes" type="straight"/>
+        <underline language="EN" method="pen" text="forth on horsebacke" type="straight"/>
+        <underline language="EN" method="pen" text="before the fotemen" type="straight"/>
+        <underline language="EN" method="pen" text="shoulde gyue backe" type="straight"/>
+        <underline language="EN" method="pen" text="fote men" type="straight"/>
+        <underline language="EN" method="pen" text="flee out" type="straight"/>
+        <underline language="EN" method="pen" text="the battayle" type="straight"/>
+        <underline language="EN" method="pen" text="the fote men appered" type="straight"/>
+        <underline language="EN" method="pen" text="inclosyng his" type="straight"/>
+        <underline language="EN" method="pen" text="whan Anniball in Aphrike" type="straight"/>
+        <underline language="EN" method="pen" text="straungers not" type="straight"/>
+        <underline language="EN" method="pen" text="also of Italye" type="straight"/>
+        <underline language="EN" method="pen" text="to . lxxx. elephantes" type="straight"/>
+        <underline language="EN" method="pen" text="hadde" type="straight"/>
+        <underline language="EN" method="pen" text="in the forewarde" type="straight"/>
+        <underline language="EN" method="pen" text="trouble and breake" type="straight"/>
+        <underline language="EN" method="pen" text="the arraye of his" type="straight"/>
+        <underline language="EN" method="pen" text="frenchemen" type="straight"/>
+        <underline language="EN" method="pen" text="Genowayes" type="straight"/>
+        <underline language="EN" method="pen" text="Baliares" type="straight"/>
+        <underline language="EN" method="pen" text="Mauritans" type="straight"/>
+        <underline language="EN" method="pen" text="intent they shuld not flee" type="straight"/>
+        <underline language="EN" method="pen" text="the Penians beinge at theyr backes" type="straight"/>
+        <underline language="EN" method="pen" text="none other hurte" type="straight"/>
+        <underline language="EN" method="pen" text="shulde wery theym" type="straight"/>
+        <underline language="EN" method="pen" text="owne and the" type="straight"/>
+        <underline language="EN" method="pen" text="Macedons, freshe &amp; lusty" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="the arraye of his"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--under s[upr]a-->
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="fote men"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="inclosyng his"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/> <!--him, for-->
+        <mark method="pen" name="bracket" place="intext"/> <!--: next-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="forewarde"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="breake"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="wery them"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="Macedons, freshe &amp; lusty"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Christine de Pizan</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+        
+         <sourceDesc> 
+            
+            <bibl>
+               <note type="format">manuscript</note>
+               <note type="commonName">Français 5037</note>
+               <title>Christine de Pizan</title>
+
+               <extent>
+                  <measure quantity="313" unit="folios">313</measure>
+                  <dimensions>
+                     
+                     <height unit="mm"></height>
+                     <width unit="mm"></width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">0</note>
+               
+               <note type="material">paper</note>
+               
+               <pubPlace>France</pubPlace>
+               
+               <date notBefore="1401" notAfter="1500">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>fr. 5037</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="305r">1r-305r</locus>
+                     <title>Recueil d'oeuvres historiques, concernant les règnes de Charles VII et de Louis XI, et d'oeuvres littéraires émanées de Christine de Pisan et de Boccace</title>
+                     <note type="textid">Recueil d'oeuvres historiques, concernant les règnes de Charles VII et de Louis XI, et d'oeuvres littéraires émanées de Christine de Pisan et de Boccace</note>
+                     <note type="folios">305</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">50</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem><msItem n="2">
+                     <locus from="1r" to="41v">1r-41v</locus>
+                     <title>Le Livre de Jean, duc de Bretagne, par Guillaume de Saint-Andre</title>
+                     <note type="textid">Le Livre de Jean, duc de Bretagne, par Guillaume de Saint-Andre</note>
+                     <note type="folios">41</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">33</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="3">
+                     <locus from="43r" to="43v">43r-43v</locus>
+                     <title>Chronique d'Arthur III, duc de Bretagne, par Guillaume Gruel</title>
+                     <note type="textid">Chronique d'Arthur III, duc de Bretagne, par Guillaume Gruel</note>
+                     <note type="folios">1</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">33</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem><msItem n="4">
+                     <locus from="45r" to="119v">45r-119v</locus>
+                     <title>Copie des lettres du roy de France [CHARLES VII], envoiés au duc Franczoys [I er ] de Bretaigne, touchant la prinse de Fougières par les Anglois ». Rasilli, 3 juin 1449</title>
+                     <note type="textid">Copie des lettres du roy de France [CHARLES VII], envoiés au duc Franczoys [I er ] de Bretaigne, touchant la prinse de Fougières par les Anglois ». Rasilli, 3 juin 1449</note>
+                     <note type="folios">74</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">41</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem><msItem n="5">
+                     <locus from="123r" to="160v">123r-160v</locus>
+                     <title>Copie des lettres entre le duc FRANCZOIS [I er ] et les ... ambasseurs » du roi de France. Rennes, 16 juin 1449.</title>
+                     <note type="textid">Copie des lettres entre le duc FRANCZOIS [I er ] et les ... ambasseurs » du roi de France. Rennes, 16 juin 1449.</note>
+                     <note type="folios">37</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">36</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem><msItem n="6">
+                     <locus from="162r" to="221r">162r-221r</locus>
+                     <title>Unknown</title>
+                     <note type="textid"></note>
+                     <note type="folios">59</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">32</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem>
+                  <msItem n="6">
+                     <locus from="223r" to="305r">223r-305r</locus>
+                     <title>Unknown</title>
+                     <note type="textid"></note>
+                     <note type="folios">82</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">32</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

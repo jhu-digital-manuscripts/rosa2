@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonK6233.015v.tif" reader="Harvey" signature="β7v"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Έκλεκτικὴ, 
+                    </marginalia_text>
+                </position>
+            </language> 
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        apud Laertium.
+                    </marginalia_text>
+                    <person name="Diogenes Laertius"/>
+                    <book title="Lives and Opinions of Eminent Philosophers"/>
+                </position>
+            </language>
+            <translation>
+                Eclectic, in Diogenes Laertius.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Eκλεκτίκὴ.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Eclectic.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Is verè Sapiens, qui Vtilia, no qui multa scit. E gra[e]co Æschyli.
+                        Apollinis Oraculu[m] jubet, Ex omnibus optima eligere: et Vetus Sapientia, tota erat Gnomica, et Aphoristica.
+                    </marginalia_text>
+                    <person name="Aeschylus"/>
+                    <person name="Apollo"/>
+                </position>
+            </language>
+            <translation>
+                The wise man is he who knows useful things, rather than many things. From the Greek of Aeschylus.
+                He orders the oracle of Apollo to choose the best of all things. And old wisdom was wholly gnomic and aphoristic.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="[pri]mis legum" type="straight"/>
+        <underline language="LA" method="pen" text="arcana eorum properant" type="straight"/>
+        <underline language="LA" method="pen" text="Imbecillitas humana naturaliter" type="straight"/>
+        <underline language="LA" method="pen" text="Omnium habere memoriam" type="straight"/>
+        <underline language="LA" method="pen" text="nullo peccare" type="straight"/>
+        <underline language="LA" method="pen" text="diuinitas magis" type="straight"/>
+        <underline language="LA" method="pen" text="mortalitatis est" type="straight"/>
+        <underline language="LA" method="pen" text="pauca idonea effundere" type="straight"/>
+        <underline language="LA" method="pen" text="multis inutilibus" type="straight"/>
+        <underline language="LA" method="pen" text="homines praegrauare" type="straight"/>
+        <underline language="LA" method="pen" text="Diuinae quidem res" type="straight"/>
+        <underline language="LA" method="pen" text="verò iuris conditio" type="straight"/>
+        <underline language="LA" method="pen" text="infinitum decurrit" type="straight"/>
+        <underline language="LA" method="pen" text="nihil est in ea" type="straight"/>
+        <underline language="LA" method="pen" text="stare perpetuò possit" type="straight"/>
+        <underline language="LA" method="pen" text="Multas enim" type="straight"/>
+        <underline language="LA" method="pen" text="formas" type="straight"/>
+        <underline language="LA" method="pen" text="natura edere deproperat" type="straight"/>
+        <underline language="LA" method="pen" text="quae nouiter contingunt" type="straight"/>
+        <underline language="LA" method="pen" text="emendare" type="straight"/>
+        <underline language="LA" method="pen" text="componere" type="straight"/>
+        <underline language="LA" method="pen" text="modis" type="straight"/>
+        <underline language="LA" method="pen" text="regulis competentibus" type="straight"/>
+        <underline language="LA" method="pen" text="Augusto concessum" type="straight"/>
+        <underline language="LA" method="pen" text="leges &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="condere" type="straight"/>
+        <underline language="LA" method="pen" text="interpretari" type="straight"/>
+        <underline language="LA" method="pen" text="iudiciali sententia finita" type="straight"/>
+        <underline language="LA" method="pen" text="amicabili pacto sopita" type="straight"/>
+        <underline language="LA" method="pen" text="resuscitanda" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="Imbecillitas humana naturaliter"/>
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Soli Augusto concessum est leges &amp; condere &amp; interpretari"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Omnium habere memoriam"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- memoriam & -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="nullo peccare"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- magis quam -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="mortalitatis est"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="pauca idonea effundere"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="multis inutilibus"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="homines praegrauare"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="verò iuris conditio"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- conditio semper -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="stare perpetuò possit"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="formas"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="natura edere deproperat"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- omnia quae -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="quae nouiter contingunt"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- emendare & -->
+        <mark method="pen" name="comma" place="intext"/> <!-- componere & -->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- condere & -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="interpretari"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="iudiciali sententia finita"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="amicabili pacto sopita"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- sopita, haec -->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="resuscitanda"/>
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+        <mark language="LA" method="pen" name="horizontal_bar" place="tail" text="sunt"/>
+
+    </annotation>
+</transcription>

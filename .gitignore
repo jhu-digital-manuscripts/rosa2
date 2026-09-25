@@ -2,6 +2,8 @@ target/
 war/
 gwt-unitCache/
 *~
+.jqwik-database
+server.log
 
 # IntelliJ stuff
 .idea/
@@ -12,3 +14,12 @@ gwt-unitCache/
 .project
 .settings
 bin
+
+# Kiro
+.kiro
+
+# local-dev generated files (see local-dev/stop.sh --clean)
+local-dev/site/
+local-dev/opensearch-data/
+local-dev/.state
+local-dev/.server.pid

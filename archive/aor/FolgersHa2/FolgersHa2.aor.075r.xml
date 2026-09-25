@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.075r.tif" reader="Harvey" signature="*3[r]"/>	<!-- ABO 79right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia anchor_text="FolgersHa2" hand="Italian" id="Ha2.075r_0001" marginalia_continues_from="Ha2.074v_0001" marginalia_from_transcription="Ha2.074v.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						[[*2[v]]: Generales Professores, sine speciali praxi, aut certa
+						necessariarum opum prouisione; moriuntur Mendici.
+						Vt non modò Agrippa, et Turnebus, quanti philologi? =] = sed etiam Machiauellus, et Bodinus, quanti Politici?
+						Tanti refert, solidè fundare rem familiarem: et a Teipso
+							<!-- Continues from facing page, head, Ha2.074v -->
+					</marginalia_text>
+					<person name="Machiavelli"/>
+					<person name="Jean Bodin"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						pendere: non ab amicis: qui nulli sunt egentibus.
+						Contemnuntur pauperu[m] dignissimi: a[e]stimantur diuitu[m] indignissimi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				[[*2[v]]: General professors are without any special praxis or any particular foresight for necessary resources; they shall die poor.
+				Is it not the same for Agrippa and Turnebus as philologists?] But even Machiavelli and Bodin, as Politicians?
+				It is of much importance to build a solid foundation for the patrimony of your family and to depend
+				on yourself, not on your friends, who need nothing. The worthiest of the poor are held in contempt,
+				the unworthiest the wealthy are held in esteem.				
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Prouidus est plenus: improuidus extat egenus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who is cautious is plentiful: he who lacks caution stands out as destitute.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Parum habet habilitatis, qui non potest vni abundè prouidere.
+						Quid scit, qui nescit Seipsum adiuuare?
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who cannot fully guard against one thing has too little ability.
+				He who does not know how to help himself, what can he know?
+			</translation>
+		</marginalia>
+		
+		
+		<underline language="IT" method="pen" text="non apparisce cosi à gli occhi d'ognuno" type="straight"/>
+		<underline language="IT" method="pen" text="la gentil sua creanza" type="straight"/>
+		<underline language="IT" method="pen" text="schiettezza dell'animo candido &amp; puro" type="straight"/>
+		<underline language="IT" method="pen" text="l'amoreuolezza verso" type="straight"/>
+		<underline language="IT" method="pen" text="dolcezza del suo procedere con infinita affabilità" type="straight"/>
+		<underline language="IT" method="pen" text="nobili di" type="straight"/>
+		<underline language="IT" method="pen" text="ricchi" type="straight"/>
+		<underline language="IT" method="pen" text="infiniti i capitani" type="straight"/>
+		<underline language="IT" method="pen" text="ma non già" type="straight"/>
+		<underline language="IT" method="pen" text="infiniti i buoni, i sinceri, i magnanimi, i" type="straight"/>
+		<underline language="IT" method="pen" text="i perfetti in" type="straight"/>
+		<underline language="IT" method="pen" text="l'huomo amabile" type="straight"/>
+		<underline language="IT" method="pen" text="il contracambio d'esser, non riuerito" type="straight"/>
+		<underline language="IT" method="pen" text="bene amato che" type="straight"/>
+		<underline language="IT" method="pen" text="per le qualità mie" type="straight"/>
+		<underline language="IT" method="pen" text="vostra pura cortesia" type="straight"/>
+		<underline language="IT" method="pen" text="veramente albergo &amp; ricetto" type="straight"/>
+		
+		<symbol language="IT" name="SS" place="right_margin" text="la gentil sua creanza"/>
+		<symbol language="IT" name="SS" place="right_margin" text="vostra pura cortesia"/>		
+		
+		<mark method="pen" name="equal_sign" place="left_margin"/>
+		
+		<mark method="pen" name="dot" place="intext"/> <!--honorato, nondimeno-->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--no; percioche-->
+		<mark method="pen" name="plus_sign" place="intext"/>
+		<mark method="pen" name="dot" place="intext"/> <!--puro, la-->
+		<mark method="pen" name="dot" place="intext"/> <!--seruidori, a-->
+		<mark method="pen" name="dot" place="intext"/> <!--lode, attento-->
+		<mark method="pen" name="dot" place="intext"/> <!--letterati, ma-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="l'huomo amabile"/>
+		<mark method="pen" name="comma" place="intext"/> <!--amabile, com-->
+		<mark method="pen" name="dot" place="intext"/> <!--questo, &-->
+		<mark method="pen" name="plus_sign" place="intext"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="amato"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="albergo"/>
+		
+    </annotation>
+</transcription>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.064r.tif" pagination="111" reader="John Dee" signature="k 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="cuius genitura sit masculina, cuius'ue foeminina reperitur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Genitura masculina fo[e]minina
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A masculine and feminine constellation.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sunt itaque masculinae partes 197, foeminae uero 163" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>360.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ex iis uero partibus" type="straight"/>
+        <underline language="LA" method="pen" text="197" type="straight"/>
+        <underline language="LA" method="pen" text="163" type="straight"/>
+
+    </annotation>
+</transcription>

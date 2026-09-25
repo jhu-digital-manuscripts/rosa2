@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.100v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        [id est] Wallias, vel Gallias: vide pag. seque[n]ti.
+                    </marginalia_text>
+                    <location name="Gaul"/>
+                </position>
+            </language>
+            <translation>Wallias, or Gaul: see the next pages.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Isembertus Ludouici regis Fra[n]coru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="vltra Sabrinam in Gallias" type="straight"/>
+        <underline language="LA" method="pen" text="cum prius longe posita regna potestati tuae subdideris" type="straight"/>
+        <underline language="LA" method="pen" text="nunc velut bona vinea degenerata" type="straight"/>
+        
+    </annotation>
+</transcription>

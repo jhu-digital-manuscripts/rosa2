@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.215v.tif" pagination="422" reader="John Dee" signature="[Nn[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ranulphus Comes, filius sororis Edmwardi Regis.
+                    </marginalia_text>
+                    <person name="Edward the Confessor"/>
+                    <person name="Goda of England"/>
+                    <person name="Ralph the Timid"/>
+                </position>
+            </language>
+            <translation>
+                Earl Ralph, the son of King Edward's sister.
+            </translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="comes Ranulphus" type="straight"/>
+        <underline language="LA" method="pen" text="nuncijs, inter Haraldum &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="aduersarios discurrentibus" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <errata amendedtext="successione" copytext="successionem" language="LA"/>
+        
+    </annotation>
+</transcription>

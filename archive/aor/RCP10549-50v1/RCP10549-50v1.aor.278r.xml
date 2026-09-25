@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.278r.tif" pagination="535" reader="John Dee" signature="lll.iiii."/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>C Ca[e]saris Laus</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Praise for Julius Caesar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="legibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Leges</marginalia_text>
+                </position>
+            </language>
+            <translation>Laws.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="contemne[n]da morte" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>De co[n]temne[n]da morte</marginalia_text>
+                </position>
+            </language>
+            <translation>On scorning death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fundame[n]ta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>iacere fundame[n]ta</marginalia_text>
+                </position>
+            </language>
+            <translation>To throw away the foundations.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vita" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vita</marginalia_text>
+                </position>
+            </language>
+            <translation>Life.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="imperiu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>mortuus attingit eor[um] fama</marginalia_text> 
+                </position>
+            </language>
+            <translation>Their fame touched the dead.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="incertos" type="straight"/>
+        <underline language="LA" method="pen" text="anima consistere" type="straight"/>
+        <underline language="LA" method="pen" text="perculsa atque prostrata: co[n]stitue[n]da iudicia, reuoca[n]da fides, co[m]prime[n]dae libidines, propaganda soboles:              omnia quae delapsa iam fluxeru[n]t, seueris legibus vincie[n]da sunt" type="straight"/>
+        <underline language="LA" method="pen" text="patriae certe" type="straight"/>
+        <underline language="LA" method="pen" text="Satis te tibi vixisse" type="straight"/>
+        <underline language="LA" method="pen" text="modu[m] tuae vitae, no salute Reip. sed aequitate animi definies?" type="straight"/>
+        <underline language="LA" method="pen" text="quicquid enim est, qua[m]uis amplu[m] sit, id certe paru[m] est tum cum est" type="straight"/>
+        <underline language="LA" method="pen" text="primis co[m]posita, summa tra[n]quilliate &amp; ocio perfruare. tum te, si voles, cu[m] &amp; patriae quod debes,              solueris, &amp; natura[m] ipsam expleueris satietate viuiendi, satis diu vixisse dicito" type="straight"/>
+        <underline language="LA" method="pen" text="Nec verò haec tua vita dice[n]da est, quae corpore" type="straight"/>
+        <underline language="LA" method="pen" text="falso puta[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="obscuratura nulla vnqua[m] sit obliuio" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">18</numeral>
+        
+        <drawing anchor_text="Leges" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Vita" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="primis co[m]posita, summa tra[n]quilliate &amp; ocio perfruare. tum te, si voles, cu[m] &amp; patriae quod debes,              solueris, &amp; natura[m] ipsam expleueris satietate viuiendi, satis diu vixisse dicito" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

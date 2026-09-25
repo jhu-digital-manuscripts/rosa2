@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.224v.tif" pagination="440" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="papa, simulq[ue] fratres cardinales" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota de Papa &amp; Cardinalib[us].  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note about the Pope and the cardinals.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Regnabis ergo tu, progeniesq[ue] tua liberè, centum quinquaginta" type="straight"/>
+        <underline language="LA" method="pen" text="annis" type="straight"/>
+        <underline language="LA" method="pen" text="Domin[us] autem papa, simulq[ue] fratres cardinales vniuersi, cum tota curia Romana, regem Haraldum" type="straight"/>
+        
+    </annotation>
+</transcription>

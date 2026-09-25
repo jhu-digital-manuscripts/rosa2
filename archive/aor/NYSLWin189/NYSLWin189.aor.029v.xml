@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.029v.tif" reader="John Dee" signature="[Hij[v]]"/> 
+    <annotation>
+        <marginalia anchor_text="der simplicibus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Singuloru[m] pra[e]dictorum balneorum virtutes in q[ui]bus herbis vel alijs simplicibus q[uo]da[m] modo inveniantur</marginalia_text>
+                </position>
+            </language>
+            <translation>The virtues of the aforesaid singular baths in which herbs or other simple things may be discovered in a certain way.</translation>
+        </marginalia>
+      
+      <marginalia hand="Italian" method="pen">
+          <language ident="LA">
+              <position book_orientation="0" place="left_margin">
+                  <marginalia_text>
+                      Lexa <!--MB: Uncertainity about the second word - ch??obia]-->
+                  </marginalia_text>
+              </position>
+          </language>
+      </marginalia>
+      
+      <marginalia hand="Italian" method="pen">
+          <language ident="LA">
+            <position book_orientation="0" place="tail">
+                <marginalia_text>
+                    Nota de herbis et Thermis, no[n] semper optates effectus producentibus
+                </marginalia_text>
+            </position>        
+          </language>
+          <translation>Note about the herbs and the baths, not always revealing the desired effects.</translation> 
+      </marginalia>
+        
+        <underline language="DE" method="pen" text="mercken nachuolgend welchen kreureren oder simplicibus sy sich vergleichen" type="straight"/>
+        <underline language="DE" method="pen" text="lua artetica" type="straight"/>
+        <underline language="DE" method="pen" text="artemisia" type="straight"/>
+        <underline language="DE" method="pen" text="Iaffa münchs" type="straight"/>
+        <underline language="DE" method="pen" text="Camomillae" type="straight"/> 
+        <underline language="DE" method="pen" text="abgelöschten kalch" type="double"/>
+        <underline language="LA" method="pen" text="bolo resoluto" type="double"/> 
+        <underline language="DE" method="pen" text="specificiert" type="double"/>
+        <underline language="DE" method="pen" text="hilff" type="double"/>
+        <underline language="DE" method="pen" text="abschlahen" type="straight"/>
+            
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+            
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">6</numeral>
+        <numeral place="left_margin">7</numeral>
+        <numeral place="left_margin">8</numeral>
+        <numeral place="left_margin">9</numeral>
+        
+    </annotation>
+</transcription>

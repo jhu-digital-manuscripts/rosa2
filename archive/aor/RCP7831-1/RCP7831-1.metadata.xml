@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>54</totalPages>
+  <dates>
+    <startDate>1551</startDate>
+    <endDate>1551</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>en</language>
+      <title>Planetologia, rebus astronomicis, medicis et philosophicis erudite referta: ex qua, coelestium corporum cum humanis, et astronomiae cum medicina societas, et harmonia (quam prisci iatromathematiken perapposite nuncuparunt) paucis degustatur, et dilucide aperitur</title>
+      <textId>planetologia</textId>
+      <pages end="54v" start="1r">54</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>Planetologia, rebus astronomicis, medicis et philosophicis erudite referta: ex qua, coelestium corporum cum humanis, et astronomiae cum medicina societas, et harmonia (quam prisci iatromathematiken perapposite nuncuparunt) paucis degustatur, et dilucide aperitur</title>
+      <commonName>Antoine Mizauld, Planetologia (Leiden, 1551)</commonName>
+      <dateLabel>1551</dateLabel>
+      <currentLocation>Royal College of Physicians</currentLocation>
+      <repository>Royal College of Physicians</repository>
+      <shelfmark>7831-1 D1/45-c-20(1)</shelfmark>
+      <author>
+        <name>Mizauld, Antoine</name>
+        <id></id>
+      </author>
+      <reader>
+        <name>John Dee</name>
+        <id>http://www.isni.org/isni/0000000122785193</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Dee-corpus/Mizauld</website>
+      <detail></detail>
+      <note>Bound with two other tracts (not digitized)</note>
+    </bibliography>
+  </bibliographies>
+</book>

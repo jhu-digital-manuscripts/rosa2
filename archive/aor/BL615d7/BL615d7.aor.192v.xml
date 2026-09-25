@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.192v.tif" pagination="[192v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Don Nicolò di Ouando, Commendator di Lares" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>D. Nicolò di Ouando Commindator di Lares</marginalia_text>
+                    <person name="Nicolas de Ovando"/>
+                </position>
+            </language>
+            <translation>Nicolas de Ovando, Commander of Lares. </translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="prigionia no[n] esser proceduta da lor volontà" type="straight"/>
+        <underline language="IT" method="pen" text="fu questa, che deliberarono di mandare vn Gouernatore alla Spagnuola, il quad douesse" type="straight"/>
+        <underline language="IT" method="pen" text="l'Ammiraglio, &amp; i suoi" type="straight"/>
+        <underline language="IT" method="pen" text="Bouadiglia fosse astretto a" type="straight"/>
+        <underline language="IT" method="pen" text="haueau tolto" type="straight"/>
+        <underline language="IT" method="pen" text="dato, che gli" type="straight"/>
+        <underline language="IT" method="pen" text="vn Don Nicolò" type="straight"/>
+        <underline language="IT" method="pen" text="Ouando" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext" text="pien tutto"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        
+    </annotation>
+</transcription>

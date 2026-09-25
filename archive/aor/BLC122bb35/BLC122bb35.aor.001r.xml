@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC122bb35.001r.tif" pagination="1" reader="John Dee" signature="[A[r]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="EUCLIDIS ELEMENTVM" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Megethoscopica Elementa Euclidis</marginalia_text>
+                    <person name="Euclid"/>
+                    <book title="Stoicheia"/>
+                </position>
+            </language>
+            <translation>Euclid's Megethoscopic Elements.</translation> <!-- FSF: to be added; same issue as in c_122_bb_35_fs004r --> <!--JG: Used term 'megethoscopic'-->
+        </marginalia>
+
+    </annotation> 
+</transcription>

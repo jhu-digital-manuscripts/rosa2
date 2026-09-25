@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th99a.001v.tif" pagination="[3]" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>I haue heard sum Cuntry Gentlemen, of good reputation there), feeling A sauoury gain in Tillage, &amp;
+                    Grasing: allege in excuse &amp; defence of there thrifty Husbandry,</marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>that famous saying of A great Gentlema[n], yea an Emperour:</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dulcis Odor Lucri, etia[m] ex Lotio:</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>thinking no Lawful gain, or commodity,</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> contemptible, where [the] following of [the] lesse, was not</marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>otherwise any hinderance to A greater aduantage, or losse of A better opportunity. In w[hi]ch case,
+                    small reckoning ||</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>|| is to be made</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>of so homely &amp; slow</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>thrift, in comparison.</marginalia_text>
+                </position>
+            </language>
+            <translation>Profit smells sweet, even from urine.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>{ Cato; Varro; Columella; Palladius, Heresbachius; De Re Rustica Cum Zuingeri Tabulis.</marginalia_text>
+                    <person name="Cato the Elder"/> <!--JG: Probably him, since he wrote 'De Agri Cultura'-->
+                    <person name="Marcus Terentius Varro"/> <!--JG: He wrote 'Rerum Rusticarum Libri Tres'-->
+                    <person name="Columella"/>
+                    <person name="Palladius"/>
+                    <person name="Konrad Heresbach"/>
+                    <person name="Theodor Zwinger"/>
+                    <book title="De venatione aucupio atque piscatione compendium rei rusticae"/>
+                </position>
+            </language>
+            <translation>Cato the Elder, Marcus Terentius Varro, Columella, Palladius, Konrad Heresbach; 'On rural matter', with Zwingli's tables.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>(Tam Mercurius, quàm Apollo, quasi cognomento dicti Cerdoi.)</marginalia_text>
+                </position>
+            </language>
+            <translation>Both Mercury and Apollo, as if with the surname of the said 'Cerdoi' </translation> <!--JG: Unsure, who's this Cerdoi?-->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>S. Seruatius, praecursor S. Vincentij.</marginalia_text>
+                    <person name="Saint Servatius"/>
+                    <person name="Saint Vincentius"/> <!--JG: Would this be Vincentius Madelgarius?-->
+                </position>
+            </language>
+            <translation>Saint Servatius, Saint Vincent's precursor.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Exstat Hesiodi, ad persen fratre[m], Oeconomicu[m], et Georgicu[m] opus, inscriptu[m],</marginalia_text>
+                    <person name="Hesiod"/>
+                    <book title="Works and Days"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>ἔργα, καὶ ἡμεραὶ:</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>quem Virgilius in suo Georgico opere, sibi proposuit imitandu[m]; fusius tamen explicans, quae Ille breuiùs
+                    esset complexus. { Nam cu[m] omninò quatuor sint pra[e]cipua rustica opera; Aratio; plantatio, seu insitio, gra[e]cè</marginalia_text>
+                    <person name="Virgil"/>
+                    <book title="Georgics"/>
+                    <emphasis method="pen" text="omninò quatuor" type="straight"/>
+                    <emphasis method="pen" text="Aratio" type="straight"/>
+                    <emphasis method="pen" text="plantatio" type="straight"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>φυτουργία;</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>pastio maioru[m], minorumq[ue] pecoru[m] { Equoru[m], Bou[m]. Ouiu[m], capraru[m]. et mellificiu[m]:
+                    ista singula Virgiliùs, singulis Libris prosequitur satis</marginalia_text>
+                    <emphasis method="pen" text="pastio maioru[m]" type="straight"/>
+                    <emphasis method="pen" text="mellificiu[m]" type="straight"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>μεθοδικως.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Eodemq[ue] ferè respicit Xenophontis Oeconomicus, quasi singularis Discursus frugi Oeconomoru[m].
+                    Horu[m] cu[m] Tussero Collatio, nec inutilis erit Oeconomo, nec iniucunda philosopho.</marginalia_text>
+                    <person name="Xenophon"/>
+                    <person name="Thomas Tusser"/>
+                    <book title="Oeconomicus"/>
+                    <book title="Fiue hundred pointes of good husbandrie"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>In corne, &amp; sheppe, cattail, more proffit, lesse pleasure:
+                    In frute, &amp; hoony, more pleasure, lesse proffitt. } Al necessary, &amp; commodious in [their] kind.</marginalia_text>
+                    <emphasis method="pen" text="sheeps" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                The work entitled "Works and Days" shines forth; it is a work written by Hesiod on Economics and Husbandry to his brother Perses, which Virgil, in his work on husbandry,
+                set forth to imitate himself. He nevertheless explained more widely the things he would embrace more shortly.
+                For since altogether, taken before all other things, the 'rural works' consists of four books: ploughing, planting or grafting, 'gardening' in Greek ; 
+                the grazing of the greater and lesser cattle (horses, oxes, sheep, goats) and the making of honey. Virgil pursues these singular things in his singular book methodically enough. 
+                And in the same place, Xenophon's 'Oeconomicus' looks closely, as if the singular discourse useful for economics.
+                Since the collation of these things by Tusser, it will be neither unuseful for the economic, nor unpleasant for the philosopher.
+                In corne, &amp; sheppe, cattail, more proffit, lesse pleasure: In frute, &amp; hoony, more pleasure, lesse proffitt. } Al necessary, &amp; commodious in [their] kind.
+            </translation> 
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="the plough" type="straight"/>
+        <underline language="EN" method="pen" text="The gaine not great, the paine ynough" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="The gaine not great, the paine ynough"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--taught, -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="gaine"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="paine"/>
+        <mark method="pen" name="dot" place="intext"/> <!--among, -->
+        
+        <mark method="chalk" name="vertical_bar" place="tail"/>
+        
+    </annotation>
+</transcription>

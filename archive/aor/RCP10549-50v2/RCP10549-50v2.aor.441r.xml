@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.441r.tif" pagination="331" reader="John Dee" signature="[Xx.vii.]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="TRIBVNI" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tribuni.</marginalia_text>
+                </position>
+            </language>
+            <translation>Tribunes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="SENATVS" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Senatus decretu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The decree of the senate.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="AEDILES" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ædiles</marginalia_text>
+                </position>
+            </language>
+            <translation>Aediles.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="CENSORES" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Censores.</marginalia_text>
+                </position>
+            </language>
+            <translation>Censors.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="COELIBES" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Co[e]libes</marginalia_text>
+                </position>
+            </language>
+            <translation>Celibacy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="MAGISTRATVM QVINQVENNIVM" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Censoru[m] magistratus qui[n]que[nn]is</marginalia_text>
+                </position>
+            </language>
+            <translation>The length of a censorship is five years.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="PRAETOR" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pra[e]tor</marginalia_text>
+                </position>
+            </language>
+            <translation>Praetor.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="REGIO IMPERIO DUO" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Regio imp[er]io</marginalia_text>
+                </position>
+            </language>
+            <translation>Royal power is twofold.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="SALVS POPVLI" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Salus Populi.</marginalia_text>
+                </position>
+            </language>
+            <translation>The well-being of the people.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="EQVITEM" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Eques.</marginalia_text>
+                </position>
+            </language>
+            <translation>Knights.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="AEVITATES" type="straight"/>
+        <underline language="LA" method="pen" text="NEMINI PARENTO" type="straight"/>
+                
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>   
+        <drawing book_orientation="0" method="pen" place="right_margin" type="shield"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.317v.tif" pagination="615" reader="John Dee" signature="[qqq.iii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="extremum vitae spiritum ediderim" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>extremu[m] vit[a]e sp[i]r[it]um edere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To consume the last breath of life.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="discriminat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>discriminare.</marginalia_text> <!--JG: Not sure what happens a bit closer to the printed text, Sort of 'S'--> <!-- FSF: later, this s has been tagged as a 5 -->
+                </position>
+            </language>
+            <translation>To discriminate.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero vrbe[m] deferere no[n] vult</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero does not want to denounce the city.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="valentissimoru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vale[n]tiss[im][us].</marginalia_text>
+                </position>
+            </language>
+            <translation>Most vigorous.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="custodem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Custos</marginalia_text>
+                </position>
+            </language>
+            <translation>Guard.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="animus tamen erit sollicitus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Anim[us] solicitus.</marginalia_text>
+                </position>
+            </language>
+            <translation>A worried mind.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="actutum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>actutum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Immediately.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="scio enim quiduis homini accidere posse" type="straight"/>
+        <underline language="LA" method="pen" text="Gloriam in morte debe[n]t hi qui in Repub. versantur, non culpae reprehensionem &amp; stultitiae vituperationem" type="straight"/>
+        <underline language="LA" method="pen" text="etenim qui multorum custodem se profiteatur, eum sapientes sui primum capitis aiunt custodem esse oportere" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing anchor_text="scio enim quiduis homini accidere posse" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.083r.tif" pagination="165" reader="John Dee" signature="l 3"/> 
+    <annotation>
+        
+        <marginalia anchor_text="προοίμιον" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>προοίμιον</marginalia_text>
+                </position>
+            </language>
+            <translation>Introduction.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="οἴμη" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>οἴμη</marginalia_text>
+                </position>
+            </language>
+            <translation>Song.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="οἶμος" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>οἶμος</marginalia_text>
+                </position>
+            </language>
+            <translation>Path.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prooemium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Proo[e]mium</marginalia_text>
+                </position>
+            </language>
+            <translation>Prelude.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exordio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exordium</marginalia_text>
+                </position>
+            </language>
+            <translation>Exordium.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Causa principij" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Principij caussa</marginalia_text>
+                </position>
+            </language>
+            <translation>The reason for the principle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Id fieri tirbus maximè revus inter autores plurimos constat, si beneuolem, atte[n]tum docilem fecerimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Principu[m] tria efficit</marginalia_text>
+                </position>
+            </language>
+            <translation>The principle effects three [things].</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="emere[n]di fauoris gratia canunt" type="straight"/>
+        <underline language="LA" method="pen" text="quod apud iudice[m] dici, priusquàm causam cognouerit, *profit." type="straight"/>
+        <underline language="LA" method="pen" text="illa uelut imago litis exponitur" type="straight"/>
+        <underline language="LA" method="pen" text="non quia ista per totam actionem no[n] sint custodienda, sed quia in initijs maximè necessaria, per quae in animu[m] iudicis, ut" type="straight"/>
+        <underline language="LA" method="pen" text="triplex tantum ratio, ex litigatore, aduersario, &amp; iudice. Nam" type="straight"/>
+        
+        <numeral place="right_margin">.1.</numeral>
+        
+    </annotation>
+</transcription>

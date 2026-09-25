@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.139r.tif" pagination="277" reader="Harvey" signature="Aaiij[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Christiernus 2." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Christierni Dani tyrannica Crudelitas.
+                    </marginalia_text>
+                    <person name="Christian II of Denmark"/>
+                </position>
+            </language>
+            <translation>
+                The tyrannical cruelty of Christian of Denmark.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Tyrannis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Tyranny.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Christiernus 2." type="straight"/>
+        <underline language="LA" method="pen" text="occisionis p[ro]cerum 94." type="straight"/>
+        <underline language="LA" method="pen" text="Gostauus" type="straight"/>
+        <underline language="LA" method="pen" text="XCIIII" type="straight"/>
+        <underline language="LA" method="pen" text="me vidente" type="straight"/>
+        <underline language="LA" method="pen" text="ac trepidante" type="straight"/>
+        <underline language="LA" method="pen" text="Magnum" type="straight"/>
+        <underline language="LA" method="pen" text="vbiq[ue] gemitus" type="straight"/>
+        <underline language="LA" method="pen" text="vbiq[ue] caedes" type="straight"/>
+        <underline language="LA" method="pen" text="Clades horre[n]da" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="head"/>
+        
+    </annotation>
+</transcription>

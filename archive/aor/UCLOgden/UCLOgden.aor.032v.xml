@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.032v.tif" pagination="48" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="per MC in omnibus genituris possidet principatum" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        MC: in genituris principatum tenet.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Midheaven hold the highest point in the constellation.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Qua r[ati]o[n]e et platice sicut hic multa decesa et partiliter docet 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                For this reason and generally, it teaches here many settled things in the same way.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Primogenitus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The first born.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="♂ alium geniturae possederit cardinem, uel in anaphora cardinis fuerit, multorum malorum significat aduentum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ♂ in angulo aliq[uo] vel in anaphora.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mars in some angle or in rising.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ut quicquid substantiam mu[n]di, aut dissoluit, aut format, hoc etiam hominem &amp; formaret, &amp; absolueret" type="straight"/>
+        <underline language="LA" method="pen" text="quidam putent platicam istam dispositionem esse" type="straight"/>
+        <underline language="LA" method="pen" text="Tunc enim habebunt efficaciam suam stellae si in locis suis singulis partiliter" type="straight"/>
+        <underline language="LA" method="pen" text="id est in ea parte in qua est horosc. faciet cu su[m]mo clamore edi partum" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; labem patrimonii" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; si crescentis ☾, ♂ radios" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; animo pauperes reddit, &amp; habere se aliquid, semper negantes" type="straight"/>
+        <underline language="LA" method="pen" text="" type="straight"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/> 
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="[deleted]" copytext="Platonice" language="LA"/>
+        
+    </annotation>
+</transcription>

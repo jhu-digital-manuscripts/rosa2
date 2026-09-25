@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>313</totalPages>
+    <dimensions units="">
+        <width>-1</width>
+        <height>-1</height>
+    </dimensions>
+    <dates>
+        <startDate>1401</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="Recueil d'oeuvres historiques, concernant les règnes de Charles VII et de Louis XI, et d'oeuvres littéraires émanées de Christine de Pisan et de Boccace">
+            <language>fr</language>
+            <title>Recueil d'oeuvres historiques, concernant les règnes de Charles VII et de Louis XI, et d'oeuvres littéraires émanées de Christine de Pisan et de Boccace</title>
+            <textId/>
+            <pages end="305r" start="1r">305</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>50</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Le Livre de Jean, duc de Bretagne, par Guillaume de Saint-Andre">
+            <language>fr</language>
+            <title>Le Livre de Jean, duc de Bretagne, par Guillaume de Saint-Andre</title>
+            <textId/>
+            <pages end="41v" start="1r">41</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>33</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="Chronique d'Arthur III, duc de Bretagne, par Guillaume Gruel">
+            <language>fr</language>
+            <title>Chronique d'Arthur III, duc de Bretagne, par Guillaume Gruel</title>
+            <textId/>
+            <pages end="43v" start="43r">1</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>33</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Copie des lettres du roy de France [CHARLES VII], envoiés au duc Franczoys [I er ] de Bretaigne, touchant la prinse de Fougières par les Anglois ». Rasilli, 3 juin 1449">
+            <language>fr</language>
+            <title>Copie des lettres du roy de France [CHARLES VII], envoiés au duc Franczoys [I er ] de Bretaigne, touchant la prinse de Fougières par les Anglois ». Rasilli, 3 juin 1449</title>
+            <textId/>
+            <pages end="119v" start="45r">74</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>41</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="Copie des lettres entre le duc FRANCZOIS [I er ] et les ... ambasseurs » du roi de France. Rennes, 16 juin 1449.">
+            <language>fr</language>
+            <title>Copie des lettres entre le duc FRANCZOIS [I er ] et les ... ambasseurs » du roi de France. Rennes, 16 juin 1449.</title>
+            <textId/>
+            <pages end="160v" start="123r">37</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>36</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="">
+            <language>fr</language>
+            <title>Unknown</title>
+            <textId/>
+            <pages end="221r" start="162r">59</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>32</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="">
+            <language>fr</language>
+            <title>Unknown</title>
+            <textId/>
+            <pages end="305r" start="223r">82</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>32</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Christine de Pizan</title>
+            <commonName>Français 5037</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 5037</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Christine de Pizan</title>
+            <commonName>Français 5037</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 5037</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

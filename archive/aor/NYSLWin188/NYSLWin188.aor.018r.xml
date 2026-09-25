@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.018r.tif" pagination="18" reader="John Dee" signature="Eij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Eclipsi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Luna scilic[et] inter posita.</marginalia_text>
+                </position>
+            </language>
+            <translation>Of course the moon posited inbetween.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" id="NYSLWin188:00000049:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Stella[e] continuo excitant natura[e] [ac] suas functiones obtündas</marginalia_text> <!--JG: Unsure about ac--> <!-- FSF: I think it is natura[m] and ad -->
+                </position>
+            </language>
+            <translation>The stars continuously stir up nature and strike their functions.</translation> 
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="die Nachtsterne[n]" type="straight"/>
+        <underline language="DE" method="pen" text="durch sie nicht scheinen mag" type="straight"/>
+        <underline language="DE" method="pen" text="das also im abwesen eines andern Sternen die andern jre Operationes auch haben mögen" type="straight"/>
+        <underline language="DE" method="pen" text="jetzt hoch" type="double"/>
+        <underline language="DE" method="pen" text="nider" type="double"/>
+        <underline language="DE" method="pen" text="hoch" type="straight"/>
+        <underline language="DE" method="pen" text="nider" type="straight"/>
+        <underline language="DE" method="pen" text="Exaltation" type="straight"/>
+        <underline language="DE" method="pen" text="Declination" type="straight"/>
+        <underline language="DE" method="pen" text="feyret kein Stern" type="double"/>
+        <underline id="NYSLWin188:00000049:u0001" language="DE" method="pen" text="sie die Natur auffwecken vnd treiben in tägliche wirckung" type="straight"/>
+        
+        <physical_link>
+            
+            <marginal_annotation idref="NYSLWin188:00000049:m0001"/>
+            <marginal_annotation idref="NYSLWin188:00000049:u0001"/>
+            
+            <relation from="NYSLWin188:00000049:m0001" to="NYSLWin188:00000049:u0001" type="directed"/>
+            
+        </physical_link>
+        
+    </annotation>
+</transcription>

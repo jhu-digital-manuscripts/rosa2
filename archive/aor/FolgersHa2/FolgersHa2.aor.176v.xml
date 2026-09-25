@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.176v.tif" pagination="176" reader="Harvey" signature="[L8v]"/>	<!-- ABO 181left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Qui potest dicere, aut facere meliùs; et tamen dicit,
+						facitve peiùs; Is planè fatuus est.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>He who can say or act better, and nevertheless says or acts worse, is clearly foolish.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Dulcissimus hominum in Conuersatione:
+						acerrimus virorum in actione.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The most pleasing of men in conversation: the most keen of men in action.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Posthac nihil in libris,
+						aut operibus, non summè potens, aut
+						valdè efficax. Scholasticarum,
+						practicarumq[ue] facultatu[m] ualentissima[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Hereafter there is nothing in books or actions, not the highest potential, nor the most effective. The most strong [qualities] of the scholastic and pratical faculties.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Omnium viuidissimè: semper prudentissimè:
+						et qua[m] fieri potest, efficaciss[im]e.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The most lively of all: always the most prudently: and how it can be done, the most efficiently.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						In conuersando, Euschemosyne: in negociando, Entelechia: in vtroq[ue],
+						Ironia. Sed in omnibus ars celata: et semper inaffectata affectatio.
+						Mera flamma sine fumo: et pura actio sine passione.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>In conversation, refinement: in business, actualization: in both, irony. But the art hidden in all things: and always unaffected affectation.
+			A pure flame without smoke: and a pure action without passion.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Of the finest discourses, or worthiest histories in the World; not the tenth part
+						is absolutely sound, or sharp. ( No one, for effectual soundnes, &amp; sharpnes,
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						equiualent to Ca[e]sar.)
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="la prudenza" type="straight"/>
+		<underline language="IT" method="pen" text="magnanimità" type="straight"/>
+		<underline language="IT" method="pen" text="la fortezza" type="straight"/>
+		<underline language="IT" method="pen" text="tempesta soffocate" type="straight"/>
+		<underline language="IT" method="pen" text="altre cose stima" type="straight"/>
+		<underline language="IT" method="pen" text="sogni" type="straight"/>
+		<underline language="IT" method="pen" text="vento" type="straight"/>
+		<underline language="IT" method="pen" text="fole" type="straight"/>
+		<underline language="IT" method="pen" text="alcuni alli danari" type="straight"/>
+		<underline language="IT" method="pen" text="il padre d'Euripide" type="straight"/>
+		<underline language="IT" method="pen" text="la nobiltà del figliuolo" type="straight"/>
+		<underline language="IT" method="pen" text="ella co[n]siste nelle ricchezze" type="straight"/>
+		<underline language="IT" method="pen" text="pur ricco" type="straight"/>
+		<underline language="IT" method="pen" text="ben nobile" type="straight"/>
+		<underline language="IT" method="pen" text="fussi ignobilissimo" type="straight"/>
+		<underline language="IT" method="pen" text="la grande tirannia" type="straight"/>
+		<underline language="IT" method="pen" text="de' danari descrisse" type="straight"/>
+		<underline language="IT" method="pen" text="sia ricco, altrui" type="straight"/>
+		<underline language="IT" method="pen" text="quel che possiedi" type="straight"/>
+		<underline language="IT" method="pen" text="punto fie stimato" type="straight"/>
+		<underline language="IT" method="pen" text="copia di ricchezze" type="straight"/>
+		<underline language="IT" method="pen" text="cortesie" type="straight"/>
+		<underline language="IT" method="pen" text="Hauere all'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="cortesie" type="straight"/>
+		<underline language="IT" method="pen" text="la ingratitudine" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		<symbol name="SS" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- alcu -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- scioc -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- grande -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- strettamen -->
+		
+		<mark method="pen" name="quotation_mark" place="intext"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- danari, & -->
+    </annotation>
+</transcription>

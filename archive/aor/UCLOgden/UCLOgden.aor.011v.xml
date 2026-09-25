@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.011v.tif" pagination="6" reader="John Dee" signature="[a 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="optatii, &amp; Paulini" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Optatius Paulinus 
+                    </marginalia_text>
+                    <person name="Flavius Optatus"/>
+                    <person name="Amnius Anicius Paulinus"/>
+                </position>
+            </language>
+            <translation>
+                Optatius Paulinus
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Qu[a]erit Firmicus vtru[m] astronomiam ita suis preceptis tradere et invenire difficilius, an illa inventa, astrologia[e] decreta eruere 
+                    </marginalia_text>
+                    <person name="Julius Firmicus Maternus"/>
+                </position>
+            </language>
+            <translation>
+                Firmicus inquires whether astronomy thus hands over and reaches its precepts with more difficulties, or, with this having been reached, destroys the decrees of astrology. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Astronomia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Astronomy.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        observantia[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Observation.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="statiua tarditate" type="straight"/>
+        <underline language="LA" method="pen" text="mixtura ipsarum, radiatióque perficiat" type="straight"/>
+        <underline language="LA" method="pen" text="cursu, facile postea officia ipsarum, potestatésque iudicemus" type="straight"/>
+        <underline language="LA" method="pen" text="Ergo quia constat difficilius fuisse inuenire stellarum cursus, quàm definire quid faciant, de inuento enim" type="straight"/>
+        <underline language="LA" method="pen" text="totam eius substantiam" type="straight"/>
+        <underline language="LA" method="pen" text="diuersa radiationis commixtione" type="straight"/>
+        <underline language="LA" method="pen" text="constituti sumus, una sit omnium hominum, similísque forma, licet sit omnium una natura" type="straight"/>
+        <underline language="LA" method="pen" text="in unum se" type="straight"/>
+        
+    </annotation>
+</transcription>

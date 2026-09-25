@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.038v.tif" pagination="38[v]" reader="John Dee" signature="[Iii[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="secundum Géberum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Geberus Cap. 65. prima[e] partis summa[e]
+                    </marginalia_text>
+                    <person name="Geber"/>
+                    <book title="Summa perfectionis magisterii"/>
+                </position>
+            </language>
+            <translation>
+                Geber chapter 65 of the first part of his Summa.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="est" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        consistet
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Consists of.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        lundum <!-- FSF: very unsure here -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                <!-- FSF: to be added -->
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="secundum debitam proportionem qualitatum ad esse metalli requisitarum" type="grid"/>
+        <underline language="LA" method="pen" text="est" type="double"/>
+        <underline language="LA" method="pen" text="metallici" type="grid"/> 
+        <underline language="LA" method="pen" text="[id est] quantitate" type="grid"/>
+        <underline language="LA" method="pen" text="sunt sex" type="double"/>
+        <underline language="LA" method="pen" text="colorificans: uiridis: aut diuidens" type="grid"/>
+     
+        <errata amendedtext="[deleted]" copytext="uel spissitudinis" language="LA"/>
+        
+    </annotation>
+</transcription>

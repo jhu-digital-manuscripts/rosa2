@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.104v.tif" pagination="208" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Aduersus consulta autem Senatus, &amp; decreta principum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aduersus co[n]sulta senatus &amp; principu[m] decreta.</marginalia_text>
+                </position>
+            </language>
+            <translation>Against the decision of the senate and the decree of princes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Faman, atque rumores pars altera consensum ciuitatis &amp; uelut publicum testimonium uocat: altera sermonem sine ullo certo autore              dispersum, cui malignitas initium dederit, incrementum credulitas, quod nulli non etiam innocentißimo posse accidere, fradue inimicorum falsa uulgantium." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Secunda probationum</marginalia_text>
+                </position>
+            </language>
+         <language ident="EL">
+             <position book_orientation="0" place="left_margin">
+                 <marginalia_text>ἀτέχνων</marginalia_text>
+             </position>
+         </language>
+            <translation>The second of unskilled proofs.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sicut in tormentis quoq[ue[, qui est locus frequentißimus, cum pars altera quaestione[m], uera fatendi neceßitate[m] uocet:              altera saepe etia[m] causam falsa dicendi, quòd alijs patientia facilè me[n]dacium faciat, alijs infirmitas necessarium." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tertia probationu[m]</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἀτέχνων</marginalia_text>
+                </position>
+            </language>
+            <translation>The third of unskilled proofs.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

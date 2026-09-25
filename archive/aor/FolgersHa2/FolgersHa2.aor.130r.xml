@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.130r.tif" pagination="83" reader="Harvey" signature="F2[r]"/>	<!-- ABO 134right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						An vllus idem agere potuisset uel peritiùs; uel
+						efficacius[que]
+						vel deniq[ue] expeditiùs? Si hominum vllus, Tui te
+					</marginalia_text>
+					<emphasis method="pen" text="vllus idem" type="straight"/>
+					<emphasis method="pen" text="agere potuisset" type="straight"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						pudeat:
+						et coge omnem artem, virtutemq[ue] absolutiùs.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Nondu[m] es ille vir. Sed esse potes, si esse vis; et vis seriò.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Can anyone accomplish the same thing either more skillfully, more effectively, or even more quickly?
+				If any man is ashamed of you, gather together completely every art and virtue .
+				You are not yet that man. But you can become him, if you wish to be, and if you wish seriously.			
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Jupiter merentibus offert.
+						Sat agit, qui sat agit. Par est fortuna Labori.
+					</marginalia_text>
+					<person name="Jupiter"/>
+				</position>
+			</language>
+			<translation>
+				Jupiter gives to those who are worthy.
+				He who acts enough, acts enough. Fortune is proper for work.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Quin etiam Methodica, practicaq[ue] dexteritas infinitas supplet industrias.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Indeed, a methodical and practical skillfulness provides infinite industriousness.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EL">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						πολύτεχνος ἀνὴρ, πολλῶν ἀντάξιος ἄλλων.
+						Οἱος πέπνυται, λοιποὶ σκιαι ἀισσουσι.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						ἀιὲν ἀριστεύειν, καὶ ὑπείροχον ἔμμεναι ἄλλων.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A poly-technic man, worth just as much as most other men.
+				Αlone, he is prudent; the others move like shadows. <!-- CG: Unclear about this translation; I think this is Harvey writing Greek for himself and I'm not sure it's correct. --> <!--JG: I really can't help you with this. Will ask specialist-->
+				Always to be the best and to be distinguished above the others.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Idem etiam Para[e]neticum Consilium Isocratis, et ipsius Salomonis,
+						vt quisq[ue] contendat pra[e]cellere.
+					</marginalia_text>
+					<person name="Isocrates"/>
+					<person name="Solomon"/>
+				</position>
+			</language>
+			<translation>
+				Likewise, even the encouraging advice of Isocrates and of Solomon himself, 
+				as everyone strains to excel.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="prouidentia euitare" type="straight"/>
+		<underline language="IT" method="pen" text="inconsiderantia operare" type="straight"/>
+		<underline language="IT" method="pen" text="compagnia la Rondine con" type="straight"/>
+		<underline language="IT" method="pen" text="beccar questo seme" type="straight"/>
+		<underline language="IT" method="pen" text="essi ridendosene" type="straight"/>
+		<underline language="IT" method="pen" text="pecora indouina" type="straight"/>
+		<underline language="IT" method="pen" text="Nato il" type="straight"/>
+		<underline language="IT" method="pen" text="sueglierlo" type="straight"/>
+		<underline language="IT" method="pen" text="ne ridono" type="straight"/>
+		<underline language="IT" method="pen" text="si matura" type="straight"/>
+		<underline language="IT" method="pen" text="compagnia de gli vccelli si disgiunse" type="straight"/>
+		<underline language="IT" method="pen" text="all'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="ou'ella viue" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; sicura" type="straight"/>
+		<underline language="IT" method="pen" text="altri vccelli mediante" type="straight"/>
+		<underline language="IT" method="pen" text="reti, &amp; lacci" type="straight"/>
+		<underline language="IT" method="pen" text="asprezza de' padroni" type="straight"/>
+		<underline language="IT" method="pen" text="dapochi i seruidori" type="straight"/>
+		<underline language="IT" method="pen" text="hauer riguardo &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="gridano continuamente" type="straight"/>
+		<underline language="IT" method="pen" text="la forza dell'ingegno &amp; dell'animo" type="straight"/>
+		<underline language="IT" method="pen" text="Iddio solo" type="straight"/>
+		<underline language="IT" method="pen" text="assoluto procuratore" type="straight"/>
+		<underline language="IT" method="pen" text="Boiardo, Signore" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- be -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- chia -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- all'huo -->
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- con -->
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- grandissimi, &amp; -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- grey chalk, runs through second paragraph. -->
+		<mark language="IT" method="pen" name="straight_quotation_mark" place="intext" text="dapochi i seruidori"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="la forza dell'ingegno &amp; dell'animo"/>
+		
+    </annotation>
+</transcription>

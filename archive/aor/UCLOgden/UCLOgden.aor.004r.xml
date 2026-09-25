@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.004r.tif" reader="John Dee" signature="α 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="βιοθανατοι" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        βιοθανατοι. <!-- for βιοθανάτοι-->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Those who die suddenly.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pontanus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pontanus.
+                    </marginalia_text>
+                    <person name="Giovanni Pontano"/>
+                </position>
+            </language>
+            <translation>
+                Pontano
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aspectus platicus [...] Partilis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aspectus platicus Partilisq[ue]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                General and divisible appearance.
+            </translation>
+        </marginalia>
+        
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

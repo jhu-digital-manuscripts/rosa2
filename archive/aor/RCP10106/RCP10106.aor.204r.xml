@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.204r.tif" pagination="407" reader="John Dee" signature="C 4"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Quid enim tuus ille Tubero districtus in acie Pharsalica gladius agebat?s" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Senecam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Seneca</marginalia_text>
+                    <person name="Seneca"/>
+                </position>
+            </language>
+            <translation>Seneca.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vergilium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Virgilius.</marginalia_text>
+                    <person name="Virgil"/>
+                </position>
+            </language>
+            <translation>Virgil.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Asinius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Asinius</marginalia_text>
+                    <person name="Gaius Asinius Pollio"/>
+                </position>
+            </language>
+            <translation>Asinius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in respondendo figura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In respondendo figu[ra]</marginalia_text>
+                </position>
+            </language>
+            <translation>A figure in response.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Simplex est" type="straight"/>
+        <underline language="LA" method="pen" text="Figuratum autem" type="straight"/>
+        <underline language="LA" method="pen" text="quod negari non poßit" type="straight"/>
+        <underline language="LA" method="pen" text="aut ubi respo[n]dendi difficilis est ratio" type="straight"/>
+        <underline language="LA" method="pen" text="Aut inuidiae gratia" type="straight"/>
+        <underline language="LA" method="pen" text="Aut miserationis, ut" type="straight"/>
+        <underline language="LA" method="pen" text="Aut instandi, &amp; auferendae dißimulationis" type="straight"/>
+        <underline language="LA" method="pen" text="indignationi" type="straight"/>
+        <underline language="LA" method="pen" text="Et admirationi" type="straight"/>
+        <underline language="LA" method="pen" text="interim acrius imperandi" type="straight"/>
+        <underline language="LA" method="pen" text="Et ipsi nosmet rogamus" type="straight"/>
+        <underline language="LA" method="pen" text="cùm aliud" type="straight"/>
+        <underline language="LA" method="pen" text="tum augendi" type="straight"/>
+        <underline language="LA" method="pen" text="Tum declinandi" type="straight"/>
+        
+    </annotation>
+</transcription>

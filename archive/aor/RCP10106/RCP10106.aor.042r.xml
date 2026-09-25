@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.042r.tif" pagination="83" reader="John Dee" signature="f 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="studiorum facere delectum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Delectus studiorum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Selection of study.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sacrorum certaminum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sacra certami[n]a</marginalia_text>
+                </position>
+            </language>
+            <translation>Sacred battles.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Isocrates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Isocrates</marginalia_text>
+                    <person name="Isocrates"/>
+                </position>
+            </language>
+            <translation>Isocrates.</translation>
+        </marginalia>
+       
+        <underline language="LA" method="pen" text="Imbecillis tamen ingenijs sanè sic obsequendum sit, ut tantum in id quò              uocat natura, ducantur." type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.268v.tif" pagination="[261v]" reader="John Dee" signature="[VV[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Saturnus in duodecimo loco" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♄ in 6⁰. 12⁰</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>Saturn in the sixth and twelfth [place].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nutrietur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nutritionis jndicium.</marginalia_text>
+                </position>
+            </language>
+            <translation>The proof of nutrition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="revolutio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Revolutionum varij modi.</marginalia_text>
+                </position>
+            </language>
+            <translation>Various kinds of revolutions.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hinc patet cur cuilib[et] parti, 1 annu[m], dies 5 horas 8 attribuim[us]</marginalia_text>  
+                </position>
+            </language>
+            <translation>Here it is well known why we attribute one year, five days, and eight hours to any part.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Luna" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quando ☾ in sua auge vel opposito</marginalia_text>  
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>When the moon is in its apogee or opposition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="revolutio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♄ ♃ ♂ ♀ ☿ ☾ } ecce[n]trici r[ati]o.</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Mercury"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>Saturn, Jupiter, Mars, Venus, Mercury, and the moon: the reason for an eccentric orbit.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iupiter, aut Venus in medio duarum infortunarum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♃ vel ♀ obsessa a malis planetis.</marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>Jupiter or Venus, having been beset by bad planets.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♂ ♃ ♄. ♂ ♀ ♄. ♂ ♀ ☿. ♄ ♀ ☿.</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Mars"/>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Mercury"/>
+                </position>
+            </language>
+            <translation>Mars, Jupiter, Saturn; Mars, Venus, Saturn; Mars, Venus, Mercury; Saturn, Venus, Mercury.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Fortuna[e] infortunati.</marginalia_text>
+                </position>
+            </language>
+            <translation>Fortunate to infortunate.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>pro aere et fru[c]tib[us] [etc].</marginalia_text>  
+                </position>
+            </language>
+            <translation>For the air and fruits, et cetera.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="addita tanta parte eclipticae, quanta[m] peragrare potest in una die naturali" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>cur adderetur illa pars?</marginalia_text>
+                </position>
+            </language>
+            <translation>Why should that part be added?</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Saturnus in duodecimo loco, podagram minatur. In sexto aute[m] morbum ut dixi perpetuu[m], aut sempiternos carceres" type="straight"/>
+        <underline language="LA" method="pen" text="quidem in temporibus" type="straight"/>
+        <underline language="LA" method="pen" text="addita tanta parte eclipticae, quanta[m] peragrare potest in una die naturali" type="straight"/>
+        <underline language="LA" method="pen" text="opponitur autem absidi eccentrici cum iuxta Solis quadratum fuerit" type="straight"/>
+        
+        <symbol name="Mars" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="tail" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.284v.tif" pagination="[277v]" reader="John Dee" signature="[aaa[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="regis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Regnum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Royal power.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fuerit in quadrato Lunae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☉ □ ☾</marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Square"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>The Sun in square to the Moon.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rege" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rex.</marginalia_text>
+                </position>
+            </language>
+            <translation>King.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="carceribus" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Carcer.</marginalia_text>
+                </position>
+            </language>
+            <translation>Prison.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Luna Saturno iuncta" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>☾ ♄</marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>The Moon connected with Saturn.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Iupiter, Venus, Mars" type="straight"/>
+        <underline language="LA" method="pen" text="cum regni constitutione" type="straight"/>
+        <underline language="LA" method="pen" text="duodecima[m]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; quartam" type="straight"/>
+        <underline language="LA" method="pen" text="Luna Saturno iuncta, in angulo fuerit" type="straight"/>
+        
+    </annotation>
+</transcription>

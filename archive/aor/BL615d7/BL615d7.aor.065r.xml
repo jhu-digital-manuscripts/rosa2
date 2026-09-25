@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.065r.tif" pagination="65" reader="John Dee" signature="I"/>
+    <annotation>
+        
+        <marginalia anchor_text="Tortuga" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tortuga.</marginalia_text>
+                    <location name="Tortuga"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Baueche" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Baueche</marginalia_text>
+                    <location name="Hispaniola"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Spagnuola; Baueche" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note of Baueche now not understode for Bochio or Spagnuola</marginalia_text>
+                    <location name="Hispaniola"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="principal Re" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Guacanagari</marginalia_text>
+                    <person name="Guacanagarix"/>
+                </position>
+            </language>
+        </marginalia>
+
+        <underline language="IT" method="pen" text="con sembiante di vbidientia furono ridotti nella" type="straight"/>
+        <underline language="IT" method="pen" text="che hauea preso l' Ammiraglio in fauore contra gl'Indiani" type="straight"/>
+        <underline language="IT" method="pen" text="Tortuga" type="straight"/>
+        <underline language="IT" method="pen" text="più oro" type="straight"/>
+        <underline language="IT" method="pen" text="Baueche" type="straight"/>
+        <underline language="IT" method="pen" text="XIIII giornate dal luogo" type="straight"/>
+        <underline language="IT" method="pen" text="doue erano" type="double"/>
+        <underline language="IT" method="pen" text="principal Re" type="straight"/>
+        <underline language="IT" method="pen" text="cinque leghe" type="straight"/>
+
+
+
+
+
+    </annotation>
+    
+</transcription>

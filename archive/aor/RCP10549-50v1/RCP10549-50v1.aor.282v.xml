@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.282v.tif" pagination="544" reader="John Dee" signature="[lll.viii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="copias alere poterat, nunc exiguas vix tueri potest" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Copias alere tueri</marginalia_text>
+                </position>
+            </language>
+            <translation>To maintain supplies. To uphold supplies.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="dicto audientes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>dicto audie[n]tes</marginalia_text>
+                </position>
+            </language>
+            <translation>Agreeing in word.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="rumores sparsi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>spargere rumores.</marginalia_text>
+                </position>
+            </language>
+            <translation>To scatter rumours.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Domitiu[m] naufragio periisse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Domitij Mors</marginalia_text>
+                    <person name="Gnaeus Domitius Calvinus"/>
+                </position>
+            </language>
+            <translation>Domitius' death.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="qua etia[m] nos habemus" type="straight"/>
+        <underline language="LA" method="pen" text="Pereant amici, dum vnà inimici intercidant" type="straight"/>
+        <underline language="LA" method="pen" text="ipse enim mansuetus, versus immanis" type="straight"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">13 5</numeral> 
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">8</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing anchor_text="Pereant amici, dum vnà inimici intercidant" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

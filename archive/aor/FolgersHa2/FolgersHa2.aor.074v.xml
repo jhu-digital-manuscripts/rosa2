@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.074v.tif" reader="Harvey" signature="[*2[v]]"/>	<!-- ABO 79left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.074v_0001" marginalia_continues_to="Ha2.075r_0001" marginalia_to_transcription="Ha2.075r.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Generales Professores, sine speciali praxi, aut certa
+						necessariarum opum prouisione; moriuntur Mendici.
+						Vt non modò Agrippa, et Turnebus, quanti philologi? = [*3[r]: = sed etiam Machiauellus, et Bodinus, quanti Politici?
+						Tanti refert, solidè fundare rem familiarem: et a Teipso pendere: non ab amicis: qui nulli sunt egentibus.
+						Contemnuntur pauperu[m] dignissimi: a[e]stimantur diuitu[m] indignissimi.]
+							<!-- Continues onto facing page, head, Ha2.075r -->
+					</marginalia_text>
+					<person name="Heinrich Cornelius Agrippa"/>
+					<person name="Adrianus Turnebus"/>
+				</position>
+			</language>
+			<translation>
+				General professors are without any special praxis or any particular foresight for necessary resources; they shall die poor.
+				Is it not the same for Agrippa and Turnebus as philologists? [*3[r]: But even Machiavelli and Bodin, as Politicians?
+				It is of much importance to build a solid foundation for the patrimony of your family and to depend
+				on yourself, not on your friends, who need nothing. The worthiest of the poor are held in contempt,
+				the unworthiest the wealthy are held in esteem.]
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Frustrà Sapit, qui Sibi non Sapit.
+					</marginalia_text>
+					<X-ref book_title="Adagia" language="LA" person="Erasmus" text="Sapit, qui Sibi non Sapit"/>
+				</position>
+			</language>
+			<translation>
+				He who does not know himself knows in vain.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Oportet regium professorem magna paruo operari: pra[e]sertim
+						Methodo Solis pra[e]sentiss[im]a et praxe Solis potentiss[im]a.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It is necessary for the royal professor to work little at great things: especially
+				with a single most favorable method and a single most powerful praxis.
+					<!-- CG: Unclear about "magna parvo operari." Apparently operor takes the dative,
+					but I'm not sure what to do with the "magna." --> 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="180" place="tail">
+					<marginalia_text>
+						Quid habent heroici labores suprà hodiernas industrias?
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Who holds heroic labors above daily industriousness? 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						E semplice, chi e pouero? non e fino, chi non e ricco. 
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Heroicus animus. plus qu&amp; heroica industria. 
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="IT">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						È semplice, chi è pouero: non è fino, chi non è ricco.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Vt s[upr]a de Nanna[e]
+						panurgica Oeconomia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Is the poor man simple? The rich man is not refined.
+				A heroic spirit, more than heroic industriousness.
+				Whoever is poor is simple; whoever is not rich is not refined.
+				As above, concerning the panurgic economy of 'Nanna'. <!-- What is Nanna? -->
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="per arte" type="straight"/>
+		<underline language="IT" method="pen" text="co' fatti &amp; co' detti honorati" type="straight"/>
+		<underline language="IT" method="pen" text="per l'vtile" type="straight"/>
+		<underline language="IT" method="pen" text="huomini di giuditio" type="straight"/>
+		<underline language="IT" method="pen" text="moralità" type="straight"/>
+		<underline language="IT" method="pen" text="con segno assai debole &amp; di poco momento" type="straight"/>
+		<underline language="IT" method="pen" text="piu che volentieri" type="straight"/>
+		<underline language="IT" method="pen" text="con adulationi" type="straight"/>
+		<underline language="IT" method="pen" text="vsano gli dscrittori de' tempi nostri" type="straight"/>
+		<underline language="IT" method="pen" text="nobilissima stirpe" type="straight"/>
+		<underline language="IT" method="pen" text="moltí Senatori" type="straight"/>
+		<underline language="IT" method="pen" text="molti Capitani" type="straight"/>
+		<underline language="IT" method="pen" text="huomini letterati" type="straight"/>
+		<underline language="IT" method="pen" text="de' beni della fortuna" type="straight"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		
+		<mark method="pen" name="horizontal_bar" place="left_margin"/>
+ 		
+ 		<mark method="pen" name="dash" place="right_margin"/> <!--quan-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--por-->
+		
+		<mark method="pen" name="dot" place="intext"/> <!--mostrarle, dico-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="l'vtile"/>
+		<mark method="pen" name="dot" place="intext"/> <!--porto, la-->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--to, la-->
+		<mark method="pen" name="dot" place="intext"/> <!--adesso, &-->
+		<mark method="pen" name="dot" place="intext"/> <!--nostri, perche-->
+		<mark method="pen" name="dot" place="intext"/> <!--letterati, e-->
+		
+		
+    </annotation>
+</transcription>

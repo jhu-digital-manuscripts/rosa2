@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.043r.tif" pagination="85" reader="John Dee" signature="f 3"/>
+    <annotation>
+        
+        <marginalia anchor_text="Midraßim" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>M</marginalia_text>
+                </position>
+            </language>
+            <translation>M.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Antonini Pij" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Antoninus Pius</marginalia_text>
+                    <person name="Antoninus Pius"/>
+                </position>
+            </language>
+            <translation>Antoninus Pius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Zoharis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Zohar</marginalia_text>
+                    <book title="Zohar"/>
+                </position>
+            </language>
+            <translation>The Zohar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="maternitatis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Maternita[s]</marginalia_text>
+                </position>
+            </language>
+            <translation>Maternity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Geneseos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Genesi[s]</marginalia_text>
+                    <book title="Book of Genesis"/>
+                </position>
+            </language>
+            <translation>Genesis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Zoaris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Zoäris excelle[n]tia</marginalia_text>
+                    <location name="Zoara"/>
+                </position>
+            </language>
+            <translation>The excellence of Zoara.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Midraßim" type="straight"/>
+        <underline language="LA" method="pen" text="Antonini Pij" type="straight"/>
+        <underline language="LA" method="pen" text="Thalmudo Babylonico" type="straight"/>
+        <underline language="LA" method="pen" text="Zoharis opus in Genesim anno proximo" type="straight"/>
+        <underline language="LA" method="pen" text="lucem aeternae dispositionis" type="straight"/>
+        <underline language="LA" method="pen" text="restitutae maternitatis" type="double"/>
+        <underline language="LA" method="pen" text="arboris totius sapie[n]tiae mu[n]di seu supracoelestis, seu coelestis, seu inferioris, ita ut sit instar coeli, et reliqua" type="straight"/>
+        <underline language="LA" method="pen" text="prophanarum, sit in umbra futurum, si componatur cum ea luce" type="straight"/>
+        <underline language="LA" method="pen" text="Zoaris lumen" type="double"/>
+        
+       <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">.3.</numeral>
+        <numeral place="right_margin">4</numeral>
+
+    </annotation>
+</transcription>

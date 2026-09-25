@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.169r.tif" pagination="169" reader="John Dee" signature="Y"/>    
+    <annotation>
+        
+        <marginalia anchor_text="protettore" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Protestor</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Guarionex" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Guarionex</marginalia_text> <!-- A Cacique name -->
+                    <person name="Guarionex"/>
+                </position>
+            </language>
+            <translation>Guarionex.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="qua[n]tunque ciò fosse co[n]tra il volere de' Re Catolici" type="straight"/>
+        <underline language="IT" method="pen" text="che la obedientia, &amp; libertà, mantenendoli in giustitia, &amp; in pace." type="straight"/>
+        <underline language="IT" method="pen" text="protettore," type="straight"/>
+        <underline language="IT" method="pen" text="prohibire la paga" type="straight"/>
+        <underline language="IT" method="pen" text="Guarionex" type="double"/>
+        <underline language="IT" method="pen" text="col fauore di Orlando" type="straight"/>
+        <underline language="IT" method="pen" text="raunò tutti i Caciqui suoi partiali" type="straight"/>
+        <underline language="IT" method="pen" text="compartirsi per quadriglie" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        
+    </annotation>
+</transcription>

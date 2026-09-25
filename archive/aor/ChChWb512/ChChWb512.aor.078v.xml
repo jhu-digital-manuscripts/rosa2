@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="ChChWb512.078v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Helena[e] [deleted alienius] alterius sororis ip[s]ius Arthuri, [deleted quid] Anna habuit Loth maretu[m]. sup[ra] fol. 68, nec dum ipse vita[m] finiuit: pr[a]eterea nullu[m] filu[m] Anna habere poterat, qui Arturo supp[???] ferret destr[a?].
+                    </marginalia_text> <!--Incomplete transcription.// NBW - even with color inversion, last few words still need work-->
+                    <person name="Helena, sister of King Arthur"/>
+                    <person name="King Arthur"/>
+                    <person name="Anna"/>
+                    <person name="Lot"/>
+                </position>
+            </language>
+            <translation> Of Helena, another sister of Arthur, because Anna had Loth for a husband(above, fol. 68), up until the end of his life. Moreover, Anna was not able to have a single son, who could be [successors?] to Arthur [??}</translation>
+<!-- Rough translation, the illegible part might also make reference to Arthur having no other sons to aid him, rather than succeed him-->       
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="regem Hoelum" type="straight"/>
+        <underline language="LA" method="pen" text="sororis Arthuri" type="straight"/>
+        <underline language="LA" method="pen" text="ex Dubricio rege Armoricorum" type="straight"/>
+        <underline language="LA" method="pen" text="auunculo" type="double"/>
+        <underline language="LA" method="pen" text="in nemus" type="double"/>
+        <underline language="LA" method="pen" text="Caledonis veneru[n]t" type="straight"/>
+        
+        <graph book_orientation="0" method="pen" place="head" type="genealogical_tree">
+            <node id="n1" person="Dubricius">Dubricius, rex Armoricae</node>
+            <node id="n2" person="Elaine of Garlot">soror Arthuri Regis. [Anna - deleted] Helena. half sister.</node>
+            <node id="n3" person="Hoelus">Hoëlus</node>
+            <link from="n1" relationship="has_spouse" to="n2"/>
+            <link from="n1" relationship="has_child" to="n3"/>
+            <link from="n2" relationship="has_child" to="n3"/>
+            <graph_text>
+                <translation>Dubricus, King of Armorca. Sister of King Arthur.</translation>
+            </graph_text>
+        </graph>
+        
+    </annotation>
+</transcription>

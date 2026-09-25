@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.110v.tif" reader="Harvey" signature="[Nvii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Martiall Pra[e]cepts.</marginalia_text>
+                    <person name="Martial"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ordo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Order.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>squadron.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>These of order, omitted in Machiavel della guerra.</marginalia_text>
+                    <book title="Art of War"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Machiauel addith to</marginalia_text>
+                </position>
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Vegetius Rules, cheifly fower: two</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>ad apparatu[m]:</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>two</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>ad ordinem.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Men, Iron, moony, &amp; bred, ar [the] strength of war: but the first two, most necessary:
+                    for men, &amp; Iron, finde mony, &amp; bred; but moony, &amp; bred, finde not men, &amp; Iron.
+                    Accustom your sowldiours, to despise delicate liuing, &amp; lasciuious aparrel.</marginalia_text>
+                </position>
+            </language>
+            <translation>Machiauel addith to Vegetius Rules, cheifly fower: two towards the preparation, two towards order.
+                Men, Iron, moony, &amp; bred, ar [the] strength of war:  but the first two, most necessary: 
+                for men, &amp; Iron, finde mony, &amp; bred; but moony, &amp; bred, finde not men, &amp; Iron. 
+                Accustom your sowldiours, to despise delicate liuing, &amp; lasciuious aparrel.</translation>        
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="and vyttayle necessarie for" type="straight"/>
+        <underline language="EN" method="pen" text="vanquyshed without weapon" type="straight"/>
+        <underline language="EN" method="pen" text="hath mo people, and" type="straight"/>
+        <underline language="EN" method="pen" text="make his forewarde foure square" type="straight"/>
+        <underline language="EN" method="pen" text="maner of assaylinge" type="straight"/>
+        <underline language="EN" method="pen" text="is febler than" type="straight"/>
+        <underline language="EN" method="pen" text="set his ryght wynge" type="straight"/>
+        <underline language="EN" method="pen" text="is the seconde" type="straight"/>
+        <underline language="EN" method="pen" text="lyft wynge" type="straight"/>
+        <underline language="EN" method="pen" text="in bothe wynges" type="straight"/>
+        <underline language="EN" method="pen" text="souldiours, and well" type="straight"/>
+        <underline language="EN" method="pen" text="on bothe wynges at ones" type="straight"/>
+        <underline language="EN" method="pen" text="beste rule" type="straight"/>
+        <underline language="EN" method="pen" text="his lyght harneised" type="straight"/>
+        <underline language="EN" method="pen" text="the fyfte maner" type="straight"/>
+        <underline language="EN" method="pen" text="neyther in the" type="straight"/>
+        <underline language="EN" method="pen" text="strength" type="straight"/>
+        <underline language="EN" method="pen" text="must nedes fyght, let" type="straight"/>
+        <underline language="EN" method="pen" text="ennemies left wynge" type="straight"/>
+        
+        <symbol language="EN" name="SS" place="left_margin" text="Machiauel addith to Vegetius Rules, cheifly fower: two ad apparatu[m],              two ad ordinem. Men, Iron, moony, &amp; bred, ar [the] strength of war: but the first two, most necessary:              for men, &amp; Iron, finde mony, &amp; bred; but moony, &amp; bred, finde not men, &amp; Iron.              Accustom your sowldiours, to despise delicate liuing, &amp; lasciuious aparrel."/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="make his forewarde foure square"/>
+        
+        <mark language="EN" method="pen" name="X_sign" place="intext" text="vanquyshed without weapon"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="in bothe wynges"/>
+        
+    </annotation>
+</transcription>

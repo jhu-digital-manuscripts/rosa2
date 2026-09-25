@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.101r.tif" pagination="191" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Kyngston" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Kenington.</marginalia_text>
+                    <location name="Kenington"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Iohannes verò Philpot" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Io[hann]es Philpot</marginalia_text>
+                    <person name="John Philpot"/>
+                </position>
+            </language>
+            <translation>John Philpot</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ad Kyngston" type="straight"/>
+        <underline language="LA" method="pen" text="vestram cameram scilicet vestram" type="straight"/>
+        <underline language="LA" method="pen" text="inter ciues nostros" type="straight"/>
+        <underline language="LA" method="pen" text="dominum nostru[m] ducem Lancastriae nuper quorundam" type="straight"/>
+        
+    </annotation>
+</transcription>

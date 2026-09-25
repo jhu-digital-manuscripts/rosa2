@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.120v.tif" pagination="240" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="imparia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Imparia</marginalia_text>
+                </position>
+            </language>
+            <translation>Unequal.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mulier" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mulier.</marginalia_text>
+                </position>
+            </language>
+            <translation>A woman.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Muraena" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Murena</marginalia_text>
+                    <book title="Pro Murena"/>
+                </position>
+            </language>
+            <translation>Pro Murena.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Milone" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro milone</marginalia_text>
+                    <book title="Pro Milone"/>
+                </position>
+            </language>
+            <translation>Pro Milone.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dißimile ex se plures causas habet: fit enim genere, modo, tempore, loco" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dissimile | genere modo tempore loco.</marginalia_text>
+                </position>
+            </language>
+            <translation>Dissimilarities: kind, manner, time, place.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Clunetio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Cluentio</marginalia_text>
+                    <book title="Pro Cluentio"/>
+                </position>
+            </language>
+            <translation>Pro Cluentio.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="imparia, Admirabilior in foemina quàm in uiro uitus. Quare" type="straight"/>
+        <underline language="LA" method="pen" text="Quod ipsum est ex minoribus ad maiora" type="straight"/>
+        <underline language="LA" method="pen" text="nam unde potius" type="straight"/>
+        <underline language="LA" method="pen" text="censorem Africanum" type="straight"/>
+        
+    </annotation>
+</transcription>

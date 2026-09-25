@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>700</totalPages>
+    <dimensions units="mm">
+        <width>380</width>
+        <height>250</height>
+    </dimensions>
+    <dates>
+        <startDate>1701</startDate>
+        <endDate>1800</endDate>
+    </dates>
+    <texts>
+        <text id="Poésies et prose de Christine de Pisan">
+            <language>fr</language>
+            <title>Poésies et prose de Christine de Pisan</title>
+            <textId/>
+            <pages end="344v" start="1r">344</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>27</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Christine de Pizan</title>
+            <commonName>Arsenal 3295</commonName>
+            <dateLabel>18th century</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Arsenal 3295</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Christine de Pizan</title>
+            <commonName>Arsenal 3295</commonName>
+            <dateLabel>18e siècle</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Arsenal 3295</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

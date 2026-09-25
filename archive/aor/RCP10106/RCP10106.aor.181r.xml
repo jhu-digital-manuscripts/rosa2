@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.181r.tif" pagination="361" reader="John Dee" signature="z 5"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Cicero Cornelij" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Cornelio</marginalia_text>
+                    <book title="Pro Cornelio"/>
+                </position>
+            </language>
+            <translation>Pro Cornelio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ferrum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ferru[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>The sword.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero his ipsis ad Brutu[m] uerbis quadam in epistolta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero ad Brutu[m]</marginalia_text>
+                    <person name="Cicero"/>
+                    <book title="Epistulae ad Brutum"/>
+                </position>
+            </language>
+            <translation>Cicero to Brutus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoteles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aristoteles</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="emendate quidem, ac dilucide dicentium" type="straight"/>
+        <underline language="LA" method="pen" text="potest,* &amp; quae sunt artes altiores, plerunque occultantur, ut artes sint" type="straight"/>
+        <underline language="LA" method="pen" text="armis, praeliatus" type="straight"/>
+        <underline language="LA" method="pen" text="Sublimiitas profectò &amp; magnicie[n]tia, &amp; nitor, &amp; autoritas expreßit illum fragorem" type="straight"/>
+        <underline language="LA" method="pen" text="terroris" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

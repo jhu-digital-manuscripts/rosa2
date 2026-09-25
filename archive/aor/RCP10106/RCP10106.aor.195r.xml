@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.195r.tif" pagination="389" reader="John Dee" signature="B 3"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ἔκλειψις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἔκλειψις</marginalia_text>
+                </position>
+            </language>
+            <translation>Omission.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="signum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>signum</marginalia_text>
+                </position>
+            </language>
+            <translation>Sign.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="μετωνυμία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>μετωνυμία</marginalia_text>
+                </position>
+            </language>
+            <translation>Metonymy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hypallagen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>hypallage.</marginalia_text>
+                </position>
+            </language>
+            <translation>Hypallage.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fori seueritas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fori seueritas</marginalia_text>
+                </position>
+            </language>
+            <translation>Seriousness of the vote.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="possessore" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Poßeßor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Possessor.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="[ser]monis, quod tacetur, accipimus" type="straight"/>
+        <underline language="LA" method="pen" text="inuentore, &amp; subiecta ab obstinentibus significat: ut" type="straight"/>
+        <underline language="LA" method="pen" text="inquantum" type="straight"/>
+        <underline language="LA" method="pen" text="quod continet, id quod continetur, usus recipit, ut" type="straight"/>
+        <underline language="LA" method="pen" text="est, raro audeat quis nisi poëta" type="straight"/>
+        <underline language="LA" method="pen" text="potius est à possessore quod poßidetur, ut" type="straight"/>
+        <underline language="LA" method="pen" text="quo eum qui efficit, ex eo quod" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+    </annotation>
+</transcription>

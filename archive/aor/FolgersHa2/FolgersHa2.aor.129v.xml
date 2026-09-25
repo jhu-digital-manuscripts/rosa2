@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.129v.tif" pagination="82" reader="Harvey" signature="[Fv]"/>	<!-- ABO 134left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						An quisq[ue] idem dicere potuisset aut elegentiùs; aut
+						prudentiùs; aut rotundiùs?
+					</marginalia_text>
+					<emphasis method="pen" text="An quisq[ue]" type="straight"/>
+					<emphasis method="pen" text="dicere potuisset" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Is anyone able to say the same thing more elegantly, or more prudently, or more smoothly?
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Huc singula Ciceronis consilia spectabant, vt esset						
+					</marginalia_text>
+					<person name="Cicero"/>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						πάντων κράτιστος,
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Huc super omnes
+						ait Plutarchus. Alexandri, et Ca[e]saris
+					</marginalia_text>
+					<person name="Plutarch"/>
+					<person name="Alexander the Great"/>
+					<person name="Julius Caesar"/>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						φιλοτιμία, τὸ πρωτεύειν,
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						tam valentissimis Causis, quàm gloriosissimis effectis.
+						Vt
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						eccè in Ca[e]saribus
+					</marginalia_text>
+					<book title="Caesars"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Juliani: vbi egregia inter ipsos Contentio.
+					</marginalia_text>
+					<person name="Julian"/>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Vnus ( ) Libellus instar historiaru[m] omnium.
+						reliqua omnis propria arte, et virtute gerenda res.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The singular counsels of Cicero aimed to such an extent, in order [to be the most excellent].
+				Plutarch spoke about this more than all others. [The pursuit of honour and greatness]
+				found in Alexander and Caesar, with both the strongest causes and the most glorious results.
+				As can be found here in Julian's Caesars, where one sees an extraordinary contrast between them.
+				One little book as an example among all books of history.		
+				The rest of the matter must be managed with what remains of one's own art and virtue. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EL">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( φιλοπρωτία
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Sylla[e], Pompeij, Ca[e]saris.
+					</marginalia_text>
+					<person name="Sulla"/>
+					<person name="Pompey"/>
+					<person name="Julius Caesar"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Nihil Suprà.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The pursuit of honor of Sulla, Pompey, and Cesar.
+				Nothing is greater.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						scitè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Knowingly.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Virtutis Certamen, et pulcherrimam insignium Meritorum a[e]mulationem laudarunt
+						omnes antiqui. Fortij scopus, ex professo Optimus Maximus.
+					</marginalia_text>
+					<person name="Joachim Fortius Ringelberg"/>
+				</position>
+			</language>
+			<translation>
+				A contest of virtue, and all ancient men praised the most beautiful emulation of distinguished service.
+				The declared goal of Fortius is to be the best and greatest.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="sua madre" type="straight"/>
+		<underline language="IT" method="pen" text="à Roma" type="straight"/>
+		<underline language="IT" method="pen" text="giouane" type="straight"/>
+		<underline language="IT" method="pen" text="mio padre ci è bene stato spesse" type="straight"/>
+		<underline language="IT" method="pen" text="figliuolo del padre" type="straight"/>
+		<underline language="IT" method="pen" text="Augusto potea ben'esser figliuol di suo padre" type="straight"/>
+		<underline language="IT" method="pen" text="Vn'audace auuedimento" type="straight"/>
+		<underline language="IT" method="pen" text="gran perigli" type="straight"/>
+		<underline language="IT" method="pen" text="giouane in [s]ul letto, addosso" type="straight"/>
+		<underline language="IT" method="pen" text="con costantissimo" type="straight"/>
+		<underline language="IT" method="pen" text="fa per lo Iddio" type="straight"/>
+		<underline language="IT" method="pen" text="d'Amore" type="straight"/>
+		<underline language="IT" method="pen" text="no[n] far" type="straight"/>
+		<underline language="IT" method="pen" text="suono delle tre" type="straight"/>
+		<underline language="IT" method="pen" text="amanti fornirono" type="straight"/>
+		<underline language="IT" method="pen" text="la munificentia" type="straight"/>
+		<underline language="IT" method="pen" text="SOCRATE" type="straight"/>
+		<underline language="IT" method="pen" text="tanto prodigo" type="straight"/>
+		<underline language="IT" method="pen" text="alcuna donaua" type="straight"/>
+		<underline language="IT" method="pen" text="che le Gratie, che" type="straight"/>
+		<underline language="IT" method="pen" text="le fai meretrici" type="straight"/>
+		<underline language="IT" method="pen" text="Benefacta" type="straight"/>
+		<underline language="IT" method="pen" text="male locata" type="straight"/>
+		
+		<symbol name="Mercury" place="left_margin"/>
+		
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark language="IT" method="pen" name="plus_sign" place="left_margin" text="mio padre ci è bene stato spesse"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- infe -->
+		<mark method="pen" name="bracket" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ha -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- forniro -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- pro -->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- communicandole -->
+		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- arbitror -->
+		
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- incominiciato -->
+		<mark method="pen" name="vertical_bar" place="intext"/> <!-- meretrici. Et -->
+		
+    </annotation>
+</transcription>

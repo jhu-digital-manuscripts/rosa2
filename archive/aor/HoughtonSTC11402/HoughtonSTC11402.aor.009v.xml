@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.009v.tif" reader="Harvey" signature="[Aii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Tiberius, notorius Irony.</marginalia_text>
+                    <person name="Tiberius"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Impedimentum, pro Occasione arreptum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Impediment, sezied for the occasion.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Ironicè</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>by co[n]traryes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Ironically.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Solius Leonis, et Aguila[e], pugnare aperto marte: Vulpis, Hya[e]na[e], et omniu[m] callidoru[m] animalium Ars, Ironia.</marginalia_text>
+                    <emphasis method="pen" text="Solius Leonis, et Aguila[e]" type="straight"/>
+                    <emphasis method="pen" text="Vulpis, Hya[e]na[e], et" type="straight"/>
+                    <emphasis method="pen" text="Ironia." type="straight"/>
+                </position>
+            </language>
+            <translation>It is of the lion and the eagle only, to fight in open battle: irony, the skill of the fox, the hyena, and of all crafty animals.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="his owne greatte profyte" type="straight"/>
+        <underline language="EN" method="pen" text="leste those thynges shulde happen" type="straight"/>
+        <underline language="EN" method="pen" text="whiche he most coueted" type="straight"/>
+        <underline language="EN" method="pen" text="wyshed for those thynges" type="straight"/>
+        <underline language="EN" method="pen" text="whiche he feared most of all" type="straight"/>
+        <underline language="EN" method="pen" text="he wente ernestlye in hande with the traytour, that he shulde by some solemne and accustomed poynte of falshode" type="straight"/>
+        <underline language="EN" method="pen" text="entise the Parthenians to passe" type="straight"/>
+        <underline language="EN" method="pen" text="Zeugma" type="straight"/>
+        <underline language="EN" method="pen" text="the nerest wave" type="straight"/>
+        <underline language="EN" method="pen" text="they dyd arange forthe theyr army" type="straight"/>
+        <underline language="EN" method="pen" text="open champion ground" type="straight"/>
+        <underline language="EN" method="pen" text="there stand in vtter" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="chalk" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--Euphra-->
+        <mark method="pen" name="apostrophe" place="right_margin"/> <!--Zeugma,-->
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="his owne greatte profyte"/>
+        <mark method="pen" name="apostrophe" place="intext"/> <!--Taurus, he-->
+        
+    </annotation>
+</transcription>

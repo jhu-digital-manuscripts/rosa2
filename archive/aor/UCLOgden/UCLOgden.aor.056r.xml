@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.056r.tif" pagination="95" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="naupegos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Naupegi. Stuptiriagt  
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Shipwright.  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Shipbuilders.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pantomimos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pantomimi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Ballet-dancers.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="neocoros" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Neocori.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Temple-keeper.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tornatores" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tornatores.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Turners.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="φρικοκοίλιον" hand="English_secretary">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        φρικοκοίλιον  <!-- it is an odd compound, where a usual term would be ψυχροκοίλιος -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Cold belly. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nocturna genitura, plena luminibus, feratur" type="straight"/>
+        <underline language="LA" method="pen" text="plena luminibus per" type="straight"/>
+        <underline language="LA" method="pen" text="Si uero minuta luminibus in nocturna" type="straight"/>
+        <underline language="LA" method="pen" text="si liberata à ☉ radiis" type="straight"/>
+        <underline language="LA" method="pen" text="per diem, minuta lumine, ad ♀ feratur" type="straight"/>
+        <underline language="LA" method="pen" text="neocoros" type="straight"/>
+        <underline language="LA" method="pen" text="sit minuta luminibus" type="straight"/>
+        <underline language="LA" method="pen" text="frigus assiduum" type="straight"/>
+        
+    </annotation>
+</transcription>

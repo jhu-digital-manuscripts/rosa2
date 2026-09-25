@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.189v.tif" reader="Harvey" signature="[Yy.iii.[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Gabriel Haruey.
+                    </marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        the generall Maxime: To do all thinges with A certayn seemely Grace and Decorum.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Musa[e] cecinerunt, in nuptijs Cadmi:
+                    </marginalia_text>
+                    <person name="Cadmus"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Οττι καλὸν φίλον ἐστι, καὶ οὐ καλὸν οὐ φίλον ἐστὶ.</marginalia_text>
+                    <X-ref book_title="Elegies" language="EL" person="Theognis" text="Οττι καλὸν φίλον ἐστι, καὶ οὐ καλὸν οὐ φίλον ἐστὶ."/>
+                </position>
+            </language>
+            <translation>
+                Muses sang at the marriage of Cadmus. "What is beautiful is loved, and what is not beautiful is not loved."
+            </translation>
+        </marginalia>
+        
+        <marginalia date="1572" hand="Italian"> 
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        GH. 1572.
+                    </marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        The contents of [the] Courtier, sett down barely in generall propositions, in manner of Maximes.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Aphorismi Aulici.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Aphorisms of the Courtier. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="270" place="tail">
+                    <marginalia_text>
+                        The rarest men extend their vtterest possibilitie, with a fine (as it were) familiar sleight: &amp; they that do not enforce themselues to display their best, cum euer short, of their reckoning.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        { No excellent grace, or fine cumlie behauior without three cunning properties; a sound iudgment to informe;
+                        an apt dexteritie to conforme; &amp; an earnest intention to performe.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="is nowe past time" type="straight"/>
+        <underline language="EN" method="pen" text="to repent or correct." type="straight"/>
+        
+        <symbol language="EN" name="SS" place="tail" text="{ No excellent grace, or fine cumlie behauior without three cunning properties; a sound iudgment to informe; an apt dexteritie to conforme; &amp; an earnest intention to performe."/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="to repent or correct."/>
+        
+    </annotation>
+</transcription>

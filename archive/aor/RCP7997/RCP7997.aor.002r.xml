@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.002r.tif" reader="John Dee" signature="Aij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="demonstrationib[us] p[ro]pter quid" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Demo[n]stratio[n]es propter quid.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Demonstrations of the purpose.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[ri]mo m[od]o certitudinis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Primus modus certitudinis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The first method of certainty.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="causa[e]; effectu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Causae. effectus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Causes and effects.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Qua Apoloni[us] magnus diffinie[n]tes et ariste[us] s[e]c[un]d[u]m pithagorica[e] disciplina[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Apolonius Aristeus.
+                    </marginalia_text>
+                    <person name="Apollonius"/>
+                    <person name="Aristaeus"/>
+                </position>
+            </language>
+            <translation>
+                Apollonius. Aristaeus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in p[ri]mo m[od]o certitudinis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mathematica in primo modo certitudinis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mathematics in the first method of certainty.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Numerus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Number.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pithagoras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Numeri pithagorici infra
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                For Pythagorean numbers, see below.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mathematica est scientia certissima et demonstratina quantitatis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mathematica[e] definitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A definition of mathematics.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="triplex demo[n]stratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Demonstratio triplex
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A threefold demonstration.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        aiunt,
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                They say.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="p[ro]pter quid.quib[us]" type="straight"/>
+        <underline language="LA" method="pen" text="secretissima nature. exemplis mathematicalib[us]" type="straight"/>
+        <underline language="LA" method="pen" text="in p[ri]mo m[od]o certitudinis" type="straight"/>
+        <underline language="LA" method="pen" text="causa[e]" type="straight"/>
+        <underline language="LA" method="pen" text="q[uam] effectu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="et hoc m[od]o in p[ri]mo m[od]o certitudinis" type="straight"/>
+        <underline language="LA" method="pen" text="gen[us], qua[n]titate[m], qua[m] mathematica explanat in p[ri]mis p[er] nu[m]er[um]" type="straight"/>
+        <underline language="LA" method="pen" text="de huiusmodi nu[m]er[us] pithagoric[us]" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] ipsa sola demonstratiua p[ost] ceteris" type="straight"/>
+        <underline language="LA" method="pen" text="in re" type="straight"/>
+        <underline language="LA" method="pen" text="circa rem" type="straight"/>
+        <underline language="LA" method="pen" text="s[e]c[un]d[u]m" type="straight"/>
+
+        <mark method="pen" name="equal_sign" place="right_margin"/> <!-- etiam -->
+        <mark method="pen" name="equal_sign" place="right_margin"/> <!-- ingeniauit -->
+        <mark method="pen" name="equal_sign" place="right_margin"/> <!-- introductoria -->
+        <mark method="pen" name="comma" place="intext"/> <!-- introductoria q[uae] -->
+        <mark method="pen" name="comma" place="intext"/> <!-- causis ex -->
+        <mark method="pen" name="comma" place="intext"/> <!-- aristeu[m] qui -->
+        <mark method="pen" name="comma" place="intext"/> <!-- e[ni]m que[m] -->
+        <mark method="pen" name="comma" place="intext"/> <!-- machina vnica -->
+        <mark method="pen" name="comma" place="intext"/> <!-- gen[us] qua[n]titate[m] -->
+        <mark method="pen" name="comma" place="intext"/> <!-- qua[n]titate[m] qua[m] -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- aristoteles vt -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- patebit m[u]lta -->
+        
+        <errata amendedtext="philosophantes" copytext="philossophantes" language="LA"/>
+        <errata amendedtext="," copytext="." language="LA"/> <!-- imbuti atq[ue] -->
+        <errata amendedtext="p[ri]ncipijs" copytext="p[ri]ncipys" language="LA"/>
+        <errata amendedtext="," copytext="." language="LA"/> <!-- philosophantes secretissima -->
+        <errata amendedtext="," copytext="." language="LA"/>  <!-- disciplia[m] hoc -->
+        <errata amendedtext="," copytext="." language="LA"/>      
+        <errata amendedtext="," copytext="." language="LA"/> <!-- ei[us] p[ri]us -->
+        <errata amendedtext="," copytext="." language="LA"/> <!-- mathematica o[mn]es -->
+        <errata amendedtext="," copytext="." language="LA"/> <!-- p[ro]fusus semi[n]auit -->
+        
+    </annotation>
+</transcription>

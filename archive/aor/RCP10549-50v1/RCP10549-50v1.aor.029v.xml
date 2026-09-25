@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.029v.tif" pagination="42" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Argumentum Verrinarum actionu[m]
+                        Cn. Pompeio primu[m] &amp; M. Crasso consu[l] C. Verres, perfunctus qua[e]stus qua[e]stura, Legatione, questura vrbana, 
+                        patre caio verre, cum successisset in Sicilia, L Sacerdoti praetori, eamq[ue] sibi, no[n]succedente Arrio p[er] trienniu[m] tenuisset, 
+                        &amp; in ea fuißet Libidinose, amarè crudeliterq[ue] versatus: succedente tandem in eandem prouincia[m] Metello, repetundaru[m]
+                        reus, à siculis postulatus est, qui o[mn]es pra[e]ter Syracusanos &amp; mamertinos, M[arcum] Tulliu[m] eo tempore florentem defe[n]sio[n]ibus
+                        amicoru[m], ad accusancum verrem, prodire perpuleru[n]t.
+                    </marginalia_text>
+                    <person name="Gnaeus Pompeius"/>
+                    <person name="Marcus Licinius Crassus"/>
+                    <person name="Verres"/>
+                    <person name="Gaius Licinius Sacerdos"/>
+                    <person name="Quintus Arrius"/>
+                    <person name="Lucius Caecilius Metellus"/>
+                    <location name="Sicily"/>
+                    <emphasis method="pen" text="Argumentum Verrinarum actionu[m]" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                The proof of the actions of boars. <!--JG: Unsure, does 'Verrinarum' refer to Verres c.s.?-->
+                First Gnaeus Pompeius and Marcus Licinius Crassus were consuls. Gaius Verres, having been done with the quaestorship, embassy, and urban quaestorship,
+                with Gaius Verres as the paterfamilias, when he had succeeded Gaius Licinius Sacerdos in Sicily, and he had held it to himself for three years, with Quintus Arrius not having advanced, <!--JG: Unsure about 'patre Caio Verre'-->
+                and in it he had been wanton, stirring spitefully and savagely. Finally, with Metellus having advanced in the same province, liable for the recovery of the money, 
+                was asked by the Sicilians, who, everyone besides the Syracusans and Mamertines, in that time compelled Cicero to advance money for the defense of their friends [and] for accusing Verres. <!--JG: Check translation, not sure-->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="litigat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        litigare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To go to law.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quemadmodum socius in societate habet partem, sic haeres in haereditate habet partem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Comparatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Comparison.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        extorquere eripere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To exort, to rob.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="malum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        malum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Bad.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="restipularetur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        restipulari
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To make a counter-stipulation.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Exordium a sua persona
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Introduction by his person.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Publica Iudicia dicta su[n]t quod [cuiuis] ex populo executio eoru[m] plerumq[ue] datur. Iusti.. li[br]o [quarto] <!-- FSF: not sure at all -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The public trials have asserted that [...] their preformance is generally given from the people. [...] in the fourth book. <!-- JG: Very unsure--> --&gt;
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iucu[n]dam diuturnámque memoriam Quaesturae nominísque mei relinquerem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        relinq[ue]re iucu[n]da[m] diuturna[m] memoria[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To leave a lasting and agreeable memory.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quod suae partis esset" type="straight"/>
+        <underline language="LA" method="pen" text="Quid enim huic rei respo[n]dere poteris" type="straight"/>
+        <underline language="LA" method="pen" text="quemadmodum socius in societate habet partem, sic haeres in haereditate habet partem" type="straight"/>
+        <underline language="LA" method="pen" text="sibi soli, no[n] cohaeredibus petit: sic" type="straight"/>
+        <underline language="LA" method="pen" text="sibi soli" type="straight"/>
+        <underline language="LA" method="pen" text="petit. &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="quemadmodum" type="straight"/>
+        <underline language="LA" method="pen" text="tu peruerso more" type="straight"/>
+        <underline language="LA" method="pen" text="vnà &amp; id quod facio probabit" type="straight"/>
+        <underline language="LA" method="pen" text="iucu[n]dam diuturnámque memoriam" type="straight"/>
+        <underline language="LA" method="pen" text="commodis eorum me non defuturum" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">15</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">3</numeral>
+        
+    </annotation>
+</transcription>

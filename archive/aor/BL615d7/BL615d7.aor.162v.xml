@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.162v.tif" pagination="[162v]" reader="John Dee" signature="[Xij[v]]"/>    
+    <annotation>
+        
+        <marginalia anchor_text="Punta della Lapa" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Punta della Lapa</marginalia_text> 
+                    <location name="Lapa"/>
+                </position>
+            </language>
+            <translation>The tip of Lapa.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Capo Botto" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Capo Botto</marginalia_text> 
+                    <location name="Cape Botto"/> <!-- M.B. Can only find reference to Castilian variant 'Botai '  -->
+                </position>
+            </language>
+            <translation>Cape Botto</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quattro Isolette" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>4 little Iles</marginalia_text>  
+                    <location name="Cape Botto"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Capo del Dragone" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Capo del dragone.</marginalia_text>
+                    <location name="Capo del Dragone"/>
+                </position>
+            </language>
+            </marginalia>
+        
+        <marginalia anchor_text="XIII di Agosto" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>13. Augusti</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="certo di non potere" type="straight"/>
+        <underline language="IT" method="pen" text="di Gratia" type="straight"/>
+        <underline language="IT" method="pen" text="gl'Indiani chiamauano Paria" type="straight"/>
+        <underline language="IT" method="pen" text="Capo Botto" type="straight"/>
+        <underline language="IT" method="pen" text="Punta della Lapa" type="straight"/>
+        <underline language="IT" method="pen" text="quattro Isolette" type="straight"/>
+        <underline language="IT" method="pen" text="Capo del Dragone" type="straight"/>
+        <underline language="IT" method="pen" text="la furia dell'acqua" type="straight"/>
+        <underline language="IT" method="pen" text="là vuole" type="straight"/>
+        <underline language="IT" method="pen" text="vscire in" type="double"/>
+        <underline language="IT" method="pen" text="tre onde di mar" type="straight"/>
+        <underline language="IT" method="pen" text="corrente gittato in alcune" type="straight"/>
+        <underline language="IT" method="pen" text="la Costa Settentrionale della istessa" type="straight"/>   
+        
+        <mark method="pen" name="bracket" place="intext" text="che gl' Indiani chiamauano Paria"/>
+        <mark method="pen" name="bracket" place="intext" text="che gl' Indiani chiamauano Paria"/>
+         
+    </annotation>
+</transcription>

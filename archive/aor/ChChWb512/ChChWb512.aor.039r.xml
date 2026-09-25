@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.039r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Orcades &amp; prouinciales insulas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Orcades et conprovinciales Insula[e] Orcadu[m]: s[icquam] Insula[e] Schetlandia[e] et Hebrides
+                    </marginalia_text> <!--Transcription incomplete. // NBW: Suggested based on prev use. Could also be an abbreviation for "scilicet" or "hoc est"-->
+                    <location name="Orkney Islands"/>
+                    <location name="Shetland Islands"/>
+                    <location name="Hebrides"/>
+                </position>
+            </language>
+            <translation>The Orkney Islands and the provincial islands. Namely the Shetland islands and the Hebrides.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="daturu[m] se p[er]mittebat filia[m] suam si tantummodo regnu[m] Brita[n]niae sub p[otes]tate Romana" type="straight"/>
+        <underline language="LA" method="pen" text="non esse dedecori subditu[m] Romanis" type="straight"/>
+        <underline language="LA" method="pen" text="auxilio Aruiragi vsus Orcades &amp; prouinciales insulas potestati eius submisit" type="straight"/>
+        
+        <errata amendedtext="conprouinciales" copytext="prouinciales" language="LA"/>
+        
+    </annotation>
+</transcription>

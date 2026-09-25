@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.misc.insert.25.tif" origin="added" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="unknown modern hand">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>p 53 Biothantus notes and on ff 
+                        also eg 76 90</marginalia_text> <!--JG: Seems to be error by reader, should refer to p. 43 (link to p. 43 established in XML file--> 
+                    <internal_ref>
+                        <target ref="UCLOgden:066:m0001" text="53"/>
+                        <target ref="UCLOgden:099:m0001" text="76"/>
+                        <target ref="UCLOgden:113:m0001" text="90"/>
+                    </internal_ref>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="unknown modern hand">
+            <language ident="EN">
+                <position book_orientation="90" place="full_page">
+                    <marginalia_text>p 53 = Dee's note 134</marginalia_text>
+                    <person name="John Dee"/>
+                </position>
+            </language>
+        </marginalia>
+        
+    </annotation>
+</transcription>

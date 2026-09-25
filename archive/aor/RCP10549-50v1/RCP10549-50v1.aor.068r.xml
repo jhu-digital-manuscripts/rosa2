@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.068r.tif" pagination="115" reader="John Dee" signature="hh.ii."/>
+    <annotation> 
+        
+        <marginalia anchor_text="prouinciam per triennium vexatam atque vastatam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        prouincia vexata vastata. ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+               A ravaged and devastated province.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Q. ille Apronius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Q Apronius
+                    </marginalia_text>
+                    <person name="Quintus Apronius"/>
+                </position>
+            </language>
+            <translation>
+                Quintus Apronius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vorago est, aut gurges vitiorum, turpidinúmque" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vorago gurges ] vitioru[m] turpitudinu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A chasm or whirpools of villainies and abominations.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="expilationibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        expilatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Plunder.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="saltare nudus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nudus saltabat.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To dance naked.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="audaciae, nequitiae, crudelitati" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        audacia, nequitia, crudelitas ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Boldness, wickedness, cruelty.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        pignerator
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Tax-gatherer.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="eáque, quae iam diu ad salutem sociorum, vtilitatém" type="straight"/>
+        <underline language="LA" method="pen" text="nequitia, luxuria, audacia, sui simillimum iudicauit" type="straight"/>
+        <underline language="LA" method="pen" text="immensa aliqua vorago est, aut gurges vitiorum, turpitudinúmque" type="straight"/>
+        <underline language="LA" method="pen" text="enim non est. sic mihi persuadeo Iudices" type="straight"/>
+        <underline language="LA" method="pen" text="miserum atque iniquum ex agro homines traduci in forum: ab aratro ad subsellia: ab vsu rerum rusticarum, ad insolitam litem atque iudicium" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">16</numeral>
+        
+        <drawing anchor_text="miserum atque iniquum ex agro homines traduci in forum: ab aratro ad subsellia: ab vsu rerum rusticarum, ad insolitam litem atque iudicium" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+        
+    </annotation>
+</transcription>

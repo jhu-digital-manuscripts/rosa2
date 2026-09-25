@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.202r.tif" pagination="395" reader="John Dee"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="tempore Rogerus comes Marchiae, dum nimis fidit in virtute propria, ab Hibernicus" type="straight"/>
+        <underline language="LA" method="pen" text="Hoc tempore obijt Iohannes dux Lancastriae, cuius corpus in Ecclesia sancti" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- occasione, bona -->
+        <mark method="pen" name="comma" place="intext"/> <!-- occupandi, vt -->
+        
+        <errata amendedtext="ducis" copytext="ducibus" language="LA"/>
+        
+    </annotation>
+</transcription>

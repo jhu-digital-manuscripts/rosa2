@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.002r.tif" pagination="[Aiii[r]]" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Regis ipsius Polymechania: Etiam Euretica.
+                    Mechanopoietica: </marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>qua hodiè excellit Noriberga: quasi sola mathematicaru[m], mechanicarumq[ue]
+                    officina.</marginalia_text>
+                    <location name="Nuremberg"/>
+                </position>
+            </language>
+            <translation>The inventiveness of the king himself: even [???]. 
+                The 'art of mechanics' (mechano-poetica), which nowadays is eminent in Nuremberg: as if only a workshop of mathematics and engineering.
+            </translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>egregiè</marginalia_text>
+                </position>
+            </language>
+            <translation>Excellently.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A Bright Kynge.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Neopraxia.</marginalia_text>
+                </position>
+            </language>
+            <translation>New practice.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[The] Kinges martial practises &amp; inuentions.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Huc Cardani Machina[e] alia[e]q[ue] Techna[e]
+                        Polyda[e]dala[e], in Libris de Subtilitate, et Varietate.
+                    [etc.] Vbi multa polemica, mechanica, Empirica, Polychresta Experimenta.</marginalia_text>
+                    <person name="Girolamo Cardano"/>
+                    <book title="De subtilitate"/>
+                    <book title="De rerum varietate"/>
+                </position>
+            </language>
+            <translation> Here the schemes and many other cunning tricks of Cardano, in the books about acuteness and variety. Et cetera. 
+                Where are many military, mechanical, empirical and polychrest experiments </translation> <!--JG: How to translate polydaedalae?-->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Ramus, Germaniam in hoc Polymechanico, et tormentario genere, appellat scholam
+                    Martis, et Vulcani Officinam.</marginalia_text>
+                    <person name="Petrus Ramus"/>
+                    <person name="Mars"/>
+                    <person name="Vulcan"/>
+                    <location name="Germany"/>
+                </position>
+            </language>
+            <translation>Ramus calls Germany, in this 'in this highly mechanized and weaponized way, the school of Mars and the workshop of Vulcan.</translation> 
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="entertayneth all powers of the harte" type="straight"/>
+        <underline language="EN" method="pen" text="duetie maye" type="straight"/>
+        <underline language="EN" method="pen" text="spareth, to vysite with your owne eyes" type="straight"/>
+        <underline language="EN" method="pen" text="ruinous places of the see quostes" type="straight"/>
+        <underline language="EN" method="pen" text="to worke" type="straight"/>
+        <underline language="EN" method="pen" text="with your own handes" type="straight"/>
+        <underline language="EN" method="pen" text="manegynge tooles" type="straight"/>
+        <underline language="EN" method="pen" text="continually inuentyng" type="straight"/>
+        <underline language="EN" method="pen" text="weapons" type="straight"/>
+        <underline language="EN" method="pen" text="newe kindes of" type="straight"/>
+        <underline language="EN" method="pen" text="shyppes" type="straight"/>
+        <underline language="EN" method="pen" text="gunnes" type="straight"/>
+        <underline language="EN" method="pen" text="armure" type="straight"/>
+        <underline language="EN" method="pen" text="As god helpe me" type="straight"/>
+        <underline language="EN" method="pen" text="comforte, to all englyshe" type="straight"/>
+        <underline language="EN" method="pen" text="myght se" type="straight"/>
+        <underline language="EN" method="pen" text="howe your grace spendeth" type="straight"/>
+        <underline language="EN" method="pen" text="the hole day." type="straight"/>
+        <underline language="EN" method="pen" text="traytours" type="straight"/>
+        <underline language="EN" method="pen" text="say so moche honour by your" type="straight"/>
+        <underline language="EN" method="pen" text="swarue," type="straight"/>
+        
+        <symbol language="LA" name="SS" place="head" text="Regis ipsius Polymechania: Etiam Euretica. Mechanopoietica: qua hodiè              excellit Noriberga: quasi sola mathematicaru[m], mechanicarumq[ue] officina."/>
+        
+        <symbol language="EN" name="SS" place="left_margin" text="with your own handes"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> <!--curved-->
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> 
+        
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--them. Your-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="spareth, to vysite with your owne eyes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="ruinous places of the see quostes"/>
+        <mark method="pen" name="dot" place="intext"/> <!--vs, neyther-->
+        <mark method="pen" name="apostrophe" place="intext"/> <!--letteth, to-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="to worke"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="with your own handes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="maynegynge tooles"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="continually inuentyng"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="weapons"/>
+        <mark language="EN" method="pen" name="equal_sign" place="intext" text="new kindes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="shyppes"/>
+        <mark method="pen" name="apostrophe" place="intext"/> <!--shyppes-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="gunnes"/>
+        <mark method="pen" name="apostrophe" place="intext"/> <!--gunnes-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="armure"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--armure. As-->
+        <mark method="pen" name="apostrophe" place="intext"/> <!--armure--> 
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="myght se"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="howe your grace spendeth"/>
+        
+    </annotation>
+</transcription>

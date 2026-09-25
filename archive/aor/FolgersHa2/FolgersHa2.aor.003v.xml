@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+<page filename="FolgersHa2.003v.tif" pagination="326" reader="Harvey"/>	<!-- ABO 008left -->
+    <annotation>
+    <!-- Marginalia -->
+        
+        <marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.003v_0001" marginalia_continues_to="Ha2.004r_0001" marginalia_to_transcription="Ha2.004r.xml">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        At non legit quotidiè rarissima mundi ingenia: - [p. 327: - et spiritus omnium viuidissimos.]
+                    </marginalia_text>
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                But he does not read daily the rarest natural talents of the world: [p. 327: and the most lively souls of everyone.]
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        pazzo sauio. )
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A wise madman.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quales Eutrapelus quotidiè 
+                    </marginalia_text>
+                    <person name="Eutrapelus"/>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        legit singulares auctores: Eunapiu[m],
+                    </marginalia_text>
+                    <person name="Eunapius"/>
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        cu[m] Tacito: Philostratum, cum Iuliano: Zuingeri theatrum,
+                    </marginalia_text>
+                    <person name="Tacitus"/>
+                    <person name="Philostratus"/>
+                    <person name="Julian"/>
+                    <person name="Theodor Zwinger"/>
+                    <book title="Theatrum vitae humanae"/>
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        cum Gandino: Bartasium, cu[m] Rabelaesio[:]
+                    </marginalia_text>
+                    <person name="Marcantonio Gandino"/>
+                    <person name="Guillaume Du Bartas"/>
+                    <person name="Francois Rabelais"/>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Theocriti Idyllion 
+                        I. cu[m] 
+                        Bionis, et Adonidis Epitaphio.                       
+                    </marginalia_text>
+                    <person name="Theocritus"/>
+                    <person name="Bion of Smyrna"/>
+                    <book title="Idylls"/>
+                    <book title="Epitaph of Adonis"/>
+                </position>
+            </language>
+            <translation>
+                What sort of singular authors Eutrapelus reads daily: 
+                Eunapius, together with Tactius: Philstratus, together with Julian: Zwinger's 'Theater', together with Gandino:
+                Du Barthas, together with Rabelais: the 'First Idyll' of Theocritus together with Bion, and the 'Epitaph of Adonis'.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        | ( Economico.
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Scoggin bad [the] King beggan Office: &amp; he shoold want no moonie. <!-- This line is perplexing to me. -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Economical.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tria scuta         
+                        heroica,
+                        Homeri, Hesiodi, Virgilij:
+                    </marginalia_text>
+                    <person name="Homer"/>
+                    <person name="Hesiod"/>
+                    <person name="Virgil"/>
+                    <emphasis method="pen" type="straight"/>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        cum septima die Bartasij.
+                    </marginalia_text>
+                    <person name="Guillaume Du Bartas"/>
+                </position>
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                       Canticu[m] Canticorum Salomonis: cu[m] Iobi Behemoth, et Leuiathan.
+                    </marginalia_text>
+                    <person name="Solomon"/>
+                    <book title="Song of Songs"/>
+                    <book title="Book of Job"/>                    
+                </position>
+            </language>
+            <translation>
+                The three heroic shields of Homer, Hesiod, Virgil: with the seven days of Du Barthas. The Song of Songs of Solomon: together with the Behemoth and Leviathan in Job.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="90" place="right_margin">
+                    <marginalia_text>
+                        Eiusdem panis quotidianus, Martialis, et Heiuodus =   <!-- Marginalia continues: Domenichi_008right, left_margin, 'cum duobus argutissimis poetis, Ausonio, et Politiano.'-->
+                    </marginalia_text>       
+                    <person name="Martial"/>
+                    <person name="John Heywood"/>
+                </position>
+            </language>
+            <translation>
+                His daily bread, of Martial, and of Heywood =
+            </translation>
+        </marginalia>
+        
+    <!-- Underlines -->
+        <underline language="IT" method="pen" text="un bracco" type="straight"/>
+        <underline language="IT" method="pen" text="che era mastino." type="straight"/>
+        <underline language="IT" method="pen" text="sauio alle sue spese" type="straight"/>
+        <underline language="IT" method="pen" text="fai come il pecorino da Dicomano" type="straight"/>
+        <underline language="IT" method="pen" text="fauelli poco, &amp; male" type="straight"/>
+        <underline language="IT" method="pen" text="cominciò alla porta a belare" type="straight"/>
+        <underline language="IT" method="pen" text="antico uulgatisimo" type="straight"/>
+        <underline language="IT" method="pen" text="Dolendosi Massimiano" type="straight"/>
+        <underline language="IT" method="pen" text="d'ogni memoria" type="straight"/>
+        <underline language="IT" method="pen" text="delle poche entrate, ch'egli" type="straight"/>
+        <underline language="IT" method="pen" text="non ui fate una uolta cancellier, lasciando la" type="straight"/>
+        <underline language="IT" method="pen" text="uoi mettereste insieme gran quantità di denari" type="straight"/>
+        <underline language="IT" method="pen" text="pompa de- cancellieri" type="straight"/>
+        <underline language="IT" method="pen" text="Gottifredo Re di Gierusale[m]" type="straight"/>
+        <underline language="IT" method="pen" text="donare molte cose a quel" type="straight"/>
+        <underline language="IT" method="pen" text="senza alcuno orname[n]to reale" type="straight"/>
+        <underline language="IT" method="pen" text="cosi gran Capitano" type="straight"/>
+        <underline language="IT" method="pen" text="sopra tutto l'Orie[n]te" type="straight"/>
+        <underline language="IT" method="pen" text="sedere in terra senza" type="straight"/>
+        <underline language="IT" method="pen" text="messosi a ridere" type="straight"/>
+        
+    <!-- Symbols -->
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="JC" place="intext"/>
+        
+    <!-- Marks -->
+        <mark method="pen" name="dot" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- male, tratto -->
+        <mark language="IT" method="pen" name="plus_sign" place="intext" text="poche"/>
+        <mark language="IT" method="pen" name="plus_sign" place="intext" text="volta cancellier"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- can -->
+        <mark method="pen" name="dot" place="intext"/> <!-- denari, uolle -->
+        <mark method="pen" name="plus_sign" place="intext" text="cancellieri"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Homeri, Hesiodi, Virgilij"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- over uicini -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- hauen -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- rea -->
+        <mark method="pen" name="dot" place="intext"/> <!-- le, si -->
+        <mark method="pen" name="dot" place="intext"/> <!-- Orie[n]te, si -->
+        <mark method="pen" name="dot" place="intext"/> <!-- loro, egli -->
+        <mark method="pen" name="comma" place="intext"/> <!-- fusse si -->
+        <mark method="pen" name="bracket" place="left_margin"/> <!-- Bracketing his own annotation Homeri, Hesiodi, etc. -->
+        
+    </annotation>
+</transcription>

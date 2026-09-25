@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.179v.tif" pagination="98" reader="John Dee" signature="[I[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Astapham" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Astapha
+                    </marginalia_text>
+                    <person name="Stephen of Antioch"/> <!-- M.B. Apparently 'astapham' is an arabization of Stephen and refers to Stepen of Antioch who translated ten works of Galen from Arabic in the 12th Century,. 
+                    See https://books.google.co.uk/books?id=sdVEAAAAcAAJ&pg=PA27&dq=Astapham&hl=en&sa=X&ved=0ahUKEwiDv8OQlcPWAhVXF8AKHTe3D6cQ6AEIRTAF#v=onepage&q=Astapham&f=false and 
+               and https://archive.org/stream/GuidoBonattiLiberAstronomiaePart4OnHoraryPart1/Guido%20Bonatti%20-%20Liber%20Astronomiae%2C%20Part%201#page/n29/mode/2up-->
+                </position>
+            </language>
+            <translation>
+                Stephen of Antioch.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="deterior Cauda" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ♄ deterior cauda.
+                    </marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>
+                Saturn is the lower tail. 
+                <!-- M.B. I am totally certain but I think it is just the Ptolemaic terminology for the moon's decending node, i.e. the 'Cauda Draconis, or 'Catabibazon'. 
+                    Ptolemy writes 'Sunt autem loci praui Caput, & deterior Cauda, & nodi Planetarum proprortione respondentes Capiti & Caudae.' 
+                    See: https://books.google.co.uk/books?id=AxxaAAAAcAAJ&pg=RA1-PA593&dq=%22deterior+cauda%22&hl=en&sa=X&ved=0ahUKEwj7qe_6j8PWAhUJIMAKHXgrCtAQ6AEIZjAJ#v=onepage&q=%22deterior%20cauda%22&f=false -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Rumores.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Rumours.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dominus secundae domus fuerit in exaltatione sua uel domo, iens ad dominum ascendentis, maxime autem, si fuerit Iupiter" type="straight"/>
+        <underline language="LA" method="pen" text="Astapham" type="straight"/>
+        <underline language="LA" method="pen" text="106 Auerte oculos à figura, in qua Mars fuerit in angulo, maxime cum fuerit ascendens Scoprio" type="straight"/>
+        <underline language="LA" method="pen" text="esse rerum" type="straight"/>
+        <underline language="LA" method="pen" text="Signa significant corpora, planetae uero ea quae moue[n]t corpora, loca planetarum in circulo eorum'q[ue] substa[n]tiae,              &amp; loca eorum à Sole, significa[n]t opus &amp; destructionem" type="straight"/>
+        <underline language="LA" method="pen" text="haec significatio nec falli nec fallere poterit" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>  
+        
+    </annotation>
+</transcription>

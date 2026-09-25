@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.184r.tif" pagination="347" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Ex hoc loco colligi p[ossun]t o[mn]es Ciceronis or[ati]o[n]es non extare
+                    </marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>
+                From this place all of Cicero's speeches that are not extant can be gathered
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Aquilium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        M Aquilius
+                    </marginalia_text>
+                    <person name="Manius Acilius Glabrio"/>
+                </position>
+            </language>
+            <translation>
+                Manius Acilius Glabrio.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="bellum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        bellum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                War.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Pisonem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        C Piso
+                    </marginalia_text>
+                    <person name="Gaius Calpurnius Piso"/>
+                </position>
+            </language>
+            <translation>
+                Gaius Calpurnius Piso.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fortis, constánsque" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fortitudo Consta[n]tia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Strength and perseverance.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Q. Terhmus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Q. Thermus
+                    </marginalia_text>
+                    <person name="Quintus Minucius Thermus"/>
+                </position>
+            </language>
+            <translation>
+                Quintus Minucius Thermus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iudices" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Iudices
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Judges.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Repetitio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Repetition.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prouincia Ciliciam, prouinciam Histpaniam, prouinciam Cretam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cilicia Hispania Creta ] Proui[n]cia[e]
+                    </marginalia_text>
+                    <location name="Cicilia"/> <!-- https://en.wikipedia.org/wiki/Cilicia_(Roman_province) -->
+                    <location name="Crete"/>
+                    <location name="Iberian Peninsula"/> <!-- https://en.wikipedia.org/wiki/Hispania -->
+                </position>
+            </language>
+            <translation>
+                The provinces Cilicia, Hispania and Crete.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Repetitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Repetition.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Catilina ad vrbem, co[n]iurati" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Coniuratio Catilina[e]
+                    </marginalia_text>
+                    <person name="Lucius Sergius Catilina"/>
+                </position>
+            </language>
+            <translation>
+                Catilina's conspiracy.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Repetitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Repetition.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nonae illae Dece[m]bres, quae me Co[n[]sules fuistis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tempus co[n]sulat[us] Cice.
+                    </marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>
+                The time of Cicero's consulship.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="grauis iniuria affliserit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        graue[m] iniuria[m] affligere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To suffer from severe injustice.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="L. Flaccum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        L. Flac.
+                    </marginalia_text>
+                    <person name="Lucius Valerius Flaccus"/>
+                </position>
+            </language>
+            <translation>
+                Lucius Valerius Flaccus.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ferrum &amp; flamma[m] de manibus extorsimus" type="straight"/>
+        <underline language="LA" method="pen" text="multitudinis iudicio confidimus, lectissimoru[m] ciuium &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="Semper graues &amp; sapientes iudices in rebus iudicandis quid vtilitas ciuitatis, quid communis salus, quid Reip. tempora poscerent, cogitauerunt" type="straight"/>
+        <underline language="LA" method="pen" text="O nox illa quae penè aeternas huic vrbi" type="straight"/>
+        <underline language="LA" method="pen" text="coelum noctémque contestans, flens flentem obtestabar: cum tuae fidei optimae &amp; spectatissimae salutem vrbis, &amp; ciuium comme[n]dabam" type="straight"/>
+        <underline language="LA" method="pen" text="pestem" type="straight"/>
+        <underline language="LA" method="pen" text="O Nonae illae Dece[m]bres, quae me Co[n]sule fuistis" type="straight"/>
+        <underline language="LA" method="pen" text="miserum me, metuo ne funesta nobis" type="straight"/>
+        <underline language="LA" method="pen" text="testimonio, in coelum laudibus efferebantur" type="straight"/>
+        <underline language="LA" method="pen" text="Etenim multo acriore[m] improboru[m] interdum memoriam esse sentio, quàm bonorum" type="straight"/>
+        <underline language="LA" method="pen" text="Putaui, speraui, etiam si honos noster vobis vilior fuisset, salute[m] certe charam futura[m]" type="straight"/>
+        <underline language="LA" method="pen" text="prospexisse vestrae saluti, consuluisse vobis, liberis, coniugibus, fortunis vestris poenitebit: semper" type="straight"/>
+
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="quattuorpunctus_with_tail" place="head" text="Ex hoc loco colligi p[ossun]t o[mn]es Ciceronis or[ati]o[n]es non extare"/>
+        
+        <mark method="pen" name="quattuorpunctus_with_tail" place="right_margin"/>
+        
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">18</numeral>
+        
+        <drawing anchor_text="bellum" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="fortitudo consta[n]tia" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

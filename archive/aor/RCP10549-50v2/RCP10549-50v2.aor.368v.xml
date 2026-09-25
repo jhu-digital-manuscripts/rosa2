@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.368v.tif" pagination="188" reader="John Dee" signature="[Mm.vi.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="animus, aut infixus, aut infusus esset in mundo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        animus infixus infusus in mu[n]do
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The mind, fastened and attached to the world.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        nasci – extingui
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be born, to perish.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        elementa [quatuor] initia [quatuor] corpora [quatuor] naura[e] [quatuor] nota corpora 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Elements: four beginnings, four bodies, four natures, four known bodies.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de infinitate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        infinitas, tis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Infinity.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        distractio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Distraction.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Epicurus
+                    </marginalia_text>
+                    <person name="Epicurus"/>
+                    <emphasis method="pen" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                Epicurus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pythagoras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pythagoras
+                    </marginalia_text>
+                    <person name="Pythagoras"/>
+                </position>
+            </language>
+            <translation>
+                Pythagoras.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="animus hominis, se esset deus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Deus an sit animus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                If God is a mind.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Xenophanes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Xenophanes
+                    </marginalia_text>
+                    <person name="Xenophanes"/>
+                </position>
+            </language>
+            <translation>
+                Xenophanes.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vt supra num. 39
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0745" text="num. 39"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                As on page 39.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sic plato in Eutiphrone
+                    </marginalia_text>
+                    <book title="Euthyphro"/>
+                </position>
+            </language>
+            <translation>
+                Thus Plato in Euthyphro.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Empedocles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Empedocles
+                    </marginalia_text>
+                    <person name="Empedocles"/>
+                </position>
+            </language>
+            <translation>
+                Empedocles.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de syderibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sydera
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Stars.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Protagoras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Protagoras
+                    </marginalia_text>
+                    <person name="Protagoras"/>
+                </position>
+            </language>
+            <translation>
+                Protagoras.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Democritus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Democritus
+                    </marginalia_text>
+                    <person name="Democritus"/>
+                </position>
+            </language>
+            <translation>
+                Democritus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Diogenes Apolloniates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Diogenes appol
+                    </marginalia_text>
+                    <person name="Diogenes of Apollonia"/>
+                </position>
+            </language>
+            <translation>
+                Diogenes of Apollonia.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Platonis inconstantia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Platonis inconstantia de Deo
+                    </marginalia_text>
+                    <person name="Plato"/>
+                </position>
+            </language>
+            <translation>
+                Inconstancy of Plato about God.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Xenophon" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Xenophon.
+                    </marginalia_text>
+                    <person name="Xenophon"/>
+                </position>
+            </language>
+            <translation>
+                Xenophon.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="forma[m] dei quaeri no[n]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        forma dei ne queratur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The shape of God shall not be lamented about.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Antisthenes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Antisthenes
+                    </marginalia_text>
+                    <person name="Antisthenes"/>
+                </position>
+            </language>
+            <translation>
+                Antisthenes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Speusippus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Speusippus
+                    </marginalia_text>
+                    <person name="Speusippus"/>
+                </position>
+            </language>
+            <translation>
+                Speusippus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoteles quoque in tertio de philosophia libro" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Aristoteles. in tertio de philosophia libro
+                    </marginalia_text>
+                    <person name="Aristotle"/>
+                    <book title="De philosophia"/>
+                </position>
+            </language>
+            <translation>
+                Aristotle, in his third book De philosophia.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sine corpore idem vult esse deum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Aristoteles deum sine corpore esse voluit
+                    </marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>
+                Aristotle wanted God to have no body.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Zenocrates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Zenocrates
+                    </marginalia_text>
+                    <person name="Xenocrates of Chalcedon"/>
+                </position>
+            </language>
+            <translation>
+                Xenocrates.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Planeta[e] 7 &amp; co[e]lu[m] aplanes
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Seven years and a sky standing firm.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hera[clides]" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Heraclides
+                    </marginalia_text>
+                    <person name="Heraclides of Pontus"/>
+                </position>
+            </language>
+            <translation>
+                Heraclides of Pontus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        multa peccare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To do much wrong.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="replicatione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        replicatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Turning over.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        qua[e] &amp; per se su[n]t falsa perspicue &amp; inter sese veheme[n]ter repugna[n]tia qua[e] sunt ijsde[m] in erratis ferè quibus ea qu[a]e de Platone dicimus
+                    </marginalia_text>
+                    <person name="Plato"/>
+                </position>
+            </language>
+            <translation>
+                These which are false both through themselves and cleary incompatible amongst themselves, which are generally in the same errors 
+                in which these which we speak about Plato [are].  
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="rerum" type="straight"/>
+        <underline language="LA" method="pen" text="omnem" type="double"/>
+        <underline language="LA" method="pen" text="intentum &amp; commeantem, ex" type="straight"/>
+        <underline language="LA" method="pen" text="carperentur" type="straight"/>
+        <underline language="LA" method="pen" text="non vidit distractione humanoru[m] animorum discerpi &amp; lacerari" type="straight"/>
+        <underline language="LA" method="pen" text="si nihil esset nisi animus, aut infixus, aut infusus esset" type="straight"/>
+        <underline language="LA" method="pen" text="vt caeteri" type="straight"/>
+        <underline language="LA" method="pen" text="de infinitate" type="straight"/>
+        <underline language="LA" method="pen" text="continentem ardore lucis orbem" type="straight"/>
+        <underline language="LA" method="pen" text="addeum reuocat" type="straight"/>
+        <underline language="LA" method="pen" text="multa alia peccans" type="straight"/>
+        <underline language="LA" method="pen" text="Quatuor enim" type="straight"/>
+        <underline language="LA" method="pen" text="extingui perspicuum" type="straight"/>
+        <underline language="LA" method="pen" text="quod liceat" type="straight"/>
+        <underline language="LA" method="pen" text="suo statu maneat" type="straight"/>
+        <underline language="LA" method="pen" text="Platonis inconstantia" type="straight"/>
+        <underline language="LA" method="pen" text="sine corpore" type="straight"/>
+        <underline language="LA" method="pen" text="quae à Socrate dicta retulit" type="straight"/>
+        <underline language="LA" method="pen" text="sunt iisdem in erratis ferè quibus" type="straight"/>
+        <underline language="LA" method="pen" text="libro qui Physicus inscribitur" type="straight"/>
+        <underline language="LA" method="pen" text="vim &amp; naturam" type="straight"/>
+        <underline language="LA" method="pen" text="Nec multo secus" type="straight"/>
+        <underline language="LA" method="pen" text="multa turbat" type="straight"/>
+        <underline language="LA" method="pen" text="replicatione" type="straight"/>
+        <underline language="LA" method="pen" text="eius co[n]discipulus" type="straight"/>
+        
+        <symbol name="Asterisk" place="right_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Asterisk" place="intext"/>
+        
+        <mark method="pen" name="quattuorpunctus" place="right_margin"/>
+        <mark method="pen" name="quattuorpunctus" place="right_margin"/>
+        <mark method="pen" name="quattuorpunctus" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

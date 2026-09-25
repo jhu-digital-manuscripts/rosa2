@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.013r.tif" pagination="13" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="corpus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        De corpore mathematic[i]   <!-- Writing smudged -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                On the mathematical body.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="esse" type="straight"/>
+        <underline language="LA" method="pen" text="Mathematica non sunt substantia rerum, sed accidentia superuenientia substantijs: afferam rationes aliquas" type="straight"/>
+        <underline language="LA" method="pen" text="his eni[m] corpus diffinitur" type="straight"/>
+        <underline language="LA" method="pen" text="tale corpus esse non posse: quandoquidem à re indiuisibili diffinitur" type="straight"/>
+
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+    </annotation>
+</transcription>

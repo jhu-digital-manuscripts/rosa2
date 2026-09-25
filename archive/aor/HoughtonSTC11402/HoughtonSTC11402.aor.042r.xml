@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.042r.tif" reader="Harvey" signature="Eiii[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="lyght harneysed in the forwarde" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>leuis armature, prima excursio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The first advance, lightly armed.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>s[upr]a.</marginalia_text>
+                </position>
+            </language>
+            <translation>[See] above.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="the syde wynges" type="straight"/>
+        <underline language="EN" method="pen" text="on bothe sydes" type="straight"/>
+        <underline language="EN" method="pen" text="lyght harneysed" type="straight"/>
+        <underline language="EN" method="pen" text="forwarde" type="straight"/>
+        <underline language="EN" method="pen" text="the rerewarde" type="straight"/>
+        <underline language="EN" method="pen" text="chiefe and strengthe" type="straight"/>
+        <underline language="EN" method="pen" text="dartes, [that] they shuld" type="straight"/>
+        <underline language="EN" method="pen" text="to their ennemies" type="straight"/>
+        <underline language="EN" method="pen" text="agayne into their" type="straight"/>
+        <underline language="EN" method="pen" text="by and by they" type="straight"/>
+        <underline language="EN" method="pen" text="on eche syde" type="straight"/>
+        <underline language="EN" method="pen" text="from the" type="straight"/>
+        <underline language="EN" method="pen" text="myghte inclose" type="straight"/>
+        <underline language="EN" method="pen" text="Sertorius" type="straight"/>
+        <underline language="EN" method="pen" text="very thicke" type="straight"/>
+        <underline language="EN" method="pen" text="muster moch" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="very thicke"/>
+            
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

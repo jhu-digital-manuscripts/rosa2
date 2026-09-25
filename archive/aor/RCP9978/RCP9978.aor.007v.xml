@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.007v.tif" reader="John Dee" signature="[B iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="spiritum mundi" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Spiritus Mundi.</marginalia_text>
+                </position>
+            </language>
+            <translation>The spirit of the world.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Deos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dij</marginalia_text>
+                </position>
+            </language>
+            <translation>Gods.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="anima ipsa, ut ipsi atruunt, primum sit mobile" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pri[mum] Mo[bile] a[n]i[m]a</marginalia_text>
+                </position>
+            </language>
+            <translation>The first movable thing, the soul.</translation>
+        </marginalia>
+                
+        <marginalia anchor_text="Quintam essentiam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Q[uinta] Ess[enti]a</marginalia_text>
+                </position>
+            </language>
+            <translation>The fifth essence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Medium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>M[edium]</marginalia_text>
+                </position>
+            </language>
+            <translation>The middle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="animae coelestes" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A[n]i[m]a[e] Ca[e]lestes</marginalia_text>  
+                </position>
+            </language>
+            <translation>Celestial souls.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hauritur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>haurire spiritu[m] mundi</marginalia_text>
+                </position>
+            </language>
+            <translation>To absorb the spirit of the world.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Anima 1 - Primu[m] Mobile Spiritus 2 - Q[uinta] Ess[enti]a Corpus. 3.</marginalia_text>
+                </position>
+            </language>
+            <translation>The soul, 1, the first movable thing; the spirit, 2, the fifth essence; the body, 3.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="etiam animas" type="straight"/>
+        <underline language="LA" method="pen" text="asserebant vnius Entis animam egredi, &amp; ingredi in aliud" type="straight"/>
+        <underline language="LA" method="pen" text="ut Adamas est impedime[n]to Magneti lapidi, ne ferru[m] attrahat" type="straight"/>
+        <underline language="LA" method="pen" text="primum sit mobile" type="straight"/>
+        <underline language="LA" method="pen" text="sponte, inquam, &amp; per se mobile" type="straight"/>
+        <underline language="LA" method="pen" text="Medium reru[m] esse aiunt spiritum mundi, quem pleriq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="sed quoddam quintu[m], praeter ea substans" type="straight"/>
+        <underline language="LA" method="pen" text="animae" type="double"/>
+        <underline language="LA" method="pen" text="coelestes adsint corpori crassiori" type="straight"/>
+        <underline language="LA" method="pen" text="ferme" type="double"/>
+        <underline language="LA" method="pen" text="noster ipse spiritus" type="straight"/>
+        <underline language="LA" method="pen" text="virtus anim[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="Quintam essentiam" type="straight"/>
+        <underline language="LA" method="pen" text="hauritur e[ni]m per radios stellarum, quatenus res se ijs reddiderint conformes" type="straight"/>
+        <underline language="LA" method="pen" text="hunc igitur spiritum omnis occulta proprietas p[ro]pagatur, se'q[ue] miscet tum herbis, metallis" type="straight"/>
+        <underline language="LA" method="pen" text="quidem ab elementali natura" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="[deleted]" copytext="imaginabilia" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+          
+    </annotation>
+</transcription>

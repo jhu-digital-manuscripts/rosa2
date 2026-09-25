@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.049r.tif" pagination="83" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="fluuios" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Fluuij Paradisi.</marginalia_text>
+                </position>
+            </language>
+            <translation>The rivers of Paradise.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fluuius, id est, fluuij" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Fluuius [id est] Fluuij.</marginalia_text> 
+                </position>
+            </language>
+            <translation>A river, [that is,] rivers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="terram Heuila" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Terra Heuila.</marginalia_text>
+                    <location name="Havilah"/>
+                </position>
+            </language>
+            <translation>The land Havilah.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="regionis quae dicitur Chus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Chus Regio.</marginalia_text>
+                    <location name="Cush"/>
+                </position>
+            </language>
+            <translation>The Cush region.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Heuila regione[m], vulgò sunt interpretati Indiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Heuila. + India</marginalia_text>
+                    <location name="Havilah"/>
+                    <location name="India"/>
+                </position>
+            </language>
+            <translation>Havilah and India.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="termini &amp; limites sunt Sur &amp; Heuila" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sur - Heuila</marginalia_text>
+                    <location name="Sur"/>
+                    <location name="Havilah"/>
+                </position>
+            </language>
+            <translation>Sur - Havilah.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="desertu[m] Sur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sur Desertu[m].</marginalia_text>
+                    <location name="Sur"/>
+                </position>
+            </language>
+            <translation>The Sur desert.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sacra, eos lapsos ex diuersis locis Edenensis regionis, posteà tanquam deriuatos in Paradisum influxisse" type="straight"/>
+        <underline language="LA" method="pen" text="atque inde elapsos" type="straight"/>
+        <underline language="LA" method="pen" text="alias obiisse regiones" type="straight"/>
+        <underline language="LA" method="pen" text="Et fluuius, id est, fluuij" type="straight"/>
+        <underline language="LA" method="pen" text="quatuor capita, id est, illustres fluuios" type="straight"/>
+        <underline language="LA" method="pen" text="quatuor principes siue illustres fluuios" type="straight"/>
+        <underline language="LA" method="pen" text="terram Heuila" type="straight"/>
+        <underline language="LA" method="pen" text="Margaritarum" type="straight"/>
+        <underline language="LA" method="pen" text="vocabulum Bedola" type="straight"/>
+        <underline language="LA" method="pen" text="dicitur Chus" type="straight"/>
+        <underline language="LA" method="pen" text="interpretati Indiam" type="double"/>
+        <underline language="LA" method="pen" text="Itaque praetermissis hominu[m] quamuis doctorum &amp; clarorum opinionibus, quid" type="straight"/>
+        <underline language="LA" method="pen" text="re sentiendum sit, ex" type="straight"/>
+        <underline language="LA" method="pen" text="ab Heuila vsque Sur" type="straight"/>
+        <underline language="LA" method="pen" text="ab Heuila vsque Sur" type="straight"/>
+        <underline language="LA" method="pen" text="sunt Sur &amp; Heuila" type="straight"/>
+        <underline language="LA" method="pen" text="longissimè abesse ab" type="straight"/>
+        <underline language="LA" method="pen" text="in Arabia petraea interlligu[n]tur. Sur autem" type="straight"/>
+        <underline language="LA" method="pen" text="sinu Heroopolitico" type="straight"/>
+        <underline language="LA" method="pen" text="desertu[m] Sur, ambulauerúntque" type="straight"/>
+        
+        <errata amendedtext="co[n]iectura" copytext="ce[n]iectura" language="LA"/> <!--JG: See page 83 of a 1575 edition of this book, which has the word 'ce[n]iectura', which Dee amended: https://books.google.co.uk/books?id=3tFyfhMpLh8C&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false-->
+        
+    </annotation>
+</transcription>

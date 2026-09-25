@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.088v.tif" pagination="[81v]" reader="John Dee" signature="[X[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="superingressus" hand="English_secretary">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>περὶ ἐπεμβασέων</marginalia_text> <!--JG: Chris, please transcribe and translate-->
+                </position>
+            </language>
+            <translation>On approaches.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="super ingressus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Superingressus causaru[m] vniversalium</marginalia_text>
+                </position>
+            </language>
+            <translation>The approaches of universal causes.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>o[mn]es revolutionu[m] modi examinandi</marginalia_text>
+                </position>
+            </language>
+            <translation>The ways of examining all of the revolutions.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="eligendi" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Electio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Choice.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ingressus" type="straight"/>
+        <underline language="LA" method="pen" text="super ingressus" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.095v.tif" reader="Harvey" signature="[Lviii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Sedition, [the] bane of an Army: &amp; Disorder, [the] breakneck of [the] victory. No discipline, withowt prouision
+                    against those two: to pra[e]serue [the] Army from inward; or owtward</marginalia_text>
+                </position>
+                <position book_orientation="270" place="right_margin">
+                    <marginalia_text>mischiff.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>gloria patri, et filio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Glory to the father and son.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Brutus; Cassius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Et tamen Brutus iste, (Ca[e]saris ipsius judicio,) quicquid volebat, valdè volebat. quò
+                    gloriosius Cassio, ta[m] acri Equo pra[e]currisse.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                    <person name="Marcus Junius Brutus the Younger"/>
+                </position>
+            </language>
+            <translation>And nevertheless whatever that man, Brutus, wished (by the decision of Caesar himself), he greatly desired. To where Cassius hastened more gloriously, by such a keen horse.</translation> 
+            <!--JG: Uncertain (esp. about second sentence). Chris, could you have a look at it?-->
+            <!-- CG: My attempt for the first part: "And nevertheless that Brutus, according to the opinion of Caesar himself, desired powerfully whatever he desired. For which reason, he was more glorious
+                than Cassius." The second part is confusing, as I do not understand the construction of 'tam' and the infinitive.
+                something to do with "to have ridden forth on his keen horse." And 'acri equo' might also be a reference to Aeneid, IV.156-57. Sorry, not sure. -->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Il spedito.</marginalia_text>
+                </position>
+            </language>
+            <translation>The speed.</translation> 
+            <!--JG: See _147 of this book. Chris, what do you make of it?-->
+            <!-- CG: I still think it's a reference to a person. Otherwise, Harvey is extending the usage of 'Spedito' as a nickname for that other, anonymous guy
+            and applying it elsewhere to "speedy" people. -->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>i[nfr]a, c. 7.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0218" text="c. 7"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] below, chapter 7.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cassij Pyrotechnia.</marginalia_text>
+                    <person name="Gaius Cassius Longinus"/>
+                </position>
+            </language>
+            <translation>Cassius' pyrotechnics.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Militair Exercises, to {
+                    </marginalia_text>
+                </position>
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>1. harden [the] boddy, &amp; make men reddy &amp; nymble. 2. make them skilfull in handling [their] weapons.
+                    3. keepe thorders in [the] Army, aswell in marching, as in [the] incamping, &amp; in fighting. Orderly, &amp; expert marching, inca[m]ping,
+                    &amp; fighting, pra[e]seruith [the] Captains honour, albeit [the] battail haue no good ende.</marginalia_text>
+                    <emphasis method="pen" text="honour" type="straight"/>
+                    <emphasis method="pen" text="battail haue no good ende." type="straight"/>
+                </position>
+            </language>
+            <language ident="IT">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>della guerra, l.2.</marginalia_text>
+                    <book title="Art of War"/>
+                    <emphasis method="pen" text="della guerra" type="straight"/>
+                </position>
+            </language>
+            <translation>The Art of War, book 2.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Pauci fere, causa[e] Uictoria[e]. Uegetius.</marginalia_text> <!--JG: Could be X-ref, but can't find it in 'De re militari'-->
+                    <person name="Vegetius"/>
+                </position>
+            </language>
+            <translation>In general, few things are the causes of victory. Vegetius.</translation> <!--JG: Uncertain-->
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="the host preparynge seditiousely to aryse" type="straight"/>
+        <underline language="EN" method="pen" text="That no" type="straight"/>
+        <underline language="EN" method="pen" text="man was" type="straight"/>
+        <underline language="EN" method="pen" text="great estimation" type="straight"/>
+        <underline language="EN" method="pen" text="the disciplyne of warre shoulde" type="straight"/>
+        <underline language="EN" method="pen" text="Fabius Maximus" type="straight"/>
+        <underline language="EN" method="pen" text="of disciplyne. Cap. ii." type="straight"/>
+        <underline language="EN" method="pen" text="tyme of ciuyl warre" type="straight"/>
+        <underline language="EN" method="pen" text="Brutus came fyrst to a" type="straight"/>
+        <underline language="EN" method="pen" text="make a bridge" type="straight"/>
+        <underline language="EN" method="pen" text="both in makyng" type="straight"/>
+        <underline language="EN" method="pen" text="of the brydge" type="straight"/>
+        <underline language="EN" method="pen" text="spedy passynge" type="straight"/>
+        <underline language="EN" method="pen" text="out went Brutus" type="straight"/>
+        <underline language="EN" method="pen" text="vygour" type="straight"/>
+        <underline language="EN" method="pen" text="strength of knyghtly discipline, brought" type="straight"/>
+        <underline language="EN" method="pen" text="in werkes" type="straight"/>
+        <underline language="EN" method="pen" text="the chiefe poynt of" type="straight"/>
+        <underline language="EN" method="pen" text="Cassius and his men" type="straight"/>
+        <underline language="EN" method="pen" text="excelled Brutus and his" type="straight"/>
+        <underline language="EN" method="pen" text="C. Marius" type="straight"/>
+        
+        <symbol language="EN" name="SS" place="head" text="Sedition, [the] bane of an Army: &amp; Disorder, [the] breakneck of [the] victory. No discipline, withowt prouision              against those two: to pra[e]serue [the] Army from inward; or owtward mischiff."/>
+        
+        <symbol language="LA" name="SS" place="left_margin" text="Et tamen Brutus iste, (Ca[e]saris ipsius judicio,) quicquid volebat, valdè volebat. quò             gloriosius Cassio, ta[m] acri Equo pra[e]currisse."/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="strength of knyghtly discipline, brought"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="tail"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="seditiousely"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="That no"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="great estimation"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the disciplyne of warre shoulde"/>
+        <mark method="pen" name="dot" place="intext"/> <!--broken. and-->
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Brutus came fyrst to a"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="both in makyng"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="spede passynge"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="out went Brutus"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="vygour"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="werkes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="chiefe poynt"/>
+        <mark method="pen" name="X_sign" place="intext"/>
+        
+        <errata amendedtext="workes" copytext="werkes" language="EN"/>
+        
+    </annotation>
+</transcription>

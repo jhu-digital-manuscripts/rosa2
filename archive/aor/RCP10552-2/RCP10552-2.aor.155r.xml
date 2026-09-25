@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.155r.tif" pagination="299" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="sororis videlicet regis Boëmiae VVynceslai" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Anna soror Venceslai alij Helenam no[m]i[n]ant</marginalia_text>  
+                    <person name="Anne of Bohemia"/>
+                    <person name="Wenceslaus IV of Bohemia"/>
+                </position>
+            </language>
+            <translation>Anne, sister of Wenceslaus. Others call her Helena.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nouae regin[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="sororis" type="grid"/>
+        <underline language="LA" method="pen" text="videlicet regis Boëmiae VVyanceslai filij quondam regis" type="straight"/>
+        <underline language="LA" method="pen" text="Boemiae, &amp; Imperatoris" type="straight"/>
+        <underline language="LA" method="pen" text="filia domini Mediolanensis Barnabonis" type="straight"/>
+        
+    </annotation>
+</transcription>

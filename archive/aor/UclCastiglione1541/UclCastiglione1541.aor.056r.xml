@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="UclCastiglione1541.056r.tif" pagination="XLIIII[r]" reader="Harvey" signature="Gir"/>
+<annotation>
+    <marginalia hand="Italian">
+        <language ident="IT">
+            <position book_orientation="0" place="intext">
+                <marginalia_text>
+                    Medesima materia nel prefatione di secondo libro degli Discorsi del Machiauelli.   
+                </marginalia_text>
+                <person name="Machiavelli"/>
+                <book title="Discourses on Livy"/>
+            </position>
+        </language>
+        <translation>
+            The same subject is in the preface of the second book of Machiavelli's 'Discourses'. 
+        </translation>
+    </marginalia>
+     
+    <mark language="IT" method="chalk" name="tilde" place="intext" text="aueggano"/>
+    
+    <errata amendedtext="Cominci" copytext="Comici" language="IT"/> 
+    
+    
+</annotation>
+</transcription>

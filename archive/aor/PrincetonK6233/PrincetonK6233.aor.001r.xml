@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonK6233.001r.tif" pagination="title page" reader="Harvey" signature="[α1r]"/> 
+    <annotation>
+        <marginalia date="1583" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Gabrielis Harueij. 1583.
+                    </marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                    <emphasis method="pen" text="1583" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                Gabriel Harvey's. 1583
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        GH.
+                    </marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Arte, et Virtute.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                By skill and virtue.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Synopsis Pandectarum" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="right_margin" text="Paratitla"/>
+    </annotation>
+</transcription>

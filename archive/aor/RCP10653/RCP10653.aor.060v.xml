@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.060v.tif" pagination="118" reader="John Dee" signature="[K ij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Lucius Commodus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Lucius Aurelius Commodus
+                    </marginalia_text>
+                    <person name="Lucius Aelius Aurelius Commodus"/>
+                </position>
+            </language>
+            <translation>
+                Lucius Aelius Aurelius Commodus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gildas historicus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Gildas historicus  
+                    </marginalia_text>
+                    <person name="Gildas"/>
+                </position>
+            </language>
+            <translation>
+                The historian Gildas.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Lucius" type="straight"/>
+        <underline language="LA" method="pen" text="Lucius" type="straight"/>
+        <underline language="LA" method="pen" text="quem Gildas historicus de victoria Aurelij Ambrosij conscripsit" type="straight"/>
+        <underline language="LA" method="pen" text="clxxxvij" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.095v.tif" pagination="[95v]" reader="John Dee" signature="[Mvij[v]]"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="molte Isole, alcune popolate, &amp; altre nò" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Many Iles some not inhabited.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="la terra ferma" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note this main land.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Zuania" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Zuania</marginalia_text>
+                    <location name="Guyana"/> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="con dieci grosse Canoe, &amp; con trecento huomini" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>10 Canoas 300 men.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Zuania" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Zuania, after the [nelis?] pronunciation of John.</marginalia_text>  <!-- DO: not sure about fourth word --> <!-- MB: Fourth word looks like 'molis' to me although I am also by no means certain.  -->  <!-- DO: Missing word may be 'Welsh'? -->
+                    <location name="Guyana"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Huino" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Huino, perhaps so named of some Owen which [came] w[i]th Madoc ap Owain Gwy[nn]edd</marginalia_text> 
+                    <person name="Madoc"/>
+                    <location name="Huino"/>
+                </position>
+            </language>
+        </marginalia>
+        
+       <underline language="IT" method="pen" text="loro figliuoli" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; mariti" type="straight"/>
+        <underline language="IT" method="pen" text="dicono che non le amazzano, ne le mangiano" type="straight"/>
+        <underline language="IT" method="pen" text="le tengono per ischiaue" type="straight"/>
+        <underline language="IT" method="pen" text="Mezo di" type="double"/>
+        <underline language="IT" method="pen" text="popolate, &amp; altre" type="straight"/>
+        <underline language="IT" method="pen" text="separatamente" type="double"/>
+        <underline language="IT" method="pen" text="Giaramachi" type="straight"/>
+        <underline language="IT" method="pen" text="Cairoaco" type="straight"/>
+        <underline language="IT" method="pen" text="Huino" type="straight"/>
+        <underline language="IT" method="pen" text="Buriari" type="straight"/>
+        <underline language="IT" method="pen" text="Arubeira" type="straight"/>
+        <underline language="IT" method="pen" text="Sixibei" type="straight"/>
+        <underline language="IT" method="pen" text="esser molto grande" type="straight"/>
+        <underline language="IT" method="pen" text="Zuania" type="straight"/>
+        <underline language="IT" method="pen" text="molto" type="double"/>
+        <underline language="IT" method="pen" text="Gieuanni" type="straight"/>
+        <underline language="IT" method="pen" text="n'hauea per due terzi" type="straight"/>
+        <underline language="IT" method="pen" text="scorrere in altre Isole" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; a pigliar gente per loro cibo" type="straight"/>
+        <underline language="IT" method="pen" text="giaceua l'Isole Spagnuola" type="straight"/>
+        <underline language="IT" method="pen" text="volle nondimeno" type="double"/>
+        
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- donne dicono -->
+        
+    </annotation>
+</transcription>

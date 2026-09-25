@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.054v.tif" pagination="[54[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="linea" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        a[e]quinoctij
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Of an equinox
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="in linea" type="straight"/>
+        <underline language="LA" method="pen" text="leste oeste" type="straight"/>
+
+    </annotation>
+</transcription>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.127v.tif" pagination="246" reader="John Dee" signature="[X iij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Hanc disse[n]sione[m] facile co[m]posita[m] videre potes in Annotatio[n]ibus meis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                You can see this easily settled dissent in my annotations.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="defuncto rege occide[n]talium Saxonum Kentvvino, Cedvvalla rex Britonum, regnum occupans" type="straight"/>
+        <underline language="LA" method="pen" text="ibidem duobus annis" type="straight"/>
+        <underline language="LA" method="pen" text="Cadvvalini" type="straight"/>
+        <underline language="LA" method="pen" text="Dorobernencis rex" type="straight"/>
+        <underline language="LA" method="pen" text="frater ei[us] Mollo" type="straight"/>
+        <underline language="LA" method="pen" text="Cedvvalla rex praefatus" type="straight"/>
+        <underline language="LA" method="pen" text="regemque Ethelvvaldum" type="straight"/>
+        
+        <graph book_orientation="0" method="pen" place="tail" type="genealogical_tree">  
+            <node id="n1" person="Cenberht">Kinebertus</node>                               
+            <node anchor_text="Cedvvalla" id="n2" person="Caedwalla of Wessex">Cedwalla</node>
+            <node anchor_text="Mollo" id="n3" person="Mul of Kent">Mollo</node>
+            <link from="n1" relationship="has_child" to="n2"/>
+            <link from="n1" relationship="has_child" to="n3"/>
+        </graph>
+        
+    </annotation>
+</transcription>

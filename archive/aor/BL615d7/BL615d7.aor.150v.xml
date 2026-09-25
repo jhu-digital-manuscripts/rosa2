@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.150v.tif" pagination="[150v]" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="gran d'oro, che pesaua più di trenta libre" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>a pece of gold of 30 pound waight</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="che non passassero X, O XI I mesi, auanti che ottenesse la espeditione" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note X or XII months uppon a despatch</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="un Pietro Fernandez Coronel" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Pietro Fernandez Coronel sup[ra] f[o]l[io]. 109.</marginalia_text>
+                    <person name="Peter Fernandez Coronel"/>
+                    <internal_ref>
+                        <target ref="BL615d7:615_d_7_f109r" text="f[o]l[io]. 109"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Peter Fernandez Coronel</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="metteuano foglie di" type="straight"/>
+        <underline language="IT" method="pen" text="grani, come uoua di colo[m]bo" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; gra[n] d'oro, che pesaua più di trenta libre" type="straight"/>
+        <underline language="IT" method="pen" text="beneficio, &amp; al popolamento delle" type="straight"/>
+        <underline language="IT" method="pen" text="tostodar la uolta" type="straight"/>
+        <underline language="IT" method="pen" text="non ui succedesse" type="straight"/>
+        <underline language="IT" method="pen" text="espeditioni di quella Corte sogliono portar" type="straight"/>
+        <underline language="IT" method="pen" text="dilatione, no[n] poté essere" type="straight"/>
+        <underline language="IT" method="pen" text="X, O XII mesi" type="double"/>
+        <underline language="IT" method="pen" text="di due nauigli" type="straight"/>
+        <underline language="IT" method="pen" text="Capitano un Pietro Fernandez Coronel" type="straight"/>
+        
+        <mark language="IT" method="pen" name="comma" place="intext" text="tale l'accettarono"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

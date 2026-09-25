@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.125v.tif" pagination="74" reader="Harvey" signature="[E5v]"/>	<!-- ABO 130left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nescia virtus stare loco. Et Ars mora[e] impatiens,
+						solis vacat necessarijs momenti punctis: /
+					</marginalia_text>
+					<X-ref book_title="Pharsalia" language="LA" person="Lucan" text="Nescia virtus stare loco"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						eademq[ue] expedit rotundissimè.
+						Vtriusq[ue] dua[e] Singulares laudes:
+						Celeritas, et Perfectio. 
+						Ante singulos: et super omnes.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				'His virtue not knowing how to stand in one place.' 
+				And Art, impatient of delay, is free to consider the necessary points of the situation alone;
+				And at the same time, it obtains its goal most smoothly.
+				The singular praise of both quickness and perfection.
+				Before other singular matters, and above all things.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Profundè Pragmaticus veterator: Facit gratum
+						fortuna, quam nemo videt.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The pragmatic man is profoundly experienced:
+				luck, which no one sees, makes one grateful.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Eutrapelus nusq[uam] ha[e]ret: sed, dicit, scribit, negociatur, quiduis facit omniu[m] celerrimè,
+						singulorumq[ue] absolutissimè. Industria si non maior, at efficacior.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Eutrapelus never clings to things, but he says, writes, and performs whatever he can do, more quickly than all other men,
+				and more completely than all other singular men. His industriousness, if it isn't better, it is more efficient.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="vincendola" type="straight"/>
+		<underline language="IT" method="pen" text="fosse sua" type="straight"/>
+		<underline language="IT" method="pen" text="perdendo" type="straight"/>
+		<underline language="IT" method="pen" text="douesse morire" type="straight"/>
+		<underline language="IT" method="pen" text="rimasero perdenti" type="straight"/>
+		<underline language="IT" method="pen" text="Hippomene" type="straight"/>
+		<underline language="IT" method="pen" text="per consiglio à Venere" type="straight"/>
+		<underline language="IT" method="pen" text="tre pomi d'oro del giardino dell'Esperide gli" type="straight"/>
+		<underline language="IT" method="pen" text="Atlanta velocemente" type="straight"/>
+		<underline language="IT" method="pen" text="Hippomene, secondo" type="straight"/>
+		<underline language="IT" method="pen" text="l'vno de' tre pomi per" type="straight"/>
+		<underline language="IT" method="pen" text="il secondo più" type="straight"/>
+		<underline language="IT" method="pen" text="gettò con buon'animo" type="straight"/>
+		<underline language="IT" method="pen" text="terzo pomo, molto più bello" type="straight"/>
+		<underline language="IT" method="pen" text="con velocità passando" type="straight"/>
+		<underline language="IT" method="pen" text="giunse al segno" type="straight"/>
+		<underline language="IT" method="pen" text="vittorioso allegramente" type="straight"/>
+		
+		<symbol language="IT" name="SS" place="left_margin" text="per consiglio à Venere"/>
+		<symbol name="Sun" place="left_margin"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--ten-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--Vene-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--an-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--rag-->
+		
+    </annotation>
+</transcription>

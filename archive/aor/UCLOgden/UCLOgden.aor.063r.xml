@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.063r.tif" pagination="109" reader="John Dee" signature="k"/>
+    <annotation>
+        
+        <marginalia anchor_text="Oroaset, Astiro, Tepisatras; Archatapias, Thopibui, Atembui." hand="English_secretary">
+            <language ident="EL">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>♒ { πτιᾶμ ἀνεῦ πτιβιοῦ | ♓ { βιοῦ χονταχρέτ σβιοῦ</marginalia_text>
+                    <symbol_in_text name="Aquarius"/>
+                    <symbol_in_text name="Pices"/>
+                </position>
+            </language>
+            <translation>Aquarius: Oroaset, Astiro, Tepisatras; Pisces: Archatapias, Thopibui, Atembui.</translation>
+        </marginalia>
+                
+        <marginalia anchor_text="Petosyris" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Petosyris.
+                    </marginalia_text>
+                    <person name="Petosiris"/>
+                </position>
+            </language>
+            <translation>
+                Petosiris.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Regula.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Rule.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Thumis, Thopitus, Aphut; Seucuth, Aterechinis, Arepien; Sentacet, Tepiseuth, Sencinet; Eregbuo, Sagen, Chenen; Themeso, Epima, Homoth" hand="English_secretary">
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>♍ { τώμ ὀυεστεβκώτ ἀφοσό | ♎ { οὐχωέ πτιχώσ χονταρέ | ♏ { στπχνηε σεσμέ σισιεμέ | ♐ { ῥηουώ σισμὲ κομμέ |
+                        ♑ { σμάγ σρω ἰσρώ</marginalia_text>
+                    <symbol_in_text name="Virgo"/>
+                    <symbol_in_text name="Libra"/>
+                    <symbol_in_text name="Scorpio"/>
+                    <symbol_in_text name="Sagittarius"/>
+                    <symbol_in_text name="Capricorn"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        vide in fr.... [pagina 9] <!-- FSF: really hard to read -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Virgo: Thumis, Thopitus, Aphut; Libra: Seucuth, Aterechinis, Arepien; Scorpio: Sentacet, Tepiseuth, Sencinet; Sagittarius: Eregbuo, Sagen, Chenen; 
+                Capricorn: Themeso, Epima, Homoth. See in [...] [...] [page 9].</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sentacet" type="straight"/>
+        <underline language="LA" method="pen" text="Tepiseuth" type="straight"/>
+        <underline language="LA" method="pen" text="Sencinet" type="straight"/>
+        <underline language="LA" method="pen" text="Eregbuo" type="straight"/>
+        <underline language="LA" method="pen" text="Sagen" type="straight"/>
+        <underline language="LA" method="pen" text="Chenen" type="straight"/>
+        <underline language="LA" method="pen" text="Themeso" type="straight"/>
+        <underline language="LA" method="pen" text="Epima" type="straight"/>
+        <underline language="LA" method="pen" text="Homoth" type="straight"/>
+        <underline language="LA" method="pen" text="Oroasoet" type="straight"/>
+        <underline language="LA" method="pen" text="Astiro" type="straight"/>
+        <underline language="LA" method="pen" text="Tepisatras" type="straight"/>
+        <underline language="LA" method="pen" text="Archatapias" type="straight"/>
+        <underline language="LA" method="pen" text="Thopibui" type="straight"/>
+        <underline language="LA" method="pen" text="Atembui" type="straight"/>
+        <underline language="LA" method="pen" text="uerissima haec, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="immutabilis" type="straight"/>
+        <underline language="LA" method="pen" text="ratio perueniret" type="straight"/>
+        <underline language="LA" method="pen" text="magnus ille Petosyris" type="straight"/>
+        <underline language="LA" method="pen" text="qui iam ad omnia diuinitatis secreta" type="straight"/>
+        <underline language="LA" method="pen" text="collegeris, nouissime respicias per hunc numerum, utrum in plenis" type="straight"/>
+        <underline language="LA" method="pen" text="explicare substantiam" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/>
+        
+        <table place="intext" type="standard_table"> 
+            
+            <tr>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>30</td>
+            </tr>
+        </table>
+        
+        <table place="intext" type="standard_table"> 
+            
+            <tr>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>30</td>
+            </tr>
+        </table>
+        
+    </annotation>
+</transcription>

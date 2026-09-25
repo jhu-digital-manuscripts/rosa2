@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.102v.tif" pagination="[102v]" reader="John Dee" signature="[Nvi[v]]"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="cortesia" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Curtesie</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Minere di Cibao" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Minere di Cibao</marginalia_text>
+                    <location name="Cibao"/>
+                </position>
+            </language>
+            <translation>The mines of Cibao.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="XII di Marzo del sopradetto anno MCCCCXCIV" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>1494 12 Martij</marginalia_text>
+                </position>
+            </language>
+            <translation>12 March 1494.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="due naui, e tre carauelle, che dell'armata vi rimaneano" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The shipping remayning</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="accioche niun potesse solleuarsi con quelle, si come allhor ch'egli era ammalato alcuni hauean tentato di fare" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rebellion conspired</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note some mens [Intel?]</marginalia_text>  <!-- DO: can't work out the last word --> <!-- MB. Neither here, appears to be something like... I....ol? -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="dormito in vn porto" type="straight"/>
+        <underline language="IT" method="pen" text="poi di lega" type="straight"/>
+        <underline language="IT" method="pen" text="riceuuta molta cortesia" type="double"/>
+        <underline language="IT" method="pen" text="Minere di Cibao" type="straight"/>
+        <underline language="IT" method="pen" text="colsero dell'oro" type="straight"/>
+        <underline language="IT" method="pen" text="picciolo fiume" type="straight"/>
+        <underline language="IT" method="pen" text="a' XII di Marzo" type="straight"/> 
+        <underline language="IT" method="pen" text="MCCCCXCIV" type="straight"/>
+        <underline language="IT" method="pen" text="dalla Isabella per Cibao" type="straight"/>
+        <underline language="IT" method="pen" text="dette minere" type="straight"/>
+        <underline language="IT" method="pen" text="lasciata buona guardia nelle" type="straight"/>
+        <underline language="IT" method="pen" text="due naui" type="double"/>
+        <underline language="IT" method="pen" text="carauelle" type="double"/>
+        <underline language="IT" method="pen" text="vi rimaneano" type="straight"/>
+        <underline language="IT" method="pen" text="tutta la munitione" type="straight"/>
+        <underline language="IT" method="pen" text="delle altre" type="straight"/>
+        <underline language="IT" method="pen" text="si come allhor ch'egli era ammalato alcuni hauean tentato di fare" type="straight"/>
+        <underline language="IT" method="pen" text="andati molti a quel viaggio, credendo, che subito dismontati in terra si doueßero caricar di" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; cosi ricchi tornarsene" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- poi di -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- lega hauea -->
+        
+        <mark language="IT" method="pen" name="tripunctus" place="left_margin" text="si come allhor ch'egli era ammalato alcuni hauean tentato di fare"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+        
+        
+        
+    </annotation>
+    
+</transcription>

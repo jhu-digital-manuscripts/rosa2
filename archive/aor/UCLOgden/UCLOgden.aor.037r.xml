@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.037r.tif" pagination="57" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="daemonibus" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        De d[a]emonibus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                On demons.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="claros facit oratores" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Clari oratores.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Distinct speakers.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        D[a]emonu[m] eiectores.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Those casting out the deamons.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oligochronii" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ὀλιγοχρονιοι
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Those who live for a short time.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ♂ in fo[e]minino signo
+                    </marginalia_text>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>
+                Mars in a feminine sign.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; qui facile omnia" type="straight"/>
+        <underline language="LA" method="pen" text="in peregrinatione decernit inco[m]moda" type="straight"/>
+        <underline language="LA" method="pen" text="domo ☿ uel ♀ fuerit, doctos" type="straight"/>
+        <underline language="LA" method="pen" text="in domo sua fuerit, aut in domo ♃, aut in altitudine sua, &amp; ♃ in horosc." type="straight"/>
+        <underline language="LA" method="pen" text="daemonibus terrribiles" type="straight"/> 
+        <underline language="LA" method="pen" text="aduentum praui daemonum spiritus fugiant, &amp; qui sic laborantes homines, non ui uerborum, sed sola sui ostensione liberent" type="straight"/>
+        <underline language="LA" method="pen" text="ille aeteus" type="straight"/>
+        <underline language="LA" method="pen" text="siue terrenus" type="straight"/>
+        <underline language="LA" method="pen" text="aut infernus" type="straight"/>
+        <underline language="LA" method="pen" text="exorcistae" type="straight"/>
+        <underline language="LA" method="pen" text="ab omni malignoru[m] daemonum spiritu" type="straight"/>
+        <underline language="LA" method="pen" text="ac totius orbis dominos efficiet" type="straight"/>
+        <underline language="LA" method="pen" text="erunt quidem reges, imperatores, potentes, maxime terribiles, periculosi, ciuitatum euersores, uel fabricatores, sed oligochronii" type="straight"/>
+        <underline language="LA" method="pen" text="nihilominus honestate fulgentes" type="straight"/>
+        <underline language="LA" method="pen" text="inefficaces homines " type="straight"/>
+        <underline language="LA" method="pen" text="uel in exiliis procul à patria deperire" type="straight"/>
+        <underline language="LA" method="pen" text="bona decernit multa" type="straight"/>
+        <underline language="LA" method="pen" text="aegritudines maximas decernit" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; in omnibus per suos multiplecs seruos spargit infamiam" type="straight"/>
+        <underline language="LA" method="pen" text="Exorcistae" type="straight"/>
+        
+        <mark method="pen" name="small_circle" place="head"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <!-- FSF: there is a symbal in the right, which I don't know -->
+        <!-- M.B. I've seen the symbol quite a few times in the Cicero (Vol. II) as well. Not sure how to capture it either. -->
+        
+    </annotation>
+</transcription>

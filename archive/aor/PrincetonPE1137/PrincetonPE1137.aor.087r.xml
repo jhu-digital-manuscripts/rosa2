@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+<page filename="PrincetonPE1137.087r.tif" pagination="41[r]" reader="Harvey" signature="L.i.r"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                                                                    publicè, Aristotelis politica.
+                        Smithi prudens delectus in pra[e]legendo {  priuatim, Homeri Odysseam.
+                    </marginalia_text>
+                        <person name="Thomas Smith"/>
+                    <person name="Aristotle"/>
+                    <person name="Homer"/>
+                    <book title="Politics"/>
+                    <book title="Odyssey"/>
+                </position>
+            </language>
+            <translation>
+                The wise selection by Smith to be read: publicly, Aristotle's 'Politics'; privately, Homer's 'Odyssey'.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        posteà Episcopus Vintoniensis.
+                    </marginalia_text>
+                    <person name="John Ponet"/>
+                </position>
+            </language>
+            <translation>
+                Then Bishop of Winchester.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ioannes Ponetus" type="straight"/>
+        <underline language="LA" method="pen" text="paulò pòst Academiae nomine" type="straight"/>
+        <underline language="LA" method="pen" text="publicus Graecarum literarum professor fuit" type="straight"/>
+        <underline language="LA" method="pen" text="inciperem" type="straight"/>
+        <underline language="LA" method="pen" text="tempore Aristotelem de Repub[lica] Graecè" type="straight"/>
+        <underline language="LA" method="pen" text="calliditatem" type="straight"/>
+        <underline language="LA" method="pen" text="qua arte sum vsus" type="straight"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- inciperem, praelegi -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- callidita-tem -->
+        
+    </annotation>
+</transcription>

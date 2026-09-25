@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="UclCastiglione1541.022r.tif" pagination="X[r]" reader="Harvey" signature="[Bviir]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Al Conte Lodouico da Canossa è dato carico di formare il Cortegiano.    
+                    </marginalia_text>
+                    <person name="Ludovico da Canossa"/>
+                </position>
+            </language>
+            <translation>
+                Count Ludovico da Canossa is charged with the formation of the courtier.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Inditio, che altri sappia vna cosa è il farla.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The proof that another knows how to do something lies in him doing it.
+            </translation>
+        </marginalia>
+    </annotation>
+</transcription>

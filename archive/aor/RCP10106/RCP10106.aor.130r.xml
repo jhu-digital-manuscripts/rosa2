@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.130r.tif" pagination="259" reader="John Dee" signature="r 2"/> 
+    <annotation>
+        
+        <marginalia anchor_text="co[m]munes loci" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Loci comunes</marginalia_text>
+                </position>
+            </language>
+            <translation>Common places.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ij proprij" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>loci proprij</marginalia_text>
+                </position>
+            </language>
+            <translation>Individual places.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quaestionibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qua[e]stio</marginalia_text>
+                </position>
+            </language>
+            <translation>Question.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="argumentum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Argume[n]tum</marginalia_text>
+                </position>
+            </language>
+            <translation>Argument.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Ligario" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro ligario</marginalia_text>
+                    <book title="Pro Ligario"/>
+                </position>
+            </language>
+            <translation>Pro Ligario.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dubia, quòd erat aliquid in utraq[ue] parte" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Dubiu[m] est quod habet aliquid in vtra'q[ue] parte quod probari posset</marginalia_text>
+                </position>
+            </language>
+            <translation>It is doubtful because this something which could be proved on both sides.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="infirma, nisi maiore quodam oratoris spiritu impleantur" type="straight"/>
+        <underline language="LA" method="pen" text="ferè qui legem dicendi quasi quaedam mysteria tradideru[n]t, certis non inueniendorum modo argumentorum locis, sed co[n]cludendorum              quoq[ue] nos praeceptis alligauerunt: de quibus breuissime praelocutus, quid ipse sentiam, id est, quid clarißimos oratores feciße uideam, non tacebo" type="straight"/>
+        <underline language="LA" method="pen" text="Eam uero (ut dixi) duplice[m]: Ex conseque[n]tibus" type="straight"/>
+        
+        <mark method="pen" name="pin" place="right_margin"/>
+        <mark language="LA" method="pen" name="pin" place="tail" text="Dubiu[m] est quod habet aliquid in vtra'q[ue] parte quod probari posset"/>
+        
+    </annotation>
+</transcription>

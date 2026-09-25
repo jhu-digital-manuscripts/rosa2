@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.188r.tif" pagination="367" reader="John Dee" signature="Hh iiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Montem gaudij" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mont ioy
+                    </marginalia_text>
+                    <location name="Nabi Samwil"/> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cumque ad Montem" type="straight"/>
+        <underline language="LA" method="pen" text="gaudij" type="double"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.271r.tif" pagination="525" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        A wonderfull, &amp; outragious resolution of the Abydenians.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Scitè ille: Audaces nimio cogimur esse metu. Sed quantò profundiùs Publius? Heu, quàm est timendus, qui mori tutum putat?
+                        Aut ille, quicunq[ue] dixit: Aliena[e] vita[e] est dominus, qui sua[e] est contemptor. Miri sunt, et horribiles virorum spiritus, ipsa 
+                        iam desperatione efferatorum.
+                    </marginalia_text> 
+                    <person name="Publilius Syrus"/> <!--KS: 'Heu quam est timendus, qui mori tutum putat!' is one of Publilius' sententiae.-->
+                </position>
+            </language>
+            <translation>
+                He [argues] expertly: we are forced to be too bold by fear. Yet how much more profoundly so was Publilius. Ah, how much should he be feared who 
+                thinks dying is harmless! Or him, whoever it was who said: the person who disdains his own life is the master of that of another. Remarkable 
+                and fearsome are the spirits of the men now made ferocious by desperation itself.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Abydeni" type="straight"/>
+        <underline language="LA" method="pen" text="legatis quidem admissis, regi portas" type="straight"/>
+        <underline language="LA" method="pen" text="ea oppugnatio" type="straight"/>
+        <underline language="LA" method="pen" text="Abydeni primò tormentis" type="straight"/>
+        <underline language="LA" method="pen" text="sed nauium quoque stationem" type="straight"/>
+        <underline language="LA" method="pen" text="legatos ad" type="straight"/>
+        <underline language="LA" method="pen" text="regem de conditionibus tradendae" type="straight"/>
+        <underline language="LA" method="pen" text="Philippus nihil pacati, nisi omnia" type="straight"/>
+        <underline language="LA" method="pen" text="renunciata haec legatio ab" type="straight"/>
+        <underline language="LA" method="pen" text="indignatione simul" type="straight"/>
+        <underline language="LA" method="pen" text="ac desperatione iram accendit" type="straight"/>
+        <underline language="LA" method="pen" text="Saguntinam rabiem uersi, matronas omnes in" type="straight"/>
+        <underline language="LA" method="pen" text="sacerdotes uictimasq[ue] adduci" type="straight"/>
+        <underline language="LA" method="pen" text="altaria in medio poni" type="straight"/>
+        <underline language="LA" method="pen" text="extemplò coniuges liberosque interficerent" type="straight"/>
+        <underline language="LA" method="pen" text="aurum, argentum, uestem" type="straight"/>
+        <underline language="LA" method="pen" text="in mare deijcerent" type="straight"/>
+        <underline language="LA" method="pen" text="tectis publicis" type="straight"/>
+        <underline language="LA" method="pen" text="ignes subijcerent" type="straight"/>
+        <underline language="LA" method="pen" text="facinus perpetraturos, pr[a]eeuntibus" type="straight"/>
+        <underline language="LA" method="pen" text="iureiurando adacti tum" type="straight"/>
+        <underline language="LA" method="pen" text="neminem uiuum, nisi" type="straight"/>
+        <underline language="LA" method="pen" text="uictorem, acie excessurum" type="straight"/>
+        <underline language="LA" method="pen" text="memores deorum" type="straight"/>
+        <underline language="LA" method="pen" text="adeò pertinaciter pugnauerunt" type="straight"/>
+        <underline language="LA" method="pen" text="rex prior rabie eorum, pugna abstiterit" type="straight"/>
+        <underline language="LA" method="pen" text="paucos et confectos uulneribus" type="straight"/>
+        
+        <symbol name="JC" place="right_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- po -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- opposi -->
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+    </annotation>
+</transcription>

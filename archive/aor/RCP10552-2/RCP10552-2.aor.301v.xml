@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.301v.tif" pagination="116" reader="John Dee"/>
+    
+    
+    <annotation>
+        
+        <marginalia anchor_text="decimae tam temporalium, quàm spiritualium Regi solutae sunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Decima[e] Soluta[e] Regi.</marginalia_text>
+                    <person name="Edward III of England"/>
+                </position>
+            </language>
+            <translation>Tenths paid to the King.</translation>  
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="Angliae decimae tam temporalium" type="straight"/>
+        <underline language="LA" method="pen" text="spiritualium" type="straight"/>
+        
+    </annotation>
+    
+</transcription>

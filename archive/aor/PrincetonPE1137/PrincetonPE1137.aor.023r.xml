@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonPE1137.023r.tif" pagination="22[r]" reader="Harvey" signature="f.ii.r"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        C. empusa.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                C a spectre.
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="empusa" type="straight"/>
+        <underline language="LA" method="pen" text="mas" type="straight"/>
+        <underline language="LA" method="pen" text="foemina" type="straight"/>
+        <underline language="LA" method="pen" text="modò serpens" type="straight"/>
+        <underline language="LA" method="pen" text="modò cornix" type="straight"/>
+        <underline language="LA" method="pen" text="edictu[m] Vnde vi" type="straight"/>
+        <underline language="LA" method="pen" text="veritate" type="straight"/>
+        <underline language="LA" method="pen" text="Christus ipse" type="straight"/>
+        <underline language="LA" method="pen" text="Pilato interrogatus" type="straight"/>
+        <underline language="LA" method="pen" text="esset veritas" type="straight"/>
+        <underline language="LA" method="pen" text="tacuit" type="straight"/>
+                
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- quaevis -->
+                
+    </annotation>
+</transcription>

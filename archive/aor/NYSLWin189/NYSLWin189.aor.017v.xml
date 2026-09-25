@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.017v.tif" reader="John Dee" signature="[Eijv]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="der zeyt" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tempus</marginalia_text>
+                </position>
+            </language>
+            <translation>Time.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dieta vbi iuvat</marginalia_text>
+                </position>
+            </language>
+            <translation>Where the diet assists.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="darumb so můß da ein compositum / hinzůthüung eines zůsatzes sein / damit es volkommen werd / dann ihr sehend außerthalb in der natur wie manichmal die correctiones beschehen müssen" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Thermaru[m] subsidia, sive correctiones</marginalia_text>
+                </position>
+            </language>
+            <translation>The additions to or corrections of the baths.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="entschuldigung" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="compositum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Compositum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Composition.</translation>
+        </marginalia>
+        
+        <!-- FSF: stroke from entschuldigung on this page to entschuldigung on the next page [Eiij] -->
+        
+        <underline language="DE" method="pen" text="der zeyt" type="straight"/>
+        <underline language="LA" method="pen" text="gradibus mineralium" type="double"/> 
+        <underline language="DE" method="pen" text="wellen" type="double"/> <!-- FSF: in text: the words wellen (straight underlining) and brunnen (double underlining) are connected by a pen stroke-->
+        <underline language="DE" method="pen" text="kranckheyt gewaltig" type="straight"/>
+        <underline language="DE" method="pen" text="abstinentz" type="straight"/>
+        <underline language="DE" method="pen" text="nach stund" type="straight"/>
+        <underline language="DE" method="pen" text="ein steur der besserung" type="double"/>
+        <underline language="DE" method="pen" text="keiner heilung" type="straight"/>
+        <underline language="DE" method="pen" text="brunnen" type="double"/>
+        <underline language="DE" method="pen" text="ob der selbig" type="straight"/>
+        <underline language="DE" method="pen" text="durch andre" type="double"/>
+        <underline language="DE" method="pen" text="entschuldigung" type="straight"/>
+        <underline language="DE" method="pen" text="vil so lusts halben" type="straight"/>
+        <underline language="DE" method="pen" text="ettlichs" type="double"/>
+        <underline language="DE" method="pen" text="theils in kreffte[n]" type="straight"/>
+        <underline language="DE" method="pen" text="abghet" type="double"/>
+        <underline language="DE" method="pen" text="da ein compositum / hinzůthüung eines zůsatzes sein" type="straight"/>
+        <underline language="DE" method="pen" text="volkommen werd" type="straight"/>
+        <underline language="DE" method="pen" text="die correctiones" type="double"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!--FSF: abstinentz nach -->
+        <mark method="pen" name="tripunctus" place="right_margin"/> <!-- FSF: with a tail -->
+        <mark method="pen" name="bracket" place="right_margin"/>
+    
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+       
+    </annotation>
+</transcription>

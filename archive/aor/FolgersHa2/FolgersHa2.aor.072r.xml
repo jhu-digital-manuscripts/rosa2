@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.072r.tif" pagination="flyleaf" reader="Harvey"/>	<!-- ABO 76right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="FR">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						L'Apologie pour Herodote: ou Traite de la
+						Conformité des Merueilles anciennes auec les
+						Moderns. Par Henri Estienne.
+					</marginalia_text>
+					<person name="Henri Estienne"/>
+					<book title="Apologie pour Ηérodote"/>
+				</position>
+			</language>
+			<translation>
+				The Apology for Herodotus, or a treatise on the conformity of ancient wonders
+				with modern ones, by Henri Estienne.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Doctor Fulkes Cornu-copia[e]; for Table Philosophie:
+						&amp; one of Sir Philip Sidneys Storehowses, for
+						common discourse: as also
+					</marginalia_text>
+					<person name="William Fulke"/> <!--JG: I've no clue about which of Fulkes' writings Harvey is talking though-->
+					<person name="Philip Sidney"/>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Polydore de Inuentoribus
+						rerum: Agrippa de vanitate Scientiarum:
+						Mensa Philosophica: Loci Communes Manlij.
+					</marginalia_text>
+					<person name="Polydore Virgil"/>
+					<person name="Heinrich Cornelius Agrippa"/>
+					<person name="Johannes Jacobus Manlius"/>
+					<book title="De Inventoribus Rerum"/>
+					<book title="De incertitudine et vanitate scientiarum"/>
+					<book title="Mensa philosophica"/>
+					<book title="Loci communes"/>
+				</position>
+			</language>
+			<language ident="EN">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						His owne Arcadia, full of great varietie: &amp;
+						in all respects owr notablest Inglish Discourse
+					</marginalia_text>
+					<book title="The Countess of Pembroke's Arcadia"/>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Aulicorum Legenda Aurea.
+						Vita[e] Aristippi: Diogenis: Castruccij: A[e]sopi.
+					</marginalia_text>
+					<person name="Aristippus"/>
+					<person name="Diogenes of Sinope"/>
+					<person name="Castruccio Castracani"/>
+					<person name="Aesop"/>
+				</position>
+			</language>
+			<language ident="EN">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Wiliam Thomas of Italie: Guicciardin of [the]
+						Lowe Countrie: 
+					</marginalia_text>
+					<person name="William Thomas"/>
+					<person name="Francesco Guicciardini"/>
+					<location name="Italy"/>
+					<location name="Netherlands"/>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Metelli Pro[e]mium Indicum
+					</marginalia_text>
+					<person name="Johannes Matalius Metellus"/>
+				</position>
+			</language>
+			<language ident="EN">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Blundeuil of [the] Mapp, &amp; the Globe.
+					</marginalia_text>
+					<person name="Thomas Blundeville"/>
+				</position>
+			</language>
+			<translation>
+				Doctor Fulkes Cornu-copia[e]: for Table Philosopher:
+				&amp; one of Sir Philip Sidneys Storehowses, for
+				common discourse: 
+				
+				as also Polydore Virgil's On the Discoverers
+				of Things; Agrippa's On the Vanity of the Sciences; the Mensa Philosophica;
+				Manlius' Common Places. 
+				
+				His owne Arcadia, full of great varietie: &amp;
+				in all respects owr notablest Inglish Discourse
+				
+				the golden legend of the courts.
+				The Lives of Aristippus, Diogenes of Sinope, Castruccio Castracani,
+				and Aesop. 
+				
+				Wiliam Thomas of Italie: Guicciardin of [the] Lowe Countrie: 
+				Johannes Matalius Metellus' Pro[e]mium Indicum,	<!-- CG: Unsure exactly what to make of this. The "The Prefatory Index of Metellus?" -->
+				Blundeuil of [the] Mapp, &amp; the Globe.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="full_page">
+					<marginalia_text>
+						Manlij Loci Communes; ad omnem Ciuilem discursum,
+						pra[e]gnantissimus Commentarius, atq[ue] dulcissimus:
+						Legenda Aurea Melancthonis; et Chytra[e]i
+						Summa Angelica. Hic Dominicus; et ille
+						Manlius, duo Spiritus Familiares Ang: Fu:
+						Ad omnes Aulicos, et Pragmaticos Discursus, Facinora,
+						et Arcana; nihil pra[e]gnantius, aut profundius, quàm
+						Comitissa[e] Arcadia, et Apologia Herodoti; Rabela[e]sij
+						Heroica, et Vnici Aretini Dialogi, et Comoedia[e]:
+						cum Historijs Suetonij, et Taciti; stratagematis
+						Gandini, et Polya[e]ni; arcanis Weccheri, et Cardani;
+						Practicis Machiauelli, et Durandi. Nec unq[uam] absint
+						duo Familiares Spiritus, Dominicus, et Manlius.
+						Qui vbiq[ue] est, nusq[uam] est: Certis Ingenijs adha[e]rescendu[m].
+					</marginalia_text>
+					<person name="Johannes Jacobus Manlius"/>
+					<person name="Philipp Melanchthon"/>
+					<person name="David Chytraeus"/>
+					<person name="Lodovico Domenichi"/>
+					<person name="Angelus Furius"/>
+					<person name="Francois Rabelais"/>
+					<person name="Bernardo Accolti"/>
+					<person name="Suetonius"/>
+					<person name="Tacitus"/>
+					<person name="Marcantonio Gandino"/>
+					<person name="Polyaenus"/>
+					<person name="Johannes Jacob Wecker"/>
+					<person name="Girolamo Cardano"/>
+					<person name="Machiavelli"/>
+					<person name="Guillaume Durand"/>
+					<book title="Loci communes"/>
+						<!-- CG: Unsure about Chytraeus' "Summa Angelica" --> <!--JG: Can't find anything either?! Also not sure abt Melanchton's Golden Legend-->
+					<book title="The Countess of Pembroke's Arcadia"/>
+					<book title="Apologie pour Hérodote"/>
+					<book title="Pantagruel"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Manlius' Common Places, the most pregnant and pleasing commentary for
+				every civil discourse; Melancthon's Golden Legend; and Chytraeus' Angelic Summary. 
+				Here Domenichi and there Manlius, two spirits familiar to Angelus Furius. 
+				Discourses for all courtiers and pragmatic men, with deeds and	secret matters. 
+				Nothing more pregnant and profound than the Countess of Pembroke's Arcadia
+				and the Apology for Herodotus; the Heroic Tales of Rabelais; and the Dialogues
+				and Comedis of Bernardo Accolti; with the Histories of Suetonius and Tacitus; 
+				the stratagems of Gandino and Polyaenus; the secret matters of Wecker and Cardano;
+				the practical affairs of Machiavelli and Durand. 
+				But there will never be absent those two familiar spirits, Domenichi and Manlus.
+				Whoever is everywhere is nowhere; you must stick to certain ingenius men.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="full_page">
+					<marginalia_text>
+						Zuingeri Theatrum, instar totius humanitatis: pra[e]sertim cum Ortelij
+						theatro: et planeij Mappa vniuersali.
+					</marginalia_text>
+					<person name="Theodor Zwinger"/>
+					<person name="Abraham Ortelius"/>
+					<book title="Theatrum vitae humanae"/>
+					<book title="Theatrum Orbis Terrarum"/>
+				</position>
+			</language>
+			<translation>
+				Zwinger's Theater, an example for all humanity, especially with Abraham Ortelius' theater,
+				and with the universal map of the planets. <!-- CG: "planeii" unclear. --> <!--JG: Can't find anything either. Stick to planets for now-->
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="full_page">
+					<marginalia_text>
+						Discursuum abunde est in vitali spiritu, animaliq[ue] phantasia. Vacat <!--JG: discursuum is missing from translation-->
+						operibus ferè solis. Idiota est, cui non verò fluunt dicenda.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				It abounds in the vital spirit and brute imagination of conversations. It is free from almost all
+				works alone. An idiot is someone for whom things to be said do not truly flow.
+					<!-- CG: Unsure about translation. --> <!--JG: This is Harvey at its 'best'...Can't make much more of this either-->
+			</translation>
+		</marginalia>
+		
+		<symbol name="SS" place="full_page"/> <!--Estienne-->
+		
+    </annotation>
+</transcription>

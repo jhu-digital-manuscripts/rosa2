@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.160v.tif" pagination="[160v]" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="I quali, intesa la buona relatione, che questi gli fecero, tutti con le lor Canoe uennero a' nauigli a barattar di quelle cose" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Policie, for credit noynning</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="che nelle altre Isole, prima scoperte" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="auuelenata per le freccie, la qual que sti non usano, ma i Caribi" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>I Caribi soli hanno le frecie avelanate</marginalia_text>
+                </position>
+            </language>
+            <translation>The Kalinago just have poisoned arrows.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="panni ben tessuti" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Panni ben tessuti</marginalia_text>
+                </position>
+            </language>
+            <translation>Well woven cloths.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="La gente" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note the people</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="quale gli" type="straight"/>
+        <underline language="IT" method="pen" text="buona relatione, che questi" type="straight"/>
+        <underline language="IT" method="pen" text="che nelle altre Isole, prima scoperte" type="straight"/>
+        <underline language="IT" method="pen" text="le Tablacine" type="double"/>
+        <underline language="IT" method="pen" text="rotelle" type="double"/>
+        <underline language="IT" method="pen" text="herba auuelenata" type="double"/>
+        <underline language="IT" method="pen" text="ma i Caribi" type="straight"/>
+        <underline language="IT" method="pen" text="costume" type="straight"/>
+        <underline language="IT" method="pen" text="bianco come" type="straight"/>
+        <underline language="IT" method="pen" text="Portauano panni ben tessuti di varij colori" type="straight"/>
+        <underline language="IT" method="pen" text="Bambagia della grandezza di facciuoli" type="straight"/>
+        <underline language="IT" method="pen" text="La gente" type="straight"/>
+        <underline language="IT" method="pen" text="sia più politica, &amp; trattabile, che" type="straight"/>
+        <underline language="IT" method="pen" text="quella della" type="double"/>
+        <underline language="IT" method="pen" text="della Trinità" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin" text="che nelle altre Isole, prima scoperte"/>
+        <mark method="pen" name="vertical_bar" place="left_margin" text="Portauano panni ben tessuti di varij colori di Bambagia della grandezza di facciouoli"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+    </annotation>
+</transcription>

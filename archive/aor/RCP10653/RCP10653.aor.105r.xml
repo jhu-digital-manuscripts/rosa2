@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.105r.tif" pagination="201" reader="John Dee"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="Berniciorum Accam" type="straight"/>
+        <underline language="LA" method="pen" text="Creodda Merciorum" type="straight"/>
+        
+        <graph book_orientation="0" method="pen" place="right_margin" type="genealogical_tree">         
+            <node anchor_text="Ellae" id="n1" person="Ella of Deira">Rex Ella</node>               
+            <node anchor_text="Aethelfrid[us]" id="n2" person="Aethelfrith">Rex. Æthelfrid[us]</node>
+            <node anchor_text="Accam" id="n3" person="Acha of Deira">Acca</node>
+            <link from="n1" relationship="has_child" to="n3"/>
+            <link from="n3" relationship="has_spouse" to="n2"/>
+            <link from="n2" relationship="has_spouse" to="n3"/>
+        </graph>             
+        
+    </annotation>
+</transcription>

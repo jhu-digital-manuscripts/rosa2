@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.188v.tif" pagination="200" reader="Harvey" signature="[N4v]"/>	<!-- ABO 193right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Aurea mundi Praxis. Sed multoru[m] Arcanum
+						patrum Conscriptoru[m].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The golden praxis of the world. But the mystery of many elected fathers.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Homo singularis
+						peritia[e], et eminentissima[e] industria[e].
+						Vir in dictis, factisq[ue] incomparabilis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A man of singular skill and of the most eminent industry. A man incomparable in sayings and deeds.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Sine extraordinarijs meritis nemo extraordinarius:
+						et Singulare[m] decet in Sermone,
+						opereq[ue] pra[e]cellere.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>No one is more extraordinary without extraordinary merits: and one ought to be singular in speech and to excel in work.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Summus mundi pragmaticus: et
+						maximu[m] huius
+						tempestatis miraculum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The highest pragmatist of the world: and the greatest miracle of his time.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Crassi panurgia, et techna[e] Chrematistica[e] in ultimo
+						Cic. Paradoxo.
+					</marginalia_text>
+					<person name="Marcus Licinius Crassus"/>
+					<person name="Cicero"/>
+					<book title="Paradoxa stoicorum"/>
+				</position>
+			</language>
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Nanna dell'Vnico Aretino.
+					</marginalia_text>
+					<person name="Pietro Aretino"/>
+					<book title="Ragionamento della Nanna e della Antonia"/>
+				</position>
+			</language>
+			<translation>Crassus' skills of cunning and money-making in the last of Cicero's Stoic Paradoxes. <!-- CG: I've decided that 'panurgia' should probably be translated as 'cunning'; and Chrematistica is money-making. -->
+			The 'Nanna' of Pietro Aretino.</translation>  <!-- CG: I'm not clear about this, since the 'Unico Aretino' is technically Bernardo Accolti. However Pietro Aretino did write this Ragionamento. Perhaps Harvey confused them? --> <!--JG: I'd leave Aretino here!-->
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Qui et mentis puram simplicitatem amat; et elegantis est orationis; huic familiaris est Rex.
+						Salomon, Prouerbiorum 22. Tanti valet inaffectata elegantia, et inuiolata fidelitas.
+					</marginalia_text>
+					<person name="Solomon"/>
+					<book title="Book of proverbs"/>
+				</position>
+			</language>
+			<translation>The king is a friend to he who both loves the pure simplicity of the mind, and who speaks elegantly. Solomon, Proverbs 22.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Tiberij pragmatici apud Tacitum, quanti veteratores, et quanti hominum corruptores, vel
+						maximorum? Aurea nunc verè sunt secula: plurimus auro Va[e]nit Honos:
+						auro conciliatur Amor.
+					</marginalia_text>
+					<person name="Tiberius"/>
+					<person name="Tacitus"/>
+					<X-ref book_title="Ars amatoria" language="LA" person="Ovid" text="Aurea nunc verè sunt secula: plurimus auro Va[e]nit Honos: auro conciliatur Amor"/>
+				</position>
+			</language>
+			<translation>Tiberius' pragmatic men in Tacticus, how many were old men and how many were corrupt, or of the leading families? 
+				"Now truly is the age of love: by gold many attain to the highest honor, and love is bought by gold."</translation> 
+		</marginalia>
+		
+		
+		<underline language="IT" method="pen" text="far peggio" type="straight"/>
+		<underline language="IT" method="pen" text="dargli moglie" type="straight"/>
+		<underline language="IT" method="pen" text="intollerabile" type="straight"/>
+		<underline language="IT" method="pen" text="donna rea" type="straight"/>
+		<underline language="IT" method="pen" text="cognominato Impatiente" type="straight"/>
+		<underline language="IT" method="pen" text="vna moglie strana" type="straight"/>
+		<underline language="IT" method="pen" text="qualità delle donne" type="straight"/>
+		<underline language="IT" method="pen" text="Terribil" type="straight"/>
+		<underline language="IT" method="pen" text="fiumi traboccanti" type="straight"/>
+		<underline language="IT" method="pen" text="tempesta" type="straight"/>
+		<underline language="IT" method="pen" text="l'incendio" type="straight"/>
+		<underline language="IT" method="pen" text="gran peste" type="straight"/>
+		<underline language="IT" method="pen" text="pouertà cruda" type="straight"/>
+		<underline language="IT" method="pen" text="tutto è peggio mala donna" type="straight"/>
+		<underline language="IT" method="pen" text="i filosofi" type="straight"/>
+		<underline language="IT" method="pen" text="il matrimonio" type="straight"/>
+		<underline language="IT" method="pen" text="moglie" type="straight"/>
+		<underline language="IT" method="pen" text="il naugragio" type="straight"/>
+		<underline language="IT" method="pen" text="tempesta" type="straight"/>
+		<underline language="IT" method="pen" text="impedimento della" type="straight"/>
+		<underline language="IT" method="pen" text="prigione" type="straight"/>
+		<underline language="IT" method="pen" text="danno continuo" type="straight"/>
+		<underline language="IT" method="pen" text="guerra cotidiana" type="straight"/>
+		<underline language="IT" method="pen" text="malitioso" type="straight"/>
+		<underline language="IT" method="pen" text="vna bestia à lato" type="straight"/>
+		<underline language="IT" method="pen" text="Ariosto" type="straight"/>
+		<underline language="IT" method="pen" text="Rodomonte sdegnato" type="straight"/>
+		<underline language="IT" method="pen" text="Donne" type="straight"/>
+		<underline language="IT" method="pen" text="le spine ancor nascon le rose" type="straight"/>
+		<underline language="IT" method="pen" text="fetida herba" type="straight"/>
+		<underline language="IT" method="pen" text="il giglio" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol language="IT" name="SS" place="right_margin" text="tutto è peggio mala donna"/>
+	
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Horrenda è la tempesta del gran Mare: Spauentoso l'incendio di gran fuoco, Mostruosa gran peste in vna terra: Com'è la pouertà cruda, &amp; acerba: Ma sopra tutto è peggio mala donna"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--gior-->
+		
+		<mark method="pen" name="plus_sign" place="intext"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="fiumi"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="tempesta"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="l'incendio"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="gran peste"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="pouertà"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="mala"/>
+
+    </annotation>
+</transcription>

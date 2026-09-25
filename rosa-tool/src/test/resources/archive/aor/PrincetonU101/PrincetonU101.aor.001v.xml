@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="PrincetonU101.001v.tif" reader="Harvey" signature="Title page verso"/>
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="EN">
+            			<position book_orientation="0" place="full_page">
+                    				<marginalia_text>
+                    					The Art of Defence, newly pubished in Italian.
+                    					A necessary Preamble to [the] Art of Warr.
+                    					The Art of Defence: [the] Art of Riding: [the] Art of 
+                    					Nauigation: three necessary Arts for euery publique,
+                    					or priuate Actor in [the[ world; that intendeth to
+                    					trauail, or to do any thing abroade. And if he
+                    					purposeth to sturr in greater actions; he must not
+                    					want [the] Art of Warfare: With [the] brauest new 
+                    					Inuentions of Pyrotechny, Fortification, &amp; such like.
+                    					And also with [the] new Aggiunta of Gandino,
+                    					to [the] Stratagems of Frontino, &amp; Polyen.
+                    					A Braue Executioner, or gallant Traueler by land, or sea,
+                    					may better want any other Arts of whatsoeuer importance,
+                    					then these, that necessarily apperteine to [the] defence
+                    					of his owne person, his goods, his friends, &amp;c.
+                    					For euery of them, any one Excellent Booke, will serue
+                    					[the] turne: especially where more be not at hand:
+                    					as Grassi for [the] Art of Defence: Blundeuil for [the]
+                    					Art of Riding: Cortes, or Bourne for [the] Art of
+                    					Nauigation: Macchiauel for [the] Art of Warr.
+                    					All [chosen] Bookes, &amp; notable in their seueral subiects.
+                    					Howbeit in [the] Art of Warr,
+                      			</marginalia_text>
+            				<person name="Marcantonio Gandino"/>
+            				<person name="Frontinus"/>
+            				<person name="Polyaenus"/>
+            				<person name="Giacomo di Grassi"/>
+            				<person name="Thomas Blundeville"/>
+            				<person name="Martín Cortés de Albacar"/>
+            				<person name="William Bourne"/>
+            				<person name="Machiavelli"/>
+            				<book title="Art of War"/>
+            					<!-- I'm not sure if I should include a book reference to the Art of Warr? I also don't know if there's an actual Art of Defence, I haven't found anything yet. -->
+            					<!-- As for the rest, it seems as if he is mostly referring to the actual arts rather than any particular work. --> <!--JG: I agree, he mostly refers to actual arts, but it seems like the art of defense might have been published. Do a bit more research, otherwise send a group mail. And yes, since he mentions the book, you can tag the Art of War in a book element-->
+            				<emphasis method="pen" text="The Art of Defence" type="straight"/>
+            				<emphasis method="pen" text="the Art of Warr" type="straight"/>
+            			</position>
+        			</language>
+        			<language ident="LA">
+        				<position book_orientation="0" place="full_page">
+        					<marginalia_text>
+        						Nihil mihi singulare, aut
+        						egregium, sine Militia Caesaris: in quo vno, omnia
+        						Pra[e]cepta, et Exempla, acerrimè, et peritissimè bellandi,
+        						id est, Inuictissimè. Cui tamen necessariò addenda[e],
+        						Pauca[e] Noua[e] Inuentiones, pra[e]sertim Pyrotechnia[e],
+        						et Fortificationis. Vulcania[e], et Da[e]dala[e] Industria[e];
+        						talia omnia Experimenta, facilia: (Vt Petro Nauarra[e],
+        						et Carolo Tetto): nec vsq[uam] in aquis ha[e]ret, ignea
+        						Polymechania. Qui in altero Vulcanu[m], aut Prometheum
+        						a[e]mulatur: in altero Da[e]dalum, aut Archimedem: dexterrimè
+        						assequi poterit, quod vult, et efficacissimè.
+        					</marginalia_text>    
+        					<person name="Julius Caesar"/>
+        					<person name="Vulcan"/>
+        					<person name="Daedalus"/>
+        					<person name="Petrus Navarra"/>	<!-- I found someone named Petrus Navarra, but I'm unsure who this is. --> 
+        					<person name="Carolus Tettus"/>
+        					<person name="Prometheus"/>
+        					<person name="Archimedes"/>
+        				</position>
+        			</language>
+        			<translation>
+        				Nothing to me is singular or distinguished, without the War of Caesar: in which together,
+        				are all precepts and examples for waging war most fiercely and most expertly,
+        				that is, most victoriously. To which however necessarily a few new inventions must be added,
+        				chiefly Pyrotechnics and Fortifications. The activities of Vulcan and Daedalus;
+        				all such proofs, easy things: (As in Petrus Navarra and Carolus Tettus): nor does fiery Polymechania 
+        				ever remain fixed in water. He who imitates, in the one, Vulcan or Prometheus, in the other, Daedalus,
+        				or Archimedes, most dextrously will he be able to achieve what he wishes, and most efficiently.
+        					<!-- Unclear about translating "talia omnia Experimenta, facilia" or the relevance/significance of "nec usquam in aquis, etc." --> <!--JG: I think it's pretty accurate, although I'm not entirely sure either. James, what do you think?-->
+        			</translation>
+        		</marginalia>
+
+    </annotation>
+</transcription>

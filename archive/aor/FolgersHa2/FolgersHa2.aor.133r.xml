@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.133r.tif" pagination="89" reader="Harvey" signature="[F5r]"/>	<!-- ABO 137right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nusq[uam] ha[e]ret flagrans spiritus. fit via vi: uel aperta, uel
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						occulta philosphia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The burning spirit never cleaves to anything. The path to power is made either
+				with an open or a secret philosophy.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="ES">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Todos es nada.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Everything for naught.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vincit, qui spernit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who scorns wins.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Bacchus nymphis perfusus.
+					</marginalia_text>
+					<person name="Bacchus"/>
+				</position>
+			</language>
+			<translation>
+				Bacchus is flush with nymphs.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Eutrapeli occulta proprietas, Trismegistus
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+					<person name="Hermes Trismegistus"/>
+				</position>
+			</language>
+			<language ident="EL">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						απὸ μεχανἤς.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="EN">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						The Jouial, &amp; most braue Stratagem.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Heros
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						in nube.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Priùs
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						fecit, quàm dixit. Viuida Ironia, paradoxum, hyperbole: 
+						super omnes
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Tiberios, Rabela[e]sios, Aretinos.
+					</marginalia_text>
+					<person name="Silius Italicus"/> <!-- CG: Could be Silius Italicus, but unclear. -->
+					<person name="Francois Rabelais"/>
+					<person name="Pietro Aretino"/>
+				</position>
+			</language>
+			<language ident="EN">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						The onlie cunning pragmatician
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						in a world.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The occult properties of Eutrapelus; Hermes Trismegistus from the machine.
+				
+				A hero in the cloud. He acted first, as he spoke. A vivid irony, paradox, hyperbole,
+				above all the Tiberiuses, Rabelaises, Aretinos. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( Minotaurus in labyrintho. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The minotaur in the labyrinth.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						A close, &amp; shrewd fellow. A perillous man.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Totum est in peritissimâ procedendi formulâ, et instantissimâ industriâ.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The whole matter is found in proceeding with the most expert methods and most immediate industriousness.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="il futuro non" type="straight"/>
+		<underline language="IT" method="pen" text="presente è quasi" type="straight"/>
+		<underline language="IT" method="pen" text="comincia" type="straight"/>
+		<underline language="IT" method="pen" text="finisce" type="straight"/>
+		<underline language="IT" method="pen" text="Il vino" type="straight"/>
+		<underline language="IT" method="pen" text="innacquare" type="straight"/>
+		<underline language="IT" method="pen" text="per la sanità del corpo" type="straight"/>
+		<underline language="IT" method="pen" text="dell'animo" type="straight"/>
+		<underline language="IT" method="pen" text="temperar Bacco" type="straight"/>
+		<underline language="IT" method="pen" text="con le Ninfe" type="straight"/>
+		<underline language="IT" method="pen" text="Dee sobrie" type="straight"/>
+		<underline language="IT" method="pen" text="Bacco fanciullo" type="straight"/>
+		<underline language="IT" method="pen" text="le fiamme" type="straight"/>
+		<underline language="IT" method="pen" text="Nell'acqua fu lauato dalle Ninfe" type="straight"/>
+		<underline language="IT" method="pen" text="gioua alle" type="straight"/>
+		<underline language="IT" method="pen" text="come il fuoco arde[n]te" type="straight"/>
+		<underline language="IT" method="pen" text="Propertio elegantemente" type="straight"/>
+		<underline language="LA" method="pen" text="Vino forma" type="straight"/>
+		<underline language="LA" method="pen" text="vino corrumpitur" type="straight"/>
+		<underline language="IT" method="pen" text="Stolti &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="padroni" type="straight"/>
+		<underline language="IT" method="pen" text="saui" type="straight"/>
+		<underline language="IT" method="pen" text="seruidori" type="straight"/>
+		<underline language="IT" method="pen" text="Xanto filosofo" type="straight"/>
+		<underline language="IT" method="pen" text="gran ciera" type="straight"/>
+		<underline language="IT" method="pen" text="troppo beuea" type="straight"/>
+		<underline language="IT" method="pen" text="Esopo," type="straight"/>
+		<underline language="IT" method="pen" text="destramente" type="straight"/>
+		<underline language="IT" method="pen" text="vn'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="potrebbe bere tutto il Mare" type="straight"/>
+		<underline language="IT" method="pen" text="medesimo il berrebbe" type="straight"/>
+		<underline language="IT" method="pen" text="anelli in compromessò" type="straight"/>
+		
+		<symbol name="JC" place="tail"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Et sendo ancor della cenere immondo, Nell'acqua fu     lauato dalle Ninfe: Et però quando è tal, gioua alle genti; Ma se no'l meschi, è come il fuoco arde[n]te.    Et Propertio elegantemente disse:"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- qua -->
+		<mark method="pen" name="horizontal_bar" place="right_margin"/>
+		<mark method="pen" name="horizontal_bar" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- in -->
+		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- aetas. -->
+		<mark method="pen" name="dot" place="right_margin"/> <!-- padroni, -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- con -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- affer -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- me -->
+		
+		<mark method="pen" name="dot" place="intext"/> <!-- ancora, & -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- per la sanita, del -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="corpo"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="dell'animo"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="Bacco"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="Ninfe"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="fiamme"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="Ninfe"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="Nell'acqua fu lauato dalle Ninfe"/>
+		<mark language="LA" method="pen" name="equal_sign" place="intext" text="Vino forma"/>
+		<mark language="LA" method="pen" name="plus_sign" place="intext" text="vino corrumpitur"/>
+		
+    </annotation>
+</transcription>

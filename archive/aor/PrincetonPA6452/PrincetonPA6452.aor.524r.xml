@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.524r.tif" reader="Harvey" signature="Q4[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        Herodotus.
+                    </marginalia_text>
+                    <person name="Herodotus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="per tyrannidem proximi Decemuiri." type="straight"/>
+        <underline language="LA" method="pen" text="Herodotu[m] suam scripsisse historia[m]" type="straight"/>
+          
+    </annotation>
+</transcription>

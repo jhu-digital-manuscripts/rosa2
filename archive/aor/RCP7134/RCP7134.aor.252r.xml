@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.252r.tif" pagination="245" reader="John Dee" signature="QQ"/>
+    <annotation>
+        
+        <marginalia anchor_text="Nullus nascendi certus terminus datur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Incertus nasce[n]di terminus a tempore co[n]ceptionis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The uncertain end of birth from the time of conception.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Saturnus debilis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>♄ debilis</marginalia_text>
+                </position>
+            </language>
+            <translation>Saturn is weak.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="menses Martis, alij Solis, alij Iouis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Menses { Solis Martis Jovis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The months of the Sun, Mars, and Jupiter</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="luminariu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="uocantur menses Martis, alij Solis, alij Iouis &amp;c" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

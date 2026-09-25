@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.117v.tif" pagination="226" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Peada à patre Penda in regem Merciorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Peada filius Penda[e] substitus Rex Mercior[um]
+                    </marginalia_text>
+                    <person name="Penda of Mercia"/>
+                    <person name="Peada of Mercia"/>
+                </position>
+            </language>
+            <translation>
+                Peada, the son of Penda, the heir to the King of Mercia.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad Murum" hand="Italian">    
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Atwall Ad Muru[m]    <!-- DO:  'Ad Murum' (literally 'At Wall') appears to be some kind of place/residence name, but I can't identify it exactly: http://heddonhistory.weebly.com/ad-murum.html -->
+                        <!-- FSF: possibly Walbottle https://en.wikipedia.org/wiki/Walbottle or Newcastle https://books.google.co.uk/books?id=CPsVAAAAYAAJ&pg=PA5&lpg=PA5&dq=ad+murum&source=bl&ots=ZTAcHyWzO4&sig=Km7pj38Vjzc8YGVmuLuOBVhQISQ&hl=en&sa=X&ved=0ahUKEwi96oie5szVAhVsKcAKHXXWBHMQ6AEIRzAF#v=onepage&q=ad%20murum&f=false -->
+                    </marginalia_text>
+                    <location name="Walbottle"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tempus Peada à patre Penda" type="straight"/>
+        <underline language="LA" method="pen" text="regem Merciorum" type="straight"/>
+        <underline language="LA" method="pen" text="Elfledam" type="straight"/>
+        <underline language="LA" method="pen" text="cuius sororem habuit" type="straight"/>
+        <underline language="LA" method="pen" text="episcopo baptizatus" type="straight"/>
+        <underline language="LA" method="pen" text="ad Murum" type="double"/>
+        <underline language="LA" method="pen" text="abrenunciata idolorum" type="straight"/>
+        <underline language="LA" method="pen" text="Penda" type="double"/>
+        <underline language="LA" method="pen" text="qui deo suo, in quem crederent, contemnerent obedire" type="straight"/>
+        <underline language="LA" method="pen" text="milite Tonhero" type="straight"/>
+        <underline language="LA" method="pen" text="comitis Hu[n]vvaldi" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="tail"/>
+        
+        <graph book_orientation="0" method="pen" place="left_margin" type="genealogical_tree">  
+            <node anchor_text="Osvviu[m]" id="n1" person="Oswiu">Oswius Rex</node>
+            <node id="n2" person="Penda of Mercia">Penda Rex</node>
+            <node anchor_text="Alfrido" id="n3" person="Alhfrith">Alfredus</node>
+            <node anchor_text="Kiniburgam" id="n4" person="Kyneburga">Knieburga</node>
+            <node anchor_text="Elfledam" id="n5" person="Alchflaed">Elfleda</node>
+            <node anchor_text="Peada" id="n6" person="Peada of Mercia">Peada</node>
+            <link from="n2" relationship="has_child" to="n6"/>
+            <link from="n2" relationship="has_child" to="n4"/>
+            <link from="n1" relationship="has_child" to="n3"/>
+            <link from="n1" relationship="has_child" to="n5"/>
+            <link from="n4" relationship="has_spouse" to="n3"/> 
+            <link from="n3" relationship="has_spouse" to="n4"/> 
+            <link from="n6" relationship="has_spouse" to="n5"/>
+            <link from="n5" relationship="has_spouse" to="n6"/>
+        </graph>
+
+    </annotation>
+</transcription>

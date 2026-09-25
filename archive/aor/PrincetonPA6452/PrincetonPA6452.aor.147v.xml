@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.147v.tif" pagination="278" reader="Harvey" signature="[aa1v]"/> 
+    <annotation>
+        
+        <underline language="LA" method="pen" text="P. Cornelius" type="straight"/>
+        <underline language="LA" method="pen" text="uixdum satis" type="straight"/>
+        <underline language="LA" method="pen" text="Annibalem superasse Pyreneos montes" type="straight"/>
+        <underline language="LA" method="pen" text="quo nam ei loco occurreret" type="straight"/> 
+        <underline language="LA" method="pen" text="satis refectis ab iactione" type="straight"/>
+        <underline language="LA" method="pen" text="trecentos interim delectos equites" type="straight"/>
+        <underline language="LA" method="pen" text="ad exploranda omnia, uisendosq[ue] ex tuto hostes praemittit" type="straight"/>
+        <underline language="LA" method="pen" text="metu" type="straight"/>
+        <underline language="LA" method="pen" text="precio" type="straight"/>
+        
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="ad exploranda omnia, uisendosq[ue] ex tuto hostes praemittit"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--cre-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--agi-->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--An-->
+        
+        <mark method="pen" name="dot" place="intext"/> <!--militibus, trecentos-->
+        <mark method="pen" name="apostrophe" place="right_margin"/> <!--Annibal caeteris-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="metu"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="precio"/>
+        <mark method="pen" name="apostrophe" place="right_margin"/> <!--pacatis, iam-->
+        
+        
+    </annotation>
+</transcription>

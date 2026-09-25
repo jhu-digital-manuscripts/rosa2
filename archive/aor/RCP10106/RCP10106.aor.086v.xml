@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.086v.tif" pagination="172" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Declamaturus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Declamator</marginalia_text>
+                </position>
+            </language>
+            <translation>The declaimer.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="insinuatione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Insinuatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Insinuating.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="urbanitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vrbanitas</marginalia_text>
+                </position>
+            </language>
+            <translation>Sophistication</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="occupandi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Occupatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Seizure.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad accusandum Verren descendereit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In Verrem.</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quas ueras esse fateor, sed in haec genera recidere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Caussi remotio</marginalia_text>
+                </position>
+            </language>
+            <translation>Removal of the causes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quomodo perfici facilime poßint" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quo m[od]o p[er]fici prooemia possu[n]t</marginalia_text>
+                </position>
+            </language>
+            <translation>In what way the prooemia can be completed.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="urbanitas opportuna" type="straight"/>
+        <underline language="LA" method="pen" text="nisi à contrario incipere. Negant" type="straight"/>
+        <underline language="LA" method="pen" text="Quas ueras esse fateor, sed in haec genera recidere" type="straight"/>
+        <underline language="LA" method="pen" text="quid, apud quem, pro quo, contra quem, quo tempore, quo loco, quo rerum statu, qua uulgi fama dicendum              sit: quid iudice[m] sentire credibile sit antè quàm incipiamus: tum quid aut desideremus, aut deprecemur" type="straight"/>
+        
+    </annotation>
+</transcription>

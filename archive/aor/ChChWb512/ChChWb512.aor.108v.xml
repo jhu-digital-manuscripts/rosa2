@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.108v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="vn decim annos Britonibus horre[n]da fuit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Exiliu[m] quasi 11. Annor[um].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>An exile of about 11 years.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ac nemine[m] genus nostru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="regno expellere posse" type="straight"/>
+        <underline language="LA" method="pen" text="ad rege[m] Alanu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="vndecim annos Britonibus" type="straight"/>
+        <underline language="LA" method="pen" text="illa sine intermissione" type="straight"/>
+        <underline language="LA" method="pen" text="indigena ge[n]te carente[m]" type="straight"/>
+        
+        <mark method="pen" name="equal_sign" place="right_margin"/> <!--Armorica-->
+        
+        <mark method="pen" name="bracket" place="intext"/> <!--pepercerat desolata-->
+        
+    </annotation>
+</transcription>

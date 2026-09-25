@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.261v.tif" pagination="502" reader="John Dee" signature="[iii.iii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="aliud furere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        furere quid
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To rage at something.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tusculanum monte[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tusculanus Mons
+                    </marginalia_text>
+                    <location name="Tusculo Hill"/>
+                </position>
+            </language>
+            <translation>
+                Tuscolo Hill.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mentis esset suae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        esse me[n]tis su[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be in possession of one's senses.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Comparatio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Comparison.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="agmen" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        agmen.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Stream.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="maeandros, dum omnes solitudines persequeris, quae diuerticula, flexionésque" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        meandri solitudines diuerticula flexiones
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Turnings, wilderness, digression, bends.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nisi non cognoscere homines, non cognoscere leges, non Senatu[m], non ciuitatem, cruentare corpus suum?" type="straight"/>
+        <underline language="LA" method="pen" text="profundae" type="straight"/>
+        <underline language="LA" method="pen" text="deuorassent, partim noua quaedam &amp; inaudita luxuries, partim etiam in illis locis vbi omnia diripuit, emptiones" type="straight"/>
+        <underline language="LA" method="pen" text="illa eius" type="straight"/>
+        <underline language="LA" method="pen" text="eam sibi tum adsciscere, cum etiam si religio non impediret, mos maioru[m] tamen, &amp; exempla, &amp; grauissimae legu[m] poena vetare[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="ipsa Roma propè conuulsa sedibus suis" type="straight"/>
+        <underline language="LA" method="pen" text="procedere visa est" type="straight"/>
+        <underline language="LA" method="pen" text="sed etia[m] moenia ipsa videre[n]tur &amp; tecta vrbis ac te[m]pla laetari" type="straight"/>
+        <underline language="LA" method="pen" text="pecunia" type="straight"/>
+        <underline language="LA" method="pen" text="Habes reditu[m] meum. confer nunc vicissim tuum" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">13</numeral>
+        
+        <drawing anchor_text="furere quid" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="mountain"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+   
+    </annotation>
+</transcription>

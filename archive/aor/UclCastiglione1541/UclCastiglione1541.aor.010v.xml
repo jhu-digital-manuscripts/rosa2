@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="UclCastiglione1541.010v.tif" reader="Harvey" signature="[Aiii[v]]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        [g]lihuomini [s]i dilettano di riprendere.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Men delight in scolding.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Perche lo Auttore no[n] ha voluto imitare il Boccaccio. 
+                    </marginalia_text>
+                    <person name="Giovanni Boccaccio"/>
+                </position>
+            </language>
+            <translation>
+                Why the author did not want to copy Boccaccio.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quando il Boccaccio scrisse meglio, e come [s]'ingannò di giudicio. 
+                    </marginalia_text>
+                    <person name="Giovanni Boccaccio"/>
+                </position>
+            </language>
+            <translation>
+                When Boccaccio wrote better and how he deceived himself in his judgement.
+            </translation>
+        </marginalia>
+    </annotation>
+</transcription>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.074v.tif" pagination="148" reader="John Dee" signature="[k 2[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Gorgias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gorgias</marginalia_text>
+                    <person name="Gorgias"/>
+                </position>
+            </language>
+            <translation>Gorgias.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="suasoriam, in qua etiam cùm prooemio utemur, breviora" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Suasoria[e] proo[e]mium Breve</marginalia_text>
+                </position>
+            </language>
+            <translation>A short preface of persuasive speech.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Narratione[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Narratio</marginalia_text>
+                </position>
+            </language>
+            <translation>Narrative</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="affectus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Affectus</marginalia_text>
+                </position>
+            </language>
+            <translation>Emotion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="autoritas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Autoritas</marginalia_text>
+                </position>
+            </language>
+            <translation>Authority.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="siue sociae ciuitatis euersionem deflebimus" type="straight"/>
+        
+    </annotation>
+</transcription>

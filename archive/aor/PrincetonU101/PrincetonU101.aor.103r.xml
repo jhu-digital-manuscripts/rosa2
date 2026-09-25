@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.103r.tif" pagination="xcix[r]" reader="Harvey"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia anchor_text="The instrumentes" hand="Italian"> 
+    		<language ident="EN">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Ordinance, in steade of many other Instruments, &amp; engins.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Nota.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Note.
+    		</translation>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="The instruments" type="straight"/>
+    	<underline language="EN" method="pen" text="defended Townes" type="straight"/>
+    	<underline language="EN" method="pen" text="balistes" type="straight"/>
+    	<underline language="EN" method="pen" text="onagris" type="straight"/>
+    	<underline language="EN" method="pen" text="Scorpions" type="straight"/>
+    	<underline language="EN" method="pen" text="Arcubalistes" type="straight"/>
+    	<underline language="EN" method="pen" text="Fustiballs" type="straight"/>
+    	<underline language="EN" method="pen" text="Slinges" type="straight"/>
+    	<underline language="EN" method="pen" text="Arrieti" type="straight"/>
+    	<underline language="EN" method="pen" text="Towers" type="straight"/>
+    	<underline language="EN" method="pen" text="Musculi" type="straight"/>
+    	<underline language="EN" method="pen" text="Plutai" type="straight"/>
+    	<underline language="EN" method="pen" text="Viney" type="straight"/>
+    	<underline language="EN" method="pen" text="Falci" type="straight"/>
+    	<underline language="EN" method="pen" text="Testudeni" type="straight"/>
+    	<underline language="EN" method="pen" text="steede of which" type="straight"/>
+    	<underline language="EN" method="pen" text="the ordinaunce, the" type="straight"/>
+    	<underline language="EN" method="pen" text="that besiegeth" type="straight"/>
+    	<underline language="EN" method="pen" text="him that defendeth" type="straight"/>
+    	<underline language="EN" method="pen" text="by famine" type="straight"/>
+    	<underline language="EN" method="pen" text="through assaultes" type="straight"/>
+    	<underline language="EN" method="pen" text="concerning famine" type="straight"/>
+    	<underline language="EN" method="pen" text="well prouided of" type="straight"/>
+    	<underline language="EN" method="pen" text="lacketh victualles, sometimes" type="straight"/>
+    	<underline language="EN" method="pen" text="extraordinary waies to" type="straight"/>
+    	<underline language="EN" method="pen" text="middest of the besieged Citie" type="straight"/>
+    	<underline language="EN" method="pen" text="there runne" type="straight"/>
+    	<underline language="EN" method="pen" text="riuer" type="straight"/>
+    	<underline language="EN" method="pen" text="Romaines vittelled" type="straight"/>
+    	<underline language="EN" method="pen" text="Casalino besieged" type="straight"/>
+    	<underline language="EN" method="pen" text="victuall then Nuttes" type="straight"/>
+    	<underline language="EN" method="pen" text="whereof casting in the same" type="straight"/>
+    	<underline language="EN" method="pen" text="which carried of the riuer, withoute being" type="straight"/>
+    	<underline language="EN" method="pen" text="time the Casalinians" type="straight"/>
+    	<underline language="EN" method="pen" text="haue graine more" type="straight"/>
+    	<underline language="EN" method="pen" text="him to dispaire" type="straight"/>
+    	<underline language="EN" method="pen" text="cannot, by famine" type="straight"/>
+    	<underline language="EN" method="pen" text="caste breade out of the" type="straight"/>
+    	<underline language="EN" method="pen" text="a Bullocke graine to eate" type="straight"/>
+    	<underline language="EN" method="pen" text="the same to be taken, to the" type="straight"/>
+    	<underline language="EN" method="pen" text="might shew that aboundance, which" type="straight"/>
+    	<underline language="EN" method="pen" text="to weery the" type="straight"/>
+    	<underline language="EN" method="pen" text="whom he" type="straight"/>
+    	<underline language="EN" method="pen" text="to sow their fieldes, to the entente" type="straight"/>
+    	<underline language="EN" method="pen" text="corne, which they sowed" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="duertiseme[n]tsfor a be sieged" type="straight"/>
+    	<underline language="EN" method="pen" text="led Casalino" type="straight"/>
+
+    	<!-- Marks -->
+    	<mark method="pen" name="hash" place="right_margin"/>
+    	<mark method="pen" name="hash" place="right_margin"/>
+    	<mark method="pen" name="plus_sign" place="right_margin"/>
+    	<mark method="pen" name="dash" place="right_margin"/>
+    	<mark method="pen" name="dash" place="right_margin"/>
+    	<mark method="pen" name="hash" place="right_margin"/>
+    	<mark method="pen" name="dash" place="right_margin"/>
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="head" text="instrumentes"/>
+    	<mark method="pen" name="dot" place="intext"/> <!--assaultes. As-->
+    	<mark method="pen" name="comma" place="intext"/> <!--Falci, Testudeni-->
+    	<mark method="pen" name="dot" place="intext"/> <!--Testudeni, in-->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="ordinaunce"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="by famine"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="throughe assaultes"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="famine"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- riuer, as -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Casalino"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- Aniball, who[m] -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="then Nuttes"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="haue graine more"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- eate, and -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="weery"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="sow"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="corne, which they sowed"/>
+    	
+    	<!-- Errata -->
+    	<errata amendedtext="who" copytext="whom" language="EN"/>
+    	
+    </annotation>
+</transcription>

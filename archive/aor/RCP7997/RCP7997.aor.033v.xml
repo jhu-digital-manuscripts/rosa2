@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.033v.tif" reader="John Dee" signature="[Fiij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="opinione[m] q[uo] dixeru[n]t luna[m] s[e]c[un]d[u]m se lumi[n]osam. sed ecclipsare[n]t p[er] hoc. qq[uo]d hoc lume[n] extingueret[ur]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quorumda[m] opinio dice[n]tiu[m] ☾a[e] vna[m] partem esse tenebrosam, altera[m] luminosa[m] Alioru[m] dicentiu[m] eclipsim ☾ fieri ob luminis eius extinctione[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The opinion of some saying that one part of the moon is dark, the other bright. That of others saying that a lunar eclipse happens because of the extinction of its light.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mediu[m] accide[n]tale" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mediu[m] accide[n]tale
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An accidental medium.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mediu[m] extrinsecu[m] [et] accide[n]tale" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mediu[m] extrinsecu[m] et accide[n]tale
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An extrinsic and accidental medium.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Causa eclipsis ☾
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The reason for the eclipse of the moon.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="q[ua]tuor sunt cause" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quatuor causa[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Four reasons.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="textus est corrupt[us]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Textus corruptus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A corrupted text.
+            </translation>
+        </marginalia>        
+        
+        <underline language="LA" method="pen" text="mediu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Si aut[em] no[n] sciat[ur] p[er] mediu[m] p[ro]priu[m] [et] essentiale. s[ed] p[er] mediu[m] extrinsecu[m] [et] accde[n]tale. possum[us]" type="straight"/>
+        <underline language="LA" method="pen" text="s[e]c[un]d[u]m veritate[m] [et] co[m]mune[m] scola[m] mathematicoru[m] vel vtru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="vel vtru[m] hoc fiat p[ro]pter extinctione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="q[ue] sibi obuiat aliq[uo]d humidu[m] v[e]l q[ue] p[rae]occuparet[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="seq[ui]tur q[uod] mediu[m] demo[n]stratio[n]is sit causa" type="straight"/>
+        <underline language="LA" method="pen" text="hoc etia[m] c[om]me[n]tatores" type="straight"/>
+        <underline language="LA" method="pen" text="[et] inductiuas demo[n]stratio[n]es ponu[n]t et demo[n]strant" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- ponit o[mn]ibus -->
+
+    </annotation>
+</transcription>

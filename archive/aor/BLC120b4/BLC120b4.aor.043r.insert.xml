@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.043r.insert.tif" origin="added" reader="John Dee" status="fixed"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        [cali]ditas, Ignis, frigiditati Aqua[e] opponitur, et siccitas humiditati.
+                        Cum ergo caliditas Ignis frigiditati Aqua[e] advenit [etc.]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                [For] heat of fire is opposed to the cold of water, and its dryness to its humidity.
+                Therefore, when the heat of fire mets the cold of water etc.
+            </translation>
+        </marginalia>
+        
+        <mark method="pen" name="tripunctus" place="full_page"/>
+        
+    </annotation>
+</transcription>

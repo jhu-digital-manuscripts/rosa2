@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.018v.tif" pagination="[12v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Adde pro anno 1553, ad loca lo[n]gi[tudinibus] singularu[m] fixaru[m] gradu[m] 1.m[inutas] 18.</marginalia_text>
+                </position>
+            </language>
+            <translation>Add for the year 1553 towards the place of the singular fixed [stars] 1 degree [and] 18 minutes to the longitude.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>1553. 27. 37.</marginalia_text> <!--JG: Seems like Dee changed the '2' into a '3'--> <!-- FSF: I agree -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.159r.tif" pagination="159" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="terra molto bassa, &amp; dishabitata" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Terra dishabitata.</marginalia_text>
+                </position>
+            </language>
+            <translation>The uninhabited land.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="e piene di buonissima acqua" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pitts of water fownd</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Bocca del Dragone" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bocca di dragone</marginalia_text> 
+                    <location name="Dragon's Mouth"/>
+                </position>
+            </language>
+            <translation>Dragon's Mouth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Bocca della Serpe" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bocca della Serpe</marginalia_text> 
+                    <location name="Serpent's Mouth"/>
+                </position>
+            </language>
+            <translation>Serpent's Mouth.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="pannicelli copriuano" type="straight"/>
+        <underline language="IT" method="pen" text="dell'Arenale" type="straight"/>
+        <underline language="IT" method="pen" text="da gl' Indiani" type="straight"/>
+        <underline language="IT" method="pen" text="dishabitata" type="straight"/>
+        <underline language="IT" method="pen" text="nall'arena, &amp; per buona sorte" type="straight"/>
+        <underline language="IT" method="pen" text="trouarono fatte" type="double"/>
+        <underline language="IT" method="pen" text="piene di buonissima acqua" type="straight"/>
+        <underline language="IT" method="pen" text="Norueste" type="straight"/>
+        <underline language="IT" method="pen" text="Bocca della Serpe" type="straight"/>
+        <underline language="IT" method="pen" text="due punte Occidentali della Trinità con" type="straight"/>
+        <underline language="IT" method="pen" text="Tramo[n]tana Mezodi" type="straight"/>
+        
+        <mark language="IT" method="pen" name="comma" place="intext" text="sorte le"/>
+        
+    </annotation>
+</transcription>

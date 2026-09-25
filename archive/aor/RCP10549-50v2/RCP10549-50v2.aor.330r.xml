@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.330r.tif" pagination="111" reader="John Dee" signature="[Gg.viii.]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="corpus vnum &amp; simplex, ita figuratum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        corpus ita figuratu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The body is shaped this way.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="animus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Animus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mind.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Empedocles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Empedocles.
+                    </marginalia_text>
+                    <person name="Empedocles"/>
+                </position>
+            </language>
+            <translation>
+                Empedocles.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sanguinem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        sanguis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Blood.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cerebri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cerebrum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Brain.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="anima[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Anima.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Soul.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="animus ab anima dictus est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Animus ab a[n]i[m]a dictus est.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The mind is commanded by the soul.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Zenoni" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Zeno.
+                    </marginalia_text>
+                    <person name="Zeno of Elea"/>
+                </position>
+            </language>
+            <translation>
+                Zeno of Elea.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ignis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ignis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Fire.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoxenus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aristoxenus.
+                    </marginalia_text>
+                    <person name="Aristoxenus"/>
+                </position>
+            </language>
+            <translation>
+                Aristoxenus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="harmonia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Harmonia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Harmony.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="erat multo antè dictum &amp; explanatu[m] à Platone" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Plato. pha[e]done eius hoc tractat fusius.
+                    </marginalia_text>
+                    <person name="Plato"/>
+                    <book title="Phaedo"/>
+                </position>
+            </language>
+            <translation>
+                Plato. He treats this in his Phaedo more broadly.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Xenocrates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Xenocrates.
+                    </marginalia_text>
+                    <person name="Xenocrates of Chalcedon"/>
+                </position>
+            </language>
+            <translation>
+                Xenocrates of Chalcedon.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Plato triplice[m] finxit anima[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Platonis triplex a[n]i[m]a
+                    </marginalia_text>
+                    <person name="Plato"/>
+                </position>
+            </language>
+            <translation>
+                The threefold soul of Plato.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dicaearchus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Dic[a]earchus.
+                    </marginalia_text>
+                    <person name="Dicaearchus"/>
+                </position>
+            </language>
+            <translation>
+                Dicaearchus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pherecratem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pherecrates
+                    </marginalia_text>
+                    <person name="Pherecrates"/>
+                </position>
+            </language>
+            <translation>
+                Pherecrates.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nihil esse omnino animu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nullus a[n]i[m]us nec a[n]i[m]a
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Neither mind nor soul.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoteles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aristoteles
+                    </marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>
+                Aristotle.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quintam quandam naturam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quinta essentia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Fifth essence.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ἐντελεχία <!--(normally ἐντελέχεια, entelechy, but in this famous passage Cicero seems to have meant ἐνδελέχεια, continuity, persistency—the reading is most likely due a copist mistake) -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Entelechy. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Democritu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Democritus..
+                    </marginalia_text>
+                    <person name="Democritus"/>
+                </position>
+            </language>
+            <translation>
+                Democritus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Contra o[mn]es pra[e]dict. s[e]n[tent]ias
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Against all preceding opinions.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pariter enim cum vita sensus amittitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pariter cu[m] vita sensus amittitur.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The senses are lost together with life.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Anima[e] i[m]mortalitate[m] ex Platonis pha[e]done disce.
+                    </marginalia_text>
+                    <person name="Plato"/>
+                    <book title="Phaedo"/>
+                </position>
+            </language>
+            <translation>
+                Learn about the immortality of the soul from Plato's Phaedo.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="censent cordi suffusum sanguinem" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; agere anima[m]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; efflare dicimus" type="straight"/>
+        <underline language="LA" method="pen" text="animosos" type="straight"/>
+        <underline language="LA" method="pen" text="bene animatos" type="straight"/>
+        <underline language="LA" method="pen" text="ex animi sente[n]tia" type="straight"/>
+        <underline language="LA" method="pen" text="intentione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="dicitur, sic ex corporis totius natura &amp; figura varios motus cieri tanqua[m] in" type="straight"/>
+        <underline language="LA" method="pen" text="cuius principatu[m], id est ratione[m], in capite sicut in arce posuit: &amp; duas partes separare voluit, iram &amp; cupiditate[m], quas locis disclusit:              iram in pectore, cupiditatem subter praecordia locauit. Dicaearchus autem" type="straight"/>
+        <underline language="LA" method="pen" text="Deucalione ortum" type="straight"/>
+        <underline language="LA" method="pen" text="inducit, nihil esse omnino animu[m], &amp; hoc esse nomen totum inane, frustráque &amp; animalia &amp; anima[n]tes appellari, neque" type="straight"/>
+        <underline language="LA" method="pen" text="viuis awqualiter esse fusam, nec" type="straight"/>
+        <underline language="LA" method="pen" text="nisi corpus vnum &amp; simplex, ita figuratum vt temperatione naturae" type="straight"/>
+        <underline language="LA" method="pen" text="quandam naturam censet" type="straight"/>
+        <underline language="LA" method="pen" text="esse, è qua sit mens" type="straight"/>
+        <underline language="LA" method="pen" text="quandam continuatam motione[m] &amp; perenne[m]" type="straight"/>
+        <underline language="LA" method="pen" text="enim apud istos quod non atomorum turba conficiat" type="straight"/>
+        <underline language="LA" method="pen" text="sententias diiudicare" type="straight"/>
+        <underline language="LA" method="pen" text="enim cum vita sensus" type="straight"/>
+        <underline language="LA" method="pen" text="quum è corporibus excesserint, in caelum, quasi in domiciliu[m] suum peruenire" type="straight"/>
+        <underline language="LA" method="pen" text="Euolue diligenter eius eum librum qui est de animo, amplius quod desyderes" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+        <drawing anchor_text="Animus" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Anima" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="quum è corporibus excesserint, in caelum, quasi in domiciliu[m] suum peruenire" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

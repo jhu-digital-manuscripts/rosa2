@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.008r.tif" reader="Harvey" signature="A[ir]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Ca[e]sar, Judicio fortis.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Caesar, by a trial of chance.</translation>
+        </marginalia>
+        
+        <marginalia date="1578" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Gabriel Haruey. 1578.</marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Homerus Martem Vocat</marginalia_text>
+                    <person name="Homer"/>
+                    <person name="Mars"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ἀλλοπρόσαλλον,    
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ad aliu[m], atq[ue] alium euntem, uarium, instabilem: modò haru[m] partium, modò illarum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Homer calls Mars "fickle": one who moves variously and unstably towards one and then another thing, now on this side, now on that one. <!-- CG: Cleaned up the translation some with the Greek. -->
+            </translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Portius Cato" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cato</marginalia_text>
+                    <person name="Cato the Elder"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Portius Cato" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>De secretis no[n] reuelandis.</marginalia_text>
+                </position>
+            </language>
+            <translation>About not revealing secrets.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>L.8.Polya[e]ni.</marginalia_text>
+                    <person name="Polyaenus"/>
+                    <book title="Stratagems"/>
+                </position>
+            </language>
+            <translation>Book 8 of Polyaenus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="commandynge theym by and by to beate downe theyr walles and bulwarkes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Notabile strategema.</marginalia_text>
+                </position>
+            </language>
+            <translation>A notable stratagem.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A politigue dispatch of much atonce.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+            
+        <marginalia anchor_text="Portius Cato" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Prude[n]tiss[im]e.</marginalia_text>
+                </position>
+            </language>
+            <translation>Most wisely.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A practis, worthy to be [the] first Strategem, by way of</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exordiu[m],</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>or pra[e]paratiue.</marginalia_text>
+                </position>
+            </language>
+            <translation>A practis, worthy to be [the] first Strategem, by way of beginning or pra[e]paratiue.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Tu, si sapis, quod scis, nescis, neq[ue] de Euncho,
+                    neq[ue] de vitio virginis. hac re et te o[mnia] turba euolues, [etc].
+                    Ter.</marginalia_text>
+                    <X-ref book_title="Eunuchus" language="LA" person="Terence" text="Tu, si sapis, quod scis, nescis, neque de Euncho, neque de vitio virginis. hac re et te omnia turba euolues"/>
+                </position>
+            </language>
+            <translation>"You, if you are prudent, you won't know what you do know, either about the Eunuch or the girl's misfortune. By this method you'll both rid yourself of all perplexity." [Henry Thomas Riley (ed.), 1874]
+                Three times.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Secretu[m] prodere noli.</marginalia_text>
+                </position>
+            </language>
+            <translation>Do not wish to advance a secret.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Apophthegm[a])</marginalia_text>
+                </position>
+            </language>
+            <translation>Aphorism.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="270" place="left_margin">
+                    <marginalia_text>Iniuria[e], aut Vindicta[e], simul, et semel effundenda[e]. Mach.</marginalia_text>
+                    <person name="Machiavelli"/> <!--JG: Not entirely sure-->
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The French Massacre, 1572. of 50000 persons.</marginalia_text>
+                    <location name="France"/>
+                </position>
+            </language>
+            <translation>Injuries or vengeance must be discarded once and together.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Fortuna[e] rota. Janus bifrons. Nu[n]q[uam] Despera[n]du[m].</marginalia_text>
+                    <person name="Janus"/>
+                </position>
+            </language>
+            <translation>The wheel of fortune. Janus Bifrons. One must never despair.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>De ocultis, Adagia Erasmi: satis prouida,</marginalia_text>
+                    <person name="Erasmus"/>
+                    <book title="Adagia"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>atq[ue] cauta</marginalia_text>
+                </position>
+            </language>
+            <translation>Concerning hidden things, Erasmus' Adagia: sufficiently prophetic and cautious.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Hodierno die,</marginalia_text>
+                </position>
+            </language>
+            <translation>On this day</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="before the felde be pyght" type="straight"/>
+        <underline language="EN" method="pen" text="Portius Cato" type="straight"/>
+        <underline language="EN" method="pen" text="overcom the cites" type="straight"/>
+        <underline language="EN" method="pen" text="Spain" type="straight"/>
+        <underline language="EN" method="pen" text="rebell, throughe" type="straight"/>
+        <underline language="EN" method="pen" text="stronge" type="straight"/>
+        <underline language="EN" method="pen" text="euery one of the sayd cities, commandynge" type="straight"/>
+        <underline language="EN" method="pen" text="by and by" type="straight"/>
+        <underline language="EN" method="pen" text="to beate downe theyr walles and bulwarkes" type="straight"/>
+        <underline language="EN" method="pen" text="they forthwith fulfylled" type="straight"/>
+        <underline language="EN" method="pen" text="sondry letters" type="straight"/>
+        <underline language="EN" method="pen" text="in one daye to be delyuered to all the cities" type="straight"/>
+        <underline language="EN" method="pen" text="eche of" type="straight"/>
+        <underline language="EN" method="pen" text="to them alone, and so by feare" type="straight"/>
+        <underline language="EN" method="pen" text="to all the other cities, they happyly" type="straight"/>
+             
+        <symbol language="LA" name="SS" place="right_margin" text="to beate downe theyr walles and bulwarkes"/>
+        
+        <mark language="EN" method="pen" name="X_sign" place="left_margin" text="before the felde be pyght"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="right_margin" text="Homerus Martem Vocat ἀλλοπρόσαλλον, ad aliu[m], atq[ue] alium euntem, uarium, instabilem: modò haru[m] partium, modò illarum."/> 
+        <mark language="EN" method="pen" name="X_sign" place="right_margin" text="before the felde be pyght"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        
+        <mark method="pen" name="semicolon" place="intext"/> <!--Frontinvs-->
+        <mark language="EN" method="pen" name="quotation_mark" place="intext" text="wherin ar conteyned the sleightes"/>
+        <mark language="EN" method="pen" name="quotation_mark" place="intext" text="and policies exercised in vvarre"/>
+        <mark language="EN" method="pen" name="quotation_mark" place="intext" text="before the felde be pyght"/>
+        <mark language="EN" method="pen" name="quotation_mark" place="intext" text="Of concelynge and kepynge close a"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="rebell"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="stronge"/>
+        <mark method="pen" name="dot" place="intext"/> <!--townes, sente-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="theyr walles and bulwarkes"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="in one daye to be delyuered to all the cities"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="eche"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="to them alone"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="to all the other cities"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="they happyly"/>
+        
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+        
+    </annotation>
+</transcription>

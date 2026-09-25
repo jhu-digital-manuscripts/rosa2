@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.250r.tif" pagination="243" reader="John Dee" signature="PP iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Geniturae mulierum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mulieru[m] genitur[a]e, vt recipiunt aliquid discriminis in iudica[n]di r[ati]o[n]e: propter eas
+                    res diuersas qu[a]e in earu[m] consideratio[n]e perpenduntur vt in illis de maritis querim[us], [etc] nec magistratum
+                    gerunt / [etc].</marginalia_text>
+                </position>
+            </language>
+            <translation>Women's genitures, as they recover something of a distinction in the reason for judgment:
+            among those diverse matters which are assessed carefully in their consideration as in them we search for [information] on wifes, et cetera,
+            and do not take up office.</translation> <!--JG: Slightly perplex about 'magistratum gerere' in this context??-->
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Imo ☉ vit[a]e dator in △ ascende[n]tis et in 9 and D[omi]n[u]s asce[n]dentis in ⚹, dispositoris
+                    ☾, et ♀ in ☌ ☾ ip[s]am conservant / casibus tali[bus] violentis subijcietur. //</marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Trine"/>
+                    <symbol_in_text name="Sextile"/>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Conjunction"/>
+                </position>
+            </language>
+            <translation>Indeed, the Sun [is] the giver of life in trine to the ascendant and in the ninth [house],
+            and the Lord of the Ascendant in sextile, the dispositor of the Moon. And Venus in conjunction with the Moon; they conserve it [as] it
+            is subjected to such violent cases.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ex toto dissimiles" type="straight"/>
+        
+    </annotation>
+</transcription>

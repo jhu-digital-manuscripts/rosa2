@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.098r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Co[n]stantino" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Constantinus
+                    </marginalia_text>
+                    <person name="Constantine"/>
+                </position>
+            </language>
+            <translation>Constantine</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Co[n]stantino reliquit" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]sule Augusto" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] Insulanis ta[n]tu[m]mo[do] " type="double"/>
+        <underline language="LA" method="pen" text="regib[us] eoru[m]q[ue] exercitibus" type="straight"/>
+        <underline language="LA" method="pen" text="in Rutupu[m] portu[m]" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--Augusto Gaufridus-->
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

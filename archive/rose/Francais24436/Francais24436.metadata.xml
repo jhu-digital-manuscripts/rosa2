@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>155</totalPages>
+    <dimensions units="mm">
+        <width>205</width>
+        <height>260</height>
+    </dimensions>
+    <dates>
+        <startDate>1300</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="&#10;                     ">
+            <language>fr</language>
+            <title>Textes variés
+                     </title>
+            <textId/>
+            <pages end="155v" start="1r">155</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>41</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Français 24436</commonName>
+            <dateLabel>14th - 15th centuries</dateLabel>
+            <type>manuscript</type>
+            <material>paper</material>
+            <origin>Liège</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 24436</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Français 24436</commonName>
+            <dateLabel>14th - 15th siècles</dateLabel>
+            <type>manuscrit</type>
+            <material>papier</material>
+            <origin>Liège</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 24436</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

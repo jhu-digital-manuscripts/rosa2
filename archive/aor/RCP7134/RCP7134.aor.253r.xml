@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.253r.tif" pagination="246" reader="John Dee" signature="QQ ij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>De moribus et eoru[m] dominis</marginalia_text>
+                </position>
+            </language>
+            <translation>On habits and their lords.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="colligantiam maxime constare in communatione signorum Iouis &amp; Lunae" type="straight"/>
+        
+        <symbol language="LA" name="Saturn" place="right_margin" text="Saturnus"/>
+        <symbol language="LA" name="Jupiter" place="right_margin" text="Ioui"/>
+        
+    </annotation>
+</transcription>

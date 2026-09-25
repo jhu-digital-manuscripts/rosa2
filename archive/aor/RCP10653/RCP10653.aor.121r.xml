@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.121r.tif" pagination="217" reader="John Dee" signature="V iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Colma[n]nus" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Colma[n]nus scotius v[este]r ex Asia venisse
+                    </marginalia_text>
+                    <person name="Colmán of Lindisfarne"/>
+                </position>
+            </language>
+            <translation>
+                Colmán, your Scot, came from Asia.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pictos, Scotos, &amp; Britannos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Picti Scoti Britanni 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Picts, Scots, Britons.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Colmannus" type="straight"/>
+        <underline language="LA" method="pen" text="me huc" type="straight"/>
+        <underline language="LA" method="pen" text="euangelista Iohannes in omnibus ecclesijs" type="straight"/>
+        <underline language="LA" method="pen" text="Romani" type="straight"/>
+        <underline language="LA" method="pen" text="Itali" type="straight"/>
+        <underline language="LA" method="pen" text="Galli" type="straight"/>
+        <underline language="LA" method="pen" text="Graeci" type="straight"/>
+        <underline language="LA" method="pen" text="Pictos, Scotos, &amp; Britannos" type="straight"/>
+        <underline language="LA" method="pen" text="orbe[m] stulto" type="straight"/>
+        
+    </annotation>
+</transcription>

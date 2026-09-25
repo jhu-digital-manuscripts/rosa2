@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.129r.tif" pagination="129" reader="John Dee" signature="R"/>
+    <annotation>
+        
+        <marginalia anchor_text="Guanin" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Guanin Isola</marginalia_text>
+                    <location name="Guanin"/>
+                </position>
+            </language>
+            <translation>The island Guanin.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mal Francese" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The disease called the fre[n]ch pocks.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+    
+        <marginalia anchor_text="Guabonito; Guahagiona" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note changing of Names.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Guanini, &amp; molte Cibe" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Guanini Cibe.</marginalia_text>
+                    <location name="Guanin"/>
+                </position>
+            </language>
+            <translation>Guanin. Food.</translation> <!--JG: Unsure abt translation-->
+        </marginalia>
+        
+        <marginalia anchor_text="Guanara, che uuol dir luogo appartato" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Guanara: - a priuate or separate place.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Matanino" type="straight"/>
+        <underline language="IT" method="pen" text="non esser altro" type="straight"/>
+        <underline language="IT" method="pen" text="che donne hoggidì: &amp; egli se ne" type="straight"/>
+        <underline language="IT" method="pen" text="Guanin" type="straight"/>
+        <underline language="IT" method="pen" text="Canta, onde" type="straight"/>
+        <underline language="IT" method="pen" text="chiamiam mal Francese" type="straight"/>
+        <underline language="IT" method="pen" text="Guanara" type="straight"/>
+        <underline language="IT" method="pen" text="Guabonito" type="straight"/>
+        <underline language="IT" method="pen" text="Guahagiona" type="straight"/>
+        <underline language="IT" method="pen" text="Biberoci" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; Guahagiona" type="straight"/>
+        <underline language="IT" method="pen" text="Gualonito" type="straight"/>
+        <underline language="IT" method="pen" text="Guanini" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; molte Cibe" type="straight"/>
+        <underline language="IT" method="pen" text="alle braccia" type="straight"/>
+        <underline language="IT" method="pen" text="Colecibi sono" type="straight"/>
+      
+    </annotation>
+</transcription>

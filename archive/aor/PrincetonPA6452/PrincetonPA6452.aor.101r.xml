@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.101r.tif" pagination="185" reader="Harvey" signature="q3[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Maior dehinc bellorum moles, et acta grandiora. Immanes, diriq[ue] hostes pro suis viribus, Samnites: 
+                        sed Pyrrhus, et Annibal, quàm periti, absolutiq[ue] Duces; quàm sa[e]vi, ac terribiles bellatores?
+                    </marginalia_text>
+                    <person name="Samnites"/>
+                    <person name="Pyrrhus of Epirus"/>
+                    <person name="Hannibal"/>
+                </position>
+            </language>
+            <translation>The burden of wars became larger and the actions mightier from this time on. The Samnites: fierce and horrible enemies in 
+                view of their strength. Yet how skilled and perfect leaders Pyrrhus and Hannibal were, how ferocious and terrifying warriors?
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pyrrhus i[nfr]a, 267.
+                        Decade 2.
+                    </marginalia_text>
+                    <person name="Pyrrhus of Epirus"/>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000289" text="267"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Pyrrhus below, 267.
+                In the second decade.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Maiora iam hinc bella &amp; uiribus hostium" type="straight"/>
+        <underline language="LA" method="pen" text="longinquitate, uel regionum" type="straight"/>
+        <underline language="LA" method="pen" text="temporum spacio" type="straight"/>
+        <underline language="LA" method="pen" text="aduersus Samnites, gentem" type="straight"/>
+        <underline language="LA" method="pen" text="Pyrrhus hostis" type="straight"/>
+        <underline language="LA" method="pen" text="Pyrrhum Poeni secuti" type="straight"/>
+        <underline language="LA" method="pen" text="quanta rerum moles" type="straight"/>
+        <underline language="LA" method="pen" text="quoties in extrema periculoru[m] uentum" type="straight"/>
+        <underline language="LA" method="pen" text="ut in hanc magnitudinem, quae uix sustinetur, erigi imperium posset" type="straight"/>
+        <underline language="LA" method="pen" text="Belli autem causa" type="straight"/>
+        <underline language="LA" method="pen" text="extrinsecus uenit" type="straight"/>
+        <underline language="LA" method="pen" text="iniusta arma, quia uiribus plus potera[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="Ca[m]pani magis nomen ad praesidium sociorum, quàm uires cum attulissent" type="straight"/>
+        <underline language="LA" method="pen" text="Legati introducti" type="straight"/>
+        <underline language="LA" method="pen" text="legatos ad uos" type="straight"/>
+        <underline language="LA" method="pen" text="amicitia[m] in" type="straight"/>
+        <underline language="LA" method="pen" text="auxilium praesens à" type="straight"/>
+        <underline language="LA" method="pen" text="si secundis rebus" type="straight"/>
+        <underline language="LA" method="pen" text="auxilioq[ue] in dubijs rebus defensi" type="straight"/>
+        <underline language="LA" method="pen" text="ne ingrati, atq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="Samnites priores" type="straight"/>
+        <underline language="LA" method="pen" text="ne nos in amicitia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ut uetustate" type="straight"/>
+        <underline language="LA" method="pen" text="foedere Samnitiu[m], ne qua noua iungeretis foedera, cautu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="satis iusta causa" type="straight"/>
+        <underline language="LA" method="pen" text="uelle eu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="fortuna pr[a]esens magnificè loqui prohibet" type="straight"/>
+        <underline language="LA" method="pen" text="spondet &amp; uirtus &amp; fortuna uestra" type="straight"/>
+        <underline language="LA" method="pen" text="aut amicoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="inimicorum Campani simus" type="straight"/>
+        <underline language="LA" method="pen" text="defenditis, uestri" type="straight"/>
+        <underline language="LA" method="pen" text="deseritis, Samnitium" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        <symbol language="LA" name="Mars" place="right_margin" text="Maiora iam hinc bella &amp; uiribus hostium"/>
+        <symbol language="LA" name="JC" place="right_margin" text="legati"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark language="LA" method="pen" name="equal_sign" place="left_margin" text="Ca[m]pani magis nomen ad praesidium sociorum, quàm uires cum attulissent"/>
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="foedere Samnitiu[m], ne qua noua iungeretis foedera, cautu[m]"/>
+        <mark language="LA" method="pen" name="equal_sign" place="left_margin" text="spondet &amp; uirtus &amp; fortuna uestra"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--bel-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--ami-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--ceden-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Maiora"/>
+        <mark language="LA" method="pen" name="apostrophe" place="intext" text="Pyrrhus hostis"/> <!--JG: Seems to bracket Pyrrhus hostis, attached to first apostrophe-->
+        <mark method="pen" name="apostrophe" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--hostis, Pyrrhum-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="extrema periculoru[m]"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="magnitudinem"/>
+        <mark method="pen" name="bracket" place="intext"/> <!--posset. Belli-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="nomen"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="uires"/>
+        
+    </annotation>
+</transcription>

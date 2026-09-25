@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.007v.tif" pagination="[Aviii[v]]" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Aristomenes.
+                        Pliny. L.ii.c.37. writeth that Aristomenes, by his suttle Stratagemes, and warlike shiftes (being alance) <!--JG: Unsure about this word-->
+                        did putt to flighte whole bandes of men. An argume[n]t as wel of his craftines, and suttelty, as of his excelle[n]s, and wonderfull fortitude.
+                        After he had slaine CCC. Lacedemonians, he was by the once, or twise taken captiue, and cast into pryson, but escapid [their] hands by creeping owte at A litle narrowe hoale in [the]
+                        prison; as Foxes, and Wesels doe.
+                        Being agayne taken he espied conuenient tyme, whe[n] his keepers, and Jaylers were well whitled w[i]th wine, and fast lulled; and then crawlid and rowlid himself to [the]
+                        fier; and there burning asunder [the] Cordes, and Gyuer,
+                        wherewith he was tyed, (togyther w[i]th [the] part of his body,
+                        where they were fastenid) escapid agayne.
+                        Being takin [the] third tyme, [the] Lacedemonians his Enemyes, meaning to make suer work with him, and desiring to see what
+                        was within him, ripped his brest, and fownd his Harte to be overgrowne with heare. Leuin[u]s Lemnius L.1. de [E[.]ples <!--JG: Unsure abt this word-->
+                        Alciate in his Emblemes, under [the] name of Aristomenes,
+                        commendith Charles [the] fifte.
+                    </marginalia_text>
+                    <person name="Aristomenes"/>
+                    <person name="Pliny the Elder"/>
+                    <person name="Levinus Lemnius"/>
+                    <person name="Andrea Alciati"/>
+                    <person name="Aristomenes"/>
+                    <person name="Charles V"/>
+                    <book title="Natural History"/>
+                    <book title="De habitu et constitutione corporis"/> <!--JG: Chapter VII-->
+                    <book title="Emblemata"/>
+                    <emphasis method="pen" text="Aristomenes" type="straight"/>
+                    <emphasis method="pen" text="Alciate in his Emblemes, under [the] name of Aristomenes, commendith Charles [the] fifte." type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Jonathas. Alexander.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>uide lib.2. Stratagem. Polya[e]ni. Et Valerij Max. lib. 1. cap. 8.</marginalia_text>
+                    <book title="Stratagems"/>
+                    <book title="Valeri Maximi factorum et dictorum memorabilium libri novem"/>
+                </position>
+            </language>
+            <translation>Look at book 2 of Polyaenus' 'Stratagems' and book 1, chapter 9, of Valerius Maximus.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="270" place="full_page">
+                    <marginalia_text>Adrianus Papa dixebat: Curia Dominorum, est Probatoria Meritorum.
+                   </marginalia_text>
+                    <person name="Pope Adrian VI"/>
+                    <emphasis method="pen" text="Curia Dominorum" type="straight"/>
+                    <emphasis method="pen" text="Probatoria Meritorum" type="straight"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="270" place="full_page">
+                    <marginalia_text>Moses, &amp; Dauid, imploy notes abowt [their] affaires, but only men of approouid actiuity, &amp;
+                    hability. The manner of Princes, &amp; States at this day.</marginalia_text>
+                    <person name="Moses"/>
+                    <person name="King David"/>
+                    <emphasis method="pen" text="men of approouid actiuity" type="straight"/>
+                    <emphasis method="pen" text="hability" type="straight"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Ex fruitibus eoru[m], cognoscetis eos.
+                    Nulla Mundi a[e]tas, tam Empirica, Pragmatica, Cosmopolitica, Mechanica, Chrematistica.</marginalia_text> 
+                    <X-ref book_title="Gospel of Matthew" language="LA" person="Matthew" text="Ex fruitibus eoru[m], cognoscetis eos."/> <!--JG: Matthew 7:20-->
+                    <emphasis method="pen" text="Ex fruitibus eoru[m]" type="straight"/>
+                    <emphasis method="pen" text="tam Empirica, Pragmatica, Cosmopolitica, Mechanica, Chrematistica." type="straight"/>
+                </position>
+            </language>
+            <translation>Pope Adrian said: 'The court of lords, is the one who approves of merits.' 
+            "By their fruits you will know them." No lifetime of the world is so empirical, pragmatic, cosmopolitan, mechanic, and enriching. </translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="270" place="right_margin">
+                    <marginalia_text>Parùm sepulta[e] distat Inertia[e] Celata Virtus.
+                    Quid boni, ex Thesauro abscondito?
+                    Docosophia, et Euschemosyne.
+                    Sic luraet Lux uestra.</marginalia_text>
+                    <X-ref book_title="Odes" language="LA" person="Horace" text="Parum sepultae distat Inertiae celata virtus."/>
+                    <X-ref book_title="Gospel of Matthew" language="LA" person="Matthew" text="Sic luraet lux vestra."/> <!--JG: Matthew 5:16-->
+                </position>
+            </language>
+            <translation>"Concealed virtue differs but little from buried idleness." What good things from the hidden treasure chamber are there? 
+                Wisdom and refinement. 
+            "So let your light shine."</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Gnoma[e] { I. Fortitudinis. 2. Prudentia[e].</marginalia_text>
+                    <emphasis method="pen" text="Fortitudinis" type="straight"/>
+                    <emphasis method="pen" text="Prudentia[e]" type="straight"/>
+                </position>
+            </language>
+            <translation>Maxims: 1. Courage. 2. Prudence.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        
+                    I. Sophoclis.
+                    
+                    Audacter autem qui subit periculu[m], Nec lingua, nec mens solet ei labascere.
+                    
+                    Menandri.
+                    
+                    Haud ulla Diua illustrior, quàm Audatia.
+                                 
+                    Eurepidis.  
+                    
+                    Quis timidus unq[uam] maximas res appetit? <!--quoted from Zwinger-->
+                    
+                    Sofithei.
+                    
+                    Fugat Aquila una, maximu[m] grege[m] Alitu[m]; virq[ue] generosus plurimos instrenuos. <!--quoted from Zwinger-->
+                    
+                    Euripidis.
+                    
+                    Nullo in numero erit uir timidus in pra[e]lio, Sed ille, qua[m]uis adsit, abest tame[n]. <!--quoted from Zwinger, book 2, p. 902.-->
+                    
+                    Moschionis.
+                    
+                    Ferro paruo in saltibus Ingens secatur frondiu[m] strues; <!--quoted from Zwinger, book 2, p. 888-->
+                    Et lanceam gens pauca numerosam domat.
+                    È gra[e]co incerti Auctoris. recita[n]t[u]r à Luciano è Tragoedia.
+                    
+                    Indigna res est, Muscam in homines impetu Irruere strenuo,
+                    cruore ut turgeat; Tjmere tela hostilia armatos viros. <!--quoted from Zwinger, book 2, p. 902-->
+                        
+                    </marginalia_text>
+                    <X-ref book_title="Morum philosophia poetica" language="LA" person="Theodor Zwinger" text="Fugat Aquila una, maximum gregem Alitum; virque generosus plurimos instrenuos. "/> <!--vol. 2: https://books.google.co.uk/books?id=Uh48AAAAcAAJ&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false-->
+                    <X-ref book_title="Morum philosophia poetica" language="LA" person="Theodor Zwinger" text="Nullo in numero erit uir timidus in pra[e]lio, sed ille, qua[m]uis adsit"/>
+                    <X-ref book_title="Morum philosophia poetica" language="LA" person="Theodor Zwinger" text="Ferro paruo in saltibus Ingens secatur frondiu[m] strues; Et lanceam gens pauca numerosam domat."/>
+                    <emphasis method="pen" text="Audacter autem" type="straight"/>
+                    <emphasis method="pen" text="Quis timidus unq[uam]" type="straight"/>
+                    <emphasis method="pen" text="Fugat Aguila" type="straight"/>
+                    <emphasis method="pen" text="qua[m]uis adsit" type="straight"/>
+                    <emphasis method="pen" text="abest" type="straight"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        οὐκ ἔστι τόλμης ἐφόδιον μεῖζον βίου.
+                    </marginalia_text>
+                    <X-ref book_title="Menander" language="EL" person="Monostichoi" text="οὐκ ἔστι τόλμης ἐφόδιον μεῖζον βίου."/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                    Menandri.
+                        
+                    Audacia nullum est majus magnificentius Viaticum.    <!--quoted from Zwinger, book 2, p. 876-->
+                    </marginalia_text>
+                    <person name="Sophocles"/>
+                    <person name="Menander"/>
+                    <person name="Sofitheus"/>
+                    <person name="Euripides"/>
+                    <person name="Moschion"/>
+                    <person name="Lucian"/>
+                    <book title="Tragoedia"/>                
+                    <X-ref book_title="Morum philosophia poetica" language="LA" person="Theodor Zwinger" text="Indigna res est, Muscam in homines impetu Irruere strenuo, cruore ut turgeat; Timere tela hostilia armatos viros"/>                
+                    <emphasis method="pen" text="Audacia nullum" type="straight"/>
+                    <emphasis method="pen" text="maius" type="straight"/>
+                </position>
+            </language>
+            <translation>I. Sophocles. 
+            But he who boldly endures danger, neither language nor mind is in the habit to waver him. 
+            
+            Menander.
+            
+            By no means any goddess is more illustrious than courage.
+            
+            Euripides. 
+            
+            Can he, who is a coward, ever approach the greatest matters? 
+            
+            Sofitheus.
+            
+           "One eagle routs the greatest flock of birds; one noble man routs many spiritless people."
+           
+           Euripides.
+           
+           "A fearful man is in no rank in battle, but he, although he is present, nevertheless is absent."
+           
+            Moschion.
+            
+            "A vast pile of leaves is cut in leaps with an small sword and a few people subdue numerous spears." Of a doubtful author from Greece.
+            They are recited by Lucian from his 'Tragedies'.
+            
+            "The unworthy matter is to charge a bothersome person with a vigorous attack into men by bloodshed so that it swells out. Hostile spears fear armed men." <!--JG: Extremely unsure about this-->
+            
+            "A stronger life is not the way to courage." Menander. <!-- CG: I can't find a good English translation of this phrase, so I am unsure. -->
+            
+            No boldness is a more powerful or more magnificent provision.
+            
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>{ E gra[e]co Eueni. Cu[m] prudente juuat permultu[m] Audatia Mente; Mente earens, multis est ea causa malis.</marginalia_text>
+                    <person name="Evenus"/>
+                    <emphasis method="pen" text="est ea causa malis" type="straight"/>
+                </position>
+            </language>
+            <translation>From the Greek Evenus. Very many people help with a prudent and bold mind; for many people, lacking a mind is the cause of evil.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Amor sine Audatia est carmen Lugubre.</marginalia_text>
+                    <emphasis method="pen" text="carmen Lugubre" type="straight"/>
+                </position>
+            </language>
+            <translation>Love without courage is a mournful song.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>(Verus Amor nullu[m] nouit habere modu[m].)</marginalia_text>
+                    <X-ref book_title="Elegies" language="LA" person="Sextus Propertius" text="Verus Amor nullum nouit habere modum."/>
+                    <emphasis method="pen" text="nullu[m] nouit" type="straight"/>
+                </position>
+            </language>
+            <translation>True love knows to have no limit.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Vtere alijs: fruere Teipso.</marginalia_text>
+                    <emphasis method="pen" text="Vtere alijs" type="straight"/>
+                    <emphasis method="pen" text="fruere Teipso" type="straight"/>
+                </position>
+            </language>
+            <translation>To enjoy others [is] to enjoy yourself.</translation>
+        </marginalia>
+        
+        <symbol name="SS" place="full_page"/>
+        
+        <mark method="pen" name="horizontal_bar" place="full_page"/> <!--above marginal note 'vide lib.2.'-->
+        <mark method="pen" name="horizontal_bar" place="full_page"/> <!--below marginal note 'vide lib.2.'-->
+        
+        <mark language="EN" method="pen" name="plus_sign" place="full_page" text="alance"/> <!--JG: Unsure abt word-->
+        <mark language="EN" method="pen" name="plus_sign" place="full_page" text="whole bandes"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="full_page" text="fortitudinis"/>
+        <mark method="pen" name="quotation_mark" place="full_page"/>
+        <mark language="LA" method="pen" name="plus_sign" place="full_page" text="Aquila"/>
+        
+    </annotation>
+</transcription>

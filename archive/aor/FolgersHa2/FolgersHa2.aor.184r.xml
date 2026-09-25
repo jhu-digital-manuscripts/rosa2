@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.184r.tif" pagination="191" reader="Harvey" signature="[M8r]"/>	<!-- ABO 188right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						As action; so discourse woold be quick, not rash.
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Not hastie but speedie. 
+						) Euer to the point: &amp; as [the] wind conducts.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Euer for the Kinge, &amp; the present State.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						The onlie Parlament-man for regal /
+						Statutes.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						All popular, &amp;
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						&amp; Oligarquick Lawes must be reformed.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( Contentamento, ricchissima Cosa del mondo. ) 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Satisfaction, the richest thing of the world.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Sermo datur cunctis; animi sapientia paucis. ( lepidus, not leuis. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The speech is given to the whole; the wisdom of the mind to a few. (Pleasant, not fickle). </translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Anteà ita solebam meipsum acuere: Facte modò ipsum legere
+						Demosthenem: aut Eccè audit Cicero. Nunc grauior mihi
+						cautio incumbit: Adest, audit, iudicat rex Jacobus.
+					</marginalia_text>
+					<person name="Demosthenes"/>
+					<person name="Cicero"/>
+					<person name="James VI and I"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Orationis forma est
+						opus plus qua[m] Attica,
+						ubi talis iudicat
+						plus qua[m] Areopagita.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Previously I was thus accustomed to improve myself: act in such a way; to read Demonstenes himself: or behold, Cicero hears.
+			Now a graver caution falls upon myself: king Jacob is present, hears, and judges.
+			The form of the oration must be more than Attic; when such a man passes judgment, it must be more than Areopagitic.</translation>
+		</marginalia>
+		
+		
+		<underline language="IT" method="pen" text="Christian contentioso" type="straight"/>
+		<underline language="IT" method="pen" text="Pontefice negligente" type="straight"/>
+		<underline language="IT" method="pen" text="plebe senza disciplina" type="straight"/>
+		<underline language="IT" method="pen" text="senza leggi" type="straight"/>
+		<underline language="IT" method="pen" text="Carità piu" type="straight"/>
+		<underline language="IT" method="pen" text="la figliuola" type="straight"/>
+		<underline language="IT" method="pen" text="semplicità rusticana" type="straight"/>
+		<underline language="IT" method="pen" text="era troppo acerba" type="straight"/>
+		<underline language="IT" method="pen" text="piu matura, che tu" type="straight"/>
+		<underline language="IT" method="pen" text="hauuti tre figliuoli col cherico" type="straight"/>
+		<underline language="IT" method="pen" text="Openioni filosofiche" type="straight"/>
+		<underline language="IT" method="pen" text="la ricchezza" type="straight"/>
+		<underline language="IT" method="pen" text="ricco" type="straight"/>
+		<underline language="IT" method="pen" text="poche cupidità" type="straight"/>
+		<underline language="IT" method="pen" text="contenta del" type="straight"/>
+		<underline language="IT" method="pen" text="ricchissimo" type="straight"/>
+		<underline language="IT" method="pen" text="che si contenti" type="straight"/>
+		<underline language="IT" method="pen" text="allegramente col poco" type="straight"/>
+		<underline language="IT" method="pen" text="miserabilmente col molto" type="straight"/>
+		<underline language="IT" method="pen" text="contentare del poco" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; dell'assai" type="straight"/>
+		<underline language="IT" method="pen" text="del bene" type="straight"/>
+		<underline language="IT" method="pen" text="del male" type="straight"/>
+		<underline language="IT" method="pen" text="d'ogni cosa" type="straight"/>
+		<underline language="IT" method="pen" text="contentar" type="straight"/>
+		<underline language="IT" method="pen" text="chi perde il contento" type="straight"/>
+		<underline language="IT" method="pen" text="perde'l tutto" type="straight"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		
+		<symbol name="SS" place="right_margin"/>
+		
+		<symbol name="JC" place="intext"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="il vecchio senza religione, il giouane senza vbidienza, il cieco senza     elemosina, il poouero superbo, donna senza honestà, Signor senza virtù Christian contentioso, Pontefice negligente, Re iniquo, plebe     senza disciplina, &amp; popolo senza leggi."/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark method="pen" name="plus_sign" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- conclu -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- acer -->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="poche cupidità"/>
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- cupidita. Et -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="contenta"/>
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- poco. Epitetto -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="contenti"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="allegramente"/>
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- molto. M. Luigi -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="contentare"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- assai, del -->
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="bene"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="male"/>
+		<mark language="IT" method="pen" name="equal_sign" place="intext" text="d'ogni cosa"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- cosa, soggiugnendo -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- above 'stato' -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="contentar"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="perde il contento"/>
+    </annotation>
+</transcription>

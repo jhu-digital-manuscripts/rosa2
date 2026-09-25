@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.005r.tif" reader="John Dee" signature="[Av[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="S[e]c[un]d[u]m motu[m] an[te] firmu[m] et s[e]c[un]d[u]m motu[m] retro solidum              S[e]c[un]d[u]m vero motu[m] dextru[m] spissum et s[e]c[un]d[u]m motu[m] sinistru[m] crassu[m]" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        firmu[m] solidu[m] spissu[m] crassu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Firm, solid, dense, heavy.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nullam linea[m] esse sitam in diuersis superficiebus nec vna[m] sup[er]ficie[m]             i[n] diuersis corporibus. nec vnu[m] corpus in diuersis locis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nulla linea in diuersis superficiebus: aut sup[er]ficies in diuersis corporib[us] 
+                        aut corpus vnu[m] in diuersis locis situatur [etc]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                No line is situated in different areas, nor areas in different bodies nor a body in different places.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Est autem d[iffe]r[enti]a mathematice loque[n]do inter positione[m] situm et ordinem.              q[uo]d positione[m] habet. habet et ordine[m] et situ[m] et p[er]manentia[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        positio. situs. ordo. permanentia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Position, place, order, permanence. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[er]manentia[m] p[ar]tiu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        permane[n]tia partiu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The permanence of parts.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sic ea que multitudini et magnitudini co[m]p[ar]ant[ur]              ad aliquid respectiue qua[n]titatis dicunt[ur] et no[n] p[er] se" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        qua[n]titas respectiue p[er] se
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation> 
+                By comparison of quantity and not in itself.
+                <!-- FSF: or Quantity by comparison thhough itself --> 
+                <!-- DO: Not really sure how to translate; perhaps just the three terms separately, 'Quantity, by comparison, in itself', as they don't seem to make a sentence - they're just terms from the printed text ('by comparison of quantity and not in itself') -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="qua[n]titati per se nihil sit co[n]trariu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vt quantitatis nihil est contrarium.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Like nothing of quantity is contrary.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nullam linea[m] esse sitam in diuersis superficiebus nec vna[m] sup[er]ficie[m] i[n] diuersis corporibus. nec vnu[m] corpus in diuersis locis" type="straight"/>
+        <underline language="LA" method="pen" text="est nu[m]erus tempus et motus" type="straight"/>
+        <underline language="LA" method="pen" text="neq[ue] p[er]manetia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="autem d[iffe]r[enti]a mathematice loque[n]do inter" type="straight"/>
+        <underline language="LA" method="pen" text="positione[m] situm et ordinem" type="double"/>
+        <underline language="LA" method="pen" text="ordine[m] na[m]q[ue] habet cu[m] p[ri]mu[m] et vltimu[m] copulant[ur] per t[er]minu[m] co[m]mune[m] qui vtriusq[ue] est co[m]mu[n]e et neutrius per se" type="straight"/>
+        <underline language="LA" method="pen" text="na[m] situs e[st] habentiu[m] locum p[er] p[ri]mu[m] mediu[m] et postremu[m] s[e]c[un]d[u]m dime[n]siones siue dista[n]cias" type="straight"/>
+        <underline language="LA" method="pen" text="et p[er]manentia[m] p[ar]tiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quid sit habere p[er]mane[n]tiam et situm" type="straight"/>
+        <underline language="LA" method="pen" text="aliquid respectiue qua[n]titatis dicunt[ur] et no[n] p[er] se" type="straight"/>
+        <underline language="LA" method="pen" text="qua[n]titati per se nihil" type="straight"/>
+        <underline language="LA" method="pen" text="qua[n]titate[m] per se hoc est sub formis que essencialit[er] sunt qua[n]titates vt" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- an[te] firmu[m] -->
+        <mark method="pen" name="comma" place="intext"/> <!-- firmu[m] et -->
+        <mark method="pen" name="comma" place="intext"/> <!-- loco et -->
+        <mark method="pen" name="comma" place="intext"/> <!-- esse alia -->
+        <mark method="pen" name="comma" place="intext"/> <!-- dista[n]cias et -->
+        
+    </annotation>
+</transcription>

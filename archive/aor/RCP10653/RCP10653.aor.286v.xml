@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.286v.tif" pagination="124" reader="John Dee" signature="[Lll ij[v]]"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="Nonas eiusdem. Eodem tempore VVallenses prorumpe[n]tes" type="straight"/>
+        <underline language="LA" method="pen" text="damna finitimis non modica irrogabant, quos rex cum iusticiario Huberto, collecto exercitu copioso, vix firmato quoda[m]" type="straight"/>
+        <underline language="LA" method="pen" text="solo tenus complanaru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="castrum Stultitiam Huberti" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- castrum Stultitiam -->
+        
+        <errata amendedtext="Propterea," copytext="Propter" language="LA"/>
+        <errata amendedtext="sententiae" copytext="sentiae" language="LA"/>
+        
+    </annotation>
+</transcription>

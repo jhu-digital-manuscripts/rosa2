@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.167v.tif" pagination="[168v]" reader="John Dee"/>  
+    <annotation>
+        
+        <marginalia anchor_text="venandi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>venatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Hunting.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="somnus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>so[m]nus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Sleep.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Amoris vis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The power of love.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sabbata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sabbata.</marginalia_text>
+                </position>
+            </language>
+            <translation>Sabbaths.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="leporem pronum" type="straight"/>
+        <underline language="LA" method="pen" text="Nocte fatigatum somnus, non cura puellae Excipit, &amp; dulci membra quiete leuat" type="straight"/>
+        <underline language="LA" method="pen" text="aera recurua" type="straight"/>
+        <underline language="LA" method="pen" text="donec dediscis amare" type="straight"/>
+        <underline language="LA" method="pen" text="peregrina morentur Sabbata" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Cum semel haec animum coepit mulcere voluptas, Debilibus pennis irritus exit amor"/>
+        <mark method="pen" name="bracket" place="left_margin"/> 
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Nocte fatigatum somnus, non cura puellae Excipit, &amp; dulci membra quiete leuat"/> 
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+            
+    </annotation>
+</transcription>

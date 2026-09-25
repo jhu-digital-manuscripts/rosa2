@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.125r.tif" pagination="73" reader="Harvey" signature="[E5r]"/>	<!-- ABO 129right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						All theise external showes ar but rude: nothing fine
+						but nimble
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						performance: with cumlie grace.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						(Il Principe del Pontano: ma non del Macchiauelli. Alfonso, non	
+					</marginalia_text>
+					<person name="Giovanni Pontano"/>
+					<person name="Machiavelli"/>
+					<person name="Alfonso II of Naples"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Cesare Borgia.)
+					</marginalia_text>
+					<person name="Cesare Borgia"/>
+				</position>
+			</language>
+			<translation>
+				The prince of Pontano, but not the one of Machiavelli. Alfonso II, not Cesare Borgia.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nondum satis benè, si quisq[uam] meliùs. Nondu[m] optimè,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						si quis potest, poteritue meliùs.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It is not yet good enough if anyone else is better. 
+				It is not yet the best if anyone else can, or will, do better.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Ô veramente gallantissimo.
+						Ô puramente brauissimo del mondo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				O truly the most gallant.
+				O purely the bravest of the world.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nulla nubecula, in artis, et Virtutis Sole, Eutrapelo. 
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				For Eutrapelus, no cloudiness in the arts with the sun of virtue.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Omnium la[e]tissimus ad hominem:
+						sed omnium grauissimus ad rem, /
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Eutrapelus.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Eutrapelus, the most cheerful of all towards each man,
+				but of all men, the most serious of all towards the task at hand.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						{ Certè in Artis, et Virtutis facie, nulla est
+						Nubecula: et obscurus est vultus, qui no[n] est illustris.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Undoubtedly, with the appearance of art and virtue, nothing is cloudy.
+				And whoever is not bright has a shady countenance.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Singula in vigore: omnia in perfectione. Aut se spernit Eutrapelus.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Singular matters in force; all things to perfection.
+				Otherwise Eutrapelus spurns himself.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Whose sense, or reason so fine or
+						neate, as it should?
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="esser liberali" type="straight"/>
+		<underline language="IT" method="pen" text="clementi" type="straight"/>
+		<underline language="IT" method="pen" text="quel Principe" type="straight"/>
+		<underline language="IT" method="pen" text="fa amici" type="straight"/>
+		<underline language="IT" method="pen" text="fideli" type="straight"/>
+		<underline language="IT" method="pen" text="guadagnasi gli altrui" type="straight"/>
+		<underline language="IT" method="pen" text="rendesi amabile" type="straight"/>
+		<underline language="IT" method="pen" text="estreme contrade del mondo" type="straight"/>
+		<underline language="IT" method="pen" text="assimigliando à Dio" type="straight"/>
+		<underline language="IT" method="pen" text="far bene ad" type="straight"/>
+		<underline language="IT" method="pen" text="perdonare a'" type="straight"/>
+		<underline language="IT" method="pen" text="il guadagno certo" type="straight"/>
+		<underline language="IT" method="pen" text="per lo incerto" type="straight"/>
+		<underline language="IT" method="pen" text="vn piccolo" type="straight"/>
+		<underline language="IT" method="pen" text="hor sì piccolo ch'io" type="straight"/>
+		<underline language="IT" method="pen" text="io crescerò" type="straight"/>
+		<underline language="IT" method="pen" text="presentemente nelle mani, auuegna" type="straight"/>
+		<underline language="IT" method="pen" text="per isperanza di guadagno" type="straight"/>
+		<underline language="LA" method="pen" text="spem pretio non emo" type="straight"/>
+		<underline language="IT" method="pen" text="l'aiutorio diuino nelle" type="straight"/>
+		<underline language="IT" method="pen" text="ATLANTA" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<symbol language="IT" name="SS" place="intext" text="Il Principe del Pontano: ma non del Macchiauelli. Alfonso, non Cesare Borgia"/>
+		
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		<mark method="pen" name="circumflex" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--cle-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ini-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--assi-->
+		<mark method="pen" name="horizontal_bar" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--co-->
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--Terentia-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ve-->
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		<mark method="pen" name="circumflex" place="right_margin"/>
+		
+		<mark method="pen" name="comma" place="intext"/> <!--vno &--> 
+
+    </annotation>
+</transcription>

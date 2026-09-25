@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.102v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="pacto pace[m] inter eos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Caduani Pax cu[m] Edelfredo.
+                    </marginalia_text>
+                    <person name="Caduanus"/>
+                    <person name="Aethelfred"/>
+                </position>
+            </language>
+            <translation>Caduanus' peace with Aethelfred.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="civitate[m] Legecestria[m]" type="straight"/>
+        <underline language="LA" method="pen" text="facere[n]t sibi rege[m] ip[s]oq[ue] duce Edelfridu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="expulsa p[ro]pria" type="straight"/>
+        
+    </annotation>
+</transcription>

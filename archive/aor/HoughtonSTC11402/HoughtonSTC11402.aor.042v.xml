@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.042v.tif" reader="Harvey" signature="[Eiii[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="their armure and apparell chaunged" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Greekes in Aegiptians armure.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="a bande of the Egyptians armed lyke Grekes" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aegiptians in Greeke armure.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Auxilium superueniens.</marginalia_text>
+                </position>
+            </language>
+            <translation>Help arriving.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="very fyght" type="straight"/>
+        <underline language="EN" method="pen" text="opened and deuyded his " type="straight"/>
+        <underline language="EN" method="pen" text="and arraye into syde wynges" type="straight"/>
+        <underline language="EN" method="pen" text="inclosng his" type="straight"/> <!--printed error-->
+        <underline language="EN" method="pen" text="Grekes were the better menne of" type="straight"/>
+        <underline language="EN" method="pen" text="theyr armure and apparell" type="straight"/>
+        <underline language="EN" method="pen" text="Grekes in the forefrunt" type="straight"/>
+        <underline language="EN" method="pen" text="held the" type="straight"/>
+        <underline language="EN" method="pen" text="a bande of the Egyptians armed lyke Grekes" type="straight"/>
+        <underline language="EN" method="pen" text="to resyste" type="straight"/>
+        <underline language="EN" method="pen" text="the Grekes" type="straight"/>
+        <underline language="EN" method="pen" text="his horse men" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="inclosng his"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Grekes were the better menne of"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Grekes in the forefrunt"/> 
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.025v.tif" pagination="34" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Dispositor aliqua[n]do qua[m] magnu[m] vim habet.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                How sometimes a dispositor has a great force. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Comparatio status planetaru[m] ad n[ost]ros actus:
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Comparison of the status of the planets with our deeds.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nocturnis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Diurna nocturnis, nocturna diurnis locis/
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>At day with nightly places, at night with daily places.</translation> <!--JG: Unsure-->
+        </marginalia>
+        
+        <marginalia anchor_text="Genituarum qualitates, quae scilicet nobiles , quae'ue mediocres nuncupentur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Genitura mediocris
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Average birth.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Prope autem deorum accedet felicitate[m], qui quatuor stellas, in domiciliis suis habeuerit constitutas, ultra hunc numerum, humani generis stubstantia no[n] patitur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Praeter sole[m] et luna[m] vltra quatuor stellas in suis domibus esse humani generis substa[n]tia no[n] patetur.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Beyond the sun and the moon, it is not well not that there are four more stars in their houses with a substance of the human kind.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="patricipatis deiectionibus impedit[ur], &amp; ex" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ad status sui conditionem, habitatore[m], atq[ue] hospitem domus suae, cum aequata societatis ratione co[m]ponunt, &amp; ad sui licentia[m], formant hospitis potestatem" type="straight"/>
+        <underline language="LA" method="pen" text="cardines, infinita in fortunia, continuatis calamitatibus indicant" type="straight"/>
+        <underline language="LA" method="pen" text="totum hominem, à primo usq[ue] ad nouissimum diem, &amp; omnem eius uitam, ac spem, fratres etiam, parentésq[ue],             &amp; filios, ualitudinem, coniugem, mortem, sectam, actus, honores, peregrinationes, domicilium, fundamenta, substantiam, amicorum, ac inimicorum accusationes, periculáq[ue] facili definitionis" type="straight"/>
+        <underline language="LA" method="pen" text="Mediis etia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="qui duas stellas" type="straight"/>
+        <underline language="LA" method="pen" text="Vltra modum" type="straight"/>
+        <underline language="LA" method="pen" text="Prope autem" type="straight"/>
+        <underline language="LA" method="pen" text="ultra hunc numerum, humani generis substantia no[n] patitur" type="straight"/>
+        <underline language="LA" method="pen" text="nullam stellam, in domicilio suo habuerit constitutam, ignotus, ignobilis, &amp; miseris erit semper actibus implicatus" type="dotted"/>
+        <underline language="LA" method="pen" text="erit semper actibus implicatus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/> <!-- FSF: dotted -->
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral language="LA" place="intext" text="Mediis">2</numeral>
+        <numeral language="LA" place="intext" text="Vltra">3</numeral>
+        <numeral language="LA" place="intext" text="Prope">4</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

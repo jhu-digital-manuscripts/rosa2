@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.092r.tif" pagination="167" reader="Harvey"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="de legibus uentum" type="straight"/>
+        <underline language="LA" method="pen" text="trepidi patres ad duo ultima auxilia" type="straight"/>
+        <underline language="LA" method="pen" text="summum imperium, summumq[ue] ad ciuem decurrunt" type="straight"/>
+        <underline language="LA" method="pen" text="dictatore[m]" type="straight"/>
+        <underline language="LA" method="pen" text="M. Furius Camillus" type="straight"/>
+        <underline language="LA" method="pen" text="Legum quoq[ue] latores aduersus" type="straight"/>
+        <underline language="LA" method="pen" text="ipsi causam plebis" type="straight"/>
+        <underline language="LA" method="pen" text="ingentibus animis armant" type="straight"/>
+        <underline language="LA" method="pen" text="dictator" type="straight"/>
+        <underline language="LA" method="pen" text="stipatus agmine patricioru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="plenus irae minarumq[ue] co[n]sedisset" type="straight"/>
+        <underline language="LA" method="pen" text="Camillus" type="straight"/>
+        <underline language="LA" method="pen" text="uos tribunitia libido" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] potestas regit" type="straight"/>
+        <underline language="LA" method="pen" text="intercessionem" type="straight"/>
+        <underline language="LA" method="pen" text="secessione quonda[m]" type="straight"/>
+        <underline language="LA" method="pen" text="eadem ui facitis" type="straight"/>
+        <underline language="LA" method="pen" text="non reip. magis uniuersae" type="straight"/>
+        <underline language="LA" method="pen" text="uestra causa dictator" type="straight"/>
+        <underline language="LA" method="pen" text="euersumq[ue] uestru[m] auxiliu[m] imperio tutabor." type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--ul-->
+        <mark method="pen" name="equal_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--pla-->
+        <mark method="pen" name="equal_sign" place="right_margin"/> 
+        <mark method="pen" name="dash" place="right_margin"/> <!--tuta-->
+        
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="duo ultima"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="summum"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="imperium"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="summum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="ciuem"/>
+        <mark method="pen" name="dot" place="intext"/> <!--Camillus, qui-->
+        <mark method="pen" name="dot" place="intext"/> <!-- co[n]sedisset, atq[ue] -->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="tail" text="tutabor"/>
+        
+    </annotation>
+</transcription>

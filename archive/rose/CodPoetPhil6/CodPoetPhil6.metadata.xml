@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>36</illustrations>
+    <totalPages>204</totalPages>
+    <dimensions units="mm">
+        <width>240</width>
+        <height>335</height>
+    </dimensions>
+    <dates>
+        <startDate>1416</startDate>
+        <endDate>1416</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="155r" start="1r">155</pages>
+            <illustrations>29</illustrations>
+            <linesPerColumn>36</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="testament">
+            <language>fr</language>
+            <title>Le Testament Maistre Jehan de Meun</title>
+            <textId/>
+            <pages end="186r" start="156r">30</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>36</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="codicille">
+            <language>fr</language>
+            <title>Le codicile Maistre Jehan de Meun</title>
+            <textId/>
+            <pages end="196r" start="186v">10</pages>
+            <illustrations>5</illustrations>
+            <linesPerColumn>36</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="petitcodicille">
+            <language>fr</language>
+            <title>Petit codicile</title>
+            <textId/>
+            <pages end="196v" start="196r">1</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>36</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Cod. poet. et phil. 2º 6</commonName>
+            <dateLabel>1416</dateLabel>
+            <type>manuscript</type>
+            <material>Vellum</material>
+            <origin>France</origin>
+            <currentLocation>Stuttgart</currentLocation>
+            <repository>Württembergische Landesbibliothek</repository>
+            <shelfmark>Cod. poet. et phil. 2º 6</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Cod. poet et Phil. 2º 6</commonName>
+            <dateLabel>1416</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Stuttgart, Germany</currentLocation>
+            <repository>Württembergische Landesbibliothek</repository>
+            <shelfmark>Cod. poet et Phil. 2º 6</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.199v.tif" pagination="398" reader="John Dee"/> 
+    <annotation>
+                
+        <marginalia anchor_text="schemata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Schemata</marginalia_text>
+                </position>
+            </language>
+            <translation>Schemata.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tropos esse existimaueru[n]t, quia siue ex hoc duxerint nomen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tropi vnde nominantur.</marginalia_text>
+                </position>
+            </language>
+            <translation>Where tropes are named.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Artorius Proculus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>C[aius] Artirius procul[us]</marginalia_text>
+                    <person name="Artorius Proculus"/>
+                </position>
+            </language>
+            <translation>Caius Artorius Proculus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="περίφρασις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>περίφρασις</marginalia_text>
+                </position>
+            </language>
+            <translation>Periphrases.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ὑπέρβατον" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ὑπέρβατον</marginalia_text>
+                </position>
+            </language>
+            <translation>Hyperbaton.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ὀνοματοποιία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ὀνοματοποιία</marginalia_text>
+                </position>
+            </language>
+            <translation>Onomatopoeia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἐπίθετον" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἐπίθετον</marginalia_text>
+                </position>
+            </language>
+            <translation>Addition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tropus sermo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tropus quid.</marginalia_text>
+                </position>
+            </language>
+            <translation>What trope?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Figura (sicut nomine ipso patet)" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>figura quid.</marginalia_text>
+                </position>
+            </language>
+            <translation>What figure?</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="eorum etiam in figuris" type="straight"/>
+        <underline language="LA" method="pen" text="adijciunt, &amp; gratiam praestant" type="straight"/>
+        <underline language="LA" method="pen" text="autores figuras uerborum potius quàm tropos dixerunt" type="straight"/>
+        <underline language="LA" method="pen" text="à naturali &amp; principali significatione translatus ad aliam, ornandae orationis gratia: uel" type="straight"/>
+        <underline language="LA" method="pen" text="in tropis ponuntur uerba alia pro alijs, ut in" type="straight"/>
+        <underline language="EL" method="pen" text="μεταφορᾷ" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        
+    </annotation>
+</transcription>

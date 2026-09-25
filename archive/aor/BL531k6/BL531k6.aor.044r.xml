@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL531k6.044r.tif" pagination="[44r]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        m.414.495.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        1-3
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Dulce lumen et delectabile est oculis uidere Solem. eccliaste.xi.
+                        Solem Orpha[e]us in hymnis
+                    </marginalia_text>
+                    <person name="Ambrose"/> 
+                    <person name="Ptolemy"/>
+                    <person name="Plato"/>
+                    <book title="Bible"/>
+                    <book title="Hexaemeron"/>
+                    <book title="Centiloquium"/>
+                    <book title="Timaeus"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>Κόσμου ὄμμα</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>id est mundi oculum uocat. 
+                        Ambrosius pra[e]ter id, iucunditatem diei, et coeli pulchritudinem. lib. cap. I. exameron
+                        Sol est fons uitalis potentia[e]. Ptol. centil[oquium] 86
+                        Solis splendore ca[e]lum omne illustratur et animantes omnes res. Plato in Tima[e]o</marginalia_text>
+                </position>
+            </language>
+            <language ident="IT">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Dante nel X del Par:
+                        Lo ministro maggior de la Natura
+                        che del ualor del Cielo il mondo imprenta
+                        et col suo lume il tempo ne misura</marginalia_text>
+                    <person name="Dante Alighieri"/>
+                    <book title="Divine Comedy"/>
+                </position>
+            </language>
+            <translation>
+                Truly the light is sweet, and a pleasant thing it is for the eyes to behold the sun. [KJV]
+                In his hymns Orpheus calls the sun the Κόσμου ὄμμα, that is, the eye of the world.
+                Ambrose because of this: the joz of the day and the beauty of the sky (Book chapter 1 Hexaemeron)
+                The sun is the source of life's power [Ptolemy, Centiloquium, 86].
+                With the splendor of the sun the whole heaven is illuminated and all living beings.
+                Dante in [canto] 10 of 'Paradiso': 
+                The greatest minister of Nature,
+                who stamps the world with the power of Heaven
+                and by his light measures the time for us.
+            </translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

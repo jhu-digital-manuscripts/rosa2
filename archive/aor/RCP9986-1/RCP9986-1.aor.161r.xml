@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.161r.tif" pagination="162" reader="John Dee" signature="X.ij."/>   
+    <annotation>
+        
+        <marginalia anchor_text="vtilitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vtilitas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Usefulness.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nec cito credideris, quantum cito creder laedat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Credulitas.</marginalia_text>
+                </position>
+            </language>
+            <translation>Credulity.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Et lepus hic alijs exagitatus" type="straight"/>
+        <underline language="LA" method="pen" text="Viderit vtilitas" type="straight"/>
+        <underline language="LA" method="pen" text="Prona venit cupidis in sua vota fides" type="straight"/>
+        <underline language="LA" method="pen" text="dolor &amp; de pellice fictus" type="straight"/>
+            
+    </annotation>
+</transcription>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.043v.tif" pagination="70" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ego hic eu[m] habui cu[m] ♃ in ♋
+                    </marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                    <symbol_in_text name="Cancer"/>
+                </position>
+            </language>
+            <translation>
+                Here I had him with Jupiter in Cancer.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        hoc durum est mihi die tantu[m] intelliga[s] <!--JG: Unsure about 'intelligas'-->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                This is hard for me, you may understand so much on that day.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Hoc durissimu[m] est, et vix fieri p[otes]t, nisi vt sup[ra] dixi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                This is hardest and can hardly be considered, unless to be spoken about as above.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Astrologoru[m] consyderatio de 12 loco.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The consideration of the 12 places by the astrologers.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="stultos" type="straight"/>
+        <underline language="LA" method="pen" text="faciet surdos" type="straight"/>
+        <underline language="LA" method="pen" text="Matutinus ueto in hoc loco constitutus, faciet eos, qui sic nati fuerint,              in infiniu[m] pecunias &amp; magnos actus appetentes, alios autem faciet sollicitudinum, co[m]mendationum, actuum, aut instrumentorum, fidos,              stabilésq[ue] autores, &amp; frequenter etiam alieni patrimonii possessores" type="straight"/>
+        <underline language="LA" method="pen" text="Sed in nocturna genitura" type="straight"/>
+        <underline language="LA" method="pen" text="enim sobole[m] hoc" type="straight"/>
+        <underline language="LA" method="pen" text="faciet doctos" type="straight"/>
+        <underline language="LA" method="pen" text="gra[m]maticos" type="straight"/>
+        <underline language="LA" method="pen" text="oratores" type="straight"/>
+        <underline language="LA" method="pen" text="geometras" type="straight"/>
+        <underline language="LA" method="pen" text="ut aliis om[n]ibus cordatiores esse iudicent[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="doctrinarum conferantur augmenta. Sed hoc tunc facit, cum aut ♃ coniunctus fuerit" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.068v.tif" pagination="136" reader="John Dee" signature="[i 4[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Hippocrates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hippocrates.</marginalia_text>
+                    <person name="Hippocrates"/>
+                </position>
+            </language>
+            <translation>Hippocrates.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Tullius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>M[arcus] Tullius</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Marcus Tullius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Neq[ue] tame[n] ex his quicquam, quae tum praecepi, superuacuum fuit: ad easde[m] enim particulas haec quoq[ue], qua nu[n]c praecipiam, reuerte[n]tur. Ita nemine[m] didicisse poeniteat. Colligere tantum              eadem, ac disponere paulò significantius conor. Omnibus autem satisifactum uolo, non me haec serius demonstrare alijs, quàm mihijpsi demonstrauerim, ac persuaserim." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quintiliani opinio.</marginalia_text>
+                    <person name="Quintilian"/>
+                </position>
+            </language>
+            <translation>The opinion of Quintilian.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="superuacuus foret in studijs longior labor, si nihil liceret melius inuenire praeteritis. Neq[ue]" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <mark method="pen" name="comma" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

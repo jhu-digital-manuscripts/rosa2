@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.017v.tif" pagination="34" reader="John Dee" signature="[c[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rheda" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rheda</marginalia_text>
+                </position>
+            </language>
+            <translation>Chariot.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="petoritum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Petoritu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Four-wheeled carriage.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mappam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mappa</marginalia_text>
+                </position>
+            </language>
+            <translation>Napkin.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="gurdos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gurdi</marginalia_text>
+                </position>
+            </language>
+            <translation>Idiots.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="maxima ex parte Romanus inde conuersus est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Romanus sermo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Roman speech.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="licet omnia Italica pro Romanis" type="straight"/>
+        <underline language="LA" method="pen" text="maxima ex parte Romanus inde conuersus est" type="straight"/>
+        <underline language="LA" method="pen" text="Nunc recentiores instituerunt, Graecis nominibus Graecas declinationes potius dare: quod tamen ipsum" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

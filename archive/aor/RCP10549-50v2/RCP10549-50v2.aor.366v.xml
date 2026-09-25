@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.366v.tif" pagination="184" reader="John Dee" signature="[Mm.iiii.[v]]"/>   
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        curatio administratio procuratio { reru[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Treatment, administration and management of things.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in varietate &amp; dissensione" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        varietas disse[n]sio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Variety, dissent.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cohibe assensimine temere assentias.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                <!-- FSF: not sure how to translate the second word -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="duce natura vehimur) deos esse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Deos esse, natura duce, fate[n]t[ur]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                They believe there are gods under the guidance of nature.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Qui vero deos esse dixerunt, tanta sunt in varietate &amp; dissensione, vt eorum molestum sit dinumerare sententias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Qua[e] disse[n]tio circa deos.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                This dissent among gods.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quod maxime re[m], causa[m]q[ue] co[n]tinet
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                What secures the matter and reason most greatly.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="an contrà ab his, &amp; à principio omnia facta &amp; constituta sint" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        An Mundus factus sit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Whether the world was created.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quae potest esse pietas? quae sanctitas? quae religio?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pietas Sa[n]ctitas Religio } 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Piety, sanctity and devotion.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cultus, honores, preces adhibeamus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Cultus, Honor, preces su[n]t dijs adhibenda[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Worship, honour, prayer serve to invite the gods.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pietas fingi no[n] p[otes]t.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Piety cannot be pretended.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fides etiam &amp; societas generis humani, &amp; vna excellentissima virtus iustitia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        fides iustitia societas.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Faith, justice, community.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="omnem mundum administrari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        O[mn]is mundus deoru[m] co[n]silio administratur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The entire world is conducted by the will of the gods.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad vsum hominum fabricati" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        o[mn]ia ad ho[m]i[nu]m vsu[m] fabricata
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Everything is created to men's use.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Carneades" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Carneades.
+                    </marginalia_text>
+                    <person name="Carneades"/>
+                </position>
+            </language>
+            <translation>
+                Carneades.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="beneuolos obiurgatores" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        beneuoli obiurgatores
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Benevolent critics.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inuidos vituperatores" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Inuidi vitup[er]atores.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Malicious fault-finders.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vide in proxima pagina vt prude[n]ter et grauiter hijs vtrisq[ue] respondeat.
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0743" text="in proxima pagina"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                See on the next page that it replied them and whichever prudently and seriously.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        et à principio et ad infinitu[m] te[m]pus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                From the beginning and to the end of times.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        dißensione[m] dijudicari
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To judge disagreement.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        in summo errore et maxima rer[um] ignoratione versari.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To dwell on the greatest mistake and ignorance of things.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        pietas aduersus deos erga in
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Piety against gods, towards, against.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        { de qua tam inter se dissidentes. tam varia[e] tamq[ue] discrepa[n]tes su[n]t se[n]te[n]ti[a]e tanta sunt in varietate et disse[n]sione 
+                        deq[ue] hijs summa philosophor[um] distractione rectatur In primisq[ue] magna dissensio est.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                They disagreed among themselves so much, the opinions were so various and so devided, they were of such variety and disagreement, and about these <!-- FSF: not sure about rectatur -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        que terra gignit parit.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The earth brought forth and gave birth.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        ita multa dißeruit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                He separated in such a way.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        excitari ad veri investiga[n]di cupiditate[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To incite the desire to investigate the truth.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Curatio administratio procuratio } rer[um] humanar[um]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Treatment, administration and management of human affairs.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        pertubatio magna co[n]fusio } vit[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Disturbance and great confusion of life.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        id est
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                That is.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ita" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        in this co[n]dition.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="sermonem" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        the false ohme[n]
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="perobscura quaestio est" type="straight"/>
+        <underline language="LA" method="pen" text="ad agnitionem animi" type="straight"/>
+        <underline language="LA" method="pen" text="causam" type="straight"/>
+        <underline language="LA" method="pen" text="non satis explorate perceptum sit &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="tanta sunt in varietate &amp; dissensione" type="straight"/>
+        <underline language="LA" method="pen" text="molestum sit dinumerare sententias. Nam" type="straight"/>
+        <underline language="LA" method="pen" text="philosophorum dissensione certatur" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; à principio omnia facta &amp; constituta sint, &amp; ad infinitum tempus regantur, atque moueantur" type="straight"/>
+        <underline language="LA" method="pen" text="tribuenda" type="straight"/>
+        <underline language="LA" method="pen" text="deorum numini" type="straight"/>
+        <underline language="LA" method="pen" text="ita" type="double"/>
+        <underline language="LA" method="pen" text="possunt" type="straight"/>
+        <underline language="LA" method="pen" text="nec volunt" type="straight"/>
+        <underline language="LA" method="pen" text="curant" type="straight"/>
+        <underline language="LA" method="pen" text="animaduertunt" type="straight"/>
+        <underline language="LA" method="pen" text="quod ab his" type="straight"/>
+        <underline language="LA" method="pen" text="permanare possit" type="straight"/>
+        <underline language="LA" method="pen" text="cultus, honores" type="straight"/>
+        <underline language="LA" method="pen" text="adhibeamus" type="straight"/>
+        <underline language="LA" method="pen" text="aduersus deos" type="straight"/>
+        <underline language="LA" method="pen" text="Nam &amp; fruges, &amp; reliqua quae terra pariat, &amp; te[m]pestates, ac te[m]porum varietates, caelíque mutationes,              quibus omnia quae terra gignat, maturata pubescant, à diis immortalibus tribui generi humano putant, multáque quae dice[n]tur in" type="straight"/>
+        <underline language="LA" method="pen" text="quae" type="straight"/>
+        <underline language="LA" method="pen" text="vt ea ipsa" type="straight"/>
+        <underline language="LA" method="pen" text="ita multa" type="straight"/>
+        <underline language="LA" method="pen" text="Res enim nulla est de qua tantopere non solum indocti" type="straight"/>
+        <underline language="LA" method="pen" text="docti dissentiant: quoru[m] opiniones quum tam variae sint, támque inter se dissidentes, alterum profecto fieri potest vt earum nulla,              alterum certe non potest, vt plus vna vera sit. Qua quidem in causa &amp; beneuolos obiurgatores placare, &amp; inuidos vituperatores co[n]futare possumus, vt alteros reprehendisse poeniteat,              alteri didicisse se gaudeant" type="straight"/>
+        <underline language="LA" method="pen" text="amice, docendi sunt: qui inimice insectantur, repellendi" type="straight"/>
+        <underline language="LA" method="pen" text="admirantium" type="straight"/>
+        <underline language="LA" method="pen" text="partim" type="straight"/>
+        
+        <symbol name="Asterisk" place="right_margin"/>
+        <symbol name="Asterisk" place="right_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral language="LA" place="intext" text="possunt">1</numeral>
+        <numeral language="LA" place="intext" text="nec volunt">2</numeral>
+        <numeral language="LA" place="intext" text="curant">3</numeral>
+        <numeral language="LA" place="intext" text="animaduertunt">4</numeral>
+        <numeral language="LA" place="intext" text="quod ab">5</numeral>
+        <numeral language="LA" place="intext" text="admirantium">1</numeral>
+        <numeral language="LA" place="intext" text="partim">2</numeral>
+        <numeral language="LA" place="intext" text="etiam">3</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        /
+    </annotation>
+</transcription>

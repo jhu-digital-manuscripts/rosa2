@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.010r.tif" pagination="19" reader="John Dee" signature="b 2"/>
+    <annotation>
+        
+        <marginalia anchor_text="duo inde neceßariò sequuntur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Duo hinc sequuntur</marginalia_text>
+                </position>
+            </language>
+            <translation>Two follow afterwards.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Adamo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Adam</marginalia_text>
+                    <person name="Adam"/>
+                </position>
+            </language>
+            <translation>Adam.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="creaturis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Creaturaru[m] cognitio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The study of creatures.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="duo" type="straight"/>
+        <underline language="LA" method="pen" text="Moses sacram scripturam compendio duarum" type="straight"/>
+        <underline language="LA" method="pen" text="aeternae ueritatis &amp; demo[n]strationis fons" type="straight"/>
+        <underline language="LA" method="pen" text="lege" type="triple"/>
+        <underline language="LA" method="pen" text="illud Iod sit in lege" type="double"/>
+        <underline language="LA" method="pen" text="mysteria regni" type="triple"/>
+        <underline language="LA" method="pen" text="Christi" type="straight"/>
+        <underline language="LA" method="pen" text="lex ueritatis" type="double"/>
+        <underline language="LA" method="pen" text="datam Adamo" type="straight"/>
+        <underline language="LA" method="pen" text="inquam eadem" type="double"/>
+        <underline language="LA" method="pen" text="in summa" type="straight"/>
+        <underline language="LA" method="pen" text="quibus" type="straight"/>
+        <underline language="LA" method="pen" text="prior rerum ueritas est" type="double"/>
+        <underline language="LA" method="pen" text="in lege Dei" type="double"/>
+        <underline language="LA" method="pen" text="nocte in lege" type="triple"/>
+        <underline language="LA" method="pen" text="uerum summu[m]" type="double"/>
+        <underline language="LA" method="pen" text="quatenus in creaturis" type="double"/>
+        <underline language="LA" method="pen" text="animatis" type="double"/>
+        <underline language="LA" method="pen" text="falsas" type="double"/>
+        <underline language="LA" method="pen" text="dicitur" type="straight"/>
+        <underline language="LA" method="pen" text="res fieri" type="double"/>
+        <underline language="LA" method="pen" text="illa Adamo indita notione &amp; literarum forma uenari" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- Domini uerum -->
+        
+        <numeral language="LA" place="right_margin" text="Primum">.1.</numeral>
+        <numeral language="LA" place="right_margin" text="Secundò">2</numeral>
+        
+    </annotation>
+</transcription>

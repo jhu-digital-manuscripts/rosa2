@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.080v.tif" pagination="160" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Orestes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Orestes.</marginalia_text>
+                    <person name="Orestes"/>
+                </position>
+            </language>
+            <translation>Orestes</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="αἴτιον" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>αἴτιον</marginalia_text>
+                </position>
+            </language>
+            <translation>Cause.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="κρινόμενον" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>κρινόμενον</marginalia_text>
+                </position>
+            </language>
+            <translation>What is discerned.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="αἴτιον καὶ αἰτία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>αἴτιον καὶ αἰτία</marginalia_text> <!-- this is a fine lexical distinction, according to some they mean respectively: cause of the event and cause of the ruling -->
+                </position>
+            </language>
+            <translation>Cause of the event.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Clytamnestra" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Clyte[m]nestra</marginalia_text>
+                    <person name="Clytemnestra"/>
+                </position>
+            </language>
+            <translation>Clytemnestra.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quòd responsis sit impulsus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Appollo e[ni]m ei sic respo[n]su[m] fecit</marginalia_text> 
+                    <person name="Apollo"/>
+                </position>
+            </language>
+            <translation>For Apollo gave his responses to them in this manner.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quòd responsis sit impulsus" type="straight"/>
+        <underline language="LA" method="pen" text="Sed sicut, cum sint plures quaestiones" type="straight"/>
+        <underline language="LA" method="pen" text="omnes'q[ue]" type="double"/>
+        <underline language="LA" method="pen" text="habeant, causae tamen status unus sit, ad quem referentur omnia: ita iudicatio              maxime propria, de qua pronu[n]tiatur" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

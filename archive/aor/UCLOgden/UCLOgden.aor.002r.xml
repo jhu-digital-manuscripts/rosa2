@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.002r.tif" reader="John Dee" signature="α 2"/>
+    <annotation>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="unknown modern reader">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ignoti nulla Cupido/
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                One does not desire what one does not know.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Astrologiam Medicinae esse" hand="Italian" method="pencil" other_reader="unknown modern reader">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Astrologia medicina per aria 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Astrology is the medicine through the air.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ♋ enim cu[m] sit ☾ dom[us] ip[s]a vero in ♏ fuerit in tertia est a sua domu, et tertia domus cades est 
+                    </marginalia_text>
+                    <symbol_in_text name="Cancer"/>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Scorpio"/>
+                </position>
+            </language>
+            <translation>
+                Cancer, for when the Moon is in the same house, in truth it would be in Scorpio in the third, is from his house and the third house [cades est?] <!-- No clue-->  
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Electiones" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Electiones.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Elections.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pencil" text="imperiti, nihil aequum esse censent; nisi quod eis collibuit, omnésq[ue] insanire putant, qui" type="straight"/>
+        <underline language="LA" method="pen" text="non secum sentia[n]t" type="straight"/>
+        <underline language="LA" method="pencil" text="qui HErnia" type="straight"/>
+        <underline language="LA" method="pen" text="Luna ab angulo &amp; domo" type="straight"/>
+        
+        <mark method="pencil" name="vertical_bar" place="right_margin"/>
+        <mark method="pencil" name="vertical_bar" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pencil" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

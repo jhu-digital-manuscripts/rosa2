@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.123r.tif" pagination="245" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Boni Principis Qualitates.
+                        conferendae cum Machauellici Principis Panoplia.
+                    </marginalia_text>
+                    <person name="Machiavelli"/>
+                    <emphasis method="pen" text="conferendae cum Machauellici" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                The qualities of a good leader. United with the equipment of a Machiavellian prince.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Bonus Princeps Quis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                What is a good leader.
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="De qualitate boni Regis" type="straight"/>
+        <underline language="LA" method="pen" text="Laurentii Vall[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="Ferdinandi" type="straight"/>
+        <underline language="LA" method="pen" text="Ferdinandus Hisp. opt. rex" type="straight"/>
+        <underline language="LA" method="pen" text="Clementiss." type="straight"/>
+        <underline language="LA" method="pen" text="Religionis ca[m]bellabat" type="straight"/>
+        <underline language="LA" method="pen" text="Osor scurrar[ae]" type="straight"/> 
+        <underline language="LA" method="pen" text="Effoemiati" type="straight"/>
+        <underline language="LA" method="pen" text="Communica[n]tes" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="head"/>
+        
+    </annotation>
+</transcription>

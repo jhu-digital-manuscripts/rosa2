@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.143r.tif" pagination="143" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Note this scandalu[m] agaynst the Christian name.</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="frate Giouan Borgognone" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Frate Giouan Borgognone</marginalia_text> 
+                    <person name="Giovanni Borgognone"/>
+                </position>
+            </language>
+            <translation>Friar Giovanni Borgognone</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Giouan Matteo" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Giouan Matteo: a Indian so Christianised</marginalia_text> 
+                    <person name="Giovanni Matteo"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="Ma poi si sdegnò &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="per colpa d'altri de" type="straight"/>
+        <underline language="IT" method="pen" text="alla legge Christiana; essendo che i Christiani fossero tristi, &amp; gli tenessero delle sue terre per forza. Peò lo consigliauano a non curar piu cosa alcuna de' Christiani'" type="double"/>
+        <underline language="IT" method="pen" text="Cacique principale, il qual ci mostraua buona volontà, dicendo di volere esser" type="straight"/>
+        <underline language="IT" method="pen" text="Mauiatuè" type="straight"/>
+        <underline language="IT" method="pen" text="Giouan Borgognone" type="straight"/>
+        <underline language="IT" method="pen" text="Giouan Matteo" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

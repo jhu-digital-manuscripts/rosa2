@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.077v.tif" reader="Harvey" signature="[*6v]"/>	<!-- ABO 82left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						{ Tre hore d'oro. Ritratti: prologi: vale-mondo.	
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Three hours of gold. Portraits, prologues, farewells.
+			</translation>			
+		</marginalia>
+		<marginalia date="1582" hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Ritratti di diuersi prencipi, e personaggi illustri:
+						di mano di Francesco
+					</marginalia_text>
+					<book title="Ritratti di diversi principi et personaggi illustri"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Guicciardini.
+					</marginalia_text>
+					<person name="Francesco Guicciardini"/>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Quattro prologhi di quattro Comedie dell'Aretino.
+						Col Vale-mondo di Gueuara. Lo specchio
+						del mondo.
+					</marginalia_text>
+					<person name="Pietro Aretino"/>
+					<person name="Antonio de Guevara"/>
+				</position>
+			</language>
+			<language ident="ES">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Poco, y bueno. 1582.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Portraits of various princes and illustrious men written by Francesco Guicciardini.
+				Four prologues of four comedies by Pietro Aretino.
+				With the farewell of Guevara. The mirror of the world.
+				Little and good. 1582.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Philomela eandem canit cantilenam; sed Canticum Canticorum.
+					</marginalia_text>
+					<person name="Philomela"/>
+				</position>
+			</language>
+			<translation>
+				Philomela sings the same tune, yet the Song of Songs.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Virum quae[r]o sublimatum: et Artem, Virtutemq[ue] multiplicatam
+						spagyricè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				I seek an elevated man, as well as art and virtue multiplied alchemically.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Plenus est Sententiaru[m], qui nouit 4. virtutes.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				He who knows the four virtues is full of ways of thinking.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="qualche titolo" type="straight"/>
+		<underline language="IT" method="pen" text="sustantialmente ammonisca" type="straight"/>
+		<underline language="IT" method="pen" text="subito lume di tutta la cosa, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="à che fine ella" type="straight"/>
+		<underline language="IT" method="pen" text="qual frutto partorisca" type="straight"/>
+		<underline language="IT" method="pen" text="da' lor ottimi giuditij" type="straight"/>
+		<underline language="IT" method="pen" text="altre mie operette" type="straight"/>
+		<underline language="IT" method="pen" text="piu graui, à ricreatione &amp; pro dell' vniuersale" type="straight"/>
+		<underline language="IT" method="pen" text="discretissimo lettore" type="straight"/>
+		<underline language="IT" method="pen" text="occorrenze valendotene" type="straight"/>
+		<underline language="IT" method="pen" text="lascia" type="straight"/>	
+		<underline language="IT" method="pen" text="stare almeno in capitale" type="straight"/>
+		<underline language="IT" method="pen" text="ò stare a' segni della modestia" type="straight"/>
+		<underline language="IT" method="pen" text="prenda de' fogli" type="straight"/>
+		<underline language="IT" method="pen" text="prenda della terra" type="straight"/>
+		<underline language="IT" method="pen" text="dall'otio" type="straight"/>
+		<underline language="IT" method="pen" text="dall'inuidia" type="straight"/>
+		<underline language="IT" method="pen" text="altri vitij, morda" type="straight"/>
+		<underline language="IT" method="pen" text="indiscretamente" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="qualche titolo" type="straight"/>
+		<underline language="IT" method="chalk" text="subito lume di tutta la cosa, &amp;" type="straight"/>
+		<underline language="IT" method="chalk" text="sfoghisi bene operando, &amp; non tenendosi le mani all cintola" type="straight"/>
+		
+		<symbol language="IT" name="SS" place="left_margin" text="piu graui, à ricreatione &amp; pro dell' vniuersale"/>
+		<symbol name="Sun" place="left_margin"/>
+		
+		<mark method="pen" name="plus_sign" place="left_margin"/>
+		<mark method="pen" name="vertical_bar" place="left_margin"/> <!--fatto-->
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--ca-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--subi-->
+		<mark method="pen" name="bracket" place="right_margin"/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="à che fine ella"/>
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--stampa. Prenderai-->
+		
+    </annotation>
+</transcription>

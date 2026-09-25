@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.328r.tif" pagination="635" reader="John Dee" signature="[rrr.vi.]"/>
+    <annotation>
+        
+       <marginalia anchor_text="aeternas inurere maculas" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>a[e]ternas invrere maculas.</marginalia_text>
+               </position>
+           </language>
+           <translation>To brand eternal dishonour.</translation>
+       </marginalia> 
+        
+        <marginalia anchor_text="Sentina" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sentina.</marginalia_text>
+                </position>
+            </language>
+            <translation>Bilge water.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="contrudi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>co[n]trudi.</marginalia_text>
+                </position>
+            </language>
+            <translation>To be thrust.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="patrimonio no[n] comeso, sed deuorato" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>patrimonio co[m]meso deuorato</marginalia_text>
+                </position>
+            </language>
+            <translation>With the inheritance [not] consumed [but] devoured.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>sup[r]a in verrem.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v1:0066" text="in verrem"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See above, against Verres.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Is demu[m] maledicit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Maledicit quis q[ui].</marginalia_text>
+                </position>
+            </language>
+            <translation>He who speaks evil about anyone.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="petulantissima co[n]sectari lingua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>petula[n]tiss[im]a co[n]sectari lingua</marginalia_text>
+                </position>
+            </language>
+            <translation>The most petulent language to imitate.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Conclusio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Conclusion.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="adulteriu[m], neque erubuit" type="straight"/>
+        <underline language="LA" method="pen" text="Audacia" type="straight"/>
+        <underline language="LA" method="pen" text="nónne tibi viderer" type="straight"/>
+        <underline language="LA" method="pen" text="quo omnis sentina Reip[ublicae]" type="straight"/>
+        <underline language="LA" method="pen" text="quò tanqua[m] in imam voraginem coetus omniu[m] vitioru[m] excesserat" type="straight"/>
+        <underline language="LA" method="pen" text="sesterio duodecies" type="straight"/>
+        <underline language="LA" method="pen" text="Quòd si quippia[m] eoru[m] falsum est, his palàm refelle, vnde tu, qui modo" type="straight"/>
+        <underline language="LA" method="pen" text="quoru[m] siue tu similis es, siue illi tui, nihil ad omniu[m] scelus" type="straight"/>
+        <underline language="LA" method="pen" text="Carere debet omni vicio qui in alteru[m] paratus est dicere" type="straight"/>
+        <underline language="LA" method="pen" text="petulantissima co[n]sectari lingua: define morbo procacitatis isto vti: define vnu[m]que[m]que moribus tuis existimare his moribus amicu[m] tibi facere" type="straight"/>
+        <underline language="LA" method="pen" text="qui aliena flagitia aperte dixeru[n]t, quàm eos qui co[m]miseru[n]t" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+        <numeral place="right_margin">15</numeral>
+        <numeral place="right_margin">19</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">8</numeral>
+        
+        <errata amendedtext="dominus" copytext="dminus" language="LA"/>
+        
+    </annotation>
+</transcription>

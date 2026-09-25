@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.021r.tif" reader="John Dee" signature="Fij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="liquoris melissae melissen safft pulegij poley artemisi[a]e bucken" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Melissa Pulegium Artemisia</marginalia_text>
+                </position>
+            </language>
+            <translation>Balm, fleabane, beech.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="liquoris" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Liquor</marginalia_text>
+                </position>
+            </language>
+            <translation>Liquid.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Regula</marginalia_text>
+                </position>
+            </language>
+            <translation>Rule.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="liquoris" type="straight"/>
+        <underline language="DE" method="pen" text="safft" type="double"/> 
+        <underline language="DE" method="pen" text="die andre additiones" type="straight"/>
+      
+    </annotation>
+</transcription>

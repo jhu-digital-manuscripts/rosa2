@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.092r.tif" pagination="183" reader="John Dee" signature="m 4"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Breuis erit narratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Narratio Breuis</marginalia_text>
+                </position>
+            </language>
+            <translation>Brief narrative.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Graecoru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gra[e]ci</marginalia_text>
+                </position>
+            </language>
+            <translation>Greeks.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uitanda etiam illa Sallustiana (quanquàm in ipso uirtutis obtinet loc[m]) breuitas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Salustiana Breuitas uita[n]da nobis</marginalia_text>
+                    <person name="Sallust"/>
+                </position>
+            </language>
+            <translation>We ought to avoid Sallustian brevity.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Tum aute[m] optimè dicit orator, cum uidetur uera dicere." type="straight"/>
+        <underline language="LA" method="pen" text="In portum ueni, nauim prospexi, quanti ueheret interrogaui, de precio co[n]ueni, conscendi, sublatae sunt              ancorae, soluimus oram, prouecti sumus." type="straight"/>
+        <underline language="LA" method="pen" text="satius'q[ue] aliquid est narrationi superesse, quàm" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+               
+    </annotation>
+</transcription>

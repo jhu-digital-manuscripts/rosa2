@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.190v.tif" pagination="380" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="συναθροισμός" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>συναθροισμός</marginalia_text>
+                </position>
+            </language>
+            <translation>Association of dissimilar things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sextius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sextius.</marginalia_text>
+                    <person name="Sextus Roscius"/>
+                </position>
+            </language>
+            <translation>Sextus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ratio minuendi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Minuendi r[ati]o</marginalia_text>
+                </position>
+            </language>
+            <translation>The principle of diminution.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de oratione Rulli" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Contra Rullu[m]</marginalia_text>
+                    <person name="Servilius Rullus"/>
+                </position>
+            </language>
+            <translation>Against Rullus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hyperbolen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>hyperbole</marginalia_text>
+                </position>
+            </language>
+            <translation>Exaggeration.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ratio dicendi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dicendi r[ati]o</marginalia_text>
+                </position>
+            </language>
+            <translation>Method of speaking.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sensus corporus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sensus corporis</marginalia_text>
+                </position>
+            </language>
+            <translation>Senses of the body.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="γνώμαι" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>γνώμαι</marginalia_text>
+                </position>
+            </language>
+            <translation>Aphorisms.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="omnibus altius atq[ue] altius insurge[n]tibus: Aderat ianitor carceris, carnifex Praetoris, mors terror'q[ue] socioru[m], &amp;              ciuium Romanoru[m], lictor Sextius." type="straight"/>
+        <underline language="LA" method="pen" text="totidem sunt ascendentibus, quot descendentibus gradus" type="straight"/>
+        <underline language="LA" method="pen" text="dicendi, quae constat no[n] proprijs, sed translatis. Demus" type="straight"/>
+        <underline language="LA" method="pen" text="Na[m] &amp; iuraturi ex animi nostri sententia, &amp; gratulantes ex sente[n]tia dicimus" type="straight"/>
+        <underline language="LA" method="pen" text="ut mente co[n]cepta sensus" type="straight"/>
+        
+    </annotation>
+</transcription>

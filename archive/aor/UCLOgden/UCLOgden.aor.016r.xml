@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.016r.tif" pagination="15" reader="John Dee" signature="b 2"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Invocatio firmici
+                    </marginalia_text>
+                    <person name="Julius Firmicus Maternus"/>
+                </position>
+            </language>
+            <translation>
+                Calling upon [Julius] Firmicus [Maternus].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Fronto" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Fronto
+                    </marginalia_text>
+                    <person name="Fronto"/>
+                </position>
+            </language>
+            <translation>
+                Fronto.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hipparchi secutus antiscia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Hipparchi Antiscia
+                    </marginalia_text>
+                    <person name="Hipparchus"/>
+                </position>
+            </language>
+            <translation>
+                The Antiscia by Hipparchus
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ptoloma[e]us de antiscijs
+                    </marginalia_text>
+                    <person name="Ptolemy"/>
+                </position>
+            </language>
+            <translation>
+                Ptomely on the experts.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sustentat" type="straight"/>
+        <underline language="LA" method="pen" text="Constantinum maximum" type="straight"/>
+        <underline language="LA" method="pen" text="liberos, dominos" type="straight"/>
+        <underline language="LA" method="pen" text="Caesares" type="straight"/>
+        <underline language="LA" method="pen" text="hic dicuntur rigida iudicationis autoritate discutias" type="straight"/>
+        <underline language="LA" method="pen" text="Hipparchi secutus antiscia, ita" type="straight"/>
+        <underline language="LA" method="pen" text="Aegyptii" type="straight"/>
+        <underline language="LA" method="pen" text="Babiloniíq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="substantiam, &amp; sunt quidem in Frontone pronunciationis, atq[ue] apotelesmatu[m] uerae sententiae, antisciorum uero inefficax studium, quod quidem" type="straight"/>
+        <underline language="LA" method="pen" text="Ptolemaeus posterior" type="straight"/>
+        <underline language="LA" method="pen" text="Fronto" type="straight"/>
+        
+    </annotation>
+</transcription>

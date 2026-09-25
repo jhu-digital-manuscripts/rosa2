@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.031r.tif" pagination="47" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="gemina anni in populo Dei obseruatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gemina Anni consideratio.</marginalia_text>
+                </position>
+            </language>
+            <translation>A dual consideration of a year.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Si duodecim cubitos non excessit, fames certa est, nec minus si sedecim exuperauit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Inter 12 et 16 Cubitos Ni Li exubera[n]tia.</marginalia_text> <!-- FSF: I think it is Nili, the dative of ni[hi]l --> <!--JG: Could also be the genitive of nilum (nothing)-->
+                </position>
+            </language>
+            <translation>Between 12 and 16 cubits</translation>  <!-- DO: Not sure how to translate (unless 'Li' is 51, but doesn't seem to match the text)--> <!-- FSF: ..., there is abundance to nothing? I am not sure at all --> <!--JG: Struggling with this one as well, will ask for expert advice-->
+        </marginalia>
+        
+        <marginalia anchor_text="Aprilis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Messis in Ap[ri]li</marginalia_text>
+                </position>
+            </language>
+            <translation>Harvest in April.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="gemina anni" type="straight"/>
+        <underline language="LA" method="pen" text="quòd motu Lunae, menses" type="double"/>
+        <underline language="LA" method="pen" text="&amp; ipsa messis in Ægypto &amp; Iudaea ratio, aequinoctiorum nos admonet" type="straight"/>
+        <underline language="LA" method="pen" text="residet. Si duodecim cubitos non excessit, fames certa est, nec minus si sedecim exuperauit" type="straight"/>
+        <underline language="LA" method="pen" text="mox sues impellere" type="straight"/>
+        <underline language="LA" method="pen" text="vestigiis semina deprimentes" type="straight"/>
+        <underline language="LA" method="pen" text="paulò ante Calendas Aprilis" type="straight"/>
+        <underline language="LA" method="pen" text="messis mense Maio" type="double"/>
+        <underline language="LA" method="pen" text="apparet messem in Ægypto &amp; illi vicina Palestina inchoari ante Calendas Apriles" type="straight"/>
+        
+        <errata amendedtext="amnis" copytext="annis" language="LA"/>
+        
+        
+    </annotation>
+</transcription>

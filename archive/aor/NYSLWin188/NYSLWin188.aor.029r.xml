@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.029r.tif" pagination="29" reader="John Dee" signature="H"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Windts gebererin kaldt vnd truckener Natur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Boreas frigidus siccus</marginalia_text>
+                </position>
+            </language>
+            <translation>The north wind is cold and dry.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nit das die Winde von den Regionibus genaturt werden, sondern die Regiones von Winden so solche derselbigen Natur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Regiones a ventis natura[e] diuersas qu[a]litates recipiunt; no[n] e contra.</marginalia_text> <!--JG: Or no[nn]e?--> <!--KS: Inclined to go for 'no[nn]e'-->
+                </position>
+            </language>
+            <translation>The regions take up different qualities of nature by the winds: not the other way around.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="der Auster warm vn[d] feuchte" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Auster calidus humidus</marginalia_text>
+                </position>
+            </language>
+            <translation>The south wind is warm and humid.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vn[d] Sterne seindt jr Mütter" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Stella[e] ventor[um] Matres.</marginalia_text>
+                </position>
+            </language>
+            <translation>Stars are the mothers of the winds.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="gebererin" type="double"/>
+        <underline language="DE" method="pen" text="kaldt vnd truckener" type="double"/>
+        <underline language="DE" method="pen" text="auch kaldte vnd truckene Regiones" type="straight"/>
+        <underline language="DE" method="pen" text="Winde von den Regionibus genaturt werden sondern die Regiones von Winden" type="straight"/>
+        <underline language="DE" method="pen" text="warm vn[d]" type="straight"/>
+        <underline language="DE" method="pen" text="sondern" type="straight"/>
+        <underline language="DE" method="pen" text="an jnen selbst" type="straight"/>
+        <underline language="DE" method="pen" text="der Winde im Wind Circkel standt vnd in jrer eigenen Natur vnd seindt in Sternen vn[d] Sterne seindt jr Mütter" type="straight"/>
+        <underline language="DE" method="pen" text="einer allein" type="straight"/>
+        <underline language="DE" method="pen" text="nicht drey" type="straight"/>
+        
+        <mark language="DE" method="pen" name="vertical_bar" place="left_margin" text="der Winde im Wind Circkel standt vnd in jrer eigenen Natur vnd seindt in Sternen vnd Sterne seindt jr Mütter"/>
+        
+        <drawing anchor_text="sondern an jnen selbst" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.029v.tif" pagination="44" reader="John Dee" signature="[d.iiij.[v]]"/> 
+    <annotation>
+        
+       <marginalia anchor_text="in signa" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="left_margin">
+                   <marginalia_text>In Signa.</marginalia_text>
+               </position>
+           </language>
+           <translation>In signs.</translation>
+       </marginalia> 
+        
+        <marginalia anchor_text="Othoth" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Othoth.</marginalia_text>
+                    <person name="Thoth"/>
+                </position>
+            </language>
+            <translation>Thoth.</translation>
+        </marginalia> 
+       
+        <marginalia anchor_text="quae nautis, agricolis &amp; medicis obseruantur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Signa discenda { Nautis Agricolis Medicis</marginalia_text>
+                </position>
+            </language>
+            <translation>Signs to be studied { by sailors, by farmers, by doctors.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="hoc generali Concilio" type="straight"/>
+        <underline language="LA" method="pen" text="diem nonum Martij" type="straight"/>
+        <underline language="LA" method="pen" text="definiendorum temporum &amp; constituendarum rerumpublicarum, quae" type="straight"/>
+        <underline language="LA" method="pen" text="ex qua gente" type="double"/>
+        <underline language="LA" method="pen" text="quorsum" type="double"/>
+        <underline language="LA" method="pen" text="Adhaec" type="double"/>
+        <underline language="LA" method="pen" text="esse in signa &amp; te[m]pora" type="double"/>
+        <underline language="LA" method="pen" text="dies" type="straight"/>
+        <underline language="LA" method="pen" text="annos" type="double"/>
+        <underline language="LA" method="pen" text="Et signa quidem quae Scriptura dicit Othoth, intelliguntur prognostica tempestatum, quae nautis" type="straight"/>
+        <underline language="LA" method="pen" text="agricolis &amp; medicis" type="straight"/>
+        <underline language="LA" method="pen" text="animaduerterunt certae" type="straight"/>
+        <underline language="LA" method="pen" text="Et ea quidem nota &amp; obseruata fuisse populo Dei, testatur locus ille qui est apud Iobum" type="straight"/>
+        <underline language="LA" method="pen" text="delicias Vergiliarum" type="straight"/>
+        <underline language="LA" method="pen" text="constrictiones Orionis" type="straight"/>
+        <underline language="LA" method="pen" text="signa" type="straight"/>
+        <underline language="LA" method="pen" text="coelestia tempore" type="double"/>
+        <underline language="LA" method="pen" text="qui euocat aquas maris" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

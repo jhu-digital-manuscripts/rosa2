@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.301r.tif" pagination="581" reader="John Dee" signature="ooo.iii."/>
+    <annotation>
+        
+        <marginalia anchor_text="effraenatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>effrenatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Unbridled impetuosity.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>à maiori</marginalia_text>
+                </position>
+            </language>
+            <translation>From the higher.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Caesar" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ca[e]sar</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Julius Caesar.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="exercitum fecit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>facere exercitu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>To raise an army.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Mutinam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mutina..</marginalia_text>
+                    <location name="Mutina"/>
+                </position>
+            </language>
+            <translation>From the higher.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="in horam viuunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>in hora[m] viuer</marginalia_text>
+                </position>
+            </language>
+            <translation>To live 'from one hour to the next' [Loeb 189, 267].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="restinguet ardorem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>restinguere ardore[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>To quench the ardour.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="moram &amp; tarditatem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>mora tarditas</marginalia_text>
+                </position>
+            </language>
+            <translation>Delay. Slowness.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="morabitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>morari</marginalia_text>
+                </position>
+            </language>
+            <translation>To delay.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in bello, &amp; maxime ciuili" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>bellu[m] ciuile</marginalia_text>
+                </position>
+            </language>
+            <translation>Civil war.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dixisse eu[m] minacius, quàm facturum" type="straight"/>
+        <underline language="LA" method="pen" text="incitatos latronis" type="straight"/>
+        <underline language="LA" method="pen" text="neque sacrificiis solennibus factis, neque" type="straight"/>
+        <underline language="LA" method="pen" text="Italiae franget animos" type="straight"/>
+        <underline language="LA" method="pen" text="non est verbis roga[n]dus, cogendus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">18.11</numeral> 
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">10</numeral>
+        
+        <drawing anchor_text="bellu[m] ciuile" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.240v.tif" pagination="220" reader="John Dee"/>   
+    <annotation>
+        
+        
+        <marginalia anchor_text="Q. Hortensii" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Q. Hortensius.</marginalia_text>
+                    <person name="Quintus Hortensius"/>
+                </position>
+            </language>
+            <translation>Quintus Hortensius.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quales esse debere[n]t qui mutuo sua conferunt studia.</marginalia_text>
+                </position>
+            </language>
+            <translation>There ought to be such ones who mutually gather their study.</translation> 
+        </marginalia>
+        
+        
+        <marginalia anchor_text="foru[m] Pop. Rom." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>forum Pop. Ro.</marginalia_text>
+                </position>
+            </language>
+            <translation>The forum of the Roman people.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="gloriosi laboris; gloriosius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        gloriosus labor.
+                        gloriosius.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Glorious work.
+                More glorious.
+            </translation>
+        </marginalia>
+        
+       
+        <marginalia anchor_text="dolorem; molestiam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        dolor
+                        molestia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Grief.
+                Trouble.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="animo cepi dolorem; angimur; caetera fortasse desyderaret vnà cu[m] reliquis bonis; sustineret dolorem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Dolere
+                        angi
+                        lugere
+                        a[n]i[m]o angi
+                        a[n]i[m]o capere dolere
+                        fuste desyderu[m] aten[us] rei relinquero   <!-- DO: Not sure about this line --> <!--JG: Can't figure this one out either-->
+                        sustinere dolore[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be troubled by grief.
+                To be troubled in the spirit.
+                To be seized by grief in the spirit.
+                
+                To endure grief.
+            </translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="non modo nunqua[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>no[n] modo nunq[uam]</marginalia_text>
+                </position>
+            </language>
+            <translation>Never in any way.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="cooptatum me ab eo in collegiu[m] recordabar" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Cooptari in collegiu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>To be elected to a body.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; eò mihi" type="straight"/>
+        <underline language="LA" method="pen" text="opinione omnium maiore[m]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; cooptatum me ab eo in collegiu[m] recordabar" type="straight"/>
+        <underline language="LA" method="pen" text="gloriosi laboris" type="straight"/>
+        <underline language="LA" method="pen" text="certare erat gloriosius" type="straight"/>
+        <underline language="LA" method="pen" text="non modo nunqua[m]" type="straight"/>
+        <underline language="LA" method="pen" text="cessit è vita" type="straight"/>
+        <underline language="LA" method="pen" text="angimur" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="tail"/>
+        
+    </annotation>
+</transcription>

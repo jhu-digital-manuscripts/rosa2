@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.063r.tif" pagination="63" reader="John Dee" signature="[Piii]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" id="BLC120b4:c_120_b_4_(2)_f063r:m0001" method="pen"> 
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        658 2/7                 
+                        ☉ 24
+                    </marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+        </marginalia>
+                
+              <marginalia hand="Italian" id="BLC120b4:c_120_b_4_(2)_f063r:m0002" method="pen">
+                  <language ident="LA">
+                   <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        493:5/7
+                        ☾:18
+                        hic cadit Insertio illa sup[ra], pag. 40.☉ 
+                    </marginalia_text>
+                     <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Sun"/>
+                          <internal_ref>
+                              <target ref="BLC120b4:c_120_b_4_(2)_f040v" text="pag. 40"/>
+                          </internal_ref>
+                </position>
+            </language>
+            <translation>
+                This insertion falls here, see above, page 40[v]. 
+            </translation>
+                </marginalia>
+        
+        <physical_link>
+            <marginal_annotation idref="BLC120b4:c_120_b_4_(2)_f063r:m0001"/>
+            <marginal_annotation idref="BLC120b4:c_120_b_4_(2)_f063r:m0002"/>
+            
+            <relation from="BLC120b4:c_120_b_4_(2)_f063r:m0002" to="BLC120b4:c_120_b_4_(2)_f063r:m0001" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

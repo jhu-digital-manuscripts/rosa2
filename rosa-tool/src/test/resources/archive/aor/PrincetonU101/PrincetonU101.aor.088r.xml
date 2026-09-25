@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.088r.tif" pagination="lxxxiiii[r]" reader="Harvey"/>
+    <annotation>    	
+    	<!-- Marginalia -->
+    	<marginalia anchor_text="watche worde" hand="Italian">
+    		<language ident="EN">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					[The] Watchword.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+    	<underline language="EN" method="pen" text="to warde the campe in the" type="straight"/>
+    	<underline language="EN" method="pen" text="kepte watche without the Trenche, distaunte" type="straight"/>
+    	<underline language="EN" method="pen" text="call Scoutes" type="straight"/>
+    	<underline language="EN" method="pen" text="did; thinking that the armie might" type="straight"/>
+    	<underline language="EN" method="pen" text="bee deceiued" type="straight"/>
+    	<underline language="EN" method="pen" text="the difficultie, [that] is" type="straight"/>
+    	<underline language="EN" method="pen" text="either corrupted, or" type="straight"/>
+    	<underline language="EN" method="pen" text="oppressed of the" type="straight"/>
+    	<underline language="EN" method="pen" text="in parte" type="straight"/>
+    	<underline language="EN" method="pen" text="altogether on" type="straight"/>
+    	<underline language="EN" method="pen" text="iudged it perillous" type="straight"/>
+    	<underline language="EN" method="pen" text="of the watche, was with in [the] trenche" type="straight"/>
+    	<underline language="EN" method="pen" text="did withall diligence keepe" type="straight"/>
+    	<underline language="EN" method="pen" text="greate order punished with death" type="straight"/>
+    	<underline language="EN" method="pen" text="obserued not the same" type="straight"/>
+    	<underline language="EN" method="pen" text="ordinarely euery night, the thirde parte of the armie armed, &amp;" type="straight"/>
+    	<underline language="EN" method="pen" text="same, the fowerth parte alwaies on foote" type="straight"/>
+    	<underline language="EN" method="pen" text="bee destributed, throughout" type="straight"/>
+    	<underline language="EN" method="pen" text="all the banckes, &amp; throughout all the places of the" type="straight"/>
+    	<underline language="EN" method="pen" text="with double warde, placed in euery quadrant of" type="straight"/>
+    	<underline language="EN" method="pen" text="stande still" type="straight"/>
+    	<underline language="EN" method="pen" text="continually should goo from the one" type="straight"/>
+    	<underline language="EN" method="pen" text="the other" type="straight"/>
+    	<underline language="EN" method="pen" text="also in the daie" type="straight"/>
+    	<underline language="EN" method="pen" text="haue the enemie nere" type="straight"/>
+    	<underline language="EN" method="pen" text="watche worde" type="straight"/>
+    	<underline language="EN" method="pen" text="and renuyng the same euery" type="straight"/>
+    	<underline language="EN" method="pen" text="of greate importaunce, and" type="straight"/>
+    	<underline language="EN" method="pen" text="great saufegarde obseruing" type="straight"/>
+    	<underline language="EN" method="pen" text="greate diligence, to knowe at" type="straight"/>
+    	<underline language="EN" method="pen" text="who lodgeth not in the Campe" type="straight"/>
+    	<underline language="EN" method="pen" text="and whoo commeth a newe" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="vsed no Scoutes" type="straight"/>
+    	<underline language="EN" method="pen" text="The vvatche and vvarde" type="straight"/>
+    	<underline language="EN" method="pen" text="Diligence" type="straight"/>
+    	<underline language="EN" method="pen" text="vvho lieth oute of the" type="straight"/>
+
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="ordinarely euery night, the thirde parte of the armie armed"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="with double warde, placed in euery quadrant of"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="right_margin" text="vvoo lieth oute of the"/>
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="watche without the Trenche"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Scoutes"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="either corrupted"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="oppressed of the"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="in parte"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="altogether on"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="iudged it perillous"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="was with in [the] trenche"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="did withall diligence keepe"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="greate order"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="death"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="ordinarely euery night"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="thirde"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- foote, whome -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="all the banckes"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="double warde"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="euery quadrant"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="stande still"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="should goo from the one"/>
+    	<mark language="EN" method="pen" name="hash" place="intext" text="the enemie nere"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="daie"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="watche worde"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="renuyng"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="of greate importaunce"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="greate diligence"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="who lodgeth not"/>
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="tail" text="and whoo commeth a newe"/>
+    	
+    	<!-- Errata -->
+    	<errata amendedtext="whoesoeuer" copytext="whomesoeuer" language="EN"/>
+    </annotation>
+</transcription>

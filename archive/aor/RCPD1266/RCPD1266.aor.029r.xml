@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.029r.tif" pagination="43" reader="John Dee" signature="d.iiij."/>
+    <annotation>
+        
+        <marginalia anchor_text="vnum diem omni anno centesimo sexto" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>in annis 106 vnum diem.</marginalia_text>
+                </position>
+            </language>
+            <translation>One day in 106 years.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vt centesimo quóque &amp; sexto anno" type="straight"/>
+        <underline language="LA" method="pen" text="Annis enim quadragintaquinque ante Christi Domini natalem" type="straight"/>
+        <underline language="LA" method="pen" text="anticipa[n]t aequinoctium vernum" type="straight"/>
+        <underline language="LA" method="pen" text="fertur iam in nonum" type="straight"/>
+        <underline language="LA" method="pen" text="Lucidus Gallus Samothaeus" type="straight"/>
+        <underline language="LA" method="pen" text="minuta 46. &amp; duas" type="straight"/>
+        <underline language="LA" method="pen" text="diem omni anno centesimo sexto" type="straight"/>
+        <underline language="LA" method="pen" text="annis 1590" type="straight"/>
+        <underline language="LA" method="pen" text="Domini 1545" type="straight"/>
+        
+    </annotation>
+</transcription>

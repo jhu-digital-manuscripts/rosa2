@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www-uat.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.028v.tif" reader="John Dee" signature="[Eiiij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="quatuor d[iffe]r[enti]as inter scie[n]cias subalt[er]na[n]tes [et] subalt[er]natas i[m]mediatas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quatuor differentia[e] scientiaru[m] subalternantiu[m] &amp; subalternatarum immediate    
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Four immediate differences between the superior and the inferior sciences.  
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="geomet[er] c[on]siderat sint in materia sicut linea [et] sup[er]ficies non t[ame]n s[e]c[un]d[u]m esse forme abstracte a materia" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Geometer li[cet] interdu[m] versetur circa figuras et magnitudines in materia aliqua sensibili tame[n] no[n] co[n]siderat ea secu[n]du[m] esse talis materia[e] sed secu[n]du[m] esse forma[e] 
+                        ab o[mn]i materia abstracta[e]. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A geometer, although sometimes moving around figures and magnitudes in some perceptible material, nevertheless did not consider those things to be
+                in accordance with such material, but to be in accordance with the form abstracted from all material. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="astrologia[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Astrologia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Astrology.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nautica astrologia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Nautical astrology.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sol rubicu[n]de orit[ur] diffortunitate[m] ve[n]ti ad meride[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ☉ rubicunde orie[n]s, ventos merid[ianos] significat
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A sun rising suffused in red light indicates meridian winds.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="musica arithmetice [et] astronomica geometrice " hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Arith[metica] Geo[metrica]{ Mus[ica] Ast[ronomia] 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Geometric arithmetic{ music, astronomy.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Na[m] mathe[m]atic[us] no[n] abstrahit a materia simplicit[er]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Abstractio Mathematica
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mathematical abstraction.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        q[uod]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                That.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="modus scie[n]di" type="straight"/>
+        <underline language="LA" method="pen" text="vt duo semitonia iu[n]cta no[n] p[er]ficere integru[m] epogdou[m] i[d est] thonu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="q[ue] cu[m] sensibile sit auribus " type="straight"/>
+        <underline language="LA" method="pen" text="p[ar]te rei scite et hec" type="straight"/>
+        <underline language="LA" method="pen" text="Na[m] sepe aliquis cognoscit in v[niversa]li [et] t[ame]n nescit sing[u]laria p[ro]pter hoc q[uod] no[n] inte[n]dit" type="straight"/>
+        <underline language="LA" method="pen" text="p[ro]pter sui altitudine[m] co[n]sidera[n]tes v[niversa]les causas. licet scia[n]t p[ro]pter quid ignora[n]t t[ame]n multos effectus [et] multa q[ue] q[uae] no[n] ignora[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="subalt[er]na[n]tes habe[n]t se vt v[niversa]le et subalt[er]nate vt p[ar]ticulare" type="straight"/>
+        <underline language="LA" method="pen" text="q[ua]re aliq[ua]n[do] multi effect[us] nociores sunt causis v[niversal]ibus" type="straight"/>
+        <underline language="LA" method="pen" text="ex p[ar]te scie[n]tie subalt[er]nate q[ue] e[st] materialior [et] sensibilior q[uam] subalt[er]nans" type="straight"/>
+        <underline language="LA" method="pen" text="licet e[ni]m ea q[uae] geomet[er] c[on]siderat sint in materia sicut linea [et] sup[er]ficies" type="straight"/>
+        <underline language="LA" method="pen" text="s[e]c[un]d[u]m esse materie sed s[e]c[un]d[u]m esse forme abstracte a materia" type="straight"/>
+        <underline language="LA" method="pen" text="s[e]c[un]d[u]m esse materie" type="straight"/>
+        <underline language="LA" method="pen" text="scie[n]tijs subalt[er]nat[is] s[e]c[un]d[u]m causam formale[m]" type="straight"/>
+        <underline language="LA" method="pen" text="subalt[er]nate q[uae] semp[er] co[n]trahu[n]t subiectu[m] subalterna[n]tis sunt quoda[m]m[od]o semp[er] materialiores q[uam] su ut subalt[er]na[n]tes" type="straight"/>
+        <underline language="LA" method="pen" text="p[ar]te scie[n]tie subalt[er]nant[is]" type="straight"/>
+        <underline language="LA" method="pen" text="Na[m] mathe[m]atic[us] no[n] abstrahit a materia" type="straight"/>
+        <underline language="LA" method="pen" text="sed a materia sensibili" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] demo[n][strat]" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- thonu[m] dicere -->
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        
+        <errata amendedtext="[deleted]" copytext="q[ue]" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="p[ro]" language="LA"/> 
+        
+    </annotation>
+</transcription>

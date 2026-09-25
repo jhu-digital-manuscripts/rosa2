@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.200v.tif" pagination="[200v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="gente cosi strana, &amp; feroce, come siamo noi" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The gentle people</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Ne di loro altri seco ritenne, che vn vecchio, chiamato Giumbe" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Giumbe</marginalia_text>
+                    <person name="Giumbe"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Christiani: si come prontamente, e fedelmente egli fece" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fideliter</marginalia_text>
+                </position>
+            </language>
+            <translation>Faithfully.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="alcuna di queste mandorle, subito si piegauano" type="straight"/>
+        <underline language="IT" method="pen" text="Canoa nella naue fra gente cosi strana, &amp; feroce, íto la loro honestà &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="percioche, occorrendo, nel metterli" type="straight"/>
+        <underline language="IT" method="pen" text="ne mai le leuaua; &amp; le do[n]ne si copriuano" type="straight"/>
+        <underline language="IT" method="pen" text="Ne di loro altri seco ritenne, che vn vecchio, chiamato Giumbe" type="straight"/>
+        <underline language="IT" method="pen" text="informarsi" type="double"/>
+        <underline language="IT" method="pen" text="Christiani: si come prontamente, e fedelmente egli fece" type="straight"/>
+        <underline language="IT" method="pen" text="lingua era intesa" type="straight"/>
+        
+        <drawing anchor_text="Canoa nella naue fra gente cosi strana, &amp; feroce, come siamo noi, rispetto" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Medesimemente dico, che ancora debbiamo stimar moito la lore honestà &amp;" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="ne mai le leuaua; &amp; le do[n]ne si copriuano" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

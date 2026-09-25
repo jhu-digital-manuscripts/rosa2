@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.106v.tif" reader="Harvey" signature="[Niii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>the same aduantage Vpon Gunnes.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Scipio" type="straight"/>
+        <underline language="EN" method="pen" text="Antiochus hoste" type="straight"/>
+        <underline language="EN" method="pen" text="his bowes" type="straight"/>
+        <underline language="EN" method="pen" text="strynges beinge" type="straight"/>
+        <underline language="EN" method="pen" text="were weake" type="straight"/>
+        <underline language="EN" method="pen" text="the fielde" type="straight"/>
+        <underline language="EN" method="pen" text="was a dismall day" type="straight"/>
+        <underline language="EN" method="pen" text="compassed" type="straight"/>
+        <underline language="EN" method="pen" text="with waynes" type="straight"/>
+        <underline language="EN" method="pen" text="in womens apparell" type="straight"/>
+        <underline language="EN" method="pen" text="agaynst a companye of women" type="straight"/>
+        <underline language="EN" method="pen" text="Eumenes Sardianus" type="straight"/>
+        <underline language="EN" method="pen" text="coulde not exercise" type="straight"/>
+        <underline language="EN" method="pen" text="his horses" type="straight"/>
+        <underline language="EN" method="pen" text="certayne houres" type="straight"/>
+        <underline language="EN" method="pen" text="suche wise" type="straight"/>
+        <underline language="EN" method="pen" text="their hinder" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="in womens apparell"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="certayne houres"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--vnprofytable, encouraged-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="was a dismall day"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="in womens apparell"/>
+        <mark method="pen" name="comma" place="intext"/> <!--wise that-->
+        
+    </annotation>
+</transcription>

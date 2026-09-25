@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.114r.tif" pagination="219" reader="John Dee" signature="T ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="nepoti suo nomine Brieno" hand="Italian">  <!-- DO: Anchor '' -->
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Brienus nepos Cadwallonis  
+                    </marginalia_text>
+                    <person name="Cadwallon ap Cadfan"/>
+                    <person name="Brian, nephew of Cadwallon ap Cadfan"/>
+                </position>
+            </language>
+            <translation>
+                Brian, the nephew of Cadwallon.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="soror eius" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">  
+                    <marginalia_text>
+                        Soror Brieni 
+                    </marginalia_text>
+                    <person name="Brian, nephew of Cadwallon ap Cadfan"/>
+                </position>
+            </language> 
+            <translation>
+                Brian's sister
+            </translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="ad Exoniam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Exonia.
+                    </marginalia_text>
+                    <location name="Exeter"/>
+                </position>
+            </language>
+            <translation>
+                Exeter.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="qui Magum illum" type="straight"/>
+        <underline language="LA" method="pen" text="illicò nepoti" type="straight"/>
+        <underline language="LA" method="pen" text="Brieno" type="straight"/>
+        <underline language="LA" method="pen" text="soror eius ab" type="double"/>
+        <underline language="LA" method="pen" text="Eadvvinus" type="straight"/>
+        <underline language="LA" method="pen" text="Quae fratre[m] inter pauperes" type="straight"/>
+        <underline language="LA" method="pen" text="vbi Pellitus" type="straight"/>
+        <underline language="LA" method="pen" text="burdonem" type="straight"/>
+        <underline language="LA" method="pen" text="ad Exoniam" type="straight"/>
+        <underline language="LA" method="pen" text="Saxonu[m] venit Exonia[m], &amp; Brienum obsedit" type="straight"/>
+        <underline language="LA" method="pen" text="cum .x. millibus" type="double"/>
+        <underline language="LA" method="pen" text="tali impetu non pr[a]emunitus" type="straight"/>
+        <underline language="LA" method="pen" text="captus est" type="straight"/>
+        <underline language="LA" method="pen" text="Cadvvalino fidelitate[m] iurauit, &amp; obsides de subiectio[n]e" type="straight"/>
+       
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- praelio Penda -->
+        
+    </annotation>
+</transcription>

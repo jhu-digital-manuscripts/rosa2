@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.496v.tif" pagination="444" reader="John Dee" signature="[EEE.vi.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="Orionis " hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Oriente[m] incip..e[m]</marginalia_text> <!-- M.B. Difficult to read the second word. --> 
+                    <!-- FSF: first word, I think, is Oriente[m], not sure about the second, but I think it ends in e[m]; given that it is an accusative, I think it refers to Serpentem -->
+                </position>
+            </language>
+            <translation>To begin with Orion</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Nam quae syderibus claris" type="straight"/>
+        <underline language="LA" method="pen" text="Et vario pinxit" type="straight"/>
+        <underline language="LA" method="pen" text="Haec ille" type="straight"/>
+        <underline language="LA" method="pen" text="Signáque" type="straight"/>
+        <underline language="LA" method="pen" text="Inde Nepae cernes propter fulgentis acumen Aram quam flatu" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

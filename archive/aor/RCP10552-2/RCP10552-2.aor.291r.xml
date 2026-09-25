@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.291r.tif" pagination="95" reader="John Dee" signature="M.iij."/>
+    
+    
+    <annotation>
+        
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vide Villani historia[m] Italica[m]</marginalia_text>
+                    <person name="Giovanni Villani"/>
+                </position>
+            </language>
+            <translation>See Villani, Italian history.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="totam" type="straight"/>
+        <underline language="LA" method="pen" text="terram vsque " type="double"/>
+        <underline language="LA" method="pen" text="Catenesiam, quae est in finibus Scotiae perlustrauit nemine resistente" type="straight"/>
+        <underline language="LA" method="pen" text="terras suas ab hijs quibus rex eas contulerat" type="straight"/>
+        <underline language="LA" method="pen" text="quorum precibus rex acquieuit, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="de Striueline" type="straight"/>
+        <underline language="LA" method="pen" text="donec conuocato consilio" type="straight"/>
+        
+    </annotation>
+    
+</transcription>

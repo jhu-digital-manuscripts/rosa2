@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.195r.tif" pagination="195" reader="John Dee" signature="Bbiij"/>
+    <annotation>
+        
+        <marginalia anchor_text="IX di Maggio del MDII" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1502 May .9.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="D. Bartolomeo Colombo, suo fratello" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Barth. Colo[mbo] Fer. Colo[mbo]</marginalia_text>
+                    <person name="Bartholomew Columbus"/> 
+                    <person name="Ferdinand Columbus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Maspalomas" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Maspalomas</marginalia_text>
+                    <location name="Maspalomas"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="XV di Giugno" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>June 15</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Isola di Matinino" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Matinino</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="a' IX di" type="straight"/>
+        <underline language="IT" method="pen" text="Arzilla il" type="straight"/>
+        <underline language="IT" method="pen" text="D. Bartolomeo" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; me" type="straight"/>
+        <underline language="IT" method="pen" text="Donna Filippa Mognis" type="straight"/>
+        <underline language="IT" method="pen" text="Maspalomas" type="straight"/>
+        <underline language="IT" method="pen" text="calar la" type="straight"/>
+        <underline language="IT" method="pen" text="a' XV di Giugno" type="straight"/>
+        <underline language="IT" method="pen" text="Isola di Matinino" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="tail" type="manicule"/>
+        
+    </annotation>
+</transcription>

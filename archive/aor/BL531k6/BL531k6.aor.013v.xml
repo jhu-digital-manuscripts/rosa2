@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL531k6.013v.tif" pagination="[013v]" reader="John Dee" signature="[D[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="eccentrotete" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Ecce[n]tricitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Eccentricity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="modus compositionis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Modus Compositionis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Method of arrangement.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="veram quantitatem" type="straight"/>
+        <underline language="LA" method="pen" text="per denos gradus" type="straight"/>
+        <underline language="LA" method="pen" text="minima eccentrotete" type="straight"/>
+        <underline language="LA" method="pen" text="omnem mundi durationem colligi" type="straight"/>
+        <underline language="LA" method="pen" text="eademq[ue] ad certum tempus" type="straight"/>
+        <underline language="LA" method="pen" text="inaequali motu Sol. in" type="straight"/>
+        <underline language="LA" method="pen" text="verò modus" type="double"/>
+        <underline language="LA" method="pen" text="istius tabulae prolixus est, praesertim" type="straight"/>
+        <underline language="LA" method="pen" text="eccentrotetis mediae" type="straight"/>
+        <underline language="LA" method="pen" text="eccentrotetis differentiam" type="straight"/>
+        <underline language="LA" method="pen" text="mutatio" type="straight"/>
+        <underline language="EL" method="pen" text="veram quantitatem" type="straight"/>
+        <underline language="LA" method="pen" text="mutatio ἐκκεντρότητος" type="straight"/>
+        <underline language="LA" method="pen" text="Vtraq[ue] enim pendet à motu anomaliae simplicis aequin" type="straight"/>
+        <underline language="LA" method="pen" text="inaequalitatis praeceßionis" type="straight"/>
+        <underline language="LA" method="pen" text="aequinoctioru[m] bis absoluitur" type="straight"/>
+        <underline language="LA" method="pen" text="eccentrotetes vnam periodum" type="straight"/>
+        <underline language="LA" method="pen" text="systemata inaequalitatis annuae aequinoct" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="diuersitatis" copytext="diersitatis" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+       
+        
+    </annotation>
+</transcription>

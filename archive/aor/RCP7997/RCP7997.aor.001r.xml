@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.001r.tif" reader="John Dee" signature="[Ai]"/> 
+    <annotation>
+        
+        <marginalia date="1551" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Joannes Deeus 1551 Londini
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                    <location name="London"/>
+                </position>
+            </language>  
+            <translation>
+                John Dee, 1551, in London.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen" other_reader="unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        V.221
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+    </annotation>
+</transcription>

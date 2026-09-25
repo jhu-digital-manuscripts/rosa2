@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.065v.tif" pagination="114" reader="John Dee" signature="[k 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="cum ♀" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ☾ cu[m] ♀
+                    </marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                    <symbol_in_text name="Venus"/>
+                </position>
+            </language>
+            <translation>
+                The moon with Venus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="NVnc illud intimare debemus, qua ratione defluat partiliter ☾, quáue iungatur, quas uocant Gr[a]eci, σ..αφείασ καὶ πορροίας" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        coniunctiones et defluxus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Union and flowing off.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Platice, ex integris signis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Generally, from integer signs.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Canon.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A rule
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ad sphaerámq[ue] barbarica[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Spha[e]ra barbarica
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A barbaric sphere.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="duarum sororum maritos" type="straight"/>
+        <underline language="LA" method="pen" text="σ..αφείασ καὶ πορροίας" type="dotted"/>
+        <underline language="LA" method="pen" text="ad nullu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="à nullo" type="straight"/>
+        <underline language="LA" method="pen" text="potestas, ex illo termino, qui inter" type="straight"/>
+        <underline language="LA" method="pen" text="utru[m]q[ue] signu[m] est" type="double"/>
+        <underline language="LA" method="pen" text="praetermissa deseritur, ac ex prima signi" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="haec est partilis coniunctio, defluxioq[ue]" type="dotted"/>
+        <underline colour="red" language="LA" method="pen" text="partili debemus omnia rationale tractare" type="dotted"/>
+        <underline language="LA" method="pen" text="totum pariter decreti corpus" type="straight"/>
+        <underline language="LA" method="pen" text="ac omnia ex singularu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ad sphaerámq[ue] barbarica[m]" type="straight"/>
+        <underline language="LA" method="pen" text="radios impugnantibus" type="straight"/>
+        <underline language="LA" method="pen" text="uel eleua[n]tibus" type="straight"/>
+        <underline language="LA" method="pen" text="de ephodis" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

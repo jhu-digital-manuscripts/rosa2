@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.166v.tif" pagination="72" reader="John Dee" signature="[e.iiii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Hermagoras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hermagoras.</marginalia_text>
+                    <person name="Hermagoras of Temnos"/>
+                </position>
+            </language>
+            <translation>Hermagoras of Temnos.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="CONCLVSIO; Haec habet partes tres" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tres partes conclusio[n]is</marginalia_text>
+                </position>
+            </language>
+            <translation>The three parts of a conclusion.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="reducere in memoriam; in memoria[m] redibit; redintegrabitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>redire reducere ] in memoria[m]. redintegrari memoria[m]. renovare memoriam. R.</marginalia_text>
+                </position>
+            </language>
+            <translation>To refresh the memory, to recall to memory, to be restored to memory, to renew the memory. R.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="disperse &amp; diffuse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>diffuse disperse ]</marginalia_text>
+                </position>
+            </language>
+            <translation>Diffusely, in a dispersed manner.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Aut si" type="straight"/>
+        <underline language="LA" method="pen" text="Aut siquis" type="straight"/>
+        <underline language="LA" method="pen" text="Aut siquis" type="straight"/>
+        <underline language="LA" method="pen" text="aut si" type="straight"/>
+        <underline language="LA" method="pen" text="Aut si" type="straight"/>
+        <underline language="LA" method="pen" text="Aut si ratio" type="straight"/>
+        <underline language="LA" method="pen" text="Aut" type="straight"/>
+        <underline language="LA" method="pen" text="Aut eadem" type="straight"/>
+        <underline language="LA" method="pen" text="Aut parum" type="straight"/>
+        <underline language="LA" method="pen" text="Quartus modus" type="double"/>
+        <underline language="LA" method="pen" text="enumerationem, indignationem, conquestione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="res disperse" type="straight"/>
+        <underline language="LA" method="pen" text="diffuse" type="straight"/>
+        <underline language="LA" method="pen" text="reducere in memoriam" type="straight"/>
+        <underline language="LA" method="pen" text="in memoria[m] redibit" type="straight"/>
+        <underline language="LA" method="pen" text="redintegrabitur" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="pin" place="left_margin" text="redintegrari memoria[m]"/>
+        <mark method="pen" name="pin" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="pin" place="tail" text="diffuse disperse"/>
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">.1.</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/> <!--above the numbers in the left margin-->
+        
+    </annotation>
+</transcription>

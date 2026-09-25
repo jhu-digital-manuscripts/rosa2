@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.426r.tif" reader="Harvey" signature="AAA4[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mario; L. Cornelii Syllae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        Marius. Sylla.
+                    </marginalia_text>
+                <person name="Gaius Marius"/>
+                <person name="Sulla"/>
+                </position>
+            </language>
+            <translation>
+                Marius; Sulla. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="L. Cornelii Syllae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                       Sylla. 
+                    </marginalia_text>
+                <person name="Sulla"/>
+                </position>
+            </language>
+            <translation>
+               Sulla. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uinctus ab eo" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; traditus mario est" type="straight"/>
+        <underline language="LA" method="pen" text="praecipua opera" type="straight"/>
+        <underline language="LA" method="pen" text="L. Cornelij Syllae" type="straight"/>
+        <underline language="LA" method="pen" text="quaestoris Marij" type="straight"/>
+        <underline language="LA" method="pen" text="triumpho C. Marij ductus" type="straight"/>
+        <underline language="LA" method="pen" text="Iugurtha cum duobus filijs" type="straight"/>
+        <underline language="LA" method="pen" text="in carcere necatus" type="straight"/>
+        <underline language="LA" method="pen" text="Antonius praetor in" type="straight"/>
+        <underline language="LA" method="pen" text="Aquilius de pecunijs repetundis causam" type="straight"/>
+        <underline language="LA" method="pen" text="Ptolomaeus Cyrenarium rex, cui" type="straight"/>
+        <underline language="LA" method="pen" text="mortuus haeredem populum Romanum reliquit" type="straight"/>
+        <underline language="LA" method="pen" text="Ariobarzanes" type="straight"/>
+        <underline language="LA" method="pen" text="regnum" type="straight"/>
+        <underline language="LA" method="pen" text="Cornelio Sylla reductus" type="straight"/>
+        <underline language="LA" method="pen" text="Partharum legati à rege Arsace" type="straight"/>
+        <underline language="LA" method="pen" text="ad Syllam uenerunt" type="straight"/>
+        <underline language="LA" method="pen" text="uir summae innocentiae" type="straight"/>
+        <underline language="LA" method="pen" text="repentundarum damnatus, in exilium" type="straight"/>
+        <underline language="LA" method="pen" text="Senatus" type="straight"/>
+        <underline language="LA" method="pen" text="impotentiam equestris ordinis in iudicijs" type="straight"/>
+        <underline language="LA" method="pen" text="ad se iudicia transferrentur" type="straight"/>
+        <underline language="LA" method="pen" text="spe largitionis plebem" type="straight"/>
+        <underline language="LA" method="pen" text="Italici populi defecerunt" type="straight"/>
+        <underline language="LA" method="pen" text="unius foeminae opera, ad quam diuertebatur, captiuitate exemptus" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <symbol name="JC" place="intext"/>
+        
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Am -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- popu -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- defen -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Ser -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- co -->
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- Marij fuit-->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.049v.tif" pagination="[49[v]]" reader="John Dee" signature="[N[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="[Nitrum est] der spiritus, vnd Merc. is contrarius in sie beide also scherpffer dann der Niturm vnd gewaltiger dann Sulphur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>sulphur nitru[m] ☿ / fulminis / est corpus spiritus vtrisq[ue] co[n]trarius - nitro scherpffer sulphure [pobatior] </marginalia_text> <!--JG: Unsure about last word-->
+                </position>
+            </language>
+            <translation>Sulphur, nitrum [and] Mercury is of lightening. Body, spirit, and contrary in both: sharper than nitrum and [....] than sulphur.</translation>
+        </marginalia>
+         
+        <marginalia anchor_text="Autumniert" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Autumnus</marginalia_text>
+                </position>
+            </language>
+            <translation>Autumnal.</translation> <!--JG: Not exactly sure, seems that the meaning of the Latin word is different than of its German counterpart to which it refers-->
+        </marginalia>
+        
+        <marginalia anchor_text="Vltimam materiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vltima Materia</marginalia_text>
+                </position>
+            </language>
+            <translation>Ultimate matter.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="sich die gradus des Fewrs auch das höchste einander nach" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ignis etia[m] gradus sum[m]i accedu[n]t</marginalia_text>
+                </position>
+            </language>
+            <translation>Also the degrees of fire approach [the degrees] of the hightest.</translation> <!--JG: Don't get it, accedunt needs object or so it seems--> <!--KS: could 'summi' be it?--> <!-- FSF: to concur with the text, I"d suggest 'Also the degrees of fire approach [the degrees] of the hightest' -->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Impedimenta fulminum</marginalia_text>
+                    <emphasis method="pen" text="Impedimenta fulminum" type="straight"/>
+                </position>
+            </language>
+            <translation>Impediments of the lightning.</translation> 
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="in sie beide" type="straight"/>
+        <underline language="DE" method="pen" text="scherpffer dann der Nitrum" type="straight"/>
+        <underline language="DE" method="pen" text="dann Sulphur" type="straight"/>
+        <underline language="DE" method="pen" text="Autumniert" type="straight"/>
+        <underline language="DE" method="pen" text="wil zeitig" type="straight"/>
+        <underline language="LA" method="pen" text="in Vltimam materiam" type="straight"/>
+        <underline language="DE" method="pen" text="in den Stral" type="straight"/>
+        <underline language="DE" method="pen" text="sein augment" type="straight"/>
+        <underline language="DE" method="pen" text="sich die gradus des Fewrs auch das höchste einander nach" type="straight"/>
+        <underline language="DE" method="pen" text="biß die praeparation durch den Vulcanum geschicht" type="straight"/>
+        <underline language="DE" method="pen" text="prima nicht zum endt komt" type="straight"/>
+        <underline language="DE" method="pen" text="zergehet also" type="straight"/>
+        <underline language="DE" method="pen" text="vbrige hitze auch nach" type="straight"/>
+        <underline language="DE" method="pen" text="weter" type="straight"/>
+        <underline language="DE" method="pen" text="zusammen in ein klippen kompt" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="FolgersHa2.002r.tif" pagination="323" reader="Harvey"/>	<!-- ABO 006right -->
+    <annotation>
+       
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Turpis est, qui non est ingenio pulcherrimus.</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        nulla vanitas vllo modo prodenda: 
+                        omnis perfectio, quauis ratione demonstranda.
+                    </marginalia_text>
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+            </language>
+            <translation>
+                He who is not most beautiful by nature is ugly. 
+                No vanity must be revealed in any way: every perfection, by any method, must be shown.  
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="90" place="right_margin">
+                    <marginalia_text>
+                        I am sorie for him: he dyed
+                        withowt a Plaudite.
+                    </marginalia_text>
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Nemo vnq[uam] satis se extendit, in sua 
+                        excellentia demonstranda.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                No man ever exerts himself enough in showing his own excellence.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Quod non licet scribere, tantò imprimatur profu[n]dius.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                That which one is not permitted to write is impressed so much more deeply.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        gelosia, cagione dell'adulterio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                jealousy, cause of adultery.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="90" place="left_margin">
+                    <marginalia_text>
+                        Nemo gloria[e] securior: nemo dignitatis curiosior.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                No one more sure of glory: no one more devoted to dignity.
+            </translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="il marito a gran torto" type="straight"/>
+        <underline language="IT" method="pen" text="preso sospetto di lei" type="straight"/>
+        <underline language="IT" method="pen" text="tal pensiero nell'" type="straight"/>
+        <underline language="IT" method="pen" text="rifinaua di dirne segretamente ogni male" type="straight"/>
+        <underline language="IT" method="pen" text="prouocarla con parole pungenti" type="straight"/>
+        <underline language="IT" method="pen" text="osseruare tutti i detti, i fatti, e i cenni anchora" type="straight"/>
+        <underline language="IT" method="pen" text="dirne male" type="straight"/>
+        <underline language="IT" method="pen" text="di cacciarla uia" type="straight"/>
+        <underline language="IT" method="pen" text="alle false riprensioni, nè" type="straight"/>
+        <underline language="IT" method="pen" text="uani sospetti" type="straight"/>
+        <underline language="IT" method="pen" text="Diauolo la tentò, &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="adulterio, con colui" type="straight"/>
+        <underline language="IT" method="pen" text="haueua preso sospetto" type="straight"/>
+        <underline language="IT" method="pen" text="che ella hebbe il delitto" type="straight"/>
+        <underline language="IT" method="pen" text="n'andò che'l marito non ne seppe nulla" type="straight"/>
+        <underline language="IT" method="pen" text="potè il pazzo marito" type="straight"/>
+        <underline language="IT" method="pen" text="era stato cagione di questo disordine" type="straight"/>
+        <underline language="IT" method="pen" text="doue fusse capitata la moglie" type="straight"/>
+        <underline language="IT" method="pen" text="si riconciliò con la moglie, che con" type="straight"/>
+        <underline language="IT" method="pen" text="importune, &amp; dishoneste cauillationi hauea" type="straight"/>
+        <underline language="IT" method="pen" text="questo geloso" type="straight"/>
+        <underline language="IT" method="pen" text="fatto la fauola di tutti i" type="straight"/>
+        <underline language="IT" method="pen" text="Turdus sibi malum" type="straight"/>
+        <underline language="IT" method="pen" text="in casa del nobile, &amp; cortesissimo" type="straight"/>
+        <underline language="IT" method="pen" text="Castruccio Castracani" type="straight"/>
+        <underline language="IT" method="pen" text="assai nobili" type="straight"/>
+        <underline language="IT" method="pen" text="materia da ridere, et stare allegri, &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="un poco to[n]detta" type="straight"/>
+        
+        <symbol name="Sun" place="left_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark language="IT" method="pen" name="plus_sign" place="head" text="preso sospetto"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--osser-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--ra-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--adul-->
+        <mark method="chalk" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--mi-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--im-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--adul-->
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> <!--between marginal notes-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--prouer-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--Albe-->
+        <mark method="chalk" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/> 
+        
+        <mark method="pen" name="dot" place="intext"/> <!--lei, perche-->
+        <mark method="pen" name="dot" place="intext"/> <!--lei, &-->
+        <mark method="pen" name="dot" place="intext"/> <!--sospetti, il-->
+        <mark method="pen" name="comma" place="intext"/> <!--colui di-->
+        <mark method="pen" name="dot" place="intext"/> <!--nulla, lasciando-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!--mesi intendere-->
+        <mark method="pen" name="straight_quotation_mark" place="intext"/> <!--intendere, dove-->
+        <mark language="IT" method="pen" name="plus_sign" place="intext" text="questo geloso"/>
+        <mark language="IT" method="pen" name="plus_sign" place="intext" text="fauola"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="IT" method="pen" name="plus_sign" place="intext" text="malum"/>
+        <mark method="pen" name="dot" place="intext"/> <!--cacat, dice-->
+        <mark method="pen" name="comma" place="intext"/> <!--Lucca in-->
+        <mark method="pen" name="dot" place="intext"/> <!--Michiele, M.-->
+        <mark method="pen" name="dot" place="intext"/> <!--allegri, &-->
+        
+        <mark method="chalk" name="horizontal_bar" place="tail"/>
+
+    </annotation>
+</transcription>

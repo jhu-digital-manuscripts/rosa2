@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.172r.tif" pagination="83" reader="John Dee" signature="f.ii."/>   
+    <annotation>
+        
+        
+        <marginalia anchor_text="constitutio translatiua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Constitutio tra[n]slatiua.</marginalia_text>
+                </position>
+            </language>
+            <translation>An translative (or procedural) issue [Loeb 386, 221].</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Locus aute[m] co[m]munis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>loci co[mmun]es</marginalia_text>
+                </position>
+            </language>
+            <translation>Commonplaces.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="constitutione[m] generale[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Constitutio[n]is generalis.</marginalia_text>
+                </position>
+            </language>
+            <translation>A qualitative issue [Loeb 386, 225].</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Huius primas esse partes duas nobis videri diximus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Partes</marginalia_text>
+                </position>
+            </language>
+            <translation>The parts.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aut facti indignandi" type="straight"/>
+        <underline language="LA" method="pen" text="vt causa cadat is, qui" type="straight"/>
+        <underline language="LA" method="pen" text="multu[m] oportet vt diu consistat" type="straight"/>
+        
+        <symbol name="Taurus" place="right_margin"/>  <!-- DO: Not sure if this is Taurus -->
+        
+        <drawing anchor_text="multu[m] oportet vt diu consistat" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

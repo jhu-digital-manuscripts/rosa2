@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>43</illustrations>
+    <totalPages>195</totalPages>
+    <dimensions units="mm">
+        <width>125</width>
+        <height>195</height>
+    </dimensions>
+    <dates>
+        <startDate>1475</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="195v" start="1r">195</pages>
+            <illustrations>43</illustrations>
+            <linesPerColumn>34</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Egerton 2022</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>Parchment</material>
+            <origin>Paris, France</origin>
+            <currentLocation>London</currentLocation>
+            <repository>British Library</repository>
+            <shelfmark>Egerton 2022</shelfmark>
+	    <website>http://searcharchives.bl.uk/IAMS_VU2:IAMS032-001982949</website>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Egerton 2022</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>Paris, France</origin>
+            <currentLocation>London</currentLocation>
+            <repository>British Library</repository>
+            <shelfmark>Egerton 2022</shelfmark>
+	    <website>http://searcharchives.bl.uk/IAMS_VU2:IAMS032-001982949</website>
+        </bibliography>
+    </bibliographies>
+</book>

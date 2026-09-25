@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.034v.tif" pagination="[34[v]]" reader="John Dee" signature="[Jij[v]]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Qui sit si venti pluuiaq[ue] similiter descendu[n]t, quod pluuia[e] non ferantur lateraliter sup[er] Terram, veluti feru[n]tur venti,
+                    sed quod semp[er] ad [rectum] terra[e] cadunt. Qui sit [etia[m]] quod no[n] [secundum] stellar[um] motu[m] vna [etu[m]] localite progrediu[n]t[ur] pluvia[e]!</marginalia_text> <!--JG: Unsure--> <!-- FSF: I think secundu[m] stellaru[m] motu[m] -->
+                </position>
+            </language>
+            <translation>What may be if the winds and rain fall down similarly, because the rain is brought laterally onto the earth, like the winds are carried,
+                but because they always fall towards the right of the earth. What may also be because the rain proceeds not following the movement of the stars, gone in one locality.</translation> <!--JG: Unsure-->
+        </marginalia>
+        
+        <marginalia anchor_text="Buxenpuluer das da kompt auß den Cauernis vnd Emunctorijs der Cataracten, der Vulcanischen Windtsterne" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ventus</marginalia_text>
+                </position>
+            </language>
+            <translation>Wind.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Si ita ex stellaru[m] corporibus cu[m] Venti tum pluvia[e] descendant ad nos: quid [dicemus] de stellis interpositis inter ip[s]as ventosas vel pluuiosas et nos.
+                        [habet] quod a ventis [...st..ijs] pulsentur, an non. Vel quid [dice...].</marginalia_text> <!--JG: Unsure--> <!-- FSF: the first word in this line might be h[abet] -->
+                </position>
+            </language>
+            <translation>If thus both the winds and the rain fall down from the bodies of the stars towards us: what do we say about the stars placed between those winds, rains, and us.
+            It has that they were beaten by the winds, whether not. Or what [...]? </translation> <!--JG: Unsure-->
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Sul. Sal, vn[d] Merc. dem" type="straight"/>
+        <underline language="DE" method="pen" text="fewer" type="straight"/>
+        <underline language="DE" method="pen" text="nicht reucht" type="straight"/>
+        <underline language="DE" method="pen" text="schnelt" type="straight"/>
+        <underline language="DE" method="pen" text="Buxenpuluer das da kompt auß den Cauernis vnd Emunctorijs der Cataracten, der Vulcanischen Windtsterne" type="straight"/>
+        <underline language="DE" method="pen" text="Windischer Salpeter Sul. vnd Mercurius" type="straight"/>
+        <underline language="DE" method="pen" text="eine ist nach jrdischer Natur" type="straight"/>
+        <underline language="DE" method="pen" text="nach Etherischer" type="straight"/>
+        <underline language="DE" method="pen" text="vnd was dem Regen zugehört" type="straight"/>
+        <underline language="DE" method="pen" text="weiß vnd forme wie die" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

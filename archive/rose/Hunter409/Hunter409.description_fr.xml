@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscrit</note>
+          <note type="commonName">Hunter 409</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="151" unit="folios">151</measure>
+            <dimensions>
+              <height unit="mm"/>
+              <width unit="mm"/>
+            </dimensions>
+          </extent>
+          <note type="illustrations">0</note>
+          <note type="material">parchemin</note>
+          <pubPlace>England</pubPlace>
+          <date notAfter="1500" notBefore="1400">15e siècle</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Glasgow</settlement>
+            <repository>University of Glasgow Library</repository>
+            <idno>MS Hunter 409</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="150r">1r-150r</locus>
+              <title>Romaunt of the Rose</title>
+              <note type="textid">romaunt</note>
+              <note type="folios">150</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">24</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.056v.tif" pagination="98" reader="John Dee" signature="[i.j.[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="trium orbis partium distributio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Trium orbis partiu[m] Distributio</marginalia_text>
+                </position>
+            </language>
+            <translation>The division of the world into three parts.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Orientalium scripta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Orie[n]taliu[m] scripta</marginalia_text>
+                </position>
+            </language>
+            <translation>Writings of the East.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Infra</marginalia_text>
+                </position>
+            </language>
+            <translation>Below.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iosephi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iosephus</marginalia_text>
+                    <person name="Joseph"/>
+                </position>
+            </language>
+            <translation>Joseph.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vt Herba parietaria" type="straight"/>
+        <underline language="LA" method="pen" text="Babylonicae structuram interruptam sequuta est trium orbis partium distributio. Nam" type="straight"/>
+        <underline language="LA" method="pen" text="sermone eodem" type="straight"/>
+        <underline language="LA" method="pen" text="singuli sese ad" type="straight"/>
+        <underline language="LA" method="pen" text="intelligi poterant" type="straight"/>
+        <underline language="LA" method="pen" text="cuique familiae" type="grid"/>
+        <underline language="LA" method="pen" text="posthac in commune" type="straight"/>
+        <underline language="LA" method="pen" text="tantarum rerum" type="straight"/>
+        <underline language="LA" method="pen" text="librorum veterum" type="straight"/>
+        <underline language="LA" method="pen" text="Orientalium" type="straight"/>
+        <underline language="LA" method="pen" text="istoru[m] nominu[m] nulla" type="straight"/>
+        <underline language="LA" method="pen" text="qui Heuila Indiam" type="straight"/>
+        <underline language="LA" method="pen" text="sunt errata vellem" type="straight"/>
+        <underline language="LA" method="pen" text="posteris Noe dice[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="ad Iosephi" type="straight"/>
+        <underline language="LA" method="pen" text="praesentia monuisse satis fuerit, tres filios Noe complesse suis posteris &amp; familiis ipsum orbem, ex" type="straight"/>
+        <underline language="LA" method="pen" text="tum hominum" type="straight"/>
+        <underline language="LA" method="pen" text="recensentur tamen in nepotibus seu posteris Noe" type="straight"/>
+        <underline language="LA" method="pen" text="principes, ac" type="straight"/>
+        <underline language="LA" method="pen" text="nomina gentibus imposuerunt" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+    </annotation>
+</transcription>

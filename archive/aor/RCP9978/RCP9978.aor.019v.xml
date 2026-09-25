@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.019v.tif" reader="John Dee" signature="[E iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="si nomen illius incipiat ab aliqua istarum literarum, a e i o v, uotis correspondebunt euentus" hand="English_secretary" id="RCP9978:046:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>si sit, B, M, K, S: invenies vel perdes
+                        C D Q: mortem significat: malu[m] vel da[m]n[um]        
+                        X R P: gaudebis in vita tua
+                        L Y: habebis quod petis.
+                        G F: malam causam significat
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>If it is B, M, K, S: you will find or you will lose. C, D, Q: it signifies death; misfortune or injury. X, R, P: you will have joy in your life. L, Y: you will have what you seek. G, F: it signifies a bad situation.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>hic in libro antiq[uo] inveni ]</marginalia_text>  
+                </position>
+            </language>
+            <translation>I discovered this in the old book. ]</translation>
+        </marginalia>
+        
+        <underline id="RCP9978:046:u0001" language="LA" method="pen" text="a e i o v, uotis correspondebunt" type="straight"/>
+        <underline language="LA" method="pen" text="copulauerim Chiromantiam ac Physionomiam" type="straight"/>
+        <underline language="LA" method="pen" text="praeceptis excerpsimus" type="triple"/>
+        
+        <errata amendedtext="Literomantia" copytext="Biteromantia" language="LA"/>     
+        <errata amendedtext="agnoscitur" copytext="agniscitur" language="LA"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP9978:046:m0001"/>
+            <marginal_annotation idref="RCP9978:046:u0001"/>
+            <relation from="RCP9978:046:m0001" to="RCP9978:046:u0001" type="directed"/> 
+        </physical_link>
+        
+    </annotation>
+</transcription>

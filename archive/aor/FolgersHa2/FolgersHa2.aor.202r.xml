@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.202r.tif" pagination="227" reader="Harvey" signature="P2[r]"/>	<!-- ABO 206right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.202r_0001" marginalia_continues_from="Ha2.201v_0001" marginalia_to_transcription="Ha2.201v.xml">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						<!-- Continued from facing page, head, Ha2.201v --> [p. 226: Vultu, voce, gestu; omni parte absolutus vir:]
+						idq[ue] Semper: et apud maximas maximè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>[p. 226: In expression, voice, and gesture: in all parts the man is absolute:] and this he always is: and especially among the greatest.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Both, neither: one, both. )
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Somnium splendidum, sed miserum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A splendid, but miserable dream.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Ferdinandi Corduba[e] singulare in perdiscendis artibus Arcanum: vnicus artis
+						vnus absolutus auctor: et Virtus sua ipsius semper vnita.
+					</marginalia_text>
+					<person name="Gonzalo Fernández de Córdoba"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Cum quotidiana /
+						repetitione; et 
+						acerrima collatione.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The singular mystery of Gonzalo Fernández de Córdoba in learning arts thoroughly: the unique and one complete author of art: and his virtue was always united in itself.
+				With daily repetition and the most keen union.
+			</translation> 
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Ingenuitatis est, alioru[m] magna maximi a[e]stimare: tua maxima parui pendere.
+						Simplicis iudicij nullu[m] certius argumentu[m], quàm paruis lucris, aut laudibus gloriari.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>It is a sign of noble-mindedness to estimate the great deeds of the greatest one of other men: to weigh your greatest things against the small. 
+			It is a sign of a simple person to glorify no argument of judgement more certain than with small profits or by praises.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="con l'Aurora innanzi" type="straight"/>
+		<underline language="IT" method="pen" text="vsciua'l Sol cinto" type="straight"/>
+		<underline language="IT" method="pen" text="viddi il ghiaccio" type="straight"/>
+		<underline language="IT" method="pen" text="presso la rosa" type="straight"/>
+		<underline language="IT" method="pen" text="in vn te[m]po 'l gran freddo, e'l gran caldo" type="straight"/>
+		<underline language="IT" method="pen" text="Veggo la fuga del mio viuer" type="straight"/>
+		<underline language="IT" method="pen" text="presta" type="straight"/>
+		<underline language="IT" method="pen" text="nel fuggir del Sole" type="straight"/>
+		<underline language="IT" method="pen" text="ruina del mondo manifesta" type="straight"/>
+		<underline language="IT" method="pen" text="sono i sogni" type="straight"/>
+		<underline language="IT" method="pen" text="SOGNI" type="straight"/>
+		<underline language="IT" method="pen" text="tre vere" type="straight"/>
+		<underline language="IT" method="pen" text="due false" type="straight"/>
+		<underline language="IT" method="pen" text="le vere chiama" type="straight"/>
+		<underline language="IT" method="pen" text="false insonnio" type="straight"/>
+		<underline language="IT" method="pen" text="Sogno" type="straight"/>
+		<underline language="IT" method="pen" text="è oscuro" type="straight"/>
+		<underline language="IT" method="pen" text="Ioseffo" type="straight"/>
+		<underline language="IT" method="pen" text="Ioseffo l'interpretò" type="straight"/>
+		<underline language="IT" method="pen" text="Gioue la lauaua" type="straight"/>
+		<underline language="IT" method="pen" text="Phebo l'vngeua" type="straight"/>
+		<underline language="IT" method="pen" text="appresso Oronte" type="straight"/>
+		<underline language="IT" method="pen" text="Gioue, cioè l'aria gli" type="straight"/>
+		<underline language="IT" method="pen" text="Phebo, cioè il Sole, liquefece" type="straight"/>
+		<underline language="IT" method="pen" text="Oracolo" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="Gioue lo lauaua, &amp; che Phebo l'vngeua" type="straight"/>
+		
+		<symbol name="SS" place="right_margin"/>
+		<symbol name="SS" place="right_margin"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Anzi di tutti, &amp; nel fuggir del Sole, La ruina del mondo manifesta"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--preme-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--l'vn-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--cro-->
+		<mark method="pen" name="quotation_mark" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--quel-->
+		
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--manifesta-->
+		<mark method="pen" name="comma" place="intext"/> <!--Samo, segno-->
+		<mark method="pen" name="comma" place="intext"/> <!--segno, che-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Gioue"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Phebo"/>
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--vnto Oracolo-->
+		
+    </annotation>
+</transcription>

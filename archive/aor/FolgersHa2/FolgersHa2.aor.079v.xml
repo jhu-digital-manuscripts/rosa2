@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.079v.tif" reader="Harvey" signature="[*8v]"/>	<!-- ABO 84left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Statim discitur, aut fit; cum Hoc agitur.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				One immediately learns or becomes, when This is done.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Elementa admirarer, nisi nossem quintu[m] elementu[m].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				I would admire the elements, if I did not know the fifth element.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Leporem boue venari: idiota[e] est.)
+					</marginalia_text>
+					<X-ref book_title="Adagia" language="LA" person="Erasmus" text="Leporem venari leporem"/>
+				</position>
+			</language>
+			<translation>
+				"To catch a hare with an ox" is for an ignorant man.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						)  Bona honesta, utilia, iucunda
+						) magis, magisq[ue] auget vera
+						) solertia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				True resourcefulness increases more and more those honorable, useful, and pleasant matters.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) Neostoicheologia.
+						<!-- Neologism. -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A new study of directing one's life.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Nec mora: nec requies: Romana disciplina.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Neither delay nor rest: this is Roman discipline.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Neostoicheopraxia.
+						<!-- Neologism. -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A new practical discipline for directing one's life.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Iam nunc: hodiè: quotidiè.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Just now, today, daily.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Non est seria virtus, qua[e] non
+						quotidiè crescit
+						Animo, corpore, fortuna.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Virtue is not earnest if it does not grow daily in mind, body, and fortune.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Quotidiana
+						/ vnici auxesis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The daily amplification of the unique man.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Hoc tandem est sapere, omnem egregiè dictorum, factorumq[ue] multitudinem,
+						redigere ad Vnitatem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Finally, it is knowing that every great number of outstanding sayings and deeds leads back towards unity.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Tutto vno: come Monofilo.
+					</marginalia_text>
+					<person name="Monophilus"/>
+				</position>
+			</language>
+			<translation>
+				Everything is one, like Monophilus.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						The World, is simple in skill; &amp; rude in practis. The pragmatician, is
+					</marginalia_text>
+				</position>
+				<position book_orientation="180" place="tail">
+					<marginalia_text>
+						profound in skill; &amp; fine in practis.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Principi caualcare" type="straight"/>
+		<underline language="IT" method="pen" text="dolersi di cose" type="straight"/>
+		<underline language="IT" method="pen" text="ne rallegrerebbono" type="straight"/>
+		<underline language="IT" method="pen" text="l'argutie" type="straight"/>
+		<underline language="IT" method="pen" text="à tempo" type="straight"/>
+		<underline language="IT" method="pen" text="fortuna perche" type="straight"/>
+		<underline language="IT" method="pen" text="al fine" type="straight"/>
+		<underline language="IT" method="pen" text="co'fatti" type="straight"/>
+		<underline language="IT" method="pen" text="con le parole" type="straight"/>
+		<underline language="IT" method="pen" text="troppo vuole" type="straight"/>
+		<underline language="IT" method="pen" text="tutto perde" type="straight"/>
+		<underline language="IT" method="pen" text="etia[n]dio dal nimico" type="straight"/>
+		<underline language="IT" method="pen" text="mogliè fa fusa" type="straight"/>
+		<underline language="IT" method="pen" text="sotto varij colori da gli" type="straight"/>
+		<underline language="IT" method="pen" text="Qua[n]ta sole[n]ne stoltitia regni" type="straight"/>
+		<underline language="IT" method="pen" text="maggior prezzo le" type="straight"/>
+		<underline language="IT" method="pen" text="Nelle auuersità distinguersi" type="straight"/>
+		<underline language="IT" method="pen" text="pudiche" type="straight"/>
+		<underline language="IT" method="pen" text="Le liti esser" type="straight"/>
+		<underline language="IT" method="pen" text="beffe della fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="p[ro]vide[n]za" type="straight"/>
+		<underline language="IT" method="pen" text="p[ro]ueder, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="pungenti stimoli" type="straight"/>
+		<underline language="IT" method="pen" text="Li debiti ordinariame[n]te" type="straight"/>
+		
+		<mark language="IT" method="pen" name="quotation_mark" place="left_margin" text="In tutte le cose douersi eleggere huomini peritissimi"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="left_margin" text="Chi troppo vuole tutto perde"/>
+		<mark method="pen" name="quotation_mark" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--pa-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--p[er]mettere-->
+		
+		<mark method="pen" name="plus_sign" place="intext"/>
+		<mark method="pen" name="plus_sign" place="intext"/>
+
+    </annotation>
+</transcription>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.070r.tif" pagination="139" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="aliquid aqequum, sed prohibitu[n] iure" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Aliquid a[e]quu[m] prohibetur Iure.</marginalia_text>
+                </position>
+            </language>
+            <translation>Sometimes equal terms is prohibited by law.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sunt enim quaedan no[n] laudabilia natura, sed iure co[n]cessa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Ius no[n] natura laudabile aliquid conceßit</marginalia_text>
+                </position>
+            </language>
+            <translation>Law not nature grants something praiseworthy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Accusatori" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Accusator.</marginalia_text>
+                </position>
+            </language>
+            <translation>Accuser.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quae tum generales status uocaba[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Status Diuisio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Division of the issue.</translation>
+        </marginalia>
+         
+        <marginalia anchor_text="propterea quòd multae sunt leges" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Legis Sectio</marginalia_text>
+                </position>
+            </language>
+            <translation>Separating laws.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Finitio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fintio</marginalia_text>
+                </position>
+            </language>
+            <translation>Definition.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="laudabilia natura, sed iure co[n]cessa, ut in XII. tabulis debitoris corpus" type="straight"/>
+        <underline language="LA" method="pen" text="Est aliquid aequum, sed probihitu[m]" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

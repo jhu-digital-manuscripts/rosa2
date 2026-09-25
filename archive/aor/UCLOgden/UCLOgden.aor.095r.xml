@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.095r.tif" pagination="173" reader="John Dee" signature="p 3"/>
+    <annotation>
+        
+        <marginalia anchor_text="Archimedes" hand="Italian" id="UCLOgden:196:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Archimedes.
+                    </marginalia_text>
+                    <person name="Archimedes"/>
+                </position>
+            </language>
+            <translation>
+                Archimedes.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="genitura diuinum facit artis mechanicae" type="straight"/>
+        <underline language="LA" method="pen" text="fabricata sphaera" type="straight"/>
+        <underline language="LA" method="pen" text="coeli lapsum" type="straight"/>
+        <underline language="LA" method="pen" text="omnium syderum" type="straight"/>
+        <underline language="LA" method="pen" text="exemplo diuin[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="qui Romanos exercitus, mechanicis artibus saepe prostrauit" type="straight"/>
+        <underline language="LA" method="pen" text="lugubri moerore defleuit" type="straight"/>
+        
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.210v.tif" pagination="404" reader="Harvey" signature="[ll4v]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Publij Cornelij Scipionis descriptio perinsignis: qualis etiam i[nfr]a, 460.
+                    </marginalia_text>
+                    <person name="Scipio Africanus"/>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000482" text="460"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>A very remarkable description of Publius Cornelius Scipio, similarly as also below, 460.
+            </translation>
+        </marginalia>
+
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        The most excellent Scipio, a diuine &amp; fatal man. 
+                    </marginalia_text>
+                    <person name="Scipio Africanus"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Achilles docuit Cyrum Xenophontis: Cyrus Scipionem: Scipio Syllam: 
+                        Sylla Ca[e]sare[m]: Ca[e]sar omnes posteros.</marginalia_text>
+                    <person name="Achilles"/>
+                    <person name="Xenophon"/>
+                    <person name="Cyrus the Great"/>
+                    <person name="Sulla"/>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Achilles taught Xenophon’s Cyrus; Cyrus Scipio; Scipio Sulla; Sulla Caesar and Caesar all successors.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        habuit hoc Romuli, s[upr]a, 6.
+                    </marginalia_text>
+                    <person name="Romulus"/>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000028" text="6"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>He had this characteristic that Romulus had, [see] above, 6.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Fabius, bello melior: Marcellus pra[e]lio: Martius facinore: Nero itinere: Scipio omni bellica laude excellentissimus, 
+                        id est, arte militari, et singulari Virtute; domina singularis Fortuna[e]. Ex omnibus Romanis, solo Ca[e]sare minor: 
+                        quanto difficilius erat magnum Pompeium, et sapientissimos Romanos vincere, quàm Annibalem, et barbaros. 
+                        Eccè Romana[e] Industria[e], virtutisq[ue] miracula.
+                    </marginalia_text>
+                    <person name="Fabius Maximus"/> <!--JG: Not clear which Maximus Harvey means-->
+                    <person name="Marcus Claudius Marcellus"/>
+                    <person name="Lucius Marcius"/>
+                    <person name="Gaius Claudius Nero"/>
+                    <person name="Scipio Africanus"/>
+                    <person name="Julius Caesar"/>
+                    <person name="Pompey"/>
+                    <person name="Hannibal"/>
+                    <emphasis method="pen" text="Fabius" type="straight"/>
+                    <emphasis method="pen" text="Marcellus" type="straight"/>
+                    <emphasis method="pen" text="Martius" type="straight"/>
+                    <emphasis method="pen" text="Nero" type="straight"/>
+                    <emphasis method="pen" text="Scipio" type="straight"/>
+                    <emphasis method="pen" text="Ca[e]sare" type="straight"/>
+                </position>
+            </language>
+            <translation>Fabius was better in warfare, Marcellus in battle, Marcius in the act, [Claudius] Nero in marching; 
+                Scipio is the definite superior when it comes to any military acclaim, namely, because of his military skill, and singular valor, 
+                that master of singular Fortune. He surpasses all the Romans and is only inferior to Caesar. How much more difficult it was to conquer 
+                the great Pompey and the really wise Romans, than Hannibal and the barbarians! Behold the miracles of Roman industry and valor.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="subitò P. Cornelius illius" type="straight"/>
+        <underline language="LA" method="pen" text="quatuor &amp; uiginti fermè annos" type="straight"/>
+        <underline language="LA" method="pen" text="in superiore unde conspici" type="straight"/>
+        <underline language="LA" method="pen" text="ominati extemplò sunt felix" type="straight"/>
+        <underline language="LA" method="pen" text="ad unum omnes no[n]" type="straight"/>
+        <underline language="LA" method="pen" text="iam residerat impetus animorum ardorq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="quòd fauor plus ualuisset" type="straight"/>
+        <underline language="LA" method="pen" text="quàm ratio [a]etatis" type="straight"/>
+        <underline language="LA" method="pen" text="inter sepulchra patris patruiq[ue] res" type="straight"/>
+        <underline language="LA" method="pen" text="solicitudinem curamq[ue] hominu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="aetate sua imperioq[ue] mandato" type="straight"/>
+        <underline language="LA" method="pen" text="magno elatoq[ue] animo disseruit" type="straight"/>
+        <underline language="LA" method="pen" text="ardorem" type="straight"/>
+        <underline language="LA" method="pen" text="excitaret rursus, innouaretq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="homines certioris spei" type="straight"/>
+        <underline language="LA" method="pen" text="fides promissi" type="straight"/>
+        <underline language="LA" method="pen" text="ratio ex fiducia rerum subijcere" type="straight"/>
+        <underline language="LA" method="pen" text="non ueris" type="straight"/>
+        <underline language="LA" method="pen" text="uirtutibus mirabilis" type="straight"/>
+        <underline language="LA" method="pen" text="arte quoq[ue] quadam ab" type="straight"/>
+        <underline language="LA" method="pen" text="ostentationem earum compositus" type="straight"/>
+        <underline language="LA" method="pen" text="nocturnas uisa species" type="straight"/>
+        <underline language="LA" method="pen" text="uelut diuinitus" type="straight"/>
+        <underline language="LA" method="pen" text="ipse" type="straight"/>
+        <underline language="LA" method="pen" text="superstitione" type="straight"/>
+        <underline language="LA" method="pen" text="imperia co[n]siliaq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="uelut forte oraculi" type="straight"/>
+        <underline language="LA" method="pen" text="sine cunctatione assequeretur" type="straight"/>
+        <underline language="LA" method="pen" text="nullo die prius ullam publica[m] priuatamq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="quàm in Capitolium iret" type="straight"/>
+        <underline language="LA" method="pen" text="tempus solus in secreto ibi tereret" type="straight"/>
+        <underline language="LA" method="pen" text="omnem uitam seruabatur" type="straight"/>
+        <underline language="LA" method="pen" text="seu consulto" type="straight"/>
+        <underline language="LA" method="pen" text="uulgat[a]e opinioni fidem" type="straight"/>
+        <underline language="LA" method="pen" text="stirpis eum diuinae" type="straight"/>
+        <underline language="LA" method="pen" text="famam in Alexandro Magno" type="straight"/>
+        <underline language="LA" method="pen" text="anguis immanis" type="straight"/>
+        <underline language="LA" method="pen" text="His miraculis" type="straight"/>
+        <underline language="LA" method="pen" text="ipso elusa fides est" type="straight"/>
+        <underline language="LA" method="pen" text="aucta arte quadam" type="straight"/>
+        <underline language="LA" method="pen" text="alia uera" type="straight"/>
+        <underline language="LA" method="pen" text="assimulata" type="straight"/>
+        <underline language="LA" method="pen" text="admirationis humanae in eo iuuene excesserant. modum" type="straight"/>
+        <underline language="LA" method="pen" text="haudquaquam maturae tantam molem rerum, tantumq[ue] imperium" type="straight"/>
+        <underline language="LA" method="pen" text="adiutor ad res gerendas" type="straight"/> 
+        <underline language="LA" method="pen" text="legationes ad famam aduentus eius" type="straight"/>
+        <underline language="LA" method="pen" text="elato ab ingenti uirtutum suarum fiducia animo, ut nullum ferox uerbum" type="straight"/>
+        <underline language="LA" method="pen" text="ingensque omnibus quae diceret, cùm maiestas inesset, tum fides" type="straight"/>
+        <underline language="LA" method="pen" text="Martium secum habebat cum tanto honore" type="straight"/>
+        <underline language="LA" method="pen" text="facilè appareret" type="straight"/>
+        <underline language="LA" method="pen" text="nihil minus eum uereri, quàm ne quis obstaret gloriae suae" type="straight"/>
+        <underline language="LA" method="pen" text="omnibus qu[a]e adeunda agendaq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="erant, maturè aditis peractisq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="minor fama apud hostes Scipionis" type="straight"/>
+        <underline language="LA" method="pen" text="apud ciues sociosq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="minus ratio timoris reddi" type="straight"/>
+        <underline language="LA" method="pen" text="opportunè maiorem inferens metum" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        <symbol name="SS" place="head"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol language="LA" name="SS" place="left_margin" text="Fabius, bello melior: Marcellus pra[e]lio: Martius facinore: Nero itinere: Scipio omni bellica laude excellentissimus, id est, arte militari, et singulari virtute; domina singularis Fortuna[e]. Ex omnibus Romanis, solo Ca[e]sare minor: quanto difficilius erat magnum Pompeium, et sapientissimos Romanos vincere, quàm Annibalem, et barbaros. Eccè Romana[e] Industria[e], virtutisq[ue] miracula."/>
+        
+        <symbol name="SS" place="tail"/>
+        <symbol name="SS" place="tail"/>
+        <symbol name="SS" place="tail"/>
+        
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark language="LA" method="pen" name="quotation_mark" place="left_margin" text="nihil minus eum uereri, quàm ne quis obstaret gloriae suae"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--com-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--co[n]-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--ab-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--addun-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--Tu-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--naui-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--Pro-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--agen-->
+        
+        <!--JG: unknown mark (between solet. Fuit-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="arte quoq[ue] quadam ab"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="ostentationem"/>
+        <mark method="pen" name="dot" place="intext"/> <!--animi, siue-->
+        <mark method="pen" name="comma" place="intext"/> <!--missa sine-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="cunctatione"/>
+        <mark method="pen" name="comma" place="intext"/> <!--modum quibus-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="molem"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--permisit. Ad-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="uirtutum"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        
+        <errata amendedtext="ciuitates" copytext="ciuatates" language="LA"/> 
+        
+        
+    </annotation>
+</transcription>

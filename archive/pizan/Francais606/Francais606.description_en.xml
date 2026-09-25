@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>L'Epitre Othea (Manuscrit du Duc, Vol. II)</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Français 606, Bibliothéque national de France, Paris. Paris, 1406-1408. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 348 x 262 mm, 46 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p>
+                  Yellowed <material> parchment</material> with some stitching (ff. 26, 30, 38, 43, 44) and patches (ff. 5, 6, 25).</p>
+            
+            </note>
+            
+            <note rend="QUIRES">
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     
+                     <locus from="1" to="8">1-8</locus>
+                  
+                  </item>
+                  
+                  <item n="II">
+                     
+                     <locus from="9" to="16">9-16</locus>
+                  
+                  </item>
+                  
+                  <item n="III">
+                     
+                     <locus from="17" to="24">17-24</locus>
+                  
+                  </item>
+                  
+                  <item n="IV">
+                     
+                     <locus from="25" to="31">25-31</locus>
+                  
+                  </item>
+                  
+                  <item n="V">
+                     
+                     <locus from="32" to="39">32-39</locus>
+                  
+                  </item>
+                  
+                  <item n="VI">
+                     
+                     <locus from="40" to="47">40-47</locus>
+                  
+                  </item>    
+               </list>
+                               
+                              
+     
+               
+               <p>(I, paper) + I (parchment) + 47 + II (parchment) + (I, paper). Modern foliation in pencil, top right, is accurate.</p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>There are light gray ruling marks on the folios.  Folios <locus>1</locus> and <locus>2</locus>, containing the first verse of the text, which is relatively long, have an extra vertical line to receive the additional initial. Folio 9 has a slightly different ruling system with an additional vertical line 6-7 mm long beyond the four vertical lines that define the columns . There is some evidence of pricking in the first quire and after the fourth there are four pricks per folio. There are two columns with 39 (sometimes 40 or 41) lines each. The text block is rather even measuring 236 x 180,5 mm, and each column is 74 mm wide. </p>
+
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text is written in dark brown ink, with red ink used for the rubrics, the Latin quotes at the end of each allegory and for some initials: other initials are written in red-orange ink and the glosses for the first illuminations are written in purplish pink ink. There seems to be just one main scribal hand for the text, the rubrics and the initials written in a rather thick semi-cursive minuscule script. </p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>There are rubrics located before the miniatures; several chapters do not have rubricated text due to the lack of space. Other rubrics are related to the divisions of the work (Text, Gloss, Allegory, each followed by the chapter number), and there are fourteen rubrics done in purplish pink ink to explain the miniatures up to chap. 17 (f. <locus>10</locus>d). There are some errors in numbering. </p>
+               
+               <p> In folio <locus>1</locus> there is a large foliated initial T in blue embedded within a gold leaf background (vignette) with foliated extenders (red, blue, gold) on the left framing, on the one hand, the miniature above and, on the other, the text below. Between the two extenders there is a radiant gold leaf crosslet.  </p>
+               
+               <p>There are many small initials at the beginning of each text decorated in blue or pink over a gold leaf background, filled with small leaves, half-flowers, and in one case a stylized coat of arms, most of them stuck to the frame. The initials have two foliate extenders and sometimes a central strand of leaves. Gold leaf “sperm” and crosslets may appear between the foliage. When the initial is at the bottom of the miniature, the foliate extenders frame part of it. </p>
+
+<p>This manuscript contains 101 miniatures. Those in folios <locus from="1" to="37">1-37</locus>, <locus>50</locus>, <locus from="53" to="88">53-88</locus>, <locus from="91" to= "93">91-93</locus>, <locus from="98" to="100">98-100</locus>, were created by the Master of L'Épître Othéa and his workshop; those in folios <locus from="38" to="49">38-49</locus>, <locus from="51" to="52">51-52</locus>, <locus>90</locus>, <locus from="94" to="97">94-97</locus>, were created by the Master of Saffron; and those in folios <locus>89</locus> and <locus>101</locus> by the Master of Egerton. All the miniatures have a gold leaf framed outlined in black, with gold leaf foliate extenders coming out of the frame with various types of gold leaf “sperm”, radiating crosslets and spiral decorations. The final illumination presents an exception: its gold leaf frame is doubled inside with another in pink and blue. With two exceptions, the gods and goddesses are depicted in the nude.  </p>
+                          
+               <p>Miniatures:</p>
+               <list>
+                  <item> Fol. <locus>1</locus>, Christine presenting her manuscript to Louis d'Orléans. </item>
+                  <item> Fol. <locus>1</locus>, Othea presents her letters to Hector. </item>
+                  <item> Fol. <locus>2</locus>, The Clock of Temperance. </item>
+                  <item> Fol. <locus>3</locus>, The Labors of Hercules.</item>
+                  <item> Fol. <locus>4</locus>, Minus Rendering justice.</item>
+                  <item> Fol. <locus>4</locus>, Perseus Rescuing Andromeda.</item>
+                  <item> Fol. <locus>5</locus>, Jupiter and his Knights. </item>
+                  <item> Fol. <locus>6</locus>, Venus and the Lovers. </item>
+                  <item> Fol. <locus>7</locus>, The Sun and the Followers of Truth. </item>
+                  <item> Fol. <locus>7</locus>, The Moon with the Victims of Melancholy and Frenzy.</item>
+                  <item> Fol. <locus>7</locus>, Mars and his Knights. </item>
+                  <item> Fol. <locus>8</locus>, Mercury and the Wisemen.</item>
+                  <item> Fol. <locus>8</locus>, Minerva and the Men at Arms. </item>
+                  <item> Fol. <locus>9</locus>, Minerva and Pallas. </item>
+                  <item> Fol. <locus>9</locus>, The Amazons. </item>
+                  <item> Fol. <locus>10</locus>, Narcisus and the Fountain.</item>
+                  <item> Fol. <locus>10</locus>, The Wrath of Athamas. </item>
+                  <item> Fol. <locus>10</locus>, Aglauros Turned into Stone.</item>
+                  <item> Fol. <locus>11</locus>, Ulysses and Polyphemus. </item>
+                  <item> Fol. <locus>11</locus>, Latona Turning Peasants into Frogs. </item>
+                  <item> Fol. <locus>12</locus>, Bacchus and his Disciples. </item>
+                  <item> Fol. <locus>12</locus>, Pygmalion Beseeching Venus.</item>
+                  <item> Fol. <locus>13</locus>, Diana and her Disciples. </item>
+                  <item> Fol. <locus>13</locus>, Ceres Sowing. </item>
+                  <item> Fol. <locus>13</locus>, Isis Grafting Bushes. </item>
+                  <item> Fol. <locus>14</locus>, The Judgment of Midas. </item>
+                  <item> Fol. <locus>14</locus>, Hercules in the Underworld. </item>
+                  <item> Fol. <locus>15</locus>, Cadmus and the Dragon.</item>
+                  <item> Fol. <locus>15</locus>, Io Teaching. </item>
+                  <item> Fol. <locus>15</locus>, Mercury stealing the Cow Io.</item>
+                  <item> Fol. <locus>16</locus>, Pyrrhus avenges his father. </item>
+                  <item> Fol. <locus>16</locus>, Cassandra in the Temple. </item>
+                  <item> Fol. <locus>16</locus>, Neptune Save a Ship. </item>
+                  <item> Fol. <locus>17</locus>, Atropos.</item>
+                  <item> Fol. <locus>17</locus>, Bellerophont and his Stepmother. </item>
+                  <item> Fol. <locus>18</locus>, Memnon Ready to Avenge Hector.</item>
+                  <item> Fol. <locus>18</locus>, Laomedon Hunting the Argonauts. </item>
+                  <item> Fol. <locus>18</locus>, Pyramus and Thisbe.</item>
+                  <item> Fol. <locus>19</locus>, Aesculapius against Circe. </item>
+                  <item> Fol. <locus>20</locus>, The Death of Achilles. </item>
+                  <item> Fol. <locus>20</locus>, The Cruelty of Busiris. </item>
+                  <item> Fol. <locus>20</locus>, Hero and Leander.</item>
+                  <item> Fol. <locus>21</locus>, The Greeks Demand the Return of Helen. </item>
+                  <item> Fol. <locus>21</locus>, Aurora. </item>
+                  <item> Fol. <locus>22</locus>, Pasiphae and the Bull. </item>
+                  <item> Fol. <locus>22</locus>, Adrastus's Sleep Disturbed by Tydeus and Polinices.</item>
+                  <item> Fol. <locus>23</locus>, Cupid and the Young Hector. </item>
+                  <item> Fol. <locus>23</locus>, Apollo and Coronis.</item>
+                  <item> Fol. <locus>24</locus>, Juno and the Rich. </item>
+                  <item> Fol. <locus>24</locus>, Adrastus Despising the Advice of Amphiaraus. </item>
+                  <item> Fol. <locus>24</locus>, Saturn Giving the Example of Silence. </item>
+                  <item> Fol. <locus>25</locus>, The Crow and the Raven.</item>
+                  <item> Fol. <locus>25</locus>, Ganymede Killed by Accident. </item>
+                  <item> Fol. <locus>26</locus>, Jason and the Golden Fleece.</item>
+                  <item> Fol. <locus>26</locus>, Perseus Fighting the Gorgone. </item>
+                  <item> Fol. <locus>27</locus>, Vulcan Chaining Mars and Venus. </item>
+                  <item> Fol. <locus>27</locus>, The Death of Cyrus the Great.</item>
+                  <item> Fol. <locus>28</locus>, Jason and Medea. </item>
+                  <item> Fol. <locus>28</locus>, Acis and Galatea.</item>
+                  <item> Fol. <locus>28</locus>, The Wedding of Thetis and Peleus. </item>
+                  <item> Fol. <locus>29</locus>, The Death of Laomedon. </item>
+                  <item> Fol. <locus>29</locus>, Semele Deceived by Juno. </item>
+                  <item> Fol. <locus>30</locus>, Diana on the Hunt. </item>
+                  <item> Fol. <locus>30</locus>, Pallas and Arachne. </item>
+                  <item> Fol. <locus>30</locus>, The Death of Adonis.</item>
+                  <item> Fol. <locus>31</locus>, Capturing the first Trojans. </item>
+                  <item> Fol. <locus>31</locus>, Orpheus Taming the Beasts. </item>
+                  <item> Fol. <locus>31</locus>, The Dream of Paris. </item>
+                  <item> Fol. <locus>32</locus>, Diana and Actaeon.</item>
+                  <item> Fol. <locus>32</locus>, Orpheus and Eurydice. </item>
+                  <item> Fol. <locus>33</locus>, Achilles Recognized by Ulysses.</item>
+                  <item> Fol. <locus>34</locus>, Atalanta's Race. </item>
+                  <item> Fol. <locus>34</locus>, The Judgment of Paris. </item>
+                  <item> Fol. <locus>35</locus>, The Wheel of Fortune. </item>
+                  <item> Fol. <locus>35</locus>, Paris and Helen.</item>
+                  <item> Fol. <locus>35</locus>, Cephalus and Procris. </item>
+                  <item> Fol. <locus>36</locus>, Helenus Advices King Priam.</item>
+                  <item> Fol. <locus>36</locus>, Morpheus. </item>
+                  <item> Fol. <locus>37</locus>, Ceyx and Alcione. </item>
+                  <item> Fol. <locus>37</locus>, Priam Listening to Troilus' Advice.</item>
+                  <item> Fol. <locus>38</locus>, The Meeting of Calchas and Achilles. </item>
+                  <item> Fol. <locus>38</locus>, The Bath of Hermaphrodite and the Nymph in the Fountain of Salmacis.</item>
+                  <item> Fol. <locus>39</locus>, Ulysses Inventor of Chess.</item>
+                  <item> Fol. <locus>39</locus>, Troilus and Briseide. </item>
+                  <item> Fol. <locus>40</locus>, The Death of Patroclus.</item>
+                  <item> Fol. <locus>40</locus>, Narcisus and Echo. </item>
+                  <item> Fol. <locus>40</locus>, Apollo and Daphne.</item>
+                  <item> Fol. <locus>41</locus>, The Farewell of Hector and Andromache. </item>
+                  <item> Fol. <locus>41</locus>, The Taking of Babylon by Nimus. </item>
+                  <item> Fol. <locus>42</locus>, Priam Holding Hector. </item>
+                  <item> Fol. <locus>42</locus>, The Death of Hector.</item>
+                  <item> Fol. <locus>42</locus>, The Death of Hector. </item>
+                  <item> Fol. <locus>43</locus>, Achilles at the Funeral of Hector.</item>
+                  <item> Fol. <locus>43</locus>, The Death of Ajax. </item>
+                  <item> Fol. <locus>44</locus>, The Treason of Antenor. </item>
+                  <item> Fol. <locus>44</locus>, The Trojan Horse. </item>
+                  <item> Fol. <locus>45</locus>, The Taking of Troy.</item>
+                  <item> Fol. <locus>45</locus>, Circe and Ulysses' Companions. </item>
+                  <item> Fol. <locus>46</locus>, Augustus and the Sybil of Cumae.</item>
+                             
+                  </list>
+            </note>
+            
+            <note rend="BINDING">
+               
+               <p>The binding is done red morocco leather with the royal coat of arms and three gold fillets. The spine contains six nerves with the title "L'EPIST OTHEA", and six big fleur-de-lys, surrounded by four smaller fleur-de-lys on an angle. Gilded with traces of carving.</p>
+            
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>The manuscript can be dated to 1406 to 1408. It is the second part of the works by Christine de Pizan acquired by Jean de Berry in 1408. It was probably meant for Louis d'Orléans, for work on the manuscript had already began upon his death on November 23, 1407. </p>
+               
+               <p>Provenance: Jean de Berry; his daughter, Marie de Berry, duchess of Bourbon; the Bourbon family. François I seized the property of Charles de Bourbon in 1523. The shelfmark 191 is written in the back of the front cover. Other shelfmarks appear in folio <locus>1</locus>: “ <hi rend="italics"> six cents septante deux</hi>” (Rigault): “408” (Dupuy); “7089” (Regius). There is another inscription from the 16th century on the front cover, probably from the hand of one of the librarians of the Bourbon family, that reads: “ <hi rend="italics">En ce livre a cent voir hystories et .xlvj. Feulletz escriptz et fut rendu par frere </hi> (name scratched, unreadable UV) <hi rend="italics"> le .vj. Jour de avril mild v et dix.</hi>” Another inscription from the 16th century is located on the back cover that reads: “ <hi rend="italics">Leo rugiens et ursus exuriens princes impurs super populum pauperem; dux indigens pridentia multos opprimit per calumpniam</hi>.” Also in the front cover there is a note from the 17th century regarding the content of the manuscript and, below, two drawings. There is one word written on the last miniature, “ <hi rend="italics">Sachet</hi>” (?) that by the script it appears to have been written in the late 15th or early 16th century.</p>             
+              
+            </note>
+            
+            <note rend="TEXT">
+               
+               <p>Contains only <hi rend="italics">L'Epistre Othea</hi>.</p>
+            
+            </note>
+            
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 606</note>
+               
+               <title>L'Epitre Othea</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="47" unit="folios">47 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">348</height>
+                     
+                     <width unit="mm">262</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">101</note>
+               
+               
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 606</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="47v">1r-47v</locus>
+                     <title>L'Epitre Othea</title>
+                     <note type="textid">L'epitre othea</note>
+                     <note type="folios">47</note>
+                     <note type="illustrations">101</note>
+                     <note type="linesPerColumn">40</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

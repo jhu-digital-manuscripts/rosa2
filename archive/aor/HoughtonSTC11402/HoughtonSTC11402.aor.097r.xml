@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.097r.tif" reader="Harvey" signature="Mii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>These be wofull &amp; miserable Strategems in this world.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Ha[e]c a[e]tas alios mores postulat, aliam vitam desiderat. Hodiernus mundus, totus
+                    Chrematisticus, et</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>acquisititius. Qui in summis</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>nauigat, in nummis anchorat.</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aureum Philippi Macedonis Strategema. Aurum, Regu[m] persuasio. Virtutes ipsa[e], Largitione corrupta[e]
+                    , et constuprata[e]. Ca[e]saris Liberalitas, max[im]è popularis.</marginalia_text>
+                    <person name="Philip II of Macedon"/>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>This age demands other rules; it desires another life. Today's world is wholly chrematistic and aquiesced. 
+                        <!--JG: Unsure about translation of 'acquisititius'--> <!-- CG: So 'chrematisticus' means 'moneyed.' And I think 'acquisitius' is a comparative form meaning something like 'more materialistic.' In other words, an age concerned with money and acquiring things. -->
+                He who navigates in the greatest sums,  anchors in money. <!--JG: Tricky to render the 'summis' 'nummis'. Chris, any suggestions?--> <!-- CG: I feel like he's saying 'whoever navigates through the highest circles, anchors himself in coin.' -->
+            Gold, the stratagem of Philip II of Macedon. Gold, the persuasion of a king. The virtues themselves corrupted and utterly debauched by bribery. The generosity of Caesar, particularly popular. <!-- CG: Perhaps 'liberality' or 'gift-giving'? This whole passage is a condemnation of using move to buy people. -->
+            </translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>At Vlisses, Heroica Achillis Arma affectauit; eademq[ue] Aiaci pra[e]occupauit: tam precij, quam honoris respectu.
+                    </marginalia_text>
+                    <person name="Odysseus"/>
+                    <person name="Achilles"/>
+                    <person name="Ajax"/>
+                </position>
+            </language>
+            <translation>But Odysseus seized the epic arms of Achilles, and worried about the same [arms] of Ajax: 
+                both in respect for price and for honour. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristides" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>A small commendation for Regulus, Scipio, or Aristides. Almes knightes.</marginalia_text>
+                    <person name="Marcus Atilius Regulus"/>
+                    <person name="Scipio Africanus"/>
+                    <person name="Aristides"/>
+                    <emphasis method="pen" text="Aristides" type="straight"/>
+                    <emphasis method="pen" text="Almes knightes" type="straight"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Bellisarius, magnus Justiniani Dux, tande[m] Mendicus.</marginalia_text>
+                    <person name="Belisarius"/>
+                    <person name="Justinian"/>
+                </position>
+            </language>
+            <translation>Belisarius, the great general of Justinian, eventually [??].</translation> 
+            <!--JG: Chris, what do you make of Mendicus? I assume it's a person, but can't find any information-->
+            <!-- CG: Actually I think it's just a description of Belisarius, he eventually becomes a beggar: https://en.wikipedia.org/wiki/Belisarius#Legend_as_a_blind_beggar -->
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="rule theym that hadde golde" type="straight"/>
+        <underline language="EN" method="pen" text="Attilius Regulus" type="straight"/>
+        <underline language="EN" method="pen" text="was so pore" type="straight"/>
+        <underline language="EN" method="pen" text="founde hym selfe" type="straight"/>
+        <underline language="EN" method="pen" text="lyttelle plotte of grounde" type="straight"/>
+        <underline language="EN" method="pen" text="tylled by one baylye of housbandrye" type="straight"/>
+        <underline language="EN" method="pen" text="was brought" type="straight"/> 
+        <underline language="EN" method="pen" text="hym" type="straight"/>
+        <underline language="EN" method="pen" text="vnto the Senate" type="straight"/>
+        <underline language="EN" method="pen" text="his seruant was deade" type="straight"/>
+        <underline language="EN" method="pen" text="applye his husbandrie hym" type="straight"/>
+        <underline language="EN" method="pen" text="Cn. Scipio" type="straight"/>
+        <underline language="EN" method="pen" text="noble feates" type="straight"/>
+        <underline language="EN" method="pen" text="in Spaine" type="straight"/>
+        <underline language="EN" method="pen" text="in great pouertie" type="straight"/>
+        <underline language="EN" method="pen" text="suffyse for the dowery of his doughters" type="straight"/>
+        <underline language="EN" method="pen" text="senate was fayn to gyue dowerye of the" type="straight"/>
+        <underline language="EN" method="pen" text="the nobles of Athens" type="straight"/>
+        <underline language="EN" method="pen" text="the chylderne of Aristides" type="straight"/>
+        <underline language="EN" method="pen" text="departed in great pouertie" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="quotation_mark" place="intext" text="rule theym that hadde golde"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="quotation_mark" place="intext"/>
+        
+        <mark method="pen" name="horizontal_bar" place="tail"/> <!--below marginal note-->
+        
+    </annotation>
+</transcription>

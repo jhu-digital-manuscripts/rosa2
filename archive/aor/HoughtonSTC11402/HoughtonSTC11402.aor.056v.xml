@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.056v.tif" reader="Harvey" signature="[Gi[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>There hath bene many an /</marginalia_text> <!--JG: Marginal note continues? Adathantes seems to be separate note, different handwriting-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Adathantes.</marginalia_text>
+                    <person name="Adathantes"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Adathantes trecherous Intendiment, to sley Lucullus.</marginalia_text>
+                    <person name="Adathantes"/>
+                    <person name="Lucius Licinius Lucullus"/>
+                    <emphasis method="pen" text="Adathantes" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vide l.3.c.3.</marginalia_text>
+                </position>
+            </language>
+            <translation>See book 3, chapter 3.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[the] paterne of A murderous executioner.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sthenippus L.2.Polya[e].</marginalia_text>
+                    <person name="Sthenippus"/>
+                    <book title="Stratagems"/>
+                </position>
+            </language>
+            <translation>Sthenippus, in book 2 of Polyaenus.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="rashly to trust a fugitiue" type="straight"/>
+        <underline language="EN" method="pen" text="yet to forbyd other" type="straight"/>
+        <underline language="EN" method="pen" text="diligent seruice &amp; labour in many" type="straight"/>
+        <underline language="EN" method="chalk" text="diligent seruice &amp; labour" type="straight"/>
+        <underline language="EN" method="pen" text="in greatte truste" type="straight"/>
+        <underline language="EN" method="chalk" text="greatte truste" type="straight"/>
+        <underline language="EN" method="pen" text="the tyme for" type="straight"/>
+        <underline language="EN" method="pen" text="at rest and quiete" type="straight"/>
+        <underline language="EN" method="pen" text="in the pretors pauilyon" type="straight"/>
+        <underline language="EN" method="pen" text="fortune fauored" type="straight"/>
+        <underline language="EN" method="pen" text="that mighte" type="straight"/>
+        <underline language="EN" method="pen" text="at all tymes" type="straight"/>
+        <underline language="EN" method="pen" text="vnto the capitayn" type="straight"/>
+        <underline language="EN" method="pen" text="waking" type="straight"/>
+        <underline language="EN" method="pen" text="he was a sleepe" type="straight"/>
+        <underline language="EN" method="pen" text="brought worde of some" type="straight"/> 
+        <underline language="EN" method="pen" text="sodeyne chaunce, or" type="straight"/>
+        <underline language="EN" method="pen" text="obstinately kepte oute by the seruantes" type="straight"/>
+        <underline language="EN" method="pen" text="had ben suspected, and so" type="straight"/>
+        <underline language="EN" method="pen" text="Melanthus" type="straight"/>
+        <underline language="EN" method="pen" text="Xanthus" type="straight"/>
+        <underline language="EN" method="pen" text="vnlaufullye" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="head"/>
+        <mark method="pen" name="X_sign" place="head"/>
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="rashly to trust a fugitiue"/>
+        
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="seruantes"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--ba-tayles-->
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="yet to forbyd other"/>
+        <mark method="pen" name="dot" place="intext"/> <!--truste, he-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="tyme"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

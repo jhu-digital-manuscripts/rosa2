@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.153r.tif" pagination="305" reader="John Dee" signature="u"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Exercitatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exercitatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Exercise.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ordine probatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Probationis ordo</marginalia_text>
+                </position>
+            </language>
+            <translation>The order of the proof.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nec magis arte traditur, quàm gustus, aut odor. Ideoq[ue] nos quid in quaq[ue] re seque[n]dum cauendumq[ue] sit, docebimus, ut ad ea iudicium dirigatur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iudiciu[m] no[n] arte constat.</marginalia_text>
+                </position>
+            </language>
+            <translation>A judgement does not consist of art.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="consilium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Consiliu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Counsel.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iudicium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iudicium</marginalia_text>
+                </position>
+            </language>
+            <translation>Judgement.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Consilij defini</marginalia_text>
+                </position>
+            </language>
+            <translation>The limits of counsel.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex re" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ex re</marginalia_text>
+                </position>
+            </language>
+            <translation>From the thing itself.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero in Verre[m]</marginalia_text>
+                    <person name="Cicero"/>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>Cicero's "In Verrem".</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="est, ut potentißima, prima &amp; summa ponantur" type="straight"/>
+        <underline language="LA" method="pen" text="odor" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">.1.</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.159r.tif" pagination="309" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="inter filios Aethelbaldum &amp; Aethelbertum" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Tamen .4. filios habuit: vide sup[ra] pag[ina] 301.  
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10653:325" text="pag[ina] 301"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                Nevertheless he had four sons. See above, page 301.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aethelulfus" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Æthelulfus
+                    </marginalia_text>
+                    <person name="Æthelwulf"/>
+                </position>
+            </language>
+            <translation>
+                Æthelwulf.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iudetham regis Francorum filiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Juditha Caroli calui filia, postea Imperatoris
+                    </marginalia_text>
+                    <person name="Charles the Bald"/>
+                    <person name="Judith of Flanders"/>
+                </position>
+            </language>
+            <translation>
+                Judith of Flanders, daughter of Charles the Bald, the later emperor.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iudetham" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Juditha
+                    </marginalia_text>
+                    <person name="Judith of Flanders"/>
+                </position>
+            </language>
+            <translation>
+                Judith of Flanders.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="patricio Romanorum" type="straight"/>
+        <underline language="LA" method="pen" text=".Dccclvij." type="straight"/>
+        <underline language="LA" method="pen" text="Aethelbaldum" type="straight"/>
+        <underline language="LA" method="pen" text="Aethelbertum" type="straight"/>
+        <underline language="LA" method="pen" text=".xvij." type="straight"/>
+        <underline language="LA" method="pen" text="Aethelberto" type="straight"/>
+        <underline language="LA" method="pen" text="Aethelbaldus" type="straight"/>
+        <underline language="LA" method="pen" text="thorum patris defuncti asce[n]dens, Iudetham regis Francorum filiam in matrimonio ducens, effrenis duobus ac dimidio post patrem annis,              occidentalium Saxonu[m] apicem crudeliter gubernauit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

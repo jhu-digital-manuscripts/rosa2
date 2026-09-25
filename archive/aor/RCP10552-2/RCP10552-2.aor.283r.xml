@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.283r.tif" pagination="79" reader="John Dee" signature="K.iij."/>
+    
+    
+    <annotation>
+        
+        
+        <marginalia anchor_text="bellum mariscum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Beau Maris</marginalia_text>
+                    <location name="Beaumaris"/>
+                </position>
+            </language>
+            <translation>Beaumaris.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="captus est Madocus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Madocus captus</marginalia_text>
+                    <person name="Madoc"/>
+                </position>
+            </language>
+            <translation>Madoc captured.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Gilbertus Comes Glouerniae dies suos clausit" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gilbertus de Clare. obijt.</marginalia_text>
+                    <person name="Gilbert de Clare, 7th Earl of Gloucester"/>
+                </position>
+            </language>
+            <translation>Gilbert de Clare died.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Gulielmus de Valencijs comes Penbrochiae concessit in fata, cui successit filius suus Aymerus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>.0. [ Gulielmus de Vale[n]sijs com[es] Pemb[rok] Aymerus de Valencijs, Comes Pembrok.</marginalia_text>
+                    <person name="William de Valence, 1st Earl of Pembroke"/>
+                    <person name="Aymer de Valence, 2nd Earl of Pembroke"/>
+                </position>
+            </language>
+            <translation>0. [ William de Valence, Earl of Pembroke; Aymer de Valence, Earl of Pembroke.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="comes inter duos equites posito vno balistario" type="straight"/>
+        <underline language="LA" method="pen" text="intulit quanta eis vna vice illata non creditur" type="straight"/>
+        <underline language="LA" method="pen" text="bellum mariscum" type="straight"/>
+        <underline language="LA" method="pen" text="est Madocus" type="straight"/>
+        <underline language="LA" method="pen" text="thesauros congregantes" type="straight"/>
+        <underline language="LA" method="pen" text="iuramento firmata, quod contra regem Angliae" type="straight"/>
+        <underline language="LA" method="pen" text="Gilbertus Comes Glouerniae dies suos clausit, relictis ex vxore sua Iohanna filiabus tribus &amp; vnico filio minoris aetatis, nomine Gilberto" type="straight"/>
+        <underline language="LA" method="pen" text="Gulielmus de Valencijs" type="straight"/>
+        <underline language="LA" method="pen" text="Aymerus" type="straight"/>
+        
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- balistario ac -->
+        
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+    
+    
+</transcription>

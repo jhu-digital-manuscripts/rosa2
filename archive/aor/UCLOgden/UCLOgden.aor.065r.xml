@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.065r.tif" pagination="113" reader="John Dee" signature="k 3"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cautio generalis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                General warning.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="☉ fuerit partiliter collcata, aut seruos" type="straight"/>
+        <underline language="LA" method="pen" text="primos nasci, uel nutriri faciet, sed" type="straight"/>
+        <underline language="LA" method="pen" text="in IMC, paternas dilapidat facultates, sed potestea, aut amicorum praesidio" type="straight"/>
+        <underline language="LA" method="pen" text="In omnibus tamen partium, ac locorum" type="straight"/>
+        <underline language="LA" method="pen" text="cum ♂ fuerit inuenta, partiam relinquentes facit, ac in peregrinis regionibus co[m]morantes" type="straight"/>
+        <underline language="LA" method="pen" text="frequenter diximus, pro signorum qualitate cernuntur" type="straight"/>
+        <underline language="LA" method="pen" text="humile matris genus ostendunt, sed quibus nunq[uam]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

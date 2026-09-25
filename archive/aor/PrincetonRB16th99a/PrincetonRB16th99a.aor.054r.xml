@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th99a.054r.tif" pagination="54[r]" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia anchor_text="Tithe of rakings." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="hawine is" type="straight"/>
+        <underline language="EN" method="pen" text="strawe," type="straight"/>
+        <underline language="EN" method="pen" text="and rake it, and sets it on" type="straight"/>
+        <underline language="EN" method="pen" text="binds it, and sets it on shocks" type="straight"/>
+        <underline language="EN" method="pen" text="standing by dallops" type="straight"/>
+        <underline language="EN" method="pen" text="early in morning" type="straight"/>
+        <underline language="EN" method="pen" text="barlie is raked" type="straight"/>
+        <underline language="EN" method="pen" text="of such raking," type="straight"/>
+        <underline language="EN" method="pen" text="scatring of barlie, is seene to" type="straight"/>
+        <underline language="EN" method="pen" text="conscience" type="straight"/>
+        <underline language="EN" method="pen" text="taken in time, is a husbandly" type="straight"/>
+        <underline language="EN" method="pen" text="beaten with showers" type="straight"/>
+        <underline language="EN" method="pen" text="turning and tossing, they shed as they lie" type="straight"/>
+        <underline language="EN" method="pen" text="weather be faire, and tidie thy graine" type="straight"/>
+        <underline language="EN" method="pen" text="speedily carrege, for feare of a raine" type="straight"/>
+        <underline language="EN" method="pen" text="and showers, deceiueth a menie" type="straight"/>
+        <underline language="EN" method="pen" text="lingering lubbers, loose many a penie" type="straight"/>
+        
+        <underline language="EN" method="pen" text="Tithe of rakings." type="straight"/>
+        <underline language="EN" method="pen" text="Lingring" type="straight"/>
+        
+        <symbol name="JC" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="and rake it, and sets it on"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="binds it, and sets it on shocks"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="Tithe of rakings."/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="hawine is"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="barlie is raked"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="of such raking"/>
+        <mark method="pen" name="plus_sign" place="intext"/> <!--and tidie-->
+        
+    </annotation>
+</transcription>

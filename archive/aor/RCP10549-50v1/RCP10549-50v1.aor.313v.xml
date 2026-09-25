@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.313v.tif" pagination="606" reader="John Dee" signature="[ppp.vii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="castorum antea metator" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Castroru[m] metator.</marginalia_text>
+                </position>
+            </language>
+            <translation>A marker of military camps.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="nutriculas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>nutricula.</marginalia_text>
+                </position>
+            </language>
+            <translation>A nurse.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="progige viuere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>progige viuere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To live lavishly.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="crure fracto" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>crure fracto</marginalia_text>
+                </position>
+            </language>
+            <translation>With a broken leg.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Lysidici" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lysidicus</marginalia_text>
+                    <person name="Lysidicus"/>
+                </position>
+            </language>
+            <translation>Lysidicus.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="imperium populare atque ventosum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Imperiu[m] populare[m] ventosum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Popular and fickle command.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="nutriculas" type="straight"/>
+        <underline language="LA" method="pen" text="filio infudit" type="straight"/>
+        <underline language="LA" method="pen" text="Sed non possunt" type="straight"/>
+        <underline language="LA" method="pen" text="prodige viuere, qui nostra bona sperant, cum effundunt sua" type="straight"/>
+        <underline language="LA" method="pen" text="crure fracto: quod vtinam antè illi accidisset" type="straight"/>
+        <underline language="LA" method="pen" text="me non cum homine solere, sed cum causa dissidere" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="left_margin"/> <!-- Imperator est deligendus --> <!-- FSF: at a later point, this is captured as a five -->
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12.22</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing anchor_text="prodige viuere, qui nostra bona sperant, cum effundunt sua" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="me non cum homine solere, sed cum causa dissidere" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

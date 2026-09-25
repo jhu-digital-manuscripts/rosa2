@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.338v.tif" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        repice initium quinti folij immediatè pra[e]cedentis.
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10653:682" text="quinti folij immediatè pra[e]cedentis"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                Look back at the beginning of the fifth folio directly preceding.    
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="qui quodam gaudet priuilegio, videlicet vt non veniat legatus in terram sua[m], nisi postulatus" type="straight"/>
+        
+        <errata amendedtext="Pag: 220." copytext="[blank]" language="LA"/>      
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.152v.tif" pagination="304" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Nam culpam, praesertim deprehe[n]sam, pertinaciter tueri, culpa altera est." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Culpa[m], presertim deprehensam, p[er]tinaciter tueri, culpa altera est</marginalia_text>
+                </position>
+            </language>
+            <translation>To defend a crime, obstinately, especially after being caught, amounts to a second crime.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Illud uix saltem praecipiendum uidetur, ne turdibus &amp; clamosus tantu[m] sit altercator, &amp; quales facti sunt, wui literas nesciu[n]t." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Infantis</marginalia_text>
+                </position>
+            </language>
+            <translation>Inarticulate.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="improbatis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Improbitas</marginalia_text>
+                </position>
+            </language>
+            <translation>Dishonesty.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iudex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iudex respici[en]dus</marginalia_text>
+                </position>
+            </language>
+            <translation>The judge is to be respected.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Faciunt hoc medici quoq[ue] ut remedia perinde perseuerent adhibere, uel definant, ut illa recipi uel respui uident." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A simili</marginalia_text>
+                </position>
+            </language>
+            <translation>A resemblance.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="turdibus &amp; clamosus" type="straight"/>
+        <underline language="LA" method="pen" text="Nocet etiam diu pugnare in ijs" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="pin" place="head" text="Culpa[m], presertim deprehensam, p[er]tinaciter tueri, culpa altera est"/>
+        <mark method="pen" name="pin" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

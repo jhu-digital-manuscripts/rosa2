@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.075v.tif" pagination="150" reader="John Dee" signature="[k 3[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="consilium quidem uidetur, ubi neceßitas est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Necessitas tollit consilium</marginalia_text>
+                </position>
+            </language>
+            <translation>Necessity removes advice.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="δυνατόν" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>δυνατόν</marginalia_text>
+                </position>
+            </language>
+            <translation>The possible.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tamen apud plerosq[ue] earum numerus augetur, a quibus ponuntur ut parte, quae species sunt partium. Nam fasm iustum, pium, aequum, ma[n]suetum              quoq[ue], sic enim sunt interpretati τὸ ἣμερoν, &amp; si qua adhuc  adijcere quis eiusdem generis uelit, subijci possunt honestati" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Honesti spe[cie]s.</marginalia_text>
+                </position>
+            </language>
+            <translation>Honourable appearance.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="utilitatis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vtilitas</marginalia_text>
+                </position>
+            </language>
+            <translation>Utility.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="utilitatem despiciendam esse dicimus, ut honesta faciamus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>honestas vtilitati non[n]u[m]q[uam]? pr[a]eponenda</marginalia_text>
+                </position>
+            </language>
+            <translation>Honesty is sometimes to be preferred over utility.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Omnis enim deliberatio" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

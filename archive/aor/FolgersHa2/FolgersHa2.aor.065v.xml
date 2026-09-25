@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.065v.tif" pagination="450" reader="Harvey"/>	<!-- ABO 70left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						( No affections, but reasons:
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						No passions, but actions.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						) Animus: ingeniu[m]: industria.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Mind, genius, industry.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Omnes illudebat Socrates: ridebat Democritus: spernebat
+						Diogenes: carpebat Momus. Nulli illis sapientes,
+						pra[e]ter Seipsos. Soli sibi preciosi.
+					</marginalia_text>
+					<person name="Socrates"/>
+					<person name="Democritus"/>
+					<person name="Diogenes of Sinope"/>
+					<person name="Momus"/>
+				</position>
+			</language>
+			<translation>
+				Socrates ridiculed all men; Democritus laughed at them; Diogenes scorned them; Momus reviled them.
+				None were philosophers for others and contrary to themselves. They were valuable only to themselves.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						At qui Sibi ipsis tantoperè Sapuerunt, alijs non ita valdè placuerunt.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				But those who knew themselves much, did not much give such pleasure to others.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="dottor di leggi" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; acutissimo" type="straight"/>
+		<underline language="IT" method="pen" text="suoi ualorisissimi figliuoli" type="straight"/>
+		<underline language="IT" method="pen" text="Achille" type="straight"/>
+		<underline language="IT" method="pen" text="Furio Camillo" type="straight"/>
+		<underline language="IT" method="pen" text="arguti" type="straight"/>
+		<underline language="IT" method="pen" text="la fabrica" type="straight"/>
+		<underline language="IT" method="pen" text="mirabile disegno d'architettura" type="straight"/>
+		<underline language="IT" method="pen" text="due contadini" type="straight"/>
+		<underline language="IT" method="pen" text="salutarci con un presente" type="straight"/>
+		<underline language="IT" method="pen" text="una porchetta arosto" type="straight"/>
+		<underline language="IT" method="pen" text="ripieno di spetiere &amp; di cose" type="straight"/>
+		<underline language="IT" method="pen" text="aguzzaua l'appetito" type="straight"/>
+		<underline language="IT" method="pen" text="Signor Galezzo" type="straight"/>
+		<underline language="IT" method="pen" text="accortissimo" type="straight"/>
+		<underline language="IT" method="pen" text="accetto a' due contadini" type="straight"/>
+		<underline language="IT" method="pen" text="come essi si chiamauano" type="straight"/>
+		<underline language="IT" method="pen" text="uno Lardo" type="straight"/>
+		<underline language="IT" method="pen" text="Boldone" type="straight"/>
+		<underline language="IT" method="pen" text="argutissimame[n]te et" type="straight"/>
+		<underline language="IT" method="pen" text="nostra porchetta farà testame[n]to" type="straight"/>
+		<underline language="IT" method="pen" text="doma[n]dat0lo ciò ch'ei" type="straight"/>
+		<underline language="IT" method="pen" text="Qui è il porcello" type="straight"/>
+		<underline language="IT" method="pen" text="qui sara[n]no" type="straight"/>
+		<underline language="IT" method="pen" text="cale[n]de lucernine" type="straight"/>
+		<underline language="IT" method="pen" text="qui" type="straight"/>
+		<underline language="IT" method="pen" text="testimoni" type="straight"/>
+		<underline language="IT" method="pen" text="Grugno" type="straight"/>
+		<underline language="IT" method="pen" text="farà" type="straight"/>
+		<underline language="IT" method="pen" text="qualche bel legato" type="straight"/>
+		<underline language="IT" method="pen" text="Dhe" type="straight"/>
+		<underline language="IT" method="pen" text="fatto herede d'un" type="straight"/>
+		<underline language="IT" method="pen" text="quarto della sua facoltà" type="straight"/>
+		<underline language="IT" method="pen" text="questo testame[n]to" type="straight"/>
+		<underline language="IT" method="pen" text="gra[n] parte me n'assegnate" type="straight"/>
+		<underline language="IT" method="pen" text="Porcacchi" type="straight"/>
+		<underline language="IT" method="pen" text="no[n] tocca, se no[n] la uesica" type="straight"/>
+		<underline language="IT" method="pen" text="radoppiate" type="straight"/>
+		<underline language="IT" method="pen" text="quel nobil fanciullo cosi pronto" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="fabrica sontuosissima fatta in quel" type="straight"/>
+		<underline language="IT" method="chalk" text="disegno d'architettura" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="SS" place="left_margin"/> <!--JG: Can't find this one-->
+		<symbol name="JC" place="tail"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<!--JG: Also dash after 'ripie', no?-->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- l'appe -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- antica -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- per -->		
+		
+	    	<!-- Left margin -->
+	    <mark language="IT" method="pen" name="plus_sign" place="left_margin" text="gno d'architettura "/> 
+		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- sopranome -->
+		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- dodeci -->
+		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- cioche a me -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="acutissimo"/>
+	    <mark method="pen" name="comma" place="intext"/> <!-- e io in -->
+		<mark method="pen" name="dot" place="intext"/> <!-- Galeazzo, & -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="M. Achille"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Furio Camillo"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="arguti"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- nare, mentre -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark: mentre -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="la fabrica"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="architettura"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- Galeazzo, sopragiunse -->
+		<mark method="pen" name="dot" place="intext"/> <!-- gratissimo, che -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="porchetta"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- contadini, doman -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Lardo"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Boldone"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- Boldone, -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="argutissimame[n]te"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="porcello"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- testimoni, in -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Grugno"/>
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- sera. Dhe -->
+		<mark method="pen" name="comma" place="intext"/> <!-- Dhe, risposi -->
+		<mark method="pen" name="comma" place="intext"/> <!-- gratia che -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="herede"/>
+		<mark method="pen" name="comma" place="intext"/> <!-- facolta', racco[n]tateci -->
+		<mark method="pen" name="comma" place="intext"/> <!-- assegnate, Porcacchi -->
+		<mark method="pen" name="dot" place="intext"/> <!-- risa, sentendo -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="pronto"/>
+
+    </annotation>
+</transcription>

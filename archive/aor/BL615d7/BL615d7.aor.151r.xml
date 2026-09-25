@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.151r.tif" pagination="151" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="MCCCCXCVIII" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1498</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="MCCCCXCIX" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1499</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="inuidiosi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Invidia</marginalia_text> 
+                </position>
+            </language>
+            <translation>Envy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="D. Giouanni di Fonsecca Archidiacono di Siuiglia" hand="Italian" id="BL615d7:615_d_7_f151r:m0001">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>D. Giouanni di Fonseca</marginalia_text>
+                    <person name="Don Giovanni Fonseca"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="D. Giouanni, il qual poi fu Vescouo di Burgos, portò continuatamente mortale odio all' Ammiraglio" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Columbus his chi[e]f enemy</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="MCCCCXCVIII" type="straight"/>
+        <underline language="IT" method="pen" text="che non passasse più d'uno anno, fermandosi" type="straight"/>
+        <underline language="IT" method="pen" text="Re Catolici gli concessero molte gratie, &amp; prouisioni, non solo" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; quanto poi per la mala informatione de' maligni, &amp; inuidiosi si mutò" type="straight"/>
+        <underline language="IT" method="pen" text="gouerno de' ministri regali" type="straight"/>
+        <underline language="IT" method="pen" text="Giouanni di Fonsecca Archidiacono di Siuiglia" type="straight"/>
+        <underline language="IT" method="pen" text="poi fu Vescouo di Burgos, portò continuatamente mortale odio all' Ammiraglio" type="straight"/>
+        <underline language="IT" method="pen" text="Don Diego" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; io," type="double"/>
+        
+    </annotation>
+</transcription>

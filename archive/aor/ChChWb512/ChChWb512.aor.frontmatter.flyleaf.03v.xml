@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.frontmatter.flyleaf.03v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        floruit a[nn]o 1150 sub Anglo[rum] rege Stephano.
+                    </marginalia_text>
+                    <person name="King Stephen"/>
+                    <emphasis method="pen" text="floruit a[nn]o 1150 sub Anglo[rum] rege Stephano." type="straight"/>
+                </position>
+            </language>
+            <translation>Flourished in the year 1150 under Stephen, king of the English.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Caradocus Lancarnavensis istius Galfredi conterraneus et synchronus, Reguloru[m] Brytannico[rum] successiones post morte[m] Cadwalladri regis, per 460 ferè 
+                        annos cum magna diligentia descripsit. Baleus. 
+                    </marginalia_text>
+                    <person name="Caradoc of Llancarfan"/> <!-- NBW: This is Caradoc of Llancarfan, https://en.wikipedia.org/wiki/Caradoc_of_Llancarfan, atributed author of "A History of Cambria." Most of these attributions to authors come from John Bale's "Scriptoium illustrium maioris britanniae catalogus" and likely from the copy held in ChCh with Dee's annotations (Wb.4.8) -->
+                    <person name="Geoffrey of Monmouth"/>
+                    <person name="Cadwaladr"/>
+                    <person name="John Bale"/>
+                </position>
+            </language>
+            <translation>Caradocus of Llancarfan, countryman and contemporary of this Geoffrey of Monmouth, described the successions of British princes for almost 460 years after the death of king Cadwaladr with great diligence. Baleus.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Nennius Bannochorensis collegij po[n]tifex scripsit de origine Brytanno[rum] de vrbibus eorunde[m]
+                        Cosmographia[m] historia[e] mundi 
+                        Alterius Nennij chronico[n] in Latinam vert[it]
+                        floruit sub Caduuano Brytanno[rum] Duce a[nn]o à Chr[ist]o incarnato 620
+                    </marginalia_text>
+                    <person name="Nennius"/>
+                    <person name="Caduanus"/>
+                    <book title="De origine Britannorum"/>
+                    <book title="De urbibus Britanniae"/>
+                    <book title="Cosmographia historiae mundi"/>
+                    <book title="Scriptorum illustrium maioris Brytannie quam nunc Angliam &amp; Scotiam vocant catalogus"/>
+                    <location name="Bangor"/>
+                </position>
+            </language>
+            <translation>Nennius of Bangor, priest of the high college, wrote "De origine Britannorum"; "De urbibus eorundem (i.e. Britannorum)"; and "Cosmographia historiae mundi". He translated the chronicle of the other Nennius (i.e. Nennius Audax) into Latin. Flourished under Caduanus, leader of the Britons in the year after the Incarnation 620.</translation>
+        <!-- NBW: These titles are copied from Bale's Catalogus (p.[73], sig. K1 r) as he entered them. The Alterius Nennii line is paraphrased. The full passage in Bale reads 'Alterius etiam Nennii chronicon in Latinam transtulisse linguam dicitur, ac plura addidisse' For Nennius Audax, see p. 14, right before Joseph of Arimathea-->
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Samuel Beulanius, scripsit annotatio[n]es in Nenniu[m] 
+                        et Historia[m] itineraria[m] Arthuri facta apud Scotos 
+                        floruit sub Cadwallone [deleted Brytannor[um]] Brytanno[rum] duce A[nn]o 640
+                    </marginalia_text>
+                    <person name="Samuel Beulanius"/>
+                    <person name="Nennius"/>
+                    <book title="Annotationes in Nennium"/>
+                    <book title="Historia itineraria"/>
+                    <book title="Arthuri facta apud Scotos"/>
+                    <book title="Scriptorum illustrium maioris Brytannie quam nunc Angliam &amp; Scotiam vocant catalogus"/>
+                </position>
+            </language>
+            <translation>Samuel Beulanius wrote "Annotationes in Nennium"; "Historia itineraria"; and "Arthuri facta apud Scotos". Flourished under Cadwallon, leader of the Britons, in the year 640.</translation>
+        </marginalia>
+        <!--NBW: This and the entry below are copied directly from Bale's Catalogus, p. 75-->
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Baleus { Huius ac Nennij hucvsq[ue] manent historia[e] inter tot bello[rum] clades, [q]uamvis a Beda et Polydoro (scriptoru[m] raritate[m] crimina[n]tib[us]) no[n] vis[ae]
+                    </marginalia_text>
+                    <person name="John Bale"/>
+                    <person name="Nennius"/>
+                    <person name="Bede"/>
+                    <person name="Polydore Virgil"/>
+                    <book title="Scriptorum illustrium maioris Brytannie quam nunc Angliam &amp; Scotiam vocant catalogus"/>
+                </position>
+            </language>
+            <translation>John Bale: Samuel Beulanius's history and that of Nennius during such devastation of wars remain to this day, but (owing to the rarity of the works) they were not seen by Bede and Polydore Vergil.</translation> <!-- NBW: The ascription here to Beulanis as 'huius' is not 100% -->
+    </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        Humbertus de bello[rum] Britannico[rum]
+                    </marginalia_text>
+                    <person name="Humbertus"/>
+                    <book title="De bellorum Britannicorum"/>
+                </position>
+            </language>
+            <translation>Humbertus' "De bellorum Britannicorum".</translation>
+        </marginalia>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p> Paris, Bibliothèque nationale de France, fr. 803</p>
+        </note>
+        <note rend="CONTENTS">
+          <p><hi rend="italics">Roman de la Rose</hi> (ff. 1r-154v)</p>
+          <p>The poem is missing its final verses (the manuscript seems to have lost folios) and breaks off on f. <locus>154v</locus> at the line "Et de pluses via/n/des taste" (Lecoy 21531) </p>
+        </note>
+        <note rend="MATERIAL">
+          <p>Parchment</p>
+        </note>
+        <note rend="ORIGIN">
+          <p>France</p>
+        </note>
+        <note rend="DATE">
+          <p>2nd half of 14th century</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>Gothic, written in 2 columns of 38 lines, various scribes at work on different quires</p>
+        </note>
+        <note rend="ARTISTS">
+          <p>1 artist completes a single miniature</p>
+        </note>
+        <note rend="DECORATION">
+          <p>1 single-column panel miniature in colors (L'Amans Sleeps), a decorated initial 'M' in colors and gold, and a 2-sided foliate bar border which includes a hybrid creature (f. <locus>1r</locus>). 9/14-line spaces left empty for miniatures never completed. Gold initials on pink and blue ground throughout.</p>
+        </note>
+        <note rend="DIMENSIONS">
+          <p>308 x 220 mm (this measurement is from Langlois)</p>
+        </note>
+        <note rend="FOLIATION">
+          <p>ff. iii + 154 + ii</p>
+        </note>
+        <note rend="BINDING">
+          <p>French, early 19th century; light brown calf marbled binding with gilt decorative border on upper and lower covers, title of the book and initials of Napoleon in gilt on spine, raised spine bands, marbled endpapers.</p>
+        </note>
+        <note rend="PROVENANCE">
+          <p>Wilhem III of Honstein (1506-1541), early 16th century (a note in Latin on <locus>frontmatter.flyleaf.03r</locus> reads: "Munus exigui pauperculi parietarii pareciani in Hacheim, prope arcem Moguntinar. Reverendo in Christo patri et domino Wilhelmo ex familia de Honstein prognato, ecclesiae ac diocesis Agentinensis presuli oblato. Anno Virginis partus...millesimo quingentesimo vicesimo."); Jules Mazarin, cardinal and minister of France (1602-1661), 17th century; 18th century stamp of the Bibliotheca Regiae (royal library), where it was ms. 7198 (ff. <locus>1r</locus>, <locus>154v</locus>)</p>
+        </note>
+        <note rend="NOTES">
+          <p>Also on <locus>frontmatter.flyleaf.03r</locus> is written "Memoire que le .xxiije. jour du mois de novembre l'an mil .cccc. et sept, le jour de saint Clement, a .x. eures de nuit, [fut tué] a Paris, en la vieille rue du Temple, Mons. le duc. [d'Orleans], frere du roy de Franche, lequel duc avoit non Louise de Vallois, par Roulet d'Ectonville."</p>
+        </note>
+        <note rend="SELECT BIBLIOGRAPHY">
+          <p>1. Paulin Paris, <hi rend="italics">Les manuscrits françois de la Bibliothèque du roi</hi> (Paris: Techener, 1836-1848), IV, p. 235</p>
+          <p>2. Langlois, <hi rend="italics">Les manuscrits</hi>, pp. 10-11</p>
+        </note>
+        <note rend="N.B.">
+          <p>This description has been compiled using the site's images and various published sources. If you have corrections or additional information on the manuscript, please do contact us.</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">Français 803</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="154" unit="folios">154</measure>
+            <dimensions>
+              <height unit="mm">308</height>
+              <width unit="mm">220</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">1</note>
+          <note type="material">parchment</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1400" notBefore="1300">14th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de France</repository>
+            <idno>fr. 803</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="154v">1r-154v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">154</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">38</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

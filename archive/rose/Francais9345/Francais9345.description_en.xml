@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Paris, Bibliothèque nationale de France, fr. 9345</p>
+        </note>
+        <note rend="CONTENTS">
+          <p><hi rend="italics">Roman de la Rose</hi> (ff. 2r-62v), <hi rend="italics">Les Sept articles de la foi</hi> (ff. 63r-72r), <hi rend="italics">Le Codicille</hi> (ff. 72r-72v), <hi rend="italics">Le Codicille</hi> in Latin beginning "Miserere deffunctorum" (ff. 72v-73r)</p>
+        </note>
+        <note rend="MATERIAL">
+          <p>Parchment</p>
+        </note>
+        <note rend="ORIGIN">
+          <p>France</p>
+        </note>
+        <note rend="DATE">
+          <p>First half of the 14th century</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>Gothic, Rose poem written in 3 columns of 62 lines; subsequent texts in 2 columns written by a later hand of the 15th century</p>
+        </note>
+        <note rend="ARTISTS">
+          <p>Miniatures have been attributed to the Maubeuge Master (this is according to Rouse and Rouse, see bibliography)</p>
+        </note>
+        <note rend="DECORATION">
+          <p>83 single-column panel miniatures (mostly on gold grounds) with pink, blue and gold frames patterned in white and outlined in black (ff. 2r (x3), 2v (x4), 3r (x3), 4r (x2), 4v, 5r, 5v (x4), 6r, 6v, 7v (x2), 8r, 9r, 9v, 10r (x2), 10v (x2), 11r, 11v, 12r, 12v, 13v, 14r, 15r, 17r, 17v, 21r, 22r, 23v, 29v (x2), 30v (x2), 31r (x2), 31v (x2), 32r, 32v, 33v, 34r, 35r, 35v, 36r, 36v (x2), 37r (x2), 37v, 38r, 43r (x3), 43v, 44r, 44v, 45r, 45v, 47v, 48r, 48v, 52r, 55v, 56r (x2), 59v, 60r, 60v (x2), 61r (x2).) Foliate bar border incorporating birds, a winged creature, dogs chasing a hare, and a decorated initial on f. <locus>2r</locus>. Animals and heads in profile have been drawn as part of the lengthened and decorated ascenders at the tops of columns. Hybrid, partly human creatures are drawn in the lower margins of ff. <locus>11v</locus> and <locus>17r</locus>. Champie initials follow miniatures; there is a larger initial on f. <locus>13v</locus>, to mark where Jean's poem begins. Blue initials flourished in red and red initials flourished in blue throughout.</p>
+        </note>
+        <note rend="DIMENSIONS">
+          <p>376 x 260 mm (this measurement is according to Langlois)</p>
+        </note>
+        <note rend="FOLIATION">
+          <p>ff. ii + 73 + ii</p>
+        </note>
+        <note rend="BINDI NG">
+          <p>French, early 19th century; light brown calf marbled binding with the arms of Napoleon I stamped in the centre of upper and lower covers, raised spine bands, title of the book and initials of Napoleon on spine, marbled endpapers.</p>
+        </note>
+        <note rend="PROVENANCE">
+          <p>Stamps of Bibliotèque Royale; it was formerly ms. anc. supl. fr. 123.</p>
+        </note>
+        <note rend="NOTES">
+          <p>"Riens sans cela" is written on f. <locus>1r</locus> and f. <locus>73v</locus>.</p>
+        </note>
+        <note rend="SELECT BIBLIOGRAPHY">
+          <p>1. Langlois, <hi rend="italics">Les manuscrits</hi>, p. 40
+               </p>
+          <p>2. Richard H. and Mary A. Rouse, <hi rend="italics">Manuscripts and their makers: commercial book producers in medieval Paris, 1200-1500</hi> (Turnhout: Harvey Miller, 2000) I, p. 185; II, App. 4F</p>
+        </note>
+        <note rend="N.B.">
+          <p>This description has been compiled using the site's images and various published sources. If you have corrections or additional information on the manuscript, please do contact us.</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl><note type="format">manuscript</note><note type="commonName">Français 9345</note><title>Roman de la Rose</title><extent><measure quantity="73" unit="folios">73</measure><dimensions><height unit="mm">376</height><width unit="mm">260</width></dimensions></extent><note type="illustrations">83</note>
+               
+               
+               -
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>France</pubPlace>
+               
+               <date notAfter="1400" notBefore="1300">14th century</date>
+            
+            </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de France</repository>
+            <idno>fr. 9345</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="2r" to="62v">2r-62v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">61</note>
+              <note type="illustrations">83</note>
+              <note type="linesPerColumn">62</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">3</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="63r" to="72r">63r-72r</locus>
+              <title>Sept articles de la foi</title>
+              <note type="textid">septarticles</note>
+              <note type="folios">10</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">50</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="72r" to="72v">72r-72v</locus>
+              <title>Codicille</title>
+              <note type="textid">codicille</note>
+              <note type="folios">1</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">44</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="4">
+              <locus from="72v" to="73r">72v-73r</locus>
+              <title>Codicille in Latin</title>
+              <note type="textid">codicillelatin</note>
+              <note type="folios">2</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">44</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

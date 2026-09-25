@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.049r.tif" pagination="97" reader="John Dee" signature="g"/>
+    <annotation>
+         
+        <marginalia anchor_text="Plato" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Plato</marginalia_text>
+                    <person name="Plato"/>
+                </position>
+            </language>
+            <translation>Plato.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Polus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Polus</marginalia_text>
+                    <person name="Polus"/>
+                </position>
+            </language>
+            <translation>Polus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Callicles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Callicles</marginalia_text>
+                    <person name="Callicles"/>
+                </position>
+            </language>
+            <translation>Callicles.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lysias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lysias</marginalia_text>
+                    <person name="Lysias"/>
+                </position>
+            </language>
+            <translation>Lysias.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cornelius Celsus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cornelius Celsus.</marginalia_text>
+                    <person name="Aulus Cornelius Celsus"/>
+                </position>
+            </language>
+            <translation>Cornelius Celsus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="iuuenili calore" type="straight"/>
+        
+    </annotation>
+</transcription>

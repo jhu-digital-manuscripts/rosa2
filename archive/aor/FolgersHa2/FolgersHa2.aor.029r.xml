@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.029r.tif" pagination="377" reader="Harvey"/>	<!-- ABO 033right -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="EN">
+            			<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Eutrapelus for discourse, counsell, execution, incomparable.
+                      			</marginalia_text>
+            				<person name="Eutrapelus"/>
+            			</position>
+        				<position book_orientation="0" place="right_margin">
+        					<marginalia_text>
+        						The Best of the Best. Still &amp; still better, &amp; better.
+        						When most excellent, yet more, &amp; more excellent.
+        					</marginalia_text>
+        					<emphasis method="chalk" type="straight"/>
+        					<emphasis method="pen" text="excellent" type="straight"/>
+        				</position>
+        			</language>
+        		</marginalia>
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+        				<position book_orientation="0" place="intext">
+        					<marginalia_text>
+        						) Maximus mundi pragmaticus: 
+        						Vnicus summarum causarum negociator: et solus 
+        					</marginalia_text>
+        				</position>
+        				<position book_orientation="0" place="right_margin">
+        					<marginalia_text>
+        						Sui temporibus politicus.
+        					</marginalia_text>
+        				</position>
+        			</language>
+        			<translation>
+        				The greatest pragmaticist of the world:
+        				The only merchant of the highest causes: and the sole politican in his time. 
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						ridicolo.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Ridiculous.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						scitè. Oeconomicè.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Knowingly. Methodically.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						) Peritiss[im]a subtiliss[im]a
+    						profundiss[im]a postremò etiam potentiss[im]a cuiusq[uam] professionis
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						puncta, certè paucissima. Illa pauca
+    						curiosissimè perscrutanda, et vnicè multiplicanda.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				) Certainly, the fewest fragments of any profession are the most expert, the most subtle, the most profound, <!-- 'Punta' possibly used in the Ramist sense. -->
+    				and lastly, even the most potent. These few things must be studied most diligently and multiplied to a singular degree.
+    			</translation>
+    		</marginalia>
+        
+	        <marginalia hand="Italian">
+	        	<language ident="LA">
+	            	<position book_orientation="0" place="right_margin">
+	                		<marginalia_text>
+	                			i[nfr]a
+	                      	</marginalia_text>
+	            		<internal_ref>
+	            			<target ref="FolgersHa2:Ha2.069r" text="i[nfr]a"/>
+	            		</internal_ref>
+	            	</position>
+	                </language>
+	        	<translation>
+	        		[See] below.
+	        	</translation>
+	        </marginalia>
+        
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="90" place="left_margin">
+    					<marginalia_text>
+    						Da mihi Locos Communes, omnium potentissimos, summoq[ue]
+    						precio dignissimos.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Give me common places, those most potent of all, and most worthy of high praise.
+    			</translation>
+    		</marginalia>
+        
+	    	<!-- Underlines -->
+	        
+    		<underline language="IT" method="pen" text="Thomaso Porcacchi &amp; alla" type="straight"/>
+    		<underline language="IT" method="pen" text="Signora Aurora d'Este" type="straight"/>
+    		<underline language="IT" method="pen" text="altissimo intelletto" type="straight"/>
+    		<underline language="IT" method="pen" text="nel Friuli" type="straight"/>
+    		<underline language="IT" method="pen" text="stracorsero i Turchi rubando" type="straight"/>
+    		<underline language="IT" method="pen" text="mettendo a sacco" type="straight"/>
+    		<underline language="IT" method="pen" text="per riparar" type="straight"/>
+    		<underline language="IT" method="pen" text="da ogni soprauene[n]te pericolo" type="straight"/>
+    		<underline language="IT" method="pen" text="contadino, c'haueua un'arco" type="straight"/>
+    		<underline language="IT" method="pen" text="strada un Turco a cauallo, &amp;" type="straight"/>
+    		<underline language="IT" method="pen" text="il Gentil'huomo" type="straight"/>
+    		<underline language="IT" method="pen" text="trouandosi al uantaggio stimulò" type="straight"/>
+    		<underline language="IT" method="pen" text="caricasse l'arco, &amp; l'amazzasse" type="straight"/>
+    		<underline language="IT" method="pen" text="guadagnato il cauallo, &amp; l'armi del morto" type="straight"/>
+    		<underline language="IT" method="pen" text="fra 'l caricarlo" type="straight"/>
+    		<underline language="IT" method="pen" text="nò" type="straight"/>
+    		<underline language="IT" method="pen" text="guagniele non farò" type="straight"/>
+    		<underline language="IT" method="pen" text="freccie mi" type="straight"/>
+    		<underline language="IT" method="pen" text="un soldo l'una" type="straight"/>
+    		<underline language="IT" method="pen" text="Non francaua la" type="straight"/>
+    		<underline language="IT" method="pen" text="Altieri" type="straight"/>
+    		<underline language="IT" method="pen" text="grande usuraio" type="straight"/>
+    		<underline language="IT" method="pen" text="estenuata dal digiuno" type="straight"/>
+    		<underline language="IT" method="pen" text="uostra mula è si magra" type="straight"/>
+    		<underline language="IT" method="pen" text="egli subito" type="straight"/>
+    		<underline language="IT" method="pen" text="io gli dò mangiar del mio" type="straight"/>
+    		<underline language="LA" method="pen" text="presumitur iactare suum" type="straight"/>
+    		<underline language="IT" method="pen" text="tutori &amp; commessari, che egli" type="straight"/>
+    		
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="Mars" place="right_margin"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- E -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- riparar -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- stimu -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- con -->
+    		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- costa -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- mu -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- ma -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- mangiar -->
+    		<mark method="pen" name="equal_sign" place="right_margin"/> <!-- mangiar -->
+    		<mark method="pen" name="comma" place="right_margin"/> <!-- Alfonso -->
+	    	
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="plus_sign" place="left_margin"/> <!-- ste gentildonna -->
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- rubando -->
+    		<mark method="pen" name="bracket" place="left_margin"/> <!-- no... no -->
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- del mio. -->
+    		<mark method="pen" name="bracket" place="left_margin"/> <!-- ctare suum ... end of page. -->
+		    
+	    	<!-- Intext -->
+	    	<mark method="pen" name="dot" place="intext"/> <!-- giudicio, una -->
+    		<mark language="IT" method="pen" name="equal_sign" place="intext" text="ripararsi"/>
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- soprauene[n]te -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- ordine, il -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- uantaggio -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- amazzasse, e -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- guadagnato -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- usuraio, & -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- Pietro, & -->
+    		<mark method="pen" name="comma" place="intext"/> <!-- digiuno, gli -->
+    		<mark method="pen" name="comma" place="intext"/> <!-- leggisti -->
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- suum.] -->
+    		<mark method="pen" name="comma" place="intext"/> <!-- Pazzi fra -->
+    			
+    </annotation>
+</transcription>

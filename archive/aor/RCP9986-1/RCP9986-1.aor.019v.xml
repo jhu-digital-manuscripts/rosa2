@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.019v.tif" pagination="[20v]" reader="John Dee" signature="[C.iiij.[v]]"/>  
+    <annotation>
+        
+        <marginalia anchor_text="tyriam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tyrus.</marginalia_text>
+                    <location name="Tyre"/>
+                </position>
+            </language>
+            <translation>Tyre.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Pars'q[ue] tui latitat corpore cluasa meo" type="straight"/>
+        <underline language="LA" method="pen" text="tibi continget terra petita seni" type="straight"/>
+        
+    </annotation>
+</transcription>

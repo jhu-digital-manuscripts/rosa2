@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Le livre du chemin de long estude</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Français 1643, Bibliothéque national de France, Paris. Paris, 1403. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 286 x 217 mm, 93 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p> The <material>parchment</material> is well preserved, but it was unevenly cut. </p>
+                  
+            </note>
+            
+            <note rend="QUIRES">
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     
+                     <locus from="1" to="8">1-8</locus>
+                  
+                  </item>
+                  
+                  <item n="II">
+                     
+                     <locus from="9" to="16">9-16</locus>
+                  
+                  </item>
+                  
+                  <item n="III">
+                     
+                     <locus from="17" to="24">17-24</locus>
+                  
+                  </item>
+                  
+                  <item n="IV">
+                     
+                     <locus from="25" to="32">25-32</locus>
+                  
+                  </item>
+                  
+                  <item n="V">
+                     
+                     <locus from="33" to="40">33-40</locus>
+                     
+                  </item>
+                  
+                  <item n="VI">
+                     
+                     <locus from="41" to="48">41-48</locus>
+                     
+                  </item>
+                  
+                  <item n="VII">
+                     
+                     <locus from="49" to="56">49-56</locus>
+                     
+                  </item>     
+                  
+                  <item n="VIII">
+                     
+                     <locus from="57" to="64">57-64</locus>
+                     
+                  </item>
+                  
+                  <item n="IX">
+                     
+                     <locus from="65" to="72">65-72</locus>
+                     
+                  </item>
+                  
+                  <item n="X">
+                     
+                     <locus from="73" to="80">73-80</locus>
+                     
+                  </item>         
+                    
+                  <item n="XI">
+                     
+                     <locus from="81" to="88">81-88</locus>
+                     
+                  </item>
+                  
+                  <item n="XII">
+                     
+                     <locus from="89" to="93">89-93</locus>
+                     
+                  </item>
+                                   
+               </list>
+                
+               <p>(VI, parchment) + 93 + (I, parchment). Modern foliation in ink on the top right corner is accurate. </p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>There are irregular brownish ruling marks on the folios. There is one column with 35 (sometimes 34) lines.</p>
+
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text is written in dark brown ink and there are no rubrics. The manuscript was written by Nicole Garbet, bachelor of Theology and secretary to Louis d'Orléans, using a semicursive minuscule script. There are corrections done by a different hand.</p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>The ornamental decoration of the manuscript was made by one artist whose style was described as "aux radicelles". This ornamental artist does not work directly on any of the manuscripts from the workshop of Christine de Pizan.There is one large foliated initial in folio <locus>1</locus>, a T in blue over a goldleaf background (vignette). The initial is connected to a decorative foliate bar border, with gold leaf, red, and blue foliate extenders. In addition there are many smaller decorative initials in gold leaf over a red or blue background. Some of them have short gold leaf foliate extenders with blue or red flowers floating between them (ff. <locus>7</locus>, <locus>12</locus>, <locus>24</locus>, <locus>31</locus>). </p>
+               
+               <p>The manuscript was supposed to have had a number of miniatures, at least 5, but none of them were ever completed. There is also written indication of where other miniatures were supposed to be inserted within the manuscript.</p>
+             
+             <p>Folios were the expected miniatures should have gone and the written instructions:</p>
+               <list>
+                  <item> Fol. <locus>2</locus>, <hi rend="italics">Cy soit laissié espace a faire historie</hi>.</item>
+                  <item> Fol. <locus>27</locus>, <hi rend="italics">Ci soit laisié espace a faire historie</hi>.</item>
+                  <item> Fol. <locus>34</locus>, <hi rend="italics">Cy laisiés espace pour historie</hi>.</item>
+                  <item> Fol. <locus>39</locus>, <hi rend="italics">Soit ci laisié espace pour historie</hi>.</item>
+                  <item> Fol. <locus>42</locus>, <hi rend="italics">Laissiés espace affaire historie</hi>. </item>
+                  <item> Fol. <locus>51</locus>, <hi rend="italics">Laissiés espace affaire historie et une letre comme si dessus</hi>.</item>
+                  <item> Fol. <locus>55</locus>, <hi rend="italics">Espace affaire historie</hi>. </item>
+                  <item> Fol. <locus>57</locus>, <hi rend="italics">Histoire et grant letre</hi>.</item>
+                  <item> Fol. <locus>60</locus>, <hi rend="italics">Historie</hi>.</item>
+                  <item> Fol. <locus>89</locus>, <hi rend="italics">Historie</hi>. </item>
+                  <item> Fol. <locus>91</locus>, <hi rend="italics">Cy soit laissié espace affaire historie et une grant letre</hi>. </item>
+                                    
+                </list>
+                              
+            </note>
+            
+            <note rend="BINDING">
+               
+               <p>This volume presents a rare feature: its original binding, preserved for six centuries under a blanket of blue velvet that faded into a light blue-green tone, is intact, except for the clasps, which had been properly removed, probably at the time the panels were replaced by shelves in the library. It is described in the inventory of the library of Charles d'Orléans, by Blois after his return from captivity. His description is the most precise: "<hi rend="italics">couvert de cuir rouge marqueté à deux fermouers de cuivre</hi>". Each cover is decorated with five nested rectangles alternating with fillets. The interior of each consecutive rectangle has been decorated, from the the exterior to the interior: rampant lion, heart with a jewel in the middle, deer, squirrel, two birds, and fillets in the center..</p>
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>The manuscript can be dated to 1403. It was created around the same time than BnF, fr. 1188. The manuscript was presented to Jean de Berry the 20th of March, 1403, indicated by the numerous corrections. This manuscript seems to have been partially copied in Ms. KBR 10982, which can also be dated to 1403.</p>
+               <p>Provenance: Louis d'Orléans. It was one of the secretaries of his Chancery, Nicole Garbet, who copied the manuscript. There are many notes and marginal corrections (in early cursive) by the hand of Christine de Pizan. These notes referred to the preparation for the execution of a copy that was more luxurious for the Duke of Berry. There is no evidence, however, that a luxurious manuscript was actually presented or even executed. This volume was part of the collection of the Duques of Orléans, as indicated in the in the piece of parchment that was attached to the interior of the back cover of the original binding, written in 1440 by the hand of one of Charles d'Orléans' agents. His library was incorporated to the Royal Library at the end of the 15th century. There is a second inscription written in a piece of parchment and attached to the front cover, in a rather large cursive script, that reads " <hi rend="italics">Le chemin de longue estude</hi>". Next to it, there is another inscription by the same hand that reads, "<hi rend="italics">composé par une femme</hi>", and yet, a different hand, probably from the early 16th century, wrote, "<hi rend="italics">en rithme</hi>". At the end, one can see a partially erased shelfmark, 166 (?), which was probably its number when this manuscript was part of the library of Charles d'Orléans. The manuscript contains other shelfmarks on folio <locus>1</locus>: 1500 (Rigault), 620 (Dupuy); 7641 (Regius). </p>
+                  
+            </note>
+            
+            <note rend="TEXT">
+               
+               <p>It only contains <hi rend="italics">Le livre du chemin de long estude</hi>.</p>
+               
+               
+            
+            </note>
+            
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 11643</note>
+               
+               <title>Le livre du chemin de long estude</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="93" unit="folios">93 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">286</height>
+                     
+                     <width unit="mm">217</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">0</note>
+                        
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 1643</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="93v">1r-93v</locus>
+                     <title>Le livre du chemin de long estude</title>
+                     <note type="textid">Le livre du chemin de long estude</note>
+                     <note type="folios">93</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">35</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">1</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.032r.tif" pagination="32" reader="John Dee" signature="[Giv]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        nota.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="soluta[e]" type="double"/>
+        <underline language="LA" method="pen" text="soluti" type="double"/>
+        <underline language="LA" method="pen" text="ex lana, seu tomento" type="straight"/>
+        <underline language="LA" method="pen" text="agrilla[e]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; una tomenti" type="straight"/>
+        
+        <mark method="pen" name="comma" place="right_margin"/>
+        <mark method="pen" name="comma" place="right_margin"/>
+        <mark method="pen" name="comma" place="right_margin"/>
+        <mark method="pen" name="comma" place="right_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.227v.tif" pagination="6" reader="John Dee" signature="[Aaa iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Aeditha regina" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Æditha a[l]t[e]r AEdgitha Goditha Regina Angloru[m]. quonda[m] vxor Edwardi confessoris sup[ra] pag. 433.  
+                    </marginalia_text>
+                    <person name="Edith of Wessex"/>
+                    <person name="Edward the Confessor"/>
+                    <internal_ref>
+                        <target ref="RCP10653:457" text="pag. 433"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                Edith of Wessex, otherwise Ædgitha, Godgitha, Queen of the English, formerly the wife of Edward the Confessor. Above, page 433.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="VValtheof[us] Dux decollatus est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Waltheofus d[icitu]r decoll. a[nn]o 1084.
+                    </marginalia_text>
+                    <person name="Waltheof, Earl of Northumbria"/>
+                </position>
+            </language>
+            <translation>
+                Waltheof, Earl of Northumbria, is said to have been beheaded in 1084.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Aeditha regina Anglorum" type="straight"/>
+        <underline language="LA" method="pen" text="obijt Aeditha regina" type="straight"/>
+        <underline language="LA" method="pen" text="filiam Gulihelmi" type="straight"/>
+        <underline language="LA" method="pen" text="filij Osberti" type="straight"/>
+        <underline language="LA" method="pen" text="nuptui" type="double"/>
+        <underline language="LA" method="pen" text="tradidit, &amp; Co[n]sulatum de Northfolk &amp; Suthfolk" type="straight"/>
+        <underline language="LA" method="pen" text="Iste Radulphus erat de genere Britonum" type="straight"/>
+        <underline language="LA" method="pen" text="Natus fuit in" type="straight"/>
+        <underline language="LA" method="pen" text="Rogerium" type="straight"/>
+        <underline language="LA" method="pen" text="VValtheof[us] Dux decollatus" type="straight"/>
+        
+        <errata amendedtext="Paccratij" copytext="Pancratij" language="LA"/>
+        
+        <graph book_orientation="0" method="pen" place="left_margin" type="genealogical_tree">
+            <node id="n1" person="Osbern the Steward">Osbertus</node>
+            <node id="n2" person="William FitzOsbern">Gulielmus</node>
+            <node id="n3" person="Emma de Guader">filia</node>
+            <node id="n4" person="Ralph de Gaël">Radulfus</node>
+            <link from="n1" relationship="has_child" to="n2"/>
+            <link from="n2" relationship="has_child" to="n3"/>
+            <link from="n3" relationship="has_spouse" to="n4"/>
+            <link from="n4" relationship="has_spouse" to="n3"/>
+        </graph>
+        
+    </annotation>
+</transcription>

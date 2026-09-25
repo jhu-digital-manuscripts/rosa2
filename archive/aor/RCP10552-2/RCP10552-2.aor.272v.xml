@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.272v.tif" pagination="58" reader="John Dee" signature="[H.ij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="500. transmisit Wallenses" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Walenses milites 500 tra[n]smissi.</marginalia_text>
+                </position>
+            </language>
+            <translation>500 Welsh soldiers sent across.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Richardus Mareschalli; occiditur" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Richardus. Maris[challi] occiditur.</marginalia_text>
+                    <person name="Richard Marshal, 3rd Earl of Pembroke"/>
+                </position>
+            </language>
+            <translation>Richard Marshal killed.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>J.D. Diuisis</marginalia_text>  
+                </position>
+            </language>
+            <translation>John Dee. [From the castle of] 'Divisis'.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mareschalli Gilbertus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gilb[ertus] Maris[challi]</marginalia_text>
+                    <person name="Gilbert Marshal, 4th Earl of Pembroke"/>
+                </position>
+            </language>
+            <translation>Gilbert Marshal.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iohannes Scotus vltimus comes Cestriae" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Io[hann]es Scotus Comes Cestria[e] vltimus</marginalia_text>
+                    <person name="John of Scotland, Earl of Huntingdon"/>
+                </position>
+            </language>
+            <translation>John the Scot, the final Earl of Chester.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Wasconia 500. transmisit" type="straight"/>
+        <underline language="LA" method="pen" text="Richardus Mareschalli contra" type="straight"/>
+        <underline language="LA" method="pen" text="ibidem deceptus" type="double"/>
+        <underline language="LA" method="pen" text="Cui successit" type="straight"/>
+        <underline language="LA" method="pen" text="eius Gilbertus" type="double"/>
+        <underline language="LA" method="pen" text="comes Mareschalli Gilbertus" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- comitatu Germanus -->
+        <mark method="pen" name="comma" place="intext"/>   <!-- eius Gilbertus -->
+        
+    </annotation>
+</transcription>

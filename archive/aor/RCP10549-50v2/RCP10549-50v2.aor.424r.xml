@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.424r.tif" pagination="299" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="irrefutata" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>irrefutata</marginalia_text>
+                </position>
+            </language>
+            <translation>Unrefuted.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="stultus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>stultus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Foolish.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="éine parcet, vt ipse occidatur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>occidere iniustum, occidi stultum est.</marginalia_text> 
+                </position>
+            </language>
+            <translation>To kill a wrongful person, it is stupid to be killed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ciuilem esse dicens, alteram naturalem, vtranque subuertit quod illa ciuilis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iustitia { ciuilis naturalis</marginalia_text>
+                </position>
+            </language>
+            <translation>Civil and natural justice.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="non potuerit refellere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cic[ero] ha[e]c refellere no[n] potuit</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero could not refute these things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sapie[n]tiam quidem esse concesserat, sed iniustam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>sapie[n]tia iniunsta</marginalia_text>
+                </position>
+            </language>
+            <translation>Unjust wisdom.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Caneades" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Carneades</marginalia_text>
+                    <person name="Carneades"/>
+                </position>
+            </language>
+            <translation>Carneades.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nihil percipi" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Carneades nihil p[er]cipib[at]</marginalia_text> <!--JG: Unsure about last word-->
+                    <person name="Carneades"/>
+                </position>
+            </language>
+            <translation>Carneades, nothing [..].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iustus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iustus</marginalia_text>
+                </position>
+            </language>
+            <translation>Just.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="virtute disputant, quanius intelligant aerumnis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Virtus a[e]ru[m]nis plenissima</marginalia_text>
+                </position>
+            </language>
+            <translation>Virtue is abundantly full of toil</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nullum esse ius naturale" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nullu[m] ius naturale</marginalia_text>
+                </position>
+            </language>
+            <translation>There is no natural law.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iustos dicemus quidem: sed tamen stultos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iustus. stultus</marginalia_text>
+                </position>
+            </language>
+            <translation>Lawful, foolish.</translation>
+        </marginalia>
+      
+        <underline language="LA" method="pen" text="irrefutata" type="straight"/>
+        <underline language="LA" method="pen" text="latere in abdito veritatem" type="straight"/>
+        <underline language="LA" method="pen" text="superuacuam, támque contemptam deo putas, vt nihil possit, nihílque" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]tra accurata[m] orationem" type="straight"/>
+        <underline language="LA" method="pen" text="iustitiam iustissimo viro defendere" type="straight"/>
+        <underline language="LA" method="pen" text="qui vt aliis prosint, sibi nocere contendant" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+
+    </annotation>
+</transcription>

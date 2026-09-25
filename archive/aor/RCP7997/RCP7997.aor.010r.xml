@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.010r.tif" reader="John Dee" signature="[Biiij]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Vniversales pra[e]missa[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Universal premises.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[er]fecta p[ro] p[ar]ib[us] nu[m]er[is] [et] abu[n]da[n]tia p[ro] i[m]parib[us]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        perfectu[m] p[ro] pari et abu[n]da[n]s p[ro] impari    
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Perfect for even numbers and abundant for odd numbers. <!-- FSF: Daisy and I discussed this, but weren't sure -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hic ph[ilosophu]s volens ostendere q[ua]lit[er] accipie[n]da sunt p[ri]ncipia p[ro]pria cuiuslibet discipline iuxta artem inue[n]tionis medij ab eo tradita[m] dicit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        na[m] illa ars ab aristotele tradita vniversalissima est.
+                    </marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>
+                For this art that has come down to us from Aristotle is the most universal. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fiat no[n] erit silogism[us] oste[n]siu[us]. aut no[n] erit ad min[us] ad p[ro]positu[m]. aut erit petitio ei[us] q[uo]d i[n] p[ri]ncipio e[st] vt de petit[i]o[n]e p[ri]ncipij p[ro]seq[ui]t[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="Sumit na[m]q[uam] arest.sp[er] i[n] seque[n]tib[us] p[er]fecta p[ro] p[ar]ib[us] nu[m]er[is] [et] abu[n]da[n]tia p[ro] i[m]parib[us]. c[aus]as p[ro]pt[er] q[ui]d i[n]              seque[n]tib[us] o[ste]ndem[us]" type="straight"/>
+        <underline language="LA" method="pen" text="accipie[n]da sunt p[ri]ncipia p[ro]pria cuiuslibet discipline iuxta artem inue[n]tionis medij ab eo" type="straight"/>
+        
+        <errata amendedtext="arist" copytext="arest." language="LA"/>
+        
+    </annotation>
+</transcription>

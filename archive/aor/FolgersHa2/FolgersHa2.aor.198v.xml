@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.198v.tif" pagination="220" reader="Harvey" signature="[O6v]"/>	<!-- ABO 203left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Cose del mondo: et Cose	
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						in esse.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The matters of the world: and the matters in being.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vox Eutrapeli clarissima, et dulcissima Super omnes:
+						ex illo effusa nitidissimo spiritu; illoq[ue]
+						digna illuminatio animo. Buccinarum
+						Sirenumq[ue] accentus. Plusqua[m] Pra[e]stonus.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+					<person name="Praestonus"/>
+				</position>
+			</language>
+			<translation>The voice of Eutrapelus, most clear and sweet above all: brought forth from that brightest spirit; and worthy for that illuminated mind.
+				The intensity of trumpets and sirens. More than Praestonus.</translation> 
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Practica Mundi pra[e]gnantissima.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The most pregnant practice of the world.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Curiosissimè perscrutanda Omnia in mundo maxima, et profundissima: in primisq[ue] Pragmatica
+						singula, qua[e] plurimùm valent vel in Curijs Judicum, vel in aulis Principum.
+					</marginalia_text>
+					<emphasis method="pen" text="Curiosissimè perscrutanda" type="straight"/>
+					<emphasis method="pen" text="mundo maxima" type="straight"/>
+					<emphasis method="pen" text="profundissima" type="straight"/>
+					<emphasis method="pen" text="Pragmatica" type="straight"/>
+					<emphasis method="pen" text="plurimùm valent" type="straight"/>
+					<emphasis method="pen" text="Curijs Judicum" type="straight"/>
+					<emphasis method="pen" text="in aulis" type="straight"/>
+				</position>
+			</language>
+			<translation>All greatest and most profound things in the world must be sought most attentatively:
+			and especially singular pragmatics, which prevail in great number either in the courts of judges or in the courts of the princes.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Qua[e] in foris, in Consilijs regijs, in aulis dominantur, ea intimè percallere uiri est;
+						et in ipsis summarum Negociationum arcanis superexcellere. Parum est, omniu[m] esse
+						peritissimum, nisi etiam singulorum subtilissimus censearis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>It becomes a man to understand well those things which dominate in the forums, in the regal councils, in the courts; and to
+			excel greatly in the mysteries themselves of the greatest matters. It is not enough to be skillful in everything, unless you also assess the most subtle of
+			singular things. 
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Ario filosofo, amico stretto" type="straight"/>
+		<underline language="IT" method="pen" text="la sua salute" type="straight"/>
+		<underline language="IT" method="pen" text="ma non la potendo" type="straight"/>
+		<underline language="IT" method="pen" text="cosi alla prima ottenere" type="straight"/>
+		<underline language="IT" method="pen" text="mutata" type="straight"/>
+		<underline language="IT" method="pen" text="seguitaua Ario douunque" type="straight"/>
+		<underline language="IT" method="pen" text="i dotti salueranno" type="straight"/>
+		<underline language="IT" method="pen" text="se non dotti" type="straight"/>
+		<underline language="IT" method="pen" text="Saggi &amp; fedeli" type="straight"/>
+		<underline language="IT" method="pen" text="i libri" type="straight"/>
+		<underline language="IT" method="pen" text="quali consiglieri" type="straight"/>
+		<underline language="IT" method="pen" text="i libri" type="straight"/>
+		<underline language="IT" method="pen" text="senza timore, senza" type="straight"/>
+		<underline language="IT" method="pen" text="tutto quel ch'io cerco di sapere" type="straight"/>
+		<underline language="IT" method="pen" text="oh cari libri" type="straight"/>
+		<underline language="IT" method="pen" text="gioco[n]da famigliuola" type="straight"/>
+		<underline language="IT" method="pen" text="come ogn'altra famiglia" type="straight"/>
+		<underline language="IT" method="pen" text="L'infingardaggine" type="straight"/>
+		<underline language="IT" method="pen" text="altrui in pessimo" type="straight"/>
+		<underline language="IT" method="pen" text="state la Cicala" type="straight"/>
+		<underline language="IT" method="pen" text="Cicala che mendica[n]do viene" type="straight"/>
+		<underline language="IT" method="pen" text="inconsiderata contaui" type="straight"/>
+		<underline language="IT" method="pen" text="io lauaraua" type="straight"/>
+		<underline language="IT" method="pen" text="facea proua" type="straight"/>
+		<underline language="IT" method="pen" text="Che'l tanto cicalar nuoce" type="straight"/>
+		
+		<symbol name="SS" place="head"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--an-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--sal-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--con-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ri-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--sen-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--famigliuo-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--so-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--vora-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--tra-->
+		
+		<mark method="pen" name="plus_sign" place="intext"/>
+		<mark method="pen" name="dot" place="intext"/> <!--verno, venuto-->
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark method="pen" name="dot" place="intext"/> <!--proua, &--> 
+
+    </annotation>
+</transcription>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.022r.tif" reader="John Dee" signature="[Diiij]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="magnitudo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Magnitudo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Amount.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="circa subiectu[m] [et] circa p[ri]ncipia subiecti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        [subiectu[m] propriu[m] principia subiecti proprij
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The proper subject or principles of the proper subject.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Na[m] par [et] i[m]par q[ua]dratus [et] cubicus sunt passiones ip[s]ius nu[m]eri              q[ua]s supponit arismetric[us]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Paret impar q[ua]dratus et cubicus su[n]t passiones Numeri. [etc]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An euqal and unequal square and cube are propterties of number.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="passiones linee" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Passiones Line[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Properties of a line.  
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Reflexu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Reflexum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A reflex.   
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[ro]pria[m] passione[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Propria passio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Proper property.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="p[ri]cipia co[m]munia [et] cu[m] p[ri]ncipijs que demo[n]strant[ur]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Co[mm]unia cum p[ro]prijs p[ri]ncipijs demo[n]strant p[ro]prias passiones
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Common things with proper principles demonstrate proper properties. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="passiones p[er] se" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Passiones per se.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Properties per se. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="geomet[er] demo[n]strat reflexu[m]. quia est. [et] p[er]spectiu[us] p[ro]pter quid" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Geometer et perspectiuus q[uo]modo mutui demo[n]stra[n]t in aliquib[us], quia et propter quid.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                How the geometer and [perspective?] mutually demonstrate in some things, that they are and why they are. <!-- DO: There is some info on 'quia' and 'propter quid' here: https://plato.stanford.edu/entries/demonstration-medieval/ -->
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="circa subiectu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="circa p[ri]ncipia subiecti" type="straight"/>
+        <underline language="LA" method="pen" text="subiectoru[m] passiones p[er] se sunt" type="straight"/>
+        <underline language="LA" method="pen" text="Na[m] par [et] i[m]par q[ua]dratus [et] cubicus sunt passiones ip[s]ius nu[m]eri q[ua]s supponit arismetric[us]" type="straight"/>
+        <underline language="LA" method="pen" text="irrationalis [et] curuu[m] seu reflexu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="p[ro]ut terminat[ur] visibili. q[ua]re geomet[er] demo[n]strat reflexu[m]. quia est. [et] p[er]spectiu[us] p[ro]pter quid" type="straight"/>
+        <underline language="LA" method="pen" text="tria[n]gulo q[ue] est [et] quid" type="straight"/>
+        <underline language="LA" method="pen" text="S[e]c[un]do p[ro]pria[m] passione[m] subiecti" type="straight"/>
+        <underline language="LA" method="pen" text="q[uod] co[n]clusio in vna demo[n]stratione potest esse p[ri]ncipiu[m] i[m]mediatu[m] in alia vt si sit c[on]clusio inte[n]ta p[ro]banda q[uod] om[n]is trianguli angulus" type="straight"/>
+        <underline language="LA" method="pen" text="ergo p[ri]ncipia p[ro]pria possunt esse conclus[i]o[n]es demo[n]strationu[m]. ideo" type="straight"/>
+        <underline language="LA" method="pen" text="quia p[er] huiusmo[d]i p[ri]ncipia co[m]munia [et] cu[m] p[ri]ncipijs que demo[n]strant[ur]. i[d est] cum p[ri]ncipijs p[ro]prijs demonstrat p[ro]prias passiones" type="straight"/>
+        
+        <errata amendedtext="," copytext="." language="LA"/> <!-- significet vna[m]qua[m]q[ue] -->  
+        <errata amendedtext="vna[m]quaeq[ue]" copytext="vna[m]qua[m]q[ue]" language="LA"/>
+        
+    </annotation>
+</transcription>

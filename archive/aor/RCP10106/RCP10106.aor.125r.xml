@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.125r.tif" pagination="249" reader="John Dee" signature="q 5"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Bagoam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bagoa</marginalia_text>
+                    <person name="Bagoas"/>
+                </position>
+            </language>
+            <translation>Bagoas.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Megabyzum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Megabysus.</marginalia_text>
+                    <person name="Megabyzus"/>
+                </position>
+            </language>
+            <translation>Megabyzus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Refutatio dupliciter" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Refutatio [duplex]</marginalia_text>
+                </position>
+            </language>
+            <translation>Two forms of refutation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cui in causis quartus aßignatur locus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Refutationi [quartus] attribuitur in caußis locus.</marginalia_text> 
+                </position>
+            </language>
+            <translation>The fourth place in the causes is assigned to refutation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="difficilius semper est creditu[m] (quod Cicero saepe testatur) defendere, quàm accusare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Difficilius est defendere qua[m] accusare.</marginalia_text>
+                </position>
+            </language>
+            <translation>Defense is more difficult than prosecution.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="masculini &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="nos qui oratorem studemus effingere, no[n] arma, sed tympana eloquentiae demus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ferire uitalia, ac tueri sciat" type="straight"/>
+        <underline language="LA" method="pen" text="debent utrinq[ue] dissolui: &amp; hoc est proprie dissolui, cui in causis" type="straight"/>
+        <underline language="LA" method="pen" text="Affectus plerunq[ue] haec pars mitiores habet" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

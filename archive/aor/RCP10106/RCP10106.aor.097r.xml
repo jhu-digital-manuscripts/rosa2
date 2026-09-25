@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.097r.tif" pagination="193" reader="John Dee" signature="n"/> 
+    <annotation>
+        
+        <!-- M.B. Intext asterisk (errata) could also be captured as a marking, if this is added to the schema. Otheriwse this transcription is complete.  -->
+        
+        <marginalia anchor_text="scelus incredibile, &amp; prater ha[n]c unam in omni uita inauditum. ò libidine[m] effraenatam &amp; indomitam. ò audaciam              singula rem, non[m] timuisse, si minus uim Deorum, hominumq[ue], fama[m], at illa[m] ipsam noctem, facesq[ue] ipsas nuptiales, no[n] lumen cubiculi, no[m] cubile filiae               no[n] parties, deniq[ue] ipsos superioru[m] testes nuptiarum?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="seruius modò Sulpitius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Seruius sulpitius</marginalia_text>
+                    <person name="Servius Sulpicius Rufus"/>
+                </position>
+            </language>
+            <translation>Servius Sulpicius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tullius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Cluentio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Clue[n]tio.</marginalia_text>
+                    <book title="Pro Cluentio"/>
+                </position>
+            </language>
+            <translation>Pro Cluentio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Partionibus praecipit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero in partitionibus oratorijs</marginalia_text>
+                    <person name="Cicero"/>
+                    <book title="De Partitionbus Oratoriae"/>
+                </position>
+            </language>
+            <translation>Cicero in 'De Partitionbus Oratoriae'.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Argume[n]tari &amp; argueme[n]ta ponere</marginalia_text>
+                </position>
+            </language>
+            <translation>Use proofs and arguments.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Quinti Ligario" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Ligario</marginalia_text>
+                    <book title="Pro Ligario"/>
+                </position>
+            </language>
+            <translation>For Ligarius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Qu. Ligarius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qu[intus]</marginalia_text>
+                    <person name="Quintus Ligarius"/>
+                </position>
+            </language>
+            <translation>Quintus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in narratione affectibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Affectus in narratione.</marginalia_text>
+                </position>
+            </language>
+            <translation>Emotion in narrative.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="suauitatem, admirationes, expectationes, exitus inopinatos, colloquia personarum, omnes affectus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+               
+        <errata amendedtext="Qu." copytext="Q." language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

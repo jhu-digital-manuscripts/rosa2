@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.073v.tif" pagination="[73v]" reader="John Dee" signature="[Kv]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="non hanno ferro di sorte alcuna" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>No [yern deleted] iron here.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="sette" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>7. spaniards</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A skyrmish.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="hanno ferro di sorte alcuna" type="straight"/>
+        <underline language="IT" method="pen" text="hauendo già venduti" type="straight"/>
+        <underline language="IT" method="pen" text="archi, non solo non" type="straight"/>
+        <underline language="IT" method="pen" text="voler far prigioni i" type="straight"/>
+        <underline language="IT" method="pen" text="insieme delle funi, per legare a' nostri" type="straight"/>
+        <underline language="IT" method="pen" text="il quale" type="straight"/>
+        <underline language="IT" method="pen" text="scaramuccia" type="straight"/>
+        
+    </annotation>
+    
+</transcription>

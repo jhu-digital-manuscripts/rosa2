@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.028v.tif" pagination="28[v]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Tortam" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Retortam
+                    </marginalia_text>
+                    <emphasis method="pen" text="Retortam" type="straight"/>
+                </position>
+            </language>
+            <translation>Retort.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="spiraculi in sigollo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        spiraculu[m] in sigillo rostri Alembici vel retorta[e] et recipie[n]tis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The air hole in the figure of the beak of an alembic or of a retort and its receptacle.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Tuthia alba" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tuthia Alba.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Zinc oxide.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Tortam" type="straight"/>
+        <underline language="LA" method="pen" text="reseruatione[m] spiraculi" type="straight"/>
+        <underline language="LA" method="pen" text="in sigillo" type="double"/>
+        <underline language="LA" method="pen" text="Discalcinetur haec Aqua diuisionis" type="straight"/>
+        <underline language="LA" method="pen" text="Charattis sex Arge[n]ti puri pro unaquaq[ue] libra" type="straight"/>
+        <underline language="LA" method="pen" text="spiritus" type="double"/>
+        <underline language="LA" method="pen" text="libra una de quolibet super uncia[m] unam cuiuscunq[ue] metalli in tenuissimus" type="straight"/>
+        <underline language="LA" method="pen" text="ter reiterando" type="triple"/>
+        <underline language="LA" method="pen" text="metallum conuertit" type="straight"/>
+        <underline language="LA" method="pen" text="transparens oleum" type="straight"/>
+        <underline language="LA" method="pen" text="Tuthia alba" type="straight"/>
+
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/> 
+        
+        <mark method="pen" name="comma" place="intext"/> <!--simul p[er]-->
+        <mark method="pen" name="comma" place="intext"/> <!--etiam cum-->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.349r.tif" pagination="29" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="Lo[n]gi subsellii" hand="Italian">
+          <language ident="LA">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text> longi subsellii Iudicatio</marginalia_text>
+            </position>
+          </language>    
+        <translation>The judgment of the long bench.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>scriptio</marginalia_text> 
+                </position>
+            </language>    
+            <translation>Writing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Victor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>victor</marginalia_text>  
+                </position>
+            </language>    
+            <translation>The winner.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pompeium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pompeius</marginalia_text> 
+                    <person name="Pompey"/>
+                </position>
+            </language>    
+            <translation>Pompey.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Brutum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Brutus.</marginalia_text> 
+                    <!--JG: Which Brutus, several people exist in spreadsheet--> 
+                </position>
+            </language>    
+            <translation>Brutus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pontinius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pontinius</marginalia_text> 
+                    <person name="Gaius Pomptinus"/>
+                </position>
+            </language>    
+            <translation>Gaius Pomptinus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ephiso" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ephesu</marginalia_text>
+                <location name="Ephesus"/>
+                </position>
+            </language>    
+            <translation>Ephesus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Censores" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Censores</marginalia_text>
+                </position>
+            </language>    
+            <translation>Censors.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Lo[n]gi subsellii" type="straight"/>
+        <underline language="LA" method="pen" text="iudicatio &amp; mora," type="straight"/>
+        <underline language="LA" method="pen" text="reliquum quod est" type="straight"/>
+        <underline language="LA" method="pen" text="incredibiliter" type="straight"/>
+        <underline language="LA" method="pen" text="remunerer" type="straight"/>
+        <underline language="LA" method="pen" text="nam protecto non est meu[m], qui in scribendo (vt soles admirari) tantum industriae ponam, committere ut negligens scribendo fuisse videar: praesertim cum id non modo negligentis, sed etiam ingrati animi crimen futurum sit." type="straight"/> <!--JG: I think it's profecto instead of protecto-->
+        <underline language="LA" method="pen" text="non instituta, sed iam inuerterata amicitia, cures" type="straight"/> 
+        <underline language="LA" method="pen" text="qua[m]honorificentissime, quamprimúmque decernatur" type="straight"/>
+        <underline language="LA" method="pen" text="difficultas nauigandi fuit odiosa" type="straight"/>
+        <underline language="LA" method="pen" text="aestiuisque confectis" type="straight"/>         
+        <underline language="LA" method="pen" text="meque totum, &amp; mea, &amp; meos" type="straight"/>
+        <underline language="LA" method="pen" text="est ad nos allatum" type="straight"/>
+        <underline language="LA" method="pen" text="negotiu[m] facesserent" type="straight"/>
+        <underline language="LA" method="pen" text="primo nuntio co[m]motus" type="straight"/>
+        <underline language="LA" method="pen" text="quod nihil tam praeter opinionem meam accidere" type="straight"/>
+        <underline language="LA" method="pen" text="vt me collegi" type="straight"/>
+        <underline language="LA" method="pen" text="caetera mi facillima" type="straight"/>
+        <underline language="LA" method="pen" text="certissimum &amp; iustissimum" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ages victor ex inimicorum dolore triumphum iustissimum. Ego" type="straight"/>
+        <underline language="LA" method="pen" text="sic, contestans omneis deos, promitto atque confirmo" type="straight"/>
+        <underline language="LA" method="pen" text="rogando, deprecatoris: laborando, propinqui: authoritate, chari hominis (vt spero) apud ciuitates: grauitate, Imperatoris suscepturu[m] officia atque parteis." type="straight"/>
+        <underline language="LA" method="pen" text="vinca[m] meis officiis cogitationes tuas" type="straight"/>
+        <underline language="LA" method="pen" text="mihi a te" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]missum facinus, &amp; admissum dedecus co[n]fitebor" type="straight"/>
+        <underline language="LA" method="pen" text="a te tractatus est praestanti ac singulari fide" type="straight"/>
+        <underline language="LA" method="pen" text="praestat tibi memoriam, beneuolentiamque qua[m] debet" type="straight"/>
+        <underline language="LA" method="pen" text="a me inuitissimo decessisset" type="straight"/>
+        <underline language="LA" method="pen" text="conscendens iam nauem" type="straight"/>
+        <underline language="LA" method="pen" text="quin tibi amplitudo" type="straight"/>
+        <underline language="LA" method="pen" text="solicitudo futura sit" type="straight"/>
+        <underline language="LA" method="pen" text="Censura[m] vt &amp; debes &amp; potes" type="straight"/>
+        <underline language="LA" method="pen" text="omnibus in perpetuu[m] video summo" type="straight"/>
+        <underline language="LA" method="pen" text="Illud pugna &amp; enitere" type="straight"/>
+        <underline language="LA" method="pen" text="te beneuolentiam nauare possimus" type="straight"/>
+        <underline language="LA" method="pen" text="tributa merces est laborum, &amp; vigiliarum mearum" type="straight"/>
+
+              
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+    
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral> 
+        <numeral place="right_margin">21</numeral>
+    
+        <drawing anchor_text="Scriptio" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing anchor_text="Victor" book_orientation="0" method="pen" place="right_margin" type="florilegium"/> 
+        
+    </annotation>
+</transcription>

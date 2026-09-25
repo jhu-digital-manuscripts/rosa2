@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.087v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Vaticiniu[m] Sybillae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sybilla[e] Vaticiniu[m].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Sybilline prophecy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Germani illesi permaneant" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Germani adhuc illesi.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The Germans yet unharmed.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ex Brita[n]nico genere tertio" type="double"/>
+        <underline language="LA" method="pen" text="nasciturum qui Romanum obtinebit imperium" type="straight"/>
+        <underline language="LA" method="pen" text="Belinum" type="straight"/>
+        <underline language="LA" method="pen" text="atq[ue] Constantinum" type="double"/>
+        <underline language="LA" method="pen" text="decem milibus" type="straight"/> <!--triple-->
+        <underline language="LA" method="pen" text="AVguselus" type="straight"/>
+        <underline language="LA" method="pen" text="quas tot &amp; tantis regibus i[n]tulimus egisse videmur: si" type="straight"/>
+        <underline language="LA" method="pen" text="Germani illesi" type="double"/>
+        
+        
+    </annotation>
+</transcription>

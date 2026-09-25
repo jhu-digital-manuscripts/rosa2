@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.016v.tif" pagination="16" reader="Harvey"/> 
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>i[nfr]a, 211.</marginalia_text>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000233" text="211"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                below, 211.
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="Romanus passim publica priuataq[ue] omnia tecta adaequat solo. unaq[ue] hora quadrigentorum annorum opus, quibus Alba steterat, excidio ac ruinis dedit" type="straight"/>
+        <underline language="LA" method="pen" text="Roma interim crescit Albae ruinis: duplicatur" type="straight"/>
+        <underline language="LA" method="pen" text="frequentius habitaretur, eam sedem" type="straight"/>
+        <underline language="LA" method="pen" text="Principes Albanoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="patres" type="straight"/>
+        <underline language="LA" method="pen" text="omnium ordinum uiribus aliquid" type="straight"/>
+        <underline language="LA" method="pen" text="nouo populo adijceretur" type="straight"/>
+        <underline language="LA" method="pen" text="equitum decem turmas" type="straight"/>
+        <underline language="LA" method="pen" text="Hac fiducia uirium" type="straight"/>
+        <underline language="LA" method="pen" text="bellum indicit" type="straight"/>
+        <underline language="LA" method="pen" text="opulentissimae uiris armisq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="utrinq[ue] iniuriae factae" type="straight"/>
+        <underline language="LA" method="pen" text="nequicquam erant repetitae" type="straight"/>
+        <underline language="LA" method="pen" text="Ipsum regem tradunt" type="straight"/>
+        <underline language="LA" method="pen" text="uoluentem commentarios Numae" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        <symbol language="LA" name="SS" place="right_margin" text="Romanus passim publica priuataq[ue] omnia tecta adaequat solo. unaq[ue] hora quadrigentorum annorum opus, quibus Alba steterat, excidio ac ruinis dedit"/>
+        
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        
+        <errata amendedtext="regiè" copytext="regiae" language="LA"/>
+
+    </annotation>
+</transcription>

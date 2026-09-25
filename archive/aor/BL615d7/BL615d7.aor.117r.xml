@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.117r.tif" pagination="117" reader="John Dee"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="Capo di Croce" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                   <marginalia_text>Capo di Croce</marginalia_text>
+                    <location name="Santa Croce"/>
+                </position>
+            </language>
+            <translation>Santa Croce.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="disse l'Ammiraglio nel suo Itinerario" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Itinerariu[m] Christopheri Colon</marginalia_text>
+                    <person name="Columbus"/>
+                </position>
+            </language>
+            <translation>The itinerary of Christopher Columbus.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="XVI di Luglio" type="straight"/>
+        <underline language="IT" method="pen" text="giunse presso" type="double"/>
+        <underline language="IT" method="pen" text="al Capo di Croce in Cuba" type="straight"/>
+        <underline language="IT" method="pen" text="bordo sotto acqua" type="straight"/>
+        <underline language="IT" method="pen" text="che vna libra di biscotto putrido il giorno per ciascheduno, &amp; vna inghistara di vino" type="straight"/>
+        <underline language="IT" method="pen" text="quelle parti le vettouaglie molto più leggieri, &amp; delicate" type="straight"/>
+        <underline language="IT" method="pen" text="sempre più al caldo" type="straight"/>
+        <underline language="IT" method="pen" text="l'Ammiraglio nel suo Itinerario" type="straight"/>
+        
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        
+        
+        
+        
+        
+    </annotation>
+    
+</transcription>

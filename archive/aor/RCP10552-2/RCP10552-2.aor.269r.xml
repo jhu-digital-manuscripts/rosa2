@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.269r.tif" pagination="51" reader="John Dee" signature="G.iij."/>
+    <annotation>
+        
+        <marginalia anchor_text="Ebroica" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ebroica</marginalia_text>
+                    <location name="Evreux"/>
+                </position>
+            </language>
+            <translation>Evreux.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hugoni Brun" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hugo Brun.</marginalia_text>
+                    <person name="Hugh IX of Lusignan"/>
+                </position>
+            </language>
+            <translation>Hugh le Brun.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="rediens, apud Lyncolniam in conspectu totius populi regis Scotorum" type="straight"/>
+        <underline language="LA" method="pen" text="Ebroica cum toto comitatu" type="straight"/>
+        <underline language="LA" method="pen" text="comitatu Britanniae, qui spectat ad feodum Ducatus Normanniae" type="straight"/>
+        <underline language="LA" method="pen" text="Engolismensis filiam &amp; haeredem" type="straight"/>
+        <underline language="LA" method="pen" text="prius vicecomiti Toartensi Hugoni Brun nupsisse, ipsumquè propter vxorem" type="straight"/>
+        <underline language="LA" method="pen" text="violenter ablatam" type="double"/>
+        <underline language="LA" method="pen" text="Hugo Brunus" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

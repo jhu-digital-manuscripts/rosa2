@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.129r.tif" pagination="257" reader="John Dee" signature="r"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Ridiculum est ergo in exercitationibus, quae foro praeparantur, prius cogitare, quid responderi, quàm quid ex diuerso dici possit." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Patroni off[iciu]m.</marginalia_text>
+                </position>
+            </language>
+            <translation>Duty of the advocates.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="scholis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Schola[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Schools.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Incidunt tamen plerique in hoc uitium uel consuetudine declamatoria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Declamatoru[m] mos</marginalia_text>
+                </position>
+            </language>
+            <translation>The habit of declamations.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Clunetio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Clue[n]tio</marginalia_text>
+                    <book title="Pro Cluentio"/>
+                </position>
+            </language>
+            <translation>Pro Cluentio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vibius Crispus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vibius Crispus</marginalia_text>
+                    <person name="Lucius Junius Quintus Vibius Crispus"/>
+                </position>
+            </language>
+            <translation>Vibius Crispus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="prius cogitare, quid responderi, quàm quid ex diuerso dici possit" type="straight"/>
+        <underline language="LA" method="pen" text="est, nunquàm ijs responsurum aduersarium fuisse, quae proposita non essent, nisi sciret illa uera esse, &amp; ad fatendu[m]              conscientia esset impulsus" type="straight"/>
+        <underline language="LA" method="pen" text="etiam locos explicant. scire se hoc dicturos aduersarios, &amp; ita persecuturos. Quod" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

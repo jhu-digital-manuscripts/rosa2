@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.207v.tif" pagination="414" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" nchor_text="Et: Mitto illam prima[m] libidins iniuriam. Et: Ne illa quidem testimonia recito, quae dicta sunt de sestertijs septingentis millibus. Et: Possum              dicere">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἀποφάσεως</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>exemplae Varia</marginalia_text>
+                </position>
+            </language>
+            <translation>Various examples of negation.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>εἰρωνεία</marginalia_text>
+                </position>
+            </language>
+            <translation>Irony.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Q. Ligario" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Q[uintus]. Ligario</marginalia_text>
+                    <book title="Pro Ligario"/>
+                </position>
+            </language>
+            <translation>Pro Quintus Ligario</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Oppio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Oppio.</marginalia_text>
+                    <book title="Pro Oppio"/>
+                </position>
+            </language>
+            <translation>Pro Oppio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Confeßio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Confessio</marginalia_text>
+                </position>
+            </language>
+            <translation>Confession.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="conceßio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Concessio</marginalia_text>
+                </position>
+            </language>
+            <translation>Concession.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="consesio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Consensio</marginalia_text>
+                </position>
+            </language>
+            <translation>Consent.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Verrem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In verrem</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; cum similes imperantibus uel permittetibus sumus" type="straight"/>
+        <underline language="LA" method="pen" text="Quod idem contrà ualet, cùm aut ea quae à nobis absunt" type="straight"/>
+        <underline language="LA" method="pen" text="etiam quae in aduersarios recidunt, quasi fatemur" type="straight"/>
+        <underline language="LA" method="pen" text="Nec in personis tantum, sed &amp; in rebus uersatur haec contraria dicendi, quàm quae intelligi uelis, ratio: ut              totum" type="straight"/>
+        <underline language="LA" method="pen" text="Dominetur in concionibus, iaceat in iudicijs. Tertia" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>    
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3.</numeral>
+        
+    </annotation>
+</transcription>

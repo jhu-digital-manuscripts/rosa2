@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.122v.tif" pagination="230" reader="John Dee" signature="[v.j.[v]]"/>
+    <annotation>
+        
+       <marginalia anchor_text="Garmamaja" hand="Italian">
+           <language ident="LA">
+              <position book_orientation="0" place="left_margin">
+               <marginalia_text>Garmamaia</marginalia_text>
+                  <location name="Germany"/>                       <!-- DO: Not really sure if this is Germany; the printed text suggests it is separate? --> <!-- FSF: I don't think this is Germany, but I can't find whatelse it might be -->  <!-- DO: Maybe Germania? Although the text indicates that it is distinct from Germany, earlier on it does say 'Medinath Garmamaja, id est, regionem Germaniam' -->
+              </position>
+           </language>
+           <translation>Garmamaia.</translation>
+       </marginalia> 
+        
+        <marginalia anchor_text="insulis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Insula[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Islands.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="campos Eliseos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Campi Elisei</marginalia_text>
+                    <location name="Elysium"/>
+                </position>
+            </language>
+            <translation>The Elysian fields.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="Togar" type="straight"/>
+        <underline language="LA" method="pen" text="Gogus, imperator" type="straight"/>
+        <underline language="LA" method="pen" text="Garmamaja" type="straight"/>
+        <underline language="LA" method="pen" text="Germanis cum Tyriis" type="straight"/>
+        <underline language="LA" method="pen" text="Tarsis" type="straight"/>
+        <underline language="LA" method="pen" text="Elisa, dicit Italiam" type="straight"/>
+        <underline language="LA" method="pen" text="transmarinas ferè regiones" type="straight"/>
+        <underline language="LA" method="pen" text="maris Mediterranei comprehendit insulas" type="straight"/>
+        <underline language="LA" method="pen" text="insulas fortunatas Graeci fortasse dixerunt" type="straight"/>
+        <underline language="LA" method="pen" text="omni antiquitate Gades insulam" type="straight"/>
+        <underline language="LA" method="pen" text="longinquas nauigationes ad nouum orbem &amp; alteram retulerunt vitam. Sed haec vt volet quisque sumat" type="straight"/>
+        <underline language="LA" method="pen" text="insulae munera" type="straight"/>
+        
+    </annotation>
+</transcription>

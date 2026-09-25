@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th12.005v.tif" reader="Harvey" signature="[B.ij.v]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        politicê.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                politically.
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="But in sic weirlike affaires" type="straight"/>
+        <underline language="EN" method="pen" text="thynges can not euer be so well foreseen" type="straight"/>
+        <underline language="EN" method="pen" text="but that some incommodious chaunce may ouerthwartly happen" type="straight"/>
+        <underline language="EN" method="pen" text="sche" type="straight"/>
+        <underline language="EN" method="pen" text="an auld beaten soldiar" type="straight"/>
+        <underline language="EN" method="pen" text="nothyng dismayed with the darkenes of" type="straight"/>
+        <underline language="EN" method="pen" text="night" type="straight"/>
+        <underline language="EN" method="pen" text="the heighth of the wall" type="straight"/>
+        <underline language="EN" method="pen" text="nor with the sodennesse of the fall" type="straight"/>
+        <underline language="EN" method="pen" text="up sche" type="straight"/>
+        <underline language="EN" method="pen" text="winneth into Bothwels chamber" type="straight"/>
+        <underline language="EN" method="pen" text="sche gyt the dore open" type="straight"/>
+        <underline language="EN" method="pen" text="halfe a slepe" type="straight"/>
+        <underline language="EN" method="pen" text="halfe naked" type="straight"/>
+        <underline language="EN" method="pen" text="sche forceably bringes the man to" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="nothyng dismayed with the darkenes"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- in -->
+        
+    </annotation>
+</transcription>

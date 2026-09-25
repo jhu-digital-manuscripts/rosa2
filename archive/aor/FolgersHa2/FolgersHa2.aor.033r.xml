@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.033r.tif" pagination="385" reader="Harvey"/>	<!-- ABO 037right -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="EN">
+            			<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Whatsoeuer you haue to speake, or do: do euer the Best,
+                      			</marginalia_text>
+            			</position>
+        				<position book_orientation="0" place="right_margin">
+        					<marginalia_text>
+        						you can.
+        					</marginalia_text>
+        				</position>
+        			</language>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						He often
+    					</marginalia_text>
+    				</position>
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						) forgettes
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						himself,
+    					</marginalia_text>
+    				</position>
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						becummes vulgar, that doth not allwais his
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						Best.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						ridicolo.
+    					</marginalia_text>    					
+    				</position>
+    			</language>
+    			<translation>
+    				Ridiculous.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						The Best woold be refined with an habitual perfection.
+    					</marginalia_text>
+    				</position>
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						) { The sublimiation of Art, 
+    					</marginalia_text>
+    				</position>
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						&amp; Vertu multiplied. 
+    						An extent of Secrets: and emproouement of
+    					</marginalia_text>
+    				</position>
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						( ) Stratagems. Continual multiplication
+    						of Art, Vertu, &amp; Fortune.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						scitè. argutè.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Knowingly. Cleverly.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Tarleton.
+    					</marginalia_text>
+    					<person name="Richard Tarleton"/>
+    				</position>
+    			</language>
+    		</marginalia>
+        
+    		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.033r_0001" marginalia_continues_to="Ha2.032v_0001" marginalia_to_transcription="Ha2.032v.xml">
+    			<language ident="LA">
+    				<position book_orientation="270" place="left_margin">
+    					<marginalia_text>
+    						Vir non est, qui virum aliquem metuit: aut virili animo || [p. 384: || cedit vlli. Vir est, qui Omnes, et Neminem contemnit: solum curat Seipsum. vt Diogenes solum respiciens Diogenem, + + spernebat Aristotelem philosophu[m]: Platonem legislatore[m]: Demosthenem Oratore[m]: Demade[m]
+    						pragmaticu[m]: Philippu[m] Rege[m]: ipsu[m] orbis Victorem Alexandru[m]. Sibi ipse Soli addictus,
+    						neminem animo venerabatur Diogenes pra[e]ter Diogenem. Vnicus sua a[e]stimatione vir.
+    						<!-- Continues onto facing page, right margin, Ha2.032v. -->
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				He is no man, who fears another man or yields to another with a manly heart. [p. 384: Just as Diogenes, regarding Diogenes alone, spurned Aristotle the philosopher, Plato the legislator, Demosthenes the orator, 
+    				Demades the pragmatist, Philip the King, and even Alexander, conqueror of the world. Devoted to himself alone, Diogenes revered
+    				no one in his heart except Diogenes. In his estimation, a unique man.]
+    			</translation>
+    		</marginalia>
+    		
+	    	<!-- Underlines -->
+	        
+    		<underline language="IT" method="pen" text="istrada S. Felice" type="straight"/>
+    		<underline language="IT" method="pen" text="cauallo era spesso auuezzo" type="straight"/>
+    		<underline language="IT" method="pen" text="per tema di non fiaccare il collo" type="straight"/>
+    		<underline language="IT" method="pen" text="non haueua mai alzato il capo" type="straight"/>
+    		<underline language="IT" method="pen" text="non" type="straight"/>
+    		<underline language="IT" method="pen" text="potuto uederla" type="straight"/>
+    		<underline language="IT" method="pen" text="&amp; lunga, che ella" type="straight"/>
+    		<underline language="IT" method="pen" text="Persona astratta" type="straight"/>
+    		<underline language="IT" method="pen" text="mezo uerno" type="straight"/>
+    		<underline language="IT" method="pen" text="riscaldato dal uino, &amp;" type="straight"/>
+    		<underline language="IT" method="pen" text="suda[n]do, &amp; trafela[n]do dell'estremo caldo" type="straight"/>
+    		<underline language="IT" method="pen" text="leuamiti d'intorno" type="straight"/>
+    		<underline language="IT" method="pen" text="pezzo d'asino" type="straight"/>
+    		<underline language="IT" method="pen" text="tu che m'affoghi" type="straight"/>
+    		<underline language="IT" method="pen" text="accorto &amp; discreto" type="straight"/>
+    		<underline language="IT" method="pen" text="non sono io" type="straight"/>
+    		<underline language="IT" method="pen" text="il uino è quello che" type="straight"/>
+    		<underline language="IT" method="pen" text="fa sudare" type="straight"/>
+    		<underline language="IT" method="pen" text="F. Mariano" type="straight"/>
+    		<underline language="IT" method="pen" text="persona molto burleuole" type="straight"/>
+    		<underline language="IT" method="pen" text="spasso per buffonerie cosi d'opere" type="straight"/>
+    		<underline language="IT" method="pen" text="di parole" type="straight"/>
+    		<underline language="IT" method="pen" text="teneua tutta la corte" type="straight"/>
+    		<underline language="IT" method="pen" text="Roma" type="straight"/>
+    		<underline language="IT" method="pen" text="festa e in piacere" type="straight"/>
+    		<underline language="IT" method="pen" text="molto Giouiale" type="straight"/>
+    		<underline language="IT" method="pen" text="poco di burla di" type="straight"/>
+    		<underline language="IT" method="pen" text="di canapo" type="straight"/>
+    		<underline language="IT" method="pen" text="d'anguilla" type="straight"/> 
+    		<underline language="IT" method="pen" text="Mariano penato" type="straight"/>
+    		<underline language="IT" method="pen" text="masticarla" type="straight"/>
+    		<underline language="IT" method="pen" text="inghiottirla" type="straight"/>
+    		<underline language="IT" method="pen" text="molto dura" type="straight"/>
+    		<underline language="IT" method="pen" text="l'a[n]guilla gli" type="straight"/>
+    		<underline language="IT" method="pen" text="un poco piu dura" type="straight"/>
+	       
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<symbol name="Sun" place="left_margin"/>
+    		<symbol name="SS" place="right_margin"/>
+	      		
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- per -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!--col -->
+    		<mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- il col -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- col -->
+    		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- & cosi -->
+    		<mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- rispetto -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- tut -->
+    		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- Signo -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- persona mol -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- mol -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- pez -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- arrosti -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- du -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- l'a[n] -->
+	    	
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="straight_quotation_mark" place="left_margin"/> <!-- lo, o le gambe -->
+    		<mark method="pen" name="bracket" place="left_margin"/> <!-- to ... scite -->
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- re, ma -->
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- opere -->
+    		
+	    	<!-- Intext -->
+	    	<mark method="pen" name="plus_sign" place="intext"/> <!-- mai alzato  -->
+    		<mark method="pen" name="straight_quotation_mark" place="intext"/> <!-- astratta.] -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- tace, il quale -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- & discre -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- uino e' -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Mariano"/>
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- di parole -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- molto Giouiale -->
+    		<mark method="pen" name="comma" place="intext"/> <!-- canapo in cambio -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Mariano"/>
+    		<mark method="pen" name="dot" place="intext"/> <!-- inghiottirla, perche -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- credere, fu -->
+    		
+
+    </annotation>
+</transcription>

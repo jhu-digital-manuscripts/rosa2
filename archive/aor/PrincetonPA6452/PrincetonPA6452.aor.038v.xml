@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.038v.tif" pagination="60" reader="Harvey"/>
+    <annotation>
+            <marginalia hand="Italian">
+                <language ident="LA">
+                    <position book_orientation="0" place="left_margin">
+                        <marginalia_text>s[upr]a</marginalia_text>
+                    </position>
+                </language>
+                <translation>[See] above.</translation>
+            </marginalia>   
+        
+        <marginalia anchor_text="decemuiri pro consilibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Decemuiri, noui Magistratus: exclusis consulibus. Alia Reipublica[e] Conuersio. Magistratus ostendit viru[m]. vt s[upr]a, i[nfr]a.
+                    </marginalia_text>
+                    <emphasis method="pen" text="Decemuiri" type="straight"/>
+                </position>
+            </language>
+            <translation>The decemviri were the new magistrates, after the consuls had been removed. Another change of the Republic. The office reveals the man. As above, below.</translation>
+        </marginalia>   
+        
+        <marginalia anchor_text="Fabius consilio neutro" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Fabius
+                        Neuter. sed vtrinq[ue] honestus consultor.
+                    </marginalia_text>
+                    <person name="Quintus Fabius Vibulanus"/>
+                </position>
+            </language>
+            <translation>Fabius. Neutral, but a respected adviser to both sides.</translation>
+        </marginalia>   
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Æqui, a[e]quiuoci. ut sa[e]piùs i[nfr]a.
+                    </marginalia_text>
+                    <person name="Aequi"/>
+                    <internal_ref text="i[nfr]a">
+                        <target ref="PrincetonPA6452:00000095" text="i[nfr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>The Aequi were equivocal, as more often below.
+            </translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Multa de agrarijs legibus passim Cicero; Zasius in catalogo legum antiquarum; et alij / complúres de legibus Romanis.
+                    </marginalia_text>
+                    <person name="Cicero"/>
+                    <person name="Ulrich Zasius"/>
+                    <book title="Catalogus legum antiquarum"/>
+                </position>
+            </language>
+            <translation>For much information about the agrarian laws, [see] Cicero passim, Zasius in his Catalogus legum antiquarum, and many other writers about Roman law.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="de agrarijs legibus" type="straight"/>
+        <underline language="LA" method="pen" text="Capitolium, ab exulibus &amp; seruis occupatum" type="straight"/>
+        <underline language="LA" method="pen" text="Census bis actus" type="straight"/>
+        <underline language="LA" method="pen" text="praeter orbos, orbasq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="Quintius Cincinnatus dictator factus" type="straight"/>
+        <underline language="LA" method="pen" text="rure intemus rustico operi esset" type="straight"/>
+        <underline language="LA" method="pen" text="gerendum accersitus" type="straight"/>
+        <underline language="LA" method="pen" text="Tribunorum plebis numerus ampliatus" type="straight"/>
+        <underline language="LA" method="pen" text="decem" type="straight"/>
+        <underline language="LA" method="pen" text="per legatos" type="straight"/>
+        <underline language="LA" method="pen" text="Attacis legibus" type="straight"/>
+        <underline language="LA" method="pen" text="decemuiri pro consulibus" type="straight"/>
+        <underline language="LA" method="pen" text="ut à regibus" type="straight"/>
+        <underline language="LA" method="pen" text="à consulibus ad decemuiros translatum imperium" type="straight"/>
+        <underline language="LA" method="pen" text="talibus legem" type="straight"/>
+        <underline language="LA" method="pen" text="cum modestè se in honore gessissent" type="straight"/>
+        <underline language="LA" method="pen" text="in alterum quoq[ue] annum eundem esse" type="straight"/>
+        <underline language="LA" method="pen" text="complura impotenter" type="straight"/>
+        <underline language="LA" method="pen" text="magistratum noluerunt deponere" type="straight"/>
+        <underline language="LA" method="pen" text="in tertium annum detinuerunt" type="straight"/>
+        <underline language="LA" method="pen" text="inuicto eorum imperio" type="straight"/>
+        <underline language="LA" method="pen" text="libido Ap. Claudij" type="straight"/>
+        <underline language="LA" method="pen" text="in amorem uirginis" type="straight"/>
+        <underline language="LA" method="pen" text="proxima cultro, ut filiam interimeret" type="straight"/>
+        <underline language="LA" method="pen" text="ne in potestatem stuprum illature ueniret" type="straight"/>
+        <underline language="LA" method="pen" text="tam magna[e] luxuria[e] exemplo plebs" type="straight"/>
+        <underline language="LA" method="pen" text="montem Auentinum occupauit" type="straight"/>
+        <underline language="LA" method="pen" text="coegitq[ue] decemuiros abdicare" type="straight"/>
+        <underline language="LA" method="pen" text="in carcerem coniecti ca[e]teri" type="straight"/>
+        <underline language="LA" method="pen" text="parum honestum populi Romani" type="straight"/>
+        <underline language="LA" method="pen" text="iudex inter Ardeates &amp; Aricinos sumptus" type="straight"/>
+        <underline language="LA" method="pen" text="ambigebatur sibi adiudicauit" type="straight"/>
+        
+        <underline language="LA" method="pen" text="Fabius" type="straight"/>
+        <underline language="LA" method="pen" text="qui unus extinctae ad Cremeram" type="straight"/>
+        <underline language="LA" method="pen" text="genit superfuerat" type="straight"/>
+        <underline language="LA" method="pen" text="dandi agri plebi fuerat" type="straight"/>
+        <underline language="LA" method="pen" text="agrarij se in" type="straight"/>
+        <underline language="LA" method="pen" text="consilio neutri patri acerbo" type="straight"/>
+        <underline language="LA" method="pen" text="agro dando creat" type="straight"/>
+        <underline language="LA" method="pen" text="Fecit statim" type="straight"/>
+        <underline language="LA" method="pen" text="fastidium copia" type="straight"/>
+        <underline language="LA" method="pen" text="poscere Rom[a]e agrum malle" type="straight"/>
+        <underline language="LA" method="pen" text="quàm alibi accipere" type="straight"/>
+        <underline language="LA" method="pen" text="Fabium C O S. dicere" type="straight"/>
+        <underline language="LA" method="pen" text="ex Aequis" type="straight"/>
+        <underline language="LA" method="pen" text="pacem Romam tulisse" type="straight"/>
+        <underline language="LA" method="pen" text="ab Roma Aequis bellum afferre" type="straight"/>
+        <underline language="LA" method="pen" text="dextera armata" type="straight"/>
+        <underline language="LA" method="pen" text="pacatam illis" type="straight"/>
+        <underline language="LA" method="pen" text="quorum id perfidia &amp; periurio fiat" type="straight"/>
+        <underline language="LA" method="pen" text="nunc testes" type="straight"/>
+        <underline language="LA" method="pen" text="fore ultores" type="straight"/>
+        <underline language="LA" method="pen" text="poenitere sua sponte Aequos" type="straight"/>
+        <underline language="LA" method="pen" text="poeniteat, tutum receptum ad expertam clementiam fore" type="straight"/>
+        <underline language="LA" method="pen" text="periurio gaudeant" type="straight"/>
+        <underline language="LA" method="pen" text="dijs magis" type="straight"/>
+        <underline language="LA" method="pen" text="legati propè uiolati sint" type="straight"/>
+        <underline language="LA" method="pen" text="indignitas rei magis" type="straight"/>
+        <underline language="LA" method="pen" text="periculum" type="straight"/>
+        <underline language="LA" method="pen" text="unus ab statione hostiu[m] exclamat" type="straight"/>
+        <underline language="LA" method="pen" text="Oftentare hoc" type="straight"/>
+        <underline language="LA" method="pen" text="non gerere bellum" type="straight"/>
+        <underline language="LA" method="pen" text="die oriente sole redite in acie[m]: erit copia pugnandi, ne timete" type="straight"/>
+        
+        <symbol name="LL" place="left_margin"/>
+        <symbol name="JC" place="intext"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/> 
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--uirgi-->
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--prae-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--Fa-->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--c[a]e-->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="agrarijs"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Capitolium"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="bis"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Cincinnatus"/>
+        <mark method="pen" name="comma" place="intext"/> <!--esset ad-->
+        <mark method="pen" name="straight_quotation_mark" place="intext"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--consules, ita-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="decemuiros"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="imperium"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="modestè"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="impotenter"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="inuicto"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--ueniret-->
+        <mark language="LA" method="pen" name="straight_quotation_mark" place="intext" text="Auentinum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="coegit"/>
+        <mark method="pen" name="dot" place="intext"/> <!--coniecti, ca[e]teri-->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- acti. Res -->
+        <mark language="LA" method="pen" name="diacritic" place="intext" text="parum"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="neutri"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="legati"/>
+        
+        <errata amendedtext="tabulis legum" copytext="talibus legem" language="LA"/>
+        
+    </annotation>
+</transcription>

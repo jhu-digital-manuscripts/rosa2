@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.020v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="mo[n]te[m] dolorosu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mons dolorosus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The mountain of sorrow.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pangustel" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        forte Tangustel.
+                    </marginalia_text>
+                    <person name="Tangustel"/>
+                </position>
+            </language>
+            <translation>Perhaps Tangustel.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Syluiu[m] Albanu[m] ; Syluiu[m] Latinu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Syluius Latinus. - rex
+                        Syluius Albanus - rex
+                    </marginalia_text>
+                    <person name="Sylvius Latinus"/>
+                    <person name="Sylvius Alba"/>
+                </position>
+            </language>
+            <translation>Sylvius Latinus, king. Sylvius Alba, king.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="classem in Germania[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Classis in Germania transmissa.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Passage of the fleet to Germany.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Vnde Germania a Germanis fr[a]tr[i]b[us].
+                    </marginalia_text>
+                    <location name="Germany"/>
+                </position>
+            </language>
+            <translation>From which Germany from the actual brothers.</translation>
+            <!-- NBW: "fretibus" didn't make sense as transcribed originally, but still possible from this abbreviation. -->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Syluius Latinus" type="straight"/>
+        <underline language="LA" method="pen" text="Aldud" type="straight"/>
+        <underline language="LA" method="pen" text="mo[n]tis Agnedi" type="straight"/>
+        <underline language="LA" method="pen" text="mo[n]te[m] dolorosu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="vigi[n]ti filios" type="straight"/>
+        <underline language="LA" method="pen" text="triginta filias" type="straight"/>
+        <underline language="LA" method="pen" text="Brutus" type="straight"/>
+        <underline language="LA" method="pen" text="Margadus" type="straight"/>
+        <underline language="LA" method="pen" text="Sisili[us]" type="straight"/>
+        <underline language="LA" method="pen" text="Regin" type="straight"/>
+        <underline language="LA" method="pen" text="Morindus" type="straight"/>
+        <underline language="LA" method="pen" text="Baldudus" type="straight"/>
+        <underline language="LA" method="pen" text="Lagonus" type="straight"/>
+        <underline language="LA" method="pen" text="Bodloanus" type="straight"/>
+        <underline language="LA" method="pen" text="Kincarus" type="straight"/>
+        <underline language="LA" method="pen" text="Spaden" type="straight"/>
+        <underline language="LA" method="pen" text="Gaul" type="straight"/>
+        <underline language="LA" method="pen" text="Baldenus" type="straight"/>
+        <underline language="LA" method="pen" text="Eldarus" type="straight"/>
+        <underline language="LA" method="pen" text="Enor" type="straight"/>
+        <underline language="LA" method="pen" text="Cangus" type="straight"/>
+        <underline language="LA" method="pen" text="Hector" type="straight"/>
+        <underline language="LA" method="pen" text="Kerinus" type="straight"/>
+        <underline language="LA" method="pen" text="Rud" type="straight"/>
+        <underline language="LA" method="pen" text="Assaracus" type="straight"/>
+        <underline language="LA" method="pen" text="Buel" type="straight"/>
+        <underline language="LA" method="pen" text="Gloygni" type="straight"/>
+        <underline language="LA" method="pen" text="Ignoge" type="straight"/>
+        <underline language="LA" method="pen" text="Pangustel" type="straight"/>
+        <underline language="LA" method="pen" text="Ebren" type="straight"/>
+        <underline language="LA" method="pen" text="Has omnes direxit" type="straight"/>
+        <underline language="LA" method="pen" text="pater i[n] Italia[m] ad Syluiu[m] Albanu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Syluiu[m] Latinu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Latin[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="Sabin[a]e diffugieba[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="Assaraco" type="double"/>
+        <underline language="LA" method="pen" text="direxeru[n]t classem in" type="straight"/>
+        <underline language="LA" method="pen" text="Syluii Albani freti" type="straight"/>
+        <underline language="LA" method="pen" text="adepti sun" type="straight"/>
+        <underline language="LA" method="pen" text="regnum" type="double"/>
+        
+        <mark method="pen" name="hash" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!--fratre direxeru[n]t-->
+        <mark method="pen" name="comma" place="intext"/> <!--freti subiugato-->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.312v.tif" pagination="604" reader="John Dee" signature="[ppp.vi.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Dolabella &amp; Antonius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dolobella. Antonius</marginalia_text>
+                    <person name="Publius Cornelius Dolabella"/>  
+                    <person name="Mark Anthony"/>
+                </position>
+            </language>
+            <translation>Publius Cornelius Dolabella. Marc Anthony.</translation>
+        </marginalia>  
+        
+        <marginalia anchor_text="mortem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mors.</marginalia_text>
+                </position>
+            </language>
+            <translation>Death.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="diuexare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>diuexare.</marginalia_text>
+                </position>
+            </language>
+            <translation>To plunder.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="secutae collocutiones familiarissimae cu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>seq[ui] collocutiones cu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>To pursue conversations with.</translation>  
+        </marginalia> 
+        
+        <marginalia anchor_text="documentum nos capere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>docume[n]tu[m] capere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To seize the document.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="ceruibus caput ascidit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ceruicib[us] caput abscindere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To cut off a head with a severed neck.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="patriam scelerata arma caeperunt, inesset immanitas" type="straight"/>
+        <underline language="LA" method="pen" text="haec capita" type="double"/>
+        <underline language="LA" method="pen" text="spurcissima" type="straight"/>
+        <underline language="LA" method="pen" text="Ecce tibi geminum in scelere par, inusitatum, inauditum, ferum, barbarum" type="straight"/>
+        <underline language="LA" method="pen" text="impurissimae naturae &amp; turpissimae vitae similitudo" type="straight"/>
+        <underline language="LA" method="pen" text="mortem, naturae poenam putat esse: iracundiae" type="straight"/> 
+        <underline language="LA" method="pen" text="cu[m] verborum co[n]tumeliis optimu[m]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">3.8</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing anchor_text="Mors" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonRB16th12.002r.tif" reader="Harvey" signature="A.iij.[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="1566" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        1566.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="immediately the secret" type="straight"/>
+        <underline language="EN" method="pen" text="quhairof the effect was" type="straight"/>
+        <underline language="EN" method="pen" text="to dispatch away the king by one" type="straight"/>
+        <underline language="EN" method="pen" text="way or other howsoeuer" type="straight"/>
+        <underline language="EN" method="pen" text="and to mary" type="straight"/>
+        <underline language="EN" method="pen" text="with Bothwell" type="straight"/>
+        <underline language="EN" method="pen" text="deadly feude." type="straight"/>
+
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="bracket" place="right_margin" text="quhairof the effect was             this, to dispatch away the king by one way or other howsoeuer, and to mary with Bothwell."/>
+
+    </annotation>
+</transcription>

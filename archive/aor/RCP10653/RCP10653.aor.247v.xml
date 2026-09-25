@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.247v.tif" pagination="46" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Ioachim abbas" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Joachim Abbas. 
+                    </marginalia_text>
+                    <person name="Joachim of Fiore"/>
+                </position>
+            </language>
+            <translation>
+                Abbot Joachim.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Eodemq[ue] anno" type="straight"/>
+        <underline language="LA" method="pen" text="Baldevvinus obijt, cui successit frater eius Almaricus" type="straight"/>
+        <underline language="LA" method="pen" text="cum He[n]rico de" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+        <errata amendedtext=".Mclxij." copytext=".clxij." language="LA"/>
+        
+    </annotation>
+</transcription>

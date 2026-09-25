@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.170v.tif" pagination="340" reader="John Dee" signature="[y 2[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Ingrati" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ingrati.</marginalia_text>
+                </position>
+            </language>
+            <translation>The ungrateful.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Fingu[n]tur &amp; testame[n]ta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Testame[n]ta ficta</marginalia_text>
+                </position>
+            </language>
+            <translation>Fictitious wills.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tantum admiror, Flauium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Flauiu[m] taxat</marginalia_text>
+                    <person name="Verginius Flavus"/>
+                </position>
+            </language>
+            <translation>He reproached Flavus.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

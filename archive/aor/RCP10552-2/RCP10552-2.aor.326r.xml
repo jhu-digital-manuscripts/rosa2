@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.326r.tif" pagination="159" reader="John Dee" signature="X.ij."/>
+    <annotation>
+
+        <marginalia anchor_text="Howenus Gleyndor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Howenus Glendowr</marginalia_text>
+                    <person name="Owen Glendower"/>
+                </position>
+            </language>
+          <translation>Owen Glendower.</translation>
+        </marginalia>
+
+        <marginalia anchor_text="Edmundus de Mortuo mari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Edmundus de mortuo mari.</marginalia_text>
+                    <person name="Edmund Mortimer"/>
+                </position>
+            </language>
+            <translation>Edmund Mortimer.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tempore Howenus Gleyndor cum" type="straight"/>
+        <underline language="LA" method="pen" text="Howenus Gleyndor assuetis" type="straight"/>
+        <underline language="LA" method="pen" text="Edmundus de Mortuo mari" type="straight"/>
+        <underline language="LA" method="pen" text="Edmundus captus &amp; caeteri victi sunt" type="straight"/>
+        <underline language="LA" method="pen" text="pudendum in ore cuiuslibet interempti" type="straight"/>
+        <underline language="LA" method="pen" text="nasosq[ue] praecisos in" type="straight"/>
+        <underline language="LA" method="pen" text="Barbara faeminaru[m] crudelitae" type="straight"/>
+ 
+        <mark method="pen" name="comma" place="intext"/>  <!-- mediante & -->
+
+    </annotation>
+</transcription>

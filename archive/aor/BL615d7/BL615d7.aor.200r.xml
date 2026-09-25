@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.200r.tif" pagination="200" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="alcune coperte, &amp; camiciuole di ba[n]bagia senza maniche" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Indian marchandises</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="buon rame" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Copper hachets</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="portauano sonagli di punte" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sonagli</marginalia_text>
+                </position>
+            </language>
+            <translation>Rattles</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vn certo vino fatto di Maiz che è simile alla Ceruosa d'Inghilterra" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Drink made of Maiz like to english beere</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="dargli mostra di tutte le cose di quella terra. La onde" type="straight"/>
+        <underline language="IT" method="pen" text="alcune coperte" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; camiciuole di ba[n]bagia senza maniche" type="straight"/>
+        <underline language="IT" method="pen" text="come sogliono coprirsi le More di Granata" type="straight"/>
+        <underline language="IT" method="pen" text="spade di legno" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; manarini da tagliar" type="straight"/>
+        <underline language="IT" method="pen" text="a quei di sasso" type="straight"/>
+        <underline language="IT" method="pen" text="di buon rame:" type="straight"/>
+        <underline language="IT" method="pen" text="portauano sonagli di punte" type="straight"/>
+        <underline language="IT" method="pen" text="che è simile alla Ceruosa d'Inghilterra" type="straight"/>
+        <underline language="IT" method="pen" text="per moneta" type="double"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.092r.tif" pagination="167" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ego habui co[n]iunctos in ♋
+                    </marginalia_text>
+                    <symbol_in_text name="Cancer"/>
+                </position>
+            </language>
+            <translation>
+                I had them joined in Cancer.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Elevatio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Elevation.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uictorem quoq[ue] nota[n]t in causis" type="straight"/>
+        <underline language="LA" method="pen" text="secundum Socraticum institutum, utilitate[m]" type="straight"/>
+        <underline language="LA" method="pen" text="commodum'q[ue] procuret" type="straight"/>
+        <underline language="LA" method="pen" text="acutissimos supputatores" type="straight"/>
+        <underline language="LA" method="pen" text="diminuta, ac paucioru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="uitiligantem" type="straight"/>
+        <underline language="LA" method="pen" text="multaque tentigine" type="straight"/>
+        <underline language="LA" method="pen" text="biothanatam mortem" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonPA8550.095v.tif" pagination="190" reader="Harvey" signature="Mviiv"/>
+    <annotation>
+        <marginalia anchor_text="Est Aristotelicus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Aristotelicus.
+                    </marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>
+                Aristotelian.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Est Aristotelicus" type="straight"/>
+        <underline language="EL" method="pen" text="ἀριστοκρατίαν adfirmat" type="straight"/>
+        <underline language="LA" method="pen" text="Aristotelem inquit" type="straight"/>
+        <underline language="LA" method="pen" text="se defensore[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ineptiaru[m] auditurum esse" type="straight"/>
+        <underline language="LA" method="pen" text="Facile uicit Castellanus" type="straight"/>
+        
+        <mark method="pen" name="page_break" place="intext"/> <!-- iudice. Haec -->
+        
+    </annotation>
+</transcription>

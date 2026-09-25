@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.311r.tif" pagination="601" reader="John Dee" signature="[ppp.v.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Transpadanos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Transpadani</marginalia_text>
+                </position>
+            </language>
+            <translation>The Transpadanes.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="bipartito" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>bipartito</marginalia_text>
+                </position>
+            </language>
+            <translation>In two parts.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="armatura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>armatura.</marginalia_text>
+                </position>
+            </language>
+            <translation>Armor.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="in ore, in sermone omnium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In ore sermone o[mn]ium.</marginalia_text>
+                </position>
+            </language>
+            <translation>On every tongue, in every conversation.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="tendit dextram Italiae, suúmque ei praesidium pollicetur" type="straight"/>
+        <underline language="LA" method="pen" text="vitiis cu[m] vtroque" type="straight"/>
+        <underline language="LA" method="pen" text="volassse eu[m], non iter fecisse diceres" type="straight"/>
+        <underline language="LA" method="pen" text="Omne enim exercitus &amp; imperii ius amittit is qui eo imperio" type="straight"/>
+        <underline language="LA" method="pen" text="nostra leuis armatura" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21.3</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">19</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">13</numeral>
+        
+        <drawing anchor_text="13" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

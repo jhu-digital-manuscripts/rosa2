@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.185v.tif" pagination="370" reader="John Dee" signature="[A[v]"/> 
+    <annotation>
+                
+        <marginalia anchor_text="omne κακόζηλον utiq[ue] falsum, etiamsi no[n] omne falsum " hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Omne</marginalia_text>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>κακόζηλον</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>est falsum no[n] contra</marginalia_text>
+                </position>
+            </language>
+            <translation>All affectation is a falsehood and not the contrary.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Totidem autem generibus corrumptitur oratio, quot ornatur." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Totidem generibus corrumpitur or[ati]o quot ornatur.</marginalia_text>
+                </position>
+            </language>
+            <translation>Style is corrupted in as many ways as it can be ornamented.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀνοικονόμητον" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἀνοικονόμητον</marginalia_text>
+                </position>
+            </language>
+            <translation>Lacking proper arrangement.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀσχήματον" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἀσχήματον</marginalia_text>
+                </position>
+            </language>
+            <translation>Without form or figure.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="κακοσύνθετον" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>κακοσύνθετον</marginalia_text>
+                </position>
+            </language>
+            <translation>Ill-composed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mixta ex uaria ratione linguarum" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>κοινισμός</marginalia_text>
+                </position>
+            </language>
+            <translation>Mixture of languages or dialects.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Horatius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Horatius</marginalia_text>
+                    <person name="Horace"/>
+                </position>
+            </language>
+            <translation>Horace.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἐνέργεια" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἐνέργεια</marginalia_text>
+                </position>
+            </language>
+            <translation>Vigour of style.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="euidentia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Euidentia[e] g[e]n[er]a</marginalia_text>
+                </position>
+            </language>
+            <translation>Kinds of evidence.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ut cum dicitur aliter quàm se natura habet, &amp; quàm oportet, &amp; quàm sat est. Totidem" type="straight"/>
+        <underline language="LA" method="pen" text="à nobis opere" type="straight"/>
+        <underline language="LA" method="pen" text="repraesentatio, quàm" type="straight"/>
+        <underline language="LA" method="pen" text="Mgna uirtus est, res de quibus loquimur, calrè, atq[ue] ut cerni uideantur, enunciare" type="straight"/>
+        <underline language="LA" method="pen" text="particulas secabo" type="straight"/>
+        
+        <numeral place="left_margin">16</numeral>
+        <numeral place="left_margin">17</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">19</numeral>
+        <numeral place="left_margin">20.</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.029r.tif" reader="Harvey" signature="[Cvi[r]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Two Dogges Enemyes ioyne against A woolfe.</marginalia_text>
+                    <emphasis method="pen" text="Two Dogges Enemyes" type="straight"/>
+                    <emphasis method="pen" text=" A woolfe" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Stephen Gardiners note/ </marginalia_text>
+                    <person name="Stephen Gardiner"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>{ De Canibus, et Lupo: De Anglis, et Scotis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Stephen Gardiner's note: about dogs and wolf. About English and Scots.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Fabius; Cn. Manlius" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Syllaes pollicy, in [the] former. M. Fabius, and Cn. Manlius, in [the] next.</marginalia_text>
+                    <person name="Sulla"/>
+                    <person name="Fabius Maximus"/>
+                    <person name="Gnaeus Manlius Vulso"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Syncretismus.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vniuersal Vnity, &amp; Concord, [the] surist, &amp; most inuincible Defence of euery state.</marginalia_text>
+                </position>
+            </language>
+            <translation>Syncretism. Vniuersal Vnity, &amp; Concord, [the] surist, &amp; most inuincible Defence of euery state.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In publicis causis, omnes debent esse Amici, et dextras coniungere.</marginalia_text>
+                </position>
+            </language>
+            <translation>In public cases, all ought to be friends, and to join hands.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Post ordinem, nihil cohortatione efficacius. s[upr]a, c.1.l.3.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0036" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>After the order, nothing is more effective than exhortation. [See] above, chapter 1, book 3.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Huc optima Exempla, in Plutarchi politicis. 39.</marginalia_text>
+                    <person name="Plutarch"/>
+                    <book title="Moralia"/>
+                </position>
+            </language>
+            <translation>Here the optimal examples, in the politics of Plutarch. 39.</translation> <!--JG: Chris, any idea which work of Plutarch Harvey might mean?-->
+            <!-- CG: I'm not entirely sure, though it's probably one of Plutarch's opuscula. See, for example: https://books.google.com/books?id=hB3EnWi3q00C&dq=politici%20plutarchi&pg=RA1-PR2#v=onepage&q&f=false -->
+            <!--JG: Thanks, will tag the moralia in that case-->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Cohortatio, potentissima causa Victoria[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Exhortation, the most potent cause of victory.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="forthe a wolfe" type="straight"/>
+        <underline language="EN" method="pen" text="dogges lefte theyr" type="straight"/>
+        <underline language="EN" method="pen" text="vpon the wolfe" type="straight"/>
+        <underline language="EN" method="pen" text="torned to the Romaynes" type="straight"/>
+        <underline language="EN" method="pen" text="incourage and stomake" type="straight"/>
+        <underline language="EN" method="pen" text="refusyng to fyght" type="straight"/>
+        <underline language="EN" method="pen" text="sedition" type="straight"/>
+        <underline language="EN" method="pen" text="self to prolonge" type="straight"/>
+        <underline language="EN" method="pen" text="put of the battayle wyllyngly" type="straight"/>
+        <underline language="EN" method="pen" text="with reproches of theyr ennemyes" type="straight"/>
+        <underline language="EN" method="pen" text="desyred to fyght" type="straight"/>
+        <underline language="EN" method="pen" text="fyght with a smalle" type="straight"/>
+        <underline language="EN" method="pen" text="fayned" type="straight"/>
+        <underline language="EN" method="pen" text="had corrupted one" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="dogges lefte theyr"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> <!--extends into printed text-->
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> <!--extends into printed text-->
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> <!--curved-->
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="with reproches of theyr ennemyes"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="reproches"/>
+        
+    </annotation>
+</transcription>

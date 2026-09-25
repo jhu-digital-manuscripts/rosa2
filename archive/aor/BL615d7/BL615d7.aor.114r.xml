@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.114r.tif" pagination="114" reader="John Dee" signature="Pij"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="molte seche" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Many flatts</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Canali" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The Chanel.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note this</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Isola di Cuba" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cuba.</marginalia_text>
+                    <location name="Cuba"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="del Lordeste" type="straight"/>
+        <underline language="IT" method="pen" text="molte Grue rosse" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; Cani" type="straight"/>
+        <underline language="IT" method="pen" text="fra molte secche" type="straight"/> 
+        <underline language="IT" method="pen" text="all'Occidente" type="straight"/>
+        <underline language="IT" method="pen" text="verso Tramontana" type="straight"/>
+        <underline language="IT" method="pen" text="secondo che gli daua luogo la disposition de' Canali" type="straight"/>
+        <underline language="IT" method="pen" text="scandagliare il fondo" type="double"/>
+        <underline language="IT" method="pen" text="gabbia, per discoprire" type="double"/>
+        <underline language="IT" method="pen" text="la naue spesse volte toccaua terra, senza poter" type="straight"/>
+        <underline language="IT" method="pen" text="innumerabili secche" type="straight"/>
+        <underline language="IT" method="pen" text="prender terra nell'Isola di" type="straight"/>
+        <underline language="IT" method="pen" text="vna balestra" type="straight"/>
+        <underline language="IT" method="pen" text="trouò XXX persone" type="straight"/>
+        <underline language="IT" method="pen" text="cioè lancie" type="straight"/>
+        <underline language="IT" method="pen" text="Machane" type="straight"/>
+        <underline language="IT" method="pen" text="Fra questi" type="double"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- questi riferi -->
+        
+        <errata amendedtext="Grue" copytext="Grue" language="IT"/>
+       
+        <!-- DO: Drawing of the countless flats ['innumerabili secche'] --> <!--JG: We need to think about which term to use to capture this - is representation of information. Mapping information?-->
+        
+        <drawing anchor_text="In questo porto, simile di forma ad vn ferro di cauallo" book_orientation="0" method="pen" place="right_margin" type="house"/>
+       
+        
+    </annotation>
+    
+</transcription>

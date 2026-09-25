@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.077v.tif" pagination="[70v]" reader="John Dee" signature="[S ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="De morbis nati" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vide infra fo 273.v. et 274.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:566" text="273.v"/>
+                        <target ref="RCP7134:567" text="274"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See below folio 273 verso and 274.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>De abscisore cogenoscend[a] vide fine[m] huius capitis.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:161" text="fine[m]"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>On learning about the killing planet, see the end of this chapter.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; abscisore[m] uitae" type="straight"/>
+        <underline language="LA" method="pen" text="Tauro" type="double"/>
+        <underline language="LA" method="pen" text="cruentam mortem" type="straight"/>
+        <underline language="LA" method="pen" text="quòd pluribus partibus distat, pericula ostendit" type="straight"/>
+        
+    </annotation>
+</transcription>

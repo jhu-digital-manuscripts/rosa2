@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.067v.tif" reader="Harvey" signature="[Hiv[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>+ The Castors Pollicy.</marginalia_text> <!--castor = beaver-->
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Ipse sibi Genitalia pr[a]ecidit,</marginalia_text>
+                    <emphasis method="pen" text="sibi Genitalia" type="straight"/>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>atq[ue] in sequentes proijciens, hoc in incolumis euadit. Æsop. Fab. fab. 27.</marginalia_text>
+                    <book title="Aesop's Fables"/>
+                </position>
+            </language>
+            <translation>He [the castor] cuts his genitals off himself and, abandoning his pursuers, he escapes unharmed in this way. Aesop's Fables, fable 27.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>+ Eius testiculi, multis Medecinis utiles.</marginalia_text>
+                    <emphasis method="pen" text="Eius testiculi" type="straight"/>
+                </position>
+            </language>
+            <translation>His testicles, useful for many medicines.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[the] same.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>B. Rych. disparte.</marginalia_text> <!--JG: No clue what this is about-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Periculosè.</marginalia_text>
+                </position>
+            </language>
+            <translation>Dangerously.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Gaules" type="straight"/>
+        <underline language="EN" method="pen" text="Attalus" type="straight"/>
+        <underline language="EN" method="pen" text="myghte scatter it abroode" type="straight"/>
+        <underline language="EN" method="pen" text="scattered money al" type="straight"/>
+        <underline language="EN" method="pen" text="hyndered" type="straight"/>
+        <underline language="EN" method="pen" text="to fle" type="straight"/>
+        <underline language="EN" method="pen" text="disparple them selfes diuers" type="straight"/>
+        <underline language="EN" method="pen" text="resorte" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="myghte scatter it abroode"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="disparple"/>
+        
+    </annotation>
+</transcription>

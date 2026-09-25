@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.219r.tif" pagination="429" reader="John Dee"/>
+    
+    <annotation>
+        
+        <underline language="LA" method="pen" text="IVditha Comitissa, vxor" type="straight"/>
+        <underline language="LA" method="pen" text="Cradocus, Griffini filius, que[m] anno praeterito expulit Haraldus exulem" type="straight"/>
+        
+        <graph book_orientation="0" method="pen" place="tail" type="genealogical_tree">
+            <node anchor_text="Griffini" id="n1" person="Gruffydd ap Rhydderch">Griffinus</node>
+            <node anchor_text="Cradocus, Griffini filius" id="n2" person="Caradog ap Gruffydd">Cradocus</node>
+            <link from="n1" relationship="has_child" to="n2"/>
+        </graph>
+        
+    </annotation>
+    
+</transcription>

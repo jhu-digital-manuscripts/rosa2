@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.304r.tif" pagination="587" reader="John Dee" signature="[ooo.vii.]"/>
+    <annotation>
+        
+        <marginalia anchor_text="procrastinatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>procrastinatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Procrastination.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Tybur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tybur.</marginalia_text>
+                    <location name="Tivoli"/>
+                </position>
+            </language>
+            <translation>Tybur.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="labare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>labare.</marginalia_text>
+                </position>
+            </language>
+            <translation>To totter.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>à sinistra.</marginalia_text>
+                </position>
+            </language>
+            <translation>From the left.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="vt retractus, non reuersus" type="straight"/>
+        <underline language="LA" method="pen" text="nequitia est" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21.13</numeral>
+        <numeral place="right_margin">21</numeral>
+        
+    </annotation>
+</transcription>

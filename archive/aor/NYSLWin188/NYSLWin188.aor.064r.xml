@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.064r.tif" pagination="64" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Draco volans
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Flying dragon.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Parelij
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Perihelions.</translation> <!--KS: The point in the elliptical orbit of a celestial body where it is nearest to the sun.-->
+        </marginalia>
+        
+        <marginalia anchor_text="Praesagium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pra[e]sagium
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>A sense of foreboding.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Pennates
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Wings.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="nit fewrin anzusehen" type="double"/>
+        <underline language="DE" method="pen" text="wider fewrig" type="double"/>
+        <underline language="DE" method="pen" text="schlaff vn[d] ruhe" type="double"/>
+        <underline language="DE" method="pen" text="allein in der motion" type="double"/>
+        <underline language="DE" method="pen" text="ein Praesagium ist" type="straight"/>
+        <underline language="DE" method="pen" text="praefigurieren eine solche gleichnuß nach folgent zukünfftig" type="straight"/>
+        <underline language="DE" method="pen" text="das sie erstoche[n] seind" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+    </annotation>
+</transcription>

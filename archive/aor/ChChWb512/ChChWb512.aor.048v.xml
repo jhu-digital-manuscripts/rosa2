@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="ChChWb512.048v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Gratianu[m] &amp; Vale[n]tinianu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Gratianus et Valentinianus Impp. a Maximiano sup[er]ati.
+                    </marginalia_text>
+                    <person name="Gratian"/>
+                    <person name="Valentinianus II"/>
+                    <person name="Maximianus"/>
+                </position>
+            </language>
+            <translation>The emperors Gratianus and Valentinianus II overcome by Maximianus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="brita[n]nia[m]" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        little Brittayn
+                    </marginalia_text>
+                    <location name="Britain"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Dionotu[m] rege[m] Cornubiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Dionotus Rex Cornubia[e].
+                    </marginalia_text>
+                    <person name="Dionotus"/>
+                    <location name="Cornwall"/>
+                </position>
+            </language>
+            <translation>Dionotus, king of Cornwall.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fecitq[ue] alteram brita[n]nia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="thronu[m] aut[em] imperii sui apud Treueros statuens ita debacchat[us] est in duos" type="straight"/>
+        <underline language="LA" method="pen" text="vno i[n]tere[m]pto" type="straight"/>
+        <underline language="LA" method="pen" text="ad Dionotu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="fratri suo Caradoco" type="straight"/>
+        <underline language="LA" method="pen" text="Maximianus insulae principatu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="nome[n] Vrsula" type="straight"/>
+
+    </annotation>
+</transcription>

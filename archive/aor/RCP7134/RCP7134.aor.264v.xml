@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.264v.tif" pagination="[257v]" reader="John Dee" signature="[TT[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Ptolomaeo" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ptoloma[e]us enim Isagogem tantum scripsit, no[n] absolutos commentarios.</marginalia_text>
+                    <person name="Ptolemy"/>
+                </position>
+            </language>
+            <translation>For Ptolemy rather wrote an 'Introduction' (Isagoge), not complete commentaries.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inclinat ad coniugium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Revolutio. de coniugio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The revolution of a close connection.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Saturnus haereticum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>De relligione.</marginalia_text>
+                </position>
+            </language>
+            <translation>On religion.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>existentes</marginalia_text>
+                </position>
+            </language>
+            <translation>Arising.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="domini loci noni" type="straight"/>
+        <underline language="LA" method="pen" text="si in ipso loco nono" type="straight"/>
+        <underline language="LA" method="pen" text="Saturnus haereticum" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+    </annotation>
+</transcription>

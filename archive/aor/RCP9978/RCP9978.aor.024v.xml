@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.024v.tif" reader="John Dee" signature="[F iiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="corpora ad summum vigorem progressa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Acme</marginalia_text>
+                </position>
+            </language>
+            <translation>The acme.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="speculo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Spe[culum]</marginalia_text>
+                </position>
+            </language>
+            <translation>A mirror.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Plutarchum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Plu[tar]ch[us]</marginalia_text>
+                    <person name="Plutarch"/>
+                </position>
+            </language>
+            <translation>Plutarch.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="corpora ad summum" type="straight"/>
+        <underline language="LA" method="pen" text="vel speculo" type="straight"/>
+        <underline language="LA" method="pen" text="iaculatu in suos retorqueantur authores" type="straight"/>
+        <underline language="LA" method="pen" text="infantes plerunq[ue] se proprio viciant" type="straight"/>
+        <underline language="LA" method="pen" text="enim spectrorum" type="straight"/>
+        
+    </annotation>
+</transcription>

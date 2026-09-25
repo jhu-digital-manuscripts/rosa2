@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.160v.tif" pagination="312" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="contra Danos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Dani.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Danes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Snotingeham" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Snotingeham
+                    </marginalia_text>
+                    <location name="Nottingham"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Tingnobant" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tingnobant
+                    </marginalia_text> 
+                    <location name="Nottingham"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Kimesiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Kimesia
+                    </marginalia_text>
+                    <location name="Kempsey"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Egbertus quidam genere Anglic[us], sub" type="straight"/>
+        <underline language="LA" method="pen" text="Cantuaritas" type="straight"/>
+        <underline language="LA" method="pen" text="Danos quoque" type="straight"/>
+        <underline language="LA" method="pen" text="qui tunc primo" type="double"/>
+        <underline language="LA" method="pen" text="Comitis Gannorum" type="straight"/>
+        <underline language="LA" method="pen" text="Muchel" type="straight"/>
+        <underline language="LA" method="pen" text="latinè gra[n]dis" type="straight"/>
+        <underline language="LA" method="pen" text="Eadburga" type="straight"/>
+        <underline language="LA" method="pen" text="Alivvitha" type="straight"/>
+        <underline language="LA" method="pen" text="deserens, Snotingeha[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Snotingeham" type="straight"/>
+        <underline language="LA" method="pen" text="Tingnobant" type="straight"/>
+        <underline language="LA" method="pen" text="domus speluncarum" type="double"/>
+        <underline language="LA" method="pen" text="Kimesiae" type="straight"/>
+        
+        <errata amendedtext="pagani" copytext="pagini" language="LA"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.189v.tif" pagination="378" reader="John Dee" signature="[A 5[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Antonio Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In antoniu[m]</marginalia_text>
+                    <book title="Philippics"/>
+                </position>
+            </language>
+            <translation>Against Antony.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex insequentibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ex inseque[n]tibus</marginalia_text>
+                </position>
+            </language>
+            <translation>From consequences.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="antecesseru[n]t" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ex antecede[n]tib[us]</marginalia_text>
+                </position>
+            </language>
+            <translation>From antecedents.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cauum conuersa cuspide montem Impulit in latus, ac uenti uelut agmine facto, Quà data porta ruunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vergilius.</marginalia_text>
+                    <person name="Virgil"/>
+                </position>
+            </language>
+            <translation>Virgil.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Leuia sunt haec in hoc reo crimina: metu[m] uirgaru[m] nauarchus nobilißimae ciuitatis pretio redemit, humanu[m] est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>In Verre[m].</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex relatione ad aliquid" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ex alio aliud.</marginalia_text>
+                </position>
+            </language>
+            <translation>From one another.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in hoc solicitus, dum res ipsa uolentibus discere appareat." type="straight"/>
+        <underline language="LA" method="pen" text="Hippiae nuptijs, exhauserit" type="straight"/>
+        <underline language="LA" method="pen" text="ut quod ex eade[m] causa inter status quoque habemus" type="straight"/>
+        <underline language="LA" method="pen" text="uirgaru[m] nauarchus" type="straight"/>
+        <underline language="LA" method="pen" text="est ex relatione ad aliquid" type="straight"/>
+        
+    </annotation>
+</transcription>

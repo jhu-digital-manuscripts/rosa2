@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.051v.tif" pagination="[51v]" reader="John Dee" signature="[Giij[v]]"/>  
+    <annotation>
+        
+        <marginalia anchor_text="tolse il possesso" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Note, by what law this may be called Possession taking?</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="tolse il possesso" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Possession taking.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="gli giurarono vbidienza" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Obedience sworn to the Admirall.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="barattarle" hand="Italian" internal_ref="BL615d.7:615_d_7_f051v:u0001" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Battaring.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="tolse il possesso" type="straight"/>
+        <underline language="IT" method="pen" text="presente molta gente della terra" type="straight"/>
+        <underline language="IT" method="pen" text="Christiani accettarono" type="double"/>
+        <underline language="IT" method="pen" text="per Ammiraglio" type="double"/>
+        <underline language="IT" method="pen" text="&amp; Vice" type="double"/>
+        <underline language="IT" method="pen" text="gli giurarono vbidienza" type="double"/>
+        <underline language="IT" method="pen" text="persona" type="straight"/>
+        <underline language="IT" method="pen" text="vittoria" type="double"/>
+        <underline language="IT" method="pen" text="lor paura" type="straight"/>
+        <underline language="IT" method="pen" text="essendo concorsi molti Indiani" type="straight"/>
+        <underline language="IT" method="pen" text="gente mansueta" type="straight"/>
+        <underline language="IT" method="pen" text="quieta" type="straight"/>
+        <underline language="IT" method="pen" text="grande simplicità" type="straight"/>
+        <underline id="BL615d.7:615_d_7_f051v:u0001" language="IT" method="pen" text="barattarle" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="tripunctus" place="left_margin" text="quieta"/>
+        
+        <physical_link>
+            <marginal_annotation idref="BL615d.7:615_d_7_f051v:m0001"/>
+            <marginal_annotation idref="BL615d.7:615_d_7_f051v:u0001"/>
+            
+            <relation from="BL615d.7:615_d_7_f051v:m0001" to="BL615d.7:615_d_7_f051v:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

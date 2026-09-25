@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.250r.tif" pagination="16" reader="John Dee" signature="C.j."/> 
+    <annotation>
+        
+        <marginalia anchor_text="Rodulphi Comitis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Rodulphus Comes.</marginalia_text>
+                    <person name="Rodulf of Ivry"/>
+                </position>
+            </language>
+            <translation>Count Rodulph.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="ex patre progenitus" hand="Italian" id="RCP10552-2:509:m0001" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Id sed no[n] matre eade[m]. quia spurius erat.</marginalia_text>
+                    <person name="William I, Count of Eu"/>
+                </position>
+            </language>
+            <translation>ID. But not from the same mother, because he was illegitimate.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Gulielmus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gulielmus, Oxune[n]sis Comes Erle of EW</marginalia_text>
+                    <person name="William I, Count of Eu"/>
+                </position>
+            </language>
+            <translation>William, Count of Exmes, Earl of Eu.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nothus sc[ilicet].</marginalia_text>  <!-- DO: Not sure if this is an 'scz' contraction -->
+                    <emphasis method="pen" text="sc[ilicet]" type="double"/>
+                </position>
+            </language>
+            <translation>That is to say, illegitmitate</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="saltu Vernensi" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Saltus Verne[n]sis.</marginalia_text>
+                    <location name="Ver-sur-Mer"/>     
+                </position>
+            </language>
+            <translation>The forest of Ver.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="filiam" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>et ha[e]rede[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>And heiress.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Ethelredus Rex Anglorum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ethelredus R[ex] Ang[lorum]</marginalia_text>
+                    <person name="Aethelred II"/>
+                </position>
+            </language>
+            <translation>Aethelred, King of the English.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Archangeli Michaelis monti" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>S[ain]t Michaels mount</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Rugellus" hand="Italian" method="pen">
+            <language ident="FR">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[Rugellus deleted]. Nigellus le Viconte de Sainct Sauueur</marginalia_text>
+                    <person name="Nigel I of Saint Sauveur"/>   <!-- DO: Not entirely certain which Nigel it is... -->
+                </position>
+            </language>
+            <translation>Nigel, the Viscount of Saint Saveur.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Gaufridus comes Britanniae" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gaufridus Come Bry[tanniae]</marginalia_text>
+                    <person name="Geoffrey I, Duke of Brittany"/>
+                </position>
+            </language>
+            <translation>Geoffrey, Count of Brittany.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tempestate Gulielmus frater ducis" type="straight"/>
+        <underline id="RCP10552-2:509:u0001" language="LA" method="pen" text="patre" type="double"/>
+        <underline language="LA" method="pen" text="dux Oxunensem comitatum" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]sultu &amp; auxilio Rodulphi" type="straight"/>
+        <underline language="LA" method="pen" text="fuere vita priuauit" type="straight"/>
+        <underline language="LA" method="pen" text="longissimo fune per eminentiorem fenestram turre lapsus, fugam inijt" type="straight"/>
+        <underline language="LA" method="pen" text="attemptare, quàm cuiuspiam regis aut comitis suffragium nil sibi quandoq[ue] profuturum" type="straight"/>
+        <underline language="LA" method="pen" text="saltu Vernensi" type="straight"/>
+        <underline language="LA" method="pen" text="Rodulpho Comite" type="straight"/>
+        <underline language="LA" method="pen" text="comitatum Oxunensem ipsi donauit" type="straight"/>
+        <underline language="LA" method="pen" text="Listelinam nomine" type="straight"/>
+        <underline language="LA" method="pen" text="filiam viri nobilissimi vocati Turkettilli" type="straight"/>
+        <underline language="LA" method="pen" text="Comitatus illius haeredem" type="straight"/>
+        <underline language="LA" method="pen" text="Gulielmu[m] Suessionensem" type="straight"/>
+        <underline language="LA" method="pen" text="Hugonem Luxoniensem" type="straight"/>
+        <underline language="LA" method="pen" text="solummodò Archangeli Michaelis monti parcerent" type="straight"/>
+        <underline language="LA" method="pen" text="littora Sare deuoluuntur" type="straight"/>
+        <underline language="LA" method="pen" text="Rugellus" type="straight"/>
+        <underline language="LA" method="pen" text="vt nullus penitus remaneret" type="straight"/>
+        <underline language="LA" method="pen" text="maris remigio se contulerunt" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; foeminae pugnatrices" type="straight"/>
+        <underline language="LA" method="pen" text="Gaufridus comes" type="straight"/>
+        
+        <mark method="pen" name="quattuorpunctus" place="head"/>
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- ducis ex -->
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- progenitus, cui -->
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- ducis ex -->
+        
+        <mark method="pen" name="quattuorpunctus" place="left_margin"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- motus fauente -->
+        
+        <mark method="pen" name="quattuorpunctus" place="left_margin"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- Comite a -->
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- valde Litselinam -->
+        
+        <mark method="pen" name="circumflex" place="intext"/>  <!-- filiam viri -->
+        
+        
+        <errata amendedtext="[deleted]" copytext="Rugellus" language="LA"/>
+        
+        
+       <graph book_orientation="0" method="pen" place="tail" type="genealogical_tree">
+           
+           <node id="n1" person="Richard I of Normandy">Richardus .1.us</node>
+           <node id="n2" person="Turquetil of Harcourt">Turkettillus</node>
+           <node id="n3" person="William I, Count of Eu">Will[ia]mus, Oxunensis comes</node>
+           <node id="n4" person="Lesceline">Litselma filia et ha[e]res</node>
+           <node id="n5" person="Robert, Count of Eu">Robertus Comes Oxune[n]sis</node>
+           <node id="n6" person="William Busac">Gulielmus Comes Suessione[nsi]s</node>
+           <node id="n7" person="Hugh of Eu">Hugo Luxoniensis Ep[iscop]us</node>
+           
+           <link from="n1" relationship="has_child" to="n3"/>
+           <link from="n2" relationship="has_child" to="n4"/>
+           <link from="n4" relationship="has_spouse" to="n3"/>
+           <link from="n3" relationship="has_spouse" to="n4"/>
+           <link from="n3" relationship="has_child" to="n5"/>
+           <link from="n3" relationship="has_child" to="n6"/>
+           <link from="n3" relationship="has_child" to="n7"/>
+           <link from="n4" relationship="has_child" to="n5"/>
+           <link from="n4" relationship="has_child" to="n6"/>
+           <link from="n4" relationship="has_child" to="n7"/>
+           
+       </graph>
+        
+        <physical_link>
+            
+            <marginal_annotation idref="RCP10552-2:509:m0001"/>  
+            
+            <marginal_annotation idref="RCP10552-2:509:u0001"/>
+            
+            <relation from="RCP10552-2:509:m0001" to="RCP10552-2:509:u0001" type="undirected"/>
+            
+        </physical_link>
+        
+    </annotation>
+</transcription>

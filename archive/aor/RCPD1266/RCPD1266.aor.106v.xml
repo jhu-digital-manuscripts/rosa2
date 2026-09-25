@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.106v.tif" pagination="198" reader="John Dee" signature="[r.iij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="doctis et piis Astrologis resignata interim tantae rei diligentiore cura &amp; tractatione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Astrologorum munus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The service of astrologers.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Annus Iulianus</marginalia_text>
+                </position>
+            </language>
+            <translation>The Julian year.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hoc ab August[o] factu[m]</marginalia_text>
+                    <person name="Augustus"/>
+                </position>
+            </language>
+            <translation>This was done by Augustus.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="doctis &amp; piis Astrologis resignata interim tantae rei" type="straight"/>
+        <underline language="LA" method="pen" text="sublatis diebus, qui iustum anni modum superant" type="straight"/>
+        <underline language="LA" method="pen" text="reponantur aequinoctia &amp; solstitia" type="straight"/>
+        <underline language="LA" method="pen" text="erroris fontem, primam illam Iulij Caesaris ordinationem relinquant" type="straight"/>
+        <underline language="LA" method="pen" text="Iulianum annum, è quo tot confusiones temporum &amp; errores fluxisse animaduertimus" type="straight"/>
+        <underline language="LA" method="pen" text="vitio pontificum" type="straight"/>
+        <underline language="LA" method="pen" text="Autumno competerent" type="straight"/>
+        <underline language="LA" method="pen" text="vsus est opera Sosigenis" type="straight"/>
+        <underline language="LA" method="pen" text="Alexandrini" type="double"/>
+        <underline language="LA" method="pen" text="Sosigene perito scientiae eius" type="straight"/>
+        <underline language="LA" method="pen" text="ipsa ratio" type="straight"/>
+        <underline language="LA" method="pen" text="comperto errore" type="straight"/>
+        <underline language="LA" method="pen" text="coeperat sidera annus morari" type="straight"/>
+        <underline language="LA" method="pen" text="tamen addubitare ipse, semet corrigendo" type="straight"/>
+        <underline language="LA" method="pen" text="annum Iulianum damnemus" type="straight"/>
+        <underline language="LA" method="pen" text="Februarius 29" type="straight"/>
+        
+        <symbol name="Asterisk" place="intext"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/> 
+        <mark method="pen" name="comma" place="intext"/>  <!-- errore correcta -->
+        <mark language="LA" method="pen" name="straight_quotation_mark" place="intext" text="Februarius 29"/>
+        <mark method="pen" name="straight_quotation_mark" place="right_margin"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral language="LA" place="right_margin" text="Februarius 29">[28 deleted]</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.041r.tif" pagination="81" reader="John Dee" signature="f"/>
+    <annotation>
+        
+        
+        <marginalia anchor_text="simile" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Similitudo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Similarity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="memoria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Memoria</marginalia_text>
+                </position>
+            </language>
+            <translation>Memory.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="copia uerborum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Verboru[m] copia</marginalia_text>
+                </position>
+            </language>
+            <translation>Abundant vocabulary.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cùm profectus praeceipuè diligentia constet. Nam ut scribere pueros, plurimum'q[ue] esse in hoc opere              planè uelim, sic ediscere electos ex orationibus, uel historijs, alio'ue quo genere dignorum ea cura uoliminium locos" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

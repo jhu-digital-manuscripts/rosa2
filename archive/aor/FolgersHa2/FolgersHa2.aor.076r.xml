@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.076r.tif" reader="Harvey" signature="[*4[r]]"/>	<!-- ABO 80right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						His fine &amp; excellent description of the Lowe Countries.
+					</marginalia_text>
+					<location name="Netherlands"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						His owne especial account of theise Commonplaces.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Euscopius. )
+					</marginalia_text>
+					<person name="Euscopus"/>
+				</position>
+			</language>
+			<translation>
+				Euscopus.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						( Eccè  Manlij
+					</marginalia_text>
+					<person name="Johannes Jacobus Manlius"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Loci,
+					</marginalia_text>
+					<book title="Loci communes"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Jociq[ue] communes.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Here are the common places and common jokes of Manlius.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						( Loci Communes
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Fortio,
+					</marginalia_text>
+					<person name="Joachim Fortius Ringelberg"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						sunt ipsa ) capita reru[m]:
+						et Materiaru[m] puncta.
+						Nuda cuiusq[ue] discursus argumenta: vno, aut altro
+						termino expressa.
+						Vt, prude[n]tia: cautela: valor: industria.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Fortius' common places are themselves the origins of things and the points of the matter.
+				The bare arguments of this discourse are expressed with one or another term.
+				Such as, prudence: caution, valor, industriousness.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Summus non erit, qui non ex quaq[ue] disciplina decerpit,
+						quod ad Scopu[m] suum confert. Id citra labore[m] efficies,
+						si nihil attigeris, nisi Locos
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Communes. Fortius. )
+					</marginalia_text>
+					<person name="Joachim Fortius Ringelberg"/>
+				</position>
+			</language>
+			<translation>
+				He who does not gather from this discipline that which would bear him to his goal
+				will not attain the highest point. You shall carry out this matter without any work, if you
+				arm yourself with nothing but the Common Places. Fortius.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						) Locos autem Communes maximè 
+						probo, qui Locis proprijs inseruiunt maximè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				But I most approve those common places which are most useful for
+				their proper places.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						( Autargia scopus Autologia[e]. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Self-sufficiency is the goal of self-study.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="LODOVICO" type="straight"/>
+		<underline language="IT" method="pen" text="GVICCIARDINI" type="straight"/>
+		<underline language="IT" method="pen" text="leggendo" type="straight"/>
+		<underline language="IT" method="chalk" text="apostille" type="straight"/>
+		<underline language="IT" method="pen" text="Apologi" type="straight"/>
+		<underline language="IT" method="pen" text="Parabole" type="straight"/>
+		<underline language="IT" method="pen" text="Facetie" type="straight"/>
+		<underline language="IT" method="pen" text="Esempi" type="straight"/>
+		<underline language="IT" method="pen" text="Prouerbi" type="straight"/>
+		<underline language="IT" method="pen" text="motti sententiosi" type="straight"/>	
+		<underline language="IT" method="pen" text="tendenti à moral piaceuolezza" type="straight"/>
+		<underline language="IT" method="pen" text="condita d'utilità" type="straight"/>
+		<underline language="IT" method="chalk" text="condita d'utilità" type="straight"/>
+		<underline language="IT" method="pen" text="giornata da questo, &amp; da quello, ne' ragionamenti famigliari" type="straight"/>
+		<underline language="IT" method="pen" text="à viua voce vdiua dire, ò raccontare" type="straight"/>
+		<underline language="IT" method="pen" text="tanto da' studi" type="straight"/>
+		<underline language="IT" method="pen" text="fieri colpi di Fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="ridurgli succintamenta à qualche" type="straight"/>
+		<underline language="IT" method="pen" text="tollerabil compositione" type="straight"/>
+		<underline language="IT" method="pen" text="occorrenze del parlare, &amp; dello scriuere" type="straight"/>
+		<underline language="IT" method="chalk" text="nelle mie occorrenze del parlare" type="straight"/>
+		<underline language="IT" method="pen" text="mano, &amp; à mente" type="straight"/>
+		<underline language="IT" method="pen" text="gli antichi" type="straight"/>
+		<underline language="IT" method="pen" text="moderni autori" type="straight"/>
+		<underline language="IT" method="pen" text="da i cotidiani colloquij" type="straight"/>
+		<underline language="IT" method="pen" text="assai di queste piaceuolezze morali" type="straight"/>
+		<underline language="IT" method="pen" text="amici miei letterati" type="straight"/>
+		<underline language="IT" method="pen" text="giuditiosi" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		<symbol language="IT" name="SS" place="right_margin" text="assai di queste piaceuolezze morali"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--leggen-->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- apo -->
+		<mark method="pen" name="dash" place="right_margin"/> <!--gior-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--cer -->
+		<mark method="pen" name="bracket" place="right_margin"/>
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="leggendo"/>
+		<mark method="pen" name="plus_sign" place="intext"/>	
+		<mark method="pen" name="plus_sign" place="intext"/>
+		<mark method="pen" name="dot" place="left_margin"/> <!--compositione, a-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="antichi"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="moderni"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="dai cotidiani colloquij"/>
+		<mark method="pen" name="dot" place="left_margin"/> <!--morali, alle-->
+
+    </annotation>
+</transcription>

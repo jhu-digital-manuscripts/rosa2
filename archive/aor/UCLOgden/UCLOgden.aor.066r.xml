@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.066r.tif" pagination="115" reader="John Dee" signature="k 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="Sed ne sermo nudus diuino pr[a]esidio ne relinquat[ur]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sermo nudus diuino pra[e]sidio ne relinquatur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Not that the bare speech is left by the divine protection. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="immortalis anima" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Anima immortalis p[er] sole[m] &amp;c
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The soul immortal through the sun etc.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nisi o[mn]ibus rebus ac mixturis co[n]sideratis, omniu[m] numinu[m] decreta po[n]derent[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="sic enim praecedentiu[m] libroru[m] principia formata sunt, ut &amp; iis quae scripsimus" type="straight"/>
+        <underline language="LA" method="pen" text="Tu quicunq[ue] es deus" type="straight"/>
+        <underline language="LA" method="pen" text="da ueniam quod tuoru[m] cursus syderu[m], eorúmq[ue] effecacias explicare conamur, tuum sit, quod ad istam nos interpretationem nescio quod impulit numen" type="straight"/>
+        <underline language="LA" method="pen" text="per que[m] cunctis animantibus immortalis anima diuina dispositione" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/> 
+        <mark method="pen" name="comma" place="intext"/> <!-- anima diuina -->
+        
+    </annotation>
+</transcription>

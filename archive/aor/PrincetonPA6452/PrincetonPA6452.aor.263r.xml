@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.263r.tif" pagination="509" reader="Harvey" signature="uu3[r]"/>  
+    <annotation>
+        
+        <marginalia anchor_text="Eodem anno Q. Fabius Maximus morit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Fabij Maximi solenne Elogium post mortem.
+                    </marginalia_text>
+                    <person name="Fabius Maximus"/>
+                </position>
+            </language>
+            <translation>The solemn tribute to Fabius Maximus after his death.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Eodem anno Q. Fabius Maximus morit" type="straight"/>
+        <underline language="LA" method="pen" text="est augure[m] duos &amp; quadraginta annos" type="straight"/>
+        <underline language="LA" method="pen" text="Vir certè fuit dignus tanto cognomine" type="straight"/>
+        <underline language="LA" method="pen" text="nouu[m] ab eo" type="straight"/>
+        <underline language="LA" method="pen" text="superauit paternos" type="straight"/>
+        <underline language="LA" method="pen" text="auitos aequauit" type="straight"/>
+        <underline language="LA" method="pen" text="Pluribus" type="straight"/>
+        <underline language="LA" method="pen" text="sed omnia [a]equare unus hostis Annibal pot[est]" type="straight"/>
+        <underline language="LA" method="pen" text="cautior t[ame]n" type="straight"/>
+        <underline language="LA" method="pen" text="pro[m]ptior" type="straight"/>
+        <underline language="LA" method="pen" text="ingenio cunctator fuerit" type="straight"/>
+        <underline language="LA" method="pen" text="quia ita" type="straight"/>
+        <underline language="LA" method="pen" text="aptu[m] erat" type="straight"/>
+        <underline language="LA" method="pen" text="unu[m] homine[m] nobis cuncta[n]do rem restituisse" type="straight"/>
+        <underline language="LA" method="pen" text="inauguratus Q. Fabius Maximus, filius" type="straight"/>
+        <underline language="LA" method="pen" text="na[m] duo sacerdotia" type="straight"/>
+        <underline language="LA" method="pen" text="neq[ue] data, neq[ue] negata est" type="straight"/>
+        <underline language="LA" method="pen" text="populu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="trib. P. Scipionem iusserunt" type="straight"/>
+        <underline language="LA" method="pen" text="senatus decreuerat" type="straight"/>
+        <underline language="LA" method="pen" text="pariq[ue] imperio cu[m] Scipio[n]e imperator esset" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="pariq[ue] imperio cu[m] Scipio[n]e imperator esset"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--pro[m]-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--resti-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--eius-->
+        
+    </annotation>
+</transcription>

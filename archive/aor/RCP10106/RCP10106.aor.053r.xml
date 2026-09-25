@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.053r.tif" pagination="105" reader="John Dee" signature="g 5"/>
+    <annotation>
+
+        <marginalia anchor_text="mendacium dicere etia[m] sapienti aliquando" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sapienti aliqua[n]do mentiri licebit</marginalia_text>
+                </position>
+            </language>
+            <translation>The virtuous man is sometimes permitted to lie.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Solutiones.</marginalia_text>
+                </position>
+            </language>
+            <translation>Weakening.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ut duos sapientes aliquando iustae causae in diuersum" type="straight"/>
+        <underline language="LA" method="pen" text="tradita" type="straight"/>
+        
+        <numeral place="right_margin">9</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">11.</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

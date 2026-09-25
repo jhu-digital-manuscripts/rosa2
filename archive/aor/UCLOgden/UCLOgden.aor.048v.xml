@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.048v.tif" pagination="80" reader="John Dee" signature="[g 4[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Hanc e[ni]m digressione[m] propter eius mutati ☿ij l[eg]e natura[m] facit, vt dixit 
+                    </marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                </position>
+            </language>
+            <translation>
+                For it makes this digression because of the natural law of the changed Mercury, as it said.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Peregrinationes assidu[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Constant journeys.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="caecitatem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ca[e]citas 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Blindness.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="matrem ignobile[m], uel aliqua infamiae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mater ignobilis et infamis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Unknown and infamous mother.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="matrem ignobilem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mater ignobilis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Unknown mother.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="si per diem" type="straight"/>
+        <underline language="LA" method="pen" text="gubernatores maiorum nauium faciet" type="straight"/>
+        <underline language="LA" method="pen" text="sed statim faciet interire" type="straight"/>
+        <underline language="LA" method="pen" text="aut statim parentes interimet" type="straight"/>
+        <underline language="LA" method="pen" text="sed uita eorum alicui semper subiacet" type="straight"/>
+        <underline language="LA" method="pen" text="in patre horosc. uel signo" type="straight"/>
+        <underline language="LA" method="pen" text="constituta, matrem ignobile[m], uel aliqua" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.160r.tif" pagination="299" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        à maiore
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Generally.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="conflare vis inuidiae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Conflare invidiam
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To kindle hate.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aquilam illam argentea[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aquila arge[n]tea
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A silver eagle.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="bacchabere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        bacchari
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To rave.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="De te autem Catilina cum quiescunt, probant: cum patiuntur, decernunt: cum tacent, clamant. neque hi solum, quorum" type="straight"/>
+        <underline language="LA" method="pen" text="quoru[m] ego vix abs te iandiu manus ac tela contineo" type="straight"/>
+        <underline language="LA" method="pen" text="vtinam tibi istam mentem dii immortales donarent" type="straight"/>
+        <underline language="LA" method="pen" text="Catilina is es, vt te aut pudor à turpitudine, aut metus à periculo, aut ratio à furore reuocarit" type="straight"/>
+        <underline language="LA" method="pen" text="secerne te à bonis: infer patriae bellum: exulta impio latrocinio, vt à me non eiectus ad alienos, sed inuitatus" type="straight"/>
+        <underline language="LA" method="pen" text="tuae sacrarium sceleru[m] tuorum constitutu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="tua ista cupiditas effrenata, ac furiosa rapiebat" type="straight"/>
+        <underline language="LA" method="pen" text="natura peperit, voluntas exercuit, fortuna seruauit. nunquam" type="straight"/>
+        <underline language="LA" method="pen" text="habes vbi ostentes tuam illam praeclaram patientiam famis" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">7</numeral>
+        <numeral place="right_margin">7</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">19</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

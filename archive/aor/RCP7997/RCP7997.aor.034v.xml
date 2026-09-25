@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.034v.tif" reader="John Dee" signature="[Fiiij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="co[n]ueniu[n]t" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Convenie[n]tia in medio eodem genere ordinatione
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An agreement in the same kind of medium of regulation. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ide[m] mediu[m] no[n] simplicit[er]. sed genere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ide[m] mediu[m] simp[lici]t[e]r genere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The same medium simply, in kind.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex rep[er]cussione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        repercussio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Repercussion.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Echon" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Echo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An echo.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ydolu[m] aute[m] apparet in speculo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Idolu[m] speculo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An apparation in the mirror.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Iris
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The iris.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="demo[n]stratiua" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Qua[e] demo[n]stratiua su[n]t hic tracta[n]tur in toto op[er]e Alex[andri]   
+                    </marginalia_text>
+                    <person name="Andreas Alexander"/>
+                </position>
+            </language>
+            <translation>
+                These demonstratives here are treated in the entire work of Alexander.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="mediu[m] no[n] simplicit[er]. sed" type="straight"/>
+        <underline language="LA" method="pen" text="differentie sumunt[ur] ex diuersitate subiectoru[m]. vel ex diuersitate modi fiendi" type="straight"/>
+        <underline language="LA" method="pen" text="p[ro]pter quid" type="straight"/>
+        <underline language="LA" method="pen" text="ide[m] genere" type="straight"/>
+        <underline language="LA" method="pen" text="ex rep[er]cussione" type="straight"/>
+        <underline language="LA" method="pen" text="n[ume]ra habebis diuulgata[m]" type="straight"/>
+        <underline language="LA" method="pen" text="demo[n]stratiua" type="straight"/>
+        <underline language="LA" method="pen" text="sc[ilicet] tam linee q[uam] nu[m]eri c[on]ueniu[n]t in hoc q[uo]d habe[n]t tale augme[n]tu[m] ex quo in eis c[om]mutata p[ro]portio demo[n]strat[ur]. quare in hijs eade[m] est" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- illo libro -->
+        
+        <errata amendedtext="[deleted[" copytext="i" language="LA"/>
+        
+    </annotation>
+</transcription>

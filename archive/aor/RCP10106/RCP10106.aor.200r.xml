@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.200r.tif" pagination="399" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ἀλληγορία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ἀλληγορία</marginalia_text>
+                </position>
+            </language>
+            <translation>Allegory.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ὀνοματοποιία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ὀνοματοποιία</marginalia_text>
+                </position>
+            </language>
+            <translation>Onomatopoeia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Περίφρασις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Περίφρασις</marginalia_text>
+                </position>
+            </language>
+            <translation>Periphrasis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ἐπίθετον" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ἐπίθετον</marginalia_text>
+                </position>
+            </language>
+            <translation>Addition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ὑπέρβατον" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ὑπέρβατον</marginalia_text>
+                </position>
+            </language>
+            <translation>Hyperbaton.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nec mutator uocabulis uis rerum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Non mutatur vocabulis vis reru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>The force of things does not change names.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="figura" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>figura</marginalia_text>
+                </position>
+            </language>
+            <translation>Figure.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ironia alia sit tropi, alia schematis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ironia tropus schema</marginalia_text>
+                </position>
+            </language>
+            <translation>Irony as a trope and as a schema.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="homines, si aliud acceperu[n]t quam quod habuerant nome[n], ijdem sunt tame[n]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>simile</marginalia_text>
+                </position>
+            </language>
+            <translation>Similiar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nominibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>no[m]i[n]a</marginalia_text>
+                </position>
+            </language>
+            <translation>Names.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="frequentur in easdem sente[n]tias &amp; tropon, &amp; figuram" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tropus &amp; figura coëmit sa[e]pe</marginalia_text> <!-- M.B. Not sure of word following 'figura'. --> <!-- FSF: I think it is coemit -->
+                </position>
+            </language>
+            <translation>Trope and figure are often ?</translation> <!-- M.B. Tropes and figures ae ofetn bought? Not sure how coemit would translate, if its comeit?  -->
+        </marginalia>
+        
+        <marginalia anchor_text="debeamus figuram. Nam duobus modis dicitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>figura duob[us] d[icitu]r modis</marginalia_text>
+                </position>
+            </language>
+            <translation>Figure is used in two manners.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Transfert tamen uerbum, aut partem eius à suo loco in" type="straight"/>
+        <underline language="LA" method="pen" text="Horum nihil in figuras cadit. Nam &amp; proprijs uerbis, &amp; ordine collocatis, fieri figura potest. Quomodo" type="straight"/>
+        <underline language="LA" method="pen" text="quàm multiplicem habeant, quam'q[ue] scrupulosam disputationem" type="straight"/>
+        <underline language="LA" method="pen" text="appareat. Nec mutatur uocabulis uis rerum" type="straight"/>
+        <underline language="LA" method="pen" text="No[n] enim nominibus prosunt, sed effectibus. ut statu[m] co[n]iecturalem, an inficialem, an facti, an substantiae, an de              substa[n]tia nominemus, nihil interest, dum ide[m] quaeri sciamus" type="straight"/>
+        <underline language="LA" method="pen" text="Tam enim translatis uerbis, quàm proprijs figuratur oratio" type="straight"/>
+        
+        <mark language="LA" method="pen" name="tripunctus_with_tail" place="head" text="Non mutatur vocabulis vis reru[m]"/>
+        
+        <mark method="pen" name="tripunctus_with_tail" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

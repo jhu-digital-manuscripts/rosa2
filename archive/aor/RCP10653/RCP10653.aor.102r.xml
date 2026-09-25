@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.102r.tif" pagination="195" reader="John Dee" signature="R ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Sampson Dolensis archiepiscopus &amp; successor sancti Sampsonis qui de Britania maiori ad minorem transiit" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sampson Meneuensis archiep[iscopu]s vide a[nn]o p[ri]mo regis Io[ann]is in Hovedeno Historico. At Eborace[n]sem Archiepi[scopu]m fuisse asserit Math. Paris. A[nn]o 1⁰ regis Jo[ann]is 
+                    </marginalia_text>                      
+                    <person name="St. Samson"/>
+                    <person name="King John"/>
+                    <person name="Matthew Paris"/>
+                    <location name="St. Davids"/>
+                    <location name="York"/>
+                </position>
+            </language>
+            <translation>
+                For St. Samson from St. David's, the archbishop, see Hoveden's History from the first year of King John. But in the first year of the reign of King John, Matthew Paris asserts he was the archbishop of York. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sanctus Brendanus in" type="straight"/>
+        <underline language="LA" method="pen" text="Fortunatas insulas septennali nauigatione" type="straight"/>
+        <underline language="LA" method="pen" text="quo Machutus" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ipsius nauigationis socius in Britannia miraculis, &amp; sanctitate refulsit" type="straight"/>
+        <underline language="LA" method="pen" text="Sampson Dolensis archiepiscopus &amp; successor sancti Sampsonis qui de Britania maiori ad minorem transiit, doctrina &amp; sanctitate refulsit" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- archiepiscopus &amp; -->
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="probabilior" copytext="probilior" language="LA"/>  
+        
+    </annotation>
+</transcription>

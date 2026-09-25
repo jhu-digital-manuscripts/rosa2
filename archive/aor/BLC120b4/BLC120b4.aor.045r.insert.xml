@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.045r.insert.tif" origin="added" reader="John Dee" status="fixed"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="full_page">
+                    <marginalia_text>
+                        in Turba. Scitote quod si superficies dealbatur intrinseca eius dealbantur:
+                        et si superficie[m] aeris dealbauerit, intrinseca eius dealbabuntur. 
+                        Item Lucas: Argento aute[m] viuo gubernato, omne corpus
+                        dealbatur, et natura natura[m] convertit. Siccum ergo
+                        et humidu[m] accipite, et extrahite fumu[m] albu[m] ab ip[s]is, et
+                        custodite ne pereat.
+                        Sed qualiter generatur iste fumus albus? certe per putrefactione[m]
+                        et mundificatione[m]. Primò materia corrumpitur, fitq[ue]
+                        per calore[m] ignis, separatio vnius fumi advstiui, qui tingit
+                        in Nigredinem, ab isto fumo albo, qui erat ante mixtus sibi
+                        in p[ri]ma materia, sub vna forma tame[n]. &amp; ita recipit mundatione[m] 
+                        vna[m] p[er] igne[m]. Nam altera[m] postmodu[m] recipit p[er]
+                        artificium n[ost]r[u]m: sc[ilicet] per sublimatione[m] et distillatione[m]: vt Infra
+                        Et hoc est quod dicit Hippocrates in Aphorismis. In perturbatione 
+                        &amp; et vomitu [etc]
+                    </marginalia_text>
+                    <person name="Lucas"/> <!-- FSF: I don't think that this is Luke the Evangelist, but I am not sure -->
+                    <person name="Hippocrates"/>
+                    <book title="The aphorisms of Hippocrates"/>
+                    <book title="Assembly of Philosophers"/>
+                </position>
+            </language>
+            <translation>
+                [On this Parmenides [says] in] the Assembly: You shall know that if the surface is whitened, the intindic features of the body will be whitened and if it has whitened the surface of the air, its innermost is whitened too.
+                Likewise, Lucas [says]: Ruled by quixksilver, the entire body is whitened and nature converts nature. 
+                Therefore, let in the dry and humid and extract the white smoke from them and preserve it so it does not perish.
+                But how is this white smoke generated?
+                Certainly through putrefaction and purification. 
+                First, the matter is corrupted and by the heat of fire it is separated from a consuming smoke that mostens the blackness from this white smoke, whics was before the mixture in the prime matter under one form nonetheless.
+                And thus it receives the purification through one fire. For after a while it receives another purification through our artifice, that is through sublimation and distillation, as below.
+                And this is what Hippocrates says in his Aphorisms: In the disturbance and vomit etc.
+            </translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

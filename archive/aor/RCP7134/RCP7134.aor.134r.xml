@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.134r.tif" pagination="127" reader="John Dee" signature="ii iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Venus fuit Alfridariae domina" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Alfridaria[e] d[omi]n[u]s.</marginalia_text>
+                </position>
+            </language>
+            <translation>The lord of the Alfridary.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="filiorum geniturae immutant parentum fortunam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>filioru[m] genitura[e] immuta[n]t pare[n]tu[m] genituras.</marginalia_text>
+                </position>
+            </language>
+            <translation>The genitures of the sons transform the genitures of the parents.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nam Venus fuit Alfridariae domina, &amp; Iupiter" type="straight"/>
+        <underline language="LA" method="pen" text="Mars in secunda, &amp; Saturnus faciunt, ut nunq[uam] possim esse diues" type="straight"/>
+        <underline language="LA" method="pen" text="fixas &amp; erraticas" type="double"/>
+        <underline language="LA" method="pen" text="despicient me potentes, qua Sol est" type="straight"/>
+        
+    </annotation>
+</transcription>

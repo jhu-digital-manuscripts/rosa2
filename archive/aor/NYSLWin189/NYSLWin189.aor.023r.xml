@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.023r.tif" reader="John Dee" signature="Fiiij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="separation" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Caloris causa</marginalia_text>
+                </position>
+            </language>
+            <translation>The reason for the heat</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Granaten" type="straight"/>
+        <underline language="DE" method="pen" text="auß der separation" type="straight"/>
+        <underline language="LA" method="pen" text="gradum" type="double"/>
+        <underline language="DE" method="pen" text="abkült" type="double"/>
+        <underline language="LA" method="pen" text="Crystalli" type="double"/>
+        <underline language="DE" method="pen" text="zeucht" type="straight"/>
+        <underline language="DE" method="pen" text="ihren schwebel" type="straight"/>
+        <underline language="DE" method="pen" text="mit" type="double"/>
+        <underline language="DE" method="pen" text="anhangenden" type="straight"/>
+        <underline language="DE" method="pen" text="vitriol" type="double"/>
+        <underline language="DE" method="pen" text="trifft Wallisser bad andre" type="straight"/>
+        <underline language="DE" method="pen" text="zůkünfftigen lepram" type="straight"/>
+        <underline language="DE" method="pen" text="eröffnet" type="straight"/>
+        <underline language="DE" method="pen" text="wassersucht" type="straight"/>
+        <underline language="DE" method="pen" text="Schadt" type="double"/>
+        <underline language="DE" method="pen" text="gehör fürdert ein yetlichen somen der da vndersthet ein kranckheyt zůbringen oder ein gesundtheyt." type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+      
+        <errata amendedtext="scamonea" copytext="scamontanea" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="gehör fürdert ein yetlichen somen der da vndersthet ein kranckheyt zůbringen oder ein gesundtheyt." book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+
+    </annotation>
+</transcription>

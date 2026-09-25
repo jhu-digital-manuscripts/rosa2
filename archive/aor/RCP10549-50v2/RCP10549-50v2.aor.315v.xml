@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.315v.tif" pagination="82" reader="John Dee" signature="[Ff.i.[v]]"/>  
+    <annotation>
+        
+        <marginalia anchor_text="praeposita" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Preposita</marginalia_text>
+                </position>
+            </language>
+            <translation>Preferred things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Panaetius, quum ad Q. Tuberonem de dolore patiendo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pana[e]tius de dolore patiendo ad Q' Tuberone[m].</marginalia_text>
+                    <person name="Panaetius"/>
+                    <person name="Quintus Aelius Tubero"/>
+                </position>
+            </language>
+            <translation>Panaetius on enduring pain, [in a letter] to Quintus Tubero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vt nos quales esse oportet seruemus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quales sumus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Such as we are.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="secu[n]dum natura[m] viuere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Secundum natura[m] viuere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To live according to nature.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quòd si no[n] hominis summu[m] bonu[m] quaereremus, sed cuiusdam anima[n]tis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Anima[n]tis sumu[m] bonu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>The greatest good of a living thing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="liceat enim fingere aliquid eiusmodi, quo veru[m] facilius reperiamus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lic[et] fingere docendi causa</marginalia_text>
+                </position>
+            </language>
+            <translation>Pretending is allowed, in order to demonstrate.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Chrysippus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Chrysippus.</marginalia_text>
+                    <person name="Chrysippus"/>
+                </position>
+            </language>
+            <translation>Chrysippus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Epicurus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Epicurus.</marginalia_text>
+                    <person name="Epicurus"/>
+                </position>
+            </language>
+            <translation>Epicurus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vt in sole quod à te dicebatur, lucernam adhibere nihil interest" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Solis splendor.</marginalia_text>
+                </position>
+            </language>
+            <translation>The splendour of the sun.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="si aeque vita iucunda menstrua addatur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>vita me[n]strua</marginalia_text>
+                </position>
+            </language>
+            <translation>A month of living.</translation>  
+        </marginalia>
+                
+        <marginalia anchor_text="obscuratio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>obscuratio.</marginalia_text>
+                </position>
+            </language>
+            <translation>An obscuring.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="condemnata mihi videtur esse immanitas ista verborum" type="straight"/>
+        <underline language="LA" method="pen" text="Quae sunt igitur co[m]munia vobis cu[m] antiquis, his sic vtamur quasi concessis: quae in controuersia[m] veniu[n]t, de his si placet disseramus" type="straight"/>
+        <underline language="LA" method="pen" text="Sin dicit obscurari quaedam, nec apparere quia" type="straight"/>
+        <underline language="LA" method="pen" text="productae temporibus" type="straight"/>
+        <underline language="LA" method="pen" text="obscuratio" type="straight"/>
+        <underline language="LA" method="pen" text="menstrua addatur" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>   <!-- DO: Like two Jupiters joined together -->
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="tripunctus" place="intext" text="obscuratio"/>
+        <mark method="pen" name="tripunctus" place="tail"/>
+        
+        <numeral place="left_margin">12</numeral>
+
+    </annotation>
+</transcription>

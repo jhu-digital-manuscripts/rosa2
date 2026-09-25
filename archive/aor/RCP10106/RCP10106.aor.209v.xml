@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.209v.tif" pagination="418" reader="John Dee" signature="[D[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="uerbis dubijs" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Verba dubia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Dubious words.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="suspicionem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>suspicio</marginalia_text>
+                </position>
+            </language>
+            <translation>Suspicion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cunctationes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>cunctationes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Hesitations.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="densitate ipsa figurae aperiuntur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Densitate figura[e] ap[er]iuntur</marginalia_text>
+                </position>
+            </language>
+            <translation>Figures are uncovered by their abundance.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="maxime iudex credit figuris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quom[od]o Iudex maxime figuris credit</marginalia_text>
+                </position>
+            </language>
+            <translation>How the judge believes the figures most.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="institui uxor non poterat haeres" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vxor institui ha[e]res non p[otes]t.</marginalia_text> 
+                </position>
+            </language>
+            <translation>The wife can not legally be the heir.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Equidem quandoque &amp; in personas incîi tales, &amp; in rem quoque (quod est magis rarum) quae obtineri nisi hac arte non posset." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quintiliani actio</marginalia_text>
+                    <person name="Quintilian"/>
+                </position>
+            </language>
+            <translation>The action of Quintilian.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cur hoc attulerit exemplum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Why he brought forth this example.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="personae reuerentia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Persona[e] reuentia</marginalia_text>
+                </position>
+            </language>
+            <translation>Respect for persons.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="si ex uerbus dubijs" type="straight"/>
+        <underline language="LA" method="pen" text="perducant iudicem ad suspicionem, &amp; amoliamur caetera" type="straight"/>
+        <underline language="LA" method="pen" text="dictio, &amp; cunctationes" type="straight"/>
+        <underline language="LA" method="pen" text="Nam densitate ipsa figurae aperiuntur, nec offensae minus habe[n]t, sed autoritatis. Nec" type="straight"/>
+        <underline language="LA" method="pen" text="sed diffidentia" type="straight"/>
+        <underline language="LA" method="pen" text="maxime iudex credit figuris, si nos putat nolle dicere." type="straight"/>
+        <underline language="LA" method="pen" text="probare uoluissem, in foro quoque esse his figuris locum" type="straight"/>
+        <underline language="LA" method="pen" text="figura potius spargenda sunt" type="straight"/>
+        <underline language="LA" method="pen" text="non apparet, eximi non potest" type="straight"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/> <!-- M.B. Tripunctus with tail. -->
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">2</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

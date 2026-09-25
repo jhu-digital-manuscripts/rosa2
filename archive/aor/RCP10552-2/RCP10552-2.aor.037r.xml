@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.037r.tif" pagination="61" reader="John Dee" signature="F.ij."/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="Christoferus de Scotun, sororius Roberti de Brus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Christoferus de Scotun, Sororius Rob.[ertus] de Brus.</marginalia_text>
+                    <person name="Christopher de Seton"/>
+                    <person name="Robert VII de Brus"/>
+                </position>
+            </language>
+            <translation>Christopher de Seton's Sister, Robertus de Brus.</translation> <!-- M.B. Appears to refer to Christopher de Seton who married the sister of Robert the Bruce (VII), Christina Bruce. -->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Supplicium de Perduellibus." type="straight"/>
+        <underline language="LA" method="pen" text="iudicio Nigellus" type="straight"/>
+        <underline language="LA" method="pen" text="tracti sunt" type="straight"/>
+        <underline language="LA" method="pen" text="iuxta statum suum decenter" type="straight"/>
+        <underline language="LA" method="pen" text="Christoferus de Scotun, sororius Roberti de Brus, quem" type="straight"/>
+        
+    </annotation>
+</transcription>

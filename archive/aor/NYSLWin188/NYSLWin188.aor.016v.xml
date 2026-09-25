@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.016v.tif" pagination="[16[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="so nemen sie von der Sonnen jre krafft" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Stella[e] Ex sole recipiu[n]t suaru[m] viriu[m] actiuitate[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>From the sun retake their activity of their strengths.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Der Winter Sternen ist der Mon der Obriste" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Luna est prima et principalis stella Hyemalis</marginalia_text>
+                </position>
+            </language>
+            <translation>The moon is the first and principal winter star.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Summer Stern vnd hat mit jr viel" type="straight"/>
+        <underline language="DE" method="pen" text="Also seind Sternen die der arth seind das sie jetzt im Winther wie Dorren bäum stehent vn[d] aber so die zeit kompt der Sternen aufgang" type="straight"/>
+        <underline language="DE" method="pen" text="so nemen" type="straight"/>
+        <underline language="DE" method="pen" text="sie von der Sonnen jre krafft" type="triple"/>
+        <underline language="DE" method="pen" text="der Mon der Obriste vnd" type="straight"/>
+        <underline language="DE" method="pen" text="in seiner Natur" type="straight"/>
+        <underline language="DE" method="pen" text="geselschafft" type="straight"/>
+        <underline language="DE" method="pen" text="mit jm" type="straight"/>
+        
+        <symbol name="Moon" place="tail"/>
+        
+        <mark language="DE" method="pen" name="scribble" place="tail" text="die Sonne ist in gleicher hitze"/>
+        
+    </annotation>
+</transcription>

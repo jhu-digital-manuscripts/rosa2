@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.096v.tif" reader="Harvey" signature="[Mi[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Anwerpe sackid, by abowte 5000 Spanyards, experte and Skilfull Sowldiours. In Anwerpe hundred thowsands.</marginalia_text>
+                    <location name="Antwerp"/>
+                    <emphasis method="pen" text="Anwerpe sackid" type="straight"/>
+                    <emphasis method="pen" text="5000 Spanyards" type="straight"/>
+                    <emphasis method="pen" text="Skilfull Sowldiours" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Scientia, et Virtus, nec ullo casu, periculoue terrifiunt: nec quicq[uam] sibi relinguu[n]t Imperuiu[m].</marginalia_text>
+                </position>
+                <!--KS: could it be two seperate words, 'terri fiunt'?-->
+            </language>
+            <translation>Knowledge and virtue [terrifiunt??] not with any case or danger. Nor do they leave anything impervious to itself.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="thre hundred of the Lacedemonians" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Trecenti Lacones. s[upr]a, l.2.c.2.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0088" text="l.2.c.2."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>300 Lacedaemonians. [See] above, book 2, chapter 2.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Thermopyle" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vide Herodotu[m], Plutarchu[m], Valerium, de Leonide.</marginalia_text>
+                    <person name="Herodotus"/>
+                    <person name="Plutarch"/>
+                    <person name="Valerius Maximus"/>
+                    <person name="Leonidas I"/>
+                </position>
+            </language>
+            <translation>See Herodotus, Plutarch, and Valerius Maximus, about Leonidas.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The like</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>in the Scriptures, of Abraham, Gedeon,</marginalia_text>
+                    <person name="Abraham"/>
+                    <person name="Gideon"/>
+                    <book title="Bible"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dauid,</marginalia_text>
+                    <person name="King David"/>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Jonathan,</marginalia_text>
+                    <person name="Jonathan"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[h..].</marginalia_text> 
+                    <!--JG: Unsure about this word. Compare with _203. Chris, any idea?--> <!-- CG: I'm really not sure, either here or in _203. It looks like a book reference, but I don't know to what. I can't even make out the letters. -->
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Judas Maccaba[e]us,</marginalia_text>
+                    <person name="Judas Maccabeus"/>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>[etc]. Miraculous Exploits,</marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Victoriously acheuid by A few.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="contended with the same wyne" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Popular, &amp; plausible actions.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Sed ut prudentis Ducis fuerit, plus Cibi, somni, ocij, alijs concedere, quàm sibi: sic plus honoris,
+                    et commodi, sibi, quà[m] alijs. Magna[e] Cura[e], magna merces est: Sallustius ad Ca[e]sare[m], de Rep. ordinanda.</marginalia_text>
+                    <person name="Sallust"/>
+                    <person name="Julius Caesar"/>
+                    <book title="Duae epistolae de republica ordinanda"/>
+                </position>
+            </language>
+            <translation>But, as it was [a characteristic of] a prudent leader to concede more food, sleep, and free time to other, than to himself: thus
+                more honour and reward to himself than to others. "The greatest responsibilities have the greatest rewards." Sallust to Caesar in 'Duae epistolae de republica ordinanda'.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="to helpe Cirus ageinst Artaxerxes" type="straight"/>
+        <underline language="EN" method="pen" text="battayle a hu[n]dred thousand barbarous alyens" type="straight"/>
+        <underline language="EN" method="pen" text="same. xiiii. thousande Grekes after their captaynes were loste" type="straight"/>
+        <underline language="EN" method="pen" text="gouernaunce of theyr" type="straight"/>
+        <underline language="EN" method="pen" text="callyd Xenophon of Athens" type="straight"/>
+        <underline language="EN" method="pen" text="Xerxes" type="straight"/>
+        <underline language="EN" method="pen" text="the straites Thermopyle, by thre hundred" type="straight"/>
+        <underline language="EN" method="pen" text="This thynge" type="straight"/>
+        <underline language="EN" method="pen" text="many men" type="straight"/>
+        <underline language="EN" method="pen" text="and experte men" type="straight"/>
+        <underline language="EN" method="pen" text="Cato" type="straight"/>
+        <underline language="EN" method="pen" text="same wine" type="straight"/>
+        <underline language="EN" method="pen" text="Cyneus the ambassadour" type="straight"/>
+        <underline language="EN" method="pen" text="Fabricius" type="straight"/>
+        <underline language="EN" method="pen" text="somme of golde for a" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        
+        <mark method="pen" name="horizontal_bar" place="head"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="battayle a hu[n]dred thousand barbarous alyens"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="same wine"/>
+        <mark method="pen" name="hash" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--dan-->
+        
+        <mark method="pen" name="straight_quotation_mark" place="intext"/> <!--the gouernaunce-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="thre hundred"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="comma" place="intext"/> <!--continency and-->
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Cyneus the ambassadour"/>
+        
+    </annotation>
+</transcription>

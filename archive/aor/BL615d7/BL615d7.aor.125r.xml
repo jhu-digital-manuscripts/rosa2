@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.125r.tif" pagination="125" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Idolatria, ne altra setta io non ho potuto comprendere in loro" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>No Idolatrie here, nor sect</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>he could not yet afferme any thing of the mayn land but of [?] [etc].</marginalia_text>  <!--JG: Unsure about word after second 'of'-->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Brytish custome of names.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Pongono essi un nome alla detta statua, &amp; credo, che sia quel del padre, dell'auolo, o di ambidoi" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>rehersing the names of theyr parents father grandfather [etc] after the welsh manner.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="qui le parole istesse" type="straight"/>
+        <underline language="IT" method="pen" text="Idolatria, ne altra setta io non ho potuto comprendere" type="straight"/>
+        <underline language="IT" method="pen" text="in loro" type="double"/>
+        <underline language="IT" method="pen" text="ferma" type="straight"/>
+        <underline language="IT" method="pen" text="alcune imagini di legname" type="double"/>
+        <underline language="IT" method="pen" text="lauorate in rileuo" type="straight"/>
+        <underline language="IT" method="pen" text="chimate Cemi" type="straight"/>
+        <underline language="IT" method="pen" text="Cimi" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; oratione, che eglino uanno a fare" type="straight"/>
+        <underline language="IT" method="pen" text="una canna di due" type="straight"/>
+        <underline language="IT" method="pen" text="Con la detta poluere uanno fuori di sentimento, diuentando come ubriachi. Pongono" type="straight"/>
+        <underline language="IT" method="pen" text="un nome alla detta statua" type="straight"/>
+        <underline language="IT" method="pen" text="del padre" type="double"/>
+        <underline language="IT" method="pen" text="dell'auolo, o di ambidoi" type="straight"/>
+        <underline language="IT" method="pen" text="piu di una, &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="altri piu di X, tutti in memoria" type="straight"/>
+        <underline language="IT" method="pen" text="di alcun de' suoi antecessori" type="straight"/>
+        
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- setta io -->
+        
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        
+        <mark language="IT" method="pen" name="straight_quotation_mark" place="intext" text="ferma"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="divining rod"/>  
+        
+    </annotation>
+    
+</transcription>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.024v.tif" pagination="xx[v]" reader="Harvey" signature="[Eiv[v]]"/>
+    <annotation>
+    	
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="left_margin">
+    				<marginalia_text>
+    					M. Antonius Casanoua.
+    					Castra locare, fuit Pyrrhi; Fabijq[ue] morari;
+    					Marcelli Proprium conseruisse manus.
+    					Tria peculiaria mnemosyna, Trium 
+    					Excellentissimoru[m] Ducum.
+    				</marginalia_text>
+    				<person name="Marco Antonio Casanova"/>
+    				<person name="Pyrrhus of Epirus"/>
+    				<person name="Fabius Maximus"/>
+    				<person name="Marcus Claudius Marcellus"/>
+    			</position>
+    		</language>
+    		<translation>
+    			Marco Antonio Casanova.
+    			To pitch camp was Pyrrhus' strategy; and to delay was Fabius'.
+    			Marcellus' was to fight individually.
+    			The three particular memorials of three most excellent generals.
+    		</translation>
+    	</marginalia>
+    	
+	<underline language="EN" method="pen" text="men being" type="straight"/>
+    	<underline language="EN" method="pen" text="to arme" type="straight"/>
+    	<underline language="EN" method="pen" text="what armoure the" type="straight"/>
+    	<underline language="EN" method="pen" text="light armed" type="straight"/>
+    	<underline language="EN" method="pen" text="of Veliti" type="straight"/>
+    	<underline language="EN" method="pen" text="Slinges" type="straight"/>
+    	<underline language="EN" method="pen" text="with Crossebowes" type="straight"/>
+    	<underline language="EN" method="pen" text="cast Dartes" type="straight"/>
+    	<underline language="EN" method="pen" text="the heauie armed" type="straight"/>
+    	<underline language="EN" method="pen" text="the orders" type="straight"/>
+    	<underline language="EN" method="pen" text="the heauie armed" type="straight"/>
+    	<underline language="EN" method="pen" text="head péece" type="straight"/>
+    	<underline language="EN" method="pen" text="a Corselet, which" type="straight"/>
+    	<underline language="EN" method="pen" text="a targaet on the left arme" type="straight"/>
+    	<underline language="EN" method="pen" text="and a halfe" type="straight"/>
+    	<underline language="EN" method="pen" text="hoope of Iron vpon" type="straight"/>
+    	<underline language="EN" method="pen" text="other vnder" type="straight"/>
+    	<underline language="EN" method="pen" text="a swoorde, the" type="straight"/>
+    	<underline language="EN" method="pen" text="side, a Dagger" type="straight"/>
+    	<underline language="EN" method="pen" text="a darte" type="straight"/>
+    	<underline language="EN" method="pen" text="called Pilo" type="straight"/>
+    	<underline language="EN" method="pen" text="the beginning" type="straight"/>
+    	<underline language="EN" method="pen" text="threwe those at the enemie" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="armed their" type="straight"/>
+
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="of Veliti"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="and a halfe"/>
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	
+    	<mark method="pen" name="dot" place="intext"/> <!--them, and-->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="light armed"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the heauie armed"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="a targaet on the left arme"/>
+
+    </annotation>
+</transcription>

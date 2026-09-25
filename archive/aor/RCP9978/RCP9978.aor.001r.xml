@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.001r.tif" pagination="title page" reader="John Dee"/>
+    
+    <annotation>
+        
+        <marginalia date="1562" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Johannes Dee 1562.</marginalia_text>  <!-- DO: This is under Saunder's writing; I can't make out the final word -->
+                    <!-- FSF: my guess would be something like Antwaper -->   <!-- DO: Perhaps 'Antwerpe'? but there appears to be another letter at the end which I'm not sure of -->
+                    <person name="John Dee"/>
+                    <location name="Antwerp"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia date="1584" hand="Italian" other_reader="Nicholas Saunder">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Nicholaus / 1584 Saunderus</marginalia_text>
+                    <person name="Nicholas Saunder"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>D2-94</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>51/f14</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>D. Guelterus Henric[us] Riffinus Medicus et Mathematic[us]</marginalia_text> <!-- FSF: because of the below, I think it is Hermeni[us] or so, though such reading requires a bit of phantasy... --> <!-- DO: Yes, maybe he got the name wrong? --> <!-- NBW: The transcription is correct as is, possible that this is a Latinization on Dee's part or the part of the author -->
+                    <person name="Walther Hermann Ryff"/>
+                </position>
+            </language>
+            <translation>D. Walter [Hermann] Ryff, doctor and mathematician.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="slash" place="intext"/>  <!-- M. D. -->
+        <mark method="pen" name="slash" place="intext"/>  <!-- D. XLVIII -->
+        
+    </annotation>
+    
+</transcription>

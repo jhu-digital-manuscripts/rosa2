@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.044v.tif" pagination="408" reader="Harvey"/>	<!-- ABO 49left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Oportet artificem artificum, et actorem actorum,
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						vnicè habere artes artiu[m], et
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						virtutes virtutum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				It is necessary for the greatest of artists and the greatest of actors to possess
+				the greatest of arts, and the greatest of virtues.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Id[que] leui pollicè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				And this with a light touch.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						dextrè
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Skillfully.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) Nihil prudentius
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						aut
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						dulcius: nihil efficacius, aut Lautius.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing more prudent or more sweet: nothing more effective or more elegant.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Eutrapelus, hominum
+						eloquentissimus, et prudentissimus: actuosissimus, et
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						suauissimus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Of men, Eutrapelus is the most eloquent and most prudent, the most 
+				active and the most charming.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Mundi excellentissima Creatura.
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The most excellent creature in the world.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Animo pra[e]sentissimus: spiritu clarissimus:
+						voce explanatiss[imus]: accentu significantiss[imus]
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Most outstanding in mind, most bright in spirit, most clear in voice, most expressive in tone.
+			</translation>
+		</marginalia>
+
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Nullu[m] unq[uam] Mercurialis tam [vidi tam] dextrè,
+						proprieq[ue] Mercuriale quàm Eutrapelum.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Yet I never saw anything so Mercurial, and so skillfully Mercury-like, as Eutrapelus. <!-- Unclear. -->
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						In amaro dulcis. Aut digito compesce Labellu[m]. Quicquid odiosu[m], Noli me
+						tangere.
+					</marginalia_text>
+					<X-ref book_title="Bible" language="LA" person="John" text="Noli me tangere"/> <!-- John 20:17-->
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				Sweet in bitterness. Or restrain the lip with a finger. Whatever is distasteful, "do not touch me".
+			</translation>
+		</marginalia>
+
+
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="legittimar, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="due scuse" type="straight"/>
+		<underline language="IT" method="pen" text="senza mai riposarsi" type="straight"/>
+		<underline language="IT" method="pen" text="settanta giornate" type="straight"/>
+		<underline language="IT" method="pen" text="sotto la pancia" type="straight"/>
+		<underline language="IT" method="pen" text="sul lembo della sella" type="straight"/>
+		<underline language="IT" method="pen" text="il Re" type="straight"/>
+		<underline language="IT" method="pen" text="desiderato dopò" type="straight"/>
+		<underline language="IT" method="pen" text="lasciare di molti debiti" type="straight"/>
+		<underline language="IT" method="pen" text="grande schiamazzo" type="straight"/>
+		<underline language="IT" method="pen" text="un uecchio rimbambito" type="straight"/>
+		<underline language="IT" method="pen" text="crudeltà della sua amorosa" type="straight"/>
+		<underline language="IT" method="pen" text="diceua deh" type="straight"/>
+		<underline language="IT" method="pen" text="fare" type="straight"/>
+		<underline language="IT" method="pen" text="dire" type="straight"/>
+		<underline language="IT" method="pen" text="uo manzare tutte" type="straight"/>
+		<underline language="IT" method="pen" text="pome azerbe" type="straight"/>
+		<underline language="IT" method="pen" text="esempio" type="straight"/>
+		<underline language="IT" method="pen" text="dell'amoreuolezza &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="anche legare i denti" type="straight"/>
+		<underline language="IT" method="pen" text="quel cattiuello" type="straight"/>
+		<underline language="IT" method="pen" text="non ne haueua un paio" type="straight"/>
+		<underline language="IT" method="pen" text="Cesare Lilio, gentil-huomo" type="straight"/>
+		<underline language="IT" method="pen" text="cantasse all'improuiso in" type="straight"/>
+		<underline language="IT" method="pen" text="in ogni tempo, in ogni luogo, &amp; con" type="straight"/>
+		<underline language="IT" method="pen" text="ogni persona gentile, &amp; cortese" type="straight"/>
+		<underline language="IT" method="pen" text="nel mancargli la rima" type="straight"/>
+		<underline language="IT" method="pen" text="strauagante" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="legittimar, &amp; accettar" type="straight"/>
+		<underline language="IT" method="chalk" text="non sul lembo della" type="straight"/>
+		<underline language="IT" method="chalk" text="desiderato dopò" type="straight"/>
+		<underline language="IT" method="chalk" text="lasciare di molti debiti" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="left_margin"/>
+		<symbol name="Mercury" place="left_margin"/> <!--JG: Link to marginal note which mentions Mercury?-->
+		<symbol name="SS" place="left_margin"/> <!--JG: Can this be linked to underlined text?-->
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- rimbam -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Ca -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ri -->
+		
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="bracket" place="left_margin"/> <!-- tar... gi  -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- morte ... lasciare -->
+		<mark method="pen" name="equal_sign" place="left_margin"/> <!-- pome -->
+		<mark language="IT" method="pen" name="plus_sign" place="left_margin" text="non ne haueua un paio"/> 
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark language="IT" method="pen" name="plus_sign" place="head" text="legittimar"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="settanta giornate"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- pancia -->
+	    	<mark method="pen" name="dot" place="intext"/> <!-- sella, come  -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- caualiere. -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- esser -->
+		<mark method="pen" name="dot" place="intext"/> <!-- morte, rispose -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- molti debiti -->
+		<mark method="pen" name="dot" place="intext"/> <!-- amorosa, & -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="denti"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- denti, & -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- quel cattiuello -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- un paio -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- un paio -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="improuiso"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- ualieri, la -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="in ogni tempo"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- strauagante, fermandosi -->
+    </annotation>
+</transcription>

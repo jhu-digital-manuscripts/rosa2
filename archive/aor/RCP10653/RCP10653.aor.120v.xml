@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.120v.tif" pagination="232" reader="John Dee" signature="[V ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="progeniem Bruti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Progenies Bruti
+                    </marginalia_text>
+                    <person name="Brutus of Troy"/>  
+                </position>
+            </language>
+            <translation>
+                Offspring of Brutus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="plaga insanabilis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Plaga insanabilis 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+            An incurable plague.                
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ripun" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ripon              
+                    </marginalia_text>
+                    <location name="Ripon"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="iuxta consuetudinem Scotorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Scotoru[m] co[n]suetud[...] <!-- FSF: fades out -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The custom of the Scots.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Pendae multum nephariè" type="straight"/>
+        <underline language="LA" method="pen" text="vxoris suae" type="straight"/>
+        <underline language="LA" method="pen" text="VVlfherus .xvij." type="straight"/>
+        <underline language="LA" method="pen" text="sunt à Penno vsque Pendredam" type="straight"/>
+        <underline language="LA" method="pen" text="progeniem Bruti plaga" type="triple"/>
+        <underline language="LA" method="pen" text="Ripun" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]tra Brita[n]nos" type="straight"/>
+        
+    </annotation>
+</transcription>

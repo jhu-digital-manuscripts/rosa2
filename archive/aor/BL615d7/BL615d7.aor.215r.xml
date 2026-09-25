@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.215r.tif" pagination="215" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="mare nella maggior maretta piu di mezo braccio" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The heith of the flud.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Quibio" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quibio</marginalia_text>
+                    <location name="Quibio"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Quibio" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Quibio</marginalia_text>
+                    <location name="Quibio"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="menauano donne seco" type="triple"/>
+        <underline language="IT" method="pen" text="di Betlem" type="straight"/>
+        <underline language="IT" method="pen" text="aghi da pomo" type="straight"/>
+        <underline language="IT" method="pen" text="maretta piu di mezo braccio" type="straight"/>
+        <underline language="IT" method="pen" text="del Quibio, che" type="straight"/>
+        <underline language="IT" method="pen" text="il Re loro," type="straight"/>
+        
+        
+    </annotation>
+</transcription>

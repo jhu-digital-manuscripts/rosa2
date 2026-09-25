@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tei-c.org/ns/1.0" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>MS Selden Supra 57, Bodleian Library, Oxford. Paris, 1348. </p>
+        </note>
+        <note rend="BASIC INFORMATION">
+          <p>Parchment, 240 x 180 mm, 162 leaves.</p>
+        </note>
+        <note rend="MATERIAL">
+          <p><material>Parchment</material> in sound condition, with some minor soiling. </p>
+        </note>
+        <note rend="QUIRES">
+          <list>
+            <head>Collation:</head>
+            <item n="I">
+              <locus from="1" to="8">1-8</locus>
+            </item>
+            <item n="II">
+              <locus from="9" to="16">9-16</locus>
+            </item>
+            <item n="III"><locus from="17" to="23">17-23</locus>(1 leaf wanting following fol. 20) </item>
+            <item n="IV">
+              <locus from="24" to="31">24-31</locus>
+            </item>
+            <item n="V">
+              <locus from="32" to="39">32-39</locus>
+            </item>
+            <item n="VI">
+              <locus from="40" to="47">40-47</locus>
+            </item>
+            <item n="VII">
+              <locus from="48" to="55">48-55</locus>
+            </item>
+            <item n="VIII">
+              <locus from="56" to="63">56-63</locus>
+            </item>
+            <item n="IX"><locus from="64" to="70">64-70</locus>(1 leaf wanting following fol. 69) </item>
+            <item n="X">
+              <locus from="71" to="78">71-78</locus>
+            </item>
+            <item n="XI">
+              <locus from="79" to="86">79-86</locus>
+            </item>
+            <item n="XII">
+              <locus from="87" to="94">87-94</locus>
+            </item>
+            <item n="XIII">
+              <locus from="95" to="102">95-102</locus>
+            </item>
+            <item n="XIV">
+              <locus from="103" to="110">103-110</locus>
+            </item>
+            <item n="XV">
+              <locus from="111" to="118">111-118</locus>
+            </item>
+            <item n="XVI">
+              <locus from="119" to="126">119-126</locus>
+            </item>
+            <item n="XVII">
+              <locus from="127" to="134">127-134</locus>
+            </item>
+            <item n="XVIII">
+              <locus from="135" to="142">135-142</locus>
+            </item>
+            <item n="XIX"><locus from="143" to="149">145-152</locus>(1 leaf wanting following fol. 148)</item>
+            <item n="XX">
+              <locus from="150" to="157">150-157</locus>
+            </item>
+            <item n="XXI"><locus from="158" to="162">158-162</locus>(originally a gathering of six leaves, but final leaf now wanting) </item>
+          </list>
+          <p>
+                        Some signatures survive, but are in an unexpected order; e.g., quire III appears to read gi, gii, etc, quire XI is hi, hii, etc., XIII is Ii, Iii, etc., XV is ei, eii, etc. XVI is di, dii etc. Catchwords on lower right in brown ink without ornamentation. Foliation in modern pencil, top right corner. On five occasions a folio is assigned two numbers; these are written as 53-4, 58-9, 63-4, 73-4, and 123-4. It appears that an earlier hand numbered in units of five folios, i.e. 5, 10, 15, 20, etc., but did so rather haphazardly. When the remaining leaves were later numbered, the person foliating was forced to adjust in this manner in order to have their foliation fit in with that already there; thus these doubled numbers come only prior to a folio number ending in 0 or 5. Consequently, a new foliation has been assigned for this description.
+                    </p>
+        </note>
+        <note rend="LAYOUT">
+          <p>
+                        Ruled in brown ink for two columns of 38 lines each. Prickings mostly cropped away, but some survive along bottom and right edges. Text block formed of eight vertical lines plus two horizontal through lines, although the bottom through line is not present invariably. Each column is bounded by a horizontal line on either side, with two additional, closely spaced vertical lines just to the right of the first letter of each line. Text blocks vary in size, but on average approximately 185 x 130 mm; each column approximately 60 mm wide.
+                    </p>
+        </note>
+        <note rend="SCRIPT">
+          <p>One scribe throughout, using a textualis script and brown ink. A number of erasures throughout, sometimes with corrections in a different hand and darker ink – see e.g., fol. <locus>5r</locus>, which has erasures with and without corrections.
+                    </p>
+        </note>
+        <note rend="DECORATION">
+          <p>Rubrics, textual divisions, and changes in speakers in red. Many guidewords for rubricators survive, although some have been erased (e.g., <locus>84v</locus> and <locus>85r</locus>). Opening folio contains two initials, one five lines in height and the other four lines; initials in gold with blue and red ornamentation and decorative white penwork. Numerous two-line initials in the same color scheme throughout. Border on <locus>1r </locus> along bottom and right edges in gold, blue, and red with vine motifs and, on one end, a dragon’s head. Scene of hunting with hunter, dog, and hare along bottom border. 55 miniatures throughout, some having been defaced (e.g., <locus>26r</locus>). On opening folio (<locus>1r</locus>), four miniatures arranged with two above each column. Most miniatures 8-9 lines in height. On fol. <locus>70v</locus>, a 13-line miniature depicting Amor assembling his barons spans two columns; all other miniatures span one column. On <locus>71r</locus>, a historiated initial featuring Amors and Amans; red initial against blue background with gold infill. A red, gold, and blue border extends from the initial along the left border, with vines featuring red, blue, and gold leaves and buds extending from the top of the border over the left column, and from the bottom of the border along the lower margin; red and blue areas decorated with white.
+                    </p>
+        </note>
+        <note rend="BINDING">
+          <p>16th-c. white, limp parchment binding. Binding measures 247 mm in height and 206 mm wide from the center of the spine to the fore edge.  Cover sewn on three cords; three additional cords from a previous binding visible inside the cover were not utilized when limp parchment binding was attached. Headband remains from previous binding. Two holes each on front and back covers remain from tie downs, which are now wanting. An armorial crest is found on the center of both the front and back covers that “bears the arms, a tree proper between two griffins segreant supporting the stem, crest a demi-lion holding a serpent in its sinister paw : motto, BART · SYLVA · SVBIT · ASPERA.” (<hi rend="italics">
+                        Summary Catalogue</hi> 637). No title labels remain, although it appears that one was formerly pasted near the top of the spine; “ROM ROS” written on fore edge in black ink. Two flyleaves each in front and back (each probably a single bifolium). Watermarks in flyleaves of a hand with flower extending from middle finger; flower has five petals. Cover turned in and pasted down with no endpapers; a binding fragment remains (front and back) containing a Latin text identified in <hi rend="italics">SC</hi> as “part of a 13th cent. Latin index to a Canon Law treatise” (637).</p>
+        </note>
+        <note rend="HISTORY">
+          <p>Formerly Selden ms. 3445. “57” has been written vertically in black ink on the upper left of the front cover. Two books featuring an armorial crest similar to that described above in section 8 are briefly described by J. F. Payne in <hi rend="italics">Notes and Queries</hi>, January 30, 1904, p. 174. Payne notes that those books, part of the collection of the Royal College of Physicians, once belonged to Edward Gwynn, whose name is stamped on the bindings.
+                    </p>
+          <p>A paper label inside the front cover reads “S. C. 3445,” a record of the manuscript’s number in the <hi rend="italics">Summary Catalogue</hi>. Written beneath this in ink is “IL / 57 / Seld. supra / (3445)”. Below this, in pencil: “MS Seld. Supra 57”.  </p>
+          <p>At the top of the recto of the first flyleaf, “153” is written in ink; to the right of this is what appears to be an<hi rend="italics">x
+                    </hi> above an <hi rend="italics">o</hi> with a horizontal line between them. Below this, an inscription reads “John Betts His Boke . 1606”. This has been written over at a later date, but it remains clearly visible while the overwriting is illegible. Below this, a title has been added: “Romanz de la Rose translated by Chaucer, and to be found in his workes.” Below this, in pencil, modern hand: “SELDEN SUPRA 57”.
+                    </p>
+          <p>On <locus>1r</locus> is written “21st January Arundell 1611” – i.e. Thomas Howard, earl of Arundel (<hi rend="italics">
+                        d</hi>. 1646) (<hi rend="italics">SC</hi>). Later owned by John Selden (1584-1654), from whose estate it passed to the University. </p>
+        </note>
+        <note rend="TEXT">
+          <p><hi rend="italics">Roman de la Rose</hi> fols. <locus>1r</locus>-<locus>148v</locus><lb/>
+                    </p>
+          <p><hi rend="italics">Le Testament of Jean de Meun</hi> fols. <locus>149r</locus>-<locus>160v</locus> (first leaf of the <hi rend="italics">Testament
+                    </hi> wanting).
+                    </p>
+          <p>At end of <hi rend="italics">Roman de la Rose
+                    </hi>: “Explicit le romanz de la rose / Ou lart damours est toute / Enclose / Et fuit completum die veneris post / festum beati martini hiemalis” Below this, four lines have been erased. Although no text is currently visible, the following transcription is written in copies of the <hi rend="italics">
+                        SC</hi> available in Duke Humfrey’s:  </p>
+          <p><hi rend="italics">“Et est . . . . . . . . . . . . . . <lb/>
+                        Parisius . . . . . . . . . . .<lb/></hi>
+                    . . . [anno d[omi]ni] MCCC°<lb/>
+                    XLVIII”
+                    </p>
+          <p>It is on the basis of this all-but-invisible text that the manuscript has been dated 1348 and localized to Paris, both of which seem reasonable claims. </p>
+          <p>On <locus>160v</locus> is the explicit: “Explicit le testement mestir iehea[n] demeu” </p>
+        </note>
+        <note>
+          <p>Description by Timothy L. Stinson</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">Selden Supra 57</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="165" unit="folios">165 folios</measure>
+            <dimensions>
+              <height unit="mm">240</height>
+              <width unit="mm">180</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">53</note>
+          <note type="material">parchment</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1350" notBefore="1300">14th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Oxford</settlement>
+            <repository>Bodleian Library</repository>
+            <idno>MS Selden Supra 57</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="148v">1r-148v</locus>
+              <note type="folios">148</note>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="illustrations">53</note>
+              <note type="linesPerColumn">38</note>
+              <note type="columnsPerFolio">2</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="149r" to="160v">149r-160v</locus>
+              <note type="folios">12</note>
+              <title>Testament</title>
+              <note type="textid">testament</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">38</note>
+              <note type="columnsPerFolio">2</note>
+              <note type="leavesPerGathering">8</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

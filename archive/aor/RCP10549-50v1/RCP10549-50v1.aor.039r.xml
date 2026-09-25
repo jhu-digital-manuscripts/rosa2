@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.039r.tif" pagination="61" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="memoria nostra" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        memoria nostra
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Our memory.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quis tam inimicus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        quis tam inimicus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Anyone so hostile.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Rempub stare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Remp. stare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To remain [in] the state.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hominem prosterneret" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        prosternere ho[m]i[n]em
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To prostrate a man.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        obrutus oppressus ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Crushed, overwhelmed.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sperabam iam onus meum vobiscum" type="straight"/>
+        <underline language="LA" method="pen" text="omniu[m] antè damnatorum scelera, furta, flagiti, si vnu[m] in locum conferantur, vix cum huius parua parte aequari, conferríque posse?" type="straight"/>
+        <underline language="LA" method="pen" text="splendor vester facit, vt peccare sine summo Reip. detrimento, ac periculo non possitis" type="straight"/>
+        
+        <numeral place="right_margin">20</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">18</numeral>
+        
+    </annotation>
+</transcription>

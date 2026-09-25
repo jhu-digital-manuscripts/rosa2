@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.063r.tif" reader="Harvey" signature="[Gviii[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Regis ad Exemplu[m],</marginalia_text>
+                </position>
+            </language>
+            <translation>For the king's example.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[the] commo[n] voice,</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>I pra[e], sequar.</marginalia_text>
+                    <X-ref book_title="Andria" person="Terence"/>
+                </position>
+            </language>
+            <translation>Go first, I will follow.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Philippus" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Philippes Charge.</marginalia_text>
+                    <person name="Philip II of Macedon"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Necessitatis lex, stimulus acerrimus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The law of necessity, a most vigorous stimulus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Philippus" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>[the] same order failed Annibal against Scipio.</marginalia_text>
+                    <person name="Hannibal"/>
+                    <person name="Scipio Africanus"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>s[upr]a)</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0095" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] above.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="his sworde drawen" type="straight"/>
+        <underline language="EN" method="pen" text="ranne forth into the forewarde" type="straight"/>
+        <underline language="EN" method="pen" text="inquyre of you" type="straight"/>
+        <underline language="EN" method="pen" text="where ye lefte your" type="straight"/>
+        <underline language="EN" method="pen" text="capitayne" type="straight"/>
+        <underline language="EN" method="pen" text="fyghtyng in Boetia" type="straight"/>
+        <underline language="EN" method="pen" text="Diuus Julius" type="straight"/>
+        <underline language="EN" method="pen" text="his horse" type="straight"/>
+        <underline language="EN" method="pen" text="a fote in" type="straight"/>
+        <underline language="EN" method="pen" text="to leaue theyr" type="straight"/>
+        <underline language="EN" method="pen" text="susteyne and endure" type="straight"/>
+        <underline language="EN" method="pen" text="the vyolence" type="straight"/>
+        <underline language="EN" method="pen" text="most trusty horsemen" type="straight"/>
+        <underline language="EN" method="pen" text="on the rere warde" type="straight"/>
+        <underline language="EN" method="pen" text="of theyr felowes" type="straight"/>
+        <underline language="EN" method="pen" text="flee out of the fyght, and to slee" type="straight"/>
+        <underline language="EN" method="pen" text="whiche charge" type="straight"/>
+        <underline language="EN" method="pen" text="to be slayne of" type="straight"/>
+        <underline language="EN" method="pen" text="of theyr owne felowes" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--Archelaus, with-->
+        <mark method="pen" name="dot" place="intext"/> <!--forewarde, his-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="ashamed"/>
+        
+        <mark method="pen" name="horizontal_bar" place="tail"/>        
+        
+    </annotation>
+</transcription>

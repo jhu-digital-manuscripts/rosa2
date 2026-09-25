@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.409r.tif" pagination="269" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="lactens" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Lactens</marginalia_text>
+                </position>
+            </language>
+            <translation>Suckling.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="redemptor" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>rede[m]ptor</marginalia_text>
+                </position>
+            </language>
+            <translation>The contractor.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="statua Nattae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>statua Natta[e].</marginalia_text>
+                    <person name="Natta"/>
+                </position>
+            </language>
+            <translation>The statue of Natta.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="aut esse philosophi, causam cur quidque fieret non quaerere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>No[n] est philosophi quid fieri sine causa asserere</marginalia_text>
+                </position>
+            </language>
+            <translation>It is not philosophical to claim what is made without a cause.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Boethus Stoicus, qui est, à te nominatus, &amp; noster etiam Posidonius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Boethus. Posidonius</marginalia_text>
+                    <person name="Boethus of Sidon"/>
+                    <person name="Posidonius"/>
+                </position>
+            </language>
+            <translation>Boethus of Sidon and Posidonius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Romulus lactens fulmine ictus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Romulus lactens fulmine ictus</marginalia_text>
+                    <person name="Romulus"/>
+                </position>
+            </language>
+            <translation>The infant Romulus was struck by lightning.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Venereum iaci" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>venereus iactus: Vide melanchthone[m] in physica fo 207.</marginalia_text>  <!-- https://en.wikipedia.org/wiki/Venus_Throw -->
+                    <person name="Philipp Melanchthon"/>
+                    <book title="Initia doctrinae physicae"/>
+                </position>
+            </language>
+            <translation>The Venus-throw: see Melanchton in his 'Initia doctrinae physicae', folio 207. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Praxitelia capita" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Praxitelia Capita</marginalia_text>
+                    <person name="Praxiteles"/>
+                </position>
+            </language>
+            <translation>Heads of Praxiteles.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quid in nubibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>varia[e] figura[e] in nubibus</marginalia_text>
+                </position>
+            </language>
+            <translation>Various shapes in clouds.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ostenta" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ostenta</marginalia_text>
+                </position>
+            </language>
+            <translation>Portents.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="contra omnia ostenta" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Co[n]tra o[mn]ia ostenda.</marginalia_text>
+                </position>
+            </language>
+            <translation>Against all portents.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Causarum enim ignoratio in re noua mirationem facit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Causaru[m] ignoratio in re noua miratione[m] facit.</marginalia_text>
+                </position>
+            </language>
+            <translation>The ignorance of causes in new things creates our wonder.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ortu[m] videmus aruspicinae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ortu[m] videamus aruspicinae</marginalia_text>
+                </position>
+            </language>
+            <translation>Let us see the origin of the soothsayers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tages" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tages.</marginalia_text>
+                    <person name="Tages"/>
+                </position>
+            </language>
+            <translation>Tages.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="repersionem pigmentorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>respicsio pigme[n]toru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Respect for the ingredients.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sed" type="straight"/>
+        <underline language="LA" method="pen" text="mirificam in latebram" type="straight"/>
+        <underline language="LA" method="pen" text="premerem te quum" type="straight"/>
+        <underline language="LA" method="pen" text="causas persecuti" type="straight"/>
+        <underline language="LA" method="pen" text="lactens" type="straight"/>
+        <underline language="LA" method="pen" text="redemptor" type="straight"/>
+        <underline language="LA" method="pen" text="respersionem pigmentorum &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="veritatem casus imitari" type="straight"/>
+        <underline language="LA" method="pen" text="nescit: quod" type="straight"/>
+        <underline language="LA" method="pen" text="terra araretur" type="straight"/>
+        <underline language="LA" method="pen" text="sulcus altius" type="straight"/>
+        <underline language="LA" method="pen" text="puerili specie dicitur visus, sed senili fuisse prudentia" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+       
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+       
+       <drawing anchor_text="Ostenta" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+       <drawing anchor_text="Contra o[mn]ia ostenta" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+       <drawing anchor_text="Tages" book_orientation="0" method="pen" place="right_margin" type="person"/>
+        
+    </annotation>
+</transcription>

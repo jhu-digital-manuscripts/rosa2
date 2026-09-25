@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.096v.tif" pagination="[xcii[v]]" reader="Harvey"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					Nota.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Note.
+    		</translation>
+    	</marginalia>
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="head">
+    				<marginalia_text>
+    					hypocritica Iustitia.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Hypocritical justice.
+    		</translation>
+    	</marginalia>
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="Prouince, giuing" type="straight"/>
+    	<underline language="EN" method="pen" text="people of Thracia, men of lowe" type="straight"/>
+    	<underline language="EN" method="pen" text="the Princes contented" type="straight"/>
+    	<underline language="EN" method="pen" text="people quiete, hauing" type="straight"/>
+    	<underline language="EN" method="pen" text="winne the hartes of" type="straight"/>
+    	<underline language="EN" method="pen" text="of chastitie &amp; iustice" type="straight"/>
+    	<underline language="EN" method="pen" text="of Scipio in" type="straight"/>
+    	<underline language="EN" method="pen" text="that yong woma[n]" type="straight"/>
+    	<underline language="EN" method="pen" text="made him more" type="straight"/>
+    	<underline language="EN" method="pen" text="with force" type="straight"/>
+    	<underline language="EN" method="pen" text="armes to winne Spaine" type="straight"/>
+    	<underline language="EN" method="pen" text="that wood to be paied" type="straight"/>
+    	<underline language="EN" method="pen" text="for to make [the] Listes, about his" type="straight"/>
+    	<underline language="EN" method="pen" text="much a name of iustice, [that] he" type="straight"/>
+    	<underline language="EN" method="pen" text="vpo[n] these accidentes" type="straight"/>
+    	<underline language="EN" method="pen" text="not left any part, [that]" type="straight"/>
+    	<underline language="EN" method="pen" text="not bene of vs disputed" type="straight"/>
+    	<underline language="EN" method="pen" text="maner of winning, &amp; defending a towne" type="straight"/>
+    	<underline language="EN" method="pen" text="humanitie is so much" type="straight"/>
+    	<underline language="EN" method="pen" text="oure desires, withoute" type="straight"/>
+    	<underline language="EN" method="pen" text="reputed presumptuous" type="straight"/>
+    	<underline language="EN" method="pen" text="you liberally" type="straight"/>
+    	<underline language="EN" method="pen" text="haue bene ashemed, to" type="straight"/>
+    	<underline language="EN" method="pen" text="continewe the warre, as well in the Winter, as they vse" type="straight"/>
+    	<underline language="EN" method="pen" text="in the Sommer" type="straight"/>
+    	<underline language="EN" method="pen" text="the prudence of the demaunder" type="straight"/>
+    	<underline language="EN" method="pen" text="behind a special part" type="straight"/>
+    	<underline language="EN" method="pen" text="did all thinges better, and with" type="straight"/>
+    	
+    	<underline language="EN" method="pen" text="Tracia" type="straight"/>
+    	<underline language="EN" method="pen" text="Philip" type="straight"/>
+    	<underline language="EN" method="pen" text="be a sured of England" type="straight"/>
+    	<underline language="EN" method="pen" text="vvent to S. Quintens" type="straight"/>
+    	<underline language="EN" method="pen" text="vvinne the hartes of" type="straight"/>
+
+    	<!-- Marks -->
+    	<mark method="pen" name="plus_sign" place="left_margin"/>
+    	<mark method="pen" name="dash" place="left_margin"/> <!-- Marginal text --> <!--JG: I think there's also a dot after 'Tracia'-->
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="be a sured of England"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="much a name of iustice, [that] he"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="maner of winning, &amp; defending a towne"/>
+    	<mark language="EN" method="pen" name="hash" place="left_margin" text="Winter, as they vse"/>
+    	
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="the Princes"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="people quiete"/>
+    	<mark method="pen" name="plus_sign" place="intext"/> <!-- among -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="winne the hartes of"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="chastitie"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="iustice"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Scipio"/>
+    	<mark language="EN" method="pen" name="hash" place="intext" text="armes to winne Spaine"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="wood to bee paied"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="iustice"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- presumptuous; seing -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Winter"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- adaies, or -->
+    	<mark method="pen" name="dot" place="intext"/> <!-- Sommer, and -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="did all thinges better, and with"/>
+    	
+    </annotation>
+</transcription>

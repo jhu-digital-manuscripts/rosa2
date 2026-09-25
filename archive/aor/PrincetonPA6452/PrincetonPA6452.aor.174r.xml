@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.174r.tif" pagination="331" reader="Harvey" signature="ee4[r]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="illa enim cunctatio distulisse modò uictoria[m] uideri potuit, hic error uires ademisse ad uincendu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        politica observatio pernotabilis. Et bellicoru[m] animoru[m] pra[e]gnantissima Cautela. i[nfr]a, 344. 
+                        Capua, Annibali Canna[e].
+                    </marginalia_text>
+                    <person name="Hannibal"/>
+                    <location name="Cannae"/>
+                    <location name="Capua"/>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000366" text="344"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>A very noteworthy political observation. And a very significant precaution for military minds. [See] below, 344.
+                Capua, Hannibal’s Cannae.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>                        
+                        Nocet empta dolore voluptas. Albus Diabolus pestilentior nigro Diabolo.
+                        Diogenes vidit pueros Lacedaemone: viros nusq[uam]; non enim vidit frugi, cordatos, atq[ue] fortes Romanos; 
+                        nulla fortuna victos, nec lasciua, nec calamitosa.
+                    </marginalia_text>
+                    <person name="Diogenes of Sinope"/> <!--JG: Not entirely sure about this-->
+                    <location name="Sparta"/>
+                </position>
+            </language>
+            <translation>Pleasure bought with pain is harmful. A white devil is more destructive than a black devil. 
+                Diogenes saw boys in Sparta, never men. For he did not see honest, sensible and brave Romans, overcome by no fortune, 
+                whether frivolous or disastrous.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cannaru[m] Thrasymeniq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="singulos admonens" type="straight"/>
+        <underline language="LA" method="pen" text="inde uine[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="cuniculiq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="aut uis ulla, aut ars deerat" type="straight"/>
+        <underline language="LA" method="pen" text="transuersis cuniculis" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; palàm" type="straight"/>
+        <underline language="LA" method="pen" text="hyberna Capua[m]" type="straight"/>
+        <underline language="LA" method="pen" text="omnia humana mala" type="straight"/>
+        <underline language="LA" method="pen" text="bonis inexpertu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="nulla mali" type="straight"/>
+        <underline language="LA" method="pen" text="bona ac uoluptates" type="straight"/>
+        <underline language="LA" method="pen" text="quo auidius" type="straight"/>
+        <underline language="LA" method="pen" text="somnus enim" type="straight"/>
+        <underline language="LA" method="pen" text="uinu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="epul[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="scorta balneaq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="ociu[m] co[n]suetudine" type="straight"/>
+        <underline language="LA" method="pen" text="enerauaueru[n]t corpora animosq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="pr[a]eterit[a]e uictori[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="pr[a]esentes" type="straight"/>
+        <underline language="LA" method="pen" text="tutarent[ur] uires" type="straight"/>
+        <underline language="LA" method="pen" text="maiusq[ue] id peccatu[m] ducis" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] ex Ca[n]nensi acie" type="straight"/>
+        <underline language="LA" method="pen" text="protinus ad urbem Roma[m] duxisset" type="straight"/>
+        <underline language="LA" method="pen" text="illa enim cunctatio" type="straight"/>
+        <underline language="LA" method="pen" text="hic error uires ademisse" type="straight"/>
+        <underline language="LA" method="pen" text="nihil usq[uam] pristin[a]e disciplin[a]e tenuit" type="straight"/>
+        <underline language="LA" method="pen" text="pleriq[ue] scortis implicit" type="straight"/>
+        <underline language="LA" method="pen" text="militaris labor" type="straight"/>
+        <underline language="LA" method="pen" text="tyronu[m] modo" type="straight"/>
+        <underline language="LA" method="pen" text="corporib[us] animisq[ue] deficieba[n]t" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="intext" text="protinus ad urbem Roma[m] duxisset"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--ui-->
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--immer-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--hercu-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--co[n]tinua-->
+        
+        <mark language="LA" method="pen" name="quotation_mark" place="intext" text="hyberna Capua[m]"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="corpora"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="animos"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="peccatu[m]"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="cunctatio"/>
+        <mark method="pen" name="dot" place="intext"/> <!--potuit, hic-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="hic error uires ademisse"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="corporib[us]"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="animisq[ue]"/>
+        
+    </annotation>
+</transcription>

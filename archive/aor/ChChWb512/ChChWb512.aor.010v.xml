@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.010v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="sparatinum castrum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sparatinum castrum
+                    </marginalia_text>
+                    <location name="Sparatinum"/>
+                </position>
+            </language>
+            <translation>The fort of Sparatinum.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oppidum sparatinu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sparatinum opidum
+                    </marginalia_text>
+                    <location name="Sparatinum"/>
+                </position>
+            </language>
+            <translation>The town of Sparatinum.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oppidum sparatinu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        alit[er] Castru[m] Sparaticus ticum brytannicè.
+                    </marginalia_text>
+                    <location name="Sparatinum"/>
+                    <location name="Britain"/>
+                    <emphasis method="pen" text="Castru[m] Sparatinus" type="dotted"/>
+                </position>
+            </language>
+            <translation>Otherwise: the fort of Sparaticum/Sparaticus in British.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        O[mn]ia ha[e]c in Italia[e] fine or. [partius ... Tarentum partius in Calabrium - deleted] ex opposit[o] Sicilia[e] Insula[e]
+                    </marginalia_text> 
+                    <location name="Italy"/>
+                    <location name="Calabria"/>
+                    <location name="Sicily"/>
+                </position>
+            </language>
+            <translation> All of these are on the Italian border [...] from the opposite the island of Sicily.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Magna grecia 
+                        Brutij
+                        &lt; Acheron fluuius
+                        Pandrosa propugnaculu[m]. prope A[ch.]
+                        Gerion opidum
+                        Locri. vnde Locrinus p[ri]mogeniti nova[e]. <!--JG: Not sure about novae-->
+                    </marginalia_text> <!--Transcription lacking.-->
+                    <!--JG: Unclear which Brutus this is-->
+                    <person name="Locrinus"/>
+                    <location name="Italy"/>
+                    <location name="Calabria"/>
+                    <location name="Sicily"/>
+                </position>
+            </language>
+            <translation>Great Greece. Of Brutus. The river Acheron. The defence of Pandrosa, near Acheron. The town of Gerion. Locri. Hence Locrinus [???].</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sparatinum" type="straight"/>
+        <underline language="LA" method="pen" text="sparatinu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="sparatinu[m]" type="curved"/>
+        
+        <mark method="pen" name="bracket" place="tail"/>
+        
+        <errata amendedtext="[Paragraph break T]" copytext="[Paragraph break]" language="LA"/> <!--Pandrasus literis Bruti...-->
+        
+    </annotation>
+</transcription>

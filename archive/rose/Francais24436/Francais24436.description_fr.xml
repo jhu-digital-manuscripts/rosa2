@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscrit</note>
+          <note type="commonName">Français 24436</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="155" unit="folios">155</measure>
+            <dimensions>
+              <height unit="mm">260</height>
+              <width unit="mm">205</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">0</note>
+          <note type="material">papier</note>
+          <pubPlace>Liège</pubPlace>
+          <date notAfter="1500" notBefore="1300">14th - 15th siècles</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de France</repository>
+            <idno>fr. 24436</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="155v">1r-155v</locus>
+              <title>Textes variés
+                     </title>
+              <note type="textid">
+                     </note>
+              <note type="folios">155</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">41</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

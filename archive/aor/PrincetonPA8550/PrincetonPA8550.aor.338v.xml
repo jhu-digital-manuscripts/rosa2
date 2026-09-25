@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.338v.tif" pagination="683" reader="Harvey" signature="[uijv]"/>
+    <annotation>
+       
+       <marginalia anchor_text="cerebri" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="left_margin">
+                   <marginalia_text>
+                       Cerebri la[e]sio.
+                   </marginalia_text>
+                   <emphasis method="pen" text="Cerebri la[e]sio" type="straight"/>
+               </position>
+           </language>
+           <translation>
+               Brain injury.
+           </translation>
+       </marginalia>
+        
+        <underline language="LA" method="pen" text="Bacchum cum Venere aliquando concubuisse" type="straight"/>
+        <underline language="LA" method="pen" text="ex eo concubitu" type="straight"/>
+        <underline language="LA" method="pen" text="prognatam esse filiam Podagram" type="straight"/>
+        <underline language="LA" method="pen" text="Podagta, Bacchi &amp; Ceneris filia." type="straight"/>
+        <underline language="LA" method="pen" text="ut homines temulenti" type="straight"/>
+        <underline language="LA" method="pen" text="cum cibo potuq[ue];" type="straight"/>
+        <underline language="LA" method="pen" text="Venereas proruant" type="straight"/>
+        <underline language="LA" method="pen" text="Hinc" type="straight"/>
+        <underline language="LA" method="pen" text="subitae mortes atq[ue]; intestata senectus" type="straight"/>
+        <underline language="LA" method="pen" text="corporis &amp; omnium" type="straight"/>
+        <underline language="LA" method="pen" text="cerebri tame[n]" type="straight"/>
+        <underline language="LA" method="pen" text="enim pars cum temulentiae" type="straight"/>
+        <underline language="LA" method="pen" text="omnibus grauissime laeditur" type="straight"/>
+        <underline language="LA" method="pen" text="stomachus" type="straight"/>
+        <underline language="LA" method="pen" text="uirtus &amp; calor, ut" type="straight"/>
+        <underline language="LA" method="pen" text="assidua poculorum" type="straight"/>
+        <underline language="LA" method="pen" text="proluuie extinguitur" type="straight"/>
+        <underline language="LA" method="pen" text="incoctos illo crassosq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="uapores ad caput &amp; cerebru[m] exhalat" type="straight"/>
+        <underline language="LA" method="pen" text="replentur, etq[ue]; praecluduntur" type="straight"/>
+        <underline language="LA" method="pen" text="spirituu[m] perturbationem" type="straight"/>
+        <underline language="LA" method="pen" text="corporis labefactationem" type="straight"/>
+        <underline language="LA" method="pen" text="spiritus quo omnia" type="straight"/>
+        <underline language="LA" method="pen" text="obstructo per uenas transitu" type="straight"/>
+        <underline language="LA" method="pen" text="officio suo fungi, hinc" type="straight"/>
+        <underline language="LA" method="pen" text="praemoriuntur" type="straight"/>
+        <underline language="LA" method="pen" text="Neruos uero et" type="straight"/>
+        <underline language="LA" method="pen" text="membra" type="straight"/>
+        <underline language="LA" method="pen" text="ex his constant" type="straight"/>
+        <underline language="LA" method="pen" text="motui delegata" type="straight"/>
+        <underline language="LA" method="pen" text="ea" type="straight"/>
+        <underline language="LA" method="pen" text="omnia fonte" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="dash" place="left_margin"/> <!-- Bac -->
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="uapores ad caput &amp; cerebru[m] exhalat"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/> <!-- sppiritus quo omnia -->
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/> <!-- obstructo per uenas transitu -->
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/> <!-- praemocio sui funghi -->
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="dash" place="right_margin" text="con"/> <!-- con -->
+        <mark language="LA" method="pen" name="dash" place="right_margin" text="in"/> <!-- in -->
+        <mark language="LA" method="pen" name="dash" place="right_margin" text="ex"/> <!-- ex -->
+        <mark language="LA" method="pen" name="dash" place="right_margin" text="om"/> <!-- om -->
+        <mark language="LA" method="pen" name="dash" place="right_margin" text="ma"/> <!-- ma -->
+        <mark language="LA" method="pen" name="dash" place="right_margin" text="praemo"/> <!-- praemo -->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="cerebri tame[n]"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- Neruos -->
+        <mark method="pen" name="comma" place="intext"/> <!-- membra -->
+        
+    </annotation>
+</transcription>

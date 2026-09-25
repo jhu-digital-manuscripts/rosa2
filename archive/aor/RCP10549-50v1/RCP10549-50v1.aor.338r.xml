@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.338r.tif" pagination="7" reader="John Dee" signature="A.iiii.[r]"/>
+    <annotation> 
+        
+        <marginalia anchor_text="*" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>virtutíq[ue] praefuisti;</marginalia_text>                
+                </position>
+            </language>
+            <translation>You had involved yourself in [my] public virtue.</translation> <!-- NBW: would be interesting to know where he supplied this lacuna from. It's not in Loeb. -->  
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Prius meditari oportet</marginalia_text>                
+                </position>
+            </language>
+            <translation>First it is fitting to consider.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="potentia valent" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Potentes.</marginalia_text>                
+                </position>
+            </language>
+            <translation>Powers.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Caesari" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Caesar</marginalia_text>                
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Julius Caesar.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="ne lege Sempronia" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lex Sempronia.</marginalia_text>                
+                </position>
+            </language>
+            <translation>The Sempronian Laws.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="experiendo tamen magis, quàm discendo cognoui" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Experiendo qua[m] discendo plus cognoscitur.</marginalia_text>                
+                </position>
+            </language>
+            <translation>He learns more by experience than by study.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Crassipede" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Crassipes</marginalia_text>                
+                    <person name="Furius Crassipes"/>
+                </position>
+            </language>
+            <translation>Furius Crassipes.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Lentulum" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lentulus</marginalia_text>                
+                    <person name="Publius Lentulus Spinther the Younger"/>
+                </position>
+            </language>
+            <translation>Publius Lentulus Spinther the Younger.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Emplatorio" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Emplatorius</marginalia_text>                
+                    <person name="Marcus Plaetorius"/>
+                </position>
+            </language>
+            <translation>Marcus Plaetorius.</translation> <!-- NBW: This is an interesting issue that I've seen in a couple places now. Do I put the "correct" person name here for what Dee has written, or his transliterated gloss? --> 
+        </marginalia>
+        
+        <marginalia anchor_text="Pompeium" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pompeius</marginalia_text>                
+                    <person name="Pompey"/>
+                </position>
+            </language>
+            <translation>Pompey.</translation>  
+        </marginalia>      
+        
+        <marginalia anchor_text="ad eius rationes adiungo" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>me { ad eius r[ati]o[n]es adiungo; confirmo ad eius voluntate[m]</marginalia_text>           
+                </position>
+            </language>
+            <translation>I attach myself to his interestes; I adapt myself to his will.</translation>                     
+        </marginalia>
+
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Seditio. Dissensio.</marginalia_text>           
+                </position>
+            </language>
+            <translation>Sedition. Dissent.</translation>                     
+        </marginalia>
+
+        <underline language="LA" method="pen" text="si esset fides, si grauitas in hominibus" type="straight"/>
+        <underline language="LA" method="pen" text="sed tanta est in plerisque leuitas, vt eos non tam constantia in rep. nostra delectet" type="straight"/>
+        <underline language="LA" method="pen" text="esse in principibus facile sunt" type="straight"/>
+        <underline language="LA" method="pen" text="ad memoriam nominis nostri" type="straight"/>
+        <underline language="LA" method="pen" text="tum amore incitatus meo" type="straight"/>
+        <underline language="LA" method="pen" text="inflammatus fuisti" type="straight"/>
+        <underline language="LA" method="pen" text="inflectas" type="straight"/>
+        <underline language="LA" method="pen" text="expressiora, quantóque illustriora futura" type="straight"/>
+        <underline language="LA" method="pen" text="posse obtinere summum, atque altissimum gradu[m] ciuitatis" type="straight"/>
+        <underline language="LA" method="pen" text="dissensio est, sed contentio dispar" type="straight"/>
+        <underline language="LA" method="pen" text="opibus, armis, potentia valent, profecisse tantum mihi videntur stultitia, &amp; inconstantia aduersariorum, vt etiam authoritate iam plus valerent" type="straight"/> 
+        <underline language="LA" method="pen" text="pueritia deditus, experiendo tamen magis, quàm discendo cognoui" type="straight"/>
+        <underline language="LA" method="pen" text="neque salutis nostrae rationem nobis habe[n]dam esse sine dignitate, neque dignitatis sine salute." type="straight"/>
+        <underline language="LA" method="pen" text="primis imitatione tui fac erudias. nulla enim erit hac praestantior disciplina. quem" type="straight"/>
+        <underline language="LA" method="pen" text="hac hominum aetate" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; vt tute mihi praecepisti, &amp; vt me pietas, vitilitásque cogit, me ad" type="straight"/>
+        <underline language="LA" method="pen" text="Sed te non praeterit, quàm sit difficile sensum in rep[ublicam] praesertim rectum, &amp; confirmatum deponere" type="straight"/>
+        <underline language="LA" method="pen" text="me confirmo ad eius voluntatem" type="straight"/>
+        <underline language="LA" method="pen" text="quo honeste dissentire non possum" type="straight"/>
+        <underline language="LA" method="pen" text="simulatione" type="straight"/>
+        <underline language="LA" method="pen" text="inductio, &amp; mehercule" type="straight"/>
+        <underline language="LA" method="pen" text="Neque (vt ego abritror) errarent, ne aduersarii quide[m]" type="straight"/>
+        
+        <symbol language="LA" name="Asterisk" place="right_margin" text="virtutíq[ue] praefuisti;"/>
+        <symbol name="Jupiter" place="right_margin"/> <!-- NBW: w/flourish -->    
+        <symbol name="Jupiter" place="right_margin"/> <!-- NBW: w/flourish -->
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+        <errata amendedtext="dignitatíque virtutíq[ue] praefuisti; simul quód video" copytext="dignitatíque * simul quód video," language="LA"/>
+        
+        <drawing anchor_text="Potentes" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+
+    </annotation>
+</transcription>

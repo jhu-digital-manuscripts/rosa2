@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.159v.tif" pagination="298" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="quoties iam tibi extorta est sica ista de manibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quoties extorta est sica ex manib[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                How often was the dagger extorted from his hands?
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="infestis oculis omnium conspici" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        infestis oculis co[n]spici
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be observed with unsteady eyes.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        à maiore
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Generally.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="patria" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Patria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Country.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="responsum tulisses" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        respo[n]su[m] ferre
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To bring an answer.
+            </translation>
+        </marginalia>
+                
+        <underline language="LA" method="pen" text="adplescentulo, quem corruptelarum illecebris irretisses, non ad audaciam ferrum, ad libidine[m] facem" type="straight"/>
+        <underline language="LA" method="pen" text="nónne etiam alio incredibili scelere hoc scelus cumulasti" type="straight"/>
+        <underline language="LA" method="pen" text="ad priuatam ignominiam" type="straight"/>
+        <underline language="LA" method="pen" text="vitiorum tuorum, non ad domesticam tuam difficultatem, ac turpitudinem, sed ad summam" type="straight"/>
+        <underline language="LA" method="pen" text="quot ego tuas petitiones ita coniectas vt vitari posse non viderentur, parua quadam declinatione, &amp; vt aiunt, corpore" type="straight"/>
+        <underline language="LA" method="pen" text="Nunc verò quae tua est ista vita? sic enim iam tecum loquar, no[n] vt odio permotus esse videar, quo debeo: sed vt misericorida, quae tibi nulla debetur" type="straight"/>
+        <underline language="LA" method="pen" text="serui mehercule mei si me isto pacto metuerent" type="straight"/>
+        <underline language="LA" method="pen" text="metuunt omnes ciues tui, domum meam relinquendam putarem. tu tibi vrbem" type="straight"/>
+        <underline language="LA" method="pen" text="quàm infestis oculis omnium conspici mallem" type="straight"/>
+        <underline language="LA" method="pen" text="mentes, sensúsque vulneras" type="straight"/>
+        <underline language="LA" method="pen" text="quae communis est omnium nostrûm parens, odit" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; iam diu de te nihil iudicat, nisi de parricidio suo cogitare: huius tu neque authoritatem verebere, neque iudicium sequêre, neque vim pertimesces?" type="straight"/>
+        <underline language="LA" method="pen" text="Nullum iam tot annos facinus extitit nisi per te" type="straight"/>
+        <underline language="LA" method="pen" text="flagitium sine te: tibi vni multorum ciuium neces: tibi vexatio, directióque sociorum impunita fuit, ac libera: tu non solum ad negligendas leges,              &amp; quaestiones, verumetiam ad euertendas perfrigendásque valuisti" type="straight"/>
+        <underline language="LA" method="pen" text="nullum videri contra me consilium iniri posse, quod à tuo scelere abhorreat" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing anchor_text="Patria" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

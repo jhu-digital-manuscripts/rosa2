@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>
+Collection of Elizabeth J. and James E. Farrell. On deposit at J. Paul Getty Museum. French, mid fifteenth century.
+</p>
+        </note>
+        <note rend="BASIC INFORMATION">
+          <p>Parchment, 285 x 210 mm, 137 folios</p>
+        </note>
+        <note rend="MATERIAL">
+          <p>
+Parchment shows some soiling and browning, a few worm holes front and back, but in good condition and no serious flaws or damage other than restoration on fol. 136.</p>
+        </note>
+        <note rend="QUIRES">
+          <list>
+            <head>Collation:</head>
+            <item n="I"><locus from="1" to="5">1-5</locus>
+(2 leaves missing after fol. <locus>1</locus>, 1 leaf missing after fol. <locus>2</locus>)
+                  </item>
+            <item n="II"><locus from="6" to="11">6-11</locus>
+(leaf missing prior to fol. <locus>6</locus> and after fol. <locus>11</locus> – formerly a conjoined bifolium)
+                  </item>
+            <item n="III">
+              <locus from="12" to="19">12-19</locus>
+            </item>
+            <item n="IV">
+              <locus from="20" to="27">20-27</locus>
+            </item>
+            <item n="V">
+              <locus from="28" to="35">28-35</locus>
+            </item>
+            <item n="VI">
+              <locus from="36" to="43">36-43</locus>
+            </item>
+            <item n="VII">
+              <locus from="44" to="51">44-51</locus>
+            </item>
+            <item n="VIII">
+              <locus from="52" to="59">52-59</locus>
+            </item>
+            <item n="IX">
+              <locus from="60" to="67">60-67</locus>
+            </item>
+            <item n="X">
+              <locus from="68" to="75">68-75</locus>
+            </item>
+            <item n="XI">
+              <locus from="76" to="83">76-83</locus>
+            </item>
+            <item n="XII">
+              <locus from="84" to="91">84-91</locus>
+            </item>
+            <item n="XIII">
+              <locus from="92" to="99">92-99</locus>
+            </item>
+            <item n="XIV">
+              <locus from="100" to="107">100-107</locus>
+            </item>
+            <item n="XV">
+              <locus from="108" to="115">108-115</locus>
+            </item>
+            <item n="XVI">
+              <locus from="116" to="123">116-123</locus>
+            </item>
+            <item n="XVII">
+              <locus from="124" to="131">124-131</locus>
+            </item>
+            <item n="XVIII">
+              <locus from="132" to="137">132-137</locus>
+            </item>
+          </list>
+          <p>
+No quire marks or signatures. Catchwords remain at <locus>43v</locus>, <locus>83v</locus>, <locus>99v</locus>, <locus>115v</locus>, and <locus>131v</locus>. Modern foliation in top right corner is accurate. An earlier foliation in ink, lower right corner, usually counting by 10s, is inaccurate; foliation is miscounted between folios <locus>10</locus> and <locus>20</locus>, thereby deviating from modern foliation, but then becomes accurate once more after miscounting of folios between <locus>90</locus> and <locus>100</locus>.
+</p>
+        </note>
+        <note rend="LAYOUT">
+          <p>
+Ruled in plummet for two columns. Rulings generally faint and difficult to see, but clearly visible on some leaves, e.g. <locus>74r</locus>. Remnants of prickings remain on most leaves – one on either side of both the top and bottom through line, and three across the bottom – one on each vertical lines defining the text block, and one on the left edge of the vertical line defining the second text column. Ruled with two horizontal and seven vertical through lines. A vertical line defines each outer edge of the text block and another near the center separates the twos columns of text.  Initials of each line separated from rest of line by double, closely-spaced vertical lines.  Text block 219 x 158 mm.  No horizontal ruling for text within columns.  Approximately 38-41 lines per column.
+
+  </p>
+        </note>
+        <note rend="SCRIPT">
+          <p>
+The work of one scribe throughout, using brown ink and a bâtarde script. Some corrections in another hand, e.g. <locus>23v</locus>. A modern hand replaces text on affected areas of repair to fol. <locus>136</locus>.
+ </p>
+        </note>
+        <note rend="DECORATION">
+          <p>
+Initials touched in red.  Rubricated character names and rubrics.  Guidewords for rubricator remain. Numerous two-line initials throughout, and one three-line initial on opening folio.  Initials are gold on a red background with gold scrollwork. Full border on <locus>1r</locus> features geometric design infilled with gold and featuring flowers and fruit; the remaining spaces feature a blue and orange/gold foliate design.  On the right is a tree, from which hangs a shield bearing a coat of arms identified by Peter Kidd as belonging to Jean Bourré (see Provenance entry 1). Border also features two hybrid creatures and a bird. 37 miniatures. On <locus>1r</locus>, a miniature spanning two columns depicts the dreamer in bed, then washing his hands, and subsequently viewed outside through a window. 37 one-column miniatures throughout featuring gold or architectural borders.
+</p>
+        </note>
+        <note rend="BINDING">
+          <p>17th-century red morocco; five raised bands; gilt designs stamped on spine along with title ROMAN DE LA ROSE. Double gold fillets frame outside edge of front and back cover; arms of Pierre de Coriolis de Villeneuve  stamped in gold in center of front and back covers (see Provenance entry 5). Two paper flyleaves in both front and back. Red marbled pastedowns; two gold floral designs along edges of boards and on inside cover visible around pastedowns. Gilt edges. A paper label at the base of the spine reads 4357, the number assigned to the book by Sir Thomas Phillipps (see Provenance entry 8).</p>
+        </note>
+        <note rend="HISTORY">
+          <p>
+The thorough accounting of the manuscript’s provenance prepared for a previous owner by Peter Kidd has been used here:
+</p>
+          <p>
+   1. Based on the style of the script and the miniatures, it appears that the manuscript was written around 1430 (or earlier), with the illustrations added about 40 years later.  The manuscript seems to have been finished for Jean Bourré (1423-1506), eminent statesman, famous bibliophile, associate of Etienne Chevalier, and from 1488, the treasurer to King Charles VIII. His arms are hanging from a tree in the border of f. 1.  Bourré’s arms (argent a bend lozenge gules within a bordure sable bezanty or) also adorn the first page of a copy of St. Jerome’s Vita et Transitus, made for him in 1472 in the Loire region, possibly in Tours (Baltimore, Walters Art Museum, MS W. 304; see L. M. C. Randall, Medieval and Renaissance Manuscripts in the Walters Art Gallery, vol. II, France, 1420-1540, part 1, no 150, pp. 244-47, fig. 266).  Lilian Randall suggests that the St. Jerome was intended for Bourré’s new library in his château at Plessis-Bourré, near Angers, which had been extensively remodeled from 1466 to 1472, and it is likely that the present manuscript was similarly destined.  In the history of collecting Bourré is probably best known for his acquisition in 1488 of Augustine’s Cité de Dieu made in 1472 for the governor of Paris, Charles of Gaucourt (d. 1482), and illuminated by the Maître François (Paris, BnF, MS fr. 18-19; see F. Avril and N. Reynaud, Les manuscrits à peintures en France 1440-1520, Paris, Bibliothèque Nationale, 1993, pp. 50-51, no. 16).  By that time, however, this manuscript of the Roman de la Rose had itself been traded away.
+</p>
+          <p>
+2. A motif of three gold pears occurs prominently in the first miniature and in miniatures on ff. 39v, 63r, 65v, 94v, and 95v, usually on a blue ground, and several times explicitly on a shield.  Although these do not seem to be accidental or meaningless, it is difficult to explain their presence in relation to the two families that are known to have had arms with similar devices:  the Chenaut family of Lorraine, and the Kerpérénez du Bizet family of Brittany (see J. B. Rietstap, Armorial général, vol. 2, pl. lxxiv; vol. 3, pl. cccxi; and de Renesse, Dictionnaire des figures heraldiques, vol. 3, fasc. 6, Brussels, 1897, p. 620).  Rather than identifying a specific family, it is possible that they relate to the mysterious names that are found in gold letters in the miniatures and that they identify a group of people that might have served as the source for those names.  It is also possible that the golden pears do not date to Jean Bourré’s ownership, but to that of one of the later owners identified below.
+</p>
+          <p>
+3. Nicolas Gilles (c.1425-1502), notary, secretary, and controller of the treasury of King Louis XII.  Gilles was the author in 1492 of the vast Annales et chroniques de France, which has been called “the first history of France,” a text so popular that it was reprinted seventeen times by 1621 (on Gilles see the Dictionnaire de biographie française, vol. 16; on his library see Ernest Langlois, “Une redaction en prose de l'Ovide moralisée,” Bibliothèque de l'École des chartes, 62 (1901), p. 251 n. 1; P. Paris, Les manuscrits francois de la bibliothèque du roy, vol. VI, p. 208; and Léopold Delisle, Le cabinet des manuscrits, vol. II, p. 368 and vol. III, p. 316); inscribed by Gilles in ink on f. 136v, in a fine professional hand, giving his name, official positions, and stating that he acquired the manuscript in Paris in 1482:  Pertinet Nicolao Gilles domini nostri Regis notario et secretario eiusque thesauri clerico et contrarotulatori et emit parisius Anno domini Mo cccc octuago secundo. Signed: N. Gilles (with his notarial mark).
+</p>
+          <p>
+4. Given by Gilles to François Perdrier, Directeur de la monnaie du roi, on 3 September 1493, as recorded in an inscription immediately below Gilles’s note on f. 136v:  Et fuit michi datus per ipsum magistrum nicholaum gilles die iiia mensis septembris anno domini mo iiiico iiiixxo xiiio. signed: Perdrier (with his notarial mark). François’s dates are not known, but his son, Nicolas, was active in the 1560s.
+</p>
+          <p>
+5. Pierre de Coriolis de Villeneuve, Marquis d'Espinouse, Baron de Corbières, and Président à Mortier de Parlement de Provence in 1712 (on whom see the Dictionnaire du biographie française, vol. II, pp. 650-4; and, especially, the Dictionnaire de la noblesse, vol. VI, cols. 190-1), descended from a Provencal family that can be traced back to the 1480s.  It is not certain the family acquired the manuscript (it may perhaps have passed to them directly from Perdrier), only that it was rebound for Pierre in the late seventeenth century.  His arms can be found, stamped in gilt, at the center of both the front and back cover (see Eugène Olivier, Manuel de l’amateur de relieures armoriées françaises, 4th series, 3rd part, Paris, 1925, no. 401).
+</p>
+          <p>
+6. Unidentified eighteenth-century(?) bibliophile, with his collector's mark stamped in black ink in the center of the lower pastedown, apparently a monogram formed by the letters L, J, and S.
+</p>
+          <p>
+7. De Bure frères, the famous Parisian booksellers; the code in the top left corner of f. iv, “aiz+,” is probably theirs; sold to Sir Thomas Phillipps in, or perhaps a little before, 1828.  (Contrary to one of the Christie's catalogue descriptions, the manuscript was probably not acquired by Phillipps on 9 Feb. 1824; on this date Phillipps bought other manuscripts from the Chardin collection, via De Bure; see A. N. L. Munby, Phillipps Studies, vol. III, p. 23).
+</p>
+          <p>
+8. Sir Thomas Phillipps (1792-1872; his MS 4357, the finest of five copies of this text in his library (cf. Phillipps MSS 2838, 2896, 4185, and 4363); inscribed by Phillipps, in ink:  Liber Thomæ Phillipps, barti Middle Hill. 1828 (f. 137); and in pencil:  4357 Ph Mss and 38 miniatures (f. i), and Debure (f. ii).  His manuscript number is also on a characteristic paper label at the base of the spine.  Sold at the Phillipps sale, London, Sotheby’s, 1 July 1946, lot 24 (to Hardy for £950, one of the highest prices in the sale).
+</p>
+          <p>
+9. Sold London, Christie's, 11 July 1974, lot 22, (“The Property of a Gentleman,” who also owned lot 19, the Hours of Gertrude of Nivelles, and other extremely fine illuminated manuscripts); re-sold London, Christie's, 23 June 1976, lot 216.
+</p>
+          <p>
+10. Baron Ferenc Hatvany, Hungarian art collector, sold by order of his Trustees, London, Christie's, 25 June 1980, lot 232;
+</p>
+          <p>
+11. Elizabeth J. and James E. Ferrell, USA.
+</p>
+        </note>
+        <note rend="TEXT">
+          <p> </p>
+        </note>
+        <note>
+          <p>Description by Timothy L. Stinson</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscript</note>
+          <note type="commonName">Ferrell Rose</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="137" unit="folios">137 folios</measure>
+            <dimensions>
+              <height unit="mm">285</height>
+              <width unit="mm">210</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">39</note>
+          <note type="material">parchment</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1500" notBefore="1400">15th century</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Los Angeles</settlement>
+            <repository>Privately owned, Ferrell Collection</repository>
+            <idno>Ferrell Rose</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="136v">1r-136v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">136</note>
+              <note type="illustrations">39</note>
+              <note type="linesPerColumn">42</note>
+              <note type="leavesPerGathering">8</note>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

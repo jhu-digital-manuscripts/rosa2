@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>107</illustrations>
+    <totalPages>210</totalPages>
+    <dimensions units="mm">
+        <width>180</width>
+        <height>260</height>
+    </dimensions>
+    <dates>
+        <startDate>1500</startDate>
+        <endDate>1600</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="207r" start="5r">203</pages>
+            <illustrations>107</illustrations>
+            <linesPerColumn>33</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Morgan 948</commonName>
+            <dateLabel>16th century</dateLabel>
+            <type>manuscript</type>
+            <material>Parchment</material>
+            <origin>France</origin>
+            <currentLocation>New York</currentLocation>
+            <repository>Morgan Library &amp; Museum</repository>
+            <shelfmark>M. 948</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Morgan 948</commonName>
+            <dateLabel>16e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>New York</currentLocation>
+            <repository>Morgan Library &amp; Museum</repository>
+            <shelfmark>M. 948</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

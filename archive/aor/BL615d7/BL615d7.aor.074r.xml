@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.074r.tif" pagination="74" reader="John Dee" signature="Kij"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="VII Christiani contra LV Indiani" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>7 agaynst 55.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="archi di Tasso" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Bows of y[e]w.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="l'auuelenano" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Arrows enpoysonned </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Samana" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Samana</marginalia_text>
+                    <location name="Bay of Arrows"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Samana, Golfo delle freccie" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Sinus Samana a[l]t[e]r Sinus Sagittar[um]</marginalia_text>
+                </position>
+            </language>
+            <translation>Samana Bay, the other Bay of Arrows.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="de gl'istessi" type="straight"/>
+        <underline language="IT" method="pen" text="gente arrischiata, &amp; animosa" type="straight"/>
+        <underline language="IT" method="pen" text="che VII Christiani contra LV Indiani di quel paese, cosi feroci" type="straight"/>
+        <underline language="IT" method="pen" text="quali egli lasciaua nel Natale" type="straight"/>
+        <underline language="IT" method="pen" text="di Tasso" type="straight"/>
+        <underline language="IT" method="pen" text="Francia, &amp; d'Inghilterra" type="straight"/>
+        <underline language="IT" method="pen" text="lunghezza di vn braccio" type="straight"/>
+        <underline language="IT" method="pen" text="vn dente" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; l'auuelenano" type="double"/>
+        <underline language="IT" method="pen" text="Samana, Golfo delle freccie" type="straight"/>
+        <underline language="IT" method="pen" text="pepe" type="straight"/>
+        
+        
+        
+    </annotation>
+    
+</transcription>

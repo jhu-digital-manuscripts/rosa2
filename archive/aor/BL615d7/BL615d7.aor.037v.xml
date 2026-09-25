@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.037v.tif" pagination="[37v]" reader="John Dee" signature="[Ev[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="porta di Pinos" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pinos</marginalia_text>
+                    <location name="Pinos Puente"/>
+                </position>
+            </language>
+            <translation>Pinos Puente.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="si differisse la essecutione" type="straight"/>
+        <underline language="IT" method="pen" text="gioie della sua camera" type="straight"/>
+        <underline language="IT" method="pen" text="non facea mistiero d'impegnar le" type="straight"/>
+        <underline language="IT" method="pen" text="percioche egli farebbe lieue seruitio" type="straight"/>
+        <underline language="IT" method="pen" text="Altezza imprestandole i suoi denari" type="straight"/>
+        <underline language="IT" method="pen" text="per far tornar" type="straight"/>
+        <underline language="IT" method="pen" text="a dietro l'Ammiraglio" type="double"/>
+        <underline language="IT" method="pen" text="porta di Pinos" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; subito" type="triple"/>
+        <underline language="IT" method="pen" text="fu commessa" type="straight"/>
+        <underline language="IT" method="pen" text="tutti i" type="double"/>
+        <underline language="IT" method="pen" text="Capitoli, &amp; clausule" type="straight"/>
+        <underline language="IT" method="pen" text="di sopra" type="straight"/>
+        <underline language="IT" method="pen" text="che ne leuasse" type="triple"/>
+        <underline language="IT" method="pen" text="o mutasse cosa alcuna" type="straight"/> 
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

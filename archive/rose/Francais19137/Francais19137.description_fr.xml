@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <note type="format">manuscrit</note>
+          <note type="commonName">Français 19137</note>
+          <title>Roman de la Rose</title>
+          <extent>
+            <measure quantity="194" unit="folios">194</measure>
+            <dimensions>
+              <height unit="mm">305</height>
+              <width unit="mm">228</width>
+            </dimensions>
+          </extent>
+          <note type="illustrations">3</note>
+          <note type="material">parchemin</note>
+          <pubPlace>France</pubPlace>
+          <date notAfter="1500" notBefore="1400">15e siècle</date>
+        </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de France</repository>
+            <idno>fr. 19137</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="46r">1r-46r</locus>
+              <title>La Consolation de Boèce (traduction de Renaud de Louhans)</title>
+              <note type="textid">consolation</note>
+              <note type="folios">46</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">44</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="46v" to="68r">46v-68r</locus>
+              <title>Le Respit de la Mort</title>
+              <note type="textid">respit</note>
+              <note type="folios">23</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">44</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="68r" to="194v">68r-194v</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">127</note>
+              <note type="illustrations">1</note>
+              <note type="linesPerColumn">44</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

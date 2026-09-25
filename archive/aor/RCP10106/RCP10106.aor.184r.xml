@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.184r.tif" pagination="367" reader="John Dee"/> 
+    <annotation>
+                
+        <marginalia anchor_text="singulis uerbis satis dictu[m], quae ut alio loco oste[n]di, per se nullam uirtute[m] habe[n]t" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Singula verba p[er] se, nulla[m] virtute[m] habet.</marginalia_text>
+                </position>
+            </language>
+            <translation>Individual words have no virtue on their own.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inornata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Inornata</marginalia_text>
+                </position>
+            </language>
+            <translation>Without ornament.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="obscoena" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Obscoena.</marginalia_text>
+                </position>
+            </language>
+            <translation>Obscenities.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]iuncti sermonis" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Coniuncti sermonis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Connected discourse.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cuis ornatus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ornatus qualis</marginalia_text>
+                </position>
+            </language>
+            <translation>What kind of ornament.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oratio, prius ea quae sunt huic contraria laudi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Orationis Vitia</marginalia_text>
+                </position>
+            </language>
+            <translation>It is the vices of speech.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Probabile" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Probabile.</marginalia_text>
+                </position>
+            </language>
+            <translation>Commendable.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="κακήφατον" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>κακήφατον</marginalia_text> <!-- (ill-sounding, ill-omened [most other editions correct the reading to κακόφατον]) -->
+                </position>
+            </language>
+            <translation>Ill-sounding.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prima uirtus est, uitio carere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Prima virtus est vitio carere </marginalia_text>
+                </position>
+            </language>
+            <translation>The primary virtue is to be without vice.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uitium est ubiq[ue] quod nimiu[m] est." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Vitium ubiq[ue] est quod est nimiu[m] </marginalia_text>
+                </position>
+            </language>
+            <translation>Excess is everywhere a vice.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="de qua loquendu[m] est, dignitate[m]: excepto, si obscoena nominibus enu[n]tientur. Quod" type="straight"/>
+        <underline language="LA" method="pen" text="Ego Romani pudoris more co[n]tentus, ut iam respo[n]di talibus, uerecundiam silentio uindicabo" type="straight"/>
+        <underline language="LA" method="pen" text="quam co[n]cipiamus elocutione[m], quo modo efferamus. Nam primum est, ut liqueat augere quid uelimus, an minuere, concitate              dicere an moderate, laete an seuerè, abundanter an presse, aspere an leniter, magnificè an subtiliter, grauiter an urbane. Tum quo translationis genere, quibus figuris,              qualibus sententijs, quo modo, qua postemò collocatione id, quod intendimus, efficere poßimus" type="straight"/>
+        <underline language="LA" method="pen" text="sed quia uitium est ubiq[ue], quod nimiu[m] est." type="straight"/>
+        <underline language="LA" method="pen" text="sententias uel graues, uel aptas opinionibus" type="straight"/>
+        <underline language="LA" method="pen" text="Delectant translata, superlata, ad nomen adiuncta, duplicata" type="straight"/>
+        <underline language="LA" method="pen" text="eadem significantia" type="double"/>
+        <underline language="LA" method="pen" text="atq[ue] ab imitatione rerum non abhorrentia" type="straight"/>
+        <underline language="LA" method="pen" text="in obscoenu[m] intellectu[m] sermo detortus" type="straight"/>
+        <underline language="LA" method="pen" text="ut ductaare exercitus, &amp; patrare bellum apud Sallustium, dicta sanctè &amp; antiquè ridentur à nobis, si dijs placet:              qua[m] culpam no[n] scribe[n]tium quidem iudico" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!-- uindicabo. Iam-->
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="duopunctus_with_antenna" place="right_margin"/>
+        <mark method="pen" name="pin" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="duopunctus_with_antenna" place="tail" text="Prima virtus est vitio carere "/>
+        <mark language="LA" method="pen" name="pin" place="tail" text="Vitium ubiq[ue] est quod est nimiu[m] "/>
+        
+        <numeral place="right_margin">.1.</numeral>
+        <numeral place="right_margin">2</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

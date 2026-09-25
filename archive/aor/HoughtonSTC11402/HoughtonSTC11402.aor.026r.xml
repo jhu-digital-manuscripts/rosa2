@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.026r.tif" reader="Harvey" signature="Ciii[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Annyball" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Eaè fraude[m] fraude, arte[m] arte delusam.</marginalia_text> <!--JG: Still unsure about 'Eae', perhaps it should be Eue, variant of 'eu'?-->
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>The Rom. Ambass. familiar co[n]ferences</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>with Hannibal.</marginalia_text>
+                    <person name="Hannibal"/>
+                </position>
+            </language>
+            <translation>[Splendid] fraud having been deceived by fraud, art by art.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Taken in his owne snare.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Jugurth" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sall. bell. Iug.
+                    Legatos, aliu[m] ab alio, diuersos aggredit[ur]: ac paulatim te[n]ta[n]do, postq[uam] opportunos sibi cognouit, multa pollicendo persuadet [etc].
+                    paulò post; Iugurtha ubi suis se artibus tentari animaduertit. [etc].</marginalia_text>
+                    <person name="Sallust"/>
+                    <person name="Jugurtha"/>
+                    <book title="Jugurthine War"/> <!--text is from chapters XLVI and XLVIII-->
+                    <emphasis method="chalk" type="straight"/>
+                </position>
+            </language>
+            <translation>Sallust, 'Bellum iugurthinum'.'He therefore approached the ambassadors independently of each other, and tampered with them by degrees. 
+                Finding them favorable to his purpose, he persuaded them'. A bit later, when he 'perceived that he was being assailed with his own devices'. [Alfred W. Pollard, 1882].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Jugurthes frendes; he slewe theym all; he coulde afterwarde gette no frendes" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Jugurth slew his frends; and being destitute of [the] owld, could gett no newe.</marginalia_text>
+                    <person name="Jugurtha"/>
+                    <emphasis method="pen" text="slew his frends" type="straight"/>
+                    <emphasis method="pen" text="gett no newe" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>i[nfr]a, l.2.c.5.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0114" text="l.2.c.5"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] below, book 2, chapter 5.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="90" place="left_margin">
+                    <marginalia_text>A pollicy in Liuy. On appeachid of Treason, &amp; putt to [the] Torture, appeachith all the kynges most especial, 
+                    &amp; deuowt ffrendes, on after an other. They being executid in order, as they were namid,
+                    when there were none left, greately affectionate to the Tyran; This Traytor, Conspirator, and his Complices sett</marginalia_text>
+                    <person name="Livy"/>
+                    <emphasis method="pen" text="Traytor" type="straight"/>
+                    <emphasis method="pen" text="Conspirator" type="straight"/>
+                </position>
+                <position book_orientation="90" place="tail">
+                    <marginalia_text>uppo[n] him, &amp; sley him: withowt resistaunce of any.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Aristogiton, L.I. Polya[e]ni.</marginalia_text>
+                    <person name="Aristogeiton"/>
+                    <person name="Polyaenus"/>
+                    <book title="Stratagems"/>
+                </position>
+            </language>
+            <translation>Aristogeiton, in book 1 of Polyaenus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="he wold haue him delyuered alyue" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sall. Maximè </marginalia_text>
+                    <person name="Sallust"/>
+                    <book title="Jugurthine War"/> <!--text is from chapter XLVI-->
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>viuu[m], sin id parum procedat, necatum,</marginalia_text>
+                </position>
+            </language>
+            <translation>Sallust. "...if possible alive, but, failing that, dead." [Alfred W. Pollard, 1882]</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="by their sondry talkynges with Annyball" type="straight"/>
+        <underline language="EN" method="pen" text="that the kynge suspected him" type="straight"/>
+        <underline language="EN" method="pen" text="his wytynesse" type="straight"/>
+        <underline language="EN" method="pen" text="greate experience" type="straight"/> 
+        <underline language="EN" method="pen" text="Q. Metellus" type="straight"/>
+        <underline language="EN" method="chalk" text="corrupted the ambassadours" type="straight"/>
+        <underline language="EN" method="pen" text="the ambassadours" type="straight"/>
+        <underline language="EN" method="pen" text="other" type="straight"/>
+        <underline language="EN" method="pen" text="lykewise" type="straight"/>
+        <underline language="EN" method="pen" text="vsed them, that" type="straight"/>
+        <underline language="EN" method="pen" text="thirde tyme" type="straight"/>
+        <underline language="EN" method="pen" text="haue" type="straight"/>
+        <underline language="EN" method="pen" text="delyuered alyue" type="straight"/>
+        <underline language="EN" method="pen" text="feate by this polycie" type="straight"/>
+        <underline language="EN" method="pen" text="letters" type="straight"/>
+        <underline language="EN" method="pen" text="to Jugurthes" type="straight"/>
+        <underline language="EN" method="pen" text="frendes" type="straight"/>
+        <underline language="EN" method="pen" text="he" type="straight"/>
+        <underline language="EN" method="pen" text="counsaylours, he coulde" type="straight"/>
+        <underline language="EN" method="pen" text="C. Cesar" type="straight"/>
+        <underline language="EN" method="pen" text="water lagger" type="straight"/>
+        <underline language="EN" method="pen" text="Afranius &amp; Petreius" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="hash" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!--Romaynes, brought-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/> <!--theym-->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="chalk" name="plus_sign" place="intext" text="he"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+            
+        <mark method="pen" name="quotation_mark" place="tail"/>
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+        <mark method="pen" name="quotation_mark" place="tail"/>
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+        <mark method="pen" name="quotation_mark" place="tail"/>
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+        <mark method="pen" name="quotation_mark" place="tail"/>
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+        <mark method="chalk" name="vertical_bar" place="tail"/>
+        <mark method="chalk" name="vertical_bar" place="tail"/>
+            
+   </annotation>
+</transcription>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.163v.tif" pagination="66" reader="John Dee" signature="[e.i.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="à rhetoribus iis, qui elegantissimi atque artificiosissimi putati sunt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>rhetor elegantiss[imus] artificiosiss[imus].</marginalia_text>
+                </position>
+            </language>
+            <translation>A most artful and most skilled rhetorician.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="approbare &amp; firmare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>approbo firmo ]</marginalia_text>
+                </position>
+            </language>
+            <translation>I prove, I affirm.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="ab Aristotele &amp; Theophrasto" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aristoteles. Theoprastus.</marginalia_text>
+                    <person name="Aristotle"/>
+                    <person name="Theophrastus"/>
+                </position>
+            </language>
+            <translation>Aristotle. Theophrastus.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="separatum quidda[m] est à propositione approbatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quod approbatio sit qua[e]dam res separata à propositione.</marginalia_text>
+                </position>
+            </language>
+            <translation>That proof may be a separate entity to the premise.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hanc velle approbare &amp; firmare nihil attinet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Perspicue vera nihil attinet firmare.</marginalia_text>
+                </position>
+            </language>
+            <translation>Evidently no one hesitates to affirm truths.</translation>  
+        </marginalia>
+        
+        
+        <marginalia anchor_text="separatum quiddam est extra assumptionem approbatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quod aßumptio sit separata res ab approbatione.</marginalia_text>
+                </position>
+            </language>
+            <translation>That assumption may be an entity separate from proof.</translation>  
+        </marginalia>
+        
+        
+        <marginalia anchor_text="sapere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sapere.</marginalia_text>
+                </position>
+            </language>
+            <translation>To know.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dicendum videtur, ne temere secuti putemur, &amp; breuiter dice[n]dum" type="straight"/>
+        <underline language="LA" method="pen" text="huiusmodi rebus diutius, quàm ratio praecipiendi postulat, co[m]moremur. Si quadam" type="straight"/>
+        <underline language="LA" method="pen" text="Quod enim adiu[n]gi &amp; separari ab aliquo potest, id no[n] potest idem esse, quod est id ad quod adiungitur, &amp; à quo separatur" type="straight"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="head" text="rhetor elegantiss[imus] artificiosiss[imus]"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <drawing anchor_text="approbo firmo" book_orientation="0" method="pen" place="head" type="florilegium"/>
+        <drawing anchor_text="Quod enim adiu[n]gi &amp; separari ab aliquo potest, id no[n] potest idem esse, quod est id ad quod adiungitur, &amp; à quo separatur" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="Quod enim adiu[n]gi &amp; separari ab aliquo potest, id no[n] potest idem esse, quod est id ad quod adiungitur, &amp; à quo separatur" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

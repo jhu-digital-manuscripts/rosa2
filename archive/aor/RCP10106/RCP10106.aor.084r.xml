@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.084r.tif" pagination="167" reader="John Dee" signature="l 4"/> 
+    <annotation>
+        
+        <marginalia anchor_text="miseratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Miseratio</marginalia_text>
+                </position>
+            </language>
+            <translation>Pity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aduersarij uerò persona proprè ijsdem omnibus, sed è contrario ductis, impugnari solet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aduersarij persona q[uo]modo p[otes]t impugnari.</marginalia_text>
+                </position>
+            </language>
+            <translation>How the character of the opponent may be partly impugned.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iudicem conciliabimus nobis, non tantum laudando eum, quod &amp; fieri cum modo debet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iudex q[uo]m[od]o co[n]ciliatur.</marginalia_text>
+                </position>
+            </language>
+            <translation>How the judge conciliates.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inimicus, aut aduersario sit amicus, qui iudicat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quid si Iudex alteri amicus alteri inimicus</marginalia_text> 
+                </position>
+            </language>
+            <translation>What if the judge is the other friend or the other enemy?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Septimio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Septimius</marginalia_text>
+                    <person name="Septimius Severus"/>
+                </position>
+            </language>
+            <translation>Septimius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Berenice" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Berenice</marginalia_text>
+                    <person name="Berenice of Cilicia"/>
+                </position>
+            </language>
+            <translation>Berenice.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Metus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Metus</marginalia_text>
+                </position>
+            </language>
+            <translation>Fear.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero pro Milone" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cic[ero] Pro Milone</marginalia_text>
+                    <person name="Cicero"/>
+                    <book title="Pro Milone"/>
+                </position>
+            </language>
+            <translation>Cicero's Pro Milone</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="In verrem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>In Verrem</marginalia_text>
+                    <book title="In Verrem"/>
+                </position>
+            </language>
+            <translation>In Verrem.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Degustanda tame[n] haec prooemio, non consummanda" type="straight"/>
+        <underline language="LA" method="pen" text="hoc enim oratoris est, illud causae" type="straight"/>
+        <underline language="LA" method="pen" text="asperi, lenes, iucundi, graues, duri, remißi erunt, aut aßumere in" type="straight"/>
+        <underline language="LA" method="pen" text="ac nescio, an &amp; ei magis, in quam uidetur" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

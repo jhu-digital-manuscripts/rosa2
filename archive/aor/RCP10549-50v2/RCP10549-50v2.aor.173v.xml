@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.173v.tif" pagination="86" reader="John Dee" signature="[f.iii.[v]]"/>  
+    <annotation>
+        
+        <marginalia anchor_text="adaugere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        augere 
+                        adaugere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>To increase, to augment.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="sic ex sua vi consyderabitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Qua[n]do ip[s]a co[m]paratio à ca[e]teris separata ca[usa]r[um] generibus co[n]syderabit[ur]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>When the comparison will be considered separately from the other kinds of cases.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Loci aute[m] co[m]munes erunt accusatoris; Defensoris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        acc 
+                        Defe[n]s { Loci co[mmun]es.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Commonplaces of the accuser; of the defender.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Relatio criminis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Relatio criminis.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>A relation of the crime.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Ea est huiusmodi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Exempl.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>An example.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="adaugere" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]paratiua[m] iudicatione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="qua[n]tum inco[m]modorum" type="straight"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2.</numeral>
+        <numeral place="left_margin">3.</numeral>
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">6</numeral>
+        <numeral place="left_margin">7</numeral>
+        <numeral place="left_margin">8</numeral>
+        
+        <drawing anchor_text="adaugere" book_orientation="0" method="pen" place="head" type="florilegium"/>
+       <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+
+    </annotation>
+</transcription>

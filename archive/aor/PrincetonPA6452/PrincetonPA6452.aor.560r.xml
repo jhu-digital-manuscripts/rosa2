@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.560r.tif" reader="Harvey" signature="Y4[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        Prodigiorum Catalogus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation> Prodigious Index.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Laurea in nauis puppi nascitur" type="straight"/>
+        <underline language="LA" method="pen" text="Apum examina Romae uisa" type="straight"/>
+        <underline language="LA" method="pen" text="consederunt Cassini in foro" type="straight"/>
+        <underline language="LA" method="pen" text="Lacte pluit" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin" text="Apum examina Romae uisa"/>
+        <mark method="pen" name="plus_sign" place="right_margin" text="Laurea in nauis puppi nascitur"/>
+        
+    </annotation>
+</transcription>

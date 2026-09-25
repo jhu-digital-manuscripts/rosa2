@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.050v.tif" pagination="100" reader="John Dee" signature="[g 2[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Christiani" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Christiani</marginalia_text> 
+                </position>
+            </language>
+            <translation>Christians.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="incolae aurum sale permutant" type="straight"/>
+        <underline language="LA" method="pen" text="Christiani in tota Africa sunt" type="straight"/>
+        <underline language="LA" method="pen" text="olim Regina[m]" type="straight"/>
+        <underline language="LA" method="pen" text="reges" type="straight"/>
+        
+    </annotation>
+</transcription>

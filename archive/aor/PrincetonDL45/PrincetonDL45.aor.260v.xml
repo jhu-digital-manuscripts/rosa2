@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.260v.tif" pagination="520" reader="Harvey" signature="[XXij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Prometheus. Prudentissimè.
+                    </marginalia_text>
+                    <person name="Prometheus"/>
+                </position>
+            </language>
+            <translation>
+                Prometheus. Most prudently.
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="futuri consyderatio habenda" type="straight"/>
+        <underline language="LA" method="pen" text="possit accidere" type="straight"/>
+        <underline language="LA" method="pen" text="quid agi debeat" type="straight"/>
+        <underline language="LA" method="pen" text="in ardua perplexitate" type="straight"/>
+        <underline language="LA" method="pen" text="discretius" type="straight"/>
+        <underline language="LA" method="pen" text="aliquid immineat" type="straight"/>
+        <underline language="LA" method="pen" text="promptis habere, quod eligat, &amp; perficiat" type="straight"/>
+        <underline language="LA" method="pen" text="Non putabam hoc posse" type="straight"/>
+        <underline language="LA" method="pen" text="nisi explore[n]tur aduersa" type="straight"/>
+        <underline language="LA" method="pen" text="subuertuntur prospera" type="straight"/>
+        <underline language="LA" method="pen" text="vnde in bello" type="straight"/>
+        <underline language="LA" method="pen" text="improuisus hostis vix" type="straight"/>
+        <underline language="LA" method="pen" text="imparatos inueniat" type="straight"/>
+        <underline language="LA" method="pen" text="facilè opprimit" type="straight"/>
+        <underline language="LA" method="pen" text="Felix qui victoriam" type="straight"/>
+        <underline language="LA" method="pen" text="temperatum se gerere" type="straight"/>
+        <underline language="LA" method="pen" text="Fortitudo bellica" type="straight"/> 
+        <underline language="LA" method="pen" text="Consyderatio futuri eue[n]tus" type="straight"/>
+        <underline language="LA" method="pen" text="Turpe [n]e dicere no[n] putabam." type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="promptis habere, quod eligat, &amp; perficiat"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="nisi explore[n]tur aduersa"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="improuisus hostis vix"/>
+        
+    </annotation>
+</transcription>

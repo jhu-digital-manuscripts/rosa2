@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.035r.tif" pagination="35" reader="John Dee" signature="Eiij"/> 
+
+<annotation>
+    
+    <marginalia anchor_text="videro le lettere per mano del Dottor Viglialano" hand="Italian" id="BL615d7:615_d_7_f035r:m0001" method="pen"> 
+    <language ident="EN">
+        <position book_orientation="0" place="right_margin">
+            <marginalia_text>The King of England's letters to Christofer Colon. Vide fol .31 .32 120.v.34.v</marginalia_text> 
+            <person name="Columbus"/>
+            <person name="Henry VII"/> 
+            <internal_ref>
+                <target ref="BL615d7:615_d_7_f031r" text=".31"/>
+                <target ref="BL615d7:615_d_7_f032r" text=".32"/>
+                <target ref="BL615d7:615_d_7_f120v" text="120.v"/>
+                <target ref="BL615d7:615_d_7_f034v" text="34.v"/>
+            </internal_ref>
+        </position>
+    </language>
+</marginalia>
+    
+  
+    <marginalia anchor_text="dall'altro canto l'Ammiraglio dimandaua l'Ammiragliato, &amp; titolo di Vicere" hand="Italian" method="pen">
+        <language ident="IT">
+            <position book_orientation="0" place="tail">
+                <marginalia_text>Ammiragglio - Vicere - </marginalia_text>
+            </position>
+        </language>
+        <translation>Admiral. Viceroy. - </translation> 
+    </marginalia>
+    
+    <underline language="IT" method="pen" text="figliuoli" type="straight"/>
+    <underline language="IT" method="pen" text="hauea rifiutate" type="double"/>
+    <underline id="BL615d7:615_d_7_f035r:u0001" language="IT" method="pen" text="altre offerte" type="double"/>
+    <underline language="IT" method="pen" text="gli haueuano fatte" type="double"/>
+    <underline language="IT" method="pen" text="sua lettera" type="double"/>
+    <underline language="IT" method="pen" text="ne con Inghilterra" type="straight"/>
+    <underline language="IT" method="pen" text="Principile Altezza" type="double"/>
+    <underline id="BL615d7:615_d_7_f035r:u0002" language="IT" method="pen" text="videro le lettere per mano" type="grid"/>
+    <underline language="IT" method="pen" text="Dottor Viglialano" type="straight"/>
+    <underline language="IT" method="pen" text="dall'altro canto l'Ammiraglio dimandaua l'Ammiragliato, &amp; titolo di Vicere, &amp; altre cose di grande stima" type="straight"/>
+    
+    <mark method="pen" name="quotation_mark" place="left_margin"/>
+    <mark method="pen" name="quotation_mark" place="left_margin"/>
+    <mark method="pen" name="quotation_mark" place="left_margin"/>
+    <mark method="pen" name="quotation_mark" place="left_margin"/>
+    
+    <physical_link>
+        <marginal_annotation idref="BL615d7:615_d_7_f035r:u0001"/>
+        <marginal_annotation idref="BL615d7:615_d_7_f035r:u0002"/>
+        
+        <relation from="BL615d7:615_d_7_f035r:u0001" to="BL615d7:615_d_7_f035r:u0002" type="undirected"/>
+          
+    </physical_link>
+
+</annotation>
+</transcription>

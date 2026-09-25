@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.217v.tif" pagination="[210v]" reader="John Dee" signature="[GG ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="quos maiores planetarum uocant annos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Maiores anni planetarum</marginalia_text>
+                </position>
+            </language>
+            <translation>The greater years of the planets.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Luminare temporis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Luminare te[m]por[i]s</marginalia_text>
+                </position>
+            </language>
+            <translation>The light of time.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Luminare temporis Sol est in die &amp; crepusculo matutino Luna in nocte supra terram, &amp; in suo matutino exortu. Duo igitur quibusdam temporis luminaria, quibusdam nullum" type="straight"/>
+        <underline language="LA" method="pen" text="360. partium" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Luminare temporis Sol est in die &amp; crepusculo matutino Luna in nocte supra terram, &amp; in suo matutino exortu. Duo igitur quibusdam temporis luminaria, quibusdam nullum"/>
+        
+    </annotation>
+</transcription>

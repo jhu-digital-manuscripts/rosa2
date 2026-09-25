@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.348v.tif" pagination="148" reader="John Dee" signature="[Klz.ii.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="callum vetustatis obduxerat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        obducere callu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To cover by a hard feeling.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="parietinae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        parietin[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Ruins.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="decantauerant" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        decantare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To recite.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Argiuos aut Sycionios ... Corinthios" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Argiui Sycionij Corinthi. ]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Citizens from Argos, Sicyon and Corinth.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="librum Clitomachi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Clitomachi liber.
+                    </marginalia_text>
+                    <person name="Clitomachus"/>
+                </position>
+            </language>
+            <translation>
+                A book of Clitomachus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sensim enim &amp; pedetentim progrediens extenuatur dolor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sensim et pedite[n]tim p[ro]grediens extenuatur dolor
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'It would not have been a remedy for wounds but only for scars' [LCL 141:290-91].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tolerabilius feret incommodum, qui cognouerit necesse esse homini tale aliquid accidere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tolerabilius feret inco[m]modum qui cognoverit necesse esse tale aliquid ho[min]i accidere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'How will the burden of loss be more endurable for the man who has recognized that something of the kind must happen to a human being' [LCL 141:290-91].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quia recentia sunt, no[n] quia repe[n]tina" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quia rece[n]tia sunt, no[n] qui repe[n]tina
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Because they are recent, not because they are sudden.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Duplex est igitur ratio veri reperiendi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Duplex r[ati]o veri rep[er]ie[n]di
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Two methods of learning the truth.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pauperes
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The poor.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Fabritio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        C. Fabritius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Gaius Fabricius Luscinus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tolerabilia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Tolerabilia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The bearable things.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inhonorati" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Inhonorati
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Those without honour.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Agame[m]non in Euripidis Iphigenia aulidensi
+                    </marginalia_text>
+                    <person name="Agamemnon"/>
+                    <person name="Euripides"/>
+                    <book title="Iphigenia in Aulis"/>
+                </position>
+            </language>
+            <translation>
+                Agamemnon in Euripides' Iphigenia in Aulis.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="perpessio caeteroru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Perpessio ca[e]teroru[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Examples of others.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Telamon" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Telamon
+                    </marginalia_text>
+                    <person name="Telamon"/>
+                </position>
+            </language>
+            <translation>
+                Telamon.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Theseus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Theseus
+                    </marginalia_text>
+                    <person name="Theseus"/>
+                </position>
+            </language>
+            <translation>
+                Theseus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Anaxagoras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Anaxagoras
+                    </marginalia_text>
+                    <person name="Anaxagoras"/>
+                </position>
+            </language>
+            <translation>
+                Anaxagoras.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro opinione vulgi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vulgi opinio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The opinion of the people.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        acutè
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Acutely.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nemo in perpetuu[m] esse posset expers" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nemo in perpetuu[m] mali expers esse potest
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                No one can be free from bad forever.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="decantauerant fortasse" type="straight"/>
+        <underline language="LA" method="pen" text="parietinae" type="straight"/>
+        <underline language="LA" method="pen" text="cogitatio callum vetustatis obduxerat" type="straight"/>
+        <underline language="LA" method="pen" text="in commentarium retulisse" type="straight"/>
+        <underline language="LA" method="pen" text="Nihil oportere inopinatum" type="straight"/>
+        <underline language="LA" method="pen" text="enim fortasse" type="straight"/>
+        <underline language="LA" method="pen" text="aut" type="straight"/>
+        <underline language="LA" method="pen" text="aut" type="straight"/>
+        <underline language="LA" method="pen" text="esse quae &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="dicit quòd inglorius sit atque ignobilis ad supremu[m] diem" type="straight"/>
+        <underline language="LA" method="pen" text="eorúmque qui" type="straight"/>
+        <underline language="LA" method="pen" text="luctus, aliorum" type="straight"/>
+        <underline language="LA" method="pen" text="sit ementita" type="straight"/>
+        <underline language="LA" method="pen" text="dies: nisi quòd ratio quaedam sanat illos: hos" type="straight"/>
+        
+        <symbol name="Jupiter" place="head"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral language="LA" place="left_margin" text="aut">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral language="LA" place="left_margin" text="aut">2</numeral>
+        
+        <drawing anchor_text="Pauperes" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Inhonorati" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Perpessio ca[e]teroru[m]" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="vulgi opinio" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+
+    </annotation>
+</transcription>

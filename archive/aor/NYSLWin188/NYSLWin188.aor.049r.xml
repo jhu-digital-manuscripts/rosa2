@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.049r.tif" pagination="49" reader="John Dee" signature="N"/> 
+    <annotation>
+        
+        <marginalia anchor_text="32 grad:" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>32 gradus caloris in stellis</marginalia_text>
+                </position>
+            </language>
+            <translation>32 degrees of heat in the stars.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Im diesen 32 graden standt die Stralsternen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>stella[e] fulminaria[e] in 32 gradu sunt</marginalia_text>
+                </position>
+            </language>
+            <translation>The lightning stars are in 32 degrees.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>NOTA</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <!-- Part of marginal note is hidden in the gutter -->
+        
+        <marginalia anchor_text="ist der Sul im höchsten grade der Salpeter in der höheste[n] seite der Mercurius in der höchster Co[n]trarietet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Sulphur - in summo gradu Nitru[m]</marginalia_text>
+                </position>
+            </language>
+            <language ident="DE">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>- im höchsten grad ☿ - in der höchster co[n]trarietet</marginalia_text>
+                </position>
+            </language>
+            <translation>Sulfur is in de highest degree, salpeter is in the highest degree, mercury is in the highest opposition.</translation>  
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Fewersternen" type="straight"/>
+        <underline language="DE" method="pen" text="Som[m]ersternen" type="straight"/>
+        <underline language="DE" method="pen" text="viel stercker" type="straight"/>
+        <underline language="DE" method="pen" text="32" type="straight"/>
+        <underline language="DE" method="pen" text="Im diesen 32 graden standt die Stralsternen" type="straight"/>
+        <underline language="DE" method="pen" text="da jrre werden" type="straight"/>
+        <underline language="DE" method="pen" text="oder zu früe zeitig" type="straight"/>
+        <underline language="DE" method="pen" text="nichts fragen" type="straight"/>
+        <underline language="DE" method="pen" text="grosse Hitze" type="straight"/>
+        <underline language="DE" method="pen" text="ist der Sul" type="straight"/>
+        <underline language="DE" method="pen" text="der Salpeter" type="straight"/>
+        <underline language="DE" method="pen" text="Mercurius in der" type="straight"/>
+        <underline language="DE" method="pen" text="höchster Co[n]trarietet" type="straight"/>
+        <underline language="DE" method="pen" text="ist das Corpus" type="straight"/>
+        
+        <errata amendedtext="Nitrum" copytext="Mitrum" language="LA"/>
+        
+    </annotation>
+</transcription>

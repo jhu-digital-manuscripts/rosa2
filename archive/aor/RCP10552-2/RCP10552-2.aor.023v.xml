@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.023v.tif" pagination="36" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Raldulphnm de Moynhermer" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Raldulphus de Monte Hermeri incarceratus propter clandes finas nuptias, filia[e] Regis</marginalia_text>
+                    <person name="Ralph de Monthermer"/>
+                </position>
+            </language>
+            <translation>Ralph de Monthermer was incarcerated for breaking the final wedding vows of the daughter of the King.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Comes de VVarenna in prouincia" type="straight"/>
+        <underline language="LA" method="pen" text="nepotem suum Henricum de Percy" type="straight"/>
+        <underline language="LA" method="pen" text="excusauit. Comes verò" type="straight"/>
+        <underline language="LA" method="pen" text="funere fratris sui anno" type="straight"/>
+        <underline language="LA" method="pen" text="vbi de discretorum consilio" type="straight"/>
+        <underline language="LA" method="pen" text="Radulphnm de Moynhermer" type="double"/>
+        <underline language="LA" method="pen" text="militem" type="straight"/>
+        <underline language="LA" method="pen" text="sua Iohanna comitissa" type="straight"/>
+        <underline language="LA" method="pen" text="Glouerniae," type="double"/>
+        <underline language="LA" method="pen" text="clàm maritum accepit in grauem patris offensam" type="straight"/>
+        <underline language="LA" method="pen" text="de castro" type="triple"/>
+        <underline language="LA" method="pen" text="Bristolliae fecit educi" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; vxori suae reddi," type="double"/>
+        <underline language="LA" method="pen" text="restituens" type="straight"/>
+        <underline language="LA" method="pen" text="eis" type="triple"/>
+        <underline language="LA" method="pen" text="omnes terras ad comitatum Glouerniae spectantes" type="straight"/>
+        <underline language="LA" method="pen" text="seruitium quinquaginta militum" type="double"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- Iohanna, comitissa --> 
+        <mark method="pen" name="comma" place="intext"/> <!-- honorifice, vsque  --> 
+        
+        
+    </annotation>
+</transcription>

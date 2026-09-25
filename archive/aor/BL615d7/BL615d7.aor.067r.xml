@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.067r.tif" pagination="67" reader="John Dee" signature="Iiij"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="XXIIII di Decembre" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>24. Decebris</marginalia_text>
+                </position>
+            </language>
+            <translation>24 December.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mar di San Tomaso" hand="Italian" method="pen">
+        <language ident="LA">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>Mare s[anc]ti Thomae</marginalia_text> 
+            </position>
+        </language>
+        <translation>The sea of Saint Thomas.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Punta Santa" hand="Italian" method="pen">
+        <language ident="EN">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>Holy poynt.</marginalia_text>
+                <location name="Punta Santa"/>
+            </position>
+        </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="altretanta vn fratello" type="straight"/>
+        <underline language="IT" method="pen" text="sotto le braccia" type="straight"/>
+        <underline language="IT" method="pen" text="mar di San" type="straight"/>
+        <underline language="IT" method="pen" text="Punta Santa" type="straight"/>
+        <underline language="IT" method="pen" text="era al temone" type="straight"/>
+        <underline language="IT" method="pen" text="as vn fante del nauiglio" type="straight"/>
+        <underline language="IT" method="pen" text="haueua prohibito in tutto questo viaggio" type="straight"/>
+        <underline language="IT" method="pen" text="mai ll temone a' fanti" type="double"/>
+        <underline language="IT" method="pen" text="percioche la Domenica" type="straight"/>
+        
+    </annotation>
+    
+</transcription>

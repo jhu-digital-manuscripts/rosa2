@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.151v.tif" pagination="151[v]" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="MCCCCXCVII" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>1497</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="a' XXX di Maggio dell' anno MCCCCXCVIII" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>1498 May 30</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="era venuto a morte" type="straight"/>
+        <underline language="IT" method="pen" text="Serenissima Reina donna Isabella" type="straight"/>
+        <underline language="IT" method="pen" text="vela dal canal di S. Lucar di Barrameda" type="straight"/>
+        <underline language="IT" method="pen" text="nauigli, carichi di vettouaglie" type="straight"/>
+        <underline language="IT" method="pen" text="popolatione della Spagnuola" type="straight"/>
+        <underline language="IT" method="pen" text="a' x di Giugno" type="straight"/>
+        
+    </annotation>
+</transcription>

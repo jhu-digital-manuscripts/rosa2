@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.128r.tif" pagination="241" reader="John Dee" signature="x.j."/>
+    <annotation>
+        
+        <marginalia anchor_text="quae est à Schaba, profectam esse ad Salomonem reginam Saba, dicimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Regina Schaba</marginalia_text>
+                    <person name="Queen of Sheba"/>
+                </position>
+            </language>
+            <translation>Queen Shaba.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="reginam Austri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Regina austri</marginalia_text>
+                    <person name="Queen of Sheba"/>
+                </position>
+            </language>
+            <translation>Queen of the South.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Persicum vergentium" type="straight"/>
+        <underline language="LA" method="pen" text="Sabaeoru[m] gente, quae est à Schaba" type="straight"/>
+        <underline language="LA" method="pen" text="reginam Saba" type="straight"/>
+        <underline language="LA" method="pen" text="vocat reginam Austri" type="straight"/>
+        <underline language="LA" method="pen" text="eos Sabaeis" type="straight"/>
+        <underline language="LA" method="pen" text="à Schaba" type="straight"/>
+        <underline language="LA" method="pen" text="ipsis Schabaeis" type="straight"/>
+        <underline language="LA" method="pen" text="gentis Æthiopicae" type="straight"/>
+        <underline language="LA" method="pen" text="nauigationem expertus esset difficilem, vt ad Tyrioru[m], qui sunt in Cananaea" type="straight"/>
+        <underline language="LA" method="pen" text="recenset Dedan inter populos Idumaeae" type="straight"/>
+        <underline language="LA" method="pen" text="in Dedan" type="straight"/>
+        <underline language="LA" method="pen" text="he abundare" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+            
+    </annotation>
+</transcription>

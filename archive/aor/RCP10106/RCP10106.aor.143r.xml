@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.143r.tif" pagination="285" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="risus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Risus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Laughter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="derisu non procul abest risus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Risus &amp; Derisus</marginalia_text>
+                </position>
+            </language>
+            <translation>Laughter and derision.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iuuenes Tarentini" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iuuenes Tare[n]tini</marginalia_text>
+                    <location name="Tarentum"/>
+                </position>
+            </language>
+            <translation>The young men of Tarentum.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="primum, quòd ridiculum dictum plerunq[ue] falsum est, hoc semper humile, saepe ex" type="straight"/>
+        <underline language="LA" method="pen" text="Neque enim acute tantum, ac uenuste, sed stulte, iracunde, timide dicta aut facta ridentur." type="straight"/>
+        <underline language="LA" method="pen" text="Cum uideatur autem res leuis, &amp; quae à scurris, mimis, insipientibus deniq[ue] saepe moueatur, tamen habet uim nescio an              imperiosißimam, &amp;" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

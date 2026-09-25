@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.293r.tif" pagination="99" reader="John Dee" signature="N.j."/>
+    <annotation>
+        
+        <marginalia anchor_text="Guboni[a]e" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>E</marginalia_text>
+                </position>
+            </language>
+            <translation>E.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="comitis Glouerniae qui pro tunc erat iuuenis toti regno dilectus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gilbertus Comes de Clare, Iuuenis toti regno dilectus, ia[m] erat 20 annoru[m]</marginalia_text>
+                    <person name="Gilbert de Clare, 8th Earl of Gloucester"/>
+                </position>
+            </language>
+            <translation>Count Gilbert de Clare, a young man beloved by the whole kingdom, was now twenty years old.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Petrus de Gauerston" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Petrus de Gauerston.</marginalia_text>
+                    <person name="Piers Gaveston"/>
+                </position>
+            </language>
+            <translation>Piers Gaveston.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="militis generosi, sed alienigen[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="Guboni[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="fuit ei quòd si sororem comitis Glouerniae, qui pro tunc erat iuuenis toti regno dilectus, &amp; sub tutela regis, praefato" type="straight"/>
+        <underline language="LA" method="pen" text="inter ipsum &amp; sororem comitis fecit celebrari nuptias, licèt multu[m] comiti" type="straight"/>
+        <underline language="LA" method="pen" text="displicerent" type="double"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- auditis cum -->
+        
+        <errata amendedtext="uboni[a]e" copytext="Guboni[a]e" language="LA"/>
+        
+    </annotation>
+</transcription>

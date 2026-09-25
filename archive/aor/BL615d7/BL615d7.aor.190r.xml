@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.190r.tif" pagination="190" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="franchigia per XX anni" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Franchigia p[er] XX anni.</marginalia_text>
+                </position>
+            </language>
+            <translation>Deductible for twenty years.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fra Giouanni della Sera" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Fra. Giouanni della Sera</marginalia_text>
+                    <person name="Giovanni della Sera"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="MCCCCXCIX" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>1499.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="bandir franchigia per XX anni" type="straight"/>
+        <underline language="IT" method="pen" text="vn fra Giouanni" type="straight"/>
+        <underline language="IT" method="pen" text="Francesco di Bouadiglia" type="straight"/>
+        <underline language="IT" method="pen" text="ad vbidire" type="straight"/>
+        
+    </annotation>
+</transcription>

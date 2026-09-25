@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.102v.tif" pagination="184" reader="John Dee" signature="[mm.iiii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="nauem [...] armatam atque ornata[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        nauis armata ornata
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A vessel, armed and splendid.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="laboris, operae, pecuniae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        quid { laboris pecuni[a]e oper[a]e
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A bit of effort, money, work.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="frumentum awqualiter emi ab omnibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        frume[n]tu[m] [a]equabiliter emi ab o[mn]ib[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Corn to be bought in equal measures from everyone.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="trabali clauo figeret" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        trabili clauo figere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To nail down.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="delectum, praeclarúmque consilium iste dedit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        dare co[n]siliu[m] delectu[m] pr[a]eclaru[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To give select and distinguished council.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="se id, quod à malo authore emissent, diutius obtinere non posse" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        yll gotte[n] goodis is sone spe[n]te 
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Cedo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        cedo
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I pass.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cedo" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        da
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Give!
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sua moenia portúsque defenderent, precio abs te ius foederis, &amp; imperii conditionem" type="straight"/>
+        <underline language="LA" method="pen" text="Te igitur authore" type="straight"/>
+        <underline language="LA" method="pen" text="interprete, ne foro quidem" type="straight"/>
+        <underline language="LA" method="pen" text="Audite decretum" type="straight"/>
+        <underline language="LA" method="pen" text="cognoscite quanta in scribendo grauitas, quanta in constituendo iure sit authoritas" type="straight"/>
+        <underline language="LA" method="pen" text="an praedonis" type="straight"/>
+        <underline language="LA" method="pen" text="se id, quod à malo authore emissent, diutius obtinere non posse" type="straight"/>
+        
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/> <!--JG: variant of the florilegium?-->
+        
+        
+    </annotation>
+</transcription>

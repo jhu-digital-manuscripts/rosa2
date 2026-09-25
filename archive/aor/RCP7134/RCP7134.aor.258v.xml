@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.258v.tif" pagination="[251v]" reader="John Dee" signature="[RRiij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Coniunctio nunc igitur magna[e] quomodo co[n]stituentur figura[e] pro Judicio?</marginalia_text>
+                </position>
+            </language>
+            <translation>Now the conjunction, how therefore are great figures created for a judgement?</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Boreales planetae, in declinatione, &amp; latitudine, ualidiores semper australibus, cum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Septentrio fortior meridionali parte</marginalia_text>
+                </position>
+            </language>
+            <translation>The northern winds [is] stronger in the southern part.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Morbi initium.</marginalia_text>
+                </position>
+            </language>
+            <translation>The beginning of death.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Quando significator unius rei, unus est, atq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="combustus, res illa ex toto destruetur" type="straight"/>
+        <underline language="LA" method="pen" text="Quòd si duo, &amp; primus combustus, secundus retrogradus, debilissima euadet" type="straight"/>
+        <underline language="LA" method="pen" text="Nullius planetae" type="straight"/>
+        <underline language="LA" method="pen" text="coniunctio, ut p[er] ipsam signu[m] ascendens" type="straight"/>
+        <underline language="LA" method="pen" text="Boreales planetae, in declinatione, &amp; latitudine, ualidiores semper australibus, cum" type="straight"/>
+        
+    </annotation>
+</transcription>

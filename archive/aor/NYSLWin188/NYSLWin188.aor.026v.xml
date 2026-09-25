@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.026v.tif" pagination="[26[v]]" reader="John Dee" signature="[Gij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Archeus der da ordiniert alle ding in sein wesen scheidt je eins vo[n] dem anderen gibt eine[n] jeglichen sahmen das jm zusthehet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Archeus est</marginalia_text>
+                </position>
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>dispositor et Distributor et separator</marginalia_text>
+                </position>
+            </language>
+            <translation>Archeus is a disposer, distributor, and separator.</translation>
+        </marginalia>
+        
+        <marginalia book_id="Iliaster; Archeus; Vulcano" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vulcanus Iliaster Archeus</marginalia_text>
+                    <person name="Vulcan"/>
+                </position>
+            </language>
+            <translation>Vulcan, Iliaster, Archeus.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="von einem andern Plumen" type="double"/>
+        <underline language="DE" method="pen" text="Eisens materia vo[n] Pley materia" type="straight"/>
+        <underline language="DE" method="pen" text="Archeus" type="double"/>
+        <underline language="DE" method="pen" text="da ordiniert" type="double"/>
+        <underline language="DE" method="pen" text="alle ding in" type="straight"/>
+        <underline language="DE" method="pen" text="wesen" type="double"/>
+        <underline language="DE" method="pen" text="scheidt" type="grid"/>
+        <underline language="DE" method="pen" text="je eins vo[n] dem andern" type="straight"/>
+        <underline language="DE" method="pen" text="jeglich sahmen" type="double"/>
+        <underline language="DE" method="pen" text="im zustehet" type="double"/>
+        <underline language="DE" method="pen" text="gibt Vulcano terrae" type="double"/>
+        <underline language="DE" method="pen" text="Vulcanus" type="straight"/>
+        <underline language="DE" method="pen" text="Iliaster" type="straight"/>
+        <underline language="DE" method="pen" text="Archeus" type="straight"/>
+        <underline language="DE" method="pen" text="geschmidet" type="straight"/>
+        <underline language="DE" method="pen" text="für vns durch den befelch Gottes" type="straight"/>
+        <underline id="NYSLWin188:00000066:u0001" language="DE" method="pen" text="Vnd zu dem allem" type="straight"/>
+        <underline language="DE" method="pen" text="ist darnach" type="double"/>
+        <underline language="DE" method="pen" text="so alle ding gemacht seindt" type="straight"/>
+        <underline language="DE" method="pen" text="vberantwortet" type="straight"/>
+        <underline language="DE" method="pen" text="Noch eine" type="double"/>
+        <underline id="NYSLWin188:00000066:u0002" language="DE" method="pen" text="nachfolgende krafft" type="triple"/>
+        
+        <errata amendedtext="Blumen" copytext="Plumen" language="DE"/>
+        
+        <physical_link>
+            <marginal_annotation idref="NYSLWin188:00000066:u0001"/>
+            <marginal_annotation idref="NYSLWin188:00000066:u0002"/>
+            
+            <relation from="NYSLWin188:00000066:u0001" to="NYSLWin188:00000066:u0002" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

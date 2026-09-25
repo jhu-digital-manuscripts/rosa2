@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.244r.tif" pagination="5" reader="John Dee" signature="A.iij."/>
+    <annotation>
+        
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Rollo electione fortuita Danoru[m] pra[e]fectus fit.</marginalia_text>
+                    <person name="Rollo"/>
+                </position>
+            </language>
+            <translation>Rollo becomes leader of the Danes by a chance selection.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Octingentesimo" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Anno 800</marginalia_text>
+                </position>
+            </language>
+            <translation>In the year 800.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Gertrudem quam asportauerant à Brita[n]nia" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gertrudis Brytanna: vt ve[?]</marginalia_text> <!-- DO: not sure of final word --> <!-- MB. Finding difficult to decipher the last word as well, 've' seems likely.  -->  <!-- DO: Perhaps 've[ro]' -->
+                    <person name="Gertrude of Nivelles"/>
+                </position>
+            </language>
+            <translation/>
+        </marginalia>
+        
+        <marginalia anchor_text="Franco Rotomagensis Archiepiscopus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Franco Archiep[iscop]us Rhotomage[n]sis.</marginalia_text>
+                    <person name="Franco, Archbishop of Rouen"/>
+                    <location name="Rouen"/>
+                </position>
+            </language>
+            <translation>Franco, Archbishop of Rouen.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="forte eligentes nomine: dominum suae militiae atque principem pacta fidelitate praeficiunt" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rollo electione militia[e] Danica[e] fit Praefectus: apud Rhotomagina</marginalia_text>
+                    <person name="Rollo"/>
+                    <location name="Rouen"/>
+                </position>
+            </language>
+            <translation>Rollo becomes leader of the Danish army by selection, at Rouen.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Rainaldus dux totius Franciae" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rainaldus Dux Fr[ancia].</marginalia_text>
+                    <person name="Ragenold of Neustria"/>
+                    <location name="France"/>
+                </position>
+            </language>
+            <translation>Rainaldus leader of France.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hastingi or[ati]o ad Rollonem.</marginalia_text>
+                    <person name="Hastein"/>
+                    <person name="Rollo"/>
+                </position>
+            </language>
+            <translation>Hastein's speech to Rollo.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Carolo Regi" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Carolus R[ex] Fr[anciae].</marginalia_text>
+                    <person name="Charles the Simple"/>
+                </position>
+            </language>
+            <translation>Charles, King of France.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Rollando eius signifero" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rollandus signifer</marginalia_text>
+                    <person name="Rollandus"/>
+                </position>
+            </language>
+            <translation>Rollandus the standard-bearer.</translation> 
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Mellende" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mellenda</marginalia_text>
+                            <!-- DO: Not sure about this location --> <!-- MB. The only reference to Mellende I can find is in Walsingham's text. There is a seaport town named Melinda or Melinde but I don't think its the same location. https://books.google.co.uk/books?id=FN0TAAAAYAAJ&pg=PA1172&dq=roman+town+melenda&hl=en&sa=X&ved=0ahUKEwjXxfvT1pzTAhVBnBoKHZ33BQQQ6AEILDAC#v=onepage&q=roman%20town%20melenda&f=false  -->
+                </position>
+            </language>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Theobaldus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Theobaldi astutia</marginalia_text>
+                    <person name="Theobald I, Count of Blois"/>
+                </position>
+            </language>
+            <translation>The cunning of Theobaldus.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="consestim Carnotenam vrbem Theobaldo vendidit, &amp; distractis omnibus, peregrè profectus disparuit" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hastingi abitio. et Carnotena[e] ve[n]datio</marginalia_text>
+                    <person name="Hastein"/>
+                    <location name="Chartres"/>
+                </position>
+            </language>
+            <translation>The departure of Hastein and sale of Carnotena.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Parisium" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Parisium</marginalia_text>
+                    <location name="Paris"/>
+                </position>
+            </language>
+            <translation>Paris.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Baiocensem vrbem" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Baioca vrbs.</marginalia_text>
+                    <location name="Bayeux"/>
+                </position>
+            </language>
+            <translation>The city Bayeux.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Popam" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Popa</marginalia_text>
+                    <person name="Poppa of Bayeux"/>
+                </position>
+            </language>
+            <translation>Poppa.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Gemeticum" type="straight"/>
+        <underline language="LA" method="pen" text="sacram virginem" type="straight"/>
+        <underline language="LA" method="pen" text="à Brita[n]nia" type="straight"/>
+        <underline language="LA" method="pen" text="capella S. Vedasti" type="straight"/> 
+        <underline language="LA" method="pen" text="super altare ponentes" type="double"/>
+        <underline language="LA" method="pen" text="ibidem" type="straight"/>
+        <underline language="LA" method="pen" text="Sanctae Gertrudis" type="straight"/>
+        <underline language="LA" method="pen" text="aduentum Franco" type="straight"/>
+        <underline language="LA" method="pen" text="inter" type="straight"/>
+        <underline language="LA" method="pen" text="propellunt ad maenia" type="straight"/>
+        <underline language="LA" method="pen" text="totius Comitatus" type="straight"/>
+        <underline language="LA" method="pen" text="sorte eligentes" type="double"/>
+        <underline language="LA" method="pen" text="pacta fidelitate" type="straight"/>
+        <underline language="LA" method="pen" text="Rollo" type="straight"/>
+        <underline language="LA" method="pen" text="de Varisiaca subuersione" type="straight"/>
+        <underline language="LA" method="pen" text="Hasdaus" type="straight"/>
+        <underline language="LA" method="pen" text="Tunc Rainaldus dux totius" type="straight"/>
+        <underline language="LA" method="pen" text="praemittens Hastingum" type="straight"/>
+        <underline language="LA" method="pen" text="Carnotena vrbe" type="straight"/>
+        <underline language="LA" method="pen" text="Danorum lingue" type="straight"/>
+        <underline language="LA" method="pen" text="senior" type="straight"/>
+        <underline language="LA" method="pen" text="Francorum sanè regis" type="straight"/>
+        <underline language="LA" method="pen" text="aequali dominio" type="straight"/>
+        <underline language="LA" method="pen" text="Hastingo" type="straight"/>
+        <underline language="LA" method="pen" text="parte pessundedit, &amp; in solitudinem redegit" type="straight"/>
+        <underline language="LA" method="pen" text="inquit Carolo Regi" type="straight"/>
+        <underline language="LA" method="pen" text="expeditius duci" type="straight"/>
+        <underline language="LA" method="pen" text="Rollando eius signifero" type="straight"/>
+        <underline language="LA" method="pen" text="municipium Mellende" type="straight"/>
+        <underline language="LA" method="pen" text="Igitur Theobaldus comes videns" type="straight"/>
+        <underline language="LA" method="pen" text="verbis Hastingus territus" type="straight"/>
+        <underline language="LA" method="pen" text="Carnotenam vrbem Theobaldo vendidit" type="straight"/>
+        <underline language="LA" method="pen" text="Rainaldus" type="straight"/>
+        <underline language="LA" method="pen" text="Ipsum autem Rainaldum quidam" type="straight"/>
+        <underline language="LA" method="pen" text="piscator" type="double"/>
+        <underline language="LA" method="pen" text="Baiocensem vrbem" type="straight"/>
+        <underline language="LA" method="pen" text="veliuolo venit cursu" type="straight"/>
+        <underline language="LA" method="pen" text="nobilissimam puellam Popam" type="straight"/>
+        <underline language="LA" method="pen" text="Rainoldus paganis fit obuius" type="straight"/>
+        
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- exsemetipsis sorte -->
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- eligentes nomine -->
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- Rainaldus fugae -->
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- verbis. Heus -->
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- directi. Cui -->
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- loqueris. Adhaec -->
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- redegit. Cui -->
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- compleuit. Hastingus -->
+        
+        <mark method="pen" name="bracket" place="left_margin"/>  
+        
+        <mark method="pen" name="bracket" place="intext"/>  <!-- renuncia. Haec -->
+        
+        
+        
+        
+        
+        
+        
+    </annotation>
+    
+</transcription>

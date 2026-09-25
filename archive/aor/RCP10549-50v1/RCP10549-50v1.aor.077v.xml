@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.077v.tif" pagination="134" reader="John Dee" signature="[i.iii.[v]]"/>
+    <annotation> 
+        
+        <marginalia anchor_text="haec te vox no[n] perculit?" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        hec te vox no[n] perculit?
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Did this voice not upset you?
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="liquidò" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        liq[ui]do
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Clearly.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eiurare" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        eiurare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To abjure.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="auget, atque onerat te bonis conditionibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        te anget ac onerat bonis co[n]ditionibus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'He made you the most generous and liberal of offers' [Loeb 293, 169].
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Siquis tibi ad aurem accessisset" type="straight"/>
+        <underline language="LA" method="pen" text="Cum vero in foro celeberrimo, tanta frequentia, hoc, verbo" type="straight"/>
+        <underline language="LA" method="pen" text="locupletissimus quisque, certissimus testis esset: nemo" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; tamen auget, atque onerat te bonis conditionibus, si tu vti velis" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">7</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">16</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">16</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing anchor_text="&amp; tamen auget, atque onerat te bonis conditionibus, si tu vti velis" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

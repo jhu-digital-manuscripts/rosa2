@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.047v.tif" reader="Harvey" signature="[Eviii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[the] same.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vide L. 4. c. 7.</marginalia_text>
+                </position>
+            </language>
+            <translation>See book 4, chapter 7.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hannibale[m] interfecisse [Metellu[m] - deleted] Marcellum.</marginalia_text>
+                    <person name="Hannibal"/>
+                    <person name="Marcus Claudius Marcellus"/>
+                </position>
+            </language>
+            <translation>Hannibal killed Marcellus.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[the] same in effecte.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="camelles; straunge syght" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Camelle, A strange sight.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="by the deathe of theyr" type="straight"/>
+        <underline language="EN" method="pen" text="with that lye" type="straight"/>
+        <underline language="EN" method="pen" text="Jugurthe" type="straight"/>
+        <underline language="EN" method="pen" text="Marius" type="straight"/>
+        <underline language="EN" method="pen" text="to the forewarde" type="straight"/>
+        <underline language="EN" method="pen" text="Ego C. Marium" type="straight"/>
+        <underline language="EN" method="pen" text="occidi" type="straight"/>
+        <underline language="EN" method="pen" text="sodenly lepte forthe" type="straight"/>
+        <underline language="EN" method="pen" text="wynge of his host" type="straight"/>
+        <underline language="EN" method="pen" text="cryenge with" type="straight"/>
+        <underline language="EN" method="pen" text="loude voyce" type="straight"/>
+        <underline language="EN" method="pen" text="got the victory" type="straight"/>
+        <underline language="EN" method="pen" text="on the lefte wynge" type="straight"/>
+        <underline language="EN" method="pen" text="raged his owne" type="straight"/>
+        <underline language="EN" method="pen" text="great nomber of camelles" type="straight"/>
+        <underline language="EN" method="pen" text="straunge syght" type="straight"/>
+        <underline language="EN" method="pen" text="horses beinge" type="straight"/>
+        <underline language="EN" method="pen" text="bore downe the aray" type="straight"/>
+        <underline language="EN" method="pen" text="of the foote men, makynge" type="straight"/>
+        
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        <mark method="pen" name="horizontal_bar" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="Ego C. Marium"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the horses beinge"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.035r.tif" pagination="35" reader="John Dee" signature="Jiii"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ein außzug von dem andern" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aristotelica philosophia.</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotelean philosophy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ein außNun ist die zal der Regen Sternen nit zuschreiben" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Stella[e] pluuiosa[e] Innumera[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Innumerable rainy stars.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="das in etlichen Regionibus der Regensternen effectus nicht alle mal für sich gehet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qui sit quod pluuiosaru[m] stellaru[m] in aliquib[us] locis impediant[ur] vel no[n] adeo appareant effectes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Why is it that the effects of the rainy stars are hindered in some regions or indeed do not appear.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="ein außzug von dem andern" type="straight"/>
+        <underline language="DE" method="pen" text="das ein jeglich Regen kompt von seinen eigen vrsprung vnd wird newe geboren" type="straight"/>
+        <underline language="DE" method="pen" text="Sternen nit zuschreiben" type="straight"/>
+        <underline language="DE" method="pen" text="gantze Firmament ist jr voll" type="straight"/>
+        <underline language="DE" method="pen" text="alle landt" type="straight"/>
+        <underline language="DE" method="pen" text="der Regensternen effectus nicht alle mal für sich gehet" type="straight"/>
+        <underline language="DE" method="pen" text="Sternen nicht da seindt" type="straight"/>
+        <underline language="DE" method="pen" text="außgedörret auß demselbigen Landts vnd Regionis Winden" type="straight"/>
+        <underline language="DE" method="pen" text="vnd constellationen" type="straight"/>
+        <underline language="DE" method="pen" text="oder ein Frucht" type="straight"/>
+        <underline language="DE" method="pen" text="Regensternen in" type="straight"/>
+        
+        <mark language="DE" method="pen" name="bracket" place="right_margin" text="Vnd wiewol sich begibet das in etlichen Regionibus der Regensternen effectus nicht alle mal             für sich gehet sondern selte[n] oder gar nichts Regnet: Dasselbige ist nicht der gepresten das dieSternen nicht da seindt sondern sie werde[n] außgedörret             auß demselbigen Landts vnd Regionis Winden vnd constellationen"/>
+        
+    </annotation>
+</transcription>

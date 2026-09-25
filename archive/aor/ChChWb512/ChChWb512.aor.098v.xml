@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.098v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Vrianus Reget.
+                    </marginalia_text>
+                    <person name="Urianus"/>
+                </position>
+            </language>
+            <translation>Urianus rules.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Eue[n]tus forte Eagemiu[s]</marginalia_text>
+                    <person name="Eventus"/>
+                    <person name="Eagemius"/>
+                </position>
+            </language>
+            <translation>Eventus, more likely Eagemius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="flumen Cambla[n]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>fl[umen] Camblan</marginalia_text>
+                </position>
+            </language>
+            <translation>The river Camlann</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Auguselus ete[ni]m" type="straight"/>
+        <underline language="LA" method="pen" text="Eue[n]tus filius Vriani fratris sui" type="straight"/>
+        <underline language="LA" method="pen" text="i[n]sequenti" type="straight"/>
+        <underline language="LA" method="pen" text="Gauhumar[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="diffugit atq[ue] in templo Iulii martyris i[n]ter monachas eiusdem caste viuere proposuit &amp; vita[m] monachalem suscepit" type="straight"/>
+        <underline language="LA" method="pen" text="cito remige fuga[m] faciens" type="straight"/>
+        <underline language="LA" method="pen" text="Cornubiam versus" type="double"/>
+        <underline language="LA" method="pen" text="totiens" type="double"/>
+        <underline language="LA" method="pen" text="flumen Cambla[n]" type="double"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--faciens Cornubiam-->
+        
+    </annotation>
+</transcription>

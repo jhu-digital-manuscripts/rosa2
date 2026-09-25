@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>76</illustrations>
+    <totalPages>202</totalPages>
+    <dimensions units="mm">
+        <width>236</width>
+        <height>339</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="150r" start="1r">150</pages>
+            <illustrations>75</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="testament">
+            <language>fr</language>
+            <title>Testament</title>
+            <textId/>
+            <pages end="177v" start="151r">27</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="">
+            <language>fr</language>
+            <title>Song rimé</title>
+            <textId/>
+            <pages end="179v" start="178r">2</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="codicille">
+            <language>fr</language>
+            <title>Codicille</title>
+            <textId/>
+            <pages end="200v" start="180r">21</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="trespassez">
+            <language>fr</language>
+            <title>Les Lois des trespassez</title>
+            <textId/>
+            <pages end="201v" start="200v">2</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="codicillelatin">
+            <language>fr</language>
+            <title>Codicille en latin</title>
+            <textId/>
+            <pages end="202v" start="201v">2</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>40</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>PMA 1945-65-3</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>France</origin>
+            <currentLocation>Philadelphia, PA</currentLocation>
+            <repository>Philadelphia Museum of Art</repository>
+            <shelfmark>The Philip S. Collins Collection, 1945-65-3</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>PMA 1945-65-3</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>parchemin</material>
+            <origin>Paris, France</origin>
+            <currentLocation>Philadelphie, PA</currentLocation>
+            <repository>Philadelphia Museum of Art</repository>
+            <shelfmark>The Philip S. Collins Collection, 1945-65-3</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

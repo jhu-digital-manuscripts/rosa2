@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.100r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Melgone Venedotorum rege" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Malgo Venedotur[um] Rex.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Malgo, king of the Venedotians.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Stanheng" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Staneheng
+                    </marginalia_text>
+                    <location name="Stonehenge"/>
+                </position>
+            </language>
+            <translation>Stonehenge</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Sex comprovinciales Monarchia[e] Insulares, q[u]asi.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Six adjacent islands as kingdoms.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Golandia[m]" hand="English_secretary" id="WB5-12_0207_092r_m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Forte Gelandia[m] vt sup[ra].
+                    </marginalia_text>
+                    <location name="Gothland"/>
+                </position>
+            </language>
+            <translation>More likely Gothland, see above</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Melgone Venedotorum" type="straight"/>
+        <underline language="LA" method="pen" text="potestati suae subiugauit" type="straight"/>
+        <underline language="LA" method="pen" text="tertio anno" type="straight"/>
+        <underline language="LA" method="pen" text="eiusq[ue] duobus filiis peremptis" type="straight"/>
+        <underline language="LA" method="pen" text="monarchiam" type="straight"/>
+        <underline language="LA" method="pen" text="omniu[m] fere Britanniae pulcherrimus" type="straight"/>
+        <underline language="LA" method="pen" text="nisi Sodomitana peste volutatus sese deo inuisum" type="straight"/>
+        <underline language="LA" method="pen" text="insulam obtinuit" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; sex" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]prouinciales" type="straight"/>
+        <underline language="LA" method="pen" text="Hybernia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="atq[ue] Islandia[m]" type="straight"/>
+        <underline id="WB5-12_0207_092r:u0001" language="LA" method="pen" text="Golandia[m]" type="double"/>
+        <underline language="LA" method="pen" text="Orcades" type="straight"/>
+        <underline language="LA" method="pen" text="Norwegiam" type="straight"/>
+        <underline language="LA" method="pen" text="Dacia[m]" type="straight"/>
+        
+        <underline language="LA" method="pen" text="Co[n]sta[n]tin[us] vi[n]cit" type="straight"/>
+        <underline language="LA" method="pen" text="Conan[us] regnat" type="straight"/>
+        <underline language="LA" method="pen" text="Vortiporius" type="straight"/>
+        <underline language="LA" method="pen" text="Malgo" type="straight"/>
+        
+        <physical_link>
+            <marginal_annotation idref="WB5-12_0207_092r_m0001"/>
+            <marginal_annotation idref="WB5-12_0207_092r_u0001"/>
+            
+            <relation from="WB5-12_0207_092r_m0001" to="WB5-12_0207_092r_u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

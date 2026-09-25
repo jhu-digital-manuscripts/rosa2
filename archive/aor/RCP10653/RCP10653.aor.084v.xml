@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.084v.tif" pagination="160" reader="John Dee" signature="[O ij.[v]]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="circiter quadringentos sexaginta viros" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        460 occisi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                460 slaughtered.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="talia praemeditantes, circiter quadringentos sexaginta" type="straight"/>
+        <underline language="LA" method="pen" text="Claudiocestri[a]e, vocabulo Eldol" type="straight"/>
+        <underline language="LA" method="pen" text="quia Britones inermes resistere no[n] potuerunt" type="straight"/>
+        
+    </annotation>
+</transcription>

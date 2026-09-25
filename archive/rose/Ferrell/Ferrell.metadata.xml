@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>39</illustrations>
+    <totalPages>137</totalPages>
+    <dimensions units="mm">
+        <width>210</width>
+        <height>285</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="136v" start="1r">136</pages>
+            <illustrations>39</illustrations>
+            <linesPerColumn>42</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Ferrell Rose</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>France</origin>
+            <currentLocation>Los Angeles</currentLocation>
+            <repository>Privately owned, Ferrell Collection</repository>
+            <shelfmark>Ferrell Rose</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Ferrell Rose</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Los Angeles</currentLocation>
+            <repository>Collection privée, Ferrell</repository>
+            <shelfmark>Ferrell Rose</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

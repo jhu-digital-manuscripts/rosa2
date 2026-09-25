@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.250r.tif" pagination="51" reader="John Dee" signature="Eee ij"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="ciuitas Leicestri[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="Iohanni, cognome[n]to Sine terra, filio suo vix septe[n]ni, filia[m] Huberti Comitis de Moriana promogenita[m], q[uam] ex relicta He[n]rici Ducis susceperat, matrimonialiter copulauit" type="straight"/>
+        
+        <errata amendedtext="primogenita[m]" copytext="promogenita[m]" language="LA"/>
+        
+        <graph book_orientation="0" method="pen" place="right_margin" type="genealogical_tree">
+            <node anchor_text="Humberti Comitis de Moriana" id="n1" person="Humbert III, Count of Savoy">Hubert[us] comes de Moriana</node> 
+            <node anchor_text="relicta He[n]rici Ducis" id="n2" person="Clementia of Zähringen">relicta Henrici Ducis</node>
+            <node anchor_text="Rex quoq[ue] Iohanni" id="n3" person="John, King of England">Io[hann]es</node>  
+            <node anchor_text="filia[m] Huberti Comitis de Moriana promogenita[m]" id="n4" person="Alicia of Savoy">Primogenita</node>
+            <link from="n2" relationship="has_spouse" to="n1"/>
+            <link from="n1" relationship="has_spouse" to="n2"/>
+            <link from="n2" relationship="has_child" to="n4"/>
+            <link from="n1" relationship="has_child" to="n4"/>
+            <link from="n4" relationship="has_spouse" to="n3"/>
+            <link from="n3" relationship="has_spouse" to="n4"/>
+            <graph_text>
+                <note anchor_text="septe[n]ni" hand="Italian" id="no1" internal_link="n3" language="LA">septennij</note>
+                <translation>
+                    Seven years of age.
+                </translation>
+            </graph_text>
+        </graph>
+                
+    </annotation>
+</transcription>

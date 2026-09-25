@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.229r.tif" pagination="222" reader="John Dee" signature="KK ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Quoniam natura signorum non est plene cognita, natus existimatur esse illius qualitatis, quam decernunt radij antecedentes ascendens" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>De horoscopo</marginalia_text>
+                </position>
+            </language>
+            <translation>On the horoscope.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Saturnus cum oculo Tauri" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>♄ cu[m] oculo ♉</marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                    <symbol_in_text name="Taurus"/>
+                </position>
+            </language>
+            <translation>Saturn with the eye of Taurus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Saturnus in quadrato Solis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>□ ☉ ♄</marginalia_text>
+                    <symbol_in_text name="Square"/>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>Saturn in 90 degrees to the Sun.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Igitur pessima eius fides, et corruptissi[m]a relligio cu[m] infortuna nona[e] pretaerit, et male dispositus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Therefore his most pessimistic faith and most corrupt religion excels with the unfortune of the nineth [house], and he has been placed badly.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uel quia e" type="straight"/>
+        <underline language="LA" method="pen" text="quia à genitura" type="straight"/>
+        <underline language="LA" method="pen" text="uel causarum" type="straight"/>
+        <underline language="LA" method="pen" text="domus cum fortuna fuerit, &amp; male dispositus, in comparatione ad dominum ascendentis, recte, sed parum credet." type="straight"/>
+        <underline language="LA" method="pen" text="Quoniam natura signorum non est plene cognita, natus existimatur esse illius qualitatis, quam decernunt radij antecedentes ascendens" type="straight"/>
+        <underline language="LA" method="pen" text="Saturnus in quadrato Solis mortem" type="straight"/>  
+        
+        <numeral language="LA" place="intext" text="uel quia ex">1</numeral>
+        <numeral language="LA" place="intext" text="genitura">2</numeral>
+        <numeral language="LA" place="intext" text="magnitudinem">3</numeral>
+        <numeral language="LA" place="intext" text="causarum">4</numeral>
+        
+    </annotation>
+</transcription>

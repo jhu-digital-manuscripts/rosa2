@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.016v.tif" pagination="[17v]" reader="John Dee" signature="[C.j.[v]]"/>  
+    <annotation>
+        
+        <marginalia anchor_text="Medeae faciunt ad scelus omne manus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Medea[e] Scelus.</marginalia_text>
+                    <person name="Medea"/>
+                </position>
+            </language>
+            <translation>The villainy of Medea.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Quaelibet iratis ipse dat arma dolor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ira. Dolor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Anger. Sorrow.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Fallere non norunt, caetera patris habent" type="straight"/>
+        <underline language="LA" method="pen" text="plus est Medea nouerca" type="straight"/>
+        <underline language="LA" method="pen" text="Medeae faciunt ad scelus omne manus" type="straight"/>
+        <underline language="LA" method="pen" text="Turpiter illa virum cognouit adultera virgo" type="straight"/>
+        <underline language="LA" method="pen" text="scelerata piam si vincit, &amp; ipso Crimine dotata est, emeruitq[ue] virum" type="straight"/>
+        <underline language="LA" method="pen" text="Quaelibet iratis ipse dat arma dolor" type="straight"/>
+        <underline language="LA" method="pen" text="Hiscere nempe" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="left_margin"/> <!-- FSF: possibly a real mark or symbol? -->
+        <mark method="pen" name="scribble" place="left_margin"/> <!-- FSF: possibly a real mark or symbol? -->
+        
+        
+    </annotation>
+</transcription>

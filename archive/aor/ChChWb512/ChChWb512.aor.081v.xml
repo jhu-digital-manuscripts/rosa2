@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="ChChWb512.081v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Auguselus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Auguselus.
+                    </marginalia_text>
+                    <person name="Auguselus"/>
+                </position>
+            </language>
+            <translation>Auguselus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Loth" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Loth
+                    </marginalia_text>
+                    <person name="Lot"/>
+                </position>
+            </language>
+            <translation>Lot.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Londonesi[a]e" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Londonesia in Scotia.
+                    </marginalia_text>
+                    <location name="Londonesia"/>
+                    <location name="Scotland"/>
+                </position>
+            </language>
+            <translation>Londonesia in Scotland.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hyberni[a]e insulam quam sibi subdere desiderabat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Hibernia subacta
+                    </marginalia_text>
+                    <location name="Ireland"/>
+                </position>
+            </language>
+            <translation>Ireland conquered.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Considera qua r[ati]o[n]e Anna soror Arthuri primo, Lotho, deinde Dubritii vxor esse poterat. Non [deleted vel] quia duas sorores habebat [deleted vel] Anna[m] et Helenam. Anna Lothi vxor erat et Helena Dubritij.
+                    </marginalia_text>
+                    <person name="Anna"/>
+                    <person name="King Arthur"/>
+                    <person name="Lot"/>
+                    <person name="Dubricius"/>
+                    <person name="Elaine of Garlot"/>
+                </position>
+            </language>
+            <translation>Consider by what means Anna could be the wife first of Lot, and later of Dubricius, or (that Arthur) had two sisters etc. No, because he had two sisters, Anna and Elaine of Garlot. Anna was the wife of Lot and Elaine of Garlot of Dubricius.</translation>
+       <!-- Dee corrects part of a marginal note he made earlier. Interesting example of a re-reading of the same text!-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="stagno voraretur" type="straight"/>
+        <underline language="LA" method="pen" text="sedulitas in restituendis" type="straight"/>
+        <underline language="LA" method="pen" text="possessionibus pristinis &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="natalis domini" type="straight"/>
+        <underline language="LA" method="pen" text="beato Samsone archiepiscopo cunctisq[ue] sanctae" type="straight"/>
+        <underline language="LA" method="pen" text="praeualuerat. Exinde co[n]uocato clero &amp; populo" type="straight"/>
+        <underline language="LA" method="pen" text="Proceres autem" type="straight"/>
+        <underline language="LA" method="pen" text="ibi" type="straight"/>
+        <underline language="LA" method="pen" text="regali p[ro]sapia" type="straight"/>
+        <underline language="LA" method="pen" text="orti Loth" type="straight"/>
+        <underline language="LA" method="pen" text="atq[ue]Vrianus" type="straight"/>
+        <underline language="LA" method="pen" text="Auguselus" type="straight"/>
+        <underline language="LA" method="pen" text="principatum illarum partium" type="straight"/>
+        <underline language="LA" method="pen" text="paterno iure donare" type="straight"/>
+        <underline language="LA" method="pen" text="reddidit" type="double"/>
+        <underline language="LA" method="pen" text="Auguselo regiam potestatem Scotorum" type="straight"/>
+        <underline language="LA" method="pen" text="sceptro Murefre[n]sium insignuit" type="straight"/>
+        <underline language="LA" method="pen" text="Loth autem qui te[m]pore Aurelii Ambrosii" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]sulatum Londonesi[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="caeterarumq[ue] comprouinciarum" type="straight"/>
+        <underline language="LA" method="pen" text="quae ad eum" type="straight"/>
+        <underline language="LA" method="pen" text="totius patriae statum in pristinam dignitatem reduxisset duxit vxorem Gue[n]naram ex nobili genere Romanoru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="dei[n]de sequenti" type="straight"/>
+        <underline language="LA" method="pen" text="[a]estate parauit classem suam" type="straight"/>
+        <underline language="LA" method="pen" text="Hyberni[a]e insulam" type="straight"/>
+        <underline language="LA" method="pen" text="quam sibi subdere desiderabat" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!--autem qui-->
+        <mark method="pen" name="bracket" place="intext"/> <!--genuerat ad-->
+        
+        <mark method="pen" name="dot" place="tail"/>
+        
+        <errata amendedtext="Pyrannum" copytext="Pytannum" language="LA"/> 
+        
+    </annotation>
+</transcription>

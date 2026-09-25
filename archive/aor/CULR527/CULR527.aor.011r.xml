@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.011r.tif" pagination="11" reader="John Dee" signature="Biij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="nauigandi substantia" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Substa[n]tia navig[andi]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The substance of sailing.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dum una scientia, alterius demonstrat principia" type="straight"/>
+        <underline language="LA" method="pen" text="qui utuntur accidentibus" type="straight"/>
+        <underline language="LA" method="pen" text="nauigandi subastantia &amp; subiectum" type="straight"/>
+        <underline language="LA" method="pen" text="naturam, cui in sua operatione sit subiecta" type="straight"/>
+        <underline language="LA" method="pen" text="materiam" type="straight"/>
+        <underline language="LA" method="pen" text="alicuius rei materiam neque substantiam, quòd" type="straight"/>
+        
+    </annotation>
+</transcription>

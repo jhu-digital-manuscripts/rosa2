@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.149v.tif" pagination="298" reader="John Dee" signature="[t 5[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="C. Caesar" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>C[aius] Ca[e]sar.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Julius Caesar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lenia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Lenia</marginalia_text> 
+                </position>
+            </language>
+            <translation>Gentler.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="gratus iocus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Gratus iocus.</marginalia_text> 
+                </position>
+            </language>
+            <translation>An acceptable joke.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Augusti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Augustus.</marginalia_text> 
+                    <person name="Augustus"/>
+                </position>
+            </language>
+            <translation>Augustus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uersus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Versus</marginalia_text> 
+                </position>
+            </language>
+            <translation>Verse.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ouidius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ovidius</marginalia_text>
+                    <person name="Ovid"/>
+                </position>
+            </language>
+            <translation>Ovid.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Adiuuant urbanitatem &amp; uersus co[m]mode positi, seu toti, ut sunt: quod adeò facile est, ut" type="straight"/>
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        
+    </annotation>
+</transcription>

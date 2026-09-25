@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.111r.tif" pagination="45" reader="Harvey" signature="[C7r]"/>	<!-- ABO 115right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Bonus Ethicus non perturbatur maximis malis: nedùm paruis casibus. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A good ethical man is not disturbed by the greatest evils, and still less by small accidents.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Elenchus Optica[e].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				A review of Optics.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						) Mirabilis erat Diogeni vis persuadendi:
+						adeò vt quemlibet oratione facilè caperet. Laertius in
+					</marginalia_text>
+					<person name="Diogenes of Sinope"/>
+					<person name="Diogenes Laertius"/>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						vita
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Diog.
+					</marginalia_text>
+					<book title="Lives and Opinions of Eminent Philosophers"/>
+				</position>
+			</language>
+			<translation>
+				Diogenes' power of persuasion was wondrous to such a degree that he could easily take hold of anyone with a speech.
+				Laertius in his life of Diogenes.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Plain Natures offer, simple wittes take wrong:
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Fine action, &amp; sweet patience
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						be mie song.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Vis est animi,
+						) corporisq[ue] absoluta, qua[e] perficit viru[m].
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						) Semper agere extremo vigore,
+						Hoc est esse virum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Absolute is the power of mind and body which completes a man.
+				To be a man means always acting with the utmost vigor.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Adhuc Proa[e]resius, et Maximus in flore.
+					</marginalia_text>
+					<person name="Prohaeresius"/>
+				</position>
+			</language>
+			<translation>
+				Thus far Prohaeresius and Maximus in bloom.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Nunq[uam] sic locutus est homo, sicùt hic homo. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Never has a man been spoken of in this way, as this man here.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="enfiato il viso:" type="straight"/>
+		<underline language="IT" method="pen" text="vno specchio di quella" type="straight"/>
+		<underline language="IT" method="pen" text="maggiori, &amp; piu ample assai che" type="straight"/>
+		<underline language="IT" method="pen" text="tanta nouità nella" type="straight"/>
+		<underline language="IT" method="pen" text="hauere enfiato" type="straight"/>
+		<underline language="IT" method="pen" text="si marauigliando piu della catena, se ne la portò" type="straight"/>
+		<underline language="IT" method="pen" text="quella enfiatura di testa" type="straight"/>
+		<underline language="IT" method="pen" text="facende, richieder" type="straight"/>
+		<underline language="IT" method="pen" text="la fronte del padrone" type="straight"/>
+		<underline language="IT" method="pen" text="assai, che la collottola" type="straight"/>
+		<underline language="IT" method="pen" text="alle cose sue douerebbe esser presente" type="straight"/>
+		<underline language="IT" method="pen" text="ingrassar'il cauallo" type="straight"/>
+		<underline language="IT" method="pen" text="l'occhio del padrone" type="straight"/>
+		<underline language="IT" method="pen" text="qual concime, per ingrassar" type="straight"/>
+		<underline language="IT" method="pen" text="le pedate del" type="straight"/>
+		<underline language="IT" method="pen" text="ambedue la presenza" type="straight"/>
+		<underline language="IT" method="pen" text="Ennio Poeta à questo" type="straight"/>
+		<underline language="IT" method="pen" text="di non aspettare" type="straight"/>
+		<underline language="IT" method="pen" text="l'amico ti faccia od il parente" type="straight"/>
+		<underline language="IT" method="pen" text="Quel che tu stesso puoi &amp; dire &amp; fare" type="straight"/>
+		
+		<symbol name="SS" place="left_margin"/> <!-- po, & -->
+		
+		<symbol name="Sun" place="right_margin"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Che l'amico ti faccia od il parente Quel che to stesso     puoi &amp; dire &amp; fare."/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ma -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Fran -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ca -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- padro -->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="alle cose sue douerebbe esser presente"/>
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="l'amico ti faccia od il parente"/> <!--next to 'ficit' in marginal note-->
+		
+    </annotation>
+</transcription>

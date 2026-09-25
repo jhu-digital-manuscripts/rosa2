@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.173v.tif" pagination="336" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Iohannes Philpot" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Jo[hann]es Philpot obijt. 1384.</marginalia_text>
+                    <person name="John Philpot"/>
+                </position>
+            </language>
+            <translation>John Philpot died in 1384.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Iohannes Philpot miles &amp; ciuis Londoniarum nobilissimus, qui pro" type="straight"/>
+        <underline language="LA" method="pen" text="regniquè commodo plus omnibus laborauerat, &amp; expensis &amp; affectu s[a]epiùs regem renumq[ue] releuauerat, co[n]cessit in fata, neminem in              huiuscemodi affectibus relinquens superstitem sibi parem." type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>1</illustrations>
+    <totalPages>163</totalPages>
+    <dimensions units="mm">
+        <width>220</width>
+        <height>295</height>
+    </dimensions>
+    <dates>
+        <startDate>1300</startDate>
+        <endDate>1350</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="155r" start="1r">155</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>36</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="chastelaine">
+            <language>fr</language>
+            <title>La Chastelaine de Vergi </title>
+            <textId/>
+            <pages end="162v" start="156r">7</pages>
+            <illustrations>1</illustrations>
+            <linesPerColumn>36</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Cox Macro Rose</commonName>
+            <dateLabel>14th century</dateLabel>
+            <type>manuscript</type>
+            <material>Parchment</material>
+            <origin>France</origin>
+            <currentLocation>Unspecified</currentLocation>
+            <repository>Privately owned, anonymous</repository>
+            <shelfmark>Cox Macro Rose</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Cox Macro Rose</commonName>
+            <dateLabel>14e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Non-spécifié</currentLocation>
+            <repository>Collection privée, anonyme</repository>
+            <shelfmark>Cox Macro Rose</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

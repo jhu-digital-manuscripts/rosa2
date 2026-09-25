@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.024v.tif" pagination="32" reader="John Dee" signature="[c 4[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Quintus [...] interdum in diametro huius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quinta[m] interdu[m] esse in oposito medij ca[e]li vt aute[m] dixit cap. 8
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The fifth is sometimes in opposition to the middle of the sky, as also said in chapter 8.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="loci ipsius malitia subleuatur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Vt sexti loci malitia mitigetur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Because the sixth place is softened by ill will.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uiolenta cum horosc. societate" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        violenta societali
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                By social violence.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Qua r[ati]o[n]e ☾ sola in 8a domo gaudeat.
+                    </marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>
+                For which reason only the moon is in the eighth house.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="fuerit horosc. uites suas per residuas pars 30 extendit" type="straight"/>
+        <underline language="LA" method="pen" text="quod nulla cum horosc. radiatione coniungitur, nec aliquo miscetur aspectu" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; amicis" type="straight"/>
+        <underline language="LA" method="pen" text="locus, cum horosc. maxima societate coniungitur" type="straight"/>
+        <underline language="LA" method="pen" text="filioru[m] numerus, &amp; generis aequalitas" type="straight"/>
+        <underline language="LA" method="pen" text="locus est ♀. Sed" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; interdum in diametro huius signi MC pars" type="straight"/>
+        <underline language="LA" method="pen" text="causam uitii, ac ualetudinis" type="straight"/>
+        <underline language="LA" method="pen" text="sed interdum loci ipsius malitia subleuatur, si in eo loco stella collocata, aliae stellae in decimo ab horosc. loco inuentae, prospera" type="straight"/>
+        <underline language="LA" method="pen" text="qualitatem, &amp; quantitatem quaeramus nuptiarum" type="straight"/>
+        <underline language="LA" method="pen" text="mortis q[ua]litas inuenit[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="genitura, cresce[n]s ☾ fuerit inuenta, &amp; ea[m] sic posita[m], sine societate, uel raditio[n]e maleuolaru[m] stellaru[m], ♃ hexagono, uel trigono tespexerit" type="straight"/>
+        
+        <errata amendedtext="partes" copytext="pars" language="LA"/>
+        
+    </annotation>
+</transcription>

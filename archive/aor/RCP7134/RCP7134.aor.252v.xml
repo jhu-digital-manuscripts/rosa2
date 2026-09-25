@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.252v.tif" pagination="[245v]" reader="John Dee" signature="[QQ[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aliam vide r[ati]one[m] in hoc segmento, aphorismo decimo.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:508" text="decimo"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See the other reasoning in this segment, aphorism ten.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Contra animodar</marginalia_text> <!--http://www.skyscript.co.uk/gl/animodar.html-->
+                </position>
+            </language>
+            <translation>Against animodar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Malè dispositus planeta" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Planeta male dispositas</marginalia_text>
+                </position>
+            </language>
+            <translation>A planet badly positioned.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Communicare dicuntur planetae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Planeta[e] co[mmun]icantes ad invicem.</marginalia_text>
+                </position>
+            </language>
+            <translation>Planets imparting amongst each other.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Assimilari planeta dicitur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Assimilari quid</marginalia_text>
+                </position>
+            </language>
+            <translation>What [is] to be compared.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>vel ☍ ante nativitate[m]</marginalia_text>
+                    <symbol_in_text name="Opposite_planets"/>
+                </position>
+            </language>
+            <translation>Or oppositions before the nativity.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>coniunctiones hic no[n] accipit pro aspectib[us], vt patet 62.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP7134:518" text="62"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Here he does not takes the conjunctions for aspect, as is well-known, [aphorism] 62.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="impeditus" type="straight"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/> <!-- coniunctionis in-->
+        
+        <errata amendedtext="numeru[m]" copytext="numeroru[m]" language="LA"/>
+        
+    </annotation>
+</transcription>

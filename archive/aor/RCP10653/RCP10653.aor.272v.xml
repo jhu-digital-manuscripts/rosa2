@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.272v.tif" pagination="96" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mo[n]tis gaudium" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mont ioy
+                    </marginalia_text>
+                    <emphasis method="pen" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="chalk" text="Mo[n]tis gaudiu[m]" type="straight"/>
+        <underline language="LA" method="chalk" text="Imperator autem Otho cum suis, qui" type="straight"/>
+        <underline language="LA" method="chalk" text="Rupes monachorum" type="straight"/>
+        
+    </annotation>
+</transcription>

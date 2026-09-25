@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.276v.tif" pagination="[269v]" reader="John Dee" signature="[YY[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="trigoni; domus; termini" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Trigon[us]. Domus. ex altatu termin[us].</marginalia_text>
+                </position>
+            </language>
+            <translation>Triangular. House. The end from a raise.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Iupiter cum Marte" type="straight"/>
+        <underline language="LA" method="pen" text="Saturnus cum Venere" type="straight"/>
+        <underline language="LA" method="pen" text="Sol cum Luna" type="straight"/>
+        <underline language="LA" method="pen" text="aliqua, aut regia" type="straight"/>
+        <underline language="LA" method="pen" text="parte peregrini" type="straight"/>
+        <underline language="LA" method="pen" text="illi in genitura in eodem loco iunctus esset" type="straight"/>
+        <underline language="LA" method="pen" text="imaginationibus uenereis" type="straight"/>
+        <underline language="LA" method="pen" text="scorto" type="straight"/>
+        
+        <symbol language="LA" name="Venus" place="left_margin" text="Venerem"/>
+        <symbol language="LA" name="Mercury" place="left_margin" text="Mercurij"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Magis propria significatio domini trigoni est super annos infantiae, domus autem super corpus, exaltationis super fortunam &amp; potentiam, termini super animi mores"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.210v.tif" pagination="400" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Coruncani" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Coruncanus
+                    </marginalia_text>
+                    <person name="Tiberius Coruncanius"/>
+                </position>
+            </language>
+            <translation>
+                Tiberius Coruncanius.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vecordissimi" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vecordiss[imus]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Very mad.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ignito furore" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ignitus furor
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Ignited fury.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Conclusio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Conclusion.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Capitoline" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Capitolinus
+                    </marginalia_text>
+                    <location name="Temple of Jupiter Optimus Maximus"/>
+                </position>
+            </language>
+            <translation>
+                Capitoline.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pr[a]ecatio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Supplication.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sed sumpta de medio" type="straight"/>
+        <underline language="LA" method="pen" text="ignarus, inuitus, sine collegis" type="straight"/>
+        <underline language="LA" method="pen" text="furtim mente ac lingua tituba[n]te fecisse decatur" type="straight"/>
+        <underline language="LA" method="pen" text="impurus atque impius hostis omnium" type="straight"/>
+        <underline language="LA" method="pen" text="contra fas &amp; inter viros saepe mulier &amp; inter mulieres vir fuisset" type="straight"/>
+        <underline language="LA" method="pen" text="ageret illam rem ita raptim &amp; turbulente, vt neque me[n]s, neque vos, neque lingua consisteret" type="straight"/>
+        <underline language="LA" method="pen" text="praeposteris verbis, omnibus obscoenis identidem se ipse reuocando dubitans, timens, haesitans, omnia" type="straight"/>
+        <underline language="LA" method="pen" text="praedo tam barbarus atque immanis" type="straight"/>
+        <underline language="LA" method="pen" text="tot sceleru[m] vnam aram nefarie consecraret? Non" type="straight"/>
+        <underline language="LA" method="pen" text="quanquam &amp; insolentia dominatus extulerat animos, &amp; erat incredibili armatus audacia" type="straight"/>
+        <underline language="LA" method="pen" text="geretur docere antequam ipse didicisset" type="straight"/>
+        <underline language="LA" method="pen" text="tamen obuersabatur ante oculos exterminatoris sui, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="metus furore instinctus, scelere praeceps, neque institutas cerimonias persequi, neque verbu[m] vllum solenne potuit effari?" type="straight"/>
+        <underline language="LA" method="pen" text="quarum vos principes atque" type="straight"/>
+        <underline language="LA" method="pen" text="sceleratissimis manibus tecta, sedésque conuellit" type="straight"/>
+        <underline language="LA" method="pen" text="custos vrbis Minerua" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">19</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">8</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+        <drawing anchor_text="Pr[a]ecatio" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

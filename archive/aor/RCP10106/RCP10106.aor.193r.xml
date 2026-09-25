@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.193r.tif" pagination="385" reader="John Dee" signature="B"/> 
+    <annotation>
+        
+        <marginalia anchor_text="sententia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>sente[n]tia</marginalia_text>
+                </position>
+            </language>
+            <translation>Thought.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Demosthenes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Demosthenes</marginalia_text>
+                    <person name="Demosthenes"/>
+                </position>
+            </language>
+            <translation>Demosthenes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oculos quosdam esse eloquentiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>oculi eloque[n]tia[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Eyes of eloquence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="media quaedam uia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Via media.</marginalia_text>
+                </position>
+            </language>
+            <translation>A middle path.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tropis quos motus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tropi voca[n]tur motus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Tropes are called moves.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Tropus est uerbi uel sermonis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tropi definitio</marginalia_text>
+                </position>
+            </language>
+            <translation>Definition of tropes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inexplicabilis &amp; grammaticis inter ipsos, &amp; philosophis pugna" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Punga inexplicabilis</marginalia_text>
+                </position>
+            </language>
+            <translation>An inexplicable battle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cauillationibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ca[u]illationes</marginalia_text>
+                </position>
+            </language>
+            <translation>Mocking.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="qui fugiunt, ac reformidant" type="straight"/>
+        <underline language="LA" method="pen" text="Ita dum timent, ne aliqua[n]do cadant, semper iacent" type="straight"/>
+        <underline language="LA" method="pen" text="Ego uerò haec lumina orationis, uelut oculos quosdam esse eloquentiae" type="straight"/>
+        <underline language="LA" method="pen" text="clarißimi nostroru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quem inexplicabilis &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="pertinent cauillationibus" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

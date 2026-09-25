@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.040v.tif" reader="John Dee" signature="[Giiij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="arguebat hypocras i[n] libello de sup[er]ficieb[us] regularib[us]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Hipocrates in libello de sup[er]ficieb[us] regularib[us] [etc] 
+                    </marginalia_text>
+                    <person name="Hippocrates"/>
+                </position>
+            </language>
+            <translation>
+                Hippocrates in the book on surfaces and regulations.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="falsig[ra]phi p[ro]prie no[n] sunt litigiosi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        falsigraphi p[ro]priè no[n] su[n]t litigiosi
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                                  <!-- Translation needed -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="po[n]it duas d[iffe]r[enti]as int[er] te[m]ptatiuu[m] [et] falsig[ra]phu[m]" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Differe[n]tia duplex inter falsigraphum et [litigiosum]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The twofold distinction between falsigraphus and contention.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="silogismi falsip[ra]phi p[ro]prie no[n] sunt litigiosi" type="straight"/>
+        <underline language="LA" method="pen" text="Om[n]es linee ducte ab eode[m] pu[n]cto ad eu[n]de[m] pu[n]ctu[m] sunt eq[ua]les" type="straight"/>
+        <underline language="LA" method="pen" text="q[uod] docet p[ar]tholome[us]" type="straight"/>
+        <underline language="LA" method="pen" text="nec e[st] litigiosus siue sophistic[us]" type="straight"/>
+        <underline language="LA" method="pen" text="S[ed] r[ati]o brissonis e[st] litigiosa et sophistica" type="straight"/>
+        <underline language="LA" method="pen" text="silogism[us] falsig[ra]ph[us] ad geometra[m]. sic se h[abet] te[m]ptatiu[us]" type="straight"/>
+        <underline language="LA" method="pen" text="geotra[m] q[ui] fit ex p[ri]ncipijs geometrie male applicat[is]" type="straight"/>
+        <underline language="LA" method="pen" text="male" type="straight"/>
+        <underline language="LA" method="pen" text="false" type="straight"/>
+        <underline language="LA" method="pen" text="q[ui]nq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="appolloniu[m] magnu[m] su[ra] qui[n]decima[m] t[er]cij geometrie" type="straight"/>
+        <underline language="LA" method="pen" text="appolo[n]io sup[ra] s[e]c[un]da[m] duodecimi" type="straight"/>
+        <underline language="LA" method="pen" text="potest applicari ad" type="straight"/>
+        
+    </annotation>
+</transcription>

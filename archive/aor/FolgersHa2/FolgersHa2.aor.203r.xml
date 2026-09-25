@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.203r.tif" pagination="229" reader="Harvey" signature="P3[r]"/>	<!-- ABO 207right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Vir serius, et absolutus non curat multitudine[m] libroru[m],
+						sed valorem.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A serious and comple man does not care for the multitude of books, but for the value.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Scholastici multi: polytechni pauci.
+						Empirici multi:
+						pragmatici pauci: nemo technergus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>There are many scholastics, but a few polytechnics. There are many empiricists, but a few pragmatists. There is no technergus.</translation> <!--JG: God alone knows what 'technergus' means--> <!-- CG: Another wonderful neologism. -->
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Non auctorum pra[e]lector, Sed artium
+						pra[e]fectus, Technergus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Not the lecturer of authors, but the technergus, commander of the arts.</translation> <!--JG: Idem--> <!-- CG: More Neologisms. -->
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Is vir est, qui semper seipsum cogit, et quotidiè extendit extremos uires.
+						Nemo adhuc tantum fecit, quantum potuit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>He who always compels himself and daily extends his extreme powers, is a man. Thus far no one did as much, as he could.</translation>
+		</marginalia>
+
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Nulla virilior sententia, quàm illa Sapientis: Quicquid agis, age summis viribus.
+						Effoeminatum est, tibi parcere; aut non tantum pra[e]stare quotidiè, quantu[m] ualeres,
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						si summa necessitas cogeret.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>No sense is more virile that that of thinking: Whatever you do, do it with the greatest strengths. It is unmanly to spare yourself, or not to excel daily as much as you are strong,
+			if the highest necessity compels you.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Leone di" type="straight"/>
+		<underline language="IT" method="pen" text="mano in mano" type="straight"/>
+		<underline language="IT" method="pen" text="se li mangiaua" type="straight"/>
+		<underline language="IT" method="pen" text="la Volpe" type="straight"/>
+		<underline language="IT" method="pen" text="com'egli staua" type="straight"/>
+		<underline language="IT" method="pen" text="Volpe figliuola, perche non entri" type="straight"/>
+		<underline language="IT" method="pen" text="ben le pedate de gli altri animali, che ci" type="straight"/>
+		<underline language="IT" method="pen" text="io non veggo gia pedata alcuna" type="straight"/>
+		<underline language="IT" method="pen" text="quegli che ne sieno" type="straight"/>
+		<underline language="IT" method="pen" text="Gioue non" type="straight"/>
+		<underline language="IT" method="pen" text="giuramenti falsi" type="straight"/>
+		<underline language="IT" method="pen" text="de gli amanti" type="straight"/>
+		<underline language="IT" method="pen" text="perdonare" type="straight"/>
+		<underline language="IT" method="pen" text="giurano il falso per conto di amore" type="straight"/>
+		<underline language="IT" method="pen" text="il piu suaue, &amp; il piu" type="straight"/>
+		<underline language="IT" method="pen" text="li giuramenti" type="straight"/>
+		<underline language="IT" method="pen" text="cose da fanciulli, i" type="straight"/>
+		<underline language="IT" method="pen" text="amanti accecati dall'" type="straight"/>
+		<underline language="IT" method="pen" text="giuramento di Venere" type="straight"/>
+		<underline language="IT" method="pen" text="Gioue non" type="straight"/>
+		<underline language="IT" method="pen" text="dà in preda a' venti" type="straight"/>
+		<underline language="IT" method="pen" text="L'Amante per" type="straight"/>
+		<underline language="IT" method="pen" text="guardar, che Dio tutt'ode" type="straight"/>
+		<underline language="IT" method="pen" text="Auuiluppa promesse, &amp;" type="straight"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--Vol-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--perdo-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--amo-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--co-->
+		
+		<mark method="pen" name="dot" place="intext"/> <!--visitarlo, ma-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="quegli che ne sieno"/>
+		<mark method="pen" name="dot" place="intext"/> <!--hauere, &-->
+		
+    </annotation>
+</transcription>

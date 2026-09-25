@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.176v.tif" pagination="352" reader="Harvey" signature="Yviiiv"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Anni Spacium.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The space of the year.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="a[e]quinoctij" type="straight"/>
+        <underline language="LA" method="pen" text="dierum trecentorum" type="straight"/>
+        <underline language="LA" method="pen" text="sexaginta" type="straight"/>
+        <underline language="LA" method="pen" text="horarum" type="straight"/>
+        
+    </annotation>
+</transcription>

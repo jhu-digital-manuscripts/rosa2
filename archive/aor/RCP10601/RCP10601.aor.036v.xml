@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.036v.tif" pagination="72" reader="John Dee" signature="[e 4[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Iagour" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iagour.</marginalia_text>
+                    <book title="Yajurveda"/>
+                </position>
+            </language>
+            <translation>The Yajurveda.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Brahmanes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Brahmanes</marginalia_text>
+                </position>
+            </language>
+            <translation>Followers of Brahmanism.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="praestigiatores &amp; incantatores" type="straight"/>
+        <underline language="LA" method="pen" text="ubi sunt optima, sunt" type="straight"/>
+        <underline language="LA" method="pen" text="Apud illos latent infiniti historiaru[m] &amp; librorum antediluuianoru[m] thesauri, quos nos expectare unà cum Enochianis opus est, antequa[m] claritate[m] absoluta[m] rerum Mosaicaru[m] cernamus" type="straight"/>
+        <underline language="LA" method="pen" text="sacrosanctè" type="double"/>
+        <underline language="LA" method="pen" text="uniuersalem intellectum" type="double"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+    </annotation>
+</transcription>

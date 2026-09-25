@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.292r.tif" pagination="35" reader="John Dee" signature="Cc.ii."/>   
+    <annotation>
+        
+        <marginalia anchor_text="certum, comprehe[n]sum, perceptum, ratum, firmum, fixum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        certum
+                        co[m]prehe[n]su[m]
+                        p[rae]ceptum
+                        ratum            <!-- DO: Looks more like 'ratium' though -->
+                        firmu[m]
+                        fixu[m]
+                        stabile. }
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Certain. Comprehended. Perceived. Established. Firm. Fixed. Stable.
+            </translation>
+        </marginalia>
+        <marginalia anchor_text="iudicia ista dialecticae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dialectica[e] iudicia</marginalia_text>
+                </position>
+            </language>
+            <translation>Dialectic decisions.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Plato in Sophista.</marginalia_text>
+                    <person name="Plato"/>
+                    <book title="Sophist"/>
+                </position>
+            </language>
+            <translation>Plato in the Sophist.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Plato aute[m] omne iudicium veritatis, veritatémque ipsam abducta[m] ab opinionibus, &amp; à sensibus cogitationis ipsius &amp; me[n]tis esse voluit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Platonis opinio</marginalia_text>
+                    <person name="Plato"/>
+                </position>
+            </language>
+            <translation>Plato's opinion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Xenocrate[m] sequitur, cuius libri sunt de ratione loquendi multi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Xenocrates de r[ati]o[n]e loque[n]di.</marginalia_text>
+                    <person name="Xenocrates of Chalcedon"/>
+                </position>
+            </language>
+            <translation>Xenocrates of Chalcedon on the rationale of speaking.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="elementis Dialectici" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dialecticoru[m] eleme[n]ta.</marginalia_text>
+                </position>
+            </language>
+            <translation>The elements of the dialecticians.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cleanthe" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cleanthes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Cleanths.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Antipater &amp; Archidemus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Antipater. Archidemus</marginalia_text>
+                    <person name="Antipater of Tarsus"/>        <!-- DO: Not sure if either of these two people are correct -->
+                    <person name="Archidamus II"/>
+                </position>
+            </language>
+            <translation>Antipater. Archidamus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="occludi tabernas iubes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>occludi tabernas iubes</marginalia_text>
+                </position>
+            </language>
+            <translation>You order the shops to be closed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Negat enim vos Zeno, negat Antiochus scire quicquam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Zeno. Antiochus nihil sciri affirmant.</marginalia_text>
+                    <person name="Zeno of Citium"/>
+                    <person name="Antiochus of Ascalon"/>
+                </position>
+            </language>
+            <translation>Zeno [and] Antiochus maintain that nothing is known.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Zeno gestu" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Zenonis gestus.</marginalia_text>
+                    <person name="Zeno of Citium"/>
+                </position>
+            </language>
+            <translation>Zeno's gesture.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>κατάληψις </marginalia_text>   
+                </position>
+            </language>
+            <translation>Direct apprehension.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="scie[n]tiam tale[m] esse dicebat, cuius co[m]potem nisi sapientem esse neminem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>solus sapie[n]s scie[n]tia[e] co[m]po[t]</marginalia_text>
+                </position>
+            </language>
+            <translation>Only a wise person has control of knowledge.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="refero arte[m] sine scientia esse no[n] posse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ars sine scie[n]tia no[n] est.</marginalia_text>
+                </position>
+            </language>
+            <translation>There is no art without knowledge.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Zeuxis, aut Phidias, aut Polycletus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Zeuxis. Polycletus
+                        Phidias.
+                    </marginalia_text>
+                    <person name="Zeuxis"/>
+                    <person name="Polykleitos"/>
+                    <person name="Phidias"/>
+                </position>
+            </language>
+            <translation>
+                Zeuxis. Polykleitos. Phidias.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inscientia multa versaretur in vita" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Inscie[n]tia multa in vita versatur.</marginalia_text>
+                </position>
+            </language>
+            <translation>Much that was unwitting happens in life.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Veru[m] quonia[m] no[n] solu[m] nauta significat, sed etiam Fauonis ipse insusurrat nauigandi nobis Luculle te[m]pus esse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nauta significat nauigandi tempus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The sailor signifies the time for sailing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="plus vno verum esse non possit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Plus vno veru[m] esse no[n] potest.</marginalia_text>
+                </position>
+            </language>
+            <translation>There cannot be more than one truth.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Tam moueor quàm tu Luculle: nec" type="straight"/>
+        <underline language="LA" method="pen" text="me minus hominem quàm te putaueris" type="straight"/>
+        <underline language="LA" method="pen" text="neque pelli, neque moueri potes" type="straight"/>
+        <underline language="LA" method="pen" text="est, qui putet id cuique verum esse quod cuique videatur" type="straight"/>
+        <underline language="LA" method="pen" text="ipsam abducta[m] ab opinionibus, &amp; à sensibus cogitationis ipsius &amp; me[n]tis esse voluit" type="straight"/>
+        <underline language="LA" method="pen" text="multi, &amp; multu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="quo profecto nihil est acutius, nihil politius? à Chrysippo" type="straight"/>
+        <underline language="LA" method="pen" text="abutimer gloria nominis" type="straight"/>
+        <underline language="LA" method="pen" text="in elementis Dialectici" type="straight"/>
+        <underline language="LA" method="pen" text="opinosissimi homines" type="straight"/>
+        <underline language="LA" method="pen" text="in inuidiam, &amp; tanquam in concione[m] vocas" type="straight"/>
+        <underline language="LA" method="pen" text="occludi tabernas" type="straight"/>
+        <underline language="LA" method="pen" text="spectat illud, quum artificia tolli" type="straight"/>
+        <underline language="LA" method="pen" text="Exproma[m] primu[m] illa inuidiosa" type="straight"/>
+        <underline language="LA" method="pen" text="Zeno gestu co[n]ficiebat" type="straight"/>
+        <underline language="LA" method="pen" text="aduersam manu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Assensus huiusmodi" type="straight"/>
+        <underline language="LA" method="pen" text="plane co[m]presserat" type="straight"/>
+        <underline language="LA" method="pen" text="arcte veheme[n]térque" type="straight"/>
+        <underline language="LA" method="pen" text="nec tame[n] nimis elega[n]ter, illa subtilius" type="straight"/>
+        <underline language="LA" method="pen" text="tibi refero arte[m] sine" type="straight"/>
+        <underline language="LA" method="pen" text="quum didicissent id tollere nos quod nusqua[m] esset: quod aute[m] satis esset" type="straight"/>
+        <underline language="LA" method="pen" text="quòd inscientia" type="straight"/>
+        <underline language="LA" method="pen" text="no[n] solu[m] nauta significat, sed" type="straight"/>
+        <underline language="LA" method="pen" text="Fauonius ipse insusurrat nauigandi nobis Luculle te[m]pus" type="straight"/>
+        <underline language="LA" method="pen" text="est mihi perora[n]dum" type="straight"/>
+        <underline language="LA" method="pen" text="vt quum plus vno verum esse non possit, iacêre necesse" type="straight"/>
+        <underline language="LA" method="pen" text="tam nobiles disciplinas, quàm de oculorum sensuúmque reliquorum mendaciis" type="straight"/>
+        
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        
+        <mark method="pen" name="X_sign" place="head"/>
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">4</numeral>
+        
+    </annotation>
+</transcription>

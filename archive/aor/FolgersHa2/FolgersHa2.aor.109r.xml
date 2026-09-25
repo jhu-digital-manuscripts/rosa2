@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.109r.tif" pagination="41" reader="Harvey" signature="[C5r]"/>	<!-- ABO 113right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Nihil tam aduersum Entelechia[e], quàm Venus, et Carcer.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Nothing is more adverse to Actualization than Venus and Jail.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Coelebs, quasi coelitum vnus. a[e]thereus vir.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The celebate man is almost one of the gods. An ethereal man. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nihil eorum durum coelibi, qua[e] uxorio cuiq[ue] durissima.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				None of those things, which are most troublesome for a married man, is troublesome for the celibate man.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Vnum est maximi viri proprium, posse viuere minimo:
+						et Sibi ipsi sufficientem, quàm minimè alijs egere.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				There is one thing particular to the greatest man: being capable of living with less.
+				He should be self-sufficient, rather than have need of others. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						De venere prudentissimè Guicciardinus,
+						i[nfr]a, 163. Hippocratis aphorismus.
+					</marginalia_text>
+					<person name="Venus"/>
+					<person name="Francesco Guicciardini"/>
+					<person name="Hippocrates"/>
+					<internal_ref>
+						<target ref="FolgersHa2:Ha2.170r" text="163"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				Guicciardini, most prudently regarding Venus.
+				[See] below, pg. 163. The aphorism of Hippocrates.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Miser homo, cui adhuc discenda è Libris virtus, aut Industria. 
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Miserable is the man for whom virtue and industriousness must be learned from books.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Venus est maxima inimia solidi corporis, firmi animi, industrij status: abstinentia[e],
+						studij, meditationis, vigilantia[e], Laboris: assuetudinis, patientia[e], Constantia[e]:
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						omnium deniq[ue] arduorum, ingentiumq[ue] operum.
+						Facit semihomines, qui alioqui possent esse solidi viri.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Venus is the greatest enemy of the strong body, the stable mind, and the industrious attitude.
+				She is the enemy of abstinence, study, contemplation, vigilance, work, habit, patience, constancy,
+				and, finally, of all difficult and great tasks. 
+				She produces half-men who would otherwise be whole men.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="questa acqua si seccasse" type="straight"/>
+		<underline language="IT" method="pen" text="non ne potremo poi vscire" type="straight"/>
+		<underline language="IT" method="pen" text="La vergogna" type="straight"/>
+		<underline language="IT" method="pen" text="pungenti stimoli" type="straight"/>
+		<underline language="IT" method="pen" text="rotti i Persiani" type="straight"/>
+		<underline language="IT" method="pen" text="verso casa à piu" type="straight"/>
+		<underline language="IT" method="pen" text="alzatisi i panni dinanzi, virilmente dissero" type="straight"/>
+		<underline language="IT" method="pen" text="valent'huomini" type="straight"/>
+		<underline language="IT" method="pen" text="dentro" type="straight"/>
+		<underline language="IT" method="pen" text="tanta efficacia, &amp; stimolo à quelli huomini" type="straight"/>
+		<underline language="IT" method="pen" text="tornarono alla battaglia" type="straight"/>
+		<underline language="IT" method="pen" text="la vittoria" type="straight"/>
+		<underline language="IT" method="pen" text="virtù dell'huomo" type="straight"/>
+		<underline language="IT" method="pen" text="insino da'nimici." type="straight"/>
+		<underline language="IT" method="pen" text="METELLO" type="straight"/>
+		<underline language="IT" method="pen" text="Macedonico" type="straight"/>
+		<underline language="IT" method="pen" text="morte di Scipione Africano" type="straight"/>
+		<underline language="IT" method="pen" text="malcontento" type="straight"/>
+		<underline language="IT" method="pen" text="Correte" type="straight"/>
+		<underline language="IT" method="pen" text="cadute le mura dlla nostra città" type="straight"/>
+		
+		<symbol name="SS" place="intext"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- do -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Ma -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- anco -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- alte -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- cor -->
+		 
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="non ne potremo poi vscire"/>
+		
+    </annotation>
+</transcription>

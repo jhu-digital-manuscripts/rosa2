@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.056r.tif" pagination="95" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Quanti a[e]stimanda est historia, in qua difficile est decernere, vtra pars prudentior, validior, aut expressa viuidiùs, aut omninò vtilior.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>How valuable a history is, in which it is difficult to establish which part is more prudent, powerful or expressed livelier, or more useful altogether.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Pro nouis hominibus: et nouis Inuentis. Neotechnia[e], et neopraxia[e] Apologia. Perge: perge celeriùs. Liuius est in manibus. 
+                        In quo vno omnes dicendi, agendiq[ue] Imagines, propè animata[e].
+                    </marginalia_text>
+                    <person name="Livy"/>
+                </position>
+            </language>
+            <translation>In support of new men and new discoveries. A defence of new art and practice. Carry on; carry on faster. 
+                It is Livy you are holding in your hands. And in him alone all images of speech and action are virtually brought to life.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aduersus consules ita" type="straight"/>
+        <underline language="LA" method="pen" text="populo" type="straight"/>
+        <underline language="LA" method="pen" text="quibus uelit, consulatu[m] ma[n]det" type="straight"/>
+        <underline language="LA" method="pen" text="praeciditur spes plebeio quoq[ue], si dignus summo honore erit, adipiscendi" type="straight"/>
+        <underline language="LA" method="pen" text="Numan Pompilium" type="straight"/>
+        <underline language="LA" method="pen" text="ne ciuem quidem Romanum" type="straight"/>
+        <underline language="LA" method="pen" text="deinde Tarquinium" type="straight"/>
+        <underline language="LA" method="pen" text="sed ne" type="straight"/>
+        <underline language="LA" method="pen" text="Demarati Corinthij filium" type="straight"/>
+        <underline language="LA" method="pen" text="Seruium Tullium" type="straight"/>
+        <underline language="LA" method="pen" text="captiua Corniculana natu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="patre nullo" type="straight"/>
+        <underline language="LA" method="pen" text="matre serua, ingenio" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; uirtute regnum tenuisse" type="straight"/>
+        <underline language="LA" method="pen" text="T. Tatio Sabino" type="straight"/>
+        <underline language="LA" method="pen" text="nullum fastiditur genus, in quo eniteret uirtus" type="straight"/>
+        <underline language="LA" method="pen" text="creuit imperiu[m] Romanu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="maiores nostri aduenas reges no[n]" type="straight"/>
+        <underline language="LA" method="pen" text="clausa urbs fuerit peregrinae uirtuti" type="straight"/>
+        <underline language="LA" method="pen" text="Claudium certè ge[n]te[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ut uir fortis ac strenuus" type="straight"/>
+        <underline language="LA" method="pen" text="pace belloq[ue] bonus ex plebe, sit Numae, L. Taruinio, Seruio Tullio similis?" type="straight"/>
+        <underline language="LA" method="pen" text="si sit" type="straight"/>
+        <underline language="LA" method="pen" text="decemuiris" type="straight"/>
+        <underline language="LA" method="pen" text="optimis regum" type="straight"/>
+        <underline language="LA" method="pen" text="nouis hominib[us]" type="straight"/>
+        <underline language="LA" method="pen" text="ne res noua institui debet" type="straight"/>
+        <underline language="LA" method="pen" text="quod nondum est factu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ea ne si utilia quidem sint, fieri oportet" type="straight"/>
+        <underline language="LA" method="pen" text="Pontifices, augures" type="straight"/>
+        <underline language="LA" method="pen" text="ce[n]sus in ciuitate" type="straight"/>
+        <underline language="LA" method="pen" text="descriptio centuriarum classiumq[ue] non" type="straight"/>
+        <underline language="LA" method="pen" text="Seruio Tullio es facta" type="straight"/>
+        <underline language="LA" method="pen" text="consules nunquam" type="straight"/>
+        <underline language="LA" method="pen" text="dictatoris nec imperium" type="straight"/>
+        <underline language="LA" method="pen" text="tribuni plebis, [a]ediles, qu[a]estores nulli" type="straight"/>
+        <underline language="LA" method="pen" text="decemuiros legib[us] scribendis" type="straight"/>
+        <underline language="LA" method="pen" text="quin in aeternu[m] urbe condita, &amp; in imme[n]sum crescente" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="head"/> <!--next to page number-->
+        
+        <mark method="pen" name="straight_quotation_mark" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+         
+        <mark method="pen" name="dash" place="right_margin"/> <!--co[n]-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="in quo eniteret uirtus"/>
+        <mark method="pen" name="comma" place="intext"/> <!--ne si-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="nouis hominibus"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="ce[n]sus in"/>
+        
+    </annotation>
+</transcription>

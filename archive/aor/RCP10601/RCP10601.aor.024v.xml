@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.024v.tif" pagination="48" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Vrim &amp; Tumin" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vrim et Tummim.</marginalia_text>
+                </position>
+            </language>
+            <translation>Urim and Thummim.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Olenus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Olenus</marginalia_text>
+                    <person name="Olenus Calenus"/>
+                </position>
+            </language>
+            <translation>Olenus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Aegyptia disciplina" type="straight"/>
+        <underline language="LA" method="pen" text="imperari potentijs separatis" type="straight"/>
+        <underline language="LA" method="pen" text="sacris infulis indutus Pontifex illas literas quae ibi in 12. gemmis" type="straight"/>
+        <underline language="LA" method="pen" text="descriptae, suo assensu" type="straight"/>
+        <underline language="LA" method="pen" text="praesentia" type="straight"/>
+        <underline language="LA" method="pen" text="nomina prima" type="double"/>
+        <underline language="LA" method="pen" text="abscondito 1500" type="straight"/>
+        <underline language="LA" method="pen" text="dea silentij" type="straight"/>
+        <underline language="LA" method="pen" text="sigillato ore" type="straight"/>
+        <underline language="LA" method="pen" text="Olenus" type="straight"/>
+        
+    </annotation>
+</transcription>

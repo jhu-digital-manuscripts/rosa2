@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC122bb35.frontmatter.flyleaf.004r.tif" pagination="title page" reader="John Dee" signature=""/>
+    <annotation>
+         
+        <marginalia date="August 1558" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Joannes Dee 1558 Augusto mese, Lo[n]dini</marginalia_text>
+                    <person name="John Dee"/>
+                    <location name="London"/>
+                </position>
+            </language>
+            <translation>John Dee 1558 in August in London</translation>
+        </marginalia>
+ 
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Megethoscopica Elementa:</marginalia_text>
+                </position>
+            </language>
+            <translation>The Megethoscopic Elements.</translation> <!-- FSF: to be completed; same issue as in c_122_bb_35_f001r --> <!--JG: Used term 'megethoscopic', see: https://www.scribd.com/document/48256398/Graham-Yewbrey-John-Dee-And-The-Sidney-Group-Cosmopolitics-And-Pro-cd3-id1366077362-size30196-->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Sam: Torshel</marginalia_text>
+                    <person name="Samuel Torshell"/>
+                </position>
+            </language>
+            <translation>Samuel Torshell</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>T I: I: K</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pencil" other_reader="unknown modern reader">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>K</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>A. 2758</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" other_reader="unknown modern reader">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>30</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>TR. Ex dono Amicissimi.....</marginalia_text>
+                </position>
+            </language>
+            <translation>[TR]. A present from my dearest.</translation> <!-- FSF: TR maybe an abbreviation for Torshell? -->
+        </marginalia>
+        
+        <!-- FSF: there is also a scribble or florilegium that looks like an abbreviation of a name or so -->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url>http://creativecommons.org/licenses/by/4.0/</url>
+        <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+    </license>
+    <totalPages>384</totalPages>
+    <dates>
+        <startDate>1564</startDate>
+        <endDate>1567</endDate>
+    </dates>
+    <texts>
+        <text id="1">
+            <language>la</language>
+            <title>Selectarum declamationum (Strasbourg, 1564-67)</title>
+            <textId>melanchthon</textId>
+            <pages end="384v" start="1r">384</pages>
+        </text>
+    </texts>
+    <bibliographies>
+         <bibliography lang="en">
+            <title>Selectarum declamationum (Strasbourg, 1564-67)</title>
+            <commonName>Philip Melanchthon, Selectarum declamationum (Strasbourg, 1564-67)</commonName>
+            <dateLabel>1564 - 1567</dateLabel>
+            <origin>Strasbourg</origin>
+            <currentLocation>Princeton University Library</currentLocation>
+            <repository>Princeton University Library</repository>
+            <shelfmark>PA8550 .D43 1564</shelfmark>
+            <author>
+              <name>Melanchthon, Philipp</name>
+              <id>http://www.isni.org/isni/0000000121400378</id>
+            </author>
+            <reader>
+              <name>Gabriel Harvey</name>
+              <id>http://www.isni.org/isni/0000000073570531</id>
+            </reader>
+            <website>https://archaeologyofreading.org/bibliography/Harvey-corpus/Melanchthon</website>
+            <detail>4 v.; 18 cm. (8vo)</detail>
+            <note>Already digitized</note>
+        </bibliography>
+    </bibliographies>
+</book>

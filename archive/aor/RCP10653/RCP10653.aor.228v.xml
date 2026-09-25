@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.228v.tif" pagination="8" reader="John Dee" signature="[Aaa iiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="errorem de annis domini" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota errore[m] de Annis D[omi]ni.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note the mistake in the year.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota hanc phrasim senior vxor 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note this phrase, an older wife.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="scripta redacta" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Domes Day.
+                    </marginalia_text>
+                    <book title="Domesday Book"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="hyda terrae" hand="Italian" id="RCP10653:472:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Hyda terra[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A hide of land.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="huc vsque chronica scripsit" type="straight"/>
+        <underline language="LA" method="pen" text="Marianus Scotus" type="straight"/>
+        <underline language="LA" method="pen" text="sancti Bed[a]e linealiter" type="double"/>
+        <underline language="LA" method="pen" text="vt errorem de annis domini" type="straight"/>
+        <underline language="LA" method="pen" text="obijt Matildis regina, senior" type="straight"/>
+        <underline language="LA" method="pen" text="vxor" type="double"/>
+        <underline language="LA" method="pen" text="filia Baldevvini" type="straight"/>
+        <underline id="RCP10653:472:u0001" language="LA" method="pen" text="vnoquoque aratro, id est, hyda terrae" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <graph book_orientation="0" method="pen" place="left_margin" type="genealogical_tree">
+            <node anchor_text="sancti Bed[a]e" id="n1" person="Bede">Beda</node>
+            <node anchor_text="Marianus Scotus" id="n2" person="Marianus Scotus">Marianus</node>
+             
+        </graph>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP10653:472:m0001"/>
+            <marginal_annotation idref="RCP10653:472:u0001"/>
+            <relation from="RCP10653:472:m0001" to="RCP10653:472:u0001" type="directed"/>
+        </physical_link>
+
+    </annotation>
+</transcription>

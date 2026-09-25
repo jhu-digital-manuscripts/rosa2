@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.057r.tif" pagination="97" reader="John Dee" signature="i"/>
+    <annotation>
+        
+        <marginalia anchor_text="per diem ♄ addenti ad cursum suum numeros" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ♄ auctus numero
+                    </marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>
+                The accession of Saturn in numbers.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="orare" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Preces
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Prayers.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex aliqua parte mitigantur, si in foeminino signo ♄ fuerit inuentus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mala mitiga[n]tur si ♄ in fo[e]minino signo reperiantur.
+                    </marginalia_text>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>
+                Evils are mitigated, if they find Saturn in a feminine sign. 
+            </translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Qua[e] circa horoscopu[m] vel alia loca consideranda sunt.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                These around the horoscope or other places are to be considered.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Loci fortunae inuentio.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The invention of the place of fortune.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="octauo genitur[a]e loco" type="straight"/>
+        <underline language="LA" method="pen" text="debemus ne ☉ coniunctionem, Lunae" type="straight"/>
+        <underline language="LA" method="pen" text="orbi eius quodammodo glutinata" type="straight"/>
+        <underline language="LA" method="pen" text="Vnde orare" type="straight"/>
+        <underline language="LA" method="pen" text="luminibus ♄ retrogrado" type="straight"/>
+        <underline language="LA" method="pen" text="stationem facienti" type="straight"/>
+        <underline language="LA" method="pen" text="si ♂ ad numeru[m] addat" type="straight"/>
+        <underline language="LA" method="pen" text="omniáq[ue] mala crescunt ab iis stellis, si diurna fuerit genitura" type="straight"/>
+        
+        <symbol name="Locus_Fortunae" place="right_margin"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="right_margin"/> 
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

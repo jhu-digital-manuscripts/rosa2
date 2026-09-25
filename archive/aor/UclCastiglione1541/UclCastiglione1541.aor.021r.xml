@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="UclCastiglione1541.021r.tif" pagination="IX[r]" reader="Harvey" signature="[Bvir]"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gioco VII. proposto da M. Federico Fregoso, che è la proposta del 
+                        ragionam[ento] del Cortegian[o]
+                    </marginalia_text>
+                    <person name="Federigo Fregoso"/>
+                </position>
+            </language>
+            <translation>
+                Game VII, proposed by Messer Federigo Fregoso, which is the proposal of 
+                the topic of the courtier.      
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Lode della Corte d'Urbino.
+                    </marginalia_text>
+                    <location name="Urbino"/>
+                </position>
+            </language>
+            <translation>
+                Praise for the court of Urbino.
+            </translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

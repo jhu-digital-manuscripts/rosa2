@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.064r.tif" pagination="127" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="exemplo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exemplum</marginalia_text>
+                </position>
+            </language>
+            <translation>An example.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Rabirio Posthumo Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cice[ro] Pro Posthum⁰</marginalia_text>
+                    <person name="Cicero"/>
+                    <book title="Pro Rabirio Posthumo"/>
+                </position>
+            </language>
+            <translation>Cicero Pro Postumo.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Milonis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Milone.</marginalia_text>
+                    <book title="Pro Milone"/>
+                </position>
+            </language>
+            <translation>Pro Milone.</translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.082v.tif" reader="Harvey" signature="[Kiii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Comes Purl. l.I.obs. 142.</marginalia_text>
+                    <person name="Jacopo di Porcia"/>
+                    <book title="The preceptes of warre"/>
+                </position>
+            </language>
+            <translation>Jacopo di Porcia, book 1, observation 142.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Politicè.</marginalia_text>
+                </position>
+            </language>
+            <translation>Politically.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="intended" type="straight"/>
+        <underline language="EN" method="pen" text="fayned" type="straight"/>
+        <underline language="EN" method="pen" text="cytezens had sent hym letters" type="straight"/>
+        <underline language="EN" method="pen" text="any wyse to retourne" type="straight"/>
+        <underline language="EN" method="pen" text="retretynge a lyttell backe" type="straight"/>
+        <underline language="EN" method="pen" text="ambassadours" type="straight"/>
+        <underline language="EN" method="pen" text="Chalcidens throughe" type="straight"/>
+        <underline language="EN" method="pen" text="hope of the humanitie" type="straight"/>
+        <underline language="EN" method="pen" text="kepinge of theyr" type="straight"/>
+        <underline language="EN" method="pen" text="whose power" type="straight"/>
+        <underline language="EN" method="pen" text="not lokynge" type="straight"/>
+        <underline language="EN" method="pen" text="able to resiste" type="straight"/>
+        <underline language="EN" method="pen" text="Agesilaus" type="straight"/>
+        <underline language="EN" method="pen" text="he retreated a lyttell" type="straight"/>
+        <underline language="EN" method="pen" text="good occasion to" type="straight"/>
+        <underline language="EN" method="pen" text="beinge destitute of succours" type="straight"/>
+        <underline language="EN" method="pen" text="Alcibiades" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="cytezens had sent hym letters"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="hope of the humanitie"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="any wyse to retourne"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="retretynge"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="not lokynge"/>
+        <mark language="EN" method="pen" name="X_sign" place="intext" text="able to resiste"/>
+        <mark method="pen" name="X_sign" place="intext"/>
+        
+    </annotation>
+</transcription>

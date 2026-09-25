@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.073r.tif" pagination="145" reader="John Dee" signature="k"/> 
+    <annotation>
+        
+        <marginalia anchor_text="uituperatione ordo constabit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vituperatio ex eijsdem constat</marginalia_text>
+                </position>
+            </language>
+            <translation>Censure continues from the same.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="post mortem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Post morte[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>After death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Iudaicae superstitionis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iudaica sup[er]stitio</marginalia_text>
+                </position>
+            </language>
+            <translation>Jewish superstition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoteles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aristoteles</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ubi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>VBI</marginalia_text>
+                </position>
+            </language>
+            <translation>Where.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="iudicum permiscenda laus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iudicu[m] laus</marginalia_text>
+                </position>
+            </language>
+            <translation>Praise of judges.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cornelius Celsus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cornelius Celsus</marginalia_text>
+                    <person name="Aulus Cornelius Celsus"/>
+                </position>
+            </language>
+            <translation>Cornelius Celsus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="odimus" type="straight"/>
+        <underline language="LA" method="pen" text="qui sint audientiu[m] mores, quae" type="straight"/>
+        <underline language="LA" method="pen" text="Ipsoru[m] etiam iudicum permiscenda laus semper: nam id" type="straight"/>
+        
+    </annotation>
+</transcription>

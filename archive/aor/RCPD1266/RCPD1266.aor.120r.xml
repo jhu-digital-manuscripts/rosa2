@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.120r.tif" pagination="225" reader="John Dee"/> 
+    <annotation>
+        
+       <marginalia anchor_text="respectu" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>Nota: Respectu</marginalia_text>
+               </position>
+           </language>
+           <translation>Note: with respect.</translation>
+       </marginalia> 
+        
+        <marginalia anchor_text="Scythas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Scytha[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Scythians.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quatuor terrae angulos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Quatuor Terra[e] Anguli</marginalia_text>
+                </position>
+            </language>
+            <translation>The four corners of the land.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tenuerint Gomeritae &amp; Togormaei aperit" type="straight"/>
+        <underline language="LA" method="pen" text="latera aquilonis" type="double"/>
+        <underline language="LA" method="pen" text="respectu Iudaeae" type="triple"/>
+        <underline language="LA" method="pen" text="Indicem Biblicum" type="straight"/>
+        <underline language="LA" method="pen" text="nomen Africa" type="straight"/>
+        <underline language="LA" method="pen" text="quo Magogas" type="straight"/>
+        <underline language="LA" method="pen" text="perperam" type="straight"/>
+        <underline language="LA" method="pen" text="explicatione Gog &amp; Magog" type="straight"/>
+        <underline language="LA" method="pen" text="historiam seu praedictionem" type="straight"/>
+        <underline language="LA" method="pen" text="reuocandi ex nationibus &amp; gentibus, in quas dispersi" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

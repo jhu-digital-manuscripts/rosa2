@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.090r.tif" pagination="90" reader="John Dee" signature="Mij"/> 
+
+<annotation>
+    
+    <marginalia hand="Italian" method="pen">
+        <language ident="LA">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>Nota.</marginalia_text>
+            </position>
+        </language>
+       <translation>Note.</translation>
+    </marginalia>
+    
+    <marginalia anchor_text="vicini, et habitatori" hand="Italian" method="pen">
+        <language ident="ES">
+            <position book_orientation="0" place="right_margin">
+                <marginalia_text>hispania. Vezinos et Moradores</marginalia_text>
+                <location name="Spain"/>
+            </position>
+        </language>
+        <translation>Spain. Neighbours and inhabitants.</translation>
+    </marginalia>
+    
+    
+    <underline language="IT" method="pen" text="et patenti, che voi concederete, siano, et si espediscano, et si concedano in nostro nome, dicendo, Don Fernando, et Donna Isabella, per la gratia di Dio Re, et Reina " type="straight"/>
+    <underline language="IT" method="pen" text="Et commandiamo à tutti i vicini, et habitatori, et alle altre persone, che si ritroueranno in dette Isole, e terra ferma, che vi obediscano, come nostro Vicere, et Gouernatore di quelle: et a quelli" type="straight"/>
+    <underline language="IT" method="pen" text="anderanno per detti Mari" type="double"/>
+    
+    
+    <mark method="pen" name="bracket" place="right_margin"/>
+    
+    
+</annotation>
+    
+</transcription>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="RCP7831-1.008r.tif" pagination="5" reader="Dee" signature="Aiij[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="haec Platonica accipimus ratione" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Platonica [ratione]</marginalia_text> <!--JG: Text has been cut off. Based on the printed text and the way Dee abbreviates particular words, I reckon this should be 'ratione'-->
+                </position>
+            </language>
+            <translation>With a Platonic reasoning.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Saturnum corpus nostrum quodammodo frigidum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Saturni frigus qua[...]</marginalia_text> <!--JG: Text has been cut off-->
+                </position>
+            </language>
+            <translation>The cold of Saturn [...].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quia calorem &amp; humorem nostro minorem suo radio desuper instillat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ha[e]c r[ati]o no[n] est in Ptoloma[eo]</marginalia_text> <!--JG: Text has been cut off-->
+                    <person name="Ptolemy"/>
+                </position>
+            </language>
+            <translation>The reasing is not in Ptolemy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="credas Solis corpus in suo orbe calidum esse" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Solem no[n] esse calidum [...] suo orbe</marginalia_text> <!--JG: Text has been cut off-->
+                </position>
+            </language>
+            <translation>[...] that the sun isn't warm in its sphere.</translation>
+        </marginalia>
+      
+      <underline language="LA" method="pen" text="haec Platonica" type="straight"/>
+        <underline language="LA" method="pen" text="ut firgidum appelletur, quod minimi caloris est cause: siccum uerò, quod humorem nobis exhibet minium" type="straight"/>
+        <underline language="LA" method="pen" text="quia calorem &amp; humorem nostro minorem suo radio desuper instillat: &amp; ita de reliquis" type="straight"/>
+        <underline language="LA" method="pen" text="inferioribus, magis, minus, pro insita cuique ui, uel augere, uel ciere, uel fouere" type="straight"/>
+        <underline language="LA" method="pen" text="in" type="straight"/>
+        <underline language="LA" method="pen" text="per illum" type="straight"/>
+        <underline language="LA" method="pen" text="congenitam cuique signo ac stellae uim, &amp; naturam" type="straight"/>
+        <underline language="LA" method="pen" text="sed bene in elementis: elementaribusque rebus, eiuscemodi qualitates inducere, ac mouere, mouendo afficere, &amp; afficiendo apparare, atque contemperare" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="inferioribus, magis, minus, pro insita cuique ui, uel augere, uel ciere, uel fouere"/>
+        
+        <numeral language="LA" place="intext" text="in">1</numeral>
+        <numeral language="LA" place="intext" text="per illum">2</numeral>
+        
+        <errata amendedtext="aëre" copytext="aere" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

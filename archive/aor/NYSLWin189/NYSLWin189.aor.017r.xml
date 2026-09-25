@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.017r.tif" reader="John Dee" signature="Eij"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Generalis</marginalia_text>
+                </position>
+            </language>
+            <translation>In general.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Dieta[e] r[ati]o in morbis</marginalia_text>
+                </position>
+            </language>
+            <translation>The relation of the diet to the illnesses.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Arsenischen" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Arsenicum</marginalia_text>
+                </position>
+            </language>
+            <translation>Arsenic.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="podagra" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Podagra</marginalia_text>
+                </position>
+            </language>
+            <translation>Gout.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="simplicium so außerthalb den bederen" type="straight"/>
+        <underline language="DE" method="pen" text="der composition in" type="straight"/>
+        <underline language="DE" method="pen" text="die hitz" type="double"/>
+        <underline language="DE" method="pen" text="die seure / etc." type="straight"/>
+        <underline language="DE" method="pen" text="den selben liquoribus feuchtigkeiten deß lands erwachsen" type="straight"/>
+        <underline language="DE" method="pen" text="das deß bads eygenschafft vnnd die diet zůsammen stim[m]end" type="straight"/>
+        <underline language="DE" method="pen" text="die abstinentz" type="straight"/>
+        <underline language="DE" method="pen" text="confortieren" type="straight"/>
+        <underline language="DE" method="pen" text="das best von essen" type="straight"/>
+        <underline language="DE" method="pen" text="mucilagonischen säftigen cörpern" type="straight"/>
+        <underline language="DE" method="pen" text="schleimische" type="straight"/>
+        <underline language="DE" method="pen" text="mit grosser" type="straight"/>
+        <underline language="DE" method="pen" text="abstinentz gehalten" type="double"/>
+        <underline language="DE" method="pen" text="solcher viscositer" type="double"/>
+        <underline language="DE" method="pen" text="mit aller völle in essen vnd trincken baden sollen" type="straight"/>
+        
+        <symbol language="LA" name="Sun" place="right_margin" text="göldischen"/> 
+        
+    </annotation>
+</transcription>

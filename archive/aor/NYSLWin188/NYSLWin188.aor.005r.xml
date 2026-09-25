@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.005r.tif" pagination="5" reader="John Dee" signature="B"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>No[n] vera natatio sed Natationis similis motio [et cetera].</marginalia_text> <!--JG: unsure abt motro, one would expect motus?--> <!--KS: looks like 'motio'-->
+                </position>
+            </language>
+            <translation>There is no true swimming but a movement akin to swimming.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="seindt auß dem Himmel gewachsen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Stella[e] ex co[e]lo nata[e] sunt</marginalia_text> 
+                </position>
+            </language>
+            <translation>Stars are born from the heaven.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nur seindt sei einmal gewachsen vnd bleibent also für vnd für" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Stella[e] semel ia[m] nata[e] perpetuo manent</marginalia_text> 
+                </position>
+            </language>
+            <translation>Now once stars are born, they remain perpetually.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="die Sterne aberzegehent nur einmal vnd kommend nien wider das ist im Ende der welt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Stella[e] semel peribunt in fine Mundi, nec vnqu[am] denuo erunt.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Once stars perish in the end of the world, they will not be ever again.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nun habe[n] sie ein farbe[n]" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>for the most part one colour</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="die Sterne aber zergehent nur einmal vnd kommend nienen wider das ist im Ende der welt" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nota</marginalia_text> 
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="feurig" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Color igneus.</marginalia_text> 
+                </position>
+            </language>
+            <translation>A fiery colour.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="schwimment ding tragen mag wie ein Wasser vnd ist doch nicht" type="straight"/>
+        <underline language="DE" method="pen" text="sondern drucken" type="straight"/>
+        <underline language="DE" method="pen" text="nicht geschwümmen" type="straight"/>
+        <underline language="DE" method="pen" text="seindt auß dem Himmel gewachsen" type="straight"/>
+        <underline language="DE" method="pen" text="stand im selbigen fligentweise" type="straight"/>
+        <underline language="DE" method="pen" text="vogel im lufft" type="straight"/>
+        <underline language="DE" method="pen" text="Nur seindt sei einmal gewachsen vnd bleibent also für vnd für" type="straight"/>
+        <underline language="DE" method="pen" text="die Sterne aber zergehent nur einmal" type="straight"/>
+        <underline language="DE" method="pen" text="kommend nienen wider das ist im Ende der welt" type="straight"/>
+        <underline language="DE" method="pen" text="aber jre früchte kom[m]ent vnd vergehent" type="straight"/>
+        <underline language="DE" method="pen" text="mehrerm theil" type="straight"/>
+        <underline language="DE" method="pen" text="feurig" type="straight"/>
+        <underline language="DE" method="pen" text="Erden grün die meriste farbe[n]" type="straight"/>
+        
+        <mark language="DE" method="pen" name="comma" place="intext" text="farbe[n] zu"/>
+        
+    </annotation>
+</transcription>

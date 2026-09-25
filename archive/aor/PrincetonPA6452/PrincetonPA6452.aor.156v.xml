@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.156v.tif" pagination="296" reader="Harvey" signature="[bb4v]"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Annibalis industria, et vigilantia horribilis: vt posteà Caesaris, maxime omnium.
+                    </marginalia_text>
+                    <person name="Hannibal"/>
+                    <person name="Julius Caesar"/>
+                    <emphasis method="pen" text="vigilantia horribilis" type="straight"/>
+                </position>
+            </language>
+            <translation>Hannibal’s amazing assidiousness and watchfulness, as later that of Caesar most of all.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Annibal aeger oculis" type="straight"/>
+        <underline language="LA" method="pen" text="elephanto, qui" type="straight"/>
+        <underline language="LA" method="pen" text="extaret, uectus" type="straight"/>
+        <underline language="LA" method="pen" text="uigilijs" type="straight"/>
+        <underline language="LA" method="pen" text="altero oculo capitur" type="straight"/>
+        <underline language="LA" method="pen" text="ferociter omnia ac" type="straight"/>
+        <underline language="LA" method="pen" text="pronior esset in uitia" type="straight"/>
+        <underline language="LA" method="pen" text="agitare eum atq[ue] iritare Poenus parat" type="straight"/>
+        <underline language="LA" method="pen" text="Flaminius" type="straight"/>
+        <underline language="LA" method="pen" text="ne quieto quidem hoste ipse quieturus" type="straight"/>
+        <underline language="LA" method="pen" text="suum id" type="straight"/>
+        <underline language="LA" method="pen" text="ad ipsa Romana moenia ire oppugnanda" type="straight"/>
+        <underline language="LA" method="pen" text="concilio salutaria magis q[uam] speciosa suadentibus" type="straight"/>
+        <underline language="LA" method="pen" text="coniunctis exercitibus communi" type="straight"/>
+        <underline language="LA" method="pen" text="iratus se ex concilio proripuit" type="straight"/>
+        <underline language="LA" method="pen" text="ante moenia sedeamus, inquit" type="straight"/>
+        <underline language="LA" method="pen" text="Camillum ab" type="straight"/>
+        <underline language="LA" method="pen" text="Flaminium ab Arretio patres" type="straight"/>
+        <underline language="LA" method="pen" text="ipse in equum insiluisset, equus" type="straight"/>
+        <underline language="LA" method="pen" text="Num literas quoq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="quae me rem" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="head" text="Annibalis industria, et vigilantia horribilis: vt posteà Caesaris, maxime omnium."/>
+        
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--Hetru-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--spe-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--praeda[m]-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--obtorpue-->
+        
+    </annotation>
+</transcription>

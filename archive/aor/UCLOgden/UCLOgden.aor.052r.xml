@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.052r.tif" pagination="87" reader="John Dee" signature="h 2"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        domin[us] loci ♀ et ☾
+                    </marginalia_text>
+                    <symbol_in_text name="Venus"/>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>
+                The Lord of the place, Venus and the moon.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Summi oratores. 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The greatest orators.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Si uero ☾ sic fuerit collocata, ut ad nullum feratur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ☾ cursu vacua.
+                    </marginalia_text>
+                    <symbol_in_text name="Moon"/>
+                </position>
+            </language>
+            <translation>
+                The empty course of the moon.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="si ♀ uel ☾, in ♄ uel ♂ domo" type="straight"/>
+        <underline language="LA" method="pen" text="sine opportuno ♃" type="straight"/>
+        <underline language="LA" method="pen" text="sit'q[ue] luminibus plena" type="straight"/>
+        <underline language="LA" method="pen" text="opportunis geniturae" type="straight"/>
+        <underline language="LA" method="pen" text="in signis" type="straight"/>
+        <underline language="LA" method="pen" text="Si uero deficiens" type="straight"/>
+        <underline language="LA" method="pen" text="eru[n]t autem parentibus in infinitum inferiores. Corpus" type="straight"/>
+        <underline language="LA" method="pen" text="si per uacuu[m] currens" type="straight"/>
+        <underline language="LA" method="pen" text="Sed cum animum, &amp; corpus graui" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; hac atq[ue] illac, misera peregrinatione pertraxerit, tunc multorum bonorum, &amp; maximae felicitatis decernit augmenta, ut qua[n]tum primae" type="straight"/>
+        
+        <symbol name="Saturn" place="right_margin"/>
+        <symbol name="Mars" place="right_margin"/>
+        
+    </annotation>
+</transcription>

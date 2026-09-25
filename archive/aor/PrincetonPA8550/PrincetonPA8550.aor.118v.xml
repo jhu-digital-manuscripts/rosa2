@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonPA8550.118v.tif" pagination="236" reader="Harvey" signature="Pviv"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Jus Romanum optimum:
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Best Roman law.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quod plus grauitatis habet ca[e]teris" type="straight"/>
+        <underline language="LA" method="pen" text="Iudaica[e] leges" type="straight"/>
+        <underline language="LA" method="pen" text="Spartana[e] leges no[n]" type="straight"/>
+        <underline language="LA" method="pen" text="connubijs. Attica[e] leges" type="straight"/>
+        <underline language="LA" method="pen" text="ad Romanam formam" type="straight"/>
+        <underline language="LA" method="pen" text="affinitas decipit homines" type="straight"/>
+        <underline language="LA" method="pen" text="pra[e]texitur interesse immanibus usuris" type="straight"/>
+        <underline language="LA" method="pen" text="pra[e]textu societatis" type="straight"/>
+        <underline language="LA" method="pen" text="interdum" type="straight"/>
+        <underline language="LA" method="pen" text="emptionibus uoragines usurarum teguntur" type="straight"/>
+        
+        <mark method="pen" name="X_sign" place="head"/>
+        
+    </annotation>
+</transcription>

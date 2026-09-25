@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.043v.tif" pagination="[43[v]]" reader="John Dee" signature="[Liij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Also ist die heisseste Prima materia in die Sonne kommen vnd die kältiste in Saturnum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Prima materia calidissima in ☉ frigidissima in ♄</marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                    <symbol_in_text name="Saturn"/>
+                </position>
+            </language>
+            <translation>The prime matter [is] hottest in the sun and coldest in Saturn. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="der Schnee ist des Winthers Regen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Causa[e] in hyeme et a[e]state</marginalia_text>
+                </position>
+            </language>
+            <translation>The causes are in winter and summer.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="humiditatibus vndosis" type="straight"/>
+        <underline language="DE" method="pen" text="nichts kälters sein mag dann sie seindt" type="straight"/>
+        <underline language="DE" method="pen" text="kältiste in Saturnum" type="straight"/>
+        <underline language="DE" method="pen" text="kälte Stern" type="straight"/>
+        <underline language="DE" method="pen" text="vom jrrgang" type="straight"/>
+        <underline language="DE" method="pen" text="ein Disconcordation" type="straight"/>
+        <underline language="DE" method="pen" text="Winthersternen im Sommer" type="straight"/>
+        <underline language="DE" method="pen" text="zeitig" type="double"/>
+        <underline language="DE" method="pen" text="sich in jrem" type="straight"/>
+        <underline language="DE" method="pen" text="zirckel lauff" type="straight"/>
+        <underline language="DE" method="pen" text="zeit zephyrisch" type="straight"/>
+        <underline language="DE" method="pen" text="Borealisch" type="straight"/>
+        <underline language="DE" method="pen" text="Mond mitstimpt" type="straight"/>
+        <underline language="DE" method="pen" text="zeit fruchtbar" type="straight"/>
+        <underline language="DE" method="pen" text="erzeigen jren Schnee" type="straight"/>
+        <underline language="DE" method="pen" text="Region wer" type="straight"/>
+        <underline language="DE" method="pen" text="zu nider" type="straight"/>
+        <underline language="DE" method="pen" text="Constellation" type="straight"/>
+        <underline language="DE" method="pen" text="Schnee ein Regen" type="double"/>
+        <underline language="DE" method="pen" text="dann die wärme vnder dem Stern im Lufft" type="straight"/>
+        <underline language="DE" method="pen" text="resoluiers" type="double"/>
+        <underline language="DE" method="pen" text="ein Wasser" type="double"/>
+        
+        <symbol language="DE" name="Sun" place="left_margin" text="Sonne"/>
+        <symbol language="DE" name="Saturn" place="left_margin" text="Saturnum"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.105v.tif" pagination="194" reader="John Dee" signature="[r[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Firmicus Lollianum iurisiurandi relligio[n]e sibi astringit n[a]e ha[e]c publicet. 
+                    </marginalia_text>
+                    <person name="Lollianus Mavortius"/>
+                    <person name="Julius Firmicus Maternus"/>
+                </position>
+            </language>
+            <translation>
+                Firmicus bound Lollianus to himself with the duty of an oath lest he publicised these things.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="per animae descensum, &amp; ascensum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        A[n]i[m]a[e] desce[n]sus et asce[n]sus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The descent and ascent of the soul.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="per animae descensum, &amp; ascensum" type="straight"/>
+        <underline language="LA" method="pen" text="ne h[a]ec ueneranda co[m]munia" type="straight"/>
+        <underline language="LA" method="pen" text="uel imperitis auribus intimentur, sed iis tantum, quos animus incorruptus" type="straight"/>
+        <underline language="LA" method="pen" text="uiuendi ordinem" type="straight"/>
+        <underline language="LA" method="pen" text="castro ac pudico praesidio mentis instituit" type="straight"/>
+        <underline language="LA" method="pen" text="scientia diuinationis" type="straight"/>
+        <underline language="LA" method="pen" text="partili ratione" type="double"/>
+        <underline language="LA" method="pen" text="maxima licet animi trepidatione" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- ueneranda co[m]munia -->
+        
+    </annotation>
+</transcription>

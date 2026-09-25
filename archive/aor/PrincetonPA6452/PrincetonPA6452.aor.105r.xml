@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.105r.tif" pagination="193" reader="Harvey" signature="r[1r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="T. Manlius, P. Decius, L. Papyrius" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Papyrius, Manlius, Decius, most valorous, &amp; right worthie men. A singular 
+                    </marginalia_text>
+                    <person name="Lucius Papirius Cursor"/>
+                    <person name="Titus Manlius Torquatus"/>
+                    <person name="Publius Decius Mus I"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>discourse of the valour of Alexander [the] Great: </marginalia_text>
+                    <person name="Alexander the Great"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>i[nfr]a, l. 9.</marginalia_text>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000237" text="l. 9."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] below, bk. 9.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="missis legatis ad senatu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="T. Manlius consul filium suum" type="straight"/>
+        <underline language="LA" method="pen" text="contra edictum pugnauerat" type="straight"/>
+        <underline language="LA" method="pen" text="P. Decius" type="straight"/>
+        <underline language="LA" method="pen" text="deuouit se pro exercitu" type="straight"/>
+        <underline language="LA" method="pen" text="cum in medios hostes se intulisset" type="straight"/>
+        <underline language="LA" method="pen" text="T. Manlio in urbem" type="straight"/>
+        <underline language="LA" method="pen" text="nemo ex iuuentute obuiam processit" type="straight"/>
+        <underline language="LA" method="pen" text="oppidu[m] Cales" type="straight"/>
+        <underline language="LA" method="pen" text="Fregellae colonia" type="straight"/>
+        <underline language="LA" method="pen" text="Veneficium compluriu[m] matronarum" type="straight"/>
+        <underline language="LA" method="pen" text="plurimae statim epotis medicaminibus" type="straight"/>
+        <underline language="LA" method="pen" text="Lex de Veneficio" type="straight"/>
+        <underline language="LA" method="pen" text="Plebs nexu liberata" type="straight"/>
+        <underline language="LA" method="pen" text="libidinem" type="straight"/>
+        <underline language="LA" method="pen" text="Publio debitori suo stuprum inferre" type="straight"/>
+        <underline language="LA" method="pen" text="L. Papyrius dictator reuersus" type="straight"/>
+        <underline language="LA" method="pen" text="occasione rei bene gerendae inuitatus" type="straight"/>
+        <underline language="LA" method="pen" text="contra edictum eius" type="straight"/>
+        <underline language="LA" method="pen" text="dictator de magistro equitem supplicium sumpturus" type="straight"/>
+        <underline language="LA" method="pen" text="causa parum proficeret" type="straight"/>
+        <underline language="LA" method="pen" text="populi precibus donatus est" type="straight"/>
+        
+        <symbol name="JC" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--con-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--Ro-->
+        <mark method="pen" name="plus_sign" place="right_margin"/> 
+        
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="contra edictum"/>
+        <mark language="LA" method="pen" name="diacritic" place="intext" text="aduersum"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Veneficium"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Lex de Veneficio"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="contra edictum"/>
+        
+    </annotation>
+</transcription>

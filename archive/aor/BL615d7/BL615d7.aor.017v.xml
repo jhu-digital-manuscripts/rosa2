@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.017v.tif" pagination="[17v]" reader="John Dee" signature="[C[v]]"/> 
+    
+    <annotation>
+        <marginalia anchor_text="Quisai" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quinsay</marginalia_text>
+                    <location name="Hangzhou"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Note, the quantitie of his League, less tha[n] 3 mile</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="in vn fiume" type="straight"/>
+        <underline language="IT" method="pen" text="trouano dugento città edificate con" type="straight"/>
+        <underline language="IT" method="pen" text="di molte colonne" type="straight"/>
+        <underline language="IT" method="pen" text="ventisei spatij" type="straight"/>
+        <underline language="IT" method="pen" text="dugento, &amp; cinquanta miglia" type="straight"/>
+        <underline language="IT" method="pen" text="Quisai" type="straight"/>
+        <underline language="IT" method="pen" text="trentacinque leghe" type="straight"/>
+        <underline language="IT" method="pen" text="Città del cielo" type="double"/>    
+        
+    </annotation>
+</transcription>

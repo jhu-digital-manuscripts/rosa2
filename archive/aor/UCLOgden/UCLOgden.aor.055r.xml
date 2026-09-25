@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.055r.tif" pagination="93" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="caducos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Caduci
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Falling.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="biothanatos" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Biothanati.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Those who died of violence. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="neocoros" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Neocori
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The temple keepers.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="pro locoru[m] tamen, signorúmq[ue] potestate" type="straight"/>
+        <underline language="LA" method="pen" text="minuta lumine ☾ in nocturna genitura feratur" type="straight"/>
+        <underline language="LA" method="pen" text="minuta lumine in diurna genitura" type="straight"/>
+        <underline language="LA" method="pen" text="si plena" type="straight"/>
+        <underline language="LA" method="pen" text="minuta lumine" type="straight"/>
+        <underline language="LA" method="pen" text="per noctem" type="straight"/>
+        <underline language="LA" method="pen" text="si plena" type="straight"/>
+        <underline language="LA" method="pen" text="neocoros" type="straight"/>
+        <underline language="LA" method="pen" text="minuta lumine" type="straight"/>
+        
+        <mark method="pen" name="scribble" place="left_margin"/>
+        
+    </annotation>
+</transcription>

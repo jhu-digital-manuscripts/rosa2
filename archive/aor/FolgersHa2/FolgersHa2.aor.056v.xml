@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.056v.tif" pagination="432" reader="Harvey"/>	<!-- ABO 61left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Sum do all bie halues: as Castor liues
+					</marginalia_text>
+					<person name="Castor"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						halfe a Life: &amp; Pollux
+						dyed half
+						a death.
+					</marginalia_text>
+					<person name="Pollux"/>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Tota vita,
+						Eutrapeli vita.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				An entire life is the life of Eutrapelus.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						i[nfr]a, 450. 455.
+					</marginalia_text>
+					<internal_ref>
+						<target ref="FolgersHa2:Ha2.065v" text="450"/>
+						<target ref="FolgersHa2:Ha2.068r" text="455"/>
+					</internal_ref>
+				</position>
+			</language>
+			<translation>
+				[See] below, pg. 450, 455.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						His iest more Serious, then anie mans earnest.
+					</marginalia_text>
+					<emphasis method="pen" text="iest more Serious, then anie mans earnest" type="straight"/>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Vnicus mundi megalander. Tanq[uam] auctoritatem habens. 
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="IT">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Come Superiore à tutti.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Pra[e]cepta scitè Iocandi, in Oratore Ciceronis; Quinctiliani; Vilsoni. Item in Aulico
+						Castilionis; et Mensa Philosophica. { Exempla in facetijs Barlandi; Manlij;
+						Poggij; Bebelij; Bonauentura[e]; Scoggini;
+					</marginalia_text>
+					<person name="Cicero"/>
+					<person name="Quintilian"/>
+					<person name="Thomas Wilson"/>	
+					<person name="Castiglione"/>
+					<person name="Adriaan van Baerland"/>
+					<person name="Johannes Jacobus Manlius"/>
+					<person name="Poggio Bracciolini"/>
+					<person name="Heinrich Bebel"/>
+					<person name="Bonaventure"/>
+					<person name="Andrew Boorde"/>	
+					<book title="De Oratore"/>
+					<book title="Book of the Courtier"/>
+					<book title="Mensa philosophica"/>
+					<emphasis method="pen" text="Pra[e]cepta scitè" type="straight"/>
+					<emphasis method="pen" text="Exempla" type="straight"/>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						Sceltoni.
+						Sed vnus Domenicus,
+							instar
+							omniu[m],
+						et numero, et
+						pondere. Nisi quòd iuuat, 
+						sa[e]pè etiam legere Cicerone[m],
+						Castilionem; Barlandum,
+						Mensam Philosophicam; Manlium,
+					</marginalia_text>
+					<person name="John Skelton"/>
+					<person name="Lodovico Domenichi"/>
+					<person name="Cicero"/>
+					<person name="Castiglione"/>
+					<person name="Adriaan van Baerland"/>
+					<person name="Johannes Jacobus Manlius"/>
+					<book title="Mensa philosophica"/>
+				</position>
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						interdum quoq[ue] reliquos. Interim qui vnum habet Domenicum habet omnes.
+					</marginalia_text>
+					<person name="Lodovico Domenichi"/>
+				</position>
+			</language>
+			<translation>
+				The one high-souled man of the world, having just as much authority. As superior to all. 
+					<!-- CG: Megalander seems to be a neologism stemming from "big" and "man." There's an equivalent, more or less, in Greek. -->
+					<!-- CG: Specialist help needed. -->
+				Lessons for clever jesting in Cicero's Orator, in Quintilian, and in Wilson. Likewise, in Castiglione's
+				Courtier; and in the Mensa Philosophica. { Examples in the jokes, of Barland, Manlius, Poggio,
+				Bebel, Bonaventure, Scogginus [=Andrew Boorde], and Skelton.
+				But Domenichi alone is an example for all in both quantity and weight. Except that it is also useful
+				to read Cicero, Castiglione, Barland, the Mensa Philsophica, Manlius, and the others now and then.
+				Nevertheless, whoever has just Domenichi has everything.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="180" place="tail">
+					<marginalia_text>
+						Excepto Vnico; alij omnes homuli, aut muliercula[e]. 
+						Tanq[uam] Pictura[e], aut statua[e], aut signa.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				With a single exception, all others are little men and women.
+				Like pictures, or statues, or signs.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="MOTTI DIVERSI" type="straight"/>
+		<underline language="IT" method="pen" text="Porcacchi" type="straight"/>
+		<underline language="IT" method="pen" text="M. Achille" type="straight"/>
+		<underline language="IT" method="pen" text="BOVIO" type="straight"/>
+		<underline language="IT" method="pen" text="intorno a' motti" type="straight"/>
+		<underline language="IT" method="pen" text="Achille mio" type="straight"/>
+		<underline language="IT" method="pen" text="mio M." type="straight"/>
+		<underline language="IT" method="pen" text="Lodouico Domenichi di felice ricordo" type="straight"/>
+		<underline language="IT" method="pen" text="fatto stampare &amp; ristampare co[n]" type="straight"/>
+		<underline language="IT" method="pen" text="nuoue aggiunte questo suo libro" type="straight"/>
+		<underline language="IT" method="pen" text="facetie, di motti, &amp; di burle" type="straight"/>
+		<underline language="IT" method="pen" text="della qualità delle facetie, de' motti, &amp; delle burle" type="straight"/>
+		<underline language="IT" method="pen" text="da me" type="straight"/>
+		<underline language="IT" method="pen" text="per piu d'una lettera" type="straight"/>
+		<underline language="IT" method="pen" text="a bocca" type="straight"/>
+		<underline language="IT" method="pen" text="per fatica utile &amp; molto" type="straight"/>
+		<underline language="IT" method="pen" text="necessaria" type="straight"/>
+		<underline language="IT" method="pen" text="di questo soggetto hauesse" type="straight"/>
+		<underline language="IT" method="pen" text="l'essempio di tutti coloro, c'hauessero" type="straight"/>
+		<underline language="IT" method="pen" text="trattato delle facetie" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="head"/>
+		<symbol name="SS" place="intext"/>
+					
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Dome -->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="della qualità delle facetie, de' motti, &amp; delle burle"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- d'u -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- ne -->
+		
+	    	<!-- Left margin -->
+		<mark method="pen" name="bracket" place="left_margin"/> <!-- principio ... delle -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- Large chalk mark toward the right -->
+		<mark method="pen" name="dot" place="intext"/> <!-- PORCACCHI -->
+		
+		<mark method="pen" name="quotation_mark" place="intext"/>
+			<!-- CG: Strange quotation marks. --> <!--JG: I'd tag it as a quotation mark, but just leave 'strange quotation mark' in a comment next to it, so that I can revisit, if necessary-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="Achille mio"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- ristampar -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- nuoue aggiunte -->
+		<mark method="pen" name="dot" place="intext"/> <!-- burle, sia -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- della qualita -->
+		<mark method="pen" name="apostrophe" place="intext"/> <!-- burle, richiedendolo -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk mark -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- fatica utile -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- ne -->
+		<mark method="pen" name="equal_sign" place="intext"/> <!-- questo soggetto -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- tutti coloro -->
+
+    </annotation>
+</transcription>

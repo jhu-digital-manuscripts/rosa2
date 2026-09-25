@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.034v.tif" pagination="388" reader="Harvey"/>	<!-- ABO 039left -->
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Corpus salubre: et animus purgatus.
+                      			</marginalia_text>
+            			</position>
+        			</language>
+        			<translation>
+        				A healthy body and a refined mind.
+        			</translation>
+        		</marginalia>    		
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						discreta Apologia.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<language ident="EN">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						One of his finest Mirrours.
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				A discreet Apology.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						Mundis munda omnia:
+    						solidis singula salubria.
+    					</marginalia_text>
+    					<X-ref book_title="Bible" language="LA" person="Paul" text="Omnia munda mundis"/>
+    				</position>
+    			</language>
+    			<translation>
+    				"All things are pure to pure men."			
+    				Healthy things are individual to unyielding men.	 				
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="90" place="left_margin">
+    					<marginalia_text>
+    						{ Saluberrima totius corporis, singularumq[ue] partium integritas seriò curanda: cum 
+    						internis, externisq[ue] omnibus incorruptis, et exquisitè mundis: in primis dia[e]ta,
+    						exercitatio, euacuatio, vestitus, stragula, aer: maximeq[ue] animi affectus.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				{ The most healthy integrity of the whole body and its individual parts must earnestly be provided for, with
+    				all things internal and external uncorrupted and exquisitely pure: first through diet, then exercise,
+    				purging, clothing, bedding, air, above all in the disposition of the mind.
+    			</translation>
+    		</marginalia>
+         		
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="270" place="right_margin">
+    					<marginalia_text>
+    						Nihil habetur quod non habituatur: et optima dicendi, agendiq[ue] assuetudo
+    						maxima est perfectionis causa. Egregium nihil sine egregia Exercitatione. 
+    					</marginalia_text>
+    					<emphasis method="chalk" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Nothing is brought into condition what may not be brought into condition: and the very best habit of saying and acting is the cause of perfection.
+    				Nothing is exceptional without exceptional exercise.
+    			</translation>
+    		</marginalia>
+        
+	    	<!-- Underlines -->
+	        
+    		<underline language="IT" method="pen" text="uenne capriccio d'uscir fuor" type="straight"/>
+    		<underline language="IT" method="pen" text="pianelline di uelluto" type="straight"/>
+    		<underline language="IT" method="pen" text="caminare un" type="straight"/>
+    		<underline language="IT" method="pen" text="un gran personaggio" type="straight"/>
+    		<underline language="IT" method="pen" text="doue và hora questo pazzo" type="straight"/>
+    		<underline language="IT" method="pen" text="detto no[n] risparmiaua a" type="straight"/>
+    		<underline language="IT" method="pen" text="hauete cattiua lingua" type="straight"/>
+    		<underline language="IT" method="pen" text="buone orecchie" type="straight"/>
+    		<underline language="IT" method="pen" text="lo sporto, che toglieua assai di lume, &amp; di" type="straight"/>
+    		<underline language="IT" method="pen" text="sporto tuttauia debile" type="straight"/>
+    		<underline language="IT" method="pen" text="antico" type="straight"/>
+    		<underline language="IT" method="pen" text="parole amoreuoli" type="straight"/>
+    		<underline language="IT" method="pen" text="perduta la patientia" type="straight"/>
+    		<underline language="IT" method="pen" text="a brauarlo" type="straight"/>
+    		<underline language="IT" method="pen" text="usanza delle persone deboli" type="straight"/>
+    		<underline language="IT" method="pen" text="andò à querelarsi" type="straight"/>
+    		<underline language="IT" method="pen" text="dell'insulto, che Alfonso" type="straight"/>
+    		<underline language="IT" method="pen" text="a gli ufficiali" type="straight"/>
+    		<underline language="IT" method="pen" text="allhora ragione" type="straight"/>
+    		<underline language="IT" method="pen" text="parte Guelfa" type="straight"/>
+    		<underline language="IT" method="pen" text="subito fè citare Alfonso," type="straight"/>
+    		<underline language="IT" method="pen" text="una querela, perche" type="straight"/>
+	       
+	       
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	        
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- Mo[n]si  -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- brauar -->
+    		
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="bracket" place="left_margin"/> <!-- to ... gnore -->
+    		<mark method="pen" name="bracket" place="left_margin"/> <!-- Haueua -->
+		    
+	    	<!-- Intext -->
+	    	<mark language="IT" method="pen" name="plus_sign" place="intext" text="capriccio"/> 
+    		<mark method="pen" name="dot" place="intext"/> <!-- mantello, & -->
+    		<mark method="pen" name="comma" place="intext"/> <!-- patientia, si mise -->
+    		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- Chalk mark in secod paragraph -->
+    		<mark language="IT" method="pen" name="plus_sign" place="intext" text="brauarlo"/>
+    		<mark method="pen" name="dot" place="intext"/> <!-- Torre, il quale -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- cose, che -->
+	
+    </annotation>
+</transcription>

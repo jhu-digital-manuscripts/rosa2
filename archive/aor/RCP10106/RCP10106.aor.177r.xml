@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.177r.tif" pagination="353" reader="John Dee" signature="z"/> 
+    <annotation>
+        
+        <marginalia anchor_text="causa iudiciali" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Caussa Iudicialis</marginalia_text>
+                </position>
+            </language>
+            <translation>Judicial cause.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="elocutionis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>ELOCVTIO</marginalia_text>
+                </position>
+            </language>
+            <translation>Elocution.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Antonius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>M[arcus] Antonius.</marginalia_text>
+                    <person name="Mark Anthony"/>
+                </position>
+            </language>
+            <translation>Marcus Antionius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="L. Crasso" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>L[ucius] Crassus</marginalia_text>
+                    <person name="Lucius Licinius Crassus"/>
+                </position>
+            </language>
+            <translation>Lucius Crassus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="M. Tullius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>M[arcus] Tullius</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Marcus Cicero Tullius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Eloqui enim hoc est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Eloqui quid.</marginalia_text>
+                </position>
+            </language>
+            <translation>To speak about anything.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="similia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Similitudo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Similarity.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

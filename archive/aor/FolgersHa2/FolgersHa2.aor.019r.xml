@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+	<page filename="FolgersHa2.019r.tif" pagination="361" reader="Harvey"/>	<!-- ABO 023right -->
+    	<annotation>
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			               <position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Chrysotechni vita sublimata.
+                      			              </marginalia_text>
+            			               	<person name="Chrysotechnus"/>
+            			               </position>
+        			</language>
+        			<translation>
+        				The elevated life of Chrysotechnus.
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="right_margin">
+    					<marginalia_text>
+    						Deuterojason; Archiheros.  <!--JG: Probably far fetched, but could deutero refer to the deutero-canonical books, and Jason to Jason of Cyrene?--><!--JG: Open issue, no consensus reached-->
+    					</marginalia_text>
+    					<emphasis method="pen" text="Deuterojason" type="straight"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Jason of Cyrene; Arch-hero.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Euhecticus
+    					</marginalia_text>
+    					<person name="Euhecticus"/>	<!-- Creation of Harvey's -->
+    				</position>
+    			</language>
+    			<language ident="EL">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						ἐν ἀκμῆ	<!-- Greek: en axme -->
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Euhecticus in his prime. 
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="EN">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						{ The most Jouial, &amp; Solari[c] man in the World. 
+    					</marginalia_text>
+    				</position>
+    			</language>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="tail">
+    					<marginalia_text>
+    						Neoph[o]ebus in Hore.	
+    						Singula dicta, et facta eminentissima.
+    					</marginalia_text>
+    					<person name="Neophoebus"/>
+    				</position>
+    			</language>
+    			<translation>
+    				Neophoebus in Hore. <!-- CG: I'm not sure what this Hore is, or whether it's an abbreviation. Or perhaps 'hora' in the plural, which doesn't exist?--><!--JG: I've found that hore is the plural of hora, an old form of the Italian ora. However, one would expect an ablative here...I'll ask it to the group, I can't make sense of it either...-->
+    				Singular sayings, and most distinguished deeds.
+    			</translation>
+    		</marginalia>
+        
+        
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="90" place="left_margin">
+    					<marginalia_text>
+    						Ni aliquid boni accrescat vnoquoq[ue] minuto: aliquid mali accrescet unaquaq[ue] hora.   
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Unless something good grows every minute: something bad may grow every hour. 
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="90" place="right_margin">
+    					<marginalia_text>
+    						Entelechia triplex; et vita[e] essentia quinta; 
+    						Spartaq[ue] inaccessis multiplicata typis. }
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Actuality is threefold; and life is the fifth essence;
+    				and Sparta is multiplied by unattainable figures. }	<!-- CG: Do you have any idea what this means? --><!--JG: No, sorry, Harvey continues to puzzle me-->
+    			</translation>
+    		</marginalia>
+        
+    		<underline language="IT" method="pen" text="la facultà di" type="straight"/>
+    		<underline language="IT" method="pen" text="uolerla estinguere" type="straight"/>
+    		<underline language="IT" method="pen" text="riputasse per estina alla solita" type="straight"/>
+    		<underline language="IT" method="pen" text="Assicuratosi" type="straight"/>
+    		<underline language="IT" method="pen" text="sulla incorrotta fede del" type="straight"/>
+    		<underline language="IT" method="pen" text="prezzo dell'estintione" type="straight"/>
+    		<underline language="IT" method="pen" text="Bresciano il priuilegio, o scritture" type="straight"/>
+    		<underline language="IT" method="pen" text="uno auuocato intendente di tal" type="straight"/>
+    		<underline language="IT" method="pen" text="scritture erano sospette di falsità" type="straight"/>
+    		<underline language="IT" method="pen" text="procurator fiscale" type="straight"/>
+    		<underline language="IT" method="pen" text="due cose" type="straight"/>
+    		<underline language="IT" method="pen" text="liberation sua della pensione" type="straight"/>
+    		<underline language="IT" method="pen" text="ruina del Bresciano" type="straight"/>
+    		<underline language="IT" method="pen" text="guadagnarmi questa pensione" type="straight"/>
+    		<underline language="IT" method="pen" text="col negare le conuentioni fatte fra noi" type="straight"/>
+    		<underline language="IT" method="pen" text="interuenuto alcun testimone" type="straight"/>
+    		<underline language="IT" method="pen" text="quelle confessando, renderle" type="straight"/>
+    		<underline language="IT" method="pen" text="l'allegar" type="straight"/>
+    		<underline language="IT" method="pen" text="senza il consenso apostolico" type="straight"/>
+    		<underline language="IT" method="pen" text="a parole, o pur' in scritto" type="straight"/>
+    		<underline language="IT" method="pen" text="niun ualore" type="straight"/>
+    		<underline language="IT" method="pen" text="quante falsità" type="straight"/>
+    		<underline language="IT" method="pen" text="io no[n]" type="straight"/>
+    		<underline language="IT" method="pen" text="sua, o altrui ruina procacciarmi alcun commodo" type="straight"/>
+    		<underline language="IT" method="pen" text="sincero gentil'huomo" type="straight"/>
+    		<underline language="IT" method="pen" text="un mercante" type="straight"/>
+    		<underline language="IT" method="pen" text="dotato de' beni della fortuna" type="straight"/>
+    
+	    	<symbol name="Sun" place="head"/>
+    		<symbol name="JC" place="head"/>
+    		<symbol name="JC" place="intext"/>
+
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- altri -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/>
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- uo -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/>
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- pu -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/>
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- scrit -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- hab -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- procac -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- copiosamen -->    		
+    		
+	    	<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- auuertito -->
+    		<mark method="pen" name="bracket" place="left_margin"/> <!-- dandosi ... tone  -->
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- fra noi -->
+    		<mark method="pen" name="bracket" place="left_margin"/> <!-- to, ... sincero  -->
+		    
+	    	<mark method="pen" name="plus_sign" place="intext"/>
+    		<mark method="chalk" name="vertical_bar" place="intext"/>
+    		<mark method="pen" name="dot" place="intext"/> <!-- pensione, & -->
+    		<mark method="pen" name="equal_sign" place="intext"/>
+    		<mark method="pen" name="plus_sign" place="intext"/>
+
+    </annotation>
+</transcription>

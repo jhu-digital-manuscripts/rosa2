@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.264v.tif" pagination="508" reader="John Dee" signature="[iii.vi.[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        nota.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex particula parua" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        particula parua.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A very small part.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="auaritiae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Avaritia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Greed.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="creditorem debitoribus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        creditor x debitor
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Lender - debtor.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pellium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        pellis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Skin.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="debilitatio atque abiectio animi" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        debilitatio abiectio ] animi.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Mutilation and dejection of the mind.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lamentis, luctúque ... moerorem tuum dolorémque" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        lame[n]tu[m] luctus mo[e]ror dolor
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Lament, grief, sorrow, pain.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="animos rumor inflasset" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        a[n]i[m]os rumor inflat
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Rumor fills minds.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diplomata" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        diplomata
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                License.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="AEtoliam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Aetolia
+                    </marginalia_text>
+                    <location name="Aetolia"/>
+                </position>
+            </language>
+            <translation>
+                Aetolia.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cum vno genere morbi affligerentur, neque se recreare quisquam posset qui semel incidisset" type="straight"/>
+        <underline language="LA" method="pen" text="sceleru[m] &amp; crudelitatis tuae genus vniuersum. quid auaritiae, quae criminibus infinitis implicata" type="straight"/>
+        <underline language="LA" method="pen" text="generatim ea, quae maxime nota sunt, dica[m]" type="straight"/>
+        <underline language="LA" method="pen" text="lamentis" type="straight"/>
+        <underline language="LA" method="pen" text="con concursum" type="straight"/>
+        <underline language="LA" method="pen" text="animos" type="straight"/>
+        <underline language="LA" method="pen" text="deuorata" type="straight"/>
+        <underline language="LA" method="pen" text="poteras" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">19</numeral>
+        <numeral place="left_margin">16</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">19</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">21</numeral>
+        
+        <drawing anchor_text="Avaritia" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="diplomata" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

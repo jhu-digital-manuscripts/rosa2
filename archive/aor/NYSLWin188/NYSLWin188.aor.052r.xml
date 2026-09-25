@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.052r.tif" pagination="52" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Volunt quida[m] primo Tonitru fieri deinde fulgur vel potius simul: ex Nobis [habet] ruptica, emitti, illa[m] flammam: <!--JG: Not sure about ruptica. Ruptina?-->
+                        ex cui[us] violenta emissione in Aere fit tonitru sed citius ad visu[m] vent fulgu[...] qua[m] Tonitrui sonis: vt q[u]otidie videm[us] [visum?] 
+                        preoccupare auditu, du[m] homine[m] a longe scindente[m] agua [..triemur]. P[ri]us percussisse iudicam[us] qua[m] sonitum plaga[e]
+                    audim[u]s [etc].</marginalia_text> <!--JG: Hier gebleven--> <!--KS: Still too many gaps to make something out of it-->
+                </position>
+            </language>
+            <translation>Certain things wish to be made by the first thunder, then lightening or rather at the same time. From us it has [...] from which violent emission... </translation> <!--JG: Unsure-->
+        </marginalia>
+        
+        <marginalia anchor_text="Dann was auff Erden vbersich gehet das gehet alles im Firmanent vndersich" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Regula.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rule.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Himlitzen gehet darnach" type="straight"/>
+        <underline language="DE" method="pen" text="erschrecken vnd erzittern" type="straight"/>
+        <underline language="DE" method="pen" text="jr schnelle vnd" type="straight"/>
+        <underline language="DE" method="pen" text="stercke" type="straight"/> 
+        <underline language="DE" method="pen" text="zukunfft seines kommens bedeutet" type="straight"/>
+        <underline language="DE" method="pen" text="sich gar bereidt schupff hin vnd wider" type="straight"/>
+        <underline language="DE" method="pen" text="Dann was auff Erden vbersich gehet das gehet alles im Firmanent vndersich" type="straight"/>
+        
+        <mark language="DE" method="pen" name="bracket" place="right_margin" text="Dann was auff Erden vbersich gehet das gehet alles im Firmanent vndersich.              Vnd das vndersich gehen ist des Firmaments obersich gehen: Vnd der Erden vbersich gehen ist des Firmaments vndersich gehen"/>
+        
+     </annotation>
+</transcription>

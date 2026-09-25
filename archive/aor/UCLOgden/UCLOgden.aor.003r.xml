@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.003r.tif" reader="John Dee" signature="α 3"/>
+    <annotation>
+        
+        <marginalia anchor_text="Dator uitae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Dator vita[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Giver of life.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ἀποτέλεσμα" colour="red" hand="Italian" other_reader="unknown modern reader">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ἀποτέλεσμα.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Prognostication.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Signa secundaria" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Signa secundaria
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Secondary sign.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Medium coelum, ab horoscopo decimum signum uocatur" type="straight"/>
+        <underline language="LA" method="pen" text="Dator uitae, dominus geniturae" type="straight"/>
+        <underline language="LA" method="pen" text="quia omnis elementorum exuperantia corruptionem inducit" type="straight"/>
+        
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/> 
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.209r.tif" pagination="417" reader="John Dee" signature="D"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Emphasis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Emphasis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Emphasis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sine thalamis uitam non hominum putet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sine thalamis no[n] Ho[m]i[nu]m sed ferarum vita putanda</marginalia_text>
+                </position>
+            </language>
+            <translation>Unmarried life is fit for beasts rather than for humans.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Schema.</marginalia_text>
+                </position>
+            </language>
+            <translation>Figure.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="amibuitate sententiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ambiguitas se[ntent]ia[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>The ambiguity of a remark.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Est Emphasis etiam inter figuras, cum ex aliquo dicto latens aliquid eruitur: ut apud" type="straight"/>
+        <underline language="LA" method="pen" text="sed aliud latens, &amp; auditori quasi inueniendum, quod ut suprà" type="straight"/>
+        <underline language="LA" method="pen" text="figuratae" type="straight"/>
+        <underline language="LA" method="pen" text="ambiguitate" type="straight"/>
+        <underline language="LA" method="pen" text="quia nihil interest quomodo offendas, &amp; aperta figura perdit hoc ipsum, quod figura est: ideoq[ue] à quibusdam" type="straight"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2.</numeral>
+        <numeral place="right_margin">3.</numeral>
+        
+    </annotation>
+</transcription>

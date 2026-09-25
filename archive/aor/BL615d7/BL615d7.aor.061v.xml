@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.061v.tif" pagination="[61[v]]" reader="John Dee" signature="[Hv[v]]"/> 
+    
+    <annotation>
+        
+        <marginalia anchor_text="S. Caterina" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Portus sancta' Katharina</marginalia_text>
+                    <location name="Santa Catarina"/>
+                </position>
+            </language>
+            <translation>Port Santa Catarina.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mostre d'oro" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>shew of gold.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="se ne poteuano fabricare alberi per naui" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Good ship tymber, and masts</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="pieni di porti buonissimi" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Good hauens</marginalia_text>
+                </position>
+            </language>
+         </marginalia>
+        
+        <marginalia anchor_text="quercie" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>quercie roveri are okes</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="da gran cupidità" type="straight"/>
+        <underline language="IT" method="pen" text="tra forza di" type="straight"/>
+        <underline language="IT" method="pen" text="porto del Principe" type="straight"/>
+        <underline language="IT" method="pen" text="di S. Caterina" type="straight"/>
+        <underline language="IT" method="pen" text="mostre d'oro" type="straight"/>
+        <underline language="IT" method="pen" text="buoni nauigli" type="straight"/>
+        <underline language="IT" method="pen" text="e quercie" type="straight"/>
+        <underline language="IT" method="pen" text="lo incaminauano" type="straight"/>
+        <underline language="IT" method="pen" text="pieni di porti" type="straight"/>
+        <underline language="IT" method="pen" text="grossissimi fiumi" type="straight"/>
+      
+    </annotation>
+</transcription>

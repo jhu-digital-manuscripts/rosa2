@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.028v.tif" reader="Harvey" signature="[Cv[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>An Italian Gentleman, limned A palme tre, with this Posy:</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Flectimur obsequio, non viribus.</marginalia_text>
+                </position>
+            </language>
+            <translation>"We bend out of compliance, not because of force" [Stone, 2013].</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Heliotropium, [the] Marigold,</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Vertitur ad solem.</marginalia_text>
+                    <X-ref book_title="Metamorphoses" language="LA" person="Ovid" text="Vertitur ad solem."/>
+                </position>
+            </language>
+            <translation>Heliotropium, [the] Marigold, "it turns towards the sun".</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Remora, A little fish, stayeth, and howldeth fast, A great ship. Hippolito Girami,
+                    a millanese, bare A Sword, With A Serpent Winding abowt it, &amp; A laurel Garland in [the] Serpents mowth: With this mot,
+                    </marginalia_text>
+                    <person name="Hippolito Giramo"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>His ducibus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Remora, A little fish, stayeth, and howldeth fast, A great ship. Hippolito Girami,
+                a millanese, bare A Sword, With A Serpent Winding abowt it, &amp; A laurel Garland in [the] Serpents mowth: With this mot, for these leaders.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Bulrushes, in [the] middest of A riuer, bow, but breake not, ether with waue, or Winde: [their] posy,</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Flectimur, non frangimur vndis. Quale illud: Generosus animus ducitur, non trahitur.</marginalia_text>
+                </position>
+            </language>
+            <translation>"We are bend, but not broken by waves" [Stone, 2013].  What kind is that: a noble character is led, not dragged.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>[the] Foxes mot:</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Simul astu, et dentibus vtor.</marginalia_text>
+                </position>
+            </language>
+            <translation>At the same time I make use of cunning and teeth.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="them parte" type="straight"/>
+        <underline language="EN" method="pen" text="easyly crop" type="straight"/>
+        <underline language="EN" method="pen" text="weare them" type="straight"/>
+        <underline language="EN" method="pen" text="Agesilaus" type="straight"/>
+        <underline language="EN" method="pen" text="he was warned of" type="straight"/>
+        <underline language="EN" method="pen" text="fyght on the hylles" type="straight"/>
+        <underline language="EN" method="pen" text="passed ouer the ryuer" type="straight"/>
+        <underline language="EN" method="pen" text="inconueniencye of the place" type="straight"/>
+        <underline language="EN" method="pen" text="Romaynes were at dyscorde amonge theymselfes" type="straight"/>
+        <underline language="EN" method="pen" text="outewarde warre causeth Cytyzens" type="straight"/>
+        <underline language="EN" method="pen" text="to growe to a concorde" type="straight"/>
+        <underline language="EN" method="pen" text="two dogges to fighte " type="straight"/>
+        
+        <symbol language="EN" name="SS" place="head" text="An Italian Gentleman, limned A palme tre, with this Posy: Flectimur obsequio, non viribus."/>
+        
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="fyght on the hylles"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="he was warned of"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!--fyghte, sayde-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="bracket" place="intext"/> <!--concorde, he-->
+        
+    </annotation>
+</transcription>

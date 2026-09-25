@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>98</totalPages>
+    <dimensions units="mm">
+        <width>250</width>
+        <height>279</height>
+    </dimensions>
+    <dates>
+        <startDate>1200</startDate>
+        <endDate>1300</endDate>
+    </dates>
+    <texts>
+        <text id="poire">
+            <language>fr</language>
+            <title>Le Roman de la Poire</title>
+            <textId/>
+            <pages end="24v" start="1r">24</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="lapidaire">
+            <language>fr</language>
+            <title>Lapidaire</title>
+            <textId/>
+            <pages end="30v" start="24v">7</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="bestiaire">
+            <language>fr</language>
+            <title>Le Bestiaire d'Amours</title>
+            <textId/>
+            <pages end="42v" start="31r">12</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="poitevin">
+            <language>fr</language>
+            <title>Son poitevin</title>
+            <textId/>
+            <pages end="42v" start="42v">1</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="75r" start="43r">33</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="">
+            <language>fr</language>
+            <title>Motets</title>
+            <textId/>
+            <pages end="82r" start="76r">7</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>4</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+        <text id="ezechiel">
+            <language>fr</language>
+            <title>Les Propheties que Ezechiel li prophetes fist</title>
+            <textId/>
+            <pages end="83r" start="82v">2</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="">
+            <language>fr</language>
+            <title>Ce sont li Songe</title>
+            <textId/>
+            <pages end="84v" start="83r">2</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="order">
+            <language>fr</language>
+            <title>Ci commence l'Order d'Amors </title>
+            <textId/>
+            <pages end="87v" start="84v">4</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="trinitez">
+            <language>fr</language>
+            <title>Ici commence la Trinitez Nostre Dame </title>
+            <textId/>
+            <pages end="90v" start="87v">4</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="joies">
+            <language>fr</language>
+            <title>Ici commencent les IX Joies Nostre Dame</title>
+            <textId/>
+            <pages end="92r" start="90v">3</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="aristote">
+            <language>fr</language>
+            <title>Le Dit d'Aristote</title>
+            <textId/>
+            <pages end="92v" start="92r">1</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+        <text id="salomon">
+            <language>fr</language>
+            <title>Le Lunaire de Salomon</title>
+            <textId/>
+            <pages end="98v" start="92v">7</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>35</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Français 12786</commonName>
+            <dateLabel>13th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 12786</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Français 12786</commonName>
+            <dateLabel>13e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>fr. 12786</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

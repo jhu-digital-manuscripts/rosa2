@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.095r.tif" pagination="181" reader="John Dee" signature="Q"/>
+    <annotation>
+        
+        <marginalia anchor_text="Gorlois Dux Cornubiae cu[m] vxore sua Igerna" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Gorlois Dux Corniae – Igerna
+                    </marginalia_text>
+                    <person name="Gorlois"/>
+                    <person name="Igraine"/>
+                </position>
+            </language>
+            <translation>
+                Gorlois, Duke of Cornwall, and Igraine.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="post mortem illius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Post mortem Gorlois.
+                    </marginalia_text>
+                    <person name="Gorlois"/>
+                </position>
+            </language>
+            <translation>
+                After the death of Gorlois.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Octa atque Eosa" type="straight"/>
+        <underline language="LA" method="pen" text="vxore sua Igerna" type="straight"/>
+        <underline language="LA" method="pen" text="pulchritudo omnes Britanniae mulieres superabat" type="straight"/>
+        <underline language="LA" method="pen" text="mortem illius" type="double"/>
+        <underline language="LA" method="pen" text="vxorem eius duxit" type="straight"/>
+        <underline language="LA" method="pen" text="sibi copulatam, genuitq[ue] ex ea filiu[m] &amp; filiam" type="straight"/>
+        <underline language="LA" method="pen" text="verò Anna" type="straight"/>
+        
+    </annotation>
+</transcription>

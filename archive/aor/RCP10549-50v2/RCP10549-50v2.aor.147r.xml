@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.147r.tif" pagination="33" reader="John Dee" signature="c.i."/>  
+    <annotation>
+        
+        <marginalia anchor_text="In mediocri figura versabitur oratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qua[n]do in mediocri.</marginalia_text>
+                </position>
+            </language>
+            <translation>When in a moderate [style].</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exemplu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>An example.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="In attenuato figurae genere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qua[n]do in attenuata.</marginalia_text>
+                </position>
+            </language>
+            <translation>When in a reduced [style].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exemplum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exemplu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>An example.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="officio manere" type="straight"/>
+        <underline language="LA" method="pen" text="tantulis viribus" type="straight"/>
+        <underline language="LA" method="pen" text="Nam reru[m] imperiti, qui vniuscuiusque rei de rebus antè gestis exempla petere non possunt, ii per imprudentiam facile deducuntur" type="straight"/>
+        <underline language="LA" method="pen" text="rubores eiicere" type="straight"/>
+        <underline language="LA" method="pen" text="vt ne ad solariu[m] quide[m] idoneus" type="straight"/>
+        <underline language="LA" method="pen" text="exhausto rubore" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.092r.tif" pagination="163" reader="John Dee" signature="ll.ii."/>
+    <annotation>
+        
+        <marginalia anchor_text="Imperator clarissimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Imperato clariss[im][us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An illustrious general.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nihilo remissius atque etia[m] multo veheme[n]tius instaret" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        instare nihilo remíssi[us] multo veheme[n]ti[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To approach no less intensely, more vehementlly. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nota
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="apud Segestanos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Religio Segestarior[um]
+                    </marginalia_text>
+                    <location name="Segesta"/>
+                </position>
+            </language>
+            <translation>
+                The devotion of the people of Segesta.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Diana" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        DIANA
+                    </marginalia_text>
+                    <person name="Diana"/>
+                </position>
+            </language>
+            <translation>
+                Diana.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="neque solum spoliata illa patiere, sed etiam eorum spoliatorem" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        spoliator vexator
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A ravisher, a despoiler [Loeb 293, 381].
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Petitio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Petition.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Segestanas matronas" type="straight"/>
+        <underline language="LA" method="pen" text="vnxisse vnguentis" type="straight"/>
+        <underline language="LA" method="pen" text="reru[m] gestarum gloria[m], memoria[m] virtutis, monime[n]ta victoriae C. Verre[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Cum mos à maioribus traditus sit, vt monimenta maiorum ita suorum quisque defendat, vt ea ne ornari quidem nomine alieno sinat:              tu isti aderis, qui no[n] obstrusit aliqua ex parte monime[n]ta P. Scipionis, sed funditus sustulit ac deleuit?" type="straight"/>
+        <underline language="LA" method="pen" text="spoliatorem" type="straight"/>
+
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">22</numeral>
+        
+    </annotation>
+</transcription>

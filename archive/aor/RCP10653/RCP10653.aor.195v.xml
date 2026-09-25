@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.195v.tif" pagination="382" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="proditor Aelfricus" hand="Italian">   
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ælfricus proditor.    
+                    </marginalia_text>
+                    <person name="Aelfric of Hampshire"/>
+                </position>
+            </language>
+            <translation>
+                Ælfric, the traitor.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="munitae, Aelfricum" type="straight"/>
+        <underline language="LA" method="pen" text="Dux Aelfricus" type="straight"/>
+        <underline language="LA" method="pen" text="proditor" type="double"/>
+        <underline language="LA" method="pen" text="Aelfricus" type="straight"/>
+        <underline language="LA" method="pen" text="clam" type="double"/>
+        <underline language="LA" method="pen" text="Aelfrici Ducis nauem" type="double"/>
+        <underline language="LA" method="pen" text="ipso vix elapso" type="straight"/>
+        <underline language="LA" method="pen" text="Frana, &amp; Frithegistus, simul &amp; Godvvin[us]" type="straight"/>
+        <underline language="LA" method="pen" text="Algarus praedicti Aelfrici proditoris filius, luminibus est priuatus" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        <graph book_orientation="0" method="pen" place="tail" type="genealogical_tree">
+            <node id="n1" person="Aelfric of Hampshire">Ælfricus. Proditor.</node>   
+            <node id="n2" person="Aelfgar">Algarus</node>                                   
+            <link from="n2" relationship="has_child" to="n2"/>
+        </graph>
+        
+        <!-- FSF: a pair of eyes is drawn in the tail -->
+        
+    </annotation>
+</transcription>

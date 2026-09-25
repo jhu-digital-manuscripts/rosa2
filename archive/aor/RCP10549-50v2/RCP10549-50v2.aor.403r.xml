@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.403r.tif" pagination="257" reader="John Dee" signature="Rr.i"/> 
+    <annotation>
+        
+        <marginalia anchor_text="vox est à luco Vestae" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vox è vesta[e] luco.</marginalia_text>
+                </position>
+            </language>
+            <translation>A voice from Vesta's grove.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aio loquenti" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aius</marginalia_text>
+                    <person name="Aius Locutius"/>
+                </position>
+            </language>
+            <translation>Aius Locutius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Moneta[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Moneta.</marginalia_text>
+                </position>
+            </language>
+            <translation>Money.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pythagorei" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pythagorei</marginalia_text>
+                </position>
+            </language>
+            <translation>The Pythagoreans.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fauerent linguis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lingius favendu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Tongues must be guarded [Loeb 154, 333].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="litibus &amp; iurgiis se abstinerent" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>litibus et iurgiis abstineto</marginalia_text>
+                </position>
+            </language>
+            <translation>Refrain from strife and quarelling.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in delectu Consules obseruant, vt primus miles fiat bono nomine" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mos rom. in dilectu.</marginalia_text>
+                    <location name="Rome"/>
+                </position>
+            </language>
+            <translation>The manner of enlistment in Rome</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Praerogatiuam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pra[e]rogatiua.</marginalia_text>
+                </position>
+            </language>
+            <translation>The prerogative [tribe] [Loeb 154, 335].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="L. Paulus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>L[ucius] Paulus</marginalia_text>
+                    <person name="Lucius Aemilius Paullus Macedonicus"/>
+                </position>
+            </language>
+            <translation>Lucius Aemilius Paullus Macedonicus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Persa periit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>persa perijt.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Persa is dead.</translation> <!-- M.B. Note 'Persa' refers to a dog. -->
+        </marginalia>
+        
+        <marginalia anchor_text="P. Claudius Augur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>P[ulcher] Claudius Augur</marginalia_text>
+                    <person name="Appius Claudius Pulcher"/>
+                </position>
+            </language>
+            <translation>The augur Pulcher Claudius</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="enim multorum annorum memoria, non decantandi augurii, sed diuinandi tenuit disciplinam: que[m] irridebant Collegae tui, eúmque              tum Pisidam, tum Soranu[m] Augure[m] esse dicebant" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contra diuinatione[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Against divination.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="difficultas labórque discendi disertam negligentiam reddidit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>difficultas laborq[ue] discendi diserta[m] neglige[n]tiam reddit</marginalia_text>
+                </position>
+            </language>
+            <translation>'It is the trouble and hard work involved in mastering the art that has induced this eloquent contempt' [Loeb 154, 337-9].</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Marius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Marius.</marginalia_text>
+                    <person name="Gaius Marius"/>
+                </position>
+            </language>
+            <translation>Gaius Marius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="obitu à solis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>obitus solis.</marginalia_text>
+                </position>
+            </language>
+            <translation>Fall from the sun.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="deuexus" type="straight"/>
+        <underline language="LA" method="pen" text="reficerentur" type="straight"/>
+        <underline language="LA" method="pen" text="exaduersus" type="straight"/>
+        <underline language="LA" method="pen" text="vt sue plena" type="straight"/>
+        <underline language="LA" method="pen" text="agendis, quod bonu[m], faustum, felix, fortunatúmque" type="straight"/>
+        <underline language="LA" method="pen" text="esset praefabantur" type="double"/>
+        <underline language="LA" method="pen" text="vt fauereunt linguis imperabatur" type="straight"/>
+        <underline language="LA" method="pen" text="qui hostias" type="straight"/>
+        <underline language="LA" method="pen" text="Praerogatiuam" type="straight"/>
+        <underline language="LA" method="pen" text="aduertit tristiculam" type="straight"/>
+        <underline language="LA" method="pen" text="sacellum ominis capiendi" type="straight"/>
+        <underline language="LA" method="pen" text="Vero" type="straight"/>
+        <underline language="LA" method="pen" text="enim multorum annorum memoria, non decantandi augurii, sed diuinandi tenuit disciplinam: que[m] irridebant Collegae tui, eúmque              tum Pisidam, tum Soranu[m] Augure[m] esse dicebant. Quibus" type="straight"/>
+        <underline language="LA" method="pen" text="videbatur in auguriis aut praesensio, aut scientia veritatis futurae, sapienter aiebant ad opinionem imperitorum esse fictas religiones:              quod" type="straight"/>
+        <underline language="LA" method="pen" text="religionis simulacra fingere[n]t, sed difficultas labórque discendi disertam negligentiam reddidit. Malunt enim disserere nihil esse in              auspiciis, quàm quid sit ediscere." type="straight"/>
+        <underline language="LA" method="pen" text="intorquentem lanians" type="straight"/>
+        <underline language="LA" method="pen" text="obitu à solis" type="straight"/>
+        
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        
+        <errata amendedtext="deuectus" copytext="deuexus" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.199v.tif" pagination="390" reader="John Dee" signature="Ll.ij.[v]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Lancastri[a]e" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>La[n]castr.[ia]</marginalia_text>
+                    <location name="Lancaster"/>
+                </position>
+            </language>
+            <translation>Lancaster.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text=".M.CCC.xcvj.dux Lancastri[a]e" type="straight"/>
+        <underline language="LA" method="pen" text="quia fortuna talis foeminae" type="straight"/>
+        <underline language="LA" method="pen" text="minimè competebat" type="straight"/>
+        <underline language="LA" method="pen" text="Ducis nuptiae" type="straight"/>
+        
+        <mark method="pen" name="X_sign" place="left_margin"/>
+
+    </annotation>
+</transcription>

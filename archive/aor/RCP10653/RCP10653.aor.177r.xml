@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.177r.tif" pagination="345" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Andredeswald" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Andredeswald: hinc apparet vbi erat 
+                    </marginalia_text>
+                    <location name="Andredeswald"/>
+                </position>
+            </language>
+            <translation>
+                Andredeswald. Here it is revealed where it was.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Appeltre" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        fortè Appeldour
+                    </marginalia_text>
+                    <location name="Appledore"/>
+                </position>
+            </language>
+            <translation>
+                More likely Appledore.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hundredos" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        A hundred
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="tithingas" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        A Tythijng
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Vexede sterre" type="straight"/>
+        <underline language="LA" method="pen" text="Cantia[m] transuectum" type="straight"/>
+        <underline language="LA" method="pen" text="Limenij fluminis, quod de silua magna, Andredeswald appellata, decurrit, applicuit" type="straight"/>
+        <underline language="LA" method="pen" text="miliarijs sursum" type="straight"/>
+        <underline language="LA" method="pen" text="villa regia, quae Middeltona" type="straight"/>
+        <underline language="LA" method="pen" text="centurias quas hundredos" type="straight"/>
+        <underline language="LA" method="pen" text="decimas" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; centuriam" type="straight"/>
+        <underline language="LA" method="pen" text="decimam" type="straight"/>
+        
+        
+    </annotation>
+</transcription>

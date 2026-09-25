@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonPE1137.008v.tif" pagination="[7v]" reader="Harvey" signature="b.iii.v"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        i[nfr]a
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>See below.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="magistros" type="straight"/>
+        <underline language="LA" method="pen" text="correctores" type="straight"/>
+        <underline language="LA" method="pen" text="erroribus qui sunt in vulgata Graecae linguae pronu[n]tione tam manifesti" type="straight"/> <!-- CG: 'pronu[n]tiatione' -->
+        <underline language="LA" method="pen" text="manu palpari queant" type="straight"/>
+        <underline language="LA" method="pen" text="fit in ea verum" type="straight"/>  <!-- CG: I think it's 'sit' -->
+        <underline language="LA" method="pen" text="rectum disputavimus aliàs abundè" type="straight"/>
+        <underline language="LA" method="pen" text="eo comme[n]tario quem" type="straight"/>
+        <underline language="LA" method="pen" text="Steph[enum] Gardinerum Wynton" type="straight"/>
+        <underline language="LA" method="pen" text="quamvis difficile" type="straight"/>
+        <underline language="LA" method="pen" text="desperandum" type="straight"/>
+        <underline language="LA" method="pen" text="non est quin possit fieri" type="straight"/>
+        <underline language="LA" method="pen" text="rationem &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="sequamur" type="straight"/>
+        <underline language="LA" method="pen" text="caeterae artes initio" type="straight"/>
+        <underline language="LA" method="pen" text="inventae" type="straight"/>
+        <underline language="LA" method="pen" text="excultae" type="straight"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- queant, & -->
+        
+    </annotation>
+</transcription>

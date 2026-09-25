@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.222r.tif" pagination="222" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="&amp; Aquiline" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aquilina[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Aquiline.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tratta però la quinta parte" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>The quint</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="&amp; che non vi era popolatione ordinata, ma vna casa in vn poggio, &amp; vna in vn'altro" type="straight"/>
+        <underline language="IT" method="pen" text="che vi fosse alcun di loro o morto, o ferito: &amp;" type="straight"/>
+        <underline language="IT" method="pen" text="fin CCC" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; Aquiline" type="straight"/>
+        <underline language="IT" method="pen" text="tratta però la quinta parte" type="straight"/>
+        <underline language="IT" method="pen" text="da Betlem per andare in Caftiglia" type="straight"/>
+        
+    </annotation>
+</transcription>

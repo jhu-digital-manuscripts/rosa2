@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.043v.tif" pagination="[43v]" reader="John Dee" signature="[Fiij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="S. Amorò" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>S. Amorò</marginalia_text>
+                    <person name="Saint Amaro"/>
+                </position>
+            </language>
+            <translation>Saint Amaro</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="altro Alcatraz" type="straight"/>
+        <underline language="IT" method="pen" text="Oes Norueste" type="straight"/>
+        <underline language="IT" method="pen" text="Alcatraz" type="straight"/>
+        <underline language="IT" method="pen" text="macchie di tanta foltezza" type="straight"/>
+        <underline language="IT" method="pen" text="ciosia che la paura porta l'imaginatione alle cose peggiori" type="straight"/>
+        <underline language="IT" method="pen" text="che si finge di S. Amorò nel mare congelato" type="straight"/>
+        <underline language="IT" method="pen" text="non lascia mouere i nauigli" type="straight"/>
+        <underline language="IT" method="pen" text="vna Balena" type="straight"/>
+        <underline language="IT" method="pen" text="Sudoesti" type="straight"/>
+        
+        <mark language="IT" method="pen" name="tripunctus" place="left_margin" text="ciosia che la paura porta l'imaginatione alle cose peggiori"/>
+        
+    </annotation>
+</transcription>

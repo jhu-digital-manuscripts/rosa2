@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.163v.tif" pagination="326" reader="John Dee" signature="[x 3[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Scelera no[n] habere consilium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Scelera nullum habent co[n]silium</marginalia_text>
+                </position>
+            </language>
+            <translation>Villany does not have any plans.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="an potuerit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>An potuerit</marginalia_text>
+                </position>
+            </language>
+            <translation>Whether he could have done it.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="instrumenta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Instrume[n]ta</marginalia_text>
+                </position>
+            </language>
+            <translation>Instruments.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ut si fieri no[n] potuit, sublata lis fit" type="straight"/>
+        <underline language="LA" method="pen" text="quoru[m] sunt sonus, clamor, gemitus, latitatio, metus, &amp; similia. His" type="straight"/>
+        <underline language="LA" method="pen" text="Haec aut nostra sunt, aut aliena" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.033r.tif" reader="Harvey" signature="Dii[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Gothorum cautela ex Oloa Magno. Facilè assumit pugna[n]di necessitatem, qui fugiendi non inuenit locum.</marginalia_text>
+                    <person name="Olaus Magnus"/>
+                    <book title="Historia de gentibus Septentrionalibus"/>
+                </position>
+            </language>
+            <translation>The caution of the Goths, from Olaus Magnus. He who did not reach the place of fleeing, easily takes up the necessity of fighting.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>frequens apud Polya[e]num.</marginalia_text>
+                    <person name="Polyaenus"/>
+                    <book title="Stratagems"/>
+                </position>
+            </language>
+            <translation>Frequently in Polyaenus.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Scitè</marginalia_text>
+                </position>
+            </language>
+            <translation>Knowingly.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="token of battayle" type="straight"/>
+        <underline language="EN" method="pen" text="fyghte manfully" type="straight"/>
+        <underline language="EN" method="pen" text="theyr shyppes" type="straight"/>
+        <underline language="EN" method="pen" text="them to" type="straight"/>
+        <underline language="EN" method="pen" text="be set on fyer before" type="straight"/>
+        <underline language="EN" method="pen" text="slypte and cought a" type="straight"/>
+        <underline language="EN" method="pen" text="tourned that" type="straight"/>
+        <underline language="EN" method="pen" text="sed feare" type="straight"/>
+        <underline language="EN" method="pen" text="into comforte" type="straight"/>
+        <underline language="EN" method="pen" text="I haue fallen vpon Aphrike" type="straight"/>
+        <underline language="EN" method="pen" text="and oppressed it" type="straight"/>
+        <underline language="EN" method="pen" text="shyppe" type="straight"/>
+        <underline language="EN" method="pen" text="hapt" type="straight"/>
+        <underline language="EN" method="pen" text="to falle" type="straight"/>
+        <underline language="EN" method="pen" text="D countrey" type="straight"/>
+        <underline language="EN" method="pen" text="what thou meanest" type="straight"/>
+        <underline language="EN" method="pen" text="safely retourne from" type="straight"/>
+        <underline language="EN" method="pen" text="whence he departed" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="head" text="Gothorum cautela ex Oloa Magno. Facilè assumit pugna[n]di necessitatem, qui fugiendi non inuenit locum."/>
+        
+        <symbol name="SS" place="right_margin"/> <!--JG: Seems as if Harvey forgot to finish this symbol-->
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="be set on fyer, before"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/> <!--continues in right margin-->
+        <mark method="pen" name="dot" place="intext"/> <!--sayinge, Harke-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="D countrey"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.381v.tif" pagination="214" reader="John Dee" signature="[Oo.iii.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="Triton" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Triton
+                    </marginalia_text>
+                    <person name="Triton"/>
+                </position>
+            </language>
+            <translation>
+                Triton.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inanimu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Inanimu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Lifeless.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="admirabilitas coelestìm reru[m] atque terrestrium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Admirabilitas co[e]lestium rerum et terrestrium
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Admiration of celestial and earthly things.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aer" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Terra Aer Æther
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Earth, air, ether.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="syderum existunt, quorum est princeps Sol" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ☉ syderum princeps
+                    </marginalia_text>
+                    <symbol_in_text name="Sun"/>
+                </position>
+            </language>
+            <translation>
+                The sun is leader of the stars.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]flagrare terras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Terra[e] conflagratio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Conflagration of the earth.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Democriti atomi
+                    </marginalia_text>
+                    <person name="Democritus"/>
+                </position>
+            </language>
+            <translation>
+                Atoms of Democritus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vnius &amp; viginit formae literarum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Litera[e] 21
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                21 characters.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary"> <!-- FSF: not sure about this -->
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Printing then was ... his tyme
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        <marginalia colour="red" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        By lyke. marke this place and the boxes wherin the lechen or ther hesthers stande
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoteles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Aristoteles
+                    </marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>
+                Aristotle.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        animabilis spirabilis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Animate, breathing.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="efficientia[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        efficie[n]tia solis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Efficency of the sun.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="eruit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        aldus legit vomit
+                    </marginalia_text>
+                    <person name="Aldus Manutius"/>
+                </position>
+            </language>
+            <translation>
+                Aldus Manutius reads vomit.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sensúque" type="straight"/>
+        <underline language="LA" method="pen" text="finitos &amp; aequabiles, omniáq[ue] ratis ordinibus moderata, immutabilíq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="inesse aliquem" type="straight"/>
+        <underline language="LA" method="pen" text="circunfusa vndique est hac animabili spirabilíque" type="straight"/>
+        <underline language="LA" method="pen" text="Hunc rursus amplectitur immensus aether" type="straight"/>
+        <underline language="LA" method="pen" text="clarissima luce collustrans" type="straight"/>
+        <underline language="LA" method="pen" text="quae sunt minus operosa, &amp; multo" type="straight"/>
+        <underline language="LA" method="pen" text="temere de mundo" type="straight"/>
+        <underline language="LA" method="pen" text="accepissent autem fama &amp; auditione esse" type="straight"/>
+        <underline language="LA" method="pen" text="efficientia[m]" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="tripunctus" place="left_margin" text="Aer"/>
+        <mark language="LA" method="pen" name="tripunctus" place="left_margin" text="Terrae conflagratio"/>
+        
+        <numeral place="left_margin">21</numeral>
+        
+        <errata amendedtext="[deleted]" copytext="eruit" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="atoms"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.193v.tif" pagination="376" reader="John Dee" signature="[Kk.ij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Thomae de Lancastria" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>S[anc]tus Thomas de Lancastria.</marginalia_text>
+                    <person name="Thomas, 2nd Earl of Lancaster"/>
+                </position>
+            </language>
+            <translation>Saint Thomas of Lancaster.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ab Aymero de Valence comite" type="straight"/>
+        <underline language="LA" method="pen" text="assessoribus &amp; iudicibus" type="straight"/>
+        <underline language="LA" method="pen" text="mortem Thomae de Lancastria" type="straight"/>
+        <underline language="LA" method="pen" text="Iohannem de Hastynge" type="straight"/>
+        <underline language="LA" method="pen" text="Penbrochiae patrem suum vidit, sed nec pater filij visione" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

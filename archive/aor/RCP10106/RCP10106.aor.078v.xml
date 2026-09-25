@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.078v.tif" pagination="156" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Philippicas Demosthenis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Demosthenis Philippica</marginalia_text>
+                    <person name="Demosthenes"/>
+                    <book title="Philippics"/>
+                </position>
+            </language>
+            <translation>Demosthenes’ Philippics.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ciceronis sententiae, &amp; conciones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ciceronis conciones.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero's sermons.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Usum exemplorum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Exemploru[m] usus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The use of examples.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="experimentum, uelut quoddam rationis testimonium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Experime[n]tu[m] est r[ati]o[n]is quoddam testamonium</marginalia_text>
+                </position>
+            </language>
+            <translation>A trial is some testimony of reason.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="historis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Historia[e].</marginalia_text>
+                </position>
+            </language>
+            <translation>Histories.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Breuitas quoq[ue], aut copia non genere" type="straight"/>
+        <underline language="LA" method="pen" text="obiurga[n]tibus similiores" type="straight"/>
+        
+    </annotation>
+</transcription>

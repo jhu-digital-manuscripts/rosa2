@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.180v.tif" pagination="360" reader="John Dee" signature="[z 4[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="ἀδιανόητα" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἀδιανόητα</marginalia_text>
+                </position>
+            </language>
+            <translation>Inconceivable.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="perspicuitatis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Perspicuitas</marginalia_text>
+                </position>
+            </language>
+            <translation>Clarity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rerum perspicuitas" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Reru[m] perspicuitas</marginalia_text>
+                </position>
+            </language>
+            <translation>The clarity of things.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sed multis eum frequenter cogitatioibus auocari, nisi tam clara fuerint, quae dicemus, ut in animum eius oratio, ut sol in oculos, etiamsi              in eam non intendatur, incurrat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Similitudo</marginalia_text>
+                </position>
+            </language>
+            <translation>Similarity.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quem auditor suo ingenio non" type="straight"/>
+        <underline language="LA" method="pen" text="demum eleganter, atq[ue] exquisite" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">9</numeral>
+        <numeral place="left_margin">10</numeral>
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4</numeral>
+        <numeral place="left_margin">5</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.051r.tif" pagination="87" reader="John Dee" signature="h.ij."/>
+    <annotation>
+        
+       <marginalia anchor_text="Paradisi verò amoenitatem cum tempore exoleuisse intelligimus" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>Paradisi amo[e]nitas iam deleta.</marginalia_text>
+               </position>
+           </language>
+           <translation>The pleasantness of Paradise now destroyed.</translation>
+       </marginalia> 
+        
+        <underline language="LA" method="pen" text="Sihor &amp; Geon" type="straight"/>
+        <underline language="LA" method="pen" text="ad sinum Arabicum" type="straight"/>
+        <underline language="LA" method="pen" text="Fluuij autem ex Edene defluebant ad irrigandum Paradisum" type="straight"/>
+        <underline language="LA" method="pen" text="posteà ex Paradiso elapsi, quatuor flumina illustria &amp; magna efficiebant" type="straight"/>
+        <underline language="LA" method="pen" text="Primi fluminis nomen" type="straight"/>
+        <underline language="LA" method="pen" text="Heuila" type="straight"/>
+        <underline language="LA" method="pen" text="nomen est Geon" type="straight"/>
+        <underline language="LA" method="pen" text="quòd ampla terrae spatia fuerit hortus ille complexus" type="straight"/>
+        <underline language="LA" method="pen" text="Itaque Paradisum ipsum amplissimae regionis instar fuisse licet colligere" type="straight"/>
+        <underline language="LA" method="pen" text="Paradisi verò" type="straight"/>
+        <underline language="LA" method="pen" text="ea regione, &amp; eo fluuiorum situ quem Scriptura declarat, qui" type="straight"/>
+        <underline language="LA" method="pen" text="temporibus, vt erat" type="straight"/>
+        <underline language="LA" method="pen" text="agnoscebatur" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

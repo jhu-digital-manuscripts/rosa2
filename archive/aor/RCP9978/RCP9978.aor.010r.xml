@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.010r.tif" reader="John Dee" signature="C ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="numeroru[m] potestate" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Potestas numeroru[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>The power of numbers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="numeroru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Numeri</marginalia_text>
+                </position>
+            </language>
+            <translation>Numbers.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Adamantis" type="straight"/>
+        <underline language="LA" method="pen" text="facie[n]dam solertia[m] scientiam'q[ue] Mercurij co[n]cinnabat[ur] imago, ipso Geminos ascendente" type="straight"/>
+        <underline language="LA" method="pen" text="caduceo adh[a]erente serpe[n]te" type="straight"/>
+        <underline language="LA" method="pen" text="imagines inq[uam] stellar[um] vires habentes" type="straight"/> 
+        <underline language="LA" method="pen" text="c[a]ereas" type="straight"/>
+        <underline language="LA" method="pen" text="plumbeas" type="straight"/>
+        <underline language="LA" method="pen" text="numeroru[m] potestate constare" type="straight"/>
+        <underline language="LA" method="pen" text="formaliora simpliciora'q[ue] pl[us] energi[a]e abdit[a]e habea[n]t" type="straight"/>
+        
+    </annotation>
+</transcription>

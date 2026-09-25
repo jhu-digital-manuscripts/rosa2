@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+   
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Le livre de la cité des dames</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+         
+         <notesStmt>
+            
+            <note rend="IDENTIFICATION">
+               
+               <p>Français 607, Bibliothéque national de France, Paris. Paris, ca. 1408. </p>
+            
+            </note>
+            
+            <note rend="BASIC INFORMATION">
+               
+               <p>Parchment, 345 x 259 mm, 79 folios.</p>
+            
+            </note>
+            
+            <note rend="MATERIAL">
+               
+               <p>
+                  Yellowish <material> parchment</material> , with quite a number of defects, mainly in the seams, with stains and pieces, the last added unsystematically. The last folios are very dirty. In some places, the course of the writing becomes blurred due to the porosity of the parchment.</p>
+                 
+            
+            </note>
+            
+            <note rend="QUIRES">
+               
+               <list>
+                  
+                  <head>Collation:</head>
+                  
+                  <item n="I">
+                     
+                     <locus from="1" to="8">1-8</locus>
+                  
+                  </item>
+                  
+                  <item n="II">
+                     
+                     <locus from="9" to="16">9-16</locus>
+                  
+                  </item>
+                  
+                  <item n="III">
+                     
+                     <locus from="17" to="24">17-24</locus>
+                  
+                  </item>
+                  
+                  <item n="IV">
+                     
+                     <locus from="25" to="32">25-32</locus>
+                  
+                  </item>
+                  
+                  <item n="V">
+                     
+                     <locus from="33" to="40">33-40</locus>
+                  
+                  </item>
+                  
+                  <item n="VI">
+                     
+                     <locus from="41" to="48">41-48</locus>
+                  
+                  </item>               
+                               
+                  <item n="VII">
+                     
+                     <locus from="49" to="56">49-56</locus>
+                     
+                  </item>  
+                  
+                  <item n="VIII">
+                     
+                     <locus from="57" to="64">57-64</locus>
+                     
+                  </item>   
+                  
+                  <item n="IX">
+                     
+                     <locus from="65" to="72">65-72</locus>
+                     
+                  </item>   
+                  
+                  <item n="X">
+                     
+                     <locus from="73" to="79">73-79</locus>
+                     
+                  </item>   
+               </list>
+     
+               
+                  <p>I + 79 + I. Foliation in ink from the 18th century, located above the title on the center of the folio.</p>
+            
+            </note>
+            
+            <note rend="LAYOUT">
+               
+               <p>There are uneven brownish red ruling marks on the folios. Visible pricking (4 pricks per folio). There are two columns with 41 (sometimes 40, 39 or 42) lines each. The text block is rather even measuring 229 x 179 mm. </p>
+
+            
+            </note>
+            
+            <note rend="SCRIPT">
+               
+               <p>The text is written in dark brown ink, with red-orange or bright red ink for the rubrics. In addition, each folio contains in bright red ink the title of the manuscript with  La cité on the verso and des dames on the recto of each folio. There seems to be a main scribal hand for the text, designated as P, with two later interventions, X and X', after the parchment was repaired. The text has been written using a semi-cursive minuscule script. There are also signs of punctuation. The scribe uses commas and periods, but the periods seems to be used as filling.  </p>
+            
+            </note>
+            
+            <note rend="DECORATION">
+               
+               <p>There are numerous small decorated initials taking up two lines in gold leaf with blue and pink backgrounds at the beginning of every chapter, starting with chapter two. There are also three large decorated initials: a red, blue and white foliated S over a gold leaf background that touches the gold leaf foliated border with pink and blue flowers on folio <locus>2</locus>, and a blue and read foliated A over a gold leaf background with gold leaf foliated extenders on the left framing on the one hand, the miniature above and, on the other, the text below on folios <locus>31</locus>v and <locus>67</locus>v. Between the extenders there are several gold leaf “sperm”.</p>
+                  
+                      
+                  
+               <p> This manuscript contains three miniatures created by the workshop of the Master of the <hi rend="italics"> Cité des Dames</hi>. </p>
+                   
+                  <p>Miniatures:</p>
+                  <list>
+                     <item> Fol. <locus>2</locus>, Construction of the City. </item>
+                     <item> Fol. <locus>31</locus>, Entrance of the Ladies into the City. </item>
+                     <item> Fol. <locus>67</locus>, The Ladies welcome the Virgin and Saints.</item>
+                    
+                  </list>
+                                          
+            </note>
+            
+            <note rend="BINDING">
+               
+               <p>The binding is done with yellowish morocco leather with the royal coat of arms and three gold fillets. The spine contains five nerves with four crowns over the royal initials with stylized leaves, flanked by palmettes and accompanied by a small flower above and below. The title appears gilded on the upper two sections, “LE LIVRE DE LA CITE / DES DAMES”. A the top and bottom of the spine there is a band of gilded palmettes.</p>
+            
+            </note>
+            
+            <note rend="HISTORY">
+               
+               <p>The manuscript can be dated to circa 1408. It is the fifth part of the works by Christine de Pizan acquired by Jean de Berry in 1408. </p>
+               
+               <p>Provenance:Jean de Berry, is mentioned in folio <locus>7</locus> by an inscription by his librarian, Jean Flamel, <hi rend="italics"> “Ce livre est au duc de Berry”</hi>; his daughter, Marie de Berry, duchess of Bourbon; the Bourbon family. François I seized the property of Charles de Bourbon in 1523. There is a stamp from Josserand-Bruno n. 1, from the 17th century. An old price is written on folio <locus>1</locus> r: “341” (Dupuy); “7090” (Regius). There are later inscriptions on the front cover, probably from two librarians of the Bourbon family (end of the 15th or early 16th century): “Le livre de la cité des dames contenant trois livres” et “ou il y a trois hystoires et .iiijxx feuilles escriptez.” In this same cover: “X24”, an inscription that corresponds with the number of the manuscript in the permanent exhibit at the end of the 19th century and the stamp of the BnF.  </p>
+            </note>
+            
+            <note rend="TEXT">
+               
+               <p>Contains only <hi rend="italics">Le livre de la cité des dames,“Manuscrit du Duc”, Ve volume] </hi>.</p>
+            
+            </note>
+            
+            <note rend="AUTHOR">
+              
+               <p>
+*The information given here comes from direct observation and from Ouy, Gilbert, Christine Reno and Inès Villela-Petit.<hi rend="italics"> Album Christine de Pizan </hi>. Turnhout: Brepols, 2012. </p>
+<p> Description by Mónica Ann Walker Vadillo</p>
+            
+            </note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            
+            <bibl>
+               
+               <note type="format">manuscript</note>
+               
+               <note type="commonName">Français 607</note>
+               
+               <title>Le livre de la cité des dames</title>
+
+               
+               <extent>
+                  
+                  <measure quantity="79" unit="folios">79 folios</measure>
+                  
+                  <dimensions>
+                     
+                     <height unit="mm">345</height>
+                     
+                     <width unit="mm">259</width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">3</note>
+               
+               
+               
+               
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>Paris, France</pubPlace>
+     
+               <date notAfter="1500" notBefore="1400">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>Français 607</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="79v">1r-79v</locus>
+                     <title>L'Epitre Othea</title>
+                     <note type="textid">L'epitre othea</note>
+                     <note type="folios">79</note>
+                     <note type="illustrations">3</note>
+                     <note type="linesPerColumn">41</note>
+                     <note type="leavesPerGathering">8</note>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.066v.tif" reader="Harvey" signature="[Hiii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Politicè.</marginalia_text>
+                </position>
+            </language>
+            <translation>Politically.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>s[upr]a /</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0135" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] above.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>shittes.</marginalia_text>
+                    <emphasis method="pen" text="shittes" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Germanicus" type="straight"/>
+        <underline language="EN" method="pen" text="the price shulde be" type="straight"/>
+        <underline language="EN" method="pen" text="fruites of all those places" type="straight"/>
+        <underline language="EN" method="pen" text="of Justyce" type="straight"/>
+        <underline language="EN" method="pen" text="watch and ward" type="straight"/>
+        <underline language="EN" method="pen" text="the rest of the army" type="straight"/>
+        <underline language="EN" method="pen" text="Trumpettes nowe and" type="straight"/>
+        <underline language="EN" method="pen" text="than to blowe" type="straight"/>
+        <underline language="EN" method="pen" text="helde them wakynge" type="straight"/>
+        <underline language="EN" method="pen" text="of the daye" type="straight"/>
+        <underline language="EN" method="pen" text="sodeynly vpon" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="Germanicus"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="chalk" name="vertical_bar" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="sodeynly vpon"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Justyce"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

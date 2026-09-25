@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.320r.tif" pagination="91" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="sessio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Sessio</marginalia_text>
+                </position>
+            </language>
+            <translation>A seat.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="admonitu" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>admonitu</marginalia_text>
+                </position>
+            </language>
+            <translation>With a warning.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="in eo gymnasio, quod Ptolemaeium vocatur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ptolema[e]ium gy[m]nasiu[m].</marginalia_text>
+                    <person name="Ptolemy"/>
+                </position>
+            </language>
+            <translation>The gymnasium of Ptolemy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Academia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Academia</marginalia_text>
+                </position>
+            </language>
+            <translation>The Academy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Academiae non sine causa nobilitata spatia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Academia[e] nobilitata spatia</marginalia_text>
+                </position>
+            </language>
+            <translation>The famous spaces of the Academy.</translation>
+        </marginalia>
+                
+        <marginalia anchor_text="quum ea loca videamus, in quibus memoria dignos viros acceperimus multu[m] esse versatos, magis moueamur, quàm si aut eorum ipsorum aut facta audiamus,              aut scriptum aliquod legamus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Locus qua[n]tu[m] nos moueat.</marginalia_text>
+                </position>
+            </language>
+            <translation>To what extent a place may move us.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Platonis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Plato.</marginalia_text>
+                    <person name="Plato"/>
+                </position>
+            </language>
+            <translation>Plato.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="curiam nostram, Hostiliam dico" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Curia Hostilia</marginalia_text>
+                    <location name="Curia Hostilia"/>
+                </position>
+            </language>
+            <translation>The Curia Hostilia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex his memoriae ducta sit disciplina" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex locis memoria[e] disciplina est ducta.</marginalia_text>
+                </position>
+            </language>
+            <translation>The discipline of memory is based on locality.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sophocles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Sophocles.</marginalia_text>
+                    <person name="Sophocles"/>
+                </position>
+            </language>
+            <translation>Sophocles.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="OEdipodis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Oedipus.</marginalia_text>
+                    <person name="Oedipus"/>
+                </position>
+            </language>
+            <translation>Oedipus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Phaedro" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pha[e]drus.</marginalia_text>
+                    <person name="Phaedrus the Epicurean"/>
+                </position>
+            </language>
+            <translation>Phaedrus the Epicurean.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in Epicuris hortis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Epicuri Horti.</marginalia_text> 
+                    <person name="Epicurus"/>
+                </position>
+            </language>
+            <translation>The gardens of Epicurus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cuius imaginem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Epicuri Imago.</marginalia_text>
+                    <person name="Epicurus"/>
+                </position>
+            </language>
+            <translation>The image of Epicurus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Metapontum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Metapontus.</marginalia_text>
+                    <location name="Metapontum"/>
+                </position>
+            </language>
+            <translation>Metapontum.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pythagorae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pythagoras.</marginalia_text>
+                    <person name="Pythagoras"/>
+                </position>
+            </language>
+            <translation>Pythagoras.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exhedra" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>exhedra</marginalia_text>
+                </position>
+            </language>
+            <translation>A hall.</translation>
+        </marginalia>
+       
+        <marginalia anchor_text="Demosthenes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Demosthenes.</marginalia_text>
+                    <person name="Demosthenes"/>
+                </position>
+            </language>
+            <translation>Demosthenes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="AEschines" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Æschines.</marginalia_text>   
+                    <person name="Aeschines"/>
+                </position>
+            </language>
+            <translation>Aeschines.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Phalericu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Phalericum.</marginalia_text>
+                    <location name="Phalerum"/>
+                </position>
+            </language>
+            <translation>Phalerum.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Periclis sepulchrum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Periclis sepulchru[m].</marginalia_text>
+                    <person name="Pericles"/>
+                </position>
+            </language>
+            <translation>The tomb of Pericles.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="studioru[m] philosophiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Philosophia[e] studium.</marginalia_text>
+                </position>
+            </language>
+            <translation>The study of philosophy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Suo enim quisque studio maxime ducitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Suo studio quisq[ue] maxime ducitur</marginalia_text>
+                </position>
+            </language>
+            <translation>Each person is lead greatly by their own favourite study.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="noster cognatione patruelis, amore germanus" type="straight"/>
+        <underline language="LA" method="pen" text="ambulationem postméridiana[m] conficeremus" type="straight"/>
+        <underline language="LA" method="pen" text="vario sermone sex illa à Dipylo stadia confecimus" type="straight"/>
+        <underline language="LA" method="pen" text="nobilitata spatia, solitudo erat ea quam volueramus" type="straight"/>
+        <underline language="LA" method="pen" text="audiamus, aut scriptum aliquod legamus" type="straight"/>
+        <underline language="LA" method="pen" text="enim mihi Platonis in mentem, quem" type="straight"/>
+        <underline language="LA" method="pen" text="conspectu meo" type="straight"/>
+        <underline language="LA" method="pen" text="Hîc Speusippus, hîc Xenocrates, hîc eius auditor Polemo" type="straight"/>
+        <underline language="LA" method="pen" text="sessio fuit" type="straight"/>
+        <underline language="LA" method="pen" text="primis auum cogitare" type="straight"/>
+        <underline language="LA" method="pen" text="conuertebat ad sese Coloneus" type="straight"/>
+        <underline language="LA" method="pen" text="oculos versabatur, quem scis quàm admirere" type="straight"/>
+        <underline language="LA" method="pen" text="Me quide[m] ad altiore[m] memoriam OEdipodis huc venientis, &amp; illo mollissimo carmine, quaenam essent ipsa haec loca requirentis,              species quaedam co[m]mouit, inanis scilicet, sed commouit tame[n]" type="straight"/>
+        <underline language="LA" method="pen" text="sed veteris prouerbii admonitu, viuoru[m] memini" type="straight"/>
+        <underline language="LA" method="pen" text="Epicuri licet obliuisci, si cupiam, cuius imaginem no[n] modo in tabulis nostri familiares, sed etiam in poculis &amp; in anulis habent" type="straight"/>
+        <underline language="LA" method="pen" text="vt acrius aliquanto &amp; attentius de claris viris locoru[m] admonitu cogitemus" type="straight"/>
+        <underline language="LA" method="pen" text="vita[m] ediderat" type="straight"/>
+        <underline language="LA" method="pen" text="inter se decertate soliti" type="straight"/>
+        <underline language="LA" method="pen" text="vt fremitu[m] assuesceret voce vincere" type="straight"/>
+        <underline language="LA" method="pen" text="paulum ad dextram de via declinaui" type="straight"/>
+        <underline language="LA" method="pen" text="quide[m] infinitum est" type="straight"/>
+        <underline language="LA" method="pen" text="Atqui Cicero, inquit, ista studia si ad imitandos summos viros spectant, ingeniosorum sunt: sin tantummodo ad indicia veteris memoriae cognoscenda,              curiosoru[m]. Tu aute[m] hortamur omnes, currente[m] quide[m] vt spero, vt eos quos nouisse vis, etiam imitari velis" type="straight"/>
+        <underline language="LA" method="pen" text="primísque vt aliquid suoru[m] studioru[m] philosophiae quoque" type="straight"/>
+        <underline language="LA" method="pen" text="vel vt te imitetur quem amat, vel vt illud ipsum quod studet, facere pos[sit]" type="straight"/>
+        
+        <symbol name="Jupiter" place="head"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        <mark method="pen" name="quattuorpunctus" place="right_margin"/>
+        <mark method="pen" name="dot" place="right_margin"/>
+        <mark method="pen" name="dot" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="tail"/>
+        
+        <mark language="LA" method="pen" name="guillemet" place="head" text="Sessio"/>
+        <mark method="pen" name="guillemet" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+        <drawing anchor_text="vel vt te imitetur quem amat, vel vt illud ipsum quod studet, facere pos[sit]" book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

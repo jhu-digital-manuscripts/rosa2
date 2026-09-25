@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.299r.tif" pagination="577" reader="John Dee" signature="ooo.i."/>
+    <annotation>
+        
+        <marginalia anchor_text="donatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>donatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Donation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="auertite, &amp; detestamini quaeso hoc omen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>auertite detestamini hoc ome[n]</marginalia_text>
+                </position>
+            </language>
+            <translation>To avert and ward off this sign [Loeb 189, 233].</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Similitudo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Similarity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cruor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>cruor.</marginalia_text>
+                </position>
+            </language>
+            <translation>Blood.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="trucidatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>trucidatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>A massacre.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="virtus" hand="Italian" id="RCP10549-50v1:0605:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Virtus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Virtue.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="falsa, incerta, caduca, mobilia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>falsa incerta caduca mobilia.</marginalia_text>
+                </position>
+            </language>
+            <translation>False, uncertain, unsteady, mobile.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Senatum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Senatus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The senate.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Comparatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>A comparison.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quoniam in fouea[m] incidit, obruatur. si enim" type="straight"/>
+        <underline id="RCP10549-50v1:0605:u0001" language="LA" method="pen" text="virtus est vna altissimis defixa radicibus, quae nunquam vlla vi labefactari potest, nunqua[m] dimoueri loco" type="straight"/>
+        <underline language="LA" method="pen" text="potentissimos Reges, bellicosissimas gentes" type="straight"/>
+        <underline language="LA" method="pen" text="Senatum, id est orbis" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">8</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP10549-50v1:0605:m0001"/>
+            <marginal_annotation idref="RCP10549-50v1:0605:u0001"/>
+            <relation from="RCP10549-50v1:0605:m0001" to="RCP10549-50v1:0605:u0001" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.116v.tif" pagination="56" reader="Harvey" signature="[D4v]"/>	<!-- ABO 121left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						The intention of Eutrapelus, to write, &amp; speake better,
+						then euer anie man
+						did write, or speake. The final intention of
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Eudromus, to knowe, &amp; do more in sound valu, then euer
+					</marginalia_text>
+					<person name="Eudromus"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						anie ma[n] knew, or did.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Plus gallo granu[m] hordei,
+						quàm gemma Orientis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Rather a seed of barley for a rooster than a gem from the East.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Quem vides in vna virtute deficere, 
+						senties deficere in alijs. Sic ferè in arte.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whomever you see lacking in one virtue, 
+				you will hear lacking in others. Just as it is in art.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Quis, quid, vbi, quibus auxilijs, cur, quomodò, quando: }
+						Sic sapiens vires ponderat ante suas.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Who, what, where, with what means, why, in what way, when:
+				so the wise man considers other men before his own matters.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Sed qua[e] homines arant, nauigant,
+						a[e]dificant; virtuti, et Arti parent omnia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Yet all of those things which men cultivate, navigate, and build
+				are ordered by virtue and art.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Artificum princeps.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The prince of artifice.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Qui nouit Domenicu[m], et Gandinu[m]; Philostrati Apolloniu[m], et Juliani Ca[e]sarem; nouit arcana mundi.
+						Pra[e]sertim cum Apiani Cosmologo; Bodini Politico, Durandi pragmatico.
+					</marginalia_text>
+					<person name="Lodovico Domenichi"/>
+					<person name="Marcantonio Gandino"/>
+					<person name="Philostratus"/>
+					<person name="Julian"/>
+					<person name="Jean Bodin"/>
+					<person name="Peter Apian"/>
+					<person name="Guillaume Durand"/>
+					<book title="De vita Apollonii Tyanei"/>
+					<book title="Cosmographia"/>
+					<book title="Caesars"/>
+				</position>
+			</language>
+			<translation>
+				He who knows Domenichi, Gandino, Philastratus' Life of Apollonius of Tyana, and Julian's Caesars, knows the secrets of the world,
+				especially together with the Cosmography of Apian, Bodin's politics, and Durand's pragmatics.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Pra[e]stat alijs Eunapius: Eunapio Eutrapelus: vnus
+						omnibus magis exquisitus. Sed fluentissimo stylo,
+					</marginalia_text>
+					<person name="Eunapius"/>
+					<person name="Eutrapelus"/>
+				</position>
+				<position book_orientation="270" place="tail">
+					<marginalia_text>
+						eodemq[ue] facillimo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Eunapius surpasses others, and Eutrapelus surpasses Eunapius.
+				One is more exquisite than all others, but with a style most fluid
+				and, likewise, most nimble.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Tacitus soli Eutrapelo no[n] profundus.
+					</marginalia_text>
+					<person name="Tacitus"/>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Tacitus is not profound to Eutrapelus alone.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Amore" type="straight"/>
+		<underline language="IT" method="pen" text="la chimera" type="straight"/>
+		<underline language="IT" method="pen" text="LA chimera" type="straight"/>
+		<underline language="IT" method="pen" text="Fulgentio" type="straight"/>
+		<underline language="IT" method="pen" text="di Leone" type="straight"/>
+		<underline language="IT" method="pen" text="di Capra" type="straight"/>
+		<underline language="IT" method="pen" text="di serpente" type="straight"/>
+		<underline language="IT" method="pen" text="all'amore" type="straight"/>
+		<underline language="IT" method="pen" text="principio" type="straight"/>
+		<underline language="IT" method="pen" text="mezzo" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; fine" type="straight"/>
+		<underline language="IT" method="pen" text="Il principio" type="straight"/>
+		<underline language="IT" method="pen" text="il Leone" type="straight"/>
+		<underline language="IT" method="pen" text="il mezzo" type="straight"/>
+		<underline language="IT" method="pen" text="la Capra" type="straight"/>
+		<underline language="IT" method="pen" text="il fine" type="straight"/>
+		<underline language="IT" method="pen" text="resta il veleno del" type="straight"/>
+		<underline language="IT" method="pen" text="il Serpente" type="straight"/>
+		<underline language="IT" method="pen" text="inganni d'alcune" type="straight"/>
+		<underline language="IT" method="pen" text="Donne" type="straight"/>
+		<underline language="IT" method="pen" text="Henrico ottauo" type="straight"/>
+		<underline language="IT" method="pen" text="Londra in Inghilterra vna" type="straight"/>
+		<underline language="IT" method="pen" text="dodici figliuoli" type="straight"/>
+		
+		<symbol name="Sun" place="right_margin"/> 
+		
+		<mark method="pen" name="horizontal_bar" place="left_margin"/>
+		<mark method="pen" name="bracket" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- vele -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- In -->
+		
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- Chimera -->
+		
+		<mark method="pen" name="vertical_bar" place="tail"/> <!--in between marginal notes-->
+		
+    </annotation>
+</transcription>

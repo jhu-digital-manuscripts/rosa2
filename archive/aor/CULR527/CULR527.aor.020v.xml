@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="CULR527.020v.tif" pagination="[20[v]]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mathematica[e] honor n[ost]ra a[e]tate
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The honour of mathematics in our time.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="formam" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Forma
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Form.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="non nisi de Mathematica tantùm conqueri uolo" type="straight"/>
+        <underline language="LA" method="pen" text="alienam messem falcem" type="straight"/>
+        <underline language="LA" method="pen" text="ut modò fauetur" type="straight"/>
+        <underline language="LA" method="pen" text="nisi tantùm formam qua possit cognosci" type="straight"/>
+
+    </annotation>
+</transcription>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.425r.tif" reader="Harvey" signature="AAA3[r]"/>
+    <annotation>
+
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        Egregia disciplina Scipionis Africani 2.
+                    </marginalia_text>
+                <person name="Scipio Aemilianus"/>
+                </position>
+            </language>
+            <translation>
+                The extraordinary discipline of Scipio Africanus the Younger.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        Polybius, et Pana[e]tius, perpetui comites huius Africani.
+                    </marginalia_text>
+                <person name="Polybius"/>
+                <person name="Panaetius"/> <!-- LS, I added this -->
+                <person name="Scipio Aemilianus"/>
+                </position>
+            </language>
+            <translation>
+                Polybius and Panaetius, eternal companions of this Africanus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        In Disciplina, et Ordine Romanorum, plurimum momenti s[upr]a, i[nfr]a.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In the discipline and order of the Romans lies the greatest importance, [see] above, below.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        graubo??? <!-- JG: unsure about this, needs checking!--> <!--KS: grauit[...] /-->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                ????
+            </translation>
+        </marginalia>
+
+        <underline language="LA" method="pen" text="Scipio Africanus" type="straight"/>
+        <underline language="LA" method="pen" text="Numantiam obsedit" type="straight"/>
+        <underline language="LA" method="pen" text="corruptum licentia luxuriaq[ue] exercitum" type="straight"/>
+        <underline language="LA" method="pen" text="generosissimam militiae disciplinam" type="straight"/>
+        <underline language="LA" method="pen" text="omnia enim deliciarum instrumenta recidit" type="straight"/>
+        <underline language="LA" method="pen" text="millia scortorum à castris" type="straight"/>
+        <underline language="LA" method="pen" text="omni die in opere habuit" type="straight"/>
+        <underline language="LA" method="pen" text="triginta dieru[m] frumentum, ad septenos uallos ferre" type="straight"/>
+        <underline language="LA" method="pen" text="propter onus" type="straight"/>
+        <underline language="LA" method="pen" text="Cu[m] gladio rectè uallare" type="straight"/>
+        <underline language="LA" method="pen" text="uallum ferre definito" type="straight"/>
+        <underline language="LA" method="pen" text="parum habiliter scutum ferenti" type="straight"/>
+        <underline language="LA" method="pen" text="scutum amplius iusto ferre" type="straight"/>
+        <underline language="LA" method="pen" text="quoniam melius scuto, quàm gladio uteretur" type="straight"/>
+        <underline language="LA" method="pen" text="extra ordinem deprehendit" type="straight"/>
+        <underline language="LA" method="pen" text="uitibus" type="straight"/>
+        <underline language="LA" method="pen" text="uirgis cecîdit" type="straight"/>
+        <underline language="LA" method="pen" text="Iumenta quidem omnia" type="straight"/>
+        <underline language="LA" method="pen" text="uendidit" type="straight"/>
+        <underline language="LA" method="pen" text="contra hostium eruptiones" type="straight"/>
+        <underline language="LA" method="pen" text="Scipio amplissima munera" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] celare" type="straight"/>
+        <underline language="LA" method="pen" text="imperatoribus regum munera mos esset" type="straight"/>
+        <underline language="LA" method="pen" text="accepturum se esse dixit" type="straight"/>
+        <underline language="LA" method="pen" text="quaestorem in publicas tabulas" type="straight"/>
+        <underline language="LA" method="pen" text="ex ijs" type="straight"/>
+        <underline language="LA" method="pen" text="uiris fortibus munera se daturum" type="straight"/>
+        <underline language="LA" method="pen" text="fame uideret" type="straight"/>
+        <underline language="LA" method="pen" text="uelocius eos absumpturos frumentum" type="straight"/>
+        <underline language="LA" method="pen" text="plures quidem" type="straight"/>
+        <underline language="LA" method="pen" text="Sempronius Gracchus" type="straight"/>
+        <underline language="LA" method="pen" text="cum minus agri" type="straight"/>
+        <underline language="LA" method="pen" text="quod diuidi" type="straight"/>
+        <underline language="LA" method="pen" text="ijs" type="straight"/>
+        <underline language="LA" method="pen" text="pecunia" type="straight"/>
+        <underline language="LA" method="pen" text="diuideretur" type="straight"/>
+        <underline language="LA" method="pen" text="eo" type="straight"/>
+        <underline language="LA" method="pen" text="Cum iterum" type="straight"/>
+        <underline language="LA" method="pen" text="tribunus plebis creari uellet Gracchus" type="straight"/>
+        <underline language="LA" method="pen" text="autore P. Cornelio Nasica in" type="straight"/>
+        <underline language="LA" method="pen" text="Capitolio à primatibus occisus est, ictus" type="straight"/>
+        <underline language="LA" method="pen" text="primu[m] fragmentis" type="straight"/>
+        <underline language="LA" method="pen" text="subselliorum" type="straight"/>
+        <underline language="LA" method="pen" text="inter alios, qui in eadem seditione occisi erant, insepultus est in flumen proiectus" type="straight"/>
+        <underline language="LA" method="pen" text="Numantini fame maximè coacti" type="straight"/>
+        <underline language="LA" method="pen" text="se per uices trucidauerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Captam urbem Scipio Africanus deleuit, &amp; de ea" type="straight"/>
+        <underline language="LA" method="pen" text="post Carthaginem deletam" type="straight"/>
+        <underline language="LA" method="pen" text="Phraatem" type="straight"/>
+        <underline language="LA" method="pen" text="Parthorum" type="straight"/>
+        <underline language="LA" method="pen" text="Ptolemaeus" type="straight"/>
+        <underline language="LA" method="pen" text="Euergetes" type="straight"/>
+        <underline language="LA" method="pen" text="nimiam eius crudelitatem" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        
+        <symbol name="SS" place="intext"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--refer-->
+        <mark method="pen" name="X_sign" place="right_margin"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Numantiam"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="quotation_mark" place="intext" text="deliciarum"/>
+        <mark language="LA" method="pen" name="quotation_mark" place="intext" text="scortorum"/>
+        <mark method="pen" name="semicolon" place="intext"/> <!--reiecit milite[m]-->
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="quotation_mark" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--uendidit. multoties-->
+        <mark method="pen" name="dot" place="intext"/> <!-- iussit, ex -->
+        <mark method="pen" name="dot" place="intext"/> <!-- gesta -->
+        <mark method="pen" name="comma" place="intext"/> <!-- quam eius-->
+        <mark method="pen" name="comma" place="intext"/> <!-- ducta repudiauerat-->
+        
+    </annotation>
+</transcription>

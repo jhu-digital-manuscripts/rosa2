@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.171v.tif" pagination="166" reader="Harvey" signature="[L3v]"/>	<!-- ABO 176left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Vita[e] vitalis quotidiana restauratio.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A daily restauration of a vital life.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Hebes est, qui non est subtilior Scoto.
+						Rudis est, qui non est callidior Durando.
+						Simplex est Politicus, qui non est
+						Bodino, Lipsioq[ue] magis compositus.
+					</marginalia_text>
+					<person name="Duns Scotus"/>
+					<person name="Guillaume Durand"/>
+					<person name="Jean Bodin"/>
+					<person name="Lipsius"/>
+				</position>
+			</language>
+			<translation>He who is not more subtle than Duns Scotus is blunt. He who is not more skillful than Guillaume Durand is wild. He who is not more composite than Jean Bodin and Lipsius
+			is a simple politician.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Dia[e]ta Cordialis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A hearty regimen.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						The most precious &amp; souerain thing in the world, next diuine Witt; is a mans
+						Natural heate, &amp; radicall humour: which abooue allthings deserues to be mightily
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						preserued w[i]th all the Cordials, and
+						restoratiues vnder the Sun.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Moderata Venus iuueni prodest: viro nec prodest, nec obest:
+						seni nocet maximè. Omnis luxuria senectutum reddit inualida[m],
+					</marginalia_text>
+					<person name="Venus"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						eneruatam, infirma[m], a[e]gram, 
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="tail">
+					<marginalia_text>
+						decocta[m],
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						effetam, exangue[m],
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="tail">
+					<marginalia_text>
+						exhaustam, vetula[m], decrepita[m].
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A temperate love is useful for young people: it is neither useful for a man, nor a nuisance. It greatly injures an old man.
+			She renders all luxury of old men invalid, effeminate, weak, corrupt, ruined, worn out, feeble, exhausted, aging, and infirm.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="per la via del piacere farete" type="straight"/>
+		<underline language="IT" method="pen" text="piacere presto da voi sparirà" type="straight"/>
+		<underline language="IT" method="pen" text="bruttezza" type="straight"/>
+		<underline language="IT" method="pen" text="voi sempre" type="straight"/>
+		<underline language="IT" method="pen" text="Che son" type="straight"/>
+		<underline language="IT" method="pen" text="tempo dolorose prede" type="straight"/>
+		<underline language="IT" method="pen" text="Nascon d'affanni" type="straight"/>
+		<underline language="IT" method="pen" text="fuggonsi in poc'hore" type="straight"/>
+		<underline language="IT" method="pen" text="solo il bene oprar" type="straight"/>
+		<underline language="IT" method="pen" text="giamai non muore" type="straight"/>
+		<underline language="IT" method="pen" text="La virtù" type="straight"/>
+		<underline language="IT" method="pen" text="non i danari" type="straight"/>
+		<underline language="IT" method="pen" text="viuo" type="straight"/>
+		<underline language="IT" method="pen" text="che li danari sono il neruo" type="straight"/>
+		<underline language="IT" method="pen" text="anzi il sangue, &amp; l'anima de gli" type="straight"/>
+		<underline language="IT" method="pen" text="non ha danari, viue" type="straight"/>
+		<underline language="IT" method="pen" text="non di danari, ma della virtù si dee dire" type="straight"/>
+		<underline language="IT" method="pen" text="Inuentioni crudeli" type="straight"/>
+		<underline language="IT" method="pen" text="sopra gli stessi inuentori" type="straight"/>
+		<underline language="IT" method="pen" text="vn toro di bronzo artificiosissimo" type="straight"/>
+		<underline language="IT" method="pen" text="vn sportello" type="straight"/>
+		<underline language="IT" method="pen" text="muggiaua à guisa di toro" type="straight"/>
+		<underline language="IT" method="pen" text="questo diabolico instrumento al" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="right_margin" text="Per contra, se per la via del piacere farete qual cosa     dishonesta, quel piacere presto da voi sparirà, &amp; la bruttezza della cosa, con esso voi sempre rimarrà."/>
+		<mark method="pen" name="dash" place="right_margin"/> <!-- spari -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- nero -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- inue -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- attor -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- presen -->
+		
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="tempo dolorose prede"/>
+		<mark method="pen" name="comma" place="intext"/> <!-- huomini, dicendo -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="virtù si dee dire"/>
+		
+    </annotation>
+</transcription>

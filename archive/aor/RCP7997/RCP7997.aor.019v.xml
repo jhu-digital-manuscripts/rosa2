@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.019v.tif" reader="John Dee" signature="[D[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Nam vbicu[m]q[ue] dat[ur] maius et min[us] no[n] semp[er] dat[ur] eq[ua]le" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vbi dato maiori et minori datur a[e]q[ua]le
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Where given to the greater or lesser, the equal is given.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[m]munia dicunt[ur] extranea" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Co[mmun]ia, extranea
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Common, external.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cusa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Cusa cardin.
+                    </marginalia_text>
+                    <person name="Nicholas of Cusa"/>
+                </position>
+            </language>
+            <translation>
+                Cardinal of Cusa.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sit nota nu[m]eris r[ati]onalib[us]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Circumfere[n]tia no[n] est nota numeris r[ati]onalibus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The circumference is not noted in rational numbers.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sumpsit maiore[m] ex co[m]munib[us] [et] no[n] p[ro]ximis" type="straight"/>
+        <underline language="LA" method="pen" text="specie q[uo] sunt" type="straight"/>
+        <underline language="LA" method="pen" text="Sed nunq[uam] dat[ur] vacca maior petro [et] minor ergo eq[ua]lis cu[m] vacca [et] petrus differu[n]t specie" type="straight"/>
+        <underline language="LA" method="pen" text="q[uo] differu[n]t specie sed c[on]ueniu[n]t solu[m] genere" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]tinuo q[ua]re" type="straight"/>
+        <underline language="LA" method="pen" text="vadit in aliud gen[us]" type="straight"/>
+        <underline language="LA" method="pen" text="accide[n]s" type="straight"/>
+        <underline language="LA" method="pen" text="ex extraneis" type="straight"/>
+        <underline language="LA" method="pen" text="q[uo] co[m]munia dicunt[ur] extranea quia se extendunt in extraneu[m] genus subiecti" type="straight"/>
+        <underline language="LA" method="pen" text="cusa et multi qui seducti sunt huiusmo[d]i" type="straight"/>
+        <underline language="LA" method="pen" text="Minor transce[n]dit genus [et] sumit[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="q[uod] sit nota nu[m]eris r[ati]onalib[us] no[n] sequit[ur]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/>         <!-- p[ro]xima s[ed] -->
+        
+        <numeral language="LA" place="right_margin" text="Tercia">3</numeral>
+        
+    </annotation>
+</transcription>

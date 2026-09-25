@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.003v.tif" reader="Harvey" signature="[Aiiii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Aiax.</marginalia_text>
+                    <person name="Ajax"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Vlisses.</marginalia_text>
+                    <person name="Odysseus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Ulisses knew the time &amp; place, where hardinesse might preuayle." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vbi, et Quando, duo preciosissima pra[e]dicamenta.</marginalia_text>
+                </position>
+            </language>
+            <translation>Where and when, two most precious predicated events.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="270" place="left_margin">
+                    <marginalia_text>Ex abundantia cordis, os loquit[u]r; manus, pedesq[ue] operant[u]r. Nescia virtus stare loco.</marginalia_text>
+                    <X-ref book_title="Gospel of Luke" language="LA" person="Luke" text="Ex abundantia cordis, os loquitur"/>
+                    <X-ref book_title="Pharsalia" language="LA" person="Lucan" text="Nescia virtus stare loco."/>
+                </position>
+            </language>
+            <translation>"From the abundance of the heart, the mouth speaks." The hand and feet work. "Virtue does not know how to rest."</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="270" place="right_margin">
+                    <marginalia_text>Est Deus in nobis: agitante calescimus illo. Languent homines, suoru[m] animorum impotes.</marginalia_text>
+                    <X-ref book_title="Ars amatoria" language="LA" person="Ovid" text="Est Deus in nobis: agitante calescimus illo"/>
+                </position>
+            </language>
+            <translation>"God is in us, by whose movement we are inflamed." Men are tired, not in control of their soul.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Vis consilij expers, mole ruit sua. Leo sine vulpe insolescit: vulpes sine leone vilescit. Nusq[ua]m Ciphra.</marginalia_text> <!--JG: Seems to me that Harvey quoted 'leo...vilescit' as well. Can't find it, though-->
+                    <!--KS: Could it be in reference to Aesop's fable of the lion and the fox? Can't find an exact quote, however.-->
+                    <!-- JG: Possible, that's an interesting suggestion. Can't find an exact quote either, though: http://www.mythfolklore.net/aesopica/osius/44.htm-->
+                    <X-ref book_title="Odes" language="LA" person="Horace" text="Vis consilij expers, mole ruit sua"/>
+                </position>
+            </language>
+            <translation>"Force without wisdom falls of its own weight." The Lion becomes haughty without the fox; the fox becomes worthless without the lion. Nowhere a cipher.</translation> <!--JG: Last part is somewhat perplexing?-->
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>( Traynes, wyles.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+            
+        <underline language="EN" method="pen" text="Ulisses" type="straight"/>
+        <underline language="EN" method="pen" text="time" type="straight"/>
+        <underline language="EN" method="pen" text="place" type="straight"/>
+        <underline language="EN" method="pen" text="Strength" type="straight"/>
+        <underline language="EN" method="pen" text="Policie prouydeth, that the" type="straight"/>
+        <underline language="EN" method="pen" text="strokes in" type="straight"/>
+        <underline language="EN" method="pen" text="ryghte place" type="straight"/>
+        <underline language="EN" method="pen" text="tyme" type="straight"/>
+        <underline language="EN" method="pen" text="Many mo fieldes" type="straight"/>
+        <underline language="EN" method="pen" text="polycie" type="straight"/>
+        <underline language="EN" method="pen" text="strength" type="straight"/>
+        <underline language="EN" method="pen" text="townes wonne" type="straight"/>
+        <underline language="EN" method="pen" text="by sleightes, whyche" type="straight"/>
+        <underline language="EN" method="pen" text="martiall feates" type="straight"/>
+        <underline language="EN" method="pen" text="and strength of bodye" type="straight"/>
+        <underline language="EN" method="pen" text="anymated with wytte and polycie" type="straight"/>
+        <underline language="EN" method="pen" text="Strategemes, sleightes, &amp; craftes, vsed by the noblest capytaynes" type="straight"/>
+        <underline language="EN" method="pen" text="hystories treate of" type="straight"/>
+        <underline language="EN" method="pen" text="capitaynes shall" type="straight"/>
+        <underline language="EN" method="pen" text="imagination, inuention" type="straight"/>
+        <underline language="EN" method="pen" text="dexteritie, in vsynge lyke" type="straight"/>
+        <underline language="EN" method="pen" text="escape al trappes, gynnes" type="straight"/>
+        <underline language="EN" method="pen" text="imbushementes" type="straight"/>
+        
+        <symbol language="EN" name="Mercury" place="left_margin" text="Strategemes, sleightes, &amp; craftes, vsed by the nobles capytaynes"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="time &amp; place"/>
+        <mark method="pen" name="hash" place="left_margin"/>
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="head"/>
+        <mark method="pen" name="horizontal_bar" place="head"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="escape al trappes, gynnes"/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--force. Wherfore-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="imagination"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="inuention"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="dexteritie"/>
+        
+    </annotation>
+</transcription>

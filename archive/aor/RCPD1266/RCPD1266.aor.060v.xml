@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.060v.tif" pagination="106" reader="John Dee" signature="[i.v.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="quinquagesimo ab egressu ex Ægypto die" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[Die - deleted] A[nn]o 50⁰ ab Exitu Israel de Egypto</marginalia_text>  
+                    <location name="Egypt"/>
+                </position>
+            </language>
+            <translation>On the fiftieth year from the exodus of the Israelites from Egypt.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mensibus vti lunaribus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mensis Lunaris</marginalia_text> 
+                </position>
+            </language>
+            <translation>A lunar month.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quinquagesimo" type="straight"/>
+        <underline language="LA" method="pen" text="Ægypto die" type="straight"/>
+        <underline language="LA" method="pen" text="propriè Sina deserti" type="straight"/>
+        <underline language="LA" method="pen" text="quinquagesimo die post liberationem ex Ægypto, Israelitae Legem duarum tabularum" type="straight"/>
+        <underline language="LA" method="pen" text="vesperam diei decimi" type="straight"/>
+        <underline language="LA" method="pen" text="nobis dies sedecim" type="straight"/>
+        <underline language="LA" method="pen" text="quadragintaquinque" type="straight"/>
+        <underline language="LA" method="pen" text="alternis dies habent triginta, &amp; viginti nouem" type="straight"/>
+        
+    </annotation>
+    
+</transcription>

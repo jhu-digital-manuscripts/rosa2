@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.286v.tif" pagination="552" reader="John Dee" signature="[mmmm.iiii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="inusta est à te, à te inquam, mortuo Caesari nota ad ignominiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>nota invsta ad ignominia[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>Branded with known infamy.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="licet quod cuique libet, loquatur: credere no[n] est necesse." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Licet quod cuiq[ue] libet loquatur credere non est necesse.</marginalia_text>
+                </position>
+            </language>
+            <translation>'People may say what they please; one does not have to believe them' [Loeb 189, 39].</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="domestici" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Domestici</marginalia_text>
+                </position>
+            </language>
+            <translation>Familiars.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Charu[m] esse ciuibus, bene de Repub. mereri, laudari, coli, diligi, gloriosum est: metui verò &amp; in odio esse, inuidiosum, detestabile, imbecillum, caducum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>vtru[m] metui an diligi melius</marginalia_text>
+                </position>
+            </language>
+            <translation>Whether to be feared or [it is] better to be loved</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="Beatus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>beatus</marginalia_text>
+                </position>
+            </language>
+            <translation>Blessed.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Repetitio</marginalia_text>
+                </position>
+            </language>
+            <translation>Repetition.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="in medullis Populi Ro. ac visceribus haerebant" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>in medullis &amp; visceribu[us] herebant</marginalia_text>
+                </position>
+            </language>
+            <translation>They stuck to the quintessence and inner part.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="summis, mediis, infimis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>su[m]mi medij infimi</marginalia_text>
+                </position>
+            </language>
+            <translation>Highest, middle, lowest.</translation>
+        </marginalia> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Conclusio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Conclusion.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="licet quod cuique libet, loquatur" type="straight"/>
+        <underline language="LA" method="pen" text="summis, mediis" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; sum à vobis benigne ac diligenter auditus. quae potestas si mihi saepius sine meo vestróque periculo fiet,              vtar: si minus, quantum potero, no[n] tam mihi me, quàm Reip. reseruabo. Mihi ferè satis est quod vixi, vel ad aetatem, vel ad gloriam. huc siquid accesserit: non tam mihi, quàm vobis,              Reíque publicae accesserit" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="&amp; sum à vobis benigne ac diligenter auditus. quae potestas si mihi saepius sine meo vestróque periculo fiet,              vtar: si minus, quantum potero, no[n] tam mihi me, quàm Reip. reseruabo. Mihi ferè satis est quod vixi, vel ad aetatem, vel ad gloriam. huc siquid accesserit: non tam mihi, quàm vobis,              Reíque publicae accesserit"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">22</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">8</numeral>
+        
+        <drawing anchor_text="vtru[m] metui an diligi melius" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

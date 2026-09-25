@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.375r.tif" pagination="299" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        predicta
+                    </marginalia_text>
+                    <emphasis method="pen" type="dotted"/>
+                </position>
+            </language>
+            <translation>
+                Predicted.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in VVallia[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Contra Wallia[m].    
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Against Wales.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="treuga" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Note Induciae
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note of the truce.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pepita" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        dedita       
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Surrendered.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in VVallia[m] ituros" type="straight"/>
+        <underline language="LA" method="pen" text="quia pr[a]edicti VVallenses hostiles sunt ad bellum instructi" type="straight"/>
+        <underline language="LA" method="pen" text="mortem non time[n]tes" type="triple"/>
+        <underline language="LA" method="pen" text=".S. Leicestr." type="straight"/>
+        <underline language="LA" method="pen" text="pepita treuga differebatur" type="straight"/>
+        <underline language="LA" method="pen" text="apud Houeden" type="double"/>
+        
+        <mark method="pen" name="circumflex" place="intext"/>
+        
+        <errata amendedtext="necessitate" copytext="necessitite" language="LA"/>
+        <errata amendedtext="educatus" copytext="aeducatus" language="LA"/>
+        <errata amendedtext="paruam" copytext="peruam" language="LA"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.265r.tif" pagination="258" reader="John Dee" signature="TT ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="cadaueris absq[ue] corruptione permanentiam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Cadaueris absq[ue] corruptione duratio</marginalia_text>
+                </position>
+            </language>
+            <translation>The duration of a cadaver without corruption.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="In electione principum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex principum electione indiciu[m] de statu sui regni</marginalia_text>  
+                </position>
+            </language>
+            <translation>From the election of princes, the evidence regarding the state of his power.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Honores enim mutant mores.</marginalia_text>
+                </position>
+            </language>
+            <translation>For honours change habits.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Eclipses" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Eclipses.</marginalia_text>
+                </position>
+            </language>
+            <translation>Eclipses.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="In ludo ac bello" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ludus. Bellum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Sport. War.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="In coiniunctione superiorum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Coniunctiones magna et ☍</marginalia_text>
+                    <symbol_in_text name="Opposite_planets"/>
+                </position>
+            </language>
+            <translation>Great and opposite conjunctiones.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cadaueris absq[ue] corruptione permanentiam" type="straight"/>
+        <underline language="LA" method="pen" text="Filiorum geniturae, usq[ue] ad natiuitatem sequentis, permutant fortunam patris, &amp; alumni. Sed regis noui constitutio, ciuium, donec uixerit: huius autem magis, illius minus" type="straight"/>
+        <underline language="LA" method="pen" text="respiciunt enim multitudinem" type="straight"/>
+        <underline language="LA" method="pen" text="In oppositione duorum superiorum, fiunt strages, uincet'q[ue] superior ex illis" type="straight"/>
+        
+        <symbol language="LA" name="Conjunction" place="right_margin" text="Coniunctio"/>
+        <symbol language="LA" name="Saturn" place="right_margin" text="Saturni"/>
+        <symbol language="LA" name="Jupiter" place="right_margin" text="Iouis"/>
+        
+    </annotation>
+</transcription>

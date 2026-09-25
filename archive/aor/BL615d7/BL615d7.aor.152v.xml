@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.152v.tif" pagination="[152v]" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="XXI di Luglio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[Iulij deleted] 21 Iunij</marginalia_text>
+                </position> 
+            </language>
+            <translation>21 June.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pietro di Arana" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pietro di Arana sup[r]a fol[io]: 109</marginalia_text>
+                    <person name="Peter d'Arana"/>
+                    <internal_ref>
+                        <target ref="BL615d7:615_d_7_f109r" text="f[o]l[io]. 109"/>
+                    </internal_ref>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="general gouerno per settimana" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note.</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>the formally</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="VI cittadini" type="straight"/>
+        <underline language="IT" method="pen" text="via delle Isole di Capouerde, per quindi prendere la sua via" type="straight"/>
+        <underline language="IT" method="pen" text="&amp; discoprire la terra ferma" type="straight"/>
+        <underline language="IT" method="pen" text="cugin di quell' Arana, che morì nella Spagnuola" type="straight"/>
+        <underline language="IT" method="pen" text="Alfonso Sancies" type="straight"/>
+        <underline language="IT" method="pen" text="cittadino di Baezza" type="straight"/>
+        <underline language="IT" method="pen" text="Giouanni Antonio Colombo" type="straight"/>
+        <underline language="IT" method="pen" text="general gouerno per settimana" type="straight"/>
+        <underline language="IT" method="pen" text="lasciaua di stare in ceruello" type="straight"/>
+        <underline language="IT" method="pen" text="diligenza tutti li spatij" type="straight"/>
+        
+        <errata amendedtext="[deleted]" copytext="Luglio" language="IT"/>
+        
+    </annotation>
+</transcription>

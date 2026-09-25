@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.137r.tif" pagination="253" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="dixit: &amp; bis quidem dixit" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        dixit &amp; bis q[ui]de[m] dixit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'As a matter of fact, he was tried twice' [Loeb 198, 331].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rumusculos aucupati" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        rumusculos aucupati
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'Idle plaudit of the ignorant' [Loeb 198, 332].
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de statu suo declinarent" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        de statu declinare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To abandon one's position.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="dixit: &amp; bis quidem dixit" type="straight"/>
+        <underline language="LA" method="pen" text="causa more maiorum, sine vi, sine metu, sine periculo: dicta &amp; exposita, &amp; demonstrata sunt omnia" type="straight"/>
+        <underline language="LA" method="pen" text="rumusculos aucupati" type="straight"/>
+        <underline language="LA" method="pen" text="quorum ego de sententia no[n] debeo" type="straight"/>
+        <underline language="LA" method="pen" text="viri suspitione aliqua perculsi repentina, de" type="straight"/>
+        <underline language="LA" method="pen" text="Quare eorum qui absoluerunt, misericordiam non reprehendo: eorum qui in iudicando superiora iudicia secuti sunt sua sponte, non Staleni fraude, constantiam comprobo: eorum verò qui sibi non liquere dixerunt, sapientiam laudo. qui absoluere" type="straight"/>
+        <underline language="LA" method="pen" text="Ac ne ex facto solum sapientes illos iudicetis, sed etiam ex nominibus ipsis, quod ii fecerint, rectissime ac sapientissime factum probetis" type="straight"/>
+        <underline language="LA" method="pen" text="longum est de singulorum virtute ita" type="straight"/>
+        <underline language="LA" method="pen" text="verborum ornamenta non quaerunt" type="straight"/>
+        <underline language="LA" method="pen" text="publicis iam tum florente Rep. foruerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Neuius pari &amp; integritate &amp; prudentia, quorum" type="straight"/>
+        <underline language="LA" method="pen" text="omnibus, natu minimus, ingenio &amp; diligentia &amp; religione par iis quos antea commemoraui, P." type="straight"/>
+        <underline language="LA" method="pen" text="qui absoluit, ambitiosus: qui distulit, cautus: qui condemnauit, constans existimatur. Haec tum agitante" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">19</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        
+    </annotation>
+</transcription>

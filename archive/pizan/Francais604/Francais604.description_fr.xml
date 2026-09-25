@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Christine de Pizan</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+        
+         <sourceDesc> 
+            
+            <bibl>
+               <note type="format">manuscript</note>
+               <note type="commonName">Français 604</note>
+               <title>Christine de Pizan</title>
+
+               <extent>
+                  <measure quantity="318" unit="folios">318</measure>
+                  <dimensions>
+                     
+                     <height unit="mm"></height>
+                     <width unit="mm"></width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">0</note>
+               
+               <note type="material">vellum</note>
+               
+               <pubPlace>France</pubPlace>
+               
+               <date notBefore="1399" notAfter="1402">14e siècle</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>fr. 604</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="36v">1r-36v</locus>
+                     <title>Cent Balades</title>
+                     <note type="textid">Cent Balades</note>
+                     <note type="folios">36</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">36</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="2">
+                     <locus from="36v" to="39v">36v-39v</locus>
+                     <title>Plusierus (seize) Virelais</title>
+                     <note type="textid">Plusierus (seize) Virelais</note>
+                     <note type="folios">3</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">36</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="3">
+                     <locus from="39v" to="60v">39v-60v</locus>
+                     <title>Une Balade retrograde, qui se dit à droit et à rebours</title>
+                     <note type="textid">Une Balade retrograde, qui se dit à droit et à rebours</note>
+                     <note type="folios">21</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">42</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="4">
+                     <locus from="60v" to="70r">60v-70r</locus>
+                     <title>Une Balade à rimes reprises</title>
+                     <note type="textid">Une Balade à rimes reprises</note>
+                     <note type="folios">10</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">41</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="5">
+                     <locus from="70r" to="84v">70r-84v</locus>
+                     <title>Un Balade à responses</title>
+                     <note type="textid">Un Balade à responses</note>
+                     <note type="folios">15</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">42</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="6">
+                     <locus from="85r" to="85v">85r-85v</locus>
+                     <title>Autres plusieurs (vingt-neuf) Balades de divers propos</title>
+                     <note type="textid">Autres plusieurs (vingt-neuf) Balades de divers propos</note>
+                     <note type="folios">1</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">41</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="7">
+                     <locus from="85v" to="85v Bis">85v-85v Bis</locus>
+                     <title>Une complainte amoureuse</title>
+                     <note type="textid">Une complainte amoureuse</note>
+                     <note type="folios">1</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">40</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="8">
+                     <locus from="85v Bis" to="85r Bis Bis">85v Bis-85r Bis Bis</locus>
+                     <title>Un Lay de .II CLXX. vers, tous leonimes</title>
+                     <note type="textid">Un Lay de .II CLXX. vers, tous leonimes</note>
+                     <note type="folios">1</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">40</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="9">
+                     <locus from="85r Bis Bis" to="86r">85r Bis Bis-86r</locus>
+                     <title>Un autrey Lay</title>
+                     <note type="textid">Un autrey Lay</note>
+                     <note type="folios">1</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">40</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="10">
+                     <locus from="1r0" to="36v0">1r0-36v0</locus>
+                     <title>Cent Balades0</title>
+                     <note type="textid">Cent Balades0</note>
+                     <note type="folios">32</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">41</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">20</note>
+                  </msItem><msItem n="11">
+                     <locus from="1r1" to="36v1">1r1-36v1</locus>
+                     <title>Cent Balades1</title>
+                     <note type="textid">Cent Balades1</note>
+                     <note type="folios">6</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">41</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">21</note>
+                  </msItem><msItem n="12">
+                     <locus from="1r2" to="36v2">1r2-36v2</locus>
+                     <title>Cent Balades2</title>
+                     <note type="textid">Cent Balades2</note>
+                     <note type="folios">3</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">41</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">22</note>
+                  </msItem><msItem n="13">
+                     <locus from="1r3" to="36v3">1r3-36v3</locus>
+                     <title>Cent Balades3</title>
+                     <note type="textid">Cent Balades3</note>
+                     <note type="folios">8</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">40</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">23</note>
+                  </msItem><msItem n="14">
+                     <locus from="1r4" to="36v4">1r4-36v4</locus>
+                     <title>Cent Balades4</title>
+                     <note type="textid">Cent Balades4</note>
+                     <note type="folios">27</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">41</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">24</note>
+                  </msItem><msItem n="15">
+                     <locus from="1r5" to="36v5">1r5-36v5</locus>
+                     <title>Cent Balades5</title>
+                     <note type="textid">Cent Balades5</note>
+                     <note type="folios">10</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">40</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">25</note>
+                  </msItem><msItem n="16">
+                     <locus from="1r6" to="36v6">1r6-36v6</locus>
+                     <title>Cent Balades6</title>
+                     <note type="textid">Cent Balades6</note>
+                     <note type="folios">3</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">41</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">26</note>
+                  </msItem><msItem n="17">
+                     <locus from="1r7" to="36v7">1r7-36v7</locus>
+                     <title>Cent Balades7</title>
+                     <note type="textid">Cent Balades7</note>
+                     <note type="folios">16</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">41</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">27</note>
+                  </msItem><msItem n="18">
+                     <locus from="1r8" to="36v8">1r8-36v8</locus>
+                     <title>Cent Balades8</title>
+                     <note type="textid">Cent Balades8</note>
+                     <note type="folios">18</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">41</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">28</note>
+                  </msItem><msItem n="19">
+                     <locus from="1r9" to="36v9">1r9-36v9</locus>
+                     <title>Cent Balades9</title>
+                     <note type="textid">Cent Balades9</note>
+                     <note type="folios">14</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">41</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">29</note>
+                  </msItem><msItem n="20">
+                     <locus from="36v0" to="239v">36v0-239v</locus>
+                     <title>Plusierus (seize) Virelais0</title>
+                     <note type="textid">Plusierus (seize) Virelais0</note>
+                     <note type="folios">19</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">41</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="21">
+                     <locus from="36v1" to="312r">36v1-312r</locus>
+                     <title>Plusierus (seize) Virelais1</title>
+                     <note type="textid">Plusierus (seize) Virelais1</note>
+                     <note type="folios">73</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">41</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem><msItem n="22">
+                     <locus from="36v2" to="314v">36v2-314v</locus>
+                     <title>Plusierus (seize) Virelais2</title>
+                     <note type="textid">Plusierus (seize) Virelais2</note>
+                     <note type="folios">2</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">41</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

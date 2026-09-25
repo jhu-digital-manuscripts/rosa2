@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.206v.tif" pagination="412" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="sine persona sermo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>sermo sine p[er]sona</marginalia_text>
+                </position>
+            </language>
+            <translation>A speech without a person.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="προσωποποιΐα in speciem narrandi" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>προσωποποιΐα</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>in narrationem.</marginalia_text>
+                </position>
+            </language>
+            <translation>Prosopopoeia in a narrative.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Titi Liuij" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Titus liuius.</marginalia_text>
+                    <person name="Livy"/>
+                </position>
+            </language>
+            <translation>Titus Livius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ἀϖοςροφΉ" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ἀϖοςροφΉ</marginalia_text>
+                </position>
+            </language>
+            <translation>Apostrophe.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uocatur auersio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Auersio quid.</marginalia_text>
+                </position>
+            </language>
+            <translation>What aversion?.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Caelio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro ca[e]lio</marginalia_text>
+                    <book title="Pro Caelio"/>
+                </position>
+            </language>
+            <translation>Pro Caelio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Celsus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Celsus.</marginalia_text>
+                    <person name="Aulus Cornelius Celsus"/>
+                </position>
+            </language>
+            <translation>Celsus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ὑποτύπωσις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ὑποτύπωσις</marginalia_text>
+                </position>
+            </language>
+            <translation>Hypotyposis.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>futura.</marginalia_text>
+                </position>
+            </language>
+            <translation>Future.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Milone" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro Milone.</marginalia_text>
+                    <book title="Pro Milone"/>
+                </position>
+            </language>
+            <translation>Pro Milone.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="μετάστασις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>μετάστασις</marginalia_text>
+                </position>
+            </language>
+            <translation>Metastasis.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="reperiuntur obliquae allocutiones" type="straight"/>
+        <underline language="LA" method="pen" text="mire mouet, siue aduersarios inuasimus: Quid" type="straight"/>
+        <underline language="LA" method="pen" text="aliud expectasse" type="straight"/>
+        <underline language="LA" method="pen" text="aut maius aliquid" type="straight"/>
+        <underline language="LA" method="pen" text="plus uideri" type="straight"/>
+        <underline language="LA" method="pen" text="potius uideatur quàm audiri: Ipse inflammatus" type="straight"/>
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        <numeral place="left_margin">3</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

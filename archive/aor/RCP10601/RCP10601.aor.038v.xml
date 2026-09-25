@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.038v.tif" pagination="76" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Petro" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Petrus</marginalia_text>
+                    <person name="St. Peter"/>
+                </position>
+            </language>
+            <translation>Peter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mysteriu[m] locale" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Mysterium Locale</marginalia_text>
+                </position>
+            </language>
+            <translation>A mystery of place.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="200" type="straight"/>
+        <underline language="LA" method="pen" text="seu sacros mysticos" type="straight"/>
+        <underline language="LA" method="pen" text="Magum" type="straight"/>
+        <underline language="LA" method="pen" text="Saronem" type="straight"/>
+        <underline language="LA" method="pen" text="Bardu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Romam iteru[m] crucifigi" type="straight"/>
+        <underline language="LA" method="pen" text="mysteriu[m] locale" type="double"/>
+        
+    </annotation>
+</transcription>

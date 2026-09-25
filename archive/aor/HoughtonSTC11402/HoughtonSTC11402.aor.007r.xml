@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.007r.tif" reader="Harvey" signature="[Aviii[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>{ Semper Occasio statim arripienda. Multa cadu[n]t inter Calicem,
+                    supremaq[ue] Labra.</marginalia_text>
+                    <X-ref book_title="Adagia" language="LA" person="Erasmus" text="Multa cadunt inter Calicem, supremaque Labra"/>
+                </position>
+            </language>
+            <language ident="IT">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Chi ha Tempo, non aspetti Tempo.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Qui non est hodiè, cras minùs aptus erit.</marginalia_text>
+                    <X-ref book_title="Remedia Amoris" language="LA" person="Ovid" text="Qui non est hodiè, cras minùs aptus erit."/>
+                </position>
+            </language>
+            <translation>The opportunity must always be seized at once. "Many things fall between the cup and the lip." Whoever has time, do not await time [Don't put off until tomorrow
+            what you can do today]. "He who is not [ready] today, will be less ready tomorrow."</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Reru[m] omniu[m] preciosissima Pra[e]da,
+                        occasio. Semper tibi pendeat hamus. Marius, nullis Repulsis excursus: Etiam Virescit Vulnere Virtus. <!--JG: Quote from the poet Aulus Furius Antias, whose writing only have survived when cited in other works -->.
+                    Aliquo modo expugnat[u]r, quod undiq[ue] Inuaditur.</marginalia_text>
+                    <person name="Gaius Marius"/>
+                    <X-ref book_title="Ars amatoria" language="LA" person="Ovid" text=" Semper tibi pendeat hamus."/>
+                    <X-ref book_title="Unknown" language="LA" person="Aulus Furius Antias" text="Etiam Virescit Vulnere Virtus"/>
+                    <X-ref book_title="Unknown" language="LA" person="Jerome" text="Aliquo modo expugnatur, quod undique inuaditur."/> <!--JG: Appears in Matteo Gribaldi's De methodo ac ratione studendi libri tres (p. 53), who attributes is to Jerome; https://books.google.co.uk/books?id=b1PbpCLGUJYC&pg=PT97&lpg=PT97&dq=Aliquo+modo+expugnatur&source=bl&ots=tHvClet2fg&sig=s3FH_dHJBzL6W0w5ympl5_HkI4s&hl=en&sa=X&ei=qDuJVeadCsbdUdWvjFg&ved=0CC4Q6AEwAw#v=onepage&q=Aliquo%20modo%20expugnatur&f=false-->
+                </position>
+            </language>
+            <translation>Opportunity is the most valuable loot of all things. "Have your hook always baited."
+            Marius,  running out without restraints: "indeed, courage grows strong at a wound." "What is invaded from every side, is conquered in any way."</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>General, &amp; special</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Instructions, annexed to [the]</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>pr[a]emisses, as more matter of commendable Exploits, &amp; worthy Strategems.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>{ No such Antiquityes here, but may easely be hodiernised by direction of Machiauels profitable Dialogues della Guerra.
+                    The most famous Examples of later Captains, &amp; Exploits, in Jouius Elogia Viroru[m] bellica virtute Illustrium, sufficient for his vse, that cannot
+                    intend [the] larger Historyes of Jouius, Guicchiardin, Sabellicus, [etc].</marginalia_text>
+                    <book title="Art of War"/>
+                    <book title="Elogia virorum bellica virtute illustrium"/>
+                    <book title="Ritratti allocuzioni e pensieri scelti dalla storia d'Italia"/>
+                    <book title="Historiae rerum Venetarum"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="messenger" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>(He is the only man, that growith famous by Dooing.)</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Of continency &amp; sober abstinence. Of Justyce." hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Two popular, &amp; plausible vertues.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Of constancye." hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>&amp; magnanimity.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Of dyuers counsels." hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Polychreston.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="The generalle rules of warre, taken out of Vegetius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Regula[e], et Axiomata Polemica.</marginalia_text>
+                </position>
+            </language>
+            <translation>Military rules and axioms.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="introduce succours" type="straight"/>
+        <underline language="EN" method="pen" text="and to prouyde vyttayles" type="straight"/>
+        <underline language="EN" method="pen" text="constancy" type="straight"/>
+        <underline language="EN" method="pen" text="discipline" type="straight"/>
+        <underline language="EN" method="pen" text="effecte of discipline" type="straight"/>
+        
+        <mark language="EN" method="pen" name="bracket" place="left_margin" text="Of continency &amp; sober abstinence.ca.iii. Of Justyce Cap.iiii."/>
+        <mark language="EN" method="pen" name="bracket" place="left_margin" text="Of constancye. Cap.v. Affection and moderation. Cap.vi."/>
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        
+        
+    </annotation>
+</transcription>

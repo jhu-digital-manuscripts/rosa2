@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.090v.tif" pagination="4" reader="Harvey" signature="[A2v]"/>	<!-- ABO 95left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Noua quotidiè illuminatio. Palingenesia.
+					</marginalia_text>
+					<emphasis method="pen" text="Noua quotidiè" type="straight"/>
+					<emphasis method="pen" text="illuminatio" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				A new illumination daily. Palingenesis. 
+			</translation>
+		</marginalia>		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Quicquid mille Diaboli dixerint; Ironia est
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						angelus coeli. Agant illi Furias tragicas:
+						/ tu ride comicè:
+						et rem age ipsam. Viuitur ingenio.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Whatever a thousand devils will have said, Irony is an angel from heaven. 
+				While the former stirs up tragic frenzies, you laugh comically and do the thing itself.	
+				One lives by one's abilities.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Sine la[e]titia, vita miseria: sine audatia, homo bestia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Without happiness, life is a misery. Without daring, man is a beast.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Quoties tristis, toties miser: quoties timidus,
+						toties bestia.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				As often as he is sad, so often is he miserable. As often as he is timid, so often is he a beast. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Degeneres, et pueriles animos Timor arguit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Fear betrays degenerate and childish souls.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Pra[e]stantissimis
+						) pra[e]stantior.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				More excellent than the most excellent.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Il mondo de' presontuosi.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The world of presumptuous men.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Semper absolutus: aut nunq[uam] magnus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Always free, or else never great.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Repetit acutus lanista; repetit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The sharp trainer repeats; he repeats.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Non lectio, aut scriptio; sed quotidiana relectio, et repetitio est, qua[e] virum facit
+						reuerâ virum: incessantem, et semper magis, magisq[ue] industrium.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Neither reading, nor writing, but daily re-reading and repetititon is that which, in reality, makes a man;
+				a man who is unceasing and ever more and more diligent.
+			</translation>
+		</marginalia>
+		
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.090v_0001" marginalia_continues_from="Ha2.091r_0001" marginalia_from_transcription="Ha2.091r.xml">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						[A3[r]: Alij egent alijs:	Autarces seipso. Qui se habet, habet omnes: qui =] = alios tenet, tenet neminem. Totus vir, solus vir.
+						<!-- Continued from facing page, left margin, Ha2.091r -->
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				[A3[r]: Others need other things; self-sufficiency needs itself. He who has himself, has everything. He who] keeps others, keeps no one. Only a man alone is completely a man.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						- tam necessaria acri actori, quàm panis quotidianus. Nunq[uam] nimis, quod
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						nunq[uam] satis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				As necessary to the keen actor as daily bread. That which is never enough is never too much.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="iscusare l'inauuertenza" type="straight"/>
+		<underline language="IT" method="pen" text="non" type="straight"/>
+		<underline language="IT" method="pen" text="non volendo" type="straight"/>
+		<underline language="IT" method="pen" text="patirai le pene" type="straight"/>
+		<underline language="IT" method="pen" text="che l'ignoranza" type="straight"/>
+		<underline language="IT" method="pen" text="madre della presontione" type="straight"/>
+		<underline language="IT" method="pen" text="non sapeua altro, se non" type="straight"/>
+		<underline language="IT" method="pen" text="Temistocle Senatore" type="straight"/>
+		<underline language="IT" method="pen" text="cominciato à saper viuere" type="straight"/>
+		<underline language="IT" method="pen" text="La Volpe" type="straight"/>
+		<underline language="IT" method="pen" text="Io starei meglio" type="straight"/>
+		<underline language="IT" method="pen" text="ti partissi di quì" type="straight"/>
+		<underline language="IT" method="pen" text="morte dare" type="straight"/>
+		<underline language="IT" method="pen" text="spauento" type="straight"/>
+		<underline language="IT" method="pen" text="molli, &amp; feminili" type="straight"/>
+		
+		<symbol name="JC" place="intext"/>
+		
+		<mark method="pen" name="vertical_bar" place="intext"/> <!--niente. Et-->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="cominciato à saper viuere"/>
+		
+    </annotation>
+</transcription>

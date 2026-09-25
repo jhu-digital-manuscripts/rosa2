@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.028r.tif" reader="John Dee" signature="H"/>
+    <annotation>
+        
+        <marginalia anchor_text="kalch gewermbt ohn alle krafft vnd art desselbigen kalchs" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nach" hand="Italian" method="pen">
+            <language ident="DE">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        noch
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Die mineralia von denen es seyn seure empfacht sind nicht zeytig vnnd ligen [noch] nach inn der ersten" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Mineralia incocta adhunc in prima materia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Raw minerals still [are] in the prime matter'</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="kalch gewermbt ohn alle krafft vnd art desselbigen kalchs" type="straight"/>
+        <underline language="DE" method="pen" text="warmen wassern" type="straight"/>
+        <underline language="DE" method="pen" text="art Thalck vnnd" type="straight"/>
+        <underline language="DE" method="pen" text="sauren Brunnen" type="double"/>
+        <underline language="LA" method="pen" text="vitrioli" type="straight"/>
+        <underline language="LA" method="pen" text="cupri" type="straight"/>
+        <underline language="LA" method="pen" text="ferrei" type="straight"/>
+        <underline language="DE" method="pen" text="der gustus" type="double"/>
+        <underline language="DE" method="pen" text="zeytig" type="triple"/>
+        
+        <!-- FSF: scribble under zeytug to be captured? -->
+        
+        <errata amendedtext="ferri" copytext="ferrei" language="LA"/>
+        
+    </annotation>
+</transcription>

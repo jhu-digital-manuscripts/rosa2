@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.196r.tif" pagination="383" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="cogonibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        navibus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                With ships.   
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cum cogonibus" type="double"/>
+        <underline language="LA" method="pen" text=".xvi. millium libraru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="sacro fonte intingentes" type="double"/>
+        <underline language="LA" method="pen" text="Eodem anno Dux Norma[n]norum Richardus diem clausit extremum, quo apud Fiscamium sepulto, successit Richard[us] filius eius, qui secundus dicebatur" type="straight"/>
+        <underline language="LA" method="pen" text="septentrionalis VVallia" type="double"/>
+        <underline language="LA" method="pen" text="Siluester, qui &amp; Gerebertus" type="straight"/>
+        
+    </annotation>
+</transcription>

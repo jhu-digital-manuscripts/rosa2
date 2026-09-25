@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.193r.tif" pagination="375" reader="John Dee" signature="Kk.ij."/>
+    <annotation>
+        
+        <marginalia hand="Italian"> 
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>1389.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Iohannes dux Lancastriae de partibus VVasconiae in Angliam transfretauit, postquam in Hispania" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Jo[hann]es dux Lancastria[e] componit pacem cu[m] Rege Hispania[e].</marginalia_text> 
+                    <person name="John of Gaunt"/>
+                </position>
+            </language>
+            <translation>John [of Gaunt], Duke of Lancaster, made peace with the King of Spain.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Rex verò Portugaliae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rex Port[u]galia[e]</marginalia_text>
+                    <person name="John I of Portugal"/>
+                </position>
+            </language>
+            <translation>The king of Portugal.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="commemorans in corde suo, quòd antea in felicitate &amp; rerum opulentia nec Deum vt debuit cognouisset, nec vt decuit coluisset." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota</marginalia_text>           
+                </position>
+            </language>
+            <translation>Note</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Conditiones pacis</marginalia_text>           
+                </position>
+            </language>
+            <translation>The conditions of the peace.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota ia[m] natu[m] fuisse Edwardu[m] filiu[m] Edmu[n]di Ducis Eborace[n]tis </marginalia_text> 
+                    <person name="Edward of Norwich, 2nd Duke of York"/>
+                    <person name="Edmund of Langley, 1st Duke of York"/>
+                </position>
+            </language>
+            <translation>Note that Edward son of Edmund, Duke of York, was already born then.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>dix mille liures which are french frank[es] of 20 souls a pece</marginalia_text> <!-- FSF: maybe 20 vult a  --> <!--JG: Unsure--> <!-- NBW: I think that this is it - the last 2 words would be "apiece" in modern English-->          
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="moram secisset triennalem" type="straight"/>
+        <underline language="LA" method="pen" text="infortunia passus" type="straight"/>
+        <underline language="LA" method="pen" text="primò fame" type="straight"/>
+        <underline language="LA" method="pen" text="postea dissenteria" type="straight"/>
+        <underline language="LA" method="pen" text="nonaginta milites" type="straight"/>
+        <underline language="LA" method="pen" text="Nempè mos" type="straight"/>
+        <underline language="LA" method="pen" text="vtriq[ue] genti" type="straight"/>
+        <underline language="LA" method="pen" text="Angliae scilicet atque Galliae, licèt sibimet in proprijs sint infesti regionibus, in remotis partibus tanquam fratres sibimet subuenire, &amp; fidem              adinuicem inuiolabilem obseruare" type="straight"/>
+        <underline language="LA" method="pen" text="mox dux inclinans" type="straight"/>
+        <underline language="LA" method="pen" text="commemorans in corde suo, quòd antea in felicitate" type="straight"/>
+        <underline language="LA" method="pen" text="rerum opulentia nec Deum vt debuit cognouisset, nec vt decuit coluisset" type="straight"/>
+        <underline language="LA" method="pen" text="Et ventum est ad istud" type="straight"/>
+        <underline language="LA" method="pen" text="ducis" type="straight"/>
+        <underline language="LA" method="pen" text="vxorem" type="straight"/>
+        <underline language="LA" method="pen" text="quorum posteritas" type="double"/>
+        <underline language="LA" method="pen" text="Hispaniae regno gauderet" type="straight"/>
+        <underline language="LA" method="pen" text="si nulli liberi prouenirent inter illos, haereditas volueretur ad filium ducis" type="straight"/>
+        <underline language="LA" method="pen" text="Eboraci" type="double"/>
+        <underline language="LA" method="pen" text="qui frater erat ducis Lancastriae, &amp; desponsauerat filiam regis Castellae quondam Petronis" type="straight"/>
+        <underline language="LA" method="pen" text="iuniorem" type="double"/>
+        <underline language="LA" method="pen" text="sine prole legittima" type="double"/>
+        <underline language="LA" method="pen" text="antedicti procreatam" type="straight"/>
+        <underline language="LA" method="pen" text="decem millia librarum" type="straight"/>
+        <underline language="LA" method="pen" text="eius vxori dominae Constanciae tantum" type="straight"/>
+        <underline language="LA" method="pen" text="quatuor bonae villae" type="triple"/>
+        
+        <errata amendedtext="aequos" copytext="aequus" language="LA"/>
+        <errata amendedtext="procreandam" copytext="procreatam" language="LA"/>
+        <errata amendedtext="[deleted]" copytext="librarum" language="LA"/>
+        
+    </annotation>
+</transcription>

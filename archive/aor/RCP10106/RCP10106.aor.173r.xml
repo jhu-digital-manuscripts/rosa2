@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.173r.tif" pagination="345" reader="John Dee" signature="y 5"/> 
+    <annotation>
+        
+        <marginalia anchor_text="manus iniectio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Manus Iniectio</marginalia_text>
+                </position>
+            </language>
+            <translation>Inspiration [to lay his] hand.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Duplices leges" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Duplices leges</marginalia_text>
+                </position>
+            </language>
+            <translation>Double laws.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Syllogismus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>syllogismus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Syllogism.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="finitione" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>finitio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Definition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex eo quod scriptum" hand="Italian"> <!-- FSF: I'd anchor also the est -->
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ex scripto</marginalia_text>
+                </position>
+            </language>
+            <translation>From the writing.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ratiocinatiuus dicitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>status ratiocinatiuus</marginalia_text>
+                </position>
+            </language>
+            <translation>Ratiocinative condition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Incesti damnata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Incesti po[e]na</marginalia_text>
+                </position>
+            </language>
+            <translation>The punishment for incest.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="simile scripto &amp; uoluntati" type="straight"/>
+        <underline language="LA" method="pen" text="secubanti" type="straight"/>
+        <underline language="LA" method="pen" text="Fortißima" type="straight"/>
+        <underline language="LA" method="pen" text="An quod semel ius est, idem &amp; saepius," type="straight"/>
+        <underline language="LA" method="pen" text="scripto alter nititur, alter non satis cautum esse dicit" type="straight"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">5</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        <drawing anchor_text="status ratiocinatiuus" book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

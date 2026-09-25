@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.402r.tif" pagination="787" reader="Harvey" signature="uuu4[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Ab hoc ferè Persei bello, et Æmilij Pauli de maximo rege triumpho, orditur Velleij Paterculi historia. In cuius primo 
+                        libro, hi quatuor egregij viri; P. Æmilius, Q. Metellus, Scipio Æmilianus, L. Mummius. Secundus liber à bello Viriathi,
+                        et Numantino, ad Tiberij vsq[ue] imperium; cui effusiùs blanditur: pra[e]clarus alioqui historicus, et diligenti animaduersione dignus.
+                    </marginalia_text>
+                <person name="Perseus"/>
+                <person name="Paulus Aemilius Veronensis"/>
+                <person name="Marcus Velleius Paterculus"/>
+                <person name="Lucius Aemilius Paullus Macedonicus"/>
+                <person name="Quintus Caecilius Metellus Macedonicus"/> 
+                <person name="Scipio Aemilianus"/>
+                <person name="Lucius Mummius Achaicus"/>
+                <person name="Viriatus Lusitanus"/>
+                <person name="Tiberius Gracchus"/>
+                    <book title="Roman History"/>
+                </position>
+            </language>
+            <translation>
+                Approximately from this war of Perseus and Aemilius Paulus’ victory over the greatest king, commences the history of Velleius Paterculus. 
+                In his first book appear these four extraordinary men: Paullus Aemilius , Quintus Metellus, Scipio Aemilianus and Lucius Mummius. 
+                The second book [covers the period] from the war of Viriathus and the Numantine war to the rule of Tiberius, whom he flatters rather 
+                immoderately; else a brilliant historian and worth careful attention.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Martius Philippus per saltus penetrauit" type="straight"/>
+        <underline language="LA" method="pen" text="compluresq[ue] urbes occupauit" type="straight"/>
+        <underline language="LA" method="pen" text="Rhodij misere legatos Roma[m]" type="straight"/> 
+        <underline language="LA" method="pen" text="minantes, ut Perseo" type="straight"/>
+        <underline language="LA" method="pen" text="Aemylio Paulo sequentis anni consuli" type="straight"/>
+        <underline language="LA" method="pen" text="precatus est, ut quicquid diri populo Romano" type="straight"/>
+        <underline language="LA" method="pen" text="supra domum suam conuerteretur" type="straight"/>
+        <underline language="LA" method="pen" text="Perseum uicit, uniuersamq[ue] Macedoniam in potestate[m]" type="straight"/>
+        <underline language="LA" method="pen" text="exercitui ne miraretur, quòd luna nocte proxima defectura esset." type="straight"/>
+        <underline language="LA" method="pen" text="Gentius" type="straight"/>
+        <underline language="LA" method="pen" text="cum rebellasset" type="straight"/>
+        <underline language="LA" method="pen" text="deditione[m]" type="straight"/>
+        <underline language="LA" method="pen" text="cum uxore" type="straight"/>
+        <underline language="LA" method="pen" text="Romam missus" type="straight"/>
+        <underline language="LA" method="pen" text="Ab Alexa[n]dria" type="straight"/>
+        <underline language="LA" method="pen" text="legati à Cleopatra, &amp; Ptolemaeo regibus uenerunt" type="straight"/>
+        <underline language="LA" method="pen" text="de Antiocho rege Siriae" type="straight"/>
+        <underline language="LA" method="pen" text="Perseus solicitatis" type="straight"/>
+        <underline language="LA" method="pen" text="Eumene rege Pergami" type="straight"/>
+        <underline language="LA" method="pen" text="Gentio rege" type="straight"/>
+        <underline language="LA" method="pen" text="pecuniam" type="straight"/>
+        <underline language="LA" method="pen" text="promiserat, minimè" type="straight"/>
+        <underline language="LA" method="pen" text="relictus est" type="straight"/>
+        
+        <symbol name="Mercury" place="right_margin"/>
+        <symbol name="Moon" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--esset. Gentius-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Gentius"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--missus. Ab-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Cleopatra"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Antiocho"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Perseus "/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Eumene rege Pergami"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="pecuniam"/>
+        
+    </annotation>
+</transcription>

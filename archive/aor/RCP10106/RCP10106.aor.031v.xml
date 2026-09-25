@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.031v.tif" pagination="62" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="horas partiamur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Horaru[m] partitio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Division of time.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Similitudo</marginalia_text>
+                </position>
+            </language>
+            <translation>Similarity.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="praesertim reficiat animos, ac reparet uarietas ipsa" type="straight"/>
+        <underline language="LA" method="pen" text="mutatione recreabitur" type="straight"/>
+        <underline language="LA" method="pen" text="quoru[m] diuersitate reficitur" type="straight"/>
+        <underline language="LA" method="pen" text="nihil faciamus nisi" type="straight"/>
+        <underline language="LA" method="pen" text="neq[ue] enim ulla aetas minus fatigatur" type="straight"/>
+        <underline language="LA" method="pen" text="sed experime[n]tis" type="straight"/>
+        <underline language="LA" method="pen" text="Et patientior est laboris natura pueris, quàm iuuenibus" type="straight"/>
+       
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">.1</numeral>
+        <numeral place="left_margin">2</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+<page filename="PrincetonU101.044r.tif" pagination="xl[r]" reader="Harvey" signature="[Kiv[r]]"/>
+    <annotation>
+    	<!-- Marginalia -->
+    	<marginalia hand="Italian">
+    		<language ident="LA">
+    			<position book_orientation="0" place="right_margin">
+    				<marginalia_text>
+    					Nota.
+    				</marginalia_text>
+    			</position>
+    		</language>
+    		<translation>
+    			Note.
+    		</translation>
+    	</marginalia>
+    	
+    	<!-- Underlines -->
+	<underline language="EN" method="pen" text="Europe, bee vnder" type="straight"/>
+    	<underline language="EN" method="pen" text="heades" type="straight"/>
+    	<underline language="EN" method="pen" text="all Fraunce, obeieth" type="straight"/>
+    	<underline language="EN" method="pen" text="all Spaine" type="straight"/>
+    	<underline language="EN" method="pen" text="Italie is" type="straight"/>
+    	<underline language="EN" method="pen" text="to him" type="straight"/>
+    	<underline language="EN" method="pen" text="sacked" type="straight"/>
+    	<underline language="EN" method="pen" text="and lost their" type="straight"/>
+    	<underline language="EN" method="pen" text="dominions, whose" type="straight"/>
+    	<underline language="EN" method="pen" text="some of those olde orders" type="straight"/>
+    	<underline language="EN" method="pen" text="what townes" type="straight"/>
+    	<underline language="EN" method="pen" text="heades of states, but of" type="straight"/>
+    	<underline language="EN" method="pen" text="Tortona" type="straight"/>
+    	<underline language="EN" method="pen" text="Capua" type="straight"/>
+    	<underline language="EN" method="pen" text="Brescia" type="straight"/>
+    	<underline language="EN" method="pen" text="Ravenna" type="straight"/>
+    	<underline language="EN" method="pen" text="that gouerne, not" type="straight"/>
+    	<underline language="EN" method="pen" text="to bee able to redeeme again" type="straight"/>
+    	<underline language="EN" method="pen" text="thinges with taskes, and" type="straight"/>
+    	<underline language="EN" method="pen" text="the troubles of the exercises" type="straight"/>
+    	<underline language="EN" method="pen" text="be subiects to them" type="straight"/>
+    	<underline language="EN" method="pen" text="to make afrayed" type="straight"/>
+    	<underline language="EN" method="pen" text="haue no power to remedy" type="straight"/>
+    	<underline language="EN" method="pen" text="Princes, that haue ones lost their estates" type="straight"/>
+    	<underline language="EN" method="pen" text="more able, &amp; those which as yet" type="straight"/>
+    	<underline language="EN" method="pen" text="rain by fortune, &amp; not by their vertue" type="straight"/>
+    	<underline language="EN" method="pen" text="world being but litle vertue, they see fortune gouerneth all things. And" type="straight"/>
+    	<underline language="EN" method="pen" text="will haue it to rule the[m], not they" type="straight"/>
+    	<underline language="EN" method="pen" text="rule it" type="straight"/>
+    	<underline language="EN" method="pen" text="Almaine, in" type="straight"/>
+    	<underline language="EN" method="pen" text="Princedomes, and common weales" type="straight"/>
+    	<underline language="EN" method="pen" text="vertue" type="straight"/>
+
+    	
+    	<!-- Marks -->
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="all Fraunce, obeith"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="Italie is"/>
+    	<mark method="pen" name="plus_sign" place="right_margin"/>
+    	<mark method="pen" name="hash" place="right_margin"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="to bee able to redeeme again"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="Princes, that haue ones lost their"/>
+    	<mark method="pen" name="hash" place="right_margin"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="right_margin" text="world being but litle vertue, they see fortuen gouerneth"/>
+    	<mark language="EN" method="pen" name="hash" place="right_margin" text="Allmaine, in"/>
+
+    	<mark language="EN" method="pen" name="plus_sign" place="left_margin" text="world being but litle vertue, they see fortune gouerneth"/>
+
+    	<mark language="EN" method="pen" name="plus_sign" place="tail" text="vertue"/> 
+
+    	<mark method="pen" name="dot" place="intext"/> <!-- king, all -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="some of those olde orders"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="heades of states"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="members"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Tortona"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Capua"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Brescia"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- Venice, Rauenna -->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="Rauenna"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="to bee able to redeeme again"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="thinges with taskes"/>
+    	<mark method="pen" name="dot" place="intext"/> <!-- taskes, and -->
+    	<mark method="pen" name="dot" place="intext"/> <!-- able, & --> <!--JG: Dot between 'not. Because'-->
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="keepe"/>
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="world being but litle vertue"/> 
+    	<mark language="EN" method="pen" name="plus_sign" place="intext" text="they see fortune gouerneth"/> 
+    	<mark method="pen" name="dot" place="intext"/> <!-- things. and -->
+    	
+    	
+    </annotation>
+</transcription>

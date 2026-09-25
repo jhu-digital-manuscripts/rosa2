@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.032v.tif" pagination="50" reader="John Dee" signature="[e.j.[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Eudoxi recensetur specula" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Eudoxi specula</marginalia_text>
+                    <person name="Eudoxus"/>
+                </position>
+            </language>
+            <translation>The observatory of Eudoxus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Munsterus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Munsterus</marginalia_text>
+                    <person name="Sebastian Munster"/>
+                </position>
+            </language>
+            <translation>Munster.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="duodecim Praefectos" type="straight"/>
+        <underline language="LA" method="pen" text="singulos enim" type="double"/>
+        <underline language="LA" method="pen" text="singulos anni menses regi praestò" type="straight"/>
+        <underline language="LA" method="pen" text="autem duodecim" type="straight"/>
+        <underline language="LA" method="pen" text="sub anni finem" type="straight"/>
+        <underline language="LA" method="pen" text="mensem Nisan" type="straight"/>
+        <underline language="LA" method="pen" text="intercalares dies adiectos" type="double"/>
+        <underline language="LA" method="pen" text="vltimo mensi in" type="straight"/>
+        <underline language="LA" method="pen" text="maturescentes" type="double"/>
+        <underline language="LA" method="pen" text="eo mense" type="straight"/>
+        <underline language="LA" method="pen" text="mensem" type="straight"/>
+        <underline language="LA" method="pen" text="zisri" type="straight"/>
+        <underline language="LA" method="pen" text="quispia[m] Hebraeos intercalandi ea ratione vsos quam obseruant Ægyptij" type="straight"/>
+        <underline language="LA" method="pen" text="Nisan" type="straight"/>
+        <underline language="LA" method="pen" text="Adar" type="straight"/>
+        <underline language="LA" method="pen" text="Philosophia, primus certam temporum rationem Graecis" type="straight"/>
+        <underline language="LA" method="pen" text="recensetur specula, ex qua is astrorum motus obseruabat" type="straight"/>
+        <underline language="LA" method="pen" text="sequuntur aetatis huius Hebraei" type="straight"/>
+        <underline language="LA" method="pen" text="Calendario Munsterus" type="straight"/>
+        <underline language="LA" method="pen" text="Vëadar" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Februarium" type="double"/>
+        <underline language="LA" method="pen" text="more gentis Hebraicae, à qua bona sua omnia caeterae gentes deriuata habuerunt" type="straight"/>
+        <underline language="LA" method="pen" text="scriptoribus prophanis" type="double"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="comma" place="intext"/>  <!-- duodecim dies -->
+        
+    </annotation>
+</transcription>

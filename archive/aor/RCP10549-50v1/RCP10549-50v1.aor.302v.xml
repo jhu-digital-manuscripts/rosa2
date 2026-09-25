@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.302v.tif" pagination="568" reader="John Dee" signature="[ooo.iiii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="honos P.C. mihi maximus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>honor maxim[us]</marginalia_text>
+                </position>
+            </language>
+            <translation>The greatest honour.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="C. Caesarem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>C. Ca[e]sar</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Julius Caesar.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="confecit exercitum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>co[n]ficere exercitu[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>To kill an army.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ita haberi, prout" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ita. prout.</marginalia_text>
+                </position>
+            </language>
+            <translation>Thus. Just as.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="indoles virtutis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Indoles v[ir]tutis [indoles - deleted]</marginalia_text>
+                </position>
+            </language>
+            <translation>Virtue's innate character.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Macedo Alexander" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Macedo Alexander.</marginalia_text>
+                    <person name="Alexander the Great"/>
+                </position>
+            </language>
+            <translation>Alexander the Great.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="equites, sagittarios, elephantos in suam Populíque Ro." type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/> 
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">8</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+        <drawing anchor_text="honor maxim[us]" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="C. Ca[e]sar" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

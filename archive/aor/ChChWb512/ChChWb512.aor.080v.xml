@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.080v.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Mureith" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Murais a Io[anne] Boccatio.
+                    </marginalia_text>
+                    <person name="Mureif"/>
+                    <person name="Giovanni Boccaccio"/>
+                </position>
+            </language>
+            <translation>Mureif in Giovanni Boccaccio.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="suum Mureith" type="straight"/>
+        <underline language="LA" method="pen" text="autem stagnum" type="straight"/>
+        <underline language="LA" method="pen" text="sexaginta insulas" type="straight"/>
+        <underline language="LA" method="pen" text="vnum solum" type="straight"/>
+        <underline language="LA" method="pen" text="mare decurrit" type="straight"/>
+        <underline language="LA" method="pen" text="totidem aquilarum" type="straight"/>
+        <underline language="LA" method="pen" text="opprimeret Gillomarus rex" type="straight"/>
+        
+    </annotation>
+</transcription>

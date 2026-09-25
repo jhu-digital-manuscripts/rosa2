@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.201v.tif" pagination="402" reader="John Dee" signature="[C[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="aliud est admittere figura[m], aliud figuram esse." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aliud est figura[m] admittere aliud figuram eße.</marginalia_text>
+                </position>
+            </language>
+            <translation>There are some that admit a figure, others are a figure.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="In tertio de Oratore" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero 3⁰ de orat[ore].</marginalia_text>
+                    <person name="Cicero"/>
+                    <book title="De Oratore"/>
+                </position>
+            </language>
+            <translation>Cicero in the third book of the De Oratore.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="commoratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Commoratio</marginalia_text>
+                </position>
+            </language>
+            <translation>Lingering.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praecisio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pra[e]cisio</marginalia_text>
+                </position>
+            </language>
+            <translation>Breaking off.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praeceptis Caesaris" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pra[e]cepta Ca[e]saris</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Caesar's precepts.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="admittere figuram, aliud figuram" type="straight"/>
+        <underline language="LA" method="pen" text="sermo schema iudicaretur, nec ea sola quae habere[n]t aliquam remotam ab usu communi fictionem, sed" type="straight"/>
+        <underline language="LA" method="pen" text="ne fraudarem lege[n]tes iudicio maximi autoris. In tertio" type="straight"/>
+        <underline language="LA" method="pen" text="indistincte concisa breuitas, &amp;" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+    </annotation>
+</transcription>

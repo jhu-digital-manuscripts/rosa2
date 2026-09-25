@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.226r.tif" pagination="219" reader="John Dee" signature="II iij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Contra alchododen Arabum</marginalia_text>
+                </position>
+            </language>
+            <translation>Against the Alchocoden of the Arabs.</translation> <!-- http://www.skyscript.co.uk/gl/alchocoden.html -->
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Colores</marginalia_text>
+                </position>
+            </language>
+            <translation>Colours.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary"> <!-- FSF: possibly anchor formam -->
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>De forma hominu[m] et etia[m] aliaru[m] rerum.</marginalia_text>
+                </position>
+            </language>
+            <translation>On the shape of men and also of other matters.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mors erit uiolenta" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mors Viole[n]ta.</marginalia_text>
+                </position>
+            </language>
+            <translation>A violent death.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cum extraxeris figuram ex figura, pones ascendens iuxta rationem eleuationis poli super circulum positionis significatoris, hoc autem maxime in filijs" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Na[m] ex figura nati tum parentu[m] amicoru[m] [etc] fortuna[e]: aliq[u]o modo predici possunt. 
+                    Ide[m] pene facim[us] cum ad eoru[m] significatores promissores vel bonos vel malos dirigim[us], iuxta circulu[m] positionis significator[um]</marginalia_text>
+                </position>
+            </language>
+            <translation>For from the figure of the birth, then of the parents, friends, et cetera, [and] fortune: they can be foretold in another way. 
+                We can almost do the same when we direct the promissors toward their significators, either good or bad, near the orbit of the significators' position
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Si daretur significator annoru[m] alius â significatore uitae, nemo biothanatus esset" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Ergo significator vita[e], etiam annoru[m] vita[e] spatiu[m] significat: et qui vita[e] longitudine[m] et 
+                    statiu[m] declarat is et singulis et vltimo tempore,</marginalia_text> 
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>morbru[m] et mortis [etc].</marginalia_text>
+                </position>
+            </language>
+            <translation>Therefore the significator of life, even signifies the length of the years of life: and who declares 
+            the length of life and its condition, he even [declares the lenght] of delay and death, et cetera, in the first and in the last time.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="debilitatem abscindentis: remotionem impedientis, infortun[a]e quae loco non dominatur: &amp; fortunas quae inter abscindens &amp; significatorem positae sunt" type="straight"/>
+        <underline language="LA" method="pen" text="post xl. annos frequentes &amp; ualidos morbos" type="straight"/>
+        <underline language="LA" method="pen" text="significator uitae concussus est, applicante" type="straight"/>
+        <underline language="LA" method="pen" text="infortunae corpore uel radio" type="straight"/>
+        <underline language="LA" method="pen" text="Signa fixa robur uitae praestant, maxime Taurus &amp; Leo, maxime'q[ue] occidunt praecipue Scorpius, deinde Aquarius" type="straight"/>
+        <underline language="LA" method="pen" text="hoc tempore" type="straight"/>
+        <underline language="LA" method="pen" text="hoc autem maxime in filijs" type="straight"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="right_margin" text="Cum uideris post xl. annos frequentes &amp; ualidos morbos, scias quod significator uitae concussus est, applicante ei infortunae corpore uel radio"/>
+        
+    </annotation>
+</transcription>

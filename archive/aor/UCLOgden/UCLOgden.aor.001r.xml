@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.001r.tif" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian" other_reader="unknown">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        e
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia date="1631" hand="Italian" other_reader="">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Sum Liber Oliueri Wyther 1631 <!-- FSF: unable to identify this person -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                I am the book of Oliver [Wither], 1631.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        pr. 4s.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia date="22 May 1550" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Ioannes Deeus 1550. 22 Maij Lovanij vi ♌ comp.  <!--JG: Unsure about vi &Leo; comp. -->
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                    <location name="Louvain"/>
+                </position>
+            </language>
+            <translation>John Dee. 22 May 1550 in Leuven.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" other_reader="unknown"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        U.e
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Firmicus vixit anno d[o]m[ini] 320 sc[ilicet] 70 post Ptoloma[e]u[m]
+                    </marginalia_text>
+                    <person name="Julius Firmicus Maternus"/>
+                    <person name="Ptolemy"/>
+                </position>
+            </language>
+            <translation>
+                Firmicus lived in 320, that is 70 years after Ptolemy. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Archimedes. pag[ina] 173.
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="UCLOgden:196:m0001" text="173"/>
+                    </internal_ref>
+                </position>
+            </language>
+        </marginalia>
+        
+    </annotation>
+</transcription>

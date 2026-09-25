@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.318v.tif" pagination="144" reader="John Dee" signature="[T.ij.[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A[nno] 1389</marginalia_text>
+                </position>
+            </language>
+            <translation>In the year 1389.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="reges praestitêre personalia" type="straight"/>
+        <underline language="LA" method="pen" text="Michael Attepool" type="straight"/>
+        <underline language="LA" method="pen" text="Norwicensis temporibus malis ausus" type="straight"/>
+        <underline language="LA" method="pen" text="Nouemb. redijt" type="straight"/>
+        <underline language="LA" method="pen" text="transmarinis partibus moram traxerat triennalem" type="straight"/>
+        <underline language="LA" method="pen" text="vt affinitas inter eos successoria firmaretur" type="straight"/>
+        <underline language="LA" method="pen" text="ad vitam duci &amp; ducissae 10000. librarum" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+           
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+         
+    </annotation>
+</transcription>

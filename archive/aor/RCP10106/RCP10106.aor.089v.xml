@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.089v.tif" pagination="178" reader="John Dee" signature="[m[v]]"/> 
+    <annotation>
+
+        <marginalia anchor_text="Corn. Celsus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Corn[elius] Celsus.</marginalia_text>
+                    <person name="Aulus Cornelius Celsus"/>
+                </position>
+            </language>
+            <translation>Cornelius Celsus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pro Raibirio Posthumo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pro. Rabirio.</marginalia_text>
+                    <book title="Pro Rabirio Posthumo"/>
+                </position>
+            </language>
+            <translation>Pro Rabirio.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Teucer" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Teucer.</marginalia_text>
+                    <person name="Teucer"/>
+                </position>
+            </language>
+            <translation>Teucer.</translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

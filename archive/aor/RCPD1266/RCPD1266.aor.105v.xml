@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.105v.tif" pagination="196" reader="John Dee" signature="[r.ij.[v]]"/>
+    <annotation>
+         
+        <marginalia anchor_text="At Iulius Caesar praeter horum omnium rationem anni sui principium instituit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Annus Iulianus</marginalia_text>
+                </position>
+            </language>
+            <translation>The Julian year.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hyberno solstitio, concipitur Dominus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Conceptio D[omi]ni, hiberno solstitio</marginalia_text>
+                    <person name="Jesus Christ"/>
+                </position>
+            </language>
+            <translation>The conception of the Lord, at the winter solstice.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="inchoare à Septembri" type="straight"/>
+        <underline language="LA" method="pen" text="iuxta" type="double"/>
+        <underline language="LA" method="pen" text="Luna prima post solstitium" type="straight"/>
+        <underline language="LA" method="pen" text="quo quidem anno, confusa sunt nationum omnium tempora" type="straight"/>
+        <underline language="LA" method="pen" text="ab hoc mense Septembri" type="straight"/>
+        <underline language="LA" method="pen" text="autem indictiones" type="straight"/>
+        <underline language="LA" method="pen" text="Calend" type="double"/>
+        <underline language="LA" method="pen" text="Ecclesiae autoritate" type="straight"/>
+        <underline language="LA" method="pen" text="permiserunt" type="double"/>
+        <underline language="LA" method="pen" text="nullum alium annum" type="straight"/>
+        <underline language="LA" method="pen" text="in 25. Decembris" type="straight"/>
+        <underline language="LA" method="pen" text="quibus libenter omnes parebant" type="straight"/>
+        <underline language="LA" method="pen" text="ad brumam" type="straight"/>
+        <underline language="LA" method="pen" text="Est igitur natus, atque etiam baptizatus" type="straight"/>
+        <underline language="LA" method="pen" text="ipso aequinoctij autumnalis" type="straight"/>
+        <underline language="LA" method="pen" text="domino Christo, sex mensibus maior sit natu Iohannes Baptista" type="straight"/>
+        <underline language="LA" method="pen" text="mense septembri medio" type="straight"/>
+        <underline language="LA" method="pen" text="est, medio Martio" type="straight"/>
+        <underline language="LA" method="pen" text="nempe Iunio" type="double"/>
+        <underline language="LA" method="pen" text="Ita Iunius est primus concepti Iohannis mensis" type="straight"/>
+        <underline language="LA" method="pen" text="id est hyberno solstitio" type="double"/>
+        <underline language="LA" method="pen" text="ephemeriae" type="straight"/>
+        <underline language="LA" method="pen" text="res sacrae &amp; festa numerabantur" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- mense suos -->
+        
+    </annotation>
+</transcription>

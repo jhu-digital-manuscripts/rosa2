@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.093r.tif" pagination="169" reader="John Dee" signature="p"/>
+    <annotation>
+        
+        <marginalia anchor_text="iis omnibus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        et veneri etia[m]?
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Even to Venus?
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="constitutus, misero libidinis studio, ad sordidaru[m] mulierum" type="straight"/>
+        <underline language="LA" method="pen" text="iis omnibus ☉ quadratus" type="straight"/>
+        
+    </annotation>
+</transcription>

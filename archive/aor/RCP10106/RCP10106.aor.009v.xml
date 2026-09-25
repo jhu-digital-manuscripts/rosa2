@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.009v.tif" pagination="18" reader="John Dee" signature="[b[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Ingenij signum in paruis praecipuum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ingenij Singnu[m].</marginalia_text> 
+                </position>
+            </language>
+            <translation>A sign of intelligence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="memoria est (Eius duplex uirtus, facilè percipere, &amp; fideliter continere) Proximum imitatio." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Memoria[e] v[ir]tus .2.</marginalia_text>
+                </position>
+            </language>
+            <translation>The virtue of memory.</translation>
+        </marginalia>
+        
+        <numeral place="left_margin">X</numeral>
+        
+    </annotation>
+</transcription>

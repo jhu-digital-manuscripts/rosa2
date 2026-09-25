@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.010r.tif" reader="John Dee" signature="Ciij"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>NOTA</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="resoluiert Miner" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Minera resoluta</marginalia_text>
+                </position>
+            </language>
+            <translation>Resolved mines.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Alumen virtiol vnd saltz" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Alumen 1 Vitriolum 2 Sal 3</marginalia_text>
+                </position>
+            </language>
+            <translation>Potash 1, virtiol 2, salt 3.</translation>
+        </marginalia>        
+        
+        <underline language="DE" method="pen" text="ein resoluiert Miner auß dem corpus das gleich mässig sthet neben dem Alumen vitriol vnd saltz" type="straight"/>
+        <underline language="DE" method="pen" text="scheiden" type="double"/>
+        <underline language="DE" method="pen" text="wiewol sy durch louffen mögen durch die mineralia" type="straight"/>
+        <underline language="DE" method="pen" text="werden sy in kein weg verendert" type="straight"/>
+        <underline language="DE" method="pen" text="andere geschlecht" type="double"/>
+        <underline language="DE" method="pen" text="auß der separation geboren werden" type="straight"/>
+        
+        <mark language="DE" method="pen" name="vertical_bar" place="left_margin" text="wiewol sy durch louffen mögen durch die mineralia vnnd dergleichen yedoch so werden sy in kein weg verendert"/>
+        
+    </annotation>
+</transcription>

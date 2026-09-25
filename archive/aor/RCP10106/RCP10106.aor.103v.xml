@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.103v.tif" pagination="206" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="affectus duplici ratione excludendos putabat," hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Affectus exclude[n]dos quidam existimavere au[c]tores.</marginalia_text>
+                </position>
+            </language>
+            <translation>Certain authors think emotions are to be excluded.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="prooemij, neq[ue] narrationis est alius usus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Proo[e]mij &amp; Narrationis usus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The use of prooemium and narration.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Confirmatio neceßaria or[ati]o[n]is p[ar]s</marginalia_text> 
+                </position>
+            </language>
+            <translation>The confirmation is a necessary part of a speech.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristotele" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aristoteles.</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="alias esse probationes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Probatio[n]is Diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>Division of proof.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quia uitium esset omnis animi perturbatio" type="straight"/>
+        
+    </annotation>
+</transcription>

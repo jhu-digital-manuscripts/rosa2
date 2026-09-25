@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.162v.tif" pagination="324" reader="John Dee" signature="[x 2[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="[gene]raliter Incredibile esse à filio patrem, ab uxore uirum occisum" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>g[e]n[er]aliter</marginalia_text>
+                </position>
+            </language>
+            <translation>In general</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="proprie" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Proprie.</marginalia_text>
+                </position>
+            </language>
+            <translation>Especially.</translation>
+        </marginalia>    
+        
+        <marginalia anchor_text="in quibus haec maxime spectantur, ira, odium, metus, cupiditas, spes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Affectus.</marginalia_text>
+                </position>
+            </language>
+            <translation>Emotion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nihil credibile sit factu[m] esse sine causa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nihil factu[m] sine caußa.</marginalia_text>
+                </position>
+            </language>
+            <translation>Nothing is done without a reason.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; qui nihil obijcit, omisisse credi potest maledicta tanquam superuacua: qui" type="straight"/>
+        <underline language="LA" method="pen" text="quibus uinci, quàm tacere maluerit" type="straight"/>
+        <underline language="LA" method="pen" text="ut nihil credibile sit factu[m] esse causa: quod" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <numeral place="left_margin">1</numeral>
+        <numeral place="left_margin">2</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

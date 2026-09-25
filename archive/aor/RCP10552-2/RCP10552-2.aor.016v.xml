@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.016v.tif" pagination="22" reader="John Dee"/>
+   
+    <annotation>
+        
+        <marginalia anchor_text="anno regni nostri tertio decimo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A[nn]o. Erici. 13</marginalia_text>
+                    <person name="Eric II of Norway"/>
+                </position>
+            </language>
+            <translation>In the thirteenth year [of the reign] of Eric II of Norway.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Dauid Regis Scotorum descenderat seniore, adiudicauit Rex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>nepotis</marginalia_text>
+                </position>
+            </language>
+            <translation>Grandchild.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Robertus nempe de Brus, inter quem &amp; ipsum Iohanne[s] de Balliolo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Qu[o]mod[o] pra[e]cipua inter Rob[ertus]. Brus et Jo[h]ann[es] Baliol erat.</marginalia_text>
+                    <person name="Robert V de Brus"/>
+                    <person name="John Balliol"/>
+                </position>
+            </language>
+            <translation>How the particular [relation] between Robert de Brus and John Baliol was.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A[nn]o: 1294:</marginalia_text>
+                </position>
+            </language>
+            <translation>In the year 1294</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>recognosco</marginalia_text>
+                </position>
+            </language>
+            <translation>I recognise.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>et fide[m] et fidelitate[m] vobis portabo</marginalia_text>
+                </position>
+            </language>
+            <translation>I will bring faith and fidelity to you.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nostri teritiodecimo" type="straight"/>
+        <underline language="LA" method="pen" text="Anglicae &amp; superiori domino regni Scotiae" type="straight"/>
+        <underline language="LA" method="pen" text="prius habere" type="straight"/>
+        <underline language="LA" method="pen" text="suum" type="double"/>
+        <underline language="LA" method="pen" text="post diligentem" type="double"/>
+        <underline language="LA" method="pen" text="inter caeteros," type="straight"/>
+        <underline language="LA" method="pen" text="de assensu communi," type="double"/>
+        <underline language="LA" method="pen" text="Iohanni de Balliolo qui de filia" type="straight"/>
+        <underline language="LA" method="pen" text="Dauid" type="grid"/>
+        <underline language="LA" method="pen" text="Regis Scotorum descenderat seniore, adiudicauit Rex" type="straight"/>
+        <underline language="LA" method="pen" text="ex integro" type="double"/>
+        <underline language="LA" method="pen" text="regnu ipsum." type="straight"/>
+        <underline language="LA" method="pen" text="vno gradu" type="straight"/>
+        <underline language="LA" method="pen" text="descendit à filia" type="straight"/>
+        <underline language="LA" method="pen" text="Regis" type="double"/>
+        <underline language="LA" method="pen" text="Dauid secunda" type="straight"/>
+        <underline language="LA" method="pen" text="lapidem regalem" type="double"/>
+        <underline language="LA" method="pen" text="qui testu[m] natiuitatis" type="straight"/>
+        <underline language="LA" method="pen" text="nouu[m] castrum" type="straight"/>
+        <underline language="LA" method="pen" text="eidem fecit" type="straight"/>
+        <underline language="LA" method="pen" text="homagium sub his verbis" type="double"/>
+        <underline language="LA" method="pen" text="Angliae superior domine Scotiae" type="straight"/>
+        <underline language="LA" method="pen" text="hijs qu[a]e ad hoc spectant" type="straight"/>
+        <underline language="LA" method="pen" text="suo &amp; alterius iure saluo." type="straight"/>
+        <underline language="LA" method="pen" text="eidem regnum Scotiae integraliter cu[m] omnibus pertinentijs restituit indilatè" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- domini, Regis -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- praedicti. ( Igitur -->
+        <mark method="pen" name="circumflex" place="right_margin"/>
+        <mark method="pen" name="circumflex" place="intext"/> <!-- iplum. ^ Robertus-->
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="circumflex" place="intext"/> <!-- Scotiae ^ me -->
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="circumflex" place="intext"/> <!-- Angliae, ^ &-->
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="bracket" place="intext"/> <!-- mori. ) Et -->
+        <mark method="pen" name="double_vertical_bar" place="intext"/> <!-- indilat&egrave; Transit -->
+        
+        <numeral place="left_margin">3</numeral>
+        
+        <errata amendedtext="[deleted]" copytext="que[m] Iacob supposuerat capiti suo, dum iret de Bersabec &amp; pergeret Ara[m]" language="LA"/>
+        <errata amendedtext="possunt" copytext="putant" language="LA"/> 
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="face"/>
+       
+        <graph book_orientation="0" method="pen" place="tail" type="genealogical_tree">
+            <node id="n1" person="David I of Scotland">David Rex</node>
+            <node id="n2" person="Henry of Scotland">Henricus</node>
+            <node id="n3" person="William the Lion">Wil[he]mus R[ex].</node>
+            <node id="n4" person="Alexander II of Scotland">Alex R[ex].</node>
+            <node id="n5" person="David, Earl of Huntingdon">David</node>
+            <node id="n6" person="Margaret of Huntingdon">2 Margaret</node>
+            <node id="n7" person="Isobel of Huntingdon">2 Isabel</node>
+            <node id="n8" person="Dervorguilla of Galloway">2 Dòruidill</node>
+            <node id="n9" person="Marian Mac Lachlan, of Galloway">2 Marioria</node>
+            <node id="n10" person="Robert V de Brus">Rob Bruce</node>
+            <node id="n11" person="Robert VI de Brus">Rob. Bruce</node>
+            <node id="n12" person="John Balliol">Jo[hnann]es Baliol R[ex].</node>
+            
+            <link from="n2" relationship="has_child" to="n1"/>
+            <link from="n3 n5" relationship="has_child" to="n2"/>
+            <link from="n4" relationship="has_child" to="n3"/>
+            <link from="n6 n7" relationship="has_child" to="n5"/>
+            <link from="n8 n9" relationship="has_child" to="n6"/>
+            <link from="n10" relationship="has_child" to="n7"/>
+            <link from="n12" relationship="has_child" to="n8"/>
+            <link from="n11" relationship="has_child" to="n10"/>
+            <link from="n12" relationship="transgenerational" to="n1"/>
+        </graph>
+        
+    </annotation>
+</transcription>

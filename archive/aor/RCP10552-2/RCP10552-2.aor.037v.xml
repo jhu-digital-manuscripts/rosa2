@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.037v.tif" pagination="64" reader="John Dee" signature="[F.ij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Robertus de Brus terram circuiens, multos sibi rebelles peremit, misistq; cum parte exercitus duos fratres suos, Thomam militem, &amp; Alexandru[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Thomas Alexander }fr[atr]es Rob[ertus] Brus.</marginalia_text> <!-- MB. Square box symbol to be captured later depending on whether this reoccurs, etc. -->
+                    <person name="Thomas de Brus"/>
+                    <person name="Alexander de Brus"/>
+                    <person name="Robert VII de Brus"/>
+                </position>
+            </language>
+            <translation>Thomas and Alexander brothers of Robert de Brus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="suos, Thomam militem, &amp; Alexandru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="tracti ax postea sunt suspensi. Tempore huius regis, fratres qui dicuntur minores, seu quod latiùs publicatur,              &amp; nequius comprobatur totius ecclesiae exploratores, ad" type="straight"/>
+        <underline language="LA" method="pen" text="Papa fratres minores granae pecuniaru[m] summa emungit." type="straight"/>
+                
+    </annotation>
+</transcription>

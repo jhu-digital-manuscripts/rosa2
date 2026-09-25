@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.047r.tif" pagination="83" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Levvlinus Bren, capitalis Vallensis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Lewelinus. Bre[n]ni[.] [est] rex.</marginalia_text> 
+                    <!-- MB. Not sure of Bre[...] following Lewelinus, possibly 'Breiniol' an early name of Llywelyn Bren's minor royal house of the cantref? -->
+                    <!-- FSF: not sure either -->
+                    <person name="Llywelyn Bren"/>
+                </position>
+            </language>
+            <translation>Llywelyn Bren is the king.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Levvlinus" type="straight"/>
+        <underline language="LA" method="pen" text="Bren" type="double"/>
+        <underline language="LA" method="pen" text="capitalis VVallensis" type="straight"/>
+        <underline language="LA" method="pen" text="duobus filijs suis" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- Bren, capitalis -->
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

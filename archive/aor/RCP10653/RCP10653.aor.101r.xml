@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.101r.tif" pagination="193" reader="John Dee" signature="R"/>
+    <annotation>
+        
+        <marginalia anchor_text="Genealogiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Genealogia.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Genealogy.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="inuenis, &amp; ipsius nepos" type="straight"/>
+        <underline language="LA" method="pen" text="Dxlviij. regnum Northanhumbrorum" type="straight"/>
+        <underline language="LA" method="pen" text="Idam iuuenem" type="straight"/>
+        <underline language="LA" method="pen" text="Ogam" type="straight"/>
+        <underline language="LA" method="pen" text="Regnauit Ida" type="straight"/>
+        <underline language="LA" method="pen" text="Genealogiam autem eius sequentia declarabunt" type="straight"/>
+        <underline language="LA" method="pen" text="anno Iordanus episcopus" type="straight"/>
+        <underline language="LA" method="pen" text="Regnum Nothanhu[m]brorum" type="straight"/>
+        
+    </annotation>
+</transcription>

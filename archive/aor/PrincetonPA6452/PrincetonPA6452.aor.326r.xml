@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.326r.tif" pagination="635" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        Asiaticum bellum aduersùs regem Antiochum: à L. Scipione victum, rege Eumene adiuuante.
+                    </marginalia_text>
+                    <person name="Antiochus III the Great"/>
+                    <person name="Lucius Cornelius Scipio Asiaticus"/>
+                    <person name="Eumenes of Cardia"/>
+                </position>
+            </language>
+            <translation>
+                The Asian war against Antiochus, won by L. Scipio, with the help of king Eumenes.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="postremò neq[ue] clari, neq[ue] negari pacem placuit" type="straight"/>
+        <underline language="LA" method="pen" text="duae conditiones eis latae" type="straight"/>
+        <underline language="LA" method="pen" text="senatui liberum arbitrium de se permitterent" type="straight"/>
+        <underline language="LA" method="pen" text="mille talentu[m] darent" type="straight"/>
+        <underline language="LA" method="pen" text="amicos atq[ue] inimicos haberent" type="straight"/>
+        <underline language="LA" method="pen" text="Exprimere cupientibus" type="straight"/>
+        <underline language="LA" method="pen" text="reru[m] in se arbitriu[m] senatui permitterent" type="straight"/>
+        <underline language="LA" method="pen" text="nihil certi responsum" type="straight"/>
+        <underline language="LA" method="pen" text="urbe eodem" type="straight"/>
+        <underline language="LA" method="pen" text="Italia intra XV dies excedere" type="straight"/>
+        <underline language="LA" method="pen" text="multum Laelius in senatu poterat" type="straight"/>
+        <underline language="LA" method="pen" text="elegantius facturos dixit" type="straight"/>
+        <underline language="LA" method="pen" text="iudicio patrum" type="straight"/>
+        <underline language="LA" method="pen" text="si sorti eam rem permisissent" type="straight"/>
+        <underline language="LA" method="pen" text="Scipio" type="straight"/>
+        <underline language="LA" method="pen" text="cum fratre uno locutus, iussusq[ue] ab eo permittere" type="straight"/>
+        <underline language="LA" method="pen" text="audacter senatui" type="straight"/>
+        <underline language="LA" method="pen" text="aut noua" type="straight"/>
+        <underline language="LA" method="pen" text="memoriae iam exoletae" type="straight"/>
+        <underline language="LA" method="pen" text="Scipio Africanus dixit" type="straight"/>
+        <underline language="LA" method="pen" text="L. Scipioni fratri suo prouinciam Graeciam" type="straight"/>
+        <underline language="LA" method="pen" text="se legatum iturum" type="straight"/>
+        <underline language="LA" method="pen" text="Haec uox magno assensu audita, sustulit" type="straight"/>
+        <underline language="LA" method="pen" text="Experiri libebat" type="straight"/>
+        <underline language="LA" method="pen" text="plus regi Antiocho" type="straight"/>
+        <underline language="LA" method="pen" text="Annibale uicto" type="straight"/>
+        <underline language="LA" method="pen" text="in uictore Africano" type="straight"/>
+        <underline language="LA" method="pen" text="legionibusq[ue] Romanis auxilij foret" type="straight"/>
+        <underline language="LA" method="pen" text="Scipioni Graecia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Aemylius Regillus classem" type="straight"/>
+        <underline language="LA" method="pen" text="Co[n]suli deinde, cui Gr[a]ecia prouincia" type="straight"/>
+        <underline language="LA" method="pen" text="prouinciam uenisset" type="straight"/>
+        <underline language="LA" method="pen" text="è rep. uideretur esse, exercitum in Asiam traijceret" type="straight"/>
+        <underline language="LA" method="pen" text="dece[m] ingenui" type="straight"/>
+        <underline language="LA" method="pen" text="dece[m] uirgines, patrimi" type="straight"/>
+        <underline language="LA" method="pen" text="decemuiri nocte" type="straight"/>
+        <underline language="LA" method="pen" text="lacte[n]tibus rem diuinam fecerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Cornelius Scipio Africanus" type="straight"/>
+
+        <symbol name="JC" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        <symbol language="LA" name="SS" place="left_margin" text="è rep. uideretur esse, exercitum in Asiam traijceret"/>
+        
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!-- cogi -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- ue -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- Suppli -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- edide -->
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- darent, eosdemq[ue]-->
+        <mark method="pen" name="dot" place="intext"/> <!--die, Italia-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="elegantius facturos dixit"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- senatui, renunciat-->
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Annibale uicto"/>
+        <mark method="pen" name="dot" place="intext"/> <!--uicto, an-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="in uictore Africano"/>
+        <mark method="pen" name="dot" place="intext"/> <!--Graecia[m], Laelio-->
+        <mark method="pen" name="dot" place="intext"/> <!--classem, P-->
+        
+    </annotation>
+</transcription>

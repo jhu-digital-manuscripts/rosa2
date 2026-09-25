@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.018v.tif" pagination="18[v]" reader="John Dee" signature="[Dii[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Salibus animali. s. minerali &amp; vegetali" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sal minerale p[ri]mò nobis proponitur: vegetabile ex leone viridi oritur et Animale ex rubro leone elicitur:
+                        vna tame[n] materia est et corpus vnu[m]: a candore, salis obtinens nome[n], et a corrosiva sua natura. I. d.     
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                </position>
+            </language>
+            <translation>Salt is the first mineral displayed to us: animating, it is born from the young lion and alive, it is pulled forth from the red lion: 
+                still one is a material and one a body: obtaining the name of salt from its beauty and corrosive nature.</translation> <!--JG: Not sure-->
+        </marginalia>
+        
+        <!-- DO: Possibly something like: 'Salt is known as our first mineral: animating, it is born from the young lion and, alive, is drawn from the red lion; still one is a material and one is a body, taking the name of salt from its whiteness and from its corrosive nature.' Still odd though... Particularly unsure how to translate 'vegetabile' and 'animale' -->
+        
+        <underline language="LA" method="pen" text="siue Caló" type="double"/>
+        <underline id="BLC.120.b.4:c_120_b_4_(2)_f018v:u0001" language="LA" method="pen" text="pali nu[n]cupatur" type="straight"/>
+        
+        
+        <physical_link>
+            
+            <marginal_annotation idref="BLC.120.b.4:c_120_b_4_(2)_f018v:u0001"/>
+            
+            <marginal_annotation idref="BLC.120.b.4:c_120_b_(2)_f019r:u0001"/>
+            
+            <marginal_annotation idref="BLC.120.b.4:c_120_b_(2)_f019r:u0002"/>
+            
+            <relation from="BLC.120.b.4:c_120_b_(2)_f018v:u0001" to="BLC.120.b.4:c_120_b_(2)_f019r:u0001" type="undirected"/>
+            
+            <relation from="BLC.120.b.4:c_120_b_(2)_f018v:u0001" to="BLC.120.b.4:c_120_b_(2)_f019r:u0002" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

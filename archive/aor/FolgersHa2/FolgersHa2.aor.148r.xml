@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.148r.tif" pagination="119" reader="Harvey" signature="H4[r]"/>	<!-- ABO 152right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						{ Plus adhuc, plusq[ue] spiritûs: et semper meliùs adhuc,
+						meliusq[ue] dicendum, atq[ue] faciendum. Aut frustra
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						tot Eutrapeli egregia Nota[e].
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Still more and more spirit; and always greater and greater still must something be said and done. 
+				Else all the illustrious notes of Eutrapelus are in vain.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Satage, q[uo]d animus dictat: et perge, du[m] feruet manus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Busy yourself with what your mind tells you, and carry on while your hand is active.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Erranti Sit medicina Confessio.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Let a confession be medicine for the errant. 
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						A Liuing hurlewind. a flowing streame.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						A liuelie
+						hurlepoole, gulfe, &amp; abisse of profounde
+						skill, &amp; practis.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="FR">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						trespuissant.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Most powerful.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Quis putet? sed quibus hodiè inuidetur, Comiti Essexio, Equiti
+						Raleio, alijs quibusdam in Aula gratiosis; suorum aliquandò
+						miserabuntur etiam inimici.
+					</marginalia_text>
+					<person name="Robert Devereux"/> <!-- JG: Could also be Walter, Robert's father?--> <!-- CG: We might want to ask a specialist then! -->
+					<person name="Walter Raleigh"/>
+				</position>
+			</language>
+			<translation>
+				Who stinks? But one is daily envied by some men, by the Count of Essex, by Sir Raleigh,
+				by certain other gracious men in court; sometimes they will pity even their enemies. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						{ fortunatis inuident amici: infoelices miserantur inimici.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Friends envy the fortune; enemies pity the unfortunate. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Nunq[uam] excedit Euschemosyne in pulchris: semper deficit Entelechia
+						in bonis. Benè multi: nemo satis benè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Refinement never exceeds in beautiful men, but Actualization is always lacking in good men.
+				Many are good, but no one is ever good enough.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Monaca" type="straight"/>
+		<underline language="IT" method="pen" text="ch'io cedo à queste tue ragioni" type="straight"/>
+		<underline language="IT" method="pen" text="sento vinto il mio furore" type="straight"/>
+		<underline language="IT" method="pen" text="alla trappola" type="straight"/>
+		<underline language="IT" method="pen" text="gli astuti &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="Cane" type="straight"/>
+		<underline language="IT" method="pen" text="il Gallo" type="straight"/>
+		<underline language="IT" method="pen" text="il Gallo si" type="straight"/>
+		<underline language="IT" method="pen" text="Cane a' piedi" type="straight"/>
+		<underline language="IT" method="pen" text="Cantando poi" type="straight"/>
+		<underline language="IT" method="pen" text="Gallo" type="straight"/>
+		<underline language="IT" method="pen" text="Volpe che l'vdì" type="straight"/>
+		<underline language="IT" method="pen" text="d'imparar" type="straight"/>
+		<underline language="IT" method="pen" text="quel dolce canto" type="straight"/>
+		<underline language="IT" method="pen" text="Gallo astuto," type="straight"/>
+		<underline language="IT" method="pen" text="sueglia intanto" type="straight"/>
+		<underline language="IT" method="pen" text="mio compagno" type="straight"/>
+		<underline language="IT" method="pen" text="allegra" type="straight"/>
+		<underline language="IT" method="pen" text="destò" type="straight"/>
+		<underline language="IT" method="pen" text="che la prese &amp; lacerolla" type="straight"/>
+		<underline language="IT" method="pen" text="La gloria" type="straight"/>
+		<underline language="IT" method="pen" text="dall'inuidia" type="straight"/>
+		<underline language="IT" method="pen" text="sola la miseria, non produce inuidia" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Perdon, ch'io cedo à queste tue ragioni,     Perdon, ch'io sento vinto il mio furore."/>
+		
+		
+		<mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- crosses into the text a bit, underneath the page number -->
+		<mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- underneath 'manus' -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- qua -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- glo -->
+		<mark language="IT" method="pen" name="plus_sign" place="right_margin" text="sola la miseria, non produce inuidia"/>
+		
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- under 'perdon' -->
+		<mark method="pen" name="quotation_mark" place="intext"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="la prese &amp; laccerolla"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- inuidia -->
+		
+    </annotation>
+</transcription>

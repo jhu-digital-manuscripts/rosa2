@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.187v.tif" pagination="198" reader="Harvey" signature="[N3v]"/>	<!-- ABO 192left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Satis multi, in magno parui: paucissimi, in paruo Magni.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Many are small enough in big matters: very few are big enough in small matters.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Singularis ingenij est, in solis consistere
+						singularibus: ca[e]tera obiter.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>To endure in singular things only is a quality of a unique intellect: other things go in passing.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Nullius voluptas tanta, quanta Philosophi:
+						ait Hierocles. Quid ni etiam Pragmatici maior?
+					</marginalia_text>
+					<person name="Hierocles"/>
+				</position>
+			</language>
+			<translation>Hiercoles said: 'No one has as much desire as a philosopher.' Is the desire of the pragmatist not even greater?</translation> 
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Make yourself as lustie, as you can possibly for
+						your life: yet how manie thousands shall you finde =
+						
+						= lusier, then Yourself, &amp; more actiue?
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						The fine Pragmatician hath
+						the onlie gift of Expedition in word, &amp; deede.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Pa[e]dantius est, no[n] philosophus, qui no[n] est Aristippus, Rabela[e]sius, Proteus.
+						<!-- Final letters of 'Proteus' continue onto facing page, tail, Ha2.188r -->
+						<!-- CG: Missing text added. -->
+					</marginalia_text>
+					<person name="Aristippus"/>
+					<person name="Francois Rabelais"/>
+					<person name="Proteus"/>
+				</position>
+			</language>
+			<translation>Pedantic is he who is not a philosopher and who is not Aristippus, Rabelais, or Proteus.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Anie studie, a pastime: anie work, or action, a sport: all occurrents, &amp; accidents in [the] world,
+						tricks, &amp; iests. Whatsoeuer in hed, or hand, all with a dexteritie, &amp; facilitie.
+						Ô gallant Course. Ô braue man.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+
+		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.187v_0001" marginalia_continues_from="Ha2.188r_0001" marginalia_from_transcription="Ha2.188r.xml">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						<!-- Continued from facing page, left margin, Ha2.188r --> [p. 199: Necessaria etiam ad unguem Althusij ars Juris propter memoriam: Hopperi ciuilis ratio propter
+						illuminatu[m] discursum: Vigelij repertorium, et ius controuersum propter expeditam, certamq[ue] Praxin:]
+						et Jureconsultoru[m] Logica, alia[e]q[ue] Freigij Analyses propter pra[e]sentem Legu[m], Canonu[m]q[ue] Analysin.
+						Semperq[ue] recordandum, ipsum Jurisconsulti A.B.C. esse regulas vtriusq[ue] Juris, cum
+						Decio, et Dyno: qua[e] sunt in omni pragmatico discursu, disputatione, praxi frequentissima[e]:
+					</marginalia_text>
+					<person name="Filippo Decio"/>
+					<person name="Magellanus Dynus"/>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Cum regulis etiam Brocardicis Chauferi, id est, verbatim regulis
+						magistralibus Speculatoris, in aureo Breuiario.
+					</marginalia_text>
+					<person name="Johannes Kauffer"/>
+					<book title="Regulae brocardicae juris"/>
+					<book title="Breviarium aureum"/>
+				</position>
+			</language>
+			<translation>[p. 199: It is also necessary to memorise by heart Althusius' art of law by means of memory: Hopper's civil reason by means of illuminated discourse:
+				Virgil's repertoire and the legal compilation by means of expediency and certain praxis:] and the logic of lawyers and other analyses of Freigius by means of existing analysis of laws and canon [laws].
+				And it must always be remembered that the actual A.B.C. of the lawyer is the rules of both laws, with Filippo Decio and Magellanus Dinus: which
+				appear most frequently in every pragmatic discourse, disputation and practice. Also with Kaufer's 'Regulae brocardicae juris', 
+			that is, with the expert rules of the spectator word for word, in the 'Golden Breviary'.</translation> 
+		</marginalia>
+		
+		
+		<underline language="IT" method="pen" text="Le Donne" type="straight"/>
+		<underline language="IT" method="pen" text="non hauer mezzo alcuno" type="straight"/>
+		<underline language="IT" method="pen" text="donna non ha mezzo alcuno" type="straight"/>
+		<underline language="IT" method="pen" text="cadde ne gli estremi" type="straight"/>
+		<underline language="IT" method="pen" text="donna adirata" type="straight"/>
+		<underline language="IT" method="pen" text="vendetta" type="straight"/>
+		<underline language="IT" method="pen" text="Femina irata" type="straight"/>
+		<underline language="IT" method="pen" text="venen dal cor le" type="straight"/>
+		<underline language="IT" method="pen" text="men crudo è l'aspe" type="straight"/>
+		<underline language="IT" method="pen" text="comando, &amp; voglio" type="straight"/>
+		<underline language="IT" method="pen" text="la forza alla donna" type="straight"/>
+		<underline language="IT" method="pen" text="altrimenti non ci si" type="straight"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--af--> 
+		
+		<mark method="pen" name="comma" place="intext"/> <!--cattiua, o-->
+		
+		<mark method="pen" name="plus_sign" place="tail"/>
+
+    </annotation>
+</transcription>

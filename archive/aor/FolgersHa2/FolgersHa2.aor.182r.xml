@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.182r.tif" pagination="187" reader="Harvey" signature="[M6r]"/>	<!-- ABO 186right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Sherlius non Sinit Ergophilum dormire.
+					</marginalia_text>
+					<person name="Anthony Shirley"/>
+					<person name="Ergophilus"/>
+				</position>
+			</language>
+			<translation>Anthony Shirley does not permit Ergophilus to sleep.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						} Omnes in Ca[e]sare Manu:
+						Ludum, iocumq[ue] dices fuisse illu[m] alteru[m]; pra[e][vt]
+						huius rabies qua[e] dabit: quisquis tandem ille
+						alter.
+					</marginalia_text>
+					<person name="Julius Caesar"/>
+					<X-ref book_title="Eunuchus" language="LA" person="Terence" text="Ludu[m], iocu[s]q[ue] dices illu[m] alteru[m]' pra[e]vt huius rabies qua[e] dabit"/>
+				</position>
+			</language>
+			<translation>
+			Everything in the hand of Caesar:
+			"You will say that other thing is fun and games, in comparison with that which this one's madness will create."
+			In the end, whoever that other man is.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Flores Magistroru[m] merentur corollam roseam:
+						fructus Doctoru[m], Coronam auream.
+						Rex Britannia[e]. Malo audire, Antipapa, quàm Antichristus.
+						Rex Dania[e]. Malim esse Solifidius cum S. Paulo, quàm
+						Nullifidius cum Alexandro Sexto.
+					</marginalia_text>
+					<person name="Saint Paul"/>
+					<person name="Pope Alexander VI"/>
+					<location name="England"/>
+					<location name="Denmark"/>
+				</position>
+			</language>
+			<translation>The flowers of the magistrates earn a small garland of roses: the fruit of doctors, a golden crown.
+			The king of England. I prefer to hear the anti-Pope, rather than the Antichrist. The king of Denmark. I may wish to be more Solifidian with Saint Paul, than more
+			Nullifidian with Alexander VI.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Dia[e]ta, et Exercitatio faciunt virum:
+						sed animus maximè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Regimen and exercise make a man: but the mind in particular makes him.</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Cogendus sibi quisq[ue] quotidiè; aut frigebit industria. Nulla virtus
+						potens, et diuturna, nisi necessaria.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Everyone must compel himself daily; or industry will grow cold. There is no potent and lasting virtue, except what is necessary.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						Apostoli, solo spiritu instructi, grauissima[e] per vniuersum
+						mundum Legationi satisfaciebant; nihilq[ue] habentes, nullius rei indigebant.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The apostles, instructed by the spirit only, made amends to the most grave ambassador through the whole world; and having nothing, they did not long for anything.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="right_margin">
+					<marginalia_text>
+						s[upr]a.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				[See] above.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="mettere" type="straight"/>
+		<underline language="IT" method="pen" text="i veri amici" type="straight"/>
+		<underline language="IT" method="pen" text="misurar" type="straight"/>
+		<underline language="IT" method="pen" text="sua con la lor fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="sauio douer" type="straight"/>
+		<underline language="IT" method="pen" text="vbbidire alla necessità" type="straight"/>
+		<underline language="IT" method="pen" text="diuini ad Alessandro" type="straight"/>
+		<underline language="IT" method="pen" text="sua vanagloria procuraua" type="straight"/>
+		<underline language="IT" method="pen" text="mentre voi custodite" type="straight"/>
+		<underline language="IT" method="pen" text="non perdiate la terra" type="straight"/>
+		<underline language="IT" method="pen" text="loro superstitione" type="straight"/>
+		<underline language="IT" method="pen" text="farieno sdegnare" type="straight"/>
+		<underline language="IT" method="pen" text="metteuano la" type="straight"/>
+		<underline language="IT" method="pen" text="città in perditione" type="straight"/>
+		<underline language="IT" method="pen" text="fanciulla in difesa" type="straight"/>
+		<underline language="IT" method="pen" text="vergine, che non" type="straight"/>
+		<underline language="IT" method="pen" text="ella" type="straight"/>
+		<underline language="IT" method="pen" text="me intera" type="straight"/>
+		<underline language="IT" method="pen" text="manca vn'occhio" type="straight"/>
+		<underline language="IT" method="pen" text="miei nimici" type="straight"/>
+		<underline language="IT" method="pen" text="à me l'hanno fatto" type="straight"/>
+		<underline language="IT" method="pen" text="amici miei" type="straight"/>
+		<underline language="IT" method="pen" text="ingegnosi, &amp; pronti auuedimenti" type="straight"/>
+		<underline language="IT" method="pen" text="espugnarsi, ò la tenacità, ò" type="straight"/>
+		<underline language="IT" method="pen" text="Poeta Greco:" type="straight"/>
+		
+		<symbol name="SS" place="intext"/> <!-- vbbidire alla necessita. -->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="left_margin" text="sua con la lore fortuna"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- cu -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- in -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- fanciul -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- da -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- quan -->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="la città in perditione"/>
+		
+		
+    </annotation>
+</transcription>

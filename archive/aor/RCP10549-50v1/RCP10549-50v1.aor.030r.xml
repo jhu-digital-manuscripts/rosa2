@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.030r.tif" pagination="43" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Exclamatio comica
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A comic exclamation.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> <!--JG: spelling a little wrong for ἐπεξήγησις-->
+                        ἐπεξέγησις
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Explanation.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Verres" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        C[aius] Verres
+                    </marginalia_text>
+                    <person name="Verres"/>
+                </position>
+            </language>
+            <translation>
+                Gaius Verres.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        grauiter acerbe
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Deeply, harshly.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="non potius accusatio, quàm defensio est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        hec or[ati]o no[n] accusatio sed defensio est..
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                This speech is not an accusation, but a defense.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="causam tam idoneam, tam illustrem, tam grauem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        caussa idoneam illustris grauis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A suitable, creditable, cogent reason.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="gratius esse debeat, aut sociis exterísque nationibus optatius esse possit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        nihil gratius optatius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Nothing more acceptable, more desireable.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Populatae, vexatae, funditus euersae prouinciae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        prouinci[a]e populat[a]e vexat[a]e evers[a]e fundit[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Provinces, ravaged, plundered and utterly ruined.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="populare, atque plausibile" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        populare plausibile
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Popular, laudable.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Amplificatio finariaru[m] p[er] distributionem 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The amplification of boundaries through distribution.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Confirmatio a testibus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Confirmation by the witnesses.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sed exitii" type="straight"/>
+        <underline language="LA" method="pen" text="plausibile" type="straight"/>
+        <underline language="LA" method="pen" text="exinanisse" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">16</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">21</numeral>
+        <numeral place="right_margin">16</numeral>
+        
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.021v.tif" pagination="32" reader="John Dee" signature="[C.iiij.[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="castri de Dunbar" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Castru[m] de Dunbar</marginalia_text>
+                    <location name="Dunbar"/>
+                </position>
+            </language>
+            <translation>Dunbar castle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="VVallenses" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Wallenses</marginalia_text>
+                </position>
+            </language>
+            <translation>The Welsh.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="rex Iohannem Surreyae &amp; Southsexiae" type="straight"/>
+        <underline language="LA" method="pen" text="de Menetez" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; de Ascales" type="straight"/>
+        <underline language="LA" method="pen" text="de Roos" type="straight"/>
+        <underline language="LA" method="pen" text="Ioha[n]nes" type="straight"/>
+        <underline language="LA" method="pen" text="de sancto Claro, Richardus" type="straight"/>
+        <underline language="LA" method="pen" text="Iohannes de Hi[n]c maritimo" type="straight"/>
+        <underline language="LA" method="pen" text="Alexander de Muramia" type="straight"/>
+        <underline language="LA" method="pen" text="Edmundus Comyn" type="straight"/>
+        <underline language="LA" method="pen" text="Veneruntqúe ibi VVallenses ad regem pedites in magna multitudine, &amp; remisit rex ferè in eodem numero Anglicos pedites fatigatos" type="straight"/>
+        <underline language="LA" method="pen" text="Illuc cum militia sua de Hybernia, venit comes Vltoniae in subsidium regis nostri," type="straight"/>
+        <underline language="LA" method="pen" text="remandauit vt ad castrum de Brithin cum magnatibus terrae suae venerit cum" type="straight"/>
+        <underline language="LA" method="pen" text="rex illuc mitteret nuncios" type="straight"/>
+        <underline language="LA" method="pen" text="dies quindecim tractaturus" type="straight"/>
+        <underline language="LA" method="pen" text="potestate regia" type="straight"/>
+        <underline language="LA" method="pen" text="Rex Scotorum magnatésque sui" type="straight"/>
+        <underline language="LA" method="pen" text="tractatus," type="straight"/>
+        <underline language="LA" method="pen" text="nudè &amp; purè subiecerunt" type="double"/>
+        <underline language="LA" method="pen" text="se, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="Regnum Scotiae Regiae voluntati" type="double"/>
+        <underline language="LA" method="pen" text="&amp; manentes in fide sua &amp; suo homagio, alligauimus nos regi Franciae, qui tunc hostis eius erat &amp; adhuc est" type="straight"/>
+        <underline language="LA" method="pen" text="antedictum, diffidauimus dominum" type="straight"/>
+        <underline language="LA" method="pen" text="perpetranda: &amp; terram Scotiae quae est de feodo suo" type="straight"/>
+        <underline language="LA" method="pen" text="eam conquisiuit" type="double"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- suae, venirit -->
+        
+    </annotation>
+</transcription>

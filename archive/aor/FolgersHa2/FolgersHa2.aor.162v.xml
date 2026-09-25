@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.162v.tif" pagination="148" reader="Harvey" signature="[K2v]"/>	<!-- ABO 167left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Supra Epinicion. { Viua Ars.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Beyond the victory ode. A living art.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						" The archpragmatician.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Physiognomia hominis intelligentis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The physiognomy of an intelligent man.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Animus est entelechia: ingenium est quinta essentia. Plus, plusq[ue] spiritus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The mind is actualization: the intellect is the quintessence. More and more spirit.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Ale proprium cuiusq[ue] humorem: habes magisterium.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="IT">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Chi la dura, la vince:
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Penelopen ipsam, perstes modò, Tempore vinces. Veru[m] de quauis prouincia. 
+					</marginalia_text>
+					<person name="Penelope"/>
+					<X-ref book_title="Ars amatoria" language="LA" person="Ovid" text="Penelopen ipsam, perstes modò, Tempore vinces."/>
+				</position>
+			</language>
+			<translation>Nourish the proper humor of every part: you have control. No pain, no gain. 
+				"In time, you could even conquer Penelope herself, if you only stand firm." The truth about whatever pursuit.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="rassarenò l'Aere" type="straight"/>
+		<underline language="IT" method="pen" text="transformò in vacca" type="straight"/>
+		<underline language="IT" method="pen" text="guardia ad Argo" type="straight"/>
+		<underline language="IT" method="pen" text="solamente due per volta ne serraua" type="straight"/>
+		<underline language="IT" method="pen" text="à Mercurio che la" type="straight"/>
+		<underline language="IT" method="pen" text="Mercurio" type="straight"/>
+		<underline language="IT" method="pen" text="forma di pastore ad" type="straight"/>
+		<underline language="IT" method="pen" text="lo col caduceo, à" type="straight"/>
+		<underline language="IT" method="pen" text="addormentato l'ammazzò" type="straight"/>
+		<underline language="IT" method="pen" text="quegli occhi" type="straight"/>
+		<underline language="IT" method="pen" text="del Pauone" type="straight"/>
+		<underline language="IT" method="pen" text="giouenca" type="straight"/>
+		<underline language="IT" method="pen" text="la prima forma" type="straight"/>
+		<underline language="IT" method="pen" text="partorì Epapho" type="straight"/>
+		<underline language="IT" method="pen" text="l'arte, in forma humana" type="straight"/>
+		<underline language="IT" method="pen" text="Barbaro" type="straight"/>
+		<underline language="IT" method="pen" text="l'arte delle" type="straight"/>
+		<underline language="IT" method="pen" text="piccola di statura" type="straight"/>
+		<underline language="IT" method="pen" text="gli occhi di" type="straight"/>
+		<underline language="IT" method="pen" text="celeste" type="straight"/>
+		<underline language="IT" method="pen" text="luce penetrante" type="straight"/>
+		<underline language="IT" method="pen" text="naso aquilino" type="straight"/>
+		<underline language="IT" method="pen" text="orecchie ben" type="straight"/>
+		<underline language="IT" method="pen" text="il collo brieue" type="straight"/>
+		<underline language="IT" method="pen" text="petto largo" type="straight"/>
+		<underline language="IT" method="pen" text="come madre di tutte" type="straight"/>
+		<underline language="IT" method="pen" text="pieno di mammelle" type="straight"/>
+		<underline language="IT" method="pen" text="spalle grosse" type="straight"/>
+		<underline language="IT" method="pen" text="le dita lunghe" type="straight"/>
+		<underline language="IT" method="pen" text="segnali" type="straight"/>
+		<underline language="IT" method="pen" text="piena d'intelleto, di capacità" type="straight"/>
+		
+		<symbol language="IT" name="SS" place="left_margin" text="l'arte, in forma humana"/>
+		
+		<symbol language="IT" name="Sun" place="intext" text="l'arte, in forma humana"/>
+		<symbol language="IT" name="SS" place="intext" text="come madre di tutte"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Volendo il chiarissimo M. Daniello Barbaro,     transfigurare l'arte delle cose in forma humana, la dipinse cosi piccola di statura, gli occhi di color celeste, con luce      penetrante, i capelli neri, &amp; le ciglia rare, il naso aquilino, le orecchie ben vguali, il collo brieue, il petto largo, &amp;     come madre di tutte le cose, pieno di mammelle, le spalle grosse, le braccia, le palme, &amp; le dita lunghe, tutti segnali,     secondo Aristotile, d'esser piena d'intelleto, di capacità et di studio."/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Gio -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- die -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- pre -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- constrin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- vltimamen -->
+		<mark method="pen" name="dot" place="right_margin"/> <!-- humana -->
+		
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- chalk, starts at mosso and extends diagonally down through five further lines of text -->
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- three vertical chalk lines through final paragraph -->
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/>
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- di Gioue -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="l'arte delle"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- cosi piccola -->
+		<mark method="pen" name="dot" place="intext"/> <!-- statura, gli -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="luce penetrante"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- penetrante, i -->
+		<mark method="pen" name="dot" place="intext"/> <!-- neri, & -->
+		<mark method="pen" name="dot" place="intext"/> <!-- aquilino, le -->
+		<mark method="pen" name="dot" place="intext"/> <!-- vguali, il -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="brieue"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- brieue, il -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="petto largo"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- mammelle, le -->
+		<mark method="pen" name="dot" place="intext"/> <!-- grosse, le -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="dita lunghe"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- lunghe, tutti -->
+
+    </annotation>
+</transcription>

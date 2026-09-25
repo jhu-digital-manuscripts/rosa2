@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.049v.tif" pagination="98" reader="John Dee" signature="[g[v]]"/>
+    <annotation>
+         
+        <marginalia anchor_text="Cicero" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Chrysippi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Chrysippus.</marginalia_text>
+                    <person name="Chrysippus"/>
+                </position>
+            </language>
+            <translation>Chrysippus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Areus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Areus.</marginalia_text>
+                    <person name="Arius Didymus"/>
+                </position>
+            </language>
+            <translation>Arius.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cùm reperto quod est optimum, qui quaerit aliud, peius uelit" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.002r.tif" reader="John Dee" signature="¶.ij."/>
+    <annotation>
+        
+        <marginalia anchor_text="Titi Liuij Frulouisij Ferrariensis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Titus Livius Frulouisius Ferrariensis</marginalia_text> 
+                    <person name="Tito Livio Frulovisi"/>
+                </position>
+            </language>
+            <translation>Tito Livio Frulovisi</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vera illa &amp; fidelis Matthaei Parisij historia" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; rarißima gesta" type="straight"/>
+        <underline language="LA" method="pen" text="Titi Liuij Frulouisij Ferrariensis" type="straight"/>
+        <underline language="LA" method="pen" text="multa ad eo egregiè scripta, &amp; à principe inclito diuinitûs facta ominò praetermisit" type="straight"/>
+        <underline language="LA" method="pen" text="bona fide craßißimè dicta" type="straight"/>
+        
+    </annotation>
+</transcription>

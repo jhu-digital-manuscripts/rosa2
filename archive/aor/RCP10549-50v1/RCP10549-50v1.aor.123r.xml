@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.123r.tif" pagination="225" reader="John Dee" signature="pp.i."/>
+    <annotation>
+        
+        <marginalia anchor_text="nec vi, nec clàm, nec precario" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        nec vi, nec cla[m], nec p[re]cario
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Neither by force, nor fraud, nor favour.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vsumfructum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        vsusfructus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Life interest
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="libertas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        libertas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Liberty.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="contradicente Cotta" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        co[n]tradice[n]te cotta
+                    </marginalia_text>
+                    <person name="Gaius Aurelius Cotta"/>
+                </position>
+            </language>
+            <translation>
+                As Gaius Aurelius Cotta contradicted.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; id tametsi extra causam est, percurra[m] tame[n] breui, vt non monus hominem ipsum, quàm ius commune defensum velitis" type="straight"/>
+        <underline language="LA" method="pen" text="vsumfructum" type="straight"/>
+        <underline language="LA" method="pen" text="sunt in eam rem testimonia" type="straight"/>
+        <underline language="LA" method="pen" text="Perspicis hoc nihil esse, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="sed qui primùm illud concedas, non quicquid populus iusserit, ratum esse oportere" type="straight"/>
+        <underline language="LA" method="pen" text="deinde nihil rationis" type="straight"/>
+        <underline language="LA" method="pen" text="ego vehementius contendissem ciuitatem adimi non potuisse" type="straight"/>
+        <underline language="LA" method="pen" text="Certe quaeri hoc solere me non praeterit, vt ex me ea, quae tibi in mentem" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">18</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">10</numeral>
+        
+    </annotation>
+</transcription>

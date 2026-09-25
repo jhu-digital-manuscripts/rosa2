@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.002v.tif" pagination="[3v]" reader="John Dee" signature="[A.iij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="proci" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>proci.</marginalia_text>
+                </position>
+            </language>
+            <translation>Suitors.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Irus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Irus.</marginalia_text>
+                    <person name="Arnaeus"/>
+                </position>
+            </language>
+            <translation>Irus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vanescat" type="straight"/>
+        <underline language="LA" method="pen" text="Turba ruunt in me luxuriosa proci" type="straight"/>
+        <underline language="LA" method="pen" text="Tres sumus imbelles numero, sine viribus vxor, Laërtésq[ue] senex, Telemachúsq[ue] puer" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark language="LA" method="pen" name="bracket" place="left_margin" text="Tres sumus imbelles numero, sine viribus vxor, Laërtésq[ue] senex, Telemachúsq[ue] puer"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

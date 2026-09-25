@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.052r.tif" reader="Harvey" signature="Fv[r]"/>
+    <annotation>
+        
+        <marginalia anchor_text="clothed in his apparayle, one of their owne men" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>An Enemy slayne: and his Apparrel putt uppo[n] on of ower men.</marginalia_text>
+                    <emphasis method="pen" text="slayne" type="straight"/>
+                    <emphasis method="pen" text="his Apparrel" type="straight"/>
+                    <emphasis method="pen" text="on" type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        δῶρα ἄδωρα.
+                    </marginalia_text> 
+                    <X-ref book_title="Ajax" language="EL" person="Sophocles" text="δῶρα ἄδωρα."/>
+                </position>
+            </language>
+            <translation>
+                The gifts [of enemies] are no gifts. <!-- CG: 'of enemies' seems to be implied, as this was a proverb, the original of which had the full phrase.-->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>scitè.</marginalia_text> 
+                </position>
+            </language>
+            <translation>Knowingly.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="&amp; ingurgyng them selfes immoderately" type="straight"/>
+        <underline language="EN" method="pen" text="all heuy and vnlusty" type="straight"/>
+        <underline language="EN" method="pen" text="a spye of theirs, that lay out in a hygh place" type="straight"/>
+        <underline language="EN" method="pen" text="slewe hym" type="straight"/>
+        <underline language="EN" method="pen" text="clothed in his apparayle, one of their owne men" type="straight"/>
+        <underline language="EN" method="pen" text="called and broughte" type="straight"/>
+        <underline language="EN" method="pen" text="to theyr discomfiture" type="straight"/>
+        <underline language="EN" method="pen" text="theyr custome was knowen" type="straight"/>
+        <underline language="EN" method="pen" text="to gyue warnynge with smoke by" type="straight"/>
+        <underline language="EN" method="pen" text="with fyre by nyghte" type="straight"/>
+        <underline language="EN" method="pen" text="shulde be continuallye kept" type="straight"/>
+        <underline language="EN" method="pen" text="ennemyes aproched" type="straight"/>
+        <underline language="EN" method="pen" text="nere them" type="straight"/>
+        <underline language="EN" method="pen" text="custome was laide asyde" type="straight"/>
+        <underline language="EN" method="pen" text="lyghtes were not" type="straight"/>
+        <underline language="EN" method="pen" text="came in amonge" type="straight"/>
+        <underline language="EN" method="pen" text="were discomfited and" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="a spye of theirs, that lay out in a hygh place"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="&amp; ingurgyng them selfes immoderately"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="lyghtes were not"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+    </annotation>
+</transcription>

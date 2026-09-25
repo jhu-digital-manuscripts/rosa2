@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.261v.tif" pagination="38" reader="John Dee" signature="[E.iij.[v]]"/> 
+    <annotation>
+   
+        <marginalia anchor_text="comite Karolo" hand="Italian" id="RCP10552-2:532:m0001" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Ex libello de rebus Fl[andriae] Memorabilib[us] } Carolus Danus. Comes Fla[n]dria[e] moriebatur anno 1127. Cuius vxor erat Margareta, Filia Reginaldi Comitis Claremo[n]tis.</marginalia_text>
+                    <person name="Charles I, Count of Flanders"/>
+                    <person name="Marguerite of Clermont"/>
+                    <person name="Renaud II, Count of Clermont"/>
+                </position>
+            </language>
+            <translation>From the pamphlet about memorable matters from Flanders } Charles the Dane, Count of Flanders, died in the year 1127. His wife was Marguerite, daughter of Renaud, Count of Clermont.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Henricus rex Angli[a]e de beneplacito regis Franciae successit iure consanguinitatis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Henricus Rex Angl[iae] Comes Flandrie. Turpiter Flandrie Annales occasiones excogita[n]t falsas, ob quas illis, Angli bellum intulere.</marginalia_text>  
+                    <!-- DO: Not sure about word after 'quas' --> <!-- FSF: illis? Also, I read both Flandrie, without the [a] -->
+                    <person name="Henry I of England"/>
+                    <location name="Flanders"/>
+                </position>
+            </language>
+            <translation>Henry, King of England, Count of Flanders. The Annals of Flanders shamefully invent false circumstances, under which the English made war on them.</translation> <!-- DO: Not sure about translation --> <!-- NBW: Not a perfect translation, but this is the correct transcription and the sentiment here -->
+        </marginalia>
+        
+        <marginalia anchor_text="instituit successores sibi praestito a regni maioribus iuramento" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Regni successio iurata.</marginalia_text>
+                </position>
+            </language>
+            <translation>The succession of kingship avowed.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Ale" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Adel[a]e</marginalia_text>
+                    <person name="Adela of Normandy"/>
+                </position>
+            </language>
+            <translation>Of Adela.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="nouum mercatum" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nouum Mercatum</marginalia_text>
+                    <location name="Neuf-Marché"/>
+                </position>
+            </language>
+            <translation>Neuf-Marché.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Monasterium de mortuo mari" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Monasterium de mortuo mari.</marginalia_text>
+                    <location name="Mortemer Abbey"/>
+                </position>
+            </language>
+            <translation>Mortemer Abbey.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Hugo nempe Bigod" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hugo Bigod</marginalia_text>
+                    <person name="Hugh Bigod, 1st Earl of Norfolk"/>
+                </position>
+            </language>
+            <translation>Hugh Bigod.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="in munerum largitione nimis effusus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Stephanus, prodigus</marginalia_text>
+                    <person name="King Stephen"/>
+                </position>
+            </language>
+            <translation>Stephen, lavish.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Galfridus Plantagenet" type="straight"/>
+        <underline id="RCP10552-2:532:u0001" language="LA" method="pen" text="comite Karolo" type="straight"/>
+        <underline language="LA" method="pen" text="Henricus rex" type="straight"/>
+        <underline language="LA" method="pen" text="successit iure consanguinitatis" type="straight"/>
+        <underline language="LA" method="pen" text="Cenomanniae Henricus primogenitus" type="straight"/>
+        <underline language="LA" method="pen" text="filiam suam &amp; haeredes filiae suae" type="straight"/>
+        <underline language="LA" method="pen" text="instituit successores, super hoc sibi praestito a regni maioribus iuramento" type="straight"/>
+        <underline language="LA" method="pen" text="annis 35" type="straight"/>
+        <underline language="LA" method="pen" text="in Normannia" type="straight"/>
+        <underline language="LA" method="pen" text="margine ipsius prouinciae" type="straight"/>
+        <underline language="LA" method="pen" text="nouum mercatum" type="double"/>
+        <underline language="LA" method="pen" text="Turrim Ebroicaru[m]" type="double"/>
+        <underline language="LA" method="pen" text="Monasterium de Prato" type="straight"/>
+        <underline language="LA" method="pen" text="mortuo mari" type="straight"/>
+        <underline language="LA" method="pen" text="morte regis Henrici auunculi" type="straight"/>
+        <underline language="LA" method="pen" text="Hugo" type="straight"/>
+        <underline language="LA" method="pen" text="imperatricem" type="double"/>
+        <underline language="LA" method="pen" text="nimis credulus" type="double"/>
+        <underline language="LA" method="pen" text="Stephanum" type="straight"/>
+        <underline language="LA" method="pen" text="Moritonij" type="double"/>
+        <underline language="LA" method="pen" text="in munerum largitione nimis effusus. Stephanus" type="straight"/>
+        <underline language="LA" method="pen" text="Baldewinum de Rimeres exhaeredauit" type="straight"/>
+        <underline language="LA" method="pen" text="Galfridus comes Andegauensis" type="straight"/>
+        <underline language="LA" method="pen" text="eo duo millia" type="straight"/>
+        <underline language="LA" method="pen" text="altare cum corpore Christi" type="straight"/>
+        <underline language="LA" method="pen" text="die rex" type="straight"/>
+        <underline language="LA" method="pen" text="regno imperatrici reddito, rex alicubi posset monachari, at" type="straight"/>
+        
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- Franciae successit -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- Drincurtus nouum -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- Imperatrix Castella -->
+      
+        <errata amendedtext="[deleted]" copytext="Ale" language="LA"/>
+        <errata amendedtext="Vrsoms" copytext="Versoms" language="LA"/>
+        <errata amendedtext="Riuieres" copytext="Rimeres" language="LA"/>
+        
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="crown"/>
+        
+       <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+      <graph book_orientation="0" method="pen" place="head" type="genealogical_tree">
+          <node id="n1" person="Empress Matilda">Matildis Imper[atrix]</node>
+          <node id="n2" person="Geoffrey Plantagenet, Count of Anjou">Galfridus Plantag[enet]</node>
+          <link from="n1" relationship="has_spouse" to="n2"/>
+          <link from="n2" relationship="has_spouse" to="n1"/>
+      </graph>
+      
+      <physical_link>
+          <marginal_annotation idref="RCP10552-2:532:m0001"/>
+          <marginal_annotation idref="RCP10552-2:532:u0001"/>
+          <relation from="RCP10552-2:532:m0001" to="RCP10552-2:532:u0001" type="undirected"/>
+      </physical_link>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.035v.tif" pagination="70" reader="John Dee" signature="[e 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Hudi, seu Hundi, aut Indi alio nomine dicti" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[H]udi [H]undi [I]ndi</marginalia_text>
+                </position>
+            </language>
+            <translation>Hindus.</translation>    
+        </marginalia>
+        
+        <marginalia anchor_text="India" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>India</marginalia_text>
+                    <location name="India"/>
+                </position>
+            </language>
+            <translation>India.</translation>     
+        </marginalia>
+        
+        <marginalia anchor_text="Patres enim antiqui uocarunt Astronomicam disciplinam Chalon" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Chalon. Astronomia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Chalon. Astronomy.</translation>     
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in Magis" type="straight"/>
+        <underline language="LA" method="pen" text="scientia" type="straight"/>
+        <underline language="LA" method="pen" text="Hudi" type="straight"/>
+        <underline language="LA" method="pen" text="laudatores'ue" type="straight"/>
+        <underline language="LA" method="pen" text="quadam area coeli formis" type="straight"/>
+        <underline language="LA" method="pen" text="maiuscula forma distentis characteribus" type="straight"/>
+        <underline language="LA" method="pen" text="certissimè" type="straight"/>
+        <underline language="LA" method="pen" text="rebus futuris praenuncient" type="straight"/>
+        <underline language="LA" method="pen" text="India, est tanqua[m] Iudaea orientalis" type="straight"/>
+        <underline language="LA" method="pen" text="fenestram" type="straight"/>
+        <underline language="LA" method="pen" text="Sic" type="double"/>
+        <underline language="LA" method="pen" text="per fenestram" type="double"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- area coeli -->
+        
+        <!-- DO: There is a physical link between an underlined word and a non-underlined word --> <!-- NBW: this might be a pen drag -->
+        
+    </annotation>
+</transcription>

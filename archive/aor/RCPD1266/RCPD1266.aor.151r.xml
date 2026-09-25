@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.151r.tif" reader="John Dee" signature="B.iiij."/>
+    <annotation>
+        
+        <marginalia anchor_text="Excidium Troiae. vide Chronic." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vt per authores Latinos: vide supra pag[ina]: 61.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCPD126.6:85" text="61"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>As in the Latin authors: see above, page 61.</translation>
+        </marginalia>
+        
+    </annotation>
+</transcription>

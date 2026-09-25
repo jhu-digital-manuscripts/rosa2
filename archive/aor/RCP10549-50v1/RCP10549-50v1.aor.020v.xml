@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.020v.tif" pagination="24" reader="John Dee" signature="[bb.iiii.[v]]"/>
+    <annotation> 
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        mens conscia mali
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The mind aware of evil.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="co[n]sceleratissimis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        co[n]sceleratiss[us]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Stained with great guilt.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tantu[m] facinus, tam immane, tam acerbu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        facinus tantu[m] immane acerbum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A great, atrocious, [and] cruel crime.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ciuitas Atheniensium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ciuitas Athenie[n]siu[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The community of Athens.
+            </translation>
+        </marginalia>
+                
+        <marginalia anchor_text="Solonem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Solon
+                    </marginalia_text>
+                    <person name="Solon"/>
+                </position>
+            </language>
+            <translation>
+                Solon.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="respondit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Respo[n]su[m] Solo[n]is.
+                    </marginalia_text>
+                    <person name="Solon"/>
+                </position>
+            </language>
+            <translation>
+                Solon's response.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="audacia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Audacia
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Audacity.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="retinere in officio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        retinere in officio
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To stay loyal to the duty.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="de meo iure deceda[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        de meo iure deceda[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Not to insist on my right.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Sic si res habet Iudices, magnam vim, magnam necessitatem, magnam possidet religionem paternus, maternúsque sanguis" type="straight"/>
+        <underline language="LA" method="pen" text="sua quenque fraus, &amp; suus terror maxime" type="straight"/>
+        <underline language="LA" method="pen" text="quenque scelus agitat, amentiáque afficit: suae malae cogitationes, co[n]scientiáeque animi terrent. hae sunt impiis assiduae" type="straight"/>
+        <underline language="LA" method="pen" text="co[n]sceleratissimis filiis repeta[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="quare hoc quo opus minus est credibile, nisi oste[n]ditur, eo magis est, si co[n]uincitur, vindicandu[m]. Itaque cum multis ex rebus" type="straight"/>
+        <underline language="LA" method="pen" text="maiores nostros" type="straight"/>
+        <underline language="LA" method="pen" text="respondit se id neminem" type="straight"/>
+        <underline language="LA" method="pen" text="excogitauerunt: vt quos natura ipsa retinere in officio non" type="straight"/>
+        <underline language="LA" method="pen" text="cui repente coelum, solem, aquam, terrámque ademerunt" type="straight"/>
+        <underline language="LA" method="pen" text="vnde ipse natus esset, careret iis rebus omnibus, ex quibus omnia nata esse dicuntur" type="straight"/>
+        <underline language="LA" method="pen" text="etenim quid tam est commune, quàm spiritus viuis? terra mortuis? mare fluctuantibus? littus eiectis?" type="straight"/>
+        <underline language="LA" method="pen" text="Esto: causam proferre non potes" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- concedam retus -->
+        
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">.7.</numeral>
+        <numeral place="left_margin">8.10.14</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">18</numeral>
+        
+        <errata amendedtext="fretus" copytext="retus" language="LA"/>
+        
+        <drawing anchor_text="quenque scelus agitat, amentiáque afficit: suae malae cogitationes, co[n]scientiáeque animi terrent. hae sunt impiis assiduae" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

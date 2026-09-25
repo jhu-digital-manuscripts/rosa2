@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.089r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="insulanos reges" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Reges Insulari.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Island kings.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="eodem insulanos" type="straight"/>
+        <underline language="LA" method="pen" text="nu[n]c michaelis" type="straight"/>
+        
+    </annotation>
+</transcription>

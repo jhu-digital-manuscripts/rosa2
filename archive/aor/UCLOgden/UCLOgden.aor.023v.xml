@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.023v.tif" pagination="30" reader="John Dee" signature="[c 3[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="ex duodecatemoriis posse prodi" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Qua[m] fructum quidam ex hijs duodecatemorijs se adepturos co[n]fidebant. <!-- FSF: it looks as if Dee first wrote qua[m] and then corrected it to que[m] to agree with fructum  -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation> Which fruit. Certain people have confidence in themselves to be adept from these <!-- M.B. Translation missing --> <!-- FSF: I don't know how to translate it --> <!--JG: Don't get it either. Also can't figure out the meaning of 'duodecatemorijs'-->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Deficit enim ♄ benignitas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        ♃ vt debilis fit et .... quasi.
+                        <!-- M.B. I think the symbol is Jupiter rather than Saturn. Possibly the missing word is something like 'infirmatis' ? --> <!-- FSF: possibly; maybe there is a plus sign clashing with it --> <!--JG: Infirmatis doesn't seems to be correct. No clue what it could be-->
+                    </marginalia_text>
+                    <symbol_in_text name="Jupiter"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="malitia" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Mali planeta[e] male positi fortius nocent, at boni male collocati, minus iuua[n]t
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The bad planets that are unfortunately placed harm more powerfully, but the good [planets] which are placed unfortunetly, help less. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="platice" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Platice loca hic tractat.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It generally treats the places here.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cu[m] enim locus ipse partiliter fuerit inuentus, consyderandu[m] est" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Qua r[ati]o[n]e locus partiliter consyderari debet.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                For this reason, the place ought to be considered partly.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="enim ex iis putant totam se posse geniturae substantia[m] inuenire, et quicquid in decreto celatur, ex duodetemoriis posse prodi, significant" type="straight"/>
+        <underline language="LA" method="pen" text="Quare itaq[ue] ne ☾ plena, per diem in fines ♂ duodecatemorion mittat, néue minuta, hoc est deficiens, in Saturni, aut ne ♂ in occasu, aut ne ♀ in" type="straight"/>
+        <underline language="LA" method="pen" text="infirmitate signi" type="straight"/>
+        <underline language="LA" method="pen" text="partium" type="straight"/>
+        <underline language="LA" method="pen" text="uel decani" type="straight"/>
+        <underline language="LA" method="pen" text="conditionis immutatione" type="straight"/>
+        <underline language="LA" method="pen" text="omnium conditione prouacata fortiorem ad nocendum acceperit potestatem" type="straight"/>
+        <underline language="LA" method="pen" text="sed quia sic artifex deus hominem fecit, ut substantia eius, transacto certo uitae spacio, solueretur, necessum fuit, ut tetento ♃, per quem" type="straight"/>
+        <underline language="LA" method="pen" text="impugnata, compago corporis soluetetur" type="straight"/>
+        <underline language="LA" method="pen" text="inuenire, sed interim platice" type="straight"/>
+        <underline language="LA" method="pen" text="Debet enim is, qui instituitur, primu[m] platice institui, ut his apertioribus, leuioribúsq[ue] compositus atq[ue] formatus, secretiora deincepts geniturae co[n]fidentius             consequatur" type="straight"/>
+        <underline language="LA" method="pen" text="qualis" type="straight"/>
+        <underline language="LA" method="pen" text="in" type="straight"/>
+        <underline language="LA" method="pen" text="in cuius" type="straight"/>
+        <underline language="LA" method="pen" text="illi stellae" type="straight"/>
+        <underline language="LA" method="pen" text="quatenus" type="straight"/>
+        <underline language="LA" method="pen" text="dominus" type="straight"/>
+        <underline language="LA" method="pen" text="quali" type="straight"/>
+        <underline language="LA" method="pen" text="quibus" type="straight"/>
+        <underline language="LA" method="pen" text="pulsetur. Nunc ad platicem, locorúmq[ue]" type="straight"/>
+        <underline colour="red" language="LA" method="pen" text="uitae, spei, fratrum, parentum, filiorum, ualetudinis, coniugis, mortis." type="dotted"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral language="LA" place="intext" text="qualis">1</numeral>
+        <numeral language="LA" place="intext" text="in quo">2</numeral>
+        <numeral language="LA" place="intext" text="in cuius">3</numeral>
+        <numeral language="LA" place="intext" text="quae">4</numeral>
+        <numeral language="LA" place="intext" text="quatenus">5</numeral>
+        <numeral language="LA" place="intext" text="dominus">6</numeral>
+        <numeral language="LA" place="intext" text="quali">7</numeral>
+        <numeral language="LA" place="intext" text="quibus">8</numeral>
+        <numeral language="LA" place="intext" text="stellarum">9</numeral>
+        
+    </annotation>
+</transcription>

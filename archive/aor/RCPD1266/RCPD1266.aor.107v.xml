@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.107v.tif" pagination="200" reader="John Dee" signature="[r.iiij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Et quum in temporibus definiendis, astrorum sit habenda ratio" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Astronomia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Astronomy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aureum enim, quem dicunt numerum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aureus numerus.</marginalia_text>
+                </position>
+            </language>
+            <translation>A golden number.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Metonicus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Annus Metonicus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The Metonic year.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="sublata in totum veteris anni Latini obseruatione, longè" type="straight"/>
+        <underline language="LA" method="pen" text="institutam proximè rationem referebat" type="straight"/>
+        <underline language="LA" method="pen" text="Et quum in temporibus definiendis, astrorum sit habenda ratio" type="straight"/>
+        <underline language="LA" method="pen" text="quia menses, Lunae motu definiri iussit Deus, quemadmodum id veteres Latini obseruarant" type="straight"/>
+        <underline language="LA" method="pen" text="improbarunt qui sequuti sunt Astrologi" type="straight"/>
+        <underline language="LA" method="pen" text="notanda nouilunia à Chaldaeis repertum" type="straight"/>
+        <underline language="LA" method="pen" text="apparet, is numerus aureus, annus sit Metonicus quem" type="straight"/>
+        <underline language="LA" method="pen" text="decemnouennalem dicu[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="constitutione, quae Christianis non est ferenda" type="straight"/>
+        <underline language="LA" method="pen" text="Caesariano, nihil sani sit relictum" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

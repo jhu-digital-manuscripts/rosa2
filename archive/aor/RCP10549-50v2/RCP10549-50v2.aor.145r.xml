@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.145r.tif" pagination="29" reader="John Dee"/>   
+    
+    <annotation>
+        
+        
+       <marginalia anchor_text="Graecos; quorum ratione[m] aliquot de causis improbamus" hand="Italian">
+           <language ident="LA">
+               <position book_orientation="0" place="right_margin">
+                   <marginalia_text>Cicero Grecoru[m] memori[a]e rationem labefactat</marginalia_text>
+                   <person name="Cicero"/>
+               </position>
+           </language>
+           <translation>Cicero overthrows the Greeks' reasoning on memory.</translation>
+       </marginalia> 
+        
+        
+        <marginalia anchor_text="assiduitate exercitationis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Assiduitas exercitatio[n]i[s]</marginalia_text>      
+                </position>
+            </language>
+            <translation>Repetition of the exercise.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="nisi quòd vsitatae res facile è memoria elabuntur, insignes &amp; nouae diutius in animo manent. Solis" type="straight"/>
+        <underline language="LA" method="pen" text="Imitetur igitur ars natura[m], &amp; quod ea desyderat, inueniet, si quod ostendit" type="straight"/>
+        <underline language="LA" method="pen" text="Imagines" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; ipsaru[m] memoria rerum co[n]tentus sis, quòd &amp; vtiliores sint, &amp; plus habeant facilitatis, admonendus" type="straight"/>
+        <underline language="LA" method="pen" text="Sed cum in omni disciplina infirma est artis praeceptio sine summa assiduitate exercitationis" type="straight"/>
+        <underline language="LA" method="pen" text="tum vero in mnemonicis minimum valet" type="straight"/>
+        <underline language="LA" method="pen" text="studio" type="straight"/>
+        <underline language="LA" method="pen" text="primas quasque partes in animo frequenta, &amp;, quod maxime necesse est exercitatione" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+     
+    </annotation>
+</transcription>

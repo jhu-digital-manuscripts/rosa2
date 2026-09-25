@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.277v.tif" pagination="534" reader="John Dee" signature="[lll.iii.[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>C Ca[e]saris Laus</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+            <translation>Praise for Julius Caesar.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="belli" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>bellum</marginalia_text>
+                </position>
+            </language>
+            <translation>War.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="pacis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pax</marginalia_text>
+                </position>
+            </language>
+            <translation>Peace.</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="gladiu[m] vagina vacuu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>gladius vacuus vagina</marginalia_text>
+                </position>
+            </language>
+            <translation>'A sword bare of its scabbard' [Loeb 252, 437].</translation>
+        </marginalia> 
+        
+        <marginalia anchor_text="latebrae sint &amp; tanti recessus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>latebr[a]e recessus</marginalia_text>
+                </position>
+            </language>
+            <translation>Hiding places. Retreat.</translation>
+        </marginalia> 
+        
+        <underline language="LA" method="pen" text="qui uerò victor, pacis authores diligit" type="straight"/>
+        <underline language="LA" method="pen" text="dimicare, quàm" type="straight"/>
+        <underline language="LA" method="pen" text="Martis vis perculit, non ira victoriae" type="straight"/>
+        <underline language="LA" method="pen" text="malim videri nimis timidus quàm parum prude[n]s" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] in animis hominu[m] tanta[e]" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">13</numeral>
+        <numeral place="left_margin">18</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+        <drawing anchor_text="bellum" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing anchor_text="Pax" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

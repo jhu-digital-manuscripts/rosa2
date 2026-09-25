@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.280v.tif" pagination="12" reader="John Dee" signature="[A.vi.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="librum etiam ederet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        libru[m] [ edere
+                        describere.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>To publish; to write a book.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="sapientissimos &amp; clarissimos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        sapie[n]tissim[us]
+                        clarissimus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Most wise.
+                Most distinguished.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="studiose audirem; diligentius; industriae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>     
+                        studiose
+                        diligentius
+                        industriè
+                        animo vacuo ] audire.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To listen: studiously, carefully, diligently, with an empty mind. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="dedi Antiocho operam diligentius" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>dare alicui op[er]a[m] dilige[n]tius.</marginalia_text>
+                </position>
+            </language>
+            <translation>To pay someone more careful attention. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quibus ille secundum fratrem plurimu[m] tribuebat" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>quibus ille secundu[m] fratre[m] plurimu[m] tribuebat</marginalia_text>
+                </position>
+            </language>
+            <translation>To whom he granted the greatest authority after his brother.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nec se tenuit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        abstinere se ab 19.
+                        se sustinet 19.97
+                        nec se tenuit.
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0577" text="19"/>
+                    </internal_ref>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0577" text="19.97"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                To keep oneself from, [page] 19.
+                He restrains himself, [page] 19, [section] 97.
+                He did not restrain himself.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sosus inscribitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Sosus inscribitur</marginalia_text>
+                    <book title="Sosus"/>
+                </position>
+            </language>
+            <translation>It is titled Sosus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="minus enim acer est aduersarius, tamen est aduersarius lenior" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        min[us] acer 
+                        lenior [ Aduersarius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A less keen
+                A milder adversary.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mentitur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>mentiri</marginalia_text>
+                </position>
+            </language>
+            <translation>To lie.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>similitudo.</marginalia_text>
+                </position>
+            </language>
+            <translation>Similarity.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="veteres physicos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>veteres physici</marginalia_text>
+                </position>
+            </language>
+            <translation>The old natural philosophers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="P. Valerium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>P. Valerius</marginalia_text>
+                    <person name="Publius Valerius Publicola"/>
+                </position>
+            </language>
+            <translation>Publius Valerius Publicola.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Flaminiu[m]; L. Cassium, Q. Pompeium illi quidem, etia[m] P. Africanum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        C. Flaminius
+                        L Cassus
+                        Q Pompeius
+                        P African[us].
+                    </marginalia_text>
+                    <person name="Gaius Flaminius Nepos"/>
+                    <person name="Lucius Cassius Longinus"/>       
+                    <person name="Quintus Pompeius"/>  
+                    <person name="Scipio Africanus"/>
+                </position>
+            </language>
+            <translation>
+                Gaius Flaminius Nepos.
+                Lucius Cassius Longinus.
+                Quintus Pompeius.
+                Publius Africanus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Marius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>C Marius</marginalia_text>
+                    <person name="Gaius Marius"/>
+                </position>
+            </language>
+            <translation>Gaius Marius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Empedocleam, Anaxagoram, Democritu[m], Parmenidem, &amp; Xenophane[m], Platone[m] etia[m] &amp; Socratem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Physici veteres.</marginalia_text>
+                </position>
+            </language>
+            <translation>The old natural philosophers.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Empedocles quide[m], vt interdum mihi furere videatur" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Empedoclis furor</marginalia_text>
+                    <person name="Empedocles"/>
+                </position>
+            </language>
+            <translation>The rage of Empedocles.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tiberius Gracchus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Tiberius Gracchus</marginalia_text>
+                    <person name="Tiberius Gracchus"/>
+                </position>
+            </language>
+            <translation>Tiberius Gracchus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="qui negauissent quicquam sciri, aut percipi posse" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Nihil sciri, falsu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>There is nothing false to be known.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>supra fo.5.23.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0563" text="5.23"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>See above, folio 5.23.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Socrates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Socratis Doctrina</marginalia_text>
+                    <person name="Socrates"/>
+                </position>
+            </language>
+            <translation>The teaching of Socrates.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>εἰρωνία</marginalia_text>               <!-- JG: for εἰρωνεία -->
+                </position>
+            </language>
+            <translation>Irony.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Arcesilas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Arcesilas.</marginalia_text>
+                    <person name="Arcesilaus"/>
+                </position>
+            </language>
+            <translation>Arcesilaus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Arcesilas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Arcesilas</marginalia_text>
+                    <person name="Arcesilaus"/>
+                </position>
+            </language>
+            <translation>Arcesilaus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tenebras obducere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>obducere tenebras</marginalia_text>
+                </position>
+            </language>
+            <translation>To cover in darkness.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Carneades" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>CArneadis Ætas.</marginalia_text>
+                    <person name="Carneades"/>
+                </position>
+            </language>
+            <translation>The age of Carneades.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nihil eos sentire, nihil cernere, nihil omnino quale sit, posse reperire" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        sentire
+                        cernere
+                        reperire
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To perceive.
+                To discern.
+                To realise.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Repetunt; co[m]memorant reliquos; tum ad hos; etia[m] referre in eundem numeru[m] solent; Addunt etia[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        repetunt.
+                        tum ad hos.                
+                        co[m]memorant reliquos.
+                        etia[m] refere in eunde[m] numeru[m] sole[n]t.
+                        addunt etia[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                They recount.
+                Then to those.
+                They recall the others.
+                They even tend to refer in the same number.
+                They even add.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quin contra suum doctorem librum" type="straight"/>
+        <underline language="LA" method="pen" text="Heraclitu[m] studiose audirem" type="straight"/>
+        <underline language="LA" method="pen" text="dedi Antiocho operam" type="straight"/>
+        <underline language="LA" method="pen" text="secundum fratrem plurimu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="multu[m] temporis in ista vna disputatione" type="straight"/>
+        <underline language="LA" method="pen" text="ista quae sunt heri defensa" type="straight"/>
+        <underline language="LA" method="pen" text="mentitur, tamen est aduersarius lenior" type="straight"/>
+        <underline language="LA" method="pen" text="aliquos ex antiquis claros viros proferunt, quos dicant fuisse populares" type="straight"/>
+        <underline language="LA" method="pen" text="similes esse videantur" type="straight"/>
+        <underline language="LA" method="pen" text="vero sapientissimos" type="straight"/>
+        <underline language="LA" method="pen" text="philosophia[m] bene iam constituta[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Arcesilae calumnia conferenda" type="straight"/>
+        <underline language="LA" method="pen" text="tamen isti physici raro admodum, quum haerent, aliquo loco exclamant, quasi mente incitati: Empedocles quide[m], vt interdum mihi furere videatur,              abstrusa esse" type="straight"/>
+        <underline language="LA" method="pen" text="sentire, nihil" type="straight"/>
+        <underline language="LA" method="pen" text="Quòd si illi tum in nouis rebus, quasi modo nascentes haesitauerunt, nihílne" type="straight"/>
+        <underline language="LA" method="pen" text="seculis, summis ingeniis, maximis studiis explicatum putamus? Nónne" type="straight"/>
+        <underline language="LA" method="pen" text="qui co[n]stitutam philosophia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="eorum authoritate delitesceret, qui negauissent quicquam sciri, aut percipi posse" type="straight"/>
+        <underline language="LA" method="pen" text="Peripateticos &amp; Academicos nominibus differentes, re congruentes" type="straight"/>
+        <underline language="LA" method="pen" text="verbis magis, quàm sententiis dissenserunt" type="straight"/>
+        <underline language="LA" method="pen" text="ita quum aliud diceret atque sentiret" type="straight"/>
+        <underline language="LA" method="pen" text="libenter vti solitus est ea dissimulatione, quam Graeci voca[n]t" type="straight"/>     <!-- Greek needed -->
+        <underline language="LA" method="pen" text="Africano fuisse Fannius: ídque propterea vitiosum in illo non" type="straight"/>
+        <underline language="LA" method="pen" text="fuerit in" type="straight"/>
+        <underline language="LA" method="pen" text="Sed fuerint illa vetera, si vultis, incognita" type="straight"/>
+        <underline language="LA" method="pen" text="clarissimis rebus tenebras obducere" type="straight"/>
+        <underline language="LA" method="pen" text="quanquam floruit cum acumine ingenii, tum admirabili quodam lepore" type="straight"/>
+        <underline language="LA" method="pen" text="admodu[m] florueru[n]t" type="straight"/>
+        <underline language="LA" method="pen" text="multitudo libroru[m] ingenii no[n] minus in hoc, quàm in Carneade eloque[n]tiae" type="straight"/>
+        <underline language="LA" method="pen" text="Rhodio suauitatis" type="straight"/>
+        
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark method="pen" name="X_sign" place="head"/>
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        <mark method="pen" name="tripunctus_with_tail" place="left_margin"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">.2.</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+        <errata amendedtext="quo" copytext="quod" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/> 
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/> 
+        
+    </annotation>
+</transcription>

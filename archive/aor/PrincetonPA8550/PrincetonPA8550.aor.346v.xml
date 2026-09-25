@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA8550.346v.tif" pagination="695" reader="Harvey" signature="[xij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ventre nihil nori frugalius.
+                    </marginalia_text>
+                    <X-ref book_title="Satires" language="LA" person="Juvenal" text="Ventre nihil nori frugalius."/>
+                </position>
+            </language>
+            <translation>
+                "I know of nothing more frugal than the belly."
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="delicatum cubile Satanae" type="straight"/>
+        <underline language="LA" method="pen" text="ebriatas non modò" type="straight"/>
+        <underline language="LA" method="pen" text="delicatum cubile est Satanae" type="straight"/>
+        <underline language="LA" method="pen" text="ebriatatem tanquam" type="straight"/>
+        <underline language="LA" method="pen" text="sobriam uerò" type="straight"/>
+        <underline language="LA" method="pen" text="Insame nomen sobrii" type="straight"/>
+        <underline language="LA" method="pen" text="sobrium aut siccum" type="straight"/>
+        <underline language="LA" method="pen" text="audite uocem naturae optimae" type="straight"/>
+        <underline language="LA" method="pen" text="degeneres filij adspernantur" type="straight"/>
+        <underline language="LA" method="pen" text="ea uos" type="straight"/>
+        <underline language="LA" method="pen" text="sobrietatem uocat" type="straight"/>
+        <underline language="LA" method="pen" text="uocat eodem &amp; uerbum" type="straight"/>
+        <underline language="LA" method="pen" text="ualetudo uestra &amp; salus" type="straight"/>
+        <underline language="LA" method="pen" text="unquam proijciendam" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/> 
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        
+    </annotation>
+</transcription>

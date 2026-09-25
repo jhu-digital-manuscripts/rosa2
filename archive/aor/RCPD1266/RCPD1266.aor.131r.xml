@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.131r.tif" pagination="247" reader="John Dee" signature="x.iiij."/>
+    <annotation>
+        
+        <marginalia anchor_text="permutatione &amp; affinitate literarum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>permutatio literaru[m]</marginalia_text>
+                </position>
+            </language>
+            <translation>A change in the letters.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Casdaei &amp; Chaldaei" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Casdei Cald[a]ei ]</marginalia_text>
+                    <location name="Chaldea"/>
+                </position>
+            </language>
+            <translation>Casdeans, Chaldeans.</translation>  
+        </marginalia>
+        
+        <marginalia anchor_text="Lud" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Two Luds.</marginalia_text>
+                    <person name="Lud"/>
+                    <location name="Lud"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="externo vsi milite" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Externus miles</marginalia_text>
+                </position>
+            </language>
+            <translation>A foreign soldier.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Paras; Phut; Lud" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Paras Phut Lud |</marginalia_text>
+                    <location name="Persia"/>
+                    <location name="Phut"/>
+                    <location name="Lud"/>
+                </position>
+            </language>
+            <translation>Persia, Phut, Lud.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aram" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Many Arams.</marginalia_text>
+                    <person name="Aram"/>
+                    <location name="Aram-Naharaim"/>
+                    <location name="Aram-Damascus"/>
+                              <!-- DO: I can't identify 'Aram Naacat' --> <!-- FSF: I can't find it either -->
+                    <location name="Aram-Zobah"/>
+                    <location name="Aram Rehob"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Mesopotamiam" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mesopotamia</marginalia_text>
+                </position>
+            </language>
+            <translation>Mesopotamia.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="terra filiorum Orientis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Terra filioru[m] Orientis.</marginalia_text>
+                </position>
+            </language>
+            <translation>The land of the sons of the East.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Padan" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Padan</marginalia_text>
+                    <location name="Paddan Aram"/>
+                </position>
+            </language>
+            <translation>Paddan Aram.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in Arphacsad" type="straight"/>
+        <underline language="CY" method="pen" text="" type="straight"/>                    <!-- Hebrew needed -->
+        <underline language="LA" method="pen" text="proximas" type="straight"/>
+        <underline language="LA" method="pen" text="partim constat" type="straight"/>
+        <underline language="LA" method="pen" text="quo Lydos" type="straight"/>
+        <underline language="LA" method="pen" text="alius ab hoc" type="straight"/>
+        <underline language="LA" method="pen" text="quidem Africae sunt" type="straight"/>
+        <underline language="LA" method="pen" text="ad aliam orbis partem pertinent" type="straight"/>
+        <underline language="LA" method="pen" text="qui alterius gentis &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="Tarsis" type="straight"/>
+        <underline language="LA" method="pen" text="Phut, &amp; Lud" type="straight"/>
+        <underline language="LA" method="pen" text="Africam: falsus vocis" type="straight"/>
+        <underline language="LA" method="pen" text="iunguntur Paras" type="straight"/>
+        <underline language="LA" method="pen" text="Lud" type="straight"/>
+        <underline language="LA" method="pen" text="Phut" type="straight"/>
+        <underline language="LA" method="pen" text="externo vsi milite" type="straight"/>
+        <underline language="LA" method="pen" text="diuersis admodum vsi" type="straight"/>
+        <underline language="LA" method="pen" text="Gallo" type="straight"/>
+        <underline language="LA" method="pen" text="Thrace" type="straight"/>
+        <underline language="LA" method="pen" text="Graeco" type="straight"/>
+        <underline language="LA" method="pen" text="militasse Paras" type="straight"/>
+        <underline language="LA" method="pen" text="est, Libyes" type="straight"/>
+        <underline language="LA" method="pen" text="fallimur, Lydi" type="straight"/>
+        <underline language="LA" method="pen" text="variè partitur" type="straight"/>
+        <underline language="LA" method="pen" text="Aram Naharaim" type="straight"/>
+        <underline language="LA" method="pen" text="habe[n]t Padan" type="straight"/>
+        <underline language="LA" method="pen" text="Aram Damasci" type="straight"/>
+        <underline language="LA" method="pen" text="Naacat" type="straight"/>
+        <underline language="LA" method="pen" text="Aram Soba" type="straight"/>
+        <underline language="LA" method="pen" text="Aram Rohob" type="straight"/>
+        <underline language="LA" method="pen" text="Aram Naharaim" type="straight"/>
+        <underline language="LA" method="pen" text="Syriae, quae capite sequenti 29. Genes. dicitur terra filiorum" type="straight"/>
+        <underline language="LA" method="pen" text="esse Aram Naharaim" type="straight"/>
+        <underline language="LA" method="pen" text="Padan erit" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+         
+    </annotation>
+</transcription>

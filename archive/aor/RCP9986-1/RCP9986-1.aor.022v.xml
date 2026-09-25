@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9986-1.022v.tif" pagination="[23v]" reader="John Dee"/>  
+    <annotation>
+        
+        <marginalia anchor_text="Venus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Venus.</marginalia_text>
+                    <person name="Venus"/>
+                </position>
+            </language>
+            <translation>Venus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Ignara tetigi scyria membra manu" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; errorem vocis, vt omen, amo" type="straight"/>
+        <underline language="LA" method="pen" text="ego praemoriar" type="straight"/>
+        <underline language="LA" method="pen" text="Decolor" type="straight"/>
+        <underline language="LA" method="pen" text="Plus tibi, quàm Iuno, nocuit Venus, illa premendo Sustulit, haec humili sub pede colla tenet" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+    </annotation>
+</transcription>

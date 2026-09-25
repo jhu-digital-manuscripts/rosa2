@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.437v.tif" pagination="424" reader="John Dee" signature="[Nnnn ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="per viginti vel curciter moderatas dietas" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Nota 20, dietas moderatas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note the 20 moderate diets.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="deuotus Robertus" type="double"/>
+        <underline language="LA" method="pen" text="per viginti vel curciter moderatas dietas. Et" type="straight"/>
+        <underline language="LA" method="pen" text="ciuitate[m] Carleolu[m]" type="double"/>
+        <underline language="LA" method="pen" text="Kriandbright" type="straight"/>
+        <underline language="LA" method="pen" text="tutus" type="double"/>
+        <underline language="LA" method="pen" text="regimine" type="double"/>
+        <underline language="LA" method="pen" text="existens" type="straight"/>
+        
+        <errata amendedtext="tum" copytext="tamen" language="LA"/>
+        
+    </annotation>
+</transcription>

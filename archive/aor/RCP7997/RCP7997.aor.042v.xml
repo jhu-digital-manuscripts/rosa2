@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.042v.tif" reader="John Dee" signature="[Gvj[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="campan[us]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Campanus of Novara
+                    </marginalia_text>
+                    <person name="Campanus of Novara"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia date="18-24 September 1555" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Perlegi anno 1555. inter 18m et 24m Septe[m]bris.
+                        fullhamia[e] in a[e]dibus singularis amici mei, Reuere[n]di in
+                        Chr[ist]o patris                 
+                        Edmu[n]di
+                        Bonar
+                        Londinensis episcopi  
+                        J.d...
+                    </marginalia_text>
+                    <person name="Edmund Bonner"/>
+                    <person name="John Dee"/>
+                    <location name="Fulham"/>
+                </position>
+            </language>
+            <translation>
+                I have read through this between 18 and 24 September 1555 in Fulham, in a house of my singular friend, the reverend father to Christ, Edmund Bonner, Bishop of London. John Dee.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="po[te]n[ti]a e[ni]m" type="straight"/>
+        
+    </annotation>
+</transcription>

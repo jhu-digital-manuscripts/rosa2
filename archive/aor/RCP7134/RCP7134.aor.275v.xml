@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.275v.tif" pagination="[268v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="ingenium" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ingeniu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>Trick.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="reditus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Reditus</marginalia_text>
+                </position>
+            </language>
+            <translation>Return.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nisi Ioui, uel Veneri, uel Lunae" type="straight"/>
+        <underline language="LA" method="pen" text="uenereorum impotentia, quandoq[ue]" type="straight"/>
+        
+        <symbol language="LA" name="Saturn" place="left_margin" text="Saturnus"/>
+        <symbol language="LA" name="Venus" place="left_margin" text="Venus"/>
+        <symbol language="LA" name="Mercury" place="left_margin" text="Mercurius"/>
+        <symbol language="LA" name="Mars" place="left_margin" text="Mars"/>
+        <symbol language="LA" name="Venus" place="left_margin" text="Venus"/>
+        <symbol language="LA" name="Mercury" place="left_margin" text="Mercurius"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+    </annotation>
+</transcription>

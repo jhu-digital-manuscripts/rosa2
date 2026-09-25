@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonPA8550.001r.tif" pagination="title page" reader="Harvey" signature="A.i.r"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Gabrielis harueij.
+                    </marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                </position>
+            </language>
+            <translation>
+                Gabriel Harvey's.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Emi à D. Pinello Gallo.
+                    </marginalia_text>
+                    <person name="Vincenzo Pinelli"/> 
+                </position>
+            </language>
+            <translation>
+                I bought this from Dr. Pinelli [?] in France.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        GH.
+                    </marginalia_text>
+                    <person name="Gabriel Harvey"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ipse" type="straight"/>
+        <underline language="LA" method="pen" text="Vuitebergensi recitauit" type="straight"/>
+        <underline language="LA" method="pen" text="partim alijs" type="straight"/>
+        <underline language="LA" method="pen" text="recitandas exhibuit" type="straight"/>
+        
+        <mark method="pen" name="dot" place="intext"/> <!-- conscripsit, & -->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> 
+        
+    </annotation>
+</transcription>

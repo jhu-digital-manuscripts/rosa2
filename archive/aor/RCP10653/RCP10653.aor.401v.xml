@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.401v.tif" pagination="352" reader="John Dee" signature="[Gggg ij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Ed .1. absens fit Rex Angl.                
+                    </marginalia_text>
+                    <person name="Edward I, King of England"/>
+                </position>
+            </language>
+            <translation>
+                In his absence, Edward I is made king of England.     
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="qui si viueret penitus ignorarunt" type="straight"/>
+
+        <errata amendedtext="custodes" copytext="custodies" language="LA"/>
+
+    </annotation>
+</transcription>

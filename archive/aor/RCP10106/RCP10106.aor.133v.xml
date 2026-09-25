@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.133v.tif" pagination="266" reader="John Dee" signature="[r 5[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="fortuna" hand="Italian">
+        <language ident="LA">
+            <position book_orientation="0" place="left_margin">
+                <marginalia_text>fortuna</marginalia_text>
+            </position>
+        </language>
+        <translation>Fortune.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="metu meae mortalitatis" type="straight"/>
+        <underline language="LA" method="pen" text="usum mei dijs reprobantibus" type="straight"/>
+        <underline language="LA" method="pen" text="neq[ue] hanc impiam uiuacitatem nouis" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.062r.tif" pagination="107" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mercurius Trismegistus in Asclepio suo, capite 8 mentionem obiter facit de 36 Horoscopijs 
+                    </marginalia_text>
+                    <person name="Hermes Trismegistus"/> <!-- FSF: I am not sure how to capture the Trismegistus' dialogue with Asclepius; as Corpus Hermeticum or something more specific -->
+                </position>
+            </language>
+            <translation>
+                Mercury Trismegistus in his Asclepius, chapter 8, in passing makes mention of 36 horoscopes.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="doctrinae huius uenerandae secreta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Secreta astrologia[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The secrets of astrology.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="decanos" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Decuriones siue decani
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Decurions or decans.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Necepso, Aegypti iustissimus imperator" hand="Italian" id="UCLOgden:130:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Necepso A[E]gypti Imp.
+                    </marginalia_text>
+                    <person name="Nekauba"/>
+                </position>
+            </language>
+            <translation>
+                Nekauba, emperor of Egypt.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Curationes Astrologia[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Treatment of astrology.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        36 Da[e]mones Celsi Africani de q[ui]bus Agrippa. Lib. 1. cap. 72
+                    </marginalia_text>
+                    <person name="Celsus Africanus"/> 
+                    <person name="Heinrich Cornelius Agrippa"/>
+                </position>
+            </language>
+            <translation>
+                36 demons of Celsus Africanus of which Agrippa, Book 1, Chapter 72.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="numen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Numen
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Divine will. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Partes plen[a]e et vancan[a]e.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Full and empty parts.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sed nunq[uam] fieri poterit, ut in hominis genitura ☉ &amp; ☾, ac quinq[ue] planetae in plenis partibus constituantur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        O[mn]es planetas nu[n]q[uam] in plenis partibus simul esse possibile est.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Under no circumstances is it possible that all planets are in full parts at the same time.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Regula.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Rule.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="horosc." hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Horosc.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Horoscope.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="MC" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        M.C.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Midheaven.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        do[m]i[n]us geni. Do[m]i[n]us actus
+                    </marginalia_text>
+                    <symbol_in_text name="Bisected_circle"/>
+                </position>
+            </language>
+            <translation>
+               The lord of the constellation is the lord over the deed.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nota
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Note.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="decanoru[m] etiam nomina Aegyptio sermone" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Decanoru[m] no[m]i[n]a a[e]gyptio sermone.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The names of the deans in the Egyptian sermon. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Partes qu[a]e a[e]gyptio sermone notantur su[n]t plen[a]e, reliqu[a]e vacua[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The parts noted in the Egyptian sermon are full, left, empty.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary" id="UCLOgden:130:m0002">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        J D
+                        In Epha[e]stone Thebano, et simpliciter decem quosq[ue] proximos gradus, pro decano vno, assignat et alias decanis dat no[m]i[n]a[m] qua[m] hic nobis a Firmico proponuntur. 
+                        Libellus ille Ephestionis impressus est. in 4a cu[m] Iatromatica Hermetis gr[a]ecè, et alijs
+                    </marginalia_text>
+                    <person name="John Dee"/>
+                    <person name="Hephaestion of Thebes"/> 
+                    <person name="Julius Firmicus Maternus"/>
+                    <book title="Intromathematica"/>
+                </position>
+            </language>
+            <translation>
+                John Dee. In Hephaestion of Thebes, he simply assigns ten and those nearest degrees for one decan, and elsewhere the gives the name to the decans which are proposed to us here by Firmicus [Maternus].
+                This book of Hephaestion of Thebes has been printed. In the fourth [edition?] with Hermes Trismegistus' 'Intromathematica' in Greek, and with other [texts].
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cum" type="straight"/>
+        <underline language="LA" method="pen" text="maxima trepidatione" type="double"/>
+        <underline language="LA" method="pen" text="dixerunt" type="straight"/>
+        <underline language="LA" method="pen" text="quicquid illi dixerunt" type="double"/>
+        <underline language="LA" method="pen" text="superiore institutionum" type="straight"/>
+        <underline language="LA" method="pen" text="decani magni numinis ac" type="straight"/>
+        <underline language="LA" method="pen" text="Sic &amp; Necepso, Aegypti iustissimus imperator, optimus" type="straight"/>
+        <underline language="LA" method="pen" text="astronomus" type="straight"/>
+        <underline language="LA" method="pen" text="omnia uitia ualetudinésq[ue]" type="double"/>
+        <underline language="LA" method="pen" text="ualetudinem" type="double"/>        
+        <underline language="LA" method="pen" text="contrariis ideo naturis, contrariísq[ue] potestatibus omnium aegritudinum" type="straight"/>
+        <underline language="LA" method="pen" text="rationis magisteriis" type="straight"/>
+        <underline language="LA" method="pen" text="deorum" type="grid"/>
+        <underline language="LA" method="pen" text="seu decanorum" type="straight"/>
+        <underline language="LA" method="pen" text="triginta partibus eoru[m] est" type="straight"/>
+        <underline language="LA" method="pen" text="numen" type="triple"/>
+        <underline language="LA" method="pen" text="quasdam partes" type="double"/>
+        <underline language="LA" method="pen" text="possident" type="straight"/>
+        <underline language="LA" method="pen" text="Plenae sunt itaq[ue] partes" type="straight"/>
+        <underline language="LA" method="pen" text="uacuae" type="triple"/>
+        <underline language="LA" method="pen" text="quinq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="plenis partibus habuerit, erit quasi" type="straight"/>
+        <underline language="LA" method="pen" text="deus" type="triple"/>
+        <underline language="LA" method="pen" text="maximae maiestatis pr[a]esidio subleuatus" type="straight"/>
+        <underline language="LA" method="pen" text="poterit, ut" type="straight"/>
+        <underline language="LA" method="pen" text="in plenis" type="straight"/>
+        <underline language="LA" method="pen" text="stella[m]" type="double"/>
+        <underline language="LA" method="pen" text="praeter ☉ &amp; ☾" type="straight"/>
+        <underline language="LA" method="pen" text="mediocres" type="straight"/>
+        <underline language="LA" method="pen" text="qui duas" type="double"/>
+        <underline language="LA" method="pen" text="qui tres" type="double"/>
+        <underline language="LA" method="pen" text="quatuor" type="double"/>
+        <underline language="LA" method="pen" text="aut[em] hunc numeru[m] in nullis genituris, plenas" type="straight"/>
+        <underline language="LA" method="pen" text="erunt miseri" type="straight"/>
+        <underline language="LA" method="pen" text="in plenis" type="straight"/>
+        <underline language="LA" method="pen" text="uitae uirtute animi aequalitate corporis, &amp; auctoritatis potestate praeualidi" type="straight"/>
+        <underline language="LA" method="pen" text="aequalibúsq[ue] subiacentes" type="straight"/>
+        <underline language="LA" method="pen" text="fortunae locus" type="straight"/>
+        <underline language="LA" method="pen" text="licet in opportunis geniturae locis, positi fuerint, si tamen in plenis partibus no[n] sint constituti, perdunt licentiae potestate[m], si uero plenas possederint" type="straight"/>
+        <underline language="LA" method="pen" text="disciplinae huius secreta" type="triple"/>
+        <underline language="LA" method="pen" text="nomina" type="straight"/>
+        <underline language="LA" method="pen" text="Aegyptio" type="triple"/>
+        <underline language="LA" method="pen" text="sermone" type="straight"/>
+        <underline language="LA" method="pen" text="facie[n]tes illae enim partes sunt plen[a]e, in quibus" type="straight"/>
+        <underline language="LA" method="pen" text="decanoru[m] no[m]i[n]a iuueneris" type="straight"/>
+        <underline language="LA" method="pen" text="uacuae uero, q[ua]s nudas, incultásq[ue] decani penitus reliq[ue]rint" type="straight"/>
+        <underline language="LA" method="pen" text="Asiccan" type="straight"/>
+        <underline language="LA" method="pen" text="Senachet" type="straight"/>
+        <underline language="LA" method="pen" text="Asentacet" type="straight"/>
+        <underline language="LA" method="pen" text="partes 12" type="straight"/>
+        <underline language="LA" method="pen" text="uero 18" type="straight"/>
+        
+        <symbol name="Trine" place="right_margin"/>
+        
+        <mark colour="red" method="pen" name="bracket" place="left_margin"/> 
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/> <!-- dotted --> 
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/> 
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/> 
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/> 
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/> 
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/> <!-- dotted -->
+        <mark colour="red" method="pen" name="vertical_bar" place="right_margin"/> 
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- decani magni -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- adinuenit Triginatasex -->
+        <mark method="pen" name="comma" place="intext"/> <!-- numeru[m] deorum -->
+        
+        <errata amendedtext="signa" copytext="signia" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+         
+        <!-- M.B. The Grad[us] column is the cumulative sum of each preceding degree of separation between the decanal positions in the zodiac. -->
+        
+        <table place="intext" type="standard_table">
+            <tr>
+                <th>Grad.</th>
+            </tr>
+            <tr>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>30</td>
+            </tr>
+        </table>
+        
+    </annotation>
+</transcription>

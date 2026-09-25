@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.194r.tif" pagination="371" reader="Harvey"/> 
+    <annotation>
+        
+        <underline language="LA" method="pen" text="Cornelius Scipio, cui pòst Africanus" type="straight"/>
+        <underline language="LA" method="pen" text="Huic petenti" type="straight"/>
+        <underline language="LA" method="pen" text="negantes rationem" type="straight"/>
+        <underline language="LA" method="pen" text="nondum ad petendum legitima aetas esset" type="straight"/>
+        <underline language="LA" method="pen" text="omnes" type="straight"/>
+        <underline language="LA" method="pen" text="satis annorum habeo" type="straight"/>
+        
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--es-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--tri-->
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="omnes"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="satis annorum habeo"/>
+        
+    </annotation>
+</transcription>

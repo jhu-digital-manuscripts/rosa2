@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.024r.tif" reader="Harvey" signature="C[i[r]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Quid pro quo.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Temporal Supplyes of defects.</marginalia_text>
+                </position>
+            </language>
+            <translation>Something for something.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="they clipped womens heare and made ropes therof" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Ropes of womens</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>heare.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Better pore shifts, then none at all.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ca[e]sars bred of grasse.</marginalia_text>
+                    <person name="Julius Caesar"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Georgieuiz roots, &amp; herbes, with A little salt.
+                    Bred of stones rather than faile.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Alexander of Macedon; extreme thyrst" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Alexandri admirabilis in extrema siti te[m]perantia.</marginalia_text>
+                    <person name="Alexander the Great"/>
+                    <emphasis method="pen" text="in extrema siti" type="straight"/>
+                </position>
+            </language>
+            <translation>The admirable temperance of Alexander, in extreme thirst.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Alexander of Macedon" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Alexander cowld</marginalia_text>
+                    <person name="Alexander the Great"/>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>make A</marginalia_text>
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>Vertu of Necessity. A worthy Example</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>to his men.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Durate, et Vosmet</marginalia_text>
+                    <X-ref book_title="Aeneid" language="LA" person="Virgil" text="Durate, et Vosmet rebus servate secundis"/> 
+                </position>
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>rebus seruate</marginalia_text>
+                </position>
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>secundis.</marginalia_text>
+                </position>
+            </language>
+            <translation>'Carry on and preserve yourselves for better times.'</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>to make [the] comminalty to enuy the[m] [the] more, and to</marginalia_text>
+                </position>
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>haue them in</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>maiori Odio.</marginalia_text>
+                </position>
+            </language>
+            <translation>To make [the] comminalty to enuy the[m] [the] more, and to haue them in greater hate.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Regni diuisi contra Seipsum, ruina.
+                    Syncretismo nihil firmius, aut magis inuictum.</marginalia_text>
+                </position>
+            </language>
+            <translation>The collapse of divided royal power against itself. Nothing is more firm or more invincible than syncretism.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="90" place="left_margin">
+                    <marginalia_text>Necessitas, maximè omniu[m] Artiu[m] Polymechana, et Polyda[e]dala.</marginalia_text>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>New masteries, &amp; Experiments.</marginalia_text>
+                </position>
+            </language>
+            <translation>Necessity, especially the polymechanics and [polydaedala??] of all arts.</translation> <!--JG: How to translate polydaedala??-->
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="clipped womens heare" type="straight"/>
+        <underline language="EN" method="pen" text="made ropes" type="straight"/>
+        <underline language="EN" method="pen" text="Masiliens" type="straight"/>
+        <underline language="EN" method="pen" text="Rhodiens" type="straight"/>
+        <underline language="EN" method="pen" text="barkes of trees" type="straight"/>
+        <underline language="EN" method="pen" text="tergates" type="straight"/>
+        <underline language="EN" method="pen" text="shildes" type="straight"/>
+        <underline language="EN" method="pen" text="osyers, couered with beastes skynnes" type="straight"/>
+        <underline language="EN" method="pen" text="noble dede of Alexander" type="straight"/>
+        <underline language="EN" method="pen" text="desertes of" type="straight"/>
+        <underline language="EN" method="pen" text="extreme thyrste" type="straight"/>
+        <underline language="EN" method="pen" text="water in a salet" type="straight"/>
+        <underline language="EN" method="pen" text="poured it out in the syghte of all his army" type="straight"/>
+        <underline language="EN" method="pen" text="example of temperancy" type="straight"/>
+        <underline language="EN" method="pen" text="haue dronke" type="straight"/>
+        <underline language="EN" method="pen" text="bestowed it on some" type="straight"/>
+        <underline language="EN" method="pen" text="ennemies ad diuision" type="straight"/>
+        <underline language="EN" method="pen" text="Coriolanus" type="straight"/>
+        <underline language="EN" method="pen" text="reuenge the shame of his condemnation" type="straight"/>
+        <underline language="EN" method="pen" text="to spare the senatours landes" type="straight"/>
+        <underline language="EN" method="pen" text="wastynge all that" type="straight"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="right_margin" text="barkes of trees"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--con-->
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="head" text="clipped womens heare"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="wastynge all that"/>
+        
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="extreme thyrste"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="poured"/>
+        <mark method="pen" name="dot" place="intext"/> <!--army, countynge-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="example of temperancy"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark language="LA" method="pen" name="quotation_mark" place="intext" text="Durate, et Vosmet rebus seruate secundis"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="reuenge"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="to spare the senatours landes"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        
+    </annotation>
+</transcription>

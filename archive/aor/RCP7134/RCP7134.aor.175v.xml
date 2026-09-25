@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.175v.tif" pagination="[168v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="carceres" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Carceres.</marginalia_text>
+                </position>
+            </language>
+            <translation>Prisons.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mars figurae dominus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>♂ figura[e] d[omi]n[u]s.</marginalia_text>
+                    <symbol_in_text name="Mars"/>
+                </position>
+            </language>
+            <translation>Mars [is] the lord of the figure.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="duodecima peregrina, in trino Saturni in octaua existentis, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="ascendentis, carceres minatur" type="straight"/>
+        <underline language="LA" method="pen" text="sed repugnante[m] sententiam co[m]muni sente[n]tiae praestat, inde haereticus iudicatus, infamiam, carceres, &amp;" type="straight"/>
+        
+    </annotation>
+</transcription>

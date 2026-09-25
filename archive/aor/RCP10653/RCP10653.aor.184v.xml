@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.184v.tif" pagination="360" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Hunvval scelicet rege[m] Britonu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Howel rex Brytonu[m]     
+                    </marginalia_text>
+                    <person name="Hywel Dda"/>
+                </position>
+            </language>
+            <translation>
+                Hywel Dda, King of the Britons.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ducem Normanniae Robertum" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Rollo: qui post Robertus Dux N.
+                    </marginalia_text>
+                    <person name="Rollo"/>
+                </position>
+            </language>
+            <translation>
+                Rollo, who was later Robert Duke of Normanndy. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Eadgytham" type="straight"/>
+        <underline language="LA" method="pen" text="Sithrico" type="straight"/>
+        <underline language="LA" method="pen" text="virginis paganismum relinquens, fidem Christi suscepit" type="straight"/>
+        <underline language="LA" method="pen" text="virginitate sibi reseruata, apud Pollesberia[m] in ieiunijs &amp; vigilijs, in orationibus" type="straight"/>
+        <underline language="LA" method="pen" text="Sithrici supradicti" type="straight"/>
+        <underline language="LA" method="pen" text="regem VVentorum" type="straight"/>
+        <underline language="LA" method="pen" text="Hugo filius Roberti Comitis" type="straight"/>
+        <underline language="LA" method="pen" text="regis Aethelstani duxit vxorem" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Ducem Normanniae Robertum, quòd vterque in rebus dominaretur alterius, &amp; in rebus bellicis mutuis congauderent auxilijs" type="straight"/>
+        
+    </annotation>
+</transcription>

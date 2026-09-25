@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.043r.tif" pagination="43" reader="John Dee" signature="Liij"/> 
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Hyems</marginalia_text>
+                </position>
+            </language>
+            <translation>Winter.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Vn[d] aber das es kein bestand hat ist die vrsache das dasselbige Wasser nicht ein Corpus ist" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cur Aqua co[n]gelata, non semp[er] ita maneat.</marginalia_text>
+                </position>
+            </language>
+            <translation>Why congelated water does not always remain so.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="der Schnee ist des Winthers Regen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nix est hyemalis pluuia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Snow is the winter's rain.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Glaueischen" hand="Italian">
+            <language ident="DE">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>glacieschen</marginalia_text> <!-- FSF: I think it is glacierschen, which would make it something related to glaciers? -->
+                </position>
+            </language>
+            <translation/> <!--JG: Don't know-->
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Spiritus coagulationis" type="straight"/>
+        <underline language="DE" method="pen" text="früchten des Wassers" type="straight"/>
+        <underline language="DE" method="pen" text="Glaueischen Sternen" type="straight"/>
+        <underline language="DE" method="pen" text="bestand" type="straight"/>
+        <underline language="LA" method="pen" text="materia gemmarum" type="double"/>
+        <underline language="DE" method="pen" text="noch nit coaguliert" type="straight"/>
+        <underline language="DE" method="pen" text="in Esse" type="straight"/>
+        <underline language="DE" method="pen" text="der Tinctur" type="straight"/>
+        <underline language="DE" method="pen" text="Glaueischen" type="straight"/>
+        <underline language="DE" method="pen" text="da ein feuchte sein" type="straight"/>
+        <underline language="DE" method="pen" text="da ist es der Congelation vnderworffen" type="straight"/>
+        <underline language="DE" method="pen" text="Winthers Regen" type="straight"/>
+        <underline language="DE" method="pen" text="der zeit" type="double"/>
+        <underline language="DE" method="pen" text="rechten Winter" type="straight"/>
+        <underline language="LA" method="pen" text="Spiritum haben coagulationis" type="straight"/>
+        
+    </annotation>
+</transcription>

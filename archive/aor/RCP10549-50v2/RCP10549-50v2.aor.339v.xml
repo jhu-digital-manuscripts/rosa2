@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.339v.tif" pagination="130" reader="John Dee" signature="[Ii.i.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="homini aspero &amp; duro" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Homo asper durus voluptarius
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A man, rude, hard and pleasure-seeking.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="asperum, difficile, odiosum ... amara, inimica naturae, ad patiendum tolerandúmque difficilis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        amaru[m] asperu[m] difficile odiosum res tristis inimica nature ad patendum tolerandu[m]ve difficilis triste duru[m] difficile p[er]pessu
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Bitter, rude, difficult, distasteful, a sad thing, enemy of nature, hard to bear or tolerate, sad, hard to endure.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="risus captare" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        risus captare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To aim for laughter.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Metrodorus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Metrodurus
+                    </marginalia_text>
+                    <person name="Metrodorus of Lampsacus the Younger"/>
+                </position>
+            </language>
+            <translation>
+                Metrodorus of Lampsacus the Younger.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hercule" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Hercules.
+                    </marginalia_text>
+                    <person name="Hercules"/>
+                </position>
+            </language>
+            <translation>
+                Hercules.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Phalaridis tauro" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Phalaridus Taurus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The brazen bull of Phalaris.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Epicurus voluptate[m], homo, vt scis, voluptarius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Epicurus Homo Voluptarius
+                    </marginalia_text>
+                    <person name="Epicurus"/>
+                </position>
+            </language>
+            <translation>
+                Epicurus was a pleasure-seeking man.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Herculem ... apud Sophoclem" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Hercules apud Sophoclem
+                    </marginalia_text>
+                    <person name="Hercules"/>
+                    <person name="Sophocles"/>
+                </position>
+            </language>
+            <translation>
+                Hercules accoding to Sophocles.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Eurysteus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Eurystheus
+                    </marginalia_text>
+                    <person name="Eurystheus"/>
+                </position>
+            </language>
+            <translation>
+                Eurystheus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="foeminea vi" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Contra fo[e]minas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Against women.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        dolore frangi magnitudine dolore[m] iudicare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To be broken by pain, to judge the pain by strength.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="bene constitutum sit, &amp; exploratum" type="straight"/>
+        <underline language="LA" method="pen" text="risus captare" type="straight"/>
+        <underline language="LA" method="pen" text="asperum, difficile, odiosum, contra naturam" type="straight"/>
+        <underline language="LA" method="pen" text="Epicurus voluptate[m], homo, vt scis, voluptarius" type="straight"/>
+        <underline language="LA" method="pen" text="inimica" type="straight"/>
+        <underline language="LA" method="pen" text="magnitudine doloru[m] eiula[n]tem" type="straight"/>
+        <underline language="LA" method="pen" text="tum dolore frangebatur" type="straight"/>
+        <underline language="LA" method="pen" text="Ipse illigatus peste interimor textili" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark method="pen" name="tripunctus" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <numeral place="left_margin">21</numeral>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.026v.tif" pagination="36" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="partes humani corporis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Quae sic vtilitas ex reseie[n]do signa ad humani corporis partes
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Thus this utility from ascertaining the signs for the parts of the human body
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Omnia signa inuicem sibi obligata iunguntur" type="straight"/>
+        <underline language="LA" method="pen" text="Quae uero loca sunt ita posita, ut patres eoru[m], nulla uel duplicatione, uel triplatione, uel quadruplicatione integru[m] 360 p. numerum" type="straight"/>
+        <underline language="LA" method="pen" text="ad apotelesmata uehementissime proficit, praesertim cum locum ualetudinis, uel uitii uoluerimus inuenire" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <errata amendedtext="signo" copytext="siono" language="LA"/>
+        
+    </annotation>
+</transcription>

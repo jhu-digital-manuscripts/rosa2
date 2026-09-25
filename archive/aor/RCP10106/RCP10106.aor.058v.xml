@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.058v.tif" pagination="116" reader="John Dee" signature="[h 2[v]]"/>
+    <annotation> 
+        
+        <marginalia hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Gra[e]ci Scriptores</marginalia_text>
+                </position>
+            </language>
+            <translation>Greek writers.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Isocrates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Isocrates</marginalia_text>
+                    <person name="Isocrates"/>
+                </position>
+            </language>
+            <translation>Isocrates.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoteli" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aristoteles</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Isocratis praestantißimi discipuli fuerunt in omni studiorum genere, eoq[ue] iam senoire (octauum enim &amp; nonagesimum impleuit annum)" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Isocratis A[E]tas.</marginalia_text>
+                    <person name="Isocrates"/>
+                </position>
+            </language>
+            <translation>The age of Isocrates.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Theodectes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Theodectes</marginalia_text>
+                    <person name="Theodectes"/>
+                </position>
+            </language>
+            <translation>Theodectes.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Theophrastus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Theophrastus</marginalia_text>
+                    <person name="Theophrastus"/>
+                </position>
+            </language>
+            <translation>Theophrastus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hermagoras" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hermagoras</marginalia_text>
+                    <person name="Hermagoras of Temnos"/>
+                </position>
+            </language>
+            <translation>Hermagoras.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Athenaeus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Athena[e]us.</marginalia_text>
+                    <person name="Athenaeus of Naucratis"/>
+                </position>
+            </language>
+            <translation>Athenaeus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Apollodorus Pergamenus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Appollodorus</marginalia_text>
+                    <person name="Apollodorus of Pergamon"/>
+                </position>
+            </language>
+            <translation>Apollodorus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Theôdorus Gadareus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Theodorus</marginalia_text>
+                    <person name="Theodorus of Gadara"/>
+                </position>
+            </language>
+            <translation>Theodorus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="C. Valgius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>C Valgius</marginalia_text> 
+                    <person name="Valgius Rufus"/>
+                </position>
+            </language>
+            <translation>Gaius Valgius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Atticus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Atticus</marginalia_text>
+                    <person name="Atticus"/>
+                </position>
+            </language>
+            <translation>Atticus.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Caesaris Augusti fuit, &amp; Thôdorus" type="straight"/>
+        <underline language="LA" method="pen" text="Tyberius" type="straight"/>
+        <underline language="LA" method="pen" text="scripsit Theodôdorus, cuius auditorem Hermagora[m] sunt qui" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

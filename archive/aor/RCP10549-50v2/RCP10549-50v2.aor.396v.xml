@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.396v.tif" pagination="244" reader="John Dee" signature="[Qq.ii.[v]]"/>   
+    <annotation>
+        
+        <marginalia anchor_text="glomerans" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        glomerans
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Amassing.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Lydius ediderat Tyrrhenae gentis aruspex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Lydius aruspex
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A Lydian diviner.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nattae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Natta
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Natta. <!-- FSF: I couldn't find him identified in the Loeb or elsewhere; the Natta were an ancient Roman family -->
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Martia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Martia.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Martian.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="artis scripta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Artis scripta
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The writings of knowledge.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fixa graui fato ac fundata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        fixa &amp; fundata fato
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Fixed and determined by fate.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="hora" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Hora
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                An hour.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Academia vmbrifera" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Academia Vmbrifera
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The shade-giving academy.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Casu" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Casus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Case.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vmbrifera" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        vmbrifera
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Shade-giving.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        clarabat
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                It made visible.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="chartis promebat Etruscis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Monimenta Etrusca.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The monuments of the Etruscans.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="glomerans" type="straight"/>
+        <underline language="LA" method="pen" text="stellanti nixus" type="straight"/>
+        <underline language="LA" method="pen" text="vitali rore" type="straight"/>
+        <underline language="LA" method="pen" text="non artis scripta, ac monumenta volutans, Voces tristificas chartis promebat Etruscis" type="straight"/>
+        <underline language="LA" method="pen" text="Atque haec fixa graui fato ac fundata teneri" type="straight"/>
+        <underline language="LA" method="pen" text="Haec tardata" type="straight"/>
+        <underline language="LA" method="pen" text="multúmque morata" type="straight"/>
+        <underline language="LA" method="pen" text="Atque vna fixi ac signati temporis hora" type="straight"/>
+        <underline language="LA" method="pen" text="clarabat" type="straight"/>
+        <underline language="LA" method="pen" text="Otia qui studiis laeti tenuere decoris" type="straight"/>
+        <underline language="LA" method="pen" text="vmbrifera" type="straight"/>
+        <underline language="LA" method="pen" text="Fuderunt claras foecundi pectoris artes" type="straight"/>
+        <underline language="LA" method="pen" text="anxiferas" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        
+    </annotation>
+</transcription>

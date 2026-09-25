@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.235r.tif" pagination="228" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>a decima ad [quartam] descendens motu coeli diurno.</marginalia_text>
+                </position>
+            </language>
+            <translation>Descending from the tenth towards the fourth by the daily motion of the sky.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Mors ex revolutione.</marginalia_text>
+                </position>
+            </language>
+            <translation>Death from a revolution.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="genitura &amp; reuolutione" hand="English_secretary"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Significator genitura[e] et revolutionis.</marginalia_text> 
+                </position>
+            </language>
+            <translation>The signifier of a geniture and revolution.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in parte descendente" type="straight"/>
+        <underline language="LA" method="pen" text="etiam" type="straight"/>
+        <underline language="LA" method="pen" text="unus in genitura" type="straight"/>
+        <underline language="LA" method="pen" text="ad omne genus uiolentae mortis" type="straight"/>
+        
+        <symbol language="LA" name="Sun" place="right_margin" text="Sol"/>
+        <symbol language="LA" name="Mercury" place="right_margin" text="Mercurio"/>
+        <symbol language="LA" name="Mercury" place="right_margin" text="Mercurius"/>
+        <symbol language="LA" name="Mars" place="right_margin" text="Marti"/>
+        
+    </annotation>
+</transcription>

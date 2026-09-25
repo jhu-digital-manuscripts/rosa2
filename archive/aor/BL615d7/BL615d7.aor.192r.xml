@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.192r.tif" pagination="192" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="cosi male informationi" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>The Catholik Primaj Error</marginalia_text>
+                </position>
+            </language>
+            <translation>The prime Catholic error.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cosi male informationi" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Note the [deleted] prime error.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="incolpar meno i Re Catolici, ch'elessero per quel carico vn'huomo maligno, e di si poco sapere" type="straight"/>
+        <underline language="IT" method="pen" text="vera informatione delle maluagità di quelle" type="straight"/>
+        <underline language="IT" method="pen" text="cosi male informationi contra l'" type="straight"/>
+        <underline language="IT" method="pen" text="Bouadiglia con tante lettere, &amp; fauori" type="straight"/>
+        <underline language="IT" method="pen" text="limitargli la commission" type="double"/>
+        
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        
+    </annotation>    
+</transcription>

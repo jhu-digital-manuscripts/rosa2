@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.206r.tif" pagination="391" reader="John Dee" signature="bbb.iiii."/>
+    <annotation>
+        
+        <marginalia anchor_text="seditiosissimi" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        seditiosiss[imus]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Very troubled.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cauisti" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        cauisti
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                You avoided.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pestifer ciuis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        pestifer ciuis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A destructive citizen.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vim, iracundiá[m]que subierunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        subire vim iracundia[m]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To bow before the animosity and violence.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="qui de ciuitate &amp; libertate ea iura sanxeru[n]t, quae nec vis temporum, nec potentia magistratuum, nec res tum iudicata, nec denique vniuersi Po. Ro. potestas,              quae caeteris in rebus est maxima, labefactare possit" type="straight"/>
+        <underline language="LA" method="pen" text="ciuem mediusfidius egregiu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="immò etiam ciuem optime de Rep. meritum" type="straight"/>
+        <underline language="LA" method="pen" text="pestifer ciuis" type="straight"/>
+        <underline language="LA" method="pen" text="At vero vt annales Po. Ro. &amp; monimenta vetustatis loquu[n]tur, Censor ille" type="straight"/>
+        <underline language="LA" method="pen" text="non imminuit calamitas clarissimi nominis gloriam" type="straight"/>
+        <underline language="LA" method="pen" text="nam etsi optabilius est, cursum vitae conficere sine dolore, &amp; sine iniuria, tamen ad immortalitatem gloriae pls affert desyderatu[m] esse à suis ciuibus,              quàm omnino nunquam esse violatum" type="straight"/>
+        
+        <symbol name="Sextile" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">12</numeral>
+        <numeral place="right_margin">10</numeral>
+        <numeral place="right_margin">13</numeral>
+        <numeral place="right_margin">4</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

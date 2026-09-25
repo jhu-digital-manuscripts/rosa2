@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.095r.tif" reader="Harvey" signature="Y.i.[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Ramus superscription [t]o [-] <!-- several words missing due to cut page -->
+                    </marginalia_text>
+                    <person name="Petrus Ramus"/>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Ignoto Anglorum Deo.
+                    </marginalia_text>
+                    <emphasis method="pen" text="Ignoto Anglorum Deo." type="straight"/>
+                </position>
+            </language>
+            <translation>
+                With the unknown God of the English.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Rota into a right frame" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                       the Rota.
+                    </marginalia_text>
+                    <emphasis method="pen" text="Rota." type="straight"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        gibbi.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Humped.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        s[upr]a.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                [See] above.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        s[upr]a.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+               [See] above.
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="certein Forliuese" type="straight"/>
+        <underline language="EN" method="pen" text="foole or no, for" type="straight"/>
+        <underline language="EN" method="pen" text="is Bartholomew" type="straight"/>
+        <underline language="EN" method="pen" text="a rider" type="straight"/>
+        <underline language="EN" method="pen" text="hast no horses" type="straight"/>
+        <underline language="EN" method="pen" text="man wanteth nothinge" type="straight"/>
+        <underline language="EN" method="pen" text="but good" type="straight"/>
+        <underline language="EN" method="pen" text="a horse" type="straight"/>
+        <underline language="EN" method="pen" text="false aduoucion of a" type="straight"/>
+        <underline language="EN" method="pen" text="cannest hit vpon this other" type="straight"/>
+        <underline language="EN" method="pen" text="them Auditours" type="straight"/>
+        <underline language="EN" method="pen" text="Rota" type="straight"/>
+        <underline language="EN" method="pen" text="into a right frame" type="straight"/>
+        <underline language="EN" method="pen" text="Rota into a right" type="straight"/>
+        <underline language="EN" method="pen" text="two crooked persons" type="straight"/>
+        <underline language="EN" method="pen" text="graunteth" type="straight"/>
+        <underline language="EN" method="pen" text="the thinge that" type="straight"/>
+        <underline language="EN" method="pen" text="vnderstande it otherwise" type="straight"/>
+        <underline language="EN" method="pen" text="into the listes to fight" type="straight"/>
+        <underline language="EN" method="pen" text="Peralta to sweare whether" type="straight"/>
+        <underline language="EN" method="pen" text="about him any Saint Iohns Gosspell or charme and inchauntmente" type="straight"/>
+        <underline language="EN" method="pen" text="Gosspell, nor inchauntment, nor relike" type="straight"/>
+        <underline language="EN" method="pen" text="a marrane" type="straight"/>
+        <underline language="EN" method="pen" text="you haue no faith" type="straight"/>
+        <underline language="EN" method="pen" text="vse metaphors" type="straight"/>
+        <underline language="EN" method="pen" text="Botton, Botton" type="straight"/>
+        <underline language="EN" method="pen" text="the botton" type="straight"/>
+        <underline language="EN" method="pen" text="the halter" type="straight"/>
+        <underline language="EN" method="pen" text="the bottonhole" type="straight"/>
+        
+        <underline language="EN" method="pen" text="to agree" type="straight"/>
+        <underline language="EN" method="pen" text="That agree not:" type="straight"/>
+        <underline language="EN" method="pen" text="Rota" type="straight"/>
+        <underline language="EN" method="pen" text="the Court of the Arches" type="straight"/>
+        
+        <mark method="pen" name="quotation_mark" place="head"/>
+        <mark method="pen" name="plus_sign" place="head"/> <!-- Antony Rizzo -->
+        <mark method="pen" name="hash" place="head"/>
+        
+        <mark method="pen" name="straight_quotation_mark" place="left_margin"/>
+        <mark language="EN" method="pen" name="bracket" place="left_margin" text="And an other: Thou seekest a rider and hast no hourses. And this man wanteth              nothinge but good, &amp; a horse. And at certein other that seeme to agree."/>
+        <mark language="EN" method="pen" name="bracket" place="left_margin" text="Oure holie father is deceiued yf he thinke that he can bringe the Rota into a              right frame with two crooked persons."/>
+        <mark method="pen" name="hash" place="left_margin"/>
+        <mark language="EN" method="pen" name="equal_sign" place="left_margin" text="vnderstande it otherwise"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark language="EN" method="pen" name="quotation_mark" place="right_margin" text="certein Forliuese"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="straight_quotation_mark" place="right_margin"/>
+        <mark method="pen" name="comma" place="right_margin"/> <!-- matter -->
+        <mark method="pen" name="comma" place="right_margin"/> <!-- Aldana -->
+        <mark method="pen" name="dot" place="right_margin"/> <!-- this -->
+        <mark language="EN" method="pen" name="equal_sign" place="right_margin" text="haue no faith"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark method="pen" name="plus_sign" place="intext"/> <!-- a foole -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Bartholomew"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="a rider"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="hast no horses"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="wanteth"/>
+        <mark method="pen" name="comma" place="intext"/> <!-- good, & -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="false aduoucion of a"/>
+        <mark method="pen" name="X_sign" place="intext"/> <!-- matther, whie -->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- benefyce? Likewise -->
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Auditours"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- Auditours, sayinge -->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="into a right frame"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="Rota into a right"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="two crooked persons"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- persons. Also -->
+        <mark method="pen" name="dot" place="intext"/> <!-- more, but -->
+        <mark method="pen" name="comma" place="intext"/> <!-- charme, and -->
+        <mark method="pen" name="vertical_bar" place="intext"/> <!-- Christ. It -->
+        <mark method="pen" name="dot" place="intext"/> <!-- botton, and -->
+        
+    </annotation>
+</transcription>

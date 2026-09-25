@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.048r.tif" pagination="95" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Hemagorae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hερμάγορας</marginalia_text> <!-- in mixed script, wrongly accented, for Ἑρμαγόρας, Hermagoras of Temnos -->
+                    <person name="Hermagoras of Temnos"/>
+                </position>
+            </language>
+            <translation>Hermagoras of Temnos.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Apollodorus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Apollodorus</marginalia_text>
+                    <person name="Apollodorus of Pergamon"/>
+                </position>
+            </language>
+            <translation>Apollodorus</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="oratore[m] fortunae subijcit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Orator fortuna[e] subijcitur</marginalia_text>
+                </position>
+            </language>
+            <translation>The orator of fortune is exposed.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoteles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aristoteles</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Hermagorae" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ηερμαγόρας</marginalia_text>
+                    <person name="Hermagoras of Temnos"/>
+                </position>
+            </language>
+            <translation>Hermagoras.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="persuadere non tantum oratoris esse conuicimus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Supra 94.</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10106:100" text="94"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>[See] above, page 94.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoteles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aristoteles.</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle.</translation>
+        </marginalia>
+       
+        <marginalia anchor_text="Patrocles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Patrocles.</marginalia_text>
+                    <person name="Patrocles"/>
+                </position>
+            </language>
+            <translation>Patrocles.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Theodôrus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Theodôus.</marginalia_text>
+                    <person name="Theodorus of Gadara"/>
+                </position>
+            </language>
+            <translation>Theodorus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Gorgias" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Gorgias</marginalia_text>
+                    <person name="Gorgias"/>
+                </position>
+            </language>
+            <translation>Gorgias.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Socrates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Socrates.</marginalia_text>
+                    <person name="Socrates"/>
+                </position>
+            </language>
+            <translation>Socrates.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ipse oratore[m] fortunae subijcit, ut si non persuaserit, nomen summ retinere non poßit. Quidam" type="straight"/>
+        <underline language="LA" method="pen" text="persuadere non tantum oratoris esse conuicimus." type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

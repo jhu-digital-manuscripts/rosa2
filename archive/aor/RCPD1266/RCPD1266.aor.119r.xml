@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCPD1266.119r.tif" pagination="223" reader="John Dee" signature="t.iiij."/>
+    <annotation>
+        
+        <marginalia anchor_text="Iaphet" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Iaphet septe[n]tr.</marginalia_text>   <!-- DO: Can't make out the second word --> <!-- FSF: possibly septa[n]tr? I am not sure either --> <!--JG: perhaps referring to where the decendants of Japeth went to (e.g. north Asia)? https://books.google.co.uk/books?id=ZlgOAAAAIAAJ&pg=PA131&lpg=PA131&dq=Japheth+septentrio&source=bl&ots=d0u8Go3GVQ&sig=9UwtUCjomXxb6Z4FJDEO1c-0LNg&hl=en&sa=X&ved=0ahUKEwi824bkjanVAhWJalAKHZKnBkoQ6AEIKDAA#v=onepage&q=Japheth%20septentrio&f=false-->
+                    <person name="Japheth"/>
+                </position>
+            </language>
+            <translation>Japheth.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ergo geographia erat </marginalia_text>   <!-- DO: Can't make out the last two words --> <!-- FSF: I can read p[ro]sretur, which doesn't make sense though -->
+                </position>
+            </language>
+            <translation>Therefore the geography was </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Semae verò tertio Noe" type="straight"/>
+        <underline language="LA" method="pen" text="fuerunt filij quinque, qui Asiam vsque ad Indicum Oceanum incoluerunt" type="straight"/>
+        <underline language="LA" method="pen" text="Euphrate propagandae ditionis" type="straight"/>
+        <underline language="LA" method="pen" text="suis vniuersum mundum" type="straight"/>
+        <underline language="LA" method="pen" text="vsque ad Indiam" type="straight"/>
+        <underline language="LA" method="pen" text="filio Iaphet obtigerunt" type="straight"/>
+        <underline language="LA" method="pen" text="spectant ad Aquilonem" type="straight"/>
+        <underline language="LA" method="pen" text="nihil iuuari" type="straight"/>
+        <underline language="LA" method="pen" text="nihil de prima ista inter liberos Noe partitione" type="straight"/>
+        <underline language="LA" method="pen" text="totius orbis partem obtinuit Iaphet" type="straight"/>
+        <underline language="LA" method="pen" text="cum maiore Asiae" type="straight"/>
+        <underline language="LA" method="pen" text="habitet in tabernaculis Sem. q. d." type="straight"/>        
+        <underline language="LA" method="pen" text="Ecclesia collecta ex Iudaeis &amp; Gentibus, quatum" type="straight"/>
+        <underline language="LA" method="pen" text="Iaphet" type="straight"/>
+        <underline language="LA" method="pen" text="in Europam modò &amp; Asiam" type="straight"/>
+        <underline language="LA" method="pen" text="Africam" type="double"/>
+        <underline language="LA" method="pen" text="tanqua[m] falsum expungendu[m]" type="straight"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="RCP7831-1.008v.tif" pagination="6" reader="Dee" signature="[Aiij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="tam generatio, quàm corruptio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[G]eneratio nec corruptio in coelestibus.</marginalia_text>
+                </position>
+            </language>
+            <translation>[There is] neither generation nor corruption in the heavens.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rerum occultarum Comme[n]tariis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Reru[m] occultaru[m] Co[m]me[n]t[arii]</marginalia_text>
+                </position>
+            </language>
+            <translation>The commentaries of concealed matters.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="deorsum fiat" type="straight"/>
+        <underline language="LA" method="pen" text="fermentatio" type="straight"/>
+        <underline language="LA" method="pen" text="permixtio" type="straight"/>
+        <underline language="LA" method="pen" text="alternatio" type="straight"/>
+        <underline language="LA" method="pen" text="de crassa, &amp; corruptibili materia, p[ro] sibi infusa facultate, id aliis praestare possunt, quod in illis nequaquam agnoscas" type="straight"/>
+        
+        <drawing anchor_text="de crassa, &amp; corruptibili materia, p[ro] sibi infusa facultate, id aliis praestare possunt, quod in illis nequaquam agnoscas" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+    </annotation>
+</transcription>

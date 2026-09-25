@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.111v.tif" pagination="[111v]" reader="John Dee" signature="[Ovij[v]]"/>
+    
+    <annotation>
+        
+        <marginalia anchor_text="Capo di S. Croce" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Capo de Sa[n]cta Croce.</marginalia_text>
+                    <location name="Santa Croce"/>
+                </position>
+            </language>
+            <translation>Cape Santa Croce.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Isolette piane, e basse" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Isolette basse</marginalia_text>
+                </position>
+            </language>
+            <translation>Low islands.</translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="costa di" type="straight"/>
+        <underline language="IT" method="pen" text="di S. Croce" type="straight"/>
+        <underline language="IT" method="pen" text="per le molte secche, &amp; canali" type="straight"/>
+        <underline language="IT" method="pen" text="percioche rimedio contra i tuoni" type="straight"/>
+        <underline language="IT" method="pen" text="mainar le vele" type="straight"/>
+        <underline language="IT" method="pen" text="che le sostentaßero" type="straight"/>
+        <underline language="IT" method="pen" text="cosi a Tramontana" type="straight"/>
+        <underline language="IT" method="pen" text="come a Nordeste" type="straight"/>
+        <underline language="IT" method="pen" text="Isolette piane, e basse trouauano" type="straight"/>
+        <underline language="IT" method="pen" text="che appareano appena nella superficie dell'acqua," type="straight"/>
+        <underline language="IT" method="pen" text="più" type="straight"/>
+        <underline language="IT" method="pen" text="altre meno" type="straight"/>
+        <underline language="IT" method="pen" text="dimostrauano più alte, &amp; più belle" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+        
+        
+        
+        
+    </annotation>
+    
+</transcription>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.006r.tif" pagination="6" reader="John Dee" signature="Bij"/> 
+    <annotation>
+        
+        <marginalia hand="Italian" id="NYSLWin188:00000025:m0001" marginalia_continues_from="NYSLWin188:00000024:m0001" marginalia_from_transcription="00000024.xml">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>quartum eleme[n]tum, esse Elementum Co[e]li</marginalia_text>
+                </position>
+            </language>
+            <translation>the fourth element is the element of heaven.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cur Ignis no[n] sit Elementum</marginalia_text>
+                </position>
+            </language>
+            <translation>Why fire is not an element.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Himmel" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Coelum.</marginalia_text>
+                </position>
+            </language>
+            <translation>Heaven.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="so er ohne fewer sein mag" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Homo sine Igne esse potest</marginalia_text>
+                </position>
+            </language>
+            <translation>Man can be without fire.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Co[e]li bonitas</marginalia_text>
+                </position>
+            </language>
+            <translation>The integrity of the heaven.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Commonly in our speche, we call only heaven the Eleme[n]t as there appered strange sights in the Eleme[n]t.</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>[et cetera]. quasi hic dictu[m] a maioribus n[ost]ris Eleme[n]tum: [per] excelle[n]tia[m].</marginalia_text> 
+                </position>
+            </language>
+            <translation>As if it was called an element by our elders because of [its] excellence.</translation> 
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="Elementisches" type="straight"/>
+        <underline language="DE" method="pen" text="von früchten" type="straight"/>
+        <underline language="DE" method="pen" text="gemeinschafft mit dem" type="straight"/>
+        <underline language="DE" method="pen" text="Seel vnd Leib" type="straight"/>
+        <underline language="DE" method="pen" text="der Himmel sein" type="double"/>
+        <underline language="DE" method="pen" text="gemeinschafft" type="double"/>
+        <underline language="DE" method="pen" text="so er ohne fewer sein" type="straight"/>
+        <underline language="DE" method="pen" text="alle früchte mehrer" type="straight"/>
+        <underline language="DE" method="pen" text="vnd" type="straight"/>
+        <underline language="DE" method="pen" text="mithilfft" type="double"/> 
+        <underline language="DE" method="pen" text="den andern Elementen" type="double"/>
+        <underline language="DE" method="pen" text="nicht Elementum Ignis heissen" type="straight"/>
+        <underline language="LA" method="pen" text="Elementum Coeli" type="straight"/> 
+        <underline language="DE" method="pen" text="das erste" type="double"/>
+        
+        <mark language="DE" method="pen" name="bracket" place="right_margin" text="Dann der Himmel hat mit dem Menschen gemeinschafft vnd der Mensch mag ohne in nicht sein er muß in haben"/>
+        
+        <drawing anchor_text="Commonly in our speche, we call only heaven the Eleme[n]t as there appered strange sights in the Eleme[n]t." book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+        
+    </annotation>
+</transcription>

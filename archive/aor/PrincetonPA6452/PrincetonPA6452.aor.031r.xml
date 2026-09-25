@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.031r.tif" pagination="45" reader="Harvey"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Egregium, et terribile facinus Martij Coriolani. 
+                    </marginalia_text>
+                    <person name="Marcius Coriolanus"/>
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>A valiant &amp; braue Youth.</marginalia_text>
+                </position>
+            </language>
+            <translation>The wonderful and terrifying action of Martius Coriolanus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Meneniu[m] Agrippam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Apologus Menenij Agrippa[e].
+                    </marginalia_text>
+                    <person name="Menenius Agrippa Lanatus"/>
+                </position>
+            </language>
+            <translation>The story of Menenius Agrippa.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>È fabulis Hesiodi aut Æsopi. Menenius iste Agrippa, Aurelio Victori vnus illustriu[m] uiroru[m] vrbis Roma[e]. 
+                        Et nominatim propter huius fabula[e] foelicem effectum.
+                    </marginalia_text>
+                    <person name="Hesiod"/>
+                    <person name="Aesop"/>
+                    <person name="Menenius Agrippa Lanatus"/>
+                    <person name="Aurelius Victor"/>
+                    <location name="Rome"/>
+                </position>
+            </language>
+            <translation>From the stories of Hesiod or Aesopus. For Aurelius Victor this Menenius Agrippa was one of the famous men of the city of Rome, 
+                and particularly on account of the successful outcome of this story.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="tribuni plebeij" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Primi Tribuni plebis. Patroni plebis aduersùs Consules, et patres. 
+                        Nunq[uam] alioqui satis amplos, aut elatos.
+                    </marginalia_text>
+                    <emphasis method="pen" text="Primi Tribuni plebis" type="straight"/>
+                </position>
+            </language>
+            <translation>The first Plebeian Tribunes were the protectors of the common people against the consuls and the patricians. 
+                Otherwise never sufficiently distinguished or exalted.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Syncretismus, firmissimu[m] tuenda[e], munienda[e]q[ue] Reipub. propugnaculum. s[upr]a, i[nfr]a.
+                        Sed ambitiosi, et militares animi sa[e]pè redeunt ad nouos motus, et tumultus. Nec vnq[uam] diu conquiescit bellicosa gens, 
+                        aut pragmaticus status. Qualis pra[e] omnibus mundi Rebuspublicis, Romanus.
+                    </marginalia_text>
+                    <location name="Rome"/>
+                </position>
+            </language>
+            <translation>Syncretism, an extremely strong safeguard for the protection and defence of the Republic: see above and below. 
+                But ambitious and military minds often come to new rebellions and disturbances. And indeed a warlike people or a pragmatic state never finds rest for long. 
+                The Roman Republic is of such kind, more than all other Republics in the world.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Menenius, in factione, vtriq[ue] parti carus. Vt nonnulli etiam alij prudentes viri, i[nfr]a.
+                    </marginalia_text>
+                    <person name="Menenius Agrippa Lanatus"/>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000011" text="i[nfr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>In the partisanship Menenius was beloved by either party. Like also several other prudent men, [see] below.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Tribuni, froeni Consulum Romanoru[m]: vt Ephori, Regum Laceda[e]moniorum.
+                        Prouidus politismus admittit fra[e]nos Consulum; non Dictatorum, aut Regum: quicquid delirant aphorismi, nimiùm sa[e]pè Ephorismi. 
+                        Reges Laceda[e]monij, non reges, sed principes militares: et prudenter Aristoteles contra Ephoriam Laconicam: 
+                        imprudenter Neopolitici pro Ephoria antiquata.
+                    </marginalia_text>
+                    <person name="Aristotle"/>
+                    <location name="Sparta"/>
+                    <location name="Rome"/>
+                </position>
+            </language>
+            <translation>The tribunes were the bridles of the Roman Consuls, like the Ephors were to the Spartan Kings.
+                A prudent political system allows bridles for the Consuls, not for Dictators or Kings; whatever nonsense aphorisms express, 
+                they are all too often ephorisms. The Spartan kings were no kings, but military leaders; 
+                also Aristotle sensibly [argues] against the Spartan Ephorate; the neo-politicians unwisely argue in favour of an outdated Ephoria.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="maturata est" type="straight"/>
+        <underline language="LA" method="pen" text="Ibi sine ullo" type="straight"/>
+        <underline language="LA" method="pen" text="si quod externu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="in concordia ciuiu[m] spe[m]" type="straight"/>
+        <underline language="LA" method="pen" text="per aequa" type="straight"/>
+        <underline language="LA" method="pen" text="reco[n]cilianda[m]" type="straight"/>
+        <underline language="LA" method="pen" text="oratore[m] ad plebe[m] mitti Meneniu[m] Agrippam" type="straight"/>
+        <underline language="LA" method="pen" text="facundum uirum" type="straight"/>
+        <underline language="LA" method="pen" text="plebi charum" type="straight"/>
+        <underline language="LA" method="pen" text="prisco illo dicendi &amp; horrido modo" type="straight"/>
+        <underline language="LA" method="pen" text="nihil aliud" type="straight"/>
+        <underline language="LA" method="pen" text="hoc" type="straight"/>
+        <underline language="LA" method="pen" text="nec magis ali, q[ue] alere eum" type="straight"/>
+        <underline language="LA" method="pen" text="reddente[m] in omnes corporis partes" type="straight"/>
+        <underline language="LA" method="pen" text="uiuimus uigemusq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="diuisum pariter in uenas maturu[m] co[n]fecto cibo sanguine[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Co[m]parando hinc" type="straight"/>
+        <underline language="LA" method="pen" text="intestina corporis seditio" type="straight"/>
+        <underline language="LA" method="pen" text="similis esset, ir[a]e plebis inpatres" type="straight"/>
+        <underline language="LA" method="pen" text="flexisse me[n]tes" type="straight"/>
+        <underline language="LA" method="pen" text="concessumq[ue] in co[n]ditiones" type="straight"/>
+        <underline language="LA" method="pen" text="ut plebi sui magistratus essent sacro sancti" type="straight"/>
+        <underline language="LA" method="pen" text="quibus auxilij latio aduersus co[n]sules" type="straight"/>
+        <underline language="LA" method="pen" text="néue cui patru[m] capere eu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="tribuni plebeij" type="straight"/>
+        <underline language="LA" method="pen" text="tres collegas" type="straight"/>
+        <underline language="LA" method="pen" text="Siciniu[m] fuisse seditionis autore[m]" type="straight"/>
+        <underline language="LA" method="pen" text="sacatam legem" type="straight"/>
+        <underline language="LA" method="pen" text="inter primores iuuenum Cn. Martius" type="straight"/>
+        <underline language="LA" method="pen" text="adolescens &amp; co[n]silio &amp; manu promptus" type="straight"/>
+        <underline language="LA" method="pen" text="Coriolano fuit" type="straight"/>
+        <underline language="LA" method="pen" text="cum delecta militu[m] manu, non modò" type="straight"/>
+        <underline language="LA" method="pen" text="ferox irrupit: c[a]edeq[ue] in proximo" type="straight"/>
+        <underline language="LA" method="pen" text="igne[m] temerè arreptu[m], imminentibus" type="straight"/>
+        <underline language="LA" method="pen" text="ad terrore[m]" type="straight"/>
+        <underline language="LA" method="pen" text="tantumq[ue] sua laude" type="straight"/>
+        <underline language="LA" method="pen" text="Martius, ut nisi" type="straight"/>
+        <underline language="LA" method="pen" text="Agrippa Menenius" type="straight"/>
+        <underline language="LA" method="pen" text="uir omni uita pariter patribus ac plebi charus" type="straight"/>
+        <underline language="LA" method="pen" text="interpreti arbitroq[ue] concordiae" type="straight"/>
+        <underline language="LA" method="pen" text="legato patrum" type="straight"/>
+        <underline language="LA" method="pen" text="reductori plebis Romanae" type="straight"/>
+        <underline language="LA" method="pen" text="sumptus funeri defuit" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> <!--separating marginal notes-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--Tempo-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--Co[m]paran-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--homi-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--colle-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--le-->
+        <mark method="pen" name="horizontal_bar" place="right_margin"/> <!--separating marginal notes-->
+        
+        <mark language="LA" method="pen" name="quotation_mark" place="intext" text="oratore[m]"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="horrido"/>
+        <mark method="pen" name="apostrophe" place="intext"/> <!--after modo-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="sacro"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="quibus"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="aduersus"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="tribuni"/>
+        <mark method="pen" name="dot" place="intext"/> <!--autore[m], de-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="sacratam"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--lata[m] Per-->
+        <mark method="pen" name="comma" place="intext"/> <!--ciuium legato-->
+        <mark method="pen" name="dot" place="intext"/> <!--defuit, extulit-->
+        
+    </annotation>
+</transcription>

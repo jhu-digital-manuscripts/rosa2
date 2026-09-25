@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="PrincetonPE1137.027r.tif" pagination="26[r]" reader="Harvey" signature="g.ii.r"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin"> 
+                    <marginalia_text>
+                        Gallis qu. k.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                'Qu' is 'k' for the French.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="k Gallis planè" type="straight"/>
+        <underline language="LA" method="pen" text="certè q est" type="straight"/>
+        <underline language="LA" method="pen" text="ki" type="straight"/>
+        <underline language="LA" method="pen" text="ke" type="straight"/>
+        <underline language="LA" method="pen" text="kod" type="straight"/>
+        <underline language="LA" method="pen" text="Tuscani vt nos" type="straight"/>
+        <underline language="LA" method="pen" text="cerasum" type="straight"/>
+        <underline language="LA" method="pen" text="iurgari" type="straight"/>
+        
+    </annotation>
+</transcription>

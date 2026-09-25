@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.008r.tif" reader="John Dee" signature="Bij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="p[ar]te altera lo[n]gior semp[er] mediu[m] p[ro]portio[n]ale int[er] duo q[ua]drata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Altera parte lo[n]gior se[m]per mediu[m] proportionale inter duo q[ua]drata
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In the other part the proportional middle is always longer between two squares.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>[..air] dispositio.</marginalia_text>
+                </position>
+            </language>
+            <translation>[...] disposition.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="rep[re]hendit[ur] in seque[n]tib[us] opinio antipho[n]tis qui dicebat vltima[m] polligonia[m] figura[m] inscriptam circulo" hand="Italian">  
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Antipho[n]tis r[ati]o improbatur
+                    </marginalia_text>
+                    <person name="Antiphon"/>
+                </position>
+            </language>
+            <translation>
+                Antiphon's reasoning is rejected.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="similitudo in figuris mathematicis decimo methaphisice disputabit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Similitudo in figuris mathematicis   
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Similarity in the mathematical figures.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Na[m] equale [et] ineq[ua]le adinuice[m] vt p[er] modu[m] quanti.              simile vero [et] dissimile p[er] modu[m] vt quale" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        qua[n]tu[m] quale
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                How much, what kind.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="vt sexto geometrie sunt o[mn]es figure mathematice similes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Similes figura[e]
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Similar figures.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="que non sumunt[ur] hic p[ro]prie quia tunc habe[n]t mediu[m] sc[ilicet] esse diminutu[m] alique[m].              Sumit[ur] nanq[uam] hic perfectus p[ro] pari nu[m]ero [et] habu[n]dans p[ro] impari" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        numera { abunda[n]s perfect[us] diminitus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Abundant, perfect and diminished numbers.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Perfecti sunt qui co[m]parati suis partib[us] aliquotis redduntur equales" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Numerus p[er]fect[us]  
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A perfect number.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Sup[er]habu[n]dantes aut[em] dicunt[ur] qui suis partibus aliquotis comp[ar]ati" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Sup[er]habundans 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Superabundant.                   
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="diminuti vero minores vt in sequentib[us] ostendet[ur]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Diminuti.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Diminished.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="altera lo[n]gior semp[er] mediu[m] p[ro]portio[n]ale int[er] duo q[ua]drata vt dice[n]do thetragonizare             p[ar]te altera lo[n]giore[m] est inuenire mediu[m] q[ua]dratu[m] int[er] duo" type="straight"/>
+        <underline language="LA" method="pen" text="ex p[ar]te altera lo[n]giori" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] maiore[m] dispositione[m] [et]" type="straight"/>
+        <underline language="LA" method="pen" text="qui dicebat vltima[m] polligonia[m] figura[m] inscriptam circulo. per lunulas esse eq[ua]le[m] circulo" type="straight"/>
+        <underline language="LA" method="pen" text="dicat[ur] similitudo in figuris mathematicis decimo methaphisice disputabit[ur]" type="straight"/>
+        <underline language="LA" method="pen" text="modu[m] quanti" type="straight"/>
+        <underline language="LA" method="pen" text="S[ed] dissimile dicit[ur] a diuersis formis. vt circul[us] [et] q[ua]dratu[m] in formis [et] figuris sunt dissimilia" type="straight"/>
+        <underline language="LA" method="pen" text="Sumit[ur] nanq[uam] hic perfectus p[ro] pari nu[m]ero [et] habu[n]dans p[ro] impari" type="straight"/>
+        <underline language="LA" method="pen" text="[et] sic intra que[m]libet limitem tantu[m] vnus p[er]fectus est" type="straight"/>
+        
+        <errata amendedtext="[deleted]" copytext="p[ro]porcio vt lateru[m] p[ro]portio" language="LA"/>   
+        <errata amendedtext="," copytext="." language="LA"/> <!-- circulo per -->
+                                                                                                                                    
+    </annotation>
+</transcription>

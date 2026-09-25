@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.088v.tif" reader="Harvey" signature="[Li[r]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Hasdruball" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hasdrubal slayne.</marginalia_text>
+                    <person name="Hasdrubal II"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>s[upr]a /</marginalia_text>
+                </position>
+            </language>
+            <translation>[See] above.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="than shut the gates" type="straight"/>
+        <underline language="EN" method="pen" text="Hasdruball" type="straight"/>
+        <underline language="EN" method="pen" text="rasshely" type="straight"/>
+        <underline language="EN" method="pen" text="vnprouidedly assayled" type="straight"/>
+        <underline language="EN" method="pen" text="Lygurians together" type="straight"/>
+        <underline language="EN" method="pen" text="be a frayde" type="straight"/>
+        <underline language="EN" method="pen" text="beganne to ware werye and faynt" type="straight"/>
+        <underline language="EN" method="pen" text="out at. iiii. gates of" type="straight"/>
+        <underline language="EN" method="pen" text="ambassadours to Hasdruball" type="straight"/>
+        <underline language="EN" method="pen" text="libertie safely to" type="straight"/>
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="rasshely"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="vnprouidedly"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="to ware werye and faynt"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="tail" text="libertie safely to"/>
+        
+    </annotation>
+</transcription>

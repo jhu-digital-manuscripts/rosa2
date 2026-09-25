@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.011r.tif" pagination="21" reader="John Dee" signature="b 3"/>
+    <annotation>
+        
+        <marginalia anchor_text="Nec poëtas legisse satis est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Poëta[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Poets.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="non propter historias modò" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>historia[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Histories.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tum nec citra musicen grammatice potest esse perfecta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Musice</marginalia_text>
+                </position>
+            </language>
+            <translation>Music.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Astronomia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Astronomy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Nec ignara philosophiae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Philosophia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Philosophy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Eloque[n]tia quoque non mediocri est opus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rhetorica</marginalia_text>
+                </position>
+            </language>
+            <translation>Rhetoric.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="non quia magnae sit operae consonantes à uocalibus discernere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Consonantes. Vocales.</marginalia_text>
+                </position>
+            </language>
+            <translation>Consonants. Vowels.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="plus habet in recessu, quàm fronte promittit" type="straight"/>
+        <underline language="LA" method="pen" text="rerum dicat propriè, &amp; copiosè" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; quae uel sola omni studiorum genere, plus habeat operis, quàm ostentationis" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

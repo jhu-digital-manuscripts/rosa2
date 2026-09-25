@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonDL45.250r.tif" pagination="499" reader="Harvey"/>
+    <annotation> 
+        
+        <marginalia anchor_text="eius artis." hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Sagittaria[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Of archery.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Spicula veneno tincta." type="straight"/>
+        <underline language="LA" method="pen" text="Bohoemi optimi sagittarii." type="straight"/>
+        <underline language="LA" method="pen" text="eius artis." type="straight"/>
+        
+    </annotation>
+</transcription>

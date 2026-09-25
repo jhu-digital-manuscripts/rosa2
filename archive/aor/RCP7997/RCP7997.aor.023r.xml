@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.023r.tif" reader="John Dee" signature="[Dv]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="hoc est no[n] significat veritate[m] v[e]l falsitate[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Definitio no[n] significat veritatem vel falsitatem.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                A definition does not signify the truth or falsehood.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Mathematic[us] vtit[ur] etia[m] peticionib[us] q[ua]s diximus demonstrabiles [et] no[n] p[ro]babiles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Petitiones demo[n]strabiles no[n] p[ro]babiles
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Demonstratable, but not proveable petitions.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="phisice" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Physicè
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Physically.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Euclidis sententia alia est. quam aristotelis, in istis omnibus
+                    </marginalia_text>
+                    <person name="Euclid"/>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>
+                Euclid's opinion is different from that of Aristotle, in all of these [aspects].
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tu[n]c est q[uae]stio" type="straight"/>
+        <underline language="LA" method="pen" text="significat esse v[e]l no[n] esse. hoc est no[n] significat veritate[m] v[e]l falsitate[m] ergo" type="straight"/>
+        <underline language="LA" method="pen" text="v[e]l est principiu[m] vel principiatu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="vtit[ur] suppositione" type="straight"/>
+        <underline language="LA" method="pen" text="ostensiua" type="straight"/>
+        <underline language="LA" method="pen" text="p[er] impossibili" type="straight"/>
+        <underline language="LA" method="pen" text="q[uod] due linee eq[ui]distantes linee breuissime q[uae] collaterales dicunt[ur] sunt eq[ua]les q[uo]d" type="straight"/> 
+        <underline language="LA" method="pen" text="e q[uae] no[n] est nihil" type="straight"/>
+        <underline language="LA" method="pen" text="diximus demonstrabiles [et] no[n] p[ro]babiles" type="straight"/>
+        <underline language="LA" method="pen" text="adiscenti phisice" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="equal_sign" place="right_margin"/> <!-- scie[n]cia -->
+        <mark method="pen" name="bracket" place="intext"/> <!-- diffinitio. Hijs -->
+        <mark method="pen" name="slash" place="intext"/>           
+        <mark method="pen" name="comma" place="intext"/> <!-- est sic -->
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+        <numeral place="left_margin">2.</numeral>
+        <numeral place="left_margin">3.</numeral>
+        <numeral place="left_margin">3.</numeral>
+        
+        <errata amendedtext="in demo[n]stratione" copytext="indemo[n]stratione" language="LA"/>
+        
+        <graph book_orientation="0" method="pen" place="right_margin" type="ramus_tree"> <!-- FSF: some notes have been cut off -->
+            <node id="n1">o[mn]e q[uod] in demonstratione, est au...</node>
+            <node id="n2">Principiu[m]</node>
+            <node id="n3">principiatu[m]</node>
+            <node id="n4">co[m]mune</node>
+            <node id="n5">Proprium.</node>
+            <node id="n6">Inco[m]plexu[m]. subiectu[m]</node>    
+            <node id="n7">co[m]plexu[m]</node>
+            <node id="n8">demo[n]strabile</node>
+            <node id="n9">indemo[n]strabile et hoc positio est</node>
+            <node id="n10">probabile. suppositio ad aliquem.</node>
+            <node id="n11">no[n] p[ro]babile</node>
+            <node id="n12">co[m]plexa. suppositio simpliciter</node>
+            <node id="n13">inco[m]plex [et] [tunc] est [diffinitio]</node>               <!-- DO: I would guess it's 'et tunc est' and then probably 'diffinitio', going by the structure of the other notes, but obviously can't be sure -->
+            <node id="n14">co[n]trariu[m] opinioni disce[n]tis. et tunc est questio.</node>
+            <node id="n15">neutr...modo...et [dis...] et [tunc] est...p[ro]p[ri]e...que[m]</node>
+            <link from="n1" relationship="has_child" to="n2"/>
+            <link from="n1" relationship="has_child" to="n3"/>
+            <link from="n2" relationship="has_child" to="n4"/>
+            <link from="n2" relationship="has_child" to="n5"/>
+            <link from="n5" relationship="has_child" to="n6"/>
+            <link from="n5" relationship="has_child" to="n7"/>
+            <link from="n7" relationship="has_child" to="n8"/>
+            <link from="n7" relationship="has_child" to="n9"/>
+            <link from="n8" relationship="has_child" to="n10"/>
+            <link from="n8" relationship="has_child" to="n11"/>
+            <link from="n9" relationship="has_child" to="n12"/>
+            <link from="n9" relationship="has_child" to="n13"/>
+            <link from="n11" relationship="has_child" to="n14"/>
+            <link from="n11" relationship="has_child" to="n15"/>
+            <graph_text>
+                <translation>Everything that is in a demonstration, is [...].
+                Beginning. Principle. General. Singular. Incomplex. A subject. Complex. Demonstrable. Indemonstrable, and this is the position. Probable. A supposition for anything.
+                Not probable. Complex. A simple supposition. Incomplex, and then this is the definition. Opposite to the opinion of learning. And this is the question. [....].</translation>
+            </graph_text>
+            
+        </graph>
+        
+        
+    </annotation>
+</transcription>

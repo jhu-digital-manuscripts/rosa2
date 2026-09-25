@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.076r.tif" pagination="151" reader="John Dee" signature="k 4"/> 
+    <annotation>
+        
+        <marginalia anchor_text="utilia honestis praeferimus, ut cu[m] suademus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Vtilia honestis interdu[m] pra[e]fere[n]da</marginalia_text>
+                </position>
+            </language> 
+            <translation>Useful things are sometimes to be preferred over the honest ones.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Liberos enim natura omnes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Liberi sum o[mn]es</marginalia_text> 
+                </position>
+            </language> 
+            <translation>Everyone is free.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="uerbis quàm re probabilius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Verba reprobabilia</marginalia_text>
+                </position>
+            </language>          
+            <translation>Contemptible words.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Pomeius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pompeius</marginalia_text>
+                    <person name="Pompey"/>
+                </position>
+            </language>
+            <translation>Pompey.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="omnis suasoria nihil est aliud, quàm comparatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Omnis suasoria est comparatio</marginalia_text>
+                </position>
+            </language> 
+            <translation>Every advisory speech is a comparison.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Est utilitatis &amp; in tempore quaestio. Expedit, sed non nunc. Et in loco, Non hic. Et persona, Non nobis, non contra hos.              Et in genere agendi, Non sic. Et in modo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>vtilitas in Tempora Loco persona g[e]n[er]e age[n]di modo</marginalia_text>
+                </position>
+            </language> 
+            <translation>Utility, the time, place, person, method of action. </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exempla plurimum in consiljs poßint, quia facilimè ad consentiendum homines ducuntur experimentis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exempla sunt experimenta.</marginalia_text>
+                </position>
+            </language> 
+            <translation>Examples are experiments.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="illa uanum, ambitiosum, stolidum, uerbis quàm reprobabilius" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

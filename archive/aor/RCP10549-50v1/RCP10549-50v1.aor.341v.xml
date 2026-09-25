@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.341v.tif" pagination="14" reader="John Dee"/>
+    <annotation> 
+        
+        <marginalia anchor_text="Q. Scaeuolae" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Q. Sceuola</marginalia_text> 
+                    <person name="Quintus Mucius Scaevola Pontifex"/>                
+                </position>
+            </language>
+            <translation>Quintus Mucius Scaevola Pontifex.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="his te[m]poribus audacia pro sapienta vti liceat" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>his temporibus audacia p[ro] sapientia vti licet</marginalia_text> 
+                </position>
+            </language>
+            <translation>In these times rashness may be used instead of wisdom.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Apuliam" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Apulia</marginalia_text> 
+                    <location name="Apulia"/>                
+                </position>
+            </language>
+            <translation>Apulia.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Vlysses" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vlisses.</marginalia_text> 
+                    <person name="Odysseus"/>                
+                </position>
+            </language>
+            <translation>Odysseus.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Dilemma.</marginalia_text>            
+                </position>
+            </language>
+            <translation>A dilemma.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="Rupae" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rupa</marginalia_text> 
+                    <person name="Rupa"/>                
+                </position>
+            </language>
+            <translation>Rupa.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="iis bonis" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Bonu[m] triplex</marginalia_text>                
+                </position>
+            </language>
+            <translation>A threefold good.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>amor perspectus. dulcis. optatus. incredibilis.</marginalia_text>                
+                </position>
+            </language>
+            <translation>Love: observed, sweet, desired, extraordinary.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="&amp; ibi malis esse, vbi aliquo numero sis, quàm istic" type="straight"/>
+        <underline language="LA" method="pen" text="me nomine negligentiae suspectum" type="straight"/>
+        <underline language="LA" method="pen" text="est tam scribendo impiger" type="straight"/>
+        <underline language="LA" method="pen" text="te verò bis, térve summu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="te mihi aequum praebere debebis" type="straight"/>
+        <underline language="LA" method="pen" text="ne non scribendo te expleam" type="straight"/>
+        <underline language="LA" method="pen" text="quódque in omnibus tuis rebus, meis optatis fortuna respondit" type="straight"/>
+        <underline language="LA" method="pen" text="sic ad nos co[n]formatus" type="straight"/>
+        <underline language="LA" method="pen" text="expectationem tui concitasti, hanc sustinere ac tueri possis" type="straight"/>
+        <underline language="LA" method="pen" text="vlla nunquam delebit obliuio" type="straight"/>
+        <underline language="LA" method="pen" text="quantaecunque tibi accessiones fient &amp; fortunae &amp; dignitatis, eas" type="straight"/>
+        <underline language="LA" method="pen" text="debebis, vt aetas nostra iam ingrauescens," type="straight"/>
+        <underline language="LA" method="pen" text="cum suis laudibus, tum vero te filio superasset omnium fortunam, si ei contigisset" type="straight"/>
+        <underline language="LA" method="pen" text="quàm à vita discederet" type="straight"/>
+        <underline language="LA" method="pen" text="Breui tamen sic habeto" type="straight"/>
+        <underline language="LA" method="pen" text="eum statum temporum tuum reditum incidere" type="straight"/>
+        <underline language="LA" method="pen" text="natura, studio, fortuna" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/> <!-- NBW: w/flourish -->
+        <symbol name="Jupiter" place="left_margin"/> 
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/> <!-- NBW: w/flourish -->
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <numeral place="left_margin">12</numeral>
+        
+        <errata amendedtext="è vita" copytext="à vita" language="LA"/>
+        
+    </annotation>
+</transcription>

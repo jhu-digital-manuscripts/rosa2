@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.040r.tif" pagination="79" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="experimenta" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Experime[n]ta.</marginalia_text>
+                </position>
+            </language>
+            <translation>Experience.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="lecti Cicero aut Demonsthenes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Cicero &amp; Demosthenes Lege[n]di</marginalia_text>
+                    <person name="Cicero"/>
+                    <person name="Demosthenes"/>
+                </position>
+            </language>
+            <translation>Cicero and Demosthenes are to be read.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ego optimos quidem &amp; statim, &amp; semper, sed tamen eroum candidißimum quen[que]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Optimi Lege[n]di.</marginalia_text>
+                </position>
+            </language>
+            <translation>The best readings.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Liuium" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Liuius</marginalia_text>
+                    <person name="Livy"/>
+                </position>
+            </language>
+            <translation>Livy.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aliena enim uitia" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

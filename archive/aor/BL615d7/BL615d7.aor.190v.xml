@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.190v.tif" pagination="[190v]" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Bouadiglia" hand="Italian" method="pen">
+            <language ident="IT">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Francesco di Bouadiglia</marginalia_text>
+                    <person name="Francisco di Bouadiglia"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="prigione ad vn nauiglio insieme con Don Diego su fratello" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Christofer Colon, and famos his brothir made prisoners.</marginalia_text>
+                    <person name="Columbus"/>
+                    <person name="Diego Columbus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="per testimonij i solleuati" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>No due witnesses.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="lor depositioni diceuano tante maluagità, e tristitie, che sarebbe stato più che cieco colui, che sarebbe stato più              che no[n] hauesse conosciuto, quelle esser dette con passione, e senza verità. Per la qual cosa i Re Catolici poi non le volsero accettare" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>So are many of their reports to those Kings, against the Indians.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Note</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="giuridica informatione" type="double"/>
+        <underline language="IT" method="pen" text="Don Diego suo fratello" type="straight"/>
+        <underline language="IT" method="pen" text="in ferri" type="straight"/>
+        <underline language="IT" method="pen" text="di loro" type="double"/>
+        <underline language="IT" method="pen" text="Pero Luiglio" type="double"/>
+        <underline language="IT" method="pen" text="per testimonij i solleuati" type="straight"/>
+        <underline language="IT" method="pen" text="nimici" type="straight"/>
+        <underline language="IT" method="pen" text="a dir mal" type="straight"/>
+        <underline language="IT" method="pen" text="lor depositioni" type="straight"/>
+        <underline language="IT" method="pen" text="tristitie, che sarebbe stato più che cieco colui" type="straight"/>
+        <underline language="IT" method="pen" text="no[n] haueese conosciuto, quelle" type="straight"/>
+        <underline language="IT" method="pen" text="passione, e senza" type="straight"/>
+        <underline language="IT" method="pen" text="le volsero" type="straight"/>
+        <underline language="IT" method="pen" text="pentendosi molto di" type="straight"/>
+        <underline language="IT" method="pen" text="vn simil'" type="double"/>
+        <underline language="IT" method="pen" text="con quel" type="straight"/>
+        <underline language="IT" method="pen" text="questo Bouadiglia distrusse I'Isola" type="straight"/>
+        <underline language="IT" method="pen" text="dissipò le rendite, &amp; i tributi Reali" type="straight"/>
+        <underline language="IT" method="pen" text="voleuano altro, che il nome del Dominio, &amp; che l'vtile fosse de' loro sudditi." type="straight"/>
+        <underline language="IT" method="pen" text="daua loro Indiani per li lor seruitij con patto," type="straight"/>
+        <underline language="IT" method="pen" text="detti Indiani acquistassero." type="straight"/>
+        <underline language="IT" method="pen" text="ve[n]deua allo incanto le possessioni, &amp; i poderi i quai l'Ammiraglio per li Re Catolici hauea acquistati" type="straight"/>
+            
+        <mark method="pen" name="comma" place="intext" text="solleuati suoi"/>
+        <mark method="pen" name="triple_dash" place="tail"/>
+        <mark method="pen" name="bracket" place="left_margin"/>      
+        <mark method="pen" name="bracket" place="left_margin"/>  
+        <mark method="pen" name="bracket" place="left_margin"/> 
+        <mark method="pen" name="bracket" place="left_margin"/>      
+            
+    </annotation>
+</transcription>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.435v.tif" pagination="420" reader="John Dee"/>
+    <annotation>
+        
+        <underline id="RCP10653:886:u0001" language="LA" method="pen" text="erga Romanam matrem ecclesiam" type="straight"/>
+        <underline language="LA" method="pen" text="in tuae libro memoriae nequaquam" type="straight"/>
+        <underline language="LA" method="pen" text="regnum" type="double"/>
+        <underline id="RCP10653:886:u0002" language="LA" method="pen" text="ecclesiam" type="straight"/>
+        <underline language="LA" method="pen" text="siue tibi" type="straight"/>
+        <underline language="LA" method="pen" text="feudale" type="triple"/>
+        <underline language="LA" method="pen" text="nec existit" type="double"/>
+        <underline language="LA" method="pen" text="sibi petit" type="double"/>
+        <underline language="LA" method="pen" text="Scotiae suas patentes duxit literas concedendas, per" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP10653:886:u0001"/>
+            <marginal_annotation idref="RCP10653:886:u0002"/>
+            <relation from="RCP10653:886:u0001" to="RCP10653:886:u0002" type="undirected"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

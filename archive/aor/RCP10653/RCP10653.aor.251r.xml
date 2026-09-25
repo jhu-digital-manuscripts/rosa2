@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.251r.tif" pagination="53" reader="John Dee" signature="Eee iij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Richardus, Comes de Strigoil" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Richard Comes de Strigoil.
+                    </marginalia_text>
+                    <person name="Richard de Clare, 2nd Earl of Pembroke"/>
+                </position>
+            </language>
+            <translation>
+                Richard de Clare, Count of Striguil. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Philippus de Magna villa" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Philippus de Manndevile.  
+                    </marginalia_text>
+                    <person name="Philip de Mandeville"/>
+                </position>
+            </language>
+            <translation>
+                Philip de Mandeville.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Obijt Richardus, Comes de Strigoil. Comes" type="straight"/>
+        <underline language="LA" method="pen" text="Philippus de Magna" type="straight"/>
+        
+    </annotation>
+</transcription>

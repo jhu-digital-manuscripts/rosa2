@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.200v.tif" pagination="224" reader="Harvey" signature="[O8v]"/>	<!-- ABO 205left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Prudentia, ars viuendi. fortitudo, praxis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Prudence, the art of living. Strength, its practice.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						( Qui sero sapit, frustra sapit.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Who discerns too late, understands in vain.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Nemo satis Matutinus. )
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>No one is early enough.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Naturam expellas furca licet, vsq[uam] recurret.
+					</marginalia_text>
+					<X-ref book_title="Epistles" language="LA" person="Horace" text="Naturam expellas furca licet, vsq[uam] recurret."/>
+				</position>
+			</language>
+			<translation>"You may drive nature out with a pitchfork, but she will keep coming back."</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Necessaria, no[n] necessarijs: certa, incertis:
+						erga, parergis.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Necessary things not for unnecessary ones: certainties for uncertainties: deeds for ornaments. </translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Energus
+						contemnit parergum: ne se quidem excepto.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Work scorns ornamentation: not even excepting itself.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Cuiq[ue] diei, suum onus.
+						Omnia dexterrimè: Singula efficacissimè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>And to which day, his burden. Everything most skillfully: the singular things most effectively.</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Qui non quotidiè sua Maxima meditatur, quotidiè Sui obliuiscitur. Etiam
+						veteranus, cum desinit exercere, Tyro est.
+					</marginalia_text>
+				</position>
+			</language>
+			<language ident="IT">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Vnico Fortio, Il filosofo del Sole; et volante Caualiere. Piu Oltre.
+					</marginalia_text>
+					<person name="Joachim Fortius Ringelberg"/>
+				</position>
+			</language>
+			<translation>He who does not reflect upon his chief [skills] daily, forgets himself. Even an old man, when he stops to exercise, is a beginner.
+				Only Fortius, the philosopher of the sun and the flying knight. Much further.
+			</translation> 
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Rudis est, cum possis loqui melius, tamen loqui peius: Simplicis est, cu[m] ualeas
+						agere maius, tamen agere minus. Proficiendi nullus sit modus, vbi
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						ullus locus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>It is uncultivated, when you can speak better, but nevertheless speak worse: it is simple, when you are strong enough to do more, but nevertheless you do less. There is no way of advancing, when there is any place.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="mutarsi forma" type="straight"/>
+		<underline language="IT" method="pen" text="che natura" type="straight"/>
+		<underline language="IT" method="pen" text="Vna Gatta" type="straight"/>
+		<underline language="IT" method="pen" text="vn fanciullo" type="straight"/>
+		<underline language="IT" method="pen" text="in donna" type="straight"/>
+		<underline language="IT" method="pen" text="dette forma di bellissima" type="straight"/>
+		<underline language="IT" method="pen" text="mutata forma, hauesse mutata natura" type="straight"/>
+		<underline language="IT" method="pen" text="vn topo" type="straight"/>
+		<underline language="IT" method="pen" text="saltata del letto donna Gatta" type="straight"/>
+		<underline language="IT" method="pen" text="nella sua pristina forma" type="straight"/>
+		<underline language="IT" method="pen" text="Cosa brutta" type="straight"/>
+		<underline language="IT" method="pen" text="d'amor" type="straight"/>
+		<underline language="IT" method="pen" text="dishonesto &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="ingiuriaua Aristotile" type="straight"/>
+		<underline language="IT" method="pen" text="odiato da'miei cittadini" type="straight"/>
+		<underline language="IT" method="pen" text="come sei tu" type="straight"/>
+		<underline language="IT" method="pen" text="s'io fussi amato come sei tu" type="straight"/>
+		<underline language="IT" method="pen" text="sua lasciua beltà, no[n] per altri" type="straight"/>
+		<underline language="IT" method="pen" text="meriti, era amato" type="straight"/>
+		<underline language="IT" method="pen" text="L'audacia" type="straight"/>
+		<underline language="IT" method="pen" text="stare al segno la Fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="Fortuna è donna" type="straight"/>
+		<underline language="IT" method="pen" text="necessario batterla &amp; vrtarla" type="straight"/>
+		<underline language="IT" method="pen" text="piu vincere da questi" type="straight"/>
+		<underline language="IT" method="pen" text="che freddamente procedono" type="straight"/>
+		
+		<symbol name="Sun" place="intext"/>
+		
+		<mark method="pen" name="plus_sign" place="left_margin"/>
+		<mark method="pen" name="plus_sign" place="left_margin"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="left_margin" text="s'io fussi amato come sei tu"/>
+					
+		<mark method="pen" name="plus_sign" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/> <!--Ve-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--esperi-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--natu-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--ri-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--sot-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="nella sua pristina forma"/>
+		<mark method="pen" name="vertical_bar" place="intext"/>
+		<mark method="pen" name="vertical_bar" place="intext"/> 
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="necessario batterla &amp; vrtarla"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="piu vincere da questi"/>
+		
+    </annotation>
+</transcription>

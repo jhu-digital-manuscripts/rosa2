@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url>http://creativecommons.org/licenses/by/4.0/</url>
+        <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+    </license>
+    <totalPages>128</totalPages>
+    <dates>
+        <startDate>1571</startDate>
+        <endDate>1571</endDate>
+    </dates>
+    <texts>
+        <text id="1">
+            <language>la</language>
+            <title>De Maria Scotorum regina, totáque eius contra regem coniuratione, fœdo cum Bothuelio adulterio, nefaria in maritum crudelitate &amp; rabie, horrendo insuper &amp; deterrimo eiusdem parricidio: plena, &amp; tragica planè historia (Londoni, 1571?)</title>
+            <textId>buchanan</textId>
+            <pages end="64v" start="1r">128</pages>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>De Maria Scotorum regina, totáque eius contra regem coniuratione, fœdo cum Bothuelio adulterio, nefaria in maritum crudelitate &amp; rabie, horrendo insuper &amp; deterrimo eiusdem parricidio: plena, &amp; tragica planè historia (Londoni, 1571?)</title>
+            <commonName>George Buchanan, De Maria Scotorum Regina (London, 1571?)</commonName>
+            <dateLabel>1571</dateLabel>
+            <currentLocation>Princeton University Library</currentLocation>
+            <repository>Princeton University Library</repository>
+            <shelfmark>Rare Books: South East (RB) (16th-11 )</shelfmark>
+            <author>
+              <name>Buchanan, George</name>
+              <id>http://www.isni.org/isni/0000000121463184</id>
+            </author>
+            <reader>
+              <name>Gabriel Harvey</name>
+              <id>http://www.isni.org/isni/0000000073570531</id>
+            </reader>
+            <website>https://archaeologyofreading.org/bibliography/Harvey-corpus/Buchanan-Scotorum</website>
+            <detail>1 p. ., 122, [3] p. 15 cm.</detail>
+            <note>Already digitized</note>
+        </bibliography>
+    </bibliographies>
+</book>
+

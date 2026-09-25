@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.258v.tif" pagination="32" reader="John Dee" signature="[D.iiij.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="Herefordensis Comes Rogerus filius Gulielmi contra pr[a]eceptum regis Comiti Estanglorum Radulpho sororem suam coniugem tradidit" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Rogerus filius Will[ia]mi Comes Herefordesis = [soror Radulfi deleted] Radulfus Comes Estangloru[m] = soror Rogeri</marginalia_text>
+                    <person name="William FitzOsbern"/>
+                    <person name="Roger de Breteuil"/>
+                    <person name="Ralph de Gael"/>
+                    <person name="Emma de Breteuil"/>
+                </position>
+            </language>
+            <translation>Roger, son of William, Earl of Hereford; Ralph, Earl of East Anglia = Roger's sister </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ixingham" hand="Italian" method="pen">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Ixingham</marginalia_text>    
+                    <location name="Ingham"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Vrsone vicecomite Wigorni[a]e &amp; Waltero de Laceio" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vrso vicecomes Wigorn[iae] Walterus de Laceio.</marginalia_text>
+                    <person name="Urse d'Abetot"/>
+                    <person name="Walter de Lacy"/>
+                </position>
+            </language>
+            <translation>Urse, Viscount of Worcester. Walter de Lacy.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="castellu[m] Rodulphi Comitis, quod Dol dicitur" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rodulphi castru[m] in Normania. Dol.</marginalia_text>
+                    <person name="Ralph de Gael"/>
+                    <location name="Normandy"/>
+                    <location name="Dol-de-Bretagne"/>
+                </position>
+            </language>
+            <translation>Ralph's castle in Normandy, Dol.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Castru[m] nobile quod vocatur Maante" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Castrum Maante</marginalia_text>
+                    <location name="Mantes-la-Jolie"/>
+                </position>
+            </language>
+            <translation>Mantes camp.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Matildis" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Matildis Regina.</marginalia_text>
+                    <person name="Matilda of Flanders"/>
+                </position>
+            </language>
+            <translation>Queen Matilda.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA"> 
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>[ Pij</marginalia_text>
+                </position>
+            </language>
+            <translation>The pious.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Herefordensis Comes" type="straight"/>
+        <underline language="LA" method="pen" text="Comiti Estanglorum Radulpho sororem suam coniugem tradidit" type="straight"/>
+        <underline language="LA" method="pen" text="dicitur Ixingham" type="straight"/>
+        <underline language="LA" method="pen" text="magnam coniurationem" type="straight"/>
+        <underline language="LA" method="pen" text="Waltheofum" type="straight"/>
+        <underline language="LA" method="pen" text="vero Comiti ne trans Sabrinam Rodulpho occurreret restitit" type="straight"/>
+        <underline language="LA" method="pen" text="Vrsone" type="straight"/>
+        <underline language="LA" method="pen" text="Episcopus Radulfum ad minorem Britanniam" type="straight"/>
+        <underline language="LA" method="pen" text="vero Waltheophum indigné iussit decapitari" type="straight"/>
+        <underline language="LA" method="pen" text="castellu[m] Rodulphi" type="straight"/>
+        <underline language="LA" method="pen" text="quod Dol" type="straight"/>
+        <underline language="LA" method="pen" text="ac filio suo Gulielmo" type="straight"/>
+        <underline language="LA" method="pen" text="Maledixit igitur Rex Roberto filio suo, quam maledictionem antequam moriretur euidenter perpessus" type="straight"/>
+        <underline language="LA" method="pen" text="Maante" type="straight"/>
+        <underline language="LA" method="pen" text="diem sibi mortis" type="straight"/>
+        <underline language="LA" method="pen" text="viginti annis decem" type="double"/>
+        <underline language="LA" method="pen" text="mensibus &amp; 27. diebus" type="straight"/>
+        <underline language="LA" method="pen" text="Waltheofus conspirationem Cul. pandit" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- Baldewini comitis -->
+        
+    </annotation>
+</transcription>

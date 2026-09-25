@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.016r.tif" reader="John Dee" signature="[Diiij]"/>
+    <annotation>
+        
+        <marginalia anchor_text="ignei" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Ignei</marginalia_text>
+                </position>
+            </language>
+            <translation>Fiery.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="parentium seminibus manarant" type="straight"/>
+        <underline language="LA" method="pen" text="p[ro]uidentia[m] in" type="straight"/>
+        <underline language="LA" method="pen" text="contemplandi" type="straight"/>
+        <underline language="LA" method="pen" text="supiores &amp; medios i[m]mortales" type="straight"/>
+        <underline language="LA" method="pen" text="infimos vero solu[m] esse longeuos" type="straight"/>
+        <underline language="LA" method="pen" text="ite[m] habere p[rae]fecturas: nam alios esse orie[n]tales: alios occiduos" type="straight"/> 
+        <underline language="LA" method="pen" text="q[uod] Martij illi sint" type="straight"/> 
+        
+        <symbol language="LA" name="Mars" place="left_margin" text="Martij"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <errata amendedtext="parentum" copytext="parentium" language="LA"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

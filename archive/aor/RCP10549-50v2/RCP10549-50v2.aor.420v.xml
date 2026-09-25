@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.420v.tif" pagination="292" reader="John Dee" signature="[T.t.ii[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Nec vero quisquam magis confirmare mihi videtur no[n] modo farum, verum etiam necessitatem, &amp; vim omnium rerum, sustulisséque motus animi voluntarios" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Contra Epicuru[m]</marginalia_text>
+                    <person name="Epicurus"/>
+                </position>
+            </language>
+            <translation>Against Epicurus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="pondus" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Pondus</marginalia_text>
+                </position>
+            </language>
+            <translation>Weight.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quod omnium mentes" type="straight"/>
+        <underline language="LA" method="pen" text="Nec vero quisquam magis confirmare mihi" type="straight"/>
+        <underline language="LA" method="pen" text="necessitatem, &amp; vim omnium rerum, sustulisséque motus animi voluntarios" type="straight"/>
+        <underline language="LA" method="pen" text="aliter obsistere fato fatetur se non potuisse, nisi ad has commentitias" type="straight"/>
+        <underline language="LA" method="pen" text="noue[m]dialibus" type="straight"/>
+        
+        <symbol name="Unidentified" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        <symbol name="Jupiter" place="left_margin"/>
+        
+    </annotation>
+</transcription>

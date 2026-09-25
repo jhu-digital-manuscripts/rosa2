@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.204r.tif" pagination="399" reader="John Dee" signature="Ll ij"/>
+    <annotation>
+        
+        <marginalia anchor_text="Breanfordiam" hand="Italian">  
+            <language ident="EN">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        J.d Brean fordde by Richemond [is] vadu[m] Brenni.  
+                    </marginalia_text>    
+                    <person name="John Dee"/>
+                    <location name="Brentford"/>
+                    <location name="Richmond"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Octa[m]ford" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Now called Ottford.
+                    </marginalia_text>
+                    <location name="Otford"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="relicto regio loco" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Locus regis in Acie
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The place of the king in battle. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aelfricus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ælfricus.
+                    </marginalia_text>
+                    <person name="Aelfric of Hampshire"/> 
+                </position>
+            </language>
+            <translation>
+                Ælfric.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="vt eum proderet" type="double"/>
+        <underline language="LA" method="pen" text="apud Breanfordiam Thamesim" type="double"/>
+        <underline language="LA" method="pen" text="festiuum belli decus" type="double"/>
+        <underline language="LA" method="pen" text="Octa[m]ford" type="double"/>
+        <underline language="LA" method="pen" text="Shepeiam" type="straight"/>
+        <underline language="LA" method="pen" text="exercitui suo peiora prioribus facere praecepit" type="straight"/>
+        <underline language="LA" method="pen" text="triplicibus insidijs acies" type="double"/>
+        <underline language="LA" method="pen" text="leuiter certamen affirmat inire posse" type="straight"/>
+        <underline language="LA" method="pen" text="quos ante à saepe vicerunt" type="double"/>
+        <underline language="LA" method="pen" text="ex more" type="double"/>
+        <underline language="LA" method="pen" text="inter draconem &amp;" type="double"/>
+        <underline language="LA" method="pen" text="Dux Eadricus acies" type="straight"/>
+        <underline language="LA" method="pen" text="inter eos fuerat" type="double"/>
+        <underline language="LA" method="pen" text="praelocutum" type="straight"/>
+        <underline language="LA" method="pen" text="nobiles, Aelfricus" type="straight"/>
+        <underline language="LA" method="pen" text="Godvvinus" type="straight"/>
+        <underline language="LA" method="pen" text="Vsketellus" type="straight"/>
+        <underline language="LA" method="pen" text="Aethelvvoldus" type="straight"/>
+        <underline language="LA" method="pen" text="amicus Aethelvvinus" type="straight"/>
+        <underline language="LA" method="pen" text="Dorkacestrensis episcopus" type="straight"/>
+        <underline language="LA" method="pen" text="abbas Vlfius" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

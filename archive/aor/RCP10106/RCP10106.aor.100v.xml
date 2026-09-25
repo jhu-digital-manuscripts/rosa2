@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.100v.tif" pagination="200" reader="John Dee" signature="[n 4[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Socrates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Socrates.</marginalia_text>
+                    <person name="Socrates"/>
+                </position>
+            </language>
+            <translation>Socrates</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aeschini" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Aeschines.</marginalia_text>
+                    <person name="Aeschines"/>
+                </position>
+            </language>
+            <translation>Aeschines.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="causa lucidior, sed aliquando etiam ut magis moueat." type="straight"/>
+        <underline language="LA" method="pen" text="autem si protinus subtexantur aliqua, quae prosint. Lex" type="straight"/>
+        <underline language="LA" method="pen" text="mutuum dicor" type="straight"/>
+        
+        <symbol name="Jupiter" place="left_margin"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

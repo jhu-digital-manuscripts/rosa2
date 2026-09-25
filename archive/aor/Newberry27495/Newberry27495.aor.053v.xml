@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="Newberry27495.053v.tif" reader="Harvey" signature="[L.iii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="M. Vnico" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Aretino.
+                    </marginalia_text>
+                    <person name="Bernardo Accolti"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        s[upr]a.
+                    </marginalia_text>
+                    <emphasis method="pen" text="S[upra]" type="straight"/>
+                    <internal_ref text="s[upr]a">
+                        <target ref="Newberry27495:case_712_c27495_056" text="s[upr]a"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                [See] above.
+            </translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="Sir Friderick" type="straight"/>
+        <underline language="EN" method="pen" text="layd vpon your shoulders" type="straight"/>
+        <underline language="EN" method="pen" text="and what greate" type="straight"/>
+        <underline language="EN" method="pen" text="Vnico Aretino" type="straight"/>
+        <underline language="EN" method="pen" text="can do a thinge" type="straight"/>
+        <underline language="EN" method="pen" text="will not do" type="straight"/>
+        <underline language="EN" method="pen" text="a fit and due time" type="straight"/>
+        <underline language="EN" method="pen" text="M. Vnico" type="straight"/>
+        <underline language="EN" method="pen" text="am laden" type="straight"/>
+        <underline language="EN" method="pen" text="great &amp; peinful burde[n]" type="straight"/>
+        <underline language="EN" method="pen" text="sorte, maner and time" type="straight"/>
+        <underline language="EN" method="pen" text="co[n]ditions and qualities," type="straight"/>
+        <underline language="EN" method="pen" text="no great matter" type="straight"/>
+        <underline language="EN" method="pen" text="a good iudgement" type="straight"/>
+        <underline language="EN" method="pen" text="any other preceptes" type="straight"/>
+        <underline language="EN" method="pen" text="practyse welynough the thynge that" type="straight"/>
+        <underline language="EN" method="pen" text="due time and after a" type="straight"/>
+        <underline language="EN" method="pen" text="to go about his sence, whan the rest be in their musicke" type="straight"/>
+        <underline language="EN" method="pen" text="to goe about the streetes daunsing the Morisco" type="straight"/>
+        <underline language="EN" method="pen" text="though he could doe it neuer so well" type="straight"/>
+        <underline language="EN" method="pen" text="her of pleasant matters" type="straight"/>
+        <underline language="EN" method="pen" text="and mery conceites" type="straight"/>
+        <underline language="EN" method="pen" text="cleane out of his" type="straight"/>
+        <underline language="EN" method="pen" text="harpe" type="straight"/>
+        <underline language="EN" method="pen" text="youre extremities" type="straight"/>
+        <underline language="EN" method="pen" text="fonde" type="straight"/>
+        <underline language="EN" method="pen" text="remembreth not himself to casilye" type="straight"/>
+        <underline language="EN" method="pen" text="ouersightes are" type="straight"/>
+        <underline language="EN" method="pen" text="daunce the Morisco in the" type="straight"/>
+        <underline language="EN" method="pen" text="praising himself out of purpose" type="straight"/>
+        
+        <underline language="EN" method="pen" text="To obserue time" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        
+        <mark method="chalk" name="X_sign" place="left_margin"/>
+        <mark method="chalk" name="X_sign" place="left_margin"/>
+        <mark method="chalk" name="X_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="praising himself out of purpose"/>
+        
+        <mark method="pen" name="plus_sign" place="right_margin"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="a good iudgement"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="chalk" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- nedeth, for -->
+        <mark method="pen" name="dot" place="intext"/> <!-- sasilye, and -->
+        <mark method="pen" name="dot" place="intext"/> <!-- place, and -->
+        <mark method="chalk" name="vertical_bar" place="intext"/> <!-- Red chalk, extends from text into tail --> 
+
+
+    </annotation>
+</transcription>

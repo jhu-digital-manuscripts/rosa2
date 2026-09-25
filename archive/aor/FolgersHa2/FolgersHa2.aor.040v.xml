@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.040v.tif" pagination="400" reader="Harvey"/>	<!-- ABO 45left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Semper serius, et prorsus adamantinus in suïs dignissimis
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						studiis Eutrapelus. In
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Mathematicis, aut [in]
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						Chymicis:
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						in Politicis, aut Pragmaticis: in Polemicis[,]
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						aut stratagematicis: in mundi deniq[ue] potentissimis arcanis, 
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						aut Neopracticis; qua[e] Sunt De profundi[s]
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						eruta, fortissiméq[ue] multiplicata. Omnes 
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						excutit excellentissimos Locos Commu[nes]
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="left_margin">
+					<marginalia_text>
+						et Sola decerpit suo Scopo maximè Conducentia. 
+					</marginalia_text>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Ociosis tam professoribus, quàm scholasticis 
+						infinitas tot Auctorum nugas relinquit.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Eutrapelus is always serious and entirely adamantine in his most worthy studies:
+				in Mathematics, or in Chemistry; in Politics, or in Pragmatic activities; in Wars or in Strategies;
+				and finally, in the most powerful things of the world, hidden or neopractical, which were plucked from
+				the depths and most boldly multiplied. 
+				He shakes the most excellent common places and gathers only those which lead most to his goal.
+				With the unemployed or with professors (as with scholars), he leaves behind the infinite trifles
+				of all authors.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						ridicolo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Ridiculous.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						(argutè.)
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Cleverly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="EN">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						My Arse confuted.
+					</marginalia_text>
+				</position>
+			</language>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						In vulgaribus consenescunt scholares: sola selecta sapiu[n]t Eutrapelo.
+					</marginalia_text>
+					<person name="Eutrapelus"/>
+				</position>
+			</language>
+			<translation>
+				Scholars grow old together in vulgar matters; only select matters taste of Eutrapelus. <!--JG: What about 'For Eutrapelus, only selected matters have knowledge'?-->
+				</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="sorridendo argutamente" type="straight"/>
+		<underline language="IT" method="pen" text="si snello, et atto della persona" type="straight"/>
+		<underline language="IT" method="pen" text="aspettare maggior giunto" type="straight"/>
+		<underline language="IT" method="pen" text="galante huomo d'essere uno de' piu destri huomini del" type="straight"/>
+		<underline language="IT" method="pen" text="fu a proposito" type="straight"/>
+		<underline language="IT" method="pen" text="un Spagnuolo" type="straight"/>
+		<underline language="IT" method="pen" text="una coltellata sulla testa" type="straight"/>
+		<underline language="IT" method="pen" text="uoleua diuidere due" type="straight"/>
+		<underline language="IT" method="pen" text="faceuasi medicare" type="straight"/>
+		<underline language="IT" method="pen" text="M. Hortensio Albertoni" type="straight"/>
+		<underline language="IT" method="pen" text="medico eccellente quanto alcuno altro" type="straight"/>
+		<underline language="IT" method="pen" text="disse nell'orecchio" type="straight"/>
+		<underline language="IT" method="pen" text="non sai tu" type="straight"/>
+		<underline language="IT" method="pen" text="hauesse hauuto ceruello" type="straight"/>
+		<underline language="IT" method="pen" text="sarebbe entrato, oue s'è messo" type="straight"/>
+		<underline language="IT" method="pen" text="Arciuescouo di Toledo" type="straight"/>
+		<underline language="IT" method="pen" text="spesso il suo asino" type="straight"/>
+		<underline language="IT" method="pen" text="che tu l'amazzerai" type="straight"/>
+		<underline language="IT" method="pen" text="mio" type="straight"/>
+		<underline language="IT" method="pen" text="parenti in corte" type="straight"/>
+		<underline language="IT" method="pen" text="Bernardo Cappello a uno" type="straight"/>
+		<underline language="IT" method="pen" text="fare due sonetti" type="straight"/>
+		<underline language="IT" method="pen" text="sua Dama" type="straight"/>
+		<underline language="IT" method="pen" text="mostrasse un poco men crudele" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="d'essere uno de' piu destri huomini del mo[n]do" type="straight"/>
+		<underline language="IT" method="chalk" text="s'egli hauesse hauuto ceruello" type="straight"/>
+		<underline language="IT" method="chalk" text="entrato, oue s'è messo col suo mal'anno?" type="straight"/>
+		<underline language="IT" method="chalk" text="spesso il suo asino" type="straight"/>
+		<underline language="IT" method="chalk" text="perdonatemi, messere, che io non sapeua, che l'asino mio hauesse parenti in corte" type="straight"/>
+				
+		<!-- Symbols -->
+		<symbol language="IT" name="SS" place="left_margin" text="galante huomo d'essere uno de' piu destri huomini del"/>
+		<symbol name="Sun" place="right_margin"/>
+		
+		<!-- Marks -->	
+		
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/>
+		<mark method="pen" name="dash" place="right_margin"/>
+		<mark method="pen" name="comma" place="right_margin"/>
+		
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- se, che, s'egli -->
+		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- donatemi -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark language="IT" method="pen" name="plus_sign" place="head" text="argutamente"/>
+		<mark method="chalk" name="vertical_bar" place="intext"/> <!-- Chalk first paragraph -->
+	    	<mark method="pen" name="dot" place="intext"/> <!-- ne, & faceuasi  -->
+		<mark method="pen" name="comma" place="intext"/> <!-- eccellente, quanto -->
+		<mark method="pen" name="dot" place="intext"/> <!-- ceruello, se gli -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- mio -->
+		<mark method="pen" name="comma" place="intext"/> <!-- cortesissimo -->
+		<mark method="pen" name="comma" place="intext"/> <!-- gentil'huomo, di -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="sonetti"/>
+		<mark method="pen" name="dot" place="intext"/> <!-- sonetti, con -->
+
+    </annotation>
+</transcription>

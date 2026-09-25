@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>0</illustrations>
+    <totalPages>1</totalPages>
+    <dimensions units="">
+        <width>-1</width>
+        <height>-1</height>
+    </dimensions>
+    <dates>
+        <startDate>1300</startDate>
+        <endDate>1350</endDate>
+    </dates>
+    <texts>
+        <text id="rose">
+            <language>fr</language>
+            <title>Roman de la Rose</title>
+            <textId/>
+            <pages end="1v" start="1r">1</pages>
+            <illustrations>0</illustrations>
+            <linesPerColumn>36</linesPerColumn>
+            <leavesPerGathering>-1</leavesPerGathering>
+            <columnsPerPage>2</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Roman de la Rose</title>
+            <commonName>Ausburg Cod.I.4.2 4</commonName>
+            <dateLabel>14th century</dateLabel>
+            <type>manuscript</type>
+            <material>Parchment</material>
+            <origin>France</origin>
+            <currentLocation>Augsburg, Germany</currentLocation>
+            <repository>Universitätsbibliothek Augsburg</repository>
+            <shelfmark>Cod.I.4.2 4</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Roman de la Rose</title>
+            <commonName>Ausburg Cod.I.4.2 4</commonName>
+            <dateLabel>14e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Augsburg, Germany</currentLocation>
+            <repository>Universitätsbibliothek Augsburg</repository>
+            <shelfmark>Cod.I.4.2 4</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

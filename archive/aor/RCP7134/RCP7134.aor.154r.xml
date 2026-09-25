@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.154r.tif" pagination="147" reader="John Dee" signature="oo iij"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>occisus 1476 die 26 septe[m]b.</marginalia_text>
+                </position>
+            </language>
+            <translation>He was killed on September 26, 1476.</translation>
+        </marginalia>
+        
+        <errata amendedtext="Lunae" copytext="Luna" language="LA"/>
+        <errata amendedtext="locum" copytext="Lomm" language="LA"/>
+        
+    </annotation>
+</transcription>

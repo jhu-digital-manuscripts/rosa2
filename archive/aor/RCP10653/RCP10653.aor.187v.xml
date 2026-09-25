@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.187v.tif" pagination="366" reader="John Dee" signature="[Hh iij[v]]"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="Dux Normannorum secundus, proditione Arnulfi Comitis Flaundre[n]sis" type="straight"/>
+        <underline language="LA" method="pen" text="Balzonem ducem" type="straight"/>
+        <underline language="LA" method="pen" text="filius eius Richardus, Dux" type="straight"/>
+        <underline language="LA" method="pen" text="adiutorio Leolini regis Demeciae" type="straight"/>
+        <underline language="LA" method="pen" text="Cumbriam totam conctis opibus" type="straight"/>
+        <underline language="LA" method="pen" text="De morte Gulihelmi Ducis Normannorum" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- Demeciae fretus -->
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.013v.tif" reader="John Dee" signature="[Dij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Vitriol" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Vitriolum</marginalia_text>
+                </position>
+            </language>
+            <translation>Vitriol.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="saure wasser" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin"> 
+                    <marginalia_text>Aqua[e] acida[e]</marginalia_text>
+                </position>
+            </language>
+            <translation>Acid waters.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="saltzbrunnen" hand="Italian">
+            <language ident="LA"> 
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Salini pontes</marginalia_text>
+                </position>
+            </language>
+            <translation>Salt fountains.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="saltzbirgen" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin"> 
+                    <marginalia_text>Salini montes</marginalia_text>
+                </position>
+            </language>
+            <translation>Salt mountains.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="die tugend Vitrioli" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin"> 
+                    <marginalia_text>Vitrioli virtutes</marginalia_text>
+                </position>
+            </language>
+            <translation>The properties of vitriol.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>De erugine</marginalia_text>
+                </position>
+            </language>
+            <translation>On loud vomitting.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="dem Vitriol" type="straight"/>
+        <underline language="DE" method="pen" text="auß seiner prima materia resoluiert" type="straight"/>
+        <underline language="DE" method="pen" text="die sauren wasser gibt" type="straight"/>
+        <underline language="DE" method="pen" text="gröst süsse in" type="double"/>
+        <underline language="DE" method="pen" text="süsse wasser" type="double"/>
+        <underline language="DE" method="pen" text="nicht auß" type="straight"/>
+        <underline language="DE" method="pen" text="saltzbrunnen vnnd saltzbirgen" type="straight"/>
+        <underline language="DE" method="pen" text="sauren wassern" type="double"/>
+        <underline language="DE" method="pen" text="liquoribus säften Vitrioli" type="straight"/>
+        <underline language="DE" method="pen" text="die tugend Vitrioli" type="straight"/>
+        <underline language="DE" method="pen" text="alle serpigines" type="straight"/>
+        <underline language="LA" method="pen" text="catrices" type="straight"/>
+        <underline language="LA" method="pen" text="alopiciam" type="straight"/>
+        <underline language="LA" method="pen" text="noli me tangere" type="straight"/>
+        
+    </annotation>
+</transcription>

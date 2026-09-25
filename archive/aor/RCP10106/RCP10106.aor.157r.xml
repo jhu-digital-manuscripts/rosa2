@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.157r.tif" pagination="313" reader="John Dee" signature="u 5"/> 
+    <annotation>
+        
+        <marginalia anchor_text="congregatio criminum accusantem adiuuat" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Congregatio criminu[m] accusante[m] adiuuat.</marginalia_text>
+                </position>
+            </language>
+            <translation>Massing the charges together helps the prosecution.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praeuaricationum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Preuaricatio</marginalia_text>
+                </position>
+            </language>
+            <translation>Collusion.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Milo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pro Milone</marginalia_text>
+                    <book title="Pro Milone"/>
+                </position>
+            </language>
+            <translation>Pro Milone.</translation>
+        </marginalia>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        
+    </annotation>
+</transcription>

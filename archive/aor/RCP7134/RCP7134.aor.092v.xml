@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.092v.tif" pagination="[85v]" reader="John Dee" signature="[Y[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Significat ☿ij [Mercurij] natura[m] no[n] solu[m] ex alijs pendere sed etia[m] aliqua[m] propria[m] 
+                    et peculiare[m] significatione[m] habere.</marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                </position>
+            </language>
+            <translation>He signifies that the nature of Mercury not only is dependent on others, but even has any particular and peculiar signification.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Luminaria</marginalia_text> 
+                </position>
+            </language>
+            <translation>Lights.</translation> 
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>% peculiaris qu[a]edam natura // % in numero</marginalia_text> 
+                </position>
+            </language>
+            <translation>That is, a certain specific nature. That is, in a number.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="undecim" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext"> 
+                    <marginalia_text>septem planeta[e] / et [quattuor] cardines.</marginalia_text>
+                </position>
+            </language>
+            <translation>Seven planets and four poles.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="decemnouem" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext"> 
+                    <marginalia_text>12 dom[us]. 7 planet[ae]</marginalia_text>
+                </position>
+            </language>
+            <translation>Twelve houses, seven planets.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="radios mittunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext"> 
+                    <marginalia_text>% planetis ip[s]is.</marginalia_text> 
+                </position>
+            </language>
+            <translation>That is, of the planets themselves.</translation> 
+        </marginalia>
+        
+        <marginalia anchor_text="q" hand="English_secretary"> <!-- FSF: I'd anchor as q[uod] -->
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin"> <!-- intext -->
+                    <marginalia_text>qui.</marginalia_text>
+                </position>
+            </language>
+            <translation>Which.</translation> 
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="domini secundum substantiam faciunt impressione[m] in loco permanentem, non domini secundu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Mercurio inest proprietas, ut fiat in natura dominatorum secundum substantiam" type="straight"/>
+        <underline language="LA" method="pen" text="proportio taliu[m] locoru[m] est consimilis loco mitte[n]tis cu[m] quada[m] proportione contrarietatis. In" type="straight"/>
+        <underline language="LA" method="pen" text="q[uod]" type="straight"/>
+        <underline language="LA" method="pen" text="semper" type="double"/>
+        <underline language="LA" method="pen" text="dominatòr omnium uirtutum in toto" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; Luna delatrix" type="straight"/>
+        <underline language="LA" method="pen" text="etiam optime dispositis alijs planetis" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- fiat in-->
+        
+        <numeral language="LA" place="intext" text="quada[m]">1</numeral>
+        <numeral language="LA" place="intext" text="semper">2</numeral>
+        
+    </annotation>
+</transcription>

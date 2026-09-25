@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="FolgersHa2.001r.tif" pagination="323" reader="Harvey"/>	<!-- ABO 005right -->
+    <annotation>
+            
+            <marginalia hand="Italian">
+                <language ident="LA">
+                    <position book_orientation="0" place="head">
+                        <marginalia_text> Romae [-] Athenaru[m] populares humores, regias mundi sententias, regulasq[ue] corrupere
+                            <!-- Piece of page missing. -->
+                        </marginalia_text>
+                        <location name="Rome"/>
+                        <location name="Athens"/>
+                    </position>
+                </language>
+                <translation>
+                    The popular humors of Rome [-] of Athens corrupted the regal sentiments of the world and its models.
+                </translation>
+            </marginalia>
+            
+            <marginalia anchor_text="Garbato." hand="Italian">
+                <language ident="IT">
+                    <position book_orientation="0" place="intext">
+                        <marginalia_text>ridicolo</marginalia_text>
+                    </position>
+                </language>
+                <translation>
+                    Ridiculous.
+                </translation>
+            </marginalia>	
+            
+            <marginalia hand="Italian">
+                <language ident="LA">
+                    <position book_orientation="270" place="left_margin">
+                        <marginalia_text> = Canonista: pragmatista. Ex occulto; stratagematista; apophthegmatista.
+                            Emblematista: Epigrammatista.
+                        </marginalia_text>
+                    </position>
+                </language>
+                <translation>
+                    Canonist: pragmatist. In secret; strategist; aphorist. Emblemist: epigrammatist.
+                </translation>
+            </marginalia>
+            
+            <marginalia hand="Italian">
+                <language ident="LA">
+                    <position book_orientation="0" place="intext">
+                         <marginalia_text> 
+                               Ante omnes auctores, politicus Bodini:  
+		                 </marginalia_text>
+                           <person name="Jean Bodin"/>
+                           <emphasis method="pen" text="politicus Bodini" type="straight"/>
+		</position>
+		<position book_orientation="0" place="right_margin">	
+		      <marginalia_text>
+			    Jureconsult[u]s Vigelij: pragmaticus Speculatoris:
+		      </marginalia_text>
+		      <person name="Nikolaus Vigel"/>
+		      <emphasis method="pen" text="Jureconsult[i]s Vigelij: pragmaticus speculatoris" type="straight"/> 
+		</position>
+		<position book_orientation="0" place="intext">
+		    <marginalia_text>
+		          strategematicus Gandini: apophthegmaticus Zuingeri. Prudententiss[imi] 
+		     </marginalia_text>
+		      <person name="Marcantonio Gandino"/>
+              <person name="Theodor Zwinger"/>	
+		      <emphasis method="pen" text="strategematicus Gandini: apophthegmaticus Zuingeri" type="straight"/>
+		</position>
+                      <position book_orientation="0" place="right_margin">
+                            <marginalia_text>
+                                auctores, maximique necessarij.
+                            </marginalia_text>
+                    </position>
+                </language>
+                <translation>
+                    Before all authors, the politician of Bodin: the lawyer of Vigel: the pragmatist of the Speculator: the strategist of Gandino: the aphorist of Zwinger. The most prudent and epecially necessary authors. 
+                </translation>
+            </marginalia>
+            
+			<marginalia hand="Italian">
+				<language ident="LA">
+					<position book_orientation="0" place="intext">
+						<marginalia_text>s[upr]a</marginalia_text>
+					</position>
+				</language>
+			    <translation>
+			        [See] above.
+			    </translation>
+			</marginalia>
+			
+            <marginalia hand="Italian">
+                <language ident="LA">
+                    <position book_orientation="0" place="intext">
+                             <marginalia_text>
+                                 Classicis auctoribus addo Bartasium, ob divinum furore[m]: Rabelaesiu[m],
+                             </marginalia_text>
+		      <person name="Guillaume Du Bartas"/>
+                            <person name="Francois Rabelais"/>
+                    </position>
+                    <position book_orientation="0" place="right_margin">
+                            <marginalia_text>
+                                ob humanu[m]: Chauceru[m], ob mixtu[m].
+                            </marginalia_text>
+                            <person name="Geoffrey Chaucer"/>
+                    </position>	
+                </language>
+                <translation>
+                    To the classical authors I add Barthas, for his divine fury: Rabelais for his human fury: Chaucer, for a mixture. 
+                </translation>
+            </marginalia>
+            
+            <marginalia hand="Italian">
+                <language ident="IT">
+                    <position book_orientation="0" place="intext">
+                        <marginalia_text>ridicolo.</marginalia_text> 
+                    </position> 
+                </language>
+                <translation>
+                    ridiculous.
+                </translation>
+            </marginalia>
+            
+            <marginalia hand="Italian">
+                <language ident="LA">
+                    <position book_orientation="0" place="tail">
+                        <marginalia_text> 
+                            ) Malo Chaucerum, qua[m] Petrarcha[m]; Boccatium, aut Ariostum. Rabelaesium, quam Aretinum.
+                        </marginalia_text>
+                        <person name="Petrarch"/>
+                        <person name="Francois Rabelais"/>	
+                        <person name="Pietro Aretino"/>
+                        <person name="Ludovico Ariosto"/>	
+                        <person name="Geoffrey Chaucer"/>
+                        <person name="Giovanni Boccaccio"/>				
+                    </position>
+                </language>
+                <translation>
+                    I prefer Chaucer rather than Petrarch; Boccaccio, or else Ariosto. Rabelais, rather than Aretino.
+                </translation>
+            </marginalia>
+        
+            
+            <!-- Underlines -->
+            <underline language="IT" method="pen" text="le tagli;ò il collo, &amp; le gambe" type="straight"/>
+            <underline language="IT" method="pen" text="una donna" type="straight"/>
+            <underline language="IT" method="pen" text="con mani, &amp; co[n] piedi" type="straight"/>
+            <underline language="IT" method="pen" text="di calor naturale &amp; di quelle circonstantie, che si" type="straight"/>
+            <underline language="IT" method="pen" text="disaggio senza frutto alcuno" type="straight"/>
+            <underline language="IT" method="pen" text="doue noi restiamo, doman da sera finiremo" type="straight"/>
+            <underline language="IT" method="pen" text="Garbato." type="straight"/>
+            <underline language="IT" method="pen" text="per moglie una fanciulletta fresca" type="straight"/>
+            <underline language="IT" method="pen" text="faccioti io male" type="straight"/>
+            <underline language="IT" method="pen" text="tutta accorta per" type="straight"/>
+            <underline language="IT" method="pen" text="guardate pure di non fare male a uoi" type="straight"/>
+            <underline language="IT" method="pen" text="la pagaua di doppioni" type="straight"/>
+            <underline language="IT" method="pen" text="semplice huomo" type="straight"/>
+            <underline language="IT" method="pen" text="undici mesi" type="straight"/>
+            <underline language="IT" method="pen" text="una astuta donna" type="straight"/>
+            <underline language="IT" method="pen" text="l'Asina porta uno anno" type="straight"/>
+            <underline language="IT" method="pen" text="donna undici mesi" type="straight"/>
+            
+            <symbol name="Sun" place="head"/>
+            
+            <mark language="IT" method="pen" name="plus_sign" place="intext" text="Moscouito."/>	
+            <mark language="IT" method="pen" name="plus_sign" place="intext" text="calor naturale"/>
+            <mark method="pen" name="dot" place="intext"/>
+            <mark method="pen" name="dot" place="intext"/>
+            <mark language="IT" method="pen" name="plus_sign" place="intext" text="male"/>
+            <mark method="pen" name="dot" place="intext"/>	
+            <mark language="IT" method="pen" name="plus_sign" place="intext" text="Asina"/>
+	<mark method="pen" name="plus_sign" place="right_margin"/>
+            <mark language="IT" method="pen" name="plus_sign" place="intext" text="anno"/>
+            <mark method="pen" name="apostrophe" place="intext"/>
+            <mark method="pen" name="equal_sign" place="left_margin"/>
+	<mark method="pen" name="bracket" place="left_margin"/>
+	<mark method="pen" name="bracket" place="left_margin"/>
+	<mark method="pen" name="bracket" place="left_margin"/>
+	<mark method="pen" name="bracket" place="left_margin"/>
+	<mark method="pen" name="quotation_mark" place="right_margin"/>
+                    
+    </annotation>
+</transcription>

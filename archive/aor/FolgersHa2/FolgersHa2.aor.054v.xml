@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.054v.tif" pagination="428" reader="Harvey"/>	<!-- ABO 59left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="FR">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Vie contemplatiue representée par Minerue: l'actiue par
+						Junon: la sensualle par Venus.
+					</marginalia_text>
+					<person name="Minerva"/>
+					<person name="Juno"/>
+					<person name="Venus"/>
+				</position>
+			</language>
+			<translation>
+				The contemplative path is represented by Minerva, the active path by Juno, and the sensual path by Venus.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						salsè
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Wittily.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Pro, et Contra.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				For and against.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						{ Discorso de' discorsi, il quarto di Guazzo.
+					</marginalia_text>
+					<person name="Stefano Guazzo"/> 
+					<book title="The civil conversation"/>
+					<emphasis method="pen" text="Discorso de' discorsi" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				The discourse of discourses, the fourth book of Guazzo.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Pro, et Contra.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				For and against.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						( Hebra[e]orum etiam Apophthegmatu[m] delectus faciendus[.]
+						Rabela[e]sius etiam, altera Apologia Herodoti.
+					</marginalia_text>
+					<person name="Francois Rabelais"/>
+					<book title="Apophthegmata Hebraeorum ac Arabum"/>
+					<book title="Apologie pour Hérodote"/>
+				</position>
+			</language>
+			<translation>
+				Even in the Jewish Aphorisms, discrimination should be practiced. Even in Rabelais, or in the Apologia for Herodotus. 
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Pro, et Contra.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				For and against.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Egregius Panurgus, Rabela[e]sius.
+					</marginalia_text>
+					<person name="Francois Rabelais"/>
+					<person name="Panurge"/>
+				</position>
+			</language>
+			<translation>
+				Eminent Panurge in Rabelais.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Enchiridion meum familiare Gra[e]corum Apophthegmatum, et Prouerbiorum; pra[e]gnantiss[im]a
+						minera insignium Dictorum, et Factorum. Nusq[uam] tantum
+						ingenij, succincta[e]q[ue] Eloquentia[e], tantulo spacio.
+					</marginalia_text>
+					<book title="Enchiridion of Epictetus"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				With my familiar Enchiridion of Greek aphorisms and proverbs, a most pregnant mine of
+				notable words and deeds. There has never been so much genius and fitting eloquence
+				in so little space.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Malim vnum Rabela[e]sium, quam Aretinum, Ariostum, Tassum.  
+					</marginalia_text>
+					<person name="Francois Rabelais"/>
+					<person name="Pietro Aretino"/>
+					<person name="Ludovico Ariosto"/>
+					<person name="Torquato Tasso"/>
+					<emphasis method="chalk" type="straight"/>
+				</position>
+			</language>
+			<translation>
+				I prefer one Rabelais to Aretino, Aroisto, and Tasso.
+			</translation>
+		</marginalia>
+		
+		<!-- Underlines -->
+		<underline language="IT" method="pen" text="colera cosi" type="straight"/>
+		<underline language="IT" method="pen" text="l'hauesse data a te" type="straight"/>
+		<underline language="IT" method="pen" text="Vlisse Spini" type="straight"/>
+		<underline language="IT" method="pen" text="di ualore" type="straight"/>
+		<underline language="IT" method="pen" text="di piaceuolezza" type="straight"/>
+		<underline language="IT" method="pen" text="essere creditrice di due paghe" type="straight"/>
+		<underline language="IT" method="pen" text="uolte sbandata" type="straight"/>
+		<underline language="IT" method="pen" text="l'amoreuolezza di quel ualoroso giouane" type="straight"/>
+		<underline language="IT" method="pen" text="che alla banca si pagaua" type="straight"/>
+		<underline language="IT" method="pen" text="un Collaterale fermatosi" type="straight"/>
+		<underline language="IT" method="pen" text="soldati di pagare" type="straight"/>
+		<underline language="IT" method="pen" text="un passatoio" type="straight"/>
+		<underline language="IT" method="pen" text="il contrasegno" type="straight"/>
+		<underline language="IT" method="pen" text="mancare un dente dinanzi, &amp;" type="straight"/>
+		<underline language="IT" method="pen" text="Capitano mezzo in colera" type="straight"/>
+		<underline language="IT" method="pen" text="stato tanto a pagare che gl'è rimesso" type="straight"/>
+		<underline language="IT" method="pen" text="Essendo rimprouerato" type="straight"/>
+		<underline language="IT" method="pen" text="un caualiere, perch'esso" type="straight"/>
+		<underline language="IT" method="pen" text="uno scudo, ch'egli" type="straight"/>
+		<underline language="IT" method="pen" text="mosca" type="straight"/>
+		<underline language="IT" method="pen" text="per non essere" type="straight"/>
+		<underline language="IT" method="pen" text="con argutia cosi rispose" type="straight"/>
+		<underline language="IT" method="pen" text="tu menti" type="straight"/>
+		<underline language="IT" method="pen" text="picciolo animale" type="straight"/>
+		<underline language="IT" method="pen" text="d'appressarmi ta[n]to a miei" type="straight"/>
+		<underline language="IT" method="pen" text="ch'essi lo possano scorgere" type="straight"/>
+		<underline language="IT" method="pen" text="tu stesso te n'accorgerai per la pruoua" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="mosca: dicendogli" type="straight"/>
+		<underline language="IT" method="chalk" text="d'appressarmi ta[n]to" type="straight"/>
+		
+		<!-- Symbols -->
+		<symbol name="Sun" place="intext"/>
+		
+		<!-- Marks -->			
+		<!-- Right margin -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- es -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- n'ac -->
+		
+	    	<!-- Left margin -->
+	    <mark method="pen" name="bracket" place="left_margin"/> <!-- colera ... uesse -->
+		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- gl'e rimesso -->
+		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- nimici -->
+		    
+	    	<!-- Head/Intext/Tail -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- data a te -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="l'hauesse data a te"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="di ualore"/>
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="piaceuolezza"/>
+	    <mark method="pen" name="dot" place="intext"/> <!-- piaceuolezza, hauendo -->
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="amoreuolezza"/>
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- gl'e rimesso -->
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- con argutia -->
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="picciolo animale"/>
+		<mark method="pen" name="plus_sign" place="intext"/> <!-- appressarmi -->
+		<mark method="pen" name="quotation_mark" place="intext"/> <!-- la pruoua -->
+
+    </annotation>
+</transcription>

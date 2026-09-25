@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.026r.tif" pagination="20" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="quàm gradus longitudinis, quantum ad ascendens" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>quia no[n] cooriuntur cu[m] suis longitudinibus, ob ratione[m] varia[m] latitudinis</marginalia_text> 
+                    
+                </position>
+            </language>
+            <translation>Because they do not appear with their longitude on account of a different calcultation of latitude.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="in uiginti septem" type="straight"/>
+        <underline language="LA" method="pen" text="quàm gradus longitudinis, quantum ad ascendens" type="straight"/>
+        
+        <errata amendedtext="[deleted]" copytext="fixas omnes ad propinquitatem gra.1. &amp; eas quae sunt secundae magnitudinis, ad gradum 3. nisi in aëre ualde" language="LA"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.216v.tif" pagination="[209v]" reader="John Dee" signature="[GG[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Intrume[n]tum directoriu[m].</marginalia_text> 
+                </position>
+            </language>
+            <translation>The instrument of directors.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="directio" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Directio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The direction.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="cumq[ue] numeraueris partes distantiae Solis à superiore Planeta per motu[m] aequalem, habebis distantiam ipsius Planetae ab abside" type="straight"/>
+        <underline language="LA" method="pen" text="nam directio loci semp[er] est per partes eclipticae" type="straight"/>
+        
+        <errata amendedtext="solis" copytext="Solis" language="LA"/>
+        
+    </annotation>
+</transcription>

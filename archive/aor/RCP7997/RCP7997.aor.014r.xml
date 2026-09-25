@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.014r.tif" reader="John Dee" signature="Cij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="de nouo discere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        An discere sit recordari?
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Isn't learning to remember?
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quem pithagorici dixeru[n]t numeru[m] alteratio[n]is sicut postea dicet[ur]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Pythagorici de bínario
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Pythagoreans about binary numbers.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Respo[n]de q[uam]uis sit c[om]me[n]surabilis hoc t[ame]n e[st] i[n] pote[n]tia [et] no[n] lo[n]gitudine" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        co[m]me[n]surab[ilis] pote[n]tia lo[n]git[udine] 
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Commensurable potence in longitude.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="surda est quia non scitur a nobis nec a natura [et] hoc ex causis tibi demonstratis in arte algebre" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Surdi numeri Algebra[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Indistinct numbers of Algebra.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="accipit[ur] s[ed] simplicit[er] accipit[ur] de om[n]i numero [et] triangulo et o[mn]em dualitate[m] esse pare[m] qua[m] scim[us] dualitate[m] esse" type="straight"/>
+        <underline language="LA" method="pen" text="numeru[m] alteratio[n]is" type="straight"/>
+        <underline language="LA" method="pen" text="p[er] causam cu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="ens aut[em] [et] veru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] cansa vni[us] c[on]trarij de v[er]o [et] necessario co[n]cludit falsitate[m] alteri[us] cu[m] simetru[m] [et] no[n] simetru[m] repugna[n]t" type="straight"/> 
+        <!-- FSF: there is another abbreviation sign on the repugnant, but I am not sure what else there is that is abbreviated -->
+        <underline language="LA" method="pen" text="in radice de triginta" type="straight"/>
+        <underline language="LA" method="pen" text="Respo[n]de q[uam]uis sit c[om]me[n]surabilis hoc t[ame]n e[st] i[n] pote[n]tia [et] no[n] lo[n]gitudine" type="straight"/>
+        <underline language="LA" method="pen" text="quia non scitur a nobis nec a natura [et] hoc ex causis tibi demonstratis" type="straight"/>
+        <underline language="LA" method="pen" text="ponit[ur] et vt posita vtit[ur] demo[n]strator" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!-- est id -->
+        <mark method="pen" name="comma" place="intext"/> <!-- est no[n] -->
+        
+        <!-- FSF: Dee has added some writing to the image in the right margin, which I am not sure how to capture -->
+        
+    </annotation>
+</transcription>

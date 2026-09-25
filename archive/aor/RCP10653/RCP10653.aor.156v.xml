@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.156v.tif" pagination="304" reader="John Dee" signature="[Cc ij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="VVithgaresburh" hand="Italian"> 
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        burh.
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="VVlstanum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        VVlstanus.
+                    </marginalia_text>
+                    <person name="Wulfstan I"/>   
+                </position>
+            </language>
+            <translation>
+                Wulfstan.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="eius Osburga" type="straight"/>
+        <underline language="LA" method="pen" text="erat Aslati famosi pincernae" type="straight"/>
+        <underline language="LA" method="pen" text="Gothis, &amp; Iuthis" type="straight"/>
+        <underline language="LA" method="pen" text="semine duorum fratrum Scuphi scilicet &amp; VVithgari" type="straight"/>
+        <underline language="LA" method="pen" text="VVithgaresburh" type="straight"/>
+        <underline language="LA" method="pen" text="Berthferus regis Merciorum filius, scilicet" type="straight"/>
+        <underline language="LA" method="pen" text="nepos" type="straight"/>
+        <underline language="LA" method="pen" text="regis VVilafi" type="double"/>
+        <underline language="LA" method="pen" text="dies .xxx. stabat" type="straight"/>
+        
+    </annotation>
+</transcription>

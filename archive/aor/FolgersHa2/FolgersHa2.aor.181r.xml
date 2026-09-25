@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.181r.tif" pagination="185" reader="Harvey" signature="[M5r]"/>	<!-- ABO 185right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Seria accuratio valetudinis, agilitatis, 
+						Peritia[e].
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						Ca[e]tera nuga[e].
+						Sit prior loco, qui velit:
+						dignitate, qui potest.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>A serious accuracy in valitude, agility, and experience.  The rest are trifles. Let he who wishes be first in place: let he who can, be first in dignity.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						In externo vigore Corporis, pra[e]sertim vultus,
+						lucet internus valor. Semeiotica naturalis: vtcunq[ue]
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="right_margin">
+					<marginalia_text>
+						dissimulat politica.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Internal valor shines forth in the external vigor of the body, especially of the face. The signs of nature: where politics disguises.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Cogenda valetuda, bonaq[ue]
+						omnia pra[e]potentibus argumentis: vel similibus
+						ad pra[e]seruandum; vel contrarijs ad
+						restaurandum. sed proprijs, aut aptis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>All healthy and good things must be brought together in very powerful arguments: either in similar ones for preserving; or in contradictory ones for restoring.
+			But in special or apt ones.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Contrarijs curantur omnia: sed efficacibus,
+						exquisiteq[ue] constantibus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>All things are taken care for with their contrary matters: but by effective and exquisite corresponding ones.</translation> 
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Quò strictior in rerum substantijs; eò remissior
+						in personaru[m] circu[m]stantijs.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The more restricted one is in the essence of things, the easier it will be in the circumstances of persons.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Fidem profiteor Monam non Monacham: aiebat 
+							<!-- CG: Missing text added. -->
+						Astrophilus. Doctor gentium 
+						pro fide mona.
+					</marginalia_text>
+					<person name="Astrophilus"/>
+				</position>
+			</language>
+			<translation>I declare one faith, not a solitary one, Astrophilus use to say. A doctor of the people is for one faith. 
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Heraclito ti" type="straight"/>
+		<underline language="IT" method="pen" text="và di mal in peggio" type="straight"/>
+		<underline language="IT" method="pen" text="miseria" type="straight"/>
+		<underline language="IT" method="pen" text="Democrito ancor" type="straight"/>
+		<underline language="IT" method="pen" text="le pazzie sono" type="straight"/>
+		<underline language="IT" method="pen" text="è pari il riso" type="straight"/>
+		<underline language="IT" method="pen" text="Vanità giouanile farsi ridicula appresso" type="straight"/>
+		<underline language="IT" method="pen" text="Niccolò Nettoli" type="straight"/>
+		<underline language="IT" method="pen" text="molto attillatamente" type="straight"/>
+		<underline language="IT" method="pen" text="in su l'amore" type="straight"/>
+		<underline language="IT" method="pen" text="innamorare di sè le donne" type="straight"/>
+		<underline language="IT" method="pen" text="vorrei esser sì bello" type="straight"/>
+		<underline language="IT" method="pen" text="e' par esser bello à Niccolò Nettoli" type="straight"/>
+		<underline language="IT" method="pen" text="Fanciulli che dauan" type="straight"/>
+		<underline language="IT" method="pen" text="noia à Diogene" type="straight"/>
+		<underline language="IT" method="pen" text="morsi con" type="straight"/>
+		<underline language="IT" method="pen" text="Diogene" type="straight"/>
+		<underline language="IT" method="pen" text="questo cane" type="straight"/>
+		<underline language="IT" method="pen" text="perche i cani non masticano bietole" type="straight"/>
+		
+		<symbol name="Sun" place="left_margin"/>
+		
+		<symbol name="Sun" place="right_margin"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="Io vorrei esser sì bello, come e' par esser bello à     Niccolò Nettoli."/>
+		
+		<mark method="pen" name="horizontal_bar" place="right_margin"/> <!-- below marginalia 'potest' -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- Netto -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- attillatamen -->
+		<mark method="pen" name="dash" place="right_margin"/> <!-- sopranomina -->
+		<mark language="IT" method="pen" name="quotation_mark" place="tail" text="perche i cani non masticano bietole"/>
+		
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="Niccolò Nettoli"/>
+		
+    </annotation>
+</transcription>

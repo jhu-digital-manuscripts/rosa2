@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.104v.tif" pagination="200" reader="John Dee" signature="[R iiij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Brytannia[e], appelatio mutata in Angliam      
+                    </marginalia_text>
+                    <location name="Britain"/>
+                    <location name="England"/>
+                </position>
+            </language>
+            <translation>
+                Britain's name was changed into England.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Bruto" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Brutus
+                    </marginalia_text>
+                    <person name="Brutus of Troy"/>
+                </position>
+            </language>
+            <translation>
+                Brutus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="thesauros magnos inuenit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Thesauri ex insomnio inve[n]ti
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Treasure found in a dream.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Suthsaxia" type="straight"/>
+        <underline language="LA" method="pen" text="VVestsaxia" type="straight"/>
+        <underline language="LA" method="pen" text="in Estsaxia" type="straight"/>
+        <underline language="LA" method="pen" text="Aethefridus in" type="straight"/>
+        <underline language="LA" method="pen" text="dispositis, placuit dictis regibus Britanniam" type="straight"/>
+        <underline language="LA" method="pen" text="memoriam Britannoru[m]" type="double"/>
+        <underline language="LA" method="pen" text="à Bruto" type="straight"/>
+        <underline language="LA" method="pen" text="Anglis Anglia" type="straight"/>
+        <underline language="LA" method="pen" text="thesauros magnos" type="straight"/>
+        
+        <mark method="pen" name="vertical_bar" place="left_margin"/>
+        
+    </annotation>
+</transcription>

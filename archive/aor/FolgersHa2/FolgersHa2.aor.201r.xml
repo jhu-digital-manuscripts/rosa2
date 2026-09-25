@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.201r.tif" pagination="225" reader="Harvey" signature="P[r]"/>	<!-- ABO 205right -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Temperantia, nutrix Prudentia[e]: Justitia,
+					</marginalia_text>
+				</position>
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						custos fortitudinis.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Temperance, the nurse of prudence: justice, the guard of fortitude.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Inuicta munitio,
+						virtus indomita.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>An invincible defence, an unrestrained virtue. </translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Symposia Platonis, et Xenophontis. Mensa Philosophica.
+					</marginalia_text>
+					<person name="Plato"/>
+					<person name="Xenophon"/>
+					<book title="Mensa philosophica"/>
+				</position>
+			</language>
+			<translation>The Symposia of Plato and Xenophontis. The Mensa philosophica.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Puerilis est animus, qui non est serius,
+						et firmus in omni Casu.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The mind which is not serious and firm in every case, is childish.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="IT">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						filosofo non filosofo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The philosopher, not a philosopher.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Non sunt philosophi, qui non sunt mundi exemplaria.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Philosophers, who are not examples of the world, are not philosophers.</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Maior animus, in maiori periculo.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>In greater danger, the mind is greater.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Rudis est, qui non est concinnus artifex suorum facinorum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>He who is not the elegant master of his deeds, is uncultivated.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Ad Artis, et Virtutis normam; examina[m] di Excellentissimi. Acuteq[ue]
+						Videndum, an corrigi possint Auctorum, Actorumq[ue] eminentissimi:
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						et q[u]omodo possint dexterrimè pra[e]stari.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>Towards the norm of art and virtue; and towards the examen of the most excellent. And it must be observed acutely <!-- CG: I don't understand the use of 'di' in the Latin. Did Harvey make a mistake? -->
+			whether the most eminent of authors and actors can be corrected: and in what way they can be exceeded most skillfully.</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="left_margin">
+					<marginalia_text>
+						Maximus mundi Methodicus, et Practicus: Zeteticus, et Empiricus.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>The greatest methodical and practical man of the world: inquisitive and empirical.</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="de' giouani" type="straight"/>
+		<underline language="IT" method="pen" text="meno rispettiui" type="straight"/>		
+		<underline language="IT" method="pen" text="piu feroci, &amp; con piu audacia" type="straight"/>
+		<underline language="IT" method="pen" text="comandano" type="straight"/>
+		<underline language="LA" method="pen" text="Audaces Fortuna" type="straight"/>
+		<underline language="IT" method="pen" text="Giocondissimi'" type="straight"/>
+		<underline language="IT" method="pen" text="all'usanza di" type="straight"/>
+		<underline language="IT" method="pen" text="trattato di cibi parcamente" type="straight"/>
+		<underline language="IT" method="pen" text="suauissima musica" type="straight"/>
+		<underline language="IT" method="pen" text="i conuiti di Platone il dilettauano piu che" type="straight"/>
+		<underline language="IT" method="pen" text="altri conuiuij" type="straight"/>
+		<underline language="IT" method="pen" text="tanto giocondi" type="straight"/>
+		<underline language="IT" method="pen" text="tanto temperati" type="straight"/>
+		<underline language="IT" method="pen" text="anche bene l'altro giorno" type="straight"/>
+		<underline language="IT" method="pen" text="quel modesto, &amp; giudicioso filisofo le" type="straight"/>
+		<underline language="IT" method="pen" text="giorno seguente, spesso se ne ha piu dispiacere" type="straight"/>
+		<underline language="IT" method="pen" text="medesimo non se n'è riceuuto piacere" type="straight"/>
+		<underline language="IT" method="pen" text="a' filosofi" type="straight"/>
+		<underline language="IT" method="pen" text="ingiurie" type="straight"/>
+		<underline language="IT" method="pen" text="prouocato" type="straight"/>
+		<underline language="IT" method="pen" text="maldicente con" type="straight"/>
+		<underline language="IT" method="pen" text="si fusse alterato" type="straight"/>
+		<underline language="IT" method="pen" text="animo le ingiurie" type="straight"/>
+		<underline language="IT" method="pen" text="anche le lodi" type="straight"/>
+		<underline language="IT" method="pen" text="le pietre" type="straight"/>
+		<underline language="IT" method="pen" text="non si commuouono" type="straight"/>
+		<underline language="IT" method="pen" text="non si alterino tanto" type="straight"/>
+		<underline language="IT" method="pen" text="che si partino da l'honesto" type="straight"/>
+		
+		<symbol name="SS" place="left_margin"/>
+		
+		<symbol name="SS" place="intext"/>
+		
+		<mark language="IT" method="pen" name="bracket" place="left_margin" text="sempre amica d' giouani, perche essi sono meno rispettiui, piu feroci, &amp; con piu audacia la comandano, onde si dice anche per prouerbio: Audaces Fortuna iuuat"/>
+		<mark method="pen" name="plus_sign" place="left_margin"/>
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--comanda-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--For-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--Pla-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--tempera-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--tan-->
+		<mark method="pen" name="dash" place="right_margin"/> <!--paro-->
+		
+		<mark language="IT" method="pen" name="plus_sign" place="head" text="giouani"/> 
+		
+		<mark language="IT" method="pen" name="quotation_mark" place="intext" text="giocondi"/>
+		<mark language="IT" method="pen" name="plus_sign" place="intext" text="temperati"/>
+
+    </annotation>
+</transcription>

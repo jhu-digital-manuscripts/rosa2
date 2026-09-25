@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.184v.tif" pagination="368" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="inunctua" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Iu[n]ctura.</marginalia_text>
+                </position>
+            </language>
+            <translation>Collocation.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="coniunctiones" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>coniunctiones</marginalia_text>
+                </position>
+            </language>
+            <translation>Conjunction.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Diuisio</marginalia_text>
+                </position>
+            </language>
+            <translation>Division.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Celsus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Celsus</marginalia_text>
+                    <person name="Aulus Cornelius Celsus"/>
+                </position>
+            </language>
+            <translation>Celsus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ταπείνωσις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ταπείνωσις</marginalia_text>
+                </position>
+            </language>
+            <translation>Lowness of style.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="μείωσις" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>μείωσις</marginalia_text>
+                </position>
+            </language>
+            <translation>Dearth of style.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ταὐτολογία" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>ταὐτολογία</marginalia_text>
+                </position>
+            </language>
+            <translation>Tautology.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cicero securus tamparuae" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Cicero taxatur.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero is assessed.</translation>
+        </marginalia>
+       
+        <underline language="LA" method="pen" text="quatinus uerba honesta moribus perdidimus, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="indecentißime" type="straight"/>
+        <underline language="LA" method="pen" text="si intercapedinis nominatiuo casu quis utatur" type="straight"/>
+        <underline language="LA" method="pen" text="quod si recipias, nihil loqui tutum est" type="straight"/>
+        <underline language="LA" method="pen" text="magnitudo uel dignitas minuitur" type="straight"/>
+        <underline language="LA" method="pen" text="Proinde quaedam hebes, sordida, ieiuna, tristis, ingrata, uilis oratio est" type="straight"/>
+        <underline language="LA" method="pen" text="primum acuto, secundum nitido, tertiu[m] copioso, deinceps hilari, iuncundo, accurato diuersum est" type="straight"/>
+        <underline language="LA" method="pen" text="sermoni quidem deest aliquid, quo" type="straight"/>
+        <underline language="LA" method="pen" text="schema dici solet" type="straight"/>
+        
+        <numeral place="left_margin">3</numeral>
+        <numeral place="left_margin">4.</numeral>
+        <numeral place="left_margin">5</numeral>
+        <numeral place="left_margin">6</numeral>
+        <numeral place="left_margin">7</numeral>
+        <numeral place="left_margin">8</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

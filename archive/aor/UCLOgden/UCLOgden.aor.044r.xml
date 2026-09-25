@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.044r.tif" pagination="71" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ☿ si die cu[m] diurnus et nocte cu[m] nocturnis planetis [imagitur] bene est, co[n]tra eu[m] pessimu[m] est. <!--JG: Unsure abt 'imagitur'-->
+                    </marginalia_text>
+                    <symbol_in_text name="Mercury"/>
+                </position>
+            </language>
+            <translation>
+                Mercury, it is well if [...] on the day when by day and by night with the nocturnal planets, it is most disloyal against him. 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        At nox est: vide igitur quid infine capitis pra[e]redentis dixisti <!-- FSF: not sure about infine -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                But it was night. Therefore, see what [...] you said in the preceding chapters.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        no[n] partiter 
+                        <!-- M.B. I couldn’t find any Latin term ‘vartiter’. I think it is possibly, ‘no[n] partil[it]er’ i.e.  a correction to ‘partiliter’ in the line above. -->
+                        <!-- FSF: I can't see any such abbreviation; not sure about this -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Not [...].
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="aut quasi malifici, seu falsatii" type="straight"/>
+        <underline language="LA" method="pen" text="cum bonis bonum, &amp; cum malis aequaliter malum" type="straight"/>
+        <underline language="LA" method="pen" text="In secundo loco" type="straight"/>
+        <underline language="LA" method="pen" text="considerandum est maxime, in quo sint signo constituti, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; quorum patres nescia[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="hettematicos" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        
+    </annotation>
+</transcription>

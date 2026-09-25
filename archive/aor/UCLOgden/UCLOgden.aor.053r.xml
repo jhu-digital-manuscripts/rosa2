@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="UCLOgden.053r.tif" pagination="89" reader="John Dee" signature="h 3"/>
+    <annotation>
+        
+        <marginalia anchor_text="ignitas artes" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Artes ignita[e].
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Ignited skills.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nimiu[m] felix" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        valde fo[e]lix.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Very happy.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        fiscaliu[m] pra[e]stationu[m] exactores.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Exactors of financial payments.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="si noctuna genitura" type="straight"/>
+        <underline language="LA" method="pen" text="cresce[n]s ☾" type="straight"/>
+        <underline language="LA" method="pen" text="per diem" type="straight"/>
+        <underline language="LA" method="pen" text="defluat crescens, &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="☾ deficiens" type="straight"/>
+        <underline language="LA" method="pen" text="nocturna genitura" type="straight"/>
+        <underline language="LA" method="pen" text="uero per diem deficiens" type="straight"/>
+        <underline language="LA" method="pen" text="crescens, uel plena luminibus" type="straight"/>
+        <underline language="LA" method="pen" text="sed" type="double"/>
+        <underline language="LA" method="pen" text="minuta luminibus" type="straight"/>
+        <underline language="LA" method="pen" text="principalibus" type="straight"/>
+        <underline language="LA" method="pen" text="uel necessariis" type="straight"/>
+        <underline language="LA" method="pen" text="si plena luminibus" type="straight"/>
+        <underline language="LA" method="pen" text="fiscalium praestationu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Si uero minuta" type="straight"/>
+        <underline language="LA" method="pen" text="sit crescens, uel plena luminibus" type="straight"/>
+                
+    </annotation>
+</transcription>

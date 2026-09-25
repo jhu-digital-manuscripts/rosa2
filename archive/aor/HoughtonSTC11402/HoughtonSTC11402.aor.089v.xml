@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="HoughtonSTC11402.089v.tif" reader="Harvey" signature="[Lii[v]]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Romanoru[m] fatum, vt victi resistant multò fortiùs. Multoru[m] historicoru[m] obseruatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>The fate of the Romans, when those conquered resist much more strongly. The observation of many historians.</translation> 
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>The curragious &amp; inuincible stowtenes of [the] Romanes. nuer dismaied, or dauntid with any
+                    distresse, or misfortune: but euermore continuing [their] accustomid magnanimity. Right manhood &amp;
+                    Very Nobility.</marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Virescit vulnere Virtus: et detrimentu[m] vertit in Bonum.</marginalia_text>
+                    <X-ref book_title="Unknown" language="LA" person="Aulus Furius Antias" text="Virescit Vulnere Virtus"/>
+                    <X-ref book_title="De bello civili" language="LA" person="Julius Caesar" text="detrimentu[m] vertit in Bonum."/> <!--book 3-->
+                </position>
+            </language>
+            <language ident="EN">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>As notable Examples,</marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text> i[nfr]a, c.5.l.4.</marginalia_text>
+                    <internal_ref>
+                        <target ref="HoughtonSTC11402:earbm_stc_11402_0206" text="c.5.l.4."/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>"Courage grows strong at a wound:" and "he turns defeat into a good thing." As notable Examples, below, book 4, chapter 5.</translation>
+        </marginalia>
+        
+        <underline language="EN" method="pen" text="make defence" type="straight"/>
+        <underline language="EN" method="pen" text="boldely beganne" type="straight"/>
+        <underline language="EN" method="pen" text="deceyte &amp; gyle" type="straight"/>
+        <underline language="EN" method="pen" text="made" type="straight"/>
+        <underline language="EN" method="pen" text="no resistence" type="straight"/>
+        <underline language="EN" method="pen" text="breakynge" type="straight"/>
+        <underline language="EN" method="pen" text="tournynge" type="straight"/>
+        <underline language="EN" method="pen" text="The constancie" type="straight"/>
+        <underline language="EN" method="pen" text="Romaynes beseged" type="straight"/>
+        <underline language="EN" method="pen" text="boldly" type="straight"/>
+        <underline language="EN" method="pen" text="forth succours at a gate on the" type="straight"/>
+        <underline language="EN" method="pen" text="armies that were" type="straight"/>
+        <underline language="EN" method="pen" text="tenant" type="straight"/>
+        <underline language="EN" method="pen" text="the fielde, where Annibal" type="straight"/>
+        <underline language="EN" method="pen" text="wont to go" type="straight"/>
+        <underline language="EN" method="pen" text="beinge besieged" type="straight"/>
+        <underline language="EN" method="pen" text="they besiging Capua" type="straight"/>
+        <underline language="EN" method="pen" text="and call home" type="straight"/>
+        <underline language="EN" method="pen" text="armie, vntyl they had" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="head" text="Romanoru[m] fatum, vt victi resistant multò fortiùs. Multoru[m] historicoru[m] obseruatio."/>
+        
+        <symbol name="SS" place="intext"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="boldely beganne"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="breakynge"/>
+        <mark language="EN" method="pen" name="X_sign" place="intext" text="The constancie"/>
+        <mark language="EN" method="pen" name="plus_sign" place="left_margin" text="the fielde, where Annibal"/>
+        
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="tournynge"/>
+        <mark method="pen" name="horizontal_bar" place="intext"/>
+        <mark method="pen" name="apostrophe" place="intext"/> <!--constancie-->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!--mistrusted, sent-->
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="succours"/>
+        <mark language="EN" method="pen" name="plus_sign" place="intext" text="the fielde, where Annibal"/>
+        
+        <mark method="pen" name="horizontal_bar" place="tail"/>
+        <mark method="pen" name="page_break" place="tail"/>
+        
+    </annotation>
+</transcription>

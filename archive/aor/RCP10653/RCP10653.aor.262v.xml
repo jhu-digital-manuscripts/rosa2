@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.262v.tif" pagination="76" reader="John Dee" signature="[Ggg ij[v]]"/>
+    <annotation>
+        
+        <underline id="RCP10653:540:u0001" language="LA" method="pen" text="Iohannes Isabellam" type="straight"/>
+        <underline language="LA" method="pen" text="consecrata est in reginam" type="straight"/>
+        <underline id="RCP10653:540:u0002" language="LA" method="pen" text="Isabellam" type="straight"/>
+        <underline language="LA" method="pen" text="Gylo de Brause, consecratur" type="straight"/>
+        
+        <errata amendedtext="Isabella" copytext="Havvisia" language="LA"/>  
+        <errata amendedtext="Isabella[m]" copytext="Havvisiam" language="LA"/>
+        
+        <physical_link>
+            <marginal_annotation idref="RCP10653:540:u0001"/>
+            <marginal_annotation idref="RCP10653:540:u0002"/>
+            <relation from="RCP10653:540:u0001" to="RCP10653:540:u0002" type="undirected"/>
+        </physical_link>
+
+    </annotation>
+</transcription>

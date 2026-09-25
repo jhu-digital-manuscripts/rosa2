@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.377r.tif" pagination="205" reader="John Dee" signature="[Nn.vii.]"/>   
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        quid si dicam[us] elementa [ne[m] intelligere? Sed seque[n]s se[n]te[n]ta[m] [....] o[mn]e <!-- FSF: hard to read as it disappears in the gutter -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                
+            </translation>
+        </marginalia>
+
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        vt sup[ra] nu[mero] 33
+                    </marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10549-50v2:0745" text="nu[mero] 33"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>
+                As above  at number 33.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Summe hic animaduersus stoicor[um] eleme[n]ta
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                <!-- FSF: not sure about this -->
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Balbus
+                    </marginalia_text>
+                    <person name="Quintus Lucilius Balbus"/>
+                </position>
+            </language>
+            <translation>
+                Quintus Lucilius Balbus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Stoicus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Stoic.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        natura { solitata sumptor[um] } cu[m] alio nuncta co[m]posita.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>
+                        Esse Deos
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                God exists.
+            </translation>
+        </marginalia>
+
+        <marginalia anchor_text="aer" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aër calidus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Cold air.
+            </translation>
+        </marginalia>
+
+        <marginalia anchor_text="Earum enim quasi vapor quidam aer habendus est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Aquaru[m] vapor, Aër est.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Steam of water is air.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ignis; q[uod] igne[m] ponat et [quatorem] eleme[n]tu[m] et ad co[e]lu[m] p[er]tingere ex hoc et imo 27 collige. Concludit o[mn]es mundi partes calore sustentari
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Fire. That 
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Omnis natura composita in se alique[m] principatu[m] habet
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The entire natre 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Principatu[m]" hand="Italian">
+            <language ident="EL">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        ἡγεμονικόν
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The commanding power.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="nihil est enim in omni mundo, quod non pars vniuersi sit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Nihil est in Mundo q[uod] pars vniuersi sit
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Nothing is in the world that is part of the universe. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mundu[m], omnémque vom mundi diuina natura co[n]tineri" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Omnis mundi vis diuina natura continetur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The entire strength of the world is secured by the divine nature.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="calor" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Calor duplex
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Double heat.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="mundum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mundum animal esse
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The world is alive.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quid potest esse mundo vale[n]tius" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Quid p[otes]t esse Mundo valentius?
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                What can be more powerful than the world?
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Platonem ... esse motus, vnum suum, alterum externu[m]" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Duplex motus secundu[m] Platone[m]
+                    </marginalia_text>
+                    <person name="Plato"/>
+                </position>
+            </language>
+            <translation>
+                Double motion according to Plato.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Animi se ip[s]i mouent
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The minds move themselves.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ex mundo ardore motus omnis oritur" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ex mundi ardore, motus o[mn]is oritur
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Every motion arises from the heat of the world.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="animantem esse mu[n]dum. Atque ex hoc quoque intelligi poterit in eo inesse intelligentiam" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Mundus anima[n]s, intelligens
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The world is animated and intelligent.
+            </translation>
+        </marginalia>
+       
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Totum maius sua parte est et dignitate et magnitudine
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The whole is greater than its parts in terms of its dignity and greatness.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="à primis inchoatísque naturis ad vltimas perfectásque volumus prcodere" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Ab inchaotis naturis, ad perfectas procedendum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To proceed from the beginning of nature to its perfection.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        stirpes Bestia[e] Ho[m]i[n]es Deus } 4 gradus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Plants, animals, men, God } four steps.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="in nulla rerum institutione esse aliquid extremum atque perfectum" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        In o[mn]i rerum institutione est aliquid extremum et p[er]fectum.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                In every arrangement of things there is something far and accomplised. 
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="naturam suo quodam itinere ad vltimum peruenire" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Natura[e] iter ad vltimum
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The way of nature to the greatest.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        calor fervor ardor
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Heat, boiling, ardor.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        calor o[mn]ia tranat
+                        o[mn]ia in se vim caloris co[n]tine[n]t
+                        qua[n]ta vis caloris inest in o[mn]i corpore
+                        quicquid viuit, viuit propter inclusu[m] in eo calore[m]
+                        caloris natura vim li[cet] in se vitate[m] p[er] o[mn]em mu[n]du[m] p[er]tene[n]te[m] <!-- FSF: not sure about vitatem -->
+                        o[mn]es partes mundi calore fult[a]e sustine[n]tur 
+                        Magna vis terra taborens co[n]tinetur caloris <!-- FSF: not sure about the fourth word -->
+                        Calor iustus in terris
+                        temp[er]atio caloris o[mn]ia procreat, angescere'q[ue] facit
+                        Aqua[e] admixtus calor
+                        aër minime est expers caloris
+                        calor qui aquis continetur
+                        o[mn]es mundi partes sustine[n]tur calore
+                        calidu[m] illud atq[ue] igne[m] in o[mn]i fusu[m] natura
+                        Mundi ille fervor, purior persuadior, mobiliorq[ue] multo <!-- FSF: not sure about persuadior -->
+                        ho[m]i[n]es bestia[e]q[ue] hoc calore ementur <!-- FSF: not sure about the last word -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Heat crosses everything
+                Everything preserves in itself the strenght of heat
+                How much stength of heat is in every body
+                Whatever lives lives because of the heat included in itself
+                The nature of heat permits the strength that keeps the ...
+                Every part of the world is support by the world
+                Great strength is maintained by the earth of the heat ...
+                Just heat on earth
+                Temperation of the heat procreates, causses and makes everything
+                Heat mixed with heat
+                Air is free of heat <!-- FSF: not sure about minime -->
+                Heat which is contained water
+                All parts of the world contain heat
+                
+                That heat of the world is much purer, ..., and movable. 
+                Men and animal have obtained that heat.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        natura solitaria simplex
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Nature, solitary and simple.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        calor purior persuadior mobilior integer liber acerrimus <!-- FSF: not sure about persuadior -->
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Heat, purer, more movable, vigorous, unimpeded, most hard.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Natura" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        there is a nature
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="minor" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        lesse of estimation
+                    </marginalia_text>
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="maxime frigidus" type="straight"/>
+        <underline language="LA" method="pen" text="ex respiratione" type="straight"/>
+        <underline language="LA" method="pen" text="efferuescu[n]t subitis" type="straight"/>
+        <underline language="LA" method="pen" text="reliqua quarta pars mundi" type="straight"/>
+        <underline language="LA" method="pen" text="salutarem impertit &amp;" type="straight"/>
+        <underline language="LA" method="pen" text="calidum illud atque igneum ita in omni fusum esse natura,              vt in eo insit procreandi vit, &amp; causa gignendi, à quo &amp; animantia omnia, &amp; ea quoru[m] stirpes terra continentur, &amp; nasci sit necesse, &amp; augescere. Natura" type="straight"/>
+        <underline language="LA" method="pen" text="solitaria sit" type="straight"/>
+        <underline language="LA" method="pen" text="omniúmque rerum potestate dominatúque dignissimum" type="straight"/>
+        <underline language="LA" method="pen" text="naturámque eam quae res omnes co[m]plexa teneat, perfectione rationis excellere, eóque deum esse mundu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="feruor, purior, perlucidior, mobiliórque" type="straight"/>
+        <underline language="LA" method="pen" text="causas aptior ad sensus commouendos" type="straight"/>
+        <underline language="LA" method="pen" text="qui integro &amp; libero &amp; puro, eodémque acerrimo &amp; mobilissimo" type="straight"/>
+        <underline language="LA" method="pen" text="esse mundo vale[n]tius" type="straight"/>
+        <underline language="LA" method="pen" text="vnum suum" type="straight"/>
+        <underline language="LA" method="pen" text="alterum externu[m]" type="straight"/>
+        <underline language="LA" method="pen" text="non minor" type="straight"/>
+        <underline language="LA" method="pen" text="pluris esse" type="straight"/>
+        <underline language="LA" method="pen" text="pluris esse" type="straight"/>
+        <underline language="LA" method="pen" text="primis inchoatísque" type="straight"/>
+        <underline language="LA" method="pen" text="ad vltimas perfectásque" type="straight"/>
+        <underline language="LA" method="pen" text="gignantur è terra, quibus natura nihil tribuit amplius, quàm vt ea alendo atque auge[n]do" type="straight"/>
+        <underline language="LA" method="pen" text="appetitu accessum ad res salutares, à pestiferis recessum: hoc" type="straight"/>
+        <underline language="LA" method="pen" text="sapientésque gignuntur, quibus à principio innascitur ratio recta constánsque, quae supra hominem putanda ets, deóque" type="straight"/>
+        <underline language="LA" method="pen" text="rerum institutione esse aliquid extremum atque perfectum" type="straight"/>
+        <underline language="LA" method="pen" text="videmus naturam suo" type="straight"/>
+        <underline language="LA" method="pen" text="quodam itinere ad vltimum peruenire" type="straight"/>
+                
+        <symbol name="Asterisk" place="left_margin"/>
+        <symbol name="Asterisk" place="left_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Jupiter" place="right_margin"/>
+        <symbol name="Unidentified" place="right_margin"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">12</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

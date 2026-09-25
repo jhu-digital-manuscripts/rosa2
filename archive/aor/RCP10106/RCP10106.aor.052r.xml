@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.052r.tif" pagination="103" reader="John Dee" signature="g 4"/>
+    <annotation>
+        
+        <marginalia anchor_text="Aeschines" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aeschines</marginalia_text>
+                    <person name="Aeschines"/>
+                </position>
+            </language>
+            <translation>Aeschines.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="exerciatio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exercitatio.</marginalia_text>
+                </position>
+            </language>
+            <translation>Exercise.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Aristoteles" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Aristoteles</marginalia_text>
+                    <person name="Aristotle"/>
+                </position>
+            </language>
+            <translation>Aristotle.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Critolaus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Critolaus</marginalia_text>
+                    <person name="Critolaus"/>
+                </position>
+            </language>
+            <translation>Critolaus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Agnon" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Agnon.</marginalia_text>
+                    <person name="Agnonides"/>
+                </position>
+            </language>
+            <translation>Agnonides.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="orator esse qui non didicit, potest" type="straight"/>
+        <underline language="LA" method="pen" text="id potentißimu[m] discen[n]di genus est. Sed" type="straight"/>
+        
+        <mark method="pen" name="dot" place="right_margin"/>
+        <mark method="pen" name="dot" place="right_margin"/>
+        <mark method="pen" name="tripunctus" place="right_margin"/>
+        
+        <numeral place="right_margin">.3.</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">5</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

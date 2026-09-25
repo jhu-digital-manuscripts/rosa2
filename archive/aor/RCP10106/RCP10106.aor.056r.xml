@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.056r.tif" pagination="111" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="proprijs officijs" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Propria opinio</marginalia_text>
+                </position>
+            </language>
+            <translation>Individual beliefs.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Socrates" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>.Socrates.</marginalia_text>
+                    <person name="Socrates"/>
+                </position>
+            </language>
+            <translation>Socrates.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="opinio non qualitate, sed modo errauit. Est" type="straight"/>
+        <underline language="LA" method="pen" text="negotialem aßignant" type="straight"/>
+        <underline language="LA" method="pen" text="omnia quaesita, audita, lecta, disputata, tractata, agitata ess debent" type="straight"/>
+        
+        <numeral place="right_margin">2</numeral>
+        <numeral place="right_margin">3</numeral>
+        <numeral place="right_margin">4</numeral>
+        <numeral place="right_margin">5</numeral>
+        <numeral place="right_margin">6</numeral>
+        <numeral place="right_margin">7</numeral>
+        
+    </annotation>
+</transcription>

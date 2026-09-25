@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.014v.tif" reader="John Dee" signature="[Diij[v]]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="eysen zů kupffer" hand="Italian"> 
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Rerum naturas q[u]omodo noscamus</marginalia_text>
+                </position>
+            </language>
+            <translation>We shall examine the natures of the things in this manner.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="für miner" type="straight"/>
+        <underline language="DE" method="pen" text="geschmack" type="straight"/>
+        <underline language="DE" method="pen" text="ein weissen schwebel" type="straight"/>
+        <underline language="LA" method="pen" text="dem selbigen nicht nach" type="straight"/>
+        <underline language="DE" method="pen" text="krafft deß bads gar nicht" type="straight"/>
+        <underline language="DE" method="pen" text="in der materia" type="double"/>
+        <underline language="DE" method="pen" text="auß jren früchte[n]" type="straight"/>
+        <underline language="DE" method="pen" text="früchten in die erkanntnuß gebracht sol werden" type="double"/>
+        
+    </annotation>
+</transcription>

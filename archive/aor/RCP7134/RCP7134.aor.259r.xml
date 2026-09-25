@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.259r.tif" pagination="252" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="morbo" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Morbus</marginalia_text>
+                </position>
+            </language>
+            <translation>Sickness.</translation>
+        </marginalia>
+          
+        <marginalia anchor_text="mortales" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Qui morbi sunt mortales.</marginalia_text>
+                </position>
+            </language>
+            <translation>Mortals who are ill.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Morbi principiu[m].</marginalia_text>
+                </position>
+            </language>
+            <translation>The start of an illness.</translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Portentoru[m] significatio vnde eruatur.</marginalia_text>
+                </position>
+            </language>
+            <translation>Whence the meaning of the omen is overthrown.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="uero soli natura sua mortales, frigidi &amp; sicci" type="straight"/>
+        <underline language="LA" method="pen" text="calidi aut[em] &amp; sicci" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+    </annotation>
+</transcription>

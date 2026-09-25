@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL531k6.014v.tif" pagination="[014v]" reader="John Dee" signature="[D2v]"/> 
+    <annotation>
+        
+        <marginalia anchor_text="differentiam lateralem" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Differentia lateralis
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Lateral difference.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="differentiam lateralem" type="straight"/>
+        <underline language="LA" method="pen" text="adde quantitati annuae mediae" type="straight"/>
+        <underline language="LA" method="pen" text="scr. 54. 1a/" type="straight"/>
+        <underline language="LA" method="pen" text="horis 5. scr. 42 1a/" type="double"/>
+        <underline language="LA" method="pen" text="horae 5. scr. 53 1a/ 28" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/> <!--annuae mediae-->
+        
+    </annotation>
+</transcription>

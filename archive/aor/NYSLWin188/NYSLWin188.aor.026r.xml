@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin188.026r.tif" pagination="26" reader="John Dee" signature="Gij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Virtus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        [V]irtus
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Virtue.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Virtus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Virtus</marginalia_text>
+                </position>
+            </language>
+            <translation>Virtue.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="die ein Vulcanische eige[n]schafft" type="straight"/>
+        <underline language="DE" method="pen" text="was mehr in" type="double"/>
+        <underline language="DE" method="pen" text="arth" type="double"/>
+        <underline language="DE" method="pen" text="erzeigt in jren proprietatibus" type="straight"/>
+        <underline language="DE" method="pen" text="gleich" type="triple"/>
+        <underline language="LA" method="pen" text="Vulcano Igneo" type="double"/>
+        <underline language="DE" method="pen" text="das laub vnd graß wachsent" type="straight"/>
+        <underline language="DE" method="pen" text="selbigen Regen ein krafft vn[d] Natur" type="straight"/>
+        <underline language="DE" method="pen" text="macht vnd fürtreibet" type="double"/>
+        <underline language="DE" method="pen" text="Vulcanus Terrae schmidet" type="straight"/>
+        <underline language="DE" method="pen" text="gedeien durch den Regen das für sich gehet vnd mehret sichtiglich" type="double"/>
+        <underline language="DE" method="pen" text="Solche mehrende zunemende vnd wachsende arth ist ein ander Natur nit" type="straight"/>
+        <underline language="DE" method="pen" text="ist Iliaster" type="double"/>
+        <underline language="DE" method="pen" text="Geist" type="straight"/>
+        <underline language="DE" method="pen" text="Person" type="straight"/>
+        <underline language="DE" method="pen" text="nach Seel" type="straight"/>
+        <underline language="DE" method="pen" text="ein krafft" type="double"/>
+        <underline language="DE" method="pen" text="Virtus" type="double"/>
+        <underline language="DE" method="pen" text="scheidt vnd" type="double"/>
+        
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        <drawing book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

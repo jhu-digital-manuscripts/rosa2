@@ -1,0 +1,9 @@
+# Lambda zips built by the archive provider at plan time.
+.build/
+
+# Local state and provider cache.
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+.terraform.lock.hcl

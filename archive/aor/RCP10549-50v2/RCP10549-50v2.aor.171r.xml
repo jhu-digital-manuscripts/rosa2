@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.171r.tif" pagination="81" reader="John Dee" signature="f.i."/>  
+    <annotation>
+        
+        <marginalia anchor_text="infinitu[m] est" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>infinitu[m] est.</marginalia_text>
+                </position>
+            </language>
+            <translation>It is infinite.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Accedunt aute[m] ad coniectura[m] saepe quaestiones, testimonia, rumores, quae co[n]tra omnia vterque simili via praeceptoru[m] torquere ad suae causae co[m]modu[m] debebit" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Plura co[n]iectura[m] suppèditant, ac maiore[m] faciu[n]t.</marginalia_text>  
+                </position>
+            </language>
+            <translation>Many supply a conjecture, but make a larger one.</translation>  <!-- JG: Unsure about translation-->
+        </marginalia>
+        
+        
+        <marginalia anchor_text="locos co[m]munes" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Loci co[mmun]es.</marginalia_text>
+                </position>
+            </language>
+            <translation>Commonplaces.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note.</translation>
+        </marginalia>
+      
+        
+        <marginalia anchor_text="Nu[n]c exponemus in coniecturale[m] constitutionem qui loci co[m]munes incidere soleant" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Coniecturalis constitutio[n]is loci comunes.</marginalia_text>
+                </position>
+            </language>
+            <translation>Commonplaces of a conjectural nature.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="distinguere" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; infinitu[m] est tot" type="straight"/>
+        <underline language="LA" method="pen" text="singillatim de" type="straight"/>
+        <underline language="LA" method="pen" text="constétne" type="straight"/>
+        <underline language="LA" method="pen" text="cu[m] ex singulis, tu[m] ex coniunctis" type="straight"/>
+        <underline language="LA" method="pen" text="torquere ad suae causae co[m]modu[m] debebit" type="straight"/>
+        <underline language="LA" method="pen" text="est peruagatior" type="straight"/>
+        <underline language="LA" method="pen" text="aut renouatur" type="straight"/>
+        <underline language="LA" method="pen" text="exuscitatur" type="straight"/>
+        <underline language="LA" method="pen" text="quoque multorum" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        <numeral place="right_margin">1</numeral>
+        <numeral place="right_margin">2</numeral>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="manicule"/>
+
+    </annotation>
+</transcription>

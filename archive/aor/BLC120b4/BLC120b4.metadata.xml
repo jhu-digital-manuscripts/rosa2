@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+  <license>
+    <url>http://creativecommons.org/licenses/by/4.0/</url>
+    <logo>https://i.creativecommons.org/l/by/4.0/88x31.png</logo>
+  </license>
+  <totalPages>138</totalPages>
+  <dates>
+    <startDate>1530</startDate>
+    <endDate>1530</endDate>
+  </dates>
+  <texts>
+    <text id="1">
+      <language>la</language>
+      <title>Voarchadumia contra Alchimiam: ars distincta ab archimia, &amp; sophia: cum additionibus: proportionibus: numeris: &amp; figuris opportunis.</title>
+      <textId>pantheus</textId>
+      <pages end="001r" start="069v">138</pages>
+    </text>
+  </texts>
+  <bibliographies>
+    <bibliography lang="en">
+      <title>Voarchadumia contra Alchimiam: ars distincta ab archimia, &amp; sophia: cum additionibus: proportionibus: numeris: &amp; figuris opportunis.</title>
+      <commonName>Johannes Pantheus, Voarchadumia (Venice, 1530)</commonName>
+      <dateLabel>1530</dateLabel>
+      <currentLocation>London, UK</currentLocation>
+      <repository>British Library</repository>
+      <shelfmark>C.120.b.4.(2.)</shelfmark>
+      <author>
+        <name>Panteus, Joannes</name>
+        <id></id>
+      </author>
+      <reader>
+        <name>John Dee</name>
+        <id>http://www.isni.org/isni/0000000122785193</id>
+      </reader>
+      <website>https://archaeologyofreading.org/bibliography/Dee-corpus/Pantheus</website>
+    </bibliography>
+  </bibliographies>
+</book>

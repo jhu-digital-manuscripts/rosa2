@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.430r.tif" reader="Harvey"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text> 
+                        Augustus.
+                    </marginalia_text>
+                <person name="Augustus"/>
+                </position>
+            </language>
+            <translation>
+                Augustus.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Cleopatra" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        Cleopatra.
+                    </marginalia_text>
+                <person name="Cleopatra"/>
+                </position>
+            </language>
+            <translation>
+                Cleopatra.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Augustus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        Tandem Augustus.
+                    </marginalia_text>
+                <person name="Augustus"/>
+                </position>
+            </language>
+            <translation>
+                Augustus at last.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Tiberio [...] Druso" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tiberius. Drusus.</marginalia_text>
+                    <person name="Tiberius"/>
+                    <person name="Germanicus"/>
+                </position>
+            </language>
+            <translation>
+                Tiberius. Drusus.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        Ecce quot, quantaeq[ue] res gestae, in quantula Flori Epitome. 
+                    </marginalia_text>
+                <person name="Florus"/>
+                <book title="Epitome de T. Livio Bellorum omnium annorum DCC Libri duo"/>
+                </position>
+            </language>
+            <translation>
+                Look how many achievements and how great in Florus’ so very slim Epitome. 
+            </translation>
+        </marginalia>
+         
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Drusus, Germanici pater. Nam alius Drusus, Germanici frater: alius, filius Germanici: vt apud Corn. Tacitum: cuius prudens, atq[ue] 
+                        solers historia, ea persequitur, qua[e] hîc proxime sequi deberent. In Liuio, et Tacito; cum Sallustio etiam, ipsoq[ue] Ca[e]sare; 
+                        ingens vis maximarum rerum fortiter, prudenterq[ue] gestarum; plaerunq[ue] à Romanis, ad orbis imperium aspirantibus; interdum 
+                        etiam à Gra[e]cis, Barbarisq[ue]. Eccè Romana[e] Virtutis Biblia, Liuius; cum Ca[e]sare, et Salustio; Tacito, et Suetonio. 
+                        Egnatius, et Pomp. La[e]tus propè Laconici, aut potiùs Romani, in vena Flori, et Eutropij; Suetonij, et Frontini; Val. Maximi, 
+                        et Justini. In quo etiam genere excellunt ciuilium, militariumq[ue] scriptorum Principes, Justinianus, et Vegetius; duo pressi, et 
+                        neruosi auctores, tam prudentes, quàm siccincti. Tales etiam Paterculus, Tacitus, Seneca, Cassiodorus, Sidonius, interdum 
+                        Boethus [sic], in primisq[ue] Euscopi familiaris spiritus Aurelius Victor: cum Æmilio Probo, qui exteros duces perstrinxit; Nam 
+                        Cornelium Nepotem habet, qui habet Aurelium Victorem. Quanq[uam] non spernendus Cornelius Nepos, quàm, Romanorum a[e]uum tribus chartis 
+                        explicasse, inquit Catullus: nondum nato Aurelio Victore. 
+                    </marginalia_text>
+                <person name="Nero Claudius Drusus"/>
+                <person name="Germanicus"/> 
+                <person name="Tacitus"/>
+                <person name="Livy"/>
+                <person name="Sallust"/>
+                <person name="Julius Caesar"/>
+                <person name="Suetonius"/>
+                <person name="Giovanni Battista Cipelli"/>
+                <person name="Julius Pomponius Laetus"/> 
+                <person name="Florus"/>
+                <person name="Flavius Eutropius"/>
+                <person name="Frontinus"/>
+                <person name="Valerius Maximus"/>
+                <person name="Justin"/>
+                <person name="Justinian"/>
+                <person name="Vegetius"/>
+                <person name="Marcus Velleius Paterculus"/>
+                <person name="Tacitus"/>
+                <person name="Seneca the Elder"/>
+                <person name="Cassiodorus"/>
+                <person name="Sidonius Apollinaris"/> 
+                <person name="Boethius"/> 
+                <person name="Aurelius Victor"/>
+                <person name="Euscopus"/>
+                <person name="Aemilius Probus"/>
+                <person name="Cornelius Nepos"/>
+                <person name="Catullus"/> 
+                </position>
+            </language>
+            <translation>
+                Drusus, the father of Germanicus. For another Drusus is Germanicus’ brother, and yet another is the son of Germanicus. As with Cornelius 
+                Tacitus, whose judicious and skilful history discusses those episodes which must here follow next. In Livy and Tacitus, as also with Sallust 
+                and Caesar himself, there is the huge force of brave and sagacious achievements, for the most part by the Romans, who were desiring to control
+                the world, sometimes also by the Greeks and the barbarians. See, Livy is the bible of Roman virtue, together with Caesar and Sallust; Tacitus 
+                and Suetonius. Egnatius and Pomponius Laetus are almost Spartans, or rather Romans, in the style of Florus and Eutropius; Suetonius and 
+                Frontinus; Valerius Maximus and Justin. And also excellent in this category are the princes of civil and military writers, Justinian and 
+                Vegetius, two restrained and vigorous authors, equally judicious as concise. Of the same kind also are Velleius Paterculus, Tacitus, Seneca, 
+                Cassiodorus, Sidonius Apollinaris, occasionally Boethius, and Aurelius Victor, a kindred spirit to Euscopus in particular, together with 
+                Aemilius Probus, who gave short shrift to foreign leaders. For he who has Aurelius Victor, has no need for Nepos anymore. Although Cornelius 
+                Nepos should not be disregarded, whom according to Catullus had explained the period of the Romans in three pages, when Aurelius Victor was 
+                not yet born. 
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="rursum latrocinijs mare infestum" type="straight"/>
+        <underline language="LA" method="pen" text="nec pacem, quam" type="straight"/>
+        <underline language="LA" method="pen" text="necessario" type="straight"/>
+        <underline language="LA" method="pen" text="Iudaeorum quoq[ue] legati" type="straight"/>
+        <underline language="LA" method="pen" text="interempti sunt" type="straight"/>
+        <underline language="LA" method="pen" text="Caesaris altera" type="straight"/>
+        <underline language="LA" method="pen" text="Agrippa praeerat, uinceret" type="straight"/>
+        <underline language="LA" method="pen" text="Caesar duxerat, deleta" type="straight"/>
+        <underline language="LA" method="pen" text="maximo periculo" type="straight"/>
+        <underline language="LA" method="pen" text="M. Lepidus" type="straight"/>
+        <underline language="LA" method="pen" text="relictus ab exercitu, abrogato triumuiratus" type="straight"/>
+        <underline language="LA" method="pen" text="uitam impetrauit" type="straight"/>
+        <underline language="LA" method="pen" text="Agrippa nauali corona à Caesare" type="straight"/>
+        <underline language="LA" method="pen" text="honos nemini ante eum" type="straight"/>
+        <underline language="LA" method="pen" text="Marcus Antonius" type="straight"/>
+        <underline language="LA" method="pen" text="Cleopatra luxuriaretur" type="straight"/>
+        <underline language="LA" method="pen" text="Mediam prouinciam" type="straight"/>
+        <underline language="LA" method="pen" text="Armeniam reuersus" type="straight"/>
+        <underline language="LA" method="pen" text="ad Cleopatram festinat" type="straight"/>
+        <underline language="LA" method="pen" text="Pompeius, cum in fidem M. Antonij" type="straight"/>
+        <underline language="LA" method="pen" text="bellum aduersus eum in Asia" type="straight"/>
+        <underline language="LA" method="pen" text="legatis eius oppressus est" type="straight"/>
+        <underline language="LA" method="pen" text="seditionem ueteranorum cum magna pernicie mot" type="straight"/>
+        <underline language="LA" method="pen" text="inhibuit" type="straight"/>
+        <underline language="LA" method="pen" text="tauasdem Armeniae regem" type="straight"/>
+        <underline language="LA" method="pen" text="fide data perductum" type="straight"/>
+        <underline language="LA" method="pen" text="uincula conijci iussit" type="straight"/>
+        <underline language="LA" method="pen" text="regnumq[ue] Armeniae" type="straight"/>
+        <underline language="LA" method="pen" text="filio suo ex Cleopatra nato dedit" type="straight"/>
+        <underline language="LA" method="pen" text="uxoris loco" type="straight"/>
+        <underline language="LA" method="pen" text="Antonius ob amorem Cleopatrae, ex qua duos filios habebat" type="straight"/>
+        <underline language="LA" method="pen" text="Alexandrum" type="straight"/>
+        <underline language="LA" method="pen" text="finito eius tempore triumuiratus imperiu[m] deponere, bellumq[ue] moliretur" type="straight"/>
+        <underline language="LA" method="pen" text="ta[m] ingentibus naualibus" type="straight"/>
+        <underline language="LA" method="pen" text="remissoq[ue] Octauiae" type="straight"/>
+        <underline language="LA" method="pen" text="Pugnae deinde nauales" type="straight"/>
+        <underline language="LA" method="pen" text="praelia equestria secu[n]da Caesaris" type="straight"/>
+        <underline language="LA" method="pen" text="Antonius" type="straight"/>
+        <underline language="LA" method="pen" text="Actium classe uictus Alexandriam profugit" type="straight"/>
+        <underline language="LA" method="pen" text="obsessusq[ue] à Caesare" type="straight"/>
+        <underline language="LA" method="pen" text="ultima rerum desperatione" type="straight"/>
+        <underline language="LA" method="pen" text="occisae Cleopatrae falso rumore impulsus" type="straight"/>
+        <underline language="LA" method="pen" text="seipse interemit" type="straight"/>
+        <underline language="LA" method="pen" text="Alexandria inpotestatem" type="straight"/>
+        <underline language="LA" method="pen" text="Cleopatra" type="straight"/>
+        <underline language="LA" method="pen" text="arbitrium uictoris" type="straight"/>
+        <underline language="LA" method="pen" text="uoluntaria morte occubuit" type="straight"/>
+        <underline language="LA" method="pen" text="tres triumphos egit" type="straight"/>
+        <underline language="LA" method="pen" text="ex Cleopatra" type="straight"/>
+        <underline language="LA" method="pen" text="sito fine ciuilibus bellis altero" type="straight"/>
+        <underline language="LA" method="pen" text="&amp; trigesimo anno" type="straight"/>
+        <underline language="LA" method="pen" text="coniuratione contra Caesarem facta" type="straight"/>
+        <underline language="LA" method="pen" text="rebus compositis, &amp; omnibus prouincijs in certam formam redactis" type="straight"/>
+        <underline language="LA" method="pen" text="Augustus" type="straight"/>
+        <underline language="LA" method="pen" text="Sextilis" type="straight"/>
+        <underline language="LA" method="pen" text="Crasso aduersus Thracas" type="straight"/>
+        <underline language="LA" method="pen" text="caesar aduersus Hispanos" type="straight"/>
+        <underline language="LA" method="pen" text="Tiberio Nerone" type="straight"/>
+        <underline language="LA" method="pen" text="Druso" type="straight"/>
+        <underline language="LA" method="pen" text="Agrippa Caesaris gener mortuus" type="straight"/>
+        <underline language="LA" method="pen" text="Druso ce[n]sus" type="straight"/>
+        <underline language="LA" method="pen" text="à Druso" type="straight"/>
+        <underline language="LA" method="pen" text="Ara Caesari ad" type="straight"/>
+        <underline language="LA" method="pen" text="dedicata" type="straight"/>
+        <underline language="LA" method="pen" text="domiti à Scipione" type="straight"/>
+        <underline language="LA" method="pen" text="Octauia soror Augusti" type="straight"/>
+        <underline language="LA" method="pen" text="filio Marcello" type="straight"/>
+        <underline language="LA" method="pen" text="monime[n]ta sunt, theatru[m]" type="straight"/>
+        <underline language="LA" method="pen" text="porticus, eius nomini" type="straight"/>
+        <underline language="LA" method="pen" text="à Druso gestum" type="straight"/>
+        <underline language="LA" method="pen" text="primores pugnaueru[n]t, Senectius &amp; Anectius" type="straight"/>
+        <underline language="LA" method="pen" text="Nero" type="straight"/>
+        <underline language="LA" method="pen" text="à Druso refertur" type="straight"/>
+        <underline language="LA" method="pen" text="ipse ex fractura" type="straight"/>
+        <underline language="LA" method="pen" text="equo super crus eius" type="straight"/>
+        <underline language="LA" method="pen" text="mortuus" type="straight"/>
+        <underline language="LA" method="pen" text="corpus à Nerone" type="straight"/>
+        <underline language="LA" method="pen" text="C. Iulij conditum" type="straight"/>
+        <underline language="LA" method="pen" text="Laudatus à Caesar Augusto" type="straight"/>
+        <underline language="LA" method="pen" text="plure honores additi" type="straight"/>
+        
+        <symbol name="SS" place="head"/>
+        <symbol name="JC" place="right_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="right_margin"/>
+        
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="M. Lepidus"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- geren -->
+        <mark method="pen" name="quotation_mark" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="triumuiratus"/>
+        <mark method="pen" name="quotation_mark" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!-- mil -->
+        <mark method="pen" name="dot" place="intext"/> <!-- iussit, -->
+        <mark method="pen" name="quotation_mark" place="intext"/>
+        <mark method="pen" name="equal_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="triumuiratus"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- deponere, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- co[n]tractis, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- repudio, -->
+        <mark method="pen" name="dot" place="intext"/> <!-- profugit, -->
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- interemit, -->
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="vertical_bar" place="intext"/>
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark method="pen" name="circumflex" place="left_margin"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="Augustus"/> 
+        <mark method="pen" name="dot" place="intext"/> <!--mortuus,-->
+        <mark method="pen" name="dot" place="intext"/> <!--dedicata,-->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- referu[m] -->
+        <mark method="pen" name="dash" place="right_margin"/> <!--col-->
+        
+    </annotation>
+</transcription>

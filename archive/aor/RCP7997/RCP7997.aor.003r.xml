@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7997.003r.tif" reader="John Dee" signature="Aiij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="subalternata" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        subalternata.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Subaltern.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Astronomica ac armonica" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Astronomia Musica.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Astronomy, Music.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Arithmetica[e] q[uam] geometria[e] antiqiuor est dignitas.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The dignity of arithmetics is older than that of geometry.        
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="[et] illar[um] mathemata et themata" type="straight"/>
+        <underline language="LA" method="pen" text="vim geometrice esse astronomice seniore[m]" type="straight"/>
+        <underline language="LA" method="pen" text="arithmetica[m]" type="straight"/>
+        <underline language="LA" method="pen" text="mathemata ex priorib[us] esse demo[n]strata ideo subalternata dicit[ur]" type="straight"/>
+        
+    </annotation>
+</transcription>

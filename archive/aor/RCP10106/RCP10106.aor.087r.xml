@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10106.087r.tif" pagination="173" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="extemporalis oratio" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Exte[m]poralis oratio est</marginalia_text>
+                </position>
+            </language>
+            <translation>It is an extemporaneous speech.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="fiducia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>fiducia.</marginalia_text>
+                </position>
+            </language>
+            <translation>Confidence.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Centumuiros" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Centu[m]viri.</marginalia_text>
+                </position>
+            </language>
+            <translation>Centumviral court </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="praeceptis" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Pra[e]cepta</marginalia_text>
+                </position>
+            </language>
+            <translation>Precepts.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="tamen in quoquam melius dicitur, quàm quod aequè bene dici alibi non poßit. Multum" type="straight"/>
+        <underline language="LA" method="pen" text="cuius initiu[m] nihil praeparatum habuisse manifestum est." type="straight"/>
+        <underline language="LA" method="pen" text="Illud ex praeceptis ueteribus manet, ne quod insolens uerbum, ne audacius tra[n]slatum, ne aut obsoleta              uetustate, aut poëtica licentia sumptum in principio deprehendatur" type="straight"/>
+        
+        <drawing book_orientation="0" method="pen" place="right_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

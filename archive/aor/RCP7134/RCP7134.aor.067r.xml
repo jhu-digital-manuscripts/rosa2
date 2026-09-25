@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.067r.tif" pagination="60" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Nota qua[m] ratione[m] habet de vniuscuiusq[ue] statu et conditione vit[a]e.</marginalia_text>
+                </position>
+            </language>
+            <translation>Note which reason he has about the state of everything and the condition of life.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Cum igitur ad haec loca peruenerit Luna in reuolutione, tales affectus praestabit" type="straight"/>
+        <underline language="LA" method="pen" text="publica tractare negotia" type="straight"/>
+        <underline language="LA" method="pen" text="publicum" type="straight"/>
+        <underline language="LA" method="pen" text="in magistratu" type="straight"/>
+        <underline language="LA" method="pen" text="praetorij" type="straight"/>
+        <underline language="LA" method="pen" text="Si ad proprium locum, ea quae ab initio significauit perficiet" type="straight"/>
+        <underline language="LA" method="pen" text="ad Solis autem coniunctionem mirum in modum ledit, nam" type="straight"/>
+        <underline language="LA" method="pen" text="cum Iouis pulchra" type="straight"/>
+        <underline language="LA" method="pen" text="pro adeptis diuitijs gaudebit" type="double"/>
+        
+        <symbol language="LA" name="Moon" place="right_margin" text="Luna"/>
+        <symbol language="LA" name="Mercury" place="right_margin" text="Mercurius"/>
+        <symbol language="LA" name="Venus" place="right_margin" text="Venus"/>
+        
+        <mark method="pen" name="vertical_bar" place="right_margin"/>
+        <mark method="pen" name="section_sign" place="right_margin"/> <!--JG: Resembles an 'f'. Linking marginal note to printed text-->
+        <mark method="pen" name="section_sign" place="intext"/>       <!--JG: Resembles an 'f'. Linking marginal note to printed text-->
+        <mark method="pen" name="section_sign" place="intext"/>
+        
+        
+    </annotation>
+</transcription>

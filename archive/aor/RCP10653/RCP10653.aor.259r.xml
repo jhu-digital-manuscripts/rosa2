@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10653.259r.tif" pagination="69" reader="John Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Hamelinus de VVarrenna" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Hamelinus de Warenna.
+                    </marginalia_text>
+                    <person name="Hamelin de Warenne, Earl of Surrey"/>
+                </position>
+            </language>
+            <translation>
+                Hamelin de Warenne, Earl of Surrey.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Hamelinus" type="straight"/>
+        <underline language="LA" method="pen" text="Henricus Marescallus, frater VValteri Marescalli senioris" type="straight"/>
+        
+        <graph book_orientation="0" method="pen" place="right_margin" type="genealogical_tree">  
+            <node id="n1">[blank]</node>
+            <node id="n2" person="William Marshal, 1st Earl of Pembroke">Willmus Mares. senior</node>
+            <node id="n3" person="Henry Marshal">Henricus Mares</node>
+            <link from="n1" relationship="has_child" to="n2"/>
+            <link from="n1" relationship="has_child" to="n3"/>
+        </graph>
+        
+    </annotation>
+</transcription>

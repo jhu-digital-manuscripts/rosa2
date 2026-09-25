@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP9978.023v.tif" reader="John Dee" signature="[F iij[v]]"/>
+    <annotation>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>imago species est luuiu[m].</marginalia_text>     <!-- DO: word cut off at the top --> 
+                </position> 
+            </language>
+            <translation>[...] </translation> <!--JG: Unsure abt luvium--> <!-- NBW: lunium? -->
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Naptha medica.</marginalia_text>
+                </position>
+            </language>
+            <translation>Medicinal naphtha.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Galgulus uero, quem puto graece vocari Charadrion " hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Galgulus char[adrion]</marginalia_text> 
+                </position>
+            </language>
+            <translation>The galgulus bird.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Naptha</marginalia_text>
+                </position>
+            </language>
+            <translation>Naphtha.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="ab animo" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Animoru[m] radij.</marginalia_text>
+                </position>
+            </language>
+            <translation>Rays of souls.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="affectiones animi, vires corporis firmant, atq[ue] vegetiores reddunt" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Affectiones animi, vires corporis firma[n]t, et vegetiores reddu[n]t</marginalia_text>
+                </position>
+            </language>
+            <translation>The affections of the soul strengthen the forces of the body, and restore them to a more lively state.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="[lon]ginquo uisam" type="straight"/>
+        <underline language="LA" method="pen" text="spectrum" type="straight"/>
+        <underline language="LA" method="pen" text="igniculum" type="straight"/>
+        <underline language="LA" method="pen" text="Charadrion" type="straight"/>
+        <underline language="LA" method="pen" text="sed perinde quasi ictum accipiens uulneretur" type="straight"/>
+        <underline language="LA" method="pen" text="animo" type="straight"/>
+        <underline language="LA" method="pen" text="genitales p[ar]tes titillet atq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="incandescentiu[m] ira" type="straight"/>
+        <underline language="LA" method="pen" text="animi, vires corporis firmant, atq[ue] vegetiores reddunt. Qua" type="straight"/>
+        
+        <!-- DO: There is a physical link which leads to non-underlined text -->
+        
+        <mark method="pen" name="slash" place="left_margin"/>
+        
+    </annotation>
+</transcription>

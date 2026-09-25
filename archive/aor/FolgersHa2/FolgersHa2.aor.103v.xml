@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+	
+	<page filename="FolgersHa2.103v.tif" pagination="30" reader="Harvey" signature="[B7v]"/>	<!-- ABO 108left -->
+	<annotation>
+		<!-- Marginalia -->
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						Adytum Ethices, et Physices.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				The inner sancutary of Ethics and Physics.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="head">
+					<marginalia_text>
+						In paruo magnum: vt Epictetus, et Vrso.
+					</marginalia_text>
+					<person name="Epictetus"/>
+					<person name="Urso of Salerno"/>
+				</position>
+			</language>
+			<translation>
+				The greatness in small things, as with Epictetus and Urso.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Libelli parui; sed Optimi Maximi: vt regula[e] iuris; et
+						Bellorum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Small little books, but the best greatest works, as with the rules of law and war.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						scitè.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Knowingly.
+			</translation>
+		</marginalia>
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="intext">
+					<marginalia_text>
+						Autorum abunde: 
+						Scientia[e] parum.
+					</marginalia_text>
+				</position>
+			</language>
+			<translation>
+				Authors in abundance, knowledge very little.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="0" place="tail">
+					<marginalia_text>
+						Ante omnia, Epictetus, et Vrso ad unguem.
+						Epitome sapientia[e] Salomonica[e].
+					</marginalia_text>
+					<person name="Epictetus"/>
+					<person name="Urso of Salerno"/>
+					<person name="Solomon"/>
+				</position>
+			</language>
+			<translation>
+				Before all things, Epictetus and Urso by heart.
+				The epitome of Solomonic wisdom.
+			</translation>
+		</marginalia>
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="90" place="left_margin">
+					<marginalia_text>
+						Nusqu[am] tanta Ethicorum, Physicorumq[ue] varietas tam breuî;
+						quàm in nouissimo adyto Ethices, et Physices. Fundamentu[m],
+					</marginalia_text>
+				</position>
+				<position book_orientation="90" place="intext">
+					<marginalia_text>
+						vt ipse vocat, Salomonicum.
+					</marginalia_text>
+					<person name="Solomon"/>
+				</position>
+			</language>
+			<translation>
+				So much variety of Ethics and Physics is never as concise,
+				as in the most recent inner sanctuary of Ethics and Physics. The foundation,
+				as it is called, of Solomon.
+			</translation>
+		</marginalia>
+		
+		
+		<marginalia hand="Italian">
+			<language ident="LA">
+				<position book_orientation="270" place="right_margin">
+					<marginalia_text>
+						Princeps omnes amat, et neminem.
+					</marginalia_text>
+				</position>
+				<position book_orientation="270" place="intext">
+					<marginalia_text>
+						Vita[e]berga, mea Academia.
+					</marginalia_text>
+					<location name="Wittenberg"/>
+				</position>
+			</language>
+			<translation>
+				The prince loves all and no one.
+				Wittenberg, my academy.
+			</translation>
+		</marginalia>
+		
+		<underline language="IT" method="pen" text="Grandissimo l'imperio de' pazzi" type="straight"/>
+		<underline language="IT" method="pen" text="il Re de' pazzi" type="straight"/>
+		<underline language="IT" method="pen" text="Re de' pazzi" type="straight"/>
+		<underline language="IT" method="pen" text="è huomo in" type="straight"/>
+		<underline language="IT" method="pen" text="maggior imperio di me hauesse" type="straight"/>
+		<underline language="IT" method="pen" text="padrone" type="straight"/>
+		<underline language="IT" method="pen" text="mio vassallo" type="straight"/>
+		<underline language="IT" method="pen" text="tutte le" type="straight"/>
+		<underline language="IT" method="pen" text="huomini peritissimi" type="straight"/>
+		<underline language="IT" method="pen" text="fare vna certa statua" type="straight"/>
+		<underline language="IT" method="pen" text="se Donatello" type="straight"/>
+		<underline language="IT" method="pen" text="eccellente scultore" type="straight"/>
+		<underline language="IT" method="pen" text="&amp; pittore" type="straight"/>
+		<underline language="IT" method="pen" text="cinquanta scudi" type="straight"/>
+		<underline language="IT" method="pen" text="Giouanni, scultor mediocre" type="straight"/>
+		<underline language="IT" method="pen" text="ottanta scudi" type="straight"/>
+		<underline language="IT" method="pen" text="Donatello huomo" type="straight"/>
+		<underline language="IT" method="pen" text="che cinquanta" type="straight"/>
+		<underline language="IT" method="pen" text="Giouanni settanta scudi" type="straight"/>
+		
+		<underline language="IT" method="chalk" text="maggior imperio di me hauesse" type="straight"/>
+		
+		<symbol name="Sun" place="head"/>
+		
+		<symbol name="SS" place="left_margin"/> <!--underneath 'physices'-->
+		
+		<mark method="pen" name="dash" place="right_margin"/> <!--vo--> 
+
+    </annotation>
+</transcription>

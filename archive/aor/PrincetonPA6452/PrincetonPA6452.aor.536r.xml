@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.536r.tif" reader="Harvey" signature="S4[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text> 
+                        Ca[e]sares.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>Emperors.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text> 
+                        Tertullianus.
+                    </marginalia_text>
+                    <person name="Tertullian"/>
+                </position>
+            </language>
+            <translation>Tertullian.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        Tertullianus, veterum Ecclesia[e] scriptorum habitus doctissimus, et omnium historiarum, antiquitatumq[ue] 
+                        cognitione excellens; sa[e]pè laudat recondita qua[e]dam Romanorum
+                        </marginalia_text>
+                    </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        ἀρχεῖα,
+                    </marginalia_text>
+                </position>
+            </language>
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        et in ijs latuisse testatur
+                        multa quoq[ue] ad Ecclesia[e] Christiana[e] historiam in primis necessaria. Loci sunt nonnulli 
+                        memorabiles in Apologetico ad Romanos, libro quarto contra Marcionem, et alibi, de illis Romanorum 
+                        archiuis, et imperij instrumentis. 
+                    </marginalia_text>
+                    <person name="Tertullian"/>
+                    <book title="Against Marcion"/>
+                    <book title="Apologeticum"/>
+                </position>
+            </language>            
+            <language ident="EN">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Notable records, &amp; memorials of State.</marginalia_text>
+                </position>
+            </language>
+            <translation> 
+                Tertullian is regarded as the most learned of the ancient writers of the church, and outstanding in his knowledge of all history and antiquities.
+                He often praises certain hidden archives of the Romans and declares that in these also are hidden many things that are essential for the history 
+                of the Christian church in particular. There are several memorable places about those archives of the Romans and tools of supreme power, 
+                in the Apologist to the Romans, in the fourth book against Marcio and elsewhere.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="reliquum Consulum" type="straight"/>
+        <underline language="LA" method="pen" text="diligenter" type="straight"/>
+        <underline language="LA" method="pen" text="abiectis regibus" type="straight"/>
+        <underline language="LA" method="pen" text="unius anni per unum" type="straight"/>
+        <underline language="LA" method="pen" text="Tiberius Nero" type="straight"/>
+        <underline language="LA" method="pen" text="CHRISTVS Dominus" type="straight"/>
+        <underline language="LA" method="pen" text="cruci affigatur" type="straight"/>
+        <underline language="LA" method="pen" text="Tertulliano" type="straight"/>
+        <underline language="LA" method="pen" text="alij secus" type="straight"/>
+        <underline language="LA" method="pen" text="Tiberius Caesar" type="straight"/>
+        <underline language="LA" method="pen" text="Seianum" type="straight"/>
+        <underline language="LA" method="pen" text="Caligula" type="straight"/>
+        <underline language="LA" method="pen" text="Claudius" type="straight"/>
+        <underline language="LA" method="pen" text="Nero" type="straight"/>
+        
+        <symbol name="SS" place="intext"/> <!--Seianum-->
+        
+        <mark method="pen" name="equal_sign" place="intext"/> <!--Saluator-->
+        <mark method="pen" name="plus_sign" place="intext"/> <!--opinatur-->
+        <mark method="pen" name="dot" place="intext"/> <!--solus, licet-->
+        <mark language="LA" method="pen" name="diacritic" place="intext" text="licet"/>
+        <mark language="LA" method="pen" name="diacritic" place="intext" text="postmodum"/> 
+        <mark method="pen" name="dot" place="intext"/> <!--On the 'i' in Aelium-->
+        <mark method="pen" name="dot" place="intext"/> <!--solus-->
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<book>
+    <license>
+        <url/>
+        <logo/>
+    </license>
+    <illustrations>5</illustrations>
+    <totalPages>101</totalPages>
+    <dimensions units="mm">
+        <width>200</width>
+        <height>270</height>
+    </dimensions>
+    <dates>
+        <startDate>1400</startDate>
+        <endDate>1500</endDate>
+    </dates>
+    <texts>
+        <text id="Le livre du chemin de lonc estude">
+            <language>fr</language>
+            <title>Le livre du chemin de lonc estude</title>
+            <textId/>
+            <pages end="101v" start="1r">101</pages>
+            <illustrations>5</illustrations>
+            <linesPerColumn>32</linesPerColumn>
+            <leavesPerGathering>8</leavesPerGathering>
+            <columnsPerPage>1</columnsPerPage>
+        </text>
+    </texts>
+    <bibliographies>
+        <bibliography lang="en">
+            <title>Le livre du chemin de lonc estude</title>
+            <commonName>Français 1188</commonName>
+            <dateLabel>15th century</dateLabel>
+            <type>manuscript</type>
+            <material>parchment</material>
+            <origin>Paris, France</origin>
+            <currentLocation>Paris</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 1188</shelfmark>
+        </bibliography>
+        <bibliography lang="fr">
+            <title>Le livre du chemin de lonc estude</title>
+            <commonName>Français 1188</commonName>
+            <dateLabel>15e siècle</dateLabel>
+            <type>manuscrit</type>
+            <material>Parchemin</material>
+            <origin>France</origin>
+            <currentLocation>Paris, France</currentLocation>
+            <repository>Bibliothèque nationale de France</repository>
+            <shelfmark>Français 1188</shelfmark>
+        </bibliography>
+    </bibliographies>
+</book>

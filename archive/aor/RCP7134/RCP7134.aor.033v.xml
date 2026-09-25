@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP7134.033v.tif" pagination="[27v]" reader="John Dee" signature="[G iij[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="congressus aliorum Planetarum; ascendentia" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Plantetaru[m] co[n]gressus. [Etc]. Ascendentia.</marginalia_text>
+                </position>
+            </language>
+            <translation>The assembly of planets, et cetera. Ascending.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="cuspidibus" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>angulor[um]</marginalia_text> 
+                </position>
+            </language>
+            <translation>Of angles.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="illorum 20" type="straight"/>
+        <underline language="LA" method="pen" text="nam unius anni tempestate[m] indicabit" type="straight"/>
+        <underline language="LA" method="pen" text="coniunctiones, si coniunctio proximior fuit, aut oppositiones, si oppositio" type="straight"/>
+        <underline language="LA" method="pen" text="si luminaria in ortu uel occasu fuerint, fortes facient mutatio[n]es" type="straight"/>
+        <underline language="LA" method="pen" text="non mutabunt, aut uiolenter mutabunt" type="straight"/>
+        <underline language="LA" method="pen" text="cuspidibus" type="straight"/>
+        <underline language="LA" method="pen" text="nam cum Luna ad ea loca peruenerit, aut ad ascendentia, sequetur effectus" type="straight"/>
+        
+        <symbol name="Conjunction" place="left_margin"/> 
+        <symbol language="LA" name="Saturn" place="left_margin" text="Saturni"/>
+        <symbol language="LA" name="Jupiter" place="left_margin" text="Iouis"/>
+        <symbol language="LA" name="Saturn" place="left_margin" text="Saturnus"/>
+        <symbol language="LA" name="Sun" place="left_margin" text="Sole"/>
+        <symbol language="LA" name="Moon" place="left_margin" text="Luna"/>
+        
+    </annotation>
+</transcription>

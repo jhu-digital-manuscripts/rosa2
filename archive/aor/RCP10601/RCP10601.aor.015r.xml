@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10601.015r.tif" pagination="29" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Misnaioth" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Misnaioth</marginalia_text>
+                    <book title="Mishnah"/>
+                </position>
+            </language>
+            <translation>The Mishnah.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Su[n]t uerò relicti hi characteres, antequa[m] pu[n]cta ascribere[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="uocales Latinas" type="straight"/>
+        <underline language="LA" method="pen" text="singulos characteres" type="straight"/>
+        <underline language="LA" method="pen" text="fine dictionum" type="double"/>
+        <underline language="LA" method="pen" text="causa formae cauda oblonga" type="straight"/>
+        <underline language="LA" method="pen" text="Elipf, Dal, Re, Ze, &amp; Vau" type="straight"/>
+        <underline language="LA" method="pen" text="ligari" type="double"/>
+        <underline language="LA" method="pen" text="Misnaioth" type="straight"/>
+        <underline language="LA" method="pen" text="in characterem sacrum &amp; Mosaicum transcripserunt" type="straight"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- characteres in -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- dictionum causa -->
+        <mark method="pen" name="comma" place="intext"/>  <!-- formae cauda -->
+        
+    </annotation>
+</transcription>

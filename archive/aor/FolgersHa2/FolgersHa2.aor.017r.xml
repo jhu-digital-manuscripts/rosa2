@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+
+
+	<page filename="FolgersHa2.017r.tif" pagination="357" reader="Harvey"/>	<!-- ABO 021right --> 
+    	<annotation>
+    		
+            	<!-- Marginalia -->
+    		
+        		<marginalia hand="Italian">
+        			<language ident="LA">
+            			<position book_orientation="0" place="head">
+                    				<marginalia_text>
+                    					Nescia Virtus Stare Loco. Nescia Ars edere 
+                      			 </marginalia_text>
+                      			 <X-ref book_title="Pharsalia" language="LA" person="Lucan" text="Nescia virtus stare loco"/>
+            			 </position>
+        				<position book_orientation="0" place="right_margin">
+        					<marginalia_text>
+        						Loco. Ars quò penetrantior, eò
+        					</marginalia_text>
+        				</position>
+        				<position book_orientation="0" place="intext">
+        					<marginalia_text>
+        						/ mora[e] impatientior.
+        					</marginalia_text>
+        				</position>
+        				<position book_orientation="0" place="right_margin">
+        					<marginalia_text>
+        						) Vt in primis Ars Ca[e]sariana, Sallustiana, 
+        					</marginalia_text>
+        					<person name="Julius Caesar"/>
+        					<person name="Sallust"/>
+        				</position>
+        				<position book_orientation="0" place="intext">
+        					<marginalia_text>
+        						) Tacitana.		 
+        					</marginalia_text>
+        					<person name="Tacitus"/>
+        				</position>
+        				<position book_orientation="0" place="right_margin">
+        					<marginalia_text>
+        						Cui ) finitima Virgiliana in Aneide;	 
+        						Ouidiana in Metamorphosi;
+        						) Senecana in			 
+        					</marginalia_text>
+        					<person name="Virgil"/>
+        					<person name="Ovid"/>
+        					<person name="Seneca"/>
+        					<book title="Aeneid"/>
+        					<book title="Metamorphoses"/>
+        				</position>
+        				<position book_orientation="0" place="intext">
+        					<marginalia_text>
+        						Traga[e]dijs. Tam facilè fluentissima, quàm maxime omnium neruosa prudentia. 
+        					</marginalia_text> 
+        					<book title="Seneca's Tragedies"/>
+        				</position>
+        				<position book_orientation="0" place="tail">
+        					<marginalia_text>
+        						Ô argumentosum iudicium. Ô diuina, et alata
+        						sententiarum Celeritas. Solus stilus adamantinus.
+        					</marginalia_text>
+        					<emphasis method="chalk" type="straight"/>
+        				</position>
+        			</language>
+        			<translation>
+        				"The virtue of being unable to stay in one place." The art of being unable to produce in one place.	<!-- CG: I am not confident about this. The first sentence is taken from Lucan, and I tried to have it make sense here. --><!--JG: I'll just send it to the group so that other people can have a look at it. This is a tricky passage-->
+        				The more penetrating the art, the more intolerant of delay, especially like the art of Caesar, Sallust, Tacitus.
+        				To which the related art of Virgil in the Aeneid, Ovid in the Metamorphosis, Seneca in the Tragedies.
+        				Art is as readily flowing, as prudence is the most vigorous of all things. 
+        				O judgment rich in proof. O divine and winged speed of thoughts. Only an adamantine style.
+        			</translation>
+        		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="LA">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						Macchiauelli, ex tempore.
+    					</marginalia_text>
+    					<person name="Machiavelli"/> 
+    					<emphasis method="pen" text="ex tempore" type="straight"/> 
+    				</position>
+    			</language>
+    			<translation>
+    				Machiavelli, extemporizing.
+    			</translation>
+    		</marginalia>
+    		<marginalia hand="Italian">
+    			<language ident="IT">
+    				<position book_orientation="0" place="intext">
+    					<marginalia_text>
+    						ridicolo, e discreto.
+    					</marginalia_text>
+    				</position>
+    			</language>
+    			<translation>
+    				Ridiculous, and discreet.
+    			</translation>
+    		</marginalia>
+    		
+    		<marginalia book_id="FolgersHa2" hand="Italian" id="Ha2.017r_0001" marginalia_continues_to="Ha2.016v_0001" marginalia_to_transcription="Ha2.016v.xml">
+    			<language ident="LA">
+    				<position book_orientation="270" place="left_margin">
+    					<marginalia_text>
+    						Hic superat ipsu[m] Ca[e]sarem, et Maronem. Cedant ipse Crispus, ( [p. 352: Tacitus, Paterculus, Naso huic Eutrapelo. Quicu[m] suo Eunapio, Juliano,
+    						Philostrato, non modò suis Romanis = = singularis est artifex argumentosi, facillimè fluentis, exquisiti styli.]
+    						<!-- Continues onto facing page, right margin, Ha2.016v. --> 
+    					</marginalia_text>
+    					<person name="Julius Caesar"/>
+    					<person name="Virgil"/>    					
+    				</position>
+    			</language>
+    			<translation>
+    				This man surpasses Caesar himself, and Virgil. Crispus himself [p. 352: Tacitus, Paterculus, and Ovid yield to this Eutrapelus. With his Eunapius, Julian, and Philostratus, not only with his Romans,
+    				he is a singular author of an exquisite style, rich in argument and most readily flowing.]
+    			</translation>
+    		</marginalia>
+        
+	    	<!-- Underlines -->
+	        
+    		<underline language="IT" method="pen" text="Venere" type="straight"/>
+    		<underline language="IT" method="pen" text="di Marte" type="straight"/>
+    		<underline language="IT" method="pen" text="breuemente raccontato" type="straight"/>
+    		<underline language="IT" method="pen" text="Vulcano accortosi" type="straight"/>
+    		<underline language="IT" method="pen" text="adulterio della moglie" type="straight"/>
+    		<underline language="IT" method="pen" text="la sottilissima rete di ferro" type="straight"/>
+    		<underline language="IT" method="pen" text="pigliare" type="straight"/>
+    		<underline language="IT" method="pen" text="amendue gli amanti" type="straight"/>
+    		<underline language="IT" method="pen" text="Stese la" type="straight"/>
+    		<underline language="IT" method="pen" text="pigliando" type="straight"/>
+    		<underline language="IT" method="pen" text="Venere ignuda." type="straight"/>
+    		<underline language="IT" method="pen" text="fermatosi quì, continuando" type="straight"/>
+    		<underline language="IT" method="pen" text="di sonar la lira" type="straight"/>
+    		<underline language="IT" method="pen" text="ritrouare il rimanente del" type="straight"/>
+    		<underline language="IT" method="pen" text="gentildonne a" type="straight"/>
+    		<underline language="IT" method="pen" text="domestica" type="straight"/>
+    		<underline language="IT" method="pen" text="gli prese a dire" type="straight"/>
+    		<underline language="IT" method="pen" text="finite tosto, M." type="straight"/>
+    		<underline language="IT" method="pen" text="non sarà poi d'improuiso" type="straight"/>
+    		<underline language="IT" method="pen" text="Onde subito" type="straight"/>
+    		<underline language="IT" method="pen" text="senza piu indugiare" type="straight"/>
+    		<underline language="IT" method="pen" text="ripigliando da" type="straight"/>
+    		<underline language="IT" method="pen" text="chiusa della stanza" type="straight"/>
+    		<underline language="IT" method="pen" text="Vulcan tirò la rete" type="straight"/>
+    		<underline language="IT" method="pen" text="a gitto" type="straight"/>
+    		<underline language="IT" method="pen" text="Venere ignuda" type="straight"/>
+    		<underline language="IT" method="pen" text="Marte a ... ritto." type="straight"/>
+    		<underline language="IT" method="pen" text="nella mahora" type="straight"/>
+    		<underline language="IT" method="pen" text="gentildonne, fatte fosse per la uergogna" type="straight"/>
+    		<underline language="IT" method="pen" text="che è quello, che uoi dite" type="straight"/>
+    		<underline language="IT" method="pen" text="questa Madonna" type="straight"/>
+    		<underline language="IT" method="pen" text="tanto solecitato" type="straight"/>
+    		<underline language="IT" method="pen" text="io non hò considerato quello" type="straight"/>
+    		<underline language="IT" method="pen" text="poco honestamente m'è" type="straight"/>
+    		<underline language="IT" method="pen" text="Garbato" type="straight"/>
+    		<underline language="IT" method="pen" text="di Paolo III" type="straight"/>
+    		<underline language="IT" method="pen" text="in prigione" type="straight"/>
+    		<underline language="IT" method="pen" text="Recalcato suo segretario" type="straight"/>
+    		<underline language="IT" method="pen" text="strettissimamente tenuto per molti" type="straight"/>
+    		<underline language="IT" method="pen" text="debolezza d'animo" type="straight"/>
+    		<underline language="IT" method="pen" text="posto in libertà" type="straight"/>
+    		<underline language="IT" method="pen" text="per habitatione il monastero" type="straight"/>
+    		
+    			
+	    	<!-- Symbols: Asterisk|Bisected_circle|Crown|Crescent|JC|HT|LL|Mars|Mercury|Opposite_planets|Square|SS|Sun -->
+	      
+    		<symbol name="SS" place="head"/>
+    		<symbol name="SS" place="left_margin"/>
+    		
+    			
+	    	<!-- Marks: apostrophe|box|bracket|circumflex|comma|dash|dot|equal_sign|hash|horizontal_bar|plus_sign|quotation_mark|semicolon|straight_quotation_mark|tilde|triple_dash|vertical_bar|X_sign -->
+	    	
+	    	<!-- Right margin -->
+	    	<mark method="pen" name="dash" place="right_margin"/> <!-- rac -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- fabri -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- amoro -->
+    		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- pigliare con essa -->
+    		<mark method="pen" name="quotation_mark" place="right_margin"/> <!-- a lui piu do- -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- su -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- ros -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- considerato -->
+    		<mark method="pen" name="plus_sign" place="right_margin"/> <!-- prigione -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- essen -->
+    		<mark method="pen" name="dash" place="right_margin"/> <!-- liber -->
+	    	
+	    	<!-- Left margin -->
+	    	<mark method="pen" name="bracket" place="left_margin"/> <!-- contato ... so diletto -->
+    		<mark method="pen" name="quotation_mark" place="left_margin"/> <!-- bito Nicolo' --> 
+    		<mark method="pen" name="plus_sign" place="left_margin"/> <!-- quello, che poco -->
+		    
+	    	<!-- Intext -->
+	    	<mark method="pen" name="dot" place="intext"/> <!-- uendicare, fabri -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- rete di ferro -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- Venere ignuda -->
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- Venere ignuda -->
+    		<mark method="pen" name="vertical_bar" place="intext"/> <!-- mancaua: una di -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- Nicolo', perche -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- indugiare, ripigliando -->
+    		<mark language="IT" method="pen" name="bracket" place="intext" text="Vulcan tirò la rete, &amp; prese a gitto Venere ignuda, &amp; Marte a ... ritto."/> 
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- Venere ignuda -->
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- ... ritto. -->
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- O nella malhora -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- uergogna, che e' -->
+    		<mark method="pen" name="quotation_mark" place="intext"/> <!-- poco honestamente -->
+    		<mark method="pen" name="comma" place="intext"/> <!-- Garbato ma -->
+    		<mark method="pen" name="plus_sign" place="intext"/> <!-- segretario -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- segretario, il -->
+    		<mark method="pen" name="dot" place="intext"/> <!-- prigione, & cosi -->
+    		
+    </annotation>
+</transcription>

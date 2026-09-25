@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.420v.tif" reader="Harvey" signature="[zzz4v]"/>
+    <annotation>
+        
+        <underline language="LA" method="pen" text="Intacta inuidia" type="straight"/>
+        <underline language="LA" method="pen" text="media sunt" type="straight"/>
+        <underline language="LA" method="pen" text="summa fermè tendit" type="straight"/>
+        <underline language="LA" method="pen" text="triumpho" type="straight"/>
+        <underline language="LA" method="pen" text="Paulum, cui ipsi quoq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="obtrectatio carpsit" type="straight"/>
+        <underline language="LA" method="pen" text="Antiqua disciplina milites habuerat" type="straight"/>
+        <underline language="LA" method="pen" text="de pr[a]eda parcius" type="straight"/>
+        <underline language="LA" method="pen" text="In Galbam" type="straight"/>
+        <underline language="LA" method="pen" text="probra ingerere" type="straight"/>
+        <underline language="LA" method="pen" text="L. Aemylius fuerit" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+    
+        <mark language="LA" method="pen" name="quotation_mark" place="intext" text="media sunt"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="summa fermè tendit"/>
+        <mark method="pen" name="apostrophe" place="intext"/> <!--quisq[ue]-->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- speraue -->
+        <mark method="pen" name="dash" place="right_margin"/> <!-- auari -->
+        <mark method="pen" name="apostrophe" place="left_margin"/> 
+        
+    </annotation>
+</transcription>

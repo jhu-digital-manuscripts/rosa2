@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v2.145v.tif" pagination="30" reader="John Dee"/>   
+    <annotation>
+        
+        <marginalia anchor_text="vniuscuiusque generis ab oratore aut poëta probato sumptum ponere exe[m]plum" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Quid Gr[a]eci Scriptores dicant, &amp; qua r[ati]o[n]e co[n]firme[n]t quod aliu[n]de exe[m]pla su[n]t petenda.</marginalia_text>
+                </position>
+            </language>
+            <translation>What the Greek writers provide, and by what reasoning they may confirm that examples should be sought from other places.</translation>  <!-- DO: Not sure about translation. Possibly '... may confirm what another has said about the examples...'? NBW: Corrected transcription, translation not exact (pretty sure that this is 'dicare' in the present indicative vs. subjunctive, but reflects the sense of the passage-->
+        </marginalia>
+        
+        
+        <marginalia anchor_text="exemplu[m]" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Exemplum</marginalia_text>
+                </position>
+            </language>
+            <translation>An example.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="summus artifex" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Artifex summus.</marginalia_text>
+                </position>
+            </language>
+            <translation>The greatest master.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Primu[m] argume[n]tu[m] Cicero co[n]vellit.</marginalia_text>
+                    <person name="Cicero"/>
+                </position>
+            </language>
+            <translation>Cicero shatters the first argument.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Similitudo</marginalia_text>
+                </position>
+            </language>
+            <translation>A comparison.</translation>
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="neque ante rem, neque praeter" type="straight"/>
+        <underline language="LA" method="pen" text="Vt enim testimonium, sic exemplu[m] rei confirma[n]dae causa sumitur" type="straight"/>
+        <underline language="LA" method="pen" text="Haec illi cum dicunt, magis nos authoritate sua co[m]mouent, quàm veritate disputationis" type="straight"/>
+        <underline language="LA" method="pen" text="Quòd si illorum authoritate remota, res omnes volent" type="straight"/>
+        <underline language="LA" method="pen" text="co[m]parare, intelligent non" type="straight"/>
+        <underline language="LA" method="pen" text="esse concedenda antiquitati" type="straight"/>
+        
+        <numeral place="left_margin">.1.</numeral>
+        <numeral place="left_margin">2.</numeral>
+        <numeral place="left_margin">3</numeral>
+        
+        <drawing anchor_text="Haec illi cum dicunt, magis nos authoritate sua co[m]mouent, quàm veritate disputationis" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

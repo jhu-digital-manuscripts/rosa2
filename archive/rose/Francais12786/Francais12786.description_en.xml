@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+  <!-- the element locus always refers to a folio number; it may have @to and @from to designate a sequence of folia -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Roman de la Rose</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>MSEL</distributor>
+      </publicationStmt>
+      <notesStmt>
+        <note rend="IDENTIFICATION">
+          <p>Paris, Bibliothèque nationale de France, fr. 12786</p>
+        </note>
+        <note rend="CONTENTS">
+          <p><hi rend="italics">Le Roman de la Poire</hi> (ff. 1r-24v), <hi rend="italics">Lapidaire</hi> in prose (ff. 24v-30v), <hi rend="italics">Le Bestiaire d'Amours</hi> (ff. 31r-42v), <hi rend="italics">Son poitevin</hi> (f. 42v), <hi rend="italics">Roman de la Rose</hi> (ff. 43r-75r), <hi rend="italics">Motets</hi> (ff. 76r-82r), <hi rend="italics">Les Propheties que Ezechiel li prophetes fist</hi> (ff. 82v-83r), <hi rend="italics">Li Songe</hi> (ff. 83r-84v), <hi rend="italics">L'Order d'Amors</hi> (ff. 84v-87v), <hi rend="italics">La Trinitez Nostre Dame</hi> (ff. 87v-90v), <hi rend="italics">IX Joies Nostre Dame</hi> (ff. 90v-92r), <hi rend="italics">Le Dit d'Aristote</hi> (f. 92r), <hi rend="italics">Le Lunaire de Salomon</hi> (ff. 92v-98v)</p>
+        </note>
+        <note rend="MATERIAL">
+          <p>Parchment</p>
+        </note>
+        <note rend="ORIGIN">
+          <p>France</p>
+        </note>
+        <note rend="DATE">
+          <p>End of 13th century</p>
+        </note>
+        <note rend="SCRIPT">
+          <p>Gothic, Rose poem written in 2 columns of 35 lines</p>
+        </note>
+        <note rend="DECORATION">
+          <p>Empty spaces have been left for single-column miniatures throughout. </p>
+        </note>
+        <note rend="DIMENSIONS">
+          <p>279 x 250 mm (this measurement is according to Langlois)</p>
+        </note>
+        <note rend="FOLIATION">
+          <p>ff. iii + 100 + ii</p>
+        </note>
+        <note rend="BINDING">
+          <p>French, 19th century; half red morocco binding with marbled boards, raised spine bands, gilt lettering on spine, marbled endpapers.</p>
+        </note>
+        <note rend="SELECT BIBLIOGRAPHY">
+          <p>1. Langlois, <hi rend="italics">Les manuscrits</hi>, pp. 49-52
+               </p>
+        </note>
+        <note rend="N.B.">
+          <p>This description has been compiled using the site's images and various published sources. If you have corrections or additional information on the manuscript, please do contact us.</p>
+        </note>
+        <note>
+          <p>Description by Beatrice Radden Keefe</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <bibl><note type="format">manuscript</note><note type="commonName">Français 12786</note><title>Roman de la Rose</title><extent><measure quantity="98" unit="folios">98</measure><dimensions><height unit="mm">279</height><width unit="mm">250</width></dimensions></extent><note type="illustrations">0</note>
+               
+               
+               -
+               
+               <note type="material">parchment</note>
+               
+               <pubPlace>France</pubPlace>
+               
+               <date notAfter="1300" notBefore="1200">13th century</date>
+            
+            </bibl>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de France</repository>
+            <idno>fr. 12786</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem n="1">
+              <locus from="1r" to="24v">1r-24v</locus>
+              <title>Le Roman de la Poire</title>
+              <note type="textid">poire</note>
+              <note type="folios">24</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">35</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="2">
+              <locus from="24v" to="30v">24v-30v</locus>
+              <title>Lapidaire</title>
+              <note type="textid">lapidaire</note>
+              <note type="folios">7</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">35</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="3">
+              <locus from="31r" to="42v">31r-42v</locus>
+              <title>Le Bestiaire d'Amours</title>
+              <note type="textid">bestiaire</note>
+              <note type="folios">12</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">35</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+            <msItem n="4">
+              <locus from="42v" to="42v">42v-42v</locus>
+              <title>Son poitevin</title>
+              <note type="textid">poitevin</note>
+              <note type="folios">1</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">35</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="5">
+              <locus from="43r" to="75r">43r-75r</locus>
+              <title>Roman de la Rose</title>
+              <note type="textid">rose</note>
+              <note type="folios">33</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">35</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+              <note type="author">Guillaume de Lorris</note>
+              <note type="author">Jean de Meun</note>
+            </msItem>
+            <msItem n="6">
+              <locus from="76r" to="82r">76r-82r</locus>
+              <title>Motets</title>
+              <note type="textid"/>
+              <note type="folios">7</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">4</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">1</note>
+            </msItem>
+            <msItem n="7">
+              <locus from="82v" to="83r">82v-83r</locus>
+              <title>Les Propheties que Ezechiel li prophetes fist</title>
+              <note type="textid">ezechiel</note>
+              <note type="folios">2</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">35</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="8">
+              <locus from="83r" to="84v">83r-84v</locus>
+              <title>Ce sont li Songe</title>
+              <note type="textid"/>
+              <note type="folios">2</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">35</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="9">
+              <locus from="84v" to="87v">84v-87v</locus>
+              <title>Ci commence l'Order d'Amors </title>
+              <note type="textid">order</note>
+              <note type="folios">4</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">35</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="10">
+              <locus from="87v" to="90v">87v-90v</locus>
+              <title>Ici commence la Trinitez Nostre Dame </title>
+              <note type="textid">trinitez</note>
+              <note type="folios">4</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">35</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="11">
+              <locus from="90v" to="92r">90v-92r</locus>
+              <title>Ici commencent les IX Joies Nostre Dame</title>
+              <note type="textid">joies</note>
+              <note type="folios">3</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">35</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="12">
+              <locus from="92r" to="92v">92r-92v</locus>
+              <title>Le Dit d'Aristote</title>
+              <note type="textid">aristote</note>
+              <note type="folios">1</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">35</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+            <msItem n="13">
+              <locus from="92v" to="98v">92v-98v</locus>
+              <title>Le Lunaire de Salomon</title>
+              <note type="textid">salomon</note>
+              <note type="folios">7</note>
+              <note type="illustrations">0</note>
+              <note type="linesPerColumn">35</note>
+              <note type="leavesPerGathering"/>
+              <note type="columnsPerFolio">2</note>
+            </msItem>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div> </div>
+    </body>
+  </text>
+</TEI>

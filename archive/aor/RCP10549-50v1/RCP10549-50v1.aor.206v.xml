@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10549-50v1.206v.tif" pagination="392" reader="John Dee" signature="[bbb.iiii.[v]]"/>
+    <annotation>
+        
+        <marginalia anchor_text="calamitas" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Calamitas
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Calamity.
+            </translation>
+        </marginalia>
+        
+        <marginalia hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        À maiori
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                Generally.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="quid est quare" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        quid est quare
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                What reason is there for.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Ro." hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        Roma
+                    </marginalia_text>
+                    <location name="Rome"/>
+                </position>
+            </language>
+            <translation>
+                Rome
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="inducis" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        inducere
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To induce.
+            </translation>
+        </marginalia>
+        
+        <marginalia anchor_text="demisse respondere" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>
+                        demisse respo[n]dere.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                To reply dejectedly.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="ad laudem illustrius, quàm calamitas ipsa" type="straight"/>
+        <underline language="LA" method="pen" text="omnis vita plena grauitatis" type="straight"/>
+        <underline language="LA" method="pen" text="calamitas propagauit" type="straight"/>
+        <underline language="LA" method="pen" text="Ro. semper sim defensus, amplificatus" type="straight"/>
+        <underline language="LA" method="pen" text="O specium dignitatémque Po. Ro. quam reges, quam nationes exterae, quam gentes vltimae pertimescunt: multitudinem hominum ex seruis conductis,              ex facinorosis, ex egentibus congregata[m]" type="straight"/>
+        <underline language="LA" method="pen" text="populus est dominus regum, victor atque imperator omniu[m] gentium, quem" type="straight"/>
+        <underline language="LA" method="pen" text="tuo praecipiti furori atque impio sceleri restitissem" type="straight"/>
+        <underline language="LA" method="pen" text="debeas Iouem dicere, quòd tu iure eandem sororem &amp; vxorem appellare possis" type="straight"/>
+        <underline language="LA" method="pen" text="an demisse respondere" type="straight"/>
+        
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">12</numeral>
+        <numeral place="left_margin">21</numeral>
+        <numeral place="left_margin">19</numeral>
+        
+        <drawing anchor_text="Calamitas" book_orientation="0" method="pen" place="left_margin" type="florilegium"/>
+        
+    </annotation>
+</transcription>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BLC120b4.021v.tif" pagination="21[v]" reader="John Dee"/> 
+    <annotation>
+        
+        <marginalia anchor_text="Oleo uitri; Anim[a]e rubificatae" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        Anima rubificata et Oleu[m] vitri, ide[m] su[n]t
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>A reddened spirit and woad oil are the same.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>
+                        a[n]i[m]a ista, et Terra ide[m] su[n]t
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>This soul and earth are the same.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="nigredine" type="straight"/>
+        <underline language="LA" method="pen" text="albedine" type="straight"/>
+        <underline language="LA" method="pen" text="citrinitate" type="straight"/>
+        <underline language="LA" method="pen" text="rubedine" type="straight"/>
+        <underline language="LA" method="pen" text="rubificataq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="sumatur pars una" type="double"/>
+        <underline id="BLC.120.b.4:c_120_b_4_(2)_f021v:u0001" language="LA" method="pen" text="Oleo aute[m]" type="straight"/>
+        <underline language="LA" method="pen" text="mollibus" type="straight"/>
+        <underline language="LA" method="pen" text="duris" type="straight"/>
+        <underline language="LA" method="pen" text="nouus Adám" type="double"/>
+        <underline language="LA" method="pen" text="uel Sulfur" type="double"/>
+        <underline language="LA" method="pen" text="rubificatae" type="straight"/>
+        <underline id="BLC.120.b.4:c_120_b_4_(2)_f021v:u0002" language="LA" method="pen" text="tresq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="partes Terrae" type="double"/>
+        <underline language="LA" method="pen" text="Substantia rubea" type="straight"/>
+        <underline language="LA" method="pen" text="Auri, &amp; Arge[n]ti ana" type="double"/>
+        
+        <underline language="LA" method="pen" text="Mistio spu[m]alis Ai[a]e cum Oleo uitri" type="straight"/>
+        
+        <symbol name="Mercury" place="intext" text="mollis"/>
+        <symbol name="Hieroglyphic_Monad" place="intext" text="duris"/>
+        
+        <mark method="pen" name="bracket" place="intext"/> <!--lustrari: quae-->
+        <mark method="pen" name="bracket" place="intext"/> <!--Mutatione: simul-->
+        
+        <physical_link>
+            
+            <marginal_annotation idref="BLC.120.b.4:c_120_b_4_(2)_f021v:u0001"/>
+            
+            <marginal_annotation idref="BLC.120.b.4:c_120_b_4_(2)_f021v:u0002"/>
+            
+            <relation from="BLC.120.b.4:c_120_b_4_(2)_f021v:u0001" to="BLC.120.b.4:c_120_b_4_(2)_f021v:u0002" type="undirected"/>
+            
+        </physical_link>
+        
+    </annotation>
+</transcription>

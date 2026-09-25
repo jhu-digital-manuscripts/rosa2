@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.249v.tif" pagination="16" reader="John Dee" signature="[B.iiij.[v]]"/> 
+    <annotation>
+        
+        
+        <marginalia anchor_text="Comiti Edoni" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Odo, Comes Carnote[n]s[is]</marginalia_text>
+                    <person name="Odo II, Count of Blois"/>
+                </position>
+            </language>
+            <translation>Odo, Count of Chartres.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="intext">
+                    <marginalia_text>pagina 19</marginalia_text>
+                    <internal_ref>
+                        <target ref="RCP10552-2:511" text="19"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Page 19.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Fiscamium" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Fiscamij natus erat vt ante apparet.</marginalia_text>
+                    <location name="Fecamp"/>
+                </position>
+            </language>
+            <translation>He was born at Fecamp, as it previously appeared.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Hugonis magni ducis filius" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Hugo, Hugonis magni filius Rex Fra[ncorum]</marginalia_text>
+                    <person name="Hugh Capet"/>
+                    <person name="Hugh the Great"/>
+                </position>
+            </language>
+            <translation>Hugh, son of Hugh the Great, King of the Franks.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Roberto" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Robertus Rex Fr[ancorum]</marginalia_text>
+                    <person name="Robert II of France"/>
+                </position>
+            </language>
+            <translation>Robert, King of the Franks.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="fratre suo vterino Rodulpho comite" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rodulphus Comes, Fr[anciae] vterinus Rich[ardi] ducis.</marginalia_text>
+                    <person name="Rodulf of Ivry"/>
+                    <person name="Richard I of Normandy"/>
+                </position>
+            </language>
+            <translation>Count Rodulph, of France, the half-brother of Duke Richard.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="996" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>A[nn]⁰ 996.</marginalia_text>
+                </position>
+            </language>
+            <translation>In the year 996.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Richardus" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Richardus.</marginalia_text>
+                    <person name="Richard II, Duke of Normandy"/>
+                </position>
+            </language>
+            <translation>Richard.</translation>
+        </marginalia>
+        
+        
+        <marginalia anchor_text="Rodolphum Comitem" hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="left_margin">
+                    <marginalia_text>Rodolphus comes, [fr[anciae] deleted] Ebroicensis. avunculus Ducis.</marginalia_text>
+                    <person name="Rodulf of Ivry"/>
+                    <person name="Richard I of Normandy"/>
+                </position>
+            </language>
+            <translation>Rodulph, Count of Evreux, the uncle of the Duke.</translation>
+        </marginalia>
+        
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>liber gal[licus] cap[itulum] 63</marginalia_text>
+                </position>
+            </language>
+            <translation>[?] Chapter 63.</translation>  <!-- DO: Liber Gallicus reference -->
+        </marginalia>
+        
+        
+        <marginalia hand="Italian" method="pen">
+            <language ident="FR">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Si manda vng sien oncle, nommè Raoul, qui estoit conte d'Eureux</marginalia_text>
+                    <person name="Rodulf of Ivry"/>
+                </position>
+            </language>
+            <translation>If, having summoned his uncle, named Rodulph, who was Count of Evreux.</translation>  <!-- DO: not sure of this translation -->
+        </marginalia>
+        
+        
+        <underline language="LA" method="pen" text="Fiscamium" type="straight"/>
+        <underline language="LA" method="pen" text="templu[m] co[n]struxit" type="straight"/>
+        <underline language="LA" method="pen" text="Archangeli Michaelis" type="straight"/>
+        <underline language="LA" method="pen" text="rege Lothario" type="straight"/>
+        <underline language="LA" method="pen" text="Hugonis magni ducis filius" type="straight"/>
+        <underline language="LA" method="pen" text="regnum Franciae" type="straight"/>
+        <underline language="LA" method="pen" text="quos audiebat discordes" type="straight"/>
+        <underline id="RCP10552-2:508:u0001" language="LA" method="pen" text="fratre suo vterino Rodulpho comite" type="straight"/>
+        <underline language="LA" method="pen" text="dulcissime frater" type="straight"/>
+        <underline language="LA" method="pen" text="serenissime senior" type="double"/>
+        <underline language="LA" method="pen" text="Richardu[m] suum" type="straight"/>
+        <underline language="LA" method="pen" text="plenus" type="straight"/>
+        <underline language="LA" method="pen" text="apud Fiscamium" type="straight"/>
+        <underline language="LA" method="pen" text="Richardus, Richardi primi" type="straight"/>
+        <underline language="LA" method="pen" text="fuit fide catholicus" type="straight"/>
+        <underline id="RCP10552-2:508:u0002" language="LA" method="pen" text="fratrem suum" type="dotted"/>
+        <underline language="LA" method="pen" text="Rodolphum Comitem" type="double"/>
+       
+       
+        <mark method="pen" name="bracket" place="left_margin"/>
+        
+        <mark method="pen" name="comma" place="intext"/>  <!-- filius fulgoris -->
+        
+        <mark method="pen" name="plus_sign" place="left_margin"/>
+        
+        <mark method="pen" name="quattuorpunctus" place="right_margin"/>
+        
+        <mark method="pen" name="quattuorpunctus" place="tail"/>
+        
+        <errata amendedtext="Odoni" copytext="Edoni" language="LA"/>
+       
+        <errata amendedtext="Petri" copytext="P  ri" language="LA"/>
+        
+        <errata amendedtext="[deleted]" copytext="fratrem" language="LA"/>
+        
+        
+        <physical_link>
+            
+            <marginal_annotation idref="RCP10552-2:508:u0001"/>
+            
+            <marginal_annotation idref="RCP10552-2:508:u0002"/>
+            
+            <relation from="RCP10552-2:508:u0001" to="RCP10552-2:508:u0002" type="undirected"/>
+            
+            
+        </physical_link>
+       
+    </annotation>
+</transcription>

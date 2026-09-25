@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.234v.tif" pagination="[234v]" reader="John Dee" signature="[Ggij[v]]"/>
+    <annotation>
+       <marginalia hand="Italian" method="pen">
+           <language ident="EN">
+               <position book_orientation="0" place="left_margin">
+                   <marginalia_text>As rule of the spaniards.</marginalia_text> <!-- FSF: I would say it starts with 'The ill rule' -->
+                   <!-- M.B. Uncertain about word preceding rule, 'iff' -->
+               </position>
+           </language>
+       </marginalia> 
+        
+        <underline language="IT" method="pen" text="camin della punta del" type="straight"/>
+        <underline language="IT" method="pen" text="faceuano mille insulti a gl Indiani" type="straight"/>
+        <underline language="IT" method="pen" text="togliendo" type="straight"/>
+        <underline language="IT" method="pen" text="l'altre cose, che più ad essi" type="straight"/>
+        <underline language="IT" method="pen" text="glie le haurebbe pagate" type="straight"/>
+        <underline language="IT" method="pen" text="li concedeano, che l'amazzassero" type="straight"/>
+        <underline language="IT" method="pen" text="ma era ancora stato cagione di tutto il male de gl'Indiani dell'altra Isola" type="straight"/>
+        <underline language="IT" method="pen" text="sero con la sua morte" type="straight"/>
+        <underline language="IT" method="pen" text="con tal disegno" type="straight"/>
+        <underline language="IT" method="pen" text="rimaneua a popolare in quell'" type="straight"/>
+        <underline language="IT" method="pen" text="ogni Canoa alcuni Indiani, che vogassero." type="straight"/>
+        
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark method="pen" name="hash" place="intext" text="la sua morte"/> <!-- FSF: not sure if not rather to be captured as underlining? -->
+        
+        <drawing anchor_text="con tal disegno rimaneua a popolare in quell'" book_orientation="0" method="pen" place="left_margin" type="manicule"/>
+        
+    </annotation>
+</transcription>

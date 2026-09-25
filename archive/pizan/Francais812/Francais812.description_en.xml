@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 tei_ms.xsd">
+   <teiHeader>
+      
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <title>Christine de Pizan</title>
+         
+         </titleStmt>
+         
+         <publicationStmt>
+            
+            <distributor>MSEL</distributor>
+         
+         </publicationStmt>
+        
+         <sourceDesc> 
+            
+            <bibl>
+               <note type="format">manuscript</note>
+               <note type="commonName">Français 812</note>
+               <title>Christine de Pizan</title>
+
+               <extent>
+                  <measure quantity="320" unit="folios">320</measure>
+                  <dimensions>
+                     
+                     <height unit="mm"></height>
+                     <width unit="mm"></width>
+                  
+                  </dimensions>
+               
+               </extent>
+               
+               <note type="illustrations">5</note>
+               
+               <note type="material">vellum</note>
+               
+               <pubPlace>France</pubPlace>
+               
+               <date notBefore="1401" notAfter="1500">15th century</date>
+            
+            </bibl>
+            
+            <msDesc>
+               
+               <msIdentifier>
+                  
+                  <settlement>Paris</settlement>
+                  
+                  <repository>Bibliothèque nationale de France</repository>
+                  
+                  <idno>fr. 812</idno>
+               
+               </msIdentifier>
+            
+               <msContents>
+                  <msItem n="1">
+                     <locus from="1r" to="75v">1r-75v</locus>
+                     <title>Boece, De Consolacion, tranduire par Charles d'Orléans</title>
+                     <note type="textid"></note>
+                     <note type="folios">75</note>
+                     <note type="illustrations">1</note>
+                     <note type="linesPerColumn">36</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+                  <msItem n="2">
+                     <locus from="76v" to="120r">76v-120r</locus>
+                     <title>Le Livre de la moralité des nobles hommes et des gens du peuple sur le Jeu des Eschez par Jacques de Cessoles, tranduire par Jehan de Vignay</title>
+                     <note type="textid"></note>
+                     <note type="folios">44</note>
+                     <note type="illustrations">1</note>
+                     <note type="linesPerColumn">38</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+                  <msItem n="3">
+                     <locus from="120v" to="264v">120v-264v</locus>
+                     <title>Le Roman de la Rose par Guillaume de Lorris et Jehan Clopinel</title>
+                     <note type="textid">rose</note>
+                     <note type="folios">144</note>
+                     <note type="illustrations">1</note>
+                     <note type="linesPerColumn">37</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+                  <msItem n="4">
+                     <locus from="264v" to="266r">264v-266r</locus>
+                     <title>Les Notables</title>
+                     <note type="textid"></note>
+                     <note type="folios">2</note>
+                     <note type="illustrations">0</note>
+                     <note type="linesPerColumn">37</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+                  <msItem n="5">
+                     <locus from="266r" to="319v">266r-319v</locus>
+                     <title>Les Dis moraulx des philosophez, tranduire par Guillaume de Tygnonville</title>
+                     <note type="textid"></note>
+                     <note type="folios">53</note>
+                     <note type="illustrations">2</note>
+                     <note type="linesPerColumn">36</note>
+                     <note type="leavesPerGathering"/>
+                     <note type="columnsPerFolio">2</note>
+                  </msItem>
+               </msContents>
+            </msDesc>
+         
+         </sourceDesc>
+      
+      </fileDesc>
+   
+   </teiHeader>
+   
+   <text>
+      
+      <body>
+         
+         <div> </div>
+      
+      </body>
+   
+   </text>
+
+</TEI>

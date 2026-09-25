@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="RCP10552-2.027r.tif" pagination="43" reader="John Dee" signature="D.iiij."/>
+   <annotation>
+
+       <underline language="LA" method="pen" text="Scotorum, iussit VVallensibus vt cos aggrederentur." type="straight"/>
+       <underline language="LA" method="pen" text="inueteratum odium quod gerebant ad rege[n]" type="straight"/>
+       <underline language="LA" method="pen" text="cum Scotis comitèr" type="straight"/> 
+       
+       <mark method="pen" name="dot" place="left_margin"/>
+       <mark method="pen" name="dot" place="left_margin"/>
+       <mark method="pen" name="dot" place="left_margin"/>
+       <mark method="pen" name="dot" place="intext"/>
+       <mark method="pen" name="dot" place="intext"/>
+       <mark method="pen" name="dot" place="intext"/>
+       <mark method="pen" name="dot" place="intext"/>
+       
+       <errata amendedtext="co[m]itir" copytext="comitèr" language="LA"/> <!-- MB. In this case I don't think it is neccesary to capture this errata as marginalia. -->
+       <!-- FSF: I don't think that this is an errata, but I am really not sure what it is; it reads co[m]iter, so exactly the same except for the diacritical mark; however, it is definitely spelt co[m]iter, with an e rather than an i -->
+       
+   </annotation>
+</transcription>

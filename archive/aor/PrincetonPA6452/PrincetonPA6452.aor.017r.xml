@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.017r.tif" pagination="17" reader="Harvey"/> 
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>4. Anci Martij historia regia.</marginalia_text>
+                    <person name="Ancus Marcius"/>
+                </position>
+            </language>
+            <translation>4. The royal history of Ancus Martius.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="head">
+                    <marginalia_text>Ancus mixta[e] dispositionis, medijq[ue] inter pacem, et bellum ingenij: vt pla[e]riq[ue] hodierni Reges.</marginalia_text>
+                    <person name="Ancus Marcius"/>
+                </position>
+            </language>
+            <translation>Ancus had a mixed character, his nature holding the middle between war and peace, just like most Kings today.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Hactenùs Tulli Historia.</marginalia_text>
+                    <person name="Tullus Hostilius"/>
+                    <emphasis method="pen" text="historia" type="curved"/>
+                </position>
+            </language>
+            <translation>So far the history of Tullus.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>} peritè compositus Rex. Foelicissimus procedendi modus, qui Tempori maximè opportunus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>A skilfully restrained king. The most productive policy, which was especially suitable for this time.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Indicendi belli ritus.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The procedure for declaring war.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>dies 33. Iusti belli denunciatio: etiam hodierno Iure legitima. s[upr]a, in regno Tulli. i[nfr]a, 275. directa belli denunciatio. 
+                        Vbi seria[e] Legationes, et pragmatica[e], de maximo mundi Bello.
+                    </marginalia_text>
+                    <person name="Tullus Hostilius"/>
+                    <internal_ref>
+                        <target ref="PrincetonPA6452:00000036" text="s[upr]a"/>
+                        <target ref="PrincetonPA6452:00000297" text="275"/>
+                    </internal_ref>
+                </position>
+            </language>
+            <translation>Thirty-three days: a declaration of a just war, still legitimate in today’s law. See above during Tullus’ reign. 
+                For a straightforward declaration of war, see below p. 275, where there are serious and pragmatic embassies, concerning the greatest war in the world.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>Huc litera[e] Martis: represalia: commissiones classica[e]: vis vi repulsa iure gentium.</marginalia_text>
+                </position>
+            </language>
+            <translation>On this point: letters of war, reprisals, the soundings of war trumpets; violence warded off with violence according to the law of nations.</translation>
+        </marginalia>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>( Huc doctor Gentilis de iure Belli: post Sigonium, Rosinum, Bellaium, et quosdam Iurisconsultos de Legibus Militaribus.
+                    </marginalia_text>
+                    <person name="Alberico Gentili"/>
+                    <person name="Carlo Sigonio"/>
+                    <person name="Johannes Rosinus"/>
+                    <person name="Guillaume du Bellay"/>
+                    <book title="De iure belli libri tres"/>
+                </position>
+            </language>
+            <translation>On this point see Dr Gentili De iure Belli, then Sigonius, Rosinus, Bellaius and a few legal scholars of military laws.</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="occulta solennia sacrificia Ioui Elicio facta" type="straight"/>
+        <underline language="LA" method="pen" text="operatum his sacris" type="straight"/>
+        <underline language="LA" method="pen" text="abdidisse" type="straight"/>
+        <underline language="LA" method="pen" text="ira Iouis solicitati praua religione fulmine ipsum cu[m] domo" type="straight"/>
+        <underline language="LA" method="pen" text="Tullus magna gloria belli regnauit" type="straight"/>
+        <underline language="LA" method="pen" text="institutum iam inde ab initio" type="straight"/>
+        <underline language="LA" method="pen" text="patres redierat" type="straight"/>
+        <underline language="LA" method="pen" text="interregem" type="straight"/>
+        <underline language="LA" method="pen" text="Ancum Martium regem populus creauit" type="straight"/>
+        <underline language="LA" method="pen" text="patres fuere autores" type="straight"/>
+        <underline language="LA" method="pen" text="Numae Pompilij regis nepos filia" type="straight"/>
+        <underline language="LA" method="pen" text="proximum regnum caetera egregium" type="straight"/>
+        <underline language="LA" method="pen" text="ab una parte haud satis" type="straight"/>
+        <underline language="LA" method="pen" text="neglectis religionibus" type="straight"/>
+        <underline language="LA" method="pen" text="sacra publica, ut ab" type="straight"/>
+        <underline language="LA" method="pen" text="cum incursionem in agrum Romanum" type="straight"/>
+        <underline language="LA" method="pen" text="repetentibus res Romanis" type="straight"/>
+        <underline language="LA" method="pen" text="desidem Romanum regem inter sacella &amp; aras" type="straight"/>
+        <underline language="LA" method="pen" text="Medium erat in" type="straight"/>
+        <underline language="LA" method="pen" text="Numae &amp; Romuli memor" type="straight"/>
+        <underline language="LA" method="pen" text="aui regno" type="straight"/>
+        <underline language="LA" method="pen" text="necessariam fuisse pacem" type="straight"/>
+        <underline language="LA" method="pen" text="tentari patientiam" type="straight"/>
+        <underline language="LA" method="pen" text="tentatam co[n]temni" type="straight"/>
+        <underline language="LA" method="pen" text="temporaq[ue] esse Tullo regi aptiora" type="straight"/>
+        <underline language="LA" method="pen" text="Numae" type="straight"/>
+        <underline language="LA" method="pen" text="Numa in pace religiones" type="straight"/>
+        <underline language="LA" method="pen" text="se bellicae caerimoniae" type="straight"/>
+        <underline language="LA" method="pen" text="etiam indicerentur bella aliquo ritu" type="straight"/>
+        <underline language="LA" method="pen" text="ius ab" type="straight"/>
+        <underline language="LA" method="pen" text="foeciales habent" type="straight"/>
+        <underline language="LA" method="pen" text="quo res repetuntur" type="straight"/>
+        <underline language="LA" method="pen" text="Legatus ubi" type="straight"/>
+        <underline language="LA" method="pen" text="res repetu[n]tur" type="straight"/>
+        <underline language="LA" method="pen" text="Audi" type="straight"/>
+        <underline language="LA" method="pen" text="audite fines" type="straight"/>
+        <underline language="LA" method="pen" text="audiat fas" type="straight"/>
+        <underline language="LA" method="pen" text="publicus nu[n]cius populi Romani" type="straight"/>
+        <underline language="LA" method="pen" text="legatus uenio" type="straight"/>
+        <underline language="LA" method="pen" text="Peragit deinde postulata" type="straight"/>
+        <underline language="LA" method="pen" text="illasq[ue] res dedier" type="straight"/>
+        <underline language="LA" method="pen" text="non deduntur, quos" type="straight"/>
+        <underline language="LA" method="pen" text="diebus trib[us] &amp; triginta (tot enim solennes" type="straight"/>
+        <underline language="LA" method="pen" text="bellum ita indicit" type="straight"/>
+        <underline language="LA" method="pen" text="iniustum esse, neq[ue] ius persoluere" type="straight"/>
+        <underline language="LA" method="pen" text="quo pacto ius nostrum adipiscamur" type="straight"/>
+        <underline language="LA" method="pen" text="rex" type="straight"/>
+        <underline language="LA" method="pen" text="patres" type="straight"/>
+        <underline language="LA" method="pen" text="res nec dederunt, nec soluerunt, nec fecerunt, quas" type="straight"/>
+        <underline language="LA" method="pen" text="Puro pioq[ue] duello" type="straight"/>
+        <underline language="LA" method="pen" text="pars maior" type="straight"/>
+        <underline language="LA" method="pen" text="bellum erat consensu fieri" type="straight"/>
+        <underline language="LA" method="pen" text="foecialis hastam ferratam, aut sanguineam" type="straight"/>
+        <underline language="LA" method="pen" text="non minus tribus puberibus praesentibus" type="straight"/>
+        <underline language="LA" method="pen" text="populus Romanus" type="straight"/>
+        <underline language="LA" method="pen" text="iussit esse senatusq[ue] populi" type="straight"/>
+        <underline language="LA" method="pen" text="censuit, co[n]sensit, consciuit" type="straight"/>
+        <underline language="LA" method="pen" text="rem ego populusq[ue] Romanus" type="straight"/>
+        <underline language="LA" method="pen" text="bellum indico, facioq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="repetitae res, ac bellum indictum" type="straight"/>
+        <underline language="LA" method="pen" text="moremq[ue]" type="straight"/>
+        <underline language="LA" method="pen" text="posteri acceperunt" type="straight"/>
+        <underline language="LA" method="pen" text="cura sacrorum flaminibus, sacerdotibusq[ue]" type="straight"/>
+        
+        <symbol name="SS" place="left_margin"/>
+        <symbol name="SS" place="left_margin"/>
+        
+        <symbol language="LA" name="Mars" place="right_margin" text="bellicae caerimoniae"/>
+        <symbol name="JC" place="right_margin"/>
+        <symbol language="LA" name="Mars" place="right_margin" text="duello"/>
+        
+        <mark method="pen" name="X_sign" place="left_margin"/>
+        <mark method="pen" name="equal_sign" place="left_margin"/>
+        <mark method="pen" name="bracket" place="left_margin"/>
+        <mark language="LA" method="pen" name="plus_sign" place="left_margin" text="posteri acceperunt"/>
+        
+        <mark method="pen" name="dash" place="right_margin"/> <!--con-->
+        <mark method="pen" name="horizontal_bar" place="right_margin"/>
+        <mark method="pen" name="dash" place="right_margin"/> <!--institu-->
+        <mark method="pen" name="equal_sign" place="right_margin"/> 
+        <mark method="pen" name="dash" place="right_margin"/> <!--pr[a]e-->
+        <mark method="pen" name="dash" place="right_margin"/> <!--uela-->
+        
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="occulta"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--triginta. Mortuo-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="patres"/>
+        <mark method="pen" name="dot" place="intext"/> <!--redierat, hic[que]-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="populus"/>
+        <mark method="pen" name="dot" place="intext"/> <!-- memor, & -->
+        <mark method="pen" name="comma" place="intext"/> <!--egregium ab-->
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Medium"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="temporaq[ue]"/>
+        <mark language="LA" method="pen" name="straight_quotation_mark" place="intext" text="aptiora"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="bellicae"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="indicerentur"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="foeciales"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="repetuntur"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Legatus"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="repetu[n]tur"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="patres"/>
+        <mark method="pen" name="plus_sign" place="intext"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="consensu"/>
+        <mark method="pen" name="diacritic" place="intext"/> <!--minus-->
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="populus"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="iussit"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="censuit"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="repetitae"/>
+        <mark language="LA" method="pen" name="equal_sign" place="intext" text="indictum"/>
+        <mark method="pen" name="vertical_bar" place="intext"/> <!--acceperunt. Ancus-->
+        
+    </annotation>
+    
+</transcription>

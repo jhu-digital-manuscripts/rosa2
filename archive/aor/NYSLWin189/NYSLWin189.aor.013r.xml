@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="NYSLWin189.013r.tif" reader="John Dee" signature="Dij"/> 
+    <annotation>
+        
+        <marginalia anchor_text="warmer vnd kalter beder vn ander artzneyischen wassern" hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Frigidae et Calidor Aquae medicmales</marginalia_text>
+                </position>
+            </language>
+            <translation>Cold and warmth, Medical waters.</translation>
+        </marginalia>
+        
+        <underline language="DE" method="pen" text="mistheuffen" type="straight"/>
+        <underline language="DE" method="pen" text="gefeulte[n] strowhelmern" type="straight"/>
+        <underline language="DE" method="pen" text="dannreysen" type="straight"/>
+        <underline language="DE" method="pen" text="Blettern der" type="straight"/>
+        <underline language="DE" method="pen" text="vnnd grund" type="straight"/>
+        <underline language="DE" method="pen" text="kalter" type="straight"/>
+        <underline language="DE" method="pen" text="artzneyischen wassern" type="straight"/>
+        
+    </annotation> 
+</transcription>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="ChChWb512.093r.tif" reader="Dee"/>
+    <annotation>
+        
+        <marginalia anchor_text="Morindu[m]" hand="English_secretary">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Morindus Erle of Glocester.
+                    </marginalia_text>
+                    <person name="Morindus"/>
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Auguselus rex" hand="English_secretary">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Auguselus
+                    </marginalia_text>
+                    <person name="Auguselus"/>
+                </position>
+            </language>
+            <translation>Auguselus.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Achilles" hand="English_secretary" id="ChChWb512:WB5-12_0193_085r:m0001">
+            <language ident="LA">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        forte, Atilli[us]
+                    </marginalia_text>
+                    <person name="Atillius"/>
+                </position>
+            </language>
+            <translation>more likely, Atillius.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Holdinus dux rutenorum" hand="English_secretary" id="ChChWb512:WB5-12_0193_085r:m0002">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Rutheni
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>The Ruteni.</translation>
+        </marginalia>
+        
+        <marginalia anchor_text="Holdinus dux rutenorum" hand="English_secretary" id="ChChWb512:WB5-12_0193_085r:m0003">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text>
+                        Holdinus Dux [Ruthen deleted]
+                    </marginalia_text>
+                    <person name="Holdinus"/>
+                </position>
+            </language>
+            <translation>Holdinus, duke of the Ruteni</translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="quae Suesia vocabatur" type="double"/>
+        <underline language="LA" method="pen" text="Morindu[m] consulem" type="double"/>
+        <underline language="LA" method="pen" text="Auguselus rex" type="double"/>
+        <underline id="ChChWb512:WB5-12_0193_085r:u0001" language="LA" method="pen" text="de richiden" type="double"/> 
+        <underline language="LA" method="pen" text="oxenforum" type="double"/>
+        <underline language="LA" method="pen" text="Achilles" type="double"/>
+        <underline language="LA" method="pen" text="atq[ue]" type="double"/>
+        <underline id="ChChWb512:WB5-12_0193_085r:u0002" language="LA" method="pen" text="Holdinus dux rutenorum" type="double"/>
+        
+        <errata amendedtext="[deleted]" copytext="Achilles" id="ChChWb512:WB5-12_0193_085r:e0001" language="LA"/>
+        
+        <physical_link>
+            <marginal_annotation idref="ChChWb512:WB5-12_0193_085r:m0002"/>
+            <marginal_annotation idref="ChChWb512:WB5-12_0193_085r:m0003"/>
+            <marginal_annotation idref="ChChWb512:WB5-12_0193_085r:u0002"/>
+            
+            <relation from="ChChWb512:WB5-12_0193_085r:m0002" to="ChChWb512:WB5-12_0193_085r:u0002" type="directed"/>
+            <relation from="ChChWb512:WB5-12_0193_085r:m0003" to="ChChWb512:WB5-12_0193_085r:u0002" type="directed"/>
+        </physical_link>
+        
+    </annotation>
+</transcription>

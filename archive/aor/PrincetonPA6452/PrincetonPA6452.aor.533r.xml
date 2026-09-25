@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+    <page filename="PrincetonPA6452.533r.tif" reader="Harvey" signature="S[r]"/>
+    <annotation>
+        
+        <marginalia hand="Italian">
+            <language ident="LA">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                       Maximarum rerum negocia, post Marium Cons. et Roma 
+                    </marginalia_text>
+                    <person name="Gaius Marius"/>
+                </position>
+            </language>
+            <language ident="EL">
+                <position book_orientation="0" place="tail">
+                    <marginalia_text> 
+                        ἐν ἀκμῆ.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The affairs of the greatest events, after Marius as consul. and Rome at its peak.
+            </translation>
+        </marginalia>
+        
+        <underline language="LA" method="pen" text="Scipio Nasica" type="straight"/>
+        <underline language="LA" method="pen" text="Iugurthinum bellum" type="straight"/>
+        <underline language="LA" method="pen" text="Calphurnius Bestia" type="straight"/>
+        <underline language="LA" method="pen" text="Caecilius Metellus Numidicus" type="straight"/>
+        <underline language="LA" method="pen" text="uicit enim Numidia[m]" type="straight"/>
+        <underline language="LA" method="pen" text="Luculli auunculus" type="straight"/>
+        <underline language="LA" method="pen" text="C.Marius Nepos" type="straight"/>
+        <underline language="LA" method="pen" text="C.Marius Nepos" type="straight"/>
+        <underline language="LA" method="pen" text="C.Marius Nepos" type="straight"/>
+        <underline language="LA" method="pen" text="C.Marius" type="straight"/>
+        <underline language="LA" method="pen" text="C.Marius" type="straight"/>
+        <underline language="LA" method="pen" text="C.Marius Nepos VI" type="straight"/>
+        <underline language="LA" method="pen" text="Mutius Scaeuola" type="straight"/>
+        
+        <symbol language="LA" name="SS" place="intext" text="C.Marius Nepos"/>
+        <symbol name="JC" place="intext"/>
+        
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Caecilius Metellus Numidicus"/>
+        <mark language="LA" method="pen" name="plus_sign" place="intext" text="Luculli auunculus"/>
+        <mark method="pen" name="comma" place="intext"/>
+        
+        
+    </annotation>
+</transcription>

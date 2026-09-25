@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    
+<page filename="UclCastiglione1541.016r.tif" pagination="IIII[r]" reader="Harvey" signature="Bir"/>
+    <annotation>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Amore che principalmente dee esser fra Cortegiani.
+                    </marginalia_text>
+                </position>
+            </language>
+            <translation>
+                The love that there should be principally between courtiers. 
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Modestia e grandezza nella Duchessa
+                    </marginalia_text>
+                    <person name="Elisabetta Gonzaga"/>
+                </position>
+            </language>
+            <translation>
+                The modesty and grandeur of the Duchess.
+            </translation>
+        </marginalia>
+        <marginalia hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>
+                        Le virtu di que[sta] Signora sono abo[n]deuolmente discri[tte] dal Bembo    
+                        nel su[o] Dialogo latino, ch[e] di lei e della mo[da] del Duca copos[e]
+                    </marginalia_text>
+                    <person name="Elisabetta Gonzaga"/>
+                    <person name="Pietro Bembo"/>
+                    <person name="Guidobaldo da Montefeltro"/>
+                    <book title="De Urbini ducibus"/>    
+                </position>
+            </language>
+            <translation>
+                The virtues of this lady are abundantly described in Bembo's Latin dialogue, which he wrote 
+                about her and the Duke's style.  
+            </translation>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="che la medesima libertà              era grandissimo freno" type="straight"/>
+        
+        <mark language="IT" method="pen" name="plus_sign" place="left_margin" text="che la medismima libertà era grandissimo freno"/>
+        
+        
+    </annotation>
+</transcription>

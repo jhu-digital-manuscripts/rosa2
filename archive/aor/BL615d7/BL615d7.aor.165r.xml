@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transcription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.livesandletters.ac.uk/schema/aor2_18112016.xsd">
+    <page filename="BL615d7.165r.tif" pagination="165" reader="John Dee"/>    
+    <annotation>
+        
+        <marginalia anchor_text="l' Orlando incominiciò a drizzare il suo pensiero a volere impadronirsi dell' Isola, propone[n]do di amazzare i fratelli dell '              Ammiraglio, come quelli, ne'" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Treason</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="Suragna" hand="Italian">
+            <language ident="IT">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Suragna</marginalia_text> 
+                    <location name="Suragna"/> <!-- M.B. Uncertain of modern English name if any, early 19thC Eng translation'(Memorials of Columbus) also refers to 'Suragna' -->
+                </position>
+            </language>
+        </marginalia>
+        
+        <marginalia anchor_text="tributo" hand="Italian">
+            <language ident="EN">
+                <position book_orientation="0" place="right_margin">
+                    <marginalia_text>Tributaries</marginalia_text> 
+                </position>
+            </language>
+        </marginalia>
+        
+        <underline language="IT" method="pen" text="non ci fosse quella intera volontà, che per ben publico ricercauasi, si come il tempo, &amp; la esperienza" type="straight"/>
+        <underline language="IT" method="pen" text="l'Orlando incominiciò a drizzare il suo pensiero a volere impadronirsi dell'Isola, propone[n]do di amazzare i fratelli dell'Ammiraglio, come quelli, ne'" type="straight"/>
+        <underline language="IT" method="pen" text="aspettò" type="straight"/>
+        <underline language="IT" method="pen" text="Suragna, LXXX" type="straight"/>
+        <underline language="IT" method="pen" text="sotto il gouerno" type="double"/>
+        <underline language="IT" method="pen" text="di Don Diego" type="straight"/> 
+        <underline language="IT" method="pen" text="che a tutti gl'Indiani" type="straight"/>
+        <underline language="IT" method="pen" text="nell'Isola secretamente a trarre alcuni alla sua diuotione" type="straight"/>
+        <underline language="IT" method="pen" text="alcuna finta cagione, quella, che Orlando" type="straight"/>
+        
+        <mark method="pen" name="bracket" place="right_margin"/>
+        
+        
+    </annotation>
+</transcription>
